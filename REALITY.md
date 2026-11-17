@@ -41,11 +41,11 @@ A thing not written here does not exist. Kept by data@PrompTugal.dinis. Last che
 ## The vaults
 
 - Nine sgit vaults on https://dev.send.sgraph.ai, one per source, created 17 November 2026, each with its first data pushed. Their public read keys are in the cards and on `/vaults/`.
-- The write keys exist only in data@'s session scratchpad, which ends with the session. They are not in this repository and were not sealed to anyone (see the debrief).
+- The write keys were sealed at Dinis's word (17 November, about 22:55 UTC) and sent to conductor@PrompTugal.dinis: once to the conductor's key (sgit pki envelope) and once to dinis.cruz on pki.sgit.ai (m1 message, expires 1 December 2026). The two sealed files are in a tenth vault, 5qzpmf4m (ciphertext only), not in this repository: the leak scan flags ciphertext and an allowlist entry for it was refused. No write key is in this repository.
 
 ## Identity
 
-- data@PrompTugal.dinis's session key: `team/keys.json` (fingerprint sha256:1ccdf89c4af3a7fe), made with `sgit pki keygen`. Commits are not signed with it.
+- data@PrompTugal.dinis's session keys, public halves in `team/keys.json`: an sgit key (sha256:1ccdf89c4af3a7fe, made with `sgit pki keygen`) and a pki-agent key (record sha256:bcbb99cc21881c87, made with `pki-agent.mjs keygen --session`, root pinned to dinis.cruz). Commits are not signed with either. The pki-agent record is not yet linked to an operator in the pki.sgit.ai register.
 - Commits use `Agent: data@AgentiCCells.dinis` because this repository's commit check accepts only `@agenticcells.` names.
 
 ## Not yet

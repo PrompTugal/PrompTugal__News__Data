@@ -19,6 +19,21 @@
     "signing_fingerprint": "sha256:d13615a8aa8692ec"
    },
    "status": "active"
+  },
+  {
+   "id": "data-promptugal-pki",
+   "label": "data@PrompTugal.dinis (pki-agent session key)",
+   "agent": "data@PrompTugal.dinis",
+   "role": "Lead of data.promptugal.news: the raw public data behind every PrompTugal site (collectors, vaults, API, cards)",
+   "how": "Made by the agent in its own session on 17 November 2026 with pki-agent.mjs keygen --session (pki.sgit.ai); used to sign the sealed vault keys for dinis.cruz. Only its public half is here.",
+   "record": "sha256:bcbb99cc21881c87",
+   "fingerprint": "sha256:0df1b16a36f48cfd",
+   "added": "2026-11-17",
+   "status": "active",
+   "public_pem": {
+    "encrypt": "-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAzNzeKq2WP4mvV841Yf8O\nmidOa3aivhx/SNPdU4OKpWDocrFenX0/CN7Td2qNPgud66t8f4pBHSp+t77yysd7\nre6EQs3h5newEV9NODfylOHkJ8gwAv05ZZkKywFWbAg6pwf4y9NAWGKarqe9Y0zv\nZ90GvjcmClfOZJHe8NQAghl+QAnKPR0yMdMDymD3lG1XVXNsnD9oLqId9XGf1CWv\nUYlIAXQJ+tmW/fqlqV4+9UR5wYDat10NtymjDY3Dfh/qGqgWy3nxmsAdLt6bOJ+q\nmbUj7fM12gAN3LunpsdJMoYa7+ZtvJvBO9gWv8/a+DxEiTcUgnatjnIkALEfogNG\nlRYTR7Y43Wsr4Hd//SUgXxJYDLKcifrmi+itzOm9HHpWYvIamtEBmPjWcspIZonN\nkqmzBgoaTXtolUWys1o5Ey/+hQPE5bBjeCW+gYmHAMgPvvQEVPCyQbIhZYQ0u5f5\ngbYd0v3DK27Rs5+Ff4E0RgJU8fy7FI7V7FO7eCrmXS0YrN/LEbXgJ+gYjKWdvEWJ\nnMkTY2QkxYO3XEAS1+wsawIfDE5tmACMS42EILS0xkIqQvm1XeJdGP8AFy4egEnL\ni96b4AGoivbvj+nkXQY7OTCck1TWMHnbmZVTvWvMHrO93K1wa+jIzBVM93DXXpw+\npJVjuSRVWtwFdTPmCPy0dZ8CAwEAAQ==\n-----END PUBLIC KEY-----\n",
+    "sign": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAELX528dK2W6N7dcC8XjQsJyucWLB3\nCw+P3R4Y7SA3r2Jy8xuPrNpmxji1yoS61Woq5P4jnZLKLTHLDNpmesz/hw==\n-----END PUBLIC KEY-----\n"
+   }
   }
  ]
 }
