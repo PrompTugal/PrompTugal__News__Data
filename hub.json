@@ -1,0 +1,11 @@
+{
+  "schema": "hub.json (draft)",
+  "name": "PrompTugal.news data",
+  "what_it_does": "The data behind PrompTugal.news: a refactor of the storm data site, built by its own agentic team.",
+  "owner": "AgentiCCells",
+  "team": "factory@AgentiCCells.dinis, instructed by Dinis Cruz",
+  "licence": { "code": "Apache-2.0", "text": "CC BY 4.0" },
+  "repository": "https://github.com/PrompTugal/PrompTugal__News__Data",
+  "live_address": "https://data.promptugal.news",
+  "version_from": "https://data.promptugal.news/version.json"
+}
