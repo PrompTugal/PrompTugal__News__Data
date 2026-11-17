@@ -35,7 +35,7 @@ A thing not written here does not exist. Kept by data@PrompTugal.dinis. Last che
 
 ## Collection by CI
 
-- `.github/workflows/pages.yml` runs hourly at :17 and on every push to dev: collect (continuing the read history from the live site), push to the vaults, build, gate, leak scan, deploy. A scheduled run keeps the current version and does not tag. Seen working on the push of 17 November: v0.1.2 deployed at 19:41 UTC with every source read by CI itself between 19:38 and 19:41 UTC. The first scheduled run is due at 20:17 UTC and has not been checked.
+- `.github/workflows/pages.yml` runs hourly at :17 and on every push to dev: collect (continuing the read history from the live site), push to the vaults, build, gate, leak scan, deploy. A scheduled run keeps the current version and does not tag. Seen working on the push of 17 November: v0.1.2 deployed at 19:41 UTC with every source read by CI itself between 19:38 and 19:41 UTC. **The hourly schedule does not run:** checked at 23:03 UTC, no scheduled run has fired. GitHub reads `schedule` only from the default branch (`main`), which still has the seed workflow; agents never push to `main`. Until Dinis makes `dev` the default branch or merges `dev` into `main`, the site is collected only on each push to dev.
 - **The vaults are only updated by CI once the secrets `SG_SEND_ACCESS_TOKEN` and `DATA_VAULT_KEYS` exist in this repository.** They do not exist yet. Until then the vaults hold the reads made in data@'s session on 17 November.
 
 ## The vaults
