@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Front page choices | PrompTugal.news Data</title>
+<meta name="description" content="Three variations of the data.promptugal.news front page, side by side, for choosing: the ledger, now, and for builders.">
+<link rel="stylesheet" href="../assets/brand/brand-tokens.css">
+<link rel="stylesheet" href="design.css">
+</head>
+<body>
+<header class="mast"><div class="wrap">
+<img class="wordmark wm-light" src="../assets/brand/promptugal-wordmark-light.svg" alt="PrompTugal.news"><img class="wordmark wm-dark" src="../assets/brand/promptugal-wordmark-dark.svg" alt="" aria-hidden="true">
+<span class="sub">PrompTugal.news · Data</span>
+</div></header>
+<main class="wrap">
+<h1>Three front pages to choose from</h1>
+<p class="lede">The site holds the raw public data behind every PrompTugal site: one collector, one vault, one API and one card per source. No articles. Each variation below is live and reads the same JSON. This is a proposal, for Dinis Cruz to choose.</p>
+<div class="cols">
+<section class="col">
+<h2>A. The ledger</h2>
+<iframe src="a/index.html" title="Variation A, the ledger" loading="lazy"></iframe>
+<p><a href="a/index.html">Open A alone</a> · <a href="a/index.md">markdown</a></p>
+<p>Serves journalists checking a value and anyone who wants the whole picture at a glance. It does well at density: every source on one line with publisher, last read, status, headline count, terms and links, so a claim can be traced in seconds. It does badly at drama and at teaching a newcomer what to do: there is no single live number, and a developer has to find the endpoint in a link.</p>
+</section>
+<section class="col">
+<h2>B. Now</h2>
+<iframe src="b/index.html" title="Variation B, now" loading="lazy"></iframe>
+<p><a href="b/index.html">Open B alone</a> · <a href="b/index.md">markdown</a></p>
+<p>Serves the curious reader and the other PrompTugal sites' editors. It does well at showing that the data is live: warnings by level, stations reporting, airline flights near Faro and fire risk, each with its source and time read. It does badly at breadth and at reference use: it picks four numbers, so a source without a tile is further down, and the terms are not on view.</p>
+</section>
+<section class="col">
+<h2>C. For builders</h2>
+<iframe src="c/index.html" title="Variation C, for builders" loading="lazy"></iframe>
+<p><a href="c/index.html">Open C alone</a> · <a href="c/index.md">markdown</a></p>
+<p>Serves developers and agents on the other PrompTugal sites. It does well at the first task they have: the stable address, a curl line to copy, and the OpenAPI and Swagger links for each source, with status after. It does badly for everyone else: a journalist or a curious reader sees addresses, not values, and the page says little about what the data means.</p>
+</section>
+</div>
+</main>
+<footer class="wrap foot">
+<p>Not a warning service: follow IPMA and ANEPC.</p>
+<p><a href="https://promptugal.news/account/">Pay for what you read</a> · <a href="index.md">This page as markdown</a> · Version __VERSION__</p>
+<p>Design variations, for choosing. Code Apache-2.0, text CC BY 4.0.</p>
+</footer>
+</body>
+</html>

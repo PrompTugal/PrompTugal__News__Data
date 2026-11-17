@@ -1,0 +1,62 @@
+{
+ "id": "ipma-uv",
+ "title": "IPMA UV index",
+ "what": "The UV index forecast by place and day.",
+ "publisher": "IPMA, Instituto Português do Mar e da Atmosfera",
+ "owner": "data@PrompTugal.dinis",
+ "collector": "sources/ipma-uv/collect.mjs",
+ "source_home": "https://api.ipma.pt/open-data/forecast/meteorology/uv/uv.json",
+ "reader_page": "https://www.ipma.pt/en/otempo/prev.uv/",
+ "schedule": {
+  "cadence": "hourly",
+  "how": "the Pages workflow (.github/workflows/pages.yml), on a schedule at 17 minutes past each hour, and on every push to dev"
+ },
+ "terms": {
+  "summary": "IPMA: free to copy and use for personal or public use if the use has no profit-making or offensive purpose; always name IPMA as the source.",
+  "page": "https://api.ipma.pt/",
+  "read_at": "2026-11-17",
+  "quote": "O Utilizador pode copiar, importar ou utilizar gratuitamente informações ou símbolos nacionais existentes neste site para uso pessoal ou público desde que dessa utilização não decorram finalidades lucrativas ou ofensivas. O Utilizador deve referir, sempre, a fonte de informação.",
+  "quote_lang": "pt",
+  "republish": "with conditions: attribution to IPMA; no profit-making purpose",
+  "open_question": "Whether a paid reading meter on a PrompTugal site counts as a profit-making purpose under these terms is for Dinis to decide (or to ask IPMA). Until then the data site itself carries no meter."
+ },
+ "api": {
+  "latest": "https://data.promptugal.news/api/v1/ipma-uv/latest.json",
+  "reads": "https://data.promptugal.news/api/v1/ipma-uv/reads.json",
+  "card": "https://data.promptugal.news/api/v1/ipma-uv/card.json",
+  "openapi": "https://data.promptugal.news/api/v1/ipma-uv/openapi.json",
+  "page": "https://data.promptugal.news/sources/ipma-uv/"
+ },
+ "vault": {
+  "id": "mah4euep",
+  "name": "promptugal-data-ipma-uv",
+  "endpoint": "https://dev.send.sgraph.ai",
+  "read_key": "sgit_public_read_6830de445b71230b93b4bf0a83374d57cab8c032406c8c0934bdf7ecbd1095a1",
+  "clone": "sgit clone sgit_public_read_6830de445b71230b93b4bf0a83374d57cab8c032406c8c0934bdf7ecbd1095a1:mah4euep",
+  "layout": "latest/<file> (the bytes as received, overwritten each run), <yyyy>/<mm>/<dd>/<hh>/<file>-<hhmmss>.json (a dated copy only when the bytes changed), latest/reads.json",
+  "note": "Public read key: the source is public, so anyone may read the vault. A read key is derived one way and cannot write. The write key is never in this repository.",
+  "created": "2026-11-17",
+  "by": "data@PrompTugal.dinis"
+ },
+ "split": {
+  "code": [
+   "the collector reads the source and writes latest.json, reads.json and the vault copy",
+   "GitHub Actions runs it every hour and deploys the site",
+   "the build makes the API, the OpenAPI description and the pages"
+  ],
+  "agents": [
+   "data@PrompTugal.dinis (Opus) wrote the collector, this card and the pages on 17 November 2026; data.dev@ and data.design@ (Sonnet) wrote parts of the site build and the design variations"
+  ],
+  "people": [
+   "Dinis Cruz instructs; no person has checked the values yet (not reviewed)"
+  ]
+ },
+ "cost": {
+  "per_run_tokens": 0,
+  "per_run_model_cost_usd": 0,
+  "runner": "GitHub Actions on a public repository: no charge (GitHub's terms for public repositories); about 3 minutes a run for all sources together (measured locally, 17 November 2026)",
+  "build_tokens": "not measured: accountant@'s ledger is not running on this account; to be added when it is",
+  "note": "Code only: no model is called when the data is collected."
+ },
+ "since": "2026-11-17"
+}

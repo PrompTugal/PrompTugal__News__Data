@@ -225,3 +225,7 @@ __marimo__/
 *.pem
 # build output
 _site/
+
+# collected data and vault working copies (data goes to the site and the vaults, never to git)
+/data/
+/vaults/

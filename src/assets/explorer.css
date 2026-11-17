@@ -1,0 +1,7 @@
+/* The API explorer (src/assets/explorer.js) */
+.explorer-op { border-top: 1px solid var(--brand-rule, #d8d4cb); padding: .5rem 0; }
+.explorer-op summary { cursor: pointer; overflow-wrap: anywhere; }
+.explorer-op .verb { color: var(--brand-green, #006600); font-weight: 600; }
+.explorer-op pre { white-space: pre-wrap; overflow-wrap: anywhere; max-height: 28rem; overflow: auto; font-family: var(--font-meta, monospace); font-size: .85rem; padding: .5rem; border: 1px solid var(--brand-rule, #d8d4cb); }
+.explorer-op button { font: inherit; padding: .25rem .75rem; cursor: pointer; }
+#explorer select, #explorer input { font: inherit; max-width: 100%; }

@@ -1,11 +1,15 @@
 {
   "schema": "hub.json (draft)",
   "name": "PrompTugal.news data",
-  "what_it_does": "The data behind PrompTugal.news: a refactor of the storm data site, built by its own agentic team.",
+  "what_it_does": "The raw public data behind every PrompTugal site: one collector (code, no model), one vault, one API and one card per source. No articles.",
   "owner": "AgentiCCells",
-  "team": "factory@AgentiCCells.dinis, instructed by Dinis Cruz",
-  "licence": { "code": "Apache-2.0", "text": "CC BY 4.0" },
+  "team": "data@PrompTugal.dinis (lead, Opus) with Sonnet sub-agents, instructed by Dinis Cruz",
+  "licence": {
+    "code": "Apache-2.0",
+    "text": "CC BY 4.0"
+  },
   "repository": "https://github.com/PrompTugal/PrompTugal__News__Data",
   "live_address": "https://data.promptugal.news",
-  "version_from": "https://data.promptugal.news/version.json"
+  "version_from": "https://data.promptugal.news/version.json",
+  "api": "https://data.promptugal.news/api/v1/index.json"
 }

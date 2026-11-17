@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Now | PrompTugal.news Data</title>
+<meta name="description" content="Live numbers from the open Portuguese weather and flight data: warnings, stations, flights near Faro and fire risk, each with its source and time read.">
+<link rel="stylesheet" href="../../assets/brand/brand-tokens.css">
+<link rel="stylesheet" href="../design.css">
+</head>
+<body>
+<header class="mast"><div class="wrap">
+<a href="../index.html" aria-label="PrompTugal.news data, design choices"><img class="wordmark wm-light" src="../../assets/brand/promptugal-wordmark-light.svg" alt="PrompTugal.news"><img class="wordmark wm-dark" src="../../assets/brand/promptugal-wordmark-dark.svg" alt="" aria-hidden="true"></a>
+<span class="sub">PrompTugal.news · Data</span>
+</div></header>
+<main class="wrap">
+<h1>Now</h1>
+<p class="lede">The latest reading from four sources. Each number carries its source link and the time it was read.</p>
+<div id="notice"></div>
+<section class="big" id="tiles" aria-live="polite"><p>Reading the sources...</p></section>
+<h2>All sources</h2>
+<ul class="list" id="srcs"></ul>
+</main>
+<footer class="wrap foot">
+<p>Not a warning service: follow IPMA and ANEPC.</p>
+<p><a href="https://promptugal.news/account/">Pay for what you read</a> · <a href="index.md">This page as markdown</a> · Version __VERSION__</p>
+<p>Design variation, for choosing. Code Apache-2.0, text CC BY 4.0.</p>
+</footer>
+<script src="../design.js"></script>
+<script>
+var E = PTD.el;
+function lv(counts, classPrefix) {
+  var box = E('p', { 'class': 'detail' });
+  Object.keys(counts).forEach(function (k) {
+    box.appendChild(E('span', { 'class': 'lvl' }, [E('span', { 'class': 'chip c-' + k.replace(/_/g, '-') }), k + ' ' + counts[k]]));
+  });
+  return box;
+}
+function tile(title, figure, detail, row) {
+  return E('article', { 'class': 'tile' }, [E('h3', { text: title }), E('div', { 'class': 'figure', text: figure === null ? 'not read yet' : String(figure) }), detail, PTD.srcLine(row)]);
+}
+PTD.load().then(function (r) {
+  PTD.notice(document.getElementById('notice'), r.catalogue);
+  var w = PTD.find(r.rows, 'ipma-warnings'), o = PTD.find(r.rows, 'ipma-observations'), f = PTD.find(r.rows, 'adsb-faro'), x = PTD.find(r.rows, 'ipma-fire-risk');
+  function c(row) { return row && row.data && row.data.counts || null; }
+  var t = document.getElementById('tiles'); t.textContent = '';
+  var cw = c(w), co = c(o), cf = c(f), cx = c(x);
+  t.appendChild(tile('Active warnings', cw ? cw.active : null, cw ? lv(cw.by_level || {}) : E('p', { 'class': 'detail', text: 'IPMA warnings, yellow, orange and red.' }), w));
+  t.appendChild(tile('Stations reporting', co ? co.reporting : null, E('p', { 'class': 'detail', text: co ? 'of ' + co.stations + ' IPMA surface stations' : 'IPMA surface stations.' }), o));
+  t.appendChild(tile('Airline flights near Faro', cf ? cf.airline : null, E('p', { 'class': 'detail', text: cf ? 'within 40 nautical miles; ' + (cf.other_aircraft || 0) + ' other aircraft' : 'Within 40 nautical miles of Faro airport.' }), f));
+  var up = null; if (cx && cx.today_by_level) { up = 0; Object.keys(cx.today_by_level).forEach(function (k) { if (k !== 'low') up += cx.today_by_level[k]; }); }
+  t.appendChild(tile('Fire risk today: above low', up, cx && cx.today_by_level ? lv(cx.today_by_level) : E('p', { 'class': 'detail', text: 'Municipalities above the lowest class.' }), x));
+  var ul = document.getElementById('srcs');
+  r.rows.forEach(function (row) {
+    var d = row.data, h = PTD.headline(row.meta.id, d), st = PTD.status(d && d.read_at, row.meta.cadence);
+    ul.appendChild(E('li', {}, [
+      E('span', {}, [E('strong', { text: (d && d.title) || row.meta.title || row.meta.id }), ' ', E('span', { 'class': 'status ' + st.cls, text: st.text }), ' ', E('span', { 'class': 'muted', text: h[1] === null ? '' : h[1] + ' ' + h[0] })]),
+      PTD.srcLine(row)
+    ]));
+  });
+});
+</script>
+</body>
+</html>

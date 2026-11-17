@@ -1,0 +1,24 @@
+{
+ "about": "The public halves of the session keys of this repository's agents (same shape as PrompTugal__News__Website board/keys.json). Here and not in board/keys.json because the leak scan allows public keys only in team/keys.json.",
+ "keys": [
+  {
+   "id": "data-promptugal",
+   "label": "data@PrompTugal.dinis (Claude Code cloud session)",
+   "agent": "data@PrompTugal.dinis",
+   "role": "Lead of data.promptugal.news: the raw public data behind every PrompTugal site (collectors, vaults, API, cards)",
+   "how": "Made by the agent in its own session on 17 November 2026 with sgit pki keygen (sgit-ai 0.27.0); only its public half is here, and the key ends with the session.",
+   "fingerprint": "sha256:1ccdf89c4af3a7fe",
+   "signing_fingerprint": "sha256:d13615a8aa8692ec",
+   "added": "2026-11-17",
+   "bundle": {
+    "v": 1,
+    "encrypt": "-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAoGcBtG3ARVrt8REEAMJn\nrap856f5G5K8MraXvooBMBXk82kLAPo+vi7ss7mM9qm9w1LT1VJG13deVrUakaI1\n4BCu15EFeQTZpU/zA5o3sLHGIGJRuuUuHLFw84crDtaFrHLtW+Gz2yYGTI9rcLvT\nyySB9ZwcKULkj3fwp35fMe2GW8fxc55mD/yCbrS0v7g8YAnso25T+MeYijlEOHFW\nl8ldpVHYGQ7inFdw13PAZdk6B/sUDLdBgnqZ1LCrv5EYfDPdcMimhFpdfhWPfUK+\nrp9w6kAHo6KTtGKqyBjs2uUpvyXPiufZ7gosrp1jVefHJ8p3TuUCiq09RmrQ2j82\nvxEwwpG7aDUikumcvZYq03LeAA2zojXEcbtVf1uL8/6pd3x3CGswCtyBr36vgHwH\nrufkR89jHpjg3W3kVUaX7LqdMlXbXTk6gobiljuGSy5Uarwoi07VC/jZuTwvIDPs\nAMK5zxiIm2smM4VGEQkgDgARfbJbRFUSH9dIv/yoSsQDpf/CKqtCy+WUQZVBKvjw\nzol0Dg1VUDngi7f9p/aFI03xWs/LOEEnHuUicIIwdv6egYdA4SSfWBSbFSrhync1\nFCLNGvBOyMDfg6rt+q8rzyt/xZTf1Qloh7rZ0cZBJKJUPjz7AZy0XAjBMC+YLrZi\nNFex+WLr/V1xo3o7PSc9IYsCAwEAAQ==\n-----END PUBLIC KEY-----\n",
+    "sign": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEi/6pEitCFL/IQq/nizW8z/Tznb+s\nbuk6pfe30Q5gzie9ptjU/Y7IE14Glip4susfk5IsmLEWGzkLSB5gXMYgFA==\n-----END PUBLIC KEY-----\n",
+    "label": "data@PrompTugal.dinis session key, 2026-11-17",
+    "fingerprint": "sha256:1ccdf89c4af3a7fe",
+    "signing_fingerprint": "sha256:d13615a8aa8692ec"
+   },
+   "status": "active"
+  }
+ ]
+}

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The ledger | PrompTugal.news Data</title>
+<meta name="description" content="Every source behind PrompTugal.news in one dense table: publisher, last read, status, headline count, terms and links.">
+<link rel="stylesheet" href="../../assets/brand/brand-tokens.css">
+<link rel="stylesheet" href="../design.css">
+</head>
+<body>
+<header class="mast"><div class="wrap">
+<a href="../index.html" aria-label="PrompTugal.news data, design choices"><img class="wordmark wm-light" src="../../assets/brand/promptugal-wordmark-light.svg" alt="PrompTugal.news"><img class="wordmark wm-dark" src="../../assets/brand/promptugal-wordmark-dark.svg" alt="" aria-hidden="true"></a>
+<span class="sub">PrompTugal.news · Data</span>
+</div></header>
+<main class="wrap">
+<h1>The ledger</h1>
+<p class="lede">Every source, one line each. Each figure is read from that source's own latest.json when you open this page.</p>
+<div id="notice"></div>
+<div class="tablewrap"><table class="ledger">
+<thead><tr><th>Source</th><th>Publisher</th><th>Last read</th><th>Status</th><th>Headline</th><th>Terms</th><th>Links</th></tr></thead>
+<tbody id="rows"><tr><td colspan="7">Reading the sources...</td></tr></tbody>
+</table></div>
+<noscript><p class="notice">This table is filled in by a script that reads the JSON.</p></noscript>
+</main>
+<footer class="wrap foot">
+<p>Not a warning service: follow IPMA and ANEPC.</p>
+<p><a href="https://promptugal.news/account/">Pay for what you read</a> · <a href="index.md">This page as markdown</a> · Version __VERSION__</p>
+<p>Design variation, for choosing. Code Apache-2.0, text CC BY 4.0.</p>
+</footer>
+<script src="../design.js"></script>
+<script>
+var E = PTD.el;
+PTD.load().then(function (r) {
+  PTD.notice(document.getElementById('notice'), r.catalogue);
+  var tb = document.getElementById('rows'); tb.textContent = '';
+  r.rows.forEach(function (row) {
+    var m = row.meta, d = row.data, p = d && d.provenance || {};
+    var st = PTD.status(d && d.read_at, m.cadence), h = PTD.headline(m.id, d);
+    var terms = m.terms_summary || p.terms || 'not read yet';
+    var links = [E('a', { href: row.url }, ['latest'])];
+    if (m.card) links.push(E('a', { href: m.card }, ['card']));
+    if (m.openapi) links.push(E('a', { href: m.openapi }, ['OpenAPI']));
+    if (m.page) links.push(E('a', { href: m.page }, ['page']));
+    if (p.page) links.push(E('a', { href: p.page }, ['original']));
+    tb.appendChild(E('tr', {}, [
+      E('td', { 'data-l': 'Source' }, [E('strong', { text: (d && d.title) || m.title || m.id }), E('br'), E('span', { 'class': 'meta muted', text: m.id })]),
+      E('td', { 'data-l': 'Publisher', text: m.publisher || (d ? PTD.hostOf(p.source || '') : 'not read yet') }),
+      E('td', { 'data-l': 'Last read', 'class': 'meta', text: PTD.fmtTime(d && d.read_at) }),
+      E('td', { 'data-l': 'Status' }, [E('span', { 'class': 'status ' + st.cls, text: st.text })]),
+      E('td', { 'data-l': 'Headline', 'class': 'num', text: h[1] === null ? 'not read yet' : h[1] + ' ' + h[0] }),
+      E('td', { 'data-l': 'Terms', 'class': 'terms', text: terms }),
+      E('td', { 'data-l': 'Links', 'class': 'links' }, links)
+    ]));
+  });
+});
+</script>
+</body>
+</html>

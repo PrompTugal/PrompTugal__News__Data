@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>For builders | PrompTugal.news Data</title>
+<meta name="description" content="Stable addresses, copyable curl lines, OpenAPI and Swagger links for every PrompTugal data source, then status.">
+<link rel="stylesheet" href="../../assets/brand/brand-tokens.css">
+<link rel="stylesheet" href="../design.css">
+</head>
+<body>
+<header class="mast"><div class="wrap">
+<a href="../index.html" aria-label="PrompTugal.news data, design choices"><img class="wordmark wm-light" src="../../assets/brand/promptugal-wordmark-light.svg" alt="PrompTugal.news"><img class="wordmark wm-dark" src="../../assets/brand/promptugal-wordmark-dark.svg" alt="" aria-hidden="true"></a>
+<span class="sub">PrompTugal.news · Data</span>
+</div></header>
+<main class="wrap">
+<h1>For builders</h1>
+<p class="lede">Read the data from your own site or agent. Each address is stable, plain JSON, and needs no key. Check the terms on each source before you republish.</p>
+<div id="notice"></div>
+<h2>Catalogue</h2>
+<div class="endpoint"><div class="addr" id="cat-addr"></div><div class="cmd"><code id="cat-cmd"></code><button type="button" id="cat-btn">Copy</button></div>
+<p class="links" id="cat-links"></p></div>
+<h2>Sources</h2>
+<div id="eps"><p>Reading the sources...</p></div>
+</main>
+<footer class="wrap foot">
+<p>Not a warning service: follow IPMA and ANEPC.</p>
+<p><a href="https://promptugal.news/account/">Pay for what you read</a> · <a href="index.md">This page as markdown</a> · Version __VERSION__</p>
+<p>Design variation, for choosing. Code Apache-2.0, text CC BY 4.0.</p>
+</footer>
+<script src="../design.js"></script>
+<script>
+var E = PTD.el, H = PTD.HOST;
+function cmd(text) {
+  var code = E('code', { text: text }), b = E('button', { type: 'button', 'aria-label': 'Copy: ' + text }, ['Copy']);
+  b.addEventListener('click', function () { PTD.copy(b, text); });
+  return E('div', { 'class': 'cmd' }, [code, b]);
+}
+(function () {
+  var u = H + 'index.json';
+  document.getElementById('cat-addr').textContent = u;
+  document.getElementById('cat-cmd').textContent = 'curl -s ' + u;
+  var b = document.getElementById('cat-btn'); b.addEventListener('click', function () { PTD.copy(b, 'curl -s ' + u); });
+  var l = document.getElementById('cat-links');
+  l.appendChild(E('a', { href: PTD.API + 'index.json' }, ['index.json here']));
+  l.appendChild(E('a', { href: '../../api/swagger/' }, ['API explorer']));
+})();
+PTD.load().then(function (r) {
+  PTD.notice(document.getElementById('notice'), r.catalogue);
+  var box = document.getElementById('eps'); box.textContent = '';
+  r.rows.forEach(function (row) {
+    var m = row.meta, d = row.data, st = PTD.status(d && d.read_at, m.cadence), url = H + m.id + '/latest.json';
+    var links = [E('a', { href: row.url }, ['latest.json here'])];
+    if (m.openapi) links.push(E('a', { href: m.openapi }, ['OpenAPI']));
+    links.push(E('a', { href: PTD.API + m.id + '/openapi.json' }, ['OpenAPI JSON']));
+    links.push(E('a', { href: '../../api/swagger/?source=' + m.id }, ['API explorer']));
+    if (m.card) links.push(E('a', { href: m.card }, ['card']));
+    if (m.page) links.push(E('a', { href: m.page }, ['page']));
+    box.appendChild(E('article', { 'class': 'endpoint' }, [
+      E('h3', {}, [E('span', { text: (d && d.title) || m.title || m.id }), E('span', { 'class': 'status ' + st.cls, text: st.text })]),
+      E('div', { 'class': 'addr', text: url }),
+      cmd('curl -s ' + url),
+      E('p', { 'class': 'links meta' }, links),
+      PTD.srcLine(row)
+    ]));
+  });
+});
+</script>
+</body>
+</html>
