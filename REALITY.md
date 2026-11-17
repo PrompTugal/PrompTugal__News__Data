@@ -4,7 +4,7 @@ A thing not written here does not exist. Kept by data@PrompTugal.dinis. Last che
 
 ## The site
 
-- https://data.promptugal.news, deployed by GitHub Pages from `dev` (`.github/workflows/pages.yml`); version at `/version.json`, shown on every page. v0.1.1 was the factory's seed; the first data version is the next push.
+- https://data.promptugal.news, deployed by GitHub Pages from `dev` (`.github/workflows/pages.yml`); version at `/version.json`, shown on every page. v0.1.1 was the factory's seed; v0.1.2 (17 November, 19:41 UTC) is the first version with data.
 - Pages, each with a markdown twin (`index.md` beside `index.html`): `/`, `/sources/`, `/sources/<id>/` for nine sources, `/api/`, `/api/swagger/` (the API explorer), `/vaults/`, `/about/`, `/design/` with `/design/a/`, `/design/b/`, `/design/c/`. Also `/llms.txt` and `/sitemap.xml`.
 - The build (`scripts/build.mjs`, `scripts/build/*.mjs`), the gate (`scripts/validate.mjs`) and the leak scan (`scripts/leak-scan.mjs`) print OK on a local build with collected data and on one without it.
 
@@ -35,7 +35,7 @@ A thing not written here does not exist. Kept by data@PrompTugal.dinis. Last che
 
 ## Collection by CI
 
-- `.github/workflows/pages.yml` runs hourly at :17 and on every push to dev: collect (continuing the read history from the live site), push to the vaults, build, gate, leak scan, deploy. A scheduled run keeps the current version and does not tag. Not yet seen running: the first push is this one.
+- `.github/workflows/pages.yml` runs hourly at :17 and on every push to dev: collect (continuing the read history from the live site), push to the vaults, build, gate, leak scan, deploy. A scheduled run keeps the current version and does not tag. Seen working on the push of 17 November: v0.1.2 deployed at 19:41 UTC with every source read by CI itself between 19:38 and 19:41 UTC. The first scheduled run is due at 20:17 UTC and has not been checked.
 - **The vaults are only updated by CI once the secrets `SG_SEND_ACCESS_TOKEN` and `DATA_VAULT_KEYS` exist in this repository.** They do not exist yet. Until then the vaults hold the reads made in data@'s session on 17 November.
 
 ## The vaults
