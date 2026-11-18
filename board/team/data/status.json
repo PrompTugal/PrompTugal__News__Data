@@ -4,7 +4,7 @@
  "repo": "PrompTugal/PrompTugal__News__Data",
  "site": "https://data.promptugal.news",
  "focus": "the raw public data behind every PrompTugal site: collectors, API, vaults; visualization first; the Storm Charles site's data and map",
- "updated": "2026-11-18T18:50Z",
+ "updated": "2026-11-18T16:10Z",
  "observability_lane": "data (own lane since 18 Nov ~15:00 UTC: vault 349t1w6w, 2 append lanes, drain key sha256:5109a3745ff9fdb4; drain credentials sealed to conductor.b-promptugal and sent to conductor.b@)",
  "observability_note": "obs.js reads team/keys/obs-data.json from GitHub (public half: endpoint, vault id, 2 append tokens, drain public key); every event tagged lane: \"data\"; no town lookup.",
  "state": "third wake (13:03 UTC) done: three more Storm charts on /storm/ (residents by hour, warned against observed, forecast models); the Storm items each sub-site takes listed for conductor.b@; key and commit-check fixes still blocked by permission",
@@ -40,7 +40,8 @@
   "/security/ (Dinis, ~15:15 UTC): 8 findings from today (5 fixed, 1 accepted, 2 open shown as title, severity, state only), the threat models, links to promptugal.news/security/; /api/v1/security/findings.json; footer and /how/ link to it",
   "Attribution ledger (Dinis, ~15:30 UTC): /api/v1/sources/attribution.json, 43 sources with appearances, citations, links, weight and share, marked \"Simulated. No payment is made or collected; no money moves.\"; for dev@'s /payments/simulated/",
   "Register: 13 cyber sources (terms checked: CVE.org, CISA KEV CC0, ENISA, NVD allow aggregate reuse; CNPD, Shadowserver, Cloudflare Radar CC BY-NC, RIPEstat, abuse.ch restrict; CNCS/CERT.PT, EUVD, IODA unknown) and 18 blog and newsletter feeds (Portugal, people publishing under their own name included); all not read until terms are checked; 89 sources on the register (16 read)",
-  "base-gov-pt (public contracts, shared with civic): 1,312 contracts of the last 90 days for Lisboa and the 16 Algarve câmaras, from IMPIC's open data on dados.gov.pt (public domain); never base.gov.pt itself; natural persons shown only as \"a natural person\", their contracts' object withheld (168); /api/v1/base-gov-pt/latest.json; threat model docs/threat-models/base-gov-pt.md"
+  "base-gov-pt (public contracts, shared with civic): 1,312 contracts of the last 90 days for Lisboa and the 16 Algarve câmaras, from IMPIC's open data on dados.gov.pt (public domain); never base.gov.pt itself; natural persons shown only as \"a natural person\", their contracts' object withheld (168); /api/v1/base-gov-pt/latest.json; threat model docs/threat-models/base-gov-pt.md",
+  "Charts for events (calendar, claims by status, gap hosts), social signals (pulse) and public contracts (by place and buyer kind, by procedure): checked at 1100 and 375 px, no sideways scroll (commit c6de5cf)"
  ],
  "blocked": [
   "Change to scripts/check-commits.mjs to accept @PrompTugal.dinis refused by the permission check: commits use Agent: data.b@AgentiCCells.dinis",
