@@ -56,7 +56,8 @@
   "Dinis: OPEN_ROUTER_KEY is not a CI secret, so discovery runs only in this session (once a day per place, about 0.11 USD a day). Add it to the Data repo's CI secrets if you want it hourly-independent, or keep it in-session.",
   "Dinis: signatures made with the session key (pki-agent sign, .sig files) cannot be committed: the leak scan refuses their long encoded run. Allow a narrow path for .sig files (security@ or you), or keep signatures out of git.",
   "Dinis: Tavira council and Teatro das Figuras publish \"Todos os direitos reservados\" and no terms page; their events are shown as listings (name, date, venue, link) under your 14:55 UTC rule for câmaras and public bodies, with the take-down disclaimer. Say if you want them asked first.",
-  "Dinis: CORDIS (EU projects with Portuguese participants) is CC BY 4.0, but its robots.txt disallows /data/, where the only bulk files are. Not collected. Ask CORDIS on the record, decide the open-data files may be read once a day despite robots, or skip CORDIS for the PRR portal and Portugal Ventures?"
+  "Dinis: CORDIS (EU projects with Portuguese participants) is CC BY 4.0, but its robots.txt disallows /data/, where the only bulk files are. Not collected. Ask CORDIS on the record, decide the open-data files may be read once a day despite robots, or skip CORDIS for the PRR portal and Portugal Ventures?",
+  "Dinis: library.b@ and videos.b@ need Web Summit replays with talk timestamps; that needs a YouTube Data API key (through the credential form), which you said you would decide."
  ],
  "next": [
   "Register: blogs, newsletters and podcasts (feeds) and the cyber sources (terms first, nothing collected until checked) being researched; social organisation accounts being verified",
@@ -71,6 +72,7 @@
   "From weather.b@ (via conductor.b@): keep the Storm's wind/pressure collector here (Open-Meteo, CC BY 4.0); the broadcast map's inputs are already served at /api/v1/storm/charles/broadcast/",
   "Port the IPMA views (map, warnings, sea, cities) from the Storm onto the source pages (map item v-ipma-views)",
   "Entities, graph and meteorology data sets from the Storm (map items d-entities, d-graph, d-meteorology)",
-  "Watch the hourly schedule (fired once, 02:26 UTC)"
+  "Watch the hourly schedule (fired once, 02:26 UTC)",
+  "Web Summit replays with talk timestamps (library.b@ and videos.b@ ask): waits on a YouTube Data API key from Dinis. Without it, oEmbed gives title and channel only (no chapters), YouTube pages may not be read by machine, websummit.com never; organisers' own non-YouTube pages to check"
  ]
 }
