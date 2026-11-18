@@ -1,0 +1,49 @@
+{
+ "id": "cams",
+ "title": "Public live cameras: where they are and whether they are up",
+ "what": "Public live cameras in Lisboa and the Algarve from official operators (câmaras, Infraestruturas de Portugal, ports, airports, parks, public agencies, tourism boards) and operators' own public pages, each with operator, place, coordinates, terms and licence link, and an hourly check of whether its operator's page is up, with the history of changes. No frame, picture or stream is fetched, kept or analysed.",
+ "publisher": "Each camera's operator, on its own page (register/cams.json lists them)",
+ "owner": "data.b@PrompTugal.dinis",
+ "collector": "sources/cams/collect.mjs",
+ "source_home": "https://github.com/PrompTugal/PrompTugal__News__Data/blob/dev/register/cams.json",
+ "reader_page": "https://data.promptugal.news/sources/cams/",
+ "schedule": {
+  "cadence": "hourly",
+  "how": "the Pages workflow (.github/workflows/pages.yml) at 17 and 47 minutes past each hour and on every push; one GET of each operator page a run"
+ },
+ "terms": {
+  "summary": "Official cameras of public bodies and operators' own pages only, by link; each camera's terms are recorded in register/cams.json (terms_page, terms_summary, licence_link). We ask for the operator's page only, once an hour, and keep only whether it answered and whether it still carries a player: never a frame, snapshot or stream, no face or plate recognition, no recording. Never an unsecured private camera. Take-down on request. Rules proposed by conductor.b@PrompTugal.dinis at Dinis's word; not reviewed by a person.",
+  "page": "https://github.com/PrompTugal/PrompTugal__News__Data/blob/dev/register/cams-README.md",
+  "read_at": "2026-11-18",
+  "republish": "metadata and status only, with a link to the operator's page; the picture stays on the operator's page",
+  "open_question": "Dinis to confirm the rules for the live cameras (conductor.b@'s proposal) and whether Windy's webcams API may be used under its terms."
+ },
+ "api": {
+  "latest": "https://data.promptugal.news/api/v1/cams/latest.json",
+  "reads": "https://data.promptugal.news/api/v1/cams/reads.json",
+  "card": "https://data.promptugal.news/api/v1/cams/card.json",
+  "openapi": "https://data.promptugal.news/api/v1/cams/openapi.json",
+  "page": "https://data.promptugal.news/sources/cams/"
+ },
+ "vault": null,
+ "split": {
+  "code": [
+   "the collector asks each camera's operator page once a run, records up, down or page up without a player, and keeps the changes",
+   "GitHub Actions runs it and deploys the site"
+  ],
+  "agents": [
+   "data.b.collector@PrompTugal.dinis (Sonnet) researched the cameras and their terms (register/cams.json) on 18 November 2026; data.b@PrompTugal.dinis wrote the collector and this card and reviewed the register"
+  ],
+  "people": [
+   "Dinis Cruz asked for the live cameras site on 18 November 2026 (board/guidance/2026-11-18-people-blogs-cyber-and-simulated-payments.md); no person has checked the cameras or values yet (not reviewed)"
+  ]
+ },
+ "cost": {
+  "per_run_tokens": 0,
+  "per_run_model_cost_usd": 0,
+  "runner": "GitHub Actions on a public repository: no charge; one request per operator page a run",
+  "build_tokens": "not measured",
+  "note": "Code only: no model is called when the data is collected."
+ },
+ "since": "2026-11-18"
+}
