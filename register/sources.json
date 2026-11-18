@@ -2257,6 +2257,855 @@
    "researched_by": "data.b@PrompTugal.dinis",
    "notes": "Embedding waits for the terms.",
    "how": "One GET an hour (sources/tfl-jamcams/collect.mjs); merged into /api/v1/cameras/."
+  },
+  {
+   "id": "tfl-unified-api",
+   "name": "TfL Unified API (open data)",
+   "kind": "open-data API",
+   "url": "https://api.tfl.gov.uk/",
+   "owner": "Transport for London",
+   "places": [
+    "london"
+   ],
+   "country": "GB",
+   "gives": [
+    "line status, arrivals, road disruptions and other open transport data for London"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "The public TfL data (or 'open data') released here is for open data users to use in their own software and services. We encourage software developers to use this data to present customer travel information in innovative ways - providing they adhere to the transport data terms and conditions.",
+    "quote_lang": "en",
+    "page": "https://api-portal.tfl.gov.uk/",
+    "read_at": "2026-11-18",
+    "basis": "API portal home page. The transport data terms and conditions page itself (https://tfl.gov.uk/corporate/terms-and-conditions/transport-data-service) answered 403 'Verification required' to our reader: respected, a gap, not worked around"
+   },
+   "interface": "REST JSON API; the portal asks for a registered account and an app_key (a free 500 requests data plan): that is a key from Dinis, not taken here.",
+   "feed": null,
+   "contact_channel": "https://api.tfl.gov.uk/",
+   "notes": "Gap: TfL's terms page refused our reader (403), so the attribution wording is not confirmed by us from TfL. The brief gives the attribution 'Powered by TfL Open Data'; to be checked against the terms by a person before use. Needs a free key from Dinis before any collection.",
+   "researched_by": "data.b.dev@PrompTugal.dinis (Sonnet), for data.b@",
+   "how": "Not collected yet. Decision by Dinis, 18 Nov 2026 about 22:20 UTC (PrompTugal__News__Website board/guidance/2026-11-18-london.md): London is the first place beyond Portugal; each UK source goes on the register with its terms read first, then is collected to the pipeline standard."
+  },
+  {
+   "id": "adsb-lol-london-airports",
+   "name": "adsb.lol around Heathrow, Gatwick, London City, Stansted and Luton",
+   "kind": "open-data API",
+   "url": "https://api.adsb.lol/",
+   "owner": "adsb.lol (volunteer feeder network)",
+   "places": [
+    "london"
+   ],
+   "country": "GB",
+   "gives": [
+    "airline flights within a radius of each London airport (callsign, type, altitude, speed, heading)"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "the API is available to everyone. license: ODbL 1.0. [...] limits no key: 500 requests/day per IP.",
+    "quote_lang": "en",
+    "page": "https://www.adsb.lol/docs/open-data/api/",
+    "read_at": "2026-11-18",
+    "basis": "adsb.lol docs, 'API' page"
+   },
+   "interface": "REST JSON, point and radius query, as sources/adsb-faro does for Faro.",
+   "feed": null,
+   "contact_channel": "https://api.adsb.lol/",
+   "notes": "ODbL needs attribution and share-alike on a derived database; same privacy rule as adsb-faro (no hex id or position of a private aircraft). Five airports is five requests a run against a 500 a day per IP limit with no key: to be checked before an hourly run.",
+   "researched_by": "data.b.dev@PrompTugal.dinis (Sonnet), for data.b@",
+   "how": "Not collected yet. Decision by Dinis, 18 Nov 2026 about 22:20 UTC (PrompTugal__News__Website board/guidance/2026-11-18-london.md): London is the first place beyond Portugal; each UK source goes on the register with its terms read first, then is collected to the pipeline standard."
+  },
+  {
+   "id": "london-datastore",
+   "name": "London Datastore (Greater London Authority)",
+   "kind": "open-data portal",
+   "url": "https://data.london.gov.uk/",
+   "owner": "Greater London Authority",
+   "places": [
+    "london"
+   ],
+   "country": "GB",
+   "gives": [
+    "datasets on London, each with its own licence"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "May use the data contained in this site for any purpose, providing it does not infringe the terms and conditions. [...] Should, if you extract and re-use any data from this site, explicitly state that the Greater London Authority cannot warrant the quality or accuracy of the data. Must not in any way imply or explicitly state that a third party use or service created using data from this site has the endorsement, affiliation, support or approval of the Greater London Authority",
+    "quote_lang": "en",
+    "page": "https://data.london.gov.uk/about/terms-and-conditions/",
+    "read_at": "2026-11-18",
+    "basis": "site terms and conditions; each dataset also carries its own licence (to be read per dataset)"
+   },
+   "interface": "Catalogue and downloads; datasets to pick later.",
+   "feed": null,
+   "contact_channel": "https://data.london.gov.uk/",
+   "notes": "Per dataset licence still to read before any dataset is collected.",
+   "researched_by": "data.b.dev@PrompTugal.dinis (Sonnet), for data.b@",
+   "how": "Not collected yet. Decision by Dinis, 18 Nov 2026 about 22:20 UTC (PrompTugal__News__Website board/guidance/2026-11-18-london.md): London is the first place beyond Portugal; each UK source goes on the register with its terms read first, then is collected to the pipeline standard."
+  },
+  {
+   "id": "contracts-finder",
+   "name": "Contracts Finder (UK government procurement notices)",
+   "kind": "open-data API",
+   "url": "https://www.contractsfinder.service.gov.uk/",
+   "owner": "Crown Commercial Service / Cabinet Office",
+   "places": [
+    "london"
+   ],
+   "country": "GB",
+   "gives": [
+    "public contract notices, London buyers and suppliers"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "All content is available under the Open Government Licence v3.0 except where otherwise stated.",
+    "quote_lang": "en",
+    "page": "https://www.contractsfinder.service.gov.uk/apidocumentation",
+    "read_at": "2026-11-18",
+    "basis": "page footer of the service and its API documentation page"
+   },
+   "interface": "Published OCDS and notice search API (documented); no key stated on the pages read.",
+   "feed": null,
+   "contact_channel": "https://www.contractsfinder.service.gov.uk/",
+   "notes": "Names of sole traders in notices: apply the same natural-person rule as base-gov-pt.",
+   "researched_by": "data.b.dev@PrompTugal.dinis (Sonnet), for data.b@",
+   "how": "Not collected yet. Decision by Dinis, 18 Nov 2026 about 22:20 UTC (PrompTugal__News__Website board/guidance/2026-11-18-london.md): London is the first place beyond Portugal; each UK source goes on the register with its terms read first, then is collected to the pipeline standard."
+  },
+  {
+   "id": "data-police-uk",
+   "name": "data.police.uk (street-level crime and outcomes)",
+   "kind": "open-data API",
+   "url": "https://data.police.uk/",
+   "owner": "Home Office / police forces of England, Wales and Northern Ireland",
+   "places": [
+    "london"
+   ],
+   "country": "GB",
+   "gives": [
+    "area totals of crime by category and month (Metropolitan Police and City of London Police areas)"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "licence: Open Government Licence v3.0",
+    "quote_lang": "en",
+    "page": "https://data.police.uk/about/",
+    "read_at": "2026-11-18",
+    "basis": "'About' page, dataset descriptions"
+   },
+   "interface": "JSON API (data.police.uk/docs/) and monthly CSV archive.",
+   "feed": null,
+   "contact_channel": "https://data.police.uk/",
+   "notes": "Area totals only, by month and category: no street, no outcome row, no person. The publisher anonymises the data; location points are approximate (see the page's anonymisation table).",
+   "researched_by": "data.b.dev@PrompTugal.dinis (Sonnet), for data.b@",
+   "how": "Not collected yet. Decision by Dinis, 18 Nov 2026 about 22:20 UTC (PrompTugal__News__Website board/guidance/2026-11-18-london.md): London is the first place beyond Portugal; each UK source goes on the register with its terms read first, then is collected to the pipeline standard."
+  },
+  {
+   "id": "laqn",
+   "name": "London Air Quality Network (King's College London, Environmental Research Group)",
+   "kind": "open-data API",
+   "url": "https://www.londonair.org.uk/",
+   "owner": "King's College London Environmental Research Group",
+   "places": [
+    "london"
+   ],
+   "country": "GB",
+   "gives": [
+    "air quality readings and index by monitoring site in London"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "How do you use it? Read the Help documentation. Agreeing to the terms and conditions in the Open Government Licence. Go the Air Quality API and start using the URLs",
+    "quote_lang": "en",
+    "page": "https://www.londonair.org.uk/LondonAir/API/",
+    "read_at": "2026-11-18",
+    "basis": "LondonAir 'Data Feeds' page; the older disclaimer and data-sharing pages returned 404"
+   },
+   "interface": "XML and JSON web API, documented on the page.",
+   "feed": null,
+   "contact_channel": "https://www.londonair.org.uk/",
+   "notes": "The brief asked for the ERG's terms to be checked: the page names the OGL; the ERG's own attribution wording was not found and is to be confirmed.",
+   "researched_by": "data.b.dev@PrompTugal.dinis (Sonnet), for data.b@",
+   "how": "Not collected yet. Decision by Dinis, 18 Nov 2026 about 22:20 UTC (PrompTugal__News__Website board/guidance/2026-11-18-london.md): London is the first place beyond Portugal; each UK source goes on the register with its terms read first, then is collected to the pipeline standard."
+  },
+  {
+   "id": "defra-uk-air",
+   "name": "DEFRA UK-AIR",
+   "kind": "open-data portal",
+   "url": "https://uk-air.defra.gov.uk/",
+   "owner": "Defra and the Devolved Administrations",
+   "places": [
+    "london"
+   ],
+   "country": "GB",
+   "gives": [
+    "national air quality monitoring data, London sites included; daily index and forecast"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "Information on uk-air.defra.gov.uk is published by Defra and the Devolved Administrations under the Open Government Licence (OGL) and subject to the terms described in the \"licence\" or \"constraints\" of the OGL, except where otherwise noted.",
+    "quote_lang": "en",
+    "page": "https://uk-air.defra.gov.uk/data/",
+    "read_at": "2026-11-18",
+    "basis": "data archive page, 'Licencing'; robots.txt disallows /assets/downloads/, /datastore/ and /data-providers/ (to be respected)"
+   },
+   "interface": "Data selector, RSS of latest measurements, Sensor Observation Service.",
+   "feed": null,
+   "contact_channel": "https://uk-air.defra.gov.uk/",
+   "notes": "Attribution wanted: the page gives '(c) Crown 2026 copyright Defra via uk-air.defra.gov.uk, licenced under the Open Government Licence (OGL)'.",
+   "researched_by": "data.b.dev@PrompTugal.dinis (Sonnet), for data.b@",
+   "how": "Not collected yet. Decision by Dinis, 18 Nov 2026 about 22:20 UTC (PrompTugal__News__Website board/guidance/2026-11-18-london.md): London is the first place beyond Portugal; each UK source goes on the register with its terms read first, then is collected to the pipeline standard."
+  },
+  {
+   "id": "ncsc-advisories",
+   "name": "NCSC (UK National Cyber Security Centre) advisories",
+   "kind": "cyber data source",
+   "url": "https://www.ncsc.gov.uk/",
+   "owner": "National Cyber Security Centre",
+   "places": [
+    "london"
+   ],
+   "country": "GB",
+   "gives": [
+    "advisories and alerts: title, date, link"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "Content on the Websites is, unless stated otherwise, subject to Crown copyright. [...] you may use or reuse the content published on the Websites without prior permission but must adhere to and accept the terms of the Open Government Licence (OGL) v3.0. You must acknowledge the source of the content and include a link to the Open Government Licence wherever possible.",
+    "quote_lang": "en",
+    "page": "https://www.ncsc.gov.uk/section/about-this-website/terms-and-conditions",
+    "read_at": "2026-11-18",
+    "basis": "NCSC terms and conditions, 'Use of website content'"
+   },
+   "interface": "RSS feeds exist but the address was not confirmed by us (the guessed feeds page returned 404).",
+   "feed": null,
+   "contact_channel": "https://www.ncsc.gov.uk/",
+   "notes": "Title, date and link only; third-party material on a page is excluded from the OGL.",
+   "researched_by": "data.b.dev@PrompTugal.dinis (Sonnet), for data.b@",
+   "how": "Not collected yet. Decision by Dinis, 18 Nov 2026 about 22:20 UTC (PrompTugal__News__Website board/guidance/2026-11-18-london.md): London is the first place beyond Portugal; each UK source goes on the register with its terms read first, then is collected to the pipeline standard."
+  },
+  {
+   "id": "london-gov-uk-events",
+   "name": "London.gov.uk (Greater London Authority) events and what's on",
+   "kind": "events agenda",
+   "url": "https://www.london.gov.uk/",
+   "owner": "Greater London Authority",
+   "places": [
+    "london"
+   ],
+   "country": "GB",
+   "gives": [
+    "events and consultations run by City Hall"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "The entire contents of the site are protected by copyright law.",
+    "quote_lang": "en",
+    "page": "https://www.london.gov.uk/about-us/terms-and-conditions",
+    "read_at": "2026-11-18",
+    "basis": "GLA website terms, 'copyright material'; a separate OGL statement was not found; robots.txt disallows only /search and webform paths"
+   },
+   "interface": "HTML pages; feed not confirmed.",
+   "feed": null,
+   "contact_channel": "https://www.london.gov.uk/",
+   "notes": "Terms give no reuse licence on the pages read: not collected. A question for the GLA, drafted by outreach@ and sent by a person.",
+   "researched_by": "data.b.dev@PrompTugal.dinis (Sonnet), for data.b@",
+   "how": "Not collected yet. Decision by Dinis, 18 Nov 2026 about 22:20 UTC (PrompTugal__News__Website board/guidance/2026-11-18-london.md): London is the first place beyond Portugal; each UK source goes on the register with its terms read first, then is collected to the pipeline standard."
+  },
+  {
+   "id": "city-of-london-corporation",
+   "name": "City of London Corporation events",
+   "kind": "events agenda",
+   "url": "https://www.cityoflondon.gov.uk/",
+   "owner": "City of London Corporation",
+   "places": [
+    "london"
+   ],
+   "country": "GB",
+   "gives": [
+    "events and venues (Barbican, Guildhall, Tower Bridge) run by the City"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "User-agent: GPTBot Disallow: /",
+    "quote_lang": "en",
+    "page": "https://www.cityoflondon.gov.uk/robots.txt",
+    "read_at": "2026-11-18",
+    "basis": "robots.txt read in part; the terms page guessed (/footer-pages/terms-conditions) returned 404, so the terms are unread"
+   },
+   "interface": "HTML.",
+   "feed": null,
+   "contact_channel": "https://www.cityoflondon.gov.uk/",
+   "notes": "Terms still to find and read. robots.txt blocks named crawlers; the rule for all others was not read in full.",
+   "researched_by": "data.b.dev@PrompTugal.dinis (Sonnet), for data.b@",
+   "how": "Not collected yet. Decision by Dinis, 18 Nov 2026 about 22:20 UTC (PrompTugal__News__Website board/guidance/2026-11-18-london.md): London is the first place beyond Portugal; each UK source goes on the register with its terms read first, then is collected to the pipeline standard."
+  },
+  {
+   "id": "southbank-centre",
+   "name": "Southbank Centre what's on",
+   "kind": "events agenda",
+   "url": "https://www.southbankcentre.co.uk/",
+   "owner": "Southbank Centre",
+   "places": [
+    "london"
+   ],
+   "country": "GB",
+   "gives": [
+    "performances and events: title, date, venue, link"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "403 (the terms page answered 403 to our reader)",
+    "quote_lang": "en",
+    "page": "https://www.southbankcentre.co.uk/terms-conditions",
+    "read_at": "2026-11-18",
+    "basis": "refusal respected and recorded as a gap; robots.txt itself disallows only /admin/* and /plugins/mailin/*"
+   },
+   "interface": "HTML.",
+   "feed": null,
+   "contact_channel": "https://www.southbankcentre.co.uk/",
+   "notes": "Gap: terms unread.",
+   "researched_by": "data.b.dev@PrompTugal.dinis (Sonnet), for data.b@",
+   "how": "Not collected yet. Decision by Dinis, 18 Nov 2026 about 22:20 UTC (PrompTugal__News__Website board/guidance/2026-11-18-london.md): London is the first place beyond Portugal; each UK source goes on the register with its terms read first, then is collected to the pipeline standard."
+  },
+  {
+   "id": "barbican",
+   "name": "Barbican what's on",
+   "kind": "events agenda",
+   "url": "https://www.barbican.org.uk/",
+   "owner": "Barbican Centre (City of London Corporation)",
+   "places": [
+    "london"
+   ],
+   "country": "GB",
+   "gives": [
+    "performances and exhibitions: title, date, link"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "404 (the terms page address tried does not exist)",
+    "quote_lang": "en",
+    "page": "https://www.barbican.org.uk/terms-and-conditions",
+    "read_at": "2026-11-18",
+    "basis": "terms page not found at the address tried; the correct address is to find"
+   },
+   "interface": "HTML.",
+   "feed": null,
+   "contact_channel": "https://www.barbican.org.uk/",
+   "notes": "Gap: terms unread.",
+   "researched_by": "data.b.dev@PrompTugal.dinis (Sonnet), for data.b@",
+   "how": "Not collected yet. Decision by Dinis, 18 Nov 2026 about 22:20 UTC (PrompTugal__News__Website board/guidance/2026-11-18-london.md): London is the first place beyond Portugal; each UK source goes on the register with its terms read first, then is collected to the pipeline standard."
+  },
+  {
+   "id": "camden-council",
+   "name": "Camden Council events and public data",
+   "kind": "events agenda",
+   "url": "https://www.camden.gov.uk/",
+   "owner": "London Borough of Camden",
+   "places": [
+    "london"
+   ],
+   "country": "GB",
+   "gives": [
+    "council events and notices"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "403 (the terms page answered 403 to our reader)",
+    "quote_lang": "en",
+    "page": "https://www.camden.gov.uk/terms-and-conditions",
+    "read_at": "2026-11-18",
+    "basis": "refusal respected and recorded as a gap; robots.txt names a few crawlers and paths"
+   },
+   "interface": "HTML.",
+   "feed": null,
+   "contact_channel": "https://www.camden.gov.uk/",
+   "notes": "Gap: terms unread. Other London boroughs (Hackney, Southwark, Westminster) not yet looked at.",
+   "researched_by": "data.b.dev@PrompTugal.dinis (Sonnet), for data.b@",
+   "how": "Not collected yet. Decision by Dinis, 18 Nov 2026 about 22:20 UTC (PrompTugal__News__Website board/guidance/2026-11-18-london.md): London is the first place beyond Portugal; each UK source goes on the register with its terms read first, then is collected to the pipeline standard."
+  },
+  {
+   "id": "bbc-london",
+   "name": "BBC News London",
+   "kind": "news feed",
+   "url": "https://www.bbc.co.uk/news/england/london",
+   "owner": "BBC",
+   "places": [
+    "london"
+   ],
+   "country": "GB",
+   "gives": [
+    "headlines, links and dates of BBC London news"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "No scraping, crawling, or systematic extraction of content [...] No creating datasets from BBC content [...] No business use without permission",
+    "quote_lang": "en",
+    "page": "https://www.bbc.co.uk/robots.txt",
+    "read_at": "2026-11-18",
+    "basis": "robots.txt header comment, quoted; the BBC's explainers list 'Can I reuse BBC content and services for my business?'"
+   },
+   "interface": "RSS exists but is not to be read by us given this statement.",
+   "feed": null,
+   "contact_channel": "https://www.bbc.co.uk/news/england/london",
+   "notes": "Refused: no collection. A person may ask the BBC through its published channel.",
+   "researched_by": "data.b.dev@PrompTugal.dinis (Sonnet), for data.b@",
+   "how": "Not collected yet. Decision by Dinis, 18 Nov 2026 about 22:20 UTC (PrompTugal__News__Website board/guidance/2026-11-18-london.md): London is the first place beyond Portugal; each UK source goes on the register with its terms read first, then is collected to the pipeline standard."
+  },
+  {
+   "id": "londonist",
+   "name": "Londonist",
+   "kind": "news feed",
+   "url": "https://londonist.com/",
+   "owner": "Londonist",
+   "places": [
+    "london"
+   ],
+   "country": "GB",
+   "gives": [
+    "London articles: title, link, date from the RSS feed"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "Just a moment... Enable JavaScript and cookies to continue (403 bot check on the terms page)",
+    "quote_lang": "en",
+    "page": "https://www.londonist.com/terms-and-conditions",
+    "read_at": "2026-11-18",
+    "basis": "bot check on the terms page respected, a gap; robots.txt 'User-agent: * Disallow:' (nothing disallowed) was readable"
+   },
+   "interface": "RSS at the usual path not tried.",
+   "feed": null,
+   "contact_channel": "https://londonist.com/",
+   "notes": "Gap: terms unread; nothing machine-read.",
+   "researched_by": "data.b.dev@PrompTugal.dinis (Sonnet), for data.b@",
+   "how": "Not collected yet. Decision by Dinis, 18 Nov 2026 about 22:20 UTC (PrompTugal__News__Website board/guidance/2026-11-18-london.md): London is the first place beyond Portugal; each UK source goes on the register with its terms read first, then is collected to the pipeline standard."
+  },
+  {
+   "id": "london-centric",
+   "name": "London Centric",
+   "kind": "news feed",
+   "url": "https://www.londoncentric.media/",
+   "owner": "London Centric",
+   "places": [
+    "london"
+   ],
+   "country": "GB",
+   "gives": [
+    "London journalism: title, link, date from the Substack RSS feed"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "London Centric reports on the people, decisions and - crucially - money that our city runs on.",
+    "quote_lang": "en",
+    "page": "https://www.londoncentric.media/about",
+    "read_at": "2026-11-18",
+    "basis": "about page read; no reuse terms found there; robots.txt blocks GPTBot, ClaudeBot and others by name"
+   },
+   "interface": "Substack RSS (address not tried).",
+   "feed": null,
+   "contact_channel": "https://www.londoncentric.media/",
+   "notes": "Terms unread: Substack's and the publisher's own to be found. Paid and free posts differ.",
+   "researched_by": "data.b.dev@PrompTugal.dinis (Sonnet), for data.b@",
+   "how": "Not collected yet. Decision by Dinis, 18 Nov 2026 about 22:20 UTC (PrompTugal__News__Website board/guidance/2026-11-18-london.md): London is the first place beyond Portugal; each UK source goes on the register with its terms read first, then is collected to the pipeline standard."
+  },
+  {
+   "id": "the-guardian-london",
+   "name": "The Guardian London coverage",
+   "kind": "news feed",
+   "url": "https://www.theguardian.com/uk/london",
+   "owner": "Guardian Media Group",
+   "places": [
+    "london"
+   ],
+   "country": "GB",
+   "gives": [
+    "London headlines: title, link, date"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "Client Challenge. JavaScript is disabled in your browser. Please enable JavaScript to proceed.",
+    "quote_lang": "en",
+    "page": "https://www.theguardian.com/help/feeds",
+    "read_at": "2026-11-18",
+    "basis": "bot challenge on the feeds and terms pages, respected and recorded as a gap"
+   },
+   "interface": "RSS feeds exist but the terms were not readable.",
+   "feed": null,
+   "contact_channel": "https://www.theguardian.com/uk/london",
+   "notes": "Gap: terms unread; nothing machine-read.",
+   "researched_by": "data.b.dev@PrompTugal.dinis (Sonnet), for data.b@",
+   "how": "Not collected yet. Decision by Dinis, 18 Nov 2026 about 22:20 UTC (PrompTugal__News__Website board/guidance/2026-11-18-london.md): London is the first place beyond Portugal; each UK source goes on the register with its terms read first, then is collected to the pipeline standard."
+  },
+  {
+   "id": "on-london",
+   "name": "On London",
+   "kind": "news feed",
+   "url": "https://www.onlondon.co.uk/",
+   "owner": "On London",
+   "places": [
+    "london"
+   ],
+   "country": "GB",
+   "gives": [
+    "London politics and planning: title, link, date from RSS"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "404 (the terms page address tried does not exist); robots.txt disallows only WooCommerce and wp-admin paths",
+    "quote_lang": "en",
+    "page": "https://www.onlondon.co.uk/terms-and-conditions",
+    "read_at": "2026-11-18",
+    "basis": "terms page not found; robots.txt readable"
+   },
+   "interface": "WordPress RSS (address not tried).",
+   "feed": null,
+   "contact_channel": "https://www.onlondon.co.uk/",
+   "notes": "Gap: terms unread.",
+   "researched_by": "data.b.dev@PrompTugal.dinis (Sonnet), for data.b@",
+   "how": "Not collected yet. Decision by Dinis, 18 Nov 2026 about 22:20 UTC (PrompTugal__News__Website board/guidance/2026-11-18-london.md): London is the first place beyond Portugal; each UK source goes on the register with its terms read first, then is collected to the pipeline standard."
+  },
+  {
+   "id": "met-office-datahub",
+   "name": "Met Office Weather DataHub",
+   "kind": "open-data API",
+   "url": "https://datahub.metoffice.gov.uk/",
+   "owner": "Met Office",
+   "places": [
+    "london"
+   ],
+   "country": "GB",
+   "gives": [
+    "site-specific and model forecasts and observations for the UK"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "By ordering products from the Met Office Weather DataHub and clicking \"confirm\", you are agreeing to be bound by the Met Office Weather DataHub Terms and Conditions",
+    "quote_lang": "en",
+    "page": "https://datahub.metoffice.gov.uk/pricing",
+    "read_at": "2026-11-18",
+    "basis": "pricing page; the terms page itself (datahub.metoffice.gov.uk/terms) needs JavaScript and shows no terms text to our reader"
+   },
+   "interface": "REST API with a key; plans by daily request limit (limits not read).",
+   "feed": null,
+   "contact_channel": "https://datahub.metoffice.gov.uk/",
+   "notes": "waiting for a free key from Dinis. Accepting the terms and subscribing is Dinis's act, not ours.",
+   "researched_by": "data.b.dev@PrompTugal.dinis (Sonnet), for data.b@",
+   "how": "Not collected yet. Decision by Dinis, 18 Nov 2026 about 22:20 UTC (PrompTugal__News__Website board/guidance/2026-11-18-london.md): London is the first place beyond Portugal; each UK source goes on the register with its terms read first, then is collected to the pipeline standard."
+  },
+  {
+   "id": "national-rail-darwin",
+   "name": "National Rail Darwin data feeds",
+   "kind": "open-data API",
+   "url": "https://www.nationalrail.co.uk/developers/darwin-data-feeds/",
+   "owner": "National Rail Enquiries / Rail Delivery Group",
+   "places": [
+    "london"
+   ],
+   "country": "GB",
+   "gives": [
+    "real-time train running information"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "Darwin data feeds are openly available to everyone. Registering for access couldn't be easier, simply register via the Rail Data Marketplace",
+    "quote_lang": "en",
+    "page": "https://www.nationalrail.co.uk/developers/darwin-data-feeds/",
+    "read_at": "2026-11-18",
+    "basis": "Darwin data feeds page; the feed list shows 'Licence: NRE OGL' for the LDB webservice"
+   },
+   "interface": "JSON API and push port feeds, through the Rail Data Marketplace.",
+   "feed": null,
+   "contact_channel": "https://www.nationalrail.co.uk/developers/darwin-data-feeds/",
+   "notes": "waiting for a free key from Dinis. The NRE OGL wording was seen only as a label; its full text is to be read when the key arrives.",
+   "researched_by": "data.b.dev@PrompTugal.dinis (Sonnet), for data.b@",
+   "how": "Not collected yet. Decision by Dinis, 18 Nov 2026 about 22:20 UTC (PrompTugal__News__Website board/guidance/2026-11-18-london.md): London is the first place beyond Portugal; each UK source goes on the register with its terms read first, then is collected to the pipeline standard."
+  },
+  {
+   "id": "companies-house",
+   "name": "Companies House API",
+   "kind": "open-data API",
+   "url": "https://developer.company-information.service.gov.uk/",
+   "owner": "Companies House (Department for Business and Trade)",
+   "places": [
+    "london"
+   ],
+   "country": "GB",
+   "gives": [
+    "limited company records: name, number, status, registered office (not people)"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "The Companies House API lets you retrieve information about limited companies (and other companies that fall within the Companies Act 2006). The data returned is live and real-time, and is simple to use and understand.",
+    "quote_lang": "en",
+    "page": "https://developer.company-information.service.gov.uk/",
+    "read_at": "2026-11-18",
+    "basis": "developer hub home page; the terms-of-use address tried returned 404, so the licence and rate limit are unread"
+   },
+   "interface": "REST API with a key.",
+   "feed": null,
+   "contact_channel": "https://developer.company-information.service.gov.uk/",
+   "notes": "waiting for a free key from Dinis. Officer and person-with-control records name private individuals: companies only, no people.",
+   "researched_by": "data.b.dev@PrompTugal.dinis (Sonnet), for data.b@",
+   "how": "Not collected yet. Decision by Dinis, 18 Nov 2026 about 22:20 UTC (PrompTugal__News__Website board/guidance/2026-11-18-london.md): London is the first place beyond Portugal; each UK source goes on the register with its terms read first, then is collected to the pipeline standard."
+  },
+  {
+   "id": "heathrow-airport",
+   "name": "Heathrow Airport flight information and statistics",
+   "kind": "airport data",
+   "url": "https://www.heathrow.com/",
+   "owner": "Heathrow Airport Limited",
+   "places": [
+    "london",
+    "portugal"
+   ],
+   "country": "GB",
+   "gives": [
+    "flights to Faro, Lisbon and Porto: schedules, statistics"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "The contents of the pages contained in this Website may not be distributed, displayed or copied to third parties",
+    "quote_lang": "en",
+    "page": "https://www.heathrow.com/terms-and-conditions",
+    "read_at": "2026-11-18",
+    "basis": "website terms, clauses 5.2 and 5.3"
+   },
+   "interface": "Flight pages and traffic statistics (no open licence found).",
+   "feed": null,
+   "contact_channel": "https://www.heathrow.com/",
+   "notes": "No reuse licence on the pages read; not collected. A request may be drafted by outreach@ and sent by a person.",
+   "researched_by": "data.b.dev@PrompTugal.dinis (Sonnet), for data.b@",
+   "how": "Not collected yet. Decision by Dinis, 18 Nov 2026 about 22:20 UTC (PrompTugal__News__Website board/guidance/2026-11-18-london.md): London is the first place beyond Portugal; each UK source goes on the register with its terms read first, then is collected to the pipeline standard."
+  },
+  {
+   "id": "gatwick-airport",
+   "name": "Gatwick Airport flight information and statistics",
+   "kind": "airport data",
+   "url": "https://www.gatwickairport.com/",
+   "owner": "Gatwick Airport Limited",
+   "places": [
+    "london",
+    "portugal"
+   ],
+   "country": "GB",
+   "gives": [
+    "flights to Faro, Lisbon and Porto: schedules, statistics"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "The contents of the pages on this website may not be distributed, displayed or copied to third parties. This includes but is not limited to \"caching\" or \"mirroring\" any material on this website.",
+    "quote_lang": "en",
+    "page": "https://www.gatwickairport.com/terms-and-conditions.html",
+    "read_at": "2026-11-18",
+    "basis": "website terms, clause 6.3"
+   },
+   "interface": "Flight pages (no open licence found).",
+   "feed": null,
+   "contact_channel": "https://www.gatwickairport.com/",
+   "notes": "Not collected.",
+   "researched_by": "data.b.dev@PrompTugal.dinis (Sonnet), for data.b@",
+   "how": "Not collected yet. Decision by Dinis, 18 Nov 2026 about 22:20 UTC (PrompTugal__News__Website board/guidance/2026-11-18-london.md): London is the first place beyond Portugal; each UK source goes on the register with its terms read first, then is collected to the pipeline standard."
+  },
+  {
+   "id": "stansted-airport",
+   "name": "London Stansted Airport flight information",
+   "kind": "airport data",
+   "url": "https://www.stanstedairport.com/",
+   "owner": "Manchester Airports Group (MAG)",
+   "places": [
+    "london",
+    "portugal"
+   ],
+   "country": "GB",
+   "gives": [
+    "flights to Faro, Lisbon and Porto"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "Website terms and conditions: Sets out the services we offer on our websites, including statements on our responsibilities and limitations.",
+    "quote_lang": "en",
+    "page": "https://www.stanstedairport.com/terms-and-conditions/",
+    "read_at": "2026-11-18",
+    "basis": "index page of terms only; the website terms document itself was not opened, so the reuse position is unread"
+   },
+   "interface": "Flight pages.",
+   "feed": null,
+   "contact_channel": "https://www.stanstedairport.com/",
+   "notes": "Gap: terms partly read.",
+   "researched_by": "data.b.dev@PrompTugal.dinis (Sonnet), for data.b@",
+   "how": "Not collected yet. Decision by Dinis, 18 Nov 2026 about 22:20 UTC (PrompTugal__News__Website board/guidance/2026-11-18-london.md): London is the first place beyond Portugal; each UK source goes on the register with its terms read first, then is collected to the pipeline standard."
+  },
+  {
+   "id": "london-luton-airport",
+   "name": "London Luton Airport flight information",
+   "kind": "airport data",
+   "url": "https://www.london-luton.co.uk/",
+   "owner": "London Luton Airport",
+   "places": [
+    "london",
+    "portugal"
+   ],
+   "country": "GB",
+   "gives": [
+    "flights to Faro, Lisbon and Porto"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "Recv failure: Connection reset by peer (the terms pages tried did not answer our reader)",
+    "quote_lang": "en",
+    "page": "https://www.londonluton.co.uk/terms-and-conditions",
+    "read_at": "2026-11-18",
+    "basis": "no answer; the correct domain and terms page are to find"
+   },
+   "interface": "Flight pages.",
+   "feed": null,
+   "contact_channel": "https://www.london-luton.co.uk/",
+   "notes": "Gap: terms unread.",
+   "researched_by": "data.b.dev@PrompTugal.dinis (Sonnet), for data.b@",
+   "how": "Not collected yet. Decision by Dinis, 18 Nov 2026 about 22:20 UTC (PrompTugal__News__Website board/guidance/2026-11-18-london.md): London is the first place beyond Portugal; each UK source goes on the register with its terms read first, then is collected to the pipeline standard."
+  },
+  {
+   "id": "london-city-airport",
+   "name": "London City Airport flight information",
+   "kind": "airport data",
+   "url": "https://www.londoncityairport.com/",
+   "owner": "London City Airport",
+   "places": [
+    "london",
+    "portugal"
+   ],
+   "country": "GB",
+   "gives": [
+    "flights to Faro, Lisbon and Porto"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "Sorry, you have been blocked. You are unable to access londoncityairport.com",
+    "quote_lang": "en",
+    "page": "https://www.londoncityairport.com/terms-and-conditions",
+    "read_at": "2026-11-18",
+    "basis": "Cloudflare block (403) on the terms and home pages; respected, a gap"
+   },
+   "interface": "Flight pages.",
+   "feed": null,
+   "contact_channel": "https://www.londoncityairport.com/",
+   "notes": "Gap: terms unread; nothing machine-read.",
+   "researched_by": "data.b.dev@PrompTugal.dinis (Sonnet), for data.b@",
+   "how": "Not collected yet. Decision by Dinis, 18 Nov 2026 about 22:20 UTC (PrompTugal__News__Website board/guidance/2026-11-18-london.md): London is the first place beyond Portugal; each UK source goes on the register with its terms read first, then is collected to the pipeline standard."
+  },
+  {
+   "id": "ana-airports-portugal",
+   "name": "ANA Aeroportos de Portugal (Lisbon, Faro, Porto)",
+   "kind": "airport data",
+   "url": "https://www.ana.pt/",
+   "owner": "ANA - Aeroportos de Portugal",
+   "places": [
+    "london",
+    "portugal"
+   ],
+   "country": "PT",
+   "gives": [
+    "flights between London and LIS, FAO and OPO; traffic statistics"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "The fact that ANA makes this information available does not, under any circumstances, grant the user the right to reproduce or distribute this information. Such actions are not permitted without prior consent from ANA or the potential licensors referred to above.",
+    "quote_lang": "en",
+    "page": "https://www.ana.pt/en/terms-and-conditions",
+    "read_at": "2026-11-18",
+    "basis": "website terms, 'Intellectual property rights'; the flights page answered 200 with no readable text (script-built)"
+   },
+   "interface": "Flight pages need a browser; no open data interface found.",
+   "feed": null,
+   "contact_channel": "https://www.ana.pt/",
+   "notes": "Not collected. Routes can come from adsb.lol (see adsb-lol-london-airports).",
+   "researched_by": "data.b.dev@PrompTugal.dinis (Sonnet), for data.b@",
+   "how": "Not collected yet. Decision by Dinis, 18 Nov 2026 about 22:20 UTC (PrompTugal__News__Website board/guidance/2026-11-18-london.md): London is the first place beyond Portugal; each UK source goes on the register with its terms read first, then is collected to the pipeline standard."
+  },
+  {
+   "id": "ine-tourism-by-residence",
+   "name": "INE Portugal: guests and nights by country of residence",
+   "kind": "statistics",
+   "url": "https://www.ine.pt/",
+   "owner": "INE - Statistics Portugal",
+   "places": [
+    "london",
+    "portugal"
+   ],
+   "country": "PT",
+   "gives": [
+    "guests and overnight stays in Portuguese accommodation by country of residence, UK included"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "Recv failure: Connection reset by peer (the terms page did not answer our reader)",
+    "quote_lang": "en",
+    "page": "https://www.ine.pt/xportal/xmain?xpid=INE&xpgid=ine_nota_legal",
+    "read_at": "2026-11-18",
+    "basis": "no answer; the home page was readable but holds no reuse text"
+   },
+   "interface": "Statistical database and an API (not yet looked at).",
+   "feed": null,
+   "contact_channel": "https://www.ine.pt/",
+   "notes": "Gap: terms unread. Official statistics are often reusable with citation; that is an assumption, not read, and not relied on.",
+   "researched_by": "data.b.dev@PrompTugal.dinis (Sonnet), for data.b@",
+   "how": "Not collected yet. Decision by Dinis, 18 Nov 2026 about 22:20 UTC (PrompTugal__News__Website board/guidance/2026-11-18-london.md): London is the first place beyond Portugal; each UK source goes on the register with its terms read first, then is collected to the pipeline standard."
+  },
+  {
+   "id": "turismo-portugal-travelbi",
+   "name": "Turismo de Portugal TravelBI statistics by market",
+   "kind": "statistics",
+   "url": "https://travelbi.turismodeportugal.pt/en/",
+   "owner": "Turismo de Portugal",
+   "places": [
+    "london",
+    "portugal"
+   ],
+   "country": "PT",
+   "gives": [
+    "tourism indicators by origin market, UK included"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "TravelBI by Turismo de Portugal [...] TOURISM OUTLOOK Performance indicators",
+    "quote_lang": "en",
+    "page": "https://travelbi.turismodeportugal.pt/en/",
+    "read_at": "2026-11-18",
+    "basis": "home page read; no licence or terms text found on it"
+   },
+   "interface": "Dashboards; download and API options not yet looked at.",
+   "feed": null,
+   "contact_channel": "https://travelbi.turismodeportugal.pt/en/",
+   "notes": "Gap: licence unread.",
+   "researched_by": "data.b.dev@PrompTugal.dinis (Sonnet), for data.b@",
+   "how": "Not collected yet. Decision by Dinis, 18 Nov 2026 about 22:20 UTC (PrompTugal__News__Website board/guidance/2026-11-18-london.md): London is the first place beyond Portugal; each UK source goes on the register with its terms read first, then is collected to the pipeline standard."
+  },
+  {
+   "id": "ons-travel-trends",
+   "name": "ONS Travel trends (UK residents' visits abroad by country)",
+   "kind": "statistics",
+   "url": "https://www.ons.gov.uk/",
+   "owner": "Office for National Statistics",
+   "places": [
+    "london",
+    "portugal"
+   ],
+   "country": "GB",
+   "gives": [
+    "UK residents' overseas visits, nights and spending by destination country, Portugal included"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "Most content on this website is subject to Crown copyright protection and is published under the Open Government Licence (OGL).",
+    "quote_lang": "en",
+    "page": "https://www.ons.gov.uk/help/termsandconditions",
+    "read_at": "2026-11-18",
+    "basis": "ONS terms and conditions, copyright section; the Travel trends release address was not found (guessed addresses returned 404)"
+   },
+   "interface": "Datasets as downloadable files; address to find.",
+   "feed": null,
+   "contact_channel": "https://www.ons.gov.uk/",
+   "notes": "Some images are exempt from the OGL; statistics are covered. Attribution to ONS with the OGL link.",
+   "researched_by": "data.b.dev@PrompTugal.dinis (Sonnet), for data.b@",
+   "how": "Not collected yet. Decision by Dinis, 18 Nov 2026 about 22:20 UTC (PrompTugal__News__Website board/guidance/2026-11-18-london.md): London is the first place beyond Portugal; each UK source goes on the register with its terms read first, then is collected to the pipeline standard."
   }
  ]
 }

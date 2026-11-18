@@ -157,6 +157,7 @@ For the sites and agents that read data.promptugal.news as a source (the other P
 
 ## Changelog
 
+- 2026-11-18, night: London, the first place beyond Portugal (country GB): \`api/v1/ea-flood/\` (Environment Agency flood warnings and Thames levels, hourly), \`api/v1/open-meteo-london/\` (3-day forecast with 14 days of issued forecasts kept), \`api/v1/tfl-jamcams/\`, and \`api/v1/by-place/now/london.json\`; places gain \`country\` on the register.
 - 2026-11-18, night: \`api/v1/ipma-observations/latest.json\` gains \`daily\` (per UTC day and station: low_c, high_c, rain_mm, hours seen; 14 days) and \`hourly_cache\`; fields only added.
 - 2026-11-18, night: \`api/v1/by-place/now/<place>.json\` gains \`coords\` (lat, lon, Wikidata item, CC0) and a \`lisboa.json\` (IPMA Lisboa station, forecast, UV, Lisbon coast, warnings area LSB); fields only added.
 - 2026-11-18, evening: added \`api/v1/cams/\` (latest, reads, card, openapi) and \`api/v1/cameras/index.json\` with \`api/v1/cameras/<id>/status.json\` (the same cameras in the shape live.promptugal.news reads): public cameras' metadata and status, never a frame or stream.

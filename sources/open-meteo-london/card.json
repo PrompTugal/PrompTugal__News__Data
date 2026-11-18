@@ -1,0 +1,41 @@
+{
+ "id": "open-meteo-london",
+ "title": "London forecast (Open-Meteo)",
+ "what": "Forecast for London from Open-Meteo: hourly temperature, chance and amount of rain, wind and weather code for 3 days, each day's lowest and highest temperature, and every forecast we served kept for 14 days. A model forecast for a grid point, not a warning.",
+ "publisher": "Open-Meteo (OpenMeteo GmbH, Switzerland)",
+ "owner": "data.b@PrompTugal.dinis",
+ "collector": "sources/open-meteo-london/collect.mjs",
+ "country": "GB",
+ "places": ["london"],
+ "place": { "id": "london", "name": "London", "lat": 51.5074, "lon": -0.1278 },
+ "source_home": "https://open-meteo.com/",
+ "reader_page": "https://open-meteo.com/en/docs",
+ "schedule": {
+  "cadence": "every 6 hours",
+  "how": "the Pages workflow (.github/workflows/pages.yml) at 17 minutes past 00, 06, 12 and 18 UTC; one request a run (four a day, far under the 10,000 a day of the free API); every other run keeps the last read, copied from the live site"
+ },
+ "terms": {
+  "summary": "Used under Open-Meteo's free non-commercial terms because data.promptugal.news is free and carries no subscriptions or adverts (Dinis, 18 Nov 2026). Sites that charge must not reuse it without a paid plan; that line is still being settled. Data CC BY 4.0: credit Open-Meteo (link to https://open-meteo.com/) and the models' providers, and say if changed. Not reviewed by a person.",
+  "page": "https://open-meteo.com/en/terms",
+  "read_at": "2026-11-18",
+  "quote": "You may only use the free API services for non-commercial purposes. [...] Private or non-profit websites or apps that do not have subscriptions or advertising. [...] the following examples are considered commercial use: Websites or apps that have subscriptions or display advertisements.",
+  "quote_lang": "en",
+  "republish": "yes under CC BY 4.0 with attribution; the free API is for non-commercial use only, so a reuser who charges needs a paid plan",
+  "open_question": "Dinis's decision (board/team/data/briefs/2026-11-18-dinis-europe-open-data-public-service.md) is that this site is non-commercial; if it ever takes subscriptions or adverts this source must move to a paid plan or the Met Office DataHub. security@PrompTugal.dinis to review."
+ },
+ "api": {
+  "latest": "https://data.promptugal.news/api/v1/open-meteo-london/latest.json",
+  "reads": "https://data.promptugal.news/api/v1/open-meteo-london/reads.json",
+  "card": "https://data.promptugal.news/api/v1/open-meteo-london/card.json",
+  "openapi": "https://data.promptugal.news/api/v1/open-meteo-london/openapi.json",
+  "page": "https://data.promptugal.news/sources/open-meteo-london/"
+ },
+ "vault": null,
+ "split": {
+  "code": ["the collector reads Open-Meteo's forecast API for the point on the card, names the fields, and carries earlier forecasts into history", "GitHub Actions runs it and deploys the site"],
+  "agents": ["data.b.dev@PrompTugal.dinis wrote the collector and card on 18 November 2026 for data.b@ (WS-177)"],
+  "people": ["Dinis Cruz decided London as the first place beyond Portugal (board/guidance/2026-11-18-london.md) and the use of the free non-commercial API (18 November 2026, about 22:40 UTC); no person has checked the values (not reviewed)"]
+ },
+ "cost": { "per_run_tokens": 0, "per_run_model_cost_usd": 0, "runner": "GitHub Actions on a public repository: no charge; one request a run (about 4 KB)", "build_tokens": "not measured", "note": "Code only: no model is called when the data is collected." },
+ "since": "2026-11-18"
+}

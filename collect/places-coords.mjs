@@ -19,6 +19,9 @@ const add = (place, b, dico) => { const c = pt(b.coord.value), id = qid(b.m.valu
     places[place] = { place, name: b.mLabel.value, dico: dico || null, lat: c.lat, lon: c.lon, wikidata: `https://www.wikidata.org/wiki/${id}`, source: `https://www.wikidata.org/wiki/Special:EntityData/${id}.json`, property: 'P625 (coordinate location)', license: { name: 'CC0 1.0', url: 'https://creativecommons.org/publicdomain/zero/1.0/', holder: 'Wikidata contributors' }, read_at: at } }
 for (const b of await ask(q)) add(want.get(b.dico.value), b, b.dico.value)
 const quart = await ask(qq); if (quart[0]) add('quarteira', quart[0], '0808')
-const missing = [...want.values(), 'quarteira'].filter(p => !places[p])
+// places beyond Portugal, by their Wikidata item (Dinis, 18 Nov 2026 ~22:20 UTC: London first)
+const BEYOND = { london: 'Q84' }
+for (const [place, id] of Object.entries(BEYOND)) { const r = await ask(`SELECT ?m ?mLabel ?coord WHERE { VALUES ?m { wd:${id} } ?m wdt:P625 ?coord. SERVICE wikibase:label { bd:serviceParam wikibase:language "en". } }`); if (r[0]) add(place, r[0], null) }
+const missing = [...want.values(), 'quarteira', 'london'].filter(p => !places[p])
 writeJson(path.join(ROOT, 'register/places.json'), { about: 'Each place\'s coordinates (the municipality\'s, or the parish\'s for Quarteira), as Wikidata gives them (P625), matched on the DICO code. A point for maps, not a boundary.', read_at: at, by: 'collect/places-coords.mjs (code, no model; run by data.b@PrompTugal.dinis)', source: SPARQL, license: { name: 'CC0 1.0', url: 'https://creativecommons.org/publicdomain/zero/1.0/', holder: 'Wikidata contributors' }, missing, places })
 console.log(`places: ${Object.keys(places).length} with coordinates; missing: ${missing.join(', ') || 'none'}`)

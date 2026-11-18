@@ -49,7 +49,15 @@ for (const m of [...MAP, LISBOA]) {
         airport: ['faro', 'olhao', 'loule'].includes(m.place) ? airport : null, reads }
     writeJson(path.join(OUT, `${m.place}.json`), out)
 }
+// London (Dinis, 18 Nov 2026 ~22:20 UTC: the first place beyond Portugal), from London's own sources only: the Environment Agency's
+// floods and river levels and Open-Meteo's forecast (free, non-commercial terms; data.promptugal.news is free). No IPMA here.
+{ const ea = D('ea-flood'), om = D('open-meteo-london')
+  writeJson(path.join(OUT, 'london.json'), { place: 'london', country: 'GB', read_at: now(), by: BY, coords: coordsOf('london'),
+    about: 'Now in London, from the Environment Agency (flood warnings and Thames levels, Open Government Licence) and Open-Meteo (forecast, CC BY 4.0), as collected by data.promptugal.news: each value with its source and the time read. Not a warning service: follow the Environment Agency (https://check-for-flooding.service.gov.uk/) and the Met Office.',
+    forecast: om.read_at ? { days: (om.daily || []).map(d => ({ date: d.date, t_min_c: d.temperature_min_c, t_max_c: d.temperature_max_c, rain_mm: d.precipitation_sum_mm, weather_code: d.weather_code })), at: om.read_at, source: 'https://data.promptugal.news/api/v1/open-meteo-london/latest.json', attribution: 'Weather data by Open-Meteo.com', license: { name: 'CC BY 4.0', url: 'https://open-meteo.com/en/licence' } } : null,
+    floods: ea.read_at ? { warnings: (ea.warnings || []).map(w => ({ id: w.id, severity: w.severity, area: w.area || w.description || null, url: w.url })), stations: (ea.stations || []).length, at: ea.read_at, source: 'https://data.promptugal.news/api/v1/ea-flood/latest.json', attribution: 'this uses Environment Agency flood and river level data from the real-time data API (Beta)', license: { name: 'Open Government Licence v3.0', url: 'https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/' } } : null,
+    reads: { 'ea-flood': { url: 'https://data.promptugal.news/api/v1/ea-flood/latest.json', at: ea.read_at || null }, 'open-meteo-london': { url: 'https://data.promptugal.news/api/v1/open-meteo-london/latest.json', at: om.read_at || null } } }) }
 writeJson(path.join(OUT, 'algarve.json'), { place: 'algarve', read_at: now(), by: BY, about: 'Now in the Algarve: IPMA\'s warnings for the Faro district, Faro airport, and each place\'s nearest station. Not a warning service.',
     warnings: { area: 'FAR (the Faro district)', active, page: PAGE.warnings, source: IPMA + 'forecast/warnings/warnings_www.json' }, airport,
     places: MAP.map(m => ({ place: m.place, station: m.station, temp_c: stationOf(m.station_id)?.temp_c ?? null })), reads })
-console.log(`by-place/now: ${MAP.length + 2} files`)
+console.log(`by-place/now: ${MAP.length + 3} files`)

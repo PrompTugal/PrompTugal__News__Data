@@ -1,6 +1,6 @@
 {
  "about": "Each place's coordinates (the municipality's, or the parish's for Quarteira), as Wikidata gives them (P625), matched on the DICO code. A point for maps, not a boundary.",
- "read_at": "2026-11-18T22:05:24Z",
+ "read_at": "2026-11-18T22:33:15Z",
  "by": "collect/places-coords.mjs (code, no model; run by data.b@PrompTugal.dinis)",
  "source": "https://query.wikidata.org/sparql",
  "license": {
@@ -24,7 +24,7 @@
     "url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "holder": "Wikidata contributors"
    },
-   "read_at": "2026-11-18T22:05:24Z"
+   "read_at": "2026-11-18T22:33:15Z"
   },
   "vila-do-bispo": {
    "place": "vila-do-bispo",
@@ -40,7 +40,7 @@
     "url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "holder": "Wikidata contributors"
    },
-   "read_at": "2026-11-18T22:05:24Z"
+   "read_at": "2026-11-18T22:33:15Z"
   },
   "tavira": {
    "place": "tavira",
@@ -56,7 +56,7 @@
     "url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "holder": "Wikidata contributors"
    },
-   "read_at": "2026-11-18T22:05:24Z"
+   "read_at": "2026-11-18T22:33:15Z"
   },
   "albufeira": {
    "place": "albufeira",
@@ -72,7 +72,7 @@
     "url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "holder": "Wikidata contributors"
    },
-   "read_at": "2026-11-18T22:05:24Z"
+   "read_at": "2026-11-18T22:33:15Z"
   },
   "portimao": {
    "place": "portimao",
@@ -88,7 +88,7 @@
     "url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "holder": "Wikidata contributors"
    },
-   "read_at": "2026-11-18T22:05:24Z"
+   "read_at": "2026-11-18T22:33:15Z"
   },
   "loule": {
    "place": "loule",
@@ -104,7 +104,7 @@
     "url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "holder": "Wikidata contributors"
    },
-   "read_at": "2026-11-18T22:05:24Z"
+   "read_at": "2026-11-18T22:33:15Z"
   },
   "lagos": {
    "place": "lagos",
@@ -120,7 +120,7 @@
     "url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "holder": "Wikidata contributors"
    },
-   "read_at": "2026-11-18T22:05:24Z"
+   "read_at": "2026-11-18T22:33:15Z"
   },
   "olhao": {
    "place": "olhao",
@@ -136,7 +136,7 @@
     "url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "holder": "Wikidata contributors"
    },
-   "read_at": "2026-11-18T22:05:24Z"
+   "read_at": "2026-11-18T22:33:15Z"
   },
   "silves": {
    "place": "silves",
@@ -152,7 +152,7 @@
     "url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "holder": "Wikidata contributors"
    },
-   "read_at": "2026-11-18T22:05:24Z"
+   "read_at": "2026-11-18T22:33:15Z"
   },
   "vila-real-de-santo-antonio": {
    "place": "vila-real-de-santo-antonio",
@@ -168,7 +168,7 @@
     "url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "holder": "Wikidata contributors"
    },
-   "read_at": "2026-11-18T22:05:24Z"
+   "read_at": "2026-11-18T22:33:15Z"
   },
   "monchique": {
    "place": "monchique",
@@ -184,7 +184,7 @@
     "url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "holder": "Wikidata contributors"
    },
-   "read_at": "2026-11-18T22:05:24Z"
+   "read_at": "2026-11-18T22:33:15Z"
   },
   "lagoa": {
    "place": "lagoa",
@@ -200,7 +200,7 @@
     "url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "holder": "Wikidata contributors"
    },
-   "read_at": "2026-11-18T22:05:24Z"
+   "read_at": "2026-11-18T22:33:15Z"
   },
   "castro-marim": {
    "place": "castro-marim",
@@ -216,7 +216,7 @@
     "url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "holder": "Wikidata contributors"
    },
-   "read_at": "2026-11-18T22:05:24Z"
+   "read_at": "2026-11-18T22:33:15Z"
   },
   "aljezur": {
    "place": "aljezur",
@@ -232,7 +232,7 @@
     "url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "holder": "Wikidata contributors"
    },
-   "read_at": "2026-11-18T22:05:24Z"
+   "read_at": "2026-11-18T22:33:15Z"
   },
   "sao-bras-de-alportel": {
    "place": "sao-bras-de-alportel",
@@ -248,7 +248,7 @@
     "url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "holder": "Wikidata contributors"
    },
-   "read_at": "2026-11-18T22:05:24Z"
+   "read_at": "2026-11-18T22:33:15Z"
   },
   "alcoutim": {
    "place": "alcoutim",
@@ -264,7 +264,7 @@
     "url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "holder": "Wikidata contributors"
    },
-   "read_at": "2026-11-18T22:05:24Z"
+   "read_at": "2026-11-18T22:33:15Z"
   },
   "lisboa": {
    "place": "lisboa",
@@ -280,7 +280,7 @@
     "url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "holder": "Wikidata contributors"
    },
-   "read_at": "2026-11-18T22:05:24Z"
+   "read_at": "2026-11-18T22:33:15Z"
   },
   "quarteira": {
    "place": "quarteira",
@@ -296,7 +296,23 @@
     "url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "holder": "Wikidata contributors"
    },
-   "read_at": "2026-11-18T22:05:24Z"
+   "read_at": "2026-11-18T22:33:15Z"
+  },
+  "london": {
+   "place": "london",
+   "name": "London",
+   "dico": null,
+   "lat": 51.50722,
+   "lon": -0.1275,
+   "wikidata": "https://www.wikidata.org/wiki/Q84",
+   "source": "https://www.wikidata.org/wiki/Special:EntityData/Q84.json",
+   "property": "P625 (coordinate location)",
+   "license": {
+    "name": "CC0 1.0",
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "holder": "Wikidata contributors"
+   },
+   "read_at": "2026-11-18T22:33:15Z"
   }
  }
 }
