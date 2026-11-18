@@ -536,16 +536,22 @@
    ],
    "status": "not-read",
    "why": {
-    "quote": "could not read the terms: connection reset by peer (www.cm-loule.pt/robots.txt)",
+    "quote": "upstream connect error or disconnect/reset before headers. retried and the latest reset reason: remote reset",
     "quote_lang": "en",
     "page": "https://www.cm-loule.pt/robots.txt",
     "read_at": "2026-11-18",
-    "basis": "could not read"
+    "basis": "could not read (HTTP 503, connection reset, tried twice)"
    },
    "interface": null,
    "contact_channel": null,
    "notes": "Retry later.",
-   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@",
+   "cited_by": {
+    "claims": 1,
+    "places": [
+     "loule"
+    ]
+   }
   },
   {
    "id": "cm-portimao",
@@ -770,6 +776,121 @@
     "basis": "tried by the events collector"
    },
    "researched_by": "data.b.collector@PrompTugal.dinis (events-pt), checked by data.b@"
+  },
+  {
+   "id": "algarvecircle",
+   "name": "Algarve Circle",
+   "kind": "events guide",
+   "url": "https://algarvecircle.com/",
+   "owner": "Algarve Circle (operator not confirmed)",
+   "places": [
+    "algarve"
+   ],
+   "gives": [
+    "events"
+   ],
+   "status": "not-read",
+   "why": {
+    "text": "Its robots.txt request got HTTP 429 and a 'Vercel Security Checkpoint' bot-check page on 18 November 2026. Respected, not worked around; no terms or feed could be read.",
+    "page": "https://algarvecircle.com/robots.txt",
+    "read_at": "2026-11-18",
+    "basis": "bot check (access refused to automated clients)"
+   },
+   "interface": null,
+   "contact_channel": null,
+   "notes": "Retry later; if the check stays, ask the organisation through its own published channel (drafted by outreach@, sent by a person).",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@",
+   "cited_by": {
+    "claims": 47,
+    "places": [
+     "alcoutim",
+     "faro",
+     "lagoa",
+     "lagos",
+     "loule",
+     "monchique",
+     "olhao",
+     "quarteira",
+     "sao-bras-de-alportel",
+     "tavira",
+     "vila-do-bispo",
+     "vila-real-de-santo-antonio"
+    ]
+   }
+  },
+  {
+   "id": "algarveatlas",
+   "name": "Algarve Atlas",
+   "kind": "events guide",
+   "url": "https://www.algarveatlas.com/",
+   "owner": "Algarve Atlas",
+   "places": [
+    "algarve"
+   ],
+   "gives": [
+    "events",
+    "places"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "Dados de eventos e locais são agregados de fontes públicas (câmaras municipais, OpenStreetMap, Google Places) e pertencem aos respetivos titulares. Não podes copiar, revender ou redistribuir o conteúdo da plataforma sem autorização escrita.",
+    "quote_lang": "pt",
+    "page": "https://www.algarveatlas.com/termos",
+    "read_at": "2026-11-18",
+    "basis": "published terms (Termos e Condições, last updated 2026-04-19, clause 6): no copying or redistribution without written authorisation"
+   },
+   "interface": "No public feed found. robots.txt allows / (disallows /admin/, /api/ and account paths); sitemap at /sitemap.xml lists /eventos pages, but the terms forbid copying.",
+   "contact_channel": "https://www.algarveatlas.com/contacto",
+   "notes": "Its event data comes from câmaras municipais, so the original municipal agendas are the sources to read where their own terms allow.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@",
+   "cited_by": {
+    "claims": 34,
+    "places": [
+     "albufeira",
+     "faro",
+     "lagoa",
+     "loule",
+     "monchique",
+     "olhao",
+     "portimao",
+     "sao-bras-de-alportel",
+     "silves",
+     "tavira",
+     "vila-do-bispo"
+    ]
+   }
+  },
+  {
+   "id": "cm-castromarim",
+   "name": "Câmara Municipal de Castro Marim",
+   "kind": "agenda",
+   "url": "https://cm-castromarim.pt/site/",
+   "owner": "Câmara Municipal de Castro Marim",
+   "places": [
+    "castro-marim"
+   ],
+   "gives": [
+    "events",
+    "notices"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "User-agent: *\nCrawl-delay: 10\nDisallow: /site/eventos/\nDisallow: /site/eventos?\nDisallow: /info/eventos/\nDisallow: /info/eventos?",
+    "quote_lang": "en",
+    "page": "https://cm-castromarim.pt/robots.txt",
+    "read_at": "2026-11-18",
+    "basis": "robots.txt (an access rule, not a reuse licence): the events paths are disallowed"
+   },
+   "interface": "HTML agenda at /site/eventos, disallowed by robots.txt; no feed found. No published terms page found on the home page.",
+   "contact_channel": null,
+   "notes": "Not read: the agenda path is disallowed. Ask the câmara through its own published channel if we want it.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@",
+   "cited_by": {
+    "claims": 8,
+    "places": [
+     "castro-marim"
+    ]
+   }
   }
  ]
 }

@@ -1,6 +1,6 @@
 {
  "place": "quarteira",
- "read_at": "2026-11-18T14:19:45Z",
+ "read_at": "2026-11-18T14:23:14Z",
  "discovery": {
   "asked_at": "2026-11-18T14:17:20Z",
   "model": "perplexity/sonar",
@@ -26,13 +26,13 @@
      "url": "https://algarvecircle.com/whats-on/november-2026",
      "host": "algarvecircle.com",
      "readable": false,
-     "register": null
+     "register": "algarvecircle"
     },
     {
      "url": "https://algarvecircle.com/events",
      "host": "algarvecircle.com",
      "readable": false,
-     "register": null
+     "register": "algarvecircle"
     }
    ],
    "status": "details withheld",
