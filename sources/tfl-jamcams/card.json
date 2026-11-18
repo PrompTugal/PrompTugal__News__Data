@@ -1,22 +1,26 @@
 {
  "id": "tfl-jamcams",
  "title": "London traffic cameras (TfL JamCams)",
- "what": "Transport for London's 889 traffic cameras: name, position, view, whether TfL marks each available, and the addresses of TfL's own still image and short clip. No image or clip is fetched or kept. Powered by TfL Open Data.",
+ "what": "Transport for London's 889 traffic cameras: name, position, view, whether TfL marks each available, and the addresses of TfL's own still image and short clip. No image or clip is fetched or kept. Powered by TfL Open Data. Contains OS data © Crown copyright and database rights 2016 and Geomni UK Map data © and database rights [2019].",
  "publisher": "Transport for London (TfL), Unified API",
  "owner": "data.b@PrompTugal.dinis",
  "country": "GB",
  "collector": "sources/tfl-jamcams/collect.mjs",
  "source_home": "https://api.tfl.gov.uk/",
  "reader_page": "https://api-portal.tfl.gov.uk/",
- "schedule": { "cadence": "hourly", "how": "the Pages workflow at 17 and 47 minutes past each hour and on every push; one GET of api.tfl.gov.uk/Place/Type/JamCam (about 1.1 MB), no key" },
+ "schedule": {
+  "cadence": "hourly",
+  "how": "the Pages workflow at 17 and 47 minutes past each hour and on every push; one GET of api.tfl.gov.uk/Place/Type/JamCam (about 1.1 MB), no key"
+ },
  "terms": {
-  "summary": "TfL's API portal allows open data users to use the data in their own services \"providing they adhere to the transport data terms and conditions\". That page (tfl.gov.uk/corporate/terms-and-conditions/transport-data-service) answers our requests with a bot check, so it has not been read by any agent; it is with Dinis. Until it is read: metadata and links only, no embedding, credited \"Powered by TfL Open Data\". Not reviewed by a person.",
-  "page": "https://api-portal.tfl.gov.uk/",
+  "summary": "TfL's Transport Data Service terms (based on the Open Government Licence v2.0 with TfL amendments): free to copy, publish, distribute, transmit and adapt the information and to exploit it commercially and non-commercially. Required: the credit 'Powered by TfL Open Data' and 'Contains OS data © Crown copyright and database rights 2016' and Geomni UK Map data © and database rights [2019]; TfL's design and branding guidelines; at most 500 calls a minute per feed; no suggestion that TfL endorses us. Read by Dinis Cruz in a browser on 18 November 2026 (tfl.gov.uk answers agents with a bot check). Not legal advice.",
+  "page": "https://tfl.gov.uk/corporate/terms-and-conditions/transport-data-service",
   "read_at": "2026-11-18",
-  "quote": "We encourage software developers to use this data to present customer travel information in innovative ways - providing they adhere to the transport data terms and conditions.",
+  "quote": "You are free to: Copy, publish, distribute and transmit the Information; Adapt the Information and Exploit the Information commercially and non-commercially",
   "quote_lang": "en",
-  "republish": "metadata and links to TfL's own images, credited; embedding waits for the terms",
-  "open_question": "Dinis (or a person) to read TfL's transport data terms in a browser: tfl.gov.uk answers our requests with a bot check."
+  "republish": "yes, including embedding TfL's own images and clips loaded from TfL's address, with both credits; commercial use allowed",
+  "commercial_use": "allowed",
+  "read_by": "Dinis Cruz (pasted into data.b@'s session; board/team/data/briefs/2026-11-18-dinis-commercial-line-ine-tfl.md)"
  },
  "api": {
   "latest": "https://data.promptugal.news/api/v1/tfl-jamcams/latest.json",
@@ -27,10 +31,24 @@
  },
  "vault": null,
  "split": {
-  "code": ["the collector reads TfL's camera list once a run and keeps each camera's metadata and media addresses (checked to be on TfL's bucket path)", "the build adds them to /api/v1/cameras/ for live.promptugal.news", "GitHub Actions runs it and deploys the site"],
-  "agents": ["data.b@PrompTugal.dinis wrote the collector and card on 18 November 2026, at live.b@PrompTugal.dinis's request inside Dinis's London decision"],
-  "people": ["Dinis Cruz decided London on 18 November 2026 (board/guidance/2026-11-18-london.md); no person has checked the values (not reviewed)"]
+  "code": [
+   "the collector reads TfL's camera list once a run and keeps each camera's metadata and media addresses (checked to be on TfL's bucket path)",
+   "the build adds them to /api/v1/cameras/ for live.promptugal.news",
+   "GitHub Actions runs it and deploys the site"
+  ],
+  "agents": [
+   "data.b@PrompTugal.dinis wrote the collector and card on 18 November 2026, at live.b@PrompTugal.dinis's request inside Dinis's London decision"
+  ],
+  "people": [
+   "Dinis Cruz decided London on 18 November 2026 (board/guidance/2026-11-18-london.md); no person has checked the values (not reviewed)"
+  ]
  },
- "cost": { "per_run_tokens": 0, "per_run_model_cost_usd": 0, "runner": "GitHub Actions on a public repository: no charge; one request a run", "build_tokens": "not measured", "note": "Code only: no model is called when the data is collected." },
+ "cost": {
+  "per_run_tokens": 0,
+  "per_run_model_cost_usd": 0,
+  "runner": "GitHub Actions on a public repository: no charge; one request a run",
+  "build_tokens": "not measured",
+  "note": "Code only: no model is called when the data is collected."
+ },
  "since": "2026-11-18"
 }

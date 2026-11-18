@@ -24,7 +24,7 @@ export default async function (run) {
     }
     cameras.sort((a, b) => a.id.localeCompare(b.id))
     return { source: run.id, title: run.card.title, read_at: run.started, provenance: run.prov({ api: API }), country: 'GB', place: 'london',
-        about: 'Transport for London\'s traffic cameras: name, position, the way each looks, whether TfL marks it available, and the addresses of TfL\'s own latest still image and short clip (on TfL\'s bucket, s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/). No image or clip is fetched or kept here. Powered by TfL Open Data. Link only until TfL\'s transport data terms are read.',
-        media: { host: HOST, path_prefix: PREFIX }, attribution: 'Powered by TfL Open Data',
+        about: 'Transport for London\'s traffic cameras: name, position, the way each looks, whether TfL marks it available, and the addresses of TfL\'s own latest still image and short clip (on TfL\'s bucket, s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/). No image or clip is fetched or kept here. Powered by TfL Open Data. Embedding allowed under TfL\'s Transport Data Service terms (read 18 Nov 2026), with both credits.',
+        media: { host: HOST, path_prefix: PREFIX }, attribution: 'Powered by TfL Open Data. Contains OS data © Crown copyright and database rights 2016 and Geomni UK Map data © and database rights [2019]',
         counts: { cameras: cameras.length, available: cameras.filter(c => c.available).length, dropped }, cameras }
 }
