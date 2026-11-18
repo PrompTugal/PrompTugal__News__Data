@@ -25,6 +25,8 @@ function forFile(rel) {
   const p = rel.split('/');   // api, v1, ...
   if (p[2] === 'storm') return BY_SOURCE['storm-charles-archive'];
   if (p[2] === 'discovery') return p[3] === 'index.json' ? OURS : PERPLEXITY;
+  // London (and later other places beyond Portugal): its now file is built from its own sources, not IPMA's (bulletins.b@ saw IPMA named there)
+  if (p[2] === 'by-place' && p[4] === 'london.json') return { ...OURS, note: 'Our record; each value keeps its source, under that source\'s licence: the Environment Agency\'s flood data under the Open Government Licence v3.0, Open-Meteo\'s forecast under CC BY 4.0 (each block carries its own).', sources: { 'environment-agency': { name: 'Open Government Licence v3.0', url: 'https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/', holder: 'Environment Agency' }, 'open-meteo': { name: 'CC BY 4.0', url: 'https://open-meteo.com/en/licence', holder: 'Open-Meteo' } } };
   if (p[2] === 'by-place') return { ...OURS, note: 'Our record; each value keeps its source, under that source\'s licence: IPMA values under IPMA\'s terms (https://api.ipma.pt/), adsb.lol counts under ODbL 1.0.', sources: { ipma: IPMA, 'adsb.lol': BY_SOURCE['adsb-faro'] } };
   if (p[2] === 'events' || p[2] === 'sources' || p[2] === 'queries' || p[2] === 'social') return OURS;
   if (BY_SOURCE[p[2]] || p[2]?.startsWith('ipma-')) return /^(latest|manifest)\.json$/.test(p[3]) || p[3] === 'raw' ? licenceOf(p[2]) : OURS;
