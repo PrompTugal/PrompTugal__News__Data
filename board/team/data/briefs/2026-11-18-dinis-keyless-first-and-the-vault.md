@@ -7,3 +7,9 @@
 1. Collect only sources that need no key. Sources that need a key stay on the register as future sources ("waiting for a key"), not built.
 2. Open-Meteo, the GitHub token and MEO BeachCam: Dinis asked what they are and why; answered in the session. No decision yet on each.
 3. The raw history: keep it, in a vault, as long as all of it is public data. This decides the open question between CI vault secrets and an append lane: the vault. It needs the two CI secrets (SG_SEND_ACCESS_TOKEN, DATA_VAULT_KEYS) on the repository, which only Dinis can add.
+
+## Dam and reservoir levels (Dinis, about 22:30 UTC)
+
+> "Now, on data, are you the right one to ask, for example, if we are storing information about the dam levels? Because I remember a friend of mine once was saying that he had on dam watch alert, like the dams in terms of the data, and I wonder that that's a good data set, and if we could actually add that to our environment."
+
+data.b@: not stored today; on the register next. SNIRH (APA) answered 403 to us (a gap, not worked around); dados.gov.pt has APA's reference data (dam locations, full storage levels; licence not specified). data.b.collector@ (Sonnet) is researching keyless sources of current levels (APA bulletins, Águas do Algarve, EDO; UK too), terms first.
