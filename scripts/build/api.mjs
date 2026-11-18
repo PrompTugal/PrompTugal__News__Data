@@ -43,6 +43,15 @@ export function buildApi({ sources, places, version, builtAt, readAt, storm, eve
     // the raw layer: the publisher's own files, as read (data.b@PrompTugal.dinis, 18 Nov 2026)
     for (const r of s.raw || []) writeJson(`${base}/raw/${r.name}`, r.data);
     if ((s.raw || []).length) paths[`/api/v1/${s.id}/raw/{file}`] = jsonOp({ id: opId(`${s.id}_raw`), summary: `${s.card.title}: the publisher's own file, as read`, description: `The bytes ${s.card.publisher.split(',')[0]} served at the latest read, parsed and re-serialised, unprocessed. The address each came from is in reads.json.`, tag: s.id, data: s.raw[0].data, samples: s.raw.map(r => r.data), params: [{ name: 'file', in: 'path', required: true, schema: { type: 'string', enum: s.raw.map(r => r.name) }, example: s.raw[0].name }], exampleName: s.raw[0].name });
+    // one file per place, same shape as latest.json with only that place (civic.b@ asked through conductor.b@, 18 Nov 2026 16:29 UTC: ~1.8 MB per council page)
+    if (s.id === 'base-gov-pt' && s.latest && s.latest.places && typeof s.latest.places === 'object' && !Array.isArray(s.latest.places)) {
+      const ids = Object.keys(s.latest.places).sort(), one = id => ({ ...s.latest, places: { [id]: s.latest.places[id] }, counts: { ...(s.latest.counts || {}), contracts: (s.latest.places[id] || []).length, places: 1, by_place: { [id]: (s.latest.places[id] || []).length } } });
+      for (const id of ids) writeJson(`${base}/places/${id}.json`, one(id));
+      const pIdx = { about: `${s.card.title}: one file per place, each the same shape as latest.json with only that place.`, read_at: s.latest.read_at || null, places: ids.map(id => ({ id, url: `${V}/${s.id}/places/${id}.json`, items: (s.latest.places[id] || []).length })) };
+      writeJson(`${base}/places/index.json`, pIdx);
+      paths[`/api/v1/${s.id}/places/index.json`] = jsonOp({ id: opId(`${s.id}_places_index`), summary: `${s.card.title}: the places that have a file`, description: pIdx.about, tag: s.id, data: pIdx });
+      paths[`/api/v1/${s.id}/places/{place}.json`] = jsonOp({ id: opId(`${s.id}_place`), summary: `${s.card.title}: one place`, description: 'The same shape as latest.json, with only this place in places.', tag: s.id, data: one(ids[0]), params: [{ name: 'place', in: 'path', required: true, schema: { type: 'string', enum: ids }, example: ids[0] }] });
+    }
     if (s.manifest) paths[`/api/v1/${s.id}/manifest.json`] = jsonOp({ id: opId(`${s.id}_manifest`), summary: `${s.card.title}: the manifest`, description: 'Every archived file with its size and sha256.', tag: s.id, data: s.manifest });
     perSource.set(s.id, paths);
     const doc = spec(`${s.card.title}: data.promptugal.news`, `${s.card.what}\n\nPublisher: ${s.card.publisher}. Reuse terms: ${s.card.terms.summary.replace(/\.$/, "")}. Not a warning service: follow IPMA and ANEPC.`, version, paths, { tags: [{ name: s.id, description: s.card.what }], 'x-source': { id: s.id, card: `${V}/${s.id}/card.json`, page: s.card.api.page } });
@@ -93,7 +102,7 @@ export function buildApi({ sources, places, version, builtAt, readAt, storm, eve
     '/api/v1/openapi.json': textOp('get_openapi', 'This document', 'application/json', 'meta'),
     '/api/v1/README.md': textOp('get_readme', 'The stability contract', 'text/markdown', 'meta'),
   };
-  for (const s of sources) Object.assign(paths, Object.fromEntries(Object.entries(perSource.get(s.id)).filter(([p]) => p.endsWith('/latest.json') || p.endsWith('/manifest.json') || p.endsWith('/raw/{file}'))));
+  for (const s of sources) Object.assign(paths, Object.fromEntries(Object.entries(perSource.get(s.id)).filter(([p]) => p.endsWith('/latest.json') || p.includes('/places/') || p.endsWith('/manifest.json') || p.endsWith('/raw/{file}'))));
   if (storm) { paths['/api/v1/storm/charles/index.json'] = jsonOp({ id: 'get_storm_charles_index', summary: 'Storm Charles: every file moved from the Storm site', description: storm.index.about, tag: 'storm', data: storm.index }); paths['/api/v1/storm/openapi.json'] = textOp('get_storm_openapi', 'Storm Charles: OpenAPI for every moved file', 'application/json', 'storm'); }
   const srcParam = (list) => ({ name: 'source', in: 'path', required: true, schema: { type: 'string', enum: list }, example: list[0] });
   const r0 = sources.find(s => s.reads);
@@ -144,6 +153,7 @@ For the sites and agents that read data.promptugal.news as a source (the other P
 
 ## Changelog
 
+- 2026-11-18, evening: added \`api/v1/base-gov-pt/places/index.json\` and \`api/v1/base-gov-pt/places/<place>.json\`: the same shape as latest.json with one place only (civic.promptugal.news asked: a council page no longer needs the whole 1.8 MB).
 - 2026-11-18, evening: added \`api/v1/sources/attribution.json\` (the attribution ledger per source, for the SIMULATED payouts: no money moves).
 - 2026-11-18, evening: added \`api/v1/social/latest.json\` (as \`api/v1/<source>/\`) and \`api/v1/social/by-place/<place>.json\`: links to organisations\' public posts with metadata, never the text.
 - 2026-11-18, later: added and promised stable for v1 (events.promptugal.news reads them): \`api/v1/events/by-place/index.json\` and \`<place>.json\` (\`events[]\`, each a schema.org Event with \`source\`, \`read_at\`, \`place\`, \`license\`), \`api/v1/events/claims/by-place/index.json\` and \`<place>.json\` (\`claims[]\`: Event plus \`status\` confirmed | to confirm at a readable source | details withheld, \`evidence[]\` {url, host, readable, register}, \`details_from\`, \`license\`), \`api/v1/events/past/<place>.json\`, \`api/v1/sources/index.json\`, \`api/v1/sources/<id>.json\` and \`api/v1/sources/gaps.json\` (the register), \`api/v1/discovery/index.json\` and \`api/v1/discovery/by-place/<place>/<date>.json\`. Every JSON file has a top-level \`license\` {name, url, holder}.
