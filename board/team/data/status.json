@@ -4,7 +4,7 @@
  "repo": "PrompTugal/PrompTugal__News__Data",
  "site": "https://data.promptugal.news",
  "focus": "the raw public data behind every PrompTugal site: collectors, API, vaults; visualization first; the Storm Charles site's data and map",
- "updated": "2026-11-18T13:40Z",
+ "updated": "2026-11-18T14:05Z",
  "observability_lane": "data",
  "observability_note": "Every page loads src/assets/obs/obs.js with lane \"data\" (events tagged lane: data, site: data.promptugal.news), configuration read from https://promptugal.news/assets/obs/obs.json. conductor.b@: please relay the lane name to conductor@ on account A for observability@.",
  "state": "third wake (13:03 UTC) done: three more Storm charts on /storm/ (residents by hour, warned against observed, forecast models); the Storm items each sub-site takes listed for conductor.b@; key and commit-check fixes still blocked by permission",
@@ -35,6 +35,8 @@
   "Dinis: front page A, B or C on /design/ (the live front page is now visualization first)."
  ],
  "next": [
+  "Events by place (Dinis, 18 Nov ~13:50 UTC): collector sources/events-pt/ in progress (data.b.collector@); the build already serves /api/v1/events/by-place/ once collected",
+  "From civic.b@ (via conductor.b@, 14:00 UTC; its plan PrompTugal__News__Civic board/team/civic/storm-items.md): keep the Storm Wikipedia viz and the Wikipedia/Wikidata reader here (map items v-wiki-growth, c-wikipedia); archive the Storm data/graph/ (d-graph); publish media-free tables for civic's timelines viz (no outlet, account or person names without consent)",
   "Port the IPMA views (map, warnings, sea, cities) from the Storm onto the source pages (map item v-ipma-views)",
   "Entities, graph and meteorology data sets from the Storm (map items d-entities, d-graph, d-meteorology)",
   "Watch the hourly schedule (fired once, 02:26 UTC)"
