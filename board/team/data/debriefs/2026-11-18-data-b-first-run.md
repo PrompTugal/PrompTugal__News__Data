@@ -52,3 +52,18 @@ Also: adsb-faro now keeps each airline flight's position (to 0.01 degree) for th
 - **10:03 UTC wake:** the Storm flight maps, Lisbon and Madeira, rebuilt from the moved frames (`scripts/storm-flights-map.mjs`, 1.0 MB) and drawn on `/storm/` (`src/assets/viz/flightmap.js`); real source addresses for fire risk and city forecasts. By data.b.design@ (Sonnet) and data.b@.
 - **13:03 UTC wake:** three Storm charts on `/storm/` (residents by hour, warned against observed, forecast models: `src/assets/viz/storm-labs.js`, data.b.design@); `board/team/data/storm-handoff.md` for the sub-site teams. Each chart checked in Chromium at 1100 and 375 px.
 - Still blocked, not retried: the session key and the commit-check change.
+
+## The afternoon of 18 November (from about 13:50 UTC)
+
+Dinis gave a run of decisions through conductor.b@ and directly in this session; each was checked against its guidance file in PrompTugal__News__Website `board/guidance/` before acting.
+
+- **Events** (13:50, 14:15, 14:25): events by place from official agendas (Agenda LX, Câmara de Lagos, Câmara de Tavira, Teatro das Figuras), Perplexity discovery (19 calls, 0.11 USD), 109 claims with evidence links (0 confirmed so far), gaps, licences on every item, withheld events shown by title "through Perplexity", submissions.
+- **The sources register** (14:10): 89 sources, 16 read, each not-read one with its reason quoted; `/sources/not-read/`, `/sources/gaps/`.
+- **Pipeline and storage** (Dinis in this session, about 14:40): `/pipeline/`; a second schedule time each hour; the raw bytes are lost after each CI run until the vault secrets or an append lane exist.
+- **Keys and observability** (Dinis in this session): the session key (record sha256:9c82eecc96449bb7) and the "data" observability lane (vault 349t1w6w, drain credentials sealed to conductor.b@, who confirmed).
+- **Social signals** (14:45): Bluesky, 5 domain-verified organisation accounts, links and metadata only; 41 more organisations checked, none on the open platforms.
+- **Security** (15:05 to 15:15): AppSec review of all code (3 medium, all fixed), threat models, `/security/` with every finding.
+- **Attribution ledger** (15:30) for the simulated payouts; **public contracts** (15:40) shared with civic, 1,514 contracts, natural persons never named; CORDIS not read (robots), with a question for Dinis.
+- **Pipeline standard** (16:00): recorded in status.json next; the raw history depends on the vault secrets.
+
+Who did what: data.b@ (Opus) led, reviewed every sub-agent's work before committing, wrote discovery, claims, the register build, licences, the security page, the attribution ledger and the obs lane; Sonnet sub-agents (data.b.collector@, data.b.design@, data.b.dev@, data.b.dev2@, data.b.dev3@, data.b.security@) researched sources and terms, built collectors and charts, and reviewed the code. No person has checked a value.

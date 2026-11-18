@@ -4,7 +4,7 @@
  "repo": "PrompTugal/PrompTugal__News__Data",
  "site": "https://data.promptugal.news",
  "focus": "the raw public data behind every PrompTugal site: collectors, API, vaults; visualization first; the Storm Charles site's data and map",
- "updated": "2026-11-18T18:30Z",
+ "updated": "2026-11-18T18:50Z",
  "observability_lane": "data (own lane since 18 Nov ~15:00 UTC: vault 349t1w6w, 2 append lanes, drain key sha256:5109a3745ff9fdb4; drain credentials sealed to conductor.b-promptugal and sent to conductor.b@)",
  "observability_note": "obs.js reads team/keys/obs-data.json from GitHub (public half: endpoint, vault id, 2 append tokens, drain public key); every event tagged lane: \"data\"; no town lookup.",
  "state": "third wake (13:03 UTC) done: three more Storm charts on /storm/ (residents by hour, warned against observed, forecast models); the Storm items each sub-site takes listed for conductor.b@; key and commit-check fixes still blocked by permission",
@@ -63,22 +63,16 @@
   "Dinis: ask Shadowserver, Cloudflare (Radar is CC BY-NC), RIPE NCC (RIPEstat bars commercial derivatives) and CNPD (commercial use excluded) for written permission on the record? outreach@ drafts, you send."
  ],
  "next": [
-  "base-gov-pt: add civic's 15 municipal companies (its data/municipal-companies.json); collect/lib.mjs get() follows redirects to any host: limit (from the base-gov-pt threat model)",
-  "Blogs and newsletters collector: read each site's terms page first, then the 18 feeds (title, byline as published, date, link; no full text); no podcast feed found yet",
-  "Cyber: security@ reviews the published limits; then collectors for the sources whose terms allow aggregate reuse (CISA KEV, CVE.org, NVD after its API terms, ENISA)",
-  "Register: blogs, newsletters and podcasts (feeds) and the cyber sources (terms first, nothing collected until checked) being researched; social organisation accounts being verified",
+  "Pipeline standard (Dinis, 18 Nov ~16:00 UTC, board/guidance/2026-11-18-the-pipeline-standard-and-the-fact-checker.md): for every source, raw kept as received and timestamped, never overwritten; JSON; a visualisation; the analysis; a home page per source; OpenAPI per source and a Swagger of Swaggers (/api/swagger/ lists them all already). Gap: raw history needs the vault secrets or an append lane (Dinis); the newer sources (events-pt, social, base-gov-pt, discovery) need their visualisation and analysis layers on /sources/<id>/",
+  "Read library.promptugal.news/api/v1/requests/ at every wake once it exists; answer by fixing or saying why not",
+  "Universities: research feeds for a page per university, the University of the Algarve first (news feed, RCAAP, arXiv by affiliation, public academic roles) for library.b@",
+  "Wikipedia and Wikidata as the reference layer for library.b@ (entity links, changes through their APIs)",
+  "YouTube until Dinis's key: Perplexity for listings and chapters where it gives them (discovery, linked)",
+  "Cyber: aggregates and totals only, a pulse over time, for cyber.promptugal.news; after security@ reviews the limits: CISA KEV, CVE.org, ENISA, NVD (after its API terms)",
+  "Blogs and newsletters collector (18 feeds): terms pages first; title, byline, date, link only",
+  "GitHub collector (github-pt): in a sub-agent's worktree; review and merge",
   "Threat models still to write: events-pt, ipma-*, adsb-faro, meteoalarm-pt, the Pages workflow, the obs lane, the Storm build; inner passes (conductor, security pre, work, security post incl. AppSec, conductor) from the next wake",
   "Discovery daily (in this session; CI has no key): confirm claims at readable sources; add the top gap hosts (algarvecircle.com, algarveatlas.com, cm-castromarim.pt, theportugalnews.com, ...) to the register with their terms read",
-  "Social: confirm candidate accounts a person can verify (websummit.bsky.social, camaralisboa.bsky.social, jornalexpresso.bsky.social, tribunaexpresso.bsky.social); find câmaras' and venues' official accounts linked from their own sites; Perplexity social pass in discovery",
-  "Register: read the terms pages (not only robots.txt) of the Portuguese public bodies; re-try ANA, APS (right host), CCDR Algarve, ANSR, Visit Algarve, Faro and Loulé; find each organisation's own published press or partnerships page for the requests on the record (outreach@ drafts, a person sends); then per-place query sets at /api/v1/queries/by-place/<place>.json on readable sources only",
-  "Events: read the councils' own agendas that travel.b@ found (its 24 events), for the empty Algarve places",
-  "Events: more Algarve câmaras (Faro, Loulé, Silves reset; Tavira, Portimão, Albufeira HTML or PDF agendas)",
-  "From civic.b@ (via conductor.b@, 14:00 UTC; its plan PrompTugal__News__Civic board/team/civic/storm-items.md): keep the Storm Wikipedia viz and the Wikipedia/Wikidata reader here (map items v-wiki-growth, c-wikipedia); archive the Storm data/graph/ (d-graph); publish media-free tables for civic's timelines viz (no outlet, account or person names without consent)",
-  "From travel.b@ (via conductor.b@, 14:00 UTC; Travel repo board/team/travel/storm-plan.md): a live METAR crosswind feed for Faro (LPFR) under /api/v1/ (METAR is public domain; read the publisher's terms first); departures per airport from adsb.lol, Faro first; ANA cancellations only if ANA's terms allow machine reading (check first, record a refusal as a gap); keep the Storm's METAR crosswind collector and open transport reader here; travel's 24 council-agenda events as a seed for events-pt (read the councils' own sources, not travel's copy)",
-  "From weather.b@ (via conductor.b@): keep the Storm's wind/pressure collector here (Open-Meteo, CC BY 4.0); the broadcast map's inputs are already served at /api/v1/storm/charles/broadcast/",
-  "Port the IPMA views (map, warnings, sea, cities) from the Storm onto the source pages (map item v-ipma-views)",
-  "Entities, graph and meteorology data sets from the Storm (map items d-entities, d-graph, d-meteorology)",
-  "Watch the hourly schedule (fired once, 02:26 UTC)",
-  "Web Summit replays with talk timestamps (library.b@ and videos.b@ ask): waits on a YouTube Data API key from Dinis. Without it, oEmbed gives title and channel only (no chapters), YouTube pages may not be read by machine, websummit.com never; organisers' own non-YouTube pages to check"
+  "Watch the hourly schedule (fired once, 02:26 UTC)"
  ]
 }
