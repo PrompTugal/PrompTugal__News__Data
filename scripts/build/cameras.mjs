@@ -24,12 +24,27 @@ export function buildCameras(sources) {
       registered_at: c.history && c.history[0] ? c.history[0].at : c.checked_at, by: 'data.b@PrompTugal.dinis (register/cams.json, researched by data.b.collector@)',
     };
   });
+  // TfL's JamCams (sources/tfl-jamcams): link only until TfL's transport data terms are read; status in the index only (about 900
+  // cameras, no status file each, as live.b@ asked); the media host is shared by every AWS customer, so the path prefix is given too.
+  const J = (sources.find(x => x.id === 'tfl-jamcams') || {}).latest;
+  const TERMS_TFL = 'https://tfl.gov.uk/corporate/terms-and-conditions/transport-data-service';
+  for (const c of (J && Array.isArray(J.cameras) ? J.cameras : [])) cameras.push({
+    id: `london-tfl-${c.id.replace(/^JamCams_/, '').replace('.', '-')}`, source_id: c.id, name: c.name, place: 'london', country: 'GB', lat: c.lat, lon: c.lon, coords_source: 'operator (TfL Unified API)',
+    view: c.view, operator: { name: 'Transport for London (TfL)', kind: 'ip', kind_detail: 'transport authority', url: 'https://tfl.gov.uk/' },
+    page_url: 'https://tfl.gov.uk/traffic/status/',
+    embed: { allowed: false, url: c.video_url || c.image_url, image_url: c.image_url, video_url: c.video_url, host: J.media && J.media.host, path_prefix: J.media && J.media.path_prefix, how: c.video_url ? 'video' : 'image', note: 'Not embeddable until TfL\'s transport data terms are read (tfl.gov.uk answers us with a bot check).' },
+    terms: { url: TERMS_TFL, summary: 'TfL\'s API portal: use allowed providing users adhere to the transport data terms and conditions; that page is not yet read (bot check).', checked_at: null, embedding: 'unclear' },
+    license: { name: "TfL's transport data terms (Powered by TfL Open Data)", url: TERMS_TFL, holder: 'Transport for London' }, credit: 'Powered by TfL Open Data',
+    status: { state: c.available ? 'up' : 'down', detail: c.available ? 'available (TfL)' : 'not available (TfL)', checked_at: J.read_at, http_status: null, since: c.modified },
+    status_history: null,
+    provenance: { listed_from: 'https://api.tfl.gov.uk/Place/Type/JamCam', listed_by: 'sources/tfl-jamcams/collect.mjs (code, no model)', listed_at: J.read_at, status_how: "TfL's own 'available' flag in the API answer; no image or clip fetched", licence: TERMS_TFL },
+    registered_at: J.read_at, by: 'data.b@PrompTugal.dinis (sources/tfl-jamcams)' });
   const statuses = list.map(c => ({ id: c.id, about: 'Changes of state only (up, down, page up without a player), from the operator\'s page; no frame or stream is fetched.', history: (c.history || []).map(h => ({ at: h.at, state: h.state === 'down' ? 'down' : h.state === 'up' ? 'up' : 'unknown', detail: h.state, http_status: h.http })) }));
   for (const st of statuses) writeJson(`api/v1/cameras/${st.id}/status.json`, st);
   const byPlace = {}; for (const c of cameras) (byPlace[c.place] ||= []).push(c.id);
   const index = {
-    about: 'Public live cameras in the places we cover, from public bodies and operators\' own pages only: metadata and status, never a frame, snapshot or stream. Watch each on its operator\'s page. Embedding is "allowed" only where the operator\'s terms say so and the embed is on its own host; otherwise link out. Same data as /api/v1/cams/latest.json.',
-    read_at: L ? L.read_at : null, counts: { cameras: cameras.length, places: Object.keys(byPlace).length }, by_place: byPlace, cameras,
+    about: 'Public live cameras in the places we cover, from public bodies and operators\' own pages only: metadata and status, never a frame, snapshot or stream. Watch each on its operator\'s page. Embedding is "allowed" only where the operator\'s terms say so and the embed is on its own host; otherwise link out. Same data as /api/v1/cams/latest.json and /api/v1/tfl-jamcams/latest.json.',
+    read_at: L ? L.read_at : null, counts: { cameras: cameras.length, places: Object.keys(byPlace).length, embeddable: cameras.filter(c => c.embed && c.embed.allowed === true).length }, by_place: byPlace, cameras,
     not_listed: (L && L.not_listed) || [], gaps: (L && L.gaps) || [], source: 'https://data.promptugal.news/api/v1/cams/latest.json', openapi: 'https://data.promptugal.news/api/v1/openapi.json',
   };
   writeJson('api/v1/cameras/index.json', index);

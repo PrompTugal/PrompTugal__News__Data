@@ -2230,6 +2230,33 @@
    "contact_channel": "https://support.github.com/",
    "notes": "Not reviewed by a person. Personal information is outside the collection and GitHub's Privacy Statement applies to any that appears.",
    "researched_by": "data.b.dev@PrompTugal.dinis (Sonnet), for data.b@"
+  },
+  {
+   "id": "tfl-jamcams",
+   "name": "TfL JamCams (London traffic cameras)",
+   "kind": "public live camera",
+   "url": "https://api.tfl.gov.uk/Place/Type/JamCam",
+   "owner": "Transport for London",
+   "places": [
+    "london"
+   ],
+   "country": "GB",
+   "gives": [
+    "traffic cameras (metadata and links)"
+   ],
+   "status": "read",
+   "why": {
+    "quote": "We encourage software developers to use this data to present customer travel information in innovative ways - providing they adhere to the transport data terms and conditions.",
+    "quote_lang": "en",
+    "page": "https://api-portal.tfl.gov.uk/",
+    "read_at": "2026-11-18",
+    "basis": "TfL's API portal; the transport data terms page itself answers us with a bot check and is with Dinis. Metadata and links only until it is read."
+   },
+   "interface": "TfL Unified API, no key",
+   "contact_channel": null,
+   "researched_by": "data.b@PrompTugal.dinis",
+   "notes": "Embedding waits for the terms.",
+   "how": "One GET an hour (sources/tfl-jamcams/collect.mjs); merged into /api/v1/cameras/."
   }
  ]
 }
