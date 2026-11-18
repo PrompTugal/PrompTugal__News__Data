@@ -1,0 +1,49 @@
+{
+ "id": "eurostat-tourism",
+ "title": "Tourist nights by where guests live: Portugal, Algarve, Lisbon, London (Eurostat)",
+ "what": "Nights spent at tourist accommodation (hotels, short-stay accommodation and camping) by the guest's residence, for Portugal, the Algarve (PT15), the Lisbon metropolitan area (PT17) and London (UKI): annual for the last 10 years and monthly for Portugal for 36 months. Regions are split into domestic, foreign and total guests; Portugal as a whole is also split by named country (United Kingdom, Germany, France, Spain, the Netherlands, the United States). Lisbon is PT17 to 2022 and Grande Lisboa (PT1A) plus Península de Setúbal (PT1B) from 2023, as Eurostat changed the regions. Eurostat's London data stops in 2016.",
+ "publisher": "Eurostat (European Commission)",
+ "owner": "data.b@PrompTugal.dinis",
+ "collector": "sources/eurostat-tourism/collect.mjs",
+ "country": "EU",
+ "places": ["europe", "portugal", "algarve", "lisboa", "london"],
+ "source_home": "https://ec.europa.eu/eurostat/web/tourism/database",
+ "reader_page": "https://ec.europa.eu/eurostat/databrowser/view/tour_occ_nin2/default/table",
+ "datasets": ["tour_occ_nin2", "tour_occ_ninraw", "tour_occ_nim"],
+ "schedule": {
+  "cadence": "every 6 hours",
+  "how": "the Pages workflow (.github/workflows/pages.yml) at 00, 06, 12 and 18 UTC; three requests a run, 2.5 seconds apart (about 14 KB in all); every other run keeps the last read, copied from the live site. Eurostat updates these tables a few times a year."
+ },
+ "terms": {
+  "summary": "Reuse of statistical data is authorised for commercial or non-commercial purposes provided the source is acknowledged (Commission Decision of 12 December 2011); no key. Acknowledge with \"Source: Eurostat\" and the dataset code. Not reviewed by a person.",
+  "page": "https://ec.europa.eu/eurostat/web/main/help/copyright-notice",
+  "read_at": "2026-11-18",
+  "quote": "Reuse of statistical data, metadata, publications, and other dissemination tools published on this website for commercial or non-commercial purposes is authorised provided the source is acknowledged. The reuse policy of the European Commission is implemented by the Decision of 12 December 2011.",
+  "quote_lang": "en",
+  "republish": "yes, with the source acknowledged (\"Source: Eurostat\", dataset code and link)",
+  "open_question": "The page named in the brief (https://ec.europa.eu/eurostat/about-us/policies/copyright) answers 404 now; the notice was read at the address above. The notice says individual documents may carry their own conditions; none was seen on these tables. security@PrompTugal.dinis to review."
+ },
+ "attribution": {
+  "text": "Source: Eurostat",
+  "datasets": [
+   { "code": "tour_occ_nin2", "link": "https://ec.europa.eu/eurostat/databrowser/view/tour_occ_nin2/default/table" },
+   { "code": "tour_occ_ninraw", "link": "https://ec.europa.eu/eurostat/databrowser/view/tour_occ_ninraw/default/table" },
+   { "code": "tour_occ_nim", "link": "https://ec.europa.eu/eurostat/databrowser/view/tour_occ_nim/default/table" }
+  ]
+ },
+ "api": {
+  "latest": "https://data.promptugal.news/api/v1/eurostat-tourism/latest.json",
+  "reads": "https://data.promptugal.news/api/v1/eurostat-tourism/reads.json",
+  "card": "https://data.promptugal.news/api/v1/eurostat-tourism/card.json",
+  "openapi": "https://data.promptugal.news/api/v1/eurostat-tourism/openapi.json",
+  "page": "https://data.promptugal.news/sources/eurostat-tourism/"
+ },
+ "vault": null,
+ "split": {
+  "code": ["the collector asks Eurostat's JSON-stat API for three tables, decodes each value with its dimension codes and labels, and keeps number, unit and flag", "GitHub Actions runs it and deploys the site"],
+  "agents": ["data.b.dev2@PrompTugal.dinis wrote the collector and card on 18 November 2026 for data.b@ (WS-177)"],
+  "people": ["Dinis Cruz decided to add the EU, keyless first, on 18 November 2026 (board/team/data/briefs/2026-11-18-dinis-europe-open-data-public-service.md); no person has checked the values (not reviewed)"]
+ },
+ "cost": { "per_run_tokens": 0, "per_run_model_cost_usd": 0, "runner": "GitHub Actions on a public repository: no charge; three requests a run (about 14 KB)", "build_tokens": "not measured", "note": "Code only: no model is called when the data is collected." },
+ "since": "2026-11-18"
+}

@@ -26,3 +26,4 @@ One file per automation, by its owner, reviewed by security@PrompTugal.dinis (Di
 
 Format for each: Parts, What it reads, What it writes, What it trusts, Secrets, What could go wrong (table: risk, mitigation with file:line, residual), Residual risks and owners.
 - `tfl-jamcams.md`: TfL's traffic cameras in London (data.b@, 18 Nov 2026).
+- `eurostat-tourism.md`: Eurostat tourist nights by country of residence (data.b.dev2@, reviewed by data.b@, 18 Nov 2026).
