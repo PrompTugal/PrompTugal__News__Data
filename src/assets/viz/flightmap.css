@@ -1,0 +1,45 @@
+/* The Storm Charles flight map (flightmap.js). Colours are the page's own tokens: --ink, --paper, --red, --green, --rule, --muted, --panel. Apache-2.0. */
+.fm { max-width: 100%; }
+.fm-mapbox { width: 100%; --fm-k: 2.3; }
+.fm-map { display: block; width: 100%; height: auto; background: color-mix(in srgb, var(--muted, #6b6b66) 9%, var(--paper, #f6f3ec)); border: 1px solid var(--rule, #d8d4cb); }
+.fm-land polygon { fill: var(--paper, #f6f3ec); stroke: none; }
+.fm-urban polygon { fill: color-mix(in srgb, var(--ink, #121317) 10%, var(--paper, #f6f3ec)); }
+.fm-dist polyline { fill: none; stroke: var(--rule, #d8d4cb); stroke-width: 1.2; stroke-dasharray: 7 5; }
+.fm-river polyline { fill: none; stroke: var(--muted, #6b6b66); stroke-width: 1.2; opacity: .6; }
+.fm-coast polyline { fill: none; stroke: var(--muted, #6b6b66); stroke-width: 1.5; stroke-linejoin: round; }
+.fm-grat line { stroke: var(--rule, #d8d4cb); stroke-width: 1; opacity: .7; }
+.fm-rw line { stroke: var(--ink, #121317); stroke-width: calc(var(--fm-k) * 2.2px); }
+.fm-scale line { stroke: var(--ink, #121317); stroke-width: 2; }
+.fm-map text { fill: var(--ink, #121317); paint-order: stroke; stroke: var(--paper, #f6f3ec); stroke-linejoin: round; }
+.fm-map .fm-t1 { font-size: calc(var(--fm-k) * 10.5px); fill: var(--muted, #6b6b66); stroke-width: calc(var(--fm-k) * 3px); }
+.fm-map .fm-t2 { font-size: calc(var(--fm-k) * 12.5px); font-weight: 700; stroke-width: calc(var(--fm-k) * 3px); }
+.fm-towns circle { fill: var(--ink, #121317); stroke: var(--paper, #f6f3ec); stroke-width: 2; }
+.fm-wl { stroke: var(--muted, #6b6b66); stroke-width: calc(var(--fm-k) * 0.7px); } .fm-wh { fill: var(--muted, #6b6b66); }
+.fm-wind .fm-wl { stroke-width: calc(var(--fm-k) * 0.7px); }
+.fm-join { fill: none; stroke: var(--muted, #6b6b66); stroke-width: calc(var(--fm-k) * 1px); stroke-linejoin: round; opacity: .8; }
+.fm-join.on { stroke: var(--ink, #121317); stroke-width: calc(var(--fm-k) * 1.8px); opacity: 1; }
+.fm-pt { fill: var(--muted, #6b6b66); stroke: var(--paper, #f6f3ec); stroke-width: 1; } .fm-pt.on { fill: var(--ink, #121317); }
+.fm-plane { cursor: pointer; } .fm-plane path, .fm-pl { stroke: var(--paper, #f6f3ec); stroke-width: 1.4; }
+.fm-plane.fm-l path, .fm-pl.fm-l { fill: var(--ink, #121317); }
+.fm-plane.fm-c path, .fm-pl.fm-c { fill: var(--green, #006600); }
+.fm-plane.fm-d path, .fm-pl.fm-d { fill: var(--red, #c52830); }
+.fm-plane.fm-g path, .fm-pl.fm-g { fill: var(--muted, #6b6b66); }
+.fm-plane.on path { stroke: var(--ink, #121317); stroke-width: 2.4; }
+.fm-ctl { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin: 10px 0 4px; }
+.fm-ctl .fm-t { flex: 1 1 180px; display: flex; min-width: 0; } .fm-ctl input[type=range] { width: 100%; min-height: 40px; accent-color: var(--ink, #121317); }
+.fm-play { font: inherit; font-size: 15px; color: var(--ink, #121317); background: var(--paper, #f6f3ec); border: 1px solid var(--muted, #6b6b66); border-radius: 4px; padding: 6px 14px; min-height: 40px; min-width: 76px; cursor: pointer; }
+.fm-play[disabled] { color: var(--muted, #6b6b66); cursor: not-allowed; }
+.fm-play:focus-visible, .fm-ctl input:focus-visible, .fm-row:focus-visible, .fm-det summary:focus-visible { outline: 3px solid var(--red, #c52830); outline-offset: 2px; }
+.fm-now { font-weight: 700; font-variant-numeric: tabular-nums; color: var(--ink, #121317); min-width: 14ch; }
+.fm-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.fm-info { margin: 6px 0 0; font-size: 14px; color: var(--ink, #121317); } .fm-item { margin: 4px 0 0; font-size: 14px; color: var(--muted, #6b6b66); min-height: 1.4em; }
+.fm-key { list-style: none; display: flex; flex-wrap: wrap; gap: 4px 16px; padding: 0; margin: 8px 0 0; font-size: 14px; color: var(--ink, #121317); }
+.fm-key li { display: inline-flex; align-items: center; gap: 6px; } .fm-key .fm-wl { stroke-width: 1.5; }
+.fm-det { margin: 10px 0 0; } .fm-wrap { overflow-x: auto; max-height: 340px; margin-top: 8px; }
+.fm-det table { border-collapse: collapse; font-size: 13px; width: 100%; }
+.fm-det th, .fm-det td { text-align: left; padding: 3px 10px 3px 0; border-bottom: 1px solid var(--rule, #d8d4cb); white-space: nowrap; color: var(--ink, #121317); }
+.fm-det tr.on { background: var(--panel, #ece8de); }
+.fm-row { font: inherit; font-weight: 700; color: var(--ink, #121317); background: none; border: 0; padding: 4px 2px; min-height: 32px; cursor: pointer; text-decoration: underline; }
+@media (max-width: 480px) { .fm-now { min-width: 0; } }
+.viz .fm-key svg { display: inline-block; width: auto; height: auto; flex: none; }
+.viz .fm-key li { flex: none; }
