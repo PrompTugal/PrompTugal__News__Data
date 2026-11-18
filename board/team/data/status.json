@@ -4,7 +4,7 @@
  "repo": "PrompTugal/PrompTugal__News__Data",
  "site": "https://data.promptugal.news",
  "focus": "the raw public data behind every PrompTugal site: collectors, API, vaults; visualization first; the Storm Charles site's data and map",
- "updated": "2026-11-18T17:15Z",
+ "updated": "2026-11-18T17:40Z",
  "observability_lane": "data (own lane since 18 Nov ~15:00 UTC: vault 349t1w6w, 2 append lanes, drain key sha256:5109a3745ff9fdb4; drain credentials sealed to conductor.b-promptugal and sent to conductor.b@)",
  "observability_note": "obs.js reads team/keys/obs-data.json from GitHub (public half: endpoint, vault id, 2 append tokens, drain public key); every event tagged lane: \"data\"; no town lookup.",
  "state": "third wake (13:03 UTC) done: three more Storm charts on /storm/ (residents by hour, warned against observed, forecast models); the Storm items each sub-site takes listed for conductor.b@; key and commit-check fixes still blocked by permission",
@@ -37,7 +37,8 @@
   "Observability: own \"data\" lane made at Dinis's word (vault 349t1w6w, 2 lanes, drain key sha256:5109a3745ff9fdb4); credentials sealed to conductor.b-promptugal and sent; obs.js switched to it",
   "Event leads from Dinis's Perplexity pass checked (37 requests): Tavira council and Teatro das Figuras (Faro) added as sources (38 and 10 events); Visit Algarve (no feed), Autódromo (terms forbid copying), Algarve Evolution (reset), Portugal Tech Week (over), two news sites on the register; 5 social leads recorded, not fetched",
   "AppSec post-review of all code changed today (data.b.security@, Sonnet): no high; 3 medium fixed (javascript: links from fetched URLs, robots \"Disallow: /\" read as allowed, events without an http(s) URL); low ones fixed (URL filters in discovery, claims, social and charts; the obs credentials folder made 0700 first); threat models for discovery and social at docs/threat-models/, linked from /how/; no prompt-injection text found in stored answers or posts",
-  "/security/ (Dinis, ~15:15 UTC): 8 findings from today (5 fixed, 1 accepted, 2 open shown as title, severity, state only), the threat models, links to promptugal.news/security/; /api/v1/security/findings.json; footer and /how/ link to it"
+  "/security/ (Dinis, ~15:15 UTC): 8 findings from today (5 fixed, 1 accepted, 2 open shown as title, severity, state only), the threat models, links to promptugal.news/security/; /api/v1/security/findings.json; footer and /how/ link to it",
+  "Attribution ledger (Dinis, ~15:30 UTC): /api/v1/sources/attribution.json, 43 sources with appearances, citations, links, weight and share, marked \"Simulated. No payment is made or collected; no money moves.\"; for dev@'s /payments/simulated/"
  ],
  "blocked": [
   "Change to scripts/check-commits.mjs to accept @PrompTugal.dinis refused by the permission check: commits use Agent: data.b@AgentiCCells.dinis",
@@ -57,6 +58,7 @@
   "Dinis: Tavira council and Teatro das Figuras publish \"Todos os direitos reservados\" and no terms page; their events are shown as listings (name, date, venue, link) under your 14:55 UTC rule for câmaras and public bodies, with the take-down disclaimer. Say if you want them asked first."
  ],
  "next": [
+  "Register: blogs, newsletters and podcasts (feeds) and the cyber sources (terms first, nothing collected until checked) being researched; social organisation accounts being verified",
   "Threat models still to write: events-pt, ipma-*, adsb-faro, meteoalarm-pt, the Pages workflow, the obs lane, the Storm build; inner passes (conductor, security pre, work, security post incl. AppSec, conductor) from the next wake",
   "Discovery daily (in this session; CI has no key): confirm claims at readable sources; add the top gap hosts (algarvecircle.com, algarveatlas.com, cm-castromarim.pt, theportugalnews.com, ...) to the register with their terms read",
   "Social: confirm candidate accounts a person can verify (websummit.bsky.social, camaralisboa.bsky.social, jornalexpresso.bsky.social, tribunaexpresso.bsky.social); find câmaras' and venues' official accounts linked from their own sites; Perplexity social pass in discovery",

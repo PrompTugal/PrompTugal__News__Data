@@ -144,6 +144,7 @@ For the sites and agents that read data.promptugal.news as a source (the other P
 
 ## Changelog
 
+- 2026-11-18, evening: added \`api/v1/sources/attribution.json\` (the attribution ledger per source, for the SIMULATED payouts: no money moves).
 - 2026-11-18, evening: added \`api/v1/social/latest.json\` (as \`api/v1/<source>/\`) and \`api/v1/social/by-place/<place>.json\`: links to organisations\' public posts with metadata, never the text.
 - 2026-11-18, later: added and promised stable for v1 (events.promptugal.news reads them): \`api/v1/events/by-place/index.json\` and \`<place>.json\` (\`events[]\`, each a schema.org Event with \`source\`, \`read_at\`, \`place\`, \`license\`), \`api/v1/events/claims/by-place/index.json\` and \`<place>.json\` (\`claims[]\`: Event plus \`status\` confirmed | to confirm at a readable source | details withheld, \`evidence[]\` {url, host, readable, register}, \`details_from\`, \`license\`), \`api/v1/events/past/<place>.json\`, \`api/v1/sources/index.json\`, \`api/v1/sources/<id>.json\` and \`api/v1/sources/gaps.json\` (the register), \`api/v1/discovery/index.json\` and \`api/v1/discovery/by-place/<place>/<date>.json\`. Every JSON file has a top-level \`license\` {name, url, holder}.
 - 2026-11-18: added (no breaking change): \`api/v1/<source>/raw/<file>\` (the publisher's own files of the latest read), \`api/v1/storm/charles/\` (the Storm Charles data, moved here, with its index and \`api/v1/storm/openapi.json\`).
