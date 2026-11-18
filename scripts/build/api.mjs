@@ -25,7 +25,7 @@ function info(title, description, version) {
 }
 const spec = (title, description, version, paths, extra = {}) => ({ openapi: '3.1.0', info: info(title, description, version), servers: [{ url: SITE, description: 'Production' }], externalDocs: { description: 'How to use the API', url: `${SITE}/api/` }, paths, ...extra });
 
-export function buildApi({ sources, places, version, builtAt, readAt, storm, events = [] }) {
+export function buildApi({ sources, places, version, builtAt, readAt, storm, events = [], cameras = null }) {
   // ---- per-source files ----
   const perSource = new Map();
   for (const s of sources) {
@@ -103,6 +103,10 @@ export function buildApi({ sources, places, version, builtAt, readAt, storm, eve
     '/api/v1/README.md': textOp('get_readme', 'The stability contract', 'text/markdown', 'meta'),
   };
   for (const s of sources) Object.assign(paths, Object.fromEntries(Object.entries(perSource.get(s.id)).filter(([p]) => p.endsWith('/latest.json') || p.includes('/places/') || p.endsWith('/manifest.json') || p.endsWith('/raw/{file}'))));
+  if (cameras) {
+    paths['/api/v1/cameras/index.json'] = jsonOp({ id: 'get_cameras_index', summary: 'Public live cameras: metadata and status', description: cameras.index.about, tag: 'cameras', data: cameras.index });
+    if (cameras.statuses.length) paths['/api/v1/cameras/{camera}/status.json'] = jsonOp({ id: 'get_camera_status', summary: 'One camera: its changes of state', description: cameras.statuses[0].about, tag: 'cameras', data: cameras.statuses[0], samples: cameras.statuses, params: [{ name: 'camera', in: 'path', required: true, schema: { type: 'string', enum: cameras.statuses.map(x => x.id) }, example: cameras.statuses[0].id }] });
+  }
   if (storm) { paths['/api/v1/storm/charles/index.json'] = jsonOp({ id: 'get_storm_charles_index', summary: 'Storm Charles: every file moved from the Storm site', description: storm.index.about, tag: 'storm', data: storm.index }); paths['/api/v1/storm/openapi.json'] = textOp('get_storm_openapi', 'Storm Charles: OpenAPI for every moved file', 'application/json', 'storm'); }
   const srcParam = (list) => ({ name: 'source', in: 'path', required: true, schema: { type: 'string', enum: list }, example: list[0] });
   const r0 = sources.find(s => s.reads);
@@ -118,7 +122,7 @@ export function buildApi({ sources, places, version, builtAt, readAt, storm, eve
     const e0 = events.find(e => (e.data.events || []).length) || events[0];
     paths['/api/v1/events/by-place/{place}.json'] = jsonOp({ id: 'get_events_by_place', summary: 'Events in one place', description: 'Upcoming and ongoing events in the place, each a schema.org Event with source and read_at.', tag: 'events', data: e0.data, samples: events.map(e => e.data), params: [{ name: 'place', in: 'path', required: true, schema: { type: 'string', enum: events.map(e => e.id) }, example: e0.id }] });
   }
-  const tags = [{ name: 'events', description: 'Events per place' }, { name: 'meta', description: 'The catalogue, the contract and this document' }, { name: 'sources', description: 'Files every source has, by source id' }, { name: 'by-place', description: 'Algarve places, now' }, { name: 'storm', description: 'Storm Charles (10 to 12 November 2026): the Storm site\'s data, moved here' }, ...sources.map(s => ({ name: s.id, description: s.card.what }))];
+  const tags = [{ name: 'events', description: 'Events per place' }, { name: 'meta', description: 'The catalogue, the contract and this document' }, { name: 'sources', description: 'Files every source has, by source id' }, { name: 'by-place', description: 'Algarve places, now' }, { name: 'cameras', description: 'Public live cameras: metadata and status, never frames' }, { name: 'storm', description: 'Storm Charles (10 to 12 November 2026): the Storm site\'s data, moved here' }, ...sources.map(s => ({ name: s.id, description: s.card.what }))];
   const desc = `Every GET file of data.promptugal.news, ${sources.length} sources. Each response schema is inferred from the real file (x-inferred) and each example is a real file cut to a readable size. Data terms by source:\n\n` + sources.map(s => `- ${s.id}: ${s.card.terms.summary}`).join('\n') + '\n\nNot a warning service: follow IPMA and ANEPC.';
   writeJson('api/v1/openapi.json', spec('data.promptugal.news API v1', desc, version, paths, { tags, 'x-generated': { by: 'scripts/build/api.mjs (data.dev@PrompTugal.dinis)', built_at: builtAt } }));
   return { index, placeFiles };
@@ -153,6 +157,7 @@ For the sites and agents that read data.promptugal.news as a source (the other P
 
 ## Changelog
 
+- 2026-11-18, evening: added \`api/v1/cams/\` (latest, reads, card, openapi) and \`api/v1/cameras/index.json\` with \`api/v1/cameras/<id>/status.json\` (the same cameras in the shape live.promptugal.news reads): public cameras' metadata and status, never a frame or stream.
 - 2026-11-18, evening: added \`api/v1/base-gov-pt/places/index.json\` and \`api/v1/base-gov-pt/places/<place>.json\`: the same shape as latest.json with one place only (civic.promptugal.news asked: a council page no longer needs the whole 1.8 MB).
 - 2026-11-18, evening: added \`api/v1/sources/attribution.json\` (the attribution ledger per source, for the SIMULATED payouts: no money moves).
 - 2026-11-18, evening: added \`api/v1/social/latest.json\` (as \`api/v1/<source>/\`) and \`api/v1/social/by-place/<place>.json\`: links to organisations\' public posts with metadata, never the text.

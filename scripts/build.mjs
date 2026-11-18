@@ -9,6 +9,7 @@ import { loadStorm } from './build/storm.mjs';
 import { buildRegister } from './build/register.mjs';
 import { buildDiscovery } from './build/discovery.mjs';
 import { stampLicences } from './build/licence.mjs';
+import { buildCameras } from './build/cameras.mjs';
 import { buildAttribution } from './build/attribution.mjs';
 import { buildPages } from './build/pages.mjs';
 const version = process.env.SITE_VERSION || 'dev';
@@ -23,7 +24,8 @@ const missing = sources.filter(s => !s.latest).map(s => s.id);
 if (missing.length) console.warn(`warning: no latest.json for ${missing.join(', ')} (shown as "not read yet")`);
 const storm = loadStorm(sources);
 const events = loadEvents();
-const { index } = buildApi({ sources, places, version: '__VERSION__', builtAt, readAt, storm, events });
+const cameras = buildCameras(sources);   // /api/v1/cameras/ for live.promptugal.news (live.b@ asked, 18 Nov 2026)
+const { index } = buildApi({ sources, places, version: '__VERSION__', builtAt, readAt, storm, events, cameras });
 buildStormApi({ storm, version: '__VERSION__' });
 write('api/v1/README.md', readme());
 for (const f of loadSocial()) writeJson(`api/v1/social/by-place/${f.file}`, f.data);   // social signals per place (Dinis, 18 Nov 2026 ~14:45 UTC)
