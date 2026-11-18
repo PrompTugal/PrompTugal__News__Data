@@ -4,7 +4,7 @@
  "repo": "PrompTugal/PrompTugal__News__Data",
  "site": "https://data.promptugal.news",
  "focus": "the raw public data behind every PrompTugal site: collectors, API, vaults; visualization first; the Storm Charles site's data and map",
- "updated": "2026-11-18T22:23Z",
+ "updated": "2026-11-18T22:25Z",
  "observability_lane": "data (own lane since 18 Nov ~15:00 UTC: vault 349t1w6w, 2 append lanes, drain key sha256:5109a3745ff9fdb4; drain credentials sealed to conductor.b-promptugal and sent to conductor.b@)",
  "observability_note": "obs.js reads team/keys/obs-data.json from GitHub (public half: endpoint, vault id, 2 append tokens, drain public key); every event tagged lane: \"data\"; no town lookup.",
  "state": "third wake (13:03 UTC) done: three more Storm charts on /storm/ (residents by hour, warned against observed, forecast models); the Storm items each sub-site takes listed for conductor.b@; key and commit-check fixes still blocked by permission",
@@ -53,14 +53,15 @@
   "22:03 UTC wake: by-place/now gains coords for all 18 places (Wikidata P625, CC0, register/places.json by collect/places-coords.mjs) and lisboa.json (IPMA Lisboa station, forecast and UV, Lisbon coast, warnings LSB), for live.b@.",
   "Sites bar, my part (Dinis ~22:00 UTC, guidance 2026-11-18-the-sites-bar.md): /preview.svg at each build (five live figures, provenance in its metadata and /preview.json, CC BY 4.0); /preview.png made in the workflow with rsvg-convert (installed from Ubuntu's archive if missing; a warning, not a failure, if it cannot be made); /version.json kept.",
   "Daily low, high and rain per IPMA station in ipma-observations (for weather.b@), commit 4359d14.",
-  "A slip, owned: commits f5c2759, a82d05e and 4359d14 went in without a clean leak scan (two status-only commits ran the wording check only and added other sessions' ids, which the scan flags; 4359d14 was committed after the scan failed). Session ids are not credentials; nothing secret went out. Fixed: the ids removed from status.json (sessions are named by role only), scan clean; from now every commit runs validate and leak-scan in one chain that stops on failure."
+  "A slip, owned: commits f5c2759, a82d05e and 4359d14 went in without a clean leak scan (two status-only commits ran the wording check only and added other sessions' ids, which the scan flags; 4359d14 was committed after the scan failed). Session ids are not credentials; nothing secret went out. Fixed: the ids removed from status.json (sessions are named by role only), scan clean; from now every commit runs validate and leak-scan in one chain that stops on failure.",
+  "Dinis (22:25 UTC, board/team/data/briefs/2026-11-18-dinis-keyless-first-and-the-vault.md): keyless sources only for now; keyed ones (Met Office DataHub, Darwin, Companies House, YouTube, Windy) stay on the register as future sources; raw history to a vault."
  ],
  "blocked": [
   "Change to scripts/check-commits.mjs to accept @PrompTugal.dinis refused by the permission check: commits use Agent: data.b@AgentiCCells.dinis",
   "Five Storm files held back (leak scan, wording gate)"
  ],
  "asks": [
-  "Dinis: to keep the raw bytes (today lost after every CI run), add SG_SEND_ACCESS_TOKEN and DATA_VAULT_KEYS to the Data repo's Actions secrets, or give CI a write-only append lane sized for about 1.5 MB an hour; see /pipeline/",
+  "Dinis: the raw history goes to a vault (your word, 22:25 UTC). To switch it on, add two repository secrets in GitHub (Settings, Secrets and variables, Actions): SG_SEND_ACCESS_TOKEN and DATA_VAULT_KEYS (the data vault 5qzpmf4m). The workflow's vault step already runs when both exist. Only public data is pushed: sources whose raw answers name private aircraft or people (adsb-faro, social, github-pt, cams) keep no bytes.",
   "Dinis: a narrow leak-scan and wording-gate exception for verbatim data under storm/charles/, or keep the five held files on the Storm site only.",
   "Dinis: a new rekeyed vault for the Storm parts not in vault j2fq58kn (entities, graph, meteorology)? Its write key needs sealing to you, which needs the session key.",
   "Dinis: the adsb-faro vault (sd1fblzs) holds raw adsb.lol answers from 17 November with private aircraft hex ids: remove them?",
@@ -74,11 +75,9 @@
   "Dinis: CORDIS (EU projects with Portuguese participants) is CC BY 4.0, but its robots.txt disallows /data/, where the only bulk files are. Not collected. Ask CORDIS on the record, decide the open-data files may be read once a day despite robots, or skip CORDIS for the PRR portal and Portugal Ventures?",
   "Dinis: library.b@ and videos.b@ need Web Summit replays with talk timestamps; that needs a YouTube Data API key (through the credential form), which you said you would decide.",
   "Dinis: ask Shadowserver, Cloudflare (Radar is CC BY-NC), RIPE NCC (RIPEstat bars commercial derivatives) and CNPD (commercial use excluded) for written permission on the record? outreach@ drafts, you send.",
-  "Dinis: Windy's webcams API needs a key (you said yes, 18 Nov ~19:00 UTC). If you want it, make the key yourself and say so; I will ask for it through the secure credential form, never in chat. I do not sign up for services.",
   "Dinis: MEO BeachCam refused our fetches (403) and its terms (seen in search snippets) need MEO's consent for reproduction or retransmission. Do you want a consent and embed request drafted for a person to send to MEO? Also confirm the name to show: the privacy page names Wavenation, Conteúdos e Media Lda. as the operator.",
   "Dinis: the GitHub collector runs on the anonymous quota (60 requests an hour), enough for every organisation's repositories and about 25 release reads a run. Passing the workflow's GITHUB_TOKEN to the collect step would read every release, but that token can deploy Pages and the collector reads untrusted text: your call. Also: may repository descriptions be shown beyond a short excerpt with a link?",
-  "Dinis: ENISA's robots.txt disallows named AI crawlers (ClaudeBot, GPTBot and others) everywhere; /publications is allowed to everyone and our collector is plain code, unnamed. This site is built by AI agents, so I have held it (on-hold/enisa-pubs). Read it, or leave it?",
-  "Dinis: London's keys, when you choose: Met Office DataHub, National Rail Darwin and Companies House each need a free registration; I will ask for each through the secure credential form, never in chat."
+  "Dinis: ENISA's robots.txt disallows named AI crawlers (ClaudeBot, GPTBot and others) everywhere; /publications is allowed to everyone and our collector is plain code, unnamed. This site is built by AI agents, so I have held it (on-hold/enisa-pubs). Read it, or leave it?"
  ],
  "next": [
   "London (Dinis ~22:20 UTC, guidance 2026-11-18-london.md): register every UK source with its terms first; collect EA flood monitoring and (if its terms allow) Open-Meteo first, keeping each issued forecast for 14 days; then TfL, adsb.lol at the five London airports, TfL JamCams into /api/v1/cams/, London Datastore, Contracts Finder, police area totals, air quality, NCSC, agendas, RSS. In progress with data.b.dev@ (Sonnet).",
