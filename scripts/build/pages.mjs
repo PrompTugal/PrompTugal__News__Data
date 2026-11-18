@@ -36,6 +36,15 @@ const LAYERS = {
   'meteoalarm-pt': { raw: ['meteoalarm-raw', ['raw/feeds-portugal.json'], 'Every message in MeteoAlarm\'s Portugal feed, by hazard and level against the time sent.'],
     processed: [['meteoalarm-now', ['latest.json'], 'The messages not yet expired, by area, from onset to expiry.']],
     how: 'The collector reads the CAP messages, keeps area, level, hazard and times, and marks what appeared since the last read.' },
+  'events-pt': { raw: null, rawNote: 'The raw files are the agendas as served (Agenda LX\'s JSON pages, the Lagos and Teatro das Figuras pages, Tavira\'s calendar route): kept in the vault copy only, as they hold publisher text this site does not republish. What is shown here is our record of each event: name, dates, venue, link.',
+    processed: [['events-calendar', ['latest.json'], 'Events per day for the next 60 days, by place.'], ['events-claims', ['/api/v1/events/claims/by-place/index.json'], 'Events found through Perplexity: claimed, confirmed at a readable source, or details withheld.'], ['gaps-hosts', ['/api/v1/sources/gaps.json'], 'The pages cited for events that we do not read: the gaps in our sources.']],
+    how: 'The collector reads each agenda through its public interface, keeps the next 60 days, maps each event to a place, drops events without a web address and keeps no organiser text; discovery adds claims with their evidence links, and the claims are confirmed only at a source we read.' },
+  'social': { raw: null, rawNote: 'The raw answers hold the posts\' text, which this site never stores: only each post\'s link and metadata are kept.',
+    processed: [['social-pulse', ['latest.json'], 'Posts per day by organisation, and the topics and places they match.']],
+    how: 'The collector reads the public posts of the organisation accounts on the register through Bluesky\'s public API, matches topics and places in memory, and keeps the link, account, time, matches, language and whether there is media.' },
+  'base-gov-pt': { raw: null, rawNote: 'The raw file is IMPIC\'s yearly Portal BASE dataset on dados.gov.pt (about 70 MB zipped, every public contract in Portugal), read by stream and not kept here: [the dataset](https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/).',
+    processed: [['contracts-by-place', ['latest.json'], 'Public contracts of the last 90 days by place, value and buyer, and by procedure.']],
+    how: 'The collector streams the yearly file, keeps the contracts whose buyer is the câmara of Lisboa or of an Algarve municipality or one of their municipal companies, shows a contractor that looks like a natural person only as "a natural person" and withholds that contract\'s description.' },
   'storm-charles-archive': { raw: null, rawNote: 'The raw layer is the Storm site\'s own files: every one is now served here, at [/api/v1/storm/charles/](/api/v1/storm/charles/index.json), and listed with its size on [the Storm page](/storm/).',
     processed: [['storm-datasets', ['latest.json'], 'The archive\'s datasets by size.'], ['storm-wind', ['/api/v1/storm/charles/broadcast/field.json', COAST], 'The Storm\'s wind and pressure field over the Atlantic, as its broadcast page drew it.']],
     how: 'The collector read every file the Storm site listed, checked each against its stated sha256 and grouped them into datasets.' },
@@ -51,6 +60,9 @@ const FRONT = [
   ['meteoalarm-pt', 'meteoalarm-now', ['latest.json'], ['MeteoAlarm', 'Messages not yet expired, by area.']],
   ['ipma-uv', 'uv-now', ['latest.json'], ['UV index', 'UV index by place and day.']],
 ];
+import { readFileSync as _rf, existsSync as _ex } from 'node:fs';
+const _vizSrc = _ex('src/assets/viz/viz.js') ? _rf('src/assets/viz/viz.js', 'utf8') : '';
+const HAS_CHART = n => n.startsWith('storm-') || _vizSrc.includes(`'${n}'`);
 const abs = (id, u) => u.startsWith('/') ? u : `/api/v1/${id}/${u}`;
 
 const OTHER_SITES = [['weather', 'Weather'], ['civic', 'Civic'], ['startups', 'Startups'], ['travel', 'Travel']];
@@ -169,7 +181,7 @@ export function buildPages({ sources, places, readAt, index, storm, events = [],
       else if (L.raw) blocks.push(p('The raw files were not collected in this build: see the vault.'));
       if (L.rawNote) blocks.push(p(L.rawNote));
       blocks.push(h('3. The processed data'), p(`${L.how} The result: [latest.json](/api/v1/${s.id}/latest.json).`));
-      for (const [n, u, t2] of L.processed) blocks.push(fig(n, u.map(x => abs(s.id, x)), t2));
+      for (const [n, u, t2] of L.processed) if (HAS_CHART(n)) blocks.push(fig(n, u.map(x => abs(s.id, x)), t2)); else blocks.push(p(`${t2} The data: [${abs(s.id, u[0])}](${abs(s.id, u[0])}).`));   // a chart not yet in viz.js shows its data link instead
       blocks.push(h('More about this source'));
     }
     blocks.push(
