@@ -25,3 +25,10 @@ data.b@'s answer is in the session: a side-car named rights@ (licences, terms, a
 
 - rights@PrompTugal.dinis: a side-car for licences, terms, attribution, commercial use and privacy rights, its rules written into the agent behaviour policy; briefed to conductor.b@ by data.b@ (conductor.b@ starts it).
 - Dinis's master key fingerprint confirmed: sha256:db7f79fdd87e030a (the root named on pki.sgit.ai/handover). The public raw-history vaults may go ahead, the write key sealed to a key that chains to that root.
+
+## Release tags critical; billing only on the main site (Dinis, about 23:45 UTC)
+
+> "The binary stag is super critical that every commit always creates a new release minor version. And it always creates a tag on that commit. And that's super critical. So yeah, keeps doing that. And I, see, that's a bug on the fix, right? Why wouldn't you the script be able to pick it up? You sure I need to create that new release, right? Why can't the CI pipeline do it? Because the CI pipeline should literally be looking at the latest release number and just increment it. Now, so basically for the IPMA, what you do is you show it on the data, but you don't show it on the other channels. And I think it makes sense actually for sites like I go back, sites like weather, and I think for now I kind of feel that most of the sites apart from the prompt Google main one should not have billing. Why don't we do this? I think let's make that call, and then we can add it later. So let's just the billing and only happens on the main site. That just keep it simple, and that means that some of these data we can't use it there, which is okay."
+
+- Every commit gets a new release version and a tag on that commit, by CI: critical.
+- Billing only on promptugal.news (the main site). The sub-sites (weather, travel, civic, events, live, cyber, bulletins, data and the rest) carry no billing, so they may show data that is not for commercial use (IPMA, Open-Meteo's free tier), with its licence. The main site shows only data marked commercial_use "allowed".

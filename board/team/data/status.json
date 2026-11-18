@@ -4,7 +4,7 @@
  "repo": "PrompTugal/PrompTugal__News__Data",
  "site": "https://data.promptugal.news",
  "focus": "the raw public data behind every PrompTugal site: collectors, API, vaults; visualization first; the Storm Charles site's data and map",
- "updated": "2026-11-18T23:20Z",
+ "updated": "2026-11-18T23:34Z",
  "observability_lane": "data (own lane since 18 Nov ~15:00 UTC: vault 349t1w6w, 2 append lanes, drain key sha256:5109a3745ff9fdb4; drain credentials sealed to conductor.b-promptugal and sent to conductor.b@)",
  "observability_note": "obs.js reads team/keys/obs-data.json from GitHub (public half: endpoint, vault id, 2 append tokens, drain public key); every event tagged lane: \"data\"; no town lookup.",
  "state": "third wake (13:03 UTC) done: three more Storm charts on /storm/ (residents by hour, warned against observed, forecast models); the Storm items each sub-site takes listed for conductor.b@; key and commit-check fixes still blocked by permission",
@@ -61,15 +61,15 @@
   "/preview.png works on the live site (run 83: rsvg-convert made it in 7 s). CI's first GitHub read: 849 repositories of 21 organisations.",
   "London measured rain: ea-flood gains 10 EA rain gauges with daily totals (14 UTC days, each 15-minute reading counted once), for weather.b@ and travel.b@. Eurostat tourism live (UK residents: 10.4 million nights in Portugal in 2025).",
   "A slip by a sub-agent, owned: probing INE's API for the UK breakdown, data.b.dev@ made about 8 quick requests and pulled about 40 MB (some answers 16 to 20 MB) before INE began resetting connections. It stopped; nothing is collected from INE. Future INE reads: one request at a time, a size cap, the indicator code found from INE's catalogue first.",
-  "Dinis (~23:10 UTC, board/team/data/briefs/2026-11-18-dinis-commercial-line-ine-tfl.md): every licence now carries commercial_use and /api/v1/sources/commercial.json lists all sources (allowed 8, not allowed 7, per item 3, unclear 2); paid sites show only 'allowed'. TfL's terms read by Dinis: JamCams embeddable with both credits. INE's API terms accepted by Dinis. Reservoirs dropped. Big datasets to vaults in pack mode (zips), not linkable from the site yet."
+  "Dinis (~23:10 UTC, board/team/data/briefs/2026-11-18-dinis-commercial-line-ine-tfl.md): every licence now carries commercial_use and /api/v1/sources/commercial.json lists all sources (allowed 8, not allowed 7, per item 3, unclear 2); paid sites show only 'allowed'. TfL's terms read by Dinis: JamCams embeddable with both credits. INE's API terms accepted by Dinis. Reservoirs dropped. Big datasets to vaults in pack mode (zips), not linkable from the site yet.",
+  "Correction: I said every Pages run failed its tag job; wrong. One run did (run 83, 22:36 UTC, tagging 81e7d24 after a newer commit had changed the workflow file); tags v0.1.52 to v0.1.56 were all made by CI. Commits pushed in quick succession share one run, so not every commit gets its own version: from now on one push per piece of work, the next after the run has finished.",
+  "Dinis (~23:45 UTC): billing only on promptugal.news; sub-sites may show non-commercial data (IPMA, Open-Meteo free tier) with its licence; commercial.json says so."
  ],
  "blocked": [
   "Change to scripts/check-commits.mjs to accept @PrompTugal.dinis refused by the permission check: commits use Agent: data.b@AgentiCCells.dinis",
   "Five Storm files held back (leak scan, wording gate)"
  ],
  "asks": [
-  "Dinis: all of IPMA's data (every forecast, observation, warning, UV, sea and fire risk) is 'not allowed' for commercial use: IPMA permits use 'without profit-making purpose' only. A weather site with subscriptions could not show it. Options: ask IPMA for permission (a person sends it), or use ECMWF open data (CC BY 4.0, commercial allowed) on paid sites.",
-  "Dinis: every Pages run now fails its last job, 'tag' (the site still builds, passes both gates and deploys). My workflow edits today (the preview step, the token step) mean the release tag points at a commit that changes .github/workflows/pages.yml, and GitHub refuses the Actions token permission to push such a tag ('refusing to allow a GitHub App to create or update workflow ... without workflows permission'). The fix is yours, not mine to work around: either a person pushes one tag by hand on the current dev head (then later tags succeed while the workflow file is unchanged), or the repository's Actions settings give the workflow the permission. Until then the version number stays at v0.1.53.",
   "Dinis: the raw history vault. I do not hold vault 5qzpmf4m's key in this session. Proposal: I make one new vault for the raw history (each source in its own folder), seal its key to your PKI key, and you add two secrets, SG_SEND_ACCESS_TOKEN and DATA_VAULT_KEY (one vault, so singular; renamed from DATA_VAULT_KEYS). Send me the link to your public key on pki.sgit.ai and its fingerprint, so I seal to the right key.",
   "Dinis: a narrow leak-scan and wording-gate exception for verbatim data under storm/charles/, or keep the five held files on the Storm site only.",
   "Dinis: a new rekeyed vault for the Storm parts not in vault j2fq58kn (entities, graph, meteorology)? Its write key needs sealing to you, which needs the session key.",
