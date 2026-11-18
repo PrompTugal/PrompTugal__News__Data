@@ -67,3 +67,12 @@ Dinis gave a run of decisions through conductor.b@ and directly in this session;
 - **Pipeline standard** (16:00): recorded in status.json next; the raw history depends on the vault secrets.
 
 Who did what: data.b@ (Opus) led, reviewed every sub-agent's work before committing, wrote discovery, claims, the register build, licences, the security page, the attribution ledger and the obs lane; Sonnet sub-agents (data.b.collector@, data.b.design@, data.b.dev@, data.b.dev2@, data.b.dev3@, data.b.security@) researched sources and terms, built collectors and charts, and reviewed the code. No person has checked a value.
+
+## The evening of 18 November (16:00 to 19:10 UTC)
+
+- **Charts** for events, social signals and public contracts (c6de5cf), and for the cameras (2675e30); every page checked at 1100 and 375 px, long links now wrap.
+- **Public contracts per place** for civic.b@: `/api/v1/base-gov-pt/places/<place>.json` (66dbbe1).
+- **Public live cameras** at Dinis's word (17:30 to 19:00 UTC, guidance `2026-11-18-people-blogs-cyber-and-simulated-payments.md` and `2026-11-18-cameras-provenance-and-bulletins.md`): `sources/cams/` (hourly status from the operator's page only, never a frame or stream), `register/cams.json` (3 cameras in a first pass, 8 not listed, 11 gaps), `/api/v1/cams/` and `/api/v1/cameras/` in live.b@'s shape, provenance on every camera. A second research pass (MEO BeachCam through its official embeds, the câmaras, APA, IPMA, ICNF, ports) is running with data.b.collector@ (Sonnet).
+- **Google and YouTube keys**: the plan is in status.json; nothing is asked for until Dinis says the key exists, and then only through the secure credential form.
+- Still open for Dinis: the raw history (vault secrets for CI or an append lane), a Windy key if wanted, the commit-check change, the held Storm files.
+- Still running: the GitHub organisations collector (data.b.dev@, Sonnet) in its worktree; to review and fold into a data.b@ commit.
