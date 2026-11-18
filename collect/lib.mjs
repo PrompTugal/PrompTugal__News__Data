@@ -26,8 +26,8 @@ export const writeJson = (f, o) => { fs.mkdirSync(path.dirname(f), { recursive: 
 let last = 0
 const cache = new Map()   // one read per address per run: a reference list two sources share is fetched once
 /** One polite GET. Returns { ok, status, bytes, sha256, at, url, json() } and never throws. */
-export async function get(url, { tries = 3, timeout = 60000, shared = false, gap = GAP_MS, headers = {} } = {}) {
-    if (shared && cache.has(url)) return cache.get(url)
+export async function get(url, { tries = 3, timeout = 60000, shared = false, gap = GAP_MS, headers = {}, method = 'GET', body = undefined } = {}) {
+    if (shared && method === 'GET' && cache.has(url)) return cache.get(url)
     let res = null
     for (let i = 0; i < tries; i++) {
         const wait = last + gap - Date.now(); if (wait > 0) await sleep(wait)
@@ -35,14 +35,14 @@ export async function get(url, { tries = 3, timeout = 60000, shared = false, gap
         last = Date.now()
         const at = now()
         try {
-            const r = await fetch(url, { headers: { 'user-agent': UA, accept: '*/*', ...headers }, signal: AbortSignal.timeout(timeout) })
+            const r = await fetch(url, { method, ...(body !== undefined ? { body } : {}), headers: { 'user-agent': UA, accept: '*/*', ...headers }, signal: AbortSignal.timeout(timeout) })
             const bytes = Buffer.from(await r.arrayBuffer())
             res = { ok: r.ok, status: r.status, bytes, sha256: sha256(bytes), at, url, rate_remaining: num(r.headers.get('x-ratelimit-remaining')), rate_reset: num(r.headers.get('x-ratelimit-reset')) }
-            if (r.ok || r.status === 401 || r.status === 403 || r.status === 429 || r.status === 404) break
+            if (r.ok || r.status === 201 || r.status === 401 || r.status === 403 || r.status === 429 || r.status === 404) break
         } catch (e) { res = { ok: false, status: 'error', error: String(e.cause?.code || e.name || e.message), bytes: Buffer.alloc(0), sha256: null, at, url } }
     }
     res.json = () => { try { return JSON.parse(res.bytes.toString('utf8')) } catch { return null } }
-    if (shared && res.ok) cache.set(url, res)
+    if (shared && method === 'GET' && res.ok) cache.set(url, res)
     return res
 }
 

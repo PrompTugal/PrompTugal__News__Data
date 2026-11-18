@@ -30,7 +30,7 @@ export function loadSources() {
     // the publisher's own bytes of the latest read (vaults/<id>/latest/, written by the collector), served as the raw layer;
     // not for adsb-faro, whose answer names private aircraft (its collector keeps none), and never reads-full.json
     const rdir = join('vaults', id, 'latest');
-    const raw = existsSync(rdir) && !['events-pt', 'cisa-kev', 'nvd-cve', 'enisa-pubs', 'tfl-jamcams', 'ea-flood'].includes(id) ?   // nvd-cve (about 6 MB a page, every description and reference) and enisa-pubs (HTML): the vault keeps the bytes. cisa-kev: CISA's notes carry em dashes and long link tokens the gates refuse; its feed is linked, the vault keeps the bytes. events-pt: its raw pages are HTML and long publisher text (with em dashes the gate refuses); the vault keeps them
+    const raw = existsSync(rdir) && !['events-pt', 'cisa-kev', 'nvd-cve', 'enisa-pubs', 'tfl-jamcams', 'ea-flood', 'adsb-london-portugal'].includes(id) ?   // nvd-cve (about 6 MB a page, every description and reference) and enisa-pubs (HTML): the vault keeps the bytes. cisa-kev: CISA's notes carry em dashes and long link tokens the gates refuse; its feed is linked, the vault keeps the bytes. events-pt: its raw pages are HTML and long publisher text (with em dashes the gate refuses); the vault keeps them
      readdirSync(rdir).filter(f => f.endsWith('.json') && f !== 'reads-full.json').sort().map(f => ({ name: f, data: readJson(join(rdir, f)) })).filter(r => r.data) : [];
     return { id, card, manifest, latest, reads, runs, last, read_at, status, raw, headline: headline(id, latest, manifest) };
   });
@@ -47,6 +47,8 @@ function headline(id, l, m) {
     'ipma-uv': () => `${c.places} places`,
     'ipma-sea': () => `${c.coasts} coastal places`,
     'adsb-faro': () => `${c.airline} airline flights, ${c.other_aircraft} other aircraft`,
+    'adsb-london-portugal': () => `${c.london_portugal_flights} London-Portugal flights of ${c.airline_flights_seen} airline flights seen`,
+    'ea-flood': () => `${c.warnings} warnings, ${c.stations} stations, ${c.rain_gauges ?? 0} rain gauges`,
     'meteoalarm-pt': () => `${c.messages} messages, ${c.not_expired} not expired`,
   }[id];
   if (f) return f();

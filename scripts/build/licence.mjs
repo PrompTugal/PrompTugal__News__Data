@@ -10,6 +10,7 @@ const terms = (url, holder, note) => ({ name: 'the source\'s terms', url, holder
 const IPMA = terms('https://api.ipma.pt/', 'IPMA, Instituto Português do Mar e da Atmosfera', 'No named licence: free copying and use for personal or public use without profit-making purpose, IPMA named as the source.');
 const BY_SOURCE = {
   'adsb-faro': { name: 'ODbL 1.0', url: 'https://opendatacommons.org/licenses/odbl/1-0/', holder: 'adsb.lol contributors', note: 'Share-alike: what we derive from it stays under ODbL.' },
+  'adsb-london-portugal': { name: 'ODbL 1.0', url: 'https://opendatacommons.org/licenses/odbl/1-0/', holder: 'adsb.lol contributors', note: 'Share-alike: what we derive from it stays under ODbL.' },
   'meteoalarm-pt': terms('https://www.meteoalarm.org/en/live/page/terms-and-conditions', 'MeteoAlarm (EUMETNET), for IPMA'),
   'storm-charles-archive': { name: 'Apache-2.0', url: 'https://www.apache.org/licenses/LICENSE-2.0', holder: 'PrompTugal (the Storm Charles site)', note: 'The Storm site\'s own data; quoted sources keep their own terms.' },
   'social': { ...terms('https://bsky.social/about/support/tos', 'each post\'s author (an organisation)'), note: 'Links and metadata only; each post keeps its own license field (the platform\'s terms).' },

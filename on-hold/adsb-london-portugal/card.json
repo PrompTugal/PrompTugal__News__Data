@@ -1,0 +1,83 @@
+{
+ "id": "adsb-london-portugal",
+ "title": "Flights between London and Portugal (adsb.lol)",
+ "what": "Airline flights seen near Faro, Lisbon or Porto airport whose route links one of the five London airports to that airport: callsign, airline, aircraft type, route, position to 0.01 degree and altitude band, and a count per day per route for 14 days. Airline callsigns only; no private aircraft, hex id or registration.",
+ "publisher": "adsb.lol (community ADS-B receivers)",
+ "owner": "data.b@PrompTugal.dinis",
+ "collector": "sources/adsb-london-portugal/collect.mjs",
+ "country": "GB",
+ "places": [
+  "london",
+  "faro",
+  "lisbon",
+  "porto"
+ ],
+ "airports": [
+  {
+   "icao": "LPFR",
+   "name": "Faro airport",
+   "lat": 37.0144,
+   "lon": -7.9659,
+   "nm": 40
+  },
+  {
+   "icao": "LPPT",
+   "name": "Lisbon airport",
+   "lat": 38.7813,
+   "lon": -9.1359,
+   "nm": 40
+  },
+  {
+   "icao": "LPPR",
+   "name": "Porto airport",
+   "lat": 41.2481,
+   "lon": -8.6814,
+   "nm": 40
+  }
+ ],
+ "source_home": "https://api.adsb.lol/",
+ "reader_page": "https://globe.adsb.lol/",
+ "schedule": {
+  "cadence": "on hold",
+  "how": "On hold (data.b@, 18 Nov 2026): adsb.lol's route lookup answered HTTP 201 with no routes in four tries, so this source would show no flights; moving it back to sources/ starts it."
+ },
+ "terms": {
+  "summary": "adsb.lol: its API data is licensed under the Open Database License (ODbL 1.0): share-alike, with attribution; no key needed up to 500 requests a day per address, over quota gives 429 with Retry-After. Not reviewed by a person.",
+  "page": "https://www.adsb.lol/docs/open-data/api/",
+  "read_at": "2026-11-18",
+  "quote": "the API is available to everyone. license: ODbL 1.0. [...] No key: 500 requests/day per IP. [...] over quota returns 429 with Retry-After.",
+  "quote_lang": "en",
+  "quote_openapi": "Free: the /0/ namespace (the map's own helpers) and /api/0/{my,routeset}. Metered: /v2/ and /1/trace/. (https://api.adsb.lol/api/openapi.json, info.description, read 2026-11-18)",
+  "republish": "yes, under ODbL 1.0 (attribution, share-alike for the database)",
+  "privacy": "Our own rule, from the storm site: only airline callsigns are kept; other aircraft (private, military, unidentified) are counted, never listed; no hex id or registration; positions rounded to 0.01 degree; nothing raw goes to the vault.",
+  "open_question": "adsb.lol's route lookup (routeset) answered every test request on 18 Nov 2026 with HTTP 201 and an empty body (no routes), so no flight could be tied to a London route; the collector says so in routeset.status. Addresses shared with other users (CI runners) may find the 500 a day used up (429); a refusal is respected and recorded. security@PrompTugal.dinis to review."
+ },
+ "api": {
+  "latest": "https://data.promptugal.news/api/v1/adsb-london-portugal/latest.json",
+  "reads": "https://data.promptugal.news/api/v1/adsb-london-portugal/reads.json",
+  "card": "https://data.promptugal.news/api/v1/adsb-london-portugal/card.json",
+  "openapi": "https://data.promptugal.news/api/v1/adsb-london-portugal/openapi.json",
+  "page": "https://data.promptugal.news/sources/adsb-london-portugal/"
+ },
+ "vault": null,
+ "split": {
+  "code": [
+   "the collector reads aircraft near three Portuguese airports, asks adsb.lol's route lookup for the airline callsigns, keeps those whose route links London and Portugal, and counts them per day and route",
+   "GitHub Actions runs it and deploys the site"
+  ],
+  "agents": [
+   "data.b.dev@PrompTugal.dinis wrote the collector and card on 18 November 2026 for data.b@ (WS-177)"
+  ],
+  "people": [
+   "Dinis Cruz decided London and the UK-Portugal link as data on 18 November 2026 (board/guidance/2026-11-18-london.md); no person has checked the values (not reviewed)"
+  ]
+ },
+ "cost": {
+  "per_run_tokens": 0,
+  "per_run_model_cost_usd": 0,
+  "runner": "GitHub Actions on a public repository: no charge; 4 requests a run (under 50 KB)",
+  "build_tokens": "not measured",
+  "note": "Code only: no model is called when the data is collected."
+ },
+ "since": "2026-11-18"
+}

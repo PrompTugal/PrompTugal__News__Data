@@ -4,7 +4,7 @@
  "repo": "PrompTugal/PrompTugal__News__Data",
  "site": "https://data.promptugal.news",
  "focus": "the raw public data behind every PrompTugal site: collectors, API, vaults; visualization first; the Storm Charles site's data and map",
- "updated": "2026-11-18T22:38Z",
+ "updated": "2026-11-18T22:51Z",
  "observability_lane": "data (own lane since 18 Nov ~15:00 UTC: vault 349t1w6w, 2 append lanes, drain key sha256:5109a3745ff9fdb4; drain credentials sealed to conductor.b-promptugal and sent to conductor.b@)",
  "observability_note": "obs.js reads team/keys/obs-data.json from GitHub (public half: endpoint, vault id, 2 append tokens, drain public key); every event tagged lane: \"data\"; no town lookup.",
  "state": "third wake (13:03 UTC) done: three more Storm charts on /storm/ (residents by hour, warned against observed, forecast models); the Storm items each sub-site takes listed for conductor.b@; key and commit-check fixes still blocked by permission",
@@ -58,7 +58,9 @@
   "Dinis (22:40 UTC, board/team/data/briefs/2026-11-18-dinis-europe-open-data-public-service.md): the EU added (researcher under way); data side free and non-commercial, Open-Meteo used under its free terms (London first); MEO BeachCam moved to the later list (19 cameras); workflow passes GH_PUBLIC_READ_TOKEN (if set) to the collect step.",
   "EU on the register (14 entries, terms read 18 Nov): build order ECMWF open data (CC BY 4.0 with ECMWF's attribution sentence; GRIB2, needs a Europe box cut to JSON), Eurostat (JSON-stat, reuse allowed with source; tourism nights by residence for Algarve, Lisbon, London), EEA air quality (Parquet per station); then TED once a person reads its terms (bot check), MeteoAlarm Europe-wide. Keyed (free account, licence to accept by a person): Copernicus CDS (EFAS), CAMS, Marine. JRC PVGIS refused by robots.txt (one probe went out in the same step as the robots read, before the disallow was seen; nothing kept).",
   "Reservoirs on the register (13 entries): Portugal has no keyless machine-readable series of current storage (SNIRH refused, 403); Águas do Algarve publishes a weekly HTML table (Odelouca, Odeleite, Beliche; 'Todos os direitos reservados'); APA a monthly PDF (77 reservoirs); dados.gov.pt APA's Atlas da Água dams layer (coordinates, full-storage level). London: the London Datastore's daily reservoir levels CSV (OGL v2, from 1989) and the EA's monthly Thames report. Every freshest figure is 2 to 6 weeks behind.",
-  "/preview.png works on the live site (run 83: rsvg-convert made it in 7 s). CI's first GitHub read: 849 repositories of 21 organisations."
+  "/preview.png works on the live site (run 83: rsvg-convert made it in 7 s). CI's first GitHub read: 849 repositories of 21 organisations.",
+  "London measured rain: ea-flood gains 10 EA rain gauges with daily totals (14 UTC days, each 15-minute reading counted once), for weather.b@ and travel.b@. Eurostat tourism live (UK residents: 10.4 million nights in Portugal in 2025).",
+  "A slip by a sub-agent, owned: probing INE's API for the UK breakdown, data.b.dev@ made about 8 quick requests and pulled about 40 MB (some answers 16 to 20 MB) before INE began resetting connections. It stopped; nothing is collected from INE. Future INE reads: one request at a time, a size cap, the indicator code found from INE's catalogue first."
  ],
  "blocked": [
   "Change to scripts/check-commits.mjs to accept @PrompTugal.dinis refused by the permission check: commits use Agent: data.b@AgentiCCells.dinis",
@@ -83,9 +85,11 @@
   "Dinis: ask Shadowserver, Cloudflare (Radar is CC BY-NC), RIPE NCC (RIPEstat bars commercial derivatives) and CNPD (commercial use excluded) for written permission on the record? outreach@ drafts, you send.",
   "Dinis: ENISA's robots.txt disallows named AI crawlers (ClaudeBot, GPTBot and others) everywhere; /publications is allowed to everyone and our collector is plain code, unnamed. This site is built by AI agents, so I have held it (on-hold/enisa-pubs). Read it, or leave it?",
   "Dinis: TfL's transport data terms and conditions (tfl.gov.uk/corporate/terms-and-conditions/transport-data-service) answer our requests with a bot check, so no agent has read them. The JamCams can be embedded only once they are read: could a person read them, or do you accept TfL's open data terms as known (OGL-based, 'Powered by TfL Open Data')?",
-  "Dinis: reservoirs in Portugal. (1) Águas do Algarve's weekly table says 'Todos os direitos reservados': may we publish its figures with a link, or should a person ask them (geral.ada@adp.pt) for a written OK? (2) SNIRH, the only daily series, refuses us: shall I draft a request to APA (sniamb@apambiente.pt) for a person to send? (3) APA's monthly PDF (77 reservoirs) states no licence: use it, credited, or ask first?"
+  "Dinis: reservoirs in Portugal. (1) Águas do Algarve's weekly table says 'Todos os direitos reservados': may we publish its figures with a link, or should a person ask them (geral.ada@adp.pt) for a written OK? (2) SNIRH, the only daily series, refuses us: shall I draft a request to APA (sniamb@apambiente.pt) for a person to send? (3) APA's monthly PDF (77 reservoirs) states no licence: use it, credited, or ask first?",
+  "Dinis: INE's API page says 'By using this API, the user acknowledges and accepts the conditions' (the data itself is CC BY 4.0, 'Source: Instituto Nacional de Estatística'). Do you accept INE's API terms for us, so I can read UK guests by region? I do not accept terms on anyone's behalf."
  ],
  "next": [
+  "London-Portugal flights: written, on hold (on-hold/adsb-london-portugal) until adsb.lol's route lookup returns routes; retry the lookup once a day by hand.",
   "EU, first builds: Eurostat tourism nights by country of residence (Algarve PT15, Lisbon PT17, London UKI), then ECMWF open forecasts (a Europe box to small JSON), then EEA air quality.",
   "Reservoirs, first builds: London Datastore reservoir levels (OGL), then the Atlas da Água dams layer for the Algarve map; Águas do Algarve and APA's PDF wait for Dinis.",
   "London (Dinis ~22:20 UTC, guidance 2026-11-18-london.md): register every UK source with its terms first; collect EA flood monitoring and (if its terms allow) Open-Meteo first, keeping each issued forecast for 14 days; then TfL, adsb.lol at the five London airports, TfL JamCams into /api/v1/cams/, London Datastore, Contracts Finder, police area totals, air quality, NCSC, agendas, RSS. In progress with data.b.dev@ (Sonnet).",
