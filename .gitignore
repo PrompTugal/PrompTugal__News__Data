@@ -229,3 +229,6 @@ _site/
 # collected data and vault working copies (data goes to the site and the vaults, never to git)
 /data/
 /vaults/
+
+# sub-agents' git worktrees (data.b@, 18 Nov 2026): temporary working copies, never committed
+.claude/worktrees/
