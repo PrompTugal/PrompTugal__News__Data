@@ -19,7 +19,7 @@ export function buildCameras(sources) {
       terms: { url: c.terms_page || null, summary: c.terms_summary || null, checked_at: (L.provenance && L.provenance.read_at || '').slice(0, 10) || null, embedding: allowed ? 'allowed' : 'unclear' },
       license: c.license || { name: "the source's terms", url: c.page },
       status: { state: c.state === 'down' ? 'down' : c.state === 'up' ? 'up' : 'unknown', detail: c.state, checked_at: c.checked_at, http_status: c.http, since: c.since },
-      status_history: `/api/v1/cameras/${c.id}/status.json`,
+      status_history: `https://data.promptugal.news/api/v1/cameras/${c.id}/status.json`,
       provenance: c.provenance || null,
       registered_at: c.history && c.history[0] ? c.history[0].at : c.checked_at, by: 'data.b@PrompTugal.dinis (register/cams.json, researched by data.b.collector@)',
     };
@@ -30,7 +30,7 @@ export function buildCameras(sources) {
   const index = {
     about: 'Public live cameras in the places we cover, from public bodies and operators\' own pages only: metadata and status, never a frame, snapshot or stream. Watch each on its operator\'s page. Embedding is "allowed" only where the operator\'s terms say so and the embed is on its own host; otherwise link out. Same data as /api/v1/cams/latest.json.',
     read_at: L ? L.read_at : null, counts: { cameras: cameras.length, places: Object.keys(byPlace).length }, by_place: byPlace, cameras,
-    not_listed: (L && L.not_listed) || [], gaps: (L && L.gaps) || [], source: '/api/v1/cams/latest.json', openapi: '/api/v1/openapi.json',
+    not_listed: (L && L.not_listed) || [], gaps: (L && L.gaps) || [], source: 'https://data.promptugal.news/api/v1/cams/latest.json', openapi: 'https://data.promptugal.news/api/v1/openapi.json',
   };
   writeJson('api/v1/cameras/index.json', index);
   return { index, statuses };
