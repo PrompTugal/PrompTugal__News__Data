@@ -1,0 +1,160 @@
+{
+ "about": "Register of public live cameras in Lisboa and the 16 Algarve municipalities. Only pages that were read are listed. No stream, frame or snapshot was fetched. This is a first pass and it is small.",
+ "made_by": "data.b.collector@PrompTugal.dinis (Sonnet), for data.b@PrompTugal.dinis",
+ "read_at": "2026-11-18T00:00:00Z",
+ "rules": [
+  "Public bodies and official operators only",
+  "Windy: terms recorded, API not called",
+  "Never fetch, store or describe a stream, frame or snapshot",
+  "Refusals (403, bot check) recorded as gaps, not worked around",
+  "No private cameras or directories; private business only with its own public page, flagged",
+  "Each entry needs an operator page actually read"
+ ],
+ "cameras": [
+  {
+   "id": "lisboa-tejo-live-cacilhas",
+   "name": "Tejo Live, Câmara Cacilhas",
+   "place": "lisboa",
+   "municipality": "Almada (view covers Lisboa)",
+   "lat": 38.687,
+   "lon": -9.15,
+   "coords_from": "approximate from the named place",
+   "operator": "APL Administração do Porto de Lisboa (Tejo Live)",
+   "operator_kind": "port",
+   "page": "https://www.portodelisboa.pt/tejo-live",
+   "embed": null,
+   "status_check": "page: the page's HTML has no status or last-updated text; none can be checked without loading the stream, which this register does not do",
+   "terms_page": "https://www.portodelisboa.pt/politica-de-privacidade",
+   "terms_summary": "Page footer: '© APL Administração do Porto de Lisboa'. No linking or embedding terms found on the page. Page says the feed is about 30 seconds behind and that no image or sound is recorded or stored.",
+   "licence_link": null,
+   "read_at": "2026-11-18T00:00:00Z",
+   "notes": "Sited at Cacilhas on the south bank; shows the estuary between the 25 de Abril and Vasco da Gama bridges and the Lisbon port terminals. Camera stands in Almada, listed under lisboa because the view is of Lisbon. Coordinates are approximate for Cacilhas."
+  },
+  {
+   "id": "lisboa-tejo-live-vts",
+   "name": "Tejo Live, Câmara VTS",
+   "place": "lisboa",
+   "municipality": "Oeiras (view covers Lisboa)",
+   "lat": 38.7,
+   "lon": -9.23,
+   "coords_from": "approximate from the named place",
+   "operator": "APL Administração do Porto de Lisboa (Tejo Live)",
+   "operator_kind": "port",
+   "page": "https://www.portodelisboa.pt/tejo-live",
+   "embed": null,
+   "status_check": "page: the page's HTML has no status or last-updated text; none can be checked without loading the stream, which this register does not do",
+   "terms_page": "https://www.portodelisboa.pt/politica-de-privacidade",
+   "terms_summary": "Page footer: '© APL Administração do Porto de Lisboa'. No linking or embedding terms found on the page. Page says the feed is about 30 seconds behind and that no image or sound is recorded or stored.",
+   "licence_link": null,
+   "read_at": "2026-11-18T00:00:00Z",
+   "notes": "Sited at the maritime traffic control centre in Alges; wide view from the 25 de Abril bridge to the Lisbon port approach. Camera stands in Oeiras, listed under lisboa because the view is of the Lisbon port. Coordinates are approximate for Alges."
+  },
+  {
+   "id": "portimao-praia-da-rocha-ondas",
+   "name": "Ondas em Direto, Praia da Rocha",
+   "place": "portimao",
+   "municipality": "Portimão",
+   "lat": 37.119,
+   "lon": -8.536,
+   "coords_from": "approximate from the named place",
+   "operator": "Agrupamento de Escolas Manuel Teixeira Gomes (AEMTG), with the support of Câmara Municipal de Portimão",
+   "operator_kind": "public agency",
+   "page": "https://meteorologia.aemtg.pt/video",
+   "embed": null,
+   "status_check": "page: the page's HTML has no status text; none can be checked from HTML",
+   "terms_page": null,
+   "terms_summary": "No terms, licence or embedding information found on the page.",
+   "licence_link": null,
+   "read_at": "2026-11-18T00:00:00Z",
+   "notes": "FLAGGED. A public school group runs the page; the municipality's site links to it under 'Ondas Direto Praia Rocha' and its logo is on the page. The page text says 'Visualização em tempo real' of Praia da Rocha, but it does not name a camera, so the camera is inferred, not seen. A 2022 news report (postal.pt, 11 Oct 2022) says the stream came from a school and municipality project; current status unverified. The operator's page was read; the stream was not."
+  }
+ ],
+ "not_listed": [
+  {
+   "name": "MEO BeachCam network (Faro Oeste, Ilha do Farol, Praia Verde, Alagoa, Alvor and others)",
+   "url": "https://beachcam.meo.pt/",
+   "reason": "Operator is MEO, a private company, not an allowed operator. Faro's municipality contracted two cameras (per postal.pt) but the municipal site cm-faro.pt, including its beaches page, carries no camera link. The MEO site returned 403, so its terms could not be read. Ask Dinis whether municipal-contracted MEO cameras may be linked."
+  },
+  {
+   "name": "Windy webcams",
+   "url": "https://api.windy.com/webcams/terms",
+   "reason": "Terms read. They do not address listing webcams. They say: 'Link every image with us', 'Mention us' (example 'Webcams provided by Windy.com'), use data 'as is' from the API, and embedding is not explicitly permitted. Images must use API URLs. Windy can end the API at any time. Not listed: no key, API not called, and the terms do not clearly allow a register that holds camera records."
+  },
+  {
+   "name": "SkylineWebcams (Lagos, Faro and others)",
+   "url": "https://www.skylinewebcams.com/en/terms-of-use.html",
+   "reason": "Terms read. They say nothing on linking or listing from other sites. Sharing is allowed only through its own share buttons and links; embedding is allowed with its Embed code unmodified; scraping and republishing are banned. Cameras are privately run (for example a restaurant). Not listed."
+  },
+  {
+   "name": "Porto de Lisboa, Tejo Live via portodelisboa.pt only",
+   "url": "https://www.portodelisboa.pt/",
+   "reason": "Used; see cameras."
+  },
+  {
+   "name": "Albufeira Praia dos Pescadores (hotel), Lagos Porto de Mos (restaurant), Martinhal, Carvoeiro videosurveillance",
+   "url": "https://postal.pt/algarve/praia-do-carvoeiro-vai-ter-sistema-de-videovigilancia/",
+   "reason": "Private business cameras on aggregator sites, or non-public surveillance. Operator's own public page not found."
+  },
+  {
+   "name": "Ria Formosa / Costa Vicentina park webcams",
+   "url": "https://www.icnf.pt/",
+   "reason": "No ICNF-published live camera found in search."
+  },
+  {
+   "name": "Airports (ANA Faro, Lisboa)",
+   "url": "https://www.ana.pt/",
+   "reason": "No webcam page found; WebTrak is flight-track data, not a camera."
+  },
+  {
+   "name": "Infraestruturas de Portugal, Ponte 25 de Abril and Vasco da Gama",
+   "url": "https://www.infraestruturasdeportugal.pt/",
+   "reason": "No official IP camera page found. A commercial aggregator claims IP feeds; unverified, not used."
+  }
+ ],
+ "gaps": [
+  {
+   "host": "www.cm-lisboa.pt",
+   "reason": "403 on fetch"
+  },
+  {
+   "host": "beachcam.meo.pt",
+   "reason": "403 on fetch, terms unread"
+  },
+  {
+   "host": "www.portugalresident.com",
+   "reason": "403 on fetch"
+  },
+  {
+   "host": "www.sulinformacao.pt",
+   "reason": "403 on fetch"
+  },
+  {
+   "host": "www.apsinesportimao.pt",
+   "reason": "host would not resolve in this session's network"
+  },
+  {
+   "host": "www.visitalgarve.pt",
+   "reason": "page content too thin to find a webcam page; not confirmed either way"
+  },
+  {
+   "host": "www.visitlisboa.com",
+   "reason": "read; no webcam page linked"
+  },
+  {
+   "host": "www.cm-tavira.pt",
+   "reason": "redirected to http://www.cm-tavira.pt/site/index.php; not followed"
+  },
+  {
+   "host": "www.cm-olhao.pt",
+   "reason": "page was script-loaded; no content read"
+  },
+  {
+   "host": "www.cm-faro.pt, cm-lagos.pt, cm-albufeira.pt, cm-loule.pt, cm-portimao.pt",
+   "reason": "home pages (and Faro beaches page) read; no own camera page. Portimão only links the AEMTG page"
+  },
+  {
+   "host": "IPMA, APA, ICNF, other municipalities (Alcoutim, Aljezur, Castro Marim, Lagoa, Monchique, Silves, São Brás de Alportel, Vila do Bispo, Vila Real de Santo António)",
+   "reason": "not reached in this pass; coverage incomplete"
+  }
+ ]
+}
