@@ -1,0 +1,186 @@
+{
+ "place": "loule",
+ "asked_at": "2026-11-18T14:17:12Z",
+ "model": "perplexity/sonar",
+ "via": "OpenRouter",
+ "by": "collect/discovery.mjs (data.b@PrompTugal.dinis)",
+ "about": "Phase 1 evidence: what Perplexity answered about events in this place, with every URL it cited. Not published as content; each event becomes a claim whose details come only from readable sources.",
+ "prompt": "List public events (concerts, exhibitions, festivals, fairs, talks, sports, markets, theatre) taking place in Loulé, Portugal, between 2026-11-18 and the next 30 days. Answer ONLY with a JSON array, no prose. Each item: {\"name\": string, \"start_date\": \"YYYY-MM-DD\", \"end_date\": \"YYYY-MM-DD\" or null, \"venue\": string or null, \"municipality\": string, \"organiser\": organisation name or null (never a private person), \"urls\": [the source URLs for this event]}. Include only events you can support with a source URL. At most 25 items.",
+ "ok": true,
+ "items": [
+  {
+   "name": "Reunião de Câmara",
+   "start_date": "2026-11-18",
+   "end_date": "2026-11-18",
+   "venue": "Câmara Municipal de Loulé",
+   "municipality": "Loulé",
+   "organiser": "Câmara Municipal de Loulé",
+   "urls": [
+    "https://www.cm-loule.pt/pt/agenda.aspx"
+   ]
+  },
+  {
+   "name": "Crescendo Cycle Concert",
+   "start_date": "2026-11-21",
+   "end_date": "2026-11-21",
+   "venue": "Auditório do Solar da Música Nova",
+   "municipality": "Loulé",
+   "organiser": "Conservatório de Música de Loulé - Francisco Rosado",
+   "urls": [
+    "https://conservatoriodeloule.pt/en/events/crescendo-cycle-concert-november-2026/"
+   ]
+  },
+  {
+   "name": "St. Cecilia's Concert",
+   "start_date": "2026-11-23",
+   "end_date": "2026-11-23",
+   "venue": "Cineteatro Louletano",
+   "municipality": "Loulé",
+   "organiser": "Conservatório de Música de Loulé - Francisco Rosado",
+   "urls": [
+    "https://conservatoriodeloule.pt/en/events/crescendo-cycle-concert-november-2026/"
+   ]
+  },
+  {
+   "name": "Loulé Saturday Gypsy Market",
+   "start_date": "2026-11-28",
+   "end_date": "2026-11-28",
+   "venue": "Rua Nossa Senhora da Piedade",
+   "municipality": "Loulé",
+   "organiser": "null",
+   "urls": [
+    "https://algarvecircle.com/events/loule-gypsy-market-2026-11-28"
+   ]
+  },
+  {
+   "name": "Contrapeso Festival #6: Vincent Peirani",
+   "start_date": "2026-11-28",
+   "end_date": "2026-11-28",
+   "venue": "Cineteatro Louletano",
+   "municipality": "Loulé",
+   "organiser": "null",
+   "urls": [
+    "https://algarvecircle.com/events/contrapeso-festival-6-vincent-peirani-2026-11-28"
+   ]
+  },
+  {
+   "name": "Palm, Esparto and Cane",
+   "start_date": "2026-09-25",
+   "end_date": "2026-11-21",
+   "venue": "Palácio Gama Lobo",
+   "municipality": "Loulé",
+   "organiser": "Câmara Municipal de Loulé",
+   "urls": [
+    "https://activealgarve.pt/event/exhibition-palm-esparto-and-cane-2026-09"
+   ]
+  },
+  {
+   "name": "Som Riscado Festival",
+   "start_date": "2026-11-01",
+   "end_date": "2026-11-30",
+   "venue": null,
+   "municipality": "Loulé",
+   "organiser": "null",
+   "urls": [
+    "https://algarvecircle.com/events"
+   ]
+  },
+  {
+   "name": "Loulé Flea Market",
+   "start_date": "2026-11-18",
+   "end_date": "2026-12-20",
+   "venue": "Loulé",
+   "municipality": "Loulé",
+   "organiser": "null",
+   "urls": [
+    "https://www.algarveatlas.com/en/municipalities/loule"
+   ]
+  },
+  {
+   "name": "Misty Fest: Raül Refree & Maria Mazzotta",
+   "start_date": "2026-11-18",
+   "end_date": "2026-11-18",
+   "venue": "Cineteatro Louletano",
+   "municipality": "Loulé",
+   "organiser": "Misty Fest",
+   "urls": [
+    "https://quintaproperty.com/whats-on-in-the-algarve-september-october-november-2026/"
+   ]
+  },
+  {
+   "name": "Caminhos",
+   "start_date": "2026-11-06",
+   "end_date": "2026-11-06",
+   "venue": "Loulé Municipal Library – Sophia de Mello Breyner Andresen",
+   "municipality": "Loulé",
+   "organiser": "null",
+   "urls": [
+    "https://www.sulinformacao.pt/2026/10/afonso-dias-e-o-filho-dinis-cantam-a-liberdade-em-loule/"
+   ]
+  },
+  {
+   "name": "Wine and Cheese Experience",
+   "start_date": "2026-11-18",
+   "end_date": "2026-11-18",
+   "venue": "Spaces by Awaken, Vila Sol",
+   "municipality": "Loulé",
+   "organiser": "Awaken",
+   "urls": [
+    "https://happeningnext.com/event/wine-and-cheese-experience-eid3a0eavoi6e"
+   ]
+  },
+  {
+   "name": "Feira da Serra de Natal",
+   "start_date": "2026-12-05",
+   "end_date": "2026-12-06",
+   "venue": "old Carnival warehouse beside the Santo António Convent",
+   "municipality": "Loulé",
+   "organiser": "Câmara Municipal de Loulé",
+   "urls": [
+    "https://activealgarve.pt/events"
+   ]
+  }
+ ],
+ "citations": [
+  "https://www.cm-loule.pt/pt/agenda.aspx",
+  "https://conservatoriodeloule.pt/en/events/crescendo-cycle-concert-november-2026/",
+  "https://algarvecircle.com/events",
+  "https://algarvecircle.com/events/loule-gypsy-market-2026-11-28",
+  "https://algarvecircle.com/events/contrapeso-festival-6-vincent-peirani-2026-11-28",
+  "https://activealgarve.pt/event/exhibition-palm-esparto-and-cane-2026-09",
+  "https://conservatoriodeloule.pt/en/",
+  "https://quintaproperty.com/whats-on-in-the-algarve-september-october-november-2026/",
+  "https://www.algarveatlas.com/en/municipalities/loule",
+  "https://activealgarve.pt/events",
+  "https://www.museudeloule.pt/en/agenda.aspx",
+  "https://www.algarveaddicts.com/algarve-events-november-2026",
+  "https://www.sulinformacao.pt/2026/10/afonso-dias-e-o-filho-dinis-cantam-a-liberdade-em-loule/",
+  "https://happeningnext.com/event/wine-and-cheese-experience-eid3a0eavoi6e",
+  "https://dailynata.com/whats-on"
+ ],
+ "answer_text": "[{\"name\":\"Reunião de Câmara\",\"start_date\":\"2026-11-18\",\"end_date\":\"2026-11-18\",\"venue\":\"Câmara Municipal de Loulé\",\"municipality\":\"Loulé\",\"organiser\":\"Câmara Municipal de Loulé\",\"urls\":[\"https://www.cm-loule.pt/pt/agenda.aspx\"]},{\"name\":\"Crescendo Cycle Concert\",\"start_date\":\"2026-11-21\",\"end_date\":\"2026-11-21\",\"venue\":\"Auditório do Solar da Música Nova\",\"municipality\":\"Loulé\",\"organiser\":\"Conservatório de Música de Loulé - Francisco Rosado\",\"urls\":[\"https://conservatoriodeloule.pt/en/events/crescendo-cycle-concert-november-2026/\"]},{\"name\":\"St. Cecilia's Concert\",\"start_date\":\"2026-11-23\",\"end_date\":\"2026-11-23\",\"venue\":\"Cineteatro Louletano\",\"municipality\":\"Loulé\",\"organiser\":\"Conservatório de Música de Loulé - Francisco Rosado\",\"urls\":[\"https://conservatoriodeloule.pt/en/events/crescendo-cycle-concert-november-2026/\"]},{\"name\":\"Loulé Saturday Gypsy Market\",\"start_date\":\"2026-11-28\",\"end_date\":\"2026-11-28\",\"venue\":\"Rua Nossa Senhora da Piedade\",\"municipality\":\"Loulé\",\"organiser\":\"null\",\"urls\":[\"https://algarvecircle.com/events/loule-gypsy-market-2026-11-28\"]},{\"name\":\"Contrapeso Festival #6: Vincent Peirani\",\"start_date\":\"2026-11-28\",\"end_date\":\"2026-11-28\",\"venue\":\"Cineteatro Louletano\",\"municipality\":\"Loulé\",\"organiser\":\"null\",\"urls\":[\"https://algarvecircle.com/events/contrapeso-festival-6-vincent-peirani-2026-11-28\"]},{\"name\":\"Palm, Esparto and Cane\",\"start_date\":\"2026-09-25\",\"end_date\":\"2026-11-21\",\"venue\":\"Palácio Gama Lobo\",\"municipality\":\"Loulé\",\"organiser\":\"Câmara Municipal de Loulé\",\"urls\":[\"https://activealgarve.pt/event/exhibition-palm-esparto-and-cane-2026-09\"]},{\"name\":\"Som Riscado Festival\",\"start_date\":\"2026-11-01\",\"end_date\":\"2026-11-30\",\"venue\":null,\"municipality\":\"Loulé\",\"organiser\":\"null\",\"urls\":[\"https://algarvecircle.com/events\"]},{\"name\":\"Loulé Flea Market\",\"start_date\":\"2026-11-18\",\"end_date\":\"2026-12-20\",\"venue\":\"Loulé\",\"municipality\":\"Loulé\",\"organiser\":\"null\",\"urls\":[\"https://www.algarveatlas.com/en/municipalities/loule\"]},{\"name\":\"Misty Fest: Raül Refree & Maria Mazzotta\",\"start_date\":\"2026-11-18\",\"end_date\":\"2026-11-18\",\"venue\":\"Cineteatro Louletano\",\"municipality\":\"Loulé\",\"organiser\":\"Misty Fest\",\"urls\":[\"https://quintaproperty.com/whats-on-in-the-algarve-september-october-november-2026/\"]},{\"name\":\"Caminhos\",\"start_date\":\"2026-11-06\",\"end_date\":\"2026-11-06\",\"venue\":\"Loulé Municipal Library – Sophia de Mello Breyner Andresen\",\"municipality\":\"Loulé\",\"organiser\":\"null\",\"urls\":[\"https://www.sulinformacao.pt/2026/10/afonso-dias-e-o-filho-dinis-cantam-a-liberdade-em-loule/\"]},{\"name\":\"Wine and Cheese Experience\",\"start_date\":\"2026-11-18\",\"end_date\":\"2026-11-18\",\"venue\":\"Spaces by Awaken, Vila Sol\",\"municipality\":\"Loulé\",\"organiser\":\"Awaken\",\"urls\":[\"https://happeningnext.com/event/wine-and-cheese-experience-eid3a0eavoi6e\"]},{\"name\":\"Feira da Serra de Natal\",\"start_date\":\"2026-12-05\",\"end_date\":\"2026-12-06\",\"venue\":\"old Carnival warehouse beside the Santo António Convent\",\"municipality\":\"Loulé\",\"organiser\":\"Câmara Municipal de Loulé\",\"urls\":[\"https://activealgarve.pt/events\"]}]",
+ "usage": {
+  "prompt_tokens": 141,
+  "completion_tokens": 1007,
+  "total_tokens": 1148,
+  "cost": 0.0060885,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00615,
+   "upstream_inference_prompt_cost": 0.000141,
+   "upstream_inference_completions_cost": 0.006009
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "cost_usd": 0.0060885
+}

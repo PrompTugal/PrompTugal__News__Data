@@ -1,0 +1,134 @@
+{
+ "place": "faro",
+ "asked_at": "2026-11-18T14:17:05Z",
+ "model": "perplexity/sonar",
+ "via": "OpenRouter",
+ "by": "collect/discovery.mjs (data.b@PrompTugal.dinis)",
+ "about": "Phase 1 evidence: what Perplexity answered about events in this place, with every URL it cited. Not published as content; each event becomes a claim whose details come only from readable sources.",
+ "prompt": "List public events (concerts, exhibitions, festivals, fairs, talks, sports, markets, theatre) taking place in Faro, Portugal, between 2026-11-18 and the next 30 days. Answer ONLY with a JSON array, no prose. Each item: {\"name\": string, \"start_date\": \"YYYY-MM-DD\", \"end_date\": \"YYYY-MM-DD\" or null, \"venue\": string or null, \"municipality\": string, \"organiser\": organisation name or null (never a private person), \"urls\": [the source URLs for this event]}. Include only events you can support with a source URL. At most 25 items.",
+ "ok": true,
+ "items": [
+  {
+   "name": "Photography Exhibition Almeida d'Eça",
+   "start_date": "2026-11-18",
+   "end_date": "2026-12-31",
+   "venue": "Faro",
+   "municipality": "Faro",
+   "organiser": null,
+   "urls": [
+    "https://www.algarveatlas.com/en/municipalities/faro"
+   ]
+  },
+  {
+   "name": "Painting Exhibition by José Passos Silva",
+   "start_date": "2026-11-18",
+   "end_date": "2026-11-30",
+   "venue": "Janela Imobiliária, Faro",
+   "municipality": "Faro",
+   "organiser": null,
+   "urls": [
+    "https://www.algarveatlas.com/en/municipalities/faro"
+   ]
+  },
+  {
+   "name": "XIX International Organ Festival of the Algarve 2026",
+   "start_date": "2026-11-21",
+   "end_date": "2026-11-21",
+   "venue": "Igreja da Sé, Faro",
+   "municipality": "Faro",
+   "organiser": null,
+   "urls": [
+    "https://www.algarveatlas.com/en/municipalities/faro",
+    "https://www.theportugalnews.com/news/2026-10-22/autumn-festivals-and-events-in-the-algarve/1104742"
+   ]
+  },
+  {
+   "name": "The Whole World Awaits",
+   "start_date": "2026-11-21",
+   "end_date": "2026-11-21",
+   "venue": "Teatro das Figuras, Faro",
+   "municipality": "Faro",
+   "organiser": null,
+   "urls": [
+    "https://www.algarveatlas.com/en/municipalities/faro"
+   ]
+  },
+  {
+   "name": "Moby Dick",
+   "start_date": "2026-11-27",
+   "end_date": "2026-11-27",
+   "venue": "Teatro das Figuras, Faro",
+   "municipality": "Faro",
+   "organiser": null,
+   "urls": [
+    "https://www.algarveatlas.com/en/municipalities/faro",
+    "https://algarvecircle.com/whats-on/november-2026"
+   ]
+  },
+  {
+   "name": "XIX International Organ Festival of the Algarve 2026",
+   "start_date": "2026-11-28",
+   "end_date": "2026-11-28",
+   "venue": "Igreja da Sé, Faro",
+   "municipality": "Faro",
+   "organiser": null,
+   "urls": [
+    "https://www.algarveatlas.com/en/municipalities/faro",
+    "https://www.theportugalnews.com/news/2026-10-22/autumn-festivals-and-events-in-the-algarve/1104742"
+   ]
+  },
+  {
+   "name": "Daniel Kemish in concert",
+   "start_date": "2026-11-28",
+   "end_date": "2026-11-28",
+   "venue": "Teatro Lethes, Faro",
+   "municipality": "Faro",
+   "organiser": null,
+   "urls": [
+    "https://algarvecircle.com/whats-on/november-2026"
+   ]
+  }
+ ],
+ "citations": [
+  "https://algarveholidaytips.com/events/novembro-na-biblioteca-de-faro-2026-cultural-month/",
+  "https://www.algarveatlas.com/en/municipalities/faro",
+  "https://www.algarveaddicts.com/algarve-events-november-2026",
+  "https://www.eventbrite.es/d/portugal--faro--85687349/events/",
+  "https://www.visitportugal.com/en (query cut)",
+  "https://www.eventbrite.fi/d/portugal--faro--85687349/events/",
+  "https://dailynata.com/whats-on",
+  "https://www.eventbrite.fr/d/portugal/faro/",
+  "https://www.travelandtourworld.com/news/article/su4j6pdoiv9q/",
+  "https://www.eventbrite.ie/d/portugal--faro/events/",
+  "https://www.myguidealgarve.com/events/november-2026/page/16",
+  "https://www.theportugalnews.com/news/2026-10-22/autumn-festivals-and-events-in-the-algarve/1104742",
+  "https://www.eventbrite.ca/d/portugal/faro/",
+  "https://quintaproperty.com/whats-on-in-the-algarve-september-october-november-2026/",
+  "https://algarvecircle.com/whats-on/november-2026"
+ ],
+ "answer_text": "[{\"name\":\"Photography Exhibition Almeida d'Eça\",\"start_date\":\"2026-11-18\",\"end_date\":\"2026-12-31\",\"venue\":\"Faro\",\"municipality\":\"Faro\",\"organiser\":null,\"urls\":[\"https://www.algarveatlas.com/en/municipalities/faro\"]},{\"name\":\"Painting Exhibition by José Passos Silva\",\"start_date\":\"2026-11-18\",\"end_date\":\"2026-11-30\",\"venue\":\"Janela Imobiliária, Faro\",\"municipality\":\"Faro\",\"organiser\":null,\"urls\":[\"https://www.algarveatlas.com/en/municipalities/faro\"]},{\"name\":\"XIX International Organ Festival of the Algarve 2026\",\"start_date\":\"2026-11-21\",\"end_date\":\"2026-11-21\",\"venue\":\"Igreja da Sé, Faro\",\"municipality\":\"Faro\",\"organiser\":null,\"urls\":[\"https://www.algarveatlas.com/en/municipalities/faro\",\"https://www.theportugalnews.com/news/2026-10-22/autumn-festivals-and-events-in-the-algarve/1104742\"]},{\"name\":\"The Whole World Awaits\",\"start_date\":\"2026-11-21\",\"end_date\":\"2026-11-21\",\"venue\":\"Teatro das Figuras, Faro\",\"municipality\":\"Faro\",\"organiser\":null,\"urls\":[\"https://www.algarveatlas.com/en/municipalities/faro\"]},{\"name\":\"Moby Dick\",\"start_date\":\"2026-11-27\",\"end_date\":\"2026-11-27\",\"venue\":\"Teatro das Figuras, Faro\",\"municipality\":\"Faro\",\"organiser\":null,\"urls\":[\"https://www.algarveatlas.com/en/municipalities/faro\",\"https://algarvecircle.com/whats-on/november-2026\"]},{\"name\":\"XIX International Organ Festival of the Algarve 2026\",\"start_date\":\"2026-11-28\",\"end_date\":\"2026-11-28\",\"venue\":\"Igreja da Sé, Faro\",\"municipality\":\"Faro\",\"organiser\":null,\"urls\":[\"https://www.algarveatlas.com/en/municipalities/faro\",\"https://www.theportugalnews.com/news/2026-10-22/autumn-festivals-and-events-in-the-algarve/1104742\"]},{\"name\":\"Daniel Kemish in concert\",\"start_date\":\"2026-11-28\",\"end_date\":\"2026-11-28\",\"venue\":\"Teatro Lethes, Faro\",\"municipality\":\"Faro\",\"organiser\":null,\"urls\":[\"https://algarvecircle.com/whats-on/november-2026\"]}]",
+ "usage": {
+  "prompt_tokens": 141,
+  "completion_tokens": 607,
+  "total_tokens": 748,
+  "cost": 0.0056925,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00575,
+   "upstream_inference_prompt_cost": 0.000141,
+   "upstream_inference_completions_cost": 0.005609
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "cost_usd": 0.0056925
+}

@@ -1,0 +1,53 @@
+{
+ "place": "lisboa",
+ "asked_at": "2026-11-18T14:17:01Z",
+ "model": "perplexity/sonar",
+ "via": "OpenRouter",
+ "by": "collect/discovery.mjs (data.b@PrompTugal.dinis)",
+ "about": "Phase 1 evidence: what Perplexity answered about events in this place, with every URL it cited. Not published as content; each event becomes a claim whose details come only from readable sources.",
+ "prompt": "List public events (concerts, exhibitions, festivals, fairs, talks, sports, markets, theatre) taking place in Lisboa, Portugal, between 2026-11-18 and the next 30 days. Answer ONLY with a JSON array, no prose. Each item: {\"name\": string, \"start_date\": \"YYYY-MM-DD\", \"end_date\": \"YYYY-MM-DD\" or null, \"venue\": string or null, \"municipality\": string, \"organiser\": organisation name or null (never a private person), \"urls\": [the source URLs for this event]}. Include only events you can support with a source URL. At most 25 items.",
+ "ok": true,
+ "items": [],
+ "citations": [
+  "https://leffest.com/en/events",
+  "https://www.visitlisboa.com/de/veranstaltungen?q[categories_id_in][]=79",
+  "https://www.visitlisboa.com/en/events?page=3",
+  "https://lisbonline.com/events/2026/11/?page=41",
+  "https://www.eventworld.com/lisbon/concerts/november",
+  "https://www.visitlisboa.com/en/searches/events?page=2&term=lisbon",
+  "https://lisbohemian.com/events/",
+  "https://www.songkick.com/metro-areas/31802-portugal-lisbon",
+  "https://www.visitlisboa.com/fr/evenements?page=3&q[locations_id_in][]=1",
+  "https://www.visitlisboa.com/it/eventi?q[categories_id_in][]=79",
+  "https://www.ccb.pt/en/eventos/lista/",
+  "https://lisbonline.com/events/?date=custom&from=2026-11-13&to=2026-11-29&cat=festival&fest=alkantara",
+  "https://www.songkick.com/metro-areas/31802-portugal-lisbon/november-2026",
+  "https://www.songkick.com/metro-areas/31802-portugal-lisbon/2026",
+  "https://happeningnext.com/event/seahorse-activation-eid3a0ebgpel4"
+ ],
+ "answer_text": "[]",
+ "usage": {
+  "prompt_tokens": 141,
+  "completion_tokens": 1,
+  "total_tokens": 142,
+  "cost": 0.0050886,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00514,
+   "upstream_inference_prompt_cost": 0.000141,
+   "upstream_inference_completions_cost": 0.004999
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "cost_usd": 0.0050886
+}

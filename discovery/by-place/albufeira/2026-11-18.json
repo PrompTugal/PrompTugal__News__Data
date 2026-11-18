@@ -1,0 +1,153 @@
+{
+ "place": "albufeira",
+ "asked_at": "2026-11-18T14:18:02Z",
+ "model": "perplexity/sonar",
+ "via": "OpenRouter",
+ "by": "collect/discovery.mjs (data.b@PrompTugal.dinis)",
+ "about": "Phase 1 evidence: what Perplexity answered about events in this place, with every URL it cited. Not published as content; each event becomes a claim whose details come only from readable sources.",
+ "prompt": "List public events (concerts, exhibitions, festivals, fairs, talks, sports, markets, theatre) taking place in Albufeira, Portugal, between 2026-11-18 and the next 30 days. Answer ONLY with a JSON array, no prose. Each item: {\"name\": string, \"start_date\": \"YYYY-MM-DD\", \"end_date\": \"YYYY-MM-DD\" or null, \"venue\": string or null, \"municipality\": string, \"organiser\": organisation name or null (never a private person), \"urls\": [the source URLs for this event]}. Include only events you can support with a source URL. At most 25 items.",
+ "ok": true,
+ "items": [
+  {
+   "name": "Photography Exhibition “Times that Pass … Memories that Remain\" by Vítor de Sousa",
+   "start_date": "2026-11-18",
+   "end_date": "2027-01-30",
+   "venue": "Arquivo histórico de Albufeira",
+   "municipality": "Albufeira",
+   "organiser": "Municipality of Albufeira",
+   "urls": [
+    "https://www.algarveatlas.com/en/municipalities/albufeira"
+   ]
+  },
+  {
+   "name": "APS L Longevity Summit 2026",
+   "start_date": "2026-11-18",
+   "end_date": "2026-11-20",
+   "venue": "Hotel Grand Real Santa Eulália",
+   "municipality": "Albufeira",
+   "organiser": "APSL",
+   "urls": [
+    "https://www.algarveatlas.com/en/municipalities/albufeira"
+   ]
+  },
+  {
+   "name": "Saber-Fazer Workshops - Macramé",
+   "start_date": "2026-11-18",
+   "end_date": null,
+   "venue": "Centro de Artes e Ofícios de Albufeira",
+   "municipality": "Albufeira",
+   "organiser": "Municipality of Albufeira",
+   "urls": [
+    "https://www.algarveatlas.com/en/municipalities/albufeira"
+   ]
+  },
+  {
+   "name": "Saber-Fazer Workshops - Artistic Drawing",
+   "start_date": "2026-11-18",
+   "end_date": null,
+   "venue": "Centro de Artes e Ofícios Carlos Silva e Sousa",
+   "municipality": "Albufeira",
+   "organiser": "Municipality of Albufeira",
+   "urls": [
+    "https://www.algarveatlas.com/en/municipalities/albufeira"
+   ]
+  },
+  {
+   "name": "Presentation of the book The Time Traveller by Ana Alexandra Resende",
+   "start_date": "2026-11-18",
+   "end_date": null,
+   "venue": "Biblioteca Municipal Lídia Jorge",
+   "municipality": "Albufeira",
+   "organiser": "Municipality of Albufeira",
+   "urls": [
+    "https://www.algarveatlas.com/en/municipalities/albufeira"
+   ]
+  },
+  {
+   "name": "Circular Tapestry Workshop",
+   "start_date": "2026-11-18",
+   "end_date": null,
+   "venue": "Centro de Artes e Ofícios Carlos Silva e Sousa",
+   "municipality": "Albufeira",
+   "organiser": "Municipality of Albufeira",
+   "urls": [
+    "https://www.algarveatlas.com/en/municipalities/albufeira"
+   ]
+  },
+  {
+   "name": "Feira Franca Annual Fair",
+   "start_date": "2026-11-30",
+   "end_date": null,
+   "venue": "Feira dos Caliços",
+   "municipality": "Albufeira",
+   "organiser": "Municipality of Albufeira",
+   "urls": [
+    "https://albufeira.com/events/regular/"
+   ]
+  },
+  {
+   "name": "Albufeira Christmas Market",
+   "start_date": "2026-12-05",
+   "end_date": null,
+   "venue": "EMA Pavillion",
+   "municipality": "Albufeira",
+   "organiser": "Municipality of Albufeira",
+   "urls": [
+    "https://albufeira.com/events/regular/"
+   ]
+  },
+  {
+   "name": "Santas on Bike Parade",
+   "start_date": "2026-12-15",
+   "end_date": null,
+   "venue": null,
+   "municipality": "Albufeira",
+   "organiser": "Moto Clube de Albufeira",
+   "urls": [
+    "https://albufeira.com/events/regular/"
+   ]
+  }
+ ],
+ "citations": [
+  "https://www.algarveatlas.com/en/municipalities/albufeira",
+  "https://albufeira.com/events/",
+  "https://www.algarveatlas.com/en/events/vi-festival-de-harpa-do-algarve-7942",
+  "https://www.myguidealgarve.com/events",
+  "https://albufeira.com/events/regular/",
+  "https://algarvecircle.com/whats-on/november-2026",
+  "https://stayhappening.com/albufeira",
+  "https://blog.algarve-ferias.com/en/events/",
+  "https://www.eventbrite.fi/d/portugal--albufeira/events/",
+  "https://www.myguidealgarve.com/events/december-2026/page/4",
+  "https://www.myguidealgarve.com/events/christmas-in-algarve",
+  "https://algarveholidaytips.com/algarve-events/new-years-eve/",
+  "https://www.hostelworld.com/events/europe/portugal/albufeira/",
+  "https://www.myguidealgarve.com/events/festive-season-w-algarve-christmas-new-year",
+  "https://www.myguidealgarve.com/events/festive-season-ciro-restaurant-guia?date=2026-12-24"
+ ],
+ "answer_text": "[{\"name\":\"Photography Exhibition “Times that Pass … Memories that Remain\\\" by Vítor de Sousa\",\"start_date\":\"2026-11-18\",\"end_date\":\"2027-01-30\",\"venue\":\"Arquivo histórico de Albufeira\",\"municipality\":\"Albufeira\",\"organiser\":\"Municipality of Albufeira\",\"urls\":[\"https://www.algarveatlas.com/en/municipalities/albufeira\"]},{\"name\":\"APS L Longevity Summit 2026\",\"start_date\":\"2026-11-18\",\"end_date\":\"2026-11-20\",\"venue\":\"Hotel Grand Real Santa Eulália\",\"municipality\":\"Albufeira\",\"organiser\":\"APSL\",\"urls\":[\"https://www.algarveatlas.com/en/municipalities/albufeira\"]},{\"name\":\"Saber-Fazer Workshops - Macramé\",\"start_date\":\"2026-11-18\",\"end_date\":null,\"venue\":\"Centro de Artes e Ofícios de Albufeira\",\"municipality\":\"Albufeira\",\"organiser\":\"Municipality of Albufeira\",\"urls\":[\"https://www.algarveatlas.com/en/municipalities/albufeira\"]},{\"name\":\"Saber-Fazer Workshops - Artistic Drawing\",\"start_date\":\"2026-11-18\",\"end_date\":null,\"venue\":\"Centro de Artes e Ofícios Carlos Silva e Sousa\",\"municipality\":\"Albufeira\",\"organiser\":\"Municipality of Albufeira\",\"urls\":[\"https://www.algarveatlas.com/en/municipalities/albufeira\"]},{\"name\":\"Presentation of the book The Time Traveller by Ana Alexandra Resende\",\"start_date\":\"2026-11-18\",\"end_date\":null,\"venue\":\"Biblioteca Municipal Lídia Jorge\",\"municipality\":\"Albufeira\",\"organiser\":\"Municipality of Albufeira\",\"urls\":[\"https://www.algarveatlas.com/en/municipalities/albufeira\"]},{\"name\":\"Circular Tapestry Workshop\",\"start_date\":\"2026-11-18\",\"end_date\":null,\"venue\":\"Centro de Artes e Ofícios Carlos Silva e Sousa\",\"municipality\":\"Albufeira\",\"organiser\":\"Municipality of Albufeira\",\"urls\":[\"https://www.algarveatlas.com/en/municipalities/albufeira\"]},{\"name\":\"Feira Franca Annual Fair\",\"start_date\":\"2026-11-30\",\"end_date\":null,\"venue\":\"Feira dos Caliços\",\"municipality\":\"Albufeira\",\"organiser\":\"Municipality of Albufeira\",\"urls\":[\"https://albufeira.com/events/regular/\"]},{\"name\":\"Albufeira Christmas Market\",\"start_date\":\"2026-12-05\",\"end_date\":null,\"venue\":\"EMA Pavillion\",\"municipality\":\"Albufeira\",\"organiser\":\"Municipality of Albufeira\",\"urls\":[\"https://albufeira.com/events/regular/\"]},{\"name\":\"Santas on Bike Parade\",\"start_date\":\"2026-12-15\",\"end_date\":null,\"venue\":null,\"municipality\":\"Albufeira\",\"organiser\":\"Moto Clube de Albufeira\",\"urls\":[\"https://albufeira.com/events/regular/\"]}]",
+ "usage": {
+  "prompt_tokens": 143,
+  "completion_tokens": 730,
+  "total_tokens": 873,
+  "cost": 0.0058113,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00587,
+   "upstream_inference_prompt_cost": 0.000143,
+   "upstream_inference_completions_cost": 0.005727
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "cost_usd": 0.0058113
+}

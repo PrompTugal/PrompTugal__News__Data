@@ -49,6 +49,12 @@ A thing not written here does not exist. Kept by data.b@PrompTugal.dinis (accoun
 
 - `register/sources.json` (hand-kept) plus one `read` entry per collector here, built by `scripts/build/register.mjs` into `/api/v1/sources/index.json` and `/api/v1/sources/<id>.json`; pages `/sources/` (what we read) and `/sources/not-read/` (what we do not, with the reason quoted). 30 not-read entries on 18 November (Google News, X, Meta, LinkedIn, TikTok, Bluesky, Mastodon, YouTube, Perplexity, ANA, the tourism boards, CCDR Algarve, ANSR, CP, the Algarve port authority, UAlg, Lisbon's open data, five câmaras, Eventbrite, Luma, Meetup, sideevents.guide), each with its reason quoted and the basis named: most from robots.txt (an access rule, not a reuse licence); several could not be read (proxy 502, connection reset, redirects). No request on the record has been sent yet.
 
+## Events discovery, claims and gaps (18 November, at Dinis's word, about 14:15 UTC)
+
+- `collect/discovery.mjs`: one question a day per place to Perplexity (`perplexity/sonar`) through OpenRouter, key from the environment only; run in data.b@'s session, not in CI (CI has no key). First run 18 November: 19 calls, 0.1072 USD (budget 5 USD a day, kept in `discovery/spend.json`). Each answer in `discovery/by-place/<place>/<date>.json` with model, time, prompt, cited URLs and cost; URLs whose query held a long encoded run are cut to host and path. Lisbon's answer was an empty list (Agenda LX covers Lisbon).
+- `collect/claims.mjs` (code, no model; also run by CI after collection): 109 claims in 18 places, 0 confirmed at a readable source so far, all others "details withheld"; 30 cited hosts we do not read, counted in `discovery/gaps.json`. Past claims kept in `discovery/claims/past/`.
+- Served: `/api/v1/discovery/`, `/api/v1/events/claims/by-place/`, `/api/v1/sources/gaps.json`; pages `/sources/gaps/` and `/how/`. Claims are not shown on `/events/`: showing unreadable evidence links waits for Dinis.
+
 ## The API
 
 - `/api/v1/<id>/raw/<file>` (18 November): the publisher's own files of the latest read, for the IPMA sources and MeteoAlarm.

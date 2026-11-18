@@ -1,0 +1,160 @@
+{
+ "place": "sao-bras-de-alportel",
+ "asked_at": "2026-11-18T14:18:49Z",
+ "model": "perplexity/sonar",
+ "via": "OpenRouter",
+ "by": "collect/discovery.mjs (data.b@PrompTugal.dinis)",
+ "about": "Phase 1 evidence: what Perplexity answered about events in this place, with every URL it cited. Not published as content; each event becomes a claim whose details come only from readable sources.",
+ "prompt": "List public events (concerts, exhibitions, festivals, fairs, talks, sports, markets, theatre) taking place in São Brás de Alportel, Portugal, between 2026-11-18 and the next 30 days. Answer ONLY with a JSON array, no prose. Each item: {\"name\": string, \"start_date\": \"YYYY-MM-DD\", \"end_date\": \"YYYY-MM-DD\" or null, \"venue\": string or null, \"municipality\": string, \"organiser\": organisation name or null (never a private person), \"urls\": [the source URLs for this event]}. Include only events you can support with a source URL. At most 25 items.",
+ "ok": true,
+ "items": [
+  {
+   "name": "Saturdays at the Market",
+   "start_date": "2026-11-18",
+   "end_date": null,
+   "venue": "Mercado Municipal / Espaço Animação",
+   "municipality": "São Brás de Alportel",
+   "organiser": null,
+   "urls": [
+    "https://eventos.visitalgarve.pt/en/events",
+    "https://algarvecircle.com/councils/sao-bras-de-alportel"
+   ]
+  },
+  {
+   "name": "Seminar Series on Rural Spaces",
+   "start_date": "2026-11-21",
+   "end_date": "2026-11-28",
+   "venue": "Salão Nobre da Câmara Municipal",
+   "municipality": "São Brás de Alportel",
+   "organiser": "Câmara Municipal de São Brás de Alportel",
+   "urls": [
+    "https://www.sustainableliving.pt/events/seminar-series-on-rural-spaces-dbc2c9b4",
+    "https://www.sustainableliving.pt/events"
+   ]
+  },
+  {
+   "name": "Youth Accordion Festival of São Brás de Alportel",
+   "start_date": "2026-11-22",
+   "end_date": null,
+   "venue": "Cineteatro Jaime Pinto",
+   "municipality": "São Brás de Alportel",
+   "organiser": null,
+   "urls": [
+    "https://www.portugal-news.today/en/article/374719"
+   ]
+  },
+  {
+   "name": "Photography Exhibition Wabi Sabi",
+   "start_date": "2026-11-15",
+   "end_date": "2026-11-26",
+   "venue": "Museu do Traje",
+   "municipality": "São Brás de Alportel",
+   "organiser": "Algarve Group Photographers / APG",
+   "urls": [
+    "https://algarvecircle.com/whats-on/november-2026",
+    "https://algarvecircle.com/events"
+   ]
+  },
+  {
+   "name": "Concert Os Amadores",
+   "start_date": "2026-11-20",
+   "end_date": null,
+   "venue": null,
+   "municipality": "São Brás de Alportel",
+   "organiser": null,
+   "urls": [
+    "https://www.algarveatlas.com/en/municipalities/sao-bras-de-alportel",
+    "https://algarvecircle.com/events"
+   ]
+  },
+  {
+   "name": "Youth Awards 2026",
+   "start_date": "2026-11-28",
+   "end_date": null,
+   "venue": null,
+   "municipality": "São Brás de Alportel",
+   "organiser": null,
+   "urls": [
+    "https://www.algarveatlas.com/en/municipalities/sao-bras-de-alportel"
+   ]
+  },
+  {
+   "name": "Fado Night",
+   "start_date": "2026-11-29",
+   "end_date": null,
+   "venue": "Museu do Traje",
+   "municipality": "São Brás de Alportel",
+   "organiser": null,
+   "urls": [
+    "https://www.algarveatlas.com/en/municipalities/sao-bras-de-alportel",
+    "https://algarvecircle.com/towns/sao-bras-de-alportel"
+   ]
+  },
+  {
+   "name": "Saturdays at the Market",
+   "start_date": "2026-11-21",
+   "end_date": null,
+   "venue": "Mercado Municipal - Espaço Animação",
+   "municipality": "São Brás de Alportel",
+   "organiser": null,
+   "urls": [
+    "https://www.algarveatlas.com/en/municipalities/sao-bras-de-alportel",
+    "https://algarvecircle.com/councils/sao-bras-de-alportel"
+   ]
+  },
+  {
+   "name": "Swap Fair",
+   "start_date": "2026-12-20",
+   "end_date": null,
+   "venue": "Espaço Comunidade",
+   "municipality": "São Brás de Alportel",
+   "organiser": null,
+   "urls": [
+    "https://eventos.visitalgarve.pt/en/events",
+    "https://algarvecircle.com/towns/sao-bras-de-alportel"
+   ]
+  }
+ ],
+ "citations": [
+  "https://eventos.visitalgarve.pt/en/events",
+  "https://algarvecircle.com/events/sao-bras-de-alportel-street-market-2026-11-14",
+  "https://www.algarveatlas.com/en/municipalities/sao-bras-de-alportel",
+  "https://algarvecircle.com/events",
+  "https://www.sustainableliving.pt/events",
+  "https://www.cm-sbras.pt/pt/agenda.aspx",
+  "https://www.algarveaddicts.com/algarve-events-december-2026",
+  "https://www.algarveaddicts.com/algarve-events-november-2026",
+  "https://www.algarveaddicts.com/algarveevents",
+  "https://www.sustainableliving.pt/events/seminar-series-on-rural-spaces-dbc2c9b4",
+  "https://algarvecircle.com/whats-on/november-2026",
+  "https://www.portugal-news.today/en/article/374719",
+  "https://algarvecircle.com/towns/sao-bras-de-alportel",
+  "https://algarvecircle.com/councils/sao-bras-de-alportel",
+  "https://github.com/PrompTugal/PrompTugal__News__Website/commit/515ef1abd"
+ ],
+ "answer_text": "[\n  {\n    \"name\": \"Saturdays at the Market\",\n    \"start_date\": \"2026-11-18\",\n    \"end_date\": null,\n    \"venue\": \"Mercado Municipal / Espaço Animação\",\n    \"municipality\": \"São Brás de Alportel\",\n    \"organiser\": null,\n    \"urls\": [\n      \"https://eventos.visitalgarve.pt/en/events\",\n      \"https://algarvecircle.com/councils/sao-bras-de-alportel\"\n    ]\n  },\n  {\n    \"name\": \"Seminar Series on Rural Spaces\",\n    \"start_date\": \"2026-11-21\",\n    \"end_date\": \"2026-11-28\",\n    \"venue\": \"Salão Nobre da Câmara Municipal\",\n    \"municipality\": \"São Brás de Alportel\",\n    \"organiser\": \"Câmara Municipal de São Brás de Alportel\",\n    \"urls\": [\n      \"https://www.sustainableliving.pt/events/seminar-series-on-rural-spaces-dbc2c9b4\",\n      \"https://www.sustainableliving.pt/events\"\n    ]\n  },\n  {\n    \"name\": \"Youth Accordion Festival of São Brás de Alportel\",\n    \"start_date\": \"2026-11-22\",\n    \"end_date\": null,\n    \"venue\": \"Cineteatro Jaime Pinto\",\n    \"municipality\": \"São Brás de Alportel\",\n    \"organiser\": null,\n    \"urls\": [\n      \"https://www.portugal-news.today/en/article/374719\"\n    ]\n  },\n  {\n    \"name\": \"Photography Exhibition Wabi Sabi\",\n    \"start_date\": \"2026-11-15\",\n    \"end_date\": \"2026-11-26\",\n    \"venue\": \"Museu do Traje\",\n    \"municipality\": \"São Brás de Alportel\",\n    \"organiser\": \"Algarve Group Photographers / APG\",\n    \"urls\": [\n      \"https://algarvecircle.com/whats-on/november-2026\",\n      \"https://algarvecircle.com/events\"\n    ]\n  },\n  {\n    \"name\": \"Concert Os Amadores\",\n    \"start_date\": \"2026-11-20\",\n    \"end_date\": null,\n    \"venue\": null,\n    \"municipality\": \"São Brás de Alportel\",\n    \"organiser\": null,\n    \"urls\": [\n      \"https://www.algarveatlas.com/en/municipalities/sao-bras-de-alportel\",\n      \"https://algarvecircle.com/events\"\n    ]\n  },\n  {\n    \"name\": \"Youth Awards 2026\",\n    \"start_date\": \"2026-11-28\",\n    \"end_date\": null,\n    \"venue\": null,\n    \"municipality\": \"São Brás de Alportel\",\n    \"organiser\": null,\n    \"urls\": [\n      \"https://www.algarveatlas.com/en/municipalities/sao-bras-de-alportel\"\n    ]\n  },\n  {\n    \"name\": \"Fado Night\",\n    \"start_date\": \"2026-11-29\",\n    \"end_date\": null,\n    \"venue\": \"Museu do Traje\",\n    \"municipality\": \"São Brás de Alportel\",\n    \"organiser\": null,\n    \"urls\": [\n      \"https://www.algarveatlas.com/en/municipalities/sao-bras-de-alportel\",\n      \"https://algarvecircle.com/towns/sao-bras-de-alportel\"\n    ]\n  },\n  {\n    \"name\": \"Saturdays at the Market\",\n    \"start_date\": \"2026-11-21\",\n    \"end_date\": null,\n    \"venue\": \"Mercado Municipal - Espaço Animação\",\n    \"municipality\": \"São Brás de Alportel\",\n    \"organiser\": null,\n    \"urls\": [\n      \"https://www.algarveatlas.com/en/municipalities/sao-bras-de-alportel\",\n      \"https://algarvecircle.com/councils/sao-bras-de-alportel\"\n    ]\n  },\n  {\n    \"name\": \"Swap Fair\",\n    \"start_date\": \"2026-12-20\",\n    \"end_date\": null,\n    \"venue\": \"Espaço Comunidade\",\n    \"municipality\": \"São Brás de Alportel\",\n    \"organiser\": null,\n    \"urls\": [\n      \"https://eventos.visitalgarve.pt/en/events\",\n      \"https://algarvecircle.com/towns/sao-bras-de-alportel\"\n    ]\n  }\n]",
+ "usage": {
+  "prompt_tokens": 146,
+  "completion_tokens": 1048,
+  "total_tokens": 1194,
+  "cost": 0.0061281,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00619,
+   "upstream_inference_prompt_cost": 0.000146,
+   "upstream_inference_completions_cost": 0.006044
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "cost_usd": 0.0061281
+}

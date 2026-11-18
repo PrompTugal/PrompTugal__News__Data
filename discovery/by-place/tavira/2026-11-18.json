@@ -1,0 +1,209 @@
+{
+ "place": "tavira",
+ "asked_at": "2026-11-18T14:17:33Z",
+ "model": "perplexity/sonar",
+ "via": "OpenRouter",
+ "by": "collect/discovery.mjs (data.b@PrompTugal.dinis)",
+ "about": "Phase 1 evidence: what Perplexity answered about events in this place, with every URL it cited. Not published as content; each event becomes a claim whose details come only from readable sources.",
+ "prompt": "List public events (concerts, exhibitions, festivals, fairs, talks, sports, markets, theatre) taking place in Tavira, Portugal, between 2026-11-18 and the next 30 days. Answer ONLY with a JSON array, no prose. Each item: {\"name\": string, \"start_date\": \"YYYY-MM-DD\", \"end_date\": \"YYYY-MM-DD\" or null, \"venue\": string or null, \"municipality\": string, \"organiser\": organisation name or null (never a private person), \"urls\": [the source URLs for this event]}. Include only events you can support with a source URL. At most 25 items.",
+ "ok": true,
+ "items": [
+  {
+   "name": "Visual Arts Exhibition by Rita Tavares",
+   "start_date": "2026-11-18",
+   "end_date": "2026-12-11",
+   "venue": "Casa Municipal da Juventude",
+   "municipality": "Tavira",
+   "organiser": null,
+   "urls": [
+    "https://www.taviratimes.com/events"
+   ]
+  },
+  {
+   "name": "The Images that Look at Us – Fernando Lemos",
+   "start_date": "2026-11-18",
+   "end_date": "2027-04-03",
+   "venue": "Palacio da Galeria",
+   "municipality": "Tavira",
+   "organiser": null,
+   "urls": [
+    "https://www.algarveatlas.com/en/municipalities/tavira"
+   ]
+  },
+  {
+   "name": "Rituais a Sul",
+   "start_date": "2026-11-21",
+   "end_date": "2026-11-22",
+   "venue": null,
+   "municipality": "Tavira",
+   "organiser": null,
+   "urls": [
+    "https://www.taviratimes.com/events"
+   ]
+  },
+  {
+   "name": "The Impact of Food Systems on Climate Action - The Role of Local Power",
+   "start_date": "2026-11-26",
+   "end_date": null,
+   "venue": null,
+   "municipality": "Tavira",
+   "organiser": "Câmara Municipal de Tavira",
+   "urls": [
+    "https://www.taviratimes.com/news/tavira-initiates-discussion-on-the-impact-of-food-systems-on-climate-action"
+   ]
+  },
+  {
+   "name": "O Amor é Assim",
+   "start_date": "2026-11-27",
+   "end_date": "2026-11-28",
+   "venue": "Auditório Municipal Maria Barroso",
+   "municipality": "Tavira",
+   "organiser": null,
+   "urls": [
+    "https://www.taviratimes.com/events"
+   ]
+  },
+  {
+   "name": "Maiúscula",
+   "start_date": "2026-11-21",
+   "end_date": null,
+   "venue": "Teatro Municipal António Pinheiro",
+   "municipality": "Tavira",
+   "organiser": null,
+   "urls": [
+    "https://algarvecircle.com/events"
+   ]
+  },
+  {
+   "name": "East Algarve Golf Festival 2026",
+   "start_date": "2026-11-28",
+   "end_date": "2026-12-05",
+   "venue": "Vila Galé Tavira",
+   "municipality": "Tavira",
+   "organiser": null,
+   "urls": [
+    "https://algarvecircle.com/events/east-algarve-golf-festival-2026-2026-11-28"
+   ]
+  },
+  {
+   "name": "Grande Entre os Assassinos",
+   "start_date": "2026-12-01",
+   "end_date": null,
+   "venue": "Teatro Municipal António Pinheiro",
+   "municipality": "Tavira",
+   "organiser": null,
+   "urls": [
+    "https://algarvecircle.com/whats-on/december-2026"
+   ]
+  },
+  {
+   "name": "Christmas Lights & Markets — Tavira",
+   "start_date": "2026-12-06",
+   "end_date": "2027-01-06",
+   "venue": "Historic centre",
+   "municipality": "Tavira",
+   "organiser": null,
+   "urls": [
+    "https://www.taviratimes.com/events/christmas-lights-markets-tavira-december-2026"
+   ]
+  },
+  {
+   "name": "Gospel Collective",
+   "start_date": "2026-12-05",
+   "end_date": null,
+   "venue": "Teatro Municipal António Pinheiro",
+   "municipality": "Tavira",
+   "organiser": null,
+   "urls": [
+    "https://algarvecircle.com/whats-on/december-2026"
+   ]
+  },
+  {
+   "name": "Movimento e Magia: Tavira's Christmas in Dance 2026",
+   "start_date": "2026-12-06",
+   "end_date": "2026-12-08",
+   "venue": "Teatro Municipal António Pinheiro",
+   "municipality": "Tavira",
+   "organiser": null,
+   "urls": [
+    "https://algarvecircle.com/events/movimento-e-magia-tavira-s-christmas-in-dance-2026-12-06",
+    "https://algarvecircle.com/whats-on/december-2026"
+   ]
+  },
+  {
+   "name": "Swan Lake",
+   "start_date": "2026-12-12",
+   "end_date": null,
+   "venue": "Teatro Municipal António Pinheiro",
+   "municipality": "Tavira",
+   "organiser": "Tatiana Solovieva Producciones",
+   "urls": [
+    "https://algarvecircle.com/whats-on/december-2026"
+   ]
+  },
+  {
+   "name": "Christmas concert",
+   "start_date": "2026-12-13",
+   "end_date": null,
+   "venue": "Teatro Municipal António Pinheiro",
+   "municipality": "Tavira",
+   "organiser": null,
+   "urls": [
+    "https://algarvecircle.com/whats-on/december-2026"
+   ]
+  },
+  {
+   "name": "Orquestra do Algarve Christmas concert",
+   "start_date": "2026-12-19",
+   "end_date": null,
+   "venue": "Teatro Municipal António Pinheiro",
+   "municipality": "Tavira",
+   "organiser": "Orquestra do Algarve",
+   "urls": [
+    "https://algarvecircle.com/whats-on/december-2026"
+   ]
+  }
+ ],
+ "citations": [
+  "https://www.taviratimes.com/events",
+  "https://www.taviratimes.com/events/christmas-lights-markets-tavira-december-2026",
+  "https://www.taviratimes.com/news/tavira-hosts-eight-film-sessions-in-november-featuring-tom-cruise-movies-and-lit",
+  "https://www.algarveatlas.com/en/municipalities/tavira",
+  "https://www.sustainableliving.pt/news/tavira-opens-olive-oil-mill-to-visitors-for-a-guided-tasting",
+  "https://www.taviratimes.com/news/tavira-initiates-discussion-on-the-impact-of-food-systems-on-climate-action",
+  "https://algarvecircle.com/events/movimento-e-magia-tavira-s-christmas-in-dance-2026-12-06",
+  "https://algarvecircle.com/events/east-algarve-golf-festival-2026-2026-11-28",
+  "https://algarvecircle.com/whats-on/december-2026",
+  "https://cm-tavira.pt/site/eventos-page/2026-11-26/?shortcode=799245fc",
+  "https://algarvecircle.com/events",
+  "https://www.taviratimes.com/news/the-modernist-weekend-comes-to-olho-and-tavira-for-the-first-time-mvzczmsp",
+  "https://activealgarve.pt/event/christmas-day-natal",
+  "https://activealgarve.pt/event/christmas-eve-missa-do-galo-midnight-mass",
+  "https://www.taviratimes.com/news/antnio-pinheiro-municipal-theatre-presents-diverse-cinema-program-in-november"
+ ],
+ "answer_text": "[{\"name\":\"Visual Arts Exhibition by Rita Tavares\",\"start_date\":\"2026-11-18\",\"end_date\":\"2026-12-11\",\"venue\":\"Casa Municipal da Juventude\",\"municipality\":\"Tavira\",\"organiser\":null,\"urls\":[\"https://www.taviratimes.com/events\"]},{\"name\":\"The Images that Look at Us – Fernando Lemos\",\"start_date\":\"2026-11-18\",\"end_date\":\"2027-04-03\",\"venue\":\"Palacio da Galeria\",\"municipality\":\"Tavira\",\"organiser\":null,\"urls\":[\"https://www.algarveatlas.com/en/municipalities/tavira\"]},{\"name\":\"Rituais a Sul\",\"start_date\":\"2026-11-21\",\"end_date\":\"2026-11-22\",\"venue\":null,\"municipality\":\"Tavira\",\"organiser\":null,\"urls\":[\"https://www.taviratimes.com/events\"]},{\"name\":\"The Impact of Food Systems on Climate Action - The Role of Local Power\",\"start_date\":\"2026-11-26\",\"end_date\":null,\"venue\":null,\"municipality\":\"Tavira\",\"organiser\":\"Câmara Municipal de Tavira\",\"urls\":[\"https://www.taviratimes.com/news/tavira-initiates-discussion-on-the-impact-of-food-systems-on-climate-action\"]},{\"name\":\"O Amor é Assim\",\"start_date\":\"2026-11-27\",\"end_date\":\"2026-11-28\",\"venue\":\"Auditório Municipal Maria Barroso\",\"municipality\":\"Tavira\",\"organiser\":null,\"urls\":[\"https://www.taviratimes.com/events\"]},{\"name\":\"Maiúscula\",\"start_date\":\"2026-11-21\",\"end_date\":null,\"venue\":\"Teatro Municipal António Pinheiro\",\"municipality\":\"Tavira\",\"organiser\":null,\"urls\":[\"https://algarvecircle.com/events\"]},{\"name\":\"East Algarve Golf Festival 2026\",\"start_date\":\"2026-11-28\",\"end_date\":\"2026-12-05\",\"venue\":\"Vila Galé Tavira\",\"municipality\":\"Tavira\",\"organiser\":null,\"urls\":[\"https://algarvecircle.com/events/east-algarve-golf-festival-2026-2026-11-28\"]},{\"name\":\"Grande Entre os Assassinos\",\"start_date\":\"2026-12-01\",\"end_date\":null,\"venue\":\"Teatro Municipal António Pinheiro\",\"municipality\":\"Tavira\",\"organiser\":null,\"urls\":[\"https://algarvecircle.com/whats-on/december-2026\"]},{\"name\":\"Christmas Lights & Markets — Tavira\",\"start_date\":\"2026-12-06\",\"end_date\":\"2027-01-06\",\"venue\":\"Historic centre\",\"municipality\":\"Tavira\",\"organiser\":null,\"urls\":[\"https://www.taviratimes.com/events/christmas-lights-markets-tavira-december-2026\"]},{\"name\":\"Gospel Collective\",\"start_date\":\"2026-12-05\",\"end_date\":null,\"venue\":\"Teatro Municipal António Pinheiro\",\"municipality\":\"Tavira\",\"organiser\":null,\"urls\":[\"https://algarvecircle.com/whats-on/december-2026\"]},{\"name\":\"Movimento e Magia: Tavira's Christmas in Dance 2026\",\"start_date\":\"2026-12-06\",\"end_date\":\"2026-12-08\",\"venue\":\"Teatro Municipal António Pinheiro\",\"municipality\":\"Tavira\",\"organiser\":null,\"urls\":[\"https://algarvecircle.com/events/movimento-e-magia-tavira-s-christmas-in-dance-2026-12-06\",\"https://algarvecircle.com/whats-on/december-2026\"]},{\"name\":\"Swan Lake\",\"start_date\":\"2026-12-12\",\"end_date\":null,\"venue\":\"Teatro Municipal António Pinheiro\",\"municipality\":\"Tavira\",\"organiser\":\"Tatiana Solovieva Producciones\",\"urls\":[\"https://algarvecircle.com/whats-on/december-2026\"]},{\"name\":\"Christmas concert\",\"start_date\":\"2026-12-13\",\"end_date\":null,\"venue\":\"Teatro Municipal António Pinheiro\",\"municipality\":\"Tavira\",\"organiser\":null,\"urls\":[\"https://algarvecircle.com/whats-on/december-2026\"]},{\"name\":\"Orquestra do Algarve Christmas concert\",\"start_date\":\"2026-12-19\",\"end_date\":null,\"venue\":\"Teatro Municipal António Pinheiro\",\"municipality\":\"Tavira\",\"organiser\":\"Orquestra do Algarve\",\"urls\":[\"https://algarvecircle.com/whats-on/december-2026\"]}]",
+ "usage": {
+  "prompt_tokens": 142,
+  "completion_tokens": 1056,
+  "total_tokens": 1198,
+  "cost": 0.006138,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0062,
+   "upstream_inference_prompt_cost": 0.000142,
+   "upstream_inference_completions_cost": 0.006058
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "cost_usd": 0.006138
+}

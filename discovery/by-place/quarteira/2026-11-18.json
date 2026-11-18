@@ -1,0 +1,154 @@
+{
+ "place": "quarteira",
+ "asked_at": "2026-11-18T14:17:20Z",
+ "model": "perplexity/sonar",
+ "via": "OpenRouter",
+ "by": "collect/discovery.mjs (data.b@PrompTugal.dinis)",
+ "about": "Phase 1 evidence: what Perplexity answered about events in this place, with every URL it cited. Not published as content; each event becomes a claim whose details come only from readable sources.",
+ "prompt": "List public events (concerts, exhibitions, festivals, fairs, talks, sports, markets, theatre) taking place in Quarteira, Portugal, between 2026-11-18 and the next 30 days. Answer ONLY with a JSON array, no prose. Each item: {\"name\": string, \"start_date\": \"YYYY-MM-DD\", \"end_date\": \"YYYY-MM-DD\" or null, \"venue\": string or null, \"municipality\": string, \"organiser\": organisation name or null (never a private person), \"urls\": [the source URLs for this event]}. Include only events you can support with a source URL. At most 25 items.",
+ "ok": true,
+ "items": [
+  {
+   "name": "Quarteira Wednesday Market",
+   "start_date": "2026-11-18",
+   "end_date": "2026-11-18",
+   "venue": null,
+   "municipality": "Quarteira",
+   "organiser": null,
+   "urls": [
+    "https://algarvecircle.com/whats-on/november-2026",
+    "https://algarvecircle.com/events"
+   ]
+  },
+  {
+   "name": "Baile Social",
+   "start_date": "2026-11-28",
+   "end_date": "2026-11-28",
+   "venue": "Auditório do Centro Autárquico",
+   "municipality": "Quarteira",
+   "organiser": "Junta de Freguesia de Quarteira",
+   "urls": [
+    "https://jf-quarteira.pt/agenda"
+   ]
+  },
+  {
+   "name": "Noite Afrolatina no Illuminati",
+   "start_date": "2026-11-21",
+   "end_date": "2026-11-21",
+   "venue": "Illuminati Café",
+   "municipality": "Quarteira",
+   "organiser": null,
+   "urls": [
+    "https://bailaspot.com/portugal/quarteira"
+   ]
+  },
+  {
+   "name": "Noite Afrolatina no Illuminati",
+   "start_date": "2026-11-28",
+   "end_date": "2026-11-28",
+   "venue": "Illuminati Café",
+   "municipality": "Quarteira",
+   "organiser": null,
+   "urls": [
+    "https://bailaspot.com/portugal/quarteira"
+   ]
+  },
+  {
+   "name": "Noite Afrolatina no Illuminati",
+   "start_date": "2026-12-05",
+   "end_date": "2026-12-05",
+   "venue": "Illuminati Café",
+   "municipality": "Quarteira",
+   "organiser": null,
+   "urls": [
+    "https://bailaspot.com/portugal/quarteira"
+   ]
+  },
+  {
+   "name": "Maratona do Algarve",
+   "start_date": "2026-12-06",
+   "end_date": "2026-12-06",
+   "venue": "Marina de Vilamoura",
+   "municipality": "Quarteira",
+   "organiser": null,
+   "urls": [
+    "https://worldsmarathons.com/fr/marathon/maratona-do-algarve"
+   ]
+  },
+  {
+   "name": "Noite Afrolatina no Illuminati",
+   "start_date": "2026-12-12",
+   "end_date": "2026-12-12",
+   "venue": "Illuminati Café",
+   "municipality": "Quarteira",
+   "organiser": null,
+   "urls": [
+    "https://bailaspot.com/portugal/quarteira"
+   ]
+  },
+  {
+   "name": "Noite Afrolatina no Illuminati",
+   "start_date": "2026-12-19",
+   "end_date": "2026-12-19",
+   "venue": "Illuminati Café",
+   "municipality": "Quarteira",
+   "organiser": null,
+   "urls": [
+    "https://bailaspot.com/portugal/quarteira"
+   ]
+  },
+  {
+   "name": "New Years Eve Quarteira 2026/2027 Programme",
+   "start_date": "2026-12-29",
+   "end_date": "2026-12-31",
+   "venue": "Quarteira",
+   "municipality": "Quarteira",
+   "organiser": "Municipality of Loulé",
+   "urls": [
+    "https://activealgarve.pt/event/new-years-eve-20262027-2026-12"
+   ]
+  }
+ ],
+ "citations": [
+  "https://activealgarve.pt/event/new-years-eve-20262027-2026-12",
+  "https://algarvecircle.com/events",
+  "https://concerts.hypebot.com/cities/popular/quarteira-portugal",
+  "https://www.eventbrite.com/d/portugal--quarteira/events/",
+  "https://bailaspot.com/portugal/quarteira",
+  "https://algarveholidaytips.com/events/magusto-em-quarteira-2026-loule/",
+  "https://algarvecircle.com/events/10th-calceteiros-de-letras-festival-2026-11-15",
+  "https://worldsmarathons.com/fr/marathon/maratona-do-algarve",
+  "https://algarvecircle.com/events/julio-resende-e-bruno-chaveiro-piano-portugues-nam-2026-11-07",
+  "https://algarvecircle.com/whats-on/november-2026",
+  "https://www.cleverdetails.com/blog/item/78",
+  "https://algarvecircle.com/events/xxxviii-grande-trofeu-vilamoura-2026-12-04",
+  "https://www.visitportugal.com/en/NR/exeres/FC0B8610-BF3E-42ED-867D-8E6CF03C3C60",
+  "https://jf-quarteira.pt/agenda",
+  "https://www.cleverdetails.com/blog/algarve/new-years-eve-quarteira-2027-concerts_fireworks.html"
+ ],
+ "answer_text": "[{\"name\":\"Quarteira Wednesday Market\",\"start_date\":\"2026-11-18\",\"end_date\":\"2026-11-18\",\"venue\":null,\"municipality\":\"Quarteira\",\"organiser\":null,\"urls\":[\"https://algarvecircle.com/whats-on/november-2026\",\"https://algarvecircle.com/events\"]},{\"name\":\"Baile Social\",\"start_date\":\"2026-11-28\",\"end_date\":\"2026-11-28\",\"venue\":\"Auditório do Centro Autárquico\",\"municipality\":\"Quarteira\",\"organiser\":\"Junta de Freguesia de Quarteira\",\"urls\":[\"https://jf-quarteira.pt/agenda\"]},{\"name\":\"Noite Afrolatina no Illuminati\",\"start_date\":\"2026-11-21\",\"end_date\":\"2026-11-21\",\"venue\":\"Illuminati Café\",\"municipality\":\"Quarteira\",\"organiser\":null,\"urls\":[\"https://bailaspot.com/portugal/quarteira\"]},{\"name\":\"Noite Afrolatina no Illuminati\",\"start_date\":\"2026-11-28\",\"end_date\":\"2026-11-28\",\"venue\":\"Illuminati Café\",\"municipality\":\"Quarteira\",\"organiser\":null,\"urls\":[\"https://bailaspot.com/portugal/quarteira\"]},{\"name\":\"Noite Afrolatina no Illuminati\",\"start_date\":\"2026-12-05\",\"end_date\":\"2026-12-05\",\"venue\":\"Illuminati Café\",\"municipality\":\"Quarteira\",\"organiser\":null,\"urls\":[\"https://bailaspot.com/portugal/quarteira\"]},{\"name\":\"Maratona do Algarve\",\"start_date\":\"2026-12-06\",\"end_date\":\"2026-12-06\",\"venue\":\"Marina de Vilamoura\",\"municipality\":\"Quarteira\",\"organiser\":null,\"urls\":[\"https://worldsmarathons.com/fr/marathon/maratona-do-algarve\"]},{\"name\":\"Noite Afrolatina no Illuminati\",\"start_date\":\"2026-12-12\",\"end_date\":\"2026-12-12\",\"venue\":\"Illuminati Café\",\"municipality\":\"Quarteira\",\"organiser\":null,\"urls\":[\"https://bailaspot.com/portugal/quarteira\"]},{\"name\":\"Noite Afrolatina no Illuminati\",\"start_date\":\"2026-12-19\",\"end_date\":\"2026-12-19\",\"venue\":\"Illuminati Café\",\"municipality\":\"Quarteira\",\"organiser\":null,\"urls\":[\"https://bailaspot.com/portugal/quarteira\"]},{\"name\":\"New Years Eve Quarteira 2026/2027 Programme\",\"start_date\":\"2026-12-29\",\"end_date\":\"2026-12-31\",\"venue\":\"Quarteira\",\"municipality\":\"Quarteira\",\"organiser\":\"Municipality of Loulé\",\"urls\":[\"https://activealgarve.pt/event/new-years-eve-20262027-2026-12\"]}]",
+ "usage": {
+  "prompt_tokens": 142,
+  "completion_tokens": 662,
+  "total_tokens": 804,
+  "cost": 0.005742,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0058,
+   "upstream_inference_prompt_cost": 0.000142,
+   "upstream_inference_completions_cost": 0.005658
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "cost_usd": 0.005742
+}

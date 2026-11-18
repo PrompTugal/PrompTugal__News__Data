@@ -67,7 +67,7 @@ function previewRows(s) {
   return { key, total: l[key].length, table: t, src };
 }
 
-export function buildPages({ sources, places, readAt, index, storm, events = [], register }) {
+export function buildPages({ sources, places, readAt, index, storm, events = [], register, discovery }) {
   const pages = [];
   const add = o => pages.push(page({ readAt, ...o }));
   const link = s => `[${s.card.title}](/sources/${s.id}/)`;
@@ -319,6 +319,44 @@ export function buildPages({ sources, places, readAt, index, storm, events = [],
         p(`The API: [/api/v1/events/by-place/index.json](/api/v1/events/by-place/index.json), then \`/api/v1/events/by-place/<place>.json\`, each event a schema.org Event.`),
         table(['Place', 'Events', 'File'], events.map(e => [e.data.name || e.id, (e.data.events || []).length, `[${e.id}.json](/api/v1/events/by-place/${e.id}.json)`])),
         ...withEv.flatMap(e => [h(e.data.name || e.id), table(['When', 'What', 'Where', 'Organiser', 'Source'], (e.data.events || []).slice(0, 15).map(ev => [day(ev.startDate) + (ev.endDate ? ' to ' + day(ev.endDate) : ''), ev.url ? `[${short(ev.name, 90)}](${ev.url})` : short(ev.name, 90), short((ev.location && ev.location.name) || '', 60), short((ev.organizer && ev.organizer.name) || '', 50), ev.source ? `[source](${ev.source})` : ''])), ...((e.data.events || []).length > 15 ? [p(`Showing 15 of ${(e.data.events || []).length}: the rest in [the file](/api/v1/events/by-place/${e.id}.json).`)] : [])]),
+      ],
+    });
+  }
+
+  // ---- gaps: the hosts cited as evidence that we do not read (Dinis, 18 Nov 2026, about 14:15 UTC) ----
+  if (discovery && discovery.gaps) {
+    const g = discovery.gaps.hosts || [];
+    add({
+      path: 'sources/gaps/', title: 'Gaps in our sources: PrompTugal.news Data', h1: 'Gaps: sources cited for events that we do not read',
+      description: 'Every website cited as evidence for an event in our places that this site does not read, ranked by how many events point to it.',
+      blocks: [
+        p(`When we look for events in a place, the answer cites its sources. Each one this site does not read is a gap: the details it holds we do not copy. ${g.length} hosts, ranked by the number of event claims that cite them. Each gap is a candidate for the register and for a request on the record (an agent drafts, a person sends). [The register](/sources/not-read/) · [the data](/api/v1/sources/gaps.json).`),
+        table(['Host', 'Claims citing it', 'Places', 'On the register'], g.map(x => [x.host, x.claims, x.places.join(', '), x.register ? `[${x.register}](/api/v1/sources/${x.register}.json)` : 'not yet'])),
+      ],
+    });
+  }
+
+  // ---- how this works: the data, its visualisations, provenance and storage (Dinis, 18 Nov 2026) ----
+  {
+    const ans = (discovery && discovery.answers) || [];
+    const usd = ans.reduce((s, a) => s + (a.cost_usd || 0), 0);
+    add({
+      path: 'how/', title: 'How it works: PrompTugal.news Data', h1: 'How this site works: the data, the pictures, the provenance, the storage',
+      description: 'For every data set: where it comes from, how it is read, how it is drawn, where it is stored and how to reach it; and how events are found and confirmed.',
+      blocks: [
+        p('Everything here is public data, read by code on a schedule and kept with its source and the time it was read. This page says, for every data set, where it comes from, how it is read, how it is shown, where it is stored and how to reach it.'),
+        h('For every data set'),
+        table(['Data set', 'Source and interface', 'Read', 'Shown', 'Stored', 'Reach it'], sources.map(s => [link(s), `${s.card.publisher.split(',')[0]}: [${short(s.card.source_home, 50)}](${s.card.source_home})`, s.card.schedule.cadence, `[the source page](/sources/${s.id}/): the source, the raw data, the processed data`, s.card.vault ? `vault ${s.card.vault.id} (public read key on the card), and this site` : 'this site (latest and every read)', `[latest.json](/api/v1/${s.id}/latest.json), [OpenAPI](/api/v1/${s.id}/openapi.json)`])),
+        h('Events: look, then publish what we may'),
+        ul([
+          '**Read:** official agendas with a public interface ([the events card](/sources/events-pt/)): Agenda LX for Lisbon, Câmara Municipal de Lagos. Their events are published with their details and a link back.',
+          `**Look (phase 1):** once a day per place, one question to Perplexity (sonar, through OpenRouter) asks what is on, with sources. ${ans.length} answers so far, ${usd.toFixed(2)} USD in all (budget 5 USD a day until Dinis sets one). Each answer is kept whole with its model, time, prompt and cited links: [the discovery files](/api/v1/discovery/index.json). Nothing in an answer is published as content.`,
+          '**Claims (phase 2):** each event an answer names becomes a claim with every evidence link, each marked readable or not by [the register](/sources/). A claim takes its details only from a readable source; otherwise it shows the name, the date and the place with "details withheld". [Claims by place](/api/v1/events/claims/by-place/index.json).',
+          '**Gaps:** every cited host we do not read is counted on [the gaps page](/sources/gaps/), and goes to the register and to a request on the record.',
+          '**Over time:** a claim is never deleted when its date passes; it moves to [/api/v1/events/past/](/api/v1/events/claims/by-place/index.json), the history of each event series.',
+        ]),
+        h('Who and what'),
+        ul(['Code reads the sources and builds this site: no model is called to collect or build, except the daily discovery question above.', 'Agents wrote the code: data.b@PrompTugal.dinis (Opus) and its Sonnet sub-agents; see [about](/about/).', 'No person has checked a value yet.']),
       ],
     });
   }

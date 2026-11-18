@@ -1,0 +1,102 @@
+{
+ "place": "castro-marim",
+ "asked_at": "2026-11-18T14:18:39Z",
+ "model": "perplexity/sonar",
+ "via": "OpenRouter",
+ "by": "collect/discovery.mjs (data.b@PrompTugal.dinis)",
+ "about": "Phase 1 evidence: what Perplexity answered about events in this place, with every URL it cited. Not published as content; each event becomes a claim whose details come only from readable sources.",
+ "prompt": "List public events (concerts, exhibitions, festivals, fairs, talks, sports, markets, theatre) taking place in Castro Marim, Portugal, between 2026-11-18 and the next 30 days. Answer ONLY with a JSON array, no prose. Each item: {\"name\": string, \"start_date\": \"YYYY-MM-DD\", \"end_date\": \"YYYY-MM-DD\" or null, \"venue\": string or null, \"municipality\": string, \"organiser\": organisation name or null (never a private person), \"urls\": [the source URLs for this event]}. Include only events you can support with a source URL. At most 25 items.",
+ "ok": true,
+ "items": [
+  {
+   "name": "The Great World Race",
+   "start_date": "2026-11-19",
+   "end_date": "2026-11-19",
+   "venue": "Concelho de Castro Marim",
+   "municipality": "Castro Marim",
+   "organiser": "Município de Castro Marim",
+   "urls": [
+    "https://cm-castromarim.pt/site/eventos",
+    "http://cm-castromarim.pt/info/"
+   ]
+  },
+  {
+   "name": "Encontro Transfronteiriço de Mulheres Empreendedoras",
+   "start_date": "2026-11-19",
+   "end_date": "2026-11-19",
+   "venue": "Concelho de Castro Marim",
+   "municipality": "Castro Marim",
+   "organiser": "Município de Castro Marim",
+   "urls": [
+    "https://cm-castromarim.pt/site/eventos",
+    "http://cm-castromarim.pt/info/"
+   ]
+  },
+  {
+   "name": "Vila Coração",
+   "start_date": "2026-11-28",
+   "end_date": "2026-12-01",
+   "venue": "Praça 1.º de Maio",
+   "municipality": "Castro Marim",
+   "organiser": "Município de Castro Marim",
+   "urls": [
+    "http://cm-castromarim.pt/info/evento/vila-coracao",
+    "https://cm-castromarim.pt/site/eventos"
+   ]
+  },
+  {
+   "name": "Mercado mensal no Azinhal",
+   "start_date": "2026-11-29",
+   "end_date": "2026-11-29",
+   "venue": "Azinhal",
+   "municipality": "Castro Marim",
+   "organiser": "Município de Castro Marim",
+   "urls": [
+    "http://cm-castromarim.pt/info/",
+    "https://cm-castromarim.pt/site/eventos"
+   ]
+  }
+ ],
+ "citations": [
+  "https://cm-castromarim.pt/site/eventos",
+  "https://www.algarveatlas.com/en/events/magusto-criativ-art-7859",
+  "https://cm-castromarim.pt/site/evento/magusto-criativart",
+  "http://cm-castromarim.pt/info/evento/vila-coracao",
+  "https://cm-castromarim.pt/info/evento/sao-martinho-3",
+  "https://cm-castromarim.pt/site/evento/concerto-da-orquestra-do-algarve",
+  "https://www.taviratimes.com/news/roasted-chestnuts-jeropiga-and-music-celebrate-so-martinho-across-castro-marim",
+  "https://cm-castromarim.pt/site/conteudo/eventos-culturais",
+  "https://algarvecircle.com/whats-on/november-2026",
+  "https://www.visitportugal.com/en (query cut)",
+  "http://cm-castromarim.pt/info/",
+  "https://cm-castromarim.pt/site/evento/festival-de-folclore-do-azinhal-2",
+  "https://www.visitportugal.com/en/node/155932",
+  "https://www.visitportugal.com/en/destinos/algarve/484431",
+  "https://www.algarveatlas.com/eventos/magusto-criativ-art-7859"
+ ],
+ "answer_text": "[{\"name\":\"The Great World Race\",\"start_date\":\"2026-11-19\",\"end_date\":\"2026-11-19\",\"venue\":\"Concelho de Castro Marim\",\"municipality\":\"Castro Marim\",\"organiser\":\"Município de Castro Marim\",\"urls\":[\"https://cm-castromarim.pt/site/eventos\",\"http://cm-castromarim.pt/info/\"]},{\"name\":\"Encontro Transfronteiriço de Mulheres Empreendedoras\",\"start_date\":\"2026-11-19\",\"end_date\":\"2026-11-19\",\"venue\":\"Concelho de Castro Marim\",\"municipality\":\"Castro Marim\",\"organiser\":\"Município de Castro Marim\",\"urls\":[\"https://cm-castromarim.pt/site/eventos\",\"http://cm-castromarim.pt/info/\"]},{\"name\":\"Vila Coração\",\"start_date\":\"2026-11-28\",\"end_date\":\"2026-12-01\",\"venue\":\"Praça 1.º de Maio\",\"municipality\":\"Castro Marim\",\"organiser\":\"Município de Castro Marim\",\"urls\":[\"http://cm-castromarim.pt/info/evento/vila-coracao\",\"https://cm-castromarim.pt/site/eventos\"]},{\"name\":\"Mercado mensal no Azinhal\",\"start_date\":\"2026-11-29\",\"end_date\":\"2026-11-29\",\"venue\":\"Azinhal\",\"municipality\":\"Castro Marim\",\"organiser\":\"Município de Castro Marim\",\"urls\":[\"http://cm-castromarim.pt/info/\",\"https://cm-castromarim.pt/site/eventos\"]}]",
+ "usage": {
+  "prompt_tokens": 142,
+  "completion_tokens": 366,
+  "total_tokens": 508,
+  "cost": 0.0054549,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00551,
+   "upstream_inference_prompt_cost": 0.000142,
+   "upstream_inference_completions_cost": 0.005368
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "cost_usd": 0.0054549
+}

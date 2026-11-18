@@ -1,0 +1,146 @@
+{
+ "place": "lagoa",
+ "asked_at": "2026-11-18T14:18:08Z",
+ "model": "perplexity/sonar",
+ "via": "OpenRouter",
+ "by": "collect/discovery.mjs (data.b@PrompTugal.dinis)",
+ "about": "Phase 1 evidence: what Perplexity answered about events in this place, with every URL it cited. Not published as content; each event becomes a claim whose details come only from readable sources.",
+ "prompt": "List public events (concerts, exhibitions, festivals, fairs, talks, sports, markets, theatre) taking place in Lagoa, Portugal, between 2026-11-18 and the next 30 days. Answer ONLY with a JSON array, no prose. Each item: {\"name\": string, \"start_date\": \"YYYY-MM-DD\", \"end_date\": \"YYYY-MM-DD\" or null, \"venue\": string or null, \"municipality\": string, \"organiser\": organisation name or null (never a private person), \"urls\": [the source URLs for this event]}. Include only events you can support with a source URL. At most 25 items.",
+ "ok": true,
+ "items": [
+  {
+   "name": "Algarve Real Estate Summit 2026",
+   "start_date": "2026-11-20",
+   "end_date": "2026-11-20",
+   "venue": "Lagoa Congress Centre",
+   "municipality": "Lagoa",
+   "organiser": "The Portugal News",
+   "urls": [
+    "https://www.theportugalnews.com/news/2026-11-02/the-algarve-deserves-its-own-stage-the-vision-behind-the-algarve-real-estate-summit-2026/1109007",
+    "https://www.theportugalnews.com/news/2026-10-09/algarve-real-estate-summit-2026-where-the-algarve-meets-the-world/1097777"
+   ]
+  },
+  {
+   "name": "Alice in Wonderland",
+   "start_date": "2026-11-19",
+   "end_date": "2026-11-21",
+   "venue": "Auditório Carlos do Carmo",
+   "municipality": "Lagoa",
+   "organiser": "The Algarveans Theatre Group",
+   "urls": [
+    "https://algarvecircle.com/whats-on/november-2026",
+    "https://www.algarveaddicts.com/algarve-events-november-2026"
+   ]
+  },
+  {
+   "name": "Harp concert with Rebeca Csalog",
+   "start_date": "2026-11-25",
+   "end_date": "2026-11-25",
+   "venue": "Igreja da Misericórdia de Lagoa",
+   "municipality": "Lagoa",
+   "organiser": "Ideias do Levante",
+   "urls": [
+    "https://algarvecircle.com/whats-on/november-2026",
+    "https://dailynata.com/whats-on"
+   ]
+  },
+  {
+   "name": "Deliver Us from Hunger!",
+   "start_date": "2026-11-28",
+   "end_date": "2026-11-28",
+   "venue": "Auditório Carlos do Carmo",
+   "municipality": "Lagoa",
+   "organiser": "null",
+   "urls": [
+    "https://algarvecircle.com/whats-on/november-2026"
+   ]
+  },
+  {
+   "name": "VI Charity Christmas Choir Concert - Artenata",
+   "start_date": "2026-12-05",
+   "end_date": "2026-12-05",
+   "venue": "Ferragudo",
+   "municipality": "Lagoa",
+   "organiser": "null",
+   "urls": [
+    "https://www.algarveatlas.com/en/municipalities/lagoa"
+   ]
+  },
+  {
+   "name": "26th Lagoa Christmas Concert",
+   "start_date": "2026-12-06",
+   "end_date": "2026-12-06",
+   "venue": "Porches parish church",
+   "municipality": "Lagoa",
+   "organiser": "null",
+   "urls": [
+    "https://blog.algarve-ferias.com/en/events/",
+    "https://www.algarveatlas.com/en/municipalities/lagoa"
+   ]
+  },
+  {
+   "name": "Lagoa Christmas Concert",
+   "start_date": "2026-12-08",
+   "end_date": "2026-12-08",
+   "venue": "Porches",
+   "municipality": "Lagoa",
+   "organiser": "null",
+   "urls": [
+    "https://www.algarveatlas.com/en/municipalities/lagoa"
+   ]
+  },
+  {
+   "name": "Estátuas Vivas no Natal",
+   "start_date": "2026-12-11",
+   "end_date": "2026-12-12",
+   "venue": "Rua 25 de Abril",
+   "municipality": "Lagoa",
+   "organiser": "null",
+   "urls": [
+    "https://www.theportugalnews.com/news/2026-10-22/autumn-festivals-and-events-in-the-algarve/1104742"
+   ]
+  }
+ ],
+ "citations": [
+  "https://eventos.visitalgarve.pt/en/events?places=1559",
+  "https://www.algarveatlas.com/en/municipalities/lagoa",
+  "https://eventos.visitalgarve.pt/en/41740/lagoa-wine-tourism-forum-4th-edition-%E2%80%93-iberian-edition",
+  "https://www.sulinformacao.pt/2026/10/lagoa-apresenta-projetos-para-um-concelho-mais-verde-inclusivo-e-participativo/",
+  "https://www.algarveaddicts.com/algarve-events-november-2026",
+  "https://eventos.visitalgarve.pt/en",
+  "https://www.algarveaddicts.com/algarveevents",
+  "https://blog.algarveholidaylets.com/algarve-autumn-events/",
+  "https://blog.algarve-ferias.com/en/events/",
+  "https://www.sustainableliving.pt/pulse/2026-11-16",
+  "https://dailynata.com/whats-on",
+  "https://www.theportugalnews.com/news/2026-11-02/the-algarve-deserves-its-own-stage-the-vision-behind-the-algarve-real-estate-summit-2026/1109007",
+  "https://www.theportugalnews.com/news/2026-10-09/algarve-real-estate-summit-2026-where-the-algarve-meets-the-world/1097777",
+  "https://www.theportugalnews.com/news/2026-10-22/autumn-festivals-and-events-in-the-algarve/1104742",
+  "https://algarvecircle.com/whats-on/november-2026"
+ ],
+ "answer_text": "[{\"name\":\"Algarve Real Estate Summit 2026\",\"start_date\":\"2026-11-20\",\"end_date\":\"2026-11-20\",\"venue\":\"Lagoa Congress Centre\",\"municipality\":\"Lagoa\",\"organiser\":\"The Portugal News\",\"urls\":[\"https://www.theportugalnews.com/news/2026-11-02/the-algarve-deserves-its-own-stage-the-vision-behind-the-algarve-real-estate-summit-2026/1109007\",\"https://www.theportugalnews.com/news/2026-10-09/algarve-real-estate-summit-2026-where-the-algarve-meets-the-world/1097777\"]},{\"name\":\"Alice in Wonderland\",\"start_date\":\"2026-11-19\",\"end_date\":\"2026-11-21\",\"venue\":\"Auditório Carlos do Carmo\",\"municipality\":\"Lagoa\",\"organiser\":\"The Algarveans Theatre Group\",\"urls\":[\"https://algarvecircle.com/whats-on/november-2026\",\"https://www.algarveaddicts.com/algarve-events-november-2026\"]},{\"name\":\"Harp concert with Rebeca Csalog\",\"start_date\":\"2026-11-25\",\"end_date\":\"2026-11-25\",\"venue\":\"Igreja da Misericórdia de Lagoa\",\"municipality\":\"Lagoa\",\"organiser\":\"Ideias do Levante\",\"urls\":[\"https://algarvecircle.com/whats-on/november-2026\",\"https://dailynata.com/whats-on\"]},{\"name\":\"Deliver Us from Hunger!\",\"start_date\":\"2026-11-28\",\"end_date\":\"2026-11-28\",\"venue\":\"Auditório Carlos do Carmo\",\"municipality\":\"Lagoa\",\"organiser\":\"null\",\"urls\":[\"https://algarvecircle.com/whats-on/november-2026\"]},{\"name\":\"VI Charity Christmas Choir Concert - Artenata\",\"start_date\":\"2026-12-05\",\"end_date\":\"2026-12-05\",\"venue\":\"Ferragudo\",\"municipality\":\"Lagoa\",\"organiser\":\"null\",\"urls\":[\"https://www.algarveatlas.com/en/municipalities/lagoa\"]},{\"name\":\"26th Lagoa Christmas Concert\",\"start_date\":\"2026-12-06\",\"end_date\":\"2026-12-06\",\"venue\":\"Porches parish church\",\"municipality\":\"Lagoa\",\"organiser\":\"null\",\"urls\":[\"https://blog.algarve-ferias.com/en/events/\",\"https://www.algarveatlas.com/en/municipalities/lagoa\"]},{\"name\":\"Lagoa Christmas Concert\",\"start_date\":\"2026-12-08\",\"end_date\":\"2026-12-08\",\"venue\":\"Porches\",\"municipality\":\"Lagoa\",\"organiser\":\"null\",\"urls\":[\"https://www.algarveatlas.com/en/municipalities/lagoa\"]},{\"name\":\"Estátuas Vivas no Natal\",\"start_date\":\"2026-12-11\",\"end_date\":\"2026-12-12\",\"venue\":\"Rua 25 de Abril\",\"municipality\":\"Lagoa\",\"organiser\":\"null\",\"urls\":[\"https://www.theportugalnews.com/news/2026-10-22/autumn-festivals-and-events-in-the-algarve/1104742\"]}]",
+ "usage": {
+  "prompt_tokens": 142,
+  "completion_tokens": 739,
+  "total_tokens": 881,
+  "cost": 0.0058212,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00588,
+   "upstream_inference_prompt_cost": 0.000142,
+   "upstream_inference_completions_cost": 0.005738
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "cost_usd": 0.0058212
+}

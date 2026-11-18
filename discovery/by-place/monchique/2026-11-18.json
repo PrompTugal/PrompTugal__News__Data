@@ -1,0 +1,99 @@
+{
+ "place": "monchique",
+ "asked_at": "2026-11-18T14:18:16Z",
+ "model": "perplexity/sonar",
+ "via": "OpenRouter",
+ "by": "collect/discovery.mjs (data.b@PrompTugal.dinis)",
+ "about": "Phase 1 evidence: what Perplexity answered about events in this place, with every URL it cited. Not published as content; each event becomes a claim whose details come only from readable sources.",
+ "prompt": "List public events (concerts, exhibitions, festivals, fairs, talks, sports, markets, theatre) taking place in Monchique, Portugal, between 2026-11-18 and the next 30 days. Answer ONLY with a JSON array, no prose. Each item: {\"name\": string, \"start_date\": \"YYYY-MM-DD\", \"end_date\": \"YYYY-MM-DD\" or null, \"venue\": string or null, \"municipality\": string, \"organiser\": organisation name or null (never a private person), \"urls\": [the source URLs for this event]}. Include only events you can support with a source URL. At most 25 items.",
+ "ok": true,
+ "items": [
+  {
+   "name": "Chestnut Festival 2026",
+   "start_date": "2026-11-01",
+   "end_date": "2026-11-01",
+   "venue": "Casa do Povo de Marmelete",
+   "municipality": "Monchique",
+   "organiser": "Junta de Freguesia de Marmelete",
+   "urls": [
+    "https://www.algarveatlas.com/en/events/festa-da-castanha-2026-marmelete-7066"
+   ]
+  },
+  {
+   "name": "Hridaya Silent Meditation Retreat November 2026",
+   "start_date": "2026-11-18",
+   "end_date": "2026-11-20",
+   "venue": "Karuna Retreat Center",
+   "municipality": "Monchique",
+   "organiser": "Karuna Retreat Center",
+   "urls": [
+    "https://ecstatic.events/popular/portugal/november-2026"
+   ]
+  },
+  {
+   "name": "Monchique Walking Festival",
+   "start_date": "2026-11-27",
+   "end_date": "2026-11-29",
+   "venue": "Various locations in Monchique, Alferce and Marmelete",
+   "municipality": "Monchique",
+   "organiser": "Câmara Municipal de Monchique",
+   "urls": [
+    "https://algarvecircle.com/events/6th-monchique-walking-festival-2026-11-27",
+    "https://www.visitportugal.com/en/node/515845"
+   ]
+  },
+  {
+   "name": "Algarve Harp Festival concert in Monchique",
+   "start_date": "2026-11-28",
+   "end_date": "2026-11-28",
+   "venue": "Igreja da Misericórdia de Monchique",
+   "municipality": "Monchique",
+   "organiser": "Algarve Harp Festival",
+   "urls": [
+    "https://www.sulinformacao.pt/2026/10/festival-de-harpa-vai-espalhar-musica-por-lagoa-albufeira-e-monchique/"
+   ]
+  }
+ ],
+ "citations": [
+  "https://algarvecircle.com/events/6th-monchique-walking-festival-2026-11-27",
+  "https://www.visitportugal.com/en/node/515845",
+  "https://algarvecircle.com/whats-on/november-2026",
+  "https://algarveholidaytips.com/monchique/",
+  "https://www.theportugalnews.com/news/2026-10-22/autumn-festivals-and-events-in-the-algarve/1104742",
+  "https://www.sulinformacao.pt/2026/10/festival-de-harpa-vai-espalhar-musica-por-lagoa-albufeira-e-monchique/",
+  "https://www.sustainableliving.pt/pulse/2026-11-17",
+  "https://www.algarveaddicts.com/algarve-events-november-2026",
+  "https://algarvecircle.com/events",
+  "https://www.algarveatlas.com/en/events/festa-da-castanha-2026-marmelete-7066",
+  "http://oladaniela.com/best-festivals-portugal/",
+  "https://www.portugal-live.net/en/regions/algarve/monchique.html",
+  "https://ecstatic.events/popular/portugal/november-2026",
+  "https://www.visitportugal.com/en (query cut)",
+  "https://www.outdooractive.com/en/backpacking-routes/faro/backpacking-routes-in-the-algarve/221307508/"
+ ],
+ "answer_text": "[{\"name\":\"Chestnut Festival 2026\",\"start_date\":\"2026-11-01\",\"end_date\":\"2026-11-01\",\"venue\":\"Casa do Povo de Marmelete\",\"municipality\":\"Monchique\",\"organiser\":\"Junta de Freguesia de Marmelete\",\"urls\":[\"https://www.algarveatlas.com/en/events/festa-da-castanha-2026-marmelete-7066\"]},{\"name\":\"Hridaya Silent Meditation Retreat November 2026\",\"start_date\":\"2026-11-18\",\"end_date\":\"2026-11-20\",\"venue\":\"Karuna Retreat Center\",\"municipality\":\"Monchique\",\"organiser\":\"Karuna Retreat Center\",\"urls\":[\"https://ecstatic.events/popular/portugal/november-2026\"]},{\"name\":\"Monchique Walking Festival\",\"start_date\":\"2026-11-27\",\"end_date\":\"2026-11-29\",\"venue\":\"Various locations in Monchique, Alferce and Marmelete\",\"municipality\":\"Monchique\",\"organiser\":\"Câmara Municipal de Monchique\",\"urls\":[\"https://algarvecircle.com/events/6th-monchique-walking-festival-2026-11-27\",\"https://www.visitportugal.com/en/node/515845\"]},{\"name\":\"Algarve Harp Festival concert in Monchique\",\"start_date\":\"2026-11-28\",\"end_date\":\"2026-11-28\",\"venue\":\"Igreja da Misericórdia de Monchique\",\"municipality\":\"Monchique\",\"organiser\":\"Algarve Harp Festival\",\"urls\":[\"https://www.sulinformacao.pt/2026/10/festival-de-harpa-vai-espalhar-musica-por-lagoa-albufeira-e-monchique/\"]}]",
+ "usage": {
+  "prompt_tokens": 142,
+  "completion_tokens": 395,
+  "total_tokens": 537,
+  "cost": 0.0054846,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00554,
+   "upstream_inference_prompt_cost": 0.000142,
+   "upstream_inference_completions_cost": 0.005398
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "cost_usd": 0.0054846
+}

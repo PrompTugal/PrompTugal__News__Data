@@ -34,5 +34,6 @@ for (const c of todo) {
 }
 if (todo.some(c => c.id.startsWith('ipma-') || c.id === 'adsb-faro')) await import('./by-place-now.mjs')
 if (fs.existsSync(path.join(ROOT, 'data', 'events-pt', 'latest.json'))) await import('./events-by-place.mjs')   // also from the copied last read
+if (fs.existsSync(path.join(ROOT, 'discovery', 'by-place'))) await import('./claims.mjs')   // claims from the stored discovery answers (code, no model)
 writeJson(path.join(ROOT, 'data', 'run.json'), { at: now(), sources: summary })
 if (summary.length && summary.every(s => !s.ok)) { console.error('no source could be read'); process.exit(1) }

@@ -1,0 +1,66 @@
+{
+ "place": "aljezur",
+ "asked_at": "2026-11-18T14:18:21Z",
+ "model": "perplexity/sonar",
+ "via": "OpenRouter",
+ "by": "collect/discovery.mjs (data.b@PrompTugal.dinis)",
+ "about": "Phase 1 evidence: what Perplexity answered about events in this place, with every URL it cited. Not published as content; each event becomes a claim whose details come only from readable sources.",
+ "prompt": "List public events (concerts, exhibitions, festivals, fairs, talks, sports, markets, theatre) taking place in Aljezur, Portugal, between 2026-11-18 and the next 30 days. Answer ONLY with a JSON array, no prose. Each item: {\"name\": string, \"start_date\": \"YYYY-MM-DD\", \"end_date\": \"YYYY-MM-DD\" or null, \"venue\": string or null, \"municipality\": string, \"organiser\": organisation name or null (never a private person), \"urls\": [the source URLs for this event]}. Include only events you can support with a source URL. At most 25 items.",
+ "ok": true,
+ "items": [
+  {
+   "name": "Aljezur Sweet Potato Festival",
+   "start_date": "2026-11-27",
+   "end_date": "2026-11-29",
+   "venue": "Espaço Multiusos de Aljezur",
+   "municipality": "Aljezur",
+   "organiser": "Municipality of Aljezur",
+   "urls": [
+    "https://www.visitportugal.com/en/node/525149",
+    "https://eventos.visitalgarve.pt/en/16443/aljezur-sweet-potato-festival"
+   ]
+  }
+ ],
+ "citations": [
+  "https://www.algarveatlas.com/en/municipalities/aljezur",
+  "https://eventos.visitalgarve.pt/en/events?category=1414&lang=en",
+  "https://eventos.visitalgarve.pt/en/16443/aljezur-sweet-potato-festival",
+  "https://www.visitportugal.com/en/node/525149",
+  "https://fienta.com/united-we-tribe-21-nov-2026",
+  "https://ma.to/event/fado-with-melissa-simplicio-17-nov-2026",
+  "https://ma.to/event/sing-movie-night-14-nov-2026",
+  "https://ma.to/event/jazz-nas-adegas-low-tech-groove-27-nov-2026",
+  "https://cm-aljezur.pt/",
+  "https://ma.to/venue/municipioaljezur",
+  "https://ma.to/event/sound-journey-29-nov-2026",
+  "https://ma.to/event/fado-with-nadia-catarro-19-nov-2026",
+  "https://ma.to/event/oyster-experience-wine-pairing-14-nov-2026",
+  "https://ma.to/event/x-acto-festival-de-teatro-14-nov-2026",
+  "https://cm-aljezur.pt/pt/agenda.aspx"
+ ],
+ "answer_text": "[{\"name\":\"Aljezur Sweet Potato Festival\",\"start_date\":\"2026-11-27\",\"end_date\":\"2026-11-29\",\"venue\":\"Espaço Multiusos de Aljezur\",\"municipality\":\"Aljezur\",\"organiser\":\"Municipality of Aljezur\",\"urls\":[\"https://www.visitportugal.com/en/node/525149\",\"https://eventos.visitalgarve.pt/en/16443/aljezur-sweet-potato-festival\"]}]",
+ "usage": {
+  "prompt_tokens": 142,
+  "completion_tokens": 103,
+  "total_tokens": 245,
+  "cost": 0.0051975,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00525,
+   "upstream_inference_prompt_cost": 0.000142,
+   "upstream_inference_completions_cost": 0.005108
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "cost_usd": 0.0051975
+}

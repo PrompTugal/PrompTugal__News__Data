@@ -1,0 +1,98 @@
+{
+ "place": "silves",
+ "asked_at": "2026-11-18T14:17:27Z",
+ "model": "perplexity/sonar",
+ "via": "OpenRouter",
+ "by": "collect/discovery.mjs (data.b@PrompTugal.dinis)",
+ "about": "Phase 1 evidence: what Perplexity answered about events in this place, with every URL it cited. Not published as content; each event becomes a claim whose details come only from readable sources.",
+ "prompt": "List public events (concerts, exhibitions, festivals, fairs, talks, sports, markets, theatre) taking place in Silves, Portugal, between 2026-11-18 and the next 30 days. Answer ONLY with a JSON array, no prose. Each item: {\"name\": string, \"start_date\": \"YYYY-MM-DD\", \"end_date\": \"YYYY-MM-DD\" or null, \"venue\": string or null, \"municipality\": string, \"organiser\": organisation name or null (never a private person), \"urls\": [the source URLs for this event]}. Include only events you can support with a source URL. At most 25 items.",
+ "ok": true,
+ "items": [
+  {
+   "name": "Markets of Silves",
+   "start_date": "2026-11-18",
+   "end_date": "2026-12-28",
+   "venue": "Silves",
+   "municipality": "Silves",
+   "organiser": null,
+   "urls": [
+    "https://www.algarveatlas.com/en/municipalities/silves"
+   ]
+  },
+  {
+   "name": "Antique Fair",
+   "start_date": "2026-11-18",
+   "end_date": "2026-12-26",
+   "venue": "Silves",
+   "municipality": "Silves",
+   "organiser": null,
+   "urls": [
+    "https://www.algarveatlas.com/en/municipalities/silves"
+   ]
+  },
+  {
+   "name": "A participação cívica em Portugal: desafios e oportunidades na área cultural",
+   "start_date": "2026-11-27",
+   "end_date": null,
+   "venue": "Espaço Jali",
+   "municipality": "Silves",
+   "organiser": "Associação Grupo dos Amigos de Silves",
+   "urls": [
+    "https://www.sustainableliving.pt/pulse/2026-11-18"
+   ]
+  },
+  {
+   "name": "Jazz nas Adegas: Low Tech Groove",
+   "start_date": "2026-11-27",
+   "end_date": null,
+   "venue": "Cabrita Wines",
+   "municipality": "Silves",
+   "organiser": null,
+   "urls": [
+    "https://ma.to/event/jazz-nas-adegas-low-tech-groove-27-nov-2026"
+   ]
+  }
+ ],
+ "citations": [
+  "https://www.cm-silves.pt/pt/agenda.aspx",
+  "https://www.algarveatlas.com/en/municipalities/silves",
+  "https://www.sustainableliving.pt/pulse/2026-11-18",
+  "https://algarveholidaytips.com/events/x-acto-festival-de-teatro-2026-silves/",
+  "https://ma.to/event/jazz-nas-adegas-low-tech-groove-27-nov-2026",
+  "https://oladaniela.com/best-festivals-portugal/",
+  "https://eventos.visitalgarve.pt/en/29929/municipality-day-celebrations",
+  "https://algarveholidaytips.com/events/viagem-ao-reino-do-algarve-livro-apresentacao-silves-2026/",
+  "https://ma.to/event/x-acto-festival-de-teatro-14-nov-2026",
+  "https://www.theportugalnews.com/news/2026-11-14/tomorrow-just-another-day/1113681",
+  "https://www.myguidealgarve.com/events",
+  "https://www.sustainableliving.pt/news/alcoutim-and-mexilhoeira-grande-join-algarve-local-markets",
+  "https://www.theportugalnews.com/news/2026-11-17/postponing-the-inevitable/1117734",
+  "https://www.sustainableliving.pt/events/agroecology-in-permaculture-days-edible-gardening-ad285550",
+  "https://www.portugalresident.com/silves-medieval-fair-2026/"
+ ],
+ "answer_text": "[{\"name\":\"Markets of Silves\",\"start_date\":\"2026-11-18\",\"end_date\":\"2026-12-28\",\"venue\":\"Silves\",\"municipality\":\"Silves\",\"organiser\":null,\"urls\":[\"https://www.algarveatlas.com/en/municipalities/silves\"]},{\"name\":\"Antique Fair\",\"start_date\":\"2026-11-18\",\"end_date\":\"2026-12-26\",\"venue\":\"Silves\",\"municipality\":\"Silves\",\"organiser\":null,\"urls\":[\"https://www.algarveatlas.com/en/municipalities/silves\"]},{\"name\":\"A participação cívica em Portugal: desafios e oportunidades na área cultural\",\"start_date\":\"2026-11-27\",\"end_date\":null,\"venue\":\"Espaço Jali\",\"municipality\":\"Silves\",\"organiser\":\"Associação Grupo dos Amigos de Silves\",\"urls\":[\"https://www.sustainableliving.pt/pulse/2026-11-18\"]},{\"name\":\"Jazz nas Adegas: Low Tech Groove\",\"start_date\":\"2026-11-27\",\"end_date\":null,\"venue\":\"Cabrita Wines\",\"municipality\":\"Silves\",\"organiser\":null,\"urls\":[\"https://ma.to/event/jazz-nas-adegas-low-tech-groove-27-nov-2026\"]}]",
+ "usage": {
+  "prompt_tokens": 141,
+  "completion_tokens": 294,
+  "total_tokens": 435,
+  "cost": 0.0053856,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00544,
+   "upstream_inference_prompt_cost": 0.000141,
+   "upstream_inference_completions_cost": 0.005299
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "cost_usd": 0.0053856
+}

@@ -1,0 +1,88 @@
+{
+ "place": "alcoutim",
+ "asked_at": "2026-11-18T14:18:44Z",
+ "model": "perplexity/sonar",
+ "via": "OpenRouter",
+ "by": "collect/discovery.mjs (data.b@PrompTugal.dinis)",
+ "about": "Phase 1 evidence: what Perplexity answered about events in this place, with every URL it cited. Not published as content; each event becomes a claim whose details come only from readable sources.",
+ "prompt": "List public events (concerts, exhibitions, festivals, fairs, talks, sports, markets, theatre) taking place in Alcoutim, Portugal, between 2026-11-18 and the next 30 days. Answer ONLY with a JSON array, no prose. Each item: {\"name\": string, \"start_date\": \"YYYY-MM-DD\", \"end_date\": \"YYYY-MM-DD\" or null, \"venue\": string or null, \"municipality\": string, \"organiser\": organisation name or null (never a private person), \"urls\": [the source URLs for this event]}. Include only events you can support with a source URL. At most 25 items.",
+ "ok": true,
+ "items": [
+  {
+   "name": "A água e o mar para mim",
+   "start_date": "2026-11-05",
+   "end_date": "2026-12-18",
+   "venue": "Biblioteca Municipal Carlos Brito",
+   "municipality": "Alcoutim",
+   "organiser": null,
+   "urls": [
+    "https://activealgarve.pt/events"
+   ]
+  },
+  {
+   "name": "Uma Mirada por el Jardim de Pepe Gámez",
+   "start_date": "2026-12-13",
+   "end_date": "2026-12-31",
+   "venue": "Ermida Nossa Senhora da Conceição",
+   "municipality": "Alcoutim",
+   "organiser": null,
+   "urls": [
+    "https://algarvecircle.com/whats-on/december-2026"
+   ]
+  },
+  {
+   "name": "ALUT Algarviana Ultra Trail 2026 (8th edition)",
+   "start_date": "2026-11-26",
+   "end_date": "2026-11-29",
+   "venue": "Alcoutim dock",
+   "municipality": "Alcoutim",
+   "organiser": null,
+   "urls": [
+    "https://algarvecircle.com/events/alut-algarviana-ultra-trail-2026-8th-edition-2026-11-26",
+    "https://gotrail.run/en/event/alut-algarviana-ultra-trail"
+   ]
+  }
+ ],
+ "citations": [
+  "https://eventos.visitalgarve.pt/en/events",
+  "https://algarvecircle.com/events",
+  "https://eventos.visitalgarve.pt/en",
+  "https://www.sulinformacao.pt/2026/10/alcoutim-recebe-certificacao-biosphere-e-prepara-festival-do-contrabando-sustentavel/",
+  "https://www.algarveaddicts.com/algarveevents",
+  "https://www.algarveaddicts.com/algarve-events-november-2026",
+  "https://algarvecircle.com/events/alut-algarviana-ultra-trail-2026-8th-edition-2026-11-26",
+  "https://gotrail.run/en/event/alut-algarviana-ultra-trail",
+  "https://activealgarve.pt/events",
+  "https://eventos.visitalgarve.pt/en/43521/tang-arts-trafficking-on-the-guadiana",
+  "https://www.sustainableliving.pt/news/alcoutim-and-mexilhoeira-grande-join-algarve-local-markets",
+  "https://eventos.visitalgarve.pt/en/16445/17th-partridge-fair",
+  "https://quintaproperty.com/whats-on-in-the-algarve-september-october-november-2026/",
+  "https://algarvecircle.com/whats-on/december-2026",
+  "https://activealgarve.pt/event/vila-vita-parc-christmas-market-2026-2026-12"
+ ],
+ "answer_text": "[{\"name\":\"A água e o mar para mim\",\"start_date\":\"2026-11-05\",\"end_date\":\"2026-12-18\",\"venue\":\"Biblioteca Municipal Carlos Brito\",\"municipality\":\"Alcoutim\",\"organiser\":null,\"urls\":[\"https://activealgarve.pt/events\"]},{\"name\":\"Uma Mirada por el Jardim de Pepe Gámez\",\"start_date\":\"2026-12-13\",\"end_date\":\"2026-12-31\",\"venue\":\"Ermida Nossa Senhora da Conceição\",\"municipality\":\"Alcoutim\",\"organiser\":null,\"urls\":[\"https://algarvecircle.com/whats-on/december-2026\"]},{\"name\":\"ALUT Algarviana Ultra Trail 2026 (8th edition)\",\"start_date\":\"2026-11-26\",\"end_date\":\"2026-11-29\",\"venue\":\"Alcoutim dock\",\"municipality\":\"Alcoutim\",\"organiser\":null,\"urls\":[\"https://algarvecircle.com/events/alut-algarviana-ultra-trail-2026-8th-edition-2026-11-26\",\"https://gotrail.run/en/event/alut-algarviana-ultra-trail\"]} ]",
+ "usage": {
+  "prompt_tokens": 142,
+  "completion_tokens": 268,
+  "total_tokens": 410,
+  "cost": 0.0053559,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00541,
+   "upstream_inference_prompt_cost": 0.000142,
+   "upstream_inference_completions_cost": 0.005268
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "cost_usd": 0.0053559
+}

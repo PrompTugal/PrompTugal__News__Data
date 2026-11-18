@@ -1,0 +1,127 @@
+{
+ "place": "vila-do-bispo",
+ "asked_at": "2026-11-18T14:18:26Z",
+ "model": "perplexity/sonar",
+ "via": "OpenRouter",
+ "by": "collect/discovery.mjs (data.b@PrompTugal.dinis)",
+ "about": "Phase 1 evidence: what Perplexity answered about events in this place, with every URL it cited. Not published as content; each event becomes a claim whose details come only from readable sources.",
+ "prompt": "List public events (concerts, exhibitions, festivals, fairs, talks, sports, markets, theatre) taking place in Vila Do Bispo, Portugal, between 2026-11-18 and the next 30 days. Answer ONLY with a JSON array, no prose. Each item: {\"name\": string, \"start_date\": \"YYYY-MM-DD\", \"end_date\": \"YYYY-MM-DD\" or null, \"venue\": string or null, \"municipality\": string, \"organiser\": organisation name or null (never a private person), \"urls\": [the source URLs for this event]}. Include only events you can support with a source URL. At most 25 items.",
+ "ok": true,
+ "items": [
+  {
+   "name": "Travelling Exhibition - Principles of the Charter of Educating Cities",
+   "start_date": "2026-11-02",
+   "end_date": "2026-12-04",
+   "venue": "Centro de Interpretação de Vila do Bispo",
+   "municipality": "Vila do Bispo",
+   "organiser": "Portuguese Territorial Network of Educating Cities",
+   "urls": [
+    "https://www.algarveatlas.com/en/events/exposicao-itinerante-principios-da-carta-das-cidades-educado-7722"
+   ]
+  },
+  {
+   "name": "The Eternal Boy",
+   "start_date": "2026-11-20",
+   "end_date": null,
+   "venue": "Vila do Bispo",
+   "municipality": "Vila do Bispo",
+   "organiser": "Mãozorra",
+   "urls": [
+    "https://www.algarveatlas.com/en/events/exposicao-itinerante-principios-da-carta-das-cidades-educado-7722",
+    "https://algarvecircle.com/whats-on/november-2026"
+   ]
+  },
+  {
+   "name": "The Eternal Boy",
+   "start_date": "2026-11-21",
+   "end_date": null,
+   "venue": "Vila do Bispo",
+   "municipality": "Vila do Bispo",
+   "organiser": "Mãozorra",
+   "urls": [
+    "https://www.algarveatlas.com/en/events/exposicao-itinerante-principios-da-carta-das-cidades-educado-7722",
+    "https://algarvecircle.com/whats-on/november-2026"
+   ]
+  },
+  {
+   "name": "The Nest",
+   "start_date": "2026-12-11",
+   "end_date": null,
+   "venue": "Vila do Bispo",
+   "municipality": "Vila do Bispo",
+   "organiser": "Mãozorra",
+   "urls": [
+    "https://www.algarveatlas.com/en/events/exposicao-itinerante-principios-da-carta-das-cidades-educado-7722",
+    "https://algarvecircle.com/whats-on/december-2026",
+    "https://www.hostelworld.com/events/e/6aee978114b147c7975bef77/burromaquia/"
+   ]
+  },
+  {
+   "name": "Burromaquia",
+   "start_date": "2026-12-12",
+   "end_date": null,
+   "venue": "Vila do Bispo",
+   "municipality": "Vila do Bispo",
+   "organiser": "Mãozorra",
+   "urls": [
+    "https://www.hostelworld.com/events/e/6aee978114b147c7975bef77/burromaquia/",
+    "https://algarvecircle.com/whats-on/december-2026"
+   ]
+  },
+  {
+   "name": "Vila do Bispo Market",
+   "start_date": "2026-12-07",
+   "end_date": null,
+   "venue": "Vila do Bispo town centre",
+   "municipality": "Vila do Bispo",
+   "organiser": null,
+   "urls": [
+    "https://algarvecircle.com/events/vila-do-bispo-street-market-2026-11-02",
+    "https://www.hostelworld.com/events/e/6ad1988aaa5f4fc6f57f70cd/vila-do-bispo-market/",
+    "https://algarvecircle.com/whats-on/december-2026"
+   ]
+  }
+ ],
+ "citations": [
+  "https://www.cm-viladobispo.pt/agenda",
+  "https://algarvecircle.com/events/vila-do-bispo-street-market-2026-11-02",
+  "https://promptugal.news/algarve/vila-do-bispo/index.html",
+  "https://algarvecircle.com/events",
+  "https://www.algarveatlas.com/en/events/exposicao-itinerante-principios-da-carta-das-cidades-educado-7722",
+  "https://algarvecircle.com/whats-on/december-2026",
+  "https://www.hostelworld.com/events/europe/portugal/vila-do-bispo/",
+  "https://www.hostelworld.com/events/e/6aee978114b147c7975bef77/burromaquia/",
+  "https://www.hostelworld.com/events/e/6ad1988aaa5f4fc6f57f70cd/vila-do-bispo-market/",
+  "https://oladaniela.com/best-festivals-portugal/",
+  "https://lisboeta.news/place/algarve/vila-do-bispo",
+  "https://www.jf-viladobispoeraposeira.pt/pt/agenda",
+  "https://www.eventbrite.com/d/portugal--vila-do-bispo/events/",
+  "https://www.sustainableliving.pt/events",
+  "https://algarvecircle.com/whats-on/november-2026"
+ ],
+ "answer_text": "[{\"name\":\"Travelling Exhibition - Principles of the Charter of Educating Cities\",\"start_date\":\"2026-11-02\",\"end_date\":\"2026-12-04\",\"venue\":\"Centro de Interpretação de Vila do Bispo\",\"municipality\":\"Vila do Bispo\",\"organiser\":\"Portuguese Territorial Network of Educating Cities\",\"urls\":[\"https://www.algarveatlas.com/en/events/exposicao-itinerante-principios-da-carta-das-cidades-educado-7722\"]},{\"name\":\"The Eternal Boy\",\"start_date\":\"2026-11-20\",\"end_date\":null,\"venue\":\"Vila do Bispo\",\"municipality\":\"Vila do Bispo\",\"organiser\":\"Mãozorra\",\"urls\":[\"https://www.algarveatlas.com/en/events/exposicao-itinerante-principios-da-carta-das-cidades-educado-7722\",\"https://algarvecircle.com/whats-on/november-2026\"]},{\"name\":\"The Eternal Boy\",\"start_date\":\"2026-11-21\",\"end_date\":null,\"venue\":\"Vila do Bispo\",\"municipality\":\"Vila do Bispo\",\"organiser\":\"Mãozorra\",\"urls\":[\"https://www.algarveatlas.com/en/events/exposicao-itinerante-principios-da-carta-das-cidades-educado-7722\",\"https://algarvecircle.com/whats-on/november-2026\"]},{\"name\":\"The Nest\",\"start_date\":\"2026-12-11\",\"end_date\":null,\"venue\":\"Vila do Bispo\",\"municipality\":\"Vila do Bispo\",\"organiser\":\"Mãozorra\",\"urls\":[\"https://www.algarveatlas.com/en/events/exposicao-itinerante-principios-da-carta-das-cidades-educado-7722\",\"https://algarvecircle.com/whats-on/december-2026\",\"https://www.hostelworld.com/events/e/6aee978114b147c7975bef77/burromaquia/\"]},{\"name\":\"Burromaquia\",\"start_date\":\"2026-12-12\",\"end_date\":null,\"venue\":\"Vila do Bispo\",\"municipality\":\"Vila do Bispo\",\"organiser\":\"Mãozorra\",\"urls\":[\"https://www.hostelworld.com/events/e/6aee978114b147c7975bef77/burromaquia/\",\"https://algarvecircle.com/whats-on/december-2026\"]},{\"name\":\"Vila do Bispo Market\",\"start_date\":\"2026-12-07\",\"end_date\":null,\"venue\":\"Vila do Bispo town centre\",\"municipality\":\"Vila do Bispo\",\"organiser\":null,\"urls\":[\"https://algarvecircle.com/events/vila-do-bispo-street-market-2026-11-02\",\"https://www.hostelworld.com/events/e/6ad1988aaa5f4fc6f57f70cd/vila-do-bispo-market/\",\"https://algarvecircle.com/whats-on/december-2026\"]} ]",
+ "usage": {
+  "prompt_tokens": 144,
+  "completion_tokens": 675,
+  "total_tokens": 819,
+  "cost": 0.0057618,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00582,
+   "upstream_inference_prompt_cost": 0.000144,
+   "upstream_inference_completions_cost": 0.005676
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "cost_usd": 0.0057618
+}

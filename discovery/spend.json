@@ -1,0 +1,10 @@
+{
+ "about": "OpenRouter spend on events discovery, per UTC day (USD, as OpenRouter reports it).",
+ "days": {
+  "2026-11-18": {
+   "usd": 0.10722689999999999,
+   "calls": 19,
+   "model": "perplexity/sonar"
+  }
+ }
+}

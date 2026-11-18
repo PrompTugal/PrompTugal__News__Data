@@ -1,0 +1,89 @@
+{
+ "place": "vila-real-de-santo-antonio",
+ "asked_at": "2026-11-18T14:17:41Z",
+ "model": "perplexity/sonar",
+ "via": "OpenRouter",
+ "by": "collect/discovery.mjs (data.b@PrompTugal.dinis)",
+ "about": "Phase 1 evidence: what Perplexity answered about events in this place, with every URL it cited. Not published as content; each event becomes a claim whose details come only from readable sources.",
+ "prompt": "List public events (concerts, exhibitions, festivals, fairs, talks, sports, markets, theatre) taking place in Vila Real de Santo António, Portugal, between 2026-11-18 and the next 30 days. Answer ONLY with a JSON array, no prose. Each item: {\"name\": string, \"start_date\": \"YYYY-MM-DD\", \"end_date\": \"YYYY-MM-DD\" or null, \"venue\": string or null, \"municipality\": string, \"organiser\": organisation name or null (never a private person), \"urls\": [the source URLs for this event]}. Include only events you can support with a source URL. At most 25 items.",
+ "ok": true,
+ "items": [
+  {
+   "name": "Monte Gordo Sand Race 2026",
+   "start_date": "2026-11-27",
+   "end_date": "2026-11-29",
+   "venue": "Monte Gordo beach circuit",
+   "municipality": "Vila Real de Santo António",
+   "organiser": "Automóvel Club de Portugal",
+   "urls": [
+    "https://algarvecircle.com/events",
+    "https://algarvecircle.com/whats-on/november-2026"
+   ]
+  },
+  {
+   "name": "Monte Gordo Flea Market 2026",
+   "start_date": "2026-11-28",
+   "end_date": null,
+   "venue": "Near the Tourism Office, Monte Gordo",
+   "municipality": "Vila Real de Santo António",
+   "organiser": null,
+   "urls": [
+    "https://algarvecircle.com/events/vila-real-de-santo-antonio-flea-market-2026-11-28"
+   ]
+  },
+  {
+   "name": "Vila Natal and Giant Nativity Scene",
+   "start_date": "2026-11-30",
+   "end_date": "2027-01-06",
+   "venue": "Pombaline centre of Vila Real de Santo António",
+   "municipality": "Vila Real de Santo António",
+   "organiser": null,
+   "urls": [
+    "https://algarvecircle.com/events/vila-natal-and-giant-nativity-scene-vila-real-de-s-2026-11-30",
+    "https://algarvecircle.com/whats-on/november-2026"
+   ]
+  }
+ ],
+ "citations": [
+  "https://algarvecircle.com/events/vila-real-de-santo-antonio-flea-market-2026-11-28",
+  "https://algarvecircle.com/events",
+  "https://promptugal.news/algarve/vila-real-de-santo-antonio/index.html",
+  "https://algarvecircle.com/events/vila-natal-and-giant-nativity-scene-vila-real-de-s-2026-11-30",
+  "https://algarvecircle.com/events/jel-quem-te-viu-e-quem-te-ve-stand-up-2026-11-13",
+  "https://www.taviratimes.com/events",
+  "https://running.life/en/event/x-millas-del-guadiana",
+  "https://ground.news/article/vila-real-de-santo-antonio-prepares-six-days-of-feira-da-praia-between-8-and-13-october",
+  "https://github.com/PrompTugal/PrompTugal__News__Website/commit/bc9e58595",
+  "https://www.visitportugal.com/en (query cut)",
+  "https://algarvecircle.com/whats-on/november-2026",
+  "https://algarvecircle.com/events/feira-da-praia-vila-real-santo-antonio-2026",
+  "https://www.visitportugal.com/en/content/parque-aventura-vila-real-de-santo-antonio",
+  "https://www.avaibooksports.com/inscripcion/x-millas-del-guadiana-2026/?lang=en",
+  "https://ground.news/article/x-miles-of-guadiana-link-portugal-and-spain-in-a-race-of-16-kilometers"
+ ],
+ "answer_text": "[{\"name\":\"Monte Gordo Sand Race 2026\",\"start_date\":\"2026-11-27\",\"end_date\":\"2026-11-29\",\"venue\":\"Monte Gordo beach circuit\",\"municipality\":\"Vila Real de Santo António\",\"organiser\":\"Automóvel Club de Portugal\",\"urls\":[\"https://algarvecircle.com/events\",\"https://algarvecircle.com/whats-on/november-2026\"]},{\"name\":\"Monte Gordo Flea Market 2026\",\"start_date\":\"2026-11-28\",\"end_date\":null,\"venue\":\"Near the Tourism Office, Monte Gordo\",\"municipality\":\"Vila Real de Santo António\",\"organiser\":null,\"urls\":[\"https://algarvecircle.com/events/vila-real-de-santo-antonio-flea-market-2026-11-28\"]},{\"name\":\"Vila Natal and Giant Nativity Scene\",\"start_date\":\"2026-11-30\",\"end_date\":\"2027-01-06\",\"venue\":\"Pombaline centre of Vila Real de Santo António\",\"municipality\":\"Vila Real de Santo António\",\"organiser\":null,\"urls\":[\"https://algarvecircle.com/events/vila-natal-and-giant-nativity-scene-vila-real-de-s-2026-11-30\",\"https://algarvecircle.com/whats-on/november-2026\"]}]",
+ "usage": {
+  "prompt_tokens": 147,
+  "completion_tokens": 304,
+  "total_tokens": 451,
+  "cost": 0.0053955,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00545,
+   "upstream_inference_prompt_cost": 0.000147,
+   "upstream_inference_completions_cost": 0.005303
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "cost_usd": 0.0053955
+}

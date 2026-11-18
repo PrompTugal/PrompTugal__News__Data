@@ -1,0 +1,111 @@
+{
+ "place": "lagos",
+ "asked_at": "2026-11-18T14:17:51Z",
+ "model": "perplexity/sonar",
+ "via": "OpenRouter",
+ "by": "collect/discovery.mjs (data.b@PrompTugal.dinis)",
+ "about": "Phase 1 evidence: what Perplexity answered about events in this place, with every URL it cited. Not published as content; each event becomes a claim whose details come only from readable sources.",
+ "prompt": "List public events (concerts, exhibitions, festivals, fairs, talks, sports, markets, theatre) taking place in Lagos, Portugal, between 2026-11-18 and the next 30 days. Answer ONLY with a JSON array, no prose. Each item: {\"name\": string, \"start_date\": \"YYYY-MM-DD\", \"end_date\": \"YYYY-MM-DD\" or null, \"venue\": string or null, \"municipality\": string, \"organiser\": organisation name or null (never a private person), \"urls\": [the source URLs for this event]}. Include only events you can support with a source URL. At most 25 items.",
+ "ok": true,
+ "items": [
+  {
+   "name": "Feira Franca de Lagos 2026",
+   "start_date": "2026-11-20",
+   "end_date": "2026-11-22",
+   "venue": "next to the Municipal Stadium",
+   "municipality": "Lagos",
+   "organiser": "Município de Lagos",
+   "urls": [
+    "https://algarvecircle.com/events",
+    "https://www.cm-lagos.pt/municipio/eventos?filter_34[1]=2026-11-17&start=20"
+   ]
+  },
+  {
+   "name": "Lagos Baía de Natal",
+   "start_date": "2026-11-28",
+   "end_date": "2027-01-05",
+   "venue": "Lagos",
+   "municipality": "Lagos",
+   "organiser": "Município de Lagos",
+   "urls": [
+    "https://algarvecircle.com/whats-on/december-2026"
+   ]
+  },
+  {
+   "name": "Mercadinho do Lagos Baía de Natal",
+   "start_date": "2026-11-28",
+   "end_date": "2027-01-05",
+   "venue": "Lagos",
+   "municipality": "Lagos",
+   "organiser": "Município de Lagos",
+   "urls": [
+    "https://algarvecircle.com/whats-on/december-2026"
+   ]
+  },
+  {
+   "name": "International Algarve Organ Festival 2026",
+   "start_date": "2026-11-18",
+   "end_date": "2026-11-29",
+   "venue": "Igreja de Santa Maria",
+   "municipality": "Lagos",
+   "organiser": "Associação Música XXI",
+   "urls": [
+    "https://www.cm-lagos.pt/municipio/eventos?filter_34[1]=2026-11-17&start=20",
+    "https://www.theportugalnews.com/news/2026-10-22/autumn-festivals-and-events-in-the-algarve/1104742"
+   ]
+  },
+  {
+   "name": "Organ concert of the Algarve International Organ Festival 2026",
+   "start_date": "2026-11-18",
+   "end_date": "2026-11-18",
+   "venue": "Igreja de Santa Maria",
+   "municipality": "Lagos",
+   "organiser": "Associação Música XXI",
+   "urls": [
+    "https://algarvecircle.com/events"
+   ]
+  }
+ ],
+ "citations": [
+  "https://eventos.visitalgarve.pt/en/events?category=1414&lang=en",
+  "https://goodtimeslagos.beehiiv.com/p/freshly-squeezed-nov-2-15",
+  "https://www.algarveatlas.com/en/municipalities/lagos",
+  "https://blog.algarve-ferias.com/en/events/",
+  "https://algarvecircle.com/events",
+  "https://www.cm-lagos.pt/municipio/eventos?filter_34[1]=2026-11-17&start=20",
+  "https://www.algarveaddicts.com/algarve-events-november-2026",
+  "https://gerador.eu/en/tempos-livres-30-outubro-26/",
+  "https://algarvecircle.com/whats-on/december-2026",
+  "https://www.theportugalnews.com/news/2026-10-22/autumn-festivals-and-events-in-the-algarve/1104742",
+  "https://dailynata.com/whats-on",
+  "https://gdg.community.dev/events/details/google-gdg-lagos-presents-devfest-lagos-portugal-2026/",
+  "https://gdg.community.dev/events/details/google-gdg-lagos-presents-workshop-crafting-a-lagos-tourism-agent-with-gemma-amp-genkit-devfest-lagos-portugal-2026/",
+  "https://racefinder.pt/en/all-races/?bookable_on_racefinder",
+  "https://www.eventbrite.ie/ttd/portugal--lagos/"
+ ],
+ "answer_text": "[{\"name\":\"Feira Franca de Lagos 2026\",\"start_date\":\"2026-11-20\",\"end_date\":\"2026-11-22\",\"venue\":\"next to the Municipal Stadium\",\"municipality\":\"Lagos\",\"organiser\":\"Município de Lagos\",\"urls\":[\"https://algarvecircle.com/events\",\"https://www.cm-lagos.pt/municipio/eventos?filter_34[1]=2026-11-17&start=20\"]},{\"name\":\"Lagos Baía de Natal\",\"start_date\":\"2026-11-28\",\"end_date\":\"2027-01-05\",\"venue\":\"Lagos\",\"municipality\":\"Lagos\",\"organiser\":\"Município de Lagos\",\"urls\":[\"https://algarvecircle.com/whats-on/december-2026\"]},{\"name\":\"Mercadinho do Lagos Baía de Natal\",\"start_date\":\"2026-11-28\",\"end_date\":\"2027-01-05\",\"venue\":\"Lagos\",\"municipality\":\"Lagos\",\"organiser\":\"Município de Lagos\",\"urls\":[\"https://algarvecircle.com/whats-on/december-2026\"]},{\"name\":\"International Algarve Organ Festival 2026\",\"start_date\":\"2026-11-18\",\"end_date\":\"2026-11-29\",\"venue\":\"Igreja de Santa Maria\",\"municipality\":\"Lagos\",\"organiser\":\"Associação Música XXI\",\"urls\":[\"https://www.cm-lagos.pt/municipio/eventos?filter_34[1]=2026-11-17&start=20\",\"https://www.theportugalnews.com/news/2026-10-22/autumn-festivals-and-events-in-the-algarve/1104742\"]},{\"name\":\"Organ concert of the Algarve International Organ Festival 2026\",\"start_date\":\"2026-11-18\",\"end_date\":\"2026-11-18\",\"venue\":\"Igreja de Santa Maria\",\"municipality\":\"Lagos\",\"organiser\":\"Associação Música XXI\",\"urls\":[\"https://algarvecircle.com/events\"]}]",
+ "usage": {
+  "prompt_tokens": 140,
+  "completion_tokens": 453,
+  "total_tokens": 593,
+  "cost": 0.0055341,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00559,
+   "upstream_inference_prompt_cost": 0.00014,
+   "upstream_inference_completions_cost": 0.00545
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "cost_usd": 0.0055341
+}
