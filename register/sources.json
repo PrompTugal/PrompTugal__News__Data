@@ -3106,6 +3106,408 @@
    "notes": "Some images are exempt from the OGL; statistics are covered. Attribution to ONS with the OGL link.",
    "researched_by": "data.b.dev@PrompTugal.dinis (Sonnet), for data.b@",
    "how": "Not collected yet. Decision by Dinis, 18 Nov 2026 about 22:20 UTC (PrompTugal__News__Website board/guidance/2026-11-18-london.md): London is the first place beyond Portugal; each UK source goes on the register with its terms read first, then is collected to the pipeline standard."
+  },
+  {
+   "id": "ecmwf-open-data",
+   "name": "ECMWF Open Data (IFS and AIFS real-time forecasts)",
+   "kind": "weather forecast data",
+   "url": "https://data.ecmwf.int/forecasts/",
+   "owner": "European Centre for Medium-Range Weather Forecasts (ECMWF)",
+   "places": [
+    "europe",
+    "portugal",
+    "london"
+   ],
+   "country": "EU",
+   "gives": [
+    "global weather forecasts (temperature, wind, precipitation rate, pressure and more) from the IFS and AIFS models, four runs a day"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "A subset of ECMWF real-time forecast data from the IFS and AIFS models is made available to the public free of charge. Their use is governed by the Creative Commons CC-BY-4.0 licence and the ECMWF Terms of Use. This means that the data may be redistributed and used commercially, subject to appropriate attribution.",
+    "quote_lang": "en",
+    "page": "https://www.ecmwf.int/en/forecasts/datasets/open-data",
+    "read_at": "2026-11-18",
+    "basis": "licence statement (CC BY 4.0 plus ECMWF Terms of Use); data.ecmwf.int/robots.txt returns 404 (no robots rules published)"
+   },
+   "interface": "Files over HTTPS in GRIB2 at https://data.ecmwf.int/forecasts/YYYYMMDD/HHz/{ifs|aifs-single}/0p25/oper/ (0.25 degree; 0.1 degree files split into -sfc and -pl). Mirrored on AWS, Azure and Google Cloud public buckets. Official Python client: ecmwf-opendata (not run here). No key, no account.",
+   "contact_channel": null,
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet)",
+   "notes": "Keyless. Licence page of the Terms of Use (https://apps.ecmwf.int/datasets/licences/general/): attribution must be displayed prominently and include 'this document/data/output/Results is/are based on data and products of the European Centre for Medium-Range Weather Forecasts (ECMWF)'; users must remove attribution if requested; no warranty. Limits stated on the open-data page: portal access limited to between 500 and 2000 simultaneous connections; rolling archive of the latest 12 runs (about 2 to 3 days); the cloud mirrors are recommended for heavy use. No per-IP rate limit found. The page also says accessing or arranging delivery of open data 'may be subject to Service Charges and a Service Agreement' (that concerns delivery services, not the public files; to confirm). Size: global GRIB2 files, tens to hundreds of MB per step, so a collector must cut out a Europe or Portugal box and write small JSON (needs a GRIB reader). Easier keyless forecasts for Portugal exist via Open-Meteo (already in the brief).",
+   "how": null
+  },
+  {
+   "id": "eurostat-api",
+   "name": "Eurostat dissemination API (JSON-stat 2.0 and SDMX 2.1/3.0)",
+   "kind": "official statistics API",
+   "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/",
+   "owner": "Eurostat (European Commission)",
+   "places": [
+    "europe",
+    "portugal",
+    "london"
+   ],
+   "country": "EU",
+   "gives": [
+    "EU, country and regional statistics: tourism nights by country of residence, population, economy, energy, with NUTS 2 and 3 regional breakdowns"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "Reuse of statistical data, metadata, publications, and other dissemination tools published on this website for commercial or non-commercial purposes is authorised provided the source is acknowledged.",
+    "quote_lang": "en",
+    "page": "https://ec.europa.eu/eurostat/web/main/help/copyright-notice",
+    "read_at": "2026-11-18",
+    "basis": "copyright notice and free re-use of data (editorial content under CC BY 4.0; statistical data reuse authorised with source acknowledged); robots.txt at ec.europa.eu/eurostat: 'User-Agent: *' with empty 'Disallow:'"
+   },
+   "interface": "GET https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/{dataset}?format=JSON&lang=en&geo=...&lastTimePeriod=n returns JSON-stat 2.0. Also SDMX 2.1 (https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/) and SDMX 3.0. No key.",
+   "contact_channel": null,
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet)",
+   "notes": "Keyless; probed on 2026-11-18. tour_occ_nin2 (nights spent, annual) answered for geo PT15 (Algarve), PT17 (Lisboa) and UKI (London) with c_resid=FOR; its title says 'by NUTS 3 region' but the codes that answered were the NUTS 2 ones, so PT150 and PT170 exactly need checking per dataset. The monthly tour_occ_nim returned no values for PT150. UK data stops after 2019 or 2020 (pre-Brexit), as Dinis expected; not checked per dataset. No rate limit found in the getting-started page; it says large requests can take minutes and an asynchronous mode exists. Attribution: 'Source: Eurostat' with dataset code. Reuse decision cited: Commission Decision of 12 December 2011.",
+   "how": null
+  },
+  {
+   "id": "eu-open-data-portal",
+   "name": "data.europa.eu (European Data Portal and EU Open Data Portal) search API",
+   "kind": "open data catalogue",
+   "url": "https://data.europa.eu/api/hub/search/",
+   "owner": "Publications Office of the European Union",
+   "places": [
+    "europe",
+    "portugal",
+    "london"
+   ],
+   "country": "EU",
+   "gives": [
+    "catalogue of about 2.0 million dataset records from European public bodies, with licence and download links per dataset; high-value datasets flagged (is_hvd)"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "The Publications Office of the European Union maintains this website to enhance public access to information about its initiatives and European Union policies in general.",
+    "quote_lang": "en",
+    "page": "https://data.europa.eu/en/legal-notice",
+    "read_at": "2026-11-18",
+    "basis": "legal notice (a disclaimer; no reuse licence for the metadata found on that page); robots.txt allows the site's assets, full rules not read to the end"
+   },
+   "interface": "GET https://data.europa.eu/api/hub/search/search?q=...&limit=n&filter=dataset returns JSON (count 2,029,216 records for the empty query; 53,168 for 'weather forecast'). Each record carries distributions (download URLs) and is_hvd. A SPARQL page exists at https://data.europa.eu/data/sparql (not used). No key.",
+   "contact_channel": null,
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet)",
+   "notes": "Keyless. The catalogue is metadata; each dataset has its own licence and publisher, which a collector must read per dataset. Metadata reuse licence not found on the legal notice (gap). The separate host api.data.europa.eu returned a proxy 502 and was not read. Rate limits not found. Useful for discovering Portugal and Europe-wide open datasets, not as data itself.",
+   "how": null
+  },
+  {
+   "id": "eea-air-quality-download",
+   "name": "EEA air quality download service (Parquet, E1a up-to-date measurements)",
+   "kind": "environmental data API",
+   "url": "https://eeadmz1-downloads-api-appservice.azurewebsites.net/",
+   "owner": "European Environment Agency (EEA)",
+   "places": [
+    "europe",
+    "portugal",
+    "london"
+   ],
+   "country": "EU",
+   "gives": [
+    "hourly measurements of PM10, PM2.5, NO2, O3 and other pollutants from member-state monitoring stations, including Portugal, as Parquet files per station"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "Information, documents and material available on this website and for which the EEA holds the rights of use are public and may be re-used without prior permission, free of charge, for commercial or non-commercial purposes, provided that the EEA is always acknowledged as the original source of the material and that the original meaning or message of the content is not distorted.",
+    "quote_lang": "en",
+    "page": "https://www.eea.europa.eu/en/legal-notice",
+    "read_at": "2026-11-18",
+    "basis": "EEA legal notice (re-use policy; it adds that certain data may carry different conditions); robots.txt on the API host returns 404 (no rules); on www.eea.europa.eu robots disallows /api, which is a different host and path"
+   },
+   "interface": "OpenAPI at https://eeadmz1-downloads-api-appservice.azurewebsites.net/swagger/v1/swagger.json. POST /ParquetFile/urls with JSON {countries, cities, pollutants, dataset (2 = up-to-date E1a), source 'Api', dateTimeStart, dateTimeEnd} returns a list of Parquet file URLs on eeadmz1batchservice02.blob.core.windows.net. No key.",
+   "contact_channel": null,
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet)",
+   "notes": "Keyless; probed once on 2026-11-18 (Portugal, PM10, one day) and it returned Portuguese station file URLs. Parquet needs a reader (pyarrow or DuckDB) and files are per station, so a collector would aggregate to a small JSON per city. Data is validated or near-real-time as the member states report it, so expect delays. Dataset-level licence not read (gap). Rate limits not found. London and UK stations are in the EEA data only up to the UK's reporting; not checked. A map-service host (discomap.eea.europa.eu) returned 404 on robots.txt and was not used.",
+   "how": null
+  },
+  {
+   "id": "ted-api",
+   "name": "TED (Tenders Electronic Daily) API v3 search",
+   "kind": "public procurement API",
+   "url": "https://api.ted.europa.eu/v3/notices/search",
+   "owner": "Publications Office of the European Union (TED)",
+   "places": [
+    "europe",
+    "portugal",
+    "london"
+   ],
+   "country": "EU",
+   "gives": [
+    "EU public procurement notices (contract notices and award notices) with buyer, subject, value, place of performance"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "TED API allows anonymous access to all services manipulating published notices (i.e., searching for or retrieving notices already published on TED).",
+    "quote_lang": "en",
+    "page": "https://docs.ted.europa.eu/api/latest/index.html",
+    "read_at": "2026-11-18",
+    "basis": "API documentation (anonymous access to published notices; 'The Search API does not require a key'); the TED legal notice and reuse terms were not readable (ted.europa.eu answered HTTP 202 to a plain request, which reads as a bot check, so it is a gap); api.ted.europa.eu/robots.txt returns 404"
+   },
+   "interface": "POST https://api.ted.europa.eu/v3/notices/search with JSON {query, fields, limit, page, scope}, for example query 'organisation-country-buyer=PRT'; returns JSON with notice-identifier, publication-date, buyer-name and links to XML and PDF. No key for search.",
+   "contact_channel": null,
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet)",
+   "notes": "Keyless for search; probed once on 2026-11-18 (two Portuguese buyers returned). Reuse licence and rate limits not read: the legal notice page was behind a bot check, so someone should read the terms by hand before building. Privacy rule: buyers and winners may be public bodies or companies, but sole traders and individuals appear as winners, so a collector must keep only organisations and never name a natural person, as for the Portuguese contracts. Notices cover contracts above EU thresholds only, so most small Portuguese contracts (see BASE) are not here.",
+   "how": null
+  },
+  {
+   "id": "eu-fts",
+   "name": "EU Financial Transparency System (FTS)",
+   "kind": "public money data",
+   "url": "https://ec.europa.eu/budget/financial-transparency-system/",
+   "owner": "European Commission (DG Budget)",
+   "places": [
+    "europe",
+    "portugal"
+   ],
+   "country": "EU",
+   "gives": [
+    "EU budget funds committed to beneficiaries by year, country and programme"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "(no terms text read: the site is a JavaScript application and its help and open-data pages did not yield a licence)",
+    "quote_lang": "en",
+    "page": "https://ec.europa.eu/budget/financial-transparency-system/",
+    "read_at": "2026-11-18",
+    "basis": "page answered HTTP 200 but no licence, reuse or privacy text was readable; the old open-data page /budget/fts/open_data_en.htm returned 404; ec.europa.eu/robots.txt has no rule naming /budget (not read in full)"
+   },
+   "interface": "Web application with a download of full datasets (CSV and XML) and, reportedly, an export per search; an API was not found. Not confirmed.",
+   "contact_channel": null,
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet)",
+   "notes": "Gap: terms and download interface not confirmed. Beneficiaries can include natural persons (the FTS publishes some farmer and individual payments with limits), so the same privacy rule applies: companies and public bodies only, never a natural person. A person should read the terms and the download page before any build.",
+   "how": null
+  },
+  {
+   "id": "meteoalarm-eu",
+   "name": "EUMETNET MeteoAlarm feeds (all participating countries)",
+   "kind": "weather warnings feed",
+   "url": "https://feeds.meteoalarm.org/",
+   "owner": "EUMETNET (MeteoAlarm)",
+   "places": [
+    "europe",
+    "portugal",
+    "london"
+   ],
+   "country": "EU",
+   "gives": [
+    "official severe-weather warnings (CAP) for each participating European country, including Portugal and the UK"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "(robots.txt on feeds.meteoalarm.org is empty, so it sets no rule)",
+    "quote_lang": "en",
+    "page": "https://feeds.meteoalarm.org/robots.txt",
+    "read_at": "2026-11-18",
+    "basis": "robots.txt (empty, HTTP 200). The terms page www.meteoalarm.org/en/live/page/terms-of-use is a JavaScript application and returned only 'this app doesn't work properly without JavaScript enabled', so the terms are a gap"
+   },
+   "interface": "GET https://feeds.meteoalarm.org/api/v1/warnings/feeds-{country} (for example feeds-portugal) returns JSON of CAP warnings (about 119 KB for Portugal). No key.",
+   "contact_channel": null,
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet)",
+   "notes": "Already read and collected here as meteoalarm-pt (sources/meteoalarm; the status board calls its licence 'the source's terms'). This entry is only the Europe-wide extension: the same feed pattern per country. register/sources.json is mid-merge (see gaps), so I could not check how meteoalarm-pt is recorded there. Terms still unread by a person; attribution to the issuing national service is the usual condition (not confirmed). Rate limits not found.",
+   "how": null
+  },
+  {
+   "id": "copernicus-cds",
+   "name": "Copernicus Climate Change Service, Climate Data Store (CDS) API",
+   "kind": "climate data API (needs an account and key)",
+   "url": "https://cds.climate.copernicus.eu/",
+   "owner": "ECMWF for the European Commission (Copernicus)",
+   "places": [
+    "europe",
+    "portugal",
+    "london"
+   ],
+   "country": "EU",
+   "gives": [
+    "ERA5 and ERA5-Land reanalysis, seasonal forecasts, climate projections, and EFAS and GloFAS flood datasets"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "Here is how to setup the CDS Api key: If you do not have an account yet, please",
+    "quote_lang": "en",
+    "page": "https://ads.atmosphere.copernicus.eu/how-to-api",
+    "read_at": "2026-11-18",
+    "basis": "how-to-api page of the sister Atmosphere Data Store (the CDS how-to path returned 404); cds robots.txt: 'User-agent: *' 'Allow: /'"
+   },
+   "interface": "Python cdsapi client or the REST API, using a personal access token from a free account; each dataset also needs its licence accepted in the account. Data as GRIB or NetCDF.",
+   "contact_channel": null,
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet)",
+   "notes": "WAITING FOR A KEY: needs a free account, a personal access token and acceptance of dataset licences (which this team does not do on anyone's behalf). Not built until Dinis decides. Licence text of each dataset not read. Reachable terms-of-use pages returned 404 on the paths tried.",
+   "how": null
+  },
+  {
+   "id": "copernicus-cams",
+   "name": "Copernicus Atmosphere Monitoring Service (CAMS), Atmosphere Data Store",
+   "kind": "air quality forecast API (needs an account and key)",
+   "url": "https://ads.atmosphere.copernicus.eu/",
+   "owner": "ECMWF for the European Commission (Copernicus)",
+   "places": [
+    "europe",
+    "portugal",
+    "london"
+   ],
+   "country": "EU",
+   "gives": [
+    "CAMS European air quality forecasts and analyses (PM, NO2, O3, pollen), global atmospheric composition forecasts"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "Here is how to setup the CDS Api key: If you do not have an account yet, please",
+    "quote_lang": "en",
+    "page": "https://ads.atmosphere.copernicus.eu/how-to-api",
+    "read_at": "2026-11-18",
+    "basis": "how-to-api page (account and token required); robots.txt: 'User-agent: *' 'Allow: /'"
+   },
+   "interface": "Python cdsapi client or the REST API with a personal access token from a free account. GRIB or NetCDF.",
+   "contact_channel": null,
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet)",
+   "notes": "WAITING FOR A KEY: answer to the brief's question is 'account, not keyless'. Keyless alternatives for air quality: the EEA download service above (measurements) and Open-Meteo's air quality endpoint, which is built on CAMS (its own terms to read). Licence per dataset not read.",
+   "how": null
+  },
+  {
+   "id": "copernicus-marine",
+   "name": "Copernicus Marine Service (CMEMS) data store",
+   "kind": "ocean data (needs an account)",
+   "url": "https://data.marine.copernicus.eu/",
+   "owner": "Mercator Ocean International for the European Commission",
+   "places": [
+    "europe",
+    "portugal",
+    "london"
+   ],
+   "country": "EU",
+   "gives": [
+    "ocean physics, waves, sea surface temperature and biogeochemistry for European seas and the Atlantic off Portugal"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "This Licence is granted free of charge.",
+    "quote_lang": "en",
+    "page": "https://marine.copernicus.eu/user-corner/service-commitments-and-licence",
+    "read_at": "2026-11-18",
+    "basis": "service commitments and licence page (the user signs a service level agreement before use); data.marine robots.txt allows crawling; marine.copernicus.eu robots sets 'Crawl-delay: 10'"
+   },
+   "interface": "Copernicus Marine Toolbox (Python/CLI) and APIs (subset, WMTS) after logging in with a free account.",
+   "contact_channel": null,
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet)",
+   "notes": "WAITING FOR A KEY: registration and acceptance of a licence and service agreement, which we cannot accept on anyone's behalf. Worth it later for sea state and waves off Portugal. Attribution wording not extracted (gap).",
+   "how": null
+  },
+  {
+   "id": "copernicus-efas",
+   "name": "European Flood Awareness System (EFAS), Copernicus Emergency Management Service",
+   "kind": "flood forecasts",
+   "url": "https://european-flood.emergency.copernicus.eu/",
+   "owner": "Copernicus Emergency Management Service (European Commission JRC and ECMWF)",
+   "places": [
+    "europe",
+    "portugal"
+   ],
+   "country": "EU",
+   "gives": [
+    "river discharge and flood forecasts, with notifications"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "(robots.txt not available: the host returns its single-page application for /robots.txt)",
+    "quote_lang": "en",
+    "page": "https://european-flood.emergency.copernicus.eu/robots.txt",
+    "read_at": "2026-11-18",
+    "basis": "robots.txt not published as a text file; the site is a JavaScript application"
+   },
+   "interface": "Forecast data is distributed through the Copernicus Climate Data Store (account and token needed, see copernicus-cds); the public site is a map viewer. A keyless data endpoint was not found.",
+   "contact_channel": null,
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet)",
+   "notes": "Gap: terms and a keyless interface not found. EFAS access to full forecasts is for registered partners; public map only. Treat as 'waiting for a key' via the CDS unless a keyless endpoint is found.",
+   "how": null
+  },
+  {
+   "id": "copernicus-edo",
+   "name": "European Drought Observatory (EDO), Copernicus Emergency Management Service",
+   "kind": "drought indicators",
+   "url": "https://drought.emergency.copernicus.eu/",
+   "owner": "Joint Research Centre (European Commission)",
+   "places": [
+    "europe",
+    "portugal"
+   ],
+   "country": "EU",
+   "gives": [
+    "drought indicators (soil moisture anomaly, SPI, fAPAR anomaly) as maps and downloadable layers"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "User-agent: *\nDisallow:",
+    "quote_lang": "en",
+    "page": "https://drought.emergency.copernicus.eu/robots.txt",
+    "read_at": "2026-11-18",
+    "basis": "robots.txt (no disallow); the download page and terms text were not readable (the download page returned no body text to a plain request, so it is a gap)"
+   },
+   "interface": "Map viewer with WMS layers and a download page (/tumbo/edo/download/); interface and format not confirmed.",
+   "contact_channel": null,
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet)",
+   "notes": "Gap: licence not read and the download interface not confirmed; keyless is likely but unverified. The drought bulletin text on the home page is public. Do not build until a person has read the data terms.",
+   "how": null
+  },
+  {
+   "id": "copernicus-land",
+   "name": "Copernicus Land Monitoring Service (CLMS)",
+   "kind": "land cover data",
+   "url": "https://land.copernicus.eu/",
+   "owner": "European Environment Agency for the European Commission (Copernicus)",
+   "places": [
+    "europe",
+    "portugal",
+    "london"
+   ],
+   "country": "EU",
+   "gives": [
+    "CORINE Land Cover, high-resolution layers, urban atlas, Europe-wide, Portugal included"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "Free, full and open access to the products and services of the Copernicus Land Monitoring Service is made on the conditions that: ... users shall inform the public of the source of these products ...",
+    "quote_lang": "en",
+    "page": "https://land.copernicus.eu/en/data-policy",
+    "read_at": "2026-11-18",
+    "basis": "data policy (full, open and free access; attribution required, changes to be stated, no impression of EU endorsement); robots.txt: 'Disallow: /api' and '/en/sandbox'"
+   },
+   "interface": "Downloads and view and download services from the portal; the /api path is disallowed by robots.txt, so it must not be used. Whether bulk download needs an EU Login was not confirmed.",
+   "contact_channel": null,
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet)",
+   "notes": "Large rasters and vectors (hundreds of MB to GB), useful for maps, not for news cycles; a low priority. Required wording for derivatives: 'Generated using European Union's Copernicus Land Monitoring Service information'. Whether it is keyless is unconfirmed (probably an EU Login for downloads), so treat as not buildable until checked.",
+   "how": null
+  },
+  {
+   "id": "jrc-pvgis",
+   "name": "JRC Photovoltaic Geographical Information System (PVGIS) API",
+   "kind": "solar radiation data",
+   "url": "https://re.jrc.ec.europa.eu/pvg_tools/en/",
+   "owner": "Joint Research Centre (European Commission)",
+   "places": [
+    "europe",
+    "portugal"
+   ],
+   "country": "EU",
+   "gives": [
+    "hourly solar radiation and PV output estimates for any point in Europe, including Portugal"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "User-agent: *\nDisallow: /",
+    "quote_lang": "en",
+    "page": "https://re.jrc.ec.europa.eu/robots.txt",
+    "read_at": "2026-11-18",
+    "basis": "robots.txt disallows everything on re.jrc.ec.europa.eu. The JRC documentation page gives a rate limit of 30 calls per second per IP address and bars browser (AJAX) calls, but the host's robots rule governs and is respected here"
+   },
+   "interface": "GET https://re.jrc.ec.europa.eu/api/v5_3/seriescalc?lat=..&lon=..&outputformat=json (no key). Not to be used by this service while robots.txt disallows it.",
+   "contact_channel": null,
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet)",
+   "notes": "Refused by robots.txt: recorded as a gap, never worked around. Disclosure: one single probe request to the API was sent in the same step as the robots.txt fetch, before the disallow was read; it returned data and nothing was kept. Ask the JRC (PVGIS support page) if an automated read is allowed, a person to send.",
+   "how": null
   }
  ]
 }

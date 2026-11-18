@@ -4,7 +4,7 @@
  "repo": "PrompTugal/PrompTugal__News__Data",
  "site": "https://data.promptugal.news",
  "focus": "the raw public data behind every PrompTugal site: collectors, API, vaults; visualization first; the Storm Charles site's data and map",
- "updated": "2026-11-18T22:31Z",
+ "updated": "2026-11-18T22:36Z",
  "observability_lane": "data (own lane since 18 Nov ~15:00 UTC: vault 349t1w6w, 2 append lanes, drain key sha256:5109a3745ff9fdb4; drain credentials sealed to conductor.b-promptugal and sent to conductor.b@)",
  "observability_note": "obs.js reads team/keys/obs-data.json from GitHub (public half: endpoint, vault id, 2 append tokens, drain public key); every event tagged lane: \"data\"; no town lookup.",
  "state": "third wake (13:03 UTC) done: three more Storm charts on /storm/ (residents by hour, warned against observed, forecast models); the Storm items each sub-site takes listed for conductor.b@; key and commit-check fixes still blocked by permission",
@@ -55,7 +55,8 @@
   "Daily low, high and rain per IPMA station in ipma-observations (for weather.b@), commit 4359d14.",
   "A slip, owned: commits f5c2759, a82d05e and 4359d14 went in without a clean leak scan (two status-only commits ran the wording check only and added other sessions' ids, which the scan flags; 4359d14 was committed after the scan failed). Session ids are not credentials; nothing secret went out. Fixed: the ids removed from status.json (sessions are named by role only), scan clean; from now every commit runs validate and leak-scan in one chain that stops on failure.",
   "Dinis (22:25 UTC, board/team/data/briefs/2026-11-18-dinis-keyless-first-and-the-vault.md): keyless sources only for now; keyed ones (Met Office DataHub, Darwin, Companies House, YouTube, Windy) stay on the register as future sources; raw history to a vault.",
-  "Dinis (22:40 UTC, board/team/data/briefs/2026-11-18-dinis-europe-open-data-public-service.md): the EU added (researcher under way); data side free and non-commercial, Open-Meteo used under its free terms (London first); MEO BeachCam moved to the later list (19 cameras); workflow passes GH_PUBLIC_READ_TOKEN (if set) to the collect step."
+  "Dinis (22:40 UTC, board/team/data/briefs/2026-11-18-dinis-europe-open-data-public-service.md): the EU added (researcher under way); data side free and non-commercial, Open-Meteo used under its free terms (London first); MEO BeachCam moved to the later list (19 cameras); workflow passes GH_PUBLIC_READ_TOKEN (if set) to the collect step.",
+  "EU on the register (14 entries, terms read 18 Nov): build order ECMWF open data (CC BY 4.0 with ECMWF's attribution sentence; GRIB2, needs a Europe box cut to JSON), Eurostat (JSON-stat, reuse allowed with source; tourism nights by residence for Algarve, Lisbon, London), EEA air quality (Parquet per station); then TED once a person reads its terms (bot check), MeteoAlarm Europe-wide. Keyed (free account, licence to accept by a person): Copernicus CDS (EFAS), CAMS, Marine. JRC PVGIS refused by robots.txt (one probe went out in the same step as the robots read, before the disallow was seen; nothing kept)."
  ],
  "blocked": [
   "Change to scripts/check-commits.mjs to accept @PrompTugal.dinis refused by the permission check: commits use Agent: data.b@AgentiCCells.dinis",
@@ -81,6 +82,7 @@
   "Dinis: TfL's transport data terms and conditions (tfl.gov.uk/corporate/terms-and-conditions/transport-data-service) answer our requests with a bot check, so no agent has read them. The JamCams can be embedded only once they are read: could a person read them, or do you accept TfL's open data terms as known (OGL-based, 'Powered by TfL Open Data')?"
  ],
  "next": [
+  "EU, first builds: Eurostat tourism nights by country of residence (Algarve PT15, Lisbon PT17, London UKI), then ECMWF open forecasts (a Europe box to small JSON), then EEA air quality.",
   "London (Dinis ~22:20 UTC, guidance 2026-11-18-london.md): register every UK source with its terms first; collect EA flood monitoring and (if its terms allow) Open-Meteo first, keeping each issued forecast for 14 days; then TfL, adsb.lol at the five London airports, TfL JamCams into /api/v1/cams/, London Datastore, Contracts Finder, police area totals, air quality, NCSC, agendas, RSS. In progress with data.b.dev@ (Sonnet).",
   "Cameras, embeddable only (Dinis in live.b@'s session ~22:24 UTC, relayed): 1) TfL JamCams, 889 from api.tfl.gov.uk/Place/Type/JamCam (keyless; image and mp4 on s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/), embed only once TfL's transport data terms are read (tfl.gov.uk answers us with a bot check; not worked around); 2) official YouTube lives of câmaras, ports, IP, parks, tourism boards: Perplexity candidates, YouTube oEmbed to confirm embedding is allowed (keyless), owner checked by hand; 3) Windy waits (keyed); 4) operators' own embed codes; MEO waits for Dinis.",
   "When the first London source is published: list london in /api/v1/index.json and by-place, and message directly (send_message) travel.b@, bulletins.b@, page 700 waiting and weather.b@ with paths and fields (conductor.b@, 22:20 UTC)",
