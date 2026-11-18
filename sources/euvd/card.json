@@ -1,0 +1,78 @@
+{
+ "id": "euvd",
+ "title": "EU Vulnerability Database: latest, exploited and recently updated (ENISA EUVD)",
+ "what": "ENISA's EU Vulnerability Database (EUVD), read through its published API: the vulnerabilities published or updated in the 24 hours before each read, and EUVD's own latest and exploited lists. Each has its EUVD identifier, CVE aliases (checked), published and updated times, CVSS base score and version, a severity band (ours, from the score), vendor and product names, whether EUVD lists it as exploited, and a link to its EUVD page; and totals per day and severity (14 days), for cyber.promptugal.news's pulse. Products only, never a victim, host or address. No descriptions or reference links are kept.",
+ "publisher": "ENISA (European Union Agency for Cybersecurity), EU Vulnerability Database",
+ "owner": "data.b@PrompTugal.dinis",
+ "collector": "sources/euvd/collect.mjs",
+ "country": "EU",
+ "places": ["europe"],
+ "source_home": "https://euvd.enisa.europa.eu/",
+ "reader_page": "https://euvd.enisa.europa.eu/apidoc",
+ "schedule": {
+  "cadence": "every 6 hours",
+  "how": "the Pages workflow (.github/workflows/pages.yml) at 17 minutes past 00, 06, 12 and 18 UTC. Dinis decided (18 Nov 2026, about 23:40 UTC, in cyber.b@'s session, relayed in PrompTugal__News__Cyber board/team/cyber/briefs/2026-11-18-dinis-answers.md): \"I don't think we are a crawler per se ... we're just trying to use data that they have ... I'm assuming that [ENISA] published data available in APIs\". So ENISA is read through its published API, not by crawling. Each run: robots.txt of both hosts, then the latest list, the exploited list, one count of exploited records, and pages of 100 records updated since the window start (newest update first, stopping when the page passes the window; at most 30 pages); one request at a time, 10 seconds apart (ENISA's crawl delay), at most 5 MB an answer; a refusal (403, 429, a bot check, a reset) stops the run and is recorded, never worked around. Every other run keeps the last read, copied from the live site"
+ },
+ "terms": {
+  "summary": "EUVD's API page says no authentication is needed and sets limits of 100 records a request; the EUVD site's footer links ENISA's legal notice, 1.2: reproduction of material on ENISA's website is authorised if the source is acknowledged, unless stated otherwise. robots.txt of euvd.enisa.europa.eu: all agents, nothing disallowed; euvdservices.enisa.europa.eu (the API host) has no robots.txt (404). We name ENISA and the EUVD as the source. EUVD has no separate data licence page that we found: reuse rests on the ENISA legal notice (not reviewed by a person).",
+  "page": "https://www.enisa.europa.eu/about-enisa/legal-notice",
+  "read_at": "2026-11-18",
+  "quote": "Reproduction of ENISA material published on this website is authorized, provided the source is acknowledged, unless it is stated otherwise.",
+  "quote_lang": "en",
+  "quotes": [
+   {
+    "page": "https://euvd.enisa.europa.eu/robots.txt",
+    "read_at": "2026-11-18",
+    "topic": "robots.txt, EUVD site",
+    "quote": "User-agent: * / Disallow:  (an empty Disallow: nothing is disallowed)"
+   },
+   {
+    "page": "https://euvdservices.enisa.europa.eu/robots.txt",
+    "read_at": "2026-11-18",
+    "topic": "robots.txt, API host",
+    "quote": "404 Not Found: the API host publishes no robots.txt, so no rule applies."
+   },
+   {
+    "page": "https://euvd.enisa.europa.eu/apidoc",
+    "read_at": "2026-11-18",
+    "topic": "API documentation: access",
+    "quote": "Method: GET. Authentication: No authentication required. Request Headers: No custom headers."
+   },
+   {
+    "page": "https://euvd.enisa.europa.eu/apidoc",
+    "read_at": "2026-11-18",
+    "topic": "API documentation: endpoints and limits",
+    "quote": "Show latest vulnerabilities /api/lastvulnerabilities (Maximum 8 records); Show latest exploited vulnerabilities /api/exploitedvulnerabilities (Maximum 8 records); Query Vulnerabilities with Flexible Filters /api/search (Maximum 100 records per request; size: integer, default 10, max 100; fromUpdatedDate, toUpdatedDate: YYYY-MM-DD; exploited: true/false)."
+   },
+   {
+    "page": "https://euvd.enisa.europa.eu/apidoc",
+    "read_at": "2026-11-18",
+    "topic": "API documentation: page is a JavaScript application",
+    "quote": "The /apidoc page is part of EUVD's JavaScript application (https://euvd.enisa.europa.eu/static/js/main.61fcf30f.js), which holds the documentation text above; the HTML shell also carries a hidden 'Application Unavailable' fallback that shows only if the application fails to load. On 18 Nov 2026 the application loaded and the API answered 200."
+   },
+   {
+    "page": "https://www.enisa.europa.eu/robots.txt",
+    "read_at": "2026-11-18",
+    "topic": "ENISA's main site (context for the earlier hold)",
+    "quote": "User-agent: * / Crawl-delay: 10 (and named AI crawlers disallowed everywhere); we keep the 10 second gap on every ENISA host."
+   }
+  ],
+  "republish": "yes: EUVD identifiers, CVE aliases, dates, scores, vendor and product names and links, with ENISA and the EUVD named as the source; no descriptions, references or logo",
+  "open_question": "EUVD has no data licence page of its own that we found; reuse rests on the ENISA legal notice (reproduction authorised with the source acknowledged). A person may want to confirm that it covers EUVD data."
+ },
+ "api": {
+  "latest": "https://data.promptugal.news/api/v1/euvd/latest.json",
+  "reads": "https://data.promptugal.news/api/v1/euvd/reads.json",
+  "card": "https://data.promptugal.news/api/v1/euvd/card.json",
+  "openapi": "https://data.promptugal.news/api/v1/euvd/openapi.json",
+  "page": "https://data.promptugal.news/sources/euvd/"
+ },
+ "vault": null,
+ "split": {
+  "code": ["the collector reads EUVD's published API (robots.txt first), keeps each record's identifying fields, and counts per day and severity", "GitHub Actions runs it and deploys the site"],
+  "agents": ["data.b@PrompTugal.dinis wrote the collector and card on 18 November 2026, at cyber.b@PrompTugal.dinis's request; terms and API documentation read the same day by data.b.dev@"],
+  "people": ["Dinis Cruz decided on 18 November 2026 (about 23:40 UTC) that ENISA is read through its published interfaces; no person has checked the values (not reviewed)"]
+ },
+ "cost": { "per_run_tokens": 0, "per_run_model_cost_usd": 0, "runner": "GitHub Actions on a public repository: no charge; about 30 requests a run, 10 seconds apart (about 5 minutes; up to 5 MB each, usually about 160 KB)", "build_tokens": "not measured", "note": "Code only: no model is called when the data is collected." },
+ "since": "2026-11-18"
+}

@@ -1309,20 +1309,20 @@
     "advisories",
     "publications"
    ],
-   "status": "not-read",
+   "status": "read",
    "why": {
     "quote": "Reproduction of ENISA material published on this website is authorized, provided the source is acknowledged, unless it is stated otherwise.",
     "quote_lang": "en",
     "page": "https://www.enisa.europa.eu/about-enisa/legal-notice",
     "read_at": "2026-11-18",
-    "basis": "published legal notice, 1.2 Authorization"
+    "basis": "published legal notice, 1.2 Authorization; Dinis decided (18 Nov 2026, about 23:40 UTC, in cyber.b@'s session; PrompTugal__News__Cyber board/team/cyber/briefs/2026-11-18-dinis-answers.md, relayed): \"I don't think we are a crawler per se ... we're just trying to use data that they have ... I'm assuming that [ENISA] published data available in APIs\". So ENISA is read through its published interfaces."
    },
    "interface": "No RSS or JSON feed (/rss.xml, /publications/rss.xml, /publications/feed, /rss, /feeds/publications all 404; none linked from the page). The HTML list https://www.enisa.europa.eu/publications answers 200 (about 80 KB, 10 items with title, date, link, topics).",
    "feed": null,
    "contact_channel": "https://www.enisa.europa.eu/about-enisa/legal-notice",
-   "notes": "Fits aggregate-only use with attribution, unless a specific report says otherwise. robots.txt (read 18 Nov 2026): Crawl-delay 10; /publications not disallowed; named AI crawlers are disallowed everywhere (our collector is code, no model, and not named; a person may want to confirm). Only title, date, link and topics are kept; no report text or images. On hold (data.b@, 18 Nov 2026): robots.txt disallows named AI crawlers; Dinis to decide. The collector sources/enisa-pubs is written and does not run.",
+   "notes": "Fits aggregate-only use with attribution, unless a specific report says otherwise. robots.txt (read 18 Nov 2026): Crawl-delay 10; /publications not disallowed; named AI crawlers are disallowed everywhere (our collector is code, no model, and not named; a person may want to confirm). Only title, date, link and topics are kept; no report text or images. Held earlier (data.b@, 18 Nov 2026) because robots.txt disallows named AI crawlers. Dinis decided (18 Nov 2026, about 23:40 UTC, in cyber.b@'s session; PrompTugal__News__Cyber board/team/cyber/briefs/2026-11-18-dinis-answers.md, relayed): \"I don't think we are a crawler per se ... we're just trying to use data that they have ... I'm assuming that [ENISA] published data available in APIs\". So ENISA is read through its published interfaces. The collector sources/enisa-pubs runs again (moved back from on-hold/).",
    "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@",
-   "how": "One GET of the first page of ENISA's publications list every 6 hours (sources/enisa-pubs/collect.mjs), 10 second crawl delay respected; keeps title, date, link on enisa.europa.eu and topics; served at /api/v1/enisa-pubs/; raw HTML kept in the vault copy. Asked by cyber.b@PrompTugal.dinis, 18 Nov 2026."
+   "how": "One GET of the first page of ENISA's publications list every 6 hours (sources/enisa-pubs/collect.mjs), 10 second crawl delay respected; keeps title, date, link on enisa.europa.eu and topics; served at /api/v1/enisa-pubs/; raw HTML kept in the vault copy. Asked by cyber.b@PrompTugal.dinis, 18 Nov 2026. Back in service on 18 Nov 2026 after Dinis's decision."
   },
   {
    "id": "euvd",
@@ -1337,18 +1337,20 @@
    "gives": [
     "EU vulnerability records, exploited and critical lists"
    ],
-   "status": "not-read",
+   "status": "read",
    "why": {
-    "text": "No terms found: euvd.enisa.europa.eu and /apidoc returned an 'Application Unavailable' fallback page.",
-    "page": "https://euvd.enisa.europa.eu/",
+    "quote": "Reproduction of ENISA material published on this website is authorized, provided the source is acknowledged, unless it is stated otherwise.",
+    "quote_lang": "en",
+    "page": "https://www.enisa.europa.eu/about-enisa/legal-notice",
     "read_at": "2026-11-18",
-    "basis": "app unavailable; terms not found"
+    "basis": "ENISA legal notice 1.2, linked from the EUVD site's footer; EUVD has no data licence of its own that we found. API documentation (https://euvd.enisa.europa.eu/apidoc, part of EUVD's JavaScript application): GET, no authentication, at most 100 records a request. robots.txt of euvd.enisa.europa.eu: User-agent * with an empty Disallow; euvdservices.enisa.europa.eu (the API host) has none (404). Dinis decided (18 Nov 2026, about 23:40 UTC, in cyber.b@'s session; PrompTugal__News__Cyber board/team/cyber/briefs/2026-11-18-dinis-answers.md, relayed): \"I don't think we are a crawler per se ... we're just trying to use data that they have ... I'm assuming that [ENISA] published data available in APIs\". So ENISA is read through its published interfaces."
    },
-   "interface": "Web application; API documentation at /apidoc not readable (the page returned only an 'Application Unavailable' fallback on 2026-11-18).",
+   "interface": "Published API on https://euvdservices.enisa.europa.eu: /api/lastvulnerabilities and /api/exploitedvulnerabilities (8 records each), /api/search (fromUpdatedDate, toUpdatedDate, exploited, size up to 100, page), /api/enisaid, /api/advisory, and daily dumps /api/kev/dump and /api/dump/cve-euvd-mapping. No key. The earlier 'Application Unavailable' page is a hidden fallback in the HTML shell that shows only if the JavaScript application fails to load; on 18 Nov 2026 the application loaded and the API answered 200.",
    "feed": null,
    "contact_channel": "https://www.enisa.europa.eu/about-enisa/legal-notice",
-   "notes": "No EUVD-specific terms found. ENISA's site legal notice (see entry enisa) says reproduction is authorised with source acknowledged; whether it covers EUVD data is unconfirmed. Would give Portugal: counts of exploited or critical vulnerabilities by vendor (Portuguese vendors) as aggregates. Lead to retry.",
-   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+   "notes": "Reuse rests on ENISA's legal notice (reproduction authorised if the source is acknowledged); EUVD has no separate data licence that we found, so a person may want to confirm it covers EUVD data. Only identifiers, CVE aliases, dates, scores, vendor and product names, an exploited flag and a link are kept; no descriptions or references. Total sizes seen on 18 Nov 2026: about 4,160 records updated in two days, 1,803 marked exploited. Many records list no vendor or product (placeholders such as unknown are not kept).",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@",
+   "how": "Every 6 hours (sources/euvd/collect.mjs): robots.txt of both hosts, EUVD's latest and exploited lists, one count of exploited records, then pages of 100 records updated in the last 24 hours (about 27 pages a run, newest update first, at most 30), one request at a time, 10 seconds apart, at most 5 MB an answer; a refusal stops the run and is recorded. Served at /api/v1/euvd/; raw kept in the vault copy. Asked by cyber.b@PrompTugal.dinis, 18 Nov 2026."
   },
   {
    "id": "nvd",
@@ -1375,7 +1377,7 @@
    "contact_channel": "https://nvd.nist.gov/",
    "notes": "Allows our use (a news site showing derived aggregates and per-CVE identifiers) with NVD's notice shown; modified content may not be attributed to the NVD, so our totals are labelled ours. NIST gives no warranty on the data. CVE records are not personal data. Aggregate-only on cyber.promptugal.news.",
    "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@",
-   "how": "Every 6 hours, up to four GETs of the CVE API with no key and 7 seconds apart: CVEs modified in the last 24 hours (pages of 2000) and CVEs published since 00:00 UTC yesterday (sources/nvd-cve/collect.mjs); keeps id, dates, status, CNA, CVSS severity and score, CWE ids, vendor and product; no descriptions or references; served at /api/v1/nvd-cve/; raw kept in the vault copy. Asked by cyber.b@PrompTugal.dinis, 18 Nov 2026."
+   "how": "Every 6 hours, up to four GETs of the CVE API with no key and 7 seconds apart: one window of CVEs modified since 00:00 UTC yesterday (pages of 2000; the new CVEs are those published in the same window) (sources/nvd-cve/collect.mjs); keeps id, dates, status, CNA, CVSS severity and score, CWE ids, vendor and product, and whole-day totals (daily_totals, 30 days); no descriptions or references; served at /api/v1/nvd-cve/; raw kept in the vault copy. Asked by cyber.b@PrompTugal.dinis, 18 Nov 2026."
   },
   {
    "id": "cve-org",

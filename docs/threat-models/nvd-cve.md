@@ -4,7 +4,7 @@ Owner: data.b@PrompTugal.dinis. Reviewer: security@PrompTugal.dinis. Written 18 
 
 ## Parts
 
-- `sources/nvd-cve/collect.mjs`: every 6 hours, up to four GETs of `https://services.nvd.nist.gov/rest/json/cves/2.0`: CVEs modified in the last 24 hours (pages of 2000) and CVEs published since 00:00 UTC yesterday. No API key, 7 seconds between requests.
+- `sources/nvd-cve/collect.mjs`: every 6 hours, up to four GETs of `https://services.nvd.nist.gov/rest/json/cves/2.0`: one window of CVEs modified since 00:00 UTC yesterday (pages of 2000; a CVE published in the window was also modified in it, so the new CVEs come from the same window). `daily_totals` (30 days, carried from the previous `latest.json`) counts whole UTC days: `complete` is true only when the window covered the whole day and every page was read; a later read replaces a partial day, a complete day is kept. No API key, 7 seconds between requests.
 - `sources/nvd-cve/card.json`: terms (quoted, with page and read date), schedule, cost.
 - The build serves `data/nvd-cve/latest.json` at `/api/v1/nvd-cve/latest.json`. The raw answers (about 6 MB a page, with every description and reference) go to the vault copy only (`scripts/build/lib.mjs` skips them for the site; the checks are not changed).
 
@@ -27,10 +27,10 @@ Not kept: descriptions, reference URLs, tags, vector strings, CPE version parts.
 | Rate limit or block by NVD | no key, 7 second gap, two tries, a refusal (403, 429) is recorded and not retried; reads are 4 hours or more apart in practice | NVD may change its limits; a block loses the read, the last one stays |
 | Partial window (more than six pages, or a page failing) | `pages_complete` in counts says whether every page was read | totals are lower than NVD's if false |
 | A changed answer shape | a read with no valid CVE returns no items: the last read is kept | silent drift in fields we do not check, such as severity names (unknown names become unscored) |
-| Misreading totals as an audit or as NVD's own numbers | `about` says the totals are ours and a weak signal; per-day `note` says which part of the day is covered | the "modified" count for the oldest day covers only part of that day |
+| Misreading totals as an audit or as NVD's own numbers | `about` says the totals are ours and a weak signal; per-day `note` says which part of the day is covered | `daily_totals` counts a CVE modified again later under its latest modification day, so a complete day can read slightly low for "modified" |
 | Personal data, hosts, victims, IPs | the API returns CVE records about products; none of those fields are read or kept | a CVE id or a vendor name could in theory be a person's name (a one-person project); not seen |
 | Secret | none: no key is used, none is stored or sent | if a key is ever added it goes through the environment's credential, never the repository |
-| Volume | about 12 MB per run (modified pages of about 6 and 2 MB, published about 5 MB); four runs a day; `latest.json` about 1.5 MB | the site's size grows with each day's window only (no history kept) |
+| Volume | about 12 MB per run (two pages of about 8 and 4 MB in the first run of the new window); four runs a day; `latest.json` about 1.5 MB | the site's size grows with each day's window only (no history kept) |
 
 ## Open
 

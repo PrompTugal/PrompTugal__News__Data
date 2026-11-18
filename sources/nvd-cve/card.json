@@ -9,7 +9,7 @@
  "reader_page": "https://nvd.nist.gov/developers/vulnerabilities",
  "schedule": {
   "cadence": "every 6 hours",
-  "how": "the Pages workflow (.github/workflows/pages.yml) at 17 minutes past 00, 06, 12 and 18 UTC; up to four GETs of the CVE API (two or three pages of modified CVEs and one of published, seven seconds apart, no key); every other run keeps the last read, copied from the live site"
+  "how": "the Pages workflow (.github/workflows/pages.yml) at 17 minutes past 00, 06, 12 and 18 UTC; up to four GETs of the CVE API (pages of 2000 of the CVEs modified since 00:00 UTC yesterday, seven seconds apart, no key; the new CVEs are those published in the same window); every other run keeps the last read, copied from the live site"
  },
  "terms": {
   "summary": "NVD API Terms of Use: the API is for building a service to \"search, display, analyze, retrieve, view and otherwise get\" NVD data; asked to display \"This product uses the NVD API but is not endorsed or certified by the NVD.\"; the NVD name may identify the source but not imply endorsement; if you modify the content you may not attribute it to the NVD (our totals are ours, our per-CVE values are kept as served); public rate limit 5 requests in a rolling 30 seconds without a key (we use none, seven seconds apart); no more than once every two hours (we read every 6 hours). Not reviewed by a person.",

@@ -26,7 +26,7 @@ export const writeJson = (f, o) => { fs.mkdirSync(path.dirname(f), { recursive: 
 let last = 0
 const cache = new Map()   // one read per address per run: a reference list two sources share is fetched once
 /** One polite GET. Returns { ok, status, bytes, sha256, at, url, json() } and never throws. */
-export async function get(url, { tries = 3, timeout = 60000, shared = false, gap = GAP_MS, headers = {}, method = 'GET', body = undefined } = {}) {
+export async function get(url, { tries = 3, timeout = 60000, shared = false, gap = GAP_MS, headers = {}, method = 'GET', body = undefined, maxBytes = 0 } = {}) {
     if (shared && method === 'GET' && cache.has(url)) return cache.get(url)
     let res = null
     for (let i = 0; i < tries; i++) {
@@ -36,7 +36,13 @@ export async function get(url, { tries = 3, timeout = 60000, shared = false, gap
         const at = now()
         try {
             const r = await fetch(url, { method, ...(body !== undefined ? { body } : {}), headers: { 'user-agent': UA, accept: '*/*', ...headers }, signal: AbortSignal.timeout(timeout) })
-            const bytes = Buffer.from(await r.arrayBuffer())
+            let bytes
+            if (maxBytes) {   // a size cap: read the body in chunks and stop (status 'too-big') once it passes the cap
+                const parts = []; let n = 0, big = false
+                for await (const c of r.body) { n += c.length; if (n > maxBytes) { big = true; break } parts.push(c) }
+                if (big) { try { await r.body.cancel() } catch {} ; res = { ok: false, status: 'too-big', bytes: Buffer.alloc(0), sha256: null, at, url }; break }
+                bytes = Buffer.concat(parts)
+            } else bytes = Buffer.from(await r.arrayBuffer())
             res = { ok: r.ok, status: r.status, bytes, sha256: sha256(bytes), at, url, rate_remaining: num(r.headers.get('x-ratelimit-remaining')), rate_reset: num(r.headers.get('x-ratelimit-reset')) }
             if (r.ok || r.status === 201 || r.status === 401 || r.status === 403 || r.status === 429 || r.status === 404) break
         } catch (e) { res = { ok: false, status: 'error', error: String(e.cause?.code || e.name || e.message), bytes: Buffer.alloc(0), sha256: null, at, url } }

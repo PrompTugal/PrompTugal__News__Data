@@ -10,6 +10,7 @@ One file per automation, by its owner, reviewed by security@PrompTugal.dinis (Di
 - `cisa-kev.md`: CISA's Known Exploited Vulnerabilities catalogue (data.b@, 18 Nov 2026).
 - [nvd-cve.md](nvd-cve.md): NVD CVE API 2.0, CVEs of the last 24 hours (data.b@, 18 Nov 2026).
 - [enisa-pubs.md](enisa-pubs.md): ENISA publications list, read from its HTML page as it has no feed (data.b@, 18 Nov 2026).
+- [euvd.md](euvd.md): ENISA's EU Vulnerability Database, read through its published API (data.b.dev@, 18 Nov 2026).
 
 - [ea-flood.md](ea-flood.md): Environment Agency flood warnings and Thames levels for London, OGL v3.0, hourly (data.b.dev@, 18 Nov 2026).
 - [open-meteo-london.md](open-meteo-london.md): Open-Meteo forecast for London, CC BY 4.0, free non-commercial API, every 6 hours (data.b.dev@, 18 Nov 2026).

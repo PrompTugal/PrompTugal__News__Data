@@ -15,19 +15,25 @@ const args = process.argv.slice(2), only = args.filter(a => !a.startsWith('--'))
 const cards = fs.readdirSync(path.join(ROOT, 'sources')).filter(d => fs.existsSync(path.join(ROOT, 'sources', d, 'card.json'))).map(d => readJson(path.join(ROOT, 'sources', d, 'card.json')))
 // data.b@, 18 Nov 2026: 'every 6 hours' sources (events-pt: agendas change daily) run at 00, 06, 12 and 18 UTC; their last
 // read is still copied from the live site (--prev) on every run, so each build keeps them
-const due = c => c.schedule?.cadence === 'hourly' || (c.schedule?.cadence === 'every 6 hours' && (process.env.GITHUB_EVENT_NAME !== 'schedule' || (new Date().getUTCHours() % 6 === 0 && new Date().getUTCMinutes() < 30)))   // and on every push; once in those hours, though two schedule times fire
-const todo = cards.filter(c => only.length ? only.includes(c.id) : due(c))
+// data.b@, 18 Nov 2026 (revised 23:55 UTC): an 'every 6 hours' source runs only when its last read is more than 5.5 hours
+// old, judged from the last read copied from the live site (--prev). A push no longer re-reads it: NVD's terms ask for no
+// more than one automated read every two hours, and EUVD's run is about 31 requests to ENISA.
+const SIX = 5.5 * 3600e3
+const ageOf = id => { const t = Date.parse(readJson(path.join(ROOT, 'data', id, 'latest.json'), null)?.read_at || ''); return Number.isFinite(t) ? Date.now() - t : Infinity }
 const kept = cards.filter(c => ['hourly', 'every 6 hours'].includes(c.schedule?.cadence))
-if (args.includes('--prev')) for (const c of (only.length ? todo : kept)) for (const f of ['latest.json', 'reads.json']) {
+const pick = only.length ? cards.filter(c => only.includes(c.id)) : kept
+if (args.includes('--prev')) for (const c of pick) for (const f of ['latest.json', 'reads.json']) {
     const local = path.join(ROOT, 'data', c.id, f); if (fs.existsSync(local)) continue
     try { const r = await fetch(`${SITE}/api/v1/${c.id}/${f}`, { headers: { 'user-agent': UA }, signal: AbortSignal.timeout(20000) }); if (r.ok) writeJson(local, await r.json()) } catch {}
 }
+const due = c => c.schedule?.cadence === 'hourly' || (c.schedule?.cadence === 'every 6 hours' && ageOf(c.id) > SIX)
+const todo = only.length ? pick : cards.filter(due)
 const summary = []
 for (const c of todo) {
     const mod = await import(path.join(ROOT, 'sources', c.id, 'collect.mjs'))
     const run = new Run(c.id, c)
     let latest = null
-    try { latest = await mod.default(run) } catch (e) { run.reads.push({ name: 'collector', url: null, at: now(), status: 'error', error: String(e.message).slice(0, 200) }) }
+    try { latest = await mod.default(run, readJson(path.join(ROOT, 'data', c.id, 'latest.json'), null)) } catch (e) { run.reads.push({ name: 'collector', url: null, at: now(), status: 'error', error: String(e.message).slice(0, 200) }) }
     const r = run.finish(latest)
     summary.push({ id: c.id, ok: r.ok, failed: r.failed, wrote: !!latest })
     console.log(`${c.id}: ${r.ok} read, ${r.failed} failed${latest ? '' : ' (latest.json kept as it was)'}`)
