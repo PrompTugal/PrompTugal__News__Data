@@ -28,10 +28,14 @@ export default async function (run) {
         const was = before.get(c.id), history = (was?.history || []).slice(-MAX_HISTORY)
         if (!history.length || history.at(-1).state !== up) history.push({ at: run.started, state: up, http: r.status || null })
         out.push({ id: c.id, name: c.name, place: c.place, municipality: c.municipality || null, lat: c.lat ?? null, lon: c.lon ?? null, coords_from: c.coords_from || null,
-            operator: c.operator, operator_kind: c.operator_kind, page: c.page, embed: c.embed || null, terms_page: c.terms_page || null, terms_summary: c.terms_summary || null,
+            operator: c.operator, operator_kind: c.operator_kind, page: c.page, embed: c.embed || null, embed_allowed: c.embed_allowed === true, embed_basis: c.embed_basis || null, terms_page: c.terms_page || null, terms_summary: c.terms_summary || null,
             license: { name: 'the operator\'s terms', url: c.licence_link || c.terms_page || c.page, holder: c.operator },
             state: up, http: r.status || null, checked_at: run.started, since: history.at(-1).at, checks: (was?.checks || 0) + 1,
-            up_checks: (was?.up_checks || 0) + (up === 'down' ? 0 : 1), history })
+            up_checks: (was?.up_checks || 0) + (up === 'down' ? 0 : 1), history,
+            // provenance on every item (Dinis, 18 Nov 2026 ~19:00 UTC: board/guidance/2026-11-18-cameras-provenance-and-bulletins.md)
+            provenance: { listed_from: c.page, listed_by: reg.made_by || 'register/cams.json', listed_at: c.read_at || reg.read_at || null, register: 'https://github.com/PrompTugal/PrompTugal__News__Data/blob/dev/register/cams.json',
+                status_how: 'one GET of the operator page (HTML only; bytes dropped; no frame or stream)', status_at: run.started, status_by: 'sources/cams/collect.mjs (code, no model; run by data.b@PrompTugal.dinis)',
+                licence: c.licence_link || c.terms_page || c.page, terms_checked: c.terms_page ? (c.read_at || reg.read_at || null) : null } })
     }
     run.raw = []   // no page bytes to the vault: only the status is kept
     const byPlace = {}; for (const c of out) (byPlace[c.place] ||= []).push(c.id)

@@ -20,6 +20,7 @@ export function buildCameras(sources) {
       license: c.license || { name: "the source's terms", url: c.page },
       status: { state: c.state === 'down' ? 'down' : c.state === 'up' ? 'up' : 'unknown', detail: c.state, checked_at: c.checked_at, http_status: c.http, since: c.since },
       status_history: `/api/v1/cameras/${c.id}/status.json`,
+      provenance: c.provenance || null,
       registered_at: c.history && c.history[0] ? c.history[0].at : c.checked_at, by: 'data.b@PrompTugal.dinis (register/cams.json, researched by data.b.collector@)',
     };
   });
