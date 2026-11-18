@@ -11,7 +11,7 @@ export default async function (run) {
         return { dico, lat: any.local[dico].latitude, lon: any.local[dico].longitude, days: days.map(x => x && x.local[dico] ? { date: x.date, rcm: x.local[dico].data.rcm, level: RCM[x.local[dico].data.rcm] || null } : null).filter(Boolean) }
     })
     const today = {}; for (const m of municipalities) { const l = m.days[0]?.level; if (l) today[l] = (today[l] || 0) + 1 }
-    return { source: run.id, title: run.card.title, read_at: run.started, provenance: run.prov({ source: IPMA + 'forecast/meteorology/rcm/rcm-d{0,1,2}.json' }),
+    return { source: run.id, title: run.card.title, read_at: run.started, provenance: run.prov({ source: `${IPMA}forecast/meteorology/rcm/rcm-d0.json`, sources: [0, 1, 2].map(d => `${IPMA}forecast/meteorology/rcm/rcm-d${d}.json`), source_pattern: IPMA + 'forecast/meteorology/rcm/rcm-d{0,1,2}.json' }),   // data.b@, 18 Nov: a concrete source first, every file in sources
         about: 'IPMA\'s daily fire risk class (RCM, 1 low to 5 maximum) for each municipality by its DICO code (district and municipality), for today and the next two days.',
         files: days.filter(Boolean).map(({ local, ...x }) => x), counts: { municipalities: municipalities.length, today_by_level: today }, municipalities }
 }

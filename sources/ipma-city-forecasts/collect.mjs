@@ -11,7 +11,7 @@ export default async function (run) {
             days: f ? (f.data || []).map(d => ({ date: d.forecastDate, t_min_c: num(d.tMin), t_max_c: num(d.tMax), rain_prob_pct: num(d.precipitaProb), weather_type: num(d.idWeatherType), wind_dir: d.predWindDir || null, wind_class: num(d.classWindSpeed), rain_class: num(d.classPrecInt) })) : null })
     }
     if (!cities.some(c => c.days)) return null
-    return { source: run.id, title: run.card.title, read_at: run.started, provenance: run.prov({ source: IPMA + 'forecast/meteorology/cities/daily/{globalIdLocal}.json' }),
+    return { source: run.id, title: run.card.title, read_at: run.started, provenance: run.prov({ source: cities.find(c => c.days).source, sources: cities.map(c => c.source), source_pattern: IPMA + 'forecast/meteorology/cities/daily/{globalIdLocal}.json' }),   // data.b@, 18 Nov: a concrete source first; each city also keeps its own
         about: 'IPMA\'s daily forecast for each place, five days, each place with its own source address and time read. weather_type is IPMA\'s code (https://api.ipma.pt/open-data/weather-type-classe.json); wind_class and rain_class are IPMA\'s classes.',
         counts: { places: cities.length, read: cities.filter(c => c.days).length }, cities }
 }
