@@ -3926,6 +3926,32 @@
    "notes": "GAP. Not reached; robots, terms and contents unread. A web search found it described as a prototype portal (2019 to 2020 sources) for rainfall, river flow, groundwater and soil moisture, with no sign that it tracks reservoir levels. UKCEH and BGS publish a monthly Hydrological Summary for the UK that reports reservoir stocks (not read). A static inventory of 273 reservoirs covering about 90% of UK storage (capacity, not levels) is at https://data.gov.uk/dataset/aa1e16e8-eded-4a60-8d1d-0df920c319b6/inventory-of-reservoirs-amounting-to-90-of-total-uk-storage (listed by search; terms not read). Retry once later; do not hammer.",
    "how": null,
    "refusals": []
+  },
+  {
+   "id": "google-web-risk",
+   "name": "Google Web Risk API",
+   "kind": "security API",
+   "url": "https://cloud.google.com/web-risk",
+   "owner": "Google",
+   "places": [
+    "europe"
+   ],
+   "country": null,
+   "gives": [
+    "URL threat lists"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": null,
+    "page": "https://cloud.google.com/web-risk/docs",
+    "read_at": "2026-11-18",
+    "basis": "Results may not be redistributed and are cached only until expireTime (as relayed from videos.b@'s checked page); held by Dinis."
+   },
+   "interface": "needs a Google key",
+   "contact_channel": null,
+   "researched_by": "data.b@PrompTugal.dinis",
+   "notes": "Held by Dinis (18 Nov 2026, about 23:38 UTC, relayed by conductor.b@): \"leave Web Risk off the key for now\". No credential is asked for and no call is made.",
+   "how": null
   }
  ]
 }
