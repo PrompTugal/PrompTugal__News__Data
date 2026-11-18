@@ -20,21 +20,23 @@ export default async function (run) {
     const cams = (reg.cameras || []).filter(c => c && c.id && /^https?:\/\//.test(String(c.page || '')))
     const pageCache = new Map(), out = []
     for (const c of cams) {
-        let r = pageCache.get(c.page)
+        // a host that refused us is not asked again (register: check false); the camera is listed by link, status not checked
+        const skip = c.check === false
+        let r = skip ? { ok: false, status: null, bytes: Buffer.alloc(0) } : pageCache.get(c.page)
         if (!r) { r = await run.get(`page-${c.id}`, c.page, { timeout: 20000 }); pageCache.set(c.page, r) }
         const text = r.ok ? r.bytes.toString('utf8') : ''
         const marker = r.ok && (PLAYER.test(text) || (c.name && text.toLowerCase().includes(String(c.name).toLowerCase().slice(0, 24))))
-        const up = r.ok ? (marker ? 'up' : 'page up, no player seen') : 'down'
+        const up = skip ? 'not checked' : r.ok ? (marker ? 'up' : 'page up, no player seen') : 'down'
         const was = before.get(c.id), history = (was?.history || []).slice(-MAX_HISTORY)
         if (!history.length || history.at(-1).state !== up) history.push({ at: run.started, state: up, http: r.status || null })
         out.push({ id: c.id, name: c.name, place: c.place, municipality: c.municipality || null, lat: c.lat ?? null, lon: c.lon ?? null, coords_from: c.coords_from || null,
-            operator: c.operator, operator_kind: c.operator_kind, page: c.page, embed: c.embed || null, embed_allowed: c.embed_allowed === true, embed_basis: c.embed_basis || null, terms_page: c.terms_page || null, terms_summary: c.terms_summary || null,
+            operator: c.operator, operator_kind: c.operator_kind, page: c.page, embed: c.embed || null, embed_allowed: c.embed_allowed === true, embed_basis: c.embed_basis || null, check_note: c.check_note || null, terms_page: c.terms_page || null, terms_summary: c.terms_summary || null,
             license: { name: 'the operator\'s terms', url: c.licence_link || c.terms_page || c.page, holder: c.operator },
             state: up, http: r.status || null, checked_at: run.started, since: history.at(-1).at, checks: (was?.checks || 0) + 1,
             up_checks: (was?.up_checks || 0) + (up === 'down' ? 0 : 1), history,
             // provenance on every item (Dinis, 18 Nov 2026 ~19:00 UTC: board/guidance/2026-11-18-cameras-provenance-and-bulletins.md)
             provenance: { listed_from: c.page, listed_by: reg.made_by || 'register/cams.json', listed_at: c.read_at || reg.read_at || null, register: 'https://github.com/PrompTugal/PrompTugal__News__Data/blob/dev/register/cams.json',
-                status_how: 'one GET of the operator page (HTML only; bytes dropped; no frame or stream)', status_at: run.started, status_by: 'sources/cams/collect.mjs (code, no model; run by data.b@PrompTugal.dinis)',
+                status_how: skip ? 'not checked: the host refused our fetches' : 'one GET of the operator page (HTML only; bytes dropped; no frame or stream)', status_at: run.started, status_by: 'sources/cams/collect.mjs (code, no model; run by data.b@PrompTugal.dinis)',
                 licence: c.licence_link || c.terms_page || c.page, terms_checked: c.terms_page ? (c.read_at || reg.read_at || null) : null } })
     }
     run.raw = []   // no page bytes to the vault: only the status is kept
@@ -42,7 +44,7 @@ export default async function (run) {
     return {
         source: run.id, title: 'Public live cameras: where they are and whether they are up', read_at: run.started, provenance: run.prov({ register: 'register/cams.json' }),
         about: 'Public live cameras in the places we cover, from official operators only, each with its operator, place, coordinates, terms and licence link, and whether its operator\'s page is up. Status comes from the operator\'s page only; no frame, picture or stream is fetched, kept or analysed. Watch each camera on its operator\'s page.',
-        counts: { cameras: out.length, up: out.filter(c => c.state === 'up').length, down: out.filter(c => c.state === 'down').length, places: Object.keys(byPlace).length, pages_asked: pageCache.size },
+        counts: { cameras: out.length, up: out.filter(c => c.state === 'up').length, down: out.filter(c => c.state === 'down').length, not_checked: out.filter(c => c.state === 'not checked').length, places: Object.keys(byPlace).length, pages_asked: pageCache.size },
         rules: reg.rules || [], by_place: byPlace, cameras: out, not_listed: reg.not_listed || [], gaps: reg.gaps || [],
     }
 }

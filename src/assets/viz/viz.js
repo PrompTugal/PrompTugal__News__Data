@@ -770,12 +770,12 @@
   R['cams-status'] = function (body, d) {
     var cams = d.cameras || []
     if (!cams.length) { empty(body, 'No camera is registered yet.'); return { about: 'Public cameras and their status.', plain: true, by: 'operators\' pages', table: null } }
-    var ST = { up: [cat(2), 'up'], 'page up, no player seen': [cat(4), 'page up, no player seen'], down: [cat(1), 'down'] }
+    var ST = { up: [cat(2), 'up'], 'page up, no player seen': [cat(4), 'page up, no player seen'], down: [cat(1), 'down'], 'not checked': ['var(--muted, #888)', 'not checked (the host refused us)'] }
     cams = cams.slice().sort(function (a, b) { return (a.place < b.place ? -1 : a.place > b.place ? 1 : 0) || (a.name < b.name ? -1 : 1) })
     body.appendChild(hbars(cams.map(function (c) { var pct = c.checks ? Math.round(100 * (c.up_checks || 0) / c.checks) : 0; return { label: pname(c.place) + ': ' + String(c.name).slice(0, 34), segs: [{ v: Math.max(pct, 1), fill: (ST[c.state] || ST.down)[0], name: c.state, tip: pct + ' per cent of ' + c.checks + ' checks' }], text: pct + '% of ' + c.checks } }), { aria: 'Bars of the share of hourly checks in which each camera\'s page was up: ' + cams.map(function (c) { return c.name + ' ' + c.state }).join('; ') + '.', lw: 250, rh: 22, tw: 80 }))
     body.appendChild(legend(Object.keys(ST).map(function (k) { return [ST[k][0], 'now ' + ST[k][1]] })))
-    var up = cams.filter(function (c) { return c.state !== 'down' }).length
-    analysis(body, up + ' of ' + cams.length + ' cameras\' pages answered at the last check (' + stamp(T(cams[0].checked_at)) + '), in ' + Object.keys(d.by_place || {}).length + ' places.')
+    var chk = cams.filter(function (c) { return c.state !== 'not checked' }), up = chk.filter(function (c) { return c.state !== 'down' }).length
+    analysis(body, up + ' of ' + chk.length + ' checked cameras\' pages answered at the last check (' + stamp(T(cams[0].checked_at)) + '), in ' + Object.keys(d.by_place || {}).length + ' places; ' + (cams.length - chk.length) + ' listed by link only, not checked.')
     var ul = H('ul', 'viz-links'); cams.forEach(function (c) { var li = H('li'); li.appendChild(link(c.page, c.name)); li.appendChild(document.createTextNode(', ' + c.operator + ', ' + c.state + ' since ' + stamp(T(c.since)))); ul.appendChild(li) })
     body.appendChild(H('p', 'viz-sub', 'Watch each camera on its operator\'s page')); body.appendChild(ul)
     body.appendChild(note('Status from the operator\'s page only: no frame, picture or stream is fetched, kept or analysed.'))
