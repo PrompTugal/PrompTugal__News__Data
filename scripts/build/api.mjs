@@ -25,7 +25,7 @@ function info(title, description, version) {
 }
 const spec = (title, description, version, paths, extra = {}) => ({ openapi: '3.1.0', info: info(title, description, version), servers: [{ url: SITE, description: 'Production' }], externalDocs: { description: 'How to use the API', url: `${SITE}/api/` }, paths, ...extra });
 
-export function buildApi({ sources, places, version, builtAt, readAt }) {
+export function buildApi({ sources, places, version, builtAt, readAt, storm }) {
   // ---- per-source files ----
   const perSource = new Map();
   for (const s of sources) {
@@ -40,6 +40,9 @@ export function buildApi({ sources, places, version, builtAt, readAt }) {
       [`/api/v1/${s.id}/card.json`]: jsonOp({ id: opId(`${s.id}_card`), summary: `${s.card.title}: the card`, description: 'Who publishes the source, its reuse terms, the schedule, who owns it, what runs by code, by agents and by people, and the vault.', tag: s.id, data: s.card }),
       [`/api/v1/${s.id}/openapi.json`]: textOp(opId(`${s.id}_openapi`), `${s.card.title}: this document`, 'application/json', s.id),
     };
+    // the raw layer: the publisher's own files, as read (data.b@PrompTugal.dinis, 18 Nov 2026)
+    for (const r of s.raw || []) writeJson(`${base}/raw/${r.name}`, r.data);
+    if ((s.raw || []).length) paths[`/api/v1/${s.id}/raw/{file}`] = jsonOp({ id: opId(`${s.id}_raw`), summary: `${s.card.title}: the publisher's own file, as read`, description: `The bytes ${s.card.publisher.split(',')[0]} served at the latest read, parsed and re-serialised, unprocessed. The address each came from is in reads.json.`, tag: s.id, data: s.raw[0].data, samples: s.raw.map(r => r.data), params: [{ name: 'file', in: 'path', required: true, schema: { type: 'string', enum: s.raw.map(r => r.name) }, example: s.raw[0].name }], exampleName: s.raw[0].name });
     if (s.manifest) paths[`/api/v1/${s.id}/manifest.json`] = jsonOp({ id: opId(`${s.id}_manifest`), summary: `${s.card.title}: the manifest`, description: 'Every archived file with its size and sha256.', tag: s.id, data: s.manifest });
     perSource.set(s.id, paths);
     const doc = spec(`${s.card.title}: data.promptugal.news`, `${s.card.what}\n\nPublisher: ${s.card.publisher}. Reuse terms: ${s.card.terms.summary.replace(/\.$/, "")}. Not a warning service: follow IPMA and ANEPC.`, version, paths, { tags: [{ name: s.id, description: s.card.what }], 'x-source': { id: s.id, card: `${V}/${s.id}/card.json`, page: s.card.api.page } });
@@ -83,7 +86,8 @@ export function buildApi({ sources, places, version, builtAt, readAt }) {
     '/api/v1/openapi.json': textOp('get_openapi', 'This document', 'application/json', 'meta'),
     '/api/v1/README.md': textOp('get_readme', 'The stability contract', 'text/markdown', 'meta'),
   };
-  for (const s of sources) Object.assign(paths, Object.fromEntries(Object.entries(perSource.get(s.id)).filter(([p]) => p.endsWith('/latest.json') || p.endsWith('/manifest.json'))));
+  for (const s of sources) Object.assign(paths, Object.fromEntries(Object.entries(perSource.get(s.id)).filter(([p]) => p.endsWith('/latest.json') || p.endsWith('/manifest.json') || p.endsWith('/raw/{file}'))));
+  if (storm) { paths['/api/v1/storm/charles/index.json'] = jsonOp({ id: 'get_storm_charles_index', summary: 'Storm Charles: every file moved from the Storm site', description: storm.index.about, tag: 'storm', data: storm.index }); paths['/api/v1/storm/openapi.json'] = textOp('get_storm_openapi', 'Storm Charles: OpenAPI for every moved file', 'application/json', 'storm'); }
   const srcParam = (list) => ({ name: 'source', in: 'path', required: true, schema: { type: 'string', enum: list }, example: list[0] });
   const r0 = sources.find(s => s.reads);
   if (r0) paths['/api/v1/{source}/reads.json'] = jsonOp({ id: 'get_source_reads', summary: 'Every read of one source, newest first', description: 'Each request\'s address, HTTP status, size and sha256, and whether the bytes changed.', tag: 'sources', data: r0 && r0.reads, samples: sample(s => s.reads).length ? sample(s => s.reads) : null, params: [srcParam(sources.filter(s => s.reads).map(s => s.id))] });
@@ -93,10 +97,21 @@ export function buildApi({ sources, places, version, builtAt, readAt }) {
   const placeParam = { name: 'place', in: 'path', required: true, schema: { type: 'string', enum: places.map(p => p.id) }, example: pl && pl.id };
   paths['/api/v1/by-place/now/index.json'] = jsonOp({ id: 'get_by_place_index', summary: 'The places that have a now file', description: placeIndex.about, tag: 'by-place', data: placeIndex });
   if (pl) paths['/api/v1/by-place/now/{place}.json'] = jsonOp({ id: 'get_by_place_now', summary: 'Now in one place', description: pl.data.about || 'Nearest IPMA values for the place.', tag: 'by-place', data: pl.data, samples: places.map(p => p.data), params: [placeParam] });
-  const tags = [{ name: 'meta', description: 'The catalogue, the contract and this document' }, { name: 'sources', description: 'Files every source has, by source id' }, { name: 'by-place', description: 'Algarve places, now' }, ...sources.map(s => ({ name: s.id, description: s.card.what }))];
+  const tags = [{ name: 'meta', description: 'The catalogue, the contract and this document' }, { name: 'sources', description: 'Files every source has, by source id' }, { name: 'by-place', description: 'Algarve places, now' }, { name: 'storm', description: 'Storm Charles (10 to 12 November 2026): the Storm site\'s data, moved here' }, ...sources.map(s => ({ name: s.id, description: s.card.what }))];
   const desc = `Every GET file of data.promptugal.news, ${sources.length} sources. Each response schema is inferred from the real file (x-inferred) and each example is a real file cut to a readable size. Data terms by source:\n\n` + sources.map(s => `- ${s.id}: ${s.card.terms.summary}`).join('\n') + '\n\nNot a warning service: follow IPMA and ANEPC.';
   writeJson('api/v1/openapi.json', spec('data.promptugal.news API v1', desc, version, paths, { tags, 'x-generated': { by: 'scripts/build/api.mjs (data.dev@PrompTugal.dinis)', built_at: builtAt } }));
   return { index, placeFiles };
+}
+
+// The Storm Charles data moved from the Storm site: one path per file, in its own document (data.b@PrompTugal.dinis, 18 Nov 2026)
+export function buildStormApi({ storm, version }) {
+  const paths = { '/api/v1/storm/charles/index.json': jsonOp({ id: 'get_storm_charles_index', summary: 'Every file moved from the Storm site', description: storm.index.about, tag: 'storm', data: storm.index }) };
+  for (const f of storm.files) {
+    const tag = 'storm/' + f.path.split('/')[0];
+    paths[`/api/v1/storm/charles/${f.path}`] = jsonOp({ id: opId('storm_' + f.path), summary: f.about ? String(f.about).slice(0, 120) : f.path, description: `${f.about || f.path} Moved from storm-charles.promptugal.news (PrompTugal__News__Storm-Charles at ${storm.index.from.commit}); full sha256 values in the file are cut to their first 16 hex (the full ones: the Storm site and vault j2fq58kn).`, tag, data: f.data });
+  }
+  const tags = [...new Set(storm.files.map(f => 'storm/' + f.path.split('/')[0]))].map(name => ({ name }));
+  writeJson('api/v1/storm/openapi.json', spec('Storm Charles data: data.promptugal.news', 'The data files of storm-charles.promptugal.news (Lisbon and Madeira, 10 to 12 November 2026), moved to the data site on 18 November 2026. The Storm site is frozen as the record. Code Apache-2.0; quoted sources keep their own terms.', version, paths, { tags }));
 }
 
 export function readme() {
@@ -117,6 +132,7 @@ For the sites and agents that read data.promptugal.news as a source (the other P
 
 ## Changelog
 
+- 2026-11-18: added (no breaking change): \`api/v1/<source>/raw/<file>\` (the publisher's own files of the latest read), \`api/v1/storm/charles/\` (the Storm Charles data, moved here, with its index and \`api/v1/storm/openapi.json\`).
 - 2026-11-17: this contract written; v1 starts with the sources in the catalogue. No breaking change in v1 so far.
 `;
 }

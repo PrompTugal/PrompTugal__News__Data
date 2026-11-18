@@ -4,7 +4,8 @@
 import { cpSync, rmSync, readdirSync, readFileSync, writeFileSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 import { loadSources, loadPlaces, dataReadAt, write, OUT } from './build/lib.mjs';
-import { buildApi, readme } from './build/api.mjs';
+import { buildApi, buildStormApi, readme } from './build/api.mjs';
+import { loadStorm } from './build/storm.mjs';
 import { buildPages } from './build/pages.mjs';
 const version = process.env.SITE_VERSION || 'dev';
 const builtAt = new Date().toISOString();
@@ -16,9 +17,11 @@ const places = loadPlaces();
 const readAt = dataReadAt(sources);
 const missing = sources.filter(s => !s.latest).map(s => s.id);
 if (missing.length) console.warn(`warning: no latest.json for ${missing.join(', ')} (shown as "not read yet")`);
-const { index } = buildApi({ sources, places, version: '__VERSION__', builtAt, readAt });
+const storm = loadStorm(sources);
+const { index } = buildApi({ sources, places, version: '__VERSION__', builtAt, readAt, storm });
+buildStormApi({ storm, version: '__VERSION__' });
 write('api/v1/README.md', readme());
-const pages = buildPages({ sources, places, readAt, index });
+const pages = buildPages({ sources, places, readAt, index, storm });
 
 const walk = d => readdirSync(d).flatMap(f => { const p = join(d, f); return statSync(p).isDirectory() ? walk(p) : [p]; });
 for (const f of walk(OUT)) {

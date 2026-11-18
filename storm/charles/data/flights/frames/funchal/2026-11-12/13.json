@@ -1,0 +1,447 @@
+{
+ "by": "incident.flights@web-summit.dinis",
+ "updated": "2026-11-12T13:40:17Z",
+ "label": "fact",
+ "area": "funchal",
+ "area_def": {
+  "name": "Madeira and its approaches: within 150 nautical miles (278 km) of 32.75 N, 16.85 W (LPMA, Funchal)",
+  "lat": 32.75,
+  "lon": -16.85,
+  "dist_nm": 150
+ },
+ "hour": "2026-11-12T13:00:00Z",
+ "about": "Aircraft adsb.lol's community receivers saw in Madeira and its approaches: within 150 nautical miles (278 km) of 32.75 N, 16.85 W (LPMA, Funchal), 2026-11-12 13:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, which is in our vault). rows: airline flights (an airline's ICAO code plus a flight number), one array per aircraft in the order of fields. others: every other aircraft, one array in the order of other_fields: its ADS-B emitter category and position only, with no callsign, no ICAO24 address, no registration and no type, so nothing names a private owner; altitude rounded to 100 ft. Aircraft whose owners asked to be withheld (PIA or LADD in adsb.lol's data) are dropped and only counted. pos_age_s: how old each position was when read. Nothing between frames is measured: a line or a moving dot drawn between two frames is a drawing (hypothesis), not a position.",
+ "not_a_warning_service": "Not a warning service. No forecast or advice of ours. Your airline decides whether your flight runs: its site or app has the latest. For warnings follow IPMA and ANEPC.",
+ "attribution": "Aircraft positions: adsb.lol (https://adsb.lol), community ADS-B data, licensed under the Open Database License (ODbL) v1.0 (https://opendatacommons.org/licenses/odbl/1-0/). Our snapshots are a derived database offered under the same licence.",
+ "licence": "ODbL 1.0",
+ "fields": [
+  "callsign",
+  "airline",
+  "type",
+  "lat",
+  "lon",
+  "alt_ft",
+  "on_ground",
+  "gs_kt",
+  "track_deg",
+  "vrate_fpm",
+  "pos_age_s"
+ ],
+ "other_fields": [
+  "category",
+  "lat",
+  "lon",
+  "alt_ft",
+  "on_ground",
+  "gs_kt",
+  "track_deg"
+ ],
+ "units": {
+  "alt_ft": "feet, barometric (geometric when barometric is absent); null on the ground",
+  "gs_kt": "knots",
+  "track_deg": "degrees true, clockwise from north",
+  "vrate_fpm": "feet per minute, + climbing",
+  "pos_age_s": "seconds since the position was received",
+  "category": "ADS-B emitter category (A1 light, A2 small, A3 large, A4 B757, A5 heavy, A7 rotorcraft, B1 glider, B6 drone, C1-C3 surface; null not sent)"
+ },
+ "cadence_min": 20,
+ "cadence": "one frame every 20 minutes (a missed or failed poll leaves a gap; each frame's t is when it was read)",
+ "airlines": {
+  "EXS": "Jet2",
+  "EZY": "easyJet",
+  "OCN": "Discover Airlines",
+  "RYR": "Ryanair",
+  "TFL": "TUI fly Netherlands",
+  "AFR": "Air France",
+  "NSZ": "Norwegian",
+  "RUK": "Ryanair UK",
+  "CFG": "Condor"
+ },
+ "frames": [
+  {
+   "t": "2026-11-12T13:00:16Z",
+   "request": {
+    "url": "https://api.adsb.lol/v2/lat/32.75/lon/-16.85/dist/150",
+    "status": 200,
+    "bytes": 7488,
+    "sha256": "d856802aa3f541b7",
+    "read": "2026-11-12T13:00:16Z",
+    "response_ms": 488,
+    "raw": "flights vault: adsblol/2026-11-12/2026-11-12T130016Z-d856802aa3f5.body",
+    "rate_limit_remaining": 498
+   },
+   "airline": 10,
+   "other": 1,
+   "withheld_by_owner_request": 0,
+   "rows": [
+    [
+     "EXS18AX",
+     "EXS",
+     "B738",
+     32.1416,
+     -16.5302,
+     38000,
+     false,
+     415,
+     182,
+     0,
+     0.4
+    ],
+    [
+     "EXS31L",
+     "EXS",
+     "A21N",
+     31.8084,
+     -16.527,
+     37000,
+     false,
+     419,
+     184,
+     0,
+     0.4
+    ],
+    [
+     "EXS70WH",
+     "EXS",
+     "A21N",
+     33.024,
+     -16.44,
+     37025,
+     false,
+     425,
+     184,
+     -64,
+     3.4
+    ],
+    [
+     "EXS7LH",
+     "EXS",
+     "B738",
+     30.729,
+     -16.7095,
+     37000,
+     false,
+     412,
+     189,
+     0,
+     0.2
+    ],
+    [
+     "EXS9DP",
+     "EXS",
+     "A21N",
+     31.4918,
+     -16.5539,
+     37025,
+     false,
+     413,
+     182,
+     0,
+     0.4
+    ],
+    [
+     "EZY92XR",
+     "EZY",
+     "A320",
+     32.2854,
+     -15.9952,
+     37000,
+     false,
+     403,
+     209,
+     0,
+     0.7
+    ],
+    [
+     "OCN8NT",
+     "OCN",
+     "A320",
+     32.5863,
+     -15.8023,
+     35000,
+     false,
+     411,
+     209,
+     64,
+     0
+    ],
+    [
+     "RYR10KN",
+     "RYR",
+     "B38M",
+     32.2026,
+     -15.4525,
+     38000,
+     false,
+     508,
+     25,
+     0,
+     57.9
+    ],
+    [
+     "RYR563",
+     "RYR",
+     "B738",
+     30.9392,
+     -16.6289,
+     37000,
+     false,
+     404,
+     193,
+     0,
+     0.6
+    ],
+    [
+     "TFL9KM",
+     "TFL",
+     "B738",
+     31.2752,
+     -16.5575,
+     39000,
+     false,
+     392,
+     193,
+     0,
+     0.1
+    ]
+   ],
+   "others": [
+    [
+     "A2",
+     32.019,
+     -15.431,
+     40000,
+     false,
+     502,
+     30
+    ]
+   ]
+  },
+  {
+   "t": "2026-11-12T13:20:16Z",
+   "request": {
+    "url": "https://api.adsb.lol/v2/lat/32.75/lon/-16.85/dist/150",
+    "status": 200,
+    "bytes": 7039,
+    "sha256": "548d600344e5a23a",
+    "read": "2026-11-12T13:20:15Z",
+    "response_ms": 491,
+    "raw": "flights vault: adsblol/2026-11-12/2026-11-12T132015Z-548d600344e5.body",
+    "rate_limit_remaining": 499
+   },
+   "airline": 8,
+   "other": 2,
+   "withheld_by_owner_request": 0,
+   "rows": [
+    [
+     "AFR412",
+     "AFR",
+     "A359",
+     31.1667,
+     -17.8539,
+     37000,
+     false,
+     421,
+     213,
+     0,
+     0.3
+    ],
+    [
+     "EXS6BP",
+     "EXS",
+     "B738",
+     32.5611,
+     -16.4895,
+     36000,
+     false,
+     414,
+     183,
+     64,
+     8.7
+    ],
+    [
+     "EXS70WH",
+     "EXS",
+     "A21N",
+     30.7623,
+     -16.7934,
+     37000,
+     false,
+     401,
+     194,
+     0,
+     0.4
+    ],
+    [
+     "EXS7JF",
+     "EXS",
+     "A21N",
+     31.9551,
+     -16.5174,
+     37025,
+     false,
+     418,
+     184,
+     0,
+     0.1
+    ],
+    [
+     "EXS7Z",
+     "EXS",
+     "B738",
+     32.4853,
+     -16.051,
+     37000,
+     false,
+     397,
+     202,
+     0,
+     0.8
+    ],
+    [
+     "NSZ2876",
+     "NSZ",
+     "B38M",
+     31.3827,
+     -16.4918,
+     39000,
+     false,
+     400,
+     193,
+     0,
+     0.3
+    ],
+    [
+     "OCN8NT",
+     "OCN",
+     "A320",
+     30.4866,
+     -16.7696,
+     35000,
+     false,
+     424,
+     192,
+     0,
+     0.4
+    ],
+    [
+     "RUK9NQ",
+     "RUK",
+     "B738",
+     31.0013,
+     -15.4086,
+     36000,
+     false,
+     490,
+     17,
+     0,
+     3.6
+    ]
+   ],
+   "others": [
+    [
+     "A5",
+     32.3,
+     -16.489,
+     39000,
+     false,
+     432,
+     184
+    ],
+    [
+     "A3",
+     31.289,
+     -15.312,
+     37000,
+     false,
+     386,
+     214
+    ]
+   ]
+  },
+  {
+   "t": "2026-11-12T13:40:16Z",
+   "request": {
+    "url": "https://api.adsb.lol/v2/lat/32.75/lon/-16.85/dist/150",
+    "status": 200,
+    "bytes": 3380,
+    "sha256": "65e34274d39c92d8",
+    "read": "2026-11-12T13:40:16Z",
+    "response_ms": 501,
+    "raw": "flights vault: adsblol/2026-11-12/2026-11-12T134016Z-65e34274d39c.body",
+    "rate_limit_remaining": 499
+   },
+   "airline": 5,
+   "other": 0,
+   "withheld_by_owner_request": 0,
+   "rows": [
+    [
+     "CFG4PH",
+     "CFG",
+     "A20N",
+     32.6403,
+     -16.5592,
+     10800,
+     false,
+     351,
+     52,
+     960,
+     1.9
+    ],
+    [
+     "EXS1L",
+     "EXS",
+     "A21N",
+     31.9065,
+     -16.5394,
+     37050,
+     false,
+     423,
+     182,
+     64,
+     0.2
+    ],
+    [
+     "EXS3B",
+     "EXS",
+     null,
+     30.5187,
+     -15.5811,
+     36000,
+     false,
+     491,
+     17,
+     0,
+     0.7
+    ],
+    [
+     "EXS7Z",
+     "EXS",
+     "B738",
+     30.3792,
+     -16.7301,
+     37000,
+     false,
+     399,
+     189,
+     0,
+     0.2
+    ],
+    [
+     "EZY42XC",
+     "EZY",
+     "A20N",
+     30.8433,
+     -15.4365,
+     36025,
+     false,
+     509,
+     33,
+     64,
+     0.1
+    ]
+   ],
+   "others": []
+  }
+ ]
+}

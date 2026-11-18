@@ -1,0 +1,615 @@
+{
+ "about": "Airline flights at Lisbon, Porto, Faro and Funchal as OpenSky Network's public data shows them: counts only, never an aircraft. Facts are what the source shows; the caveat is our reading. Cancellations: ANA's own figures (scheduled, cancelled, operated movements) from its newsroom where it has published them (ana_statement, and ana on each airport); diversions: no open source states them; the decisions recorded by incident.researcher@ are at data/decisions/entities/airport.json and tap.json.",
+ "by": "incident.transport@web-summit.dinis",
+ "updated": "2026-11-12T14:42:59Z",
+ "not_a_warning_service": "Not a warning service. No advice of ours. Your airline or operator decides whether your flight or service runs: its site or app has the latest. For warnings follow IPMA and ANEPC.",
+ "sources_page": "transport/sources.md",
+ "attribution": "The OpenSky Network, https://opensky-network.org (M. Schäfer, M. Strohmeier, V. Lenders, I. Martinovic, M. Wilhelm, \"Bringing Up OpenSky: A Large-scale ADS-B Sensor Network for Research\", IPSN 2014)",
+ "ana_statement": {
+  "label": "fact",
+  "operator": "ANA Aeroportos de Portugal (the airport operator)",
+  "title": "Adverse weather conditions: update by airport – 11 November",
+  "published": "2026-11-11T11:55:02Z",
+  "situation_at": "2026-11-11T11:00:00Z",
+  "airports": {
+   "LIS": {
+    "scheduled": 565,
+    "cancelled_in_advance": 288,
+    "remained_scheduled": 277,
+    "operated": 45,
+    "cancelled_during_day": 22
+   },
+   "OPO": {
+    "scheduled": 214,
+    "cancelled_in_advance": 12,
+    "remained_scheduled": 202,
+    "operated": 30,
+    "cancelled_during_day": 0
+   },
+   "FAO": {
+    "scheduled": 62,
+    "cancelled_in_advance": 14,
+    "remained_scheduled": 48,
+    "operated": 11,
+    "cancelled_during_day": 2
+   },
+   "FNC": {
+    "scheduled": 80,
+    "cancelled_in_advance": 20,
+    "remained_scheduled": 60,
+    "operated": 0,
+    "cancelled_during_day": 2,
+    "scope": "Madeira's airports together (Funchal and Porto Santo), as ANA gives them"
+   }
+  },
+  "unit": "aircraft movements (departures and arrivals together)",
+  "link": "https://en.newsroom.ana.pt/news/adverse-weather-conditions-update-by-airport-11-november-5e629-614cf.html",
+  "source": "https://en.newsroom.ana.pt/",
+  "read": "2026-11-12T14:42:14Z",
+  "sha256": "190ca11ef728350f",
+  "licence": "ANA's terms do not allow reproducing its information without consent: the figures only, as numbers, with ANA named and the link; none of its text"
+ },
+ "airports": [
+  {
+   "icao": "LPPT",
+   "iata": "LIS",
+   "name": "Lisbon (Humberto Delgado)",
+   "departures_today": {
+    "label": "fact",
+    "what": "airline departures OpenSky's receivers detected leaving this airport, in our readings today (OpenSky's anonymous answer covers only the last few hours, so hours before our first reading reaches back are not covered: null), by the hour of first detection (UTC)",
+    "count": 124,
+    "covered_from": "2026-11-11T06:25:03Z",
+    "by_hour_utc": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     1,
+     1,
+     6,
+     18,
+     13,
+     8,
+     1,
+     0,
+     4,
+     5,
+     5,
+     8,
+     21,
+     10,
+     17,
+     6
+    ],
+    "window_note": "The first covered hour may be partial. Counts are a floor: what OpenSky's receivers saw.",
+    "by_airline": [
+     {
+      "airline": "TAP Air Portugal",
+      "n": 56
+     },
+     {
+      "airline": "Ryanair",
+      "n": 24
+     },
+     {
+      "airline": "easyJet Europe",
+      "n": 8
+     },
+     {
+      "airline": "Vueling",
+      "n": 3
+     },
+     {
+      "airline": "Turkish Airlines",
+      "n": 3
+     },
+     {
+      "airline": "Air Europa",
+      "n": 3
+     },
+     {
+      "airline": "Delta",
+      "n": 2
+     },
+     {
+      "airline": "Eurowings",
+      "n": 2
+     },
+     {
+      "airline": "Royal Air Maroc",
+      "n": 2
+     },
+     {
+      "airline": "Aegean",
+      "n": 2
+     },
+     {
+      "airline": "LATAM Brasil",
+      "n": 2
+     },
+     {
+      "airline": "Azul",
+      "n": 1
+     },
+     {
+      "airline": "Wizz Air Malta",
+      "n": 1
+     },
+     {
+      "airline": "Luxair",
+      "n": 1
+     },
+     {
+      "airline": "Etihad",
+      "n": 1
+     },
+     {
+      "airline": "LOT",
+      "n": 1
+     },
+     {
+      "airline": "United",
+      "n": 1
+     },
+     {
+      "airline": "SAS",
+      "n": 1
+     },
+     {
+      "airline": "British Airways",
+      "n": 1
+     },
+     {
+      "airline": "Finnair",
+      "n": 1
+     },
+     {
+      "airline": "Brussels Airlines",
+      "n": 1
+     },
+     {
+      "airline": "DHL (EAT Leipzig)",
+      "n": 1
+     },
+     {
+      "airline": "Transavia France",
+      "n": 1
+     },
+     {
+      "airline": "Air France",
+      "n": 1
+     },
+     {
+      "airline": "easyJet",
+      "n": 1
+     },
+     {
+      "airline": "Transavia",
+      "n": 1
+     },
+     {
+      "airline": "Wizz Air",
+      "n": 1
+     },
+     {
+      "airline": "Air Nostrum",
+      "n": 1
+     }
+    ],
+    "other_operators_not_counted": 3,
+    "source": "https://opensky-network.org/api/flights/departure?airport=LPPT",
+    "read": "2026-11-11T21:42:03Z",
+    "sha256": "cca064bf586a5649",
+    "paused": "read under OpenSky's terms, now paused pending a licence (Dinis) (from 2026-11-11T22:26:56Z): OpenSky's terms of use, as quoted by incident.flights@ from a read at 22:19 UTC (flights/sources.md), require OpenSky's written licence for use of its REST API in any live product, service or automated system, and limit use to non-profit research and education. Our hourly reader is automated. The terms page answered 403 to our own read at 22:26 UTC, so a person has to read it. Paused, as Metro de Lisboa was at 12:08, until Dinis decides.",
+    "frozen_at": "2026-11-11T21:42:03Z",
+    "day": "2026-11-11",
+    "not_today": "These are 2026-11-11's counts, frozen at 21:42 UTC when OpenSky readings were paused: not a count of today."
+   },
+   "arrivals_today": {
+    "label": "none",
+    "note": "OpenSky updates arrivals by a batch process at night; anonymous readers cannot see past days. Not available today."
+   },
+   "live_snapshot": {
+    "label": "fact",
+    "series": "adsb.lol, via incident.flights@ (from 11 Nov, the 23:41 round; before it, OpenSky)",
+    "what": "airline aircraft (our airline list) adsb.lol's community receivers saw in a box of about 25 km around the airport at the time read: on the ground, and airborne below 3,000 m (barometric altitude)",
+    "at": "2026-11-12T14:00:16Z",
+    "on_ground": 4,
+    "airborne_low": 3,
+    "box": [
+     38.524,
+     -9.384,
+     39.024,
+     -8.884
+    ],
+    "box_order": "lamin, lomin, lamax, lomax",
+    "source": "https://adsb.lol",
+    "source_name": "adsb.lol",
+    "licence": "ODbL 1.0 (https://opendatacommons.org/licenses/odbl/1-0/)",
+    "via": "incidents/2026-11-10-storm-charles/data/flights/snapshots/2026-11-12/14.json",
+    "read": "2026-11-12T14:00:16Z",
+    "caveat": {
+     "label": "hypothesis",
+     "text": "A different source from the OpenSky counts before it (other receivers, barometric not geometric altitude): the two series are not to be joined as one line."
+    }
+   },
+   "baseline": {
+    "label": "none",
+    "note": "No normal-day baseline yet: OpenSky gives past days only to registered users (listed for the conductor). From tomorrow this file can compare with our own readings of earlier days."
+   },
+   "coverage_caveat": {
+    "label": "hypothesis",
+    "text": "OpenSky depends on volunteers' receivers. Coverage is thinner at Faro and Funchal than at Lisbon and Porto, so a low or zero count may mean flights were not seen, not that none flew. A count is a floor, not a total."
+   },
+   "ana": {
+    "scheduled": 565,
+    "cancelled_in_advance": 288,
+    "remained_scheduled": 277,
+    "operated": 45,
+    "cancelled_during_day": 22,
+    "situation_at": "2026-11-11T11:00:00Z",
+    "published": "2026-11-11T11:55:02Z",
+    "link": "https://en.newsroom.ana.pt/news/adverse-weather-conditions-update-by-airport-11-november-5e629-614cf.html",
+    "read": "2026-11-12T14:42:14Z",
+    "label": "fact"
+   }
+  },
+  {
+   "icao": "LPPR",
+   "iata": "OPO",
+   "name": "Porto (Francisco Sá Carneiro)",
+   "departures_today": {
+    "label": "fact",
+    "what": "airline departures OpenSky's receivers detected leaving this airport, in our readings today (OpenSky's anonymous answer covers only the last few hours, so hours before our first reading reaches back are not covered: null), by the hour of first detection (UTC)",
+    "count": 74,
+    "covered_from": "2026-11-11T07:05:24Z",
+    "by_hour_utc": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     1,
+     2,
+     3,
+     4,
+     7,
+     10,
+     8,
+     4,
+     4,
+     7,
+     4,
+     5,
+     4,
+     7,
+     4
+    ],
+    "window_note": "The first covered hour may be partial. Counts are a floor: what OpenSky's receivers saw.",
+    "by_airline": [
+     {
+      "airline": "Ryanair",
+      "n": 17
+     },
+     {
+      "airline": "TAP Air Portugal",
+      "n": 12
+     },
+     {
+      "airline": "easyJet Europe",
+      "n": 11
+     },
+     {
+      "airline": "Transavia France",
+      "n": 5
+     },
+     {
+      "airline": "Air Europa",
+      "n": 3
+     },
+     {
+      "airline": "Lufthansa",
+      "n": 3
+     },
+     {
+      "airline": "Luxair",
+      "n": 2
+     },
+     {
+      "airline": "KLM",
+      "n": 2
+     },
+     {
+      "airline": "Turkish Airlines",
+      "n": 2
+     },
+     {
+      "airline": "Swiss",
+      "n": 2
+     },
+     {
+      "airline": "easyJet Switzerland",
+      "n": 2
+     },
+     {
+      "airline": "Eurowings",
+      "n": 1
+     },
+     {
+      "airline": "Air France",
+      "n": 1
+     },
+     {
+      "airline": "easyJet",
+      "n": 1
+     },
+     {
+      "airline": "Condor",
+      "n": 1
+     },
+     {
+      "airline": "Brussels Airlines",
+      "n": 1
+     },
+     {
+      "airline": "Transavia",
+      "n": 1
+     },
+     {
+      "airline": "World2fly",
+      "n": 1
+     },
+     {
+      "airline": "Wizz Air Malta",
+      "n": 1
+     },
+     {
+      "airline": "Vueling",
+      "n": 1
+     },
+     {
+      "airline": "United",
+      "n": 1
+     },
+     {
+      "airline": "DHL (EAT Leipzig)",
+      "n": 1
+     },
+     {
+      "airline": "Iberia",
+      "n": 1
+     },
+     {
+      "airline": "El Al",
+      "n": 1
+     }
+    ],
+    "other_operators_not_counted": 6,
+    "source": "https://opensky-network.org/api/flights/departure?airport=LPPR",
+    "read": "2026-11-11T21:42:08Z",
+    "sha256": "d06099ef30576839",
+    "paused": "read under OpenSky's terms, now paused pending a licence (Dinis) (from 2026-11-11T22:26:56Z): OpenSky's terms of use, as quoted by incident.flights@ from a read at 22:19 UTC (flights/sources.md), require OpenSky's written licence for use of its REST API in any live product, service or automated system, and limit use to non-profit research and education. Our hourly reader is automated. The terms page answered 403 to our own read at 22:26 UTC, so a person has to read it. Paused, as Metro de Lisboa was at 12:08, until Dinis decides.",
+    "frozen_at": "2026-11-11T21:42:08Z",
+    "day": "2026-11-11",
+    "not_today": "These are 2026-11-11's counts, frozen at 21:42 UTC when OpenSky readings were paused: not a count of today."
+   },
+   "arrivals_today": {
+    "label": "none",
+    "note": "OpenSky updates arrivals by a batch process at night; anonymous readers cannot see past days. Not available today."
+   },
+   "live_snapshot": {
+    "label": "none",
+    "note": "No live count: OpenSky is paused pending a licence (Dinis), and adsb.lol via incident.flights@ covers only Lisbon (LPPT) and Madeira (LPMA)."
+   },
+   "baseline": {
+    "label": "none",
+    "note": "No normal-day baseline yet: OpenSky gives past days only to registered users (listed for the conductor). From tomorrow this file can compare with our own readings of earlier days."
+   },
+   "coverage_caveat": {
+    "label": "hypothesis",
+    "text": "OpenSky depends on volunteers' receivers. Coverage is thinner at Faro and Funchal than at Lisbon and Porto, so a low or zero count may mean flights were not seen, not that none flew. A count is a floor, not a total."
+   },
+   "ana": {
+    "scheduled": 214,
+    "cancelled_in_advance": 12,
+    "remained_scheduled": 202,
+    "operated": 30,
+    "cancelled_during_day": 0,
+    "situation_at": "2026-11-11T11:00:00Z",
+    "published": "2026-11-11T11:55:02Z",
+    "link": "https://en.newsroom.ana.pt/news/adverse-weather-conditions-update-by-airport-11-november-5e629-614cf.html",
+    "read": "2026-11-12T14:42:14Z",
+    "label": "fact"
+   }
+  },
+  {
+   "icao": "LPFR",
+   "iata": "FAO",
+   "name": "Faro",
+   "departures_today": {
+    "label": "none",
+    "count": null,
+    "covered_from": "2026-11-11T08:15:33Z",
+    "departures_seen_any_operator": 2,
+    "note": "OpenSky's receivers detected 2 departures of any operator here since 08:15 UTC: its coverage at this airport is too thin to count. Not zero: unknown.",
+    "source": "https://opensky-network.org/api/flights/departure?airport=LPFR",
+    "read": "2026-11-11T21:42:12Z",
+    "sha256": "48850e6997c88ab7",
+    "paused": "read under OpenSky's terms, now paused pending a licence (Dinis) (from 2026-11-11T22:26:56Z): OpenSky's terms of use, as quoted by incident.flights@ from a read at 22:19 UTC (flights/sources.md), require OpenSky's written licence for use of its REST API in any live product, service or automated system, and limit use to non-profit research and education. Our hourly reader is automated. The terms page answered 403 to our own read at 22:26 UTC, so a person has to read it. Paused, as Metro de Lisboa was at 12:08, until Dinis decides.",
+    "frozen_at": "2026-11-11T21:42:12Z",
+    "day": "2026-11-11",
+    "not_today": "These are 2026-11-11's counts, frozen at 21:42 UTC when OpenSky readings were paused: not a count of today."
+   },
+   "arrivals_today": {
+    "label": "none",
+    "note": "OpenSky updates arrivals by a batch process at night; anonymous readers cannot see past days. Not available today."
+   },
+   "live_snapshot": {
+    "label": "none",
+    "note": "No live count: OpenSky is paused pending a licence (Dinis), and adsb.lol via incident.flights@ covers only Lisbon (LPPT) and Madeira (LPMA)."
+   },
+   "baseline": {
+    "label": "none",
+    "note": "No normal-day baseline yet: OpenSky gives past days only to registered users (listed for the conductor). From tomorrow this file can compare with our own readings of earlier days."
+   },
+   "coverage_caveat": {
+    "label": "hypothesis",
+    "text": "OpenSky depends on volunteers' receivers. Coverage is thinner at Faro and Funchal than at Lisbon and Porto, so a low or zero count may mean flights were not seen, not that none flew. A count is a floor, not a total."
+   },
+   "ana": {
+    "scheduled": 62,
+    "cancelled_in_advance": 14,
+    "remained_scheduled": 48,
+    "operated": 11,
+    "cancelled_during_day": 2,
+    "situation_at": "2026-11-11T11:00:00Z",
+    "published": "2026-11-11T11:55:02Z",
+    "link": "https://en.newsroom.ana.pt/news/adverse-weather-conditions-update-by-airport-11-november-5e629-614cf.html",
+    "read": "2026-11-12T14:42:14Z",
+    "label": "fact"
+   }
+  },
+  {
+   "icao": "LPMA",
+   "iata": "FNC",
+   "name": "Funchal (Madeira, Cristiano Ronaldo)",
+   "departures_today": {
+    "label": "fact",
+    "what": "airline departures OpenSky's receivers detected leaving this airport, in our readings today (OpenSky's anonymous answer covers only the last few hours, so hours before our first reading reaches back are not covered: null), by the hour of first detection (UTC)",
+    "count": 18,
+    "covered_from": "2026-11-11T13:42:39Z",
+    "by_hour_utc": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     1,
+     2,
+     3,
+     3,
+     3,
+     2,
+     2,
+     1,
+     1
+    ],
+    "window_note": "The first covered hour may be partial. Counts are a floor: what OpenSky's receivers saw.",
+    "by_airline": [
+     {
+      "airline": "easyJet Europe",
+      "n": 5
+     },
+     {
+      "airline": "easyJet",
+      "n": 3
+     },
+     {
+      "airline": "Wizz Air",
+      "n": 3
+     },
+     {
+      "airline": "Transavia",
+      "n": 2
+     },
+     {
+      "airline": "Ryanair",
+      "n": 2
+     },
+     {
+      "airline": "airBaltic",
+      "n": 1
+     },
+     {
+      "airline": "TAP Air Portugal",
+      "n": 1
+     },
+     {
+      "airline": "Azores Airlines",
+      "n": 1
+     }
+    ],
+    "other_operators_not_counted": 6,
+    "source": "https://opensky-network.org/api/flights/departure?airport=LPMA",
+    "read": "2026-11-11T21:42:16Z",
+    "sha256": "d92d355fc188a2e6",
+    "paused": "read under OpenSky's terms, now paused pending a licence (Dinis) (from 2026-11-11T22:26:56Z): OpenSky's terms of use, as quoted by incident.flights@ from a read at 22:19 UTC (flights/sources.md), require OpenSky's written licence for use of its REST API in any live product, service or automated system, and limit use to non-profit research and education. Our hourly reader is automated. The terms page answered 403 to our own read at 22:26 UTC, so a person has to read it. Paused, as Metro de Lisboa was at 12:08, until Dinis decides.",
+    "frozen_at": "2026-11-11T21:42:16Z",
+    "day": "2026-11-11",
+    "not_today": "These are 2026-11-11's counts, frozen at 21:42 UTC when OpenSky readings were paused: not a count of today."
+   },
+   "arrivals_today": {
+    "label": "none",
+    "note": "OpenSky updates arrivals by a batch process at night; anonymous readers cannot see past days. Not available today."
+   },
+   "live_snapshot": {
+    "label": "fact",
+    "series": "adsb.lol, via incident.flights@ (from 11 Nov, the 23:41 round; before it, OpenSky)",
+    "what": "airline aircraft (our airline list) adsb.lol's community receivers saw in a box of about 25 km around the airport at the time read: on the ground, and airborne below 3,000 m (barometric altitude)",
+    "at": "2026-11-12T14:00:17Z",
+    "on_ground": 0,
+    "airborne_low": 0,
+    "box": [
+     32.448,
+     -17.024,
+     32.948,
+     -16.524
+    ],
+    "box_order": "lamin, lomin, lamax, lomax",
+    "source": "https://adsb.lol",
+    "source_name": "adsb.lol",
+    "licence": "ODbL 1.0 (https://opendatacommons.org/licenses/odbl/1-0/)",
+    "via": "incidents/2026-11-10-storm-charles/data/flights/snapshots/2026-11-12/14.json",
+    "read": "2026-11-12T14:00:17Z",
+    "caveat": {
+     "label": "hypothesis",
+     "text": "A different source from the OpenSky counts before it (other receivers, barometric not geometric altitude): the two series are not to be joined as one line."
+    }
+   },
+   "baseline": {
+    "label": "none",
+    "note": "No normal-day baseline yet: OpenSky gives past days only to registered users (listed for the conductor). From tomorrow this file can compare with our own readings of earlier days."
+   },
+   "coverage_caveat": {
+    "label": "hypothesis",
+    "text": "OpenSky depends on volunteers' receivers. Coverage is thinner at Faro and Funchal than at Lisbon and Porto, so a low or zero count may mean flights were not seen, not that none flew. A count is a floor, not a total."
+   },
+   "ana": {
+    "scheduled": 80,
+    "cancelled_in_advance": 20,
+    "remained_scheduled": 60,
+    "operated": 0,
+    "cancelled_during_day": 2,
+    "scope": "Madeira's airports together (Funchal and Porto Santo), as ANA gives them",
+    "situation_at": "2026-11-11T11:00:00Z",
+    "published": "2026-11-11T11:55:02Z",
+    "link": "https://en.newsroom.ana.pt/news/adverse-weather-conditions-update-by-airport-11-november-5e629-614cf.html",
+    "read": "2026-11-12T14:42:14Z",
+    "label": "fact"
+   }
+  }
+ ],
+ "opensky_paused": {
+  "by": "incident.transport@web-summit.dinis",
+  "updated": "2026-11-11T22:26:56Z",
+  "paused_at": "2026-11-11T22:26:56Z",
+  "reason": "OpenSky's terms of use, as quoted by incident.flights@ from a read at 22:19 UTC (flights/sources.md), require OpenSky's written licence for use of its REST API in any live product, service or automated system, and limit use to non-profit research and education. Our hourly reader is automated. The terms page answered 403 to our own read at 22:26 UTC, so a person has to read it. Paused, as Metro de Lisboa was at 12:08, until Dinis decides.",
+  "terms": "https://opensky-network.org/about/terms-of-use",
+  "resume": "Only at Dinis's word: delete this file and the next round reads OpenSky again (with a licence or account if he arranges one).",
+  "status": "read under OpenSky's terms, now paused pending a licence (Dinis)",
+  "asked_by": "incident.conductor@web-summit.dinis, 22:26 UTC (keep the counts already published, marked; ANA's figures as they are)"
+ },
+ "attribution_live": "Live counts at LPPT and LPMA: adsb.lol (https://adsb.lol), community ADS-B data, Open Database License (ODbL) v1.0, through incident.flights@'s snapshots (incidents/2026-11-10-storm-charles/data/flights/snapshots/); our counts are a derived database under the same licence."
+}

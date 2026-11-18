@@ -1,0 +1,189 @@
+{
+ "about": "Trains: each operator's own site, feed or open API first; the press only where the operator publishes nothing readable (those are the researcher's decisions, linked). Short excerpts with the link.",
+ "mode": "trains",
+ "by": "incident.transport@web-summit.dinis",
+ "updated": "2026-11-12T14:42:59Z",
+ "not_a_warning_service": "Not a warning service. No advice of ours. Your airline or operator decides whether your flight or service runs: its site or app has the latest. For warnings follow IPMA and ANEPC.",
+ "sources_page": "transport/sources.md",
+ "operators": [
+  {
+   "id": "fertagus",
+   "operator": "Fertagus (trains, Lisbon to Setúbal over the 25 de Abril bridge)",
+   "mode": "train",
+   "label": "fact",
+   "state": "its latest entry, 20:00 Lisbon time: Face à estabilização das condições meteorológicas, não se prevê a ocorrência de constrangimentos relevantes na circulação ferroviária até ao final da exploração comercial de hoje.",
+   "notices": [
+    {
+     "title": "20:00 Lisbon time",
+     "excerpt": "Face à estabilização das condições meteorológicas, não se prevê a ocorrência de constrangimentos relevantes na circulação ferroviária até ao final da exploração comercial de hoje.",
+     "published": "2026-11-11T20:00:00Z",
+     "en": {
+      "text": "Due to stabilizing weather conditions, no significant disruptions to rail traffic are expected until the end of today's commercial operation.",
+      "label": "evidence",
+      "source": "model summary (google/gemma-4-31b-it and meta-llama/llama-4-maverick), not the operator's words",
+      "check": "passed: every figure of the Portuguese is in the English, and both open models give the same figures",
+      "at": "2026-11-11T23:42:46Z",
+      "trace_id": "a1fd9e90cc1de33ac1f091060bbc5cc1"
+     }
+    },
+    {
+     "title": "18:10 Lisbon time",
+     "excerpt": "Circulação a decorrer com normalidade.",
+     "published": "2026-11-11T18:10:00Z",
+     "en": {
+      "text": "Circulation is operating normally.",
+      "label": "evidence",
+      "source": "model summary (google/gemma-4-31b-it and meta-llama/llama-4-maverick), not the operator's words",
+      "check": "passed: every figure of the Portuguese is in the English, and both open models give the same figures",
+      "at": "2026-11-11T23:42:48Z",
+      "trace_id": "d629f2071c6493a2844cca27611b1e6f"
+     }
+    },
+    {
+     "title": "16:20 Lisbon time",
+     "excerpt": "Circulação a decorrer com normalidade.",
+     "published": "2026-11-11T16:20:00Z",
+     "en": {
+      "text": "Circulation is operating normally.",
+      "label": "evidence",
+      "source": "model summary (google/gemma-4-31b-it and meta-llama/llama-4-maverick), not the operator's words",
+      "check": "passed: every figure of the Portuguese is in the English, and both open models give the same figures",
+      "at": "2026-11-11T23:42:48Z",
+      "trace_id": "d629f2071c6493a2844cca27611b1e6f"
+     }
+    },
+    {
+     "title": "14:30 Lisbon time",
+     "excerpt": "Circulação a decorrer com normalidade",
+     "published": "2026-11-11T14:30:00Z",
+     "en": {
+      "text": "Circulation is operating normally.",
+      "label": "evidence",
+      "source": "model summary (google/gemma-4-31b-it and meta-llama/llama-4-maverick), not the operator's words",
+      "check": "passed: every figure of the Portuguese is in the English, and both open models give the same figures",
+      "at": "2026-11-11T23:42:49Z",
+      "trace_id": "af24c60523a468214e0dbe2bfe1c275d"
+     }
+    },
+    {
+     "title": "12:50 Lisbon time",
+     "excerpt": "Circulação a decorrer com normalidade",
+     "published": "2026-11-11T12:50:00Z",
+     "en": {
+      "text": "Circulation is operating normally.",
+      "label": "evidence",
+      "source": "model summary (google/gemma-4-31b-it and meta-llama/llama-4-maverick), not the operator's words",
+      "check": "passed: every figure of the Portuguese is in the English, and both open models give the same figures",
+      "at": "2026-11-11T23:42:49Z",
+      "trace_id": "af24c60523a468214e0dbe2bfe1c275d"
+     }
+    },
+    {
+     "title": "10:40 Lisbon time",
+     "excerpt": "Circulação a decorrer com normalidade.",
+     "published": "2026-11-11T10:40:00Z",
+     "en": {
+      "text": "Circulation is operating normally.",
+      "label": "evidence",
+      "source": "model summary (google/gemma-4-31b-it and meta-llama/llama-4-maverick), not the operator's words",
+      "check": "passed: every figure of the Portuguese is in the English, and both open models give the same figures",
+      "at": "2026-11-11T23:42:48Z",
+      "trace_id": "d629f2071c6493a2844cca27611b1e6f"
+     }
+    },
+    {
+     "title": "09:30 Lisbon time",
+     "excerpt": "Circulação a decorrer com normalidade.",
+     "published": "2026-11-11T09:30:00Z",
+     "en": {
+      "text": "Circulation is operating normally.",
+      "label": "evidence",
+      "source": "model summary (google/gemma-4-31b-it and meta-llama/llama-4-maverick), not the operator's words",
+      "check": "passed: every figure of the Portuguese is in the English, and both open models give the same figures",
+      "at": "2026-11-11T23:42:48Z",
+      "trace_id": "d629f2071c6493a2844cca27611b1e6f"
+     }
+    },
+    {
+     "title": "08:00 Lisbon time",
+     "excerpt": "Circulação a decorrer com normalidade.",
+     "published": "2026-11-11T08:00:00Z",
+     "en": {
+      "text": "Circulation is operating normally.",
+      "label": "evidence",
+      "source": "model summary (google/gemma-4-31b-it and meta-llama/llama-4-maverick), not the operator's words",
+      "check": "passed: every figure of the Portuguese is in the English, and both open models give the same figures",
+      "at": "2026-11-11T23:42:48Z",
+      "trace_id": "d629f2071c6493a2844cca27611b1e6f"
+     }
+    }
+   ],
+   "link": "https://www.fertagus.pt/Fertagus-pt/Viajar/Comunicados-e-Campanhas/Informa%C3%A7%C3%A3o-ao-P%C3%BAblico",
+   "source": "https://www.fertagus.pt/Fertagus-pt/Viajar/Comunicados-e-Campanhas/Informa%C3%A7%C3%A3o-ao-P%C3%BAblico",
+   "read": "2026-11-12T14:42:17Z",
+   "sha256": "6b0bc33a49662884",
+   "kind": "its own public-information page (a timed log; short excerpts, the page one click away)",
+   "licence": "No terms of use found beyond \"all rights reserved\": short excerpts with the link"
+  },
+  {
+   "id": "cp",
+   "operator": "CP (national trains: urban Lisbon and Porto, regional, Intercidades, Alfa Pendular)",
+   "mode": "train",
+   "label": "fact",
+   "state": "7 of its notices changed in the last three days; the newest changed at 10:20 UTC on 12 Nov: open it on CP's site",
+   "notices": [
+    {
+     "title": "Intercidades - Transbordo - IC 529 - até 13 de dezembro",
+     "published": "2026-09-08T14:13:00Z",
+     "updated": "2026-11-12T10:20:40Z",
+     "link": "https://www.cp.pt/pt/detalhe-aviso/tranbordo-529-12setembro-17outubro"
+    },
+    {
+     "title": "Vaga de mau tempo prevista para 10 e 11 de novembro",
+     "published": "2026-11-10T12:08:00Z",
+     "updated": "2026-11-12T09:06:44Z",
+     "link": "https://www.cp.pt/pt/detalhe-aviso/mau-tempo-10-11-novembro"
+    },
+    {
+     "title": "Greve RENFE de dia 12 de novembro - desconvocada",
+     "published": "2026-11-09T14:43:00Z",
+     "updated": "2026-11-11T17:54:20Z",
+     "link": "https://www.cp.pt/pt/detalhe-aviso/greve-renfe-10-12-novembro"
+    },
+    {
+     "title": "L. Oeste - Retoma circulação e transbordo - 15 novembro 2026",
+     "published": "2026-03-12T12:54:00Z",
+     "updated": "2026-11-11T12:45:03Z",
+     "link": "https://www.cp.pt/pt/detalhe-aviso/oeste-transbordo-16-marco"
+    },
+    {
+     "title": "Longo Curso - Transbordo na Linha da Beira Baixa - 27 e 28 de novembro",
+     "published": "2026-11-04T14:27:00Z",
+     "updated": "2026-11-11T11:23:41Z",
+     "link": "https://www.cp.pt/pt/detalhe-aviso/beira-baixa-27-28-novembro"
+    },
+    {
+     "title": "Estudo de Satisfação de Clientes",
+     "published": "2026-10-14T14:47:00Z",
+     "updated": "2026-11-10T18:24:01Z",
+     "link": "https://www.cp.pt/pt/detalhe-aviso/estudo-satisf-cliente-2026"
+    },
+    {
+     "title": "Linha de Cascais - Alterações ao serviço",
+     "published": "2026-05-05T16:59:00Z",
+     "updated": "2026-11-09T17:50:56Z",
+     "link": "https://www.cp.pt/pt/detalhe-aviso/linha-cascais-8-marco"
+    }
+   ],
+   "link": "https://www.cp.pt/pt",
+   "source": "https://www.cp.pt/pt",
+   "read": "2026-11-12T14:42:25Z",
+   "sha256": "a0f99efce3d0c39b",
+   "kind": "its own notices on its home page (titles, times and links only)",
+   "licence": "CP's legal notice allows private use only and asks written consent to reproduce: titles, times and links only, none of its text"
+  }
+ ],
+ "decisions_elsewhere": [
+  "incidents/2026-11-10-storm-charles/data/decisions/entities/cp.json"
+ ]
+}

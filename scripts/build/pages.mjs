@@ -2,6 +2,55 @@
 import { SITE, REPO, ACCOUNT, write, fmtTime } from './lib.mjs';
 import { page, h, p, ul, table, pre, quote, raw } from './render.mjs';
 
+// ---- the visualizations (data.b@PrompTugal.dinis, 18 Nov 2026; drawn by src/assets/viz/viz.js, data.b.design@) ----
+const COAST = '/api/v1/storm/charles/broadcast/coast.json';
+const fig = (name, srcs, fallback) => {
+  const [a, b, c] = srcs;
+  return raw(`<figure class="viz" data-viz="${name}" data-src="${a}"${b ? ` data-src2="${b}"` : ''}${c ? ` data-src3="${c}"` : ''}><div class="viz-fallback">${fallback} <a href="${a}">The data</a>.</div></figure>`, `${fallback} The data: [${a}](${a}).`);
+};
+// per source: the raw layer (the publisher's own file) and the processed layer (this site's latest.json)
+const LAYERS = {
+  'ipma-observations': { raw: ['obs-raw', ['raw/observations.json', 'raw/stations.json'], 'Every station, every hour IPMA published in its 24-hour file: temperature lines for a few stations.'],
+    processed: [['wind-now', ['latest.json', COAST], 'The wind at each station in the latest hour: direction and speed.'], ['temp-now', ['latest.json', COAST], 'The temperature at each station in the latest hour.']],
+    how: 'The collector keeps only the latest hour of IPMA\'s 24-hour file for each station, names the fields, turns -99 into null and adds the station\'s place from IPMA\'s station list.' },
+  'ipma-warnings': { raw: ['warnings-raw', ['raw/warnings.json'], 'Every entry in IPMA\'s warnings file, green ones included, as bars from start to end by area.'],
+    processed: [['warnings-now', ['latest.json'], 'The warnings in force or to come: areas by type, coloured by level.']],
+    how: 'The collector drops the green entries, names the area and the type in English, and counts the active warnings by level.' },
+  'ipma-city-forecasts': { raw: ['city-raw', ['raw/city-1080500.json'], 'IPMA\'s own daily forecast file for Faro, as served.'],
+    processed: [['forecast-now', ['latest.json'], 'Lowest and highest temperature by place, north to south, for each forecast day.']],
+    how: 'The collector reads one file per place (35 places), names the fields, and joins each place\'s name and position from IPMA\'s list.' },
+  'ipma-fire-risk': { raw: ['fire-raw', ['raw/rcm-d0.json', 'raw/rcm-d1.json', 'raw/rcm-d2.json'], 'IPMA\'s three fire-risk files (today, tomorrow, the day after): municipalities by level.'],
+    processed: [['fire-now', ['latest.json', COAST], 'Fire risk by municipality, on the map, for each of the three days.']],
+    how: 'The collector joins the three day files into one list per municipality, with the level named.' },
+  'ipma-uv': { raw: ['uv-raw', ['raw/uv.json'], 'Every UV index value in IPMA\'s file.'],
+    processed: [['uv-now', ['latest.json'], 'The UV index by place and day.']],
+    how: 'The collector groups the values by place and day and adds the place name where IPMA\'s list has it.' },
+  'ipma-sea': { raw: ['sea-raw', ['raw/sea-day0.json'], 'IPMA\'s sea forecast file for today, as served.'],
+    processed: [['sea-now', ['latest.json'], 'Wave heights by coastal place, lowest to highest, for each day.']],
+    how: 'The collector joins the three day files, names the fields and adds each place\'s name and position.' },
+  'adsb-faro': { raw: null, rawNote: 'The raw answer from adsb.lol names every aircraft by its hex id and position, private ones included. This site keeps the storm site\'s privacy rule: it publishes no hex id and no position of a private aircraft, so the raw file is neither served nor kept. What is shown of it: every aircraft counted by altitude band, below the map.',
+    processed: [['flights-now', ['latest.json', COAST], 'Airline flights within 40 nautical miles of Faro airport at the time read, by callsign, with their heading and altitude.']],
+    how: 'The collector keeps airline flights (an airline code and a flight number as callsign) with callsign, type, altitude, speed, heading and position to 0.01 degree; every other aircraft is only counted.' },
+  'meteoalarm-pt': { raw: ['meteoalarm-raw', ['raw/feeds-portugal.json'], 'Every message in MeteoAlarm\'s Portugal feed, by hazard and level against the time sent.'],
+    processed: [['meteoalarm-now', ['latest.json'], 'The messages not yet expired, by area, from onset to expiry.']],
+    how: 'The collector reads the CAP messages, keeps area, level, hazard and times, and marks what appeared since the last read.' },
+  'storm-charles-archive': { raw: null, rawNote: 'The raw layer is the Storm site\'s own files: every one is now served here, at [/api/v1/storm/charles/](/api/v1/storm/charles/index.json), and listed with its size on [the Storm page](/storm/).',
+    processed: [['storm-datasets', ['latest.json'], 'The archive\'s datasets by size.'], ['storm-wind', ['/api/v1/storm/charles/broadcast/field.json', COAST], 'The Storm\'s wind and pressure field over the Atlantic, as its broadcast page drew it.']],
+    how: 'The collector read every file the Storm site listed, checked each against its stated sha256 and grouped them into datasets.' },
+};
+const FRONT = [
+  ['adsb-faro', 'flights-now', ['latest.json', COAST], ['Flights around Faro', 'Airline flights near Faro airport at the time read.']],
+  ['ipma-observations', 'wind-now', ['latest.json', COAST], ['Wind', 'The wind at each IPMA station, latest hour.']],
+  ['ipma-observations', 'temp-now', ['latest.json', COAST], ['Temperature', 'The temperature at each IPMA station, latest hour.']],
+  ['ipma-warnings', 'warnings-now', ['latest.json'], ['Warnings', 'IPMA warnings in force or to come, by area and level.']],
+  ['ipma-fire-risk', 'fire-now', ['latest.json', COAST], ['Fire risk', 'Fire risk by municipality, three days.']],
+  ['ipma-sea', 'sea-now', ['latest.json'], ['The sea', 'Wave heights by coastal place.']],
+  ['ipma-city-forecasts', 'forecast-now', ['latest.json'], ['The forecast', 'Lowest and highest temperature by place.']],
+  ['meteoalarm-pt', 'meteoalarm-now', ['latest.json'], ['MeteoAlarm', 'Messages not yet expired, by area.']],
+  ['ipma-uv', 'uv-now', ['latest.json'], ['UV index', 'UV index by place and day.']],
+];
+const abs = (id, u) => u.startsWith('/') ? u : `/api/v1/${id}/${u}`;
+
 const OTHER_SITES = [['weather', 'Weather'], ['civic', 'Civic'], ['startups', 'Startups'], ['travel', 'Travel']];
 const short = (v, n = 80) => { const s = String(v); return s.length > n ? s.slice(0, n - 3) + '...' : s; };
 const statusText = s => s.status === 'ok' ? 'ok' : s.status;
@@ -18,7 +67,7 @@ function previewRows(s) {
   return { key, total: l[key].length, table: t, src };
 }
 
-export function buildPages({ sources, places, readAt, index }) {
+export function buildPages({ sources, places, readAt, index, storm }) {
   const pages = [];
   const add = o => pages.push(page({ readAt, ...o }));
   const link = s => `[${s.card.title}](/sources/${s.id}/)`;
@@ -28,8 +77,14 @@ export function buildPages({ sources, places, readAt, index }) {
     path: '', title: 'PrompTugal.news Data', h1: 'The raw public data behind every PrompTugal site',
     description: 'Public data on weather, warnings, the sea, fire risk and flights in Portugal, collected by code and served as plain files and an API. No articles. Not a warning service.',
     blocks: [
-      p('This site holds the raw public data that the PrompTugal sites draw on. Code collects it from its public publishers, on a schedule, and serves it as plain JSON files with an [API](/api/) and an [OpenAPI description](/api/v1/openapi.json). There are no articles here and no opinion: each value keeps its source and the time it was read.'),
-      p('**Not a warning service: follow [IPMA](https://www.ipma.pt/) and [ANEPC](https://prociv.gov.pt/).** Reuse terms differ by source; each card quotes them.'),
+      p('Portugal now, from public data: flights, wind, temperature, warnings, fire risk, the sea. Code collects every source each hour and this page draws it in your browser from the same files the [API](/api/) serves. Each chart names its source and the time it was read; open a source for its raw data and what this site makes of it.'),
+      p('**Not a warning service: follow [IPMA](https://www.ipma.pt/) and [ANEPC](https://prociv.gov.pt/).**'),
+      raw('<div class="viz-grid">', ''),
+      ...FRONT.flatMap(([id, name, srcs, text]) => [raw('<section class="viz-cell">', ''), h(text[0], 3), fig(name, srcs.map(u => abs(id, u)), text[1]), p(`[The source, the raw data and the processing](/sources/${id}/)`), raw('</section>', '')]),
+      raw('</div>', ''),
+      h('Storm Charles, 10 to 12 November 2026'),
+      p('The Storm Charles site is frozen as the record; its data now lives here. [Everything it built, and where each part goes now](/storm/).'),
+      fig('storm-wind', ['/api/v1/storm/charles/broadcast/field.json', COAST], 'The Storm\'s wind and pressure field over the Atlantic.'),
       h('The sources'),
       table(['Source', 'Publisher', 'Cadence', 'Last read', 'Last run', 'Now'], sources.map(s => [link(s), s.card.publisher.split(',')[0], s.card.schedule.cadence, fmtTime(s.read_at), s.last ? `${statusText(s)} (${s.last.ok} ok, ${s.last.failed} failed)` : statusText(s), s.headline]), 'sources'),
       p('Status comes from each source\'s own reads.json (listed in the [catalogue](/api/v1/index.json)); the headline count comes from its latest.json, as read at the time shown.'),
@@ -58,8 +113,13 @@ export function buildPages({ sources, places, readAt, index }) {
   for (const s of sources) {
     const c = s.card, a = c.api, t = c.terms;
     const prev = previewRows(s);
-    const blocks = [
-      p(c.what),
+    const L = LAYERS[s.id];
+    const blocks = [p(c.what)];
+    if (L) {
+      blocks.push(p('Three layers: **the source** (who publishes it, the terms, when it was read), **the raw data** as the publisher served it, and **the processed data**, what this site makes of it. The processing is where the value is: named fields, places joined, gaps marked, every value kept with its source and time.'));
+      blocks.push(h('1. The source'));
+    }
+    blocks.push(
       h('At a glance'),
       table(['Field', 'Value'], [
         ['Publisher', c.publisher],
@@ -75,11 +135,20 @@ export function buildPages({ sources, places, readAt, index }) {
       ], 'kv'),
       h('Reuse terms'),
       p(`${t.summary} Reuse: ${t.republish}.`),
-    ];
+    );
     if (t.quote) blocks.push(quote(t.quote, t.quote_lang, `The publisher's words${t.quote_lang ? ` (${t.quote_lang})` : ''}, from [${t.page}](${t.page}), read on ${t.read_at}.`));
     else blocks.push(p(`Terms page: [${t.page}](${t.page}), read on ${t.read_at}.`));
     if (t.privacy) blocks.push(p(`Privacy: ${t.privacy}`));
     if (t.open_question) blocks.push(p(`**Open question:** ${t.open_question}`));
+    if (L) {
+      blocks.push(h('2. The raw data'));
+      if (L.raw && s.raw.length) blocks.push(p(`As ${c.publisher.split(',')[0]} served it at the latest read (${fmtTime(s.read_at)}), unprocessed. The files: ${s.raw.map(r => `[${r.name}](/api/v1/${s.id}/raw/${r.name})`).join(', ')}.`), fig(L.raw[0], L.raw[1].map(u => abs(s.id, u)), L.raw[2]));
+      else if (L.raw) blocks.push(p('The raw files were not collected in this build: see the vault.'));
+      if (L.rawNote) blocks.push(p(L.rawNote));
+      blocks.push(h('3. The processed data'), p(`${L.how} The result: [latest.json](/api/v1/${s.id}/latest.json).`));
+      for (const [n, u, t2] of L.processed) blocks.push(fig(n, u.map(x => abs(s.id, x)), t2));
+      blocks.push(h('More about this source'));
+    }
     blocks.push(
       h('What runs by code, by agents and by people'),
       h('Code', 3), ul(c.split.code),
@@ -144,7 +213,7 @@ export function buildPages({ sources, places, readAt, index }) {
   });
 
   // ---- the API explorer (at /api/swagger/, the address the brief and the catalogue name) ----
-  const specs = [{ name: 'Whole API', url: '/api/v1/openapi.json' }, ...sources.map(s => ({ name: s.id, url: `/api/v1/${s.id}/openapi.json` }))];
+  const specs = [{ name: 'Whole API', url: '/api/v1/openapi.json' }, ...sources.map(s => ({ name: s.id, url: `/api/v1/${s.id}/openapi.json` })), ...(storm ? [{ name: 'Storm Charles data', url: '/api/v1/storm/openapi.json' }] : [])];
   add({
     path: 'api/swagger/', title: 'API explorer: PrompTugal.news Data', h1: 'API explorer', description: 'Try every GET address of the data API in the browser, for the whole API or one source, from its OpenAPI 3.1 description.',
     head: `<link rel="stylesheet" href="/assets/explorer.css">\n`,
@@ -173,7 +242,7 @@ export function buildPages({ sources, places, readAt, index }) {
       h('How it is made'),
       table(['Layer', 'What', 'Who or what'], [
         ['Code', 'The collectors read each public source and write latest.json, reads.json and the vault copy. GitHub Actions runs them every hour and deploys the site. The build writes the API, the OpenAPI documents and these pages. No model is called when data is collected or when the site is built.', 'Node scripts in the [repository](' + REPO + ')'],
-        ['Agents', 'The collectors, the cards, the build and the design were written by agents on 17 November 2026.', 'data@PrompTugal.dinis (Opus) leads and wrote the collectors and cards. data.dev@, data.design@ and data.collect@ (Sonnet) wrote parts of the build, the design and the collectors.'],
+        ['Agents', 'The collectors, the cards, the build and the design were written by agents on 17 November 2026; the visualizations, the raw layer, the Storm map and the Storm data move on 18 November.', 'data@PrompTugal.dinis (Opus) led on 17 November, with data.dev@, data.design@ and data.collect@ (Sonnet). From 18 November data.b@PrompTugal.dinis (Opus) leads, with data.b.design@ (the charts) and data.b.collector@ (the Storm map), both Sonnet.'],
         ['People', 'What a person has checked.', 'Nothing yet: no person has reviewed the values or the pages.'],
       ]),
       h('Who instructs'),
@@ -183,6 +252,43 @@ export function buildPages({ sources, places, readAt, index }) {
       h('Limits'),
       ul(['Not a warning service: follow IPMA and ANEPC.', 'The values are as the sources gave them at the time read; a value may be out of date by the time you read it.', 'Volunteer coverage (adsb.lol) means absence is not proof an aircraft was not there.']),
       p(`The repository is [${REPO}](${REPO}). [Pay for what you read](${ACCOUNT}) is the statement of the PrompTugal family; this data site carries no meter.`),
+    ],
+  });
+
+  // ---- the Storm map: everything the Storm Charles site built, and where it goes now ----
+  if (storm) {
+    const items = (storm.map && storm.map.items) || [];
+    const kinds = [['page', 'Pages'], ['visualization', 'Visualizations'], ['collector', 'Collectors and connectors'], ['dataset', 'Data sets'], ['vault', 'Vaults']];
+    const count = (k, st) => items.filter(i => i.kind === k && (!st || i.state === st)).length;
+    const cellPaths = ps => (ps || []).slice(0, 3).map(x => `\`${x}\``).join(', ') + ((ps || []).length > 3 ? ` and ${(ps || []).length - 3} more` : '');
+    add({
+      path: 'storm/', title: 'Storm Charles: PrompTugal.news Data', h1: 'Storm Charles: what the Storm site built, and where it is now',
+      description: 'An inventory of everything the Storm Charles site built (pages, visualizations, collectors, data sets, vaults), where each goes now and its state; the Storm data served here.',
+      blocks: [
+        p('Storm Charles crossed Lisbon and Madeira from 10 to 12 November 2026. Its site, [storm-charles.promptugal.news](https://storm-charles.promptugal.news/), is frozen as the record. Dinis asked (18 November 2026) that nothing it built be lost: this page maps every part of it, says where it goes now and in what state, and serves its data from this site.'),
+        h('The Storm\'s wind, as its broadcast page drew it'),
+        fig('storm-wind', ['/api/v1/storm/charles/broadcast/field.json', COAST], 'The wind and pressure field over the Atlantic (Open-Meteo, CC BY 4.0) and the coast (Natural Earth).'),
+        h('The data, moved'),
+        p(`${storm.index.counts.files} files, ${(storm.index.counts.bytes / 1e6).toFixed(1)} MB, from the Storm repository at commit ${storm.index.from.commit}, served at [/api/v1/storm/charles/](/api/v1/storm/charles/index.json) with [their own OpenAPI document](/api/v1/storm/openapi.json) (also in [the explorer](/api/swagger/)). Each of the 142 incident files matched the sha256 the Storm site states before it was copied. In this copy each full sha256 value is cut to its first 16 hex, this site's rule; five files are held back, with the reason for each, in [the index](/api/v1/storm/charles/index.json). The archive with full hashes: [the archive source](/sources/storm-charles-archive/), vault j2fq58kn.`),
+        fig('storm-datasets', ['/api/v1/storm-charles-archive/latest.json'], 'The Storm data sets by size.'),
+        h('The map'),
+        p(`${items.length} items, read from the Storm repository on 18 November 2026 by data.b.collector@PrompTugal.dinis (Sonnet) and checked by data.b@. **moved**: on this site now; **to move**: planned, to this site or a sub-site; **dropped**: not carried, most kept frozen on the Storm site as the record. The full map: [storm-map.md](${REPO}/blob/dev/board/team/data/storm-map.md), [storm-map.json](${REPO}/blob/dev/board/team/data/storm-map.json).`),
+        table(['Kind', 'Items', 'Moved', 'To move', 'Dropped'], [...kinds.map(([k, l]) => [l, count(k), count(k, 'moved'), count(k, 'to move'), count(k, 'dropped')]), ['All', items.length, items.filter(i => i.state === 'moved').length, items.filter(i => i.state === 'to move').length, items.filter(i => i.state === 'dropped').length]]),
+        ...kinds.flatMap(([k, l]) => [h(l, 3), table(['Item', 'Where it goes now', 'State', 'Files in the Storm repository', 'Notes'], items.filter(i => i.kind === k).map(i => [i.title, i.goes_to, `**${i.state}**`, cellPaths(i.paths), i.notes || '']))]),
+      ],
+    });
+  }
+
+  // ---- account: the reading graph (data.b@PrompTugal.dinis, 18 Nov 2026, after promptugal.news's account page) ----
+  add({
+    path: 'account/', title: 'Your reading: PrompTugal.news Data', h1: 'Your reading on this site', description: 'Your reading graph on data.promptugal.news, drawn in this browser, and where your reading account lives.',
+    blocks: [
+      p(`This site charges nothing. Its pages are built on IPMA data, and IPMA allows reuse only where it has no profit-making purpose, so these pages stay outside the reading meter until Dinis decides. Your reading account, with its balance, top-ups and history, is on [promptugal.news/account/](${ACCOUNT}).`),
+      h('Your reading graph'),
+      raw('<p><span id="reading-count">0</span> pages read here, linked to their sections and to each other in the order read (dashed). Drawn in this browser from a list it keeps itself; nothing is sent anywhere.</p><div id="reading-graph"><noscript>The graph needs JavaScript.</noscript></div><p><button type="button" id="reading-clear" hidden>Forget my reading on this site</button></p>',
+        'The graph is drawn in your browser from the pages you read on this site; the markdown version has no graph.'),
+      h('What is kept'),
+      ul(['In this browser only (localStorage `pt.data.reads`): the address and title of each page you open here, and the minute. The last 200.', 'Page views and reading time are also counted, publicly and without an IP address or cookie, on the PrompTugal observability lane `data`: see the note at the foot of each page.']),
     ],
   });
 

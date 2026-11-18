@@ -1,0 +1,6480 @@
+{
+ "by": "incident.flights@web-summit.dinis",
+ "updated": "2026-11-12T18:00:30Z",
+ "label": "fact",
+ "source": "this folder",
+ "read_utc": "2026-11-12T18:00:30Z",
+ "method": "a walk of the folder: each tracked file's sha256, and the map files made from them",
+ "snapshots": [
+  {
+   "t": "2026-11-11T22:23:41Z",
+   "area": "lisbon",
+   "aircraft": 9,
+   "file": "map/snapshots/2026-11-11/2223-lisbon.json",
+   "dist_nm": 40,
+   "cadence_min": 10,
+   "measured": true
+  },
+  {
+   "t": "2026-11-11T22:23:42Z",
+   "area": "funchal",
+   "aircraft": 0,
+   "file": "map/snapshots/2026-11-11/2223-funchal.json",
+   "dist_nm": 30,
+   "cadence_min": 10,
+   "measured": true
+  },
+  {
+   "t": "2026-11-11T22:25:17Z",
+   "area": "lisbon",
+   "aircraft": 9,
+   "file": "map/snapshots/2026-11-11/2225-lisbon.json",
+   "dist_nm": 40,
+   "cadence_min": 10,
+   "measured": true
+  },
+  {
+   "t": "2026-11-11T22:25:18Z",
+   "area": "funchal",
+   "aircraft": 0,
+   "file": "map/snapshots/2026-11-11/2225-funchal.json",
+   "dist_nm": 30,
+   "cadence_min": 10,
+   "measured": true
+  },
+  {
+   "t": "2026-11-11T22:30:15Z",
+   "area": "lisbon",
+   "aircraft": 10,
+   "file": "map/snapshots/2026-11-11/2230-lisbon.json",
+   "dist_nm": 40,
+   "cadence_min": 10,
+   "measured": true
+  },
+  {
+   "t": "2026-11-11T22:30:16Z",
+   "area": "funchal",
+   "aircraft": 0,
+   "file": "map/snapshots/2026-11-11/2230-funchal.json",
+   "dist_nm": 30,
+   "cadence_min": 10,
+   "measured": true
+  },
+  {
+   "t": "2026-11-11T22:40:16Z",
+   "area": "lisbon",
+   "aircraft": 6,
+   "file": "map/snapshots/2026-11-11/2240-lisbon.json",
+   "dist_nm": 40,
+   "cadence_min": 10,
+   "measured": true
+  },
+  {
+   "t": "2026-11-11T22:40:17Z",
+   "area": "funchal",
+   "aircraft": 0,
+   "file": "map/snapshots/2026-11-11/2240-funchal.json",
+   "dist_nm": 30,
+   "cadence_min": 10,
+   "measured": true
+  },
+  {
+   "t": "2026-11-11T22:50:15Z",
+   "area": "funchal",
+   "aircraft": 0,
+   "file": "map/snapshots/2026-11-11/2250-funchal.json",
+   "dist_nm": 30,
+   "cadence_min": 10,
+   "measured": true
+  },
+  {
+   "t": "2026-11-11T22:50:15Z",
+   "area": "lisbon",
+   "aircraft": 3,
+   "file": "map/snapshots/2026-11-11/2250-lisbon.json",
+   "dist_nm": 40,
+   "cadence_min": 10,
+   "measured": true
+  },
+  {
+   "t": "2026-11-11T23:00:16Z",
+   "area": "lisbon",
+   "aircraft": 4,
+   "file": "map/snapshots/2026-11-11/2300-lisbon.json",
+   "dist_nm": 40,
+   "cadence_min": 10,
+   "measured": true
+  },
+  {
+   "t": "2026-11-11T23:00:17Z",
+   "area": "funchal",
+   "aircraft": 0,
+   "file": "map/snapshots/2026-11-11/2300-funchal.json",
+   "dist_nm": 30,
+   "cadence_min": 10,
+   "measured": true
+  },
+  {
+   "t": "2026-11-11T23:04:48Z",
+   "area": "lisbon",
+   "aircraft": 4,
+   "file": "map/snapshots/2026-11-11/2304-lisbon.json",
+   "dist_nm": 40,
+   "cadence_min": 10,
+   "measured": true
+  },
+  {
+   "t": "2026-11-11T23:04:49Z",
+   "area": "funchal",
+   "aircraft": 0,
+   "file": "map/snapshots/2026-11-11/2304-funchal.json",
+   "dist_nm": 30,
+   "cadence_min": 10,
+   "measured": true
+  },
+  {
+   "t": "2026-11-11T23:10:15Z",
+   "area": "lisbon",
+   "aircraft": 6,
+   "file": "map/snapshots/2026-11-11/2310-lisbon.json",
+   "dist_nm": 40,
+   "cadence_min": 10,
+   "measured": true
+  },
+  {
+   "t": "2026-11-11T23:10:16Z",
+   "area": "funchal",
+   "aircraft": 0,
+   "file": "map/snapshots/2026-11-11/2310-funchal.json",
+   "dist_nm": 30,
+   "cadence_min": 10,
+   "measured": true
+  },
+  {
+   "t": "2026-11-11T23:20:16Z",
+   "area": "funchal",
+   "aircraft": 0,
+   "file": "map/snapshots/2026-11-11/2320-funchal.json",
+   "dist_nm": 30,
+   "cadence_min": 10,
+   "measured": true
+  },
+  {
+   "t": "2026-11-11T23:20:16Z",
+   "area": "lisbon",
+   "aircraft": 6,
+   "file": "map/snapshots/2026-11-11/2320-lisbon.json",
+   "dist_nm": 40,
+   "cadence_min": 10,
+   "measured": true
+  },
+  {
+   "t": "2026-11-11T23:30:16Z",
+   "area": "funchal",
+   "aircraft": 0,
+   "file": "map/snapshots/2026-11-11/2330-funchal.json",
+   "dist_nm": 30,
+   "cadence_min": 10,
+   "measured": true
+  },
+  {
+   "t": "2026-11-11T23:30:16Z",
+   "area": "lisbon",
+   "aircraft": 10,
+   "file": "map/snapshots/2026-11-11/2330-lisbon.json",
+   "dist_nm": 40,
+   "cadence_min": 10,
+   "measured": true
+  },
+  {
+   "t": "2026-11-11T23:40:15Z",
+   "area": "lisbon",
+   "aircraft": 4,
+   "file": "map/snapshots/2026-11-11/2340-lisbon.json",
+   "dist_nm": 40,
+   "cadence_min": 10,
+   "measured": true
+  },
+  {
+   "t": "2026-11-11T23:40:16Z",
+   "area": "funchal",
+   "aircraft": 0,
+   "file": "map/snapshots/2026-11-11/2340-funchal.json",
+   "dist_nm": 30,
+   "cadence_min": 10,
+   "measured": true
+  },
+  {
+   "t": "2026-11-11T23:42:09Z",
+   "area": "funchal",
+   "aircraft": 1,
+   "others": 0,
+   "file": "map/snapshots/2026-11-11/2342-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-11T23:42:09Z",
+   "area": "lisbon",
+   "aircraft": 21,
+   "others": 11,
+   "file": "map/snapshots/2026-11-11/2342-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-11T23:45:15Z",
+   "area": "lisbon",
+   "aircraft": 22,
+   "others": 12,
+   "file": "map/snapshots/2026-11-11/2345-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-11T23:50:16Z",
+   "area": "lisbon",
+   "aircraft": 18,
+   "others": 13,
+   "file": "map/snapshots/2026-11-11/2350-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-11T23:55:15Z",
+   "area": "lisbon",
+   "aircraft": 20,
+   "others": 10,
+   "file": "map/snapshots/2026-11-11/2355-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T00:00:16Z",
+   "area": "funchal",
+   "aircraft": 3,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/0000-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T00:00:16Z",
+   "area": "lisbon",
+   "aircraft": 18,
+   "others": 12,
+   "file": "map/snapshots/2026-11-12/0000-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T00:05:16Z",
+   "area": "lisbon",
+   "aircraft": 17,
+   "others": 11,
+   "file": "map/snapshots/2026-11-12/0005-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T00:10:16Z",
+   "area": "lisbon",
+   "aircraft": 17,
+   "others": 10,
+   "file": "map/snapshots/2026-11-12/0010-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T00:15:15Z",
+   "area": "lisbon",
+   "aircraft": 18,
+   "others": 8,
+   "file": "map/snapshots/2026-11-12/0015-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T00:20:15Z",
+   "area": "lisbon",
+   "aircraft": 17,
+   "others": 9,
+   "file": "map/snapshots/2026-11-12/0020-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T00:20:16Z",
+   "area": "funchal",
+   "aircraft": 3,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/0020-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T00:25:16Z",
+   "area": "lisbon",
+   "aircraft": 15,
+   "others": 11,
+   "file": "map/snapshots/2026-11-12/0025-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T00:30:15Z",
+   "area": "lisbon",
+   "aircraft": 16,
+   "others": 9,
+   "file": "map/snapshots/2026-11-12/0030-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T00:35:15Z",
+   "area": "lisbon",
+   "aircraft": 14,
+   "others": 10,
+   "file": "map/snapshots/2026-11-12/0035-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T00:40:15Z",
+   "area": "funchal",
+   "aircraft": 0,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/0040-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T00:40:15Z",
+   "area": "lisbon",
+   "aircraft": 14,
+   "others": 8,
+   "file": "map/snapshots/2026-11-12/0040-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T00:45:15Z",
+   "area": "lisbon",
+   "aircraft": 13,
+   "others": 7,
+   "file": "map/snapshots/2026-11-12/0045-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T00:50:15Z",
+   "area": "lisbon",
+   "aircraft": 11,
+   "others": 8,
+   "file": "map/snapshots/2026-11-12/0050-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T00:55:16Z",
+   "area": "lisbon",
+   "aircraft": 13,
+   "others": 7,
+   "file": "map/snapshots/2026-11-12/0055-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T01:00:16Z",
+   "area": "funchal",
+   "aircraft": 4,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/0100-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T01:00:16Z",
+   "area": "lisbon",
+   "aircraft": 11,
+   "others": 9,
+   "file": "map/snapshots/2026-11-12/0100-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T01:05:16Z",
+   "area": "lisbon",
+   "aircraft": 9,
+   "others": 10,
+   "file": "map/snapshots/2026-11-12/0105-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T01:10:15Z",
+   "area": "lisbon",
+   "aircraft": 11,
+   "others": 9,
+   "file": "map/snapshots/2026-11-12/0110-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T01:15:15Z",
+   "area": "lisbon",
+   "aircraft": 10,
+   "others": 9,
+   "file": "map/snapshots/2026-11-12/0115-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T01:20:16Z",
+   "area": "funchal",
+   "aircraft": 1,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/0120-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T01:20:16Z",
+   "area": "lisbon",
+   "aircraft": 9,
+   "others": 7,
+   "file": "map/snapshots/2026-11-12/0120-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T01:25:16Z",
+   "area": "lisbon",
+   "aircraft": 9,
+   "others": 7,
+   "file": "map/snapshots/2026-11-12/0125-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T01:30:15Z",
+   "area": "lisbon",
+   "aircraft": 10,
+   "others": 6,
+   "file": "map/snapshots/2026-11-12/0130-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T01:35:15Z",
+   "area": "lisbon",
+   "aircraft": 7,
+   "others": 7,
+   "file": "map/snapshots/2026-11-12/0135-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T01:40:16Z",
+   "area": "funchal",
+   "aircraft": 1,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/0140-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T01:40:16Z",
+   "area": "lisbon",
+   "aircraft": 9,
+   "others": 7,
+   "file": "map/snapshots/2026-11-12/0140-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T01:45:16Z",
+   "area": "lisbon",
+   "aircraft": 8,
+   "others": 8,
+   "file": "map/snapshots/2026-11-12/0145-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T01:50:16Z",
+   "area": "lisbon",
+   "aircraft": 9,
+   "others": 7,
+   "file": "map/snapshots/2026-11-12/0150-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T01:55:15Z",
+   "area": "lisbon",
+   "aircraft": 8,
+   "others": 8,
+   "file": "map/snapshots/2026-11-12/0155-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T02:00:15Z",
+   "area": "lisbon",
+   "aircraft": 11,
+   "others": 7,
+   "file": "map/snapshots/2026-11-12/0200-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T02:00:16Z",
+   "area": "funchal",
+   "aircraft": 2,
+   "others": 1,
+   "file": "map/snapshots/2026-11-12/0200-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T02:05:15Z",
+   "area": "lisbon",
+   "aircraft": 10,
+   "others": 7,
+   "file": "map/snapshots/2026-11-12/0205-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T02:10:15Z",
+   "area": "lisbon",
+   "aircraft": 11,
+   "others": 6,
+   "file": "map/snapshots/2026-11-12/0210-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T02:15:16Z",
+   "area": "lisbon",
+   "aircraft": 12,
+   "others": 7,
+   "file": "map/snapshots/2026-11-12/0215-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T02:20:16Z",
+   "area": "funchal",
+   "aircraft": 1,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/0220-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T02:20:16Z",
+   "area": "lisbon",
+   "aircraft": 12,
+   "others": 6,
+   "file": "map/snapshots/2026-11-12/0220-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T02:25:16Z",
+   "area": "lisbon",
+   "aircraft": 13,
+   "others": 5,
+   "file": "map/snapshots/2026-11-12/0225-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T02:30:16Z",
+   "area": "lisbon",
+   "aircraft": 12,
+   "others": 5,
+   "file": "map/snapshots/2026-11-12/0230-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T02:35:15Z",
+   "area": "lisbon",
+   "aircraft": 11,
+   "others": 5,
+   "file": "map/snapshots/2026-11-12/0235-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T02:40:16Z",
+   "area": "funchal",
+   "aircraft": 0,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/0240-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T02:40:16Z",
+   "area": "lisbon",
+   "aircraft": 12,
+   "others": 6,
+   "file": "map/snapshots/2026-11-12/0240-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T02:45:15Z",
+   "area": "lisbon",
+   "aircraft": 12,
+   "others": 6,
+   "file": "map/snapshots/2026-11-12/0245-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T02:50:16Z",
+   "area": "lisbon",
+   "aircraft": 14,
+   "others": 6,
+   "file": "map/snapshots/2026-11-12/0250-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T02:55:15Z",
+   "area": "lisbon",
+   "aircraft": 12,
+   "others": 5,
+   "file": "map/snapshots/2026-11-12/0255-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T03:00:15Z",
+   "area": "lisbon",
+   "aircraft": 13,
+   "others": 6,
+   "file": "map/snapshots/2026-11-12/0300-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T03:00:16Z",
+   "area": "funchal",
+   "aircraft": 1,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/0300-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T03:05:15Z",
+   "area": "lisbon",
+   "aircraft": 11,
+   "others": 5,
+   "file": "map/snapshots/2026-11-12/0305-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T03:10:15Z",
+   "area": "lisbon",
+   "aircraft": 11,
+   "others": 5,
+   "file": "map/snapshots/2026-11-12/0310-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T03:15:16Z",
+   "area": "lisbon",
+   "aircraft": 13,
+   "others": 6,
+   "file": "map/snapshots/2026-11-12/0315-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T03:20:16Z",
+   "area": "funchal",
+   "aircraft": 0,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/0320-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T03:20:16Z",
+   "area": "lisbon",
+   "aircraft": 12,
+   "others": 5,
+   "file": "map/snapshots/2026-11-12/0320-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T03:25:16Z",
+   "area": "lisbon",
+   "aircraft": 11,
+   "others": 6,
+   "file": "map/snapshots/2026-11-12/0325-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T03:30:16Z",
+   "area": "lisbon",
+   "aircraft": 13,
+   "others": 6,
+   "file": "map/snapshots/2026-11-12/0330-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T03:35:15Z",
+   "area": "lisbon",
+   "aircraft": 14,
+   "others": 6,
+   "file": "map/snapshots/2026-11-12/0335-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T03:40:15Z",
+   "area": "funchal",
+   "aircraft": 2,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/0340-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T03:40:15Z",
+   "area": "lisbon",
+   "aircraft": 11,
+   "others": 6,
+   "file": "map/snapshots/2026-11-12/0340-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T03:45:16Z",
+   "area": "lisbon",
+   "aircraft": 15,
+   "others": 6,
+   "file": "map/snapshots/2026-11-12/0345-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T03:50:15Z",
+   "area": "lisbon",
+   "aircraft": 16,
+   "others": 6,
+   "file": "map/snapshots/2026-11-12/0350-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T03:55:15Z",
+   "area": "lisbon",
+   "aircraft": 15,
+   "others": 6,
+   "file": "map/snapshots/2026-11-12/0355-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T04:00:16Z",
+   "area": "lisbon",
+   "aircraft": 14,
+   "others": 6,
+   "file": "map/snapshots/2026-11-12/0400-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T04:00:17Z",
+   "area": "funchal",
+   "aircraft": 0,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/0400-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T04:05:15Z",
+   "area": "lisbon",
+   "aircraft": 12,
+   "others": 6,
+   "file": "map/snapshots/2026-11-12/0405-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T04:10:15Z",
+   "area": "lisbon",
+   "aircraft": 11,
+   "others": 5,
+   "file": "map/snapshots/2026-11-12/0410-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T04:15:16Z",
+   "area": "lisbon",
+   "aircraft": 9,
+   "others": 5,
+   "file": "map/snapshots/2026-11-12/0415-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T04:20:15Z",
+   "area": "lisbon",
+   "aircraft": 10,
+   "others": 5,
+   "file": "map/snapshots/2026-11-12/0420-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T04:20:16Z",
+   "area": "funchal",
+   "aircraft": 0,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/0420-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T04:25:15Z",
+   "area": "lisbon",
+   "aircraft": 10,
+   "others": 6,
+   "file": "map/snapshots/2026-11-12/0425-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T04:30:15Z",
+   "area": "lisbon",
+   "aircraft": 7,
+   "others": 6,
+   "file": "map/snapshots/2026-11-12/0430-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T04:35:16Z",
+   "area": "lisbon",
+   "aircraft": 8,
+   "others": 7,
+   "file": "map/snapshots/2026-11-12/0435-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T04:40:15Z",
+   "area": "lisbon",
+   "aircraft": 7,
+   "others": 6,
+   "file": "map/snapshots/2026-11-12/0440-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T04:40:16Z",
+   "area": "funchal",
+   "aircraft": 1,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/0440-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T04:45:16Z",
+   "area": "lisbon",
+   "aircraft": 7,
+   "others": 6,
+   "file": "map/snapshots/2026-11-12/0445-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T04:50:15Z",
+   "area": "lisbon",
+   "aircraft": 7,
+   "others": 6,
+   "file": "map/snapshots/2026-11-12/0450-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T04:55:16Z",
+   "area": "lisbon",
+   "aircraft": 7,
+   "others": 7,
+   "file": "map/snapshots/2026-11-12/0455-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T05:00:16Z",
+   "area": "funchal",
+   "aircraft": 2,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/0500-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T05:00:16Z",
+   "area": "lisbon",
+   "aircraft": 9,
+   "others": 8,
+   "file": "map/snapshots/2026-11-12/0500-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T05:05:16Z",
+   "area": "lisbon",
+   "aircraft": 15,
+   "others": 8,
+   "file": "map/snapshots/2026-11-12/0505-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T05:10:16Z",
+   "area": "lisbon",
+   "aircraft": 12,
+   "others": 8,
+   "file": "map/snapshots/2026-11-12/0510-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T05:15:15Z",
+   "area": "lisbon",
+   "aircraft": 15,
+   "others": 6,
+   "file": "map/snapshots/2026-11-12/0515-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T05:20:16Z",
+   "area": "funchal",
+   "aircraft": 1,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/0520-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T05:20:16Z",
+   "area": "lisbon",
+   "aircraft": 16,
+   "others": 6,
+   "file": "map/snapshots/2026-11-12/0520-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T05:25:15Z",
+   "area": "lisbon",
+   "aircraft": 16,
+   "others": 5,
+   "file": "map/snapshots/2026-11-12/0525-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T05:30:16Z",
+   "area": "lisbon",
+   "aircraft": 21,
+   "others": 5,
+   "file": "map/snapshots/2026-11-12/0530-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T05:35:16Z",
+   "area": "lisbon",
+   "aircraft": 21,
+   "others": 5,
+   "file": "map/snapshots/2026-11-12/0535-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T05:40:15Z",
+   "area": "lisbon",
+   "aircraft": 29,
+   "others": 6,
+   "file": "map/snapshots/2026-11-12/0540-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T05:40:16Z",
+   "area": "funchal",
+   "aircraft": 0,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/0540-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T05:45:16Z",
+   "area": "lisbon",
+   "aircraft": 29,
+   "others": 5,
+   "file": "map/snapshots/2026-11-12/0545-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T05:50:15Z",
+   "area": "lisbon",
+   "aircraft": 31,
+   "others": 5,
+   "file": "map/snapshots/2026-11-12/0550-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T05:55:15Z",
+   "area": "lisbon",
+   "aircraft": 38,
+   "others": 6,
+   "file": "map/snapshots/2026-11-12/0555-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T06:00:16Z",
+   "area": "lisbon",
+   "aircraft": 37,
+   "others": 7,
+   "file": "map/snapshots/2026-11-12/0600-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T06:00:17Z",
+   "area": "funchal",
+   "aircraft": 1,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/0600-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T06:05:16Z",
+   "area": "lisbon",
+   "aircraft": 45,
+   "others": 10,
+   "file": "map/snapshots/2026-11-12/0605-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T06:10:15Z",
+   "area": "lisbon",
+   "aircraft": 55,
+   "others": 11,
+   "file": "map/snapshots/2026-11-12/0610-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T06:15:15Z",
+   "area": "lisbon",
+   "aircraft": 57,
+   "others": 11,
+   "file": "map/snapshots/2026-11-12/0615-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T06:20:16Z",
+   "area": "funchal",
+   "aircraft": 0,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/0620-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T06:20:16Z",
+   "area": "lisbon",
+   "aircraft": 65,
+   "others": 9,
+   "file": "map/snapshots/2026-11-12/0620-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T06:25:15Z",
+   "area": "lisbon",
+   "aircraft": 67,
+   "others": 11,
+   "file": "map/snapshots/2026-11-12/0625-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T06:30:16Z",
+   "area": "lisbon",
+   "aircraft": 66,
+   "others": 12,
+   "file": "map/snapshots/2026-11-12/0630-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T06:35:16Z",
+   "area": "lisbon",
+   "aircraft": 70,
+   "others": 10,
+   "file": "map/snapshots/2026-11-12/0635-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T06:40:15Z",
+   "area": "lisbon",
+   "aircraft": 70,
+   "others": 14,
+   "file": "map/snapshots/2026-11-12/0640-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T06:40:16Z",
+   "area": "funchal",
+   "aircraft": 1,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/0640-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T06:45:16Z",
+   "area": "lisbon",
+   "aircraft": 67,
+   "others": 11,
+   "file": "map/snapshots/2026-11-12/0645-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T06:50:15Z",
+   "area": "lisbon",
+   "aircraft": 69,
+   "others": 10,
+   "file": "map/snapshots/2026-11-12/0650-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T06:55:15Z",
+   "area": "lisbon",
+   "aircraft": 72,
+   "others": 10,
+   "file": "map/snapshots/2026-11-12/0655-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T07:00:16Z",
+   "area": "funchal",
+   "aircraft": 1,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/0700-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T07:00:16Z",
+   "area": "lisbon",
+   "aircraft": 76,
+   "others": 10,
+   "file": "map/snapshots/2026-11-12/0700-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T07:05:16Z",
+   "area": "lisbon",
+   "aircraft": 74,
+   "others": 11,
+   "file": "map/snapshots/2026-11-12/0705-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T07:10:16Z",
+   "area": "lisbon",
+   "aircraft": 74,
+   "others": 10,
+   "file": "map/snapshots/2026-11-12/0710-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T07:15:15Z",
+   "area": "lisbon",
+   "aircraft": 73,
+   "others": 13,
+   "file": "map/snapshots/2026-11-12/0715-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T07:20:15Z",
+   "area": "lisbon",
+   "aircraft": 80,
+   "others": 12,
+   "file": "map/snapshots/2026-11-12/0720-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T07:20:16Z",
+   "area": "funchal",
+   "aircraft": 3,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/0720-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T07:25:15Z",
+   "area": "lisbon",
+   "aircraft": 81,
+   "others": 12,
+   "file": "map/snapshots/2026-11-12/0725-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T07:30:15Z",
+   "area": "lisbon",
+   "aircraft": 85,
+   "others": 9,
+   "file": "map/snapshots/2026-11-12/0730-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T07:35:15Z",
+   "area": "lisbon",
+   "aircraft": 85,
+   "others": 11,
+   "file": "map/snapshots/2026-11-12/0735-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T07:40:16Z",
+   "area": "funchal",
+   "aircraft": 1,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/0740-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T07:40:16Z",
+   "area": "lisbon",
+   "aircraft": 89,
+   "others": 10,
+   "file": "map/snapshots/2026-11-12/0740-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T07:45:16Z",
+   "area": "lisbon",
+   "aircraft": 88,
+   "others": 12,
+   "file": "map/snapshots/2026-11-12/0745-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T07:50:16Z",
+   "area": "lisbon",
+   "aircraft": 99,
+   "others": 11,
+   "file": "map/snapshots/2026-11-12/0750-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T07:55:15Z",
+   "area": "lisbon",
+   "aircraft": 113,
+   "others": 11,
+   "file": "map/snapshots/2026-11-12/0755-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T08:00:16Z",
+   "area": "lisbon",
+   "aircraft": 115,
+   "others": 12,
+   "file": "map/snapshots/2026-11-12/0800-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T08:00:17Z",
+   "area": "funchal",
+   "aircraft": 1,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/0800-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T08:05:15Z",
+   "area": "lisbon",
+   "aircraft": 117,
+   "others": 12,
+   "file": "map/snapshots/2026-11-12/0805-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T08:10:15Z",
+   "area": "lisbon",
+   "aircraft": 116,
+   "others": 11,
+   "file": "map/snapshots/2026-11-12/0810-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T08:15:16Z",
+   "area": "lisbon",
+   "aircraft": 118,
+   "others": 12,
+   "file": "map/snapshots/2026-11-12/0815-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T08:20:16Z",
+   "area": "funchal",
+   "aircraft": 0,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/0820-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T08:20:16Z",
+   "area": "lisbon",
+   "aircraft": 119,
+   "others": 12,
+   "file": "map/snapshots/2026-11-12/0820-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T08:25:16Z",
+   "area": "lisbon",
+   "aircraft": 125,
+   "others": 13,
+   "file": "map/snapshots/2026-11-12/0825-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T08:30:16Z",
+   "area": "lisbon",
+   "aircraft": 128,
+   "others": 18,
+   "file": "map/snapshots/2026-11-12/0830-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T08:35:15Z",
+   "area": "lisbon",
+   "aircraft": 122,
+   "others": 14,
+   "file": "map/snapshots/2026-11-12/0835-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T08:40:15Z",
+   "area": "lisbon",
+   "aircraft": 129,
+   "others": 12,
+   "file": "map/snapshots/2026-11-12/0840-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T08:40:16Z",
+   "area": "funchal",
+   "aircraft": 0,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/0840-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T08:45:16Z",
+   "area": "lisbon",
+   "aircraft": 125,
+   "others": 13,
+   "file": "map/snapshots/2026-11-12/0845-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T08:50:15Z",
+   "area": "lisbon",
+   "aircraft": 128,
+   "others": 13,
+   "file": "map/snapshots/2026-11-12/0850-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T08:55:15Z",
+   "area": "lisbon",
+   "aircraft": 139,
+   "others": 11,
+   "file": "map/snapshots/2026-11-12/0855-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T09:00:16Z",
+   "area": "lisbon",
+   "aircraft": 129,
+   "others": 13,
+   "file": "map/snapshots/2026-11-12/0900-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T09:00:17Z",
+   "area": "funchal",
+   "aircraft": 5,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/0900-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T09:05:15Z",
+   "area": "lisbon",
+   "aircraft": 125,
+   "others": 14,
+   "file": "map/snapshots/2026-11-12/0905-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T09:10:15Z",
+   "area": "lisbon",
+   "aircraft": 124,
+   "others": 12,
+   "file": "map/snapshots/2026-11-12/0910-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T09:15:16Z",
+   "area": "lisbon",
+   "aircraft": 132,
+   "others": 14,
+   "file": "map/snapshots/2026-11-12/0915-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T09:20:16Z",
+   "area": "lisbon",
+   "aircraft": 123,
+   "others": 17,
+   "file": "map/snapshots/2026-11-12/0920-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T09:20:17Z",
+   "area": "funchal",
+   "aircraft": 1,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/0920-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T09:25:15Z",
+   "area": "lisbon",
+   "aircraft": 126,
+   "others": 19,
+   "file": "map/snapshots/2026-11-12/0925-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T09:30:16Z",
+   "area": "lisbon",
+   "aircraft": 125,
+   "others": 17,
+   "file": "map/snapshots/2026-11-12/0930-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T09:35:16Z",
+   "area": "lisbon",
+   "aircraft": 127,
+   "others": 22,
+   "file": "map/snapshots/2026-11-12/0935-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T09:40:15Z",
+   "area": "lisbon",
+   "aircraft": 131,
+   "others": 25,
+   "file": "map/snapshots/2026-11-12/0940-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T09:40:16Z",
+   "area": "funchal",
+   "aircraft": 5,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/0940-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T09:45:16Z",
+   "area": "lisbon",
+   "aircraft": 125,
+   "others": 24,
+   "file": "map/snapshots/2026-11-12/0945-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T09:50:16Z",
+   "area": "lisbon",
+   "aircraft": 123,
+   "others": 23,
+   "file": "map/snapshots/2026-11-12/0950-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T09:55:16Z",
+   "area": "lisbon",
+   "aircraft": 112,
+   "others": 22,
+   "file": "map/snapshots/2026-11-12/0955-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T10:00:16Z",
+   "area": "funchal",
+   "aircraft": 1,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/1000-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T10:00:16Z",
+   "area": "lisbon",
+   "aircraft": 104,
+   "others": 22,
+   "file": "map/snapshots/2026-11-12/1000-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T10:05:15Z",
+   "area": "lisbon",
+   "aircraft": 103,
+   "others": 19,
+   "file": "map/snapshots/2026-11-12/1005-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T10:10:16Z",
+   "area": "lisbon",
+   "aircraft": 93,
+   "others": 21,
+   "file": "map/snapshots/2026-11-12/1010-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T10:15:15Z",
+   "area": "lisbon",
+   "aircraft": 97,
+   "others": 22,
+   "file": "map/snapshots/2026-11-12/1015-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T10:20:15Z",
+   "area": "lisbon",
+   "aircraft": 99,
+   "others": 24,
+   "file": "map/snapshots/2026-11-12/1020-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T10:20:16Z",
+   "area": "funchal",
+   "aircraft": 2,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/1020-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T10:25:15Z",
+   "area": "lisbon",
+   "aircraft": 107,
+   "others": 27,
+   "file": "map/snapshots/2026-11-12/1025-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T10:30:16Z",
+   "area": "lisbon",
+   "aircraft": 109,
+   "others": 28,
+   "file": "map/snapshots/2026-11-12/1030-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T10:35:16Z",
+   "area": "lisbon",
+   "aircraft": 114,
+   "others": 30,
+   "file": "map/snapshots/2026-11-12/1035-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T10:40:15Z",
+   "area": "lisbon",
+   "aircraft": 115,
+   "others": 31,
+   "file": "map/snapshots/2026-11-12/1040-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T10:40:16Z",
+   "area": "funchal",
+   "aircraft": 5,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/1040-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T10:45:16Z",
+   "area": "lisbon",
+   "aircraft": 120,
+   "others": 26,
+   "file": "map/snapshots/2026-11-12/1045-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T10:50:16Z",
+   "area": "lisbon",
+   "aircraft": 124,
+   "others": 26,
+   "file": "map/snapshots/2026-11-12/1050-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T10:55:16Z",
+   "area": "lisbon",
+   "aircraft": 118,
+   "others": 21,
+   "file": "map/snapshots/2026-11-12/1055-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T11:00:16Z",
+   "area": "funchal",
+   "aircraft": 5,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/1100-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T11:00:16Z",
+   "area": "lisbon",
+   "aircraft": 121,
+   "others": 21,
+   "file": "map/snapshots/2026-11-12/1100-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T11:05:15Z",
+   "area": "lisbon",
+   "aircraft": 129,
+   "others": 19,
+   "file": "map/snapshots/2026-11-12/1105-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T11:10:16Z",
+   "area": "lisbon",
+   "aircraft": 126,
+   "others": 20,
+   "file": "map/snapshots/2026-11-12/1110-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T11:15:16Z",
+   "area": "lisbon",
+   "aircraft": 130,
+   "others": 17,
+   "file": "map/snapshots/2026-11-12/1115-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T11:20:16Z",
+   "area": "funchal",
+   "aircraft": 5,
+   "others": 1,
+   "file": "map/snapshots/2026-11-12/1120-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T11:20:16Z",
+   "area": "lisbon",
+   "aircraft": 125,
+   "others": 20,
+   "file": "map/snapshots/2026-11-12/1120-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T11:25:16Z",
+   "area": "lisbon",
+   "aircraft": 131,
+   "others": 24,
+   "file": "map/snapshots/2026-11-12/1125-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T11:30:16Z",
+   "area": "lisbon",
+   "aircraft": 137,
+   "others": 24,
+   "file": "map/snapshots/2026-11-12/1130-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T11:35:15Z",
+   "area": "lisbon",
+   "aircraft": 133,
+   "others": 22,
+   "file": "map/snapshots/2026-11-12/1135-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T11:40:15Z",
+   "area": "lisbon",
+   "aircraft": 134,
+   "others": 24,
+   "file": "map/snapshots/2026-11-12/1140-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T11:40:16Z",
+   "area": "funchal",
+   "aircraft": 5,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/1140-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T11:45:15Z",
+   "area": "lisbon",
+   "aircraft": 129,
+   "others": 22,
+   "file": "map/snapshots/2026-11-12/1145-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T11:50:16Z",
+   "area": "lisbon",
+   "aircraft": 129,
+   "others": 23,
+   "file": "map/snapshots/2026-11-12/1150-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T11:55:16Z",
+   "area": "lisbon",
+   "aircraft": 126,
+   "others": 27,
+   "file": "map/snapshots/2026-11-12/1155-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T12:00:16Z",
+   "area": "funchal",
+   "aircraft": 2,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/1200-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T12:00:16Z",
+   "area": "lisbon",
+   "aircraft": 127,
+   "others": 29,
+   "file": "map/snapshots/2026-11-12/1200-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T12:05:16Z",
+   "area": "lisbon",
+   "aircraft": 128,
+   "others": 25,
+   "file": "map/snapshots/2026-11-12/1205-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T12:10:16Z",
+   "area": "lisbon",
+   "aircraft": 117,
+   "others": 25,
+   "file": "map/snapshots/2026-11-12/1210-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T12:15:15Z",
+   "area": "lisbon",
+   "aircraft": 125,
+   "others": 20,
+   "file": "map/snapshots/2026-11-12/1215-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T12:20:15Z",
+   "area": "lisbon",
+   "aircraft": 123,
+   "others": 18,
+   "file": "map/snapshots/2026-11-12/1220-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T12:20:16Z",
+   "area": "funchal",
+   "aircraft": 3,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/1220-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T12:25:15Z",
+   "area": "lisbon",
+   "aircraft": 119,
+   "others": 13,
+   "file": "map/snapshots/2026-11-12/1225-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T12:30:15Z",
+   "area": "lisbon",
+   "aircraft": 126,
+   "others": 14,
+   "file": "map/snapshots/2026-11-12/1230-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T12:35:16Z",
+   "area": "lisbon",
+   "aircraft": 124,
+   "others": 17,
+   "file": "map/snapshots/2026-11-12/1235-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T12:40:16Z",
+   "area": "funchal",
+   "aircraft": 6,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/1240-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T12:40:16Z",
+   "area": "lisbon",
+   "aircraft": 128,
+   "others": 17,
+   "file": "map/snapshots/2026-11-12/1240-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T12:45:15Z",
+   "area": "lisbon",
+   "aircraft": 141,
+   "others": 14,
+   "file": "map/snapshots/2026-11-12/1245-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T12:50:16Z",
+   "area": "lisbon",
+   "aircraft": 143,
+   "others": 15,
+   "file": "map/snapshots/2026-11-12/1250-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T12:55:16Z",
+   "area": "lisbon",
+   "aircraft": 134,
+   "others": 13,
+   "file": "map/snapshots/2026-11-12/1255-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T13:00:16Z",
+   "area": "funchal",
+   "aircraft": 10,
+   "others": 1,
+   "file": "map/snapshots/2026-11-12/1300-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T13:00:16Z",
+   "area": "lisbon",
+   "aircraft": 137,
+   "others": 12,
+   "file": "map/snapshots/2026-11-12/1300-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T13:05:15Z",
+   "area": "lisbon",
+   "aircraft": 135,
+   "others": 11,
+   "file": "map/snapshots/2026-11-12/1305-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T13:10:16Z",
+   "area": "lisbon",
+   "aircraft": 140,
+   "others": 12,
+   "file": "map/snapshots/2026-11-12/1310-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T13:15:15Z",
+   "area": "lisbon",
+   "aircraft": 135,
+   "others": 14,
+   "file": "map/snapshots/2026-11-12/1315-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T13:20:15Z",
+   "area": "lisbon",
+   "aircraft": 141,
+   "others": 18,
+   "file": "map/snapshots/2026-11-12/1320-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T13:20:16Z",
+   "area": "funchal",
+   "aircraft": 8,
+   "others": 2,
+   "file": "map/snapshots/2026-11-12/1320-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T13:25:15Z",
+   "area": "lisbon",
+   "aircraft": 148,
+   "others": 19,
+   "file": "map/snapshots/2026-11-12/1325-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T13:30:15Z",
+   "area": "lisbon",
+   "aircraft": 149,
+   "others": 21,
+   "file": "map/snapshots/2026-11-12/1330-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T13:35:15Z",
+   "area": "lisbon",
+   "aircraft": 149,
+   "others": 19,
+   "file": "map/snapshots/2026-11-12/1335-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T13:40:16Z",
+   "area": "funchal",
+   "aircraft": 5,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/1340-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T13:40:16Z",
+   "area": "lisbon",
+   "aircraft": 146,
+   "others": 20,
+   "file": "map/snapshots/2026-11-12/1340-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T13:45:16Z",
+   "area": "lisbon",
+   "aircraft": 144,
+   "others": 23,
+   "file": "map/snapshots/2026-11-12/1345-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T13:50:16Z",
+   "area": "lisbon",
+   "aircraft": 138,
+   "others": 24,
+   "file": "map/snapshots/2026-11-12/1350-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T13:55:15Z",
+   "area": "lisbon",
+   "aircraft": 139,
+   "others": 24,
+   "file": "map/snapshots/2026-11-12/1355-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T14:00:16Z",
+   "area": "lisbon",
+   "aircraft": 138,
+   "others": 24,
+   "file": "map/snapshots/2026-11-12/1400-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T14:00:17Z",
+   "area": "funchal",
+   "aircraft": 7,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/1400-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T14:05:16Z",
+   "area": "lisbon",
+   "aircraft": 135,
+   "others": 24,
+   "file": "map/snapshots/2026-11-12/1405-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T14:10:15Z",
+   "area": "lisbon",
+   "aircraft": 126,
+   "others": 23,
+   "file": "map/snapshots/2026-11-12/1410-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T14:15:15Z",
+   "area": "lisbon",
+   "aircraft": 133,
+   "others": 20,
+   "file": "map/snapshots/2026-11-12/1415-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T14:20:15Z",
+   "area": "funchal",
+   "aircraft": 10,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/1420-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T14:20:15Z",
+   "area": "lisbon",
+   "aircraft": 137,
+   "others": 20,
+   "file": "map/snapshots/2026-11-12/1420-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T14:25:16Z",
+   "area": "lisbon",
+   "aircraft": 137,
+   "others": 16,
+   "file": "map/snapshots/2026-11-12/1425-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T14:30:16Z",
+   "area": "lisbon",
+   "aircraft": 129,
+   "others": 14,
+   "file": "map/snapshots/2026-11-12/1430-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T14:35:16Z",
+   "area": "lisbon",
+   "aircraft": 128,
+   "others": 16,
+   "file": "map/snapshots/2026-11-12/1435-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T14:40:15Z",
+   "area": "lisbon",
+   "aircraft": 126,
+   "others": 17,
+   "file": "map/snapshots/2026-11-12/1440-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T14:40:16Z",
+   "area": "funchal",
+   "aircraft": 6,
+   "others": 1,
+   "file": "map/snapshots/2026-11-12/1440-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T14:45:16Z",
+   "area": "lisbon",
+   "aircraft": 126,
+   "others": 19,
+   "file": "map/snapshots/2026-11-12/1445-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T14:50:16Z",
+   "area": "lisbon",
+   "aircraft": 122,
+   "others": 17,
+   "file": "map/snapshots/2026-11-12/1450-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T14:55:15Z",
+   "area": "lisbon",
+   "aircraft": 118,
+   "others": 17,
+   "file": "map/snapshots/2026-11-12/1455-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T15:00:16Z",
+   "area": "lisbon",
+   "aircraft": 120,
+   "others": 16,
+   "file": "map/snapshots/2026-11-12/1500-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T15:00:17Z",
+   "area": "funchal",
+   "aircraft": 6,
+   "others": 1,
+   "file": "map/snapshots/2026-11-12/1500-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T15:05:15Z",
+   "area": "lisbon",
+   "aircraft": 115,
+   "others": 19,
+   "file": "map/snapshots/2026-11-12/1505-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T15:10:15Z",
+   "area": "lisbon",
+   "aircraft": 113,
+   "others": 18,
+   "file": "map/snapshots/2026-11-12/1510-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T15:15:16Z",
+   "area": "lisbon",
+   "aircraft": 118,
+   "others": 16,
+   "file": "map/snapshots/2026-11-12/1515-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T15:20:16Z",
+   "area": "funchal",
+   "aircraft": 7,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/1520-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T15:20:16Z",
+   "area": "lisbon",
+   "aircraft": 118,
+   "others": 17,
+   "file": "map/snapshots/2026-11-12/1520-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T15:25:15Z",
+   "area": "lisbon",
+   "aircraft": 123,
+   "others": 17,
+   "file": "map/snapshots/2026-11-12/1525-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T15:30:16Z",
+   "area": "lisbon",
+   "aircraft": 120,
+   "others": 20,
+   "file": "map/snapshots/2026-11-12/1530-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T15:35:16Z",
+   "area": "lisbon",
+   "aircraft": 113,
+   "others": 20,
+   "file": "map/snapshots/2026-11-12/1535-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T15:40:16Z",
+   "area": "lisbon",
+   "aircraft": 116,
+   "others": 24,
+   "file": "map/snapshots/2026-11-12/1540-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T15:40:17Z",
+   "area": "funchal",
+   "aircraft": 9,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/1540-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T15:45:16Z",
+   "area": "lisbon",
+   "aircraft": 117,
+   "others": 23,
+   "file": "map/snapshots/2026-11-12/1545-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T15:50:16Z",
+   "area": "lisbon",
+   "aircraft": 121,
+   "others": 21,
+   "file": "map/snapshots/2026-11-12/1550-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T15:55:16Z",
+   "area": "lisbon",
+   "aircraft": 121,
+   "others": 22,
+   "file": "map/snapshots/2026-11-12/1555-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T16:00:17Z",
+   "area": "lisbon",
+   "aircraft": 121,
+   "others": 24,
+   "file": "map/snapshots/2026-11-12/1600-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T16:00:20Z",
+   "area": "funchal",
+   "aircraft": 6,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/1600-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T16:05:16Z",
+   "area": "lisbon",
+   "aircraft": 121,
+   "others": 21,
+   "file": "map/snapshots/2026-11-12/1605-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T16:10:16Z",
+   "area": "lisbon",
+   "aircraft": 120,
+   "others": 23,
+   "file": "map/snapshots/2026-11-12/1610-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T16:15:16Z",
+   "area": "lisbon",
+   "aircraft": 118,
+   "others": 20,
+   "file": "map/snapshots/2026-11-12/1615-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T16:20:16Z",
+   "area": "lisbon",
+   "aircraft": 125,
+   "others": 19,
+   "file": "map/snapshots/2026-11-12/1620-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T16:20:17Z",
+   "area": "funchal",
+   "aircraft": 6,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/1620-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T16:25:15Z",
+   "area": "lisbon",
+   "aircraft": 133,
+   "others": 19,
+   "file": "map/snapshots/2026-11-12/1625-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T16:30:18Z",
+   "area": "lisbon",
+   "aircraft": 143,
+   "others": 19,
+   "file": "map/snapshots/2026-11-12/1630-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T16:35:15Z",
+   "area": "lisbon",
+   "aircraft": 133,
+   "others": 18,
+   "file": "map/snapshots/2026-11-12/1635-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T16:40:16Z",
+   "area": "lisbon",
+   "aircraft": 136,
+   "others": 17,
+   "file": "map/snapshots/2026-11-12/1640-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T16:40:17Z",
+   "area": "funchal",
+   "aircraft": 8,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/1640-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T16:45:16Z",
+   "area": "lisbon",
+   "aircraft": 134,
+   "others": 15,
+   "file": "map/snapshots/2026-11-12/1645-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T16:50:16Z",
+   "area": "lisbon",
+   "aircraft": 128,
+   "others": 17,
+   "file": "map/snapshots/2026-11-12/1650-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T16:55:16Z",
+   "area": "lisbon",
+   "aircraft": 126,
+   "others": 13,
+   "file": "map/snapshots/2026-11-12/1655-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T17:00:15Z",
+   "area": "lisbon",
+   "aircraft": 121,
+   "others": 13,
+   "file": "map/snapshots/2026-11-12/1700-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T17:00:16Z",
+   "area": "funchal",
+   "aircraft": 9,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/1700-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T17:05:15Z",
+   "area": "lisbon",
+   "aircraft": 122,
+   "others": 13,
+   "file": "map/snapshots/2026-11-12/1705-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T17:10:16Z",
+   "area": "lisbon",
+   "aircraft": 120,
+   "others": 16,
+   "file": "map/snapshots/2026-11-12/1710-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T17:15:16Z",
+   "area": "lisbon",
+   "aircraft": 116,
+   "others": 17,
+   "file": "map/snapshots/2026-11-12/1715-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T17:20:16Z",
+   "area": "funchal",
+   "aircraft": 8,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/1720-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T17:20:16Z",
+   "area": "lisbon",
+   "aircraft": 119,
+   "others": 20,
+   "file": "map/snapshots/2026-11-12/1720-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T17:25:15Z",
+   "area": "lisbon",
+   "aircraft": 118,
+   "others": 15,
+   "file": "map/snapshots/2026-11-12/1725-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T17:30:15Z",
+   "area": "lisbon",
+   "aircraft": 122,
+   "others": 16,
+   "file": "map/snapshots/2026-11-12/1730-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T17:35:15Z",
+   "area": "lisbon",
+   "aircraft": 117,
+   "others": 13,
+   "file": "map/snapshots/2026-11-12/1735-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T17:40:15Z",
+   "area": "lisbon",
+   "aircraft": 117,
+   "others": 12,
+   "file": "map/snapshots/2026-11-12/1740-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T17:40:16Z",
+   "area": "funchal",
+   "aircraft": 7,
+   "others": 0,
+   "file": "map/snapshots/2026-11-12/1740-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T17:45:15Z",
+   "area": "lisbon",
+   "aircraft": 122,
+   "others": 13,
+   "file": "map/snapshots/2026-11-12/1745-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T17:50:15Z",
+   "area": "lisbon",
+   "aircraft": 114,
+   "others": 13,
+   "file": "map/snapshots/2026-11-12/1750-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T17:55:15Z",
+   "area": "lisbon",
+   "aircraft": 112,
+   "others": 15,
+   "file": "map/snapshots/2026-11-12/1755-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T18:00:15Z",
+   "area": "lisbon",
+   "aircraft": 123,
+   "others": 13,
+   "file": "map/snapshots/2026-11-12/1800-lisbon.json",
+   "dist_nm": 250,
+   "cadence_min": 5,
+   "measured": true
+  },
+  {
+   "t": "2026-11-12T18:00:16Z",
+   "area": "funchal",
+   "aircraft": 9,
+   "others": 1,
+   "file": "map/snapshots/2026-11-12/1800-funchal.json",
+   "dist_nm": 150,
+   "cadence_min": 20,
+   "measured": true
+  }
+ ],
+ "tracks": [
+  {
+   "hour": "2026-11-11T23:00:00Z",
+   "area": "funchal",
+   "cadence_min": 20,
+   "frames": 1,
+   "file": "tracks/funchal/2026-11-11/23.json",
+   "aircraft": 1
+  },
+  {
+   "hour": "2026-11-11T23:00:00Z",
+   "area": "lisbon",
+   "cadence_min": 5,
+   "frames": 4,
+   "file": "tracks/lisbon/2026-11-11/23.json",
+   "aircraft": 27
+  },
+  {
+   "hour": "2026-11-12T00:00:00Z",
+   "area": "funchal",
+   "cadence_min": 20,
+   "frames": 3,
+   "file": "tracks/funchal/2026-11-12/00.json",
+   "aircraft": 5
+  },
+  {
+   "hour": "2026-11-12T00:00:00Z",
+   "area": "lisbon",
+   "cadence_min": 5,
+   "frames": 12,
+   "file": "tracks/lisbon/2026-11-12/00.json",
+   "aircraft": 33
+  },
+  {
+   "hour": "2026-11-12T01:00:00Z",
+   "area": "funchal",
+   "cadence_min": 20,
+   "frames": 3,
+   "file": "tracks/funchal/2026-11-12/01.json",
+   "aircraft": 6
+  },
+  {
+   "hour": "2026-11-12T01:00:00Z",
+   "area": "lisbon",
+   "cadence_min": 5,
+   "frames": 12,
+   "file": "tracks/lisbon/2026-11-12/01.json",
+   "aircraft": 22
+  },
+  {
+   "hour": "2026-11-12T02:00:00Z",
+   "area": "funchal",
+   "cadence_min": 20,
+   "frames": 3,
+   "file": "tracks/funchal/2026-11-12/02.json",
+   "aircraft": 3
+  },
+  {
+   "hour": "2026-11-12T02:00:00Z",
+   "area": "lisbon",
+   "cadence_min": 5,
+   "frames": 12,
+   "file": "tracks/lisbon/2026-11-12/02.json",
+   "aircraft": 27
+  },
+  {
+   "hour": "2026-11-12T03:00:00Z",
+   "area": "funchal",
+   "cadence_min": 20,
+   "frames": 3,
+   "file": "tracks/funchal/2026-11-12/03.json",
+   "aircraft": 3
+  },
+  {
+   "hour": "2026-11-12T03:00:00Z",
+   "area": "lisbon",
+   "cadence_min": 5,
+   "frames": 12,
+   "file": "tracks/lisbon/2026-11-12/03.json",
+   "aircraft": 31
+  },
+  {
+   "hour": "2026-11-12T04:00:00Z",
+   "area": "funchal",
+   "cadence_min": 20,
+   "frames": 3,
+   "file": "tracks/funchal/2026-11-12/04.json",
+   "aircraft": 1
+  },
+  {
+   "hour": "2026-11-12T04:00:00Z",
+   "area": "lisbon",
+   "cadence_min": 5,
+   "frames": 12,
+   "file": "tracks/lisbon/2026-11-12/04.json",
+   "aircraft": 23
+  },
+  {
+   "hour": "2026-11-12T05:00:00Z",
+   "area": "funchal",
+   "cadence_min": 20,
+   "frames": 3,
+   "file": "tracks/funchal/2026-11-12/05.json",
+   "aircraft": 3
+  },
+  {
+   "hour": "2026-11-12T05:00:00Z",
+   "area": "lisbon",
+   "cadence_min": 5,
+   "frames": 12,
+   "file": "tracks/lisbon/2026-11-12/05.json",
+   "aircraft": 61
+  },
+  {
+   "hour": "2026-11-12T06:00:00Z",
+   "area": "funchal",
+   "cadence_min": 20,
+   "frames": 3,
+   "file": "tracks/funchal/2026-11-12/06.json",
+   "aircraft": 2
+  },
+  {
+   "hour": "2026-11-12T06:00:00Z",
+   "area": "lisbon",
+   "cadence_min": 5,
+   "frames": 12,
+   "file": "tracks/lisbon/2026-11-12/06.json",
+   "aircraft": 143
+  },
+  {
+   "hour": "2026-11-12T07:00:00Z",
+   "area": "funchal",
+   "cadence_min": 20,
+   "frames": 3,
+   "file": "tracks/funchal/2026-11-12/07.json",
+   "aircraft": 5
+  },
+  {
+   "hour": "2026-11-12T07:00:00Z",
+   "area": "lisbon",
+   "cadence_min": 5,
+   "frames": 12,
+   "file": "tracks/lisbon/2026-11-12/07.json",
+   "aircraft": 209
+  },
+  {
+   "hour": "2026-11-12T08:00:00Z",
+   "area": "funchal",
+   "cadence_min": 20,
+   "frames": 3,
+   "file": "tracks/funchal/2026-11-12/08.json",
+   "aircraft": 1
+  },
+  {
+   "hour": "2026-11-12T08:00:00Z",
+   "area": "lisbon",
+   "cadence_min": 5,
+   "frames": 12,
+   "file": "tracks/lisbon/2026-11-12/08.json",
+   "aircraft": 281
+  },
+  {
+   "hour": "2026-11-12T09:00:00Z",
+   "area": "funchal",
+   "cadence_min": 20,
+   "frames": 3,
+   "file": "tracks/funchal/2026-11-12/09.json",
+   "aircraft": 11
+  },
+  {
+   "hour": "2026-11-12T09:00:00Z",
+   "area": "lisbon",
+   "cadence_min": 5,
+   "frames": 12,
+   "file": "tracks/lisbon/2026-11-12/09.json",
+   "aircraft": 274
+  },
+  {
+   "hour": "2026-11-12T10:00:00Z",
+   "area": "funchal",
+   "cadence_min": 20,
+   "frames": 3,
+   "file": "tracks/funchal/2026-11-12/10.json",
+   "aircraft": 8
+  },
+  {
+   "hour": "2026-11-12T10:00:00Z",
+   "area": "lisbon",
+   "cadence_min": 5,
+   "frames": 12,
+   "file": "tracks/lisbon/2026-11-12/10.json",
+   "aircraft": 249
+  },
+  {
+   "hour": "2026-11-12T11:00:00Z",
+   "area": "funchal",
+   "cadence_min": 20,
+   "frames": 3,
+   "file": "tracks/funchal/2026-11-12/11.json",
+   "aircraft": 15
+  },
+  {
+   "hour": "2026-11-12T11:00:00Z",
+   "area": "lisbon",
+   "cadence_min": 5,
+   "frames": 12,
+   "file": "tracks/lisbon/2026-11-12/11.json",
+   "aircraft": 293
+  },
+  {
+   "hour": "2026-11-12T12:00:00Z",
+   "area": "funchal",
+   "cadence_min": 20,
+   "frames": 3,
+   "file": "tracks/funchal/2026-11-12/12.json",
+   "aircraft": 11
+  },
+  {
+   "hour": "2026-11-12T12:00:00Z",
+   "area": "lisbon",
+   "cadence_min": 5,
+   "frames": 12,
+   "file": "tracks/lisbon/2026-11-12/12.json",
+   "aircraft": 297
+  },
+  {
+   "hour": "2026-11-12T13:00:00Z",
+   "area": "funchal",
+   "cadence_min": 20,
+   "frames": 3,
+   "file": "tracks/funchal/2026-11-12/13.json",
+   "aircraft": 20
+  },
+  {
+   "hour": "2026-11-12T13:00:00Z",
+   "area": "lisbon",
+   "cadence_min": 5,
+   "frames": 12,
+   "file": "tracks/lisbon/2026-11-12/13.json",
+   "aircraft": 325
+  },
+  {
+   "hour": "2026-11-12T14:00:00Z",
+   "area": "funchal",
+   "cadence_min": 20,
+   "frames": 3,
+   "file": "tracks/funchal/2026-11-12/14.json",
+   "aircraft": 20
+  },
+  {
+   "hour": "2026-11-12T14:00:00Z",
+   "area": "lisbon",
+   "cadence_min": 5,
+   "frames": 12,
+   "file": "tracks/lisbon/2026-11-12/14.json",
+   "aircraft": 294
+  },
+  {
+   "hour": "2026-11-12T15:00:00Z",
+   "area": "funchal",
+   "cadence_min": 20,
+   "frames": 3,
+   "file": "tracks/funchal/2026-11-12/15.json",
+   "aircraft": 22
+  },
+  {
+   "hour": "2026-11-12T15:00:00Z",
+   "area": "lisbon",
+   "cadence_min": 5,
+   "frames": 12,
+   "file": "tracks/lisbon/2026-11-12/15.json",
+   "aircraft": 267
+  },
+  {
+   "hour": "2026-11-12T16:00:00Z",
+   "area": "funchal",
+   "cadence_min": 20,
+   "frames": 3,
+   "file": "tracks/funchal/2026-11-12/16.json",
+   "aircraft": 19
+  },
+  {
+   "hour": "2026-11-12T16:00:00Z",
+   "area": "lisbon",
+   "cadence_min": 5,
+   "frames": 12,
+   "file": "tracks/lisbon/2026-11-12/16.json",
+   "aircraft": 280
+  },
+  {
+   "hour": "2026-11-12T17:00:00Z",
+   "area": "funchal",
+   "cadence_min": 20,
+   "frames": 3,
+   "file": "tracks/funchal/2026-11-12/17.json",
+   "aircraft": 22
+  },
+  {
+   "hour": "2026-11-12T17:00:00Z",
+   "area": "lisbon",
+   "cadence_min": 5,
+   "frames": 12,
+   "file": "tracks/lisbon/2026-11-12/17.json",
+   "aircraft": 267
+  },
+  {
+   "hour": "2026-11-12T18:00:00Z",
+   "area": "funchal",
+   "cadence_min": 20,
+   "frames": 1,
+   "file": "tracks/funchal/2026-11-12/18.json",
+   "aircraft": 9
+  },
+  {
+   "hour": "2026-11-12T18:00:00Z",
+   "area": "lisbon",
+   "cadence_min": 5,
+   "frames": 1,
+   "file": "tracks/lisbon/2026-11-12/18.json",
+   "aircraft": 123
+  }
+ ],
+ "wind_hours": [
+  {
+   "t": "2026-11-10T12:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-10/12.json"
+  },
+  {
+   "t": "2026-11-10T12:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-10/12.json"
+  },
+  {
+   "t": "2026-11-10T12:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-10/12.json"
+  },
+  {
+   "t": "2026-11-10T12:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-10/12.json"
+  },
+  {
+   "t": "2026-11-10T13:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-10/13.json"
+  },
+  {
+   "t": "2026-11-10T13:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-10/13.json"
+  },
+  {
+   "t": "2026-11-10T13:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-10/13.json"
+  },
+  {
+   "t": "2026-11-10T13:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-10/13.json"
+  },
+  {
+   "t": "2026-11-10T14:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-10/14.json"
+  },
+  {
+   "t": "2026-11-10T14:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-10/14.json"
+  },
+  {
+   "t": "2026-11-10T14:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-10/14.json"
+  },
+  {
+   "t": "2026-11-10T14:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-10/14.json"
+  },
+  {
+   "t": "2026-11-10T15:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-10/15.json"
+  },
+  {
+   "t": "2026-11-10T15:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-10/15.json"
+  },
+  {
+   "t": "2026-11-10T15:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-10/15.json"
+  },
+  {
+   "t": "2026-11-10T15:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-10/15.json"
+  },
+  {
+   "t": "2026-11-10T16:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-10/16.json"
+  },
+  {
+   "t": "2026-11-10T16:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-10/16.json"
+  },
+  {
+   "t": "2026-11-10T16:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-10/16.json"
+  },
+  {
+   "t": "2026-11-10T16:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-10/16.json"
+  },
+  {
+   "t": "2026-11-10T17:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-10/17.json"
+  },
+  {
+   "t": "2026-11-10T17:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-10/17.json"
+  },
+  {
+   "t": "2026-11-10T17:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-10/17.json"
+  },
+  {
+   "t": "2026-11-10T17:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-10/17.json"
+  },
+  {
+   "t": "2026-11-10T18:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-10/18.json"
+  },
+  {
+   "t": "2026-11-10T18:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-10/18.json"
+  },
+  {
+   "t": "2026-11-10T18:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-10/18.json"
+  },
+  {
+   "t": "2026-11-10T18:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-10/18.json"
+  },
+  {
+   "t": "2026-11-10T19:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-10/19.json"
+  },
+  {
+   "t": "2026-11-10T19:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-10/19.json"
+  },
+  {
+   "t": "2026-11-10T19:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-10/19.json"
+  },
+  {
+   "t": "2026-11-10T19:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-10/19.json"
+  },
+  {
+   "t": "2026-11-10T20:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-10/20.json"
+  },
+  {
+   "t": "2026-11-10T20:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-10/20.json"
+  },
+  {
+   "t": "2026-11-10T20:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-10/20.json"
+  },
+  {
+   "t": "2026-11-10T20:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-10/20.json"
+  },
+  {
+   "t": "2026-11-10T21:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-10/21.json"
+  },
+  {
+   "t": "2026-11-10T21:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-10/21.json"
+  },
+  {
+   "t": "2026-11-10T21:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-10/21.json"
+  },
+  {
+   "t": "2026-11-10T21:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-10/21.json"
+  },
+  {
+   "t": "2026-11-10T22:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-10/22.json"
+  },
+  {
+   "t": "2026-11-10T22:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-10/22.json"
+  },
+  {
+   "t": "2026-11-10T22:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-10/22.json"
+  },
+  {
+   "t": "2026-11-10T22:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-10/22.json"
+  },
+  {
+   "t": "2026-11-10T23:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-10/23.json"
+  },
+  {
+   "t": "2026-11-10T23:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-10/23.json"
+  },
+  {
+   "t": "2026-11-10T23:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-10/23.json"
+  },
+  {
+   "t": "2026-11-10T23:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-10/23.json"
+  },
+  {
+   "t": "2026-11-11T00:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-11/00.json"
+  },
+  {
+   "t": "2026-11-11T00:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-11/00.json"
+  },
+  {
+   "t": "2026-11-11T00:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-11/00.json"
+  },
+  {
+   "t": "2026-11-11T00:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-11/00.json"
+  },
+  {
+   "t": "2026-11-11T01:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-11/01.json"
+  },
+  {
+   "t": "2026-11-11T01:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-11/01.json"
+  },
+  {
+   "t": "2026-11-11T01:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-11/01.json"
+  },
+  {
+   "t": "2026-11-11T01:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-11/01.json"
+  },
+  {
+   "t": "2026-11-11T02:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-11/02.json"
+  },
+  {
+   "t": "2026-11-11T02:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-11/02.json"
+  },
+  {
+   "t": "2026-11-11T02:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-11/02.json"
+  },
+  {
+   "t": "2026-11-11T02:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-11/02.json"
+  },
+  {
+   "t": "2026-11-11T03:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-11/03.json"
+  },
+  {
+   "t": "2026-11-11T03:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-11/03.json"
+  },
+  {
+   "t": "2026-11-11T03:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-11/03.json"
+  },
+  {
+   "t": "2026-11-11T03:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-11/03.json"
+  },
+  {
+   "t": "2026-11-11T04:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-11/04.json"
+  },
+  {
+   "t": "2026-11-11T04:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-11/04.json"
+  },
+  {
+   "t": "2026-11-11T04:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-11/04.json"
+  },
+  {
+   "t": "2026-11-11T04:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-11/04.json"
+  },
+  {
+   "t": "2026-11-11T05:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-11/05.json"
+  },
+  {
+   "t": "2026-11-11T05:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-11/05.json"
+  },
+  {
+   "t": "2026-11-11T05:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-11/05.json"
+  },
+  {
+   "t": "2026-11-11T05:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-11/05.json"
+  },
+  {
+   "t": "2026-11-11T06:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-11/06.json"
+  },
+  {
+   "t": "2026-11-11T06:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-11/06.json"
+  },
+  {
+   "t": "2026-11-11T06:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-11/06.json"
+  },
+  {
+   "t": "2026-11-11T06:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-11/06.json"
+  },
+  {
+   "t": "2026-11-11T07:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-11/07.json"
+  },
+  {
+   "t": "2026-11-11T07:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-11/07.json"
+  },
+  {
+   "t": "2026-11-11T07:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-11/07.json"
+  },
+  {
+   "t": "2026-11-11T07:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-11/07.json"
+  },
+  {
+   "t": "2026-11-11T08:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-11/08.json"
+  },
+  {
+   "t": "2026-11-11T08:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-11/08.json"
+  },
+  {
+   "t": "2026-11-11T08:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-11/08.json"
+  },
+  {
+   "t": "2026-11-11T08:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-11/08.json"
+  },
+  {
+   "t": "2026-11-11T09:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-11/09.json"
+  },
+  {
+   "t": "2026-11-11T09:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-11/09.json"
+  },
+  {
+   "t": "2026-11-11T09:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-11/09.json"
+  },
+  {
+   "t": "2026-11-11T09:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-11/09.json"
+  },
+  {
+   "t": "2026-11-11T10:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-11/10.json"
+  },
+  {
+   "t": "2026-11-11T10:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-11/10.json"
+  },
+  {
+   "t": "2026-11-11T10:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-11/10.json"
+  },
+  {
+   "t": "2026-11-11T10:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-11/10.json"
+  },
+  {
+   "t": "2026-11-11T11:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-11/11.json"
+  },
+  {
+   "t": "2026-11-11T11:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-11/11.json"
+  },
+  {
+   "t": "2026-11-11T11:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-11/11.json"
+  },
+  {
+   "t": "2026-11-11T11:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-11/11.json"
+  },
+  {
+   "t": "2026-11-11T12:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-11/12.json"
+  },
+  {
+   "t": "2026-11-11T12:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-11/12.json"
+  },
+  {
+   "t": "2026-11-11T12:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-11/12.json"
+  },
+  {
+   "t": "2026-11-11T12:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-11/12.json"
+  },
+  {
+   "t": "2026-11-11T13:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-11/13.json"
+  },
+  {
+   "t": "2026-11-11T13:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-11/13.json"
+  },
+  {
+   "t": "2026-11-11T13:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-11/13.json"
+  },
+  {
+   "t": "2026-11-11T13:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-11/13.json"
+  },
+  {
+   "t": "2026-11-11T14:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-11/14.json"
+  },
+  {
+   "t": "2026-11-11T14:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-11/14.json"
+  },
+  {
+   "t": "2026-11-11T14:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-11/14.json"
+  },
+  {
+   "t": "2026-11-11T14:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-11/14.json"
+  },
+  {
+   "t": "2026-11-11T15:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-11/15.json"
+  },
+  {
+   "t": "2026-11-11T15:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-11/15.json"
+  },
+  {
+   "t": "2026-11-11T15:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-11/15.json"
+  },
+  {
+   "t": "2026-11-11T15:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-11/15.json"
+  },
+  {
+   "t": "2026-11-11T16:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-11/16.json"
+  },
+  {
+   "t": "2026-11-11T16:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-11/16.json"
+  },
+  {
+   "t": "2026-11-11T16:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-11/16.json"
+  },
+  {
+   "t": "2026-11-11T16:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-11/16.json"
+  },
+  {
+   "t": "2026-11-11T17:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-11/17.json"
+  },
+  {
+   "t": "2026-11-11T17:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-11/17.json"
+  },
+  {
+   "t": "2026-11-11T17:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-11/17.json"
+  },
+  {
+   "t": "2026-11-11T17:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-11/17.json"
+  },
+  {
+   "t": "2026-11-11T18:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-11/18.json"
+  },
+  {
+   "t": "2026-11-11T18:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-11/18.json"
+  },
+  {
+   "t": "2026-11-11T18:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-11/18.json"
+  },
+  {
+   "t": "2026-11-11T18:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-11/18.json"
+  },
+  {
+   "t": "2026-11-11T19:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-11/19.json"
+  },
+  {
+   "t": "2026-11-11T19:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-11/19.json"
+  },
+  {
+   "t": "2026-11-11T19:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-11/19.json"
+  },
+  {
+   "t": "2026-11-11T19:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-11/19.json"
+  },
+  {
+   "t": "2026-11-11T20:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-11/20.json"
+  },
+  {
+   "t": "2026-11-11T20:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-11/20.json"
+  },
+  {
+   "t": "2026-11-11T20:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-11/20.json"
+  },
+  {
+   "t": "2026-11-11T20:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-11/20.json"
+  },
+  {
+   "t": "2026-11-11T21:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-11/21.json"
+  },
+  {
+   "t": "2026-11-11T21:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-11/21.json"
+  },
+  {
+   "t": "2026-11-11T21:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-11/21.json"
+  },
+  {
+   "t": "2026-11-11T21:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-11/21.json"
+  },
+  {
+   "t": "2026-11-11T22:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-11/22.json"
+  },
+  {
+   "t": "2026-11-11T22:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-11/22.json"
+  },
+  {
+   "t": "2026-11-11T22:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-11/22.json"
+  },
+  {
+   "t": "2026-11-11T22:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-11/22.json"
+  },
+  {
+   "t": "2026-11-11T23:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-11/23.json"
+  },
+  {
+   "t": "2026-11-11T23:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-11/23.json"
+  },
+  {
+   "t": "2026-11-11T23:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-11/23.json"
+  },
+  {
+   "t": "2026-11-11T23:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-11/23.json"
+  },
+  {
+   "t": "2026-11-12T00:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-12/00.json"
+  },
+  {
+   "t": "2026-11-12T00:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-12/00.json"
+  },
+  {
+   "t": "2026-11-12T00:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-12/00.json"
+  },
+  {
+   "t": "2026-11-12T00:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-12/00.json"
+  },
+  {
+   "t": "2026-11-12T01:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-12/01.json"
+  },
+  {
+   "t": "2026-11-12T01:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-12/01.json"
+  },
+  {
+   "t": "2026-11-12T01:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-12/01.json"
+  },
+  {
+   "t": "2026-11-12T01:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-12/01.json"
+  },
+  {
+   "t": "2026-11-12T02:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-12/02.json"
+  },
+  {
+   "t": "2026-11-12T02:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-12/02.json"
+  },
+  {
+   "t": "2026-11-12T02:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-12/02.json"
+  },
+  {
+   "t": "2026-11-12T02:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-12/02.json"
+  },
+  {
+   "t": "2026-11-12T03:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-12/03.json"
+  },
+  {
+   "t": "2026-11-12T03:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-12/03.json"
+  },
+  {
+   "t": "2026-11-12T03:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-12/03.json"
+  },
+  {
+   "t": "2026-11-12T03:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-12/03.json"
+  },
+  {
+   "t": "2026-11-12T04:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-12/04.json"
+  },
+  {
+   "t": "2026-11-12T04:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-12/04.json"
+  },
+  {
+   "t": "2026-11-12T04:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-12/04.json"
+  },
+  {
+   "t": "2026-11-12T04:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-12/04.json"
+  },
+  {
+   "t": "2026-11-12T05:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-12/05.json"
+  },
+  {
+   "t": "2026-11-12T05:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-12/05.json"
+  },
+  {
+   "t": "2026-11-12T05:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-12/05.json"
+  },
+  {
+   "t": "2026-11-12T05:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-12/05.json"
+  },
+  {
+   "t": "2026-11-12T06:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-12/06.json"
+  },
+  {
+   "t": "2026-11-12T06:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-12/06.json"
+  },
+  {
+   "t": "2026-11-12T06:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-12/06.json"
+  },
+  {
+   "t": "2026-11-12T06:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-12/06.json"
+  },
+  {
+   "t": "2026-11-12T07:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-12/07.json"
+  },
+  {
+   "t": "2026-11-12T07:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-12/07.json"
+  },
+  {
+   "t": "2026-11-12T07:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-12/07.json"
+  },
+  {
+   "t": "2026-11-12T07:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-12/07.json"
+  },
+  {
+   "t": "2026-11-12T08:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-12/08.json"
+  },
+  {
+   "t": "2026-11-12T08:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-12/08.json"
+  },
+  {
+   "t": "2026-11-12T08:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-12/08.json"
+  },
+  {
+   "t": "2026-11-12T08:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-12/08.json"
+  },
+  {
+   "t": "2026-11-12T09:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-12/09.json"
+  },
+  {
+   "t": "2026-11-12T09:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-12/09.json"
+  },
+  {
+   "t": "2026-11-12T09:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-12/09.json"
+  },
+  {
+   "t": "2026-11-12T09:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-12/09.json"
+  },
+  {
+   "t": "2026-11-12T10:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-12/10.json"
+  },
+  {
+   "t": "2026-11-12T10:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-12/10.json"
+  },
+  {
+   "t": "2026-11-12T10:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-12/10.json"
+  },
+  {
+   "t": "2026-11-12T10:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-12/10.json"
+  },
+  {
+   "t": "2026-11-12T11:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-12/11.json"
+  },
+  {
+   "t": "2026-11-12T11:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-12/11.json"
+  },
+  {
+   "t": "2026-11-12T11:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-12/11.json"
+  },
+  {
+   "t": "2026-11-12T11:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-12/11.json"
+  },
+  {
+   "t": "2026-11-12T12:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-12/12.json"
+  },
+  {
+   "t": "2026-11-12T12:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-12/12.json"
+  },
+  {
+   "t": "2026-11-12T12:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-12/12.json"
+  },
+  {
+   "t": "2026-11-12T12:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-12/12.json"
+  },
+  {
+   "t": "2026-11-12T13:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-12/13.json"
+  },
+  {
+   "t": "2026-11-12T13:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-12/13.json"
+  },
+  {
+   "t": "2026-11-12T13:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-12/13.json"
+  },
+  {
+   "t": "2026-11-12T13:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-12/13.json"
+  },
+  {
+   "t": "2026-11-12T14:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-12/14.json"
+  },
+  {
+   "t": "2026-11-12T14:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-12/14.json"
+  },
+  {
+   "t": "2026-11-12T14:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-12/14.json"
+  },
+  {
+   "t": "2026-11-12T14:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-12/14.json"
+  },
+  {
+   "t": "2026-11-12T15:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-12/15.json"
+  },
+  {
+   "t": "2026-11-12T15:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-12/15.json"
+  },
+  {
+   "t": "2026-11-12T15:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-12/15.json"
+  },
+  {
+   "t": "2026-11-12T15:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-12/15.json"
+  },
+  {
+   "t": "2026-11-12T16:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-12/16.json"
+  },
+  {
+   "t": "2026-11-12T16:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-12/16.json"
+  },
+  {
+   "t": "2026-11-12T16:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-12/16.json"
+  },
+  {
+   "t": "2026-11-12T16:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-12/16.json"
+  },
+  {
+   "t": "2026-11-12T17:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-12/17.json"
+  },
+  {
+   "t": "2026-11-12T17:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-12/17.json"
+  },
+  {
+   "t": "2026-11-12T17:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-12/17.json"
+  },
+  {
+   "t": "2026-11-12T17:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-12/17.json"
+  },
+  {
+   "t": "2026-11-12T18:00:00Z",
+   "area": "lisbon",
+   "forecast": false,
+   "file": "map/wind/lisbon/2026-11-12/18.json"
+  },
+  {
+   "t": "2026-11-12T18:00:00Z",
+   "area": "lisbon-close",
+   "forecast": false,
+   "file": "map/wind/lisbon-close/2026-11-12/18.json"
+  },
+  {
+   "t": "2026-11-12T18:00:00Z",
+   "area": "madeira",
+   "forecast": false,
+   "file": "map/wind/madeira/2026-11-12/18.json"
+  },
+  {
+   "t": "2026-11-12T18:00:00Z",
+   "area": "madeira-close",
+   "forecast": false,
+   "file": "map/wind/madeira-close/2026-11-12/18.json"
+  },
+  {
+   "t": "2026-11-12T19:00:00Z",
+   "area": "lisbon",
+   "forecast": true,
+   "file": "map/wind/lisbon/2026-11-12/19.json"
+  },
+  {
+   "t": "2026-11-12T19:00:00Z",
+   "area": "lisbon-close",
+   "forecast": true,
+   "file": "map/wind/lisbon-close/2026-11-12/19.json"
+  },
+  {
+   "t": "2026-11-12T19:00:00Z",
+   "area": "madeira",
+   "forecast": true,
+   "file": "map/wind/madeira/2026-11-12/19.json"
+  },
+  {
+   "t": "2026-11-12T19:00:00Z",
+   "area": "madeira-close",
+   "forecast": true,
+   "file": "map/wind/madeira-close/2026-11-12/19.json"
+  },
+  {
+   "t": "2026-11-12T20:00:00Z",
+   "area": "lisbon",
+   "forecast": true,
+   "file": "map/wind/lisbon/2026-11-12/20.json"
+  },
+  {
+   "t": "2026-11-12T20:00:00Z",
+   "area": "lisbon-close",
+   "forecast": true,
+   "file": "map/wind/lisbon-close/2026-11-12/20.json"
+  },
+  {
+   "t": "2026-11-12T20:00:00Z",
+   "area": "madeira",
+   "forecast": true,
+   "file": "map/wind/madeira/2026-11-12/20.json"
+  },
+  {
+   "t": "2026-11-12T20:00:00Z",
+   "area": "madeira-close",
+   "forecast": true,
+   "file": "map/wind/madeira-close/2026-11-12/20.json"
+  },
+  {
+   "t": "2026-11-12T21:00:00Z",
+   "area": "lisbon",
+   "forecast": true,
+   "file": "map/wind/lisbon/2026-11-12/21.json"
+  },
+  {
+   "t": "2026-11-12T21:00:00Z",
+   "area": "lisbon-close",
+   "forecast": true,
+   "file": "map/wind/lisbon-close/2026-11-12/21.json"
+  },
+  {
+   "t": "2026-11-12T21:00:00Z",
+   "area": "madeira",
+   "forecast": true,
+   "file": "map/wind/madeira/2026-11-12/21.json"
+  },
+  {
+   "t": "2026-11-12T21:00:00Z",
+   "area": "madeira-close",
+   "forecast": true,
+   "file": "map/wind/madeira-close/2026-11-12/21.json"
+  },
+  {
+   "t": "2026-11-12T22:00:00Z",
+   "area": "lisbon",
+   "forecast": true,
+   "file": "map/wind/lisbon/2026-11-12/22.json"
+  },
+  {
+   "t": "2026-11-12T22:00:00Z",
+   "area": "lisbon-close",
+   "forecast": true,
+   "file": "map/wind/lisbon-close/2026-11-12/22.json"
+  },
+  {
+   "t": "2026-11-12T22:00:00Z",
+   "area": "madeira",
+   "forecast": true,
+   "file": "map/wind/madeira/2026-11-12/22.json"
+  },
+  {
+   "t": "2026-11-12T22:00:00Z",
+   "area": "madeira-close",
+   "forecast": true,
+   "file": "map/wind/madeira-close/2026-11-12/22.json"
+  },
+  {
+   "t": "2026-11-12T23:00:00Z",
+   "area": "lisbon",
+   "forecast": true,
+   "file": "map/wind/lisbon/2026-11-12/23.json"
+  },
+  {
+   "t": "2026-11-12T23:00:00Z",
+   "area": "lisbon-close",
+   "forecast": true,
+   "file": "map/wind/lisbon-close/2026-11-12/23.json"
+  },
+  {
+   "t": "2026-11-12T23:00:00Z",
+   "area": "madeira",
+   "forecast": true,
+   "file": "map/wind/madeira/2026-11-12/23.json"
+  },
+  {
+   "t": "2026-11-12T23:00:00Z",
+   "area": "madeira-close",
+   "forecast": true,
+   "file": "map/wind/madeira-close/2026-11-12/23.json"
+  },
+  {
+   "t": "2026-11-13T00:00:00Z",
+   "area": "lisbon",
+   "forecast": true,
+   "file": "map/wind/lisbon/2026-11-13/00.json"
+  },
+  {
+   "t": "2026-11-13T00:00:00Z",
+   "area": "lisbon-close",
+   "forecast": true,
+   "file": "map/wind/lisbon-close/2026-11-13/00.json"
+  },
+  {
+   "t": "2026-11-13T00:00:00Z",
+   "area": "madeira",
+   "forecast": true,
+   "file": "map/wind/madeira/2026-11-13/00.json"
+  },
+  {
+   "t": "2026-11-13T00:00:00Z",
+   "area": "madeira-close",
+   "forecast": true,
+   "file": "map/wind/madeira-close/2026-11-13/00.json"
+  },
+  {
+   "t": "2026-11-13T01:00:00Z",
+   "area": "lisbon",
+   "forecast": true,
+   "file": "map/wind/lisbon/2026-11-13/01.json"
+  },
+  {
+   "t": "2026-11-13T01:00:00Z",
+   "area": "lisbon-close",
+   "forecast": true,
+   "file": "map/wind/lisbon-close/2026-11-13/01.json"
+  },
+  {
+   "t": "2026-11-13T01:00:00Z",
+   "area": "madeira",
+   "forecast": true,
+   "file": "map/wind/madeira/2026-11-13/01.json"
+  },
+  {
+   "t": "2026-11-13T01:00:00Z",
+   "area": "madeira-close",
+   "forecast": true,
+   "file": "map/wind/madeira-close/2026-11-13/01.json"
+  },
+  {
+   "t": "2026-11-13T02:00:00Z",
+   "area": "lisbon",
+   "forecast": true,
+   "file": "map/wind/lisbon/2026-11-13/02.json"
+  },
+  {
+   "t": "2026-11-13T02:00:00Z",
+   "area": "lisbon-close",
+   "forecast": true,
+   "file": "map/wind/lisbon-close/2026-11-13/02.json"
+  },
+  {
+   "t": "2026-11-13T02:00:00Z",
+   "area": "madeira",
+   "forecast": true,
+   "file": "map/wind/madeira/2026-11-13/02.json"
+  },
+  {
+   "t": "2026-11-13T02:00:00Z",
+   "area": "madeira-close",
+   "forecast": true,
+   "file": "map/wind/madeira-close/2026-11-13/02.json"
+  },
+  {
+   "t": "2026-11-13T03:00:00Z",
+   "area": "lisbon",
+   "forecast": true,
+   "file": "map/wind/lisbon/2026-11-13/03.json"
+  },
+  {
+   "t": "2026-11-13T03:00:00Z",
+   "area": "lisbon-close",
+   "forecast": true,
+   "file": "map/wind/lisbon-close/2026-11-13/03.json"
+  },
+  {
+   "t": "2026-11-13T03:00:00Z",
+   "area": "madeira",
+   "forecast": true,
+   "file": "map/wind/madeira/2026-11-13/03.json"
+  },
+  {
+   "t": "2026-11-13T03:00:00Z",
+   "area": "madeira-close",
+   "forecast": true,
+   "file": "map/wind/madeira-close/2026-11-13/03.json"
+  },
+  {
+   "t": "2026-11-13T04:00:00Z",
+   "area": "lisbon",
+   "forecast": true,
+   "file": "map/wind/lisbon/2026-11-13/04.json"
+  },
+  {
+   "t": "2026-11-13T04:00:00Z",
+   "area": "lisbon-close",
+   "forecast": true,
+   "file": "map/wind/lisbon-close/2026-11-13/04.json"
+  },
+  {
+   "t": "2026-11-13T04:00:00Z",
+   "area": "madeira",
+   "forecast": true,
+   "file": "map/wind/madeira/2026-11-13/04.json"
+  },
+  {
+   "t": "2026-11-13T04:00:00Z",
+   "area": "madeira-close",
+   "forecast": true,
+   "file": "map/wind/madeira-close/2026-11-13/04.json"
+  },
+  {
+   "t": "2026-11-13T05:00:00Z",
+   "area": "lisbon",
+   "forecast": true,
+   "file": "map/wind/lisbon/2026-11-13/05.json"
+  },
+  {
+   "t": "2026-11-13T05:00:00Z",
+   "area": "lisbon-close",
+   "forecast": true,
+   "file": "map/wind/lisbon-close/2026-11-13/05.json"
+  },
+  {
+   "t": "2026-11-13T05:00:00Z",
+   "area": "madeira",
+   "forecast": true,
+   "file": "map/wind/madeira/2026-11-13/05.json"
+  },
+  {
+   "t": "2026-11-13T05:00:00Z",
+   "area": "madeira-close",
+   "forecast": true,
+   "file": "map/wind/madeira-close/2026-11-13/05.json"
+  },
+  {
+   "t": "2026-11-13T06:00:00Z",
+   "area": "lisbon",
+   "forecast": true,
+   "file": "map/wind/lisbon/2026-11-13/06.json"
+  },
+  {
+   "t": "2026-11-13T06:00:00Z",
+   "area": "lisbon-close",
+   "forecast": true,
+   "file": "map/wind/lisbon-close/2026-11-13/06.json"
+  },
+  {
+   "t": "2026-11-13T06:00:00Z",
+   "area": "madeira",
+   "forecast": true,
+   "file": "map/wind/madeira/2026-11-13/06.json"
+  },
+  {
+   "t": "2026-11-13T06:00:00Z",
+   "area": "madeira-close",
+   "forecast": true,
+   "file": "map/wind/madeira-close/2026-11-13/06.json"
+  },
+  {
+   "t": "2026-11-13T07:00:00Z",
+   "area": "lisbon",
+   "forecast": true,
+   "file": "map/wind/lisbon/2026-11-13/07.json"
+  },
+  {
+   "t": "2026-11-13T07:00:00Z",
+   "area": "lisbon-close",
+   "forecast": true,
+   "file": "map/wind/lisbon-close/2026-11-13/07.json"
+  },
+  {
+   "t": "2026-11-13T07:00:00Z",
+   "area": "madeira",
+   "forecast": true,
+   "file": "map/wind/madeira/2026-11-13/07.json"
+  },
+  {
+   "t": "2026-11-13T07:00:00Z",
+   "area": "madeira-close",
+   "forecast": true,
+   "file": "map/wind/madeira-close/2026-11-13/07.json"
+  },
+  {
+   "t": "2026-11-13T08:00:00Z",
+   "area": "lisbon",
+   "forecast": true,
+   "file": "map/wind/lisbon/2026-11-13/08.json"
+  },
+  {
+   "t": "2026-11-13T08:00:00Z",
+   "area": "lisbon-close",
+   "forecast": true,
+   "file": "map/wind/lisbon-close/2026-11-13/08.json"
+  },
+  {
+   "t": "2026-11-13T08:00:00Z",
+   "area": "madeira",
+   "forecast": true,
+   "file": "map/wind/madeira/2026-11-13/08.json"
+  },
+  {
+   "t": "2026-11-13T08:00:00Z",
+   "area": "madeira-close",
+   "forecast": true,
+   "file": "map/wind/madeira-close/2026-11-13/08.json"
+  },
+  {
+   "t": "2026-11-13T09:00:00Z",
+   "area": "lisbon",
+   "forecast": true,
+   "file": "map/wind/lisbon/2026-11-13/09.json"
+  },
+  {
+   "t": "2026-11-13T09:00:00Z",
+   "area": "lisbon-close",
+   "forecast": true,
+   "file": "map/wind/lisbon-close/2026-11-13/09.json"
+  },
+  {
+   "t": "2026-11-13T09:00:00Z",
+   "area": "madeira",
+   "forecast": true,
+   "file": "map/wind/madeira/2026-11-13/09.json"
+  },
+  {
+   "t": "2026-11-13T09:00:00Z",
+   "area": "madeira-close",
+   "forecast": true,
+   "file": "map/wind/madeira-close/2026-11-13/09.json"
+  },
+  {
+   "t": "2026-11-13T10:00:00Z",
+   "area": "lisbon",
+   "forecast": true,
+   "file": "map/wind/lisbon/2026-11-13/10.json"
+  },
+  {
+   "t": "2026-11-13T10:00:00Z",
+   "area": "lisbon-close",
+   "forecast": true,
+   "file": "map/wind/lisbon-close/2026-11-13/10.json"
+  },
+  {
+   "t": "2026-11-13T10:00:00Z",
+   "area": "madeira",
+   "forecast": true,
+   "file": "map/wind/madeira/2026-11-13/10.json"
+  },
+  {
+   "t": "2026-11-13T10:00:00Z",
+   "area": "madeira-close",
+   "forecast": true,
+   "file": "map/wind/madeira-close/2026-11-13/10.json"
+  },
+  {
+   "t": "2026-11-13T11:00:00Z",
+   "area": "lisbon",
+   "forecast": true,
+   "file": "map/wind/lisbon/2026-11-13/11.json"
+  },
+  {
+   "t": "2026-11-13T11:00:00Z",
+   "area": "lisbon-close",
+   "forecast": true,
+   "file": "map/wind/lisbon-close/2026-11-13/11.json"
+  },
+  {
+   "t": "2026-11-13T11:00:00Z",
+   "area": "madeira",
+   "forecast": true,
+   "file": "map/wind/madeira/2026-11-13/11.json"
+  },
+  {
+   "t": "2026-11-13T11:00:00Z",
+   "area": "madeira-close",
+   "forecast": true,
+   "file": "map/wind/madeira-close/2026-11-13/11.json"
+  },
+  {
+   "t": "2026-11-13T12:00:00Z",
+   "area": "lisbon",
+   "forecast": true,
+   "file": "map/wind/lisbon/2026-11-13/12.json"
+  },
+  {
+   "t": "2026-11-13T12:00:00Z",
+   "area": "lisbon-close",
+   "forecast": true,
+   "file": "map/wind/lisbon-close/2026-11-13/12.json"
+  },
+  {
+   "t": "2026-11-13T12:00:00Z",
+   "area": "madeira",
+   "forecast": true,
+   "file": "map/wind/madeira/2026-11-13/12.json"
+  },
+  {
+   "t": "2026-11-13T12:00:00Z",
+   "area": "madeira-close",
+   "forecast": true,
+   "file": "map/wind/madeira-close/2026-11-13/12.json"
+  }
+ ],
+ "how": "../../../../flights/how.json",
+ "runways": "runways.json",
+ "crosswind": "crosswind.json",
+ "movements": "movements.json",
+ "map_files_note": "snapshots[].file, tracks[].file, wind_hours[].file, runways.json and movements.json are written by the build from the tracked files listed in files[] (tools/flights-map.mjs), so they are served beside this index but are not in git and not in api/v1.",
+ "about": "Every flights file: what it covers, its size and sha256. Replay: crosswind.json (the airports' wind on each runway, hour by hour, with departures), wind/<area>-<date>.json (the wind field), snapshots/<date>/<HH>.json (airline aircraft every 10 minutes within 40 nm of Lisbon and 30 nm of Madeira, from adsb.lol (ODbL), from 11 November 22:23 UTC), frames/<area>/<date>/<HH>.json (from 11 November about 23:45 UTC: Lisbon 250 nm every 5 minutes, Madeira 150 nm every 20, airline flights plus every other aircraft as an anonymous position; compact rows under a header of fields). Built beside it: map/snapshots/ (one per snapshot or frame) and tracks/<area>/<date>/<HH>.json (each airline flight's measured points in the hour, with first and last seen, altitude, speed, heading and phase now). Read README.md beside it for the shapes.",
+ "not_a_warning_service": "Not a warning service. No forecast or advice of ours. Your airline decides whether your flight runs: its site or app has the latest. For warnings follow IPMA and ANEPC.",
+ "attribution": [
+  "Aircraft positions: adsb.lol (https://adsb.lol), community ADS-B data, licensed under the Open Database License (ODbL) v1.0 (https://opendatacommons.org/licenses/odbl/1-0/). Our snapshots are a derived database offered under the same licence.",
+  "The OpenSky Network, https://opensky-network.org (M. Schäfer, M. Strohmeier, V. Lenders, I. Martinovic, M. Wilhelm, \"Bringing Up OpenSky: A Large-scale ADS-B Sensor Network for Research\", IPSN 2014). Used for research and non-commercial purposes, as its API documentation asks; its full terms page is still for a person to read (transport/sources.md).",
+  "Weather data by Open-Meteo.com, https://open-meteo.com, licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Its forecast API with past_days: the model's hourly analysis and short-range forecast, not observations."
+ ],
+ "readme": "incidents/2026-11-10-storm-charles/data/flights/README.md",
+ "files": [
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/crosswind.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/crosswind.json",
+   "kind": "crosswind",
+   "bytes": 226307,
+   "sha256": "5b6f2bb0b804ab7f",
+   "updated": "2026-11-12T18:00:27Z",
+   "covers": {
+    "from": "2026-11-10T18:00:00Z",
+    "to": "2026-11-12T12:00:00Z",
+    "airports": [
+     "LPPT",
+     "LPMA"
+    ]
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/funchal/2026-11-11/23.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-11/23.json",
+   "kind": "aircraft-frames",
+   "bytes": 3280,
+   "sha256": "e6a92694300b3b85",
+   "updated": "2026-11-11T23:42:10Z",
+   "covers": {
+    "area": "funchal",
+    "dist_nm": 150,
+    "from": "2026-11-11T23:42:09Z",
+    "to": "2026-11-11T23:42:09Z",
+    "frames": 1,
+    "airline_positions": 1,
+    "other_positions": 0
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/funchal/2026-11-12/00.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/00.json",
+   "kind": "aircraft-frames",
+   "bytes": 5083,
+   "sha256": "1d310b535fc909a5",
+   "updated": "2026-11-12T00:40:16Z",
+   "covers": {
+    "area": "funchal",
+    "dist_nm": 150,
+    "from": "2026-11-12T00:00:16Z",
+    "to": "2026-11-12T00:40:15Z",
+    "frames": 3,
+    "airline_positions": 6,
+    "other_positions": 0
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/funchal/2026-11-12/01.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/01.json",
+   "kind": "aircraft-frames",
+   "bytes": 5104,
+   "sha256": "04607d35b766727b",
+   "updated": "2026-11-12T01:40:16Z",
+   "covers": {
+    "area": "funchal",
+    "dist_nm": 150,
+    "from": "2026-11-12T01:00:16Z",
+    "to": "2026-11-12T01:40:16Z",
+    "frames": 3,
+    "airline_positions": 6,
+    "other_positions": 0
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/funchal/2026-11-12/02.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/02.json",
+   "kind": "aircraft-frames",
+   "bytes": 4829,
+   "sha256": "1dc0917bc6bf9b5a",
+   "updated": "2026-11-12T02:40:17Z",
+   "covers": {
+    "area": "funchal",
+    "dist_nm": 150,
+    "from": "2026-11-12T02:00:16Z",
+    "to": "2026-11-12T02:40:16Z",
+    "frames": 3,
+    "airline_positions": 3,
+    "other_positions": 1
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/funchal/2026-11-12/03.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/03.json",
+   "kind": "aircraft-frames",
+   "bytes": 4776,
+   "sha256": "c9f911c57318c198",
+   "updated": "2026-11-12T03:40:16Z",
+   "covers": {
+    "area": "funchal",
+    "dist_nm": 150,
+    "from": "2026-11-12T03:00:16Z",
+    "to": "2026-11-12T03:40:15Z",
+    "frames": 3,
+    "airline_positions": 3,
+    "other_positions": 0
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/funchal/2026-11-12/04.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/04.json",
+   "kind": "aircraft-frames",
+   "bytes": 4587,
+   "sha256": "02d30501488fb01e",
+   "updated": "2026-11-12T04:40:16Z",
+   "covers": {
+    "area": "funchal",
+    "dist_nm": 150,
+    "from": "2026-11-12T04:00:17Z",
+    "to": "2026-11-12T04:40:16Z",
+    "frames": 3,
+    "airline_positions": 1,
+    "other_positions": 0
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/funchal/2026-11-12/05.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/05.json",
+   "kind": "aircraft-frames",
+   "bytes": 4807,
+   "sha256": "8e370565f8885594",
+   "updated": "2026-11-12T05:40:16Z",
+   "covers": {
+    "area": "funchal",
+    "dist_nm": 150,
+    "from": "2026-11-12T05:00:16Z",
+    "to": "2026-11-12T05:40:16Z",
+    "frames": 3,
+    "airline_positions": 3,
+    "other_positions": 0
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/funchal/2026-11-12/06.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/06.json",
+   "kind": "aircraft-frames",
+   "bytes": 4681,
+   "sha256": "8c71f7811898cc00",
+   "updated": "2026-11-12T06:40:16Z",
+   "covers": {
+    "area": "funchal",
+    "dist_nm": 150,
+    "from": "2026-11-12T06:00:17Z",
+    "to": "2026-11-12T06:40:16Z",
+    "frames": 3,
+    "airline_positions": 2,
+    "other_positions": 0
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/funchal/2026-11-12/07.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/07.json",
+   "kind": "aircraft-frames",
+   "bytes": 4972,
+   "sha256": "e625b5f450150f89",
+   "updated": "2026-11-12T07:40:16Z",
+   "covers": {
+    "area": "funchal",
+    "dist_nm": 150,
+    "from": "2026-11-12T07:00:16Z",
+    "to": "2026-11-12T07:40:16Z",
+    "frames": 3,
+    "airline_positions": 5,
+    "other_positions": 0
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/funchal/2026-11-12/08.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/08.json",
+   "kind": "aircraft-frames",
+   "bytes": 4577,
+   "sha256": "91100c62616d7019",
+   "updated": "2026-11-12T08:40:16Z",
+   "covers": {
+    "area": "funchal",
+    "dist_nm": 150,
+    "from": "2026-11-12T08:00:17Z",
+    "to": "2026-11-12T08:40:16Z",
+    "frames": 3,
+    "airline_positions": 1,
+    "other_positions": 0
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/funchal/2026-11-12/09.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/09.json",
+   "kind": "aircraft-frames",
+   "bytes": 5536,
+   "sha256": "3c7a646f6c22fe37",
+   "updated": "2026-11-12T09:40:16Z",
+   "covers": {
+    "area": "funchal",
+    "dist_nm": 150,
+    "from": "2026-11-12T09:00:17Z",
+    "to": "2026-11-12T09:40:16Z",
+    "frames": 3,
+    "airline_positions": 11,
+    "other_positions": 0
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/funchal/2026-11-12/10.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/10.json",
+   "kind": "aircraft-frames",
+   "bytes": 5233,
+   "sha256": "50e4aca9b4ed6221",
+   "updated": "2026-11-12T10:40:16Z",
+   "covers": {
+    "area": "funchal",
+    "dist_nm": 150,
+    "from": "2026-11-12T10:00:16Z",
+    "to": "2026-11-12T10:40:16Z",
+    "frames": 3,
+    "airline_positions": 8,
+    "other_positions": 0
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/funchal/2026-11-12/11.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/11.json",
+   "kind": "aircraft-frames",
+   "bytes": 5923,
+   "sha256": "3ae58535be1cc0a5",
+   "updated": "2026-11-12T11:40:16Z",
+   "covers": {
+    "area": "funchal",
+    "dist_nm": 150,
+    "from": "2026-11-12T11:00:16Z",
+    "to": "2026-11-12T11:40:16Z",
+    "frames": 3,
+    "airline_positions": 15,
+    "other_positions": 1
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/funchal/2026-11-12/12.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/12.json",
+   "kind": "aircraft-frames",
+   "bytes": 5517,
+   "sha256": "89055a214c7903e1",
+   "updated": "2026-11-12T12:40:17Z",
+   "covers": {
+    "area": "funchal",
+    "dist_nm": 150,
+    "from": "2026-11-12T12:00:16Z",
+    "to": "2026-11-12T12:40:16Z",
+    "frames": 3,
+    "airline_positions": 11,
+    "other_positions": 0
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/funchal/2026-11-12/13.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/13.json",
+   "kind": "aircraft-frames",
+   "bytes": 6631,
+   "sha256": "6af9e7ea6427c2d3",
+   "updated": "2026-11-12T13:40:17Z",
+   "covers": {
+    "area": "funchal",
+    "dist_nm": 150,
+    "from": "2026-11-12T13:00:16Z",
+    "to": "2026-11-12T13:40:16Z",
+    "frames": 3,
+    "airline_positions": 23,
+    "other_positions": 3
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/funchal/2026-11-12/14.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/14.json",
+   "kind": "aircraft-frames",
+   "bytes": 6449,
+   "sha256": "824ba39ece0c8708",
+   "updated": "2026-11-12T14:40:16Z",
+   "covers": {
+    "area": "funchal",
+    "dist_nm": 150,
+    "from": "2026-11-12T14:00:17Z",
+    "to": "2026-11-12T14:40:16Z",
+    "frames": 3,
+    "airline_positions": 23,
+    "other_positions": 1
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/funchal/2026-11-12/15.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/15.json",
+   "kind": "aircraft-frames",
+   "bytes": 6430,
+   "sha256": "9de28e13c7cc20d2",
+   "updated": "2026-11-12T15:40:17Z",
+   "covers": {
+    "area": "funchal",
+    "dist_nm": 150,
+    "from": "2026-11-12T15:00:17Z",
+    "to": "2026-11-12T15:40:17Z",
+    "frames": 3,
+    "airline_positions": 22,
+    "other_positions": 1
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/funchal/2026-11-12/16.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/16.json",
+   "kind": "aircraft-frames",
+   "bytes": 6124,
+   "sha256": "f25d7b528db9e6f0",
+   "updated": "2026-11-12T16:40:17Z",
+   "covers": {
+    "area": "funchal",
+    "dist_nm": 150,
+    "from": "2026-11-12T16:00:20Z",
+    "to": "2026-11-12T16:40:17Z",
+    "frames": 3,
+    "airline_positions": 20,
+    "other_positions": 0
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/funchal/2026-11-12/17.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/17.json",
+   "kind": "aircraft-frames",
+   "bytes": 6479,
+   "sha256": "b64277a68852d28c",
+   "updated": "2026-11-12T17:40:17Z",
+   "covers": {
+    "area": "funchal",
+    "dist_nm": 150,
+    "from": "2026-11-12T17:00:16Z",
+    "to": "2026-11-12T17:40:16Z",
+    "frames": 3,
+    "airline_positions": 24,
+    "other_positions": 0
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/funchal/2026-11-12/18.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/18.json",
+   "kind": "aircraft-frames",
+   "bytes": 4134,
+   "sha256": "789631a9ee25dbb7",
+   "updated": "2026-11-12T18:00:16Z",
+   "covers": {
+    "area": "funchal",
+    "dist_nm": 150,
+    "from": "2026-11-12T18:00:16Z",
+    "to": "2026-11-12T18:00:16Z",
+    "frames": 1,
+    "airline_positions": 9,
+    "other_positions": 1
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/lisbon/2026-11-11/23.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-11/23.json",
+   "kind": "aircraft-frames",
+   "bytes": 13823,
+   "sha256": "bdb8673d11e91a7d",
+   "updated": "2026-11-11T23:55:16Z",
+   "covers": {
+    "area": "lisbon",
+    "dist_nm": 250,
+    "from": "2026-11-11T23:42:09Z",
+    "to": "2026-11-11T23:55:15Z",
+    "frames": 4,
+    "airline_positions": 81,
+    "other_positions": 46
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/lisbon/2026-11-12/00.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/00.json",
+   "kind": "aircraft-frames",
+   "bytes": 29422,
+   "sha256": "460a3b966bd74c1d",
+   "updated": "2026-11-12T00:55:16Z",
+   "covers": {
+    "area": "lisbon",
+    "dist_nm": 250,
+    "from": "2026-11-12T00:00:16Z",
+    "to": "2026-11-12T00:55:16Z",
+    "frames": 12,
+    "airline_positions": 183,
+    "other_positions": 110
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/lisbon/2026-11-12/01.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/01.json",
+   "kind": "aircraft-frames",
+   "bytes": 22952,
+   "sha256": "fe417be8812817d9",
+   "updated": "2026-11-12T01:55:16Z",
+   "covers": {
+    "area": "lisbon",
+    "dist_nm": 250,
+    "from": "2026-11-12T01:00:16Z",
+    "to": "2026-11-12T01:55:15Z",
+    "frames": 12,
+    "airline_positions": 110,
+    "other_positions": 94
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/lisbon/2026-11-12/02.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/02.json",
+   "kind": "aircraft-frames",
+   "bytes": 24243,
+   "sha256": "59ec2f4e222862ef",
+   "updated": "2026-11-12T02:55:16Z",
+   "covers": {
+    "area": "lisbon",
+    "dist_nm": 250,
+    "from": "2026-11-12T02:00:15Z",
+    "to": "2026-11-12T02:55:15Z",
+    "frames": 12,
+    "airline_positions": 142,
+    "other_positions": 71
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/lisbon/2026-11-12/03.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/03.json",
+   "kind": "aircraft-frames",
+   "bytes": 25232,
+   "sha256": "dd861d611b6aece1",
+   "updated": "2026-11-12T03:55:15Z",
+   "covers": {
+    "area": "lisbon",
+    "dist_nm": 250,
+    "from": "2026-11-12T03:00:15Z",
+    "to": "2026-11-12T03:55:15Z",
+    "frames": 12,
+    "airline_positions": 155,
+    "other_positions": 69
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/lisbon/2026-11-12/04.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/04.json",
+   "kind": "aircraft-frames",
+   "bytes": 21820,
+   "sha256": "6459adc7a905742b",
+   "updated": "2026-11-12T04:55:16Z",
+   "covers": {
+    "area": "lisbon",
+    "dist_nm": 250,
+    "from": "2026-11-12T04:00:16Z",
+    "to": "2026-11-12T04:55:16Z",
+    "frames": 12,
+    "airline_positions": 109,
+    "other_positions": 71
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/lisbon/2026-11-12/05.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/05.json",
+   "kind": "aircraft-frames",
+   "bytes": 33089,
+   "sha256": "2d3510d4c0b85c43",
+   "updated": "2026-11-12T05:55:15Z",
+   "covers": {
+    "area": "lisbon",
+    "dist_nm": 250,
+    "from": "2026-11-12T05:00:16Z",
+    "to": "2026-11-12T05:55:15Z",
+    "frames": 12,
+    "airline_positions": 252,
+    "other_positions": 73
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/lisbon/2026-11-12/06.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/06.json",
+   "kind": "aircraft-frames",
+   "bytes": 73273,
+   "sha256": "2f3b3350538c51d7",
+   "updated": "2026-11-12T06:55:15Z",
+   "covers": {
+    "area": "lisbon",
+    "dist_nm": 250,
+    "from": "2026-11-12T06:00:16Z",
+    "to": "2026-11-12T06:55:15Z",
+    "frames": 12,
+    "airline_positions": 740,
+    "other_positions": 126
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/lisbon/2026-11-12/07.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/07.json",
+   "kind": "aircraft-frames",
+   "bytes": 94727,
+   "sha256": "ae087e055674c3b6",
+   "updated": "2026-11-12T07:55:15Z",
+   "covers": {
+    "area": "lisbon",
+    "dist_nm": 250,
+    "from": "2026-11-12T07:00:16Z",
+    "to": "2026-11-12T07:55:15Z",
+    "frames": 12,
+    "airline_positions": 1017,
+    "other_positions": 132
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/lisbon/2026-11-12/08.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/08.json",
+   "kind": "aircraft-frames",
+   "bytes": 131184,
+   "sha256": "b99ea16a71511450",
+   "updated": "2026-11-12T08:55:15Z",
+   "covers": {
+    "area": "lisbon",
+    "dist_nm": 250,
+    "from": "2026-11-12T08:00:16Z",
+    "to": "2026-11-12T08:55:15Z",
+    "frames": 12,
+    "airline_positions": 1481,
+    "other_positions": 153
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/lisbon/2026-11-12/09.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/09.json",
+   "kind": "aircraft-frames",
+   "bytes": 136407,
+   "sha256": "b5aa0d7c77659a62",
+   "updated": "2026-11-12T09:55:16Z",
+   "covers": {
+    "area": "lisbon",
+    "dist_nm": 250,
+    "from": "2026-11-12T09:00:16Z",
+    "to": "2026-11-12T09:55:16Z",
+    "frames": 12,
+    "airline_positions": 1502,
+    "other_positions": 222
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/lisbon/2026-11-12/10.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/10.json",
+   "kind": "aircraft-frames",
+   "bytes": 124839,
+   "sha256": "09319e7f101492b5",
+   "updated": "2026-11-12T10:55:16Z",
+   "covers": {
+    "area": "lisbon",
+    "dist_nm": 250,
+    "from": "2026-11-12T10:00:16Z",
+    "to": "2026-11-12T10:55:16Z",
+    "frames": 12,
+    "airline_positions": 1303,
+    "other_positions": 297
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/lisbon/2026-11-12/11.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/11.json",
+   "kind": "aircraft-frames",
+   "bytes": 142116,
+   "sha256": "e670853feac030eb",
+   "updated": "2026-11-12T11:55:16Z",
+   "covers": {
+    "area": "lisbon",
+    "dist_nm": 250,
+    "from": "2026-11-12T11:00:16Z",
+    "to": "2026-11-12T11:55:16Z",
+    "frames": 12,
+    "airline_positions": 1550,
+    "other_positions": 263
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/lisbon/2026-11-12/12.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/12.json",
+   "kind": "aircraft-frames",
+   "bytes": 138467,
+   "sha256": "444ecdd00bec90cd",
+   "updated": "2026-11-12T12:55:16Z",
+   "covers": {
+    "area": "lisbon",
+    "dist_nm": 250,
+    "from": "2026-11-12T12:00:16Z",
+    "to": "2026-11-12T12:55:16Z",
+    "frames": 12,
+    "airline_positions": 1535,
+    "other_positions": 220
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/lisbon/2026-11-12/13.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/13.json",
+   "kind": "aircraft-frames",
+   "bytes": 150634,
+   "sha256": "91da19a54dd5040e",
+   "updated": "2026-11-12T13:55:16Z",
+   "covers": {
+    "area": "lisbon",
+    "dist_nm": 250,
+    "from": "2026-11-12T13:00:16Z",
+    "to": "2026-11-12T13:55:15Z",
+    "frames": 12,
+    "airline_positions": 1701,
+    "other_positions": 217
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/lisbon/2026-11-12/14.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/14.json",
+   "kind": "aircraft-frames",
+   "bytes": 140017,
+   "sha256": "975aff7ac0cc8068",
+   "updated": "2026-11-12T14:55:16Z",
+   "covers": {
+    "area": "lisbon",
+    "dist_nm": 250,
+    "from": "2026-11-12T14:00:16Z",
+    "to": "2026-11-12T14:55:15Z",
+    "frames": 12,
+    "airline_positions": 1555,
+    "other_positions": 227
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/lisbon/2026-11-12/15.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/15.json",
+   "kind": "aircraft-frames",
+   "bytes": 129122,
+   "sha256": "ac2149eb6c9a433b",
+   "updated": "2026-11-12T15:55:16Z",
+   "covers": {
+    "area": "lisbon",
+    "dist_nm": 250,
+    "from": "2026-11-12T15:00:16Z",
+    "to": "2026-11-12T15:55:16Z",
+    "frames": 12,
+    "airline_positions": 1415,
+    "other_positions": 233
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/lisbon/2026-11-12/16.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/16.json",
+   "kind": "aircraft-frames",
+   "bytes": 138220,
+   "sha256": "bb0644f37f1d9441",
+   "updated": "2026-11-12T16:55:16Z",
+   "covers": {
+    "area": "lisbon",
+    "dist_nm": 250,
+    "from": "2026-11-12T16:00:17Z",
+    "to": "2026-11-12T16:55:16Z",
+    "frames": 12,
+    "airline_positions": 1538,
+    "other_positions": 225
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/lisbon/2026-11-12/17.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/17.json",
+   "kind": "aircraft-frames",
+   "bytes": 126573,
+   "sha256": "2662c0ef2bf0de84",
+   "updated": "2026-11-12T17:55:16Z",
+   "covers": {
+    "area": "lisbon",
+    "dist_nm": 250,
+    "from": "2026-11-12T17:00:15Z",
+    "to": "2026-11-12T17:55:15Z",
+    "frames": 12,
+    "airline_positions": 1420,
+    "other_positions": 176
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/frames/lisbon/2026-11-12/18.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/18.json",
+   "kind": "aircraft-frames",
+   "bytes": 14075,
+   "sha256": "5a6b23ea17ab1ab7",
+   "updated": "2026-11-12T18:00:16Z",
+   "covers": {
+    "area": "lisbon",
+    "dist_nm": 250,
+    "from": "2026-11-12T18:00:15Z",
+    "to": "2026-11-12T18:00:15Z",
+    "frames": 1,
+    "airline_positions": 123,
+    "other_positions": 13
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/snapshots/2026-11-11/22.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-11/22.json",
+   "kind": "aircraft-snapshots",
+   "bytes": 20504,
+   "sha256": "971846bad4123da3",
+   "updated": "2026-11-11T22:50:16Z",
+   "covers": {
+    "from": "2026-11-11T22:23:42Z",
+    "to": "2026-11-11T22:50:15Z",
+    "snapshots": 10,
+    "ok": 10,
+    "airline_positions": 37
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/snapshots/2026-11-11/23.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-11/23.json",
+   "kind": "aircraft-snapshots",
+   "bytes": 27407,
+   "sha256": "fcc7500398217d0e",
+   "updated": "2026-11-11T23:50:16Z",
+   "covers": {
+    "from": "2026-11-11T23:00:17Z",
+    "to": "2026-11-11T23:50:16Z",
+    "snapshots": 15,
+    "ok": 15,
+    "airline_positions": 41
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/snapshots/2026-11-12/00.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/00.json",
+   "kind": "aircraft-snapshots",
+   "bytes": 13460,
+   "sha256": "621bef7a0dd6c600",
+   "updated": "2026-11-12T00:50:15Z",
+   "covers": {
+    "from": "2026-11-12T00:00:16Z",
+    "to": "2026-11-12T00:50:15Z",
+    "snapshots": 9,
+    "ok": 9,
+    "airline_positions": 8
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/snapshots/2026-11-12/01.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/01.json",
+   "kind": "aircraft-snapshots",
+   "bytes": 12414,
+   "sha256": "edcb3df614df088f",
+   "updated": "2026-11-12T01:50:16Z",
+   "covers": {
+    "from": "2026-11-12T01:00:16Z",
+    "to": "2026-11-12T01:50:16Z",
+    "snapshots": 9,
+    "ok": 9,
+    "airline_positions": 4
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/snapshots/2026-11-12/02.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/02.json",
+   "kind": "aircraft-snapshots",
+   "bytes": 13589,
+   "sha256": "5be4a72d64f953b9",
+   "updated": "2026-11-12T02:50:16Z",
+   "covers": {
+    "from": "2026-11-12T02:00:16Z",
+    "to": "2026-11-12T02:50:16Z",
+    "snapshots": 9,
+    "ok": 9,
+    "airline_positions": 9
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/snapshots/2026-11-12/03.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/03.json",
+   "kind": "aircraft-snapshots",
+   "bytes": 12394,
+   "sha256": "e4833a8ea9099660",
+   "updated": "2026-11-12T03:50:16Z",
+   "covers": {
+    "from": "2026-11-12T03:00:16Z",
+    "to": "2026-11-12T03:50:15Z",
+    "snapshots": 9,
+    "ok": 9,
+    "airline_positions": 4
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/snapshots/2026-11-12/04.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/04.json",
+   "kind": "aircraft-snapshots",
+   "bytes": 13567,
+   "sha256": "c48b1fb352b236bd",
+   "updated": "2026-11-12T04:50:15Z",
+   "covers": {
+    "from": "2026-11-12T04:00:17Z",
+    "to": "2026-11-12T04:50:15Z",
+    "snapshots": 9,
+    "ok": 9,
+    "airline_positions": 9
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/snapshots/2026-11-12/05.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/05.json",
+   "kind": "aircraft-snapshots",
+   "bytes": 17964,
+   "sha256": "a61ee56dfaf71cc8",
+   "updated": "2026-11-12T05:50:16Z",
+   "covers": {
+    "from": "2026-11-12T05:00:16Z",
+    "to": "2026-11-12T05:50:15Z",
+    "snapshots": 9,
+    "ok": 9,
+    "airline_positions": 27
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/snapshots/2026-11-12/06.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/06.json",
+   "kind": "aircraft-snapshots",
+   "bytes": 27209,
+   "sha256": "b5d88805880b7a89",
+   "updated": "2026-11-12T06:50:16Z",
+   "covers": {
+    "from": "2026-11-12T06:00:17Z",
+    "to": "2026-11-12T06:50:15Z",
+    "snapshots": 9,
+    "ok": 9,
+    "airline_positions": 65
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/snapshots/2026-11-12/07.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/07.json",
+   "kind": "aircraft-snapshots",
+   "bytes": 32846,
+   "sha256": "d146a4e992bfbd36",
+   "updated": "2026-11-12T07:50:16Z",
+   "covers": {
+    "from": "2026-11-12T07:00:16Z",
+    "to": "2026-11-12T07:50:16Z",
+    "snapshots": 9,
+    "ok": 9,
+    "airline_positions": 89
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/snapshots/2026-11-12/08.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/08.json",
+   "kind": "aircraft-snapshots",
+   "bytes": 37798,
+   "sha256": "8c8c105c414c98d2",
+   "updated": "2026-11-12T08:50:16Z",
+   "covers": {
+    "from": "2026-11-12T08:00:17Z",
+    "to": "2026-11-12T08:50:15Z",
+    "snapshots": 9,
+    "ok": 9,
+    "airline_positions": 110
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/snapshots/2026-11-12/09.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/09.json",
+   "kind": "aircraft-snapshots",
+   "bytes": 39615,
+   "sha256": "51d2a594bf1aa01f",
+   "updated": "2026-11-12T09:50:16Z",
+   "covers": {
+    "from": "2026-11-12T09:00:17Z",
+    "to": "2026-11-12T09:50:16Z",
+    "snapshots": 9,
+    "ok": 9,
+    "airline_positions": 117
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/snapshots/2026-11-12/10.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/10.json",
+   "kind": "aircraft-snapshots",
+   "bytes": 38653,
+   "sha256": "76d04ae39f981e75",
+   "updated": "2026-11-12T10:50:16Z",
+   "covers": {
+    "from": "2026-11-12T10:00:16Z",
+    "to": "2026-11-12T10:50:16Z",
+    "snapshots": 9,
+    "ok": 9,
+    "airline_positions": 113
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/snapshots/2026-11-12/11.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/11.json",
+   "kind": "aircraft-snapshots",
+   "bytes": 40473,
+   "sha256": "a8c6ea30e0ecc665",
+   "updated": "2026-11-12T11:50:16Z",
+   "covers": {
+    "from": "2026-11-12T11:00:16Z",
+    "to": "2026-11-12T11:50:16Z",
+    "snapshots": 9,
+    "ok": 9,
+    "airline_positions": 120
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/snapshots/2026-11-12/12.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/12.json",
+   "kind": "aircraft-snapshots",
+   "bytes": 39427,
+   "sha256": "f194d1881ca8d905",
+   "updated": "2026-11-12T12:50:16Z",
+   "covers": {
+    "from": "2026-11-12T12:00:16Z",
+    "to": "2026-11-12T12:50:16Z",
+    "snapshots": 9,
+    "ok": 9,
+    "airline_positions": 116
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/snapshots/2026-11-12/13.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/13.json",
+   "kind": "aircraft-snapshots",
+   "bytes": 41741,
+   "sha256": "0e85d7e93a0dca28",
+   "updated": "2026-11-12T13:50:16Z",
+   "covers": {
+    "from": "2026-11-12T13:00:16Z",
+    "to": "2026-11-12T13:50:16Z",
+    "snapshots": 9,
+    "ok": 9,
+    "airline_positions": 126
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/snapshots/2026-11-12/14.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/14.json",
+   "kind": "aircraft-snapshots",
+   "bytes": 35115,
+   "sha256": "50cd329b457fe143",
+   "updated": "2026-11-12T14:50:16Z",
+   "covers": {
+    "from": "2026-11-12T14:00:17Z",
+    "to": "2026-11-12T14:50:16Z",
+    "snapshots": 9,
+    "ok": 9,
+    "airline_positions": 99
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/snapshots/2026-11-12/15.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/15.json",
+   "kind": "aircraft-snapshots",
+   "bytes": 42568,
+   "sha256": "0bab363d04cdf311",
+   "updated": "2026-11-12T15:50:16Z",
+   "covers": {
+    "from": "2026-11-12T15:00:17Z",
+    "to": "2026-11-12T15:50:16Z",
+    "snapshots": 9,
+    "ok": 9,
+    "airline_positions": 130
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/snapshots/2026-11-12/16.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/16.json",
+   "kind": "aircraft-snapshots",
+   "bytes": 45314,
+   "sha256": "2380b6e1866222ee",
+   "updated": "2026-11-12T16:50:16Z",
+   "covers": {
+    "from": "2026-11-12T16:00:20Z",
+    "to": "2026-11-12T16:50:16Z",
+    "snapshots": 9,
+    "ok": 9,
+    "airline_positions": 142
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/snapshots/2026-11-12/17.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/17.json",
+   "kind": "aircraft-snapshots",
+   "bytes": 43337,
+   "sha256": "781032b7b8acfa33",
+   "updated": "2026-11-12T17:50:16Z",
+   "covers": {
+    "from": "2026-11-12T17:00:16Z",
+    "to": "2026-11-12T17:50:15Z",
+    "snapshots": 9,
+    "ok": 9,
+    "airline_positions": 134
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/snapshots/2026-11-12/18.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/18.json",
+   "kind": "aircraft-snapshots",
+   "bytes": 9707,
+   "sha256": "6b0a39a9c659453a",
+   "updated": "2026-11-12T18:00:16Z",
+   "covers": {
+    "from": "2026-11-12T18:00:15Z",
+    "to": "2026-11-12T18:00:16Z",
+    "snapshots": 2,
+    "ok": 2,
+    "airline_positions": 23
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/summaries/2026-11-11/22.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/summaries/2026-11-11/22.json",
+   "kind": "model-summary",
+   "bytes": 3139,
+   "sha256": "29a95dd642135292",
+   "updated": "2026-11-11T23:44:30Z",
+   "covers": {
+    "hour": "2026-11-11T22:00:00Z",
+    "passed": true
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/summaries/2026-11-11/23.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/summaries/2026-11-11/23.json",
+   "kind": "model-summary",
+   "bytes": 3103,
+   "sha256": "5d8b4ab13e0222f8",
+   "updated": "2026-11-12T00:06:08Z",
+   "covers": {
+    "hour": "2026-11-11T23:00:00Z",
+    "passed": true
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/summaries/2026-11-12/01.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/summaries/2026-11-12/01.json",
+   "kind": "model-summary",
+   "bytes": 3000,
+   "sha256": "c91dad7cf8ba0883",
+   "updated": "2026-11-12T02:00:44Z",
+   "covers": {
+    "hour": "2026-11-12T01:00:00Z",
+    "passed": true
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/summaries/2026-11-12/02.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/summaries/2026-11-12/02.json",
+   "kind": "model-summary",
+   "bytes": 2925,
+   "sha256": "05eb7869a0d29d42",
+   "updated": "2026-11-12T03:00:27Z",
+   "covers": {
+    "hour": "2026-11-12T02:00:00Z",
+    "passed": true
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/summaries/2026-11-12/03.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/summaries/2026-11-12/03.json",
+   "kind": "model-summary",
+   "bytes": 2919,
+   "sha256": "b5ec3872ebec8fb5",
+   "updated": "2026-11-12T04:00:29Z",
+   "covers": {
+    "hour": "2026-11-12T03:00:00Z",
+    "passed": true
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/summaries/2026-11-12/04.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/summaries/2026-11-12/04.json",
+   "kind": "model-summary",
+   "bytes": 2972,
+   "sha256": "fc415c97abfea17c",
+   "updated": "2026-11-12T05:00:35Z",
+   "covers": {
+    "hour": "2026-11-12T04:00:00Z",
+    "passed": true
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/summaries/2026-11-12/05.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/summaries/2026-11-12/05.json",
+   "kind": "model-summary",
+   "bytes": 3078,
+   "sha256": "1d61b926eac4ec7e",
+   "updated": "2026-11-12T06:00:49Z",
+   "covers": {
+    "hour": "2026-11-12T05:00:00Z",
+    "passed": true
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/summaries/2026-11-12/08.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/summaries/2026-11-12/08.json",
+   "kind": "model-summary",
+   "bytes": 3064,
+   "sha256": "56915fc462ff1c64",
+   "updated": "2026-11-12T09:00:29Z",
+   "covers": {
+    "hour": "2026-11-12T08:00:00Z",
+    "passed": true
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/summaries/2026-11-12/10.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/summaries/2026-11-12/10.json",
+   "kind": "model-summary",
+   "bytes": 3055,
+   "sha256": "1b878396c08d7bf5",
+   "updated": "2026-11-12T11:00:28Z",
+   "covers": {
+    "hour": "2026-11-12T10:00:00Z",
+    "passed": true
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/summaries/2026-11-12/11.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/summaries/2026-11-12/11.json",
+   "kind": "model-summary",
+   "bytes": 3314,
+   "sha256": "ca817b55c6c428d3",
+   "updated": "2026-11-12T12:12:47Z",
+   "covers": {
+    "hour": "2026-11-12T11:00:00Z",
+    "passed": true
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/summaries/2026-11-12/12.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/summaries/2026-11-12/12.json",
+   "kind": "model-summary",
+   "bytes": 3263,
+   "sha256": "4cffa4c94f082ff2",
+   "updated": "2026-11-12T13:00:46Z",
+   "covers": {
+    "hour": "2026-11-12T12:00:00Z",
+    "passed": true
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/summaries/2026-11-12/17.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/summaries/2026-11-12/17.json",
+   "kind": "model-summary",
+   "bytes": 3038,
+   "sha256": "ca612d962dc7f98e",
+   "updated": "2026-11-12T18:00:30Z",
+   "covers": {
+    "hour": "2026-11-12T17:00:00Z",
+    "passed": true
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/wind/lisbon-2026-11-10.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/wind/lisbon-2026-11-10.json",
+   "kind": "wind-field",
+   "bytes": 95287,
+   "sha256": "4dc024f4fe24d32b",
+   "updated": "2026-11-12T06:00:28Z",
+   "covers": {
+    "area": "lisbon",
+    "from": "2026-11-10T12:00:00Z",
+    "to": "2026-11-10T23:00:00Z",
+    "hours": 12,
+    "points": 396,
+    "forecast_from": null
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/wind/lisbon-2026-11-11.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/wind/lisbon-2026-11-11.json",
+   "kind": "wind-field",
+   "bytes": 173470,
+   "sha256": "635485b37f5bb537",
+   "updated": "2026-11-12T06:00:28Z",
+   "covers": {
+    "area": "lisbon",
+    "from": "2026-11-11T00:00:00Z",
+    "to": "2026-11-11T23:00:00Z",
+    "hours": 24,
+    "points": 396,
+    "forecast_from": null
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/wind/lisbon-2026-11-12.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/wind/lisbon-2026-11-12.json",
+   "kind": "wind-field",
+   "bytes": 47280,
+   "sha256": "6d37ae0161e5eaa5",
+   "updated": "2026-11-12T18:00:28Z",
+   "covers": {
+    "area": "lisbon",
+    "from": "2026-11-12T00:00:00Z",
+    "to": "2026-11-12T23:00:00Z",
+    "hours": 24,
+    "points": 99,
+    "forecast_from": "2026-11-12T19:00:00Z"
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/wind/lisbon-2026-11-13.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/wind/lisbon-2026-11-13.json",
+   "kind": "wind-field",
+   "bytes": 27947,
+   "sha256": "ae7085e14539554f",
+   "updated": "2026-11-12T18:00:28Z",
+   "covers": {
+    "area": "lisbon",
+    "from": "2026-11-13T00:00:00Z",
+    "to": "2026-11-13T12:00:00Z",
+    "hours": 13,
+    "points": 99,
+    "forecast_from": "2026-11-13T00:00:00Z"
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/wind/lisbon-close-2026-11-10.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/wind/lisbon-close-2026-11-10.json",
+   "kind": "wind-field",
+   "bytes": 31809,
+   "sha256": "9a42bf2e38156185",
+   "updated": "2026-11-12T12:12:45Z",
+   "covers": {
+    "area": "lisbon-close",
+    "from": "2026-11-10T12:00:00Z",
+    "to": "2026-11-10T23:00:00Z",
+    "hours": 12,
+    "points": 121,
+    "forecast_from": null
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/wind/lisbon-close-2026-11-11.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/wind/lisbon-close-2026-11-11.json",
+   "kind": "wind-field",
+   "bytes": 56699,
+   "sha256": "0d2f10815f0260de",
+   "updated": "2026-11-12T12:12:45Z",
+   "covers": {
+    "area": "lisbon-close",
+    "from": "2026-11-11T00:00:00Z",
+    "to": "2026-11-11T23:00:00Z",
+    "hours": 24,
+    "points": 121,
+    "forecast_from": null
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/wind/lisbon-close-2026-11-12.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/wind/lisbon-close-2026-11-12.json",
+   "kind": "wind-field",
+   "bytes": 56911,
+   "sha256": "e7e6d5d9a55715bc",
+   "updated": "2026-11-12T18:00:29Z",
+   "covers": {
+    "area": "lisbon-close",
+    "from": "2026-11-12T00:00:00Z",
+    "to": "2026-11-12T23:00:00Z",
+    "hours": 24,
+    "points": 121,
+    "forecast_from": "2026-11-12T19:00:00Z"
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/wind/lisbon-close-2026-11-13.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/wind/lisbon-close-2026-11-13.json",
+   "kind": "wind-field",
+   "bytes": 33584,
+   "sha256": "13170b77503819b8",
+   "updated": "2026-11-12T18:00:29Z",
+   "covers": {
+    "area": "lisbon-close",
+    "from": "2026-11-13T00:00:00Z",
+    "to": "2026-11-13T12:00:00Z",
+    "hours": 13,
+    "points": 121,
+    "forecast_from": "2026-11-13T00:00:00Z"
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/wind/madeira-2026-11-10.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/wind/madeira-2026-11-10.json",
+   "kind": "wind-field",
+   "bytes": 43065,
+   "sha256": "093fc0fc83db1507",
+   "updated": "2026-11-12T12:12:44Z",
+   "covers": {
+    "area": "madeira",
+    "from": "2026-11-10T12:00:00Z",
+    "to": "2026-11-10T23:00:00Z",
+    "hours": 12,
+    "points": 168,
+    "forecast_from": null
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/wind/madeira-2026-11-11.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/wind/madeira-2026-11-11.json",
+   "kind": "wind-field",
+   "bytes": 78085,
+   "sha256": "7b347bd93ba1f680",
+   "updated": "2026-11-12T12:12:44Z",
+   "covers": {
+    "area": "madeira",
+    "from": "2026-11-11T00:00:00Z",
+    "to": "2026-11-11T23:00:00Z",
+    "hours": 24,
+    "points": 168,
+    "forecast_from": null
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/wind/madeira-2026-11-12.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/wind/madeira-2026-11-12.json",
+   "kind": "wind-field",
+   "bytes": 22479,
+   "sha256": "67a7fed63be88b83",
+   "updated": "2026-11-12T18:00:29Z",
+   "covers": {
+    "area": "madeira",
+    "from": "2026-11-12T00:00:00Z",
+    "to": "2026-11-12T23:00:00Z",
+    "hours": 24,
+    "points": 42,
+    "forecast_from": "2026-11-12T19:00:00Z"
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/wind/madeira-2026-11-13.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/wind/madeira-2026-11-13.json",
+   "kind": "wind-field",
+   "bytes": 13609,
+   "sha256": "44c90d5114f3ee97",
+   "updated": "2026-11-12T18:00:29Z",
+   "covers": {
+    "area": "madeira",
+    "from": "2026-11-13T00:00:00Z",
+    "to": "2026-11-13T12:00:00Z",
+    "hours": 13,
+    "points": 42,
+    "forecast_from": "2026-11-13T00:00:00Z"
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/wind/madeira-close-2026-11-10.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/wind/madeira-close-2026-11-10.json",
+   "kind": "wind-field",
+   "bytes": 9018,
+   "sha256": "bdea995fa5eae93f",
+   "updated": "2026-11-12T12:12:45Z",
+   "covers": {
+    "area": "madeira-close",
+    "from": "2026-11-10T12:00:00Z",
+    "to": "2026-11-10T23:00:00Z",
+    "hours": 12,
+    "points": 24,
+    "forecast_from": null
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/wind/madeira-close-2026-11-11.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/wind/madeira-close-2026-11-11.json",
+   "kind": "wind-field",
+   "bytes": 14827,
+   "sha256": "fb3be33bd921d0cf",
+   "updated": "2026-11-12T12:12:45Z",
+   "covers": {
+    "area": "madeira-close",
+    "from": "2026-11-11T00:00:00Z",
+    "to": "2026-11-11T23:00:00Z",
+    "hours": 24,
+    "points": 24,
+    "forecast_from": null
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/wind/madeira-close-2026-11-12.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/wind/madeira-close-2026-11-12.json",
+   "kind": "wind-field",
+   "bytes": 14589,
+   "sha256": "a7d25085752e2b37",
+   "updated": "2026-11-12T18:00:29Z",
+   "covers": {
+    "area": "madeira-close",
+    "from": "2026-11-12T00:00:00Z",
+    "to": "2026-11-12T23:00:00Z",
+    "hours": 24,
+    "points": 24,
+    "forecast_from": "2026-11-12T19:00:00Z"
+   }
+  },
+  {
+   "path": "incidents/2026-11-10-storm-charles/data/flights/wind/madeira-close-2026-11-13.json",
+   "api": "api/v1/2026-11-10-storm-charles/flights/wind/madeira-close-2026-11-13.json",
+   "kind": "wind-field",
+   "bytes": 9327,
+   "sha256": "3c7f80f906f15113",
+   "updated": "2026-11-12T18:00:29Z",
+   "covers": {
+    "area": "madeira-close",
+    "from": "2026-11-13T00:00:00Z",
+    "to": "2026-11-13T12:00:00Z",
+    "hours": 13,
+    "points": 24,
+    "forecast_from": "2026-11-13T00:00:00Z"
+   }
+  }
+ ]
+}

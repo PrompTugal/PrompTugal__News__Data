@@ -1,0 +1,219 @@
+{
+ "by": "incident.flights@web-summit.dinis",
+ "updated": "2026-11-12T10:40:16Z",
+ "label": "fact",
+ "area": "funchal",
+ "area_def": {
+  "name": "Madeira and its approaches: within 150 nautical miles (278 km) of 32.75 N, 16.85 W (LPMA, Funchal)",
+  "lat": 32.75,
+  "lon": -16.85,
+  "dist_nm": 150
+ },
+ "hour": "2026-11-12T10:00:00Z",
+ "about": "Aircraft adsb.lol's community receivers saw in Madeira and its approaches: within 150 nautical miles (278 km) of 32.75 N, 16.85 W (LPMA, Funchal), 2026-11-12 10:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, which is in our vault). rows: airline flights (an airline's ICAO code plus a flight number), one array per aircraft in the order of fields. others: every other aircraft, one array in the order of other_fields: its ADS-B emitter category and position only, with no callsign, no ICAO24 address, no registration and no type, so nothing names a private owner; altitude rounded to 100 ft. Aircraft whose owners asked to be withheld (PIA or LADD in adsb.lol's data) are dropped and only counted. pos_age_s: how old each position was when read. Nothing between frames is measured: a line or a moving dot drawn between two frames is a drawing (hypothesis), not a position.",
+ "not_a_warning_service": "Not a warning service. No forecast or advice of ours. Your airline decides whether your flight runs: its site or app has the latest. For warnings follow IPMA and ANEPC.",
+ "attribution": "Aircraft positions: adsb.lol (https://adsb.lol), community ADS-B data, licensed under the Open Database License (ODbL) v1.0 (https://opendatacommons.org/licenses/odbl/1-0/). Our snapshots are a derived database offered under the same licence.",
+ "licence": "ODbL 1.0",
+ "fields": [
+  "callsign",
+  "airline",
+  "type",
+  "lat",
+  "lon",
+  "alt_ft",
+  "on_ground",
+  "gs_kt",
+  "track_deg",
+  "vrate_fpm",
+  "pos_age_s"
+ ],
+ "other_fields": [
+  "category",
+  "lat",
+  "lon",
+  "alt_ft",
+  "on_ground",
+  "gs_kt",
+  "track_deg"
+ ],
+ "units": {
+  "alt_ft": "feet, barometric (geometric when barometric is absent); null on the ground",
+  "gs_kt": "knots",
+  "track_deg": "degrees true, clockwise from north",
+  "vrate_fpm": "feet per minute, + climbing",
+  "pos_age_s": "seconds since the position was received",
+  "category": "ADS-B emitter category (A1 light, A2 small, A3 large, A4 B757, A5 heavy, A7 rotorcraft, B1 glider, B6 drone, C1-C3 surface; null not sent)"
+ },
+ "cadence_min": 20,
+ "cadence": "one frame every 20 minutes (a missed or failed poll leaves a gap; each frame's t is when it was read)",
+ "airlines": {
+  "RYR": "Ryanair",
+  "EWG": "Eurowings",
+  "JAF": "TUI fly Belgium",
+  "EDW": "Edelweiss",
+  "TAM": "LATAM Brasil"
+ },
+ "frames": [
+  {
+   "t": "2026-11-12T10:00:16Z",
+   "request": {
+    "url": "https://api.adsb.lol/v2/lat/32.75/lon/-16.85/dist/150",
+    "status": 200,
+    "bytes": 812,
+    "sha256": "86bc839fe2a0ec8e",
+    "read": "2026-11-12T10:00:16Z",
+    "response_ms": 473,
+    "raw": "flights vault: adsblol/2026-11-12/2026-11-12T100016Z-86bc839fe2a0.body",
+    "rate_limit_remaining": 499
+   },
+   "airline": 1,
+   "other": 0,
+   "withheld_by_owner_request": 0,
+   "rows": [
+    [
+     "RYR12BQ",
+     "RYR",
+     "B38M",
+     31.1479,
+     -16.5269,
+     37000,
+     false,
+     414,
+     190,
+     0,
+     0.3
+    ]
+   ],
+   "others": []
+  },
+  {
+   "t": "2026-11-12T10:20:16Z",
+   "request": {
+    "url": "https://api.adsb.lol/v2/lat/32.75/lon/-16.85/dist/150",
+    "status": 200,
+    "bytes": 1481,
+    "sha256": "a0e625d653052a85",
+    "read": "2026-11-12T10:20:16Z",
+    "response_ms": 465,
+    "raw": "flights vault: adsblol/2026-11-12/2026-11-12T102016Z-a0e625d65305.body",
+    "rate_limit_remaining": 492
+   },
+   "airline": 2,
+   "other": 0,
+   "withheld_by_owner_request": 0,
+   "rows": [
+    [
+     "EWG7A",
+     "EWG",
+     "A20N",
+     31.6154,
+     -16.4084,
+     37025,
+     false,
+     410,
+     191,
+     64,
+     0.1
+    ],
+    [
+     "JAF7YC",
+     "JAF",
+     "B38M",
+     31.7739,
+     -16.3807,
+     37000,
+     false,
+     389,
+     196,
+     0,
+     0.1
+    ]
+   ],
+   "others": []
+  },
+  {
+   "t": "2026-11-12T10:40:16Z",
+   "request": {
+    "url": "https://api.adsb.lol/v2/lat/32.75/lon/-16.85/dist/150",
+    "status": 200,
+    "bytes": 3526,
+    "sha256": "decfad66b0d945ad",
+    "read": "2026-11-12T10:40:16Z",
+    "response_ms": 748,
+    "raw": "flights vault: adsblol/2026-11-12/2026-11-12T104016Z-decfad66b0d9.body",
+    "rate_limit_remaining": 499
+   },
+   "airline": 5,
+   "other": 0,
+   "withheld_by_owner_request": 0,
+   "rows": [
+    [
+     "EDW97WL",
+     "EDW",
+     "A320",
+     30.8935,
+     -15.6665,
+     35975,
+     false,
+     511,
+     38,
+     0,
+     0.1
+    ],
+    [
+     "EWG7532",
+     "EWG",
+     "A320",
+     32.1579,
+     -14.637,
+     35000,
+     false,
+     384,
+     214,
+     0,
+     0.8
+    ],
+    [
+     "RYR1YL",
+     "RYR",
+     "B38M",
+     31.39,
+     -15.2119,
+     37000,
+     false,
+     397,
+     209,
+     0,
+     0.4
+    ],
+    [
+     "RYR281W",
+     "RYR",
+     "B38M",
+     32.2712,
+     -14.5653,
+     37000,
+     false,
+     375,
+     213,
+     0,
+     0.1
+    ],
+    [
+     "TAM8084",
+     "TAM",
+     "B77W",
+     31.6266,
+     -15.8813,
+     34000,
+     false,
+     527,
+     25,
+     0,
+     0.1
+    ]
+   ],
+   "others": []
+  }
+ ]
+}

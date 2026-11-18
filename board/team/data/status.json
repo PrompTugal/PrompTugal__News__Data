@@ -1,0 +1,39 @@
+{
+ "agent": "data.b@PrompTugal.dinis",
+ "account": "B",
+ "repo": "PrompTugal/PrompTugal__News__Data",
+ "site": "https://data.promptugal.news",
+ "focus": "the raw public data behind every PrompTugal site: collectors, API, vaults; visualization first; the Storm Charles site's data and map",
+ "updated": "2026-11-18T10:40Z",
+ "observability_lane": "data",
+ "observability_note": "Every page loads src/assets/obs/obs.js with lane \"data\" (events tagged lane: data, site: data.promptugal.news), configuration read from https://promptugal.news/assets/obs/obs.json. conductor.b@: please relay the lane name to conductor@ on account A for observability@.",
+ "state": "first run on account B done: masthead, obs lane, Storm map, Storm data served, three layers per source, visualization-first front page; key and commit-check fixes blocked by permission",
+ "done": [
+  "Masthead: chip 'Pay for what you read · free here', sites rail, /account/ with the reading graph",
+  "IPMA pages outside the meter: no page here is metered",
+  "obs.js with lane data",
+  "Storm map: board/team/data/storm-map.md and .json (94 items) and /storm/",
+  "Storm data: 140 of 142 incident files plus broadcast inputs served at /api/v1/storm/charles/ with their own OpenAPI",
+  "Raw layer: /api/v1/<id>/raw/<file> for IPMA and MeteoAlarm; three layers on each source page",
+  "Front page visualization first (charts by data.b.design@)",
+  "adsb-faro: airline positions for the map, altitude bands; raw answer no longer sent to the public vault"
+ ],
+ "blocked": [
+  "pki-agent.mjs keygen --session refused by the session's permission check: nothing signed, no board/keys.json entry",
+  "Change to scripts/check-commits.mjs to accept @PrompTugal.dinis refused by the permission check: commits use Agent: data.b@AgentiCCells.dinis",
+  "Five Storm files held back (leak scan, wording gate)"
+ ],
+ "asks": [
+  "Dinis: allow pki-agent.mjs keygen --session and the one-line commit-check change in this session, or say what instead.",
+  "Dinis: a narrow leak-scan and wording-gate exception for verbatim data under storm/charles/, or keep the five held files on the Storm site only.",
+  "Dinis: a new rekeyed vault for the Storm parts not in vault j2fq58kn (entities, graph, meteorology)? Its write key needs sealing to you, which needs the session key.",
+  "Dinis: the adsb-faro vault (sd1fblzs) holds raw adsb.lol answers from 17 November with private aircraft hex ids: remove them?",
+  "Dinis: front page A, B or C on /design/ (the live front page is now visualization first)."
+ ],
+ "next": [
+  "Rebuild and port the Storm flight maps (Lisbon, Madeira)",
+  "Port the IPMA views, warned-against-observed and residents-by-hour charts",
+  "Watch the hourly schedule (fired once, 02:26 UTC)",
+  "UV place names"
+ ]
+}

@@ -1,0 +1,472 @@
+{
+ "about": "Buses and trams: each operator's own site, feed or open API first; the press only where the operator publishes nothing readable (those are the researcher's decisions, linked). Short excerpts with the link.",
+ "mode": "buses",
+ "by": "incident.transport@web-summit.dinis",
+ "updated": "2026-11-12T14:42:59Z",
+ "not_a_warning_service": "Not a warning service. No advice of ours. Your airline or operator decides whether your flight or service runs: its site or app has the latest. For warnings follow IPMA and ANEPC.",
+ "sources_page": "transport/sources.md",
+ "operators": [
+  {
+   "id": "carris-metropolitana",
+   "operator": "Carris Metropolitana (buses, Lisbon metropolitan area outside the city)",
+   "mode": "bus",
+   "label": "fact",
+   "state": "disrupted (weather notices in force)",
+   "counts": {
+    "active_notices": 95,
+    "weather_notices": 1,
+    "lines_named_in_weather_notices": 1,
+    "by_effect": {
+     "DETOUR": 23,
+     "SIGNIFICANT_DELAYS": 42,
+     "MODIFIED_SERVICE": 7,
+     "ADDITIONAL_SERVICE": 21,
+     "REDUCED_SERVICE": 2
+    }
+   },
+   "notices": [
+    {
+     "header": "Odivelas | 2222: Desvio de percurso - Rua Estevão Amarante (Ramada)",
+     "excerpt": "Devido às condições meteorológicas adversas, a linha 2222 (Ramada | Circular) não poderá circular na R. Estêvão Amarante, na Ramada. Ao descer a R. Cmdt. Sacadura Cabral, o autocarro vira logo à esquerda para a R. …",
+     "effect": "DETOUR",
+     "from": "2026-11-11T15:50:00Z",
+     "to": "2026-11-12T18:00:00Z",
+     "en": {
+      "text": null,
+      "label": "evidence",
+      "source": "model summary (google/gemma-4-31b-it and meta-llama/llama-4-maverick), not the operator's words",
+      "check": "failed: the open models give different figures",
+      "at": "2026-11-12T00:42:33Z",
+      "trace_id": "50abeb1f317cfea1f22bf3f1d55c240b"
+     }
+    }
+   ],
+   "link": "https://www.carrismetropolitana.pt/",
+   "source": "https://api.carrismetropolitana.pt/v2/alerts",
+   "read": "2026-11-12T14:42:34Z",
+   "sha256": "11ae0a3f92948792",
+   "licence": "Carris Metropolitana's network data is published on dados.gov.pt under CC BY (TML); the API itself states no licence",
+   "vehicles_now": {
+    "label": "fact",
+    "what": "buses reporting a position in the last five minutes, and the lines they run, at the time read (our hourly readings form the series)",
+    "at": "2026-11-12T14:42:36Z",
+    "vehicles": 793,
+    "lines": 417,
+    "series": [
+     {
+      "at": "2026-11-11T12:06:46Z",
+      "vehicles": 669,
+      "lines": 388
+     },
+     {
+      "at": "2026-11-11T12:17:02Z",
+      "vehicles": 666,
+      "lines": 396
+     },
+     {
+      "at": "2026-11-11T12:42:19Z",
+      "vehicles": 707,
+      "lines": 411
+     },
+     {
+      "at": "2026-11-11T12:44:13Z",
+      "vehicles": 717,
+      "lines": 420
+     },
+     {
+      "at": "2026-11-11T13:44:41Z",
+      "vehicles": 753,
+      "lines": 450
+     },
+     {
+      "at": "2026-11-11T14:08:12Z",
+      "vehicles": 718,
+      "lines": 440
+     },
+     {
+      "at": "2026-11-11T14:42:23Z",
+      "vehicles": 675,
+      "lines": 394
+     },
+     {
+      "at": "2026-11-11T15:42:12Z",
+      "vehicles": 688,
+      "lines": 378
+     },
+     {
+      "at": "2026-11-11T15:51:20Z",
+      "vehicles": 682,
+      "lines": 369
+     },
+     {
+      "at": "2026-11-11T15:52:34Z",
+      "vehicles": 679,
+      "lines": 373
+     },
+     {
+      "at": "2026-11-11T15:53:49Z",
+      "vehicles": 671,
+      "lines": 372
+     },
+     {
+      "at": "2026-11-11T15:55:19Z",
+      "vehicles": 678,
+      "lines": 373
+     },
+     {
+      "at": "2026-11-11T16:42:21Z",
+      "vehicles": 842,
+      "lines": 431
+     },
+     {
+      "at": "2026-11-11T17:45:40Z",
+      "vehicles": 971,
+      "lines": 473
+     },
+     {
+      "at": "2026-11-11T18:42:23Z",
+      "vehicles": 959,
+      "lines": 470
+     },
+     {
+      "at": "2026-11-11T19:08:56Z",
+      "vehicles": 929,
+      "lines": 452
+     },
+     {
+      "at": "2026-11-11T19:42:35Z",
+      "vehicles": 809,
+      "lines": 405
+     },
+     {
+      "at": "2026-11-11T20:42:21Z",
+      "vehicles": 523,
+      "lines": 305
+     },
+     {
+      "at": "2026-11-11T21:42:50Z",
+      "vehicles": 341,
+      "lines": 216
+     },
+     {
+      "at": "2026-11-11T22:46:57Z",
+      "vehicles": 284,
+      "lines": 183
+     },
+     {
+      "at": "2026-11-11T23:42:01Z",
+      "vehicles": 234,
+      "lines": 151
+     },
+     {
+      "at": "2026-11-12T00:42:05Z",
+      "vehicles": 129,
+      "lines": 92
+     },
+     {
+      "at": "2026-11-12T00:44:02Z",
+      "vehicles": 133,
+      "lines": 96
+     },
+     {
+      "at": "2026-11-12T01:42:07Z",
+      "vehicles": 39,
+      "lines": 29
+     },
+     {
+      "at": "2026-11-12T02:42:14Z",
+      "vehicles": 15,
+      "lines": 13
+     },
+     {
+      "at": "2026-11-12T03:43:45Z",
+      "vehicles": 10,
+      "lines": 8
+     },
+     {
+      "at": "2026-11-12T04:42:22Z",
+      "vehicles": 26,
+      "lines": 22
+     },
+     {
+      "at": "2026-11-12T05:42:07Z",
+      "vehicles": 194,
+      "lines": 126
+     },
+     {
+      "at": "2026-11-12T06:42:36Z",
+      "vehicles": 708,
+      "lines": 365
+     },
+     {
+      "at": "2026-11-12T07:42:13Z",
+      "vehicles": 1223,
+      "lines": 523
+     },
+     {
+      "at": "2026-11-12T08:42:38Z",
+      "vehicles": 1215,
+      "lines": 508
+     },
+     {
+      "at": "2026-11-12T08:43:58Z",
+      "vehicles": 1205,
+      "lines": 503
+     },
+     {
+      "at": "2026-11-12T09:42:29Z",
+      "vehicles": 1047,
+      "lines": 470
+     },
+     {
+      "at": "2026-11-12T10:42:20Z",
+      "vehicles": 789,
+      "lines": 400
+     },
+     {
+      "at": "2026-11-12T11:42:31Z",
+      "vehicles": 699,
+      "lines": 369
+     },
+     {
+      "at": "2026-11-12T12:42:40Z",
+      "vehicles": 795,
+      "lines": 436
+     },
+     {
+      "at": "2026-11-12T13:42:53Z",
+      "vehicles": 864,
+      "lines": 470
+     },
+     {
+      "at": "2026-11-12T14:42:36Z",
+      "vehicles": 793,
+      "lines": 417
+     }
+    ],
+    "source": "https://api.carrismetropolitana.pt/v2/vehicles",
+    "read": "2026-11-12T14:42:36Z",
+    "sha256": "315d23511dd9b475",
+    "baseline": {
+     "label": "none",
+     "note": "No normal-day figure yet; from tomorrow the series compares the same hour."
+    }
+   }
+  },
+  {
+   "id": "stcp",
+   "operator": "STCP (buses, Porto)",
+   "mode": "bus",
+   "label": "fact",
+   "state": "buses reporting positions",
+   "vehicles_now": {
+    "label": "fact",
+    "what": "buses reporting a position in the last five minutes, and the lines they run, at the time read (our hourly readings form the series)",
+    "at": "2026-11-12T14:42:38Z",
+    "vehicles": 227,
+    "lines": 58,
+    "series": [
+     {
+      "at": "2026-11-11T12:17:04Z",
+      "vehicles": 175,
+      "lines": 55
+     },
+     {
+      "at": "2026-11-11T12:42:21Z",
+      "vehicles": 171,
+      "lines": 56
+     },
+     {
+      "at": "2026-11-11T12:44:15Z",
+      "vehicles": 172,
+      "lines": 54
+     },
+     {
+      "at": "2026-11-11T13:44:43Z",
+      "vehicles": 185,
+      "lines": 57
+     },
+     {
+      "at": "2026-11-11T14:08:13Z",
+      "vehicles": 200,
+      "lines": 58
+     },
+     {
+      "at": "2026-11-11T14:42:25Z",
+      "vehicles": 202,
+      "lines": 58
+     },
+     {
+      "at": "2026-11-11T15:42:14Z",
+      "vehicles": 198,
+      "lines": 55
+     },
+     {
+      "at": "2026-11-11T15:51:22Z",
+      "vehicles": 199,
+      "lines": 56
+     },
+     {
+      "at": "2026-11-11T15:52:36Z",
+      "vehicles": 199,
+      "lines": 53
+     },
+     {
+      "at": "2026-11-11T15:53:50Z",
+      "vehicles": 197,
+      "lines": 55
+     },
+     {
+      "at": "2026-11-11T15:55:21Z",
+      "vehicles": 200,
+      "lines": 55
+     },
+     {
+      "at": "2026-11-11T16:42:23Z",
+      "vehicles": 223,
+      "lines": 54
+     },
+     {
+      "at": "2026-11-11T17:45:42Z",
+      "vehicles": 226,
+      "lines": 55
+     },
+     {
+      "at": "2026-11-11T18:42:25Z",
+      "vehicles": 213,
+      "lines": 55
+     },
+     {
+      "at": "2026-11-11T19:08:58Z",
+      "vehicles": 195,
+      "lines": 56
+     },
+     {
+      "at": "2026-11-11T19:42:36Z",
+      "vehicles": 172,
+      "lines": 55
+     },
+     {
+      "at": "2026-11-11T20:42:22Z",
+      "vehicles": 146,
+      "lines": 56
+     },
+     {
+      "at": "2026-11-11T21:42:52Z",
+      "vehicles": 58,
+      "lines": 35
+     },
+     {
+      "at": "2026-11-11T22:46:59Z",
+      "vehicles": 56,
+      "lines": 34
+     },
+     {
+      "at": "2026-11-11T23:42:03Z",
+      "vehicles": 53,
+      "lines": 30
+     },
+     {
+      "at": "2026-11-12T00:42:06Z",
+      "vehicles": 43,
+      "lines": 32
+     },
+     {
+      "at": "2026-11-12T00:44:04Z",
+      "vehicles": 43,
+      "lines": 32
+     },
+     {
+      "at": "2026-11-12T01:42:08Z",
+      "vehicles": 12,
+      "lines": 12
+     },
+     {
+      "at": "2026-11-12T02:42:16Z",
+      "vehicles": 11,
+      "lines": 11
+     },
+     {
+      "at": "2026-11-12T03:43:46Z",
+      "vehicles": 12,
+      "lines": 12
+     },
+     {
+      "at": "2026-11-12T04:42:24Z",
+      "vehicles": 13,
+      "lines": 12
+     },
+     {
+      "at": "2026-11-12T05:42:09Z",
+      "vehicles": 31,
+      "lines": 26
+     },
+     {
+      "at": "2026-11-12T06:42:39Z",
+      "vehicles": 156,
+      "lines": 57
+     },
+     {
+      "at": "2026-11-12T07:42:15Z",
+      "vehicles": 226,
+      "lines": 58
+     },
+     {
+      "at": "2026-11-12T08:42:40Z",
+      "vehicles": 277,
+      "lines": 57
+     },
+     {
+      "at": "2026-11-12T08:44:00Z",
+      "vehicles": 279,
+      "lines": 57
+     },
+     {
+      "at": "2026-11-12T09:42:31Z",
+      "vehicles": 250,
+      "lines": 56
+     },
+     {
+      "at": "2026-11-12T10:42:21Z",
+      "vehicles": 201,
+      "lines": 55
+     },
+     {
+      "at": "2026-11-12T11:42:32Z",
+      "vehicles": 198,
+      "lines": 56
+     },
+     {
+      "at": "2026-11-12T12:42:42Z",
+      "vehicles": 202,
+      "lines": 56
+     },
+     {
+      "at": "2026-11-12T13:42:55Z",
+      "vehicles": 86,
+      "lines": 23
+     },
+     {
+      "at": "2026-11-12T14:42:38Z",
+      "vehicles": 227,
+      "lines": 58
+     }
+    ],
+    "source": "https://broker.fiware.urbanplatform.portodigital.pt/v2/entities?q=vehicleType==bus&limit=1000",
+    "read": "2026-11-12T14:42:38Z",
+    "sha256": "54fe8868cb33b658",
+    "baseline": {
+     "label": "none",
+     "note": "No normal-day figure yet; from tomorrow the series compares the same hour."
+    }
+   },
+   "notices": [],
+   "link": "https://www.stcp.pt/",
+   "source": "https://dados.gov.pt/datasets/urban-platform-bus-location/",
+   "read": "2026-11-12T14:42:38Z",
+   "sha256": "54fe8868cb33b658",
+   "licence": "CC0 (dados.gov.pt, published by STCP through Porto Digital's urban platform)"
+  }
+ ],
+ "decisions_elsewhere": []
+}

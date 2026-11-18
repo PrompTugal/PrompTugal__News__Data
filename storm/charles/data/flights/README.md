@@ -1,0 +1,54 @@
+# Flights and the wind: the data
+
+> Kept by incident.flights@web-summit.dinis, 11 November 2026, 23:43 UTC
+
+Flights on the map with the wind on top, as JSON that can be replayed (Dinis, ~22:00 UTC on 11 November, [BRIEF.md](../../../../BRIEF.md)). This folder holds the data; incident.designer@ draws the map. Every file is served at its path and at `api/v1/2026-11-10-storm-charles/flights/<file>`. The list, with sizes and sha256: [index.json](index.json). Kept by [incident.flights@](../../../../agents/flights/README.md).
+
+**Not a warning service.** No forecast or advice of ours. Your airline decides whether your flight runs: its site or app has the latest. For warnings follow IPMA and ANEPC.
+
+## The files
+
+| File | Label | What | Shape |
+|---|---|---|---|
+| [crosswind.json](crosswind.json) | fact (one hypothesis, labelled) | LPPT and LPMA, every METAR from 10 November 18:00 UTC, grouped by hour: wind direction, speed, gust; on each runway end the headwind (negative: tailwind) and crosswind and its side, for the mean wind and the gust; `departures_seen` that hour (OpenSky, a floor; null where not covered); ANA's figures for the day | `airports[].runways[]`, `airports[].hours[] = {hour, departures_seen, max_gust_or_wind_kt, max_crosswind_kt, metars[] = {time, raw, wind_dir, wind_kt, gust_kt, runways: {<end>: {headwind_kt, crosswind_kt, crosswind_from, gust_headwind_kt, gust_crosswind_kt}}, favoured_end}}` |
+| `wind/<area>-<date>.json` (lisbon, madeira; 10, 11, 12 November) | evidence (model data) | Open-Meteo's hourly wind on a 0.5° lattice (0.25° over a smaller box until 23:54 UTC on 11 November): 10 m speed, direction, gusts; 850 hPa speed and direction. Lisbon 34.5–43 N, 14.5–4 W (396 points); Madeira 30–35.5 N, 20–13.5 W (168 points); for the close views also lisbon-close and madeira-close at 0.25° over the earlier boxes (Lisbon 37.5–40 N, 10.5–8 W, 121 points; Madeira 32.5–33.25 N, 17.5–16.25 W, 24 points); 10 November 12:00 to 12 November 12:00 UTC | `grid.lat[]`, `grid.lon[]` (point k = lat[k ÷ lon.length], lon[k mod lon.length]); `times[]`; `levels['10m'].speed_kt[hour][point]`, `.dir_deg`, `.gust_kt`; `levels['850hPa'].speed_kt`, `.dir_deg`; `forecast_from` |
+| `snapshots/<date>/<HH>.json` | fact | Airline aircraft from adsb.lol (ODbL) within 40 nm of Lisbon (38.75 N, 9.20 W) and 30 nm of Funchal (32.75 N, 16.85 W), every 10 minutes, from 11 November 22:23 UTC | `snapshots[] = {area, source, time, request, aircraft[] = {callsign, airline, type, lat, lon, baro_alt_ft, geo_alt_ft, on_ground, ground_speed_kt, track_deg, vertical_rate_fpm, position_age_s}, other_aircraft_dropped, near_airport}`; `airlines` names each code |
+| `frames/<area>/<date>/<HH>.json` | fact | From 11 November 23:42 UTC: every aircraft adsb.lol shows within 250 nm of Lisbon (every 5 minutes) and 150 nm of Madeira (every 20). A part `<HH>-2.json` if an hour would pass 240 KB | `{area, area_def, cadence_min (5 Lisbon, 20 Madeira), cadence, hour, fields, other_fields, units, airlines, frames[] = {t, request, airline, other, withheld_by_owner_request, rows[] (one array per airline flight, in the order of fields: callsign, airline, type, lat, lon, alt_ft, on_ground, gs_kt, track_deg, vrate_fpm, pos_age_s), others[] (every other aircraft, anonymous, in the order of other_fields: category, lat, lon, alt_ft to 100 ft, on_ground, gs_kt, track_deg)}}` |
+
+### The map's files (incident.designer@'s shapes, [design/round-65.md](../../../../design/round-65.md))
+
+Written by the build from the files above (`tools/flights-map.mjs`, a generator), so they are served here but not kept in git; `index.json` lists them for the app: `snapshots[] = {t, area, aircraft, others, dist_nm, cadence_min, measured, file}` (a frame of the wider area replaces the snapshot of the same poll), `tracks[] = {hour, area, cadence_min, frames, aircraft, file}`, `how` (the pipeline as data, `flights/how.json`), `wind_hours[] = {t, area, forecast, file}`, `runways`, `crosswind`, `movements` (paths relative to the index).
+
+| File | Shape |
+|---|---|
+| `map/snapshots/<date>/<HHMM>-<area>.json` | `{t, area, area_def, source, read_utc, licence, label, measured, method, counts, aircraft[] = {id (the callsign), callsign, airline, type, lat, lon, track_deg, alt_ft, gs_kt, vrate_fpm, on_ground, position_age_s, phase}, others[] = {category, lat, lon, alt_ft, on_ground, gs_kt, track_deg}}`; `others` and `counts` only for frames |
+| `tracks/<area>/<date>/<HH>.json` | `{area, area_def, hour, frames, method, point_fields, phase_rule, aircraft[] = {callsign, airline, airline_name, type, first_seen, last_seen, points_seen, now: {t, lat, lon, alt_ft, gs_kt, track_deg, vrate_fpm, on_ground, phase}, points[] (in the order of point_fields: t, lat, lon, alt_ft, gs_kt, track_deg, vrate_fpm, on_ground)}}`: measured points only; a line between two is a drawing |
+| `map/wind/<area>/<date>/<HH>.json` | `{t, area, model, source, read_utc, licence, label, forecast, method, points[] = {lat, lon, dir_from_deg, speed_kt, gust_kt, upper_dir_from_deg, upper_speed_kt}}` (upper: 850 hPa) |
+| `runways.json` | `runways[] = {airport, id, length_m, ends[] = {name, lat, lon, heading_deg, elevation_ft}}` |
+| `movements.json` | `hours[] = {t, departures, cancellations}` (LPPT), `hours_by_airport`, `ana_day`, `sources` (cancellations: null by hour; ANA gives the day) |
+| `crosswind.json` (above) | also `hours[] = {t, metar_time, wind_dir, wind_kt, gust_kt, by_runway_end: {<end>: {cross_kt, head_kt, gust_cross_kt}}}` (LPPT) and `hours_by_airport` |
+
+Each `snapshots/<date>/<HH>.json` snapshot also carries `near_airport.{LPPT|LPMA} = {box, on_ground, airborne_below_3000m, read}`, incident.transport@'s count in its own box, so it reads ours instead of calling OpenSky.
+
+Directions are degrees true, the direction the wind blows **from** (draw an arrow pointing to direction + 180°). Speeds in knots (1 kt = 1.852 km/h); aircraft altitudes in feet and vertical rates in feet per minute, as adsb.lol gives them.
+
+## What is and is not here
+
+- **Airline flights only.** An aircraft is kept only when its callsign is an airline's ICAO code (the list in `tools/flights-common.mjs`, shared with incident.transport@) plus a flight number. Every other aircraft (private, business, general aviation, state, unknown) is dropped: never kept, only counted as one number per snapshot. No ICAO24 transponder address is in any published file.
+- **Positions come from adsb.lol, not OpenSky** (since 22:24 UTC). OpenSky's terms ask that publications de-identify aircraft and forbid passing its data on, so its snapshots (22:06 to 22:21) were removed; why, with quotes: [flights/sources.md](../../../../flights/sources.md). adsb.lol's data is ODbL: our snapshots are a derived database under the same licence, attributed to adsb.lol.
+- **The storm's peak cannot be replayed from live positions.** The snapshots start on 11 November at 22:23 UTC, after the peak. adsb.lol publishes a daily history archive; 11 November's is expected on 12 November, and cutting the storm hours from it is the next step. For the storm itself now, `crosswind.json` joins the measured wind to the departures OpenSky counted (incident.transport@'s counts).
+- **Failed reads are kept, not hidden.** Each snapshot records its failed attempts; a snapshot that failed three times has no aircraft and `time: null`.
+- **The wind field is a model's**, not measured: what was measured is the METAR in `crosswind.json`.
+
+## Provenance
+
+Every file carries the request it came from: URL (never a credential), HTTP status, bytes, sha256 of the raw response, the time read and the response time. The raw responses are kept outside git, in the flights vault (`raw` names the file); git keeps the sha256. Files of other agents that `crosswind.json` reads are listed with their path and sha256.
+
+## Sources and licences
+
+- adsb.lol, https://adsb.lol: aircraft positions, [ODbL 1.0](https://opendatacommons.org/licenses/odbl/1-0/).
+- The OpenSky Network, https://opensky-network.org (departure counts per hour, through incident.transport@'s file). Cite: M. Schäfer, M. Strohmeier, V. Lenders, I. Martinovic, M. Wilhelm, "Bringing Up OpenSky: A Large-scale ADS-B Sensor Network for Research", IPSN 2014. "For research and non-commercial purposes"; the full terms page is still for a person to read.
+- Weather data by [Open-Meteo.com](https://open-meteo.com), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+- METAR: IPMA's observations through the US NOAA Aviation Weather Center (aviationweather.gov), public domain.
+- Runway headings: [OurAirports](https://ourairports.com/data/), public domain (LPPT 02/20: 22° and 202° true; LPMA 05/23: 44.7° and 224.7° true).
+- ANA Aeroportos de Portugal's newsroom: its figures only, with the link (its terms).

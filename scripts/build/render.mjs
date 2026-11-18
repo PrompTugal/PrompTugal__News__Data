@@ -1,6 +1,9 @@
 // A tiny block model rendered twice: to HTML and to the markdown twin.
 // Inline syntax in text: [label](url), `code`, **bold**.
+import { existsSync } from 'node:fs';
 import { SITE, REPO, ACCOUNT, write } from './lib.mjs';
+// the charts (src/assets/viz/, data.b.design@): linked only once all three files exist, so a build without them still passes the gate
+const VIZ = ['viz.css', 'wind.js', 'viz.js'].every(f => existsSync(`src/assets/viz/${f}`)) ? '<link rel="stylesheet" href="/assets/viz/viz.css">\n<script src="/assets/viz/wind.js" defer></script>\n<script src="/assets/viz/viz.js" defer></script>\n' : '';
 
 export const esc = s => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 export const inline = s => esc(s)
@@ -41,7 +44,9 @@ function toMd(b) {
   }
 }
 
-const NAV = [['/sources/', 'Sources'], ['/api/', 'API'], ['/api/swagger/', 'Explorer'], ['/vaults/', 'Vaults'], ['/about/', 'About']];
+// the sites rail, as on promptugal.news (PrompTugal__News__Website assets/top/top.tmpl, .em-net)
+const SITES = [['https://weather.promptugal.news/', 'Weather'], ['https://civic.promptugal.news/', 'Civic'], ['https://startups.promptugal.news/', 'Startups'], ['https://travel.promptugal.news/', 'Travel'], ['https://data.promptugal.news/', 'Data']];
+const NAV = [['/sources/', 'Sources'], ['/storm/', 'Storm'], ['/api/', 'API'], ['/api/swagger/', 'Explorer'], ['/vaults/', 'Vaults'], ['/about/', 'About']];
 
 // path: 'sources/ipma-uv/' (directory, with trailing slash) or '' for the front page
 export function page({ path, title, description, h1, blocks, readAt, head = '', foot = '', skipH1 = false }) {
@@ -60,7 +65,9 @@ export function page({ path, title, description, h1, blocks, readAt, head = '', 
 <link rel="stylesheet" href="/assets/brand/brand-tokens.css">
 <link rel="stylesheet" href="/assets/site.css">
 <link rel="alternate" type="text/markdown" href="${twin}">
-${head}</head>
+<script src="/assets/top/top.js" defer></script>
+<script src="/assets/obs/obs.js" defer></script>
+${VIZ}${head}</head>
 <body>
 <a class="skip" href="#main">Skip to the content</a>
 <header class="mast">
@@ -68,14 +75,16 @@ ${head}</head>
 <a class="brand" href="/"><picture><source srcset="/assets/brand/promptugal-wordmark-dark.svg" media="(prefers-color-scheme: dark)"><img src="/assets/brand/promptugal-wordmark-light.svg" alt="PrompTugal.news" width="200" height="33"></picture><span class="brand-data">· Data</span></a>
 <nav aria-label="Main">${NAV.map(([u, l]) => `<a href="${u}"${url.startsWith(u) && (u !== '/api/' || !url.startsWith('/api/swagger')) ? ' aria-current="page"' : ''}>${l}</a>`).join('')}</nav>
 </div>
-<div class="mast-meta"><span>Version __VERSION__</span><span>${esc(stamp)}</span><a href="${ACCOUNT}">Pay for what you read</a></div>
+<div class="mast-meta"><span class="ver">Version __VERSION__</span><span>${esc(stamp)}</span><a class="pay-chip" href="/account/" title="Pay for what you read. Pages built on IPMA data are free here, outside the meter, until Dinis decides; the reading account is at ${ACCOUNT}">Pay for what you read · <b id="pay-balance">free here</b></a></div>
 </header>
+<nav class="em-net" aria-label="The PrompTugal.news sites"><span>Also from PrompTugal.news</span>${SITES.map(([u, l]) => `<a href="${u}"${l === 'Data' ? ' aria-current="page"' : ''}>${l}</a>`).join('')}</nav>
 <main id="main">
 ${skipH1 ? '' : `<h1>${esc(h1 || title)}</h1>\n`}${body}
 </main>
 <footer class="foot">
 <p>Not a warning service: follow <a href="https://www.ipma.pt/">IPMA</a> and <a href="https://prociv.gov.pt/">ANEPC</a>. Each value keeps its source and the time it was read.</p>
-<p>Code Apache-2.0. Text CC BY 4.0. Data: each source's own terms (see its card). <a href="${REPO}">Repository</a> · <a href="${twin}">Markdown version of this page</a> · <a href="/llms.txt">llms.txt</a></p>
+<p>Free to read: pages built on IPMA data stay outside the reading meter until Dinis decides. Your reading account: <a href="${ACCOUNT}">promptugal.news/account/</a>; on this site: <a href="/account/">your reading graph</a>.</p>
+<p class="foot-obs">Code Apache-2.0. Text CC BY 4.0. Data: each source's own terms (see its card). <a href="${REPO}">Repository</a> · <a href="${twin}">Markdown version of this page</a> · <a href="/llms.txt">llms.txt</a></p>
 </footer>
 ${foot}</body>
 </html>

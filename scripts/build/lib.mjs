@@ -27,7 +27,11 @@ export function loadSources() {
     let status = 'not read yet';
     if (last) status = last.failed > 0 ? (last.ok > 0 ? 'partly failed' : 'failed') : 'ok';
     else if (latest) status = 'archived';
-    return { id, card, manifest, latest, reads, runs, last, read_at, status, headline: headline(id, latest, manifest) };
+    // the publisher's own bytes of the latest read (vaults/<id>/latest/, written by the collector), served as the raw layer;
+    // not for adsb-faro, whose answer names private aircraft (its collector keeps none), and never reads-full.json
+    const rdir = join('vaults', id, 'latest');
+    const raw = existsSync(rdir) ? readdirSync(rdir).filter(f => f.endsWith('.json') && f !== 'reads-full.json').sort().map(f => ({ name: f, data: readJson(join(rdir, f)) })).filter(r => r.data) : [];
+    return { id, card, manifest, latest, reads, runs, last, read_at, status, raw, headline: headline(id, latest, manifest) };
   });
 }
 
