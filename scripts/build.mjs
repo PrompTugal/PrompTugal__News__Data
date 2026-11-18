@@ -8,6 +8,7 @@ import { buildApi, buildStormApi, readme } from './build/api.mjs';
 import { loadStorm } from './build/storm.mjs';
 import { buildRegister } from './build/register.mjs';
 import { buildDiscovery } from './build/discovery.mjs';
+import { stampLicences } from './build/licence.mjs';
 import { buildPages } from './build/pages.mjs';
 const version = process.env.SITE_VERSION || 'dev';
 const builtAt = new Date().toISOString();
@@ -28,6 +29,7 @@ const register = buildRegister(sources);
 const discovery = buildDiscovery();
 const pages = buildPages({ sources, places, readAt, index, storm, events, register, discovery });
 
+const licensed = stampLicences(OUT);   // every JSON item carries its licence (Dinis, 18 Nov 2026)
 const walk = d => readdirSync(d).flatMap(f => { const p = join(d, f); return statSync(p).isDirectory() ? walk(p) : [p]; });
 for (const f of walk(OUT)) {
   if (f.includes('/vendor/') || !/\.(html|js|css|json|md|txt|xml)$/.test(f)) continue;
@@ -36,4 +38,4 @@ for (const f of walk(OUT)) {
 }
 writeFileSync(join(OUT, 'version.json'), JSON.stringify({ version, commit: process.env.GITHUB_SHA || 'local', built: builtAt }, null, 2) + '\n');
 writeFileSync(join(OUT, '.nojekyll'), '');
-console.log(`built _site/ (${version}): ${pages.length} pages, ${sources.length} sources, ${places.length} places`);
+console.log(`built _site/ (${version}): ${pages.length} pages, ${sources.length} sources, ${places.length} places, ${licensed} JSON files with a licence`);

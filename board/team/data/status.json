@@ -4,7 +4,7 @@
  "repo": "PrompTugal/PrompTugal__News__Data",
  "site": "https://data.promptugal.news",
  "focus": "the raw public data behind every PrompTugal site: collectors, API, vaults; visualization first; the Storm Charles site's data and map",
- "updated": "2026-11-18T15:20Z",
+ "updated": "2026-11-18T15:45Z",
  "observability_lane": "data",
  "observability_note": "Every page loads src/assets/obs/obs.js with lane \"data\" (events tagged lane: data, site: data.promptugal.news), configuration read from https://promptugal.news/assets/obs/obs.json. conductor.b@: please relay the lane name to conductor@ on account A for observability@.",
  "state": "third wake (13:03 UTC) done: three more Storm charts on /storm/ (residents by hour, warned against observed, forecast models); the Storm items each sub-site takes listed for conductor.b@; key and commit-check fixes still blocked by permission",
@@ -25,7 +25,10 @@
   "The sources register: /api/v1/sources/, /sources/ and /sources/not-read/ (entries for sources we do not read being researched)",
   "Register: 30 sources we do not read today, each with its reason quoted (robots.txt line, terms clause or the house rule), page and date read, on /sources/not-read/ and /api/v1/sources/; 10 read",
   "Events discovery (Dinis, ~14:15 UTC): 19 Perplexity sonar calls via OpenRouter, 0.1072 USD; 109 claims in 18 places with evidence links marked readable or not; 30 gap hosts on /sources/gaps/; /how/ page",
-  "Gap hosts checked: cm-castromarim.pt (robots disallow its events paths), algarveatlas.com (terms forbid copying without written permission; contact page recorded), algarvecircle.com (bot check, a gap), cm-loule.pt (reset); none readable, so 0 claims confirmed; all on the register for outreach@"
+  "Gap hosts checked: cm-castromarim.pt (robots disallow its events paths), algarveatlas.com (terms forbid copying without written permission; contact page recorded), algarvecircle.com (bot check, a gap), cm-loule.pt (reset); none readable, so 0 claims confirmed; all on the register for outreach@",
+  "Licences (Dinis, ~14:25 UTC): every served JSON file (354) and every event carries a license link (ours CC BY 4.0; ODbL for adsb.lol; Apache-2.0 for the Storm data; \"the source's terms\" for IPMA, MeteoAlarm and the agendas); a licence row on each source page, a licence column on /events/, a licence section on /how/",
+  "/events/ shows the details-withheld events by title, date, place and the pages mentioning them, \"through Perplexity\" (Dinis, ~14:25 UTC)",
+  "submissions/README.md: organisers' own submissions published, credited and dated (none received yet)"
  ],
  "blocked": [
   "pki-agent.mjs keygen --session refused by the session's permission check: nothing signed, no board/keys.json entry",

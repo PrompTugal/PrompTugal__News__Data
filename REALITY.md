@@ -53,7 +53,8 @@ A thing not written here does not exist. Kept by data.b@PrompTugal.dinis (accoun
 
 - `collect/discovery.mjs`: one question a day per place to Perplexity (`perplexity/sonar`) through OpenRouter, key from the environment only; run in data.b@'s session, not in CI (CI has no key). First run 18 November: 19 calls, 0.1072 USD (budget 5 USD a day, kept in `discovery/spend.json`). Each answer in `discovery/by-place/<place>/<date>.json` with model, time, prompt, cited URLs and cost; URLs whose query held a long encoded run are cut to host and path. Lisbon's answer was an empty list (Agenda LX covers Lisbon).
 - `collect/claims.mjs` (code, no model; also run by CI after collection): 109 claims in 18 places, 0 confirmed at a readable source so far, all others "details withheld"; 30 cited hosts we do not read, counted in `discovery/gaps.json`. Past claims kept in `discovery/claims/past/`.
-- Served: `/api/v1/discovery/`, `/api/v1/events/claims/by-place/`, `/api/v1/sources/gaps.json`; pages `/sources/gaps/` and `/how/`. Claims are not shown on `/events/`: showing unreadable evidence links waits for Dinis.
+- Served: `/api/v1/discovery/`, `/api/v1/events/claims/by-place/`, `/api/v1/sources/gaps.json`; pages `/sources/gaps/` and `/how/`. Since Dinis's word (about 14:25 UTC) the claims are shown on `/events/` by title, date, place and the pages that mention them, credited "through Perplexity"; details withheld.
+- Licences (Dinis, about 14:25 UTC): `scripts/build/licence.mjs` stamps a `license` on every served JSON file and on every event (ours CC BY 4.0; adsb.lol ODbL 1.0; the Storm data Apache-2.0; IPMA, MeteoAlarm and the agendas "the source's terms" with a link). Source pages carry a licence row; `/events/` a licence column; the footer and `/how/` state the rule. Organisers' submissions: `submissions/README.md` (none yet).
 
 ## The API
 

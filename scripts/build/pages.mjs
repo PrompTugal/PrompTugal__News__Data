@@ -1,6 +1,8 @@
 // The pages (HTML plus markdown twin), llms.txt and sitemap.xml.
 import { SITE, REPO, ACCOUNT, write, fmtTime } from './lib.mjs';
 import { page, h, p, ul, table, pre, quote, raw } from './render.mjs';
+import { licenceOf, OURS } from './licence.mjs';
+const lic = l => `[${l.name}](${l.url})`;
 
 // ---- the visualizations (data.b@PrompTugal.dinis, 18 Nov 2026; drawn by src/assets/viz/viz.js, data.b.design@) ----
 const COAST = '/api/v1/storm/charles/broadcast/coast.json';
@@ -152,6 +154,7 @@ export function buildPages({ sources, places, readAt, index, storm, events = [],
         ['Last read', fmtTime(s.read_at)],
         ['Last run', s.last ? `${statusText(s)}: ${s.last.ok} requests ok, ${s.last.failed} failed` : statusText(s)],
         ['Now', s.headline],
+        ['Licence', `The data: ${lic(licenceOf(s.id))} (${licenceOf(s.id).holder}). This page, the card and the records we add: ${lic(OURS)}.`],
       ], 'kv'),
       h('Reuse terms'),
       p(`${t.summary} Reuse: ${t.republish}.`),
@@ -318,7 +321,12 @@ export function buildPages({ sources, places, readAt, index, storm, events = [],
         p('What is on, place by place, from official agendas and organisers\' own public feeds: each event keeps its source and the time it was read. The sources and their terms are on [the events card](/sources/events-pt/). Not from eventbrite, lu.ma, luma.com or meetup.com. Check with the organiser before you go: dates change.'),
         p(`The API: [/api/v1/events/by-place/index.json](/api/v1/events/by-place/index.json), then \`/api/v1/events/by-place/<place>.json\`, each event a schema.org Event.`),
         table(['Place', 'Events', 'File'], events.map(e => [e.data.name || e.id, (e.data.events || []).length, `[${e.id}.json](/api/v1/events/by-place/${e.id}.json)`])),
-        ...withEv.flatMap(e => [h(e.data.name || e.id), table(['When', 'What', 'Where', 'Organiser', 'Source'], (e.data.events || []).slice(0, 15).map(ev => [day(ev.startDate) + (ev.endDate ? ' to ' + day(ev.endDate) : ''), ev.url ? `[${short(ev.name, 90)}](${ev.url})` : short(ev.name, 90), short((ev.location && ev.location.name) || '', 60), short((ev.organizer && ev.organizer.name) || '', 50), ev.source ? `[source](${ev.source})` : ''])), ...((e.data.events || []).length > 15 ? [p(`Showing 15 of ${(e.data.events || []).length}: the rest in [the file](/api/v1/events/by-place/${e.id}.json).`)] : [])]),
+        ...(discovery && discovery.claims && discovery.claims.length ? [
+          h('Also found: events whose details we do not copy'),
+          p('Found through Perplexity (asked once a day per place). Each is shown by its title, date and place, with the pages that mention it, as a search engine would; its details are withheld because those pages\' terms do not let us copy them, or we have not read them. Organisers: send us your event\'s details and we publish them, credited to you and dated. The records: CC BY 4.0, [claims by place](/api/v1/events/claims/by-place/index.json); each linked page keeps its own terms.'),
+          ...discovery.claims.filter(c => (c.claims || []).length).sort((a, b) => a.place.localeCompare(b.place)).flatMap(c => [h(c.place.replace(/-/g, ' ').replace(/\b\w/g, x => x.toUpperCase()), 3), table(['When', 'Event', 'Mentioned on', 'Found'], c.claims.slice(0, 25).map(x => [x.startDate + (x.endDate && x.endDate !== x.startDate ? ' to ' + x.endDate : ''), short(x.name, 90), x.evidence.map(e => `[${e.host || 'link'}](${String(e.url).replace(/ \(query cut\)$/, '')})`).join(', ') || 'no link given', `through Perplexity, ${String(c.discovery.asked_at).slice(0, 10)}`]))]),
+        ] : []),
+        ...withEv.flatMap(e => [h(e.data.name || e.id), table(['When', 'What', 'Where', 'Organiser', 'Source', 'Licence'], (e.data.events || []).slice(0, 15).map(ev => [day(ev.startDate) + (ev.endDate ? ' to ' + day(ev.endDate) : ''), ev.url ? `[${short(ev.name, 90)}](${ev.url})` : short(ev.name, 90), short((ev.location && ev.location.name) || '', 60), short((ev.organizer && ev.organizer.name) || '', 50), ev.source ? `[source](${String(ev.source).split(' ')[0]})` : '', ev.url ? `[the source's terms](${new URL(ev.url).origin}/)` : ''])), ...((e.data.events || []).length > 15 ? [p(`Showing 15 of ${(e.data.events || []).length}: the rest in [the file](/api/v1/events/by-place/${e.id}.json).`)] : [])]),
       ],
     });
   }
@@ -355,6 +363,8 @@ export function buildPages({ sources, places, readAt, index, storm, events = [],
           '**Gaps:** every cited host we do not read is counted on [the gaps page](/sources/gaps/), and goes to the register and to a request on the record.',
           '**Over time:** a claim is never deleted when its date passes; it moves to [/api/v1/events/past/](/api/v1/events/claims/by-place/index.json), the history of each event series.',
         ]),
+        h('Licences'),
+        ul([`What PrompTugal.news makes (these pages, our records, the register, the visualisations) is ${lic(OURS)}.`, 'What we take from a source stays under its licence: every JSON file and every event carries a `license` link, the source\'s published licence, or where it publishes none its terms labelled "the source\'s terms". Never blank, never assumed open.', 'Events found only through Perplexity are shown by title, date, place and the pages that mention them, credited "through Perplexity"; their details are withheld.', 'An organiser\'s own submission is published, credited and dated as theirs ([how](' + REPO + '/blob/dev/submissions/README.md)); later, signed with the organiser\'s key.']),
         h('Who and what'),
         ul(['Code reads the sources and builds this site: no model is called to collect or build, except the daily discovery question above.', 'Agents wrote the code: data.b@PrompTugal.dinis (Opus) and its Sonnet sub-agents; see [about](/about/).', 'No person has checked a value yet.']),
       ],
