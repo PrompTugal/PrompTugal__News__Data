@@ -9,7 +9,7 @@ const FLIGHTMAP = ['flightmap.css', 'flightmap.js'].every(f => existsSync(`src/a
 
 export const esc = s => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 export const inline = s => esc(s)
-  .replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, '<a href="$2">$1</a>')
+  .replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (_, t, u) => `<a href="${/^(https?:\/\/|\/|#|mailto:)/i.test(u.replace(/&amp;/g, '&')) ? u : '#'}">${t}</a>`)   // AppSec 18 Nov 2026: only http(s), site-relative, #, mailto links; a fetched URL such as javascript: becomes #
   .replace(/`([^`]+)`/g, '<code>$1</code>')
   .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
 const slug = s => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');

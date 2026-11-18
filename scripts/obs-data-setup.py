@@ -68,6 +68,7 @@ def main():
         'about': f'The observability lanes of data.promptugal.news, lane "data" ({AGENT}, {today}, at Dinis Cruz\'s word). Public on purpose: each append token can only append to its lane, and the key can only encrypt. Read by src/assets/obs/obs.js from this file on GitHub. Drained by conductor.b@PrompTugal.dinis.',
         'enabled': True, 'endpoint': HOST, 'vault_id': vid, 'lanes': {'site': toks}, 'recipient': {'fingerprint': fp, 'encrypt': pub_pem}})
     os.makedirs(OUT, mode=0o700, exist_ok=True)
+    os.makedirs(OUT, mode=0o700, exist_ok=True); os.chmod(OUT, 0o700)
     wjson(CREDS, {'type': 'promptugal.obs/creds', 'lane': 'data', 'host': HOST, 'vault_id': vid, 'vault_key': vk, 'enum_key': enum_key,
                   'tokens': toks, 'lane_names': names, 'made': today, 'by': AGENT}, 0o600)
     print(f'setup: vault {vid} made, 2 lanes configured, drain key {fp}; public half in team/keys/obs-data.json; credentials kept outside the repository')

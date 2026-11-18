@@ -32,7 +32,7 @@ async function allowed(run, name, origin, pathname) {
         prevUA = false
         if (star && k === 'disallow' && v) rules.push(v)
     }
-    const hit = rules.find(p => pathname.startsWith(p.replace(/\*.*$/, '')) && p !== '/')
+    const hit = rules.find(p => pathname.startsWith(p.replace(/\*.*$/, '')))   // AppSec 18 Nov 2026: "Disallow: /" now counts (it was skipped)
     return { ok: !hit, note: hit ? `robots.txt disallows ${hit}` : 'robots.txt read: path allowed' }
 }
 const raw = (run, r, ext) => { r.ext = ext }
@@ -182,7 +182,7 @@ export default async function (run) {
     const known = new Set(['lisboa', 'lagos', 'faro', 'tavira']), places = {}; let dropped = 0
     const seen = new Set()
     for (const e of all) {
-        if (!known.has(e.place) || seen.has(e.url)) { dropped++; continue }
+        if (!known.has(e.place) || seen.has(e.url) || !/^https?:\/\//i.test(String(e.url))) { dropped++; continue }   // AppSec: a fetched URL must be http(s)
         seen.add(e.url); (places[e.place] ||= []).push(e)
     }
     for (const p of Object.values(places)) p.sort((a, b) => a.startDate.localeCompare(b.startDate) || a.name.localeCompare(b.name))

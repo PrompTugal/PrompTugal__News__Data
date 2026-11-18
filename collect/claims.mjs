@@ -41,7 +41,7 @@ for (const place of fs.existsSync(dDir) ? fs.readdirSync(dDir).sort() : []) {
     const d = files.length ? readJson(path.join(dDir, place, files.at(-1))) : null
     if (!d || !d.ok) continue
     const claims = (d.items || []).filter(i => i && i.name && i.start_date).map(i => {
-        const evidence = [...new Set(i.urls || [])].map(u => { const h = host(u); return { url: u, host: h, readable: readable.has(h), register: readable.get(h) || (regByHost.get(h) || {}).id || null } })
+        const evidence = [...new Set(Array.isArray(i.urls) ? i.urls : [])].filter(u => /^https?:\/\//i.test(String(u))).map(u => { const h = host(u); return { url: u, host: h, readable: readable.has(h), register: readable.get(h) || (regByHost.get(h) || {}).id || null } })
         const match = evidence.map(e => known.get(urlKey(e.url))).find(Boolean)
         for (const e of evidence.filter(e => !e.readable && e.host)) { const g = gaps.get(e.host) || { host: e.host, claims: 0, places: new Set(), register: (regByHost.get(e.host) || {}).id || null, example: e.url }; g.claims++; g.places.add(place); gaps.set(e.host, g) }
         const base = { '@type': 'Event', name: String(i.name).slice(0, 200), startDate: i.start_date, endDate: i.end_date || null, place, municipality: i.municipality || null, evidence }

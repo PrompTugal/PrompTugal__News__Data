@@ -23,7 +23,7 @@
   var uid = 0
   function esc (s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c] }) }
   function H (tag, cls, txt) { var e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e }
-  function link (href, txt) { var a = H('a', '', txt || href); a.href = href; return a }
+  function link (href, txt) { var a = H('a', '', txt || href); a.href = /^(https?:\/\/|\/)/i.test(href) ? href : '#'; return a }
   function p2 (n) { return n < 10 ? '0' + n : String(n) }
   function when (t) { var d = new Date(Date.parse(t)); return d.getUTCDate() + ' ' + MON[d.getUTCMonth()] + ' ' + p2(d.getUTCHours()) + ':' + p2(d.getUTCMinutes()) + ' UTC' }
   function get (u) { return fetch(u).then(function (r) { if (!r.ok) throw new Error(u + ' ' + r.status); return r.json() }) }

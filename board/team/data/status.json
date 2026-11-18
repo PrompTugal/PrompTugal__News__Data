@@ -4,7 +4,7 @@
  "repo": "PrompTugal/PrompTugal__News__Data",
  "site": "https://data.promptugal.news",
  "focus": "the raw public data behind every PrompTugal site: collectors, API, vaults; visualization first; the Storm Charles site's data and map",
- "updated": "2026-11-18T16:40Z",
+ "updated": "2026-11-18T17:00Z",
  "observability_lane": "data (own lane since 18 Nov ~15:00 UTC: vault 349t1w6w, 2 append lanes, drain key sha256:5109a3745ff9fdb4; drain credentials sealed to conductor.b-promptugal and sent to conductor.b@)",
  "observability_note": "obs.js reads team/keys/obs-data.json from GitHub (public half: endpoint, vault id, 2 append tokens, drain public key); every event tagged lane: \"data\"; no town lookup.",
  "state": "third wake (13:03 UTC) done: three more Storm charts on /storm/ (residents by hour, warned against observed, forecast models); the Storm items each sub-site takes listed for conductor.b@; key and commit-check fixes still blocked by permission",
@@ -35,7 +35,8 @@
   "Social signals (Dinis, ~14:45 UTC): Bluesky collector for 5 domain-verified organisation accounts, 147 post links with metadata (no text stored), /api/v1/social/; Mastodon none verified yet",
   "Session key made at Dinis's word (record sha256:9c82eecc96449bb7, id data.b-promptugal): public halves in team/keys.json, pointer in board/keys.json",
   "Observability: own \"data\" lane made at Dinis's word (vault 349t1w6w, 2 lanes, drain key sha256:5109a3745ff9fdb4); credentials sealed to conductor.b-promptugal and sent; obs.js switched to it",
-  "Event leads from Dinis's Perplexity pass checked (37 requests): Tavira council and Teatro das Figuras (Faro) added as sources (38 and 10 events); Visit Algarve (no feed), Autódromo (terms forbid copying), Algarve Evolution (reset), Portugal Tech Week (over), two news sites on the register; 5 social leads recorded, not fetched"
+  "Event leads from Dinis's Perplexity pass checked (37 requests): Tavira council and Teatro das Figuras (Faro) added as sources (38 and 10 events); Visit Algarve (no feed), Autódromo (terms forbid copying), Algarve Evolution (reset), Portugal Tech Week (over), two news sites on the register; 5 social leads recorded, not fetched",
+  "AppSec post-review of all code changed today (data.b.security@, Sonnet): no high; 3 medium fixed (javascript: links from fetched URLs, robots \"Disallow: /\" read as allowed, events without an http(s) URL); low ones fixed (URL filters in discovery, claims, social and charts; the obs credentials folder made 0700 first); threat models for discovery and social at docs/threat-models/, linked from /how/; no prompt-injection text found in stored answers or posts"
  ],
  "blocked": [
   "Change to scripts/check-commits.mjs to accept @PrompTugal.dinis refused by the permission check: commits use Agent: data.b@AgentiCCells.dinis",
@@ -55,6 +56,7 @@
   "Dinis: Tavira council and Teatro das Figuras publish \"Todos os direitos reservados\" and no terms page; their events are shown as listings (name, date, venue, link) under your 14:55 UTC rule for câmaras and public bodies, with the take-down disclaimer. Say if you want them asked first."
  ],
  "next": [
+  "Threat models still to write: events-pt, ipma-*, adsb-faro, meteoalarm-pt, the Pages workflow, the obs lane, the Storm build; inner passes (conductor, security pre, work, security post incl. AppSec, conductor) from the next wake",
   "Discovery daily (in this session; CI has no key): confirm claims at readable sources; add the top gap hosts (algarvecircle.com, algarveatlas.com, cm-castromarim.pt, theportugalnews.com, ...) to the register with their terms read",
   "Social: confirm candidate accounts a person can verify (websummit.bsky.social, camaralisboa.bsky.social, jornalexpresso.bsky.social, tribunaexpresso.bsky.social); find câmaras' and venues' official accounts linked from their own sites; Perplexity social pass in discovery",
   "Register: read the terms pages (not only robots.txt) of the Portuguese public bodies; re-try ANA, APS (right host), CCDR Algarve, ANSR, Visit Algarve, Faro and Loulé; find each organisation's own published press or partnerships page for the requests on the record (outreach@ drafts, a person sends); then per-place query sets at /api/v1/queries/by-place/<place>.json on readable sources only",

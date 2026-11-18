@@ -71,7 +71,7 @@ export default async function (run) {
         if (!acc?.id) { gaps.push({ what: `Mastodon account ${a.handle}`, why: 'lookup failed (see reads.json)', read_at: run.started }); continue }
         const st = await run.json(`masto-statuses-${a.id}`, `https://${host}/api/v1/accounts/${acc.id}/statuses?exclude_replies=true&exclude_reblogs=true&limit=${PER_ACCOUNT}`)
         if (!Array.isArray(st)) { gaps.push({ what: `Mastodon statuses of ${a.handle}`, why: 'not read (see reads.json)', read_at: run.started }); continue }
-        for (const s of st) add(a, { url: s.url, posted_at: s.created_at, lang: s.language, has_media: (s.media_attachments || []).length > 0, source: 'account statuses' }, `${s.spoiler_text || ''} ${s.content || ''}`, host)
+        for (const s of st) if (String(s.url).startsWith(`https://${host}/`)) add(a, { url: s.url, posted_at: s.created_at, lang: s.language, has_media: (s.media_attachments || []).length > 0, source: 'account statuses' }, `${s.spoiler_text || ''} ${s.content || ''}`, host)
     }
     if (!accounts.some(a => a.platform === 'mastodon')) gaps.push({ what: 'Mastodon', why: 'no organisation account could be verified yet (register/social-accounts.json notes); the collector reads Mastodon as soon as one is listed', read_at: run.started })
     run.raw = []   // no response bytes to the vault: we keep links and metadata only

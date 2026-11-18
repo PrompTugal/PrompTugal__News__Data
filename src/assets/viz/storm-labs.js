@@ -23,7 +23,7 @@
   }
   function title(el, text) { sv(el, 'title', null, text); return el }
   function root(w, ht, label) { var s = document.createElementNS(NS, 'svg'); s.setAttribute('viewBox', '0 0 ' + Math.round(w) + ' ' + Math.round(ht)); s.setAttribute('role', 'img'); s.setAttribute('aria-label', label); return s }
-  function link(url, txt) { var a = h('a', '', txt || url); a.href = url; return a }
+  function link(url, txt) { var a = h('a', '', txt || url); a.href = /^(https?:\/\/|\/)/i.test(url) ? url : '#'; return a }
   function T(t) { return typeof t === 'number' ? t : Date.parse(/(Z|[+-]\d\d:?\d\d)$/.test(String(t)) ? t : String(t) + 'Z') }
   function p2(n) { return n < 10 ? '0' + n : String(n) }
   function hm(ms) { var d = new Date(ms); return p2(d.getUTCHours()) + ':' + p2(d.getUTCMinutes()) }

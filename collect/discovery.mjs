@@ -54,7 +54,7 @@ async function ask(place) {
 // a cited URL with a long encoded query (a token-like run of 32+ characters) keeps its host and path only: the leak scan
 // refuses such runs, and the query adds nothing as evidence of where the event is listed
 const LONG = /[A-Za-z0-9+\/_=%-]{32,}/
-const clean = u => { try { const x = new URL(u); if (LONG.test(x.search + x.hash)) return x.origin + x.pathname + ' (query cut)'; return u } catch { return String(u).slice(0, 300) } }
+const clean = u => { try { const x = new URL(u); if (!/^https?:$/.test(x.protocol)) return '(not an http link)'; if (LONG.test(x.search + x.hash)) return x.origin + x.pathname + ' (query cut)'; return u } catch { return String(u).slice(0, 300) } }
 
 let calls = 0, cost = 0
 for (const place of places) {
@@ -68,7 +68,7 @@ for (const place of places) {
   writeJson(out, {
     place, asked_at: at, model: a.model || MODEL, via: 'OpenRouter', by: 'collect/discovery.mjs (data.b@PrompTugal.dinis)',
     about: 'Phase 1 evidence: what Perplexity answered about events in this place, with every URL it cited. Not published as content; each event becomes a claim whose details come only from readable sources.',
-    prompt: prompt(place), ok: a.ok, ...(a.ok ? { items: (a.items || []).map(i => ({ ...i, urls: (i.urls || []).map(clean) })), citations: a.citations.map(clean), answer_text: a.text, usage: a.usage, cost_usd: a.cost_usd } : { error: a.error, status: a.status }),
+    prompt: prompt(place), ok: a.ok, ...(a.ok ? { items: (Array.isArray(a.items) ? a.items : []).filter(i => i && typeof i === 'object').map(i => ({ ...i, urls: (Array.isArray(i.urls) ? i.urls : []).map(clean) })), citations: a.citations.map(clean), answer_text: a.text, usage: a.usage, cost_usd: a.cost_usd } : { error: a.error, status: a.status }),
   })
   console.log(`${place}: ${a.ok ? `${(a.items || []).length} items, ${a.citations.length} citations, ${a.cost_usd.toFixed(4)} USD` : `failed (${a.error})`}`)
   await new Promise(r => setTimeout(r, 1500))

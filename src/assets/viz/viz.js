@@ -643,7 +643,7 @@
   }
 
   // ---------- mount
-  function link (href, text) { var a = H('a', '', text); a.href = href; a.rel = 'noopener'; return a }
+  function link (href, text) { var a = H('a', '', text); a.href = /^(https?:\/\/|\/)/i.test(href) ? href : '#'; a.rel = 'noopener'; return a }
   function host (u) { try { return new URL(u).host } catch (e) { return u } }
   function getJSON (url) {
     return fetch(url, { headers: { Accept: 'application/json' } }).then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); var lm = r.headers.get('Last-Modified'); return r.json().then(function (j) { return { j: j, lm: lm } }) })
