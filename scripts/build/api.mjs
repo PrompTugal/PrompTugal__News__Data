@@ -157,6 +157,7 @@ For the sites and agents that read data.promptugal.news as a source (the other P
 
 ## Changelog
 
+- 2026-11-18, night: \`api/v1/by-place/now/<place>.json\` gains \`coords\` (lat, lon, Wikidata item, CC0) and a \`lisboa.json\` (IPMA Lisboa station, forecast, UV, Lisbon coast, warnings area LSB); fields only added.
 - 2026-11-18, evening: added \`api/v1/cams/\` (latest, reads, card, openapi) and \`api/v1/cameras/index.json\` with \`api/v1/cameras/<id>/status.json\` (the same cameras in the shape live.promptugal.news reads): public cameras' metadata and status, never a frame or stream.
 - 2026-11-18, evening: added \`api/v1/base-gov-pt/places/index.json\` and \`api/v1/base-gov-pt/places/<place>.json\`: the same shape as latest.json with one place only (civic.promptugal.news asked: a council page no longer needs the whole 1.8 MB).
 - 2026-11-18, evening: added \`api/v1/sources/attribution.json\` (the attribution ledger per source, for the SIMULATED payouts: no money moves).

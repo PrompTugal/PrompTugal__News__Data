@@ -4,7 +4,7 @@
  "repo": "PrompTugal/PrompTugal__News__Data",
  "site": "https://data.promptugal.news",
  "focus": "the raw public data behind every PrompTugal site: collectors, API, vaults; visualization first; the Storm Charles site's data and map",
- "updated": "2026-11-18T21:11Z",
+ "updated": "2026-11-18T22:06Z",
  "observability_lane": "data (own lane since 18 Nov ~15:00 UTC: vault 349t1w6w, 2 append lanes, drain key sha256:5109a3745ff9fdb4; drain credentials sealed to conductor.b-promptugal and sent to conductor.b@)",
  "observability_note": "obs.js reads team/keys/obs-data.json from GitHub (public half: endpoint, vault id, 2 append tokens, drain public key); every event tagged lane: \"data\"; no town lookup.",
  "state": "third wake (13:03 UTC) done: three more Storm charts on /storm/ (residents by hour, warned against observed, forecast models); the Storm items each sub-site takes listed for conductor.b@; key and commit-check fixes still blocked by permission",
@@ -49,7 +49,8 @@
   "Cameras, second pass: 22 cameras in 11 places (19 MEO BeachCam by link only, never fetched since beachcam.meo.pt refused us; APL Tejo Live x2; Praia da Rocha). No camera is embeddable yet. Nothing found from APA, IPMA, ICNF, Docapesca, ANA, IP or Lisboa's câmara (its cameras are police CCTV).",
   "GitHub: sources/github-pt, 21 Portuguese organisations (each verified, verified_how), public repositories and latest releases through GitHub's REST API; no people, no contributors; text cleaned and untrusted; threat model docs/threat-models/github-pt.md. One real run (18:21 UTC): 850 repositories; this session's shared quota is spent, so CI does the next read.",
   "Cyber: CISA KEV collected (CC0), /api/v1/cisa-kev/latest.json with weekly totals and top vendors, for cyber.b@ (20:59 UTC request); threat model docs/threat-models/cisa-kev.md for security@ to review.",
-  "Cyber: NVD CVE API 2.0 collected (terms read; the notice 'This product uses the NVD API but is not endorsed or certified by the NVD.' shown), /api/v1/nvd-cve/latest.json: CVEs new and modified in the last 24 hours, CNA as a domain only, severity, CWE, vendor and product (CPE, else the CNA's list, marked), totals per day and severity. CVE.org not needed (covered by NVD). ENISA collector written and on hold (on-hold/enisa-pubs)."
+  "Cyber: NVD CVE API 2.0 collected (terms read; the notice 'This product uses the NVD API but is not endorsed or certified by the NVD.' shown), /api/v1/nvd-cve/latest.json: CVEs new and modified in the last 24 hours, CNA as a domain only, severity, CWE, vendor and product (CPE, else the CNA's list, marked), totals per day and severity. CVE.org not needed (covered by NVD). ENISA collector written and on hold (on-hold/enisa-pubs).",
+  "22:03 UTC wake: by-place/now gains coords for all 18 places (Wikidata P625, CC0, register/places.json by collect/places-coords.mjs) and lisboa.json (IPMA Lisboa station, forecast and UV, Lisbon coast, warnings LSB), for live.b@."
  ],
  "blocked": [
   "Change to scripts/check-commits.mjs to accept @PrompTugal.dinis refused by the permission check: commits use Agent: data.b@AgentiCCells.dinis",
@@ -77,7 +78,6 @@
  ],
  "next": [
   "Cyber for cyber.b@: NVD CVE API 2.0 after reading its API terms (nvd.nist.gov/developers/terms-of-use) and rate limits; CVE.org CNA and affected products if NVD lacks them; ENISA publications weekly; then security@ to review the cyber limits",
-  "by-place/now for live.b@ (19:05 UTC): each place's lat/lon from a sourced list (DGT CAOP or Wikidata, with source and licence on each value, never invented), and a lisboa.json (IPMA station and forecast 1110600) beside the Tejo Live cameras",
   "Google key: when Dinis says it exists, ask once per host through the secure credential form (header X-Goog-Api-Key, no prefix), never in chat: www.googleapis.com (YouTube, Books), factchecktools.googleapis.com, kgsearch.googleapis.com, pagespeedonline.googleapis.com, and webrisk.googleapis.com only if he enables Web Risk. Then the replay and chapter source (REQ-2026-0001) and the organisations' channels, read-only, every call counted. Terms to record on the register as each source is added: YouTube 10,000 units a day; Web Risk results not redistributable, cached until expireTime; Books needs 'powered by Google' attribution and a link on each result; Knowledge Graph Search being migrated, not for production-critical use; Safe Browsing excluded (non-commercial, deprecated). Relayed by conductor.b@ from videos.b@'s page videos.promptugal.news/how/google-api-key/ (17:38 and 17:53 UTC); terms to be checked at each API's own terms page before use.",
   "Pipeline standard (Dinis, 18 Nov ~16:00 UTC, board/guidance/2026-11-18-the-pipeline-standard-and-the-fact-checker.md): for every source, raw kept as received and timestamped, never overwritten; JSON; a visualisation; the analysis; a home page per source; OpenAPI per source and a Swagger of Swaggers (/api/swagger/ lists them all already). Gap: raw history needs the vault secrets or an append lane (Dinis); the newer sources (events-pt, social, base-gov-pt, discovery) need their visualisation and analysis layers on /sources/<id>/",
   "Read library.promptugal.news/api/v1/requests/ at every wake once it exists; answer by fixing or saying why not",

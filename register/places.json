@@ -1,0 +1,302 @@
+{
+ "about": "Each place's coordinates (the municipality's, or the parish's for Quarteira), as Wikidata gives them (P625), matched on the DICO code. A point for maps, not a boundary.",
+ "read_at": "2026-11-18T22:05:24Z",
+ "by": "collect/places-coords.mjs (code, no model; run by data.b@PrompTugal.dinis)",
+ "source": "https://query.wikidata.org/sparql",
+ "license": {
+  "name": "CC0 1.0",
+  "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "holder": "Wikidata contributors"
+ },
+ "missing": [],
+ "places": {
+  "faro": {
+   "place": "faro",
+   "name": "Faro",
+   "dico": "0805",
+   "lat": 37.01611,
+   "lon": -7.935,
+   "wikidata": "https://www.wikidata.org/wiki/Q159457",
+   "source": "https://www.wikidata.org/wiki/Special:EntityData/Q159457.json",
+   "property": "P625 (coordinate location)",
+   "license": {
+    "name": "CC0 1.0",
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "holder": "Wikidata contributors"
+   },
+   "read_at": "2026-11-18T22:05:24Z"
+  },
+  "vila-do-bispo": {
+   "place": "vila-do-bispo",
+   "name": "Vila do Bispo",
+   "dico": "0815",
+   "lat": 37.0825,
+   "lon": -8.91194,
+   "wikidata": "https://www.wikidata.org/wiki/Q206320",
+   "source": "https://www.wikidata.org/wiki/Special:EntityData/Q206320.json",
+   "property": "P625 (coordinate location)",
+   "license": {
+    "name": "CC0 1.0",
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "holder": "Wikidata contributors"
+   },
+   "read_at": "2026-11-18T22:05:24Z"
+  },
+  "tavira": {
+   "place": "tavira",
+   "name": "Tavira",
+   "dico": "0814",
+   "lat": 37.13085,
+   "lon": -7.6506,
+   "wikidata": "https://www.wikidata.org/wiki/Q372840",
+   "source": "https://www.wikidata.org/wiki/Special:EntityData/Q372840.json",
+   "property": "P625 (coordinate location)",
+   "license": {
+    "name": "CC0 1.0",
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "holder": "Wikidata contributors"
+   },
+   "read_at": "2026-11-18T22:05:24Z"
+  },
+  "albufeira": {
+   "place": "albufeira",
+   "name": "Albufeira",
+   "dico": "0801",
+   "lat": 37.0897,
+   "lon": -8.24583,
+   "wikidata": "https://www.wikidata.org/wiki/Q373813",
+   "source": "https://www.wikidata.org/wiki/Special:EntityData/Q373813.json",
+   "property": "P625 (coordinate location)",
+   "license": {
+    "name": "CC0 1.0",
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "holder": "Wikidata contributors"
+   },
+   "read_at": "2026-11-18T22:05:24Z"
+  },
+  "portimao": {
+   "place": "portimao",
+   "name": "Portimão",
+   "dico": "0811",
+   "lat": 37.13333,
+   "lon": -8.53333,
+   "wikidata": "https://www.wikidata.org/wiki/Q543542",
+   "source": "https://www.wikidata.org/wiki/Special:EntityData/Q543542.json",
+   "property": "P625 (coordinate location)",
+   "license": {
+    "name": "CC0 1.0",
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "holder": "Wikidata contributors"
+   },
+   "read_at": "2026-11-18T22:05:24Z"
+  },
+  "loule": {
+   "place": "loule",
+   "name": "Loulé",
+   "dico": "0808",
+   "lat": 37.14399,
+   "lon": -8.02345,
+   "wikidata": "https://www.wikidata.org/wiki/Q586722",
+   "source": "https://www.wikidata.org/wiki/Special:EntityData/Q586722.json",
+   "property": "P625 (coordinate location)",
+   "license": {
+    "name": "CC0 1.0",
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "holder": "Wikidata contributors"
+   },
+   "read_at": "2026-11-18T22:05:24Z"
+  },
+  "lagos": {
+   "place": "lagos",
+   "name": "Lagos",
+   "dico": "0807",
+   "lat": 37.10278,
+   "lon": -8.67278,
+   "wikidata": "https://www.wikidata.org/wiki/Q732548",
+   "source": "https://www.wikidata.org/wiki/Special:EntityData/Q732548.json",
+   "property": "P625 (coordinate location)",
+   "license": {
+    "name": "CC0 1.0",
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "holder": "Wikidata contributors"
+   },
+   "read_at": "2026-11-18T22:05:24Z"
+  },
+  "olhao": {
+   "place": "olhao",
+   "name": "Olhão",
+   "dico": "0810",
+   "lat": 37.02778,
+   "lon": -7.83889,
+   "wikidata": "https://www.wikidata.org/wiki/Q740845",
+   "source": "https://www.wikidata.org/wiki/Special:EntityData/Q740845.json",
+   "property": "P625 (coordinate location)",
+   "license": {
+    "name": "CC0 1.0",
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "holder": "Wikidata contributors"
+   },
+   "read_at": "2026-11-18T22:05:24Z"
+  },
+  "silves": {
+   "place": "silves",
+   "name": "Silves",
+   "dico": "0813",
+   "lat": 37.18333,
+   "lon": -8.43333,
+   "wikidata": "https://www.wikidata.org/wiki/Q749180",
+   "source": "https://www.wikidata.org/wiki/Special:EntityData/Q749180.json",
+   "property": "P625 (coordinate location)",
+   "license": {
+    "name": "CC0 1.0",
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "holder": "Wikidata contributors"
+   },
+   "read_at": "2026-11-18T22:05:24Z"
+  },
+  "vila-real-de-santo-antonio": {
+   "place": "vila-real-de-santo-antonio",
+   "name": "Vila Real de Santo António",
+   "dico": "0816",
+   "lat": 37.2,
+   "lon": -7.41667,
+   "wikidata": "https://www.wikidata.org/wiki/Q750578",
+   "source": "https://www.wikidata.org/wiki/Special:EntityData/Q750578.json",
+   "property": "P625 (coordinate location)",
+   "license": {
+    "name": "CC0 1.0",
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "holder": "Wikidata contributors"
+   },
+   "read_at": "2026-11-18T22:05:24Z"
+  },
+  "monchique": {
+   "place": "monchique",
+   "name": "Monchique",
+   "dico": "0809",
+   "lat": 37.31667,
+   "lon": -8.6,
+   "wikidata": "https://www.wikidata.org/wiki/Q957663",
+   "source": "https://www.wikidata.org/wiki/Special:EntityData/Q957663.json",
+   "property": "P625 (coordinate location)",
+   "license": {
+    "name": "CC0 1.0",
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "holder": "Wikidata contributors"
+   },
+   "read_at": "2026-11-18T22:05:24Z"
+  },
+  "lagoa": {
+   "place": "lagoa",
+   "name": "Lagoa",
+   "dico": "0806",
+   "lat": 37.13333,
+   "lon": -8.45,
+   "wikidata": "https://www.wikidata.org/wiki/Q985519",
+   "source": "https://www.wikidata.org/wiki/Special:EntityData/Q985519.json",
+   "property": "P625 (coordinate location)",
+   "license": {
+    "name": "CC0 1.0",
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "holder": "Wikidata contributors"
+   },
+   "read_at": "2026-11-18T22:05:24Z"
+  },
+  "castro-marim": {
+   "place": "castro-marim",
+   "name": "Castro Marim",
+   "dico": "0804",
+   "lat": 37.21667,
+   "lon": -7.45,
+   "wikidata": "https://www.wikidata.org/wiki/Q986079",
+   "source": "https://www.wikidata.org/wiki/Special:EntityData/Q986079.json",
+   "property": "P625 (coordinate location)",
+   "license": {
+    "name": "CC0 1.0",
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "holder": "Wikidata contributors"
+   },
+   "read_at": "2026-11-18T22:05:24Z"
+  },
+  "aljezur": {
+   "place": "aljezur",
+   "name": "Aljezur",
+   "dico": "0803",
+   "lat": 37.31778,
+   "lon": -8.8,
+   "wikidata": "https://www.wikidata.org/wiki/Q986095",
+   "source": "https://www.wikidata.org/wiki/Special:EntityData/Q986095.json",
+   "property": "P625 (coordinate location)",
+   "license": {
+    "name": "CC0 1.0",
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "holder": "Wikidata contributors"
+   },
+   "read_at": "2026-11-18T22:05:24Z"
+  },
+  "sao-bras-de-alportel": {
+   "place": "sao-bras-de-alportel",
+   "name": "São Brás de Alportel",
+   "dico": "0812",
+   "lat": 37.15,
+   "lon": -7.88333,
+   "wikidata": "https://www.wikidata.org/wiki/Q988667",
+   "source": "https://www.wikidata.org/wiki/Special:EntityData/Q988667.json",
+   "property": "P625 (coordinate location)",
+   "license": {
+    "name": "CC0 1.0",
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "holder": "Wikidata contributors"
+   },
+   "read_at": "2026-11-18T22:05:24Z"
+  },
+  "alcoutim": {
+   "place": "alcoutim",
+   "name": "Alcoutim",
+   "dico": "0802",
+   "lat": 37.46997,
+   "lon": -7.47311,
+   "wikidata": "https://www.wikidata.org/wiki/Q1000041",
+   "source": "https://www.wikidata.org/wiki/Special:EntityData/Q1000041.json",
+   "property": "P625 (coordinate location)",
+   "license": {
+    "name": "CC0 1.0",
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "holder": "Wikidata contributors"
+   },
+   "read_at": "2026-11-18T22:05:24Z"
+  },
+  "lisboa": {
+   "place": "lisboa",
+   "name": "Lisboa",
+   "dico": "1106",
+   "lat": 38.72635,
+   "lon": -9.14843,
+   "wikidata": "https://www.wikidata.org/wiki/Q33690701",
+   "source": "https://www.wikidata.org/wiki/Special:EntityData/Q33690701.json",
+   "property": "P625 (coordinate location)",
+   "license": {
+    "name": "CC0 1.0",
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "holder": "Wikidata contributors"
+   },
+   "read_at": "2026-11-18T22:05:24Z"
+  },
+  "quarteira": {
+   "place": "quarteira",
+   "name": "Quarteira",
+   "dico": "0808",
+   "lat": 37.06946,
+   "lon": -8.10064,
+   "wikidata": "https://www.wikidata.org/wiki/Q1020826",
+   "source": "https://www.wikidata.org/wiki/Special:EntityData/Q1020826.json",
+   "property": "P625 (coordinate location)",
+   "license": {
+    "name": "CC0 1.0",
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "holder": "Wikidata contributors"
+   },
+   "read_at": "2026-11-18T22:05:24Z"
+  }
+ }
+}
