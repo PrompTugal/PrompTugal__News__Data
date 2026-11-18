@@ -52,3 +52,10 @@ table.kv th:first-child, table.kv td:first-child { width: 11rem; font-weight: 60
 .viz-cell h3 { margin-top: .8rem; }
 .viz-cell > p { margin: .2rem 0 1rem; font-size: .85rem; }
 main:has(.viz-grid) { max-width: 80rem; }
+/* the pipeline diagram (data.b@, 18 Nov 2026) */
+.pl-fig svg { width: 100%; height: auto; }
+.pl-box rect { fill: var(--panel); stroke: var(--rule); stroke-width: 1.5; }
+.pl-ok rect { stroke: var(--green); stroke-width: 2; } .pl-bad rect { stroke: var(--red); stroke-width: 2; stroke-dasharray: 6 4; } .pl-ai rect { stroke: #7a4fbf; stroke-width: 2; }
+.pl-t { font: 700 14px var(--font-interface, Arial, sans-serif); fill: var(--ink); } .pl-s { font: 12px var(--font-interface, Arial, sans-serif); fill: var(--muted); }
+.pl-a { stroke: var(--ink); stroke-width: 1.5; } .pl-a.pl-bad { stroke: var(--red); stroke-dasharray: 6 4; } .pl-a.pl-ai { stroke: #7a4fbf; } .pl-h { fill: var(--ink); }
+.pl-k { font: 12px var(--font-interface, Arial, sans-serif); fill: var(--ink); }

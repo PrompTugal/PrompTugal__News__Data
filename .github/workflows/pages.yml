@@ -8,8 +8,12 @@ on:
   # data@PrompTugal.dinis, 2026-11-17: the hourly collection (code only, no model). A scheduled run collects every
   # hourly source, rebuilds and redeploys the site with the same version (no new tag); a push does the same and
   # numbers a new release.
+  # data.b@PrompTugal.dinis, 18 Nov 2026, at Dinis's word ("we need to get to the point where we run this quite regularly"):
+  # GitHub fired only 2 of the ~19 hourly runs due by 14:40 UTC on 18 November (it delays and drops scheduled runs), so
+  # a second time each hour: whichever fires keeps the data within the hour.
   schedule:
     - cron: '17 * * * *'
+    - cron: '47 * * * *'
   workflow_dispatch:
 permissions:
   contents: read

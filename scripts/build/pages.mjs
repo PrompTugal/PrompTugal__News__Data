@@ -344,6 +344,52 @@ export function buildPages({ sources, places, readAt, index, storm, events = [],
     });
   }
 
+  // ---- the pipeline: what is collected, where it goes, what is kept (Dinis, 18 Nov 2026, about 14:40 UTC: "point me to a
+  // page that has a very clear distinction with infographics ... on the pipeline and how everything works and what you
+  // actually are collecting") ----
+  {
+    const B = (x, y, w, h, title, sub, cls = '') => `<g class="pl-box ${cls}"><rect x="${x}" y="${y}" width="${w}" height="${h}" rx="8"/><text x="${x + 10}" y="${y + 20}" class="pl-t">${title}</text>${(sub || []).map((l, i) => `<text x="${x + 10}" y="${y + 38 + i * 15}" class="pl-s">${l}</text>`).join('')}</g>`;
+    const A = (x1, y1, x2, y2, cls = '') => `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" class="pl-a ${cls}" marker-end="url(#pl-head)"/>`;
+    const nHourly = sources.filter(s => s.card.schedule.cadence === 'hourly').length;
+    const svg = `<figure class="pl-fig"><svg viewBox="0 0 1000 460" role="img" aria-label="The pipeline: public sources are read by code in GitHub Actions; the latest read and a log of hashes are published on this site; the raw bytes would go to one vault per source but are not kept until the CI secrets exist; the other sites read the API.">
+<defs><marker id="pl-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="pl-h"/></marker></defs>
+${B(10, 20, 220, 150, '1. Public sources', [`IPMA (6 feeds), adsb.lol,`, 'MeteoAlarm, Agenda LX,', 'Câmara de Lagos,', 'the Storm Charles archive', `${sources.length} with a collector`])}
+${B(10, 200, 220, 120, '1b. Discovery', ['Perplexity (sonar) via', 'OpenRouter, once a day', 'per place, in data.b@\'s', 'session (no CI key yet)'], 'pl-ai')}
+${B(290, 20, 230, 150, '2. Collect (code, no model)', ['GitHub Actions, :17 and :47', `each hour: ${nHourly} hourly sources,`, 'events every 6 hours;', '2.5 s between requests;', 'also on every push to dev'])}
+${B(290, 200, 230, 120, '2b. Claims (code)', ['each event named becomes', 'a claim; evidence marked', 'readable or not by the', 'register; gaps counted'], 'pl-ai')}
+${B(580, 20, 200, 110, '3a. Latest + log', ['latest.json per source,', 'reads.json: 336 runs of', 'URLs, sizes, sha256 (16 hex)'], 'pl-ok')}
+${B(580, 150, 200, 110, '3b. Raw bytes', ['every file as served,', 'dated copy when changed', 'NOT KEPT by CI today:', 'needs the vault secrets'], 'pl-bad')}
+${B(580, 280, 200, 90, '3c. In git', ['Storm data (8.8 MB),', 'discovery, claims, the', 'register, the cards'], 'pl-ok')}
+${B(830, 20, 160, 110, '4a. This site', ['build, gate, leak scan,', 'deploy: pages, charts,', 'API, OpenAPI'], 'pl-ok')}
+${B(830, 150, 160, 110, '4b. Vaults (sgit)', ['one per source, public', 'read key; last written', '17 Nov by data@'], 'pl-bad')}
+${B(830, 300, 160, 120, '5. Readers', ['promptugal.news places,', 'weather, travel, civic,', 'events.promptugal.news,', 'agents (llms.txt)'])}
+${A(230, 95, 290, 95)}${A(230, 260, 290, 260, 'pl-ai')}${A(520, 75, 580, 75)}${A(520, 120, 580, 200, 'pl-bad')}${A(520, 260, 580, 320, 'pl-ai')}${A(780, 75, 830, 75)}${A(780, 205, 830, 205, 'pl-bad')}${A(780, 325, 830, 75)}${A(910, 130, 910, 300)}
+<text x="10" y="420" class="pl-k">Green: working now. Red: blocked (CI secrets SG_SEND_ACCESS_TOKEN and DATA_VAULT_KEYS not set: Dinis). Purple: uses a model.</text>
+<text x="10" y="445" class="pl-k">Lost today between runs: the raw bytes of every read and the processed values of every hour but the latest (only hashes survive).</text>
+</svg><figcaption>The pipeline as it runs on ${new Date().toISOString().slice(0, 10)}. Drawn from this site's own configuration; CC BY 4.0.</figcaption></figure>`;
+    const rows = sources.filter(s => s.card.schedule.cadence !== 'once').map(s => { const l = s.latest ? JSON.stringify(s.latest).length : 0; const raw = (s.raw || []).reduce((n, r) => n + JSON.stringify(r.data).length, 0); return [link(s), s.card.schedule.cadence, `${(l / 1024).toFixed(0)} KB`, s.raw && s.raw.length ? `${s.raw.length} files, about ${(raw / 1024).toFixed(0)} KB a read` : (s.id === 'adsb-faro' ? 'not kept (private aircraft)' : 'HTML pages, vault only'), 'latest only (overwritten each run)', '336 runs (14 days hourly)', s.card.vault ? `${s.card.vault.id}: not written since 17 Nov` : 'none']; });
+    add({
+      path: 'pipeline/', title: 'The pipeline: PrompTugal.news Data', h1: 'The pipeline: what we collect, where it goes, what we keep',
+      description: 'A diagram of the data pipeline and a map of every store: what is collected, how often, where it is kept, for how long, and what is lost today.',
+      blocks: [
+        p('Public data comes in from its publishers, is read by code on a schedule, published on this site and its API, and should be kept whole in a vault per source. This page shows the whole path and, store by store, what is kept and what is not. [How each data set is shown and licensed](/how/).'),
+        raw(svg, 'A diagram: sources, collection in GitHub Actions, the latest files and the log on this site, the raw bytes to the vaults (blocked), the readers.'),
+        h('The schedule'),
+        ul([`GitHub Actions runs \`.github/workflows/pages.yml\` at :17 and :47 each hour (the second time added on 18 November) and on every push to dev. Each run: ${nHourly} sources read hourly, events every 6 hours, then the build, the gate, the leak scan and the deploy.`, '**What actually fired:** GitHub runs scheduled jobs when it can. On 18 November only 2 scheduled runs fired between 00:00 and 14:40 UTC (02:26 and 11:39); the rest of the data came from runs on each push. That is why a reader saw data 6 hours old. The second time each hour halves the chance of a gap; a run started from outside (workflow_dispatch from a scheduled wake) would close it.', 'Discovery (Perplexity) runs once a day per place in data.b@\'s session, because CI has no OpenRouter key.']),
+        h('What is kept, store by store'),
+        table(['Source', 'Read', 'Processed (latest.json)', 'Raw bytes per read', 'Processed history', 'Read log', 'Vault'], rows),
+        table(['Store', 'What', 'Size now', 'Kept how long', 'State'], [
+          ['This site (GitHub Pages)', 'latest.json, reads.json, raw files of the latest read, events, claims, the register, the Storm data, the pages', 'about 18 MB a build', 'replaced on every deploy', 'working'],
+          ['Git (this repository)', 'collectors, cards, the Storm data (8.8 MB), discovery answers and claims, the register', 'about 14 MB', 'for ever (history)', 'working'],
+          ['GitHub Actions run', 'everything a run reads, raw bytes included', 'about 1 to 3 MB a run', 'deleted when the run ends', 'the raw bytes are lost here today'],
+          ['Vaults (sgit, one per source)', 'every raw file, a dated copy when the bytes change, full sha256', 'about 1.5 MB an hour if kept (about 1 GB a month)', 'for ever, versioned', '**blocked:** CI needs SG_SEND_ACCESS_TOKEN and DATA_VAULT_KEYS (Dinis); last written 17 Nov'],
+        ]),
+        h('What it would take to keep everything'),
+        ul(['**Vault secrets in CI (the simplest):** Dinis adds `SG_SEND_ACCESS_TOKEN` and `DATA_VAULT_KEYS` to this repository\'s Actions secrets. `collect/vault-push.mjs` already runs in the workflow and is skipped only because they are missing. Every raw file and a dated copy when it changes would then be kept, per source, readable with each vault\'s public read key.', '**An append lane instead:** CI would hold only a write-only append token (it cannot read or delete), the safer key to give GitHub. Each hourly bundle would be sealed and appended; a drain would file it into the vaults. It needs lanes large enough for about 1.5 MB an hour.', '**Processed history:** each hour\'s latest.json could also go to the vault (small: about 0.6 MB an hour for all sources), so the site can draw a day or a week, not only now.']),
+      ],
+    });
+  }
+
   // ---- how this works: the data, its visualisations, provenance and storage (Dinis, 18 Nov 2026) ----
   {
     const ans = (discovery && discovery.answers) || [];

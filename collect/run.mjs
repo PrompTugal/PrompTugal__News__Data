@@ -15,7 +15,7 @@ const args = process.argv.slice(2), only = args.filter(a => !a.startsWith('--'))
 const cards = fs.readdirSync(path.join(ROOT, 'sources')).filter(d => fs.existsSync(path.join(ROOT, 'sources', d, 'card.json'))).map(d => readJson(path.join(ROOT, 'sources', d, 'card.json')))
 // data.b@, 18 Nov 2026: 'every 6 hours' sources (events-pt: agendas change daily) run at 00, 06, 12 and 18 UTC; their last
 // read is still copied from the live site (--prev) on every run, so each build keeps them
-const due = c => c.schedule?.cadence === 'hourly' || (c.schedule?.cadence === 'every 6 hours' && (process.env.GITHUB_EVENT_NAME !== 'schedule' || new Date().getUTCHours() % 6 === 0))   // and on every push
+const due = c => c.schedule?.cadence === 'hourly' || (c.schedule?.cadence === 'every 6 hours' && (process.env.GITHUB_EVENT_NAME !== 'schedule' || (new Date().getUTCHours() % 6 === 0 && new Date().getUTCMinutes() < 30)))   // and on every push; once in those hours, though two schedule times fire
 const todo = cards.filter(c => only.length ? only.includes(c.id) : due(c))
 const kept = cards.filter(c => ['hourly', 'every 6 hours'].includes(c.schedule?.cadence))
 if (args.includes('--prev')) for (const c of (only.length ? todo : kept)) for (const f of ['latest.json', 'reads.json']) {

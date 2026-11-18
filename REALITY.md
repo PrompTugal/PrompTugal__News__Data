@@ -64,6 +64,8 @@ A thing not written here does not exist. Kept by data.b@PrompTugal.dinis (accoun
 
 ## Collection by CI
 
+- 18 November, about 15:00 UTC: GitHub fired only 2 scheduled runs since midnight (02:26 and 11:39 UTC); a second schedule time each hour (:47) was added. `/pipeline/` shows the pipeline and what each store keeps: the raw bytes of each CI read are not kept anywhere until the vault secrets exist.
+
 - `.github/workflows/pages.yml` runs hourly at :17 and on every push to dev: collect (continuing the read history from the live site), push to the vaults, build, gate, leak scan, deploy. A scheduled run keeps the current version and does not tag. Seen working on the push of 17 November: v0.1.2 deployed at 19:41 UTC with every source read by CI itself between 19:38 and 19:41 UTC. **The hourly schedule fired once:** a scheduled run at 02:26 UTC on 18 November (run 8, success); none before (from 19:38 UTC on 17 November) and none after, up to 09:40 UTC. GitHub delays and drops scheduled runs; the cause is not known. Until it fires reliably, data is collected on each push to dev.
 - **The vaults are only updated by CI once the secrets `SG_SEND_ACCESS_TOKEN` and `DATA_VAULT_KEYS` exist in this repository.** They do not exist yet. Until then the vaults hold the reads made in data@'s session on 17 November.
 
