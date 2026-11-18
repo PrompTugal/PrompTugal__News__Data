@@ -1,0 +1,67 @@
+{
+ "topic": "websummit-2026",
+ "name": "Web Summit 2026 (Lisbon, 10 to 13 November 2026)",
+ "asked_at": "2026-11-18T15:54:26Z",
+ "model": "perplexity/sonar",
+ "via": "OpenRouter",
+ "cost_usd": 0.0052569,
+ "by": "collect/discovery-youtube.mjs (data.b@PrompTugal.dinis)",
+ "for": "library.b@PrompTugal.dinis REQ-2026-0001",
+ "about": "Official replay videos of the event on YouTube, with chapters where Perplexity could give them, AS REPORTED BY PERPLEXITY: untrusted, not read from YouTube (no YouTube key yet). Each video URL is a YouTube link; a chapter is a lead to confirm with the YouTube Data API once Dinis gives a key. Speakers are named as published in the videos, people speaking in public.",
+ "prompt": "List the official recorded talk videos (replays) of Web Summit 2026 (Lisbon, 10 to 13 November 2026) published on the official Web Summit YouTube channel. Answer ONLY with a JSON array, no prose. Each item: {\"title\": string, \"url\": \"the YouTube video URL\", \"published\": \"YYYY-MM-DD\" or null, \"stage\": string or null, \"chapters\": [{\"start\": \"H:MM:SS\", \"title\": string, \"speakers\": [names exactly as listed in the video's own description or chapters]}] (empty if you cannot see the chapters)}. Only videos you can cite. At most 30 items.",
+ "counts": {
+  "videos": 3,
+  "with_chapters": 1
+ },
+ "videos": [
+  {
+   "title": "Web Summit Lisbon 2026 | Day One",
+   "url": "https://www.youtube.com/watch?v=S9RHQGNIaFY",
+   "published": "2026-11-10",
+   "stage": "Mio Arena",
+   "chapters": [
+    {
+     "start": "0:00:00",
+     "title": "Opening / welcome",
+     "speakers": [
+      "Casey Lou"
+     ]
+    }
+   ],
+   "status": "as reported by Perplexity, not read from YouTube"
+  },
+  {
+   "title": "Web Summit Lisbon 2026 | Opening Night",
+   "url": "https://www.youtube.com/watch?v=dJi_pXLxwno",
+   "published": "2026-11-10",
+   "stage": null,
+   "chapters": [],
+   "status": "as reported by Perplexity, not read from YouTube"
+  },
+  {
+   "title": "Web Summit 2026 | Day Three",
+   "url": "https://www.youtube.com/watch?v=-MGZdAtbTrs",
+   "published": "2026-11-12",
+   "stage": null,
+   "chapters": [],
+   "status": "as reported by Perplexity, not read from YouTube"
+  }
+ ],
+ "citations": [
+  "https://www.youtube.com/watch?v=mKqVddiim_o",
+  "https://www.youtube.com/watch?v=S9RHQGNIaFY",
+  "https://www.youtube.com/watch?v=-MGZdAtbTrs",
+  "https://www.youtube.com/watch?v=dJi_pXLxwno",
+  "https://www.youtube.com/watch?v=Wj5qKQ-7fms",
+  "https://www.youtube.com/watch?v=TC_Qikn9A8M",
+  "https://www.youtube.com/watch?v=CH9axjGRt3w",
+  "https://www.youtube.com/watch?v=KFeWGru3Or4",
+  "https://www.youtube.com/watch?v=8YmUaGZgUvk",
+  "https://www.youtube.com/watch?v=QYgwlDYXmXI",
+  "https://www.youtube.com/watch?v=EbjYYT8NEFk",
+  "https://www.youtube.com/watch?v=0W_0evgSPyw",
+  "https://www.youtube.com/watch?v=J4lZ8NBTRE0",
+  "https://www.youtube.com/watch?v=x1lYTcbv5oo",
+  "https://www.youtube.com/watch?v=1SGj6-dLYOs"
+ ]
+}

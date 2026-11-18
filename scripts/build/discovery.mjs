@@ -19,6 +19,7 @@ export function buildDiscovery() {
   const cdir = 'discovery/claims/by-place';
   if (existsSync(cdir)) for (const f of readdirSync(cdir).filter(f => f.endsWith('.json'))) { const d = readJson(join(cdir, f)); if (!d) continue; writeJson(`api/v1/events/claims/by-place/${f}`, deDash(d)); if (f !== 'index.json') claims.push(deDash(d)); }
   if (existsSync('discovery/claims/past')) for (const f of readdirSync('discovery/claims/past').filter(f => f.endsWith('.json'))) writeJson(`api/v1/events/past/${f}`, deDash(readJson(join('discovery/claims/past', f))));
+  if (existsSync('discovery/youtube')) for (const f of readdirSync('discovery/youtube').filter(f => f.endsWith('.json'))) writeJson(`api/v1/discovery/youtube/${f}`, deDash(readJson(join('discovery/youtube', f))));   // YouTube listings via Perplexity (REQ-2026-0001)
   const gaps = readJson('discovery/gaps.json');
   if (gaps) writeJson('api/v1/sources/gaps.json', gaps);
   const spend = readJson('discovery/spend.json');
