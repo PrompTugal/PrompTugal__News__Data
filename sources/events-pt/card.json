@@ -2,7 +2,7 @@
  "id": "events-pt",
  "title": "Events in Portugal, by place",
  "what": "Public events on now or in the next 60 days in Lisbon and the Algarve places, as schema.org Event records, each with its source URL and the time read.",
- "publisher": "Câmara Municipal de Lisboa (Agenda Cultural de Lisboa, agendalx.pt) and Câmara Municipal de Lagos (cm-lagos.pt)",
+ "publisher": "Câmara Municipal de Lisboa (Agenda Cultural de Lisboa, agendalx.pt) Câmara Municipal de Lagos (cm-lagos.pt), Teatro das Figuras, Faro (teatrodasfiguras.pt) and Câmara Municipal de Tavira (cm-tavira.pt)",
  "owner": "data.b@PrompTugal.dinis",
  "collector": "sources/events-pt/collect.mjs",
  "source_home": "https://www.agendalx.pt/wp-json/agendalx/v1/events",
@@ -12,13 +12,13 @@
   "how": "the Pages workflow (.github/workflows/pages.yml) at 17 minutes past 00, 06, 12 and 18 UTC (the agendas change daily); every other hourly run keeps the last read, copied from the live site"
  },
  "terms": {
-  "summary": "Strictest of the sources: no reuse licence or terms page was found for either host. Both robots.txt files allow the paths read; agendalx.pt sets Content-Signal search=yes, ai-train=no, use=reference. So: reference use only, name the source, link to the event, no AI training. Not reviewed by a person: whether this is enough to republish is for Dinis.",
+  "summary": "Strictest of the sources: no reuse licence or terms page was found for any of the four hosts (teatrodasfiguras.pt and cm-tavira.pt show only \"Todos os direitos reservados\" in their footers, and cm-tavira.pt has no robots.txt). The robots.txt files that exist allow the paths read; agendalx.pt sets Content-Signal search=yes, ai-train=no, use=reference. So: reference use only, name the source, link to the event, no AI training. Not reviewed by a person: whether this is enough to republish is for Dinis.",
   "page": "https://www.agendalx.pt/robots.txt",
   "read_at": "2026-11-18",
   "quote": "User-agent: * Content-Signal: search=yes,ai-train=no,use=reference Allow: /",
   "quote_lang": "en",
   "republish": "unclear: no licence found; reference use with attribution and a link to each event's page",
-  "open_question": "No reuse terms were found on agendalx.pt, lisboa.pt (403) or cm-lagos.pt. Dinis to decide whether to republish on this basis, or to ask Câmara Municipal de Lisboa and Câmara Municipal de Lagos."
+  "open_question": "No reuse terms were found on agendalx.pt, lisboa.pt (403), cm-lagos.pt, teatrodasfiguras.pt or cm-tavira.pt. Dinis to decide whether to republish on this basis, or to ask the four publishers (Câmara Municipal de Lisboa, Câmara Municipal de Lagos, Teatro das Figuras, Câmara Municipal de Tavira). The Autódromo Internacional do Algarve terms forbid reuse, so it is not read."
  },
  "api": {
   "latest": "https://data.promptugal.news/api/v1/events-pt/latest.json",

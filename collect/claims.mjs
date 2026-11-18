@@ -21,15 +21,17 @@ for (const d of fs.readdirSync(path.join(ROOT, 'sources'))) {
     const c = readJson(path.join(ROOT, 'sources', d, 'card.json')); if (!c) continue
     for (const u of [c.source_home, c.reader_page]) { const h = host(u); if (h) readable.set(h, d) }
 }
-readable.set('agendalx.pt', 'events-pt'); readable.set('cm-lagos.pt', 'events-pt')
+readable.set('agendalx.pt', 'events-pt'); readable.set('cm-lagos.pt', 'events-pt'); readable.set('teatrodasfiguras.pt', 'events-pt'); readable.set('cm-tavira.pt', 'events-pt')
 const reg = (readJson(path.join(ROOT, 'register', 'sources.json')) || { entries: [] }).entries
-const regByHost = new Map(reg.map(e => [host(e.url), e]).filter(([h]) => h))
+const regByHost = new Map(reg.slice().reverse().map(e => [host(e.url), e]).filter(([h]) => h))
 for (const e of reg) if (['read', 'allowed'].includes(e.status)) { const h = host(e.url); if (h) readable.set(h, e.id) }
 
 // the events this site has read, by URL, to take details from
 const known = new Map()
 const evDir = path.join(ROOT, 'data', 'events', 'by-place')
-if (fs.existsSync(evDir)) for (const f of fs.readdirSync(evDir).filter(f => f.endsWith('.json') && f !== 'index.json')) for (const e of (readJson(path.join(evDir, f))?.events || [])) if (e.url) known.set(e.url.replace(/\/$/, ''), e)
+// matched on the same host and path, ignoring scheme, "www." and a trailing slash (not query or fragment)
+const urlKey = u => { try { const x = new URL(String(u).replace(/ \(query cut\)$/, '')); return x.hostname.replace(/^www\./, '') + x.pathname.replace(/\/+$/, '') } catch { return null } }
+if (fs.existsSync(evDir)) for (const f of fs.readdirSync(evDir).filter(f => f.endsWith('.json') && f !== 'index.json')) for (const e of (readJson(path.join(evDir, f))?.events || [])) { const k = urlKey(e.url); if (k) known.set(k, e) }
 
 const gaps = new Map()
 const index = []
@@ -40,7 +42,7 @@ for (const place of fs.existsSync(dDir) ? fs.readdirSync(dDir).sort() : []) {
     if (!d || !d.ok) continue
     const claims = (d.items || []).filter(i => i && i.name && i.start_date).map(i => {
         const evidence = [...new Set(i.urls || [])].map(u => { const h = host(u); return { url: u, host: h, readable: readable.has(h), register: readable.get(h) || (regByHost.get(h) || {}).id || null } })
-        const match = evidence.map(e => known.get(String(e.url).replace(/\/$/, ''))).find(Boolean)
+        const match = evidence.map(e => known.get(urlKey(e.url))).find(Boolean)
         for (const e of evidence.filter(e => !e.readable && e.host)) { const g = gaps.get(e.host) || { host: e.host, claims: 0, places: new Set(), register: (regByHost.get(e.host) || {}).id || null, example: e.url }; g.claims++; g.places.add(place); gaps.set(e.host, g) }
         const base = { '@type': 'Event', name: String(i.name).slice(0, 200), startDate: i.start_date, endDate: i.end_date || null, place, municipality: i.municipality || null, evidence }
         if (match) return { ...base, status: 'confirmed', details_from: match.source, location: match.location, url: match.url, organizer: match.organizer || null }
