@@ -642,6 +642,165 @@
       table: { head: ['Dataset', 'Files', 'Bytes'], rows: ds.map(function (x) { return [x.dataset, x.files, x.bytes] }) } }
   }
 
+  // ---------- pipeline charts (data.b.design@, 18 Nov): events, claims, social, contracts, gaps
+  var PLACES = { lisboa: 'Lisboa', lagos: 'Lagos', tavira: 'Tavira', faro: 'Faro', albufeira: 'Albufeira', alcoutim: 'Alcoutim', aljezur: 'Aljezur', algarve: 'Algarve (region)', 'castro-marim': 'Castro Marim', lagoa: 'Lagoa', loule: 'Loulé', monchique: 'Monchique', olhao: 'Olhão', portimao: 'Portimão', quarteira: 'Quarteira', 'sao-bras-de-alportel': 'São Brás de Alportel', silves: 'Silves', 'vila-do-bispo': 'Vila do Bispo', 'vila-real-de-santo-antonio': 'Vila Real de Santo António' }
+  function pname (k) { return PLACES[k] || ucfirst(String(k).replace(/-/g, ' ')) }
+  function fmtN (n) { return Number(n).toLocaleString('en-GB') }
+  function eur (n) { return '€' + Math.round(n).toLocaleString('en-GB') }
+  function eurShort (n) { return n >= 1e6 ? '€' + (n / 1e6).toFixed(1) + 'M' : n >= 1e3 ? '€' + Math.round(n / 1e3) + 'k' : '€' + Math.round(n) }
+  function dayIso (ms) { return new Date(ms).toISOString().slice(0, 10) }
+  function analysis (body, txt) { var p = H('p', 'viz-analysis', txt); body.appendChild(p); return p }
+  var CCLIC = { text: 'Licence: counts and drawing CC BY 4.0; the listings behind them keep their publishers\' terms.', url: 'https://creativecommons.org/licenses/by/4.0/' }
+  // rows: [{label, segs:[{v, fill, name}], text}]; stacked horizontal bars, one row each
+  function hbars (rows, o) {
+    var W = o.W || 560, lw = o.lw || 150, rh = o.rh || 22, tw = o.tw || 96, sx
+    var mx = Math.max(1, Math.max.apply(null, rows.map(function (r) { return r.segs.reduce(function (a, s) { return a + s.v }, 0) })))
+    sx = lin(0, mx, 0, W - lw - tw)
+    var gaps = rows.filter(function (r) { return r.gap }).length * 8, svg = root(W, rows.length * rh + 6 + gaps, o.aria, 'viz-sq'), off = 0
+    rows.forEach(function (r, i) {
+      if (r.gap) off += 8
+      var y = i * rh + 3 + off, x = lw, tot = 0, ty = y + (rh - 6) / 2 + 4
+      S(svg, 'text', { x: lw - 8, y: ty, 'text-anchor': 'end' }, r.label)
+      r.segs.forEach(function (s) {
+        if (!(s.v > 0)) return
+        var w = Math.max(2, sx(s.v))
+        tip(S(svg, 'rect', { x: x, y: y, width: w, height: rh - 6, rx: 2, fill: s.fill }), r.label + (s.name ? ', ' + s.name : '') + ': ' + (s.tip || fmtN(s.v)))
+        x += w; tot += s.v
+      })
+      S(svg, 'text', { x: x + 5, y: ty, class: 'm' }, r.text != null ? r.text : fmtN(tot))
+    })
+    return svg
+  }
+  // columns: days[] of {label, segs:[v...]}, series names/colours; vertical stacked columns
+  function stackCols (days, series, aria, every) {
+    var W = 560, Hh = 230, ml = 34, mr = 6, top = 10, bot = Hh - 26, n = days.length, bw = (W - ml - mr) / n
+    var mx = Math.max(1, Math.max.apply(null, days.map(function (d) { return d.segs.reduce(function (a, v) { return a + v }, 0) })))
+    var sy = lin(0, mx, bot, top), svg = root(W, Hh, aria, 'viz-sq')
+    ticksFor(0, mx, 4).forEach(function (t) { S(svg, 'line', { x1: ml, x2: W - mr, y1: sy(t), y2: sy(t), class: 'grid' }); S(svg, 'text', { x: ml - 5, y: sy(t) + 4, 'text-anchor': 'end', class: 'm' }, String(t)) })
+    days.forEach(function (d, i) {
+      var x = ml + i * bw, acc = 0
+      d.segs.forEach(function (v, k) {
+        if (!(v > 0)) return
+        tip(S(svg, 'rect', { x: x + 0.5, y: sy(acc + v), width: Math.max(1, bw - 1), height: Math.max(0.5, sy(acc) - sy(acc + v)), fill: series[k].fill }), d.label + ', ' + series[k].name + ': ' + v)
+        acc += v
+      })
+      if (i % every === 0) S(svg, 'text', { x: x + bw / 2, y: Hh - 10, 'text-anchor': 'middle', class: 'm' }, d.short)
+    })
+    S(svg, 'line', { x1: ml, x2: W - mr, y1: bot, y2: bot, class: 'axis' })
+    return svg
+  }
+
+  // events-calendar
+  R['events-calendar'] = function (body, d) {
+    var pl = ['lisboa', 'lagos', 'tavira', 'faro'], ev = d.places || {}, rd = String(d.read_at || '').slice(0, 10), t0 = T(rd + 'T00:00:00Z')
+    if (!isFinite(t0)) throw new Error('no read_at')
+    var days = [], totals = pl.map(function (p) { return (ev[p] || []).length }), grand = totals.reduce(function (a, b) { return a + b }, 0)
+    for (var i = 0; i < 60; i++) {
+      var ms = t0 + i * 864e5, iso = dayIso(ms)
+      days.push({ iso: iso, label: dayLabel(iso), short: dm(ms), segs: pl.map(function (p) { return (ev[p] || []).filter(function (e) { var s = e.startDate; return s && s <= iso && iso <= (e.endDate || s) }).length }) })
+    }
+    var series = pl.map(function (p, k) { return { name: pname(p), fill: cat(k) } })
+    var best = 0; days.forEach(function (x, i) { var a = x.segs.reduce(function (p, q) { return p + q }, 0), b = days[best].segs.reduce(function (p, q) { return p + q }, 0); if (a > b) best = i })
+    var top = 0; totals.forEach(function (v, k) { if (v > totals[top]) top = k })
+    var bt = days[best].segs.reduce(function (p, q) { return p + q }, 0)
+    body.appendChild(stackCols(days, series, 'Stacked columns of events on each of the next 60 days from ' + dmy(t0) + ', by place: ' + pl.map(function (p, k) { return pname(p) + ' ' + totals[k] + ' events' }).join(', ') + '. Busiest day ' + days[best].label + ' with ' + bt + '.', 10))
+    body.appendChild(legend(pl.map(function (p, k) { return [cat(k), pname(p) + ': ' + fmtN(totals[k]) + ' events'] })))
+    analysis(body, pname(pl[top]) + ' has the most events (' + fmtN(totals[top]) + ' of ' + fmtN(grand) + '). The busiest day is ' + days[best].label + ', with ' + fmtN(bt) + ' events on.')
+    body.appendChild(note('An event counts on every day from its start to its end date, so a long exhibition adds to each of its days. Only the four places with a readable agenda are drawn.'))
+    var prov = d.provenance || {}
+    return { about: 'Events on each of the next 60 days in Lisboa, Lagos, Tavira and Faro, from the agendas we are allowed to read.', plain: true, by: '', srcLinks: (prov.sources || []).map(function (s) { return [s.host, s.route] }), licence: CCLIC,
+      table: { head: ['Date'].concat(pl.map(pname), ['All']), rows: days.map(function (x) { return [x.iso].concat(x.segs, [x.segs.reduce(function (a, b) { return a + b }, 0)]) }) } }
+  }
+
+  // events-claims
+  R['events-claims'] = function (body, d) {
+    var ps = (d.places || []).slice().sort(function (a, b) { return b.claims - a.claims || (a.place < b.place ? -1 : 1) }), shown = ps.filter(function (p) { return p.claims > 0 })
+    var C = ['var(--viz-c1)', 'var(--viz-c3)', 'var(--viz-c4)'], tot = { c: 0, k: 0, w: 0 }
+    ps.forEach(function (p) { tot.c += p.claims; tot.k += p.confirmed; tot.w += p.withheld })
+    if (!shown.length) { empty(body, 'No event claims were found at the time read.'); return { about: 'Event claims by place.', plain: true, by: 'PrompTugal.news', table: null } }
+    var rows = []
+    shown.forEach(function (p) {
+      var nm = pname(p.place)
+      rows.push({ label: nm, gap: true, segs: [{ v: p.claims, fill: C[0], name: 'found through Perplexity' }] })
+      rows.push({ label: '', segs: [{ v: p.confirmed, fill: C[1], name: 'confirmed' }], text: p.confirmed + ' confirmed' })
+      rows.push({ label: '', segs: [{ v: p.withheld, fill: C[2], name: 'details withheld' }], text: p.withheld + ' withheld' })
+    })
+    var svg = hbars(rows, { aria: 'Bars per place of event claims found through Perplexity, confirmed, and with details withheld, ' + shown.length + ' places. ' + shown.map(function (p) { return pname(p.place) + ' ' + p.claims + ' found, ' + p.confirmed + ' confirmed, ' + p.withheld + ' withheld' }).join('; ') + '.', lw: 170, rh: 18, tw: 90 })
+    body.appendChild(svg)
+    body.appendChild(legend([[C[0], 'Found through Perplexity'], [C[1], 'Confirmed by a source we may read'], [C[2], 'Details withheld']]))
+    analysis(body, tot.k + ' of ' + tot.c + ' claims are confirmed (' + (tot.c ? Math.round(tot.k / tot.c * 100) : 0) + ' per cent); ' + tot.w + ' have their details withheld.')
+    body.appendChild(note('A claim is a name, date and place from Perplexity (sonar, through OpenRouter), not a listing. It is confirmed only when a source we may read says the same. Places with no claims are left out of the bars: ' + (ps.length - shown.length) + '.'))
+    var lic = d.license || {}
+    return { about: 'Event claims per place: found through Perplexity, confirmed, and withheld.', plain: true, by: 'PrompTugal.news discovery and source register', licence: { text: 'Licence: ' + (lic.name || 'CC BY 4.0') + '.', url: lic.url || 'https://creativecommons.org/licenses/by/4.0/' }, read: d.read_at,
+      table: { head: ['Place', 'Found through Perplexity', 'Confirmed', 'Details withheld'], rows: ps.map(function (p) { return [pname(p.place), p.claims, p.confirmed, p.withheld] }) } }
+  }
+
+  // social-pulse
+  R['social-pulse'] = function (body, d) {
+    var posts = d.posts || [], rd = String(d.read_at || '').slice(0, 10), t0 = T(rd + 'T00:00:00Z') - 29 * 864e5
+    if (!isFinite(t0)) throw new Error('no read_at')
+    var orgs = {}; posts.forEach(function (p) { orgs[p.organisation] = (orgs[p.organisation] || 0) + 1 })
+    var on = Object.keys(orgs).sort(function (a, b) { return orgs[b] - orgs[a] || (a < b ? -1 : 1) }), idx = {}; on.forEach(function (o, i) { idx[o] = i })
+    var days = [], byDay = {}
+    for (var i = 0; i < 30; i++) { var iso = dayIso(t0 + i * 864e5); byDay[iso] = days.length; days.push({ iso: iso, label: dayLabel(iso), short: dm(t0 + i * 864e5), segs: on.map(function () { return 0 }) }) }
+    var inWin = 0
+    posts.forEach(function (p) { var k = byDay[String(p.posted_at).slice(0, 10)]; if (k != null) { days[k].segs[idx[p.organisation]]++; inWin++ } })
+    if (!posts.length) { empty(body, 'No public posts were read.'); return { about: 'Posts per day by organisation.', plain: true, by: 'public APIs', table: null } }
+    var series = on.map(function (o, i) { return { name: o, fill: cat(i) } })
+    var bd = 0; days.forEach(function (x, i) { var a = x.segs.reduce(function (p, q) { return p + q }, 0); if (a > days[bd].segs.reduce(function (p, q) { return p + q }, 0)) bd = i })
+    body.appendChild(stackCols(days, series, 'Stacked columns of public posts per day for the last 30 days by organisation: ' + on.map(function (o) { return o + ' ' + orgs[o] }).join(', ') + '. ' + inWin + ' posts in the window.', 5))
+    body.appendChild(legend(on.map(function (o, i) { return [cat(i), o + ': ' + orgs[o]] })))
+    function tally (key) { var m = {}; posts.forEach(function (p) { (p[key] || []).forEach(function (v) { m[v] = (m[v] || 0) + 1 }) }); return Object.keys(m).sort(function (a, b) { return m[b] - m[a] || (a < b ? -1 : 1) }).slice(0, 8).map(function (k) { return { k: k, v: m[k] } }) }
+    var tp = tally('topics'), pl = tally('places')
+    body.appendChild(H('p', 'viz-sub', 'Top topics matched'))
+    if (tp.length) body.appendChild(hbars(tp.map(function (x) { return { label: x.k.length <= 2 ? x.k.toUpperCase() : ucfirst(x.k.replace(/-/g, ' ')), segs: [{ v: x.v, fill: 'var(--viz-c2)', name: 'posts' }] } }), { aria: 'Bars of the most matched topics: ' + tp.map(function (x) { return x.k + ' ' + x.v }).join(', ') + '.', lw: 150, rh: 20 })); else empty(body, 'No post matched a topic.')
+    body.appendChild(H('p', 'viz-sub', 'Top places matched'))
+    if (pl.length) body.appendChild(hbars(pl.map(function (x) { return { label: pname(x.k), segs: [{ v: x.v, fill: 'var(--viz-c3)', name: 'posts' }] } }), { aria: 'Bars of the most matched places: ' + pl.map(function (x) { return pname(x.k) + ' ' + x.v }).join(', ') + '.', lw: 150, rh: 20 })); else empty(body, 'No post matched a place.')
+    analysis(body, fmtN(inWin) + ' posts from ' + on.length + ' organisations in the last 30 days; ' + on[0] + ' posted the most (' + orgs[on[0]] + '). The busiest day was ' + days[bd].label + '.')
+    var latest = posts.slice().sort(function (a, b) { return T(b.posted_at) - T(a.posted_at) }).slice(0, 5)
+    var ul = H('ul', 'viz-links'); latest.forEach(function (p) { var li = H('li'); li.appendChild(link(p.url, p.organisation + ', ' + stamp(T(p.posted_at)))); ul.appendChild(li) })
+    body.appendChild(H('p', 'viz-sub', 'Latest posts, by link')); body.appendChild(ul)
+    body.appendChild(note('Counts only: the data holds links, times, topics and places, no post text. Organisations\' official accounts only.'))
+    var prov = d.provenance || {}
+    return { about: 'Public posts by the official accounts of organisations, per day for 30 days, with the topics and places we matched.', plain: true, by: '', srcLinks: (prov.sources || []).map(function (s) { return [s.platform, s.api] }), licence: { text: 'Licence: counts and drawing CC BY 4.0; posts stay under the platform\'s terms.', url: 'https://creativecommons.org/licenses/by/4.0/' },
+      table: { head: ['Date'].concat(on, ['All']), rows: days.map(function (x) { return [x.iso].concat(x.segs, [x.segs.reduce(function (a, b) { return a + b }, 0)]) }) } }
+  }
+
+  // contracts-by-place
+  R['contracts-by-place'] = function (body, d) {
+    var pl = d.places || {}, KINDS = [['council', 'Council'], ['municipal company', 'Municipal company'], ['municipal service', 'Municipal service']], all = [], rows = []
+    Object.keys(pl).forEach(function (k) { var v = 0, n = 0, by = {}; (pl[k] || []).forEach(function (c) { all.push(c); n++; var p = num(c.price_eur) || 0; v += p; by[c.buyer_kind] = (by[c.buyer_kind] || 0) + p }); rows.push({ k: k, n: n, v: v, by: by }) })
+    if (!all.length) { empty(body, 'No contracts were read.'); return { about: 'Public contracts by place.', by: 'Portal BASE', table: null } }
+    rows.sort(function (a, b) { return b.v - a.v })
+    var total = rows.reduce(function (a, r) { return a + r.v }, 0)
+    body.appendChild(hbars(rows.map(function (r) { return { label: pname(r.k), segs: KINDS.map(function (kk, i) { return { v: r.by[kk[0]] || 0, fill: cat(i), name: kk[1].toLowerCase(), tip: eur(r.by[kk[0]] || 0) } }), text: eurShort(r.v) + ', ' + r.n } }), { aria: 'Stacked bars of total contract value per place, split by buyer kind, sorted: ' + rows.map(function (r) { return pname(r.k) + ' ' + eur(r.v) + ' in ' + r.n + ' contracts' }).join('; ') + '.', lw: 170, rh: 22, tw: 120 }))
+    body.appendChild(legend(KINDS.map(function (kk, i) { return [cat(i), kk[1]] })))
+    var pc = {}; all.forEach(function (c) { var p = c.procedure || 'not stated'; pc[p] = (pc[p] || 0) + 1 })
+    var pk = Object.keys(pc).sort(function (a, b) { return pc[b] - pc[a] })
+    body.appendChild(H('p', 'viz-sub', 'Contracts by procedure type'))
+    body.appendChild(hbars(pk.map(function (k) { return { label: k, segs: [{ v: pc[k], fill: 'var(--viz-c1)', name: 'contracts' }] } }), { aria: 'Bars of contract count by procedure type: ' + pk.map(function (k) { return k + ' ' + pc[k] }).join(', ') + '.', lw: 250, rh: 20, tw: 60 }))
+    var buy = {}; all.forEach(function (c) { var n = (c.contracting_entity && c.contracting_entity.name) || 'not stated'; buy[n] = (buy[n] || 0) + (num(c.price_eur) || 0) })
+    var bn = Object.keys(buy).sort(function (a, b) { return buy[b] - buy[a] })[0]
+    var direct = all.filter(function (c) { return /^ajuste direto/i.test(c.procedure || '') }), dv = direct.reduce(function (a, c) { return a + (num(c.price_eur) || 0) }, 0)
+    analysis(body, 'The largest buyer by value is ' + bn + ' (' + eur(buy[bn]) + ', ' + Math.round(buy[bn] / total * 100) + ' per cent of ' + eur(total) + '). Direct awards (ajuste direto) are ' + Math.round(direct.length / all.length * 100) + ' per cent of ' + fmtN(all.length) + ' contracts and ' + Math.round(dv / total * 100) + ' per cent of the value.')
+    body.appendChild(note('Prices are the contract price in euros as published. Contractors are not named here; where a contractor is a private individual the data says only "a natural person".'))
+    var prov = d.provenance || {}
+    return { about: 'Public contracts published on Portal BASE in the last ' + ((d.counts && d.counts.window_days) || 90) + ' days: total value and count per place, by kind of buyer, and by procedure type.', by: 'IMPIC, Portal BASE on dados.gov.pt', licence: { text: 'Licence: contract data Outra (Domínio Público); drawing CC BY 4.0.', url: prov.terms_page || prov.dataset },
+      table: { head: ['Place', 'Contracts', 'Total value', 'Council', 'Municipal company', 'Municipal service'], rows: rows.map(function (r) { return [pname(r.k), r.n, eur(r.v), eur(r.by.council || 0), eur(r.by['municipal company'] || 0), eur(r.by['municipal service'] || 0)] }) } }
+  }
+
+  // gaps-hosts
+  R['gaps-hosts'] = function (body, d) {
+    var hs = (d.hosts || []).slice().sort(function (a, b) { return b.claims - a.claims || (a.host < b.host ? -1 : 1) }), top = hs.slice(0, 15), tc = hs.reduce(function (a, h) { return a + h.claims }, 0)
+    if (!hs.length) { empty(body, 'No cited host is unread.'); return { about: 'Cited hosts we do not read.', plain: true, by: 'PrompTugal.news', table: null } }
+    body.appendChild(hbars(top.map(function (h) { return { label: h.host, segs: [{ v: h.claims, fill: 'var(--viz-c2)', name: 'claims', tip: h.claims + ' claims, ' + (h.places || []).length + ' places' }] } }), { aria: 'Horizontal bars of the ' + top.length + ' hosts cited most for events that we do not read, by claims: ' + top.map(function (h) { return h.host + ' ' + h.claims }).join(', ') + '.', lw: 190, rh: 20, tw: 50 }))
+    analysis(body, hs.length + ' cited hosts are not read by us, behind ' + fmtN(tc) + ' claims. ' + top[0].host + ' is cited most (' + top[0].claims + ' claims, ' + (top[0].places || []).length + ' places).')
+    body.appendChild(note('Top 15 of ' + hs.length + ' shown. The source register says why each host is not read.'))
+    var lic = d.license || {}
+    return { about: 'Hosts cited as evidence for events that this site does not read, ranked by the claims that point to them.', plain: true, by: 'PrompTugal.news source register', read: d.read_at, licence: { text: 'Licence: ' + (lic.name || 'CC BY 4.0') + '.', url: lic.url || 'https://creativecommons.org/licenses/by/4.0/' },
+      table: { head: ['Host', 'Claims', 'Places'], rows: hs.map(function (h) { return [h.host, h.claims, (h.places || []).length] }) } }
+  }
+
   // ---------- mount
   function link (href, text) { var a = H('a', '', text); a.href = /^(https?:\/\/|\/)/i.test(href) ? href : '#'; a.rel = 'noopener'; return a }
   function host (u) { try { return new URL(u).host } catch (e) { return u } }
@@ -659,8 +818,11 @@
       else if (url) { cap.appendChild(link(url, host(url))); if (prov.page) { cap.appendChild(document.createTextNode(' (')); cap.appendChild(link(prov.page, 'publisher\'s page')); cap.appendChild(document.createTextNode(')')) } cap.appendChild(document.createTextNode('. ')) }
       else cap.appendChild(document.createTextNode('see the data file. '))
     } else if (spec.plain) {
-      cap.appendChild(document.createTextNode('Source: ')); if (spec.srcLink) cap.appendChild(link(spec.srcLink, spec.by)); else cap.appendChild(document.createTextNode(spec.by)); cap.appendChild(document.createTextNode('. '))
+      cap.appendChild(document.createTextNode('Source: ')); if (spec.srcLink) cap.appendChild(link(spec.srcLink, spec.by)); else cap.appendChild(document.createTextNode(spec.by))
+      if (spec.srcLinks) spec.srcLinks.forEach(function (l, i) { if (i || spec.by) cap.appendChild(document.createTextNode(', ')); cap.appendChild(link(l[1], l[0])) })
+      cap.appendChild(document.createTextNode('. '))
     }
+    if (spec.licence) { cap.appendChild(document.createTextNode(spec.licence.text + ' ')); if (spec.licence.url) { cap.appendChild(link(spec.licence.url, 'Licence terms')); cap.appendChild(document.createTextNode('. ')) } }
     var read = fig.getAttribute('data-read') || spec.read || (d && (d.read_at || (prov && prov.read_at)))
     var ms = read ? T(read) : (res[0].lm ? Date.parse(res[0].lm) : NaN)
     if (isFinite(ms)) cap.appendChild(document.createTextNode((read ? 'Time read: read ' : 'File dated: ') + stamp(ms).replace(/^(\d+ \w+ \d+), /, '$1, ') + '. '))

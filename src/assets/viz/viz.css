@@ -65,3 +65,8 @@
 .viz-key { margin: 6px 0 0; font-size: 13px; color: var(--muted); }
 @media (max-width: 520px) { .viz-windmap { aspect-ratio: 1 / 1.15; } }
 @media (forced-colors: active) { .viz svg text { fill: CanvasText; } }
+.viz-analysis { margin: 12px 0 0; padding: 8px 12px; border-left: 4px solid var(--viz-c1); background: var(--panel, #ece8de); font-size: 15px; color: var(--ink); }
+.viz-sub { margin: 16px 0 4px; font-size: 14px; font-weight: 700; color: var(--ink); }
+.viz-links { margin: 4px 0 0; padding-left: 20px; font-size: 14px; }
+.viz-links a { color: var(--link, var(--green)); overflow-wrap: anywhere; }
+.viz figcaption a { overflow-wrap: anywhere; }
