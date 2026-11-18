@@ -28,7 +28,7 @@ export function buildPreview({ sources, builtAt }) {
 <style>text{font-family:Georgia,'Times New Roman',serif;fill:#1d1d1b}.h{font-size:54px;font-weight:700}.s{font-size:26px;fill:#5b5b57}.v{font-size:68px;font-weight:700;fill:#1f6f43}.nr{font-size:40px;fill:#5b5b57}.l{font-size:26px}.o{font-size:22px;fill:#5b5b57}.f{font-size:20px;fill:#5b5b57}</style>
 <rect width="${W}" height="${H}" fill="#f6f3ec"/><rect width="${W}" height="10" fill="#1f6f43"/>
 <text class="h" x="60" y="105">data.promptugal.news</text>
-<text class="s" x="60" y="150">Public data for Lisboa and the Algarve, each value with its source and the time read</text>
+<text class="s" x="60" y="150">Open data for Portugal, London and Europe, each value with its source and the time read</text>
 ${figures.map(cell).join('\n')}
 <text class="f" x="60" y="${H - 30}">Built ${esc(at)} from this site's own files. Licence: CC BY 4.0; each source keeps its own terms.</text>
 </svg>
