@@ -1,1 +1,761 @@
-{"about":"Hand-kept entries of the sources register (see README.md). Sources with a collector here are added by the build from their cards.","entries":[]}
+{
+ "about": "Hand-kept entries of the sources register (see README.md). Sources with a collector here are added by the build from their cards. Researched 18 November 2026: robots.txt and published terms pages only; nothing fetched from Eventbrite, Luma, Meetup, websummit.com or sideevents.guide.",
+ "entries": [
+  {
+   "id": "google-news",
+   "name": "Google News (search RSS feeds)",
+   "kind": "search or AI service",
+   "url": "https://news.google.com/",
+   "owner": "Google LLC",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "news"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "User-agent: *\nDisallow: /\nAllow: /$",
+    "quote_lang": "en",
+    "page": "https://news.google.com/robots.txt",
+    "read_at": "2026-11-18",
+    "basis": "robots.txt (an access rule, not a reuse licence)"
+   },
+   "interface": "Search RSS feeds (news.google.com/rss/search?q=...) exist but are not documented as a supported API; Google's terms not read this session.",
+   "contact_channel": null,
+   "notes": "robots.txt disallows everything except a short allow list (home, topics, publications, stories); /rss/ is not in the allow list. Mapped, not used until Dinis decides.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "x-twitter",
+   "name": "X (Twitter)",
+   "kind": "social network",
+   "url": "https://x.com/",
+   "owner": "X Corp.",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "news",
+    "events"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "User-agent: *\nDisallow: /",
+    "quote_lang": "en",
+    "page": "https://x.com/robots.txt",
+    "read_at": "2026-11-18",
+    "basis": "robots.txt (an access rule, not a reuse licence)"
+   },
+   "interface": "Paid X API under the X Developer Policy (developer.x.com); needs a key and agreement, not available to us.",
+   "contact_channel": "https://developer.x.com/en/developer-terms/agreement-and-policy",
+   "notes": "Developer Policy read (200) but it governs API use only; no clause allowing unauthenticated automated collection found.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "meta",
+   "name": "Meta (Instagram and Facebook)",
+   "kind": "social network",
+   "url": "https://www.instagram.com/",
+   "owner": "Meta Platforms, Inc.",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "news",
+    "events"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "Collection of data on Instagram through automated means is prohibited unless you have express written permission from Instagram",
+    "quote_lang": "en",
+    "page": "https://www.instagram.com/robots.txt",
+    "read_at": "2026-11-18",
+    "basis": "robots.txt (an access rule, not a reuse licence)"
+   },
+   "interface": "Meta's Graph API / Content Library need approved access; none requested.",
+   "contact_channel": "https://www.facebook.com/legal/automated_data_collection_terms",
+   "notes": "robots.txt also has User-agent: * Disallow: /. Facebook automated data collection terms page returned 200 but is script-rendered; text not extracted.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "linkedin",
+   "name": "LinkedIn",
+   "kind": "social network",
+   "url": "https://www.linkedin.com/",
+   "owner": "LinkedIn Corporation (Microsoft)",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "news",
+    "events"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "Automated Crawling & Indexing without the express permission of LinkedIn is strictly prohibited.",
+    "quote_lang": "en",
+    "page": "https://www.linkedin.com/legal/crawling-terms",
+    "read_at": "2026-11-18",
+    "basis": "terms"
+   },
+   "interface": "No public interface for event or post data; crawling only by LinkedIn's written permission.",
+   "contact_channel": "https://www.linkedin.com/legal/crawling-terms",
+   "notes": "robots.txt header: \"The use of robots or other automated means to access LinkedIn without the express permission of LinkedIn is strictly prohibited.\" Its own page names a crawl-permission mailbox (an organisational address) but we do not use it; any request goes through outreach@ and a person.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "tiktok",
+   "name": "TikTok",
+   "kind": "social network",
+   "url": "https://www.tiktok.com/",
+   "owner": "TikTok / ByteDance",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "news",
+    "events"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "User-agent: *\nAllow: /foryou\nAllow: /discover\nAllow: /about\nAllow: /legal",
+    "quote_lang": "en",
+    "page": "https://www.tiktok.com/robots.txt",
+    "read_at": "2026-11-18",
+    "basis": "robots.txt (an access rule, not a reuse licence)"
+   },
+   "interface": "Research API and Content API exist for approved applicants; not requested.",
+   "contact_channel": "https://www.tiktok.com/legal/page/eea/terms-of-service/en",
+   "notes": "robots.txt allows only a short list of pages for generic agents and has a long list of named AI and crawler agents (including ClaudeBot, PerplexityBot) fully disallowed. Terms page read (200); no scraping clause extracted from it, so none is quoted.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "bluesky",
+   "name": "Bluesky (AT Protocol public API)",
+   "kind": "social network",
+   "url": "https://bsky.app/",
+   "owner": "Bluesky Social PBC",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "news",
+    "events"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "could not read the terms: not kept (robots.txt and terms were not saved this session; docs.bsky.app rate-limits page returned 200 with no extractable text)",
+    "quote_lang": "en",
+    "page": "https://docs.bsky.app/docs/advanced-guides/rate-limits",
+    "read_at": "2026-11-18",
+    "basis": "could not read"
+   },
+   "interface": "AT Protocol public XRPC API (public.api.bsky.app) and firehose; open by design per the register brief.",
+   "contact_channel": null,
+   "notes": "Open by design is the brief's claim, not yet confirmed from Bluesky's terms by this collector. Needs a second read before status changes.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "mastodon",
+   "name": "Mastodon (mastodon.social as the example instance)",
+   "kind": "social network",
+   "url": "https://mastodon.social/",
+   "owner": "Mastodon gGmbH (instance operator)",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "news",
+    "events"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "# You are not allowed to use the contents of this website for LLM training",
+    "quote_lang": "en",
+    "page": "https://mastodon.social/robots.txt",
+    "read_at": "2026-11-18",
+    "basis": "robots.txt (an access rule, not a reuse licence)"
+   },
+   "interface": "Public REST API and per-account RSS/Atom (.rss) on the instance; each instance sets its own rules.",
+   "contact_channel": null,
+   "notes": "robots.txt for User-agent: * disallows only /media_proxy/, /interact/ and a few API paths; named AI-training agents are fully disallowed. Instance terms of service not read.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "youtube",
+   "name": "YouTube (Data API)",
+   "kind": "social network",
+   "url": "https://www.youtube.com/",
+   "owner": "Google LLC",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "news",
+    "events"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "Disallow: /feeds/videos.xml",
+    "quote_lang": "en",
+    "page": "https://www.youtube.com/robots.txt",
+    "read_at": "2026-11-18",
+    "basis": "robots.txt (an access rule, not a reuse licence)"
+   },
+   "interface": "YouTube Data API v3 with a key, under the YouTube API Services Terms and Developer Policies.",
+   "contact_channel": "https://developers.google.com/youtube/terms/api-services-terms-of-service",
+   "notes": "robots.txt also disallows /results, /api/ and /comment for generic agents. API Services Terms page read (200); use needs a key, which we are not to obtain without Dinis.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "perplexity",
+   "name": "Perplexity",
+   "kind": "search or AI service",
+   "url": "https://www.perplexity.ai/",
+   "owner": "Perplexity AI, Inc.",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "news"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "could not read the terms: not read this session (robots.txt returned 200 but was not saved; terms not fetched within budget)",
+    "quote_lang": "en",
+    "page": "https://www.perplexity.ai/robots.txt",
+    "read_at": "2026-11-18",
+    "basis": "could not read"
+   },
+   "interface": "Commercial API with a key; not requested.",
+   "contact_channel": null,
+   "notes": "Per the brief: asking a service does not change what we may republish; mapped, not used until Dinis decides. Note TikTok's robots.txt names PerplexityBot, which shows platforms restrict it.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "ana",
+   "name": "ANA Aeroportos de Portugal",
+   "kind": "airport operator",
+   "url": "https://www.aeroportos.pt/",
+   "owner": "ANA Aeroportos de Portugal, S.A. (VINCI Airports)",
+   "places": [
+    "portugal",
+    "lisboa",
+    "faro"
+   ],
+   "gives": [
+    "flights",
+    "cancellations",
+    "schedules"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "could not read the terms: proxy 502 (www.aeroportos.pt robots.txt)",
+    "quote_lang": "en",
+    "page": "https://www.aeroportos.pt/robots.txt",
+    "read_at": "2026-11-18",
+    "basis": "could not read"
+   },
+   "interface": null,
+   "contact_channel": null,
+   "notes": "Not readable this session; the arrivals/departures pages' machine-reading rules are unknown. Retry from another route or ask on the record.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "turismo-portugal",
+   "name": "Turismo de Portugal (visitportugal.com)",
+   "kind": "public body",
+   "url": "https://www.visitportugal.com/",
+   "owner": "Turismo de Portugal, I.P.",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "events",
+    "news"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "User-agent: *\nCrawl-delay: 1",
+    "quote_lang": "en",
+    "page": "https://www.visitportugal.com/robots.txt",
+    "read_at": "2026-11-18",
+    "basis": "robots.txt (an access rule, not a reuse licence)"
+   },
+   "interface": "Not found this session; robots.txt sets Crawl-delay: 1 and a Drupal-style allow/disallow list, with no clause on reuse.",
+   "contact_channel": null,
+   "notes": "robots.txt does not forbid the whole site; its terms/reuse page was not read (budget).",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "visitalgarve",
+   "name": "Região de Turismo do Algarve (visitalgarve.pt)",
+   "kind": "public body",
+   "url": "https://www.visitalgarve.pt/",
+   "owner": "Região de Turismo do Algarve (RTA)",
+   "places": [
+    "algarve"
+   ],
+   "gives": [
+    "events",
+    "news"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "could not read the terms: www.visitalgarve.pt/robots.txt answered 301 (redirect not followed or kept)",
+    "quote_lang": "en",
+    "page": "https://www.visitalgarve.pt/robots.txt",
+    "read_at": "2026-11-18",
+    "basis": "could not read"
+   },
+   "interface": null,
+   "contact_channel": null,
+   "notes": "Needs a second read at the redirect target.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "visitlisboa",
+   "name": "Visit Lisboa (visitlisboa.com)",
+   "kind": "public body",
+   "url": "https://www.visitlisboa.com/",
+   "owner": "Associação Turismo de Lisboa (Visit Lisboa)",
+   "places": [
+    "lisboa"
+   ],
+   "gives": [
+    "events",
+    "news"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "# See http://www.robotstxt.org/robotstxt.html for documentation on how to use the robots.txt file",
+    "quote_lang": "en",
+    "page": "https://www.visitlisboa.com/robots.txt",
+    "read_at": "2026-11-18",
+    "basis": "robots.txt (an access rule, not a reuse licence)"
+   },
+   "interface": null,
+   "contact_channel": null,
+   "notes": "robots.txt is only that comment line: no Disallow rules. That is not a grant; its terms page was not read.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "ccdr-algarve",
+   "name": "CCDR Algarve",
+   "kind": "public body",
+   "url": "https://www.ccdr-alg.pt/",
+   "owner": "Comissão de Coordenação e Desenvolvimento Regional do Algarve",
+   "places": [
+    "algarve"
+   ],
+   "gives": [
+    "notices"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "could not read the terms: www.ccdr-alg.pt/robots.txt answered 301 (redirect not followed or kept)",
+    "quote_lang": "en",
+    "page": "https://www.ccdr-alg.pt/robots.txt",
+    "read_at": "2026-11-18",
+    "basis": "could not read"
+   },
+   "interface": null,
+   "contact_channel": null,
+   "notes": "Needs a second read at the redirect target.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "ansr",
+   "name": "ANSR (Autoridade Nacional de Segurança Rodoviária)",
+   "kind": "public body",
+   "url": "https://www.ansr.pt/",
+   "owner": "ANSR",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "notices"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "could not read the terms: www.ansr.pt/robots.txt answered 301 (redirect not followed or kept)",
+    "quote_lang": "en",
+    "page": "https://www.ansr.pt/robots.txt",
+    "read_at": "2026-11-18",
+    "basis": "could not read"
+   },
+   "interface": null,
+   "contact_channel": null,
+   "notes": "Needs a second read at the redirect target.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "cp",
+   "name": "CP - Comboios de Portugal",
+   "kind": "public body",
+   "url": "https://www.cp.pt/",
+   "owner": "CP - Comboios de Portugal, E.P.E.",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "schedules",
+    "notices"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "User-agent: *\nDisallow: /pt/mycp\nDisallow: /en/mycp\nDisallow: /pt/compra-online\nDisallow: /en/compra-online",
+    "quote_lang": "pt/en",
+    "page": "https://www.cp.pt/robots.txt",
+    "read_at": "2026-11-18",
+    "basis": "robots.txt (an access rule, not a reuse licence)"
+   },
+   "interface": null,
+   "contact_channel": null,
+   "notes": "robots.txt blocks only the account and online-purchase paths; public pages are not blocked. Terms and any timetable data licence not read.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "aps-algarve",
+   "name": "APS - Administração dos Portos de Sines e do Algarve (Porto de Portimão)",
+   "kind": "public body",
+   "url": "https://www.apsinesalgarve.pt/",
+   "owner": "APS - Administração dos Portos de Sines e do Algarve, S.A.",
+   "places": [
+    "algarve"
+   ],
+   "gives": [
+    "notices",
+    "schedules"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "could not read the terms: proxy 502 (host guessed as www.apsinesealgarve.pt; the correct host was not confirmed)",
+    "quote_lang": "en",
+    "page": "https://www.apsinesalgarve.pt/robots.txt",
+    "read_at": "2026-11-18",
+    "basis": "could not read"
+   },
+   "interface": null,
+   "contact_channel": null,
+   "notes": "Host unverified; retry with the right host. The host was guessed and is unverified; the right address is still to find.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "ualg",
+   "name": "Universidade do Algarve (ualg.pt agenda)",
+   "kind": "public body",
+   "url": "https://www.ualg.pt/",
+   "owner": "Universidade do Algarve",
+   "places": [
+    "algarve"
+   ],
+   "gives": [
+    "events"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "User-agent: GPTBot\nDisallow: /",
+    "quote_lang": "en",
+    "page": "https://www.ualg.pt/robots.txt",
+    "read_at": "2026-11-18",
+    "basis": "robots.txt (an access rule, not a reuse licence)"
+   },
+   "interface": null,
+   "contact_channel": null,
+   "notes": "robots.txt disallows named AI crawlers (GPTBot, CCBot, anthropic-ai) entirely; the generic User-agent: * block is a Drupal-style list that does not disallow the whole site. Agenda reuse terms not read.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "cm-lisboa-open-data",
+   "name": "Câmara Municipal de Lisboa open data (dados.cm-lisboa.pt / Agenda LX)",
+   "kind": "open-data API",
+   "url": "https://dados.cm-lisboa.pt/",
+   "owner": "Câmara Municipal de Lisboa",
+   "places": [
+    "lisboa"
+   ],
+   "gives": [
+    "events",
+    "notices"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "Content-Signal: search=yes,ai-train=no,use=reference",
+    "quote_lang": "en",
+    "page": "https://dados.cm-lisboa.pt/robots.txt",
+    "read_at": "2026-11-18",
+    "basis": "robots.txt (an access rule, not a reuse licence)"
+   },
+   "interface": "Open data portal (CKAN-style catalogue); dataset licences to be read per dataset.",
+   "contact_channel": null,
+   "notes": "robots.txt content signals permit search and reference use, not AI training. Agenda LX dataset licence not read. This is the likeliest early green source.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "cm-faro",
+   "name": "Câmara Municipal de Faro",
+   "kind": "public body",
+   "url": "https://www.cm-faro.pt/",
+   "owner": "Câmara Municipal de Faro",
+   "places": [
+    "algarve",
+    "faro"
+   ],
+   "gives": [
+    "events",
+    "notices"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "could not read the terms: connection reset by peer (www.cm-faro.pt/robots.txt)",
+    "quote_lang": "en",
+    "page": "https://www.cm-faro.pt/robots.txt",
+    "read_at": "2026-11-18",
+    "basis": "could not read"
+   },
+   "interface": null,
+   "contact_channel": null,
+   "notes": "Retry later.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "cm-loule",
+   "name": "Câmara Municipal de Loulé",
+   "kind": "public body",
+   "url": "https://www.cm-loule.pt/",
+   "owner": "Câmara Municipal de Loulé",
+   "places": [
+    "algarve",
+    "loule"
+   ],
+   "gives": [
+    "events",
+    "notices"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "could not read the terms: connection reset by peer (www.cm-loule.pt/robots.txt)",
+    "quote_lang": "en",
+    "page": "https://www.cm-loule.pt/robots.txt",
+    "read_at": "2026-11-18",
+    "basis": "could not read"
+   },
+   "interface": null,
+   "contact_channel": null,
+   "notes": "Retry later.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "cm-portimao",
+   "name": "Câmara Municipal de Portimão",
+   "kind": "public body",
+   "url": "https://www.cm-portimao.pt/",
+   "owner": "Câmara Municipal de Portimão",
+   "places": [
+    "algarve",
+    "portimao"
+   ],
+   "gives": [
+    "events",
+    "notices"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "Disallow: /agenda/\nDisallow: /agenda2/\nDisallow: /agenda3/",
+    "quote_lang": "pt",
+    "page": "https://www.cm-portimao.pt/robots.txt",
+    "read_at": "2026-11-18",
+    "basis": "robots.txt (an access rule, not a reuse licence)"
+   },
+   "interface": null,
+   "contact_channel": null,
+   "notes": "robots.txt forbids the agenda paths to generic agents, so the council's agenda is not machine-read; other paths are open. Respect and ask on the record.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "eventbrite",
+   "name": "Eventbrite",
+   "kind": "event platform",
+   "url": "https://www.eventbrite.com/",
+   "owner": "Eventbrite, Inc.",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "events"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "Never machine-read websummit.com, lu.ma, luma.com, meetup.com or eventbrite.*",
+    "quote_lang": "en",
+    "page": "https://github.com/PrompTugal/PrompTugal__News__Website/blob/dev/board/briefs/2026-11-17-the-five-sites.md",
+    "read_at": "2026-11-18",
+    "basis": "house rule"
+   },
+   "interface": null,
+   "contact_channel": null,
+   "notes": "House rule; terms not read by machine. Fringe hold (work/49) also stopped machine reads of Luma, Meetup and Eventbrite (board/WS-177-plan.md, line 112). Not fetched by this collector.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "luma",
+   "name": "Luma",
+   "kind": "event platform",
+   "url": "https://luma.com/",
+   "owner": "Luma (lu.ma)",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "events"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "Never machine-read websummit.com, lu.ma, luma.com, meetup.com or eventbrite.*",
+    "quote_lang": "en",
+    "page": "https://github.com/PrompTugal/PrompTugal__News__Website/blob/dev/board/briefs/2026-11-17-the-five-sites.md",
+    "read_at": "2026-11-18",
+    "basis": "house rule"
+   },
+   "interface": null,
+   "contact_channel": null,
+   "notes": "House rule; terms not read by machine. Fringe hold (work/49) also stopped machine reads of Luma, Meetup and Eventbrite (board/WS-177-plan.md, line 112). Not fetched by this collector.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "meetup",
+   "name": "Meetup",
+   "kind": "event platform",
+   "url": "https://www.meetup.com/",
+   "owner": "Meetup, LLC",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "events"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "Never machine-read websummit.com, lu.ma, luma.com, meetup.com or eventbrite.*",
+    "quote_lang": "en",
+    "page": "https://github.com/PrompTugal/PrompTugal__News__Website/blob/dev/board/briefs/2026-11-17-the-five-sites.md",
+    "read_at": "2026-11-18",
+    "basis": "house rule"
+   },
+   "interface": null,
+   "contact_channel": null,
+   "notes": "House rule; terms not read by machine. Fringe hold (work/49) also stopped machine reads of Luma, Meetup and Eventbrite (board/WS-177-plan.md, line 112). Not fetched by this collector.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "sideevents-guide",
+   "name": "sideevents.guide",
+   "kind": "event platform",
+   "url": "https://sideevents.guide/",
+   "owner": "unknown (not looked up)",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "events"
+   ],
+   "status": "not-read",
+   "why": {
+    "text": "Not named in the house rule (which names websummit.com, lu.ma, luma.com, meetup.com and eventbrite.*); held with the event platforms, not read, until Dinis decides. Its own terms were not read.",
+    "page": "https://github.com/PrompTugal/PrompTugal__News__Website/blob/dev/board/briefs/2026-11-17-the-five-sites.md",
+    "read_at": "2026-11-18",
+    "basis": "held, not a rule"
+   },
+   "interface": null,
+   "contact_channel": null,
+   "notes": "Not fetched. sideevents.guide is not named in the five-sites brief's rule nor in the Fringe hold (work/49), which covers Luma, Meetup and Eventbrite; it is listed here on the instruction of the register brief and this task. Dinis or data.b@ to confirm the basis.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "lisboa-pt",
+   "name": "Câmara Municipal de Lisboa (lisboa.pt)",
+   "kind": "agenda",
+   "url": "https://www.lisboa.pt/",
+   "owner": "Câmara Municipal de Lisboa",
+   "places": [
+    "lisboa"
+   ],
+   "gives": [
+    "events"
+   ],
+   "status": "not-read",
+   "why": {
+    "text": "Its legal and terms pages answered 403 to our reader on 18 November 2026; its events are read through Agenda LX instead.",
+    "page": "https://www.lisboa.pt/",
+    "read_at": "2026-11-18",
+    "basis": "tried by the events collector"
+   },
+   "researched_by": "data.b.collector@PrompTugal.dinis (events-pt), checked by data.b@"
+  },
+  {
+   "id": "cm-silves",
+   "name": "Câmara Municipal de Silves",
+   "kind": "agenda",
+   "url": "https://www.cm-silves.pt/",
+   "owner": "Câmara Municipal de Silves",
+   "places": [
+    "silves"
+   ],
+   "gives": [
+    "events"
+   ],
+   "status": "not-read",
+   "why": {
+    "text": "robots.txt: connection reset on 18 November 2026; not read.",
+    "page": "https://www.cm-silves.pt/robots.txt",
+    "read_at": "2026-11-18",
+    "basis": "tried by the events collector"
+   },
+   "researched_by": "data.b.collector@PrompTugal.dinis (events-pt), checked by data.b@"
+  },
+  {
+   "id": "cm-tavira",
+   "name": "Câmara Municipal de Tavira",
+   "kind": "agenda",
+   "url": "https://www.cm-tavira.pt/",
+   "owner": "Câmara Municipal de Tavira",
+   "places": [
+    "tavira"
+   ],
+   "gives": [
+    "events"
+   ],
+   "status": "not-read",
+   "why": {
+    "text": "No robots.txt (404) and no events feed found on 18 November 2026; its HTML agenda not yet read.",
+    "page": "https://www.cm-tavira.pt/robots.txt",
+    "read_at": "2026-11-18",
+    "basis": "tried by the events collector"
+   },
+   "researched_by": "data.b.collector@PrompTugal.dinis (events-pt), checked by data.b@"
+  },
+  {
+   "id": "cm-albufeira",
+   "name": "Câmara Municipal de Albufeira",
+   "kind": "agenda",
+   "url": "https://www.cm-albufeira.pt/",
+   "owner": "Câmara Municipal de Albufeira",
+   "places": [
+    "albufeira"
+   ],
+   "gives": [
+    "events"
+   ],
+   "status": "not-read",
+   "why": {
+    "text": "Only HTML or PDF agendas, no feed, on 18 November 2026; not yet read.",
+    "page": "https://www.cm-albufeira.pt/",
+    "read_at": "2026-11-18",
+    "basis": "tried by the events collector"
+   },
+   "researched_by": "data.b.collector@PrompTugal.dinis (events-pt), checked by data.b@"
+  }
+ ]
+}

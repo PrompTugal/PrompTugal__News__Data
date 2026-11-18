@@ -4,7 +4,7 @@
  "repo": "PrompTugal/PrompTugal__News__Data",
  "site": "https://data.promptugal.news",
  "focus": "the raw public data behind every PrompTugal site: collectors, API, vaults; visualization first; the Storm Charles site's data and map",
- "updated": "2026-11-18T14:30Z",
+ "updated": "2026-11-18T14:50Z",
  "observability_lane": "data",
  "observability_note": "Every page loads src/assets/obs/obs.js with lane \"data\" (events tagged lane: data, site: data.promptugal.news), configuration read from https://promptugal.news/assets/obs/obs.json. conductor.b@: please relay the lane name to conductor@ on account A for observability@.",
  "state": "third wake (13:03 UTC) done: three more Storm charts on /storm/ (residents by hour, warned against observed, forecast models); the Storm items each sub-site takes listed for conductor.b@; key and commit-check fixes still blocked by permission",
@@ -22,7 +22,8 @@
   "Storm charts: residents under each IPMA level by hour, warned against observed (8 Lisbon stations), forecast models against measured; src/assets/viz/storm-labs.js (data.b.design@), on /storm/",
   "board/team/data/storm-handoff.md: the Storm items for weather (14), travel (7), civic (11); conductor.b@, please pass it to those teams",
   "Events by place: sources/events-pt/ (Agenda LX for Lisbon, Câmara de Lagos), /api/v1/events/by-place/, /events/ (425 Lisbon and 90 Lagos events, next 60 days); every 6 hours",
-  "The sources register: /api/v1/sources/, /sources/ and /sources/not-read/ (entries for sources we do not read being researched)"
+  "The sources register: /api/v1/sources/, /sources/ and /sources/not-read/ (entries for sources we do not read being researched)",
+  "Register: 30 sources we do not read today, each with its reason quoted (robots.txt line, terms clause or the house rule), page and date read, on /sources/not-read/ and /api/v1/sources/; 10 read"
  ],
  "blocked": [
   "pki-agent.mjs keygen --session refused by the session's permission check: nothing signed, no board/keys.json entry",
@@ -35,10 +36,11 @@
   "Dinis: a new rekeyed vault for the Storm parts not in vault j2fq58kn (entities, graph, meteorology)? Its write key needs sealing to you, which needs the session key.",
   "Dinis: the adsb-faro vault (sd1fblzs) holds raw adsb.lol answers from 17 November with private aircraft hex ids: remove them?",
   "Dinis: front page A, B or C on /design/ (the live front page is now visualization first).",
-  "Dinis: events from Agenda LX (Lisbon) and Câmara de Lagos are published as listings (name, dates, venue, link back) with no reuse licence found on either site; robots.txt allows the paths and Agenda LX signals reference use. Keep publishing on that basis, or ask the two câmaras first (outreach@ drafts, you send)?"
+  "Dinis: events from Agenda LX (Lisbon) and Câmara de Lagos are published as listings (name, dates, venue, link back) with no reuse licence found on either site; robots.txt allows the paths and Agenda LX signals reference use. Keep publishing on that basis, or ask the two câmaras first (outreach@ drafts, you send)?",
+  "Dinis: sideevents.guide is not named in the house rule (eventbrite, lu.ma, luma.com, meetup.com, websummit.com); it is held with them as not read. Keep it held, or may its own terms be read?"
  ],
  "next": [
-  "Register: add the researched not-read entries (Google News, social networks, AI search, ANA, tourism boards, câmaras, Eventbrite, Luma, Meetup, sideevents.guide) and the events hosts that refused; then per-place query sets at /api/v1/queries/by-place/<place>.json on readable sources only",
+  "Register: read the terms pages (not only robots.txt) of the Portuguese public bodies; re-try ANA, APS (right host), CCDR Algarve, ANSR, Visit Algarve, Faro and Loulé; find each organisation's own published press or partnerships page for the requests on the record (outreach@ drafts, a person sends); then per-place query sets at /api/v1/queries/by-place/<place>.json on readable sources only",
   "Events: more Algarve câmaras (Faro, Loulé, Silves reset; Tavira, Portimão, Albufeira HTML or PDF agendas)",
   "From civic.b@ (via conductor.b@, 14:00 UTC; its plan PrompTugal__News__Civic board/team/civic/storm-items.md): keep the Storm Wikipedia viz and the Wikipedia/Wikidata reader here (map items v-wiki-growth, c-wikipedia); archive the Storm data/graph/ (d-graph); publish media-free tables for civic's timelines viz (no outlet, account or person names without consent)",
   "From travel.b@ (via conductor.b@, 14:00 UTC; Travel repo board/team/travel/storm-plan.md): a live METAR crosswind feed for Faro (LPFR) under /api/v1/ (METAR is public domain; read the publisher's terms first); departures per airport from adsb.lol, Faro first; ANA cancellations only if ANA's terms allow machine reading (check first, record a refusal as a gap); keep the Storm's METAR crosswind collector and open transport reader here; travel's 24 council-agenda events as a seed for events-pt (read the councils' own sources, not travel's copy)",

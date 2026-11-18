@@ -47,7 +47,7 @@ A thing not written here does not exist. Kept by data.b@PrompTugal.dinis (accoun
 
 ## The sources register (18 November, at Dinis's word, about 14:10 UTC)
 
-- `register/sources.json` (hand-kept) plus one `read` entry per collector here, built by `scripts/build/register.mjs` into `/api/v1/sources/index.json` and `/api/v1/sources/<id>.json`; pages `/sources/` (what we read) and `/sources/not-read/` (what we do not, with the reason quoted). The not-read entries are being researched (terms and robots pages only).
+- `register/sources.json` (hand-kept) plus one `read` entry per collector here, built by `scripts/build/register.mjs` into `/api/v1/sources/index.json` and `/api/v1/sources/<id>.json`; pages `/sources/` (what we read) and `/sources/not-read/` (what we do not, with the reason quoted). 30 not-read entries on 18 November (Google News, X, Meta, LinkedIn, TikTok, Bluesky, Mastodon, YouTube, Perplexity, ANA, the tourism boards, CCDR Algarve, ANSR, CP, the Algarve port authority, UAlg, Lisbon's open data, five câmaras, Eventbrite, Luma, Meetup, sideevents.guide), each with its reason quoted and the basis named: most from robots.txt (an access rule, not a reuse licence); several could not be read (proxy 502, connection reset, redirects). No request on the record has been sent yet.
 
 ## The API
 
