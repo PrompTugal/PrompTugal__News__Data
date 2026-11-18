@@ -4,7 +4,7 @@
  "repo": "PrompTugal/PrompTugal__News__Data",
  "site": "https://data.promptugal.news",
  "focus": "the raw public data behind every PrompTugal site: collectors, API, vaults; visualization first; the Storm Charles site's data and map",
- "updated": "2026-11-18T17:40Z",
+ "updated": "2026-11-18T17:55Z",
  "observability_lane": "data (own lane since 18 Nov ~15:00 UTC: vault 349t1w6w, 2 append lanes, drain key sha256:5109a3745ff9fdb4; drain credentials sealed to conductor.b-promptugal and sent to conductor.b@)",
  "observability_note": "obs.js reads team/keys/obs-data.json from GitHub (public half: endpoint, vault id, 2 append tokens, drain public key); every event tagged lane: \"data\"; no town lookup.",
  "state": "third wake (13:03 UTC) done: three more Storm charts on /storm/ (residents by hour, warned against observed, forecast models); the Storm items each sub-site takes listed for conductor.b@; key and commit-check fixes still blocked by permission",
@@ -55,7 +55,8 @@
   "Dinis: conductor.b@ asks whether Luma's public calendars have an iCal subscription its terms allow, and what Eventbrite's API terms allow. Reading those hosts by machine, terms pages included, is against the house rule, so not done: may a person read them, or may agents read the terms pages only?",
   "Dinis: OPEN_ROUTER_KEY is not a CI secret, so discovery runs only in this session (once a day per place, about 0.11 USD a day). Add it to the Data repo's CI secrets if you want it hourly-independent, or keep it in-session.",
   "Dinis: signatures made with the session key (pki-agent sign, .sig files) cannot be committed: the leak scan refuses their long encoded run. Allow a narrow path for .sig files (security@ or you), or keep signatures out of git.",
-  "Dinis: Tavira council and Teatro das Figuras publish \"Todos os direitos reservados\" and no terms page; their events are shown as listings (name, date, venue, link) under your 14:55 UTC rule for câmaras and public bodies, with the take-down disclaimer. Say if you want them asked first."
+  "Dinis: Tavira council and Teatro das Figuras publish \"Todos os direitos reservados\" and no terms page; their events are shown as listings (name, date, venue, link) under your 14:55 UTC rule for câmaras and public bodies, with the take-down disclaimer. Say if you want them asked first.",
+  "Dinis: CORDIS (EU projects with Portuguese participants) is CC BY 4.0, but its robots.txt disallows /data/, where the only bulk files are. Not collected. Ask CORDIS on the record, decide the open-data files may be read once a day despite robots, or skip CORDIS for the PRR portal and Portugal Ventures?"
  ],
  "next": [
   "Register: blogs, newsletters and podcasts (feeds) and the cyber sources (terms first, nothing collected until checked) being researched; social organisation accounts being verified",

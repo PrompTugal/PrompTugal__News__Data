@@ -1209,6 +1209,34 @@
    "contact_channel": null,
    "notes": "A public Telegram channel; not fetched (t.me is never machine-read). Its terms and robots.txt were not read.",
    "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "cordis",
+   "name": "CORDIS (EU research projects)",
+   "kind": "open-data API",
+   "url": "https://cordis.europa.eu/",
+   "owner": "European Commission (Publications Office)",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "EU-funded projects with Portuguese participant organisations"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "User-agent: *\nDisallow: /data/\nDisallow: /search",
+    "page": "https://cordis.europa.eu/robots.txt",
+    "read_at": "2026-11-18",
+    "basis": "robots.txt (an access rule; the licence itself allows reuse)"
+   },
+   "interface": "bulk JSON, CSV and XLSX at /data/ (disallowed by robots.txt); /search and the project pages disallowed; the API key-gated",
+   "licence": {
+    "name": "CC BY 4.0 (Commission reuse notice, Decision 2011/833/EU)",
+    "url": "https://commission.europa.eu/legal-notice_en",
+    "read_at": "2026-11-18"
+   },
+   "notes": "The licence allows reuse with credit; the only official bulk files sit under a path robots.txt disallows for every user agent. Not collected. While checking, one HEAD request (no body) was sent to the zip URL on 18 Nov 2026; recorded here. Options for Dinis: ask CORDIS on the record whether automated clients may fetch /data/; or decide the open-data files are not what robots.txt is meant to bar (one request a day); or use the PRR portal and Portugal Ventures instead.",
+   "researched_by": "data.b.dev3@PrompTugal.dinis (Sonnet), checked by data.b@"
   }
  ]
 }
