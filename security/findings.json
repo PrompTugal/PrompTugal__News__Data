@@ -1,0 +1,115 @@
+{
+ "about": "Every vulnerability, bug and breach found on data.promptugal.news, ours included (Dinis Cruz, 18 November 2026, about 15:15 UTC). An open finding is shown as its title, severity and state only until it is fixed.",
+ "findings": [
+  {
+   "id": "DATA-2026-001",
+   "title": "Links built from fetched URLs kept any scheme (javascript: possible)",
+   "severity": "medium",
+   "files": [
+    "scripts/build/render.mjs"
+   ],
+   "found": "2026-11-18",
+   "found_by": "AppSec post-review of 1bf3ad4..55b6db3..HEAD (data.b.security@PrompTugal.dinis, Sonnet, checked by data.b@)",
+   "state": "fixed",
+   "detail": "Event URLs from the agendas and evidence URLs from Perplexity answers reached [label](url) links on /events/ and the source pages; a javascript: URL would have run script in the reader's browser on a click. Quotes were already escaped. No such URL was seen in the data.",
+   "fix": "inline() keeps only http(s), site-relative, # and mailto links; anything else becomes #",
+   "commit": "1b8d304"
+  },
+  {
+   "id": "DATA-2026-002",
+   "title": "robots.txt \"Disallow: /\" was read as allowed by the events collector",
+   "severity": "medium",
+   "files": [
+    "sources/events-pt/collect.mjs"
+   ],
+   "found": "2026-11-18",
+   "found_by": "AppSec post-review of 1bf3ad4..55b6db3..HEAD (data.b.security@PrompTugal.dinis, Sonnet, checked by data.b@)",
+   "state": "fixed",
+   "detail": "A site banning all crawling would still have been read. None of the hosts read had such a rule.",
+   "fix": "the root disallow now blocks the host",
+   "commit": "1b8d304"
+  },
+  {
+   "id": "DATA-2026-003",
+   "title": "An event without an http(s) URL could break the site build",
+   "severity": "medium",
+   "files": [
+    "sources/events-pt/collect.mjs",
+    "scripts/build/pages.mjs"
+   ],
+   "found": "2026-11-18",
+   "found_by": "AppSec post-review of 1bf3ad4..55b6db3..HEAD (data.b.security@PrompTugal.dinis, Sonnet, checked by data.b@)",
+   "state": "fixed",
+   "fix": "such events are dropped and counted",
+   "commit": "1b8d304"
+  },
+  {
+   "id": "DATA-2026-004",
+   "title": "URL filters missing in discovery, claims, the social collector and the charts",
+   "severity": "low",
+   "files": [
+    "collect/discovery.mjs",
+    "collect/claims.mjs",
+    "sources/social/collect.mjs",
+    "src/assets/viz/viz.js",
+    "src/assets/viz/flightmap.js",
+    "src/assets/viz/storm-labs.js"
+   ],
+   "found": "2026-11-18",
+   "found_by": "AppSec post-review of 1bf3ad4..55b6db3..HEAD (data.b.security@PrompTugal.dinis, Sonnet, checked by data.b@)",
+   "state": "fixed",
+   "fix": "non-http(s) URLs dropped or replaced by #; malformed model items skipped",
+   "commit": "1b8d304"
+  },
+  {
+   "id": "DATA-2026-005",
+   "title": "The observability credentials folder was created after the credentials file",
+   "severity": "low",
+   "files": [
+    "scripts/obs-data-setup.py"
+   ],
+   "found": "2026-11-18",
+   "found_by": "AppSec post-review of 1bf3ad4..55b6db3..HEAD (data.b.security@PrompTugal.dinis, Sonnet, checked by data.b@)",
+   "state": "fixed",
+   "fix": "the folder is made 0700 first (the file itself was 0600; one-user container)",
+   "commit": "1b8d304"
+  },
+  {
+   "id": "DATA-2026-006",
+   "title": "adsb.lol raw answers, which name private aircraft by hex id and position, went to a public-read vault",
+   "severity": "medium",
+   "files": [
+    "sources/adsb-faro/collect.mjs"
+   ],
+   "found": "2026-11-18",
+   "found_by": "data.b@PrompTugal.dinis (review on taking over)",
+   "state": "open",
+   "detail": "The copies written on 17 November are still in vault sd1fblzs; removing them is for Dinis.",
+   "fix": "the collector no longer passes the raw answer to the vault",
+   "commit": "55b6db3"
+  },
+  {
+   "id": "DATA-2026-007",
+   "title": "Perplexity answer text is served as evidence and could carry injected instructions for a model that reads it later",
+   "severity": "low",
+   "files": [
+    "scripts/build/discovery.mjs"
+   ],
+   "found": "2026-11-18",
+   "found_by": "AppSec post-review of 1bf3ad4..55b6db3..HEAD (data.b.security@PrompTugal.dinis, Sonnet, checked by data.b@)",
+   "state": "accepted",
+   "fix": "none: kept as evidence, marked untrusted in the threat model; no injection text found on 18 November"
+  },
+  {
+   "id": "DATA-2026-008",
+   "title": "CI actions pinned by tag, not by commit",
+   "severity": "low",
+   "files": [
+    ".github/workflows/pages.yml"
+   ],
+   "found": "2026-11-18",
+   "found_by": "AppSec post-review of 1bf3ad4..55b6db3..HEAD (data.b.security@PrompTugal.dinis, Sonnet, checked by data.b@)",
+   "state": "open"
+  }
+ ]
+}

@@ -1,5 +1,5 @@
 // The pages (HTML plus markdown twin), llms.txt and sitemap.xml.
-import { SITE, REPO, ACCOUNT, write, fmtTime } from './lib.mjs';
+import { SITE, REPO, ACCOUNT, write, writeJson, readJson, fmtTime } from './lib.mjs';
 import { page, h, p, ul, table, pre, quote, raw } from './render.mjs';
 import { licenceOf, OURS } from './licence.mjs';
 const lic = l => `[${l.name}](${l.url})`;
@@ -390,6 +390,27 @@ ${A(230, 95, 290, 95)}${A(230, 260, 290, 260, 'pl-ai')}${A(520, 75, 580, 75)}${A
     });
   }
 
+  // ---- security: every finding, published (Dinis, 18 Nov 2026, about 15:15 UTC) ----
+  {
+    const sec = readJson('security/findings.json') || { findings: [] };
+    const fs = sec.findings || [];
+    const pub = x => x.state === 'fixed' || x.state === 'accepted';
+    writeJson('api/v1/security/findings.json', { about: sec.about, findings: fs.map(x => pub(x) ? x : { id: x.id, title: x.title, severity: x.severity, state: x.state, found: x.found }) });
+    add({
+      path: 'security/', title: 'Security: PrompTugal.news Data', h1: 'Security: what we found, and what we did',
+      description: 'Every vulnerability, bug and breach found on data.promptugal.news, ours included, with severity, file, when found and by which review, the fix and its commit; and the threat models.',
+      blocks: [
+        p('Every vulnerability, bug and breach found on this site is published here, ours included. A fixed finding is shown in full; an open one shows only its title, severity and state until it is fixed. The log for every PrompTugal site: [promptugal.news/security/](https://promptugal.news/security/). The data: [/api/v1/security/findings.json](/api/v1/security/findings.json).'),
+        h('Findings'),
+        table(['Id', 'Finding', 'Severity', 'Found', 'State', 'Files', 'Fix', 'Commit'], fs.map(x => [x.id, x.title, x.severity, `${x.found}, by ${pub(x) ? x.found_by : 'a review'}`, `**${x.state}**`, pub(x) ? (x.files || []).map(f => `\`${f}\``).join(', ') : '', pub(x) ? (x.fix || '') + (x.detail ? ` (${x.detail})` : '') : '', pub(x) && x.commit ? `[${x.commit}](${REPO}/commit/${x.commit})` : ''])),
+        h('Threat models'),
+        p(`Each automation has a published threat model: what it reads, writes and trusts, what could go wrong, the mitigations. [The list](${REPO}/blob/dev/docs/threat-models/README.md): [discovery](${REPO}/blob/dev/docs/threat-models/discovery.md), [social signals](${REPO}/blob/dev/docs/threat-models/social.md); the others are being written. Reviewed by security@PrompTugal.dinis.`),
+        h('Report a problem'),
+        p(`Found something? [Open an issue](${REPO}/issues/new?title=Security) (for anything that should not be public, say so in the title and leave out the detail; we will ask how to reach you).`),
+      ],
+    });
+  }
+
   // ---- how this works: the data, its visualisations, provenance and storage (Dinis, 18 Nov 2026) ----
   {
     const ans = (discovery && discovery.answers) || [];
@@ -412,7 +433,7 @@ ${A(230, 95, 290, 95)}${A(230, 260, 290, 260, 'pl-ai')}${A(520, 75, 580, 75)}${A
         h('Licences'),
         ul([`What PrompTugal.news makes (these pages, our records, the register, the visualisations) is ${lic(OURS)}.`, 'What we take from a source stays under its licence: every JSON file and every event carries a `license` link, the source\'s published licence, or where it publishes none its terms labelled "the source\'s terms". Never blank, never assumed open.', 'Events found only through Perplexity are shown by title, date, place and the pages that mention them, credited "through Perplexity"; their details are withheld.', 'An organiser\'s own submission is published, credited and dated as theirs ([how](' + REPO + '/blob/dev/submissions/README.md)); later, signed with the organiser\'s key.']),
         h('Security'),
-        ul([`Every automation has a published threat model: what it reads, writes and trusts, what could go wrong, the mitigations. Written so far: [discovery (Perplexity) and claims](${REPO}/blob/dev/docs/threat-models/discovery.md), [social signals](${REPO}/blob/dev/docs/threat-models/social.md); the list and the ones still to write: [threat models](${REPO}/blob/dev/docs/threat-models/README.md). Reviewed by security@PrompTugal.dinis.`, 'Text from Perplexity answers, social posts and fetched pages is untrusted: it is never acted on, shown only escaped, and links keep only http(s) addresses.', 'An AppSec review runs on every code change before it is committed (Dinis, 18 November 2026).']),
+        ul([`Every automation has a published threat model: what it reads, writes and trusts, what could go wrong, the mitigations. Written so far: [discovery (Perplexity) and claims](${REPO}/blob/dev/docs/threat-models/discovery.md), [social signals](${REPO}/blob/dev/docs/threat-models/social.md); the list and the ones still to write: [threat models](${REPO}/blob/dev/docs/threat-models/README.md). Reviewed by security@PrompTugal.dinis.`, 'Text from Perplexity answers, social posts and fetched pages is untrusted: it is never acted on, shown only escaped, and links keep only http(s) addresses.', 'An AppSec review runs on every code change before it is committed (Dinis, 18 November 2026). Every finding is published on [the security page](/security/).']),
         h('Who and what'),
         ul(['Code reads the sources and builds this site: no model is called to collect or build, except the daily discovery question above.', 'Agents wrote the code: data.b@PrompTugal.dinis (Opus) and its Sonnet sub-agents; see [about](/about/).', 'No person has checked a value yet.']),
       ],

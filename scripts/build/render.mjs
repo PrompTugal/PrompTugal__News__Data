@@ -90,7 +90,7 @@ ${skipH1 ? '' : `<h1>${esc(h1 || title)}</h1>\n`}${body}
 <p>If you publish data shown here and think we should not show it, <a href="${REPO}/issues/new?title=Take-down%20request">open an issue</a> and we take it down while we talk (Dinis Cruz, 18 November 2026).</p>
 <p>Licences: what PrompTugal.news makes (these pages, our records, the visualisations) is <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>; every value from a source stays under that source's licence or terms, linked on its source page and in every JSON file (<code>license</code>).</p>
 <p>Free to read: pages built on IPMA data stay outside the reading meter until Dinis decides. Your reading account: <a href="${ACCOUNT}">promptugal.news/account/</a>; on this site: <a href="/account/">your reading graph</a>.</p>
-<p class="foot-obs">Code Apache-2.0. Text CC BY 4.0. Data: each source's own terms (see its card). <a href="${REPO}">Repository</a> · <a href="${twin}">Markdown version of this page</a> · <a href="/llms.txt">llms.txt</a></p>
+<p class="foot-obs">Code Apache-2.0. Text CC BY 4.0. Data: each source's own terms (see its card). <a href="${REPO}">Repository</a> · <a href="/security/">Security</a> · <a href="${twin}">Markdown version of this page</a> · <a href="/llms.txt">llms.txt</a></p>
 </footer>
 ${foot}</body>
 </html>
