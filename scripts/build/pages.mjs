@@ -4,9 +4,9 @@ import { page, h, p, ul, table, pre, quote, raw } from './render.mjs';
 
 // ---- the visualizations (data.b@PrompTugal.dinis, 18 Nov 2026; drawn by src/assets/viz/viz.js, data.b.design@) ----
 const COAST = '/api/v1/storm/charles/broadcast/coast.json';
-const fig = (name, srcs, fallback) => {
+const fig = (name, srcs, fallback, read) => {
   const [a, b, c] = srcs;
-  return raw(`<figure class="viz" data-viz="${name}" data-src="${a}"${b ? ` data-src2="${b}"` : ''}${c ? ` data-src3="${c}"` : ''}><div class="viz-fallback">${fallback} <a href="${a}">The data</a>.</div></figure>`, `${fallback} The data: [${a}](${a}).`);
+  return raw(`<figure class="viz" data-viz="${name}" data-src="${a}"${b ? ` data-src2="${b}"` : ''}${c ? ` data-src3="${c}"` : ''}${read ? ` data-read="${read}"` : ''}><div class="viz-fallback">${fallback} <a href="${a}">The data</a>.</div></figure>`, `${fallback} The data: [${a}](${a}).`);
 };
 // per source: the raw layer (the publisher's own file) and the processed layer (this site's latest.json)
 const LAYERS = {
@@ -25,7 +25,7 @@ const LAYERS = {
   'ipma-uv': { raw: ['uv-raw', ['raw/uv.json'], 'Every UV index value in IPMA\'s file.'],
     processed: [['uv-now', ['latest.json'], 'The UV index by place and day.']],
     how: 'The collector groups the values by place and day and adds the place name where IPMA\'s list has it.' },
-  'ipma-sea': { raw: ['sea-raw', ['raw/sea-day0.json'], 'IPMA\'s sea forecast file for today, as served.'],
+  'ipma-sea': { raw: ['sea-raw', ['raw/sea-day0.json', 'raw/sea-locations.json'], 'IPMA\'s sea forecast file for today, as served.'],
     processed: [['sea-now', ['latest.json'], 'Wave heights by coastal place, lowest to highest, for each day.']],
     how: 'The collector joins the three day files, names the fields and adds each place\'s name and position.' },
   'adsb-faro': { raw: null, rawNote: 'The raw answer from adsb.lol names every aircraft by its hex id and position, private ones included. This site keeps the storm site\'s privacy rule: it publishes no hex id and no position of a private aircraft, so the raw file is neither served nor kept. What is shown of it: every aircraft counted by altitude band, below the map.',
@@ -142,7 +142,7 @@ export function buildPages({ sources, places, readAt, index, storm }) {
     if (t.open_question) blocks.push(p(`**Open question:** ${t.open_question}`));
     if (L) {
       blocks.push(h('2. The raw data'));
-      if (L.raw && s.raw.length) blocks.push(p(`As ${c.publisher.split(',')[0]} served it at the latest read (${fmtTime(s.read_at)}), unprocessed. The files: ${s.raw.map(r => `[${r.name}](/api/v1/${s.id}/raw/${r.name})`).join(', ')}.`), fig(L.raw[0], L.raw[1].map(u => abs(s.id, u)), L.raw[2]));
+      if (L.raw && s.raw.length) blocks.push(p(`As ${c.publisher.split(',')[0]} served it at the latest read (${fmtTime(s.read_at)}), unprocessed. The files: ${s.raw.map(r => `[${r.name}](/api/v1/${s.id}/raw/${r.name})`).join(', ')}.`), fig(L.raw[0], L.raw[1].map(u => abs(s.id, u)), L.raw[2], s.read_at));
       else if (L.raw) blocks.push(p('The raw files were not collected in this build: see the vault.'));
       if (L.rawNote) blocks.push(p(L.rawNote));
       blocks.push(h('3. The processed data'), p(`${L.how} The result: [latest.json](/api/v1/${s.id}/latest.json).`));

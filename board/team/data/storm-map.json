@@ -343,9 +343,9 @@
     "broadcast/data/field.json (52 KB)",
     "broadcast/data/coast.json (20 KB)"
    ],
-   "goes_to": "weather sub-site and data front page",
-   "state": "to move",
-   "notes": "Canvas 2D, no external libs. field.json is Open-Meteo 2 degree grid, 3-hourly, 10 to 12 Nov (CC BY 4.0); coast.json is Natural Earth land from world-atlas (unpkg, build time only, one-off by tools/broadcast-coast.mjs). Neither file is in the archive. Also reads sources/ipma/data/warnings.json and places.json, decisions/graph.json, exposure/people-by-hour.json, transport/buses.json for its panels."
+   "goes_to": "data.promptugal.news (/storm/ and the front page); weather sub-site may reuse src/assets/viz/wind.js",
+   "state": "moved",
+   "notes": "Canvas 2D, no external libs. field.json is Open-Meteo 2 degree grid, 3-hourly, 10 to 12 Nov (CC BY 4.0); coast.json is Natural Earth land from world-atlas (unpkg, build time only, one-off by tools/broadcast-coast.mjs). Neither file is in the archive. Also reads sources/ipma/data/warnings.json and places.json, decisions/graph.json, exposure/people-by-hour.json, transport/buses.json for its panels. 18 Nov (data.b.design@): ported to src/assets/viz/wind.js, news panels stripped."
   },
   {
    "kind": "visualization",
