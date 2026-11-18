@@ -8,8 +8,13 @@
    "url": "https://bsky.app/profile/visitportugal.com",
    "organisation": "Turismo de Portugal (Visit Portugal)",
    "kind": "public body",
-   "places": ["portugal"],
-   "topics": ["tourism", "events"],
+   "places": [
+    "portugal"
+   ],
+   "topics": [
+    "tourism",
+    "events"
+   ],
    "verified_how": "domain handle visitportugal.com (the handle is the domain of the Visit Portugal tourism site; profile text: \"Official source of travel inspiration and tourism information\"); not yet cross-checked by a link from the site",
    "read_at": "2026-11-18"
   },
@@ -20,8 +25,12 @@
    "url": "https://bsky.app/profile/publico.pt",
    "organisation": "Público",
    "kind": "news outlet",
-   "places": ["portugal"],
-   "topics": ["news"],
+   "places": [
+    "portugal"
+   ],
+   "topics": [
+    "news"
+   ],
    "verified_how": "domain handle publico.pt (the newspaper's own domain)",
    "read_at": "2026-11-18"
   },
@@ -32,8 +41,12 @@
    "url": "https://bsky.app/profile/lusa.pt",
    "organisation": "Agência Lusa",
    "kind": "news outlet",
-   "places": ["portugal"],
-   "topics": ["news"],
+   "places": [
+    "portugal"
+   ],
+   "topics": [
+    "news"
+   ],
    "verified_how": "domain handle lusa.pt (the agency's own domain; profile text: \"Conta oficial da Lusa\")",
    "read_at": "2026-11-18"
   },
@@ -44,8 +57,14 @@
    "url": "https://bsky.app/profile/portugalresident.com",
    "organisation": "The Portugal Resident",
    "kind": "news outlet",
-   "places": ["algarve", "portugal"],
-   "topics": ["news", "events"],
+   "places": [
+    "algarve",
+    "portugal"
+   ],
+   "topics": [
+    "news",
+    "events"
+   ],
    "verified_how": "domain handle portugalresident.com (the newspaper's own domain)",
    "read_at": "2026-11-18"
   },
@@ -56,8 +75,13 @@
    "url": "https://bsky.app/profile/sapo.pt",
    "organisation": "SAPO",
    "kind": "company",
-   "places": ["portugal"],
-   "topics": ["news", "technology"],
+   "places": [
+    "portugal"
+   ],
+   "topics": [
+    "news",
+    "technology"
+   ],
    "verified_how": "domain handle sapo.pt (the portal's own domain)",
    "read_at": "2026-11-18"
   }
@@ -66,6 +90,7 @@
   "No Mastodon account could be verified for any organisation on the list. mastodon.social lookups: Publico@mastodon.social exists but is empty (0 posts, no bio, no verified website link, so not treated as official); Lusa@masto.pt is a private person's account (bio: \"Psi a tentar compreender os humanos\") and is excluded; websummit, ipma and turismodeportugal were not found. On masto.pt, observador, rtp, ipma, sicnoticias, SulInformacao and startupportugal were not found. The collector supports Mastodon accounts as soon as one is added here.",
   "Candidates found on Bluesky but NOT listed, because the organisation's own site could not be read to confirm the link (handle is not the organisation's domain): websummit.bsky.social (Web Summit; websummit.com was read and showed no Bluesky link in its HTML), camaralisboa.bsky.social (Câmara Municipal de Lisboa; lisboa.pt returned 403), jornalexpresso.bsky.social and tribunaexpresso.bsky.social (Expresso; expresso.pt returned 403). A person can confirm and move them into accounts.",
   "Domain handles tried on Bluesky with no profile: lisboa.pt, cm-lisboa.pt, cm-faro.pt, cm-lagos.pt, cm-portimao.pt, cm-albufeira.pt, cm-loule.pt, cm-tavira.pt, cm-silves.pt, cm-porto.pt, cm-olhao.pt, cm-lagoa.pt, turismodeportugal.pt, visitalgarve.pt, visitlisboa.com, ipma.pt, prociv.gov.pt, websummit.com, expresso.pt, observador.pt, rtp.pt, sicnoticias.pt, sulinformacao.pt, barlavento.pt, theportugalnews.com, startupportugal.com, unicornfactory.lisboa.pt, startuplisboa.com, beta-i.com, jn.pt, dn.pt, eco.pt, algarveresident.com, cncs.gov.pt, anacom.pt, ine.pt, cascais.pt, visitcascais.com, portugal.gov.pt, cnnportugal.iol.pt, noticiasaominuto.com, tvi.iol.pt, portugalventures.pt, iapmei.pt, fct.pt, agendalx.pt, tsf.pt, cmjornal.pt, dinheirovivo.pt, eportugal.gov.pt, gnr.pt, portugalstartups.com, algarvedailynews.com, nit.pt, timeout.pt. Organisations with no Bluesky or Mastodon account found: the Lisbon and Algarve câmaras, Visit Algarve, Visit Lisboa, IPMA, ANEPC, Observador, RTP, SIC, Sul Informação, Barlavento, The Portugal News, Startup Portugal, Unicorn Factory Lisboa. Absence here means not found by this method, not that the organisation has no account.",
-  "Sifted (sifted.eu on Bluesky) is a Europe-wide startup outlet, not Portuguese, so it is not listed."
+  "Sifted (sifted.eu on Bluesky) is a Europe-wide startup outlet, not Portuguese, so it is not listed.",
+  "Second pass, 18 November 2026 (data.b.collector@, about 66 requests): the home pages of 41 organisations were read and none linked a Bluesky or Mastodon profile (only YouTube, Threads, TikTok links were seen, which are out of scope here). Pages read with status 200: cm-portimao, cm-lagos, cm-tavira, cm-albufeira, visitalgarve.pt, visitlisboa.com, ipma.pt, ualg.pt, ulisboa.pt, startupportugal.com, ani.pt, fct.pt, incd.pt, teatrodasfiguras.pt, ccb.pt, gulbenkian.pt, maat.pt, meoarena.pt, feedzai, talkdesk, unbabel, outsystems, defined.ai, observador, rtp, eco.sapo.pt, barlavento, jornaldenegocios. Not readable: cm-lisboa.pt, expresso.pt, sicnoticias.pt, sulinformacao.pt (403); cm-faro.pt, cm-loule.pt, prociv.gov.pt, unicornfactory.lisboa.pt, cncs.gov.pt, culturgest.pt, coliseus.pt (no connection); startuplisboa.com (404); swordhealth.com (429, not retried). Not fetched by rule: websummit.com. Domain handles tried on Bluesky with no profile: ulisboa.pt, ualg.pt, gulbenkian.pt, ccb.pt, culturgest.pt, maat.pt, coliseus.pt, feedzai.com, talkdesk.com, unbabel.com, outsystems.com, swordhealth.com, defined.ai, jornaldenegocios.pt, teatrodasfiguras.pt, ani.pt, incd.pt, websummit.com. The four pending candidates remain unverified and are kept out: websummit.bsky.social (profile text \"The world's biggest technology event ... Join us in Lisbon\", no website link or domain handle), camaralisboa.bsky.social (0 posts, no profile text), jornalexpresso.bsky.social (profile text \"As noticias que lhe dao liberdade para pensar\", no link) and tribunaexpresso.bsky.social (profile text lists tribuna@expresso.impresa.pt, an email on the publisher's domain, which is not a link from the organisation's site). No Mastodon lookups were made, because no organisation site linked a Mastodon profile. A person can confirm the four candidates (for example by finding the link on the organisation's own page) and move them into accounts."
  ]
 }
