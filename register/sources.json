@@ -1413,7 +1413,7 @@
    "gives": [
     "list of CVEs known to be exploited, with dates added"
    ],
-   "status": "not-read",
+   "status": "read",
    "why": {
     "quote": "The KEV database is distributed under the Creative Commons 0 1.0 License. You may use this data in any legal manner but note that information provided at any 3rd party links included in the KEV database are bound by the policies and licenses of those 3rd party websites.",
     "quote_lang": "en",
@@ -1425,7 +1425,8 @@
    "feed": null,
    "contact_channel": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
    "notes": "Allows aggregate reuse (CC0). The HTML catalogue page and robots.txt returned 403 Access Denied to our user agent, so use the JSON or GitHub copy only. Would give Portugal: counts of exploited vulnerabilities in products Portuguese organisations commonly run, as aggregates; the KEV itself has no country field, so any Portugal angle is our own labelled inference.",
-   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@",
+   "how": "One GET of CISA's published JSON feed every 6 hours (sources/cisa-kev/collect.mjs); served at /api/v1/cisa-kev/; raw kept in the vault copy. Asked by cyber.b@PrompTugal.dinis, 18 Nov 2026."
   },
   {
    "id": "shadowserver",

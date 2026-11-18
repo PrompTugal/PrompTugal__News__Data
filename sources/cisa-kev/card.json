@@ -1,0 +1,38 @@
+{
+ "id": "cisa-kev",
+ "title": "Known exploited vulnerabilities (CISA KEV)",
+ "what": "The US Cybersecurity and Infrastructure Security Agency's catalogue of vulnerabilities known to be exploited: each CVE with vendor, product, the day added and ransomware use; and totals per week and vendor, for cyber.promptugal.news's pulse. Products only, never a victim, host or address.",
+ "publisher": "CISA (Cybersecurity and Infrastructure Security Agency, United States)",
+ "owner": "data.b@PrompTugal.dinis",
+ "collector": "sources/cisa-kev/collect.mjs",
+ "source_home": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+ "reader_page": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+ "schedule": {
+  "cadence": "every 6 hours",
+  "how": "the Pages workflow (.github/workflows/pages.yml) at 17 minutes past 00, 06, 12 and 18 UTC; one GET of the published JSON feed; every other run keeps the last read, copied from the live site"
+ },
+ "terms": {
+  "summary": "CC0 1.0: \"You may use this data in any legal manner\"; third-party links keep their own terms; no use of the CISA logo or DHS seal, no endorsement implied. Not reviewed by a person.",
+  "page": "https://github.com/cisagov/kev-data/blob/develop/LICENSE",
+  "read_at": "2026-11-18",
+  "quote": "The KEV database is distributed under the Creative Commons 0 1.0 License. You may use this data in any legal manner but note that information provided at any 3rd party links included in the KEV database are bound by the policies and licenses of those 3rd party websites.",
+  "quote_lang": "en",
+  "republish": "yes, CC0; credited to CISA as a courtesy, no endorsement implied",
+  "open_question": "security@PrompTugal.dinis to review the cyber limits (aggregates only on cyber.promptugal.news; no IPs, hosts or victims)."
+ },
+ "api": {
+  "latest": "https://data.promptugal.news/api/v1/cisa-kev/latest.json",
+  "reads": "https://data.promptugal.news/api/v1/cisa-kev/reads.json",
+  "card": "https://data.promptugal.news/api/v1/cisa-kev/card.json",
+  "openapi": "https://data.promptugal.news/api/v1/cisa-kev/openapi.json",
+  "page": "https://data.promptugal.news/sources/cisa-kev/"
+ },
+ "vault": null,
+ "split": {
+  "code": ["the collector reads CISA's feed, keeps each entry's identifying fields, and counts per week and vendor", "GitHub Actions runs it and deploys the site"],
+  "agents": ["data.b@PrompTugal.dinis wrote the collector and card on 18 November 2026, at cyber.b@PrompTugal.dinis's request; terms read for the register by data.b.collector@ (Sonnet)"],
+  "people": ["Dinis Cruz decided the cyber signals on 18 November 2026 (board/guidance/2026-11-18-people-blogs-cyber-and-simulated-payments.md); no person has checked the values (not reviewed)"]
+ },
+ "cost": { "per_run_tokens": 0, "per_run_model_cost_usd": 0, "runner": "GitHub Actions on a public repository: no charge; one request a run (about 1.9 MB)", "build_tokens": "not measured", "note": "Code only: no model is called when the data is collected." },
+ "since": "2026-11-18"
+}

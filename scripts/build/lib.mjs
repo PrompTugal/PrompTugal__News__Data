@@ -30,7 +30,7 @@ export function loadSources() {
     // the publisher's own bytes of the latest read (vaults/<id>/latest/, written by the collector), served as the raw layer;
     // not for adsb-faro, whose answer names private aircraft (its collector keeps none), and never reads-full.json
     const rdir = join('vaults', id, 'latest');
-    const raw = existsSync(rdir) && id !== 'events-pt' ?   // events-pt: its raw pages are HTML and long publisher text (with em dashes the gate refuses); the vault keeps them
+    const raw = existsSync(rdir) && !['events-pt', 'cisa-kev'].includes(id) ?   // cisa-kev: CISA's notes carry em dashes and long link tokens the gates refuse; its feed is linked, the vault keeps the bytes. events-pt: its raw pages are HTML and long publisher text (with em dashes the gate refuses); the vault keeps them
      readdirSync(rdir).filter(f => f.endsWith('.json') && f !== 'reads-full.json').sort().map(f => ({ name: f, data: readJson(join(rdir, f)) })).filter(r => r.data) : [];
     return { id, card, manifest, latest, reads, runs, last, read_at, status, raw, headline: headline(id, latest, manifest) };
   });
