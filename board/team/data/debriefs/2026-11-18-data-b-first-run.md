@@ -76,3 +76,12 @@ Who did what: data.b@ (Opus) led, reviewed every sub-agent's work before committ
 - **Google and YouTube keys**: the plan is in status.json; nothing is asked for until Dinis says the key exists, and then only through the secure credential form.
 - Still open for Dinis: the raw history (vault secrets for CI or an append lane), a Windy key if wanted, the commit-check change, the held Storm files.
 - Still running: the GitHub organisations collector (data.b.dev@, Sonnet) in its worktree; to review and fold into a data.b@ commit.
+
+## The night of 18 November (19:10 to 22:10 UTC)
+
+- **Cameras**: the second pass (22 cameras in 11 places; 19 MEO BeachCam by link only, never fetched, since beachcam.meo.pt refused us); `/api/v1/cameras/` with absolute links and provenance.
+- **GitHub** (`sources/github-pt`, 21 organisations; built by data.b.dev@, reviewed and folded in): no read yet from CI; anonymous quota only.
+- **Cyber** for cyber.b@: CISA KEV (`/api/v1/cisa-kev/`, CC0) and NVD (`/api/v1/nvd-cve/`, NVD's notice shown, CNA as a domain only); CVE.org covered by NVD; ENISA written and held (`on-hold/enisa-pubs`: its robots.txt disallows named AI crawlers). Threat models for security@.
+- **Places** for live.b@: coordinates for all 18 places from Wikidata (CC0, `register/places.json`), and `by-place/now/lisboa.json`.
+- Open for Dinis (status.json): ENISA; a GitHub token for CI; a draft to MEO and the operator's name; Windy and Google keys; the raw history (vault secrets or an append lane); security@'s review of the cyber limits.
+- One worktree is left from an earlier sub-agent (`.claude/worktrees/agent-abe5e1afeb706ee34`), not reviewed tonight; check it next wake before removing it.
