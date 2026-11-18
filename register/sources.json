@@ -1237,6 +1237,836 @@
    },
    "notes": "The licence allows reuse with credit; the only official bulk files sit under a path robots.txt disallows for every user agent. Not collected. While checking, one HEAD request (no body) was sent to the zip URL on 18 Nov 2026; recorded here. Options for Dinis: ask CORDIS on the record whether automated clients may fetch /data/; or decide the open-data files are not what robots.txt is meant to bar (one request a day); or use the PRR portal and Portugal Ventures instead.",
    "researched_by": "data.b.dev3@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "cncs-certpt",
+   "name": "CNCS and CERT.PT (Centro Nacional de Cibersegurança)",
+   "kind": "cyber data source",
+   "url": "https://www.cncs.gov.pt/",
+   "owner": "Centro Nacional de Cibersegurança (CNCS), Portugal",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "cyber advisories",
+    "alerts",
+    "national threat statistics"
+   ],
+   "status": "not-read",
+   "why": {
+    "text": "No terms read: https://www.cncs.gov.pt/ looped on a 307 redirect to itself, then 517 and a failed connection (2026-11-18).",
+    "page": "https://www.cncs.gov.pt/",
+    "read_at": "2026-11-18",
+    "basis": "unreachable; terms not read"
+   },
+   "interface": "Website advisories and alerts; no API or feed confirmed.",
+   "feed": null,
+   "contact_channel": "https://www.cncs.gov.pt/",
+   "notes": "Terms NOT checked. https://www.cncs.gov.pt/ answered 307 redirecting to itself in a loop (curl stopped after 50), then 517 and a failed connection on retries; robots.txt and a /pt/ page did not answer. Lead to retry later or ask CNCS. Would give Portugal: official advisories (titles, dates, links) and any published national incident counts; aggregate-only use fits in principle (advisories are not victim data) but unconfirmed. Specific findings about an organisation go privately to CERT.PT/CNCS, never published (Dinis).",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "cnpd-decisions",
+   "name": "CNPD (Comissão Nacional de Protecção de Dados) decisions",
+   "kind": "cyber data source",
+   "url": "https://www.cnpd.pt/decisoes/deliberacoes/",
+   "owner": "Comissão Nacional de Proteção de Dados (CNPD), Portugal",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "data-protection decisions",
+    "deliberations",
+    "guidelines",
+    "opinions"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "A reprodução total ou parcial deste site, em suporte de papel ou em suporte eletrónico, é autorizada desde que respeite as seguintes condições: Gratuitidade da sua difusão; Respeito pela integridade dos documentos reproduzidos; Citação explícita do site www.cnpd.pt, como fonte e menção que os direitos são reservados. As informações só devem ser utilizadas para fins pessoais, associativos ou profissionais; estando excluída toda a utilização para fins comerciais ou publicitários.",
+    "quote_lang": "pt",
+    "page": "https://www.cnpd.pt/avisos-legais-e-outras-informacoes/",
+    "read_at": "2026-11-18",
+    "basis": "published terms page (Avisos legais), reproduction clause"
+   },
+   "interface": "Decision lists on the website (HTML pages under /decisoes/: deliberacoes, autorizacoes, diretrizes, pareceres); no API or feed found.",
+   "feed": null,
+   "contact_channel": "https://www.cnpd.pt/avisos-legais-e-outras-informacoes/",
+   "notes": "quote_lang is Portuguese (pt), not en. Aggregate-only fit: counts of decisions per month would be our own statistics, but the clause excludes commercial or advertising use, and PrompTugal plans revenue, so it RESTRICTS reuse of the text; counts and links may be fine, lead to ask CNPD. robots.txt returned 404 (no rule). Decisions can name organisations and people: link only, never copy text.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "enisa",
+   "name": "ENISA (European Union Agency for Cybersecurity)",
+   "kind": "cyber data source",
+   "url": "https://www.enisa.europa.eu/",
+   "owner": "ENISA",
+   "places": [
+    "portugal",
+    "eu"
+   ],
+   "gives": [
+    "EU threat reports",
+    "advisories",
+    "publications"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "Reproduction of ENISA material published on this website is authorized, provided the source is acknowledged, unless it is stated otherwise.",
+    "quote_lang": "en",
+    "page": "https://www.enisa.europa.eu/about-enisa/legal-notice",
+    "read_at": "2026-11-18",
+    "basis": "published legal notice, 1.2 Authorization"
+   },
+   "interface": "Website publications; RSS not checked.",
+   "feed": null,
+   "contact_channel": "https://www.enisa.europa.eu/about-enisa/legal-notice",
+   "notes": "Fits aggregate-only use with attribution, unless a specific report says otherwise. Not a feed we have tested; nothing collected.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "euvd",
+   "name": "EUVD, European Vulnerability Database",
+   "kind": "cyber data source",
+   "url": "https://euvd.enisa.europa.eu/",
+   "owner": "ENISA",
+   "places": [
+    "portugal",
+    "eu"
+   ],
+   "gives": [
+    "EU vulnerability records, exploited and critical lists"
+   ],
+   "status": "not-read",
+   "why": {
+    "text": "No terms found: euvd.enisa.europa.eu and /apidoc returned an 'Application Unavailable' fallback page.",
+    "page": "https://euvd.enisa.europa.eu/",
+    "read_at": "2026-11-18",
+    "basis": "app unavailable; terms not found"
+   },
+   "interface": "Web application; API documentation at /apidoc not readable (the page returned only an 'Application Unavailable' fallback on 2026-11-18).",
+   "feed": null,
+   "contact_channel": "https://www.enisa.europa.eu/about-enisa/legal-notice",
+   "notes": "No EUVD-specific terms found. ENISA's site legal notice (see entry enisa) says reproduction is authorised with source acknowledged; whether it covers EUVD data is unconfirmed. Would give Portugal: counts of exploited or critical vulnerabilities by vendor (Portuguese vendors) as aggregates. Lead to retry.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "nvd",
+   "name": "NVD (National Vulnerability Database)",
+   "kind": "cyber data source",
+   "url": "https://nvd.nist.gov/",
+   "owner": "NIST (US)",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "CVE records with CVSS, CPE, CWE; CVE API 2.0"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "The software developed by NIST employees is not subject to copyright protection within the United States.",
+    "quote_lang": "en",
+    "page": "https://www.nist.gov/oism/copyrights",
+    "read_at": "2026-11-18",
+    "basis": "NIST copyright page (general NIST site, not an NVD-specific terms page)"
+   },
+   "interface": "CVE API 2.0 (services.nvd.nist.gov); rate limits not read.",
+   "feed": null,
+   "contact_channel": "https://nvd.nist.gov/",
+   "notes": "NVD's own developers and terms pages are script-rendered (only a shell was returned), so the API terms and rate limits were NOT read; check them before collecting. NIST's general page also says NIST gives no warranty on the data. Aggregate-only use (counts by vendor or severity) fits on this evidence; CVE records are not personal data.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "cve-org",
+   "name": "CVE Program (cve.org)",
+   "kind": "cyber data source",
+   "url": "https://www.cve.org/",
+   "owner": "The MITRE Corporation for the CVE Program",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "CVE IDs and records (CVE JSON 5)"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "MITRE hereby grants you a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare derivative works of, publicly display, publicly perform, sublicense, and distribute Common Vulnerabilities and Exposures (CVE). Any copy you make for such purposes is authorized provided that you reproduce MITRE's copyright designation and this license in any such copy.",
+    "quote_lang": "en",
+    "page": "https://www.cve.org/Legal/TermsOfUse",
+    "read_at": "2026-11-18",
+    "basis": "terms of use text, read from the site's source file raw.githubusercontent.com/CVEProject/cve-website/dev/src/views/Legal/TermsOfUse.vue because the live page is script-rendered"
+   },
+   "interface": "CVE Services API and the CVE list on GitHub (CVEProject/cvelistV5).",
+   "feed": null,
+   "contact_channel": "https://www.cve.org/Legal/TermsOfUse",
+   "notes": "Allows aggregate reuse (and more) provided MITRE's copyright and licence are reproduced in any copy. Reading is via the source file, not the rendered page; the lead may want the rendered text confirmed.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "cisa-kev",
+   "name": "CISA Known Exploited Vulnerabilities (KEV) catalogue",
+   "kind": "cyber data source",
+   "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+   "owner": "CISA (US)",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "list of CVEs known to be exploited, with dates added"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "The KEV database is distributed under the Creative Commons 0 1.0 License. You may use this data in any legal manner but note that information provided at any 3rd party links included in the KEV database are bound by the policies and licenses of those 3rd party websites.",
+    "quote_lang": "en",
+    "page": "https://raw.githubusercontent.com/cisagov/kev-data/develop/LICENSE",
+    "read_at": "2026-11-18",
+    "basis": "licence file of the cisagov/kev-data repository"
+   },
+   "interface": "JSON feed https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json (answered 200, 1.8 MB, catalogVersion 2026.11.17, 1782 entries). Also CSV and the GitHub repo cisagov/kev-data.",
+   "feed": null,
+   "contact_channel": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+   "notes": "Allows aggregate reuse (CC0). The HTML catalogue page and robots.txt returned 403 Access Denied to our user agent, so use the JSON or GitHub copy only. Would give Portugal: counts of exploited vulnerabilities in products Portuguese organisations commonly run, as aggregates; the KEV itself has no country field, so any Portugal angle is our own labelled inference.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "shadowserver",
+   "name": "Shadowserver Foundation (public dashboard and reports)",
+   "kind": "cyber data source",
+   "url": "https://dashboard.shadowserver.org/",
+   "owner": "The Shadowserver Foundation",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "country-level counts of exposed or vulnerable services and infections (dashboard)"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "Non-Profit Research. You may perform research and analysis on a non-profit basis. ... Attribution. For published distribution other than the above Licensed Uses, attribution is required. ... you will not ... attempt to copy, reproduce, bundle, repackage, alter, modify, adapt, translate, ... or make derivative works based on the Restricted Content",
+    "quote_lang": "en",
+    "page": "https://www.shadowserver.org/privacy-and-terms/",
+    "read_at": "2026-11-18",
+    "basis": "published terms, License Agreement section"
+   },
+   "interface": "Public dashboard (dashboard.shadowserver.org: connection reset when fetched); reports to network owners need registration.",
+   "feed": null,
+   "contact_channel": "https://www.shadowserver.org/privacy-and-terms/",
+   "notes": "RESTRICTS: the licence grants non-profit research and own-organisation defence, and bars repackaging or derivative works; a commercial news product likely does not fit. Ask Shadowserver in writing (outreach@ drafts, a person sends) before any use. The dashboard itself could not be fetched, so its own terms are unread. Country dashboards are aggregates by design; never take network-owner reports (they list IPs).",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "cloudflare-radar",
+   "name": "Cloudflare Radar",
+   "kind": "cyber data source",
+   "url": "https://radar.cloudflare.com/",
+   "owner": "Cloudflare, Inc.",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "country-level traffic, outages, attacks and DNS trends (aggregates)"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "Data available via Radar API endpoints is made available under the CC BY-NC 4.0 license.",
+    "quote_lang": "en",
+    "page": "https://developers.cloudflare.com/radar/",
+    "read_at": "2026-11-18",
+    "basis": "Radar API documentation home page"
+   },
+   "interface": "Radar API (needs a Cloudflare account and token; not read); radar.cloudflare.com itself returned 403 to our user agent.",
+   "feed": null,
+   "contact_channel": "https://www.cloudflare.com/policies/terms/",
+   "notes": "RESTRICTS: CC BY-NC 4.0 bars commercial use; PrompTugal's plans to earn from traffic make that doubtful, lead to decide or ask Cloudflare. Cloudflare's general terms page was linked but not read. Aggregates by country are what Radar gives by design.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "ripestat",
+   "name": "RIPEstat (RIPE NCC)",
+   "kind": "cyber data source",
+   "url": "https://stat.ripe.net/",
+   "owner": "RIPE NCC",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "country and ASN routing, resource and visibility statistics"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "A User may not re-package, compile, re-distribute the RIPEstat Service and any (or all) of the RIPEstat Data. Use of the RIPEstat Service for commercial purposes, such as by providing paid services, products or any other derivatives that are based on the RIPEstat Service, ... is not allowed unless permission to do so is granted in writing by the RIPE NCC.",
+    "quote_lang": "en",
+    "page": "https://www.ripe.net/about-us/legal/ripestat-service-terms-and-conditions/",
+    "read_at": "2026-11-18",
+    "basis": "published terms and conditions, Article 3.3"
+   },
+   "interface": "RIPEstat Data API (stat.ripe.net/docs/02.data-api/): at most 1000 requests a day without a registered sourceapp, 8 concurrent requests per IP.",
+   "feed": null,
+   "contact_channel": "https://www.ripe.net/about-us/legal/ripestat-service-terms-and-conditions/",
+   "notes": "RESTRICTS: purpose is network analysis, monitoring, debugging and research (3.1); commercial derivatives need written permission from stat@ripe.net (a role address of the organisation; a person at PrompTugal would send the request). Research results must be attributed to RIPE NCC. Not-for-profit aggregate research may fit; lead to decide.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "ioda",
+   "name": "IODA, Internet Outage Detection and Analysis (Georgia Tech)",
+   "kind": "cyber data source",
+   "url": "https://ioda.inetintel.cc.gatech.edu/",
+   "owner": "Georgia Institute of Technology, Internet Intelligence Research Lab",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "country and region internet outage signals (aggregates)"
+   ],
+   "status": "not-read",
+   "why": {
+    "text": "No terms or licence found on the site or the API documentation page.",
+    "page": "https://ioda.inetintel.cc.gatech.edu/",
+    "read_at": "2026-11-18",
+    "basis": "no terms found"
+   },
+   "interface": "HTTP API at https://api.ioda.inetintel.cc.gatech.edu/v2/ (the documentation page answered 200; it names no licence).",
+   "feed": null,
+   "contact_channel": "https://ioda.inetintel.cc.gatech.edu/",
+   "notes": "No terms or licence found: the site is script-rendered (/terms and /data returned the same shell) and the API docs page has no licence text. Treat as unknown; lead to ask the lab. Would give Portugal: outage signal time series for the country (aggregates, no devices).",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "abusech-urlhaus",
+   "name": "abuse.ch URLhaus",
+   "kind": "cyber data source",
+   "url": "https://urlhaus.abuse.ch/",
+   "owner": "abuse.ch AG (with Spamhaus Technology Limited as primary licensee)",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "counts of malware URLs or indicators by country or hosting network (only as our own aggregates)"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "THE ABUSE.CH PLATFORMS ARE PROVIDED FREE OF CHARGE, SUBJECT TO THE FAIR USE PRINCIPLES SET OUT IN THESE TERMS. ... Authenticated Users may access the Platforms for not-for-profit purposes, subject to usage limitations imposed by abuse.ch and/or Spamhaus.",
+    "quote_lang": "en",
+    "page": "https://abuse.ch/terms-of-use/",
+    "read_at": "2026-11-18",
+    "basis": "published Terms of Use (effective 4 November 2025, last updated 21 October 2026)"
+   },
+   "interface": "malicious URL feed; API at urlhaus.abuse.ch/api/. Terms require an authenticated account (auth.abuse.ch).",
+   "feed": null,
+   "contact_channel": "https://abuse.ch/terms-of-use/",
+   "notes": "RESTRICTS: not-for-profit access only, needs an account, volume limits, paid subscription beyond them. The raw data is lists of URLs, hosts and hashes: we must never publish or store such lists, only our own counts, and a commercial use would need a paid agreement; lead to decide. Terms read once for both platforms.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "abusech-threatfox",
+   "name": "abuse.ch ThreatFox",
+   "kind": "cyber data source",
+   "url": "https://threatfox.abuse.ch/",
+   "owner": "abuse.ch AG (with Spamhaus Technology Limited as primary licensee)",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "counts of malware URLs or indicators by country or hosting network (only as our own aggregates)"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "THE ABUSE.CH PLATFORMS ARE PROVIDED FREE OF CHARGE, SUBJECT TO THE FAIR USE PRINCIPLES SET OUT IN THESE TERMS. ... Authenticated Users may access the Platforms for not-for-profit purposes, subject to usage limitations imposed by abuse.ch and/or Spamhaus.",
+    "quote_lang": "en",
+    "page": "https://abuse.ch/terms-of-use/",
+    "read_at": "2026-11-18",
+    "basis": "published Terms of Use (effective 4 November 2025, last updated 21 October 2026)"
+   },
+   "interface": "IOC feed; API at threatfox.abuse.ch/api/. Terms require an authenticated account (auth.abuse.ch).",
+   "feed": null,
+   "contact_channel": "https://abuse.ch/terms-of-use/",
+   "notes": "RESTRICTS: not-for-profit access only, needs an account, volume limits, paid subscription beyond them. The raw data is lists of URLs, hosts and hashes: we must never publish or store such lists, only our own counts, and a commercial use would need a paid agreement; lead to decide. Terms read once for both platforms.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "blog-mt-newsletter",
+   "name": "MT newsletter (matosinhos.tech)",
+   "kind": "newsletter",
+   "url": "https://mtnewsletter.substack.com/",
+   "owner": "matosinhos.tech",
+   "places": [
+    "matosinhos",
+    "portugal"
+   ],
+   "gives": [
+    "tech",
+    "startups",
+    "AI"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "matosinhos.tech",
+    "quote_lang": "en",
+    "page": "https://mtnewsletter.substack.com/feed",
+    "read_at": "2026-11-18",
+    "basis": "copyright line inside the feed itself (no site terms page read)"
+   },
+   "interface": "Public RSS/Atom feed, answered 200 on 2026-11-18; newest item in the feed: 1 Dec 2025.",
+   "feed": "https://mtnewsletter.substack.com/feed",
+   "contact_channel": "https://mtnewsletter.substack.com/about",
+   "notes": "Byline as published: matosinhos.tech. Substack feed: free posts only; the feed carries just a preview for any paid post, which we never collect. Stale: latest item 1 December 2025. Topics: Portuguese tech ecosystem, AI, entrepreneurship.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "blog-matosinhos-tech",
+   "name": "matosinhos.tech",
+   "kind": "newsletter",
+   "url": "https://matosinhostech.substack.com/",
+   "owner": "matosinhos.tech",
+   "places": [
+    "matosinhos",
+    "portugal"
+   ],
+   "gives": [
+    "tech",
+    "startups",
+    "events"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "matosinhos.tech",
+    "quote_lang": "en",
+    "page": "https://matosinhostech.substack.com/feed",
+    "read_at": "2026-11-18",
+    "basis": "copyright line inside the feed itself (no site terms page read)"
+   },
+   "interface": "Public RSS/Atom feed, answered 200 on 2026-11-18; newest item in the feed: 8 Nov 2026.",
+   "feed": "https://matosinhostech.substack.com/feed",
+   "contact_channel": "https://matosinhostech.substack.com/about",
+   "notes": "Byline as published: matosinhos.tech. Substack feed: free posts only; the feed carries just a preview for any paid post, which we never collect. Topics: tech community and events in Matosinhos.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "blog-beyond-the-mainframe",
+   "name": "Beyond the Mainframe (Laika Ventures)",
+   "kind": "newsletter",
+   "url": "https://beyondthemainframe.substack.com/",
+   "owner": "Laika Ventures",
+   "places": [
+    "portugal",
+    "lisbon"
+   ],
+   "gives": [
+    "AI",
+    "startups"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "Laika Ventures",
+    "quote_lang": "en",
+    "page": "https://beyondthemainframe.substack.com/feed",
+    "read_at": "2026-11-18",
+    "basis": "copyright line inside the feed itself (no site terms page read)"
+   },
+   "interface": "Public RSS/Atom feed, answered 200 on 2026-11-18; newest item in the feed: 31 Oct 2026.",
+   "feed": "https://beyondthemainframe.substack.com/feed",
+   "contact_channel": "https://beyondthemainframe.substack.com/about",
+   "notes": "Byline as published: Laika Ventures. Substack feed: free posts only; the feed carries just a preview for any paid post, which we never collect. Topics: AI events worldwide and what startups and institutions in Portugal do.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "blog-start-lisbon",
+   "name": "START Lisbon's Newsletter",
+   "kind": "newsletter",
+   "url": "https://startlisboa.substack.com/",
+   "owner": "START Lisbon",
+   "places": [
+    "lisbon"
+   ],
+   "gives": [
+    "startups",
+    "tech"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "START Lisbon",
+    "quote_lang": "en",
+    "page": "https://startlisboa.substack.com/feed",
+    "read_at": "2026-11-18",
+    "basis": "copyright line inside the feed itself (no site terms page read)"
+   },
+   "interface": "Public RSS/Atom feed, answered 200 on 2026-11-18; newest item in the feed: 22 Nov 2024.",
+   "feed": "https://startlisboa.substack.com/feed",
+   "contact_channel": null,
+   "notes": "Byline as published: START Lisbon. Substack feed: free posts only; the feed carries just a preview for any paid post, which we never collect. Stale: latest item 22 November 2024; likely dormant. Topics: Lisbon startup scene.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "blog-henrique-cruz",
+   "name": "Henrique's Newsletter (Henrique Cruz)",
+   "kind": "newsletter",
+   "url": "https://henriquecruz.substack.com/",
+   "owner": "Henrique Cruz",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "AI",
+    "public policy"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "Henrique Cruz",
+    "quote_lang": "en",
+    "page": "https://henriquecruz.substack.com/feed",
+    "read_at": "2026-11-18",
+    "basis": "copyright line inside the feed itself (no site terms page read)"
+   },
+   "interface": "Public RSS/Atom feed, answered 200 on 2026-11-18; newest item in the feed: 9 Nov 2026.",
+   "feed": "https://henriquecruz.substack.com/feed",
+   "contact_channel": "https://henriquecruz.substack.com/about",
+   "notes": "Author named as the feed publishes it (Henrique Cruz), own public newsletter. Substack feed: free posts only; the feed carries just a preview for any paid post, which we never collect. Topics: AI and public policy, e.g. recommendations for the national AI strategy.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "blog-aventar",
+   "name": "Aventar",
+   "kind": "blog",
+   "url": "https://aventar.eu/",
+   "owner": "Aventar (collective blog)",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "public policy",
+    "opinion",
+    "local news"
+   ],
+   "status": "not-read",
+   "why": {
+    "text": "no terms found in the feed; the site's own terms page was not fetched (request budget)",
+    "page": "https://aventar.eu/feed/",
+    "read_at": "2026-11-18",
+    "basis": "feed fetched, answered 200 with items"
+   },
+   "interface": "Public RSS/Atom feed, answered 200 on 2026-11-18; newest item in the feed: 18 Nov 2026.",
+   "feed": "https://aventar.eu/feed/",
+   "contact_channel": null,
+   "notes": "Collective blog; individual authors sign each post, byline per item as published. Topics: Portuguese politics and society, opinion.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "blog-blasfemias",
+   "name": "Blasfémias",
+   "kind": "blog",
+   "url": "https://blasfemias.net/",
+   "owner": "Blasfémias (collective blog)",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "public policy",
+    "economics",
+    "opinion"
+   ],
+   "status": "not-read",
+   "why": {
+    "text": "no terms found in the feed; the site's own terms page was not fetched (request budget)",
+    "page": "https://blasfemias.net/feed/",
+    "read_at": "2026-11-18",
+    "basis": "feed fetched, answered 200 with items"
+   },
+   "interface": "Public RSS/Atom feed, answered 200 on 2026-11-18; newest item in the feed: 18 Nov 2026.",
+   "feed": "https://blasfemias.net/feed/",
+   "contact_channel": null,
+   "notes": "Collective blog; byline per post as published. Topics: politics and economics, liberal viewpoint.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "blog-o-insurgente",
+   "name": "O Insurgente",
+   "kind": "blog",
+   "url": "https://oinsurgente.org/",
+   "owner": "O Insurgente (collective blog)",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "public policy",
+    "opinion"
+   ],
+   "status": "not-read",
+   "why": {
+    "text": "no terms found in the feed; the site's own terms page was not fetched (request budget)",
+    "page": "https://oinsurgente.org/feed/",
+    "read_at": "2026-11-18",
+    "basis": "feed fetched, answered 200 with items"
+   },
+   "interface": "Public RSS/Atom feed, answered 200 on 2026-11-18; newest item in the feed: 14 Nov 2026.",
+   "feed": "https://oinsurgente.org/feed/",
+   "contact_channel": null,
+   "notes": "Collective blog; byline per post as published. Topics: politics, economics, liberal viewpoint.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "blog-delito-de-opiniao",
+   "name": "Delito de Opinião",
+   "kind": "blog",
+   "url": "https://delitodeopiniao.blogs.sapo.pt/",
+   "owner": "Delito de Opinião (collective blog on SAPO Blogs)",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "public policy",
+    "opinion"
+   ],
+   "status": "not-read",
+   "why": {
+    "text": "no terms found in the feed; the site's own terms page was not fetched (request budget)",
+    "page": "https://delitodeopiniao.blogs.sapo.pt/data/rss",
+    "read_at": "2026-11-18",
+    "basis": "feed fetched, answered 200 with items"
+   },
+   "interface": "Public RSS/Atom feed, answered 200 on 2026-11-18; newest item in the feed: 23 Jun 2026.",
+   "feed": "https://delitodeopiniao.blogs.sapo.pt/data/rss",
+   "contact_channel": null,
+   "notes": "Hosted on SAPO Blogs. Stale: latest item 23 June 2026. Topics: politics and society, opinion.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "blog-ladroes-de-bicicletas",
+   "name": "Ladrões de Bicicletas",
+   "kind": "blog",
+   "url": "https://ladroesdebicicletas.blogspot.com/",
+   "owner": "Ladrões de Bicicletas (collective blog)",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "public policy",
+    "economics",
+    "opinion"
+   ],
+   "status": "not-read",
+   "why": {
+    "text": "no terms found in the feed; the site's own terms page was not fetched (request budget)",
+    "page": "https://ladroesdebicicletas.blogspot.com/feeds/posts/default",
+    "read_at": "2026-11-18",
+    "basis": "feed fetched, answered 200 with items"
+   },
+   "interface": "Public RSS/Atom feed, answered 200 on 2026-11-18; newest item in the feed: 18 Nov 2026.",
+   "feed": "https://ladroesdebicicletas.blogspot.com/feeds/posts/default",
+   "contact_channel": null,
+   "notes": "Blogger Atom feed; byline per post as published. Topics: politics, economics and society from the left.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "blog-causa-nossa",
+   "name": "Causa Nossa",
+   "kind": "blog",
+   "url": "https://causa-nossa.blogspot.com/",
+   "owner": "Causa Nossa (collective blog)",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "public policy",
+    "opinion"
+   ],
+   "status": "not-read",
+   "why": {
+    "text": "no terms found in the feed; the site's own terms page was not fetched (request budget)",
+    "page": "https://causa-nossa.blogspot.com/feeds/posts/default",
+    "read_at": "2026-11-18",
+    "basis": "feed fetched, answered 200 with items"
+   },
+   "interface": "Public RSS/Atom feed, answered 200 on 2026-11-18; newest item in the feed: 18 Nov 2026.",
+   "feed": "https://causa-nossa.blogspot.com/feeds/posts/default",
+   "contact_channel": null,
+   "notes": "Blogger Atom feed; byline per post as published. Topics: politics, institutions, public affairs.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "blog-portugal-contemporaneo",
+   "name": "Portugal Contemporâneo",
+   "kind": "blog",
+   "url": "https://portugalcontemporaneo.blogspot.com/",
+   "owner": "Portugal Contemporâneo (blog)",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "public policy",
+    "local news",
+    "opinion"
+   ],
+   "status": "not-read",
+   "why": {
+    "text": "no terms found in the feed; the site's own terms page was not fetched (request budget)",
+    "page": "https://portugalcontemporaneo.blogspot.com/feeds/posts/default",
+    "read_at": "2026-11-18",
+    "basis": "feed fetched, answered 200 with items"
+   },
+   "interface": "Public RSS/Atom feed, answered 200 on 2026-11-18; newest item in the feed: 18 Nov 2026.",
+   "feed": "https://portugalcontemporaneo.blogspot.com/feeds/posts/default",
+   "contact_channel": null,
+   "notes": "Blogger Atom feed (large, 840 KB); byline per post as published. Topics: politics and current affairs.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "blog-pplware",
+   "name": "Pplware",
+   "kind": "blog",
+   "url": "https://pplware.sapo.pt/",
+   "owner": "Pplware (SAPO)",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "tech",
+    "AI",
+    "security"
+   ],
+   "status": "not-read",
+   "why": {
+    "text": "no terms found in the feed; the site's own terms page was not fetched (request budget)",
+    "page": "https://pplware.sapo.pt/feed/",
+    "read_at": "2026-11-18",
+    "basis": "feed fetched, answered 200 with items"
+   },
+   "interface": "Public RSS/Atom feed, answered 200 on 2026-11-18; newest item in the feed: 18 Nov 2026.",
+   "feed": "https://pplware.sapo.pt/feed/",
+   "contact_channel": null,
+   "notes": "Tech blog hosted by SAPO; more a publication than an individual blog. Topics: consumer tech, software, security news in Portuguese.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "blog-tugatech",
+   "name": "TugaTech",
+   "kind": "blog",
+   "url": "https://tugatech.com.pt/",
+   "owner": "TugaTech",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "tech",
+    "AI",
+    "security"
+   ],
+   "status": "not-read",
+   "why": {
+    "text": "no terms found in the feed; the site's own terms page was not fetched (request budget)",
+    "page": "https://tugatech.com.pt/feed",
+    "read_at": "2026-11-18",
+    "basis": "feed fetched, answered 200 with items"
+   },
+   "interface": "Public RSS/Atom feed, answered 200 on 2026-11-18; newest item in the feed: 18 Nov 2026.",
+   "feed": "https://tugatech.com.pt/feed",
+   "contact_channel": null,
+   "notes": "Community tech site; feed has 50 items. Topics: technology news and reviews in Portuguese.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "blog-shifter",
+   "name": "Shifter",
+   "kind": "blog",
+   "url": "https://shifter.pt/",
+   "owner": "Shifter",
+   "places": [
+    "portugal"
+   ],
+   "gives": [
+    "tech",
+    "startups",
+    "AI"
+   ],
+   "status": "not-read",
+   "why": {
+    "text": "no terms found in the feed; the site's own terms page was not fetched (request budget)",
+    "page": "https://shifter.pt/feed/",
+    "read_at": "2026-11-18",
+    "basis": "feed fetched, answered 200 with items"
+   },
+   "interface": "Public RSS/Atom feed, answered 200 on 2026-11-18; newest item in the feed: 15 Nov 2026.",
+   "feed": "https://shifter.pt/feed/",
+   "contact_channel": null,
+   "notes": "Online magazine rather than a personal blog; feed items carry per-article bylines. Topics: Portuguese tech, startups, digital culture.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "blog-portugalist",
+   "name": "Portugalist",
+   "kind": "blog",
+   "url": "https://portugalist.com/",
+   "owner": "Portugalist",
+   "places": [
+    "portugal",
+    "lisbon",
+    "algarve"
+   ],
+   "gives": [
+    "travel",
+    "local"
+   ],
+   "status": "not-read",
+   "why": {
+    "text": "no terms found in the feed; the site's own terms page was not fetched (request budget)",
+    "page": "https://portugalist.com/feed/",
+    "read_at": "2026-11-18",
+    "basis": "feed fetched, answered 200 with items"
+   },
+   "interface": "Public RSS/Atom feed, answered 200 on 2026-11-18; newest item in the feed: 6 Oct 2026.",
+   "feed": "https://portugalist.com/feed/",
+   "contact_channel": null,
+   "notes": "Travel blog. Stale-ish: latest item 6 October 2026. Topics: Portugal travel and living, English.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "blog-sul-informacao",
+   "name": "Sul Informação",
+   "kind": "blog",
+   "url": "https://www.sulinformacao.pt/",
+   "owner": "Sul Informação",
+   "places": [
+    "algarve"
+   ],
+   "gives": [
+    "local news"
+   ],
+   "status": "not-read",
+   "why": {
+    "text": "no terms found in the feed; the site's own terms page was not fetched (request budget)",
+    "page": "https://www.sulinformacao.pt/feed/",
+    "read_at": "2026-11-18",
+    "basis": "feed fetched, answered 200 with items"
+   },
+   "interface": "Public RSS/Atom feed, answered 200 on 2026-11-18; newest item in the feed: 18 Nov 2026.",
+   "feed": "https://www.sulinformacao.pt/feed/",
+   "contact_channel": null,
+   "notes": "A newspaper, not a blog: kind set to blog only because the schema has no outlet value here; lead may move it to the news register. Only Algarve feed that answered. Topics: Algarve local news.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+  },
+  {
+   "id": "blog-unbabel",
+   "name": "Unbabel blog",
+   "kind": "blog",
+   "url": "https://unbabel.com/blog/",
+   "owner": "Unbabel (company, Lisbon)",
+   "places": [
+    "lisbon"
+   ],
+   "gives": [
+    "AI",
+    "tech"
+   ],
+   "status": "not-read",
+   "why": {
+    "text": "no terms found in the feed; the site's own terms page was not fetched (request budget)",
+    "page": "https://unbabel.com/blog/feed/",
+    "read_at": "2026-11-18",
+    "basis": "feed fetched, answered 200 with items"
+   },
+   "interface": "Public RSS/Atom feed, answered 200 on 2026-11-18; newest item in the feed: 28 May 2025.",
+   "feed": "https://unbabel.com/blog/feed/",
+   "contact_channel": null,
+   "notes": "Company blog. Stale: latest item 28 May 2025; probably dormant. Topics: AI translation, language technology.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
   }
  ]
 }
