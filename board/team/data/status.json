@@ -4,7 +4,7 @@
  "repo": "PrompTugal/PrompTugal__News__Data",
  "site": "https://data.promptugal.news",
  "focus": "the raw public data behind every PrompTugal site: collectors, API, vaults; visualization first; the Storm Charles site's data and map",
- "updated": "2026-11-18T16:10Z",
+ "updated": "2026-11-18T17:38Z",
  "observability_lane": "data (own lane since 18 Nov ~15:00 UTC: vault 349t1w6w, 2 append lanes, drain key sha256:5109a3745ff9fdb4; drain credentials sealed to conductor.b-promptugal and sent to conductor.b@)",
  "observability_note": "obs.js reads team/keys/obs-data.json from GitHub (public half: endpoint, vault id, 2 append tokens, drain public key); every event tagged lane: \"data\"; no town lookup.",
  "state": "third wake (13:03 UTC) done: three more Storm charts on /storm/ (residents by hour, warned against observed, forecast models); the Storm items each sub-site takes listed for conductor.b@; key and commit-check fixes still blocked by permission",
@@ -41,7 +41,8 @@
   "Attribution ledger (Dinis, ~15:30 UTC): /api/v1/sources/attribution.json, 43 sources with appearances, citations, links, weight and share, marked \"Simulated. No payment is made or collected; no money moves.\"; for dev@'s /payments/simulated/",
   "Register: 13 cyber sources (terms checked: CVE.org, CISA KEV CC0, ENISA, NVD allow aggregate reuse; CNPD, Shadowserver, Cloudflare Radar CC BY-NC, RIPEstat, abuse.ch restrict; CNCS/CERT.PT, EUVD, IODA unknown) and 18 blog and newsletter feeds (Portugal, people publishing under their own name included); all not read until terms are checked; 89 sources on the register (16 read)",
   "base-gov-pt (public contracts, shared with civic): 1,312 contracts of the last 90 days for Lisboa and the 16 Algarve câmaras, from IMPIC's open data on dados.gov.pt (public domain); never base.gov.pt itself; natural persons shown only as \"a natural person\", their contracts' object withheld (168); /api/v1/base-gov-pt/latest.json; threat model docs/threat-models/base-gov-pt.md",
-  "Charts for events (calendar, claims by status, gap hosts), social signals (pulse) and public contracts (by place and buyer kind, by procedure): checked at 1100 and 375 px, no sideways scroll (commit c6de5cf)"
+  "Charts for events (calendar, claims by status, gap hosts), social signals (pulse) and public contracts (by place and buyer kind, by procedure): checked at 1100 and 375 px, no sideways scroll (commit c6de5cf)",
+  "Public contracts, one file per place: /api/v1/base-gov-pt/places/<place>.json and index.json, in OpenAPI (civic.b@ asked; commit 66dbbe1)"
  ],
  "blocked": [
   "Change to scripts/check-commits.mjs to accept @PrompTugal.dinis refused by the permission check: commits use Agent: data.b@AgentiCCells.dinis",
@@ -64,6 +65,7 @@
   "Dinis: ask Shadowserver, Cloudflare (Radar is CC BY-NC), RIPE NCC (RIPEstat bars commercial derivatives) and CNPD (commercial use excluded) for written permission on the record? outreach@ drafts, you send."
  ],
  "next": [
+  "YouTube: when Dinis says the YouTube Data API key exists, ask for it through the secure credential form (host www.googleapis.com, header X-Goog-Api-Key), never in chat; then the replay and chapter source (REQ-2026-0001) and the organisations' channels, read-only, every call counted (conductor.b@ relayed, 17:38 UTC)",
   "Pipeline standard (Dinis, 18 Nov ~16:00 UTC, board/guidance/2026-11-18-the-pipeline-standard-and-the-fact-checker.md): for every source, raw kept as received and timestamped, never overwritten; JSON; a visualisation; the analysis; a home page per source; OpenAPI per source and a Swagger of Swaggers (/api/swagger/ lists them all already). Gap: raw history needs the vault secrets or an append lane (Dinis); the newer sources (events-pt, social, base-gov-pt, discovery) need their visualisation and analysis layers on /sources/<id>/",
   "Read library.promptugal.news/api/v1/requests/ at every wake once it exists; answer by fixing or saying why not",
   "Universities: research feeds for a page per university, the University of the Algarve first (news feed, RCAAP, arXiv by affiliation, public academic roles) for library.b@",
