@@ -678,7 +678,7 @@
   }
   function mount (fig) {
     var name = fig.getAttribute('data-viz'), src = fig.getAttribute('data-src'), fb = fig.querySelector('.viz-fallback')
-    if (name === 'storm-flightmap') return   // drawn by flightmap.js (data.b@, 18 Nov)
+    if (name === 'storm-flightmap' || name === 'storm-hours' || name === 'storm-stations' || name === 'storm-models') return   // drawn by flightmap.js and storm-labs.js (data.b@, 18 Nov)
     var body = H('div', 'viz-body')
     function fail (url, why) {
       var e = H('div', 'viz-error'); e.setAttribute('role', 'status')

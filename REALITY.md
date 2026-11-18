@@ -36,7 +36,8 @@ A thing not written here does not exist. Kept by data.b@PrompTugal.dinis (accoun
 - `storm/charles/`: 140 of the Storm's 142 incident data files plus the broadcast map's `field.json` and `coast.json`, copied from PrompTugal__News__Storm-Charles at fdac6ed after each incident file matched its stated sha256; full hashes inside cut to 16 hex; five files held back (two trip the leak scan, three hold em dashes in quotes). `storm/README.md` has the detail. Served at `/api/v1/storm/charles/` with `index.json` and `/api/v1/storm/openapi.json`.
 - The Storm map: `board/team/data/storm-map.md` and `.json` (94 items: pages, visualizations, collectors, data sets, vaults; where each goes and its state) and the page `/storm/`.
 - The flight maps (18 November, second wake): Lisbon and Madeira rebuilt from the moved frames by `scripts/storm-flights-map.mjs` (a port of the Storm's `tools/flights-map.mjs`) into `storm/charles/flights-map/` (1.0 MB, airline callsigns only), drawn on `/storm/` by `src/assets/viz/flightmap.js`. The crosswind and departures charts are not ported.
-- Not moved yet: the IPMA views, labs charts and the hours-exposure chart (see the map); entities, graph and meteorology data sets.
+- Three more Storm charts (18 November, third wake): residents under each IPMA level by hour, warned against observed, forecast models against measured, on `/storm/` (`src/assets/viz/storm-labs.js`, simplified ports; its header says what was left out). `board/team/data/storm-handoff.md` lists the Storm items for the weather, travel and civic teams.
+- Not moved yet: the IPMA views and the other labs charts (see the map); entities, graph and meteorology data sets.
 
 ## The API
 

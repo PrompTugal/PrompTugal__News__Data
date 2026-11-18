@@ -1,0 +1,65 @@
+/* PrompTugal data: Storm Charles charts (storm-labs.js). Apache-2.0 for code; text and images CC BY 4.0.
+   Ported from PrompTugal__News__Storm-Charles, commit fdac6ed. Colours come from the site tokens (--ink, --paper, --red, --green,
+   --rule, --muted, --panel); IPMA's three level colours are used for IPMA's levels only, always with a text label. */
+.storm-fig {
+  --sf-yellow: #f2c200; --sf-orange: #f08a00; --sf-red: #d0021b;
+  --sf-a: #2a78d6; --sf-b: #d95926; --sf-c: #1a8f67; --sf-d: #6250d6;
+  --sf-grid: var(--rule, #d8d4cb);
+  margin: 24px 0; padding: 0; max-width: 100%;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .storm-fig { --sf-a: #5598e7; --sf-b: #ec8350; --sf-c: #3fc095; --sf-d: #9085e9; }
+}
+:root[data-theme="dark"] .storm-fig { --sf-a: #5598e7; --sf-b: #ec8350; --sf-c: #3fc095; --sf-d: #9085e9; }
+.storm-fig .sf-head { margin: 0 0 8px; font-size: 16px; color: var(--ink); }
+.storm-fig .sf-sub { margin: 14px 0 4px; font-size: 15px; font-weight: 700; color: var(--ink); }
+.storm-fig .sf-note { margin: 8px 0 0; font-size: 14px; color: var(--muted); }
+.storm-fig .sf-error, .storm-fig .sf-empty { margin: 10px 0; padding: 10px 14px; background: var(--panel, #ece8de); border-left: 4px solid var(--red, #d0021b); font-size: 15px; color: var(--ink); }
+.storm-fig .sf-error a { overflow-wrap: anywhere; }
+.storm-fig .sf-wrap { max-width: 100%; }
+.storm-fig svg { display: block; width: 100%; height: auto; max-width: 100%; font-family: var(--font-interface, Arial, sans-serif); }
+.storm-fig svg text { fill: var(--ink); font-size: 11px; }
+.storm-fig svg text.m { fill: var(--muted); }
+.storm-fig svg text.b { font-weight: 700; }
+.storm-fig svg .grid { stroke: var(--sf-grid); stroke-width: 1; fill: none; }
+.storm-fig svg .day { stroke: var(--muted); stroke-width: 1; stroke-dasharray: 2 3; fill: none; }
+.storm-fig svg .lane { fill: var(--panel, #ece8de); opacity: 0.55; }
+.storm-fig svg .base { stroke: var(--muted); stroke-width: 1; fill: none; }
+.storm-fig svg .lv-yellow { fill: var(--sf-yellow); }
+.storm-fig svg .lv-orange { fill: var(--sf-orange); }
+.storm-fig svg .lv-red { fill: var(--sf-red); }
+.storm-fig svg .lv-sea { fill: var(--panel, #ece8de); stroke: var(--muted); stroke-width: 1; }
+.storm-fig svg text.on-yellow, .storm-fig svg text.on-orange { fill: #1a1a1a; font-weight: 700; }
+.storm-fig svg text.on-red { fill: #fff; font-weight: 700; }
+.storm-fig svg .rain { fill: var(--sf-a); opacity: 0.8; }
+.storm-fig svg .wind { fill: none; stroke: var(--ink); stroke-width: 1.6; stroke-linejoin: round; }
+.storm-fig svg .ser { fill: none; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.storm-fig svg .s-a { stroke: var(--sf-a); fill: var(--sf-a); }
+.storm-fig svg .s-b { stroke: var(--sf-b); fill: var(--sf-b); }
+.storm-fig svg .s-c { stroke: var(--sf-c); fill: var(--sf-c); }
+.storm-fig svg .s-d { stroke: var(--sf-d); fill: var(--sf-d); }
+.storm-fig svg .s-ink { stroke: var(--ink); fill: var(--ink); }
+.storm-fig svg .ser.s-a, .storm-fig svg .ser.s-b, .storm-fig svg .ser.s-c, .storm-fig svg .ser.s-d, .storm-fig svg .ser.s-ink { fill: none; }
+.storm-fig svg .hit { fill: transparent; stroke: none; }
+.storm-fig svg .hit:hover { fill: var(--muted); fill-opacity: 0.25; }
+.storm-fig .sf-legend { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 8px 0 0; padding: 0; list-style: none; font-size: 14px; color: var(--ink); }
+.storm-fig .sf-legend li { display: inline-flex; align-items: center; gap: 6px; }
+.storm-fig .sf-legend svg { width: 28px; height: 14px; flex: none; }
+.storm-fig .sf-legend rect { stroke: rgba(0, 0, 0, 0.25); stroke-width: 1; }
+.storm-fig .sf-legend .lv-yellow { fill: var(--sf-yellow); }
+.storm-fig .sf-legend .lv-orange { fill: var(--sf-orange); }
+.storm-fig .sf-legend .lv-red { fill: var(--sf-red); }
+.storm-fig .sf-legend .rain { fill: var(--sf-a); opacity: 0.8; }
+.storm-fig .sf-legend .ser { fill: none; stroke-width: 2; }
+.storm-fig .sf-legend .ser.s-a { stroke: var(--sf-a); } .storm-fig .sf-legend .ser.s-b { stroke: var(--sf-b); }
+.storm-fig .sf-legend .ser.s-c { stroke: var(--sf-c); } .storm-fig .sf-legend .ser.s-d { stroke: var(--sf-d); }
+.storm-fig .sf-legend .ser.s-ink { stroke: var(--ink); }
+.storm-fig details { margin: 12px 0 0; font-size: 14px; color: var(--ink); }
+.storm-fig details summary { cursor: pointer; min-height: 24px; }
+.storm-fig .sf-tw { max-width: 100%; max-height: 360px; overflow: auto; }
+.storm-fig table { border-collapse: collapse; font-size: 13px; }
+.storm-fig th, .storm-fig td { padding: 3px 8px; border-bottom: 1px solid var(--rule, #d8d4cb); text-align: right; white-space: nowrap; }
+.storm-fig th:first-child, .storm-fig td:first-child { text-align: left; }
+.storm-fig figcaption { margin: 12px 0 0; font-size: 14px; color: var(--muted); }
+.storm-fig figcaption p { margin: 4px 0; }
+.storm-fig figcaption a { color: inherit; overflow-wrap: anywhere; }

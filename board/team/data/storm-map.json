@@ -356,8 +356,8 @@
     "incidents/2026-11-10-storm-charles/data/exposure/people-by-hour.json (8 KB)"
    ],
    "goes_to": "weather sub-site and data front page",
-   "state": "to move",
-   "notes": "SVG, no libs. Mount <div data-hours-chart=path>. Census 2021 (INE) times IPMA warnings."
+   "state": "moved",
+   "notes": "SVG, no libs. Mount <div data-hours-chart=path>. Census 2021 (INE) times IPMA warnings. 18 Nov, third wake (data.b.design@): ported to src/assets/viz/storm-labs.js, drawn on /storm/ (simplified; see the file header)."
   },
   {
    "kind": "visualization",
@@ -384,8 +384,8 @@
     "weather/warnings.json"
    ],
    "goes_to": "data front page and weather sub-site",
-   "state": "to move",
-   "notes": "SVG, no libs. Mount <div data-lab=\"weather/stations\">. Needs Labs core."
+   "state": "moved",
+   "notes": "SVG, no libs. Mount <div data-lab=\"weather/stations\">. Needs Labs core. 18 Nov, third wake (data.b.design@): ported to src/assets/viz/storm-labs.js, drawn on /storm/ (simplified; see the file header)."
   },
   {
    "kind": "visualization",
@@ -415,8 +415,8 @@
     "weather/lisbon-rain.json"
    ],
    "goes_to": "weather sub-site and data front page",
-   "state": "to move",
-   "notes": "SVG, no libs."
+   "state": "moved",
+   "notes": "SVG, no libs. 18 Nov, third wake (data.b.design@): ported to src/assets/viz/storm-labs.js, drawn on /storm/ (simplified; see the file header)."
   },
   {
    "kind": "visualization",

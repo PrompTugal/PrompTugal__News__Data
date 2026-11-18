@@ -4,6 +4,7 @@ import { existsSync } from 'node:fs';
 import { SITE, REPO, ACCOUNT, write } from './lib.mjs';
 // the charts (src/assets/viz/, data.b.design@): linked only once all three files exist, so a build without them still passes the gate
 const VIZ = ['viz.css', 'wind.js', 'viz.js'].every(f => existsSync(`src/assets/viz/${f}`)) ? '<link rel="stylesheet" href="/assets/viz/viz.css">\n<script src="/assets/viz/wind.js" defer></script>\n<script src="/assets/viz/viz.js" defer></script>\n' : '';
+const LABS = ['storm-labs.css', 'storm-labs.js'].every(f => existsSync(`src/assets/viz/${f}`)) ? '<link rel="stylesheet" href="/assets/viz/storm-labs.css">\n<script src="/assets/viz/storm-labs.js" defer></script>\n' : '';
 const FLIGHTMAP = ['flightmap.css', 'flightmap.js'].every(f => existsSync(`src/assets/viz/${f}`)) ? '<link rel="stylesheet" href="/assets/viz/flightmap.css">\n<script src="/assets/viz/flightmap.js" defer></script>\n' : '';
 
 export const esc = s => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -56,6 +57,7 @@ export function page({ path, title, description, h1, blocks, readAt, head = '', 
   const stamp = readAt ? `data read ${readAt.replace('T', ' ').replace(/:\d\dZ$/, ' UTC')}` : 'data not read yet';
   const body = blocks.map(toHtml).join('\n');
   const hasMap = body.includes('data-viz="storm-flightmap"');
+  const hasLabs = /data-viz="storm-(hours|stations|models)"/.test(body);
   const html = `<!doctype html>
 <html lang="en-GB">
 <head>
@@ -69,7 +71,7 @@ export function page({ path, title, description, h1, blocks, readAt, head = '', 
 <link rel="alternate" type="text/markdown" href="${twin}">
 <script src="/assets/top/top.js" defer></script>
 <script src="/assets/obs/obs.js" defer></script>
-${VIZ}${hasMap ? FLIGHTMAP : ''}${head}</head>
+${VIZ}${hasMap ? FLIGHTMAP : ''}${hasLabs ? LABS : ''}${head}</head>
 <body>
 <a class="skip" href="#main">Skip to the content</a>
 <header class="mast">
