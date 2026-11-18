@@ -1,0 +1,52 @@
+{
+ "id": "base-gov-pt",
+ "title": "Public contracts (Portal BASE)",
+ "what": "Public contracts of the câmaras municipais of Lisboa and the Algarve's 16 municipalities, as contracting entity: object, contractors that are companies, price, dates and procedure, for the last 90 days.",
+ "publisher": "IMPIC, Instituto dos Mercados Públicos, do Imobiliário e da Construção (Portal BASE), through dados.gov.pt",
+ "owner": "data@PrompTugal.dinis",
+ "collector": "sources/base-gov-pt/collect.mjs",
+ "source_home": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
+ "reader_page": "https://www.base.gov.pt/",
+ "schedule": {
+  "cadence": "every 6 hours",
+  "how": "the Pages workflow, at 00, 06, 12 and 18 UTC and on every push to dev; IMPIC's file is updated about weekly, so a run whose file has not changed does not download it again"
+ },
+ "terms": {
+  "summary": "IMPIC publishes these contracts as open data on dados.gov.pt with the licence \"Outra (Domínio Público)\" (other-pd, public domain); we name IMPIC and the Portal BASE as the source and link each contract's page.",
+  "page": "https://dados.gov.pt/api/1/datasets/66d72d488ca4b7cb2de28712/",
+  "read_at": "2026-11-18",
+  "quote": "\"license\": \"other-pd\", \"license_title\": \"Outra (Domínio Público)\"; \"description\": \"Contratos de 2012 a 2026 integração registada no Portal Base em www.base.gov.pt pelas entidades adjudicantes\"; \"frequency\": \"weekly\"",
+  "quote_lang": "pt",
+  "republish": "yes: published by IMPIC as public domain on dados.gov.pt; we attribute IMPIC and keep the link to each contract on base.gov.pt",
+  "robots": "dados.gov.pt/robots.txt answered with an HTML error page (HTTP 500) on 18 Nov 2026, so no rule was readable; we use only its documented public dataset API and the file link it gives. base.gov.pt has no robots.txt (404) and is not read: its own search answered civic.b@ with a firewall alert, treated as a refusal.",
+  "open_question": "Personal data: contracts name sole traders. The licence is public domain, but data protection law still applies to what we republish. We keep no natural person's name or NIF (see docs/threat-models/base-gov-pt.md); Dinis to confirm that rule."
+ },
+ "api": {
+  "latest": "https://data.promptugal.news/api/v1/base-gov-pt/latest.json",
+  "reads": "https://data.promptugal.news/api/v1/base-gov-pt/reads.json",
+  "card": "https://data.promptugal.news/api/v1/base-gov-pt/card.json",
+  "openapi": "https://data.promptugal.news/api/v1/base-gov-pt/openapi.json",
+  "page": "https://data.promptugal.news/sources/base-gov-pt/"
+ },
+ "split": {
+  "code": [
+   "the collector downloads IMPIC's yearly file from dados.gov.pt (when it changed), stream-parses it and writes latest.json and reads.json",
+   "GitHub Actions runs it every 6 hours and deploys the site",
+   "the build makes the API, the OpenAPI description and the pages"
+  ],
+  "agents": [
+   "data.b.dev2@PrompTugal.dinis (Sonnet) wrote the collector and this card on 18 November 2026, reusing the approach of civic's tools/extract-base.mjs (civic.b@PrompTugal.dinis)"
+  ],
+  "people": [
+   "Dinis Cruz instructs; no person has checked the values yet (not reviewed)"
+  ]
+ },
+ "cost": {
+  "per_run_tokens": 0,
+  "per_run_model_cost_usd": 0,
+  "runner": "GitHub Actions on a public repository: no charge; one 70 MB download only when IMPIC's file has changed (about weekly)",
+  "build_tokens": "not measured",
+  "note": "Code only: no model is called when the data is collected."
+ },
+ "since": "2026-11-18"
+}

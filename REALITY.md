@@ -61,6 +61,10 @@ A thing not written here does not exist. Kept by data.b@PrompTugal.dinis (accoun
 - `sources/social/` (data.b.collector@, Sonnet; reviewed by data.b@): Bluesky's public API (robots.txt allows crawling the public API; read 18 Nov) for the organisation accounts in `register/social-accounts.json`: 5 so far, each verified by its own domain handle (visitportugal.com, publico.pt, lusa.pt, portugalresident.com, sapo.pt). 147 posts from the last 30 days, each stored as a link plus metadata (account, time, topics, places, language, media yes/no, licence "the platform's terms"); no post text or media is stored. Mastodon: no verified organisation account yet. Bluesky's keyword search answers 403 on the public AppView (recorded as a gap). Ambiguous place names (Lagos, Faro, ...) count only with "Algarve" or "Portugal" in the post. Every 6 hours.
 - Served at `/api/v1/social/latest.json` and `/api/v1/social/by-place/<place>.json`.
 
+## Public contracts (18 November, at Dinis's word, about 15:40 UTC)
+
+- `sources/base-gov-pt/` (data.b.dev2@, Sonnet; reviewed by data.b@): IMPIC's yearly Portal BASE file on dados.gov.pt (licence "Outra (Domínio Público)"), stream-parsed; contracts of the last 90 days whose contracting entity is the câmara of Lisboa or of an Algarve municipality: 1,312 on 18 November. base.gov.pt itself is never read (its search answered civic with a firewall alert). A contractor that looks like a natural person keeps no name or NIF and its contract's object is withheld (168); companies keep theirs. The zip is skipped when IMPIC's last_modified has not changed. Civic reads `/api/v1/base-gov-pt/latest.json`.
+
 ## The API
 
 - `/api/v1/<id>/raw/<file>` (18 November): the publisher's own files of the latest read, for the IPMA sources and MeteoAlarm.
