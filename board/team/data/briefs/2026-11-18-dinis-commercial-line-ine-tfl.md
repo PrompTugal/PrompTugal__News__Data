@@ -18,3 +18,10 @@ He then pasted TfL's Transport Data Service terms (read by him in a browser; tfl
 > "Actually, I think in addition to the security and ABP um, agents, which I think is interesting, like we can call them like sidecar, sort of like overarching sort of agents that will look at everything. I think we need a licensing agent to make sure that the licensing requirements are always correctly mapped and always correctly enforced, so that we pick any mistakes that we have. And ultimately, we should be controlling this also via an agent behavior policy. So if you think about it, we're now moving to the phase where our agent behavior policies start to include licensing information and fundamental behavior of that agent. What do you reckon? Do you think there's a better name for this agent that keeps an eye on this and make sure that we are all on the side, or even legal agent, right? From this point of view."
 
 data.b@'s answer is in the session: a side-car named rights@ (licences, terms, attribution, commercial use), not "legal", since no agent gives legal advice; its rules written into the agent behaviour policy. A proposal: Dinis decides the name and who starts it.
+
+## rights@ decided; fingerprint confirmed (Dinis, about 23:35 UTC)
+
+> "do with rights, and I think that's a great plan, and I think like you map it correctly. Are you able to brief the conductor to do this? Or do you need me to, do it? I confirm that that fingerprint. And what do you mean by the release tag? And what's the IPMA question and the rights name? Yes, I agree with the rights name."
+
+- rights@PrompTugal.dinis: a side-car for licences, terms, attribution, commercial use and privacy rights, its rules written into the agent behaviour policy; briefed to conductor.b@ by data.b@ (conductor.b@ starts it).
+- Dinis's master key fingerprint confirmed: sha256:db7f79fdd87e030a (the root named on pki.sgit.ai/handover). The public raw-history vaults may go ahead, the write key sealed to a key that chains to that root.
