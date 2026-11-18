@@ -18,6 +18,7 @@ const DATASET = '66d72d488ca4b7cb2de28712'
 const API = `https://dados.gov.pt/api/1/datasets/${DATASET}/`
 const PAGE = 'https://dados.gov.pt/pt/datasets/' + DATASET + '/'
 export const WINDOW_DAYS = 90
+const SHAPE = '2'   // 2: buyer_kind and the councils' municipal companies (18 Nov 2026)
 const MAX_UNZIPPED = 3 * 1024 ** 3   // zip bomb guard: stop after 3 GiB of JSON (the real file is about 0.6 GiB)
 const MAX_ZIP = 400 * 1024 ** 2      // the real file is about 70 MB; a response declared larger is not downloaded (it is held in memory)
 const MAX_OBJECT = 8 * 1024 ** 2     // one contract object larger than this is skipped, not parsed
@@ -31,6 +32,12 @@ export const COUNCILS = {
     'sao-bras-de-alportel': ['503219924', 'São Brás de Alportel'], silves: ['506818837', 'Silves'], tavira: ['501067191', 'Tavira'],
     'vila-do-bispo': ['506730573', 'Vila do Bispo'], 'vila-real-de-santo-antonio': ['506833224', 'Vila Real de Santo António'] }
 const BY_NIF = new Map(Object.entries(COUNCILS).map(([id, [nif]]) => [nif, id]))
+// data.b@, 18 Nov 2026, at civic.b@'s request: the councils' municipal companies and services that buy in their own name
+// (municipal-bodies.json, from civic's data/municipal-companies.json); their contracts carry buyer_kind and the owning council's place
+import fs from 'node:fs'
+const BODIES = JSON.parse(fs.readFileSync(new URL('./municipal-bodies.json', import.meta.url), 'utf8')).bodies
+const BODY_BY_NIF = new Map(BODIES.map(b => [b.nif, b]))
+for (const b of BODIES) if (COUNCILS[b.council]) BY_NIF.set(b.nif, b.council)
 
 // People: a contractor whose NIF is masked ("-") or does not have nine digits, or whose NIF marks a natural person (first digit 1, 2 or 3,
 // or 45, or 8 for a sole trader), keeps no name and no NIF (civic's rule, kept exactly). Companies (5), public bodies (6) and others (9) keep theirs.
@@ -78,6 +85,14 @@ const supplier = s => {
     return isPerson(nif) ? { kind: 'a natural person' } : { kind: 'company', nif, name: clean(s.descEntContrato, 160), country: clean(s.codPaisEntContrato, 3) || null }
 }
 
+// the contracting entity: the council itself, or one of its municipal companies or services (buyer_kind)
+function buyer(r, placeId) {
+    const nifs = (r.adjudicante || r.adjudicantes || []).map(a => String(a?.nifEntContrato ?? '').trim())
+    const body = nifs.map(n => BODY_BY_NIF.get(n)).find(Boolean)
+    if (body) return { buyer_kind: body.kind, contracting_entity: { name: body.name, nif: body.nif, council: body.council } }
+    return { buyer_kind: 'council', contracting_entity: { name: `Município de ${COUNCILS[placeId][1]}`, nif: COUNCILS[placeId][0] } }
+}
+
 /** One raw record to ours, or null. `placeId` is the council that is the contracting entity. */
 export function shape(r, placeId, readAt, windowStart) {
     const id = String(r?.idcontrato ?? ''); if (!/^\d{1,12}$/.test(id)) return null
@@ -88,7 +103,7 @@ export function shape(r, placeId, readAt, windowStart) {
     const object = anyPerson || PERSONAL_TEXT.test(text) ? null : (text.length > 200 ? text.slice(0, 199).trimEnd() + '…' : text) || null   // free text may name the person: dropped, not edited
     const price = Number(r.precoContratual)
     return { id, place: placeId, object, object_withheld: object === null && !!text ? (anyPerson ? 'a contractor is a natural person' : 'the text holds an e-mail address or a personal-looking number') : null,
-        contracting_entity: { name: `Município de ${COUNCILS[placeId][1]}`, nif: COUNCILS[placeId][0] },
+        ...buyer(r, placeId),
         contractors, price_eur: Number.isFinite(price) ? price : null, base_price_eur: Number.isFinite(Number(r.precoBaseProcedimento)) && Number(r.precoBaseProcedimento) > 0 ? Number(r.precoBaseProcedimento) : null,
         published, signed: date(r.dataCelebracaoContrato), decision: date(r.dataDecisaoAdjudicacao),
         procedure: clean(r.tipoprocedimento, 80) || null, contract_types: (Array.isArray(r.tipoContrato) ? r.tipoContrato : []).slice(0, 4).map(x => clean(x, 80)),
@@ -120,10 +135,12 @@ export default async function (run) {
     }
     if (!files.length) return null
     let seen = 0
-    if (unchanged && prev?.contracts) {
+    const prevContracts = prev?.places ? Object.values(prev.places).flat() : null   // data.b@: the output keeps contracts by place
+    if (unchanged && prevContracts && prev.shape === SHAPE) {   // a change of shape (e.g. buyer_kind) reads the file again
         // the weekly file has not changed since the last read: keep the contracts of that read that are still in the window
-        for (const c of prev.contracts) if (c.published >= windowStart) contracts.push(c)
+        for (const c of prevContracts) if (c.published >= windowStart) contracts.push(c)
     } else {
+        unchanged = false   // read again: the note and records_scanned must say so
         for (const f of files) {
             const r = await get(f.resource, { timeout: 600000 }); note(run, f.file, f.resource, r)   // the file's bytes are not kept in the vault: 70 MB of other bodies' contracts
             if (!r.ok) return null
@@ -142,7 +159,7 @@ export default async function (run) {
     const byPlace = {}, seenIds = new Set()
     for (const c of contracts.sort((a, b) => b.published.localeCompare(a.published) || a.id.localeCompare(b.id))) if (!seenIds.has(c.id)) { seenIds.add(c.id); (byPlace[c.place] ||= []).push(c) }
     const sources = { name: 'Contratos Públicos - Portal Base - IMPIC (open data on dados.gov.pt)', dataset: PAGE, licence, files: files.map(({ year, file, resource, resource_modified, bytes, read_at, sha256_prefix }) => ({ year, file, resource, resource_modified, bytes, read_at, ...(sha256_prefix ? { sha256_prefix } : {}) })) }
-    return { source: run.id, title: run.card.title, read_at: run.started,
+    return { shape: SHAPE, source: run.id, title: run.card.title, read_at: run.started,
         provenance: run.prov({ source: PAGE, dataset: PAGE, terms_page: PAGE, how: `IMPIC's yearly file on dados.gov.pt (${files.map(f => f.file).join(', ')}), stream-parsed in memory, the approach of PrompTugal__News__Civic tools/extract-base.mjs` }),
         about: `Public contracts published on the Portal BASE in the last ${WINDOW_DAYS} days (from ${windowStart}) where the contracting entity is the câmara municipal of Lisboa or of one of the Algarve's 16 municipalities (Quarteira is a parish of Loulé and has no câmara of its own). From IMPIC's open data, which is updated about weekly: a contract appears here some days after it is signed. object is cut to 200 characters. A contractor that is a company keeps its name and NIF; a contractor that looks like a natural person (its NIF, or none) is shown only as "a natural person", and the contract's object text is then left out. Our record, not an official one: each contract links its page on base.gov.pt.`,
         counts: { contracts: Object.values(byPlace).reduce((n, p) => n + p.length, 0), places: Object.keys(byPlace).length, by_place: Object.fromEntries(Object.keys(COUNCILS).map(p => [p, (byPlace[p] || []).length])), records_scanned: unchanged ? null : seen, window_days: WINDOW_DAYS, objects_withheld: contracts.filter(c => c.object_withheld).length },

@@ -1,0 +1,107 @@
+{
+ "about": "Municipal companies and services of the Algarve councils that buy in their own name, by NIF: from PrompTugal__News__Civic data/municipal-companies.json (civic.b@PrompTugal.dinis; CC BY 4.0), copied 18 Nov 2026. EMPET has no NIF and is left out.",
+ "license": {
+  "name": "CC BY 4.0",
+  "url": "https://creativecommons.org/licenses/by/4.0/"
+ },
+ "bodies": [
+  {
+   "id": "fagar",
+   "name": "FAGAR - Faro, Gestão de Águas e Resíduos, EM",
+   "nif": "507142217",
+   "council": "faro",
+   "kind": "municipal company"
+  },
+  {
+   "id": "ambifaro",
+   "name": "Ambifaro - Gestão de Equipamentos Municipais, EM",
+   "nif": "504497782",
+   "council": "faro",
+   "kind": "municipal company"
+  },
+  {
+   "id": "emarp",
+   "name": "EMARP - Empresa Municipal de Águas e Resíduos de Portimão, EM, SA",
+   "nif": "505322730",
+   "council": "portimao",
+   "kind": "municipal company"
+  },
+  {
+   "id": "ambiolhao",
+   "name": "Ambiolhão - Empresa Municipal de Ambiente de Olhão, EM",
+   "nif": "509680780",
+   "council": "olhao",
+   "kind": "municipal company"
+  },
+  {
+   "id": "fesnima",
+   "name": "FESNIMA - Empresa Municipal de Olhão, EM",
+   "nif": "504667521",
+   "council": "olhao",
+   "kind": "municipal company"
+  },
+  {
+   "id": "mercados-de-olhao",
+   "name": "Mercados de Olhão, EM",
+   "nif": "504288865",
+   "council": "olhao",
+   "kind": "municipal company"
+  },
+  {
+   "id": "taviraverde",
+   "name": "Taviraverde - Empresa Municipal de Ambiente, EM",
+   "nif": "507236335",
+   "council": "tavira",
+   "kind": "municipal company"
+  },
+  {
+   "id": "vrsa-sgu",
+   "name": "VRSA - Sociedade de Gestão Urbana, EM, SA",
+   "nif": "508160570",
+   "council": "vila-real-de-santo-antonio",
+   "kind": "municipal company"
+  },
+  {
+   "id": "lagos-em-forma",
+   "name": "Lagos em Forma - Gestão Desportiva, EM, SA",
+   "nif": "507725077",
+   "council": "lagos",
+   "kind": "municipal company"
+  },
+  {
+   "id": "loule-concelho-global",
+   "name": "Loulé Concelho Global, EM, Unipessoal, SA",
+   "nif": "505493870",
+   "council": "loule",
+   "kind": "municipal company"
+  },
+  {
+   "id": "infraquinta",
+   "name": "Infraquinta - Empresa de Infraestruturas da Quinta do Lago, EM, SA",
+   "nif": "503830704",
+   "council": "loule",
+   "kind": "municipal company"
+  },
+  {
+   "id": "inframoura",
+   "name": "Inframoura - Empresa de Infraestruturas de Vilamoura, EM, SA",
+   "nif": "504915266",
+   "council": "loule",
+   "kind": "municipal company"
+  },
+  {
+   "id": "infralobo",
+   "name": "Infralobo - Empresa de Infraestruturas de Vale do Lobo, EM, SA",
+   "nif": "504041193",
+   "council": "loule",
+   "kind": "municipal company"
+  },
+  {
+   "id": "teatro-municipal-de-faro",
+   "name": "Teatro Municipal de Faro - Serviços Municipalizados",
+   "nif": "600086305",
+   "council": "faro",
+   "kind": "municipal service"
+  }
+ ]
+}
