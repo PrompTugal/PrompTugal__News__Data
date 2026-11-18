@@ -766,6 +766,23 @@
       table: { head: ['Date'].concat(on, ['All']), rows: days.map(function (x) { return [x.iso].concat(x.segs, [x.segs.reduce(function (a, b) { return a + b }, 0)]) }) } }
   }
 
+  // cams-status (data.b@PrompTugal.dinis, 18 Nov 2026): each public camera, whether its operator's page is up, and since when
+  R['cams-status'] = function (body, d) {
+    var cams = d.cameras || []
+    if (!cams.length) { empty(body, 'No camera is registered yet.'); return { about: 'Public cameras and their status.', plain: true, by: 'operators\' pages', table: null } }
+    var ST = { up: [cat(2), 'up'], 'page up, no player seen': [cat(4), 'page up, no player seen'], down: [cat(1), 'down'] }
+    cams = cams.slice().sort(function (a, b) { return (a.place < b.place ? -1 : a.place > b.place ? 1 : 0) || (a.name < b.name ? -1 : 1) })
+    body.appendChild(hbars(cams.map(function (c) { var pct = c.checks ? Math.round(100 * (c.up_checks || 0) / c.checks) : 0; return { label: pname(c.place) + ': ' + String(c.name).slice(0, 34), segs: [{ v: Math.max(pct, 1), fill: (ST[c.state] || ST.down)[0], name: c.state, tip: pct + ' per cent of ' + c.checks + ' checks' }], text: pct + '% of ' + c.checks } }), { aria: 'Bars of the share of hourly checks in which each camera\'s page was up: ' + cams.map(function (c) { return c.name + ' ' + c.state }).join('; ') + '.', lw: 250, rh: 22, tw: 80 }))
+    body.appendChild(legend(Object.keys(ST).map(function (k) { return [ST[k][0], 'now ' + ST[k][1]] })))
+    var up = cams.filter(function (c) { return c.state !== 'down' }).length
+    analysis(body, up + ' of ' + cams.length + ' cameras\' pages answered at the last check (' + stamp(T(cams[0].checked_at)) + '), in ' + Object.keys(d.by_place || {}).length + ' places.')
+    var ul = H('ul', 'viz-links'); cams.forEach(function (c) { var li = H('li'); li.appendChild(link(c.page, c.name)); li.appendChild(document.createTextNode(', ' + c.operator + ', ' + c.state + ' since ' + stamp(T(c.since)))); ul.appendChild(li) })
+    body.appendChild(H('p', 'viz-sub', 'Watch each camera on its operator\'s page')); body.appendChild(ul)
+    body.appendChild(note('Status from the operator\'s page only: no frame, picture or stream is fetched, kept or analysed.'))
+    return { about: 'Public live cameras: the share of hourly checks in which each operator\'s page answered, and the state now.', plain: true, by: 'each camera\'s operator (register/cams.json)', licence: { text: 'Licence: status and drawing CC BY 4.0; each camera stays under its operator\'s terms.', url: 'https://creativecommons.org/licenses/by/4.0/' },
+      table: { head: ['Camera', 'Place', 'Operator', 'State', 'Since', 'Checks', 'Up'], rows: cams.map(function (c) { return [c.name, pname(c.place), c.operator, c.state, c.since, c.checks, c.up_checks] }) } }
+  }
+
   // contracts-by-place
   R['contracts-by-place'] = function (body, d) {
     var pl = d.places || {}, KINDS = [['council', 'Council'], ['municipal company', 'Municipal company'], ['municipal service', 'Municipal service']], all = [], rows = []

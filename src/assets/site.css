@@ -59,4 +59,4 @@ main:has(.viz-grid) { max-width: 80rem; }
 .pl-t { font: 700 14px var(--font-interface, Arial, sans-serif); fill: var(--ink); } .pl-s { font: 12px var(--font-interface, Arial, sans-serif); fill: var(--muted); }
 .pl-a { stroke: var(--ink); stroke-width: 1.5; } .pl-a.pl-bad { stroke: var(--red); stroke-dasharray: 6 4; } .pl-a.pl-ai { stroke: #7a4fbf; } .pl-h { fill: var(--ink); }
 .pl-k { font: 12px var(--font-interface, Arial, sans-serif); fill: var(--ink); }
-blockquote footer a, blockquote a { overflow-wrap: anywhere; }
+blockquote a, p a, li a { overflow-wrap: anywhere; }

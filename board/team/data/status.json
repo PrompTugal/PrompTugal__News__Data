@@ -4,7 +4,7 @@
  "repo": "PrompTugal/PrompTugal__News__Data",
  "site": "https://data.promptugal.news",
  "focus": "the raw public data behind every PrompTugal site: collectors, API, vaults; visualization first; the Storm Charles site's data and map",
- "updated": "2026-11-18T19:02Z",
+ "updated": "2026-11-18T19:05Z",
  "observability_lane": "data (own lane since 18 Nov ~15:00 UTC: vault 349t1w6w, 2 append lanes, drain key sha256:5109a3745ff9fdb4; drain credentials sealed to conductor.b-promptugal and sent to conductor.b@)",
  "observability_note": "obs.js reads team/keys/obs-data.json from GitHub (public half: endpoint, vault id, 2 append tokens, drain public key); every event tagged lane: \"data\"; no town lookup.",
  "state": "third wake (13:03 UTC) done: three more Storm charts on /storm/ (residents by hour, warned against observed, forecast models); the Storm items each sub-site takes listed for conductor.b@; key and commit-check fixes still blocked by permission",
@@ -44,7 +44,8 @@
   "Charts for events (calendar, claims by status, gap hosts), social signals (pulse) and public contracts (by place and buyer kind, by procedure): checked at 1100 and 375 px, no sideways scroll (commit c6de5cf)",
   "Public contracts, one file per place: /api/v1/base-gov-pt/places/<place>.json and index.json, in OpenAPI (civic.b@ asked; commit 66dbbe1)",
   "Public live cameras: /api/v1/cams/ (with OpenAPI) and /sources/cams/, 3 cameras so far (APL Tejo Live x2, Praia da Rocha flagged), hourly status from the operator's page only, never a frame or stream; register/cams.json with 8 not listed and 11 gaps",
-  "Cameras, Dinis's answers (18 Nov ~19:00 UTC, guidance 2026-11-18-cameras-provenance-and-bulletins.md): rules confirmed, MEO BeachCam included through its official embeds, Windy under its terms. Every camera now carries provenance (listed from, by, when, how its status is read, licence). /api/v1/cameras/ for live.b@ (95c9fd3). Second research pass under way (MEO, câmaras, APA, IPMA, ICNF, ports)."
+  "Cameras, Dinis's answers (18 Nov ~19:00 UTC, guidance 2026-11-18-cameras-provenance-and-bulletins.md): rules confirmed, MEO BeachCam included through its official embeds, Windy under its terms. Every camera now carries provenance (listed from, by, when, how its status is read, licence). /api/v1/cameras/ for live.b@ (95c9fd3). Second research pass under way (MEO, câmaras, APA, IPMA, ICNF, ports).",
+  "19:03 UTC wake: status chart on /sources/cams/ (checked at 1100 and 375 px; long links in paragraphs and lists now wrap, ten pages checked with no sideways scroll). Library REQ-2026-0006 answered at 16:10 (corrections in discovery/youtube/websummit-2026.json), still open on the library's side."
  ],
  "blocked": [
   "Change to scripts/check-commits.mjs to accept @PrompTugal.dinis refused by the permission check: commits use Agent: data.b@AgentiCCells.dinis",
