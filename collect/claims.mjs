@@ -58,9 +58,13 @@ for (const place of fs.existsSync(dDir) ? fs.readdirSync(dDir).sort() : []) {
     const past = readJson(pastFile) || { place, about: 'Claims whose dates have passed, kept as the history of each event series.', claims: [] }
     for (const c of (prev?.claims || [])) if ((c.endDate || c.startDate) < today && !past.claims.some(p => p.name === c.name && p.startDate === c.startDate)) past.claims.push(c)
     out.claims = out.claims.filter(c => (c.endDate || c.startDate) >= today)
+    out.counts = { claims: out.claims.length, confirmed: out.claims.filter(c => c.status === 'confirmed').length, withheld: out.claims.filter(c => c.status === 'details withheld').length }   // after the past ones moved out (events.b@ saw them not add up)
     writeJson(prevFile, out); if (past.claims.length) writeJson(pastFile, past)
-    index.push({ place, claims: out.claims.length, confirmed: out.counts.confirmed, withheld: out.counts.withheld })
+    index.push({ place, claims: out.counts.claims, confirmed: out.counts.confirmed, withheld: out.counts.withheld })
 }
+// the Algarve as a whole: every Algarve place's claims in one file (events.b@ asked)
+const algarve = index.filter(x => x.place !== 'lisboa' && x.place !== 'algarve').flatMap(x => (readJson(path.join(ROOT, 'discovery', 'claims', 'by-place', `${x.place}.json`))?.claims || []))
+writeJson(path.join(ROOT, 'discovery', 'claims', 'by-place', 'algarve.json'), { place: 'algarve', read_at: now, about: 'Every Algarve place\'s claims in one file (the places in index.json other than lisboa).', counts: { claims: algarve.length, confirmed: algarve.filter(c => c.status === 'confirmed').length, withheld: algarve.filter(c => c.status === 'details withheld').length }, claims: algarve })
 writeJson(path.join(ROOT, 'discovery', 'claims', 'by-place', 'index.json'), { read_at: now, places: index })
 const g = [...gaps.values()].map(x => ({ ...x, places: [...x.places].sort() })).sort((a, b) => b.claims - a.claims || a.host.localeCompare(b.host))
 writeJson(path.join(ROOT, 'discovery', 'gaps.json'), { read_at: now, about: 'Every host cited as evidence for an event that this site does not read, with how many claims point to it and in which places. Each is a gap in our sources; the register says why we do not read it.', hosts: g })

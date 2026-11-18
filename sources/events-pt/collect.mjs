@@ -6,6 +6,8 @@
 // Only events that are on now or start within 60 days. An event whose place is not known is dropped (counted).
 
 const DAY = 86400000, WINDOW_DAYS = 60
+import path from 'node:path'
+import { ROOT, readJson } from '../../collect/lib.mjs'
 const AGENDALX = 'https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50'
 const LAGOS = 'https://www.cm-lagos.pt/municipio/eventos'
 const ent = s => String(s ?? '').replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(+n)).replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16)))
@@ -101,8 +103,20 @@ export default async function (run) {
         { host: 'www.cm-portimao.pt, www.cm-albufeira.pt', why: 'home pages read; no RSS or iCal feed found, only HTML and a PDF agenda. Not parsed yet.', read_at: '2026-11-18T14:00:00Z' },
         { host: 'eventbrite.*, lu.ma, luma.com, meetup.com, websummit.com', why: 'never machine-read (Dinis, 18 Nov 2026).', read_at: '2026-11-18T14:00:00Z' }
     ]
-    const all = [...await agendalx(run, today, horizon, gaps), ...await lagos(run, today, horizon, gaps)]
-    if (!run.reads.some(x => x.status === 200 && /events|eventos/.test(x.name))) return null
+    const fresh = { 'www.agendalx.pt': await agendalx(run, today, horizon, gaps), 'www.cm-lagos.pt': await lagos(run, today, horizon, gaps) }
+    // data.b@, 18 Nov 2026: a host that fails this run (Agenda LX answered 403 to the GitHub Actions runner at 14:27 UTC)
+    // keeps its last good events for up to 48 hours, each marked stale with the time it was really read; the refusal is
+    // recorded in gaps and not worked around. After 48 hours the stale events are dropped.
+    const prev = readJson(path.join(ROOT, 'data', run.id, 'latest.json'))
+    const stale = []
+    for (const [h, list] of Object.entries(fresh)) {
+        if (list.length || !prev) continue
+        const old = Object.values(prev.places || {}).flat().filter(e => { try { return new URL(e.url).host === h } catch { return false } })
+        const keep = old.filter(e => (Date.parse(run.started) - Date.parse(e.read_at)) < 48 * 3600e3 && (e.endDate || e.startDate) >= today)
+        if (keep.length) { fresh[h] = keep.map(e => ({ ...e, stale: true })); stale.push({ host: h, events: keep.length, read_at: keep[0].read_at }) }
+    }
+    const all = Object.values(fresh).flat()
+    if (!all.length) return null
     const known = new Set(['lisboa', 'lagos']), places = {}; let dropped = 0
     const seen = new Set()
     for (const e of all) {
@@ -117,6 +131,7 @@ export default async function (run) {
             { host: 'www.agendalx.pt', what: 'Agenda Cultural de Lisboa (Câmara Municipal de Lisboa)', route: AGENDALX, terms: 'No terms page found. robots.txt (read 18 Nov 2026) allows all paths and sets "Content-Signal: search=yes,ai-train=no,use=reference": reference use with the source named and linked; no AI training.' },
             { host: 'www.cm-lagos.pt', what: 'Câmara Municipal de Lagos, events list', route: LAGOS, terms: 'No terms page found. robots.txt (read 18 Nov 2026) disallows only administrative folders, not /municipio/eventos.' }] }),
         about: `Events on now or starting within ${WINDOW_DAYS} days (to ${horizon}) in the places listed, as schema.org Event records, each with its source URL and the time read. Dates are as the source gives them (Lisbon time; a time is added only where a single start hour is shown); a long-running event shows its first and last day. organizer is null where the source does not name an organiser (the agenda's publisher is in source). A dated record read by code, not a ticketing or booking service: check the organiser before travelling.`,
-        counts: { events: Object.values(places).reduce((n, p) => n + p.length, 0), places: Object.keys(places).length, by_source, dropped_unknown_place: dropped },
+        counts: { events: Object.values(places).reduce((n, p) => n + p.length, 0), places: Object.keys(places).length, by_source, dropped_duplicates_or_unknown_place: dropped },
+        ...(stale.length ? { stale_note: 'These hosts could not be read this run; their events are from the last good read (each has stale: true and its own read_at), kept for at most 48 hours.', stale } : {}),
         places, gaps }
 }
