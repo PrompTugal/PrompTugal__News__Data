@@ -1,0 +1,16 @@
+{
+ "about": "The observability lanes of data.promptugal.news, lane \"data\" (data.b@PrompTugal.dinis, 2026-11-18, at Dinis Cruz's word). Public on purpose: each append token can only append to its lane, and the key can only encrypt. Read by src/assets/obs/obs.js from this file on GitHub. Drained by conductor.b@PrompTugal.dinis.",
+ "enabled": true,
+ "endpoint": "https://dev.send.sgraph.ai",
+ "vault_id": "349t1w6w",
+ "lanes": {
+  "site": [
+   "ef094e792fe2d2140e8be4b6dc9ed2c2103402aa",
+   "87038568aa4c4daf24320ef99234f9dff49731a4"
+  ]
+ },
+ "recipient": {
+  "fingerprint": "sha256:5109a3745ff9fdb4",
+  "encrypt": "-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA1kd3U2RKF9pXCYJxtvaQ\nkGXKxXIDu4PZTMuTbVM1R5JRjuF+eAqawJOP0NQQPkO+YOc33qlg74d213As/sf3\nrklJTLR19fA2aLrKWM5aZ4WoOzyTI229jKkp3OQCIB+Z7sNbw1CjFeaJGBlhFSDZ\neF8Ne5zG0vFqZDIwPlS4Zu++H3JST3Wksi+Nm8fvJlhcxIFvUAcItHsvIA6F60Ns\n2RDXDGE+vpEYt678w1fJXTlezx4v0K2iVH/MkT9J0oK0s6aYvjFOzx3FrEYE8xEM\nzJXg6GlgojXynLR4F0gj2j4U3zR1o4m8MhiPcwWBTSm/RX/wojlPQIRE1OsNhVPw\nDgKGwVu0P7cNk/GzbnVzIKc5+FnH0fcgiBPow7Vw4fQ3UBHCAP1n5mxjj/A0Vd0H\n/qoJg0lDjG0hOm3VHyAugrELSSzlzmoHuKwBxLHabvENj30lm1v4purdaPhXlrnI\nvD/HvG8L8BMGVCLA3fyLV83Zuvk/uN23qApmYMP//geL8tjkSfwEYWE+k7p7SQMv\nUDYlqra8PpSm/x7tawJlryFDy9yczUCQUjVjSpP3hepmX4Ds9Z3Mmj9PvP0OknYV\nAAFrtS4GIj6dB/Vqcbmx/UOWc5D0AfZEZ4kWtEqWKfY3qT/oVKQgARF5B+1ogsQJ\nercLkczwjagJbJhxa9jh6dkCAwEAAQ==\n-----END PUBLIC KEY-----\n"
+ }
+}

@@ -4,9 +4,9 @@
  "repo": "PrompTugal/PrompTugal__News__Data",
  "site": "https://data.promptugal.news",
  "focus": "the raw public data behind every PrompTugal site: collectors, API, vaults; visualization first; the Storm Charles site's data and map",
- "updated": "2026-11-18T15:45Z",
- "observability_lane": "data",
- "observability_note": "Every page loads src/assets/obs/obs.js with lane \"data\" (events tagged lane: data, site: data.promptugal.news), configuration read from https://promptugal.news/assets/obs/obs.json. conductor.b@: please relay the lane name to conductor@ on account A for observability@.",
+ "updated": "2026-11-18T16:20Z",
+ "observability_lane": "data (own lane since 18 Nov ~15:00 UTC: vault 349t1w6w, 2 append lanes, drain key sha256:5109a3745ff9fdb4; drain credentials sealed to conductor.b-promptugal and sent to conductor.b@)",
+ "observability_note": "obs.js reads team/keys/obs-data.json from GitHub (public half: endpoint, vault id, 2 append tokens, drain public key); every event tagged lane: \"data\"; no town lookup.",
  "state": "third wake (13:03 UTC) done: three more Storm charts on /storm/ (residents by hour, warned against observed, forecast models); the Storm items each sub-site takes listed for conductor.b@; key and commit-check fixes still blocked by permission",
  "done": [
   "Masthead: chip 'Pay for what you read · free here', sites rail, /account/ with the reading graph",
@@ -33,7 +33,8 @@
   "Schedule: a second time each hour (:17 and :47), as GitHub fired only 2 of ~19 scheduled runs by 14:40 UTC",
   "Take-down disclaimer on every page (open an issue); Agenda LX's 403 to the CI runner on the register",
   "Social signals (Dinis, ~14:45 UTC): Bluesky collector for 5 domain-verified organisation accounts, 147 post links with metadata (no text stored), /api/v1/social/; Mastodon none verified yet",
-  "Session key made at Dinis's word (record sha256:9c82eecc96449bb7, id data.b-promptugal): public halves in team/keys.json, pointer in board/keys.json"
+  "Session key made at Dinis's word (record sha256:9c82eecc96449bb7, id data.b-promptugal): public halves in team/keys.json, pointer in board/keys.json",
+  "Observability: own \"data\" lane made at Dinis's word (vault 349t1w6w, 2 lanes, drain key sha256:5109a3745ff9fdb4); credentials sealed to conductor.b-promptugal and sent; obs.js switched to it"
  ],
  "blocked": [
   "Change to scripts/check-commits.mjs to accept @PrompTugal.dinis refused by the permission check: commits use Agent: data.b@AgentiCCells.dinis",
@@ -52,7 +53,6 @@
   "Dinis: signatures made with the session key (pki-agent sign, .sig files) cannot be committed: the leak scan refuses their long encoded run. Allow a narrow path for .sig files (security@ or you), or keep signatures out of git."
  ],
  "next": [
-  "Observability: make the \"data\" lane and append tokens on account B; seal the drain credentials to conductor.b-promptugal (Dinis, 18 Nov ~14:55 UTC)",
   "Discovery daily (in this session; CI has no key): confirm claims at readable sources; add the top gap hosts (algarvecircle.com, algarveatlas.com, cm-castromarim.pt, theportugalnews.com, ...) to the register with their terms read",
   "Social: confirm candidate accounts a person can verify (websummit.bsky.social, camaralisboa.bsky.social, jornalexpresso.bsky.social, tribunaexpresso.bsky.social); find câmaras' and venues' official accounts linked from their own sites; Perplexity social pass in discovery",
   "Register: read the terms pages (not only robots.txt) of the Portuguese public bodies; re-try ANA, APS (right host), CCDR Algarve, ANSR, Visit Algarve, Faro and Loulé; find each organisation's own published press or partnerships page for the requests on the record (outreach@ drafts, a person sends); then per-place query sets at /api/v1/queries/by-place/<place>.json on readable sources only",

@@ -1,10 +1,10 @@
 // data.promptugal.news's page views and reads, on its own lane, "data" (data.b@PrompTugal.dinis, 18 November 2026, at
 // Dinis's word relayed in PrompTugal__News__Website board/guidance/2026-11-18-five-sites-on-account-b.md: "add
 // observability to all the other sites like the data"). A copy of PrompTugal__News__Website assets/obs/obs.js
-// (observability@PrompTugal.dinis) with these changes, each marked "data site:": the configuration is read from
-// promptugal.news (its public assets/obs/obs.json: the drain's public key and its append lanes), so this repository holds
-// no lane token; every event carries lane: "data"; the footer note links to promptugal.news's observability page.
-// observability@ on account A drains it. Its original notes follow.
+// (observability@PrompTugal.dinis) with these changes, each marked "data site:": since 18 Nov ~15:00 UTC the configuration is
+// this site's own lane (team/keys/obs-data.json, served by GitHub: the drain's public key and two append tokens, each of
+// which can only append); every event carries lane: "data"; the footer note links to promptugal.news's observability page.
+// conductor.b@PrompTugal.dinis drains it (the credentials are sealed to its key). Its original notes follow.
 // PrompTugal.news's page views and reads (observability@PrompTugal.dinis, 6 November 2026, at Dinis Cruz's word:
 // "replicate what we have on web-summit.sgit.ai"). The team site's sender (its assets/obs-dinis.js, by
 // observability@web-summit.dinis, after Jose's assets/telemetry.js and the observability pack), into this site's own
@@ -28,7 +28,7 @@
         const LS = { get: k => { try { return localStorage.getItem('pt.obs.' + k) } catch { return null } }, set: (k, v) => { try { v === null ? localStorage.removeItem('pt.obs.' + k) : localStorage.setItem('pt.obs.' + k, v) } catch { } } }
         const SS = { get: k => { try { return sessionStorage.getItem('pt.obs.' + k) } catch { return null } }, set: (k, v) => { try { sessionStorage.setItem('pt.obs.' + k, v) } catch { } }, del: k => { try { sessionStorage.removeItem('pt.obs.' + k) } catch { } } }
         const paused = () => LS.get('off') === '1'
-        const LANE = 'data', CONFIG = 'https://promptugal.news/assets/obs/obs.json', REPORT = 'https://promptugal.news/newsroom/observability/'   // data site: the lane and where its configuration lives
+        const LANE = 'data', CONFIG = 'https://raw.githubusercontent.com/PrompTugal/PrompTugal__News__Data/dev/team/keys/obs-data.json', REPORT = 'https://promptugal.news/newsroom/observability/'   // data site: its own lane (vault 349t1w6w, made 18 Nov 2026 at Dinis's word); the config is team/keys/obs-data.json, served by GitHub (this site's leak scan allows public keys only there); no town lookup (that file lists no geo services)
 
         // the disclosure and the pause switch, in the footer of every page
         const footer = () => {
