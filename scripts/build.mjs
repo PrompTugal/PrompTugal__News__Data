@@ -10,6 +10,7 @@ import { buildRegister } from './build/register.mjs';
 import { buildDiscovery } from './build/discovery.mjs';
 import { stampLicences } from './build/licence.mjs';
 import { buildCameras } from './build/cameras.mjs';
+import { buildPreview } from './build/preview.mjs';
 import { buildAttribution } from './build/attribution.mjs';
 import { buildPages } from './build/pages.mjs';
 const version = process.env.SITE_VERSION || 'dev';
@@ -34,6 +35,7 @@ writeJson('api/v1/events/index.json', { about: 'Events: read from official agend
 writeJson('api/v1/social/index.json', { about: 'Social signals: organisations\' public posts as links and metadata, never the text.', latest: '/api/v1/social/latest.json', by_place: '/api/v1/social/by-place/<place>.json', accounts: 'register/social-accounts.json in the repository', card: '/api/v1/social/card.json' });
 const register = buildRegister(sources);
 const discovery = buildDiscovery();
+buildPreview({ sources, builtAt });   // /preview.svg for the sites bar (Dinis, 18 Nov 2026 ~22:00 UTC)
 buildAttribution({ sources, events, discovery });   // the attribution ledger for the simulated payouts (Dinis, 18 Nov 2026)
 const pages = buildPages({ sources, places, readAt, index, storm, events, register, discovery });
 
