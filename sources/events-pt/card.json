@@ -1,0 +1,52 @@
+{
+ "id": "events-pt",
+ "title": "Events in Portugal, by place",
+ "what": "Public events on now or in the next 60 days in Lisbon and the Algarve places, as schema.org Event records, each with its source URL and the time read.",
+ "publisher": "Câmara Municipal de Lisboa (Agenda Cultural de Lisboa, agendalx.pt) and Câmara Municipal de Lagos (cm-lagos.pt)",
+ "owner": "data.b@PrompTugal.dinis",
+ "collector": "sources/events-pt/collect.mjs",
+ "source_home": "https://www.agendalx.pt/wp-json/agendalx/v1/events",
+ "reader_page": "https://www.agendalx.pt/",
+ "schedule": {
+  "cadence": "every 6 hours",
+  "how": "the Pages workflow (.github/workflows/pages.yml) at 17 minutes past 00, 06, 12 and 18 UTC (the agendas change daily); every other hourly run keeps the last read, copied from the live site"
+ },
+ "terms": {
+  "summary": "Strictest of the sources: no reuse licence or terms page was found for either host. Both robots.txt files allow the paths read; agendalx.pt sets Content-Signal search=yes, ai-train=no, use=reference. So: reference use only, name the source, link to the event, no AI training. Not reviewed by a person: whether this is enough to republish is for Dinis.",
+  "page": "https://www.agendalx.pt/robots.txt",
+  "read_at": "2026-11-18",
+  "quote": "User-agent: * Content-Signal: search=yes,ai-train=no,use=reference Allow: /",
+  "quote_lang": "en",
+  "republish": "unclear: no licence found; reference use with attribution and a link to each event's page",
+  "open_question": "No reuse terms were found on agendalx.pt, lisboa.pt (403) or cm-lagos.pt. Dinis to decide whether to republish on this basis, or to ask Câmara Municipal de Lisboa and Câmara Municipal de Lagos."
+ },
+ "api": {
+  "latest": "https://data.promptugal.news/api/v1/events-pt/latest.json",
+  "reads": "https://data.promptugal.news/api/v1/events-pt/reads.json",
+  "card": "https://data.promptugal.news/api/v1/events-pt/card.json",
+  "openapi": "https://data.promptugal.news/api/v1/events-pt/openapi.json",
+  "page": "https://data.promptugal.news/sources/events-pt/"
+ },
+ "vault": null,
+ "split": {
+  "code": [
+   "the collector reads robots.txt, then the agenda route or page, and writes latest.json and reads.json",
+   "collect/events-by-place.mjs derives data/events/by-place/<place>.json from latest.json",
+   "GitHub Actions runs it every hour and deploys the site"
+  ],
+  "agents": [
+   "data.b.collector@PrompTugal.dinis (Sonnet) researched the sources and wrote the collector and this card on 18 November 2026, for data.b@PrompTugal.dinis"
+  ],
+  "people": [
+   "Dinis Cruz decided the events collection on 18 November 2026; no person has checked the values yet (not reviewed)"
+  ]
+ },
+ "cost": {
+  "per_run_tokens": 0,
+  "per_run_model_cost_usd": 0,
+  "runner": "GitHub Actions on a public repository: no charge; about 12 requests and 30 seconds a run (measured locally, 18 November 2026)",
+  "build_tokens": "not measured",
+  "note": "Code only: no model is called when the data is collected."
+ },
+ "since": "2026-11-18"
+}

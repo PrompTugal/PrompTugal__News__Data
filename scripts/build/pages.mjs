@@ -67,7 +67,7 @@ function previewRows(s) {
   return { key, total: l[key].length, table: t, src };
 }
 
-export function buildPages({ sources, places, readAt, index, storm, events = [] }) {
+export function buildPages({ sources, places, readAt, index, storm, events = [], register }) {
   const pages = [];
   const add = o => pages.push(page({ readAt, ...o }));
   const link = s => `[${s.card.title}](/sources/${s.id}/)`;
@@ -106,8 +106,28 @@ export function buildPages({ sources, places, readAt, index, storm, events = [] 
     blocks: [
       p('Each source has a card: what it is, who publishes it, the terms for reusing it, when it is read, what code, agents and people do, what it costs, and its API addresses.'),
       table(['Source', 'What', 'Publisher', 'Cadence', 'Reuse'], sources.map(s => [link(s), short(s.card.what, 110), s.card.publisher, s.card.schedule.cadence, s.card.terms.republish])),
+      ...(register ? [
+        h('Every source we know of'),
+        p(`The register holds every source PrompTugal knows of, read or not: ${Object.entries(register.index.counts).filter(([, n]) => n).map(([k, n]) => `${n} ${k}`).join(', ')}. The ones we do not read today, and why, quoted from their own terms: [sources we do not read](/sources/not-read/). The data: [/api/v1/sources/index.json](/api/v1/sources/index.json).`),
+        table(['Source', 'Kind', 'Places', 'How we read it'], register.entries.filter(e => e.status === 'read' || e.status === 'allowed').map(e => [e.on_this_site ? `[${e.name}](${e.on_this_site})` : `[${e.name}](${e.url})`, e.kind, (e.places || []).join(', '), short(e.how || '', 120)])),
+      ] : []),
     ],
   });
+
+  // ---- the sources we do not read, and why (Dinis, 18 Nov 2026, about 14:10 UTC) ----
+  if (register) {
+    const nr = register.entries.filter(e => e.status !== 'read' && e.status !== 'allowed');
+    const kinds = [...new Set(nr.map(e => e.kind))].sort();
+    add({
+      path: 'sources/not-read/', title: 'Sources we do not read: PrompTugal.news Data', h1: 'Sources we do not read today, and why',
+      description: 'Every source PrompTugal knows of but does not read, with the reason quoted from its own terms or robots.txt, the page and the date read, and whether we have asked.',
+      blocks: [
+        p('Some organisations publish what our places need (events, notices, news, schedules) but do not allow a site like this to read it by machine, or we have not yet checked. We respect whatever they say. Each entry quotes the clause or the robots.txt line, with its page and the date we read it. A separate track asks each one, on the record, through its own published channel: an agent drafts, a person sends, and the answer is kept here as written. Official and public bodies first.'),
+        p(`${nr.length} sources. The data: [/api/v1/sources/index.json](/api/v1/sources/index.json), one file per source. [The sources we do read](/sources/).`),
+        ...(nr.length ? kinds.flatMap(k => [h(k[0].toUpperCase() + k.slice(1)), table(['Source', 'Status', 'What it would give', 'Why, in its own words', 'Page and date read', 'Asked'], nr.filter(e => e.kind === k).map(e => [`[${e.name}](${e.url})`, e.status, short((e.gives || []).join(', '), 60), e.why && e.why.quote ? `"${short(e.why.quote, 220)}"` : short((e.why && e.why.text) || '', 220), e.why ? `[page](${e.why.page}), ${e.why.read_at}` : '', e.asked ? `${e.asked.date}: ${short(e.asked.answer || 'no answer yet', 80)}` : 'not yet']))]) : [p('None recorded yet.')]),
+      ],
+    });
+  }
 
   // ---- one card page per source ----
   for (const s of sources) {

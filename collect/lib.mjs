@@ -69,7 +69,7 @@ export class Run {
         // the vault copy: latest/ always, a dated copy only when the bytes changed
         const vdir = path.join(dirs.vaults, this.id), t = this.started
         for (const { name, r } of this.raw) {
-            const ext = /\.xml($|\?)/.test(r.url) ? 'xml' : 'json'
+            const ext = r.ext || (/\.xml($|\?)/.test(r.url) ? 'xml' : 'json')
             const file = `${name}.${ext}`
             fs.mkdirSync(path.join(vdir, 'latest'), { recursive: true })
             fs.writeFileSync(path.join(vdir, 'latest', file), r.bytes)

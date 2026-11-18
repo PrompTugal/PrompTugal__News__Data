@@ -6,6 +6,7 @@ import { join } from 'node:path';
 import { loadSources, loadPlaces, loadEvents, dataReadAt, write, OUT } from './build/lib.mjs';
 import { buildApi, buildStormApi, readme } from './build/api.mjs';
 import { loadStorm } from './build/storm.mjs';
+import { buildRegister } from './build/register.mjs';
 import { buildPages } from './build/pages.mjs';
 const version = process.env.SITE_VERSION || 'dev';
 const builtAt = new Date().toISOString();
@@ -22,7 +23,8 @@ const events = loadEvents();
 const { index } = buildApi({ sources, places, version: '__VERSION__', builtAt, readAt, storm, events });
 buildStormApi({ storm, version: '__VERSION__' });
 write('api/v1/README.md', readme());
-const pages = buildPages({ sources, places, readAt, index, storm, events });
+const register = buildRegister(sources);
+const pages = buildPages({ sources, places, readAt, index, storm, events, register });
 
 const walk = d => readdirSync(d).flatMap(f => { const p = join(d, f); return statSync(p).isDirectory() ? walk(p) : [p]; });
 for (const f of walk(OUT)) {

@@ -39,6 +39,16 @@ A thing not written here does not exist. Kept by data.b@PrompTugal.dinis (accoun
 - Three more Storm charts (18 November, third wake): residents under each IPMA level by hour, warned against observed, forecast models against measured, on `/storm/` (`src/assets/viz/storm-labs.js`, simplified ports; its header says what was left out). `board/team/data/storm-handoff.md` lists the Storm items for the weather, travel and civic teams.
 - Not moved yet: the IPMA views and the other labs charts (see the map); entities, graph and meteorology data sets.
 
+## Events by place (18 November, at Dinis's word, about 13:50 UTC)
+
+- `sources/events-pt/` (collector by data.b.collector@, Sonnet; reviewed by data.b@): Agenda LX (Câmara Municipal de Lisboa's cultural agenda, its public `/wp-json/agendalx/v1/events` route) and Câmara Municipal de Lagos's events page. Read 18 November 14:05 UTC: 425 events for Lisbon, 90 for Lagos, the next 60 days; the other 16 Algarve places have no source yet (each host tried is in `gaps`). Read every 6 hours (00, 06, 12, 18 UTC) and on each push.
+- Each event is a schema.org Event (name, dates, venue, link) with its source and the time read; no organiser is given by either source, so `organizer` is null. No reuse licence or terms page was found on either host; robots.txt allows the paths read and agendalx.pt signals reference use, no AI training. Whether to republish on that basis or ask the two câmaras first is the card's open question for Dinis.
+- Served at `/api/v1/events/by-place/<place>.json` and `index.json`; the page `/events/`. The raw pages are kept in the vault copy only (they hold publisher text the wording gate refuses).
+
+## The sources register (18 November, at Dinis's word, about 14:10 UTC)
+
+- `register/sources.json` (hand-kept) plus one `read` entry per collector here, built by `scripts/build/register.mjs` into `/api/v1/sources/index.json` and `/api/v1/sources/<id>.json`; pages `/sources/` (what we read) and `/sources/not-read/` (what we do not, with the reason quoted). The not-read entries are being researched (terms and robots pages only).
+
 ## The API
 
 - `/api/v1/<id>/raw/<file>` (18 November): the publisher's own files of the latest read, for the IPMA sources and MeteoAlarm.
