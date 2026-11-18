@@ -1,0 +1,52 @@
+{
+ "id": "github-pt",
+ "title": "Code from Portuguese organisations on GitHub",
+ "what": "Public repositories and latest releases of Portuguese startups, companies, public bodies, universities and open-source projects on GitHub, each with its source URL, licence and the time read.",
+ "publisher": "The organisations listed in sources/github-pt/orgs.json, through GitHub, Inc.'s REST API",
+ "owner": "data.b.dev@PrompTugal.dinis",
+ "collector": "sources/github-pt/collect.mjs",
+ "source_home": "https://api.github.com/",
+ "reader_page": "https://github.com/",
+ "schedule": {
+  "cadence": "every 6 hours",
+  "how": "the Pages workflow (.github/workflows/pages.yml) at 17 minutes past 00, 06, 12 and 18 UTC; every other hourly run keeps the last read, copied from the live site. The workflow passes no token to the collectors, so a run uses the anonymous quota (60 requests an hour): every organisation's repositories, then releases until 10 requests remain, with a gap for the rest. A token would read every release; whether to give one is Dinis's decision."
+ },
+ "terms": {
+  "summary": "GitHub's terms allow this use: reading public data through the API is permitted; excessive requests may be suspended; data must not be used for spam or to sell users' personal information. We read organisations' public repositories and releases only, collect no personal data, stay well under the rate limits, and keep each repository's own licence (or a link to its terms) on every item. Not reviewed by a person.",
+  "page": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service#h-api-terms",
+  "read_at": "2026-11-18",
+  "quote": "\"You may not use the API to download data or Content from GitHub for spamming purposes, including for the purposes of selling GitHub users' personal information, such as to recruiters, headhunters, and job boards.\" Also: \"Abuse or excessively frequent requests to GitHub via the API may result in the temporary or permanent suspension of your Account's access to the API.\" And in the Acceptable Use Policies, section 7, Information Usage Restrictions (https://docs.github.com/en/site-policy/acceptable-use-policies/github-acceptable-use-policies, read 2026-11-18): \"Scraping does not refer to the collection of information through our API.\" (Quotes as returned by a page reader, which cut some sentences short.)",
+  "quote_lang": "en",
+  "republish": "with conditions: each item keeps its repository's own licence, or links to the repository's terms where it declares none; no personal data; no use for spam; keep to the rate limits",
+  "open_question": "Repository descriptions and release names are the organisations' own text: shown as short plain-text excerpts with a link. Dinis to decide whether to republish them beyond that. GitHub's Privacy Statement governs any personal information; none is collected."
+ },
+ "api": {
+  "latest": "https://data.promptugal.news/api/v1/github-pt/latest.json",
+  "reads": "https://data.promptugal.news/api/v1/github-pt/reads.json",
+  "card": "https://data.promptugal.news/api/v1/github-pt/card.json",
+  "openapi": "https://data.promptugal.news/api/v1/github-pt/openapi.json",
+  "page": "https://data.promptugal.news/sources/github-pt/"
+ },
+ "vault": null,
+ "split": {
+  "code": [
+   "the collector reads the organisations' public repositories and releases and writes latest.json and reads.json",
+   "GitHub Actions runs it every 6 hours and deploys the site",
+   "the build makes the API, the OpenAPI description and the pages"
+  ],
+  "agents": [
+   "data.b.dev@PrompTugal.dinis (Sonnet) wrote the collector, the organisations list, this card and the threat model on 18 November 2026, for data.b@PrompTugal.dinis"
+  ],
+  "people": [
+   "Dinis Cruz decided the code collection on 18 November 2026 (about 15:40 UTC); no person has checked the organisations list or the values yet (not reviewed)"
+  ]
+ },
+ "cost": {
+  "per_run_tokens": 0,
+  "per_run_model_cost_usd": 0,
+  "runner": "GitHub Actions on a public repository: no charge; one request per organisation plus up to 150 for releases, at one a second (planned; measured figure to be added)",
+  "build_tokens": "not measured",
+  "note": "Code only: no model is called when the data is collected."
+ },
+ "since": "2026-11-18"
+}

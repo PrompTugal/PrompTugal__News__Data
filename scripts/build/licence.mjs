@@ -13,7 +13,7 @@ const BY_SOURCE = {
   'meteoalarm-pt': terms('https://www.meteoalarm.org/en/live/page/terms-and-conditions', 'MeteoAlarm (EUMETNET), for IPMA'),
   'storm-charles-archive': { name: 'Apache-2.0', url: 'https://www.apache.org/licenses/LICENSE-2.0', holder: 'PrompTugal (the Storm Charles site)', note: 'The Storm site\'s own data; quoted sources keep their own terms.' },
   'social': { ...terms('https://bsky.social/about/support/tos', 'each post\'s author (an organisation)'), note: 'Links and metadata only; each post keeps its own license field (the platform\'s terms).' },
-  'base-gov-pt': { name: 'Outra (Domínio Público)', url: 'https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/', holder: 'IMPIC, Instituto dos Mercados Públicos, do Imobiliário e da Construção', note: 'As dados.gov.pt publishes the dataset (other-pd, public domain). Our record of it is CC BY 4.0.' },
+  'github-pt': terms('https://docs.github.com/en/site-policy/github-terms/github-terms-of-service#h-api-terms', 'each repository\'s organisation', 'Each repository and release carries its own license field: the repository\'s declared licence (SPDX), or a link to the repository, whose terms apply.'),
   'events-pt': terms('https://www.agendalx.pt/', 'the agenda each event comes from', 'No reuse licence or terms page was found; each event carries its own source\'s link.'),
 };
 export const licenceOf = id => BY_SOURCE[id] || (id.startsWith('ipma-') ? IPMA : OURS);

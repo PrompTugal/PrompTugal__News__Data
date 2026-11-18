@@ -4,7 +4,7 @@
  "repo": "PrompTugal/PrompTugal__News__Data",
  "site": "https://data.promptugal.news",
  "focus": "the raw public data behind every PrompTugal site: collectors, API, vaults; visualization first; the Storm Charles site's data and map",
- "updated": "2026-11-18T19:08Z",
+ "updated": "2026-11-18T19:14Z",
  "observability_lane": "data (own lane since 18 Nov ~15:00 UTC: vault 349t1w6w, 2 append lanes, drain key sha256:5109a3745ff9fdb4; drain credentials sealed to conductor.b-promptugal and sent to conductor.b@)",
  "observability_note": "obs.js reads team/keys/obs-data.json from GitHub (public half: endpoint, vault id, 2 append tokens, drain public key); every event tagged lane: \"data\"; no town lookup.",
  "state": "third wake (13:03 UTC) done: three more Storm charts on /storm/ (residents by hour, warned against observed, forecast models); the Storm items each sub-site takes listed for conductor.b@; key and commit-check fixes still blocked by permission",
@@ -46,7 +46,8 @@
   "Public live cameras: /api/v1/cams/ (with OpenAPI) and /sources/cams/, 3 cameras so far (APL Tejo Live x2, Praia da Rocha flagged), hourly status from the operator's page only, never a frame or stream; register/cams.json with 8 not listed and 11 gaps",
   "Cameras, Dinis's answers (18 Nov ~19:00 UTC, guidance 2026-11-18-cameras-provenance-and-bulletins.md): rules confirmed, MEO BeachCam included through its official embeds, Windy under its terms. Every camera now carries provenance (listed from, by, when, how its status is read, licence). /api/v1/cameras/ for live.b@ (95c9fd3). Second research pass under way (MEO, câmaras, APA, IPMA, ICNF, ports).",
   "19:03 UTC wake: status chart on /sources/cams/ (checked at 1100 and 375 px; long links in paragraphs and lists now wrap, ten pages checked with no sideways scroll). Library REQ-2026-0006 answered at 16:10 (corrections in discovery/youtube/websummit-2026.json), still open on the library's side.",
-  "Cameras, second pass: 22 cameras in 11 places (19 MEO BeachCam by link only, never fetched since beachcam.meo.pt refused us; APL Tejo Live x2; Praia da Rocha). No camera is embeddable yet. Nothing found from APA, IPMA, ICNF, Docapesca, ANA, IP or Lisboa's câmara (its cameras are police CCTV)."
+  "Cameras, second pass: 22 cameras in 11 places (19 MEO BeachCam by link only, never fetched since beachcam.meo.pt refused us; APL Tejo Live x2; Praia da Rocha). No camera is embeddable yet. Nothing found from APA, IPMA, ICNF, Docapesca, ANA, IP or Lisboa's câmara (its cameras are police CCTV).",
+  "GitHub: sources/github-pt, 21 Portuguese organisations (each verified, verified_how), public repositories and latest releases through GitHub's REST API; no people, no contributors; text cleaned and untrusted; threat model docs/threat-models/github-pt.md. One real run (18:21 UTC): 850 repositories; this session's shared quota is spent, so CI does the next read."
  ],
  "blocked": [
   "Change to scripts/check-commits.mjs to accept @PrompTugal.dinis refused by the permission check: commits use Agent: data.b@AgentiCCells.dinis",
@@ -68,7 +69,8 @@
   "Dinis: library.b@ and videos.b@ need Web Summit replays with talk timestamps; that needs a YouTube Data API key (through the credential form), which you said you would decide.",
   "Dinis: ask Shadowserver, Cloudflare (Radar is CC BY-NC), RIPE NCC (RIPEstat bars commercial derivatives) and CNPD (commercial use excluded) for written permission on the record? outreach@ drafts, you send.",
   "Dinis: Windy's webcams API needs a key (you said yes, 18 Nov ~19:00 UTC). If you want it, make the key yourself and say so; I will ask for it through the secure credential form, never in chat. I do not sign up for services.",
-  "Dinis: MEO BeachCam refused our fetches (403) and its terms (seen in search snippets) need MEO's consent for reproduction or retransmission. Do you want a consent and embed request drafted for a person to send to MEO? Also confirm the name to show: the privacy page names Wavenation, Conteúdos e Media Lda. as the operator."
+  "Dinis: MEO BeachCam refused our fetches (403) and its terms (seen in search snippets) need MEO's consent for reproduction or retransmission. Do you want a consent and embed request drafted for a person to send to MEO? Also confirm the name to show: the privacy page names Wavenation, Conteúdos e Media Lda. as the operator.",
+  "Dinis: the GitHub collector runs on the anonymous quota (60 requests an hour), enough for every organisation's repositories and about 25 release reads a run. Passing the workflow's GITHUB_TOKEN to the collect step would read every release, but that token can deploy Pages and the collector reads untrusted text: your call. Also: may repository descriptions be shown beyond a short excerpt with a link?"
  ],
  "next": [
   "by-place/now for live.b@ (19:05 UTC): each place's lat/lon from a sourced list (DGT CAOP or Wikidata, with source and licence on each value, never invented), and a lisboa.json (IPMA station and forecast 1110600) beside the Tejo Live cameras",

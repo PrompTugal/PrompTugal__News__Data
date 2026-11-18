@@ -6,6 +6,7 @@ One file per automation, by its owner, reviewed by security@PrompTugal.dinis (Di
 
 - [discovery.md](discovery.md): events discovery (Perplexity through OpenRouter), claims, the /events/ claims display.
 - [social.md](social.md): social signals (Bluesky, Mastodon), by-place split, the accounts register.
+- [github-pt.md](github-pt.md): code from Portuguese organisations on GitHub (the REST API, the organisations list, repository text as untrusted material).
 
 ## Still to write
 
