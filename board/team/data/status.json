@@ -4,7 +4,7 @@
  "repo": "PrompTugal/PrompTugal__News__Data",
  "site": "https://data.promptugal.news",
  "focus": "the raw public data behind every PrompTugal site: collectors, API, vaults; visualization first; the Storm Charles site's data and map",
- "updated": "2026-11-18T22:20Z",
+ "updated": "2026-11-18T22:21Z",
  "observability_lane": "data (own lane since 18 Nov ~15:00 UTC: vault 349t1w6w, 2 append lanes, drain key sha256:5109a3745ff9fdb4; drain credentials sealed to conductor.b-promptugal and sent to conductor.b@)",
  "observability_note": "obs.js reads team/keys/obs-data.json from GitHub (public half: endpoint, vault id, 2 append tokens, drain public key); every event tagged lane: \"data\"; no town lookup.",
  "state": "third wake (13:03 UTC) done: three more Storm charts on /storm/ (residents by hour, warned against observed, forecast models); the Storm items each sub-site takes listed for conductor.b@; key and commit-check fixes still blocked by permission",
@@ -80,6 +80,7 @@
  ],
  "next": [
   "London (Dinis ~22:20 UTC, guidance 2026-11-18-london.md): register every UK source with its terms first; collect EA flood monitoring and (if its terms allow) Open-Meteo first, keeping each issued forecast for 14 days; then TfL, adsb.lol at the five London airports, TfL JamCams into /api/v1/cams/, London Datastore, Contracts Finder, police area totals, air quality, NCSC, agendas, RSS. In progress with data.b.dev@ (Sonnet).",
+  "When the first London source is published: list london in /api/v1/index.json and by-place, and message directly (send_message) travel.b@ (session_01Kw9UwC8NE5V9W3SENTUy9V), bulletins.b@ (session_01Kw9UwEwArsTwsHK8qeZgW5, page 700 waiting) and weather.b@ (session_01Kw9UwB9LVh52kiZLXo5ytn) with paths and fields (conductor.b@, 22:20 UTC)",
   "London confirmed (Dinis ~22:25 UTC): the UK-Portugal link as data (flights London airports to Faro, Lisbon, Porto from adsb.lol and the airports' published data; UK tourism to Portugal from INE, Turismo de Portugal and ONS travel trends), each on the register first; nothing hard-coded to Portugal (a country field on every place and card).",
   "TfL JamCams for live.b@ (22:20 UTC): per camera place london or a borough slug, lat/lon, operator TfL (kind ip, kind_detail transport authority), page_url, the image or video URL and its exact host, terms url and checked_at, licence OGL with 'Powered by TfL Open Data'; with about 900 cameras a status in the index and no per-camera status_history file.",
   "Sites bar: when dev@ and designer@ publish it (conductor.b@ to say), vendor its code pinned by version and sha256, render promptugal.news/api/v1/sites.json escaped with https links to *.promptugal.news only, and replace the sites rail; check the first CI run made /preview.png",
