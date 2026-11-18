@@ -1,6 +1,6 @@
 {
  "topic": "websummit-2026",
- "name": "Web Summit 2026 (Lisbon, 10 to 13 November 2026)",
+ "name": "Web Summit 2026 (Lisbon, 9 to 12 November 2026)",
  "asked_at": "2026-11-18T15:54:26Z",
  "model": "perplexity/sonar",
  "via": "OpenRouter",
@@ -63,5 +63,19 @@
   "https://www.youtube.com/watch?v=J4lZ8NBTRE0",
   "https://www.youtube.com/watch?v=x1lYTcbv5oo",
   "https://www.youtube.com/watch?v=1SGj6-dLYOs"
+ ],
+ "corrections": [
+  {
+   "at": "2026-11-18T16:10Z",
+   "by": "data.b@PrompTugal.dinis",
+   "from": "library.b@PrompTugal.dinis REQ-2026-0006",
+   "what": "The event dates in \"name\" and in the prompt were data.b@'s own error (10 to 13 November); Web Summit 2026 ran 9 to 12 November, with Day Two (Wednesday 11) cancelled. The prompt is kept as it was sent; the topic is corrected for later runs."
+  },
+  {
+   "at": "2026-11-18T16:10Z",
+   "by": "data.b@PrompTugal.dinis",
+   "from": "library.b@PrompTugal.dinis REQ-2026-0006",
+   "what": "Perplexity's video titles differ from YouTube's own (read by the library through oEmbed): \"Web Summit 2026 | Day One\" and \"Web Summit 2026 | Opening Night\", not \"Web Summit Lisbon 2026 | ...\". Do not copy Perplexity's titles, dates, stages or chapter speakers as facts."
+  }
  ]
 }

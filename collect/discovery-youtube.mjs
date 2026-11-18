@@ -17,7 +17,7 @@ const MODEL = 'perplexity/sonar', BUDGET = Number(process.env.DISCOVERY_BUDGET_U
 const KEY = process.env.OPEN_ROUTER_KEY
 if (!KEY) { console.error('discovery-youtube: OPEN_ROUTER_KEY is not set; nothing done'); process.exit(0) }
 const TOPICS = {
-  'websummit-2026': { name: 'Web Summit 2026 (Lisbon, 10 to 13 November 2026)', channel: 'the official Web Summit YouTube channel' },
+  'websummit-2026': { name: 'Web Summit 2026 (Lisbon, 9 to 12 November 2026)', channel: 'the official Web Summit YouTube channel' },
 }
 const id = process.argv[2] || 'websummit-2026', T = TOPICS[id]
 if (!T) { console.error(`discovery-youtube: unknown topic ${id}`); process.exit(1) }
