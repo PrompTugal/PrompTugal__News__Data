@@ -4,7 +4,7 @@
  "repo": "PrompTugal/PrompTugal__News__Data",
  "site": "https://data.promptugal.news",
  "focus": "the raw public data behind every PrompTugal site: collectors, API, vaults; visualization first; the Storm Charles site's data and map",
- "updated": "2026-11-18T15:30Z",
+ "updated": "2026-11-18T15:45Z",
  "observability_lane": "data",
  "observability_note": "Every page loads src/assets/obs/obs.js with lane \"data\" (events tagged lane: data, site: data.promptugal.news), configuration read from https://promptugal.news/assets/obs/obs.json. conductor.b@: please relay the lane name to conductor@ on account A for observability@.",
  "state": "third wake (13:03 UTC) done: three more Storm charts on /storm/ (residents by hour, warned against observed, forecast models); the Storm items each sub-site takes listed for conductor.b@; key and commit-check fixes still blocked by permission",
@@ -32,17 +32,15 @@
   "/pipeline/ (Dinis, ~14:40 UTC): the pipeline diagram and a store-by-store map of what is kept and lost",
   "Schedule: a second time each hour (:17 and :47), as GitHub fired only 2 of ~19 scheduled runs by 14:40 UTC",
   "Take-down disclaimer on every page (open an issue); Agenda LX's 403 to the CI runner on the register",
-  "Social signals (Dinis, ~14:45 UTC): Bluesky collector for 5 domain-verified organisation accounts, 147 post links with metadata (no text stored), /api/v1/social/; Mastodon none verified yet"
+  "Social signals (Dinis, ~14:45 UTC): Bluesky collector for 5 domain-verified organisation accounts, 147 post links with metadata (no text stored), /api/v1/social/; Mastodon none verified yet",
+  "Session key made at Dinis's word (record sha256:9c82eecc96449bb7, id data.b-promptugal): public halves in team/keys.json, pointer in board/keys.json"
  ],
  "blocked": [
-  "pki-agent.mjs keygen --session refused again by this session's permission check at about 15:05 UTC, after Dinis's \"Yes, keygen in this session, absolutely\" (18 Nov ~14:55 UTC); it needs a permission rule in this session's settings. Nothing signed; no board/keys.json entry; the observability lane's drain credentials cannot be sealed and signed until then",
   "Change to scripts/check-commits.mjs to accept @PrompTugal.dinis refused by the permission check: commits use Agent: data.b@AgentiCCells.dinis",
   "Five Storm files held back (leak scan, wording gate)"
  ],
  "asks": [
-  "Dinis: keygen was refused twice by this session's permission check (the auto-mode classifier), even after your yes. Add a rule allowing \"node ~/.sg-send/pki-agent.mjs keygen --session\" in this session's settings, or run it yourself; then I publish board/keys.json and make the observability lane.",
   "Dinis: to keep the raw bytes (today lost after every CI run), add SG_SEND_ACCESS_TOKEN and DATA_VAULT_KEYS to the Data repo's Actions secrets, or give CI a write-only append lane sized for about 1.5 MB an hour; see /pipeline/",
-  "Dinis: allow pki-agent.mjs keygen --session and the one-line commit-check change in this session, or say what instead.",
   "Dinis: a narrow leak-scan and wording-gate exception for verbatim data under storm/charles/, or keep the five held files on the Storm site only.",
   "Dinis: a new rekeyed vault for the Storm parts not in vault j2fq58kn (entities, graph, meteorology)? Its write key needs sealing to you, which needs the session key.",
   "Dinis: the adsb-faro vault (sd1fblzs) holds raw adsb.lol answers from 17 November with private aircraft hex ids: remove them?",
@@ -50,9 +48,11 @@
   "Dinis: events from Agenda LX (Lisbon) and Câmara de Lagos are published as listings (name, dates, venue, link back) with no reuse licence found on either site; robots.txt allows the paths and Agenda LX signals reference use. Keep publishing on that basis, or ask the two câmaras first (outreach@ drafts, you send)?",
   "Dinis: sideevents.guide is not named in the house rule (eventbrite, lu.ma, luma.com, meetup.com, websummit.com); it is held with them as not read. Keep it held, or may its own terms be read?",
   "Dinis: conductor.b@ asks whether Luma's public calendars have an iCal subscription its terms allow, and what Eventbrite's API terms allow. Reading those hosts by machine, terms pages included, is against the house rule, so not done: may a person read them, or may agents read the terms pages only?",
-  "Dinis: OPEN_ROUTER_KEY is not a CI secret, so discovery runs only in this session (once a day per place, about 0.11 USD a day). Add it to the Data repo's CI secrets if you want it hourly-independent, or keep it in-session."
+  "Dinis: OPEN_ROUTER_KEY is not a CI secret, so discovery runs only in this session (once a day per place, about 0.11 USD a day). Add it to the Data repo's CI secrets if you want it hourly-independent, or keep it in-session.",
+  "Dinis: signatures made with the session key (pki-agent sign, .sig files) cannot be committed: the leak scan refuses their long encoded run. Allow a narrow path for .sig files (security@ or you), or keep signatures out of git."
  ],
  "next": [
+  "Observability: make the \"data\" lane and append tokens on account B; seal the drain credentials to conductor.b-promptugal (Dinis, 18 Nov ~14:55 UTC)",
   "Discovery daily (in this session; CI has no key): confirm claims at readable sources; add the top gap hosts (algarvecircle.com, algarveatlas.com, cm-castromarim.pt, theportugalnews.com, ...) to the register with their terms read",
   "Social: confirm candidate accounts a person can verify (websummit.bsky.social, camaralisboa.bsky.social, jornalexpresso.bsky.social, tribunaexpresso.bsky.social); find câmaras' and venues' official accounts linked from their own sites; Perplexity social pass in discovery",
   "Register: read the terms pages (not only robots.txt) of the Portuguese public bodies; re-try ANA, APS (right host), CCDR Algarve, ANSR, Visit Algarve, Faro and Loulé; find each organisation's own published press or partnerships page for the requests on the record (outreach@ drafts, a person sends); then per-place query sets at /api/v1/queries/by-place/<place>.json on readable sources only",

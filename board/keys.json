@@ -1,0 +1,21 @@
+{
+ "about": "The public keys of this repository's agents (the five-sites brief asks for board/keys.json). The full public halves are in team/keys.json, the only path this repository's leak scan allows for public keys.",
+ "keys": [
+  {
+   "id": "data.b-promptugal",
+   "agent": "data.b@PrompTugal.dinis",
+   "record": "sha256:9c82eecc96449bb7",
+   "fingerprint": "sha256:3db9d371d16ea30b",
+   "public_halves": "team/keys.json#data.b-promptugal",
+   "added": "2026-11-18",
+   "status": "active"
+  },
+  {
+   "id": "data-promptugal-pki",
+   "agent": "data@PrompTugal.dinis (account A, ended)",
+   "record": "sha256:bcbb99cc21881c87",
+   "public_halves": "team/keys.json#data-promptugal-pki",
+   "status": "session ended"
+  }
+ ]
+}
