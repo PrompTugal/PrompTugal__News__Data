@@ -1,0 +1,52 @@
+{
+ "id": "social",
+ "title": "Social signals: organisations' public posts, by link",
+ "what": "Links to recent public posts by the official accounts of organisations (câmaras, public bodies, venues, organisers, news outlets, companies) on Bluesky and Mastodon, with metadata only: account, time, matched topics and places, language, media or not. No post text or media is stored.",
+ "publisher": "The organisations themselves, through Bluesky (public AppView API) and Mastodon (public instance API)",
+ "owner": "data.b@PrompTugal.dinis",
+ "collector": "sources/social/collect.mjs",
+ "source_home": "https://public.api.bsky.app/xrpc/",
+ "reader_page": "https://bsky.app/",
+ "schedule": {
+  "cadence": "every 6 hours",
+  "how": "the Pages workflow (.github/workflows/pages.yml) at 17 minutes past 00, 06, 12 and 18 UTC; every other hourly run keeps the last read, copied from the live site"
+ },
+ "terms": {
+  "summary": "Organisations only, official interfaces only, by link. Bluesky: robots.txt of the public API allows crawling it and asks for backoff on 429; the Terms of Service (14 Aug 2025) leave each post's content with its author, so we store link and metadata only and credit the organisation. Mastodon: mastodon.social's terms (effective 2026-08-31) say whoever owns the content retains ownership and allow API access; its robots.txt disallows only /media_proxy/, /interact/ and a domain-blocks path. Licence on each post: the platform's terms, holder the organisation. Not reviewed by a person.",
+  "page": "https://public.api.bsky.app/robots.txt",
+  "read_at": "2026-11-18",
+  "quote": "Crawling the public parts of the API is allowed. HTTP 429 (\"backoff\") status codes are used for rate-limiting. Up to a handful concurrent requests should be ok.",
+  "quote_lang": "en",
+  "republish": "links and metadata only, credited to the organisation, under the platform's terms; no post text or media republished",
+  "open_question": "Dinis to confirm the Bluesky terms (https://bsky.social/about/support/tos) are enough for links plus metadata, and which more organisation accounts to add (register/social-accounts.json notes)."
+ },
+ "api": {
+  "latest": "https://data.promptugal.news/api/v1/social/latest.json",
+  "reads": "https://data.promptugal.news/api/v1/social/reads.json",
+  "card": "https://data.promptugal.news/api/v1/social/card.json",
+  "openapi": "https://data.promptugal.news/api/v1/social/openapi.json",
+  "page": "https://data.promptugal.news/sources/social/"
+ },
+ "vault": null,
+ "split": {
+  "code": [
+   "the collector reads each listed account's recent posts and a keyword pass on Bluesky, keeps only links and metadata, and writes latest.json and reads.json",
+   "collect/social-by-place.mjs derives data/social/by-place/<place>.json from latest.json",
+   "GitHub Actions runs it and deploys the site"
+  ],
+  "agents": [
+   "data.b.collector@PrompTugal.dinis (Sonnet) researched the platforms' terms and the accounts and wrote the collector and this card on 18 November 2026, for data.b@PrompTugal.dinis"
+  ],
+  "people": [
+   "Dinis Cruz decided the social signals on 18 November 2026 (board/guidance/2026-11-18-social-signals.md); no person has checked the accounts or values yet (not reviewed)"
+  ]
+ },
+ "cost": {
+  "per_run_tokens": 0,
+  "per_run_model_cost_usd": 0,
+  "runner": "GitHub Actions on a public repository: no charge; about 10 requests a run (measured locally, 18 November 2026)",
+  "build_tokens": "not measured",
+  "note": "Code only: no model is called when the data is collected."
+ },
+ "since": "2026-11-18"
+}

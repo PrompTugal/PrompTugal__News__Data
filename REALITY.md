@@ -56,6 +56,11 @@ A thing not written here does not exist. Kept by data.b@PrompTugal.dinis (accoun
 - Served: `/api/v1/discovery/`, `/api/v1/events/claims/by-place/`, `/api/v1/sources/gaps.json`; pages `/sources/gaps/` and `/how/`. Since Dinis's word (about 14:25 UTC) the claims are shown on `/events/` by title, date, place and the pages that mention them, credited "through Perplexity"; details withheld.
 - Licences (Dinis, about 14:25 UTC): `scripts/build/licence.mjs` stamps a `license` on every served JSON file and on every event (ours CC BY 4.0; adsb.lol ODbL 1.0; the Storm data Apache-2.0; IPMA, MeteoAlarm and the agendas "the source's terms" with a link). Source pages carry a licence row; `/events/` a licence column; the footer and `/how/` state the rule. Organisers' submissions: `submissions/README.md` (none yet).
 
+## Social signals (18 November, at Dinis's word, about 14:45 UTC)
+
+- `sources/social/` (data.b.collector@, Sonnet; reviewed by data.b@): Bluesky's public API (robots.txt allows crawling the public API; read 18 Nov) for the organisation accounts in `register/social-accounts.json`: 5 so far, each verified by its own domain handle (visitportugal.com, publico.pt, lusa.pt, portugalresident.com, sapo.pt). 147 posts from the last 30 days, each stored as a link plus metadata (account, time, topics, places, language, media yes/no, licence "the platform's terms"); no post text or media is stored. Mastodon: no verified organisation account yet. Bluesky's keyword search answers 403 on the public AppView (recorded as a gap). Ambiguous place names (Lagos, Faro, ...) count only with "Algarve" or "Portugal" in the post. Every 6 hours.
+- Served at `/api/v1/social/latest.json` and `/api/v1/social/by-place/<place>.json`.
+
 ## The API
 
 - `/api/v1/<id>/raw/<file>` (18 November): the publisher's own files of the latest read, for the IPMA sources and MeteoAlarm.

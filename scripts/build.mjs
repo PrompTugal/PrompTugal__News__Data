@@ -3,7 +3,7 @@
 // SITE_VERSION is set by CI only (v0.1.N); a local build says "dev".
 import { cpSync, rmSync, readdirSync, readFileSync, writeFileSync, statSync } from 'node:fs';
 import { join } from 'node:path';
-import { loadSources, loadPlaces, loadEvents, dataReadAt, write, OUT } from './build/lib.mjs';
+import { loadSources, loadPlaces, loadEvents, loadSocial, dataReadAt, write, writeJson, OUT } from './build/lib.mjs';
 import { buildApi, buildStormApi, readme } from './build/api.mjs';
 import { loadStorm } from './build/storm.mjs';
 import { buildRegister } from './build/register.mjs';
@@ -25,6 +25,7 @@ const events = loadEvents();
 const { index } = buildApi({ sources, places, version: '__VERSION__', builtAt, readAt, storm, events });
 buildStormApi({ storm, version: '__VERSION__' });
 write('api/v1/README.md', readme());
+for (const f of loadSocial()) writeJson(`api/v1/social/by-place/${f.file}`, f.data);   // social signals per place (Dinis, 18 Nov 2026 ~14:45 UTC)
 const register = buildRegister(sources);
 const discovery = buildDiscovery();
 const pages = buildPages({ sources, places, readAt, index, storm, events, register, discovery });

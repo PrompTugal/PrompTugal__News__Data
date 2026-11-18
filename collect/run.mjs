@@ -4,7 +4,7 @@
 //   node collect/run.mjs ipma-uv adsb-faro    only these
 //   node collect/run.mjs --prev               first copy each source's latest.json and reads.json from the live site,
 //                                             so a fresh checkout (CI) continues the read history
-// Then derives data/by-place/now/ (collect/by-place-now.mjs) and data/events/by-place/ from events-pt's latest read (collect/events-by-place.mjs). Code only: no model is called. Exit 0 even when a source
+// Then derives data/by-place/now/ (collect/by-place-now.mjs) and data/events/by-place/ from events-pt's latest read (collect/events-by-place.mjs) and data/social/by-place/ from social's (collect/social-by-place.mjs). Code only: no model is called. Exit 0 even when a source
 // fails (its reads.json says why); exit 1 only when no source could be read at all.
 import fs from 'node:fs'
 import path from 'node:path'
@@ -34,6 +34,7 @@ for (const c of todo) {
 }
 if (todo.some(c => c.id.startsWith('ipma-') || c.id === 'adsb-faro')) await import('./by-place-now.mjs')
 if (fs.existsSync(path.join(ROOT, 'data', 'events-pt', 'latest.json'))) await import('./events-by-place.mjs')   // also from the copied last read
+if (fs.existsSync(path.join(ROOT, 'data', 'social', 'latest.json'))) await import('./social-by-place.mjs')   // also from the copied last read
 if (fs.existsSync(path.join(ROOT, 'discovery', 'by-place'))) await import('./claims.mjs')   // claims from the stored discovery answers (code, no model)
 writeJson(path.join(ROOT, 'data', 'run.json'), { at: now(), sources: summary })
 if (summary.length && summary.every(s => !s.ok)) { console.error('no source could be read'); process.exit(1) }
