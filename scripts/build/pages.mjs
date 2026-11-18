@@ -67,7 +67,7 @@ function previewRows(s) {
   return { key, total: l[key].length, table: t, src };
 }
 
-export function buildPages({ sources, places, readAt, index, storm }) {
+export function buildPages({ sources, places, readAt, index, storm, events = [] }) {
   const pages = [];
   const add = o => pages.push(page({ readAt, ...o }));
   const link = s => `[${s.card.title}](/sources/${s.id}/)`;
@@ -283,6 +283,22 @@ export function buildPages({ sources, places, readAt, index, storm }) {
         p(`${items.length} items, read from the Storm repository on 18 November 2026 by data.b.collector@PrompTugal.dinis (Sonnet) and checked by data.b@. **moved**: on this site now; **to move**: planned, to this site or a sub-site; **dropped**: not carried, most kept frozen on the Storm site as the record. The full map: [storm-map.md](${REPO}/blob/dev/board/team/data/storm-map.md), [storm-map.json](${REPO}/blob/dev/board/team/data/storm-map.json).`),
         table(['Kind', 'Items', 'Moved', 'To move', 'Dropped'], [...kinds.map(([k, l]) => [l, count(k), count(k, 'moved'), count(k, 'to move'), count(k, 'dropped')]), ['All', items.length, items.filter(i => i.state === 'moved').length, items.filter(i => i.state === 'to move').length, items.filter(i => i.state === 'dropped').length]]),
         ...kinds.flatMap(([k, l]) => [h(l, 3), table(['Item', 'Where it goes now', 'State', 'Files in the Storm repository', 'Notes'], items.filter(i => i.kind === k).map(i => [i.title, i.goes_to, `**${i.state}**`, cellPaths(i.paths), i.notes || '']))]),
+      ],
+    });
+  }
+
+  // ---- events by place (18 Nov 2026, at Dinis's word: board/guidance/2026-11-18-s53-and-the-events-site.md in PrompTugal__News__Website) ----
+  if (events.length) {
+    const day = d => d ? String(d).replace('T', ' ').slice(0, 16) : '';
+    const withEv = events.filter(e => (e.data.events || []).length);
+    add({
+      path: 'events/', title: 'Events by place: PrompTugal.news Data', h1: 'Events, place by place',
+      description: 'Upcoming events in Lisbon and the Algarve from official agendas and organisers\' own public feeds, each with its source and the time read; the same data as /api/v1/events/by-place/.',
+      blocks: [
+        p('What is on, place by place, from official agendas and organisers\' own public feeds: each event keeps its source and the time it was read. The sources and their terms are on [the events card](/sources/events-pt/). Not from eventbrite, lu.ma, luma.com or meetup.com. Check with the organiser before you go: dates change.'),
+        p(`The API: [/api/v1/events/by-place/index.json](/api/v1/events/by-place/index.json), then \`/api/v1/events/by-place/<place>.json\`, each event a schema.org Event.`),
+        table(['Place', 'Events', 'File'], events.map(e => [e.data.name || e.id, (e.data.events || []).length, `[${e.id}.json](/api/v1/events/by-place/${e.id}.json)`])),
+        ...withEv.flatMap(e => [h(e.data.name || e.id), table(['When', 'What', 'Where', 'Organiser', 'Source'], (e.data.events || []).slice(0, 15).map(ev => [day(ev.startDate) + (ev.endDate ? ' to ' + day(ev.endDate) : ''), ev.url ? `[${short(ev.name, 90)}](${ev.url})` : short(ev.name, 90), short((ev.location && ev.location.name) || '', 60), short((ev.organizer && ev.organizer.name) || '', 50), ev.source ? `[source](${ev.source})` : ''])), ...((e.data.events || []).length > 15 ? [p(`Showing 15 of ${(e.data.events || []).length}: the rest in [the file](/api/v1/events/by-place/${e.id}.json).`)] : [])]),
       ],
     });
   }

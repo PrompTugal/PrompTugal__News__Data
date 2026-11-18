@@ -25,7 +25,7 @@ function info(title, description, version) {
 }
 const spec = (title, description, version, paths, extra = {}) => ({ openapi: '3.1.0', info: info(title, description, version), servers: [{ url: SITE, description: 'Production' }], externalDocs: { description: 'How to use the API', url: `${SITE}/api/` }, paths, ...extra });
 
-export function buildApi({ sources, places, version, builtAt, readAt, storm }) {
+export function buildApi({ sources, places, version, builtAt, readAt, storm, events = [] }) {
   // ---- per-source files ----
   const perSource = new Map();
   for (const s of sources) {
@@ -55,6 +55,12 @@ export function buildApi({ sources, places, version, builtAt, readAt, storm }) {
   const placeIndex = { about: 'The places that have a "now" file: each combines the nearest IPMA values from this site\'s collected sources, with the source and the time read on every value. Not a warning service: follow IPMA and ANEPC.', read_at: readAt, places: placeFiles };
   writeJson('api/v1/by-place/now/index.json', placeIndex);
 
+  // ---- events by place (18 Nov 2026) ----
+  const eventFiles = events.map(e => ({ id: e.id, url: `${V}/events/by-place/${e.id}.json`, events: (e.data.events || []).length, read_at: e.data.read_at || null }));
+  for (const e of events) writeJson(`api/v1/events/by-place/${e.id}.json`, e.data);
+  const eventIndex = { about: 'Events per place: each a schema.org Event with its source and the time read, from official agendas and organisers\' own public feeds (see the events-pt card). Not eventbrite, lu.ma, luma.com or meetup.com.', read_at: readAt, places: eventFiles };
+  if (events.length) writeJson('api/v1/events/by-place/index.json', eventIndex);
+
   // ---- the catalogue ----
   const index = {
     about: 'The catalogue of data.promptugal.news: the raw public data behind every PrompTugal site, collected by code, no articles. Not a warning service: follow IPMA and ANEPC.',
@@ -73,6 +79,7 @@ export function buildApi({ sources, places, version, builtAt, readAt, storm }) {
     })),
     by_place: placeFiles.map(p => p.url),
     by_place_index: `${V}/by-place/now/index.json`,
+    ...(events.length ? { events_by_place_index: `${V}/events/by-place/index.json` } : {}),
     openapi: `${V}/openapi.json`,
     swagger: `${SITE}/api/swagger/`,
   };
@@ -97,7 +104,12 @@ export function buildApi({ sources, places, version, builtAt, readAt, storm }) {
   const placeParam = { name: 'place', in: 'path', required: true, schema: { type: 'string', enum: places.map(p => p.id) }, example: pl && pl.id };
   paths['/api/v1/by-place/now/index.json'] = jsonOp({ id: 'get_by_place_index', summary: 'The places that have a now file', description: placeIndex.about, tag: 'by-place', data: placeIndex });
   if (pl) paths['/api/v1/by-place/now/{place}.json'] = jsonOp({ id: 'get_by_place_now', summary: 'Now in one place', description: pl.data.about || 'Nearest IPMA values for the place.', tag: 'by-place', data: pl.data, samples: places.map(p => p.data), params: [placeParam] });
-  const tags = [{ name: 'meta', description: 'The catalogue, the contract and this document' }, { name: 'sources', description: 'Files every source has, by source id' }, { name: 'by-place', description: 'Algarve places, now' }, { name: 'storm', description: 'Storm Charles (10 to 12 November 2026): the Storm site\'s data, moved here' }, ...sources.map(s => ({ name: s.id, description: s.card.what }))];
+  if (events.length) {
+    paths['/api/v1/events/by-place/index.json'] = jsonOp({ id: 'get_events_by_place_index', summary: 'The places that have an events file', description: eventIndex.about, tag: 'events', data: eventIndex });
+    const e0 = events.find(e => (e.data.events || []).length) || events[0];
+    paths['/api/v1/events/by-place/{place}.json'] = jsonOp({ id: 'get_events_by_place', summary: 'Events in one place', description: 'Upcoming and ongoing events in the place, each a schema.org Event with source and read_at.', tag: 'events', data: e0.data, samples: events.map(e => e.data), params: [{ name: 'place', in: 'path', required: true, schema: { type: 'string', enum: events.map(e => e.id) }, example: e0.id }] });
+  }
+  const tags = [{ name: 'events', description: 'Events per place' }, { name: 'meta', description: 'The catalogue, the contract and this document' }, { name: 'sources', description: 'Files every source has, by source id' }, { name: 'by-place', description: 'Algarve places, now' }, { name: 'storm', description: 'Storm Charles (10 to 12 November 2026): the Storm site\'s data, moved here' }, ...sources.map(s => ({ name: s.id, description: s.card.what }))];
   const desc = `Every GET file of data.promptugal.news, ${sources.length} sources. Each response schema is inferred from the real file (x-inferred) and each example is a real file cut to a readable size. Data terms by source:\n\n` + sources.map(s => `- ${s.id}: ${s.card.terms.summary}`).join('\n') + '\n\nNot a warning service: follow IPMA and ANEPC.';
   writeJson('api/v1/openapi.json', spec('data.promptugal.news API v1', desc, version, paths, { tags, 'x-generated': { by: 'scripts/build/api.mjs (data.dev@PrompTugal.dinis)', built_at: builtAt } }));
   return { index, placeFiles };

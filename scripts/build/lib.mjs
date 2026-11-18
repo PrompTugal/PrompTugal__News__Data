@@ -61,6 +61,13 @@ export function loadPlaces() {
   return readdirSync(dir).filter(f => f.endsWith('.json') && f !== 'index.json').sort().map(f => ({ id: f.slice(0, -5), data: readJson(join(dir, f)) })).filter(p => p.data);
 }
 
+// events per place (data.b@PrompTugal.dinis, 18 Nov 2026; collect/events-by-place.mjs writes data/events/by-place/)
+export function loadEvents() {
+  const dir = 'data/events/by-place';
+  if (!existsSync(dir)) return [];
+  return readdirSync(dir).filter(f => f.endsWith('.json') && f !== 'index.json').sort().map(f => ({ id: f.slice(0, -5), data: readJson(join(dir, f)) })).filter(p => p.data);
+}
+
 export function dataReadAt(sources) {
   const run = readJson('data/run.json');
   if (run && run.at) return run.at;
