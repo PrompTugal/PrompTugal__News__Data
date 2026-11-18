@@ -3508,6 +3508,420 @@
    "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet)",
    "notes": "Refused by robots.txt: recorded as a gap, never worked around. Disclosure: one single probe request to the API was sent in the same step as the robots.txt fetch, before the disallow was read; it returned data and nothing was kept. Ask the JRC (PVGIS support page) if an automated read is allowed, a person to send.",
    "how": null
+  },
+  {
+   "id": "aguasdoalgarve-disponibilidades-hidricas",
+   "name": "Águas do Algarve: Disponibilidades Hídricas (reservoir storage table)",
+   "kind": "public body",
+   "url": "https://www.aguasdoalgarve.pt/content/disponibilidades-hidricas",
+   "owner": "Águas do Algarve, S.A. (Grupo Águas de Portugal)",
+   "places": [
+    "algarve"
+   ],
+   "country": "PT",
+   "gives": [
+    "reservoir storage (volume in hm3 and percent, total and useful) for Odelouca, Odeleite and Beliche",
+    "reservoir capacity and full-storage level for those three dams"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "© 2025, Águas do Algarve, SA.- Todos os direitos reservados.",
+    "quote_lang": "pt",
+    "page": "https://www.aguasdoalgarve.pt/content/disponibilidades-hidricas",
+    "read_at": "2026-11-18",
+    "basis": "page footer copyright notice (all rights reserved; no reuse licence or open-data terms found on the site, the only legal links being cookies and data protection); robots.txt (https://www.aguasdoalgarve.pt/robots.txt, 200) has User-agent * with Crawl-delay: 10 and does not disallow /content/"
+   },
+   "interface": "Server-rendered HTML page, no key, no login. Six HTML tables (one header block plus one dated table per dam). Per dam: Nível Máximo de Cheia (m), Nível de Pleno Armazenamento (m), Capacidade Total (hm3), Capacidade Útil (hm3); then rows of Data, Volume Total (hm3, %), Volume Útil (hm3, %). No JSON, CSV or API seen. Dates are written dd/mm/yy.",
+   "contact_channel": null,
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), for data.b@PrompTugal.dinis",
+   "notes": "Read 18 Nov 2026. Rows shown: 16/10/25 (same week a year earlier) then weekly Fridays 18/09/26, 25/09/26, 02/10/26, 09/10/26, 16/10/26. Latest row 16/10/26 is therefore about a month behind today, so the page is updated late or in batches; check the lag before promising 'current'. Latest values (Águas do Algarve, 16/10/26): Odelouca 112.86 hm3, 71.82% total, 65.46% useful; Odeleite 91.65 hm3, 70.50% total, 64.75% useful; Beliche 29.96 hm3, 62.41% total, 57.94% useful. Capacities: Odelouca 157.14 hm3 total (128.2 useful), Odeleite 130.00 (108.80), Beliche 48.00 (42.89). Covers only the three dams that supply Águas do Algarve; Bravura, Arade and Funcho are NOT on this page. Because the site claims all rights reserved, taking figures on a schedule needs Dinis to decide, or a written OK from Águas do Algarve (geral.ada@adp.pt is the contact shown in the page header); facts such as a single percentage are not the same as copying the table, but that is a judgement for Dinis. Also read: robots Crawl-delay 10 means no more than one request per 10 seconds.",
+   "how": null,
+   "licence": {
+    "name": "none stated (all rights reserved)",
+    "url": "https://www.aguasdoalgarve.pt/content/disponibilidades-hidricas",
+    "read_at": "2026-11-18"
+   }
+  },
+  {
+   "id": "apa-monitorizacao-agrometeorologica-hidrologica",
+   "name": "APA / Comissão Permanente da Seca: monthly agrometeorological and hydrological monitoring report (PDF)",
+   "kind": "public body",
+   "url": "https://apambiente.pt/agua/ano-hidrologico-20252026",
+   "owner": "Agência Portuguesa do Ambiente (APA), with IPMA, GPP, DGADR, AdP, EDIA",
+   "places": [
+    "portugal",
+    "algarve"
+   ],
+   "country": "PT",
+   "gives": [
+    "reservoir storage for 77 monitored Portuguese reservoirs by river basin, in a monthly PDF report",
+    "storage for the six large Algarve reservoirs (Arade, Funcho, Bravura, Odelouca, Odeleite, Beliche) as a chart",
+    "table of AdP supply reservoirs incl. Beliche, Bravura, Odeleite, Odelouca (volume hm3 and percent, four dates)",
+    "drought status text"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "Armazenamento de Água Superficial (albufeiras) APA Semanal",
+    "quote_lang": "pt",
+    "page": "https://apambiente.pt/sites/default/files/_SNIAMB_Agua/DRH/OrgaosConsultivos/ComissaoPermanenteSeca/Relatorios/119_Relatorio_Monitorizacao_30Set2026.pdf (Tabela 1, p. 6)",
+    "read_at": "2026-11-18",
+    "basis": "report text stating APA monitors surface storage weekly; the report states no reuse licence, and the APA site footer reads 'APA © 2021 - Consulte aqui a Política de privacidade da APA.' (https://apambiente.pt/, read 2026-11-18). robots.txt (https://apambiente.pt/robots.txt, 200): 'User-agent: * / Allow: / / Disallow: /adm/ / Disallow: /user/'. Not a reuse licence."
+   },
+   "interface": "Index page https://apambiente.pt/agua/ano-hidrologico-20252026 (HTML) links one PDF per month, numbered: 119_Relatorio_Monitorizacao_30Set2026.pdf is the newest (about 5.8 MB, ~60 pages, text layer readable with pdftotext). URL pattern /sites/default/files/_SNIAMB_Agua/DRH/OrgaosConsultivos/ComissaoPermanenteSeca/Relatorios/<n>_Relatorio_Monitorizacao_<DDMonYYYY>.pdf. No key. No JSON or CSV.",
+   "contact_channel": null,
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), for data.b@PrompTugal.dinis",
+   "notes": "Read 18 Nov 2026: the index page and the 30 Sep 2026 report (one download, 5.8 MB). Monthly, published after month end, so the November picture is about 4 to 6 weeks old; as of 18 Nov the 31 Oct report was not yet listed. The report's own Tabela 1 says APA monitors surface storage weekly but only the monthly PDF is public here; the weekly series lives on SNIRH (403, see gap). Tabela (30 Set 2026, AdA group): Beliche 31.17 hm3, 64.93%; Bravura 26.97 hm3, 77.44%; Odeleite 94.80 hm3, 72.93%; Odelouca 115.11 hm3, 73.32% (the table has four date columns; I took the last as 30 Sep, not checked against the column header). Arade and Funcho appear only in a chart image (Figura 21), so would need image reading or SNIRH. Figures need cross-checking against the page layout before any build. Same reports are mirrored by GPP (https://www.gpp.pt/images/Estatisticas_e_analises/Analises/MonitorizaSeca/Relatorio_Monitorizacao_<mes>_<ano>.pdf; gpp.pt robots: User-agent * disallows only Joomla system paths); not read beyond robots. Best official keyless source for all Portugal, but a PDF with free-text and tables, so extraction is brittle; no licence, so reuse of figures with attribution should be confirmed with APA.",
+   "how": null,
+   "licence": {
+    "name": "none stated",
+    "url": "https://apambiente.pt/",
+    "read_at": "2026-11-18"
+   }
+  },
+  {
+   "id": "snirh-apa",
+   "name": "SNIRH: Sistema Nacional de Informação de Recursos Hídricos (APA)",
+   "kind": "public portal",
+   "url": "https://snirh.apambiente.pt/",
+   "owner": "Agência Portuguesa do Ambiente (APA)",
+   "places": [
+    "portugal",
+    "algarve"
+   ],
+   "country": "PT",
+   "gives": [
+    "daily reservoir storage and level series, reservoir characteristics (capacity, levels) for the APA monitoring network",
+    "the primary official source of current reservoir levels"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "403 (refused our request; reported by data.b, not retried)",
+    "quote_lang": "en",
+    "page": "https://snirh.apambiente.pt/",
+    "read_at": "2026-11-18",
+    "basis": "refusal reported to us by data.b on 18 Nov 2026; respected, not retried from other addresses, agents, caches or mirrors. Not re-tested by this researcher."
+   },
+   "interface": "none (refused)",
+   "contact_channel": null,
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), for data.b@PrompTugal.dinis",
+   "notes": "GAP. The richest source is closed to us. Do not retry. Route round it only through sources APA itself publishes openly (the monthly PDF, dados.gov.pt), and say so. Other APA pages say 'Dados Sintetizados / Características das Albufeiras' live on SNIRH (dados.gov.pt dataset 'Atlas da Água - Albufeiras (Barragem)' description). If Dinis wants SNIRH, the route is to ask APA in writing for permission or an export (sniamb@apambiente.pt is the publisher contact shown on dados.gov.pt); a person sends it, not us.",
+   "how": null,
+   "refusals": [
+    "HTTP 403 at https://snirh.apambiente.pt/ (reported by data.b, 18 Nov 2026)"
+   ]
+  },
+  {
+   "id": "dadosgov-atlas-agua-albufeiras-barragem",
+   "name": "dados.gov.pt: Atlas da Água - Albufeiras (Barragem) (APA, dam coordinates)",
+   "kind": "open-data portal",
+   "url": "https://dados.gov.pt/datasets/atlas-da-agua-albufeiras-barragem",
+   "owner": "Agência Portuguesa do Ambiente (APA), published on dados.gov.pt",
+   "places": [
+    "portugal",
+    "algarve"
+   ],
+   "country": "PT",
+   "gives": [
+    "coordinates (WGS84 longitude and latitude, and ETRS89 PT-TM06 M and P) of 236 dams in the SNIRH monitoring network",
+    "for each: name, river, basin, district, concelho, freguesia, year in service, dam type, dam height, crest length, full storage level (NPA), maximum flood level (NMC), flooded area at NPA",
+    "includes all six Algarve dams: Arade, Funcho, Bravura, Odelouca, Odeleite, Beliche"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "Coordenadas da barragem das albufeiras que fazem parte da rede de monitorização do SNIRH, encontrando-se disponiveis em http://www.snirh.pt - Dados Sintetizados / Características das Albufeiras",
+    "quote_lang": "pt",
+    "page": "https://dados.gov.pt/datasets/atlas-da-agua-albufeiras-barragem",
+    "read_at": "2026-11-18",
+    "basis": "dataset description; licence field in the dados.gov.pt API is 'notspecified' (https://dados.gov.pt/api/1/datasets/60255d43454ae3a8b5284f07/, 2026-11-18). The shapefile's own metadata (.shp.xml in the zip) says 'no conditions apply' and 'no limitations'. The platform terms (https://dados.gov.pt/termos-de-utilizacao, 'Atualizado a 29.09.2026') say: 'Todos os dados carregados por organismos do estado são publicados ao abrigo de uma licença Creative Commons CC BY 4.0' ... 'exceto se houver uma especificação em contrário.'"
+   },
+   "interface": "Shapefile zip at https://sniambgeoviewer.apambiente.pt/GeoDocs/shpzips/AtAgua_Agsup_ALB_NET_Project_PC.zip (62 KB, HTTP 200, files dated 14 Nov 2026 inside; no key). dados.gov.pt API https://dados.gov.pt/api/1/datasets/<id>/ is open JSON, no key.",
+   "contact_channel": null,
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), for data.b@PrompTugal.dinis",
+   "notes": "Read 18 Nov 2026: dataset JSON, the zip (downloaded once into a scratch folder) and its attribute table. Static reference data (dataset 'modified' 2021-02-11 on dados.gov.pt, yet the zip's files are dated 14 Nov 2026, so the file is refreshed). Coordinates (long, lat): Odeleite -7.486446, 37.331100; Beliche -7.509227, 37.276414; Bravura -8.697778, 37.201749; Odelouca -8.474016, 37.288317; Funcho -8.382585, 37.262717; Arade -8.376265, 37.239474. Levels NPA/NMC (m): Odeleite 52.0/52.9, Beliche 52.0/52.5, Bravura 84.1/85.0, Odelouca 102.0/102.35, Funcho 96.0/96.8, Arade 61.0/62.5. It does NOT carry a capacity in hm3 for these dams (no such column; Odelouca's drainage-basin fields are zero); capacity must come from Águas do Algarve (three dams) or SNIRH (closed). Some text in the dbf is mis-encoded (accents) and needs repair. Licence: the register field says 'notspecified' while the platform terms default state-body data to CC BY 4.0 unless otherwise specified; the two do not clearly agree, so treat as 'open, attribute APA' and ask Dinis to confirm before publishing derived output. Fits the first build: pins and NPA for the six dams.",
+   "how": null,
+   "licence": {
+    "name": "not specified in dataset record; platform default for state bodies is CC BY 4.0 unless otherwise specified",
+    "url": "https://dados.gov.pt/termos-de-utilizacao",
+    "read_at": "2026-11-18"
+   }
+  },
+  {
+   "id": "dadosgov-albufeiras-aguas-publicas-pc",
+   "name": "dados.gov.pt: Albufeiras de águas públicas de Portugal continental (APA, INSPIRE polygons)",
+   "kind": "open-data portal",
+   "url": "https://dados.gov.pt/datasets/albufeiras-de-aguas-publicas-de-portugal-continental",
+   "owner": "Agência Portuguesa do Ambiente (APA), harvested from SNIG (DGT)",
+   "places": [
+    "portugal",
+    "algarve"
+   ],
+   "country": "PT",
+   "gives": [
+    "polygons of public-service reservoirs (shapes, not levels)"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "Acesso público sem restrições",
+    "quote_lang": "pt",
+    "page": "https://dados.gov.pt/api/1/datasets/6543c7fba0df3a88ea65fcad/ (harvest:legal_constraints: 'Acesso público sem restrições', 'Sem restrições')",
+    "read_at": "2026-11-18",
+    "basis": "dataset metadata; licence field 'notspecified'; publisher contact sniamb@apambiente.pt; updated 05.03.2026 (dados.gov.pt page)"
+   },
+   "interface": "Resources: shapefile zip (https://sniambgeoviewer.apambiente.pt/Geodocs/shpzips/vw_alb_aguas_publicas.zip), WMS and WFS at inspire.apambiente.pt.",
+   "contact_channel": null,
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), for data.b@PrompTugal.dinis",
+   "notes": "Read 18 Nov 2026: metadata only; the zip not downloaded. The inspire.apambiente.pt host answered 403 to https://inspire.apambiente.pt/robots.txt, so the WMS and WFS are a gap (refusal respected; not retried; the shapefile on the other host is the route if wanted). Boundaries only, no levels or volumes. Lower priority than the Atlas da Água dams file.",
+   "how": null,
+   "refusals": [
+    "HTTP 403 at https://inspire.apambiente.pt/robots.txt (18 Nov 2026, one request)"
+   ]
+  },
+  {
+   "id": "dadosgov-paap-nivel-pleno-armazenamento",
+   "name": "dados.gov.pt: Programas Especiais de Albufeiras (PAAP) - Nível de pleno armazenamento (APA)",
+   "kind": "open-data portal",
+   "url": "https://dados.gov.pt/datasets/programas-especiais-de-albufeiras-paap-nivel-de-pleno-armazenamento",
+   "owner": "Agência Portuguesa do Ambiente (APA)",
+   "places": [
+    "portugal",
+    "algarve"
+   ],
+   "country": "PT",
+   "gives": [
+    "polygon of each reservoir bed at the full storage level (NPA), a map outline, not a measurement of water held"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "Representa a área correspondente ao leito da albufeira delimitado pela cota do Nível de Pleno Armazenamento, definida para cada albufeira no projeto da respetiva barragem.",
+    "quote_lang": "pt",
+    "page": "https://dados.gov.pt/datasets/programas-especiais-de-albufeiras-paap-nivel-de-pleno-armazenamento",
+    "read_at": "2026-11-18",
+    "basis": "dataset description (created and modified 2026-07-07); licence field 'notspecified' in the API (https://dados.gov.pt/api/1/datasets/6a4c7dd6aa49a7655e288d14/, 2026-11-18)"
+   },
+   "interface": "Shapefile zip https://sniambgeoviewer.apambiente.pt/Geodocs/shpzips/D304_OrdenamentoTerritorio_PAAP_nivel_pleno_armazenamento.zip (not downloaded). dados.gov.pt API is open JSON, no key.",
+   "contact_channel": null,
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), for data.b@PrompTugal.dinis",
+   "notes": "Read 18 Nov 2026: metadata only. This is the 'nível de pleno armazenamento' dataset Dinis named: polygons, no coordinates of dams and no capacity in hm3. Covers only reservoirs with a PAAP. A related 2021 dataset 'PGRH Algarve - RH8 - Localização das barragens, açudes e charcas da RH8' is a PDF map only (https://dados.gov.pt/datasets/pgrh-algarve-rh8-localizacao-das-barragens-acudes-e-charcas-da-rh8, licence 'notspecified'), not machine-readable. dados.gov.pt has no dataset of current storage levels: queries for albufeiras, armazenamento, barragens, boletim, seca, SNIRH and Águas do Algarve (API, 18 Nov 2026) found only reference, planning and map data. dados.gov.pt robots.txt returned HTTP 500 on 18 Nov 2026 (so no robots rule could be read); the JSON API is the platform's documented interface.",
+   "how": null,
+   "licence": {
+    "name": "not specified in dataset record; platform default for state bodies is CC BY 4.0 unless otherwise specified",
+    "url": "https://dados.gov.pt/termos-de-utilizacao",
+    "read_at": "2026-11-18"
+   }
+  },
+  {
+   "id": "dgadr-albufeiras-hidroagricolas",
+   "name": "DGADR: storage in hydro-agricultural reservoirs (weekly)",
+   "kind": "public body",
+   "url": "https://www.dgadr.gov.pt/",
+   "owner": "Direção-Geral de Agricultura e Desenvolvimento Rural (DGADR)",
+   "places": [
+    "portugal"
+   ],
+   "country": "PT",
+   "gives": [
+    "weekly storage in reservoirs of hydro-agricultural schemes (irrigation), per the APA report"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "User-agent: ClaudeBot\nDisallow: /",
+    "quote_lang": "en",
+    "page": "https://www.dgadr.gov.pt/robots.txt",
+    "read_at": "2026-11-18",
+    "basis": "robots.txt (200, read 2026-11-18) disallows ClaudeBot, ChatGPT-User, CCBot, bingbot and many other named crawlers with 'Disallow: /'. No 'User-agent: *' group was seen in the part read. An access rule, not a reuse licence."
+   },
+   "interface": "Not found. The only trace is the APA monthly report's Tabela 1 ('Armazenamento nas Albufeiras dos Aproveitamentos Hidroagrícolas ... DGADR Semanal') and its section 5 (monthly PDF, covered by the APA entry).",
+   "contact_channel": null,
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), for data.b@PrompTugal.dinis",
+   "notes": "GAP. No public page for the weekly figures was found by search; the site disallows AI crawlers by name, so we do not read it. A request from our default curl user agent was reset (connection reset by peer); a request with an honest collector user agent returned the robots file once. Nothing else read. Irrigation reservoirs are mostly not the Algarve supply dams, so low priority.",
+   "how": null,
+   "refusals": [
+    "robots.txt disallows ClaudeBot and other named AI crawlers (18 Nov 2026)"
+   ]
+  },
+  {
+   "id": "edia-alqueva-dados",
+   "name": "EDIA: Dados Alqueva (level and volume of Alqueva)",
+   "kind": "public body",
+   "url": "https://sigims.edia.pt/DadosAlqueva/index.html",
+   "owner": "EDIA, Empresa de Desenvolvimento e Infra-estruturas do Alqueva, S.A.",
+   "places": [
+    "portugal"
+   ],
+   "country": "PT",
+   "gives": [
+    "level and stored volume of the Alqueva reservoir (Alentejo and Guadiana, not an Algarve dam)"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "User-agent: *\nDisallow: /\nAllow: /publico/",
+    "quote_lang": "en",
+    "page": "https://sigims.edia.pt/robots.txt",
+    "read_at": "2026-11-18",
+    "basis": "robots.txt (200, read 2026-11-18). The page /DadosAlqueva/ is not under /publico/, so it is disallowed. Main site https://www.edia.pt/robots.txt allows all ('Disallow:' empty) but links to the sigims page."
+   },
+   "interface": "ArcGIS JavaScript viewer (esri js 3.8), not a data feed; no API seen.",
+   "contact_channel": null,
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), for data.b@PrompTugal.dinis",
+   "notes": "GAP. Disallowed by robots. Honest note: I fetched the viewer's index.html once (7 KB, just the HTML shell, in the same command that read robots.txt, so before reading the rule); I read no data from it and deleted the copy. Not to be read again. EDIA also publishes news about Alqueva at https://www.edia.pt/pt/ (robots allows), but a news item is not a series.",
+   "how": null,
+   "refusals": [
+    "robots.txt Disallow: / except /publico/ on sigims.edia.pt"
+   ]
+  },
+  {
+   "id": "copernicus-edo-drought",
+   "name": "Copernicus European and Global Drought Observatories (EDO/GDO)",
+   "kind": "open data",
+   "url": "https://drought.emergency.copernicus.eu/",
+   "owner": "European Commission Joint Research Centre (Copernicus Emergency Management Service)",
+   "places": [
+    "eu",
+    "portugal"
+   ],
+   "country": "EU",
+   "gives": [
+    "drought indicators (SPI, SPEI, soil moisture, vegetation, combined drought indicator) as maps and downloads; not reservoir levels"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "users are granted free access to the data",
+    "quote_lang": "en",
+    "page": "https://drought.emergency.copernicus.eu/terms&conditions",
+    "read_at": "2026-11-18",
+    "basis": "terms page quoted by a page reader on 2026-11-18, which cut some sentences short; no page date shown; names no specific licence. Attribution notice asked for: 'Generated using Copernicus Emergency Management Service information [Year]'. robots.txt (https://drought.emergency.copernicus.eu/robots.txt, 200): 'User-agent: * / Disallow:' (nothing disallowed)."
+   },
+   "interface": "Map viewer, WMS and WCS services and downloads listed on the site; no reservoir series seen.",
+   "contact_channel": null,
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), for data.b@PrompTugal.dinis",
+   "notes": "Read 18 Nov 2026: home page and terms. It gives rainfall and soil-dryness context, not the volume of any named dam. Useful only as context for a drought story, not for this dataset. The page does not mention reservoirs. Terms do not address automated access.",
+   "how": null
+  },
+  {
+   "id": "london-datastore-london-reservoir-levels",
+   "name": "London Datastore: London Reservoir Levels (Thames Water via Environment Agency)",
+   "kind": "open-data portal",
+   "url": "https://data.london.gov.uk/dataset/london-reservoir-levels",
+   "owner": "Greater London Authority (maintainer); Thames Water via Environment Agency (author)",
+   "places": [
+    "london"
+   ],
+   "country": "GB",
+   "gives": [
+    "daily reservoir level as percent of usable or deployable capacity for the Lower Lee Group and the Lower Thames Group of London reservoirs, from 1 Jan 1989"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "Licence Open Government Licence v2 ... Update Frequency Monthly ... Table showing daily Reservoir levels in London since 1989 as percentage of usable or deployable capacity in the Lower Lee Group and Lower Thames Group reservoirs.",
+    "quote_lang": "en",
+    "page": "https://data.london.gov.uk/dataset/london-reservoir-levels",
+    "read_at": "2026-11-18",
+    "basis": "dataset page (Last Update 27 October 2026); licence link to https://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/. Site terms (https://data.london.gov.uk/about/terms-and-conditions/, no date): 'May use the data contained in this site for any purpose, providing it does not infringe the terms and conditions'; asks users to state that the GLA 'cannot warrant the quality or accuracy of the data'; says nothing on automated access. robots.txt (https://data.london.gov.uk/robots.txt, 200): group * disallows /debug, /manage/, /login, /logout; a long list of named AI crawlers, including ClaudeBot, anthropic-ai and Claude-Web, is disallowed only /search, /dataset?, /dataset/?, /publisher/*? and /topic/*?. Dataset pages and /download/ are not disallowed."
+   },
+   "interface": "CSV, no key: https://data.london.gov.uk/download/24ry5/778eefb5-8cef-4d16-a4c8-77dee7ce7e81/london_reservoir_levels.csv (359 KB, 13,787 data rows; columns date, month, year, lower_lee_group, lower_thames_group; whole-number percent; date as dd-Mon-yy). XLSX copy also offered. The tried JSON route https://data.london.gov.uk/api/datasets/london-reservoir-levels returned 404, so use the CSV link from the dataset page (the id in the path may change when the file is replaced).",
+   "contact_channel": null,
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), for data.b@PrompTugal.dinis",
+   "notes": "Read 18 Nov 2026: dataset page, terms, robots, and the CSV once (head and tail only inspected). Last row is 30-Sep-26: Lower Lee 69, Lower Thames 53. The file is refreshed monthly (27 Oct 2026 for September), so it lags by about 4 weeks, and on 18 Nov the October rows were not yet there. Values are whole percentages. Best keyless London source and the only machine-readable one found. Coverage is the London supply reservoirs only (the file names only the two groups, Lower Lee and Lower Thames; which reservoirs are in each was not read). Farmoor (Oxford, Thames Water) is not in it. Attribute: 'Contains public sector information licensed under the Open Government Licence v2.0', Thames Water via the Environment Agency, published by the GLA.",
+   "how": null,
+   "licence": {
+    "name": "Open Government Licence v2.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/",
+    "read_at": "2026-11-18"
+   }
+  },
+  {
+   "id": "ea-water-situation-reports-thames",
+   "name": "Environment Agency: Water situation reports, Thames area (monthly)",
+   "kind": "public body",
+   "url": "https://www.gov.uk/government/publications/water-situation-local-area-reports",
+   "owner": "Environment Agency (via GOV.UK)",
+   "places": [
+    "london"
+   ],
+   "country": "GB",
+   "gives": [
+    "end-of-month storage percent for Farmoor and the Lower Thames Reservoirs, with comparison to the long-term average",
+    "national reservoir stocks for England; rainfall, river flow and groundwater context"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "All content is available under the Open Government Licence v3.0, except where otherwise stated",
+    "quote_lang": "en",
+    "page": "https://www.gov.uk/government/publications/water-situation-local-area-reports",
+    "read_at": "2026-11-18",
+    "basis": "publication page (Last updated 17 November 2026), as quoted by a page reader; Crown copyright. Summary pages state 'All data are provisional and may be subject to revision.' robots.txt (https://www.gov.uk/robots.txt, 200): 'User-agent: * / Disallow: /*/print$ / Disallow: /search/all*'."
+   },
+   "interface": "HTML summary page per area per month plus a PDF full report (Thames Area October 2026: 28 pages, 3.16 MB). Summary: https://www.gov.uk/government/publications/water-situation-local-area-reports/thames-water-situation-october-2026-summary . PDF: https://assets.publishing.service.gov.uk/media/6afb08769be17c68c69ca8f6/Thames_Area_water_situation_report_October_2026.pdf . No key. A national equivalent: https://www.gov.uk/government/publications/water-situation-national-monthly-reports-for-england-2026 (October 2026 added 11 Nov 2026).",
+   "contact_channel": null,
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), for data.b@PrompTugal.dinis",
+   "notes": "Read 18 Nov 2026: the collection, area and national publication pages, and the Thames October summary (HTML), not the PDFs. Summary says (end of October 2026): Farmoor 74% of capacity, up from 69%, 15% below the long-term average; Lower Thames Reservoirs 51.9%, down from 53.1% (matches the London Datastore 53 for 30 Sep), 24% lower than average. Updated mid-month for the previous month, so about 2 to 3 weeks behind: fresher than the Datastore CSV. Free text in HTML, so extraction needs care. Page URLs follow a pattern per month but the asset PDF links carry hashes.",
+   "how": null,
+   "licence": {
+    "name": "Open Government Licence v3.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "read_at": "2026-11-18"
+   }
+  },
+  {
+   "id": "thames-water-reservoir-levels",
+   "name": "Thames Water: Water resources in your area (reservoir levels and rainfall)",
+   "kind": "public body",
+   "url": "https://www.thameswater.co.uk/about-us/performance/reservoir-levels-and-rainfall-figures",
+   "owner": "Thames Water Utilities Limited",
+   "places": [
+    "london"
+   ],
+   "country": "GB",
+   "gives": [
+    "end-of-month London reservoir percent full, with West London and Lee Valley split, as page text and infographic images"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "© 2001 - 2026 Thames Water Utilities Limited. All rights reserved.",
+    "quote_lang": "en",
+    "page": "https://www.thameswater.co.uk/about-us/performance/reservoir-levels-and-rainfall-figures",
+    "read_at": "2026-11-18",
+    "basis": "page footer as quoted by a page reader on 2026-11-18; page names no data licence and does not name a source for the figures. robots.txt (https://www.thameswater.co.uk/robots.txt, 200): 'User-agent: * / Allow: /' with some system paths disallowed (not this one)."
+   },
+   "interface": "HTML text plus two PNG images; no download, no API seen.",
+   "contact_channel": null,
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), for data.b@PrompTugal.dinis",
+   "notes": "Read 18 Nov 2026. Says (end of October 2026): 'Reservoirs in London were 56% full (52% full in West London and 74% full in Lee Valley)', below average. All rights reserved and no data licence, so use only as a cross-check or a cited quote; build on the OGL sources above. Thames Water's open-data portal (https://data.thameswater.co.uk/) answered 200 but its terms and contents were not read; not known to hold reservoir series.",
+   "how": null,
+   "licence": {
+    "name": "none stated (all rights reserved)",
+    "url": "https://www.thameswater.co.uk/about-us/performance/reservoir-levels-and-rainfall-figures",
+    "read_at": "2026-11-18"
+   }
+  },
+  {
+   "id": "ukceh-water-resources-portal",
+   "name": "UKCEH: UK Water Resources Portal",
+   "kind": "public portal",
+   "url": "https://eip.ceh.ac.uk/hydrology/water-resources/",
+   "owner": "UK Centre for Ecology and Hydrology (UKCEH)",
+   "places": [
+    "london",
+    "uk"
+   ],
+   "country": "GB",
+   "gives": [
+    "rainfall, river flow, groundwater and soil moisture; reservoir stocks are reported in the separate monthly UK Hydrological Summary, not confirmed on the portal"
+   ],
+   "status": "not-read",
+   "why": {
+    "quote": "Operation timed out after 25001 milliseconds with 0 bytes received",
+    "quote_lang": "en",
+    "page": "https://eip.ceh.ac.uk/robots.txt",
+    "read_at": "2026-11-18",
+    "basis": "two requests (robots.txt and the portal page) timed out on 18 Nov 2026; robots.txt of the parent site https://www.ceh.ac.uk/robots.txt answered 200 but is a different host and was not applied to eip.ceh.ac.uk. Terms not read."
+   },
+   "interface": "unknown; not reached",
+   "contact_channel": null,
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), for data.b@PrompTugal.dinis",
+   "notes": "GAP. Not reached; robots, terms and contents unread. A web search found it described as a prototype portal (2019 to 2020 sources) for rainfall, river flow, groundwater and soil moisture, with no sign that it tracks reservoir levels. UKCEH and BGS publish a monthly Hydrological Summary for the UK that reports reservoir stocks (not read). A static inventory of 273 reservoirs covering about 90% of UK storage (capacity, not levels) is at https://data.gov.uk/dataset/aa1e16e8-eded-4a60-8d1d-0df920c319b6/inventory-of-reservoirs-amounting-to-90-of-total-uk-storage (listed by search; terms not read). Retry once later; do not hammer.",
+   "how": null,
+   "refusals": []
   }
  ]
 }
