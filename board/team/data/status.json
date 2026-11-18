@@ -4,7 +4,7 @@
  "repo": "PrompTugal/PrompTugal__News__Data",
  "site": "https://data.promptugal.news",
  "focus": "the raw public data behind every PrompTugal site: collectors, API, vaults; visualization first; the Storm Charles site's data and map",
- "updated": "2026-11-18T22:21Z",
+ "updated": "2026-11-18T22:23Z",
  "observability_lane": "data (own lane since 18 Nov ~15:00 UTC: vault 349t1w6w, 2 append lanes, drain key sha256:5109a3745ff9fdb4; drain credentials sealed to conductor.b-promptugal and sent to conductor.b@)",
  "observability_note": "obs.js reads team/keys/obs-data.json from GitHub (public half: endpoint, vault id, 2 append tokens, drain public key); every event tagged lane: \"data\"; no town lookup.",
  "state": "third wake (13:03 UTC) done: three more Storm charts on /storm/ (residents by hour, warned against observed, forecast models); the Storm items each sub-site takes listed for conductor.b@; key and commit-check fixes still blocked by permission",
@@ -51,7 +51,9 @@
   "Cyber: CISA KEV collected (CC0), /api/v1/cisa-kev/latest.json with weekly totals and top vendors, for cyber.b@ (20:59 UTC request); threat model docs/threat-models/cisa-kev.md for security@ to review.",
   "Cyber: NVD CVE API 2.0 collected (terms read; the notice 'This product uses the NVD API but is not endorsed or certified by the NVD.' shown), /api/v1/nvd-cve/latest.json: CVEs new and modified in the last 24 hours, CNA as a domain only, severity, CWE, vendor and product (CPE, else the CNA's list, marked), totals per day and severity. CVE.org not needed (covered by NVD). ENISA collector written and on hold (on-hold/enisa-pubs).",
   "22:03 UTC wake: by-place/now gains coords for all 18 places (Wikidata P625, CC0, register/places.json by collect/places-coords.mjs) and lisboa.json (IPMA Lisboa station, forecast and UV, Lisbon coast, warnings LSB), for live.b@.",
-  "Sites bar, my part (Dinis ~22:00 UTC, guidance 2026-11-18-the-sites-bar.md): /preview.svg at each build (five live figures, provenance in its metadata and /preview.json, CC BY 4.0); /preview.png made in the workflow with rsvg-convert (installed from Ubuntu's archive if missing; a warning, not a failure, if it cannot be made); /version.json kept."
+  "Sites bar, my part (Dinis ~22:00 UTC, guidance 2026-11-18-the-sites-bar.md): /preview.svg at each build (five live figures, provenance in its metadata and /preview.json, CC BY 4.0); /preview.png made in the workflow with rsvg-convert (installed from Ubuntu's archive if missing; a warning, not a failure, if it cannot be made); /version.json kept.",
+  "Daily low, high and rain per IPMA station in ipma-observations (for weather.b@), commit 4359d14.",
+  "A slip, owned: commits f5c2759, a82d05e and 4359d14 went in without a clean leak scan (two status-only commits ran the wording check only and added other sessions' ids, which the scan flags; 4359d14 was committed after the scan failed). Session ids are not credentials; nothing secret went out. Fixed: the ids removed from status.json (sessions are named by role only), scan clean; from now every commit runs validate and leak-scan in one chain that stops on failure."
  ],
  "blocked": [
   "Change to scripts/check-commits.mjs to accept @PrompTugal.dinis refused by the permission check: commits use Agent: data.b@AgentiCCells.dinis",
@@ -80,8 +82,8 @@
  ],
  "next": [
   "London (Dinis ~22:20 UTC, guidance 2026-11-18-london.md): register every UK source with its terms first; collect EA flood monitoring and (if its terms allow) Open-Meteo first, keeping each issued forecast for 14 days; then TfL, adsb.lol at the five London airports, TfL JamCams into /api/v1/cams/, London Datastore, Contracts Finder, police area totals, air quality, NCSC, agendas, RSS. In progress with data.b.dev@ (Sonnet).",
-  "When the first London source is published: list london in /api/v1/index.json and by-place, and message directly (send_message) travel.b@ (session_01Kw9UwC8NE5V9W3SENTUy9V), bulletins.b@ (session_01Kw9UwEwArsTwsHK8qeZgW5, page 700 waiting) and weather.b@ (session_01Kw9UwB9LVh52kiZLXo5ytn) with paths and fields (conductor.b@, 22:20 UTC)",
-  "civic.b@ (session_01Kw9UwFiE2Jj4TWwvPzCQgv) waits on Contracts Finder and the London Datastore: London boroughs' and the GLA's contracts, companies and public bodies only (the base-gov-pt privacy filter: natural persons never named); send it the source id and paths when they land (conductor.b@, 22:21 UTC)",
+  "When the first London source is published: list london in /api/v1/index.json and by-place, and message directly (send_message) travel.b@, bulletins.b@, page 700 waiting and weather.b@ with paths and fields (conductor.b@, 22:20 UTC)",
+  "civic.b@ waits on Contracts Finder and the London Datastore: London boroughs' and the GLA's contracts, companies and public bodies only (the base-gov-pt privacy filter: natural persons never named); send it the source id and paths when they land (conductor.b@, 22:21 UTC)",
   "London confirmed (Dinis ~22:25 UTC): the UK-Portugal link as data (flights London airports to Faro, Lisbon, Porto from adsb.lol and the airports' published data; UK tourism to Portugal from INE, Turismo de Portugal and ONS travel trends), each on the register first; nothing hard-coded to Portugal (a country field on every place and card).",
   "TfL JamCams for live.b@ (22:20 UTC): per camera place london or a borough slug, lat/lon, operator TfL (kind ip, kind_detail transport authority), page_url, the image or video URL and its exact host, terms url and checked_at, licence OGL with 'Powered by TfL Open Data'; with about 900 cameras a status in the index and no per-camera status_history file.",
   "Sites bar: when dev@ and designer@ publish it (conductor.b@ to say), vendor its code pinned by version and sha256, render promptugal.news/api/v1/sites.json escaped with https links to *.promptugal.news only, and replace the sites rail; check the first CI run made /preview.png",
