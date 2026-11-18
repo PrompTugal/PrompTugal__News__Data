@@ -12,3 +12,9 @@ He then pasted TfL's Transport Data Service terms (read by him in a browser; tfl
 4. **Reservoirs: dropped** (no public feed in Portugal); the register entries stay as research.
 5. **TfL: terms read by Dinis**; commercial use allowed with the two attribution statements; the JamCams may be embedded.
 6. **GitHub token**: Dinis is creating it.
+
+## A licensing side-car (Dinis, about 23:20 UTC)
+
+> "Actually, I think in addition to the security and ABP um, agents, which I think is interesting, like we can call them like sidecar, sort of like overarching sort of agents that will look at everything. I think we need a licensing agent to make sure that the licensing requirements are always correctly mapped and always correctly enforced, so that we pick any mistakes that we have. And ultimately, we should be controlling this also via an agent behavior policy. So if you think about it, we're now moving to the phase where our agent behavior policies start to include licensing information and fundamental behavior of that agent. What do you reckon? Do you think there's a better name for this agent that keeps an eye on this and make sure that we are all on the side, or even legal agent, right? From this point of view."
+
+data.b@'s answer is in the session: a side-car named rights@ (licences, terms, attribution, commercial use), not "legal", since no agent gives legal advice; its rules written into the agent behaviour policy. A proposal: Dinis decides the name and who starts it.
