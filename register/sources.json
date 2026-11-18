@@ -1317,11 +1317,12 @@
     "read_at": "2026-11-18",
     "basis": "published legal notice, 1.2 Authorization"
    },
-   "interface": "Website publications; RSS not checked.",
+   "interface": "No RSS or JSON feed (/rss.xml, /publications/rss.xml, /publications/feed, /rss, /feeds/publications all 404; none linked from the page). The HTML list https://www.enisa.europa.eu/publications answers 200 (about 80 KB, 10 items with title, date, link, topics).",
    "feed": null,
    "contact_channel": "https://www.enisa.europa.eu/about-enisa/legal-notice",
-   "notes": "Fits aggregate-only use with attribution, unless a specific report says otherwise. Not a feed we have tested; nothing collected.",
-   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+   "notes": "Fits aggregate-only use with attribution, unless a specific report says otherwise. robots.txt (read 18 Nov 2026): Crawl-delay 10; /publications not disallowed; named AI crawlers are disallowed everywhere (our collector is code, no model, and not named; a person may want to confirm). Only title, date, link and topics are kept; no report text or images. On hold (data.b@, 18 Nov 2026): robots.txt disallows named AI crawlers; Dinis to decide. The collector sources/enisa-pubs is written and does not run.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@",
+   "how": "One GET of the first page of ENISA's publications list every 6 hours (sources/enisa-pubs/collect.mjs), 10 second crawl delay respected; keeps title, date, link on enisa.europa.eu and topics; served at /api/v1/enisa-pubs/; raw HTML kept in the vault copy. Asked by cyber.b@PrompTugal.dinis, 18 Nov 2026."
   },
   {
    "id": "euvd",
@@ -1361,19 +1362,20 @@
    "gives": [
     "CVE records with CVSS, CPE, CWE; CVE API 2.0"
    ],
-   "status": "not-read",
+   "status": "read",
    "why": {
-    "quote": "The software developed by NIST employees is not subject to copyright protection within the United States.",
+    "quote": "The NVD API is intended to be used to develop a service or services to search, display, analyze, retrieve, view and otherwise \"get\" information from NVD data.",
     "quote_lang": "en",
-    "page": "https://www.nist.gov/oism/copyrights",
+    "page": "https://nvd.nist.gov/developers/terms-of-use",
     "read_at": "2026-11-18",
-    "basis": "NIST copyright page (general NIST site, not an NVD-specific terms page)"
+    "basis": "NVD API Terms of Use (script-rendered page: text read from the strings in NVD's page bundle); notice to show: \"This product uses the NVD API but is not endorsed or certified by the NVD.\"; rate limits from https://nvd.nist.gov/developers/start-here: 5 requests in a rolling 30 seconds without a key"
    },
-   "interface": "CVE API 2.0 (services.nvd.nist.gov); rate limits not read.",
+   "interface": "CVE API 2.0 (https://services.nvd.nist.gov/rest/json/cves/2.0), answered 200 with lastModStartDate/lastModEndDate and pubStartDate/pubEndDate windows, 2000 a page; no key (public rate limit: 5 requests in a rolling 30 seconds).",
    "feed": null,
    "contact_channel": "https://nvd.nist.gov/",
-   "notes": "NVD's own developers and terms pages are script-rendered (only a shell was returned), so the API terms and rate limits were NOT read; check them before collecting. NIST's general page also says NIST gives no warranty on the data. Aggregate-only use (counts by vendor or severity) fits on this evidence; CVE records are not personal data.",
-   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
+   "notes": "Allows our use (a news site showing derived aggregates and per-CVE identifiers) with NVD's notice shown; modified content may not be attributed to the NVD, so our totals are labelled ours. NIST gives no warranty on the data. CVE records are not personal data. Aggregate-only on cyber.promptugal.news.",
+   "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@",
+   "how": "Every 6 hours, up to four GETs of the CVE API with no key and 7 seconds apart: CVEs modified in the last 24 hours (pages of 2000) and CVEs published since 00:00 UTC yesterday (sources/nvd-cve/collect.mjs); keeps id, dates, status, CNA, CVSS severity and score, CWE ids, vendor and product; no descriptions or references; served at /api/v1/nvd-cve/; raw kept in the vault copy. Asked by cyber.b@PrompTugal.dinis, 18 Nov 2026."
   },
   {
    "id": "cve-org",
@@ -1398,7 +1400,7 @@
    "interface": "CVE Services API and the CVE list on GitHub (CVEProject/cvelistV5).",
    "feed": null,
    "contact_channel": "https://www.cve.org/Legal/TermsOfUse",
-   "notes": "Allows aggregate reuse (and more) provided MITRE's copyright and licence are reproduced in any copy. Reading is via the source file, not the rendered page; the lead may want the rendered text confirmed.",
+   "notes": "covered by nvd-cve for now: NVD's CVE API record gives the CNA (sourceIdentifier) for every CVE and the vendor and product (NVD's CPE, else the CNA's own affected list in the same record) for about 98 percent of CVEs read on 18 Nov 2026. Allows aggregate reuse (and more) provided MITRE's copyright and licence are reproduced in any copy. Reading is via the source file, not the rendered page; the lead may want the rendered text confirmed.",
    "researched_by": "data.b.collector@PrompTugal.dinis (Sonnet), checked by data.b@"
   },
   {

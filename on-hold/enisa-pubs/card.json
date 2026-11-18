@@ -1,0 +1,71 @@
+{
+ "id": "enisa-pubs",
+ "title": "ENISA publications",
+ "what": "The newest publications on the European Union Agency for Cybersecurity's publications page: title, date, link and the topics ENISA gives, for cyber.promptugal.news. ENISA has no feed, so the HTML list (one page) is read. No report text is kept.",
+ "publisher": "ENISA (European Union Agency for Cybersecurity)",
+ "owner": "data.b@PrompTugal.dinis",
+ "collector": "sources/enisa-pubs/collect.mjs",
+ "source_home": "https://www.enisa.europa.eu/",
+ "reader_page": "https://www.enisa.europa.eu/publications",
+ "schedule": {
+  "cadence": "on hold",
+  "how": "On hold (data.b@, 18 Nov 2026): ENISA's robots.txt disallows a list of named AI crawlers everywhere. Our collector is plain code and not named, and /publications is allowed to everyone, but this site is built by AI agents: Dinis to decide whether reading is in the spirit of the file. Until then the collector does not run."
+ },
+ "terms": {
+  "summary": "ENISA legal notice 1.2: reproduction of material on its website is authorised if the source is acknowledged, unless stated otherwise; the logo only for press and media use with the source acknowledged. robots.txt allows /publications to our agent and asks for a 10 second crawl delay; it blocks named AI crawlers (we are code, no model, and not named). Not reviewed by a person.",
+  "page": "https://www.enisa.europa.eu/about-enisa/legal-notice",
+  "read_at": "2026-11-18",
+  "quote": "Reproduction of ENISA material published on this website is authorized, provided the source is acknowledged, unless it is stated otherwise.",
+  "quote_lang": "en",
+  "quotes": [
+   {
+    "page": "https://www.enisa.europa.eu/robots.txt",
+    "read_at": "2026-11-18",
+    "topic": "crawl delay",
+    "quote": "User-agent: * / Crawl-delay: 10"
+   },
+   {
+    "page": "https://www.enisa.europa.eu/robots.txt",
+    "read_at": "2026-11-18",
+    "topic": "paths",
+    "quote": "No Disallow line covers /publications (the file disallows /search/, sorting and facet query strings and, for named AI crawlers, everything)."
+   },
+   {
+    "page": "https://www.enisa.europa.eu/about-enisa/legal-notice",
+    "read_at": "2026-11-18",
+    "topic": "logo",
+    "quote": "The reproduction of the ENISA logo is permitted provided that the source is acknowledged and the logo is used for press and media related purposes. All other uses are prohibited unless permission is obtained."
+   }
+  ],
+  "republish": "yes: title, date and link, with ENISA named as the source; no logo; no report text or images",
+  "open_question": "The robots.txt blocks named AI crawlers; this collector is plain code that reads one page and uses no model, but a person may want to confirm that reading is in the spirit of ENISA's notice."
+ },
+ "api": {
+  "latest": "https://data.promptugal.news/api/v1/enisa-pubs/latest.json",
+  "reads": "https://data.promptugal.news/api/v1/enisa-pubs/reads.json",
+  "card": "https://data.promptugal.news/api/v1/enisa-pubs/card.json",
+  "openapi": "https://data.promptugal.news/api/v1/enisa-pubs/openapi.json",
+  "page": "https://data.promptugal.news/sources/enisa-pubs/"
+ },
+ "vault": null,
+ "split": {
+  "code": [
+   "the collector reads ENISA's publications page and keeps title, date, link and topics of each item",
+   "GitHub Actions runs it and deploys the site"
+  ],
+  "agents": [
+   "data.b@PrompTugal.dinis wrote the collector and card on 18 November 2026, at cyber.b@PrompTugal.dinis's request; terms read the same day by data.b.dev@"
+  ],
+  "people": [
+   "Dinis Cruz decided the cyber signals on 18 November 2026 (board/guidance/2026-11-18-people-blogs-cyber-and-simulated-payments.md); no person has checked the values (not reviewed)"
+  ]
+ },
+ "cost": {
+  "per_run_tokens": 0,
+  "per_run_model_cost_usd": 0,
+  "runner": "GitHub Actions on a public repository: no charge; one request a run (about 80 KB)",
+  "build_tokens": "not measured",
+  "note": "Code only: no model is called when the data is collected."
+ },
+ "since": "2026-11-18"
+}

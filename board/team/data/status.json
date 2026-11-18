@@ -4,7 +4,7 @@
  "repo": "PrompTugal/PrompTugal__News__Data",
  "site": "https://data.promptugal.news",
  "focus": "the raw public data behind every PrompTugal site: collectors, API, vaults; visualization first; the Storm Charles site's data and map",
- "updated": "2026-11-18T21:01Z",
+ "updated": "2026-11-18T21:11Z",
  "observability_lane": "data (own lane since 18 Nov ~15:00 UTC: vault 349t1w6w, 2 append lanes, drain key sha256:5109a3745ff9fdb4; drain credentials sealed to conductor.b-promptugal and sent to conductor.b@)",
  "observability_note": "obs.js reads team/keys/obs-data.json from GitHub (public half: endpoint, vault id, 2 append tokens, drain public key); every event tagged lane: \"data\"; no town lookup.",
  "state": "third wake (13:03 UTC) done: three more Storm charts on /storm/ (residents by hour, warned against observed, forecast models); the Storm items each sub-site takes listed for conductor.b@; key and commit-check fixes still blocked by permission",
@@ -48,7 +48,8 @@
   "19:03 UTC wake: status chart on /sources/cams/ (checked at 1100 and 375 px; long links in paragraphs and lists now wrap, ten pages checked with no sideways scroll). Library REQ-2026-0006 answered at 16:10 (corrections in discovery/youtube/websummit-2026.json), still open on the library's side.",
   "Cameras, second pass: 22 cameras in 11 places (19 MEO BeachCam by link only, never fetched since beachcam.meo.pt refused us; APL Tejo Live x2; Praia da Rocha). No camera is embeddable yet. Nothing found from APA, IPMA, ICNF, Docapesca, ANA, IP or Lisboa's câmara (its cameras are police CCTV).",
   "GitHub: sources/github-pt, 21 Portuguese organisations (each verified, verified_how), public repositories and latest releases through GitHub's REST API; no people, no contributors; text cleaned and untrusted; threat model docs/threat-models/github-pt.md. One real run (18:21 UTC): 850 repositories; this session's shared quota is spent, so CI does the next read.",
-  "Cyber: CISA KEV collected (CC0), /api/v1/cisa-kev/latest.json with weekly totals and top vendors, for cyber.b@ (20:59 UTC request); threat model docs/threat-models/cisa-kev.md for security@ to review."
+  "Cyber: CISA KEV collected (CC0), /api/v1/cisa-kev/latest.json with weekly totals and top vendors, for cyber.b@ (20:59 UTC request); threat model docs/threat-models/cisa-kev.md for security@ to review.",
+  "Cyber: NVD CVE API 2.0 collected (terms read; the notice 'This product uses the NVD API but is not endorsed or certified by the NVD.' shown), /api/v1/nvd-cve/latest.json: CVEs new and modified in the last 24 hours, CNA as a domain only, severity, CWE, vendor and product (CPE, else the CNA's list, marked), totals per day and severity. CVE.org not needed (covered by NVD). ENISA collector written and on hold (on-hold/enisa-pubs)."
  ],
  "blocked": [
   "Change to scripts/check-commits.mjs to accept @PrompTugal.dinis refused by the permission check: commits use Agent: data.b@AgentiCCells.dinis",
@@ -71,7 +72,8 @@
   "Dinis: ask Shadowserver, Cloudflare (Radar is CC BY-NC), RIPE NCC (RIPEstat bars commercial derivatives) and CNPD (commercial use excluded) for written permission on the record? outreach@ drafts, you send.",
   "Dinis: Windy's webcams API needs a key (you said yes, 18 Nov ~19:00 UTC). If you want it, make the key yourself and say so; I will ask for it through the secure credential form, never in chat. I do not sign up for services.",
   "Dinis: MEO BeachCam refused our fetches (403) and its terms (seen in search snippets) need MEO's consent for reproduction or retransmission. Do you want a consent and embed request drafted for a person to send to MEO? Also confirm the name to show: the privacy page names Wavenation, Conteúdos e Media Lda. as the operator.",
-  "Dinis: the GitHub collector runs on the anonymous quota (60 requests an hour), enough for every organisation's repositories and about 25 release reads a run. Passing the workflow's GITHUB_TOKEN to the collect step would read every release, but that token can deploy Pages and the collector reads untrusted text: your call. Also: may repository descriptions be shown beyond a short excerpt with a link?"
+  "Dinis: the GitHub collector runs on the anonymous quota (60 requests an hour), enough for every organisation's repositories and about 25 release reads a run. Passing the workflow's GITHUB_TOKEN to the collect step would read every release, but that token can deploy Pages and the collector reads untrusted text: your call. Also: may repository descriptions be shown beyond a short excerpt with a link?",
+  "Dinis: ENISA's robots.txt disallows named AI crawlers (ClaudeBot, GPTBot and others) everywhere; /publications is allowed to everyone and our collector is plain code, unnamed. This site is built by AI agents, so I have held it (on-hold/enisa-pubs). Read it, or leave it?"
  ],
  "next": [
   "Cyber for cyber.b@: NVD CVE API 2.0 after reading its API terms (nvd.nist.gov/developers/terms-of-use) and rate limits; CVE.org CNA and affected products if NVD lacks them; ENISA publications weekly; then security@ to review the cyber limits",

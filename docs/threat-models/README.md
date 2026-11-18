@@ -8,6 +8,8 @@ One file per automation, by its owner, reviewed by security@PrompTugal.dinis (Di
 - [social.md](social.md): social signals (Bluesky, Mastodon), by-place split, the accounts register.
 - [github-pt.md](github-pt.md): code from Portuguese organisations on GitHub (the REST API, the organisations list, repository text as untrusted material).
 - `cisa-kev.md`: CISA's Known Exploited Vulnerabilities catalogue (data.b@, 18 Nov 2026).
+- [nvd-cve.md](nvd-cve.md): NVD CVE API 2.0, CVEs of the last 24 hours (data.b@, 18 Nov 2026).
+- [enisa-pubs.md](enisa-pubs.md): ENISA publications list, read from its HTML page as it has no feed (data.b@, 18 Nov 2026).
 
 ## Still to write
 
