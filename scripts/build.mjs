@@ -1,7 +1,7 @@
 // Build: copy src/ to _site/, write the API and the pages from the cards and the collected data,
 // stamp the version, write version.json. Works when data/ is missing for some or all sources.
 // SITE_VERSION is set by CI only (v0.1.N); a local build says "dev".
-import { cpSync, rmSync, readdirSync, readFileSync, writeFileSync, statSync } from 'node:fs';
+import { cpSync, rmSync, readdirSync, readFileSync, writeFileSync, statSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { loadSources, loadPlaces, loadEvents, loadSocial, dataReadAt, write, writeJson, OUT } from './build/lib.mjs';
 import { buildApi, buildStormApi, readme } from './build/api.mjs';
@@ -62,12 +62,16 @@ const CADENCE_S = { hourly: 3600, 'every 6 hours': 21600, daily: 86400 };
 // stale_after_seconds of 13 hours as the guidance asks; collected_as keeps the source's own cadence from its card.
 const SERVED = c => c === 'daily' ? { name: 'daily', seconds: 86400, stale_after_seconds: 93600 } : { name: 'twice a day', seconds: 43200, stale_after_seconds: 46800 };
 const meta = (rel, read, cadence, schema) => { const f = join(OUT, rel); let o; try { o = JSON.parse(readFileSync(f, 'utf8')); } catch { return; }
-  const out = { data_read_at: read || o.read_at || o.provenance?.read_at || null, expected_cadence: cadence ? { ...SERVED(cadence), collected_as: cadence, why: 'data.b@ collects twice a day (07:03 and 18:03 Lisbon) since 19 Nov 2026' } : null, schema, ...o };
+  const out = { data_read_at: read || o.read_at || o.provenance?.read_at || null, expected_cadence: cadence ? { ...SERVED(cadence), collected_as: cadence, why: cadence === 'daily' ? 'read or asked once a day, at one of data.b@\'s two wakes (07:03 and 18:03 Lisbon)' : 'data.b@ collects twice a day (07:03 and 18:03 Lisbon) since 19 Nov 2026' } : null, schema, ...o };
   writeFileSync(f, JSON.stringify(out, null, 1) + '\n'); };
 for (const s of sources) meta(`api/v1/${s.id}/latest.json`, s.latest?.read_at || s.latest?.provenance?.read_at, s.card.schedule?.cadence, { openapi: `https://data.promptugal.news/api/v1/${s.id}/openapi.json`, path: `/api/v1/${s.id}/latest.json`, version: 'v1' });
 for (const f of readdirSync(join(OUT, 'api/v1/by-place/now')).filter(f => f.endsWith('.json') && f !== 'index.json')) meta(`api/v1/by-place/now/${f}`, null, 'hourly', { openapi: 'https://data.promptugal.news/api/v1/openapi.json', path: `/api/v1/by-place/now/${f}`, version: 'v1' });
-meta('api/v1/cameras/index.json', null, 'hourly', { openapi: 'https://data.promptugal.news/api/v1/openapi.json', path: '/api/v1/cameras/index.json', version: 'v1' });   // every JSON item carries its licence (Dinis, 18 Nov 2026)
 const walk = d => readdirSync(d).flatMap(f => { const p = join(d, f); return statSync(p).isDirectory() ? walk(p) : [p]; });
+// events.b@'s finding (fde585a): the derived files carry the cadence too: events, claims, history, social and cameras per place
+// are rebuilt at every wake (twice a day); discovery answers are asked once a day per place
+for (const [dir, cad] of [['api/v1/events/by-place', 'hourly'], ['api/v1/events/claims', 'hourly'], ['api/v1/events/past', 'hourly'], ['api/v1/history/events', 'hourly'], ['api/v1/history/weather', 'hourly'], ['api/v1/history', 'hourly'], ['api/v1/cameras/history', 'hourly'], ['api/v1/social/by-place', 'hourly'], ['api/v1/discovery/by-place', 'daily']])
+  if (existsSync(join(OUT, dir))) for (const f of walk(join(OUT, dir)).filter(f => f.endsWith('.json'))) { if (dir === 'api/v1/history' && f.slice(join(OUT, dir).length + 1).includes('/')) continue; meta(f.slice(OUT.length + 1), null, cad, { openapi: 'https://data.promptugal.news/api/v1/openapi.json', path: '/' + f.slice(OUT.length + 1), version: 'v1' }) }
+meta('api/v1/cameras/index.json', null, 'hourly', { openapi: 'https://data.promptugal.news/api/v1/openapi.json', path: '/api/v1/cameras/index.json', version: 'v1' });   // every JSON item carries its licence (Dinis, 18 Nov 2026)
 for (const f of walk(OUT)) {
   if (f.includes('/vendor/') || !/\.(html|js|css|json|md|txt|xml)$/.test(f)) continue;
   const s = readFileSync(f, 'utf8');

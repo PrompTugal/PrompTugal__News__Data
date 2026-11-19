@@ -10,7 +10,7 @@ export function buildRegister(sources) {
   const fromCards = sources.map(s => ({
     id: s.id, name: s.card.title, kind: s.id === 'storm-charles-archive' ? 'archive' : 'open-data API', url: s.card.source_home,
     owner: s.card.publisher, places: s.card.places || (s.id === 'adsb-faro' ? ['faro'] : ['portugal']), ...(s.card.country ? { country: s.card.country } : {}), gives: [s.card.what],
-    status: 'read', how: `${s.card.collector} reads ${s.card.source_home} (${s.card.schedule.cadence})`,
+    status: 'read', how: `${s.card.collector} reads ${s.card.source_home} (${s.card.schedule.cadence === 'daily' ? 'daily' : 'twice a day, at data.b@\'s wakes'}; the source's own cadence: ${s.card.schedule.cadence})`,
     terms: { summary: s.card.terms.summary, page: s.card.terms.page, read_at: s.card.terms.read_at },
     on_this_site: `${SITE}/sources/${s.id}/`, collector: s.card.collector,
   }));

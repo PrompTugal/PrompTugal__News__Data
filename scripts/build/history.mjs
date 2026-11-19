@@ -71,11 +71,14 @@ export function buildEventsHistory(sources) {
   let hist = L.history;
   if (!hist) { hist = {}; for (const e of Object.values(L.places || {}).flat()) if (e.url) hist[e.url] = { place: e.place, source: e.source, first: { at: e.read_at, name: e.name, startDate: e.startDate, endDate: e.endDate || null, venue: e.location?.name || null }, changes: [], last_seen: e.read_at, gone_at: null }; }
   const lic = {}; for (const e of Object.values(L.places || {}).flat()) if (e.url && e.license) { try { lic[new URL(e.url).host] = e.license } catch {} }
+  const inTowns = {};
   const claimsOf = place => {
     const out = [];
     for (const f of [`discovery/claims/by-place/${place}.json`, `discovery/claims/past/${place}.json`]) {
       if (!existsSync(f)) continue; const j = JSON.parse(readFileSync(f, 'utf8')), d = j.discovery || {};
-      for (const c of j.claims || []) out.push({ name: c.name, startDate: c.startDate, endDate: c.endDate || null, status: c.status || null,
+      // a claim is kept in the history of the place it names: a region's roll-up (algarve.json lists its towns' claims)
+      // is not repeated in the region's history (events.b@'s finding, fde585a, 19 Nov 2026); counted as in_towns
+      for (const c of j.claims || []) if (c.place && c.place !== place) { inTowns[place] = (inTowns[place] || 0) + 1 } else out.push({ name: c.name, startDate: c.startDate, endDate: c.endDate || null, status: c.status || null,
         evidence: (c.evidence || []).map(x => ({ url: x.url, host: x.host, readable: x.readable })), asked_at: c.asked_at || d.asked_at || null,
         model: c.model || d.model || null, via: c.via || d.via || null, answer_file: c.file || d.file || null, kept_in: f });
     }
@@ -93,7 +96,7 @@ export function buildEventsHistory(sources) {
     const f = { place, data_read_at: L.read_at || null, history_from: L.history_from || L.read_at || null,
       about: `Events in ${place}: each exactly as first listed by its organiser's page (first: name, dates, venue, and the read that first saw it), never overwritten; every later change seen (changes: field, from, to, at); last_seen; gone_at when it stopped being listed before its date. Events read every 6 hours, so a change is dated by the read that first saw it. Claims: what Perplexity (through OpenRouter) said would happen, kept as answered with its evidence links and the time asked, to be checked when the date comes. Not confirmed listings.`,
       sources: { events: { url: 'https://data.promptugal.news/api/v1/events-pt/latest.json', field: 'history' }, claims: { url: 'https://github.com/PrompTugal/PrompTugal__News__Data/tree/dev/discovery/claims', field: 'claims' } },
-      commit: process.env.GITHUB_SHA || 'local', counts: { events: events.length, changed: events.filter(e => e.changes.length).length, gone: events.filter(e => e.gone_at).length, claims: claims.length, claims_dropped_wording: allClaims.length - claims.length }, events: events.filter(e => !/—/.test(JSON.stringify(e))), claims };
+      commit: process.env.GITHUB_SHA || 'local', counts: { events: events.length, changed: events.filter(e => e.changes.length).length, gone: events.filter(e => e.gone_at).length, claims: claims.length, claims_in_towns_files: inTowns[place] || 0, claims_dropped_wording: allClaims.length - claims.length }, events: events.filter(e => !/—/.test(JSON.stringify(e))), claims };
     writeJson(`api/v1/history/events/${place}.json`, f);
     files.push({ place, ...f.counts, url: `https://data.promptugal.news/api/v1/history/events/${place}.json` });
   }
