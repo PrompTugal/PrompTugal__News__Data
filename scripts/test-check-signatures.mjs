@@ -84,6 +84,22 @@ const setup = name => { const r = repo(name); const base = r.commit('bootstrap',
   const s = join(tmp, 'shallow-clone'); execFileSync('git', ['clone', '-q', '--depth', '1', `file://${r.d}`, s]);
   const v = spawnSync('node', ['scripts/check-signatures.mjs', 'HEAD', 'HEAD'], { cwd: s, encoding: 'utf8', env: { ...noCI, SIGNING_TRUSTED_BASE: r.base } });
   expect('(6) a shallow checkout is refused', v, false, 'shallow checkout'); }
+// scripts/trusted-checks.sh (control 7, security@'s ruling of 14:11 UTC): where the checks come from
+const TRUST = join(dirname(CHECK), 'trusted-checks.sh');
+const trustRun = (r, before, after) => spawnSync('bash', [TRUST, before, after, join(tmp, `${r.d.split('/').pop()}-out`)], { cwd: r.d, encoding: 'utf8', env: noCI });
+const withChecks = name => { const r = setup(name); r.commit('adds the other checks', { key: A, files: { 'scripts/check-commits.mjs': '//\n', 'scripts/leak-scan.mjs': '//\n' } }); return r; };
+{ const r = withChecks('trust-ok'); const b = r.g('rev-parse', 'HEAD'); r.commit('next', { key: A, files: { 'x.txt': '1' } }); const v = trustRun(r, b, 'HEAD');
+  results.push({ name: '(7) the trusted copy comes from the commit before the push', pass: v.status === 0 && v.stdout.trim() === b, out: (v.stdout + v.stderr).trim() }); }
+{ const r = setup('trust-missing'); r.commit('next', { key: A, files: { 'x.txt': '1' } }); expect('(7) a trusted commit with no copy of a check fails', trustRun(r, r.base, 'HEAD'), false, 'has no copy of scripts/check-commits.mjs'); }
+{ const r = withChecks('trust-zero'); expect('(7) a zero id before the push (a new branch) fails', trustRun(r, '0'.repeat(40), 'HEAD'), false, 'a zero id'); }
+{ const r = withChecks('trust-force'); const old = r.commit('later dropped', { key: A, files: { 'x.txt': '1' } }); r.g('reset', '-q', '--hard', 'HEAD~1'); r.commit('rewritten', { key: A, files: { 'x.txt': '2' } });
+  expect('(7) a force push (before not an ancestor of after) fails', trustRun(r, old, 'HEAD'), false, 'force push'); }
+{ const r = setup('backdated'); r.g('checkout', '-q', '--orphan', 'o');
+  const env0 = { GIT_AUTHOR_DATE: '2001-01-01T00:00:00Z', GIT_COMMITTER_DATE: '2001-01-01T00:00:00Z' }; Object.assign(process.env, env0);
+  r.commit('backdated orphan, signed with its own key B', { key: B, files: { 'team/keys.json': keysWith(entry('b', B)) } }); for (const k of Object.keys(env0)) delete process.env[k];
+  r.g('checkout', '-q', 'main');
+  r.g('-c', 'gpg.format=ssh', '-c', `user.signingkey=${A.f}`, 'merge', '-q', '-S', '--no-ff', '--allow-unrelated-histories', '-X', 'ours', '-m', 'merge', '-m', `Agent: ${AGENT}\nClaude-Session: ${SESSION}`, 'o');
+  expect('(8) a backdated orphan merged in fails (skips go by ancestry, never by date)', r.check(r.base, 'HEAD'), false, 'no parent (an orphan)'); }
 
 rmSync(tmp, { recursive: true, force: true });
 const bad = results.filter(r => !r.pass);
