@@ -19,6 +19,11 @@ for (const kind of ['OPENSSH ', 'RSA ', 'EC ', 'DSA ', 'ENCRYPTED ', ''])
   expect(`a ${kind || 'plain '}private-key header in a status file fails`, 'board/team/data/status.json', `{"note": "${D}BEGIN ${kind}PRIVATE KEY${D}"}`, 'private key block');
 expect('a private-key header in the keys file fails too', 'team/keys.json', keys({ note: `${D}BEGIN OPENSSH PRIVATE KEY${D}` }), 'private');
 expect('an ssh public key in a status file fails', 'board/team/data/status.json', `{"note": "${sshLine}"}`, 'ssh public key outside');
+// every key type the rule must catch outside the published field (library.b@'s check, LIB-2026-060): the body is random base64
+// starting AAAA, built here
+const body = 'AAAA' + Buffer.from(Array.from({ length: 48 }, (_, i) => (i * 37 + 11) & 255)).toString('base64');
+for (const type of ['ssh-ed25519', 'ssh-rsa', 'ecdsa-sha2-nistp256', 'ecdsa-sha2-nistp384', 'ecdsa-sha2-nistp521', 'sk-ssh-ed25519@openssh.com', 'sk-ecdsa-sha2-nistp256@openssh.com'])
+  expect(`a ${type} public key in a status file fails`, 'board/team/data/status.json', `{"note": "${type} ${body}"}`, 'ssh public key outside');
 expect('an ssh public key in another field of the keys file fails', 'team/keys.json', keys({ other: sshLine }), 'ssh public key outside');
 expect('an ssh public key with a comment in the published field fails', 'team/keys.json', keys({ ssh_signing: { public_key: sshLine + ' me@host' } }), 'does not match its pattern');
 expect('the published field passes', 'team/keys.json', keys({}), null);
