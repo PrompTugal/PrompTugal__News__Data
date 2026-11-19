@@ -15,11 +15,12 @@ export function injectObsTz(out, reg) {
   const t = JSON.parse(raw), zones = {};
   const pin = reg && reg.obs_tz;
   // security@'s wording (19 Nov 2026 05:09 UTC): "<piece> <version> off: the registry names <newer>"; the piece is left out, never shipped unchecked
-  if (!pin || typeof pin.integrity !== 'string') return { off: `obs_tz ${t.version} off: the registry could not be read` };
-  // a newer version in the registry: this build carries no table (no country sent) until the new file is copied in, so the
-  // hourly data still deploys; the same version with other bytes is a changed file, and the build stops
-  if (pin.version && t.version !== pin.version) return { off: `obs_tz ${t.version} off: the registry names ${pin.version}` };
-  if (sri !== pin.integrity) throw new Error('obs tz table: src/assets/obs/tz-country.json does not match the registry\'s obs_tz.integrity; not building with a changed file');
+  if (!pin) return { off: `obs_tz ${t.version} off: the registry could not be read` };
+  // this version's own pin from the append-only obs_tz.versions; off (no country sent, the data still deploys) only when the
+  // registry no longer lists it; this version with other bytes is a changed file, and the build stops
+  const want = (pin.versions && pin.versions[t.version] && pin.versions[t.version].integrity) || (pin.version === t.version ? pin.integrity : null);
+  if (typeof want !== 'string') return { off: `obs_tz ${t.version} off: the registry no longer lists it (it names ${pin.version})` };
+  if (sri !== want) throw new Error('obs tz table: src/assets/obs/tz-country.json does not match the registry\'s obs_tz.integrity; not building with a changed file');
   for (const [z, cc] of Object.entries(t.zones || {})) if (/^[A-Za-z_]+(\/[A-Za-z0-9_+-]+){0,2}$/.test(z) && typeof cc === 'string' && /^[A-Z]{2}$/.test(cc)) zones[z] = cc;
   const src = readFileSync(js, 'utf8');
   if (!MARK.test(src)) throw new Error('obs tz table: the placeholder is missing from obs.js');
