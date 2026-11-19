@@ -4,10 +4,10 @@
  "repo": "PrompTugal/PrompTugal__News__Data",
  "site": "https://data.promptugal.news",
  "focus": "the raw public data behind every PrompTugal site: collectors, API, vaults; visualization first; the Storm Charles site's data and map",
- "updated": "2026-11-19T01:20Z",
+ "updated": "2026-11-19T01:45Z",
  "observability_lane": "data (own lane since 18 Nov ~15:00 UTC: vault 349t1w6w, 2 append lanes, drain key sha256:5109a3745ff9fdb4; drain credentials sealed to conductor.b-promptugal and sent to conductor.b@)",
  "observability_note": "obs.js reads team/keys/obs-data.json from GitHub (public half: endpoint, vault id, 2 append tokens, drain public key); every event tagged lane: \"data\"; no town lookup.",
- "state": "third wake (13:03 UTC) done: three more Storm charts on /storm/ (residents by hour, warned against observed, forecast models); the Storm items each sub-site takes listed for conductor.b@; key and commit-check fixes still blocked by permission",
+ "state": "Hourly collector since 19 Nov 01:30 UTC (Dinis, ~01:20 UTC: every run starts from a commit): each wake collects, commits the data signed and pushes; the Pages workflow has no timer and no collection.",
  "done": [
   "Masthead: chip 'Pay for what you read · free here', sites rail, /account/ with the reading graph",
   "IPMA pages outside the meter: no page here is metered",
@@ -68,16 +68,18 @@
   "sites bar 1.1.0 installed: the three files vendored unchanged in src/assets/sites-bar/1.1.0/ (sha256 checked against dev@'s and security@'s values; the build re-checks the first 16 hex, as the leak scan refuses longer hex runs), rendered at build from promptugal.news/api/v1/sites.json first in <body>, CSS and script from this host, the old rail removed; if the registry is down the build reuses the last bar (assets/sites-bar/last.txt), else publishes without one. /preview.svg is now 320 by 180 from designer@'s template (no script, no external reference); the 1200 by 630 card is /preview-card.svg, the source of /preview.png. Checked in Chromium at 1100 and 375 px.",
   "signed commits on (Dinis, 19 Nov ~01:10 UTC, guidance 2026-11-19-signed-commits-paid-search-and-free-embeds.md section 2): an Ed25519 key made in this session (ssh-keygen), its public half in team/keys.json (fingerprint sha256:7725c242dc2895cb) with the session; this repository signs with it (gpg.ssh.program set locally, not the environment's signer); scripts/check-signatures.mjs in release.sh and CI fails any new commit unsigned, signed by someone other than its Agent:, or naming another Claude-Session:; commits older than the check are skipped.",
   "data in the browser, data's part (Dinis ~01:13 UTC, guidance 2026-11-19-load-the-data-in-the-browser.md): every latest.json, by-place/now file and cameras/index.json carries data_read_at, expected_cadence and schema at a stable URL; GitHub Pages serves them with access-control-allow-origin: * and max-age 600.",
-  "data in the browser, data's part (Dinis ~01:13 UTC, guidance 2026-11-19-load-the-data-in-the-browser.md): every latest.json, by-place/now file and cameras/index.json carries data_read_at, expected_cadence and schema at a stable URL; GitHub Pages serves them with access-control-allow-origin: * and max-age 600."
+  "data in the browser, data's part (Dinis ~01:13 UTC, guidance 2026-11-19-load-the-data-in-the-browser.md): every latest.json, by-place/now file and cameras/index.json carries data_read_at, expected_cadence and schema at a stable URL; GitHub Pages serves them with access-control-allow-origin: * and max-age 600.",
+  "data_read_at on base-gov-pt per-place files and index (6a11922), for civic.b@",
+  "Every run starts from a commit (83b562f): data/ and the served raw files are in git; Pages workflow has no schedule and no collect step; YouTube read from this session with the environment key",
+  "EPSS on the register (first-epss), not read: terms unclear (FIRST Services Terms limit content to cybersecurity uses; EPSS not named there)"
  ],
  "blocked": [
   "Change to scripts/check-commits.mjs to accept @PrompTugal.dinis refused by the permission check: commits use Agent: data.b@AgentiCCells.dinis",
   "Five Storm files held back (leak scan, wording gate)"
  ],
  "asks": [
-  "Dinis: loading in the browser makes each page as fresh as our files, but our files are only as fresh as GitHub's runs of this repository's workflow, which collect the data. Scheduled runs fire rarely (as weather saw); tonight's runs came mostly from pushes. So the data itself goes stale when nobody pushes. Options: (1) accept it; (2) a scheduled task you own that starts the workflow hourly (needs a token to start a workflow, which you said not to make); (3) a session you own that collects on a schedule and pushes. Your call; I will not make a scheduled task.",
-  "Dinis: loading in the browser makes each page as fresh as our files, but our files are only as fresh as GitHub's runs of this repository's workflow, which collect the data. Scheduled runs fire rarely (as weather saw); tonight's runs came mostly from pushes. So the data itself goes stale when nobody pushes. Options: (1) accept it; (2) a scheduled task you own that starts the workflow hourly (needs a token to start a workflow, which you said not to make); (3) a session you own that collects on a schedule and pushes. Your call; I will not make a scheduled task.",
-  "Dinis: add the Google API key as a GitHub repository secret named GOOGLE_API_KEY (Settings, Secrets and variables, Actions), so the scheduled run reads YouTube; without it the live site never gets YouTube data (the key is only on this session's environment). Also, YouTube's terms bind whoever made the key's project (promptugal-news-apis): that was you, so you accepted them; if not, say who.",
+  "Dinis: EPSS (first.org/epss, asked by cyber.b@). No licence is named for the scores; attribution is requested. FIRST Services Terms of Use allow copying and distributing content for vulnerability disclosure, incident response or preventative cybersecurity uses, other uses need FIRST written permission, and EPSS is not named in them. May we read the daily file and show worldwide totals and a 30-day check against CISA KEV on the free data site (commercial use off), or ask FIRST first? outreach@ can draft.",
+  "Dinis: observed temperature for London needs the Met Office (DataHub, keyed). bulletins.b@ compares rain only until then. Get a key, or keep rain only?",
   "Dinis: the raw history vault. I do not hold vault 5qzpmf4m's key in this session. Proposal: I make one new vault for the raw history (each source in its own folder), seal its key to your PKI key, and you add two secrets, SG_SEND_ACCESS_TOKEN and DATA_VAULT_KEY (one vault, so singular; renamed from DATA_VAULT_KEYS). Send me the link to your public key on pki.sgit.ai and its fingerprint, so I seal to the right key.",
   "Dinis: a narrow leak-scan and wording-gate exception for verbatim data under storm/charles/, or keep the five held files on the Storm site only.",
   "Dinis: a new rekeyed vault for the Storm parts not in vault j2fq58kn (entities, graph, meteorology)? Its write key needs sealing to you, which needs the session key.",
@@ -90,13 +92,15 @@
   "Dinis: signatures made with the session key (pki-agent sign, .sig files) cannot be committed: the leak scan refuses their long encoded run. Allow a narrow path for .sig files (security@ or you), or keep signatures out of git.",
   "Dinis: Tavira council and Teatro das Figuras publish \"Todos os direitos reservados\" and no terms page; their events are shown as listings (name, date, venue, link) under your 14:55 UTC rule for câmaras and public bodies, with the take-down disclaimer. Say if you want them asked first.",
   "Dinis: CORDIS (EU projects with Portuguese participants) is CC BY 4.0, but its robots.txt disallows /data/, where the only bulk files are. Not collected. Ask CORDIS on the record, decide the open-data files may be read once a day despite robots, or skip CORDIS for the PRR portal and Portugal Ventures?",
-  "Dinis: library.b@ and videos.b@ need Web Summit replays with talk timestamps; that needs a YouTube Data API key (through the credential form), which you said you would decide.",
   "Dinis: ask Shadowserver, Cloudflare (Radar is CC BY-NC), RIPE NCC (RIPEstat bars commercial derivatives) and CNPD (commercial use excluded) for written permission on the record? outreach@ drafts, you send.",
   "Dinis: ENISA's robots.txt disallows named AI crawlers (ClaudeBot, GPTBot and others) everywhere; /publications is allowed to everyone and our collector is plain code, unnamed. This site is built by AI agents, so I have held it (on-hold/enisa-pubs). Read it, or leave it?",
   "Dinis (for dev@): GitHub Pages sets its own headers, so this site cannot add X-Content-Type-Options: nosniff to /preview.svg as the sites bar spec asks; Pages serves it as image/svg+xml. If nosniff is required, it needs a host that sets headers.",
   "Dinis (for security@): team/keys.json may hold a public key only as a PEM block, and the leak scan reads an SSH key line, a base64 fingerprint and a session id as long high-entropy strings. So the key is published as an Ed25519 PEM block, the fingerprint as 16 hex, and the session as the first 16 hex of its sha256 (each commit carries the full id in its Claude-Session: trailer). If the full session id should be in the file, the leak scan's allowlist needs an entry for team/keys.json, which is security@'s call, not mine."
  ],
  "next": [
+  "Hourly: collect, commit, push (each wake).",
+  "live.b@: TfL JamCams status history per place (/api/v1/cameras/history/<place>.json, changes only), now that every read is committed.",
+  "Track record for IPMA forecasts from /api/v1/history/ (the first prediction checked).",
   "London-Portugal flights: written, on hold (on-hold/adsb-london-portugal) until adsb.lol's route lookup returns routes; retry the lookup once a day by hand.",
   "EU, first builds: Eurostat tourism nights by country of residence (Algarve PT15, Lisbon PT17, London UKI), then ECMWF open forecasts (a Europe box to small JSON), then EEA air quality.",
   "Reservoirs, first builds: London Datastore reservoir levels (OGL), then the Atlas da Água dams layer for the Algarve map; Águas do Algarve and APA's PDF wait for Dinis.",
@@ -118,5 +122,33 @@
   "Discovery daily (in this session; CI has no key): confirm claims at readable sources; add the top gap hosts (algarvecircle.com, algarveatlas.com, cm-castromarim.pt, theportugalnews.com, ...) to the register with their terms read",
   "Watch the hourly schedule (fired once, 02:26 UTC)",
   "Cameras, second pass: each remaining municipality's own page, APA, IPMA, ICNF; a status chart on /sources/cams/"
+ ],
+ "duty_hourly": "At :03 Lisbon, day and night: pull, check board/HOLD.md, run node collect/run.mjs (NODE_USE_ENV_PROXY=1), commit data/ and the served raw files as a signed commit (never empty), push; an hour where a source failed is said here, not hidden.",
+ "collector_hosts": "All 13 hosts of the 6-hourly collectors and every hourly one answered from this session on 19 Nov 2026 01:25 to 01:35 UTC; none stays on the CI collector. agendalx.pt answers 520 (its own error, from anywhere).",
+ "predictions": [
+  {
+   "what": "IPMA city forecasts (min, max, rain probability), 19 places",
+   "kept": "forecast_history in /api/v1/ipma-city-forecasts/latest.json, every issue for 30 days, never overwritten",
+   "checked": "/api/v1/history/weather/<place>.json: d1, d2, d3 beside the station day (from 17 Nov)",
+   "track_record": "first: per place and per lead day, mean error of min and max, rain hit rate; planned"
+  },
+  {
+   "what": "Open-Meteo London forecasts",
+   "kept": "history in /api/v1/open-meteo-london/latest.json, 14 days",
+   "checked": "/api/v1/history/weather/london.json against EA gauge rain (rain only: no keyless observed temperature)",
+   "track_record": "planned after IPMA"
+  },
+  {
+   "what": "EPSS (FIRST) daily exploitation probability, for cyber.b@",
+   "kept": "not read: terms unclear, ask below",
+   "checked": "30 days later against CISA KEV additions (cyber.b@)",
+   "track_record": "waits on the terms"
+  },
+  {
+   "what": "IPMA and MeteoAlarm warnings (levels and times ahead)",
+   "kept": "latest only today",
+   "checked": "not yet: needs warnings kept as issued; next after the forecast track record",
+   "track_record": "planned"
+  }
  ]
 }
