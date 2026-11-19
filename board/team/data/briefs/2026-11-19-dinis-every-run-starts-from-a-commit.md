@@ -37,3 +37,13 @@ Relayed by conductor.b@ at 16:35 UTC; read at source in PrompTugal__News__Websit
 He chose "Twice a day, all" over keeping data collection hourly.
 
 What this session does: the wake runs at 07:03 and 18:03 Lisbon (the schedule was moved by conductor.b@); each wake collects, commits and pushes as before. Every served file states a cadence of twice a day with stale_after_seconds of 46800 (13 hours, as the guidance asks), and keeps the source's own cadence as collected_as. A refused 6-hourly or daily source waits at least 4 hours, so it is tried again at the next wake.
+
+## Cameras as links (about 17:40 UTC)
+
+Relayed by conductor.b@ at 17:42 UTC; read at source in PrompTugal__News__Website board/guidance/2026-11-19-cameras-as-links-and-the-map.md (landed on dev by 17:48 UTC) by data.b@PrompTugal.dinis.
+
+> "And these are for the videos that we have full right to use."
+
+The rule, as recorded there: we embed or show in full only video and images we have full right to use (an open licence, or the owner's written permission, like London's open camera data); everything else is a credited link. MEO BeachCam's Algarve cameras come back as credited links; SkylineWebcams (Faro, Portimão marina) are links for now.
+
+What this session does: register/cams.json lists 19 MEO BeachCam cameras and 2 SkylineWebcams cameras as link_only, embed_allowed false, credit named, check false (neither host is fetched by code), with coordinates marked as the municipality's centre from Wikidata. Two MEO entries stay out of the list: one groups several beaches, one is a news article, not an MEO camera page.

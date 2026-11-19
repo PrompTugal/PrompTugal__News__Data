@@ -30,7 +30,7 @@ export default async function (run) {
         const was = before.get(c.id), history = (was?.history || []).slice(-MAX_HISTORY)
         if (!history.length || history.at(-1).state !== up) history.push({ at: run.started, state: up, http: r.status || null })
         out.push({ id: c.id, name: c.name, place: c.place, municipality: c.municipality || null, lat: c.lat ?? null, lon: c.lon ?? null, coords_from: c.coords_from || null,
-            operator: c.operator, operator_kind: c.operator_kind, page: c.page, embed: c.embed || null, embed_allowed: c.embed_allowed === true, embed_basis: c.embed_basis || null, check_note: c.check_note || null, terms_page: c.terms_page || null, terms_summary: c.terms_summary || null,
+            operator: c.operator, operator_kind: c.operator_kind, page: c.page, credit: c.credit || c.operator || null, link_only: c.link_only === true || c.embed_allowed !== true, embed: c.embed || null, embed_allowed: c.embed_allowed === true, embed_basis: c.embed_basis || null, check_note: c.check_note || null, terms_page: c.terms_page || null, terms_summary: c.terms_summary || null,
             license: { name: 'the operator\'s terms', url: c.licence_link || c.terms_page || c.page, holder: c.operator },
             state: up, http: r.status || null, checked_at: run.started, since: history.at(-1).at, checks: (was?.checks || 0) + 1,
             up_checks: (was?.up_checks || 0) + (up === 'down' ? 0 : 1), history,

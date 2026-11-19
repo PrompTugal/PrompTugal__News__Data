@@ -3,6 +3,58 @@
  "source": "cams",
  "runs": [
   {
+   "at": "2026-11-19T17:49:13Z",
+   "finished": "2026-11-19T17:49:16Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "page-lisboa-tejo-live-cacilhas",
+     "url": "https://www.portodelisboa.pt/tejo-live",
+     "at": "2026-11-19T17:49:13Z",
+     "status": 200,
+     "bytes": 181620,
+     "sha256_prefix": "b25a6cf9b18b1dfa",
+     "changed": true
+    },
+    {
+     "name": "page-portimao-praia-da-rocha-ondas",
+     "url": "https://meteorologia.aemtg.pt/video",
+     "at": "2026-11-19T17:49:15Z",
+     "status": 200,
+     "bytes": 2745,
+     "sha256_prefix": "3710253342d218f4",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-19T17:49:02Z",
+   "finished": "2026-11-19T17:49:06Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "page-lisboa-tejo-live-cacilhas",
+     "url": "https://www.portodelisboa.pt/tejo-live",
+     "at": "2026-11-19T17:49:02Z",
+     "status": 200,
+     "bytes": 182678,
+     "sha256_prefix": "840634e17651ac24",
+     "changed": true
+    },
+    {
+     "name": "page-portimao-praia-da-rocha-ondas",
+     "url": "https://meteorologia.aemtg.pt/video",
+     "at": "2026-11-19T17:49:05Z",
+     "status": 200,
+     "bytes": 2745,
+     "sha256_prefix": "3710253342d218f4",
+     "changed": false
+    }
+   ]
+  },
+  {
    "at": "2026-11-19T16:03:57Z",
    "finished": "2026-11-19T16:04:01Z",
    "ok": 2,
