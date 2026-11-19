@@ -110,6 +110,14 @@ const withChecks = name => { const r = setup(name); r.commit('adds the other che
   r.g('checkout', '-q', 'main');
   r.g('-c', 'gpg.format=ssh', '-c', `user.signingkey=${A.f}`, 'merge', '-q', '-S', '--no-ff', '--allow-unrelated-histories', '-X', 'ours', '-m', 'merge', '-m', `Agent: ${AGENT}\nClaude-Session: ${SESSION}`, 'o');
   expect('(8) a backdated orphan merged in fails (skips go by ancestry, never by date)', r.check(r.base, 'HEAD'), false, 'no parent (an orphan)'); }
+{ const r = withChecks('symlink'); r.g('rm', '-q', 'scripts/leak-scan.mjs'); execFileSync('ln', ['-s', '/etc/hostname', join(r.d, 'scripts', 'leak-scan.mjs')]); const anchor = r.commit('a symlink on a checker path', { key: A });
+  expect('(9) a symlink on a checker path is refused', trustRun(r, anchor, 'HEAD'), false, 'not a plain file'); }
+// control 9, read from this repository's workflow: the verify job runs no pushed code, so a pushed build step that writes
+// GITHUB_ENV (which reaches only later steps of its own job) cannot change its result; deploy needs it
+{ const wf = readFileSync(join(dirname(CHECK), '..', '.github', 'workflows', 'pages.yml'), 'utf8');
+  const job = (wf.split('\n  verify:\n')[1] || '').split(/\n  [a-z-]+:\n/)[0];
+  const pushed = job.split('\n').filter(l => /(^|[\s;&|(])(node|bash|sh|"\$NODE")\s+(\.\/)?(scripts|collect|src|sources)\//.test(l) || /GITHUB_ENV|GITHUB_PATH/.test(l));
+  results.push({ name: '(9) the verify job runs no pushed code and reads no GITHUB_ENV, and deploy needs it', pass: job.length > 0 && pushed.length === 0 && /\n  deploy:\n    needs: \[[^\]]*\bverify\b/.test(wf), out: pushed.join(' | ') || (job ? 'deploy does not need verify' : 'no verify job') }); }
 
 rmSync(tmp, { recursive: true, force: true });
 const bad = results.filter(r => !r.pass);

@@ -50,32 +50,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Every commit since the last release carries an Agent trailer and is signed by that agent's published key
+      - name: The check tests (functional; the checks themselves run in the verify job, from the anchor)
         if: github.event_name != 'schedule'
-        # From the last release tag, not github.event.before: GitHub drops a pending run when a
-        # newer one queues, and the surviving run's "before" is the dropped push's head, so the
-        # dropped push's commits were never checked (specialist.code@ finding 3b).
-        env:
-          AFTER: ${{ github.sha }}
-          GH_TOKEN: ${{ github.token }}
-          REPO: ${{ github.repository }}
-        run: |
-          # control 7 (security@'s fourth ruling, 19 Nov 2026 ~14:17 UTC): the anchor is the commit of the last successful
-          # github-pages deployment, from GitHub's own record (a pusher cannot write it; tags and BEFORE are not trusted). The
-          # range checked is anchor..AFTER, so commits from a run GitHub dropped are covered, and the checks and their config
-          # run from the anchor's tree. scripts/trusted-checks.sh fails on a missing anchor, an anchor that is not an ancestor
-          # of AFTER, a shallow checkout or a missing copy; there is no fallback.
-          api() { curl -fsS -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" "https://api.github.com/repos/$REPO/$1"; }
-          anchor=""
-          for row in $(api "deployments?environment=github-pages&per_page=50" | jq -r '.[] | "\(.id):\(.sha)"'); do
-            if api "deployments/${row%%:*}/statuses?per_page=100" | jq -e 'any(.[]; .state == "success")' >/dev/null; then anchor="${row#*:}"; break; fi
-          done
-          echo "Anchor (last successful github-pages deployment): ${anchor:-none}"
-          trusted=$(bash scripts/trusted-checks.sh "$anchor" "$AFTER" "$RUNNER_TEMP/trusted")
-          echo "TRUSTED_CHECKS=$RUNNER_TEMP/trusted" >> "$GITHUB_ENV"
-          node "$RUNNER_TEMP/trusted/check-commits.mjs" "$trusted" "$AFTER"
-          node scripts/test-check-signatures.mjs
-          node "$RUNNER_TEMP/trusted/check-signatures.mjs" "$trusted" "$AFTER"
+        run: node scripts/test-check-signatures.mjs
       # No collection here: the data in data/ and vaults/<id>/latest/ is what data.b@'s wake read and committed, so the
       # same commit builds the same site (every-run-starts-from-a-commit, 19 Nov 2026). Every host the collectors read was
       # reached from data.b@'s session on 19 Nov 2026.
@@ -100,16 +77,72 @@ jobs:
           else echo "::warning::no SVG converter on the runner: preview.png not made"; fi
       - run: node scripts/validate.mjs
       - name: Leak scan (tracked files and the built site)
-        # the trusted copy decides (control 7); the pushed copy and its tests also run, as a functional check
-        run: node scripts/test-leak-scan.mjs && node scripts/leak-scan.mjs && node "$TRUSTED_CHECKS/leak-scan.mjs"
+        # functional; the leak scan that decides runs in the verify job, from the anchor (controls 7 and 9)
+        run: node scripts/test-leak-scan.mjs && node scripts/leak-scan.mjs
       - if: steps.mode.outputs.deploy == 'true'
         uses: actions/configure-pages@v5
       - if: steps.mode.outputs.deploy == 'true'
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
-  deploy:
+  # Control 9 (security@'s fifth ruling, 19 Nov 2026 ~14:20 UTC, from civic's finding): the signature, trailer and leak
+  # checks run in their own job, which runs no code from the pushed tree. It checks out, finds the anchor A in GitHub's own
+  # record (the last successful github-pages deployment; never git, tags or BEFORE), requires A to be an ancestor of the
+  # pushed commit, takes scripts/trusted-checks.sh and the checks from A's tree into RUNNER_TEMP, and runs them over A..AFTER.
+  # The build output reaches it only as data (the uploaded Pages artifact, unpacked with symlinks refused). Deploy needs it.
+  # A pushed build step that writes GITHUB_ENV cannot reach this job: each job has its own environment.
+  verify:
     needs: build
+    if: github.event_name != 'schedule'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: read
+      actions: read
+    env:
+      GIT_NO_REPLACE_OBJECTS: '1'
+      NODE_OPTIONS: ''
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/download-artifact@v4
+        with:
+          name: github-pages
+          path: ${{ runner.temp }}/pages
+      - name: Signatures, trailers and the leak scan, from the anchor
+        env:
+          AFTER: ${{ github.sha }}
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          unset NODE_OPTIONS
+          NODE="$(command -v node)"; case "$NODE" in /*) ;; *) echo "node is not at an absolute path" >&2; exit 1;; esac
+          api() { curl -fsS -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" "https://api.github.com/repos/$REPO/$1"; }
+          anchor=""
+          for row in $(api "deployments?environment=github-pages&per_page=50" | jq -r '.[] | "\(.id):\(.sha)"'); do
+            if api "deployments/${row%%:*}/statuses?per_page=100" | jq -e 'any(.[]; .state == "success")' >/dev/null; then anchor="${row#*:}"; break; fi
+          done
+          echo "Anchor (last successful github-pages deployment): ${anchor:-none}"
+          [ -n "$anchor" ] || { echo "no anchor: no successful github-pages deployment found" >&2; exit 1; }
+          git merge-base --is-ancestor "$anchor" "$AFTER" || { echo "the anchor is not an ancestor of the pushed commit" >&2; exit 1; }
+          mode=$(git ls-tree "$anchor" scripts/trusted-checks.sh | cut -c1-6)
+          [ "$mode" = 100644 ] || [ "$mode" = 100755 ] || { echo "the anchor's scripts/trusted-checks.sh is missing or not a plain file" >&2; exit 1; }
+          git show "$anchor:scripts/trusted-checks.sh" > "$RUNNER_TEMP/trusted-checks.sh"
+          trusted=$(bash "$RUNNER_TEMP/trusted-checks.sh" "$anchor" "$AFTER" "$RUNNER_TEMP/trusted")
+          "$NODE" "$RUNNER_TEMP/trusted/check-commits.mjs" "$trusted" "$AFTER"
+          "$NODE" "$RUNNER_TEMP/trusted/check-signatures.mjs" "$trusted" "$AFTER"
+          # the built site, as data: unpacked from the artifact, no symlink allowed
+          rm -rf _site && mkdir _site && tar --no-same-owner --no-same-permissions -xf "$RUNNER_TEMP/pages/artifact.tar" -C _site
+          if [ -n "$(find _site -type l | head -1)" ]; then echo "the built site holds a symlink" >&2; exit 1; fi
+          "$NODE" "$RUNNER_TEMP/trusted/leak-scan.mjs"
+  deploy:
+    needs: [build, verify]
     if: needs.build.outputs.deploy == 'true'
     runs-on: ubuntu-latest
     permissions:

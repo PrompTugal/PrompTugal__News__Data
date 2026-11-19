@@ -22,6 +22,8 @@ anchor=$(git rev-parse "$anchor^{commit}")
 mkdir -p "$out"
 for f in check-commits.mjs check-signatures.mjs leak-scan.mjs; do
   git cat-file -e "$anchor:scripts/$f" 2>/dev/null || fail "the anchor ${anchor:0:8} has no copy of scripts/$f"
+  mode=$(git ls-tree "$anchor" "scripts/$f" | cut -c1-6)   # control 9: a symlink on a checker path is refused
+  [ "$mode" = 100644 ] || [ "$mode" = 100755 ] || fail "the anchor's scripts/$f is not a plain file (mode $mode)"
   git show "$anchor:scripts/$f" > "$out/$f"
 done
 rm -f "$out/commit-exemptions.json"
