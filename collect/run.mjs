@@ -27,7 +27,13 @@ if (args.includes('--prev')) for (const c of pick) for (const f of ['latest.json
     const local = path.join(ROOT, 'data', c.id, f); if (fs.existsSync(local)) continue
     try { const r = await fetch(`${SITE}/api/v1/${c.id}/${f}`, { headers: { 'user-agent': UA }, signal: AbortSignal.timeout(20000) }); if (r.ok) writeJson(local, await r.json()) } catch {}
 }
-const due = c => c.schedule?.cadence === 'hourly' || (c.schedule?.cadence === 'every 6 hours' && ageOf(c.id) > SIX) || (c.schedule?.cadence === 'daily' && ageOf(c.id) > DAILY)
+// data.b@, 19 Nov 2026: a refusal is respected. A 6-hourly or daily source whose last run was refused (HTTP 429 or 403) waits a
+// whole cadence from that run before it is tried again, instead of being tried every hour (Open-Meteo answered 429 at 11:00,
+// about 12:05 and 13:08 UTC on 19 Nov). Its age is then the time since the refused run.
+const refusedAgo = id => { const r = readJson(path.join(ROOT, 'data', id, 'reads.json'), null)?.runs?.[0]; if (!r || !(r.reads || []).some(x => x.status === 429 || x.status === 403)) return Infinity
+    const t = Date.parse(r.at || ''); return Number.isFinite(t) ? Date.now() - t : Infinity }
+const waited = id => Math.min(ageOf(id), refusedAgo(id))
+const due = c => c.schedule?.cadence === 'hourly' || (c.schedule?.cadence === 'every 6 hours' && waited(c.id) > SIX) || (c.schedule?.cadence === 'daily' && waited(c.id) > DAILY)
 const todo = only.length ? pick : cards.filter(due)
 const summary = []
 for (const c of todo) {

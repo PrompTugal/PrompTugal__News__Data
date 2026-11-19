@@ -1,6 +1,6 @@
 {
  "place": "monchique",
- "read_at": "2026-11-19T12:17:23Z",
+ "read_at": "2026-11-19T13:08:53Z",
  "by": "collect/by-place-now.mjs (code, no model; data@PrompTugal.dinis), from this site's collected sources",
  "coords": {
   "lat": 37.31667,
@@ -23,14 +23,14 @@
   "id": 1210790,
   "km": 4,
   "reading": {
-   "at": "2026-11-19T11:00:00Z",
-   "temp_c": 10.5,
-   "humidity_pct": 88,
-   "wind_kmh": 32.8,
+   "at": "2026-11-19T12:00:00Z",
+   "temp_c": 11.1,
+   "humidity_pct": 81,
+   "wind_kmh": 30.2,
    "wind_dir_id": 8,
    "rain_mm": 0,
    "pressure_hpa": null,
-   "radiation_kj_m2": 1944.7
+   "radiation_kj_m2": 2202
   },
   "page": "https://www.ipma.pt/en/otempo/obs.superficie/",
   "source": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json"
@@ -115,8 +115,8 @@
  },
  "uv": {
   "place": "Faro",
-  "date": "2026-11-22",
-  "index": 3,
+  "date": "2026-11-23",
+  "index": 2.8,
   "page": "https://www.ipma.pt/en/otempo/prev.uv/",
   "source": "https://api.ipma.pt/open-data/forecast/meteorology/uv/uv.json"
  },
@@ -125,32 +125,32 @@
  "reads": {
   "observations": {
    "url": "https://data.promptugal.news/api/v1/ipma-observations/latest.json",
-   "at": "2026-11-19T12:15:25Z",
+   "at": "2026-11-19T13:08:18Z",
    "status": 200
   },
   "warnings": {
    "url": "https://data.promptugal.news/api/v1/ipma-warnings/latest.json",
-   "at": "2026-11-19T12:15:43Z",
+   "at": "2026-11-19T13:08:35Z",
    "status": 200
   },
   "forecasts": {
    "url": "https://data.promptugal.news/api/v1/ipma-city-forecasts/latest.json",
-   "at": "2026-11-19T12:13:48Z",
+   "at": "2026-11-19T13:06:40Z",
    "status": 200
   },
   "fire-risk": {
    "url": "https://data.promptugal.news/api/v1/ipma-fire-risk/latest.json",
-   "at": "2026-11-19T12:15:18Z",
+   "at": "2026-11-19T13:08:10Z",
    "status": 200
   },
   "uv": {
    "url": "https://data.promptugal.news/api/v1/ipma-uv/latest.json",
-   "at": "2026-11-19T12:15:40Z",
+   "at": "2026-11-19T13:08:33Z",
    "status": 200
   },
   "sea": {
    "url": "https://data.promptugal.news/api/v1/ipma-sea/latest.json",
-   "at": "2026-11-19T12:15:31Z",
+   "at": "2026-11-19T13:08:23Z",
    "status": 200
   },
   "adsb": {
