@@ -157,6 +157,7 @@ For the sites and agents that read data.promptugal.news as a source (the other P
 
 ## Changelog
 
+- 2026-11-19: added \`api/v1/history/index.json\` and \`api/v1/history/weather/<place>.json\` (observed daily low, high, rain beside the forecasts issued 1, 2 and 3 days before); \`ipma-city-forecasts\` gains \`forecast_history\` (30 days).
 - 2026-11-19: every \`latest.json\`, every \`by-place/now/<place>.json\` and \`cameras/index.json\` gain \`data_read_at\`, \`expected_cadence\` {name, seconds} and \`schema\` {openapi, path, version}, for pages that load the data in the browser; fields only added.
 - 2026-11-18, late: every licence gains \`commercial_use\` (allowed | not allowed | per item | unclear) and \`api/v1/sources/commercial.json\` lists every source's; TfL JamCams embeddable (TfL's terms read by Dinis); \`api/v1/eurostat-tourism/\` added; \`api/v1/ea-flood/latest.json\` gains \`rain_gauges\` and \`daily_rain\`.
 - 2026-11-18, night: London, the first place beyond Portugal (country GB): \`api/v1/ea-flood/\` (Environment Agency flood warnings and Thames levels, hourly), \`api/v1/open-meteo-london/\` (3-day forecast with 14 days of issued forecasts kept), \`api/v1/tfl-jamcams/\`, and \`api/v1/by-place/now/london.json\`; places gain \`country\` on the register.
