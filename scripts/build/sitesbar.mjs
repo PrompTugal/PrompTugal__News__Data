@@ -1,13 +1,13 @@
-// The PrompTugal.news sites bar, v1.2.0 (security@'s go, 19 Nov 2026 07:03 UTC: the one switcher Dinis asked for at 03:18; earlier 1.1.1, redirects
+// The PrompTugal.news sites bar, v1.2.1 (security@'s go, 19 Nov 2026 07:54 UTC: 1.2.0's CSS scoped to nav.ptsb; 1.2.0 the one switcher Dinis asked for at 03:18, redirects
 // refused) (Dinis, 18 Nov 2026, PrompTugal__News__Website board/guidance/2026-11-18-the-sites-bar.md;
 // built by dev@ to designer@'s design; security@ post-reviewed the exact files). The three files are vendored unchanged in
-// src/assets/sites-bar/1.2.0/ (the full pin checked at copy and at every build); the registry is read at build, rendered here as
+// src/assets/sites-bar/1.2.1/ (the full pin checked at copy and at every build); the registry is read at build, rendered here as
 // HTML, and the bar's own script on each page (served from this host) adds the pop-ups. data.b@PrompTugal.dinis.
 import { readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
-import { render } from '../../src/assets/sites-bar/1.2.0/sites-bar-render.mjs';
+import { render } from '../../src/assets/sites-bar/1.2.1/sites-bar-render.mjs';
 
-export const SITES_BAR = '1.2.0';
+export const SITES_BAR = '1.2.1';
 // The pins: the registry's bar.integrity (SRI form, sha256-<base64> of the whole file), read at every build and checked
 // whole, never a part of it (security@'s go and the registry's install note, 19 Nov 2026). They are not copied into this
 // file: this site's leak scan refuses long base64 runs outside team/keys.json, and its rules are not ours to loosen.

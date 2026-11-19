@@ -49,7 +49,7 @@ function toMd(b) {
   }
 }
 
-// (the sites rail was replaced by the sites bar 1.1.0, 19 Nov 2026; 1.1.1 since 19 Nov 02:15 UTC, 1.2.0 since 07:20 UTC)
+// (the sites rail was replaced by the sites bar 1.1.0, 19 Nov 2026; 1.1.1 since 19 Nov 02:15 UTC, 1.2.0 since 07:20 UTC, 1.2.1 since 07:55 UTC)
 const SITES = [['https://weather.promptugal.news/', 'Weather'], ['https://civic.promptugal.news/', 'Civic'], ['https://startups.promptugal.news/', 'Startups'], ['https://travel.promptugal.news/', 'Travel'], ['https://data.promptugal.news/', 'Data']];
 const NAV = [['/sources/', 'Sources'], ...(existsSync('data/events/by-place/index.json') ? [['/events/', 'Events']] : []), ['/storm/', 'Storm'], ['/api/', 'API'], ['/api/swagger/', 'Explorer'], ['/vaults/', 'Vaults'], ['/pipeline/', 'Pipeline'], ['/how/', 'How'], ['/about/', 'About']];
 
@@ -71,7 +71,7 @@ export function page({ path, title, description, h1, blocks, readAt, head = '', 
 <link rel="icon" href="/assets/brand/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/brand/brand-tokens.css">
 <link rel="stylesheet" href="/assets/site.css">
-${BAR ? '<link rel="stylesheet" href="/assets/sites-bar/1.2.0/sites-bar.css">\n<script src="/assets/sites-bar/1.2.0/sites-bar.js" defer></script>\n' : ''}
+${BAR ? '<link rel="stylesheet" href="/assets/sites-bar/1.2.1/sites-bar.css">\n<script src="/assets/sites-bar/1.2.1/sites-bar.js" defer></script>\n' : ''}
 <link rel="alternate" type="text/markdown" href="${twin}">
 <script src="/assets/top/top.js" defer></script>
 <script src="/assets/obs/obs.js" defer></script>
