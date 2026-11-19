@@ -11,6 +11,8 @@ import { buildDiscovery } from './build/discovery.mjs';
 import { stampLicences, commercialTable } from './build/licence.mjs';
 import { buildCameras } from './build/cameras.mjs';
 import { buildPreview } from './build/preview.mjs';
+import { sitesBar } from './build/sitesbar.mjs';
+import { setSitesBar } from './build/render.mjs';
 import { buildAttribution } from './build/attribution.mjs';
 import { buildPages } from './build/pages.mjs';
 const version = process.env.SITE_VERSION || 'dev';
@@ -18,6 +20,8 @@ const builtAt = new Date().toISOString();
 rmSync(OUT, { recursive: true, force: true });
 cpSync('src', OUT, { recursive: true });
 
+const bar = await sitesBar(); setSitesBar(bar.html);   // sites bar 1.1.0 (Dinis, 18 Nov 2026)
+console.log(`sites bar: ${bar.html ? 'rendered' : 'left out'} (${bar.from})`);
 const sources = loadSources();
 const places = loadPlaces();
 const readAt = dataReadAt(sources);
@@ -35,7 +39,8 @@ writeJson('api/v1/events/index.json', { about: 'Events: read from official agend
 writeJson('api/v1/social/index.json', { about: 'Social signals: organisations\' public posts as links and metadata, never the text.', latest: '/api/v1/social/latest.json', by_place: '/api/v1/social/by-place/<place>.json', accounts: 'register/social-accounts.json in the repository', card: '/api/v1/social/card.json' });
 const register = buildRegister(sources);
 const discovery = buildDiscovery();
-buildPreview({ sources, builtAt });   // /preview.svg for the sites bar (Dinis, 18 Nov 2026 ~22:00 UTC)
+buildPreview({ sources, builtAt });
+if (bar.html) write('assets/sites-bar/last.txt', bar.html + '\n');   // the fallback a later build uses if the registry is down   // /preview.svg for the sites bar (Dinis, 18 Nov 2026 ~22:00 UTC)
 buildAttribution({ sources, events, discovery });   // the attribution ledger for the simulated payouts (Dinis, 18 Nov 2026)
 const pages = buildPages({ sources, places, readAt, index, storm, events, register, discovery });
 

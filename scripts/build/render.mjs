@@ -7,6 +7,9 @@ const VIZ = ['viz.css', 'wind.js', 'viz.js'].every(f => existsSync(`src/assets/v
 const LABS = ['storm-labs.css', 'storm-labs.js'].every(f => existsSync(`src/assets/viz/${f}`)) ? '<link rel="stylesheet" href="/assets/viz/storm-labs.css">\n<script src="/assets/viz/storm-labs.js" defer></script>\n' : '';
 const FLIGHTMAP = ['flightmap.css', 'flightmap.js'].every(f => existsSync(`src/assets/viz/${f}`)) ? '<link rel="stylesheet" href="/assets/viz/flightmap.css">\n<script src="/assets/viz/flightmap.js" defer></script>\n' : '';
 
+// the sites bar (scripts/build/sitesbar.mjs): set once per build, put first in <body>
+let BAR = '';
+export const setSitesBar = h => { BAR = h || ''; };
 export const esc = s => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 export const inline = s => esc(s)
   .replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (_, t, u) => `<a href="${/^(https?:\/\/|\/|#|mailto:)/i.test(u.replace(/&amp;/g, '&')) ? u : '#'}">${t}</a>`)   // AppSec 18 Nov 2026: only http(s), site-relative, #, mailto links; a fetched URL such as javascript: becomes #
@@ -46,7 +49,7 @@ function toMd(b) {
   }
 }
 
-// the sites rail, as on promptugal.news (PrompTugal__News__Website assets/top/top.tmpl, .em-net)
+// (the sites rail was replaced by the sites bar 1.1.0, 19 Nov 2026)
 const SITES = [['https://weather.promptugal.news/', 'Weather'], ['https://civic.promptugal.news/', 'Civic'], ['https://startups.promptugal.news/', 'Startups'], ['https://travel.promptugal.news/', 'Travel'], ['https://data.promptugal.news/', 'Data']];
 const NAV = [['/sources/', 'Sources'], ...(existsSync('data/events/by-place/index.json') ? [['/events/', 'Events']] : []), ['/storm/', 'Storm'], ['/api/', 'API'], ['/api/swagger/', 'Explorer'], ['/vaults/', 'Vaults'], ['/pipeline/', 'Pipeline'], ['/how/', 'How'], ['/about/', 'About']];
 
@@ -68,11 +71,13 @@ export function page({ path, title, description, h1, blocks, readAt, head = '', 
 <link rel="icon" href="/assets/brand/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/brand/brand-tokens.css">
 <link rel="stylesheet" href="/assets/site.css">
+${BAR ? '<link rel="stylesheet" href="/assets/sites-bar/1.1.0/sites-bar.css">\n<script src="/assets/sites-bar/1.1.0/sites-bar.js" defer></script>\n' : ''}
 <link rel="alternate" type="text/markdown" href="${twin}">
 <script src="/assets/top/top.js" defer></script>
 <script src="/assets/obs/obs.js" defer></script>
 ${VIZ}${hasMap ? FLIGHTMAP : ''}${hasLabs ? LABS : ''}${head}</head>
 <body>
+${BAR}
 <a class="skip" href="#main">Skip to the content</a>
 <header class="mast">
 <div class="mast-in">
@@ -81,7 +86,7 @@ ${VIZ}${hasMap ? FLIGHTMAP : ''}${hasLabs ? LABS : ''}${head}</head>
 </div>
 <div class="mast-meta"><span class="ver">Version __VERSION__</span><span>${esc(stamp)}</span><a class="pay-chip" href="/account/" title="Pay for what you read. Pages built on IPMA data are free here, outside the meter, until Dinis decides; the reading account is at ${ACCOUNT}">Pay for what you read · <b id="pay-balance">free here</b></a></div>
 </header>
-<nav class="em-net" aria-label="The PrompTugal.news sites"><span>Also from PrompTugal.news</span>${SITES.map(([u, l]) => `<a href="${u}"${l === 'Data' ? ' aria-current="page"' : ''}>${l}</a>`).join('')}</nav>
+
 <main id="main">
 ${skipH1 ? '' : `<h1>${esc(h1 || title)}</h1>\n`}${body}
 </main>

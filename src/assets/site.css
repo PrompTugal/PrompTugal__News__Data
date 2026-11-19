@@ -38,11 +38,6 @@ table.kv th:first-child, table.kv td:first-child { width: 11rem; font-weight: 60
 .pay-chip { display: inline-flex; gap: 4px; align-items: center; border: 1px solid var(--green); border-radius: 999px; padding: 1px 10px; text-decoration: none; color: var(--green); white-space: nowrap; }
 .pay-chip b { font-weight: 700; }
 .pay-chip:hover { background: var(--panel); }
-.em-net { position: fixed; right: 0; top: 50%; transform: translateY(-50%); z-index: 20; display: flex; flex-direction: column; gap: 2px; padding: 8px 6px; background: var(--paper); border: 1px solid var(--rule); border-right: 0; border-radius: 10px 0 0 10px; font: 600 12px var(--font-interface, Arial, sans-serif); }
-.em-net span { writing-mode: vertical-rl; transform: rotate(180deg); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: var(--green); align-self: center; margin-bottom: 6px; }
-.em-net a { color: var(--ink); text-decoration: none; padding: 5px 6px; border-radius: 6px; border: 0; }
-.em-net a:hover, .em-net a:focus-visible, .em-net a[aria-current] { background: var(--panel); }
-@media (max-width: 1180px) { .em-net { position: static; transform: none; flex-direction: row; flex-wrap: wrap; justify-content: center; border: 0; border-bottom: 1px solid var(--rule); border-radius: 0; padding: 4px 16px; } .em-net span { writing-mode: horizontal-tb; transform: none; margin: 0 6px 0 0; } }
 .nr-graph { width: 100%; height: auto; background: var(--paper); border: 1px solid var(--rule); border-radius: 10px; }
 .nr-graph .g-link { stroke: var(--rule); stroke-width: 1; } .nr-graph .g-read { stroke: var(--red); stroke-width: 1.2; stroke-dasharray: 3 3; opacity: .6; }
 .nr-graph .g-concept { fill: var(--paper); stroke: var(--ink); stroke-width: 1.5; } .nr-graph .g-label { font: 600 12px var(--font-interface, Arial, sans-serif); fill: var(--ink); }

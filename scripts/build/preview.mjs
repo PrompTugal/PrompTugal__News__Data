@@ -33,7 +33,25 @@ ${figures.map(cell).join('\n')}
 <text class="f" x="60" y="${H - 30}">Built ${esc(at)} from this site's own files. Licence: CC BY 4.0; each source keeps its own terms.</text>
 </svg>
 `;
-  write('preview.svg', svg);
+  write('preview-card.svg', svg);   // 1200 by 630, the source of /preview.png for social cards
+  // /preview.svg for the sites bar: 320 by 180, designer@'s template (PrompTugal__News__Website design/sites-bar/preview-template.svg.txt),
+  // no script, no external reference, system fonts only
+  const top3 = [figures[1], figures[2], figures[3]];
+  const small = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" width="320" height="180" role="img" aria-label="${esc('data.promptugal.news: open data for Portugal, London and Europe')}">
+  <rect width="320" height="180" rx="6" fill="#f6f3ec"/>
+  <rect x="0" y="0" width="320" height="4" fill="#1f6f43"/>
+  <text x="16" y="30" font-family="IBM Plex Mono, monospace" font-size="10.5" letter-spacing="1.2" fill="#666860">DATA · NOW</text>
+  <text x="16" y="84" font-family="Newsreader, Georgia, serif" font-size="46" fill="#121317">${esc(n(figures[0].value))}</text>
+  <text x="16" y="104" font-family="IBM Plex Sans, Arial, sans-serif" font-size="12" fill="#3a3b40">sources read</text>
+  <text x="176" y="72" font-family="Newsreader, Georgia, serif" font-size="26" fill="#121317">${esc(n(top3[0].value))}</text>
+  <text x="176" y="88" font-family="IBM Plex Sans, Arial, sans-serif" font-size="11" fill="#3a3b40">contracts, 90 days</text>
+  <text x="176" y="120" font-family="Newsreader, Georgia, serif" font-size="26" fill="#121317">${esc(n(top3[2].value))}</text>
+  <text x="176" y="136" font-family="IBM Plex Sans, Arial, sans-serif" font-size="11" fill="#3a3b40">new CVEs, 24 hours</text>
+  <line x1="16" y1="150" x2="304" y2="150" stroke="#d8d4cb"/>
+  <text x="16" y="168" font-family="IBM Plex Mono, monospace" font-size="10" fill="#666860">read ${esc(at)} · CC BY 4.0</text>
+</svg>
+`;
+  write('preview.svg', small);
   writeJson('preview.json', prov);
   return figures.length;
 }

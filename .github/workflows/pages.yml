@@ -86,10 +86,10 @@ jobs:
       - run: node scripts/build.mjs
         env:
           SITE_VERSION: ${{ steps.version.outputs.version }}
-      - name: The preview for social cards (/preview.png from /preview.svg; skipped where the runner has no converter)
+      - name: The preview for social cards (/preview.png from /preview-card.svg; skipped where the runner has no converter)
         run: |
           command -v rsvg-convert >/dev/null || (sudo apt-get -qq update && sudo apt-get -qq install -y librsvg2-bin) >/dev/null 2>&1 || true
-          if command -v rsvg-convert >/dev/null; then rsvg-convert -w 1200 -h 630 _site/preview.svg -o _site/preview.png || echo "::warning::preview.png not made"
+          if command -v rsvg-convert >/dev/null; then rsvg-convert -w 1200 -h 630 _site/preview-card.svg -o _site/preview.png || echo "::warning::preview.png not made"
           else echo "::warning::no SVG converter on the runner: preview.png not made"; fi
       - run: node scripts/validate.mjs
       - name: Leak scan (tracked files and the built site)
