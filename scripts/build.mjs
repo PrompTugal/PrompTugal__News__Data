@@ -45,7 +45,16 @@ buildAttribution({ sources, events, discovery });   // the attribution ledger fo
 const pages = buildPages({ sources, places, readAt, index, storm, events, register, discovery });
 
 writeJson('api/v1/sources/commercial.json', commercialTable(sources));   // which data a paid site may use (Dinis, 18 Nov 2026 ~23:10 UTC)
-const licensed = stampLicences(OUT);   // every JSON item carries its licence (Dinis, 18 Nov 2026)
+const licensed = stampLicences(OUT);
+// data in the browser (Dinis, 19 Nov 2026 ~01:13 UTC, PrompTugal__News__Website board/guidance/2026-11-19-load-the-data-in-the-browser.md):
+// every latest file at a stable URL carries data_read_at, its expected cadence (so a page can mark it stale) and its schema
+const CADENCE_S = { hourly: 3600, 'every 6 hours': 21600 };
+const meta = (rel, read, cadence, schema) => { const f = join(OUT, rel); let o; try { o = JSON.parse(readFileSync(f, 'utf8')); } catch { return; }
+  const out = { data_read_at: read || o.read_at || o.provenance?.read_at || null, expected_cadence: cadence ? { name: cadence, seconds: CADENCE_S[cadence] || null } : null, schema, ...o };
+  writeFileSync(f, JSON.stringify(out, null, 1) + '\n'); };
+for (const s of sources) meta(`api/v1/${s.id}/latest.json`, s.latest?.read_at || s.latest?.provenance?.read_at, s.card.schedule?.cadence, { openapi: `https://data.promptugal.news/api/v1/${s.id}/openapi.json`, path: `/api/v1/${s.id}/latest.json`, version: 'v1' });
+for (const f of readdirSync(join(OUT, 'api/v1/by-place/now')).filter(f => f.endsWith('.json') && f !== 'index.json')) meta(`api/v1/by-place/now/${f}`, null, 'hourly', { openapi: 'https://data.promptugal.news/api/v1/openapi.json', path: `/api/v1/by-place/now/${f}`, version: 'v1' });
+meta('api/v1/cameras/index.json', null, 'hourly', { openapi: 'https://data.promptugal.news/api/v1/openapi.json', path: '/api/v1/cameras/index.json', version: 'v1' });   // every JSON item carries its licence (Dinis, 18 Nov 2026)
 const walk = d => readdirSync(d).flatMap(f => { const p = join(d, f); return statSync(p).isDirectory() ? walk(p) : [p]; });
 for (const f of walk(OUT)) {
   if (f.includes('/vendor/') || !/\.(html|js|css|json|md|txt|xml)$/.test(f)) continue;
