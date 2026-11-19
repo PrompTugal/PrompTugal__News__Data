@@ -7,7 +7,7 @@
 // The keys: team/keys.json entries with an "ssh" block {public_key_pem (Ed25519, SPKI PEM: the only key form the leak scan
 // allows there), principals, session_sha256 (first 16 hex of the session id's sha256), from}; a key's "superseded" time
 // ends it for commits after that time. Prints OK or lists each failing commit and exits 1.
-import { execFileSync } from 'node:child_process';
+import { execFileSync, spawnSync } from 'node:child_process';
 import { readFileSync, writeFileSync, mkdtempSync, rmSync } from 'node:fs';
 import { join } from 'node:path';
 import { tmpdir } from 'node:os';
@@ -41,10 +41,9 @@ for (const c of commits) {
     checked++
     const agent = git('log', '-1', '--format=%(trailers:key=Agent,valueonly)', c).split('\n')[0].trim();
     const session = git('log', '-1', '--format=%(trailers:key=Claude-Session,valueonly)', c).split('\n')[0].trim();
-    let out = '';
-    try { out = execFileSync('git', ['-c', `gpg.ssh.allowedSignersFile=${allowed}`, '-c', 'gpg.ssh.program=ssh-keygen', 'verify-commit', '--raw', c], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }); }
-    catch (e) { out = String(e.stderr || '') + String(e.stdout || ''); }
-    out += '';
+    // git prints the verdict on stderr, on success as on failure
+    const v = spawnSync('git', ['-c', `gpg.ssh.allowedSignersFile=${allowed}`, '-c', 'gpg.ssh.program=ssh-keygen', 'verify-commit', '--raw', c], { encoding: 'utf8' });
+    const out = String(v.stderr || '') + String(v.stdout || '');
     const good = /Good "git" signature for (\S+) with \S+ key (SHA256:[A-Za-z0-9+/]+)/.exec(out) || /Good "git" signature for (\S+)/.exec(out);
     const short = c.slice(0, 8);
     if (!good) { failures.push(`${short}: not signed by a key in team/keys.json`); continue }
