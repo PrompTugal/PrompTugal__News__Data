@@ -822,7 +822,10 @@
   function link (href, text) { var a = H('a', '', text); a.href = /^(https?:\/\/|\/)/i.test(href) ? href : '#'; a.rel = 'noopener'; return a }
   function host (u) { try { return new URL(u).host } catch (e) { return u } }
   function getJSON (url) {
-    return fetch(url, { headers: { Accept: 'application/json' } }).then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); var lm = r.headers.get('Last-Modified'); return r.json().then(function (j) { return { j: j, lm: lm } }) })
+    // own host only, no credentials, redirects refused (security@'s points for data in the browser, 19 Nov 2026 ~01:30 UTC)
+    var u; try { u = new URL(url, location.href) } catch (e) { return Promise.reject(new Error('bad address')) }
+    if (u.origin !== location.origin && u.origin !== 'https://data.promptugal.news') return Promise.reject(new Error('not this site'))
+    return fetch(u.href, { headers: { Accept: 'application/json' }, credentials: 'omit', redirect: 'error', referrerPolicy: 'no-referrer' }).then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); var lm = r.headers.get('Last-Modified'); return r.json().then(function (j) { return { j: j, lm: lm } }) })
   }
   function caption (fig, spec, res, src) {
     var cap = H('figcaption'), d = res[0].j, prov = d && d.provenance, raw = /\/raw\//.test(src)
@@ -839,6 +842,9 @@
       if (spec.srcLinks) spec.srcLinks.forEach(function (l, i) { if (i || spec.by) cap.appendChild(document.createTextNode(', ')); cap.appendChild(link(l[1], l[0])) })
       cap.appendChild(document.createTextNode('. '))
     }
+    // the licence travels with the loaded data: the chart's own wording, or else the file's license (security@'s low point, 19 Nov 2026)
+    var fl = d && d.license
+    if (!spec.licence && fl && typeof fl.name === 'string') { cap.appendChild(document.createTextNode('Licence: ' + fl.name + (fl.holder ? ' (' + fl.holder + ')' : '') + (fl.commercial_use ? '; commercial use ' + fl.commercial_use : '') + '. ')); if (fl.url) { cap.appendChild(link(fl.url, 'Licence terms')); cap.appendChild(document.createTextNode('. ')) } }
     if (spec.licence) { cap.appendChild(document.createTextNode(spec.licence.text + ' ')); if (spec.licence.url) { cap.appendChild(link(spec.licence.url, 'Licence terms')); cap.appendChild(document.createTextNode('. ')) } }
     var read = fig.getAttribute('data-read') || spec.read || (d && (d.read_at || (prov && prov.read_at)))
     var ms = read ? T(read) : (res[0].lm ? Date.parse(res[0].lm) : NaN)

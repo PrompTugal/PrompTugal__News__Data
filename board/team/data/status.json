@@ -4,10 +4,10 @@
  "repo": "PrompTugal/PrompTugal__News__Data",
  "site": "https://data.promptugal.news",
  "focus": "the raw public data behind every PrompTugal site: collectors, API, vaults; visualization first; the Storm Charles site's data and map",
- "updated": "2026-11-19T01:38Z",
+ "updated": "2026-11-19T02:14Z",
  "observability_lane": "data (own lane since 18 Nov ~15:00 UTC: vault 349t1w6w, 2 append lanes, drain key sha256:5109a3745ff9fdb4; drain credentials sealed to conductor.b-promptugal and sent to conductor.b@)",
  "observability_note": "obs.js reads team/keys/obs-data.json from GitHub (public half: endpoint, vault id, 2 append tokens, drain public key); every event tagged lane: \"data\"; no town lookup.",
- "state": "Hourly collector since 19 Nov 01:30 UTC (Dinis, ~01:20 UTC: every run starts from a commit): each wake collects, commits the data signed and pushes; the Pages workflow has no timer and no collection.",
+ "state": "Hourly wake 02:03 UTC: data collected and committed (4c8c1aa); security@'s rulings applied: signed-commit controls with tests (f68beb3), sites bar 1.1.1 (e8d9a54), licence beside every chart.",
  "done": [
   "Masthead: chip 'Pay for what you read · free here', sites rail, /account/ with the reading graph",
   "IPMA pages outside the meter: no page here is metered",
@@ -73,7 +73,12 @@
   "Every run starts from a commit (83b562f): data/ and the served raw files are in git; Pages workflow has no schedule and no collect step; YouTube read from this session with the environment key",
   "EPSS on the register (first-epss), not read: terms unclear (FIRST Services Terms limit content to cybersecurity uses; EPSS not named there)",
   "History licences per rights@ R8, read times on forecast rows, events history per place (432dc8c)",
-  "Clock slip owned: messages sent 01:30 to 01:38 UTC on 19 Nov carried guessed times (up to 02:10 UTC) and this file said updated 01:45Z while it was 01:3x; times now come from date -u"
+  "Clock slip owned: messages sent 01:30 to 01:38 UTC on 19 Nov carried guessed times (up to 02:10 UTC) and this file said updated 01:45Z while it was 01:3x; times now come from date -u",
+  "02:03 UTC wake: 11 hourly sources read and committed (4c8c1aa)",
+  "Signed-commit check meets security@'s five controls: merges included, full session URL compared exactly; 12 tests in scripts/test-check-signatures.mjs run in CI and release.sh (f68beb3)",
+  "team/keys.json: full session URL, ssh line and fingerprint; leak scan exempts them only by field and exact pattern, a listed field that does not match fails (f68beb3)",
+  "Sites bar 1.1.1, files checked whole against the registry's bar.integrity at every build; no bar rather than an unchecked one (e8d9a54)",
+  "Charts: each caption shows the loaded file's licence beside its read time; fetches own host only, no credentials, redirects refused"
  ],
  "blocked": [
   "Change to scripts/check-commits.mjs to accept @PrompTugal.dinis refused by the permission check: commits use Agent: data.b@AgentiCCells.dinis",
