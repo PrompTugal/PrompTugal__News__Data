@@ -19,7 +19,10 @@
 // (7) this file is run from the last release's copy (git show <before>:scripts/check-signatures.mjs), never from the pushed
 //     tree, so a push cannot change the check that judges it: see .github/workflows/pages.yml and scripts/release.sh. A change
 //     to this file takes effect from the push after the one that brings it.
-// SIGNING_TRUSTED_BASE overrides the pinned hash for scripts/test-check-signatures.mjs's throwaway repositories only.
+// SIGNING_TRUSTED_BASE overrides the pinned hash for scripts/test-check-signatures.mjs's throwaway repositories only; it is
+// refused when CI or GITHUB_ACTIONS is set (security@'s low finding, 14:05 UTC), so in CI the base changes only by a reviewed
+// commit to this file. Control 6 also refuses a shallow checkout, which cannot tell an orphan from a cut-off history
+// (security@'s ruling, 14:02 UTC; CI checks out with fetch-depth 0). Control 8: only the base's ancestors are skipped.
 // The keys: team/keys.json entries with an "ssh" block {public_key_pem (Ed25519, SPKI PEM: the only key form the leak scan
 // allows there), principals, session_sha256 (first 16 hex of the session id's sha256), from}; a key's "superseded" time
 // ends it for commits after that time. Prints OK or lists each failing commit and exits 1.
@@ -43,6 +46,8 @@ const commits = lines(git('rev-list', before ? `${before}..${after}` : after));
 // an Ed25519 SPKI PEM to the OpenSSH line ssh-keygen reads: string "ssh-ed25519", then the 32-byte key, each length-prefixed
 const toSsh = pem => { const x = Buffer.from(createPublicKey(pem).export({ format: 'jwk' }).x, 'base64url'); const t = Buffer.from('ssh-ed25519'); const len = n => { const b = Buffer.alloc(4); b.writeUInt32BE(n); return b }; return 'ssh-ed25519 ' + Buffer.concat([len(t.length), t, len(x.length), x]).toString('base64') };
 const sha16 = s => createHash('sha256').update(s).digest('hex').slice(0, 16);
+if (process.env.SIGNING_TRUSTED_BASE && (process.env.CI || process.env.GITHUB_ACTIONS)) { console.error('check-signatures: SIGNING_TRUSTED_BASE is for test repositories and is refused in CI'); process.exit(1); }
+if (tryGit('rev-parse', '--is-shallow-repository') !== 'false') { console.error('check-signatures: a shallow checkout cannot tell an orphan from a cut-off history; fetch the whole history'); process.exit(1); }
 const TRUSTED_BASE = process.env.SIGNING_TRUSTED_BASE || 'c243ef7346eec8e726c0b61532ee8f2e9feddd80';
 const base = tryGit('rev-parse', '--verify', '--quiet', `${TRUSTED_BASE}^{commit}`);
 if (!base) { console.error(`check-signatures: the trusted base ${TRUSTED_BASE.slice(0, 8)} is not in this repository`); process.exit(1); }

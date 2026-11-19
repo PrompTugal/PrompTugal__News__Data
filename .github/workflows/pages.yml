@@ -56,12 +56,18 @@ jobs:
           AFTER: ${{ github.sha }}
         run: |
           last=$(git describe --tags --abbrev=0 --match "v${VERSION_BASE}.*" "$AFTER" 2>/dev/null || true)
-          node scripts/check-commits.mjs "${last:-$BEFORE}" "$AFTER"
+          trusted="${last:-$BEFORE}"
+          # control 7 (security@, 19 Nov 2026 14:02 and 14:05 UTC): the security checks and their config run from the last
+          # release's copy, never from the pushed tree, so a push cannot change the checks that judge it; a change to them takes
+          # effect from the next push. A missing copy fails the step; there is no fallback to the pushed one.
+          mkdir -p "$RUNNER_TEMP/trusted"
+          for f in check-commits.mjs check-signatures.mjs leak-scan.mjs; do git show "$trusted:scripts/$f" > "$RUNNER_TEMP/trusted/$f"; done
+          if git cat-file -e "$trusted:scripts/commit-exemptions.json" 2>/dev/null; then git show "$trusted:scripts/commit-exemptions.json" > "$RUNNER_TEMP/trusted/commit-exemptions.json"; fi
+          echo "TRUSTED_CHECKS=$RUNNER_TEMP/trusted" >> "$GITHUB_ENV"
+          test "$(git rev-parse --is-shallow-repository)" = false
+          node "$RUNNER_TEMP/trusted/check-commits.mjs" "$trusted" "$AFTER"
           node scripts/test-check-signatures.mjs
-          # control 7: the check runs from the last release's copy, never from the pushed tree (a push cannot change the check
-          # that judges it; a change to it takes effect from the next push). No copy there fails the step.
-          git show "${last:-$BEFORE}:scripts/check-signatures.mjs" > "$RUNNER_TEMP/check-signatures.mjs"
-          node "$RUNNER_TEMP/check-signatures.mjs" "${last:-$BEFORE}" "$AFTER"
+          node "$RUNNER_TEMP/trusted/check-signatures.mjs" "$trusted" "$AFTER"
       # No collection here: the data in data/ and vaults/<id>/latest/ is what data.b@'s wake read and committed, so the
       # same commit builds the same site (every-run-starts-from-a-commit, 19 Nov 2026). Every host the collectors read was
       # reached from data.b@'s session on 19 Nov 2026.

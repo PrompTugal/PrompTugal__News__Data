@@ -13,6 +13,8 @@ const CHECK = join(dirname(fileURLToPath(import.meta.url)), 'check-signatures.mj
 const tmp = mkdtempSync(join(tmpdir(), 'sigtest-'));
 const AGENT = 'tester@Example.test', SESSION = 'https://claude.ai/code/session_0TestSessionAbcdef01234';
 const results = [];
+// the checks run here without CI's variables, since the check refuses SIGNING_TRUSTED_BASE under CI
+const noCI = Object.fromEntries(Object.entries(process.env).filter(([k]) => k !== 'CI' && k !== 'GITHUB_ACTIONS'));
 
 const newKey = name => {
   const f = join(tmp, name);
@@ -41,7 +43,7 @@ function repo(name) {
     g(...args); return g('rev-parse', 'HEAD');
   };
   // the trusted base is the range's start in every case here (SIGNING_TRUSTED_BASE, for test repositories only)
-  const check = (before, after, script = 'scripts/check-signatures.mjs') => spawnSync('node', [script, before, after], { cwd: d, encoding: 'utf8', env: { ...process.env, SIGNING_TRUSTED_BASE: g('rev-parse', before) } });
+  const check = (before, after, script = 'scripts/check-signatures.mjs') => spawnSync('node', [script, before, after], { cwd: d, encoding: 'utf8', env: { ...noCI, SIGNING_TRUSTED_BASE: g('rev-parse', before) } });
   // control 7: run the check from the trusted base's copy, as CI and release.sh do
   const checkFromBase = (before, after) => { const f = join(tmp, `${name}-trusted.mjs`); writeFileSync(f, g('show', `${before}:scripts/check-signatures.mjs`) + '\n'); return check(before, after, f); };
   return { d, g, commit, check, checkFromBase };
@@ -75,6 +77,13 @@ const setup = name => { const r = repo(name); const base = r.commit('bootstrap',
 { const r = setup('dropcheck'); r.g('rm', '-q', 'scripts/check-signatures.mjs'); r.commit('drops the check, unsigned'); expect('(6) a commit whose tree drops the check is checked, not skipped', r.checkFromBase(r.base, 'HEAD'), false, 'not signed by a key'); }
 { const r = setup('swapcheck'); r.commit('replaces the check, unsigned', { files: { 'scripts/check-signatures.mjs': 'console.log("OK")\n' } });
   expect('(7) a push that replaces the check is judged by the trusted base\'s copy', r.checkFromBase(r.base, 'HEAD'), false, 'not signed by a key'); }
+{ const r = setup('ci-override'); r.commit('good', { key: A, files: { 'x.txt': '1' } });
+  const v = spawnSync('node', ['scripts/check-signatures.mjs', r.base, 'HEAD'], { cwd: r.d, encoding: 'utf8', env: { ...noCI, CI: 'true', SIGNING_TRUSTED_BASE: r.base } });
+  expect('the trusted-base override is refused under CI', v, false, 'refused in CI'); }
+{ const r = setup('shallow'); r.commit('good', { key: A, files: { 'x.txt': '1' } }); r.commit('good 2', { key: A, files: { 'x.txt': '2' } });
+  const s = join(tmp, 'shallow-clone'); execFileSync('git', ['clone', '-q', '--depth', '1', `file://${r.d}`, s]);
+  const v = spawnSync('node', ['scripts/check-signatures.mjs', 'HEAD', 'HEAD'], { cwd: s, encoding: 'utf8', env: { ...noCI, SIGNING_TRUSTED_BASE: r.base } });
+  expect('(6) a shallow checkout is refused', v, false, 'shallow checkout'); }
 
 rmSync(tmp, { recursive: true, force: true });
 const bad = results.filter(r => !r.pass);

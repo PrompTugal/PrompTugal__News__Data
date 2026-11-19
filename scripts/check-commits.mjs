@@ -6,6 +6,8 @@
 // Prints OK or lists each commit that fails and exits 1.
 import { execFileSync } from 'node:child_process';
 import { existsSync, readFileSync } from 'node:fs';
+import { join, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 const git = (...args) => execFileSync('git', args, { encoding: 'utf8' }).trim();
 const tryGit = (...args) => { try { return git(...args); } catch { return null; } };
@@ -33,7 +35,8 @@ const agentShape = /^[a-z0-9]+(?:[.-][a-z0-9]+)*@agenticcells\.[a-z0-9][a-z0-9.-
 // scripts/commit-exemptions.json: [{ "commit": "<full 40-hex sha>", "reason": "...", "approved_by": "Dinis Cruz",
 // "date": "YYYY-MM-DD" }]. Each entry names exactly one commit; malformed entries fail the check.
 const exempt = new Map();
-const EX = 'scripts/commit-exemptions.json';
+// read from beside this file, so the trusted copy CI runs (control 7) brings its own exemptions, never the pushed tree's
+const EX = join(dirname(fileURLToPath(import.meta.url)), 'commit-exemptions.json');
 if (existsSync(EX)) {
   let list;
   try { list = JSON.parse(readFileSync(EX, 'utf8')); } catch (e) { console.error(`${EX}: not JSON (${e.message})`); process.exit(1); }

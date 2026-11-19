@@ -24,7 +24,8 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { execFileSync } from 'node:child_process';
 
-const root = join(dirname(fileURLToPath(import.meta.url)), '..');
+// the folder it is run in (the checkout's root), so the trusted copy CI runs from a temporary folder (control 7) scans the pushed tree
+const root = process.cwd();
 
 // Built from parts so that this file does not match its own patterns.
 const DASHES = '-'.repeat(5);
