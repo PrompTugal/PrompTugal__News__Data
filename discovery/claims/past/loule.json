@@ -1,0 +1,63 @@
+{
+ "place": "loule",
+ "about": "Claims whose dates have passed, kept as the history of each event series.",
+ "claims": [
+  {
+   "@type": "Event",
+   "name": "Reunião de Câmara",
+   "startDate": "2026-11-18",
+   "endDate": "2026-11-18",
+   "place": "loule",
+   "municipality": "Loulé",
+   "evidence": [
+    {
+     "url": "https://www.cm-loule.pt/pt/agenda.aspx",
+     "host": "cm-loule.pt",
+     "readable": false,
+     "register": "cm-loule"
+    }
+   ],
+   "status": "details withheld",
+   "details_from": null,
+   "details_note": "Details withheld: the sources cited (cm-loule.pt) are not ones whose terms let us copy them. Organiser: send them to us."
+  },
+  {
+   "@type": "Event",
+   "name": "Misty Fest: Raül Refree & Maria Mazzotta",
+   "startDate": "2026-11-18",
+   "endDate": "2026-11-18",
+   "place": "loule",
+   "municipality": "Loulé",
+   "evidence": [
+    {
+     "url": "https://quintaproperty.com/whats-on-in-the-algarve-september-october-november-2026/",
+     "host": "quintaproperty.com",
+     "readable": false,
+     "register": null
+    }
+   ],
+   "status": "details withheld",
+   "details_from": null,
+   "details_note": "Details withheld: the sources cited (quintaproperty.com) are not ones whose terms let us copy them. Organiser: send them to us."
+  },
+  {
+   "@type": "Event",
+   "name": "Wine and Cheese Experience",
+   "startDate": "2026-11-18",
+   "endDate": "2026-11-18",
+   "place": "loule",
+   "municipality": "Loulé",
+   "evidence": [
+    {
+     "url": "https://happeningnext.com/event/wine-and-cheese-experience-eid3a0eavoi6e",
+     "host": "happeningnext.com",
+     "readable": false,
+     "register": null
+    }
+   ],
+   "status": "details withheld",
+   "details_from": null,
+   "details_note": "Details withheld: the sources cited (happeningnext.com) are not ones whose terms let us copy them. Organiser: send them to us."
+  }
+ ]
+}

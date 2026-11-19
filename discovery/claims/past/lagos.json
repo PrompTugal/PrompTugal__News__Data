@@ -1,0 +1,25 @@
+{
+ "place": "lagos",
+ "about": "Claims whose dates have passed, kept as the history of each event series.",
+ "claims": [
+  {
+   "@type": "Event",
+   "name": "Organ concert of the Algarve International Organ Festival 2026",
+   "startDate": "2026-11-18",
+   "endDate": "2026-11-18",
+   "place": "lagos",
+   "municipality": "Lagos",
+   "evidence": [
+    {
+     "url": "https://algarvecircle.com/events",
+     "host": "algarvecircle.com",
+     "readable": false,
+     "register": "algarvecircle"
+    }
+   ],
+   "status": "details withheld",
+   "details_from": null,
+   "details_note": "Details withheld: the sources cited (algarvecircle.com) are not ones whose terms let us copy them. Organiser: send them to us."
+  }
+ ]
+}

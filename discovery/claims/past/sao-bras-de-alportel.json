@@ -1,0 +1,31 @@
+{
+ "place": "sao-bras-de-alportel",
+ "about": "Claims whose dates have passed, kept as the history of each event series.",
+ "claims": [
+  {
+   "@type": "Event",
+   "name": "Saturdays at the Market",
+   "startDate": "2026-11-18",
+   "endDate": null,
+   "place": "sao-bras-de-alportel",
+   "municipality": "São Brás de Alportel",
+   "evidence": [
+    {
+     "url": "https://eventos.visitalgarve.pt/en/events",
+     "host": "eventos.visitalgarve.pt",
+     "readable": false,
+     "register": null
+    },
+    {
+     "url": "https://algarvecircle.com/councils/sao-bras-de-alportel",
+     "host": "algarvecircle.com",
+     "readable": false,
+     "register": "algarvecircle"
+    }
+   ],
+   "status": "details withheld",
+   "details_from": null,
+   "details_note": "Details withheld: the sources cited (eventos.visitalgarve.pt, algarvecircle.com) are not ones whose terms let us copy them. Organiser: send them to us."
+  }
+ ]
+}

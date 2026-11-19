@@ -1,11 +1,11 @@
 {
  "place": "algarve",
- "read_at": "2026-11-18T15:47:16Z",
+ "read_at": "2026-11-19T01:21:32Z",
  "about": "Every Algarve place's claims in one file (the places in index.json other than lisboa).",
  "counts": {
-  "claims": 109,
+  "claims": 99,
   "confirmed": 0,
-  "withheld": 107
+  "withheld": 97
  },
  "claims": [
   {
@@ -32,82 +32,6 @@
    "name": "APS L Longevity Summit 2026",
    "startDate": "2026-11-18",
    "endDate": "2026-11-20",
-   "place": "albufeira",
-   "municipality": "Albufeira",
-   "evidence": [
-    {
-     "url": "https://www.algarveatlas.com/en/municipalities/albufeira",
-     "host": "algarveatlas.com",
-     "readable": false,
-     "register": "algarveatlas"
-    }
-   ],
-   "status": "details withheld",
-   "details_from": null,
-   "details_note": "Details withheld: the sources cited (algarveatlas.com) are not ones whose terms let us copy them. Organiser: send them to us."
-  },
-  {
-   "@type": "Event",
-   "name": "Saber-Fazer Workshops - Macramé",
-   "startDate": "2026-11-18",
-   "endDate": null,
-   "place": "albufeira",
-   "municipality": "Albufeira",
-   "evidence": [
-    {
-     "url": "https://www.algarveatlas.com/en/municipalities/albufeira",
-     "host": "algarveatlas.com",
-     "readable": false,
-     "register": "algarveatlas"
-    }
-   ],
-   "status": "details withheld",
-   "details_from": null,
-   "details_note": "Details withheld: the sources cited (algarveatlas.com) are not ones whose terms let us copy them. Organiser: send them to us."
-  },
-  {
-   "@type": "Event",
-   "name": "Saber-Fazer Workshops - Artistic Drawing",
-   "startDate": "2026-11-18",
-   "endDate": null,
-   "place": "albufeira",
-   "municipality": "Albufeira",
-   "evidence": [
-    {
-     "url": "https://www.algarveatlas.com/en/municipalities/albufeira",
-     "host": "algarveatlas.com",
-     "readable": false,
-     "register": "algarveatlas"
-    }
-   ],
-   "status": "details withheld",
-   "details_from": null,
-   "details_note": "Details withheld: the sources cited (algarveatlas.com) are not ones whose terms let us copy them. Organiser: send them to us."
-  },
-  {
-   "@type": "Event",
-   "name": "Presentation of the book The Time Traveller by Ana Alexandra Resende",
-   "startDate": "2026-11-18",
-   "endDate": null,
-   "place": "albufeira",
-   "municipality": "Albufeira",
-   "evidence": [
-    {
-     "url": "https://www.algarveatlas.com/en/municipalities/albufeira",
-     "host": "algarveatlas.com",
-     "readable": false,
-     "register": "algarveatlas"
-    }
-   ],
-   "status": "details withheld",
-   "details_from": null,
-   "details_note": "Details withheld: the sources cited (algarveatlas.com) are not ones whose terms let us copy them. Organiser: send them to us."
-  },
-  {
-   "@type": "Event",
-   "name": "Circular Tapestry Workshop",
-   "startDate": "2026-11-18",
-   "endDate": null,
    "place": "albufeira",
    "municipality": "Albufeira",
    "evidence": [
@@ -784,44 +708,6 @@
   },
   {
    "@type": "Event",
-   "name": "Organ concert of the Algarve International Organ Festival 2026",
-   "startDate": "2026-11-18",
-   "endDate": "2026-11-18",
-   "place": "lagos",
-   "municipality": "Lagos",
-   "evidence": [
-    {
-     "url": "https://algarvecircle.com/events",
-     "host": "algarvecircle.com",
-     "readable": false,
-     "register": "algarvecircle"
-    }
-   ],
-   "status": "details withheld",
-   "details_from": null,
-   "details_note": "Details withheld: the sources cited (algarvecircle.com) are not ones whose terms let us copy them. Organiser: send them to us."
-  },
-  {
-   "@type": "Event",
-   "name": "Reunião de Câmara",
-   "startDate": "2026-11-18",
-   "endDate": "2026-11-18",
-   "place": "loule",
-   "municipality": "Loulé",
-   "evidence": [
-    {
-     "url": "https://www.cm-loule.pt/pt/agenda.aspx",
-     "host": "cm-loule.pt",
-     "readable": false,
-     "register": "cm-loule"
-    }
-   ],
-   "status": "details withheld",
-   "details_from": null,
-   "details_note": "Details withheld: the sources cited (cm-loule.pt) are not ones whose terms let us copy them. Organiser: send them to us."
-  },
-  {
-   "@type": "Event",
    "name": "Crescendo Cycle Concert",
    "startDate": "2026-11-21",
    "endDate": "2026-11-21",
@@ -952,44 +838,6 @@
    "status": "details withheld",
    "details_from": null,
    "details_note": "Details withheld: the sources cited (algarveatlas.com) are not ones whose terms let us copy them. Organiser: send them to us."
-  },
-  {
-   "@type": "Event",
-   "name": "Misty Fest: Raül Refree & Maria Mazzotta",
-   "startDate": "2026-11-18",
-   "endDate": "2026-11-18",
-   "place": "loule",
-   "municipality": "Loulé",
-   "evidence": [
-    {
-     "url": "https://quintaproperty.com/whats-on-in-the-algarve-september-october-november-2026/",
-     "host": "quintaproperty.com",
-     "readable": false,
-     "register": null
-    }
-   ],
-   "status": "details withheld",
-   "details_from": null,
-   "details_note": "Details withheld: the sources cited (quintaproperty.com) are not ones whose terms let us copy them. Organiser: send them to us."
-  },
-  {
-   "@type": "Event",
-   "name": "Wine and Cheese Experience",
-   "startDate": "2026-11-18",
-   "endDate": "2026-11-18",
-   "place": "loule",
-   "municipality": "Loulé",
-   "evidence": [
-    {
-     "url": "https://happeningnext.com/event/wine-and-cheese-experience-eid3a0eavoi6e",
-     "host": "happeningnext.com",
-     "readable": false,
-     "register": null
-    }
-   ],
-   "status": "details withheld",
-   "details_from": null,
-   "details_note": "Details withheld: the sources cited (happeningnext.com) are not ones whose terms let us copy them. Organiser: send them to us."
   },
   {
    "@type": "Event",
@@ -1334,31 +1182,6 @@
   },
   {
    "@type": "Event",
-   "name": "Quarteira Wednesday Market",
-   "startDate": "2026-11-18",
-   "endDate": "2026-11-18",
-   "place": "quarteira",
-   "municipality": "Quarteira",
-   "evidence": [
-    {
-     "url": "https://algarvecircle.com/whats-on/november-2026",
-     "host": "algarvecircle.com",
-     "readable": false,
-     "register": "algarvecircle"
-    },
-    {
-     "url": "https://algarvecircle.com/events",
-     "host": "algarvecircle.com",
-     "readable": false,
-     "register": "algarvecircle"
-    }
-   ],
-   "status": "details withheld",
-   "details_from": null,
-   "details_note": "Details withheld: the sources cited (algarvecircle.com) are not ones whose terms let us copy them. Organiser: send them to us."
-  },
-  {
-   "@type": "Event",
    "name": "Baile Social",
    "startDate": "2026-11-28",
    "endDate": "2026-11-28",
@@ -1508,31 +1331,6 @@
    "status": "details withheld",
    "details_from": null,
    "details_note": "Details withheld: the sources cited (activealgarve.pt) are not ones whose terms let us copy them. Organiser: send them to us."
-  },
-  {
-   "@type": "Event",
-   "name": "Saturdays at the Market",
-   "startDate": "2026-11-18",
-   "endDate": null,
-   "place": "sao-bras-de-alportel",
-   "municipality": "São Brás de Alportel",
-   "evidence": [
-    {
-     "url": "https://eventos.visitalgarve.pt/en/events",
-     "host": "eventos.visitalgarve.pt",
-     "readable": false,
-     "register": null
-    },
-    {
-     "url": "https://algarvecircle.com/councils/sao-bras-de-alportel",
-     "host": "algarvecircle.com",
-     "readable": false,
-     "register": "algarvecircle"
-    }
-   ],
-   "status": "details withheld",
-   "details_from": null,
-   "details_note": "Details withheld: the sources cited (eventos.visitalgarve.pt, algarvecircle.com) are not ones whose terms let us copy them. Organiser: send them to us."
   },
   {
    "@type": "Event",
