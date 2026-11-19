@@ -101,6 +101,9 @@ jobs:
     env:
       GIT_NO_REPLACE_OBJECTS: '1'
       NODE_OPTIONS: ''
+      # events.b@'s finding (e774ff9): deleting a pushed .gitattributes does not stop git reading the index copy, so git
+      # reads attributes from the empty tree (git 2.42 or later, checked in the first step)
+      GIT_ATTR_SOURCE: 4b825dc642cb6eb9a060e54bf8d69288fbee4904
     steps:
       - uses: actions/checkout@v4
         with:
@@ -118,6 +121,8 @@ jobs:
       - name: Unpack the built site, as data
         run: |
           set -euo pipefail
+          v=$(git --version | sed -E 's/^git version ([0-9]+)\.([0-9]+).*/\1 \2/'); set -- $v
+          if [ "$1" -lt 2 ] || { [ "$1" -eq 2 ] && [ "$2" -lt 42 ]; }; then echo "git $1.$2 is older than 2.42 (GIT_ATTR_SOURCE)" >&2; exit 1; fi
           # live.b@'s finding (a4c6fce): a pushed _site (a symlink into .git, say) must not steer where the site lands, and a
           # pushed .gitattributes must not steer git. The artifact was downloaded into RUNNER_TEMP, outside the checkout.
           if [ -n "$(git ls-tree --name-only HEAD _site)" ] || [ -e _site ] || [ -L _site ]; then echo "the pushed tree holds a _site path" >&2; exit 1; fi

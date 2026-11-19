@@ -131,6 +131,19 @@ const withChecks = name => { const r = setup(name); r.commit('adds the other che
   results.push({ name: '(7) the anchor is a run whose job named verify passed', pass: lines.some(l => /actions\/runs\/.*\/jobs/.test(l)) && lines.some(l => /\.name == "verify" and \.conclusion == "success"/.test(l)), out: 'no jobs check in the verify job' });
   const ifOf = name => ((wf.split(`\n  ${name}:\n`)[1] || '').split(/\n  [a-z-]+:\n/)[0].match(/\n    if: ([^\n]+)/) || [])[1] || '';
   results.push({ name: 'verify, deploy and tag run only for refs/heads/dev', pass: ['verify', 'deploy', 'tag'].every(j => ifOf(j).includes("github.ref == 'refs/heads/dev'")), out: ['verify', 'deploy', 'tag'].map(j => `${j}: ${ifOf(j)}`).join(' | ') }); }
+// cyber.b@'s finding (4dd8500): a quoting slip in a workflow step breaks the run, so every run: block is syntax-checked
+// with bash -n (GitHub's ${{ }} expressions are left as text, which bash -n accepts)
+{ const raw = readFileSync(join(dirname(CHECK), '..', '.github', 'workflows', 'pages.yml'), 'utf8').split('\n');
+  const blocks = [];
+  for (let i = 0; i < raw.length; i++) {
+    const m = /^(\s*)(?:- )?run: (.*)$/.exec(raw[i]); if (!m) continue;
+    if (m[2].trim() === '|') { const ind = raw[i + 1]?.match(/^\s*/)[0].length || 0; const body = []; let j = i + 1;
+      for (; j < raw.length && (raw[j].trim() === '' || raw[j].match(/^\s*/)[0].length >= ind); j++) body.push(raw[j].slice(ind)); blocks.push({ line: i + 1, text: body.join('\n') }); i = j - 1; }
+    else blocks.push({ line: i + 1, text: m[2] }); }
+  const bad = blocks.map(b => ({ ...b, r: spawnSync('bash', ['-n'], { input: b.text, encoding: 'utf8' }) })).filter(b => b.r.status !== 0);
+  results.push({ name: `every run: block in pages.yml passes bash -n (${blocks.length} blocks)`, pass: blocks.length >= 8 && bad.length === 0, out: bad.map(b => `line ${b.line}: ${b.r.stderr.trim().split('\n')[0]}`).join(' | ') || `${blocks.length} blocks` }); }
+{ const wf = readFileSync(join(dirname(CHECK), '..', '.github', 'workflows', 'pages.yml'), 'utf8');
+  results.push({ name: 'the verify job reads git attributes from the empty tree and checks git is 2.42 or later', pass: /\n      GIT_ATTR_SOURCE: 4b825dc642cb6eb9a060e54bf8d69288fbee4904\n/.test(wf) && /is older than 2\.42/.test(wf), out: 'missing' }); }
 
 rmSync(tmp, { recursive: true, force: true });
 const bad = results.filter(r => !r.pass);
