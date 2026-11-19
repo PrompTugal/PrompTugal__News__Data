@@ -1,28 +1,11 @@
 {
- "data_read_at": "2026-11-18T23:42:26Z",
- "expected_cadence": {
-  "name": "every 6 hours",
-  "seconds": 21600
- },
- "schema": {
-  "openapi": "https://data.promptugal.news/api/v1/cisa-kev/openapi.json",
-  "path": "/api/v1/cisa-kev/latest.json",
-  "version": "v1"
- },
- "license": {
-  "name": "CC0 1.0",
-  "url": "https://github.com/cisagov/kev-data/blob/develop/LICENSE",
-  "holder": "CISA",
-  "commercial_use": "allowed",
-  "note": "No CISA logo or DHS seal; no endorsement implied."
- },
  "source": "cisa-kev",
  "title": "Known exploited vulnerabilities (CISA KEV)",
- "read_at": "2026-11-18T23:42:26Z",
+ "read_at": "2026-11-19T06:03:49Z",
  "provenance": {
   "source": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
   "page": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-  "read_at": "2026-11-18T23:42:26Z",
+  "read_at": "2026-11-19T06:03:49Z",
   "by": "sources/cisa-kev/collect.mjs (code, no model; run by data.b@PrompTugal.dinis)",
   "terms": "CC0 1.0: \"You may use this data in any legal manner\"; third-party links keep their own terms; no use of the CISA logo or DHS seal, no endorsement implied. Not reviewed by a person.",
   "feed": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",

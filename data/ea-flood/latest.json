@@ -3,11 +3,11 @@
  "title": "London flood warnings and Thames levels (Environment Agency)",
  "place": "london",
  "country": "GB",
- "read_at": "2026-11-19T05:03:55Z",
+ "read_at": "2026-11-19T06:03:51Z",
  "provenance": {
   "source": "https://environment.data.gov.uk/flood-monitoring/doc/reference",
   "page": "https://check-for-flooding.service.gov.uk/",
-  "read_at": "2026-11-19T05:03:55Z",
+  "read_at": "2026-11-19T06:03:51Z",
   "by": "sources/ea-flood/collect.mjs (code, no model; run by data.b@PrompTugal.dinis)",
   "terms": "Open Government Licence v3.0, no registration; acknowledge with: \"this uses Environment Agency flood and river level data from the real-time data API (Beta)\". Not reviewed by a person.",
   "attribution": "this uses Environment Agency flood and river level data from the real-time data API (Beta)",
@@ -77,8 +77,8 @@
     {
      "qualifier": "tidal_level",
      "unit": "mAOD",
-     "value": 1.026,
-     "time": "2026-11-19T04:45:00Z"
+     "value": 1.794,
+     "time": "2026-11-19T05:30:00Z"
     }
    ],
    "url": "https://check-for-flooding.service.gov.uk/station/7388",
@@ -95,8 +95,8 @@
     {
      "qualifier": "tidal_level",
      "unit": "mAOD",
-     "value": 1.033,
-     "time": "2026-11-19T04:45:00Z"
+     "value": 2.021,
+     "time": "2026-11-19T05:45:00Z"
     }
    ],
    "url": "https://check-for-flooding.service.gov.uk/station/7390",
@@ -113,8 +113,8 @@
     {
      "qualifier": "tidal_level",
      "unit": "mAOD",
-     "value": 0.67,
-     "time": "2026-11-19T04:45:00Z"
+     "value": 1.411,
+     "time": "2026-11-19T05:30:00Z"
     }
    ],
    "url": "https://check-for-flooding.service.gov.uk/station/7389",
@@ -131,8 +131,8 @@
     {
      "qualifier": "tidal_level",
      "unit": "mAOD",
-     "value": 0.491,
-     "time": "2026-11-19T04:30:00Z"
+     "value": 1.482,
+     "time": "2026-11-19T05:30:00Z"
     }
    ],
    "url": "https://check-for-flooding.service.gov.uk/station/7391",
@@ -149,8 +149,8 @@
     {
      "qualifier": "tidal_level",
      "unit": "mAOD",
-     "value": 0.185,
-     "time": "2026-11-19T04:45:00Z"
+     "value": 0.661,
+     "time": "2026-11-19T05:30:00Z"
     }
    ],
    "url": "https://check-for-flooding.service.gov.uk/station/7393",
@@ -178,8 +178,8 @@
     {
      "qualifier": "stage",
      "unit": "mAOD",
-     "value": 4.591,
-     "time": "2026-11-19T04:45:00Z"
+     "value": 4.589,
+     "time": "2026-11-19T05:45:00Z"
     }
    ],
    "url": "https://check-for-flooding.service.gov.uk/station/7246",
@@ -196,14 +196,14 @@
     {
      "qualifier": "water",
      "unit": null,
-     "value": 37.305,
-     "time": "2026-11-19T04:45:00Z"
+     "value": 36.63,
+     "time": "2026-11-19T05:45:00Z"
     },
     {
      "qualifier": "stage",
      "unit": "mASD",
-     "value": 4.609,
-     "time": "2026-11-19T04:45:00Z"
+     "value": 4.601,
+     "time": "2026-11-19T05:45:00Z"
     }
    ],
    "url": "https://check-for-flooding.service.gov.uk/station/7267",
@@ -220,14 +220,14 @@
     {
      "qualifier": "stage",
      "unit": "mASD",
-     "value": 0.214,
-     "time": "2026-11-19T04:45:00Z"
+     "value": 0.212,
+     "time": "2026-11-19T05:45:00Z"
     },
     {
      "qualifier": "downstage",
      "unit": "mASD",
-     "value": 2.428,
-     "time": "2026-11-19T04:45:00Z"
+     "value": 2.417,
+     "time": "2026-11-19T05:45:00Z"
     }
    ],
    "url": "https://check-for-flooding.service.gov.uk/station/7268",
@@ -244,8 +244,8 @@
     {
      "qualifier": "stage",
      "unit": "mAOD",
-     "value": 4.642,
-     "time": "2026-11-19T04:45:00Z"
+     "value": 4.639,
+     "time": "2026-11-19T05:45:00Z"
     }
    ],
    "url": "https://check-for-flooding.service.gov.uk/station/7269",
@@ -260,7 +260,7 @@
    "long": -0.20555,
    "rain_mm": 0,
    "period_s": 900,
-   "time": "2026-11-19T04:15:00Z"
+   "time": "2026-11-19T05:15:00Z"
   },
   {
    "id": "289102TP",
@@ -278,7 +278,7 @@
    "long": -0.1126,
    "rain_mm": 0,
    "period_s": 900,
-   "time": "2026-11-19T04:45:00Z"
+   "time": "2026-11-19T05:45:00Z"
   },
   {
    "id": "287283TP",
@@ -296,16 +296,16 @@
    "long": -0.10943,
    "rain_mm": 0,
    "period_s": 900,
-   "time": "2026-11-19T04:45:00Z"
+   "time": "2026-11-19T05:45:00Z"
   },
   {
    "id": "287946TP",
    "label": "Rainfall station 287946TP",
    "lat": 51.41595,
    "long": -0.16287,
-   "rain_mm": 0,
+   "rain_mm": 0.01,
    "period_s": 900,
-   "time": "2026-11-19T04:45:00Z"
+   "time": "2026-11-19T05:45:00Z"
   },
   {
    "id": "246847TP",
@@ -323,7 +323,7 @@
    "long": -0.28935,
    "rain_mm": 0,
    "period_s": 900,
-   "time": "2026-11-19T04:30:00Z"
+   "time": "2026-11-19T05:30:00Z"
   },
   {
    "id": "239374TP",
@@ -332,7 +332,7 @@
    "long": 0.04127,
    "rain_mm": 0,
    "period_s": 900,
-   "time": "2026-11-19T04:15:00Z"
+   "time": "2026-11-19T05:15:00Z"
   },
   {
    "id": "287864TP",
@@ -341,7 +341,7 @@
    "long": -0.13555,
    "rain_mm": 0,
    "period_s": 900,
-   "time": "2026-11-19T04:45:00Z"
+   "time": "2026-11-19T05:45:00Z"
   }
  ],
  "daily_rain": {
@@ -408,31 +408,31 @@
   "2026-11-19": {
    "245176TP": {
     "rain_mm": 4,
-    "readings": 19
+    "readings": 23
    },
    "288092TP": {
     "rain_mm": 2.2,
-    "readings": 19
+    "readings": 23
    },
    "287946TP": {
     "rain_mm": 2,
-    "readings": 19
+    "readings": 23
    },
    "380002TP": {
     "rain_mm": 4.4,
-    "readings": 17
+    "readings": 21
    },
    "287864TP": {
     "rain_mm": 1.8,
-    "readings": 19
+    "readings": 23
    },
    "246424TP": {
     "rain_mm": 3,
-    "readings": 16
+    "readings": 20
    },
    "239374TP": {
     "rain_mm": 2.4,
-    "readings": 16
+    "readings": 20
    }
   }
  },
@@ -1145,7 +1145,11 @@
     "04:00",
     "04:15",
     "04:30",
-    "04:45"
+    "04:45",
+    "05:00",
+    "05:15",
+    "05:30",
+    "05:45"
    ],
    "288092TP": [
     "00:00",
@@ -1166,7 +1170,11 @@
     "04:00",
     "04:15",
     "04:30",
-    "04:45"
+    "04:45",
+    "05:00",
+    "05:15",
+    "05:30",
+    "05:45"
    ],
    "287946TP": [
     "00:00",
@@ -1187,7 +1195,11 @@
     "04:00",
     "04:15",
     "04:30",
-    "04:45"
+    "04:45",
+    "05:00",
+    "05:15",
+    "05:30",
+    "05:45"
    ],
    "380002TP": [
     "00:00",
@@ -1206,7 +1218,11 @@
     "03:45",
     "04:00",
     "04:15",
-    "04:30"
+    "04:30",
+    "04:45",
+    "05:00",
+    "05:15",
+    "05:30"
    ],
    "287864TP": [
     "00:00",
@@ -1227,7 +1243,11 @@
     "04:00",
     "04:15",
     "04:30",
-    "04:45"
+    "04:45",
+    "05:00",
+    "05:15",
+    "05:30",
+    "05:45"
    ],
    "246424TP": [
     "00:00",
@@ -1245,7 +1265,11 @@
     "03:30",
     "03:45",
     "04:00",
-    "04:15"
+    "04:15",
+    "04:30",
+    "04:45",
+    "05:00",
+    "05:15"
    ],
    "239374TP": [
     "00:00",
@@ -1263,7 +1287,11 @@
     "03:30",
     "03:45",
     "04:00",
-    "04:15"
+    "04:15",
+    "04:30",
+    "04:45",
+    "05:00",
+    "05:15"
    ]
   }
  },

@@ -1,15 +1,24 @@
 {
- "license": {
-  "name": "CC BY 4.0",
-  "url": "https://creativecommons.org/licenses/by/4.0/",
-  "holder": "PrompTugal.news",
-  "note": "What PrompTugal.news makes: this file's structure, records and derived values.",
-  "commercial_use": "allowed",
-  "commercial_note": "With credit to PrompTugal.news; values taken from a source keep that source's licence."
- },
  "about": "Every run of sources/base-gov-pt/collect.mjs, newest first: each request's address, HTTP status, size, the first 16 hex of its sha256, and whether the bytes changed since the run before. The bytes and the full sha256 go to the source's vault (see card.json: latest/reads-full.json), never to git.",
  "source": "base-gov-pt",
  "runs": [
+  {
+   "at": "2026-11-19T06:03:41Z",
+   "finished": "2026-11-19T06:03:44Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "dataset",
+     "url": "https://dados.gov.pt/api/1/datasets/66d72d488ca4b7cb2de28712/",
+     "at": "2026-11-19T06:03:43Z",
+     "status": 200,
+     "bytes": 45931,
+     "sha256_prefix": "0d0c72c477e75be6",
+     "changed": true
+    }
+   ]
+  },
   {
    "at": "2026-11-18T23:42:18Z",
    "finished": "2026-11-18T23:42:21Z",

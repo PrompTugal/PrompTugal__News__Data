@@ -1,15 +1,285 @@
 {
- "license": {
-  "name": "CC BY 4.0",
-  "url": "https://creativecommons.org/licenses/by/4.0/",
-  "holder": "PrompTugal.news",
-  "note": "What PrompTugal.news makes: this file's structure, records and derived values.",
-  "commercial_use": "allowed",
-  "commercial_note": "With credit to PrompTugal.news; values taken from a source keep that source's licence."
- },
  "about": "Every run of sources/euvd/collect.mjs, newest first: each request's address, HTTP status, size, the first 16 hex of its sha256, and whether the bytes changed since the run before. The bytes and the full sha256 go to the source's vault (see card.json: latest/reads-full.json), never to git.",
  "source": "euvd",
  "runs": [
+  {
+   "at": "2026-11-19T06:06:36Z",
+   "finished": "2026-11-19T06:11:37Z",
+   "ok": 29,
+   "failed": 1,
+   "reads": [
+    {
+     "name": "robots-euvd",
+     "url": "https://euvd.enisa.europa.eu/robots.txt",
+     "at": "2026-11-19T06:06:45Z",
+     "status": 200,
+     "bytes": 67,
+     "sha256_prefix": "90d24bc3bf698ac1",
+     "changed": false
+    },
+    {
+     "name": "robots-services",
+     "url": "https://euvdservices.enisa.europa.eu/robots.txt",
+     "at": "2026-11-19T06:06:55Z",
+     "status": 404,
+     "bytes": 196,
+     "sha256_prefix": "80c3fe2ae1062abf",
+     "changed": false
+    },
+    {
+     "name": "latest",
+     "url": "https://euvdservices.enisa.europa.eu/api/lastvulnerabilities",
+     "at": "2026-11-19T06:07:05Z",
+     "status": 200,
+     "bytes": 8087,
+     "sha256_prefix": "9832687d0339c353",
+     "changed": true
+    },
+    {
+     "name": "exploited",
+     "url": "https://euvdservices.enisa.europa.eu/api/exploitedvulnerabilities",
+     "at": "2026-11-19T06:07:15Z",
+     "status": 200,
+     "bytes": 4837,
+     "sha256_prefix": "4ca4aadeb94fb281",
+     "changed": true
+    },
+    {
+     "name": "exploited-total",
+     "url": "https://euvdservices.enisa.europa.eu/api/search?exploited=true&size=1&page=0",
+     "at": "2026-11-19T06:07:25Z",
+     "status": 200,
+     "bytes": 1982,
+     "sha256_prefix": "1ff4a06906cde0f0",
+     "changed": true
+    },
+    {
+     "name": "updated-0",
+     "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-18&toUpdatedDate=2026-11-19&size=100&page=0",
+     "at": "2026-11-19T06:07:35Z",
+     "status": 200,
+     "bytes": 164228,
+     "sha256_prefix": "4c863d4c04614291",
+     "changed": true
+    },
+    {
+     "name": "updated-1",
+     "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-18&toUpdatedDate=2026-11-19&size=100&page=1",
+     "at": "2026-11-19T06:07:45Z",
+     "status": 200,
+     "bytes": 158486,
+     "sha256_prefix": "1506dbcd65af6af9",
+     "changed": true
+    },
+    {
+     "name": "updated-2",
+     "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-18&toUpdatedDate=2026-11-19&size=100&page=2",
+     "at": "2026-11-19T06:07:55Z",
+     "status": 200,
+     "bytes": 147115,
+     "sha256_prefix": "cfab974ba8d6ea61",
+     "changed": true
+    },
+    {
+     "name": "updated-3",
+     "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-18&toUpdatedDate=2026-11-19&size=100&page=3",
+     "at": "2026-11-19T06:08:05Z",
+     "status": 200,
+     "bytes": 165044,
+     "sha256_prefix": "7eed54ea141e5d0a",
+     "changed": true
+    },
+    {
+     "name": "updated-4",
+     "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-18&toUpdatedDate=2026-11-19&size=100&page=4",
+     "at": "2026-11-19T06:08:15Z",
+     "status": 200,
+     "bytes": 133799,
+     "sha256_prefix": "a7e966e7395595f3",
+     "changed": true
+    },
+    {
+     "name": "updated-5",
+     "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-18&toUpdatedDate=2026-11-19&size=100&page=5",
+     "at": "2026-11-19T06:08:25Z",
+     "status": 200,
+     "bytes": 217079,
+     "sha256_prefix": "373f90a42f3c2bd8",
+     "changed": true
+    },
+    {
+     "name": "updated-6",
+     "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-18&toUpdatedDate=2026-11-19&size=100&page=6",
+     "at": "2026-11-19T06:08:35Z",
+     "status": 200,
+     "bytes": 280495,
+     "sha256_prefix": "a26b63e195c076fe",
+     "changed": true
+    },
+    {
+     "name": "updated-7",
+     "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-18&toUpdatedDate=2026-11-19&size=100&page=7",
+     "at": "2026-11-19T06:08:45Z",
+     "status": 200,
+     "bytes": 286239,
+     "sha256_prefix": "ee6fe131c2ff2ca2",
+     "changed": true
+    },
+    {
+     "name": "updated-8",
+     "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-18&toUpdatedDate=2026-11-19&size=100&page=8",
+     "at": "2026-11-19T06:08:55Z",
+     "status": 200,
+     "bytes": 153895,
+     "sha256_prefix": "7f9cb404c0346759",
+     "changed": true
+    },
+    {
+     "name": "updated-9",
+     "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-18&toUpdatedDate=2026-11-19&size=100&page=9",
+     "at": "2026-11-19T06:09:05Z",
+     "status": 200,
+     "bytes": 190336,
+     "sha256_prefix": "0ef1952a05f6e094",
+     "changed": true
+    },
+    {
+     "name": "updated-10",
+     "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-18&toUpdatedDate=2026-11-19&size=100&page=10",
+     "at": "2026-11-19T06:09:15Z",
+     "status": 200,
+     "bytes": 315321,
+     "sha256_prefix": "6a4634d134cbd5e4",
+     "changed": true
+    },
+    {
+     "name": "updated-11",
+     "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-18&toUpdatedDate=2026-11-19&size=100&page=11",
+     "at": "2026-11-19T06:09:25Z",
+     "status": 200,
+     "bytes": 276754,
+     "sha256_prefix": "fcf15e0104cc0ab1",
+     "changed": true
+    },
+    {
+     "name": "updated-12",
+     "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-18&toUpdatedDate=2026-11-19&size=100&page=12",
+     "at": "2026-11-19T06:09:35Z",
+     "status": 200,
+     "bytes": 302597,
+     "sha256_prefix": "bf7a8bcf8711dbdb",
+     "changed": true
+    },
+    {
+     "name": "updated-13",
+     "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-18&toUpdatedDate=2026-11-19&size=100&page=13",
+     "at": "2026-11-19T06:09:45Z",
+     "status": 200,
+     "bytes": 294110,
+     "sha256_prefix": "33d34d8acc054fd4",
+     "changed": true
+    },
+    {
+     "name": "updated-14",
+     "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-18&toUpdatedDate=2026-11-19&size=100&page=14",
+     "at": "2026-11-19T06:09:55Z",
+     "status": 200,
+     "bytes": 322324,
+     "sha256_prefix": "caa886cb85676313",
+     "changed": true
+    },
+    {
+     "name": "updated-15",
+     "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-18&toUpdatedDate=2026-11-19&size=100&page=15",
+     "at": "2026-11-19T06:10:05Z",
+     "status": 200,
+     "bytes": 239732,
+     "sha256_prefix": "b46bf29b94d43e87",
+     "changed": true
+    },
+    {
+     "name": "updated-16",
+     "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-18&toUpdatedDate=2026-11-19&size=100&page=16",
+     "at": "2026-11-19T06:10:15Z",
+     "status": 200,
+     "bytes": 127179,
+     "sha256_prefix": "4c81d544318b2f03",
+     "changed": true
+    },
+    {
+     "name": "updated-17",
+     "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-18&toUpdatedDate=2026-11-19&size=100&page=17",
+     "at": "2026-11-19T06:10:25Z",
+     "status": 200,
+     "bytes": 129060,
+     "sha256_prefix": "131ed8f869f1c7a5",
+     "changed": true
+    },
+    {
+     "name": "updated-18",
+     "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-18&toUpdatedDate=2026-11-19&size=100&page=18",
+     "at": "2026-11-19T06:10:35Z",
+     "status": 200,
+     "bytes": 143198,
+     "sha256_prefix": "95a410c53b328b50",
+     "changed": true
+    },
+    {
+     "name": "updated-19",
+     "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-18&toUpdatedDate=2026-11-19&size=100&page=19",
+     "at": "2026-11-19T06:10:45Z",
+     "status": 200,
+     "bytes": 170420,
+     "sha256_prefix": "18aa76bd1ebe9ca2",
+     "changed": true
+    },
+    {
+     "name": "updated-20",
+     "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-18&toUpdatedDate=2026-11-19&size=100&page=20",
+     "at": "2026-11-19T06:10:55Z",
+     "status": 200,
+     "bytes": 351701,
+     "sha256_prefix": "832d62eaf3db4625",
+     "changed": true
+    },
+    {
+     "name": "updated-21",
+     "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-18&toUpdatedDate=2026-11-19&size=100&page=21",
+     "at": "2026-11-19T06:11:05Z",
+     "status": 200,
+     "bytes": 139928,
+     "sha256_prefix": "26d9a0965449283e",
+     "changed": true
+    },
+    {
+     "name": "updated-22",
+     "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-18&toUpdatedDate=2026-11-19&size=100&page=22",
+     "at": "2026-11-19T06:11:15Z",
+     "status": 200,
+     "bytes": 159755,
+     "sha256_prefix": "ea6047117b999b7e",
+     "changed": true
+    },
+    {
+     "name": "updated-23",
+     "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-18&toUpdatedDate=2026-11-19&size=100&page=23",
+     "at": "2026-11-19T06:11:25Z",
+     "status": 200,
+     "bytes": 164647,
+     "sha256_prefix": "a0f732fa83568b03",
+     "changed": true
+    },
+    {
+     "name": "updated-24",
+     "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-18&toUpdatedDate=2026-11-19&size=100&page=24",
+     "at": "2026-11-19T06:11:35Z",
+     "status": 200,
+     "bytes": 143947,
+     "sha256_prefix": "c06e42dc381be208",
+     "changed": true
+    }
+   ]
+  },
   {
    "at": "2026-11-18T23:59:34Z",
    "finished": "2026-11-19T00:04:54Z",

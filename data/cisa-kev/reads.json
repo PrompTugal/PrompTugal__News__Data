@@ -1,15 +1,24 @@
 {
- "license": {
-  "name": "CC BY 4.0",
-  "url": "https://creativecommons.org/licenses/by/4.0/",
-  "holder": "PrompTugal.news",
-  "note": "What PrompTugal.news makes: this file's structure, records and derived values.",
-  "commercial_use": "allowed",
-  "commercial_note": "With credit to PrompTugal.news; values taken from a source keep that source's licence."
- },
  "about": "Every run of sources/cisa-kev/collect.mjs, newest first: each request's address, HTTP status, size, the first 16 hex of its sha256, and whether the bytes changed since the run before. The bytes and the full sha256 go to the source's vault (see card.json: latest/reads-full.json), never to git.",
  "source": "cisa-kev",
  "runs": [
+  {
+   "at": "2026-11-19T06:03:49Z",
+   "finished": "2026-11-19T06:03:51Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "kev",
+     "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+     "at": "2026-11-19T06:03:51Z",
+     "status": 200,
+     "bytes": 1863915,
+     "sha256_prefix": "ad618e404a43d72a",
+     "changed": false
+    }
+   ]
+  },
   {
    "at": "2026-11-18T23:42:26Z",
    "finished": "2026-11-18T23:42:28Z",

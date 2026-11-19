@@ -1,15 +1,213 @@
 {
- "license": {
-  "name": "CC BY 4.0",
-  "url": "https://creativecommons.org/licenses/by/4.0/",
-  "holder": "PrompTugal.news",
-  "note": "What PrompTugal.news makes: this file's structure, records and derived values.",
-  "commercial_use": "allowed",
-  "commercial_note": "With credit to PrompTugal.news; values taken from a source keep that source's licence."
- },
  "about": "Every run of sources/github-pt/collect.mjs, newest first: each request's address, HTTP status, size, the first 16 hex of its sha256, and whether the bytes changed since the run before. The bytes and the full sha256 go to the source's vault (see card.json: latest/reads-full.json), never to git.",
  "source": "github-pt",
  "runs": [
+  {
+   "at": "2026-11-19T06:12:21Z",
+   "finished": "2026-11-19T06:12:42Z",
+   "ok": 1,
+   "failed": 21,
+   "reads": [
+    {
+     "name": "rate-limit",
+     "url": "https://api.github.com/rate_limit",
+     "at": "2026-11-19T06:12:21Z",
+     "status": 200,
+     "bytes": 1238,
+     "sha256_prefix": "0548efc6dde52db5",
+     "changed": true
+    },
+    {
+     "name": "repos-codacy",
+     "url": "https://api.github.com/orgs/codacy/repos?type=public&sort=pushed&direction=desc&per_page=100",
+     "at": "2026-11-19T06:12:22Z",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-subvisual",
+     "url": "https://api.github.com/orgs/subvisual/repos?type=public&sort=pushed&direction=desc&per_page=100",
+     "at": "2026-11-19T06:12:23Z",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-ubiwhere",
+     "url": "https://api.github.com/orgs/ubiwhere/repos?type=public&sort=pushed&direction=desc&per_page=100",
+     "at": "2026-11-19T06:12:24Z",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-mindera",
+     "url": "https://api.github.com/orgs/mindera/repos?type=public&sort=pushed&direction=desc&per_page=100",
+     "at": "2026-11-19T06:12:25Z",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-farfetch",
+     "url": "https://api.github.com/orgs/farfetch/repos?type=public&sort=pushed&direction=desc&per_page=100",
+     "at": "2026-11-19T06:12:26Z",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-glintt",
+     "url": "https://api.github.com/orgs/glintt/repos?type=public&sort=pushed&direction=desc&per_page=100",
+     "at": "2026-11-19T06:12:27Z",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-criticalsoftware",
+     "url": "https://api.github.com/orgs/criticalsoftware/repos?type=public&sort=pushed&direction=desc&per_page=100",
+     "at": "2026-11-19T06:12:28Z",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-sapo",
+     "url": "https://api.github.com/orgs/sapo/repos?type=public&sort=pushed&direction=desc&per_page=100",
+     "at": "2026-11-19T06:12:29Z",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-amagovpt",
+     "url": "https://api.github.com/orgs/amagovpt/repos?type=public&sort=pushed&direction=desc&per_page=100",
+     "at": "2026-11-19T06:12:30Z",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-fccn",
+     "url": "https://api.github.com/orgs/fccn/repos?type=public&sort=pushed&direction=desc&per_page=100",
+     "at": "2026-11-19T06:12:31Z",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-rcaap",
+     "url": "https://api.github.com/orgs/rcaap/repos?type=public&sort=pushed&direction=desc&per_page=100",
+     "at": "2026-11-19T06:12:32Z",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-inesctec",
+     "url": "https://api.github.com/orgs/inesctec/repos?type=public&sort=pushed&direction=desc&per_page=100",
+     "at": "2026-11-19T06:12:33Z",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-inesc-id",
+     "url": "https://api.github.com/orgs/inesc-id/repos?type=public&sort=pushed&direction=desc&per_page=100",
+     "at": "2026-11-19T06:12:34Z",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-ieeta-pt",
+     "url": "https://api.github.com/orgs/ieeta-pt/repos?type=public&sort=pushed&direction=desc&per_page=100",
+     "at": "2026-11-19T06:12:35Z",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-haslab",
+     "url": "https://api.github.com/orgs/haslab/repos?type=public&sort=pushed&direction=desc&per_page=100",
+     "at": "2026-11-19T06:12:36Z",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-LasigeBioTM",
+     "url": "https://api.github.com/orgs/LasigeBioTM/repos?type=public&sort=pushed&direction=desc&per_page=100",
+     "at": "2026-11-19T06:12:37Z",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-lip-computing",
+     "url": "https://api.github.com/orgs/lip-computing/repos?type=public&sort=pushed&direction=desc&per_page=100",
+     "at": "2026-11-19T06:12:38Z",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-ipleiria",
+     "url": "https://api.github.com/orgs/ipleiria/repos?type=public&sort=pushed&direction=desc&per_page=100",
+     "at": "2026-11-19T06:12:39Z",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-fenixedu",
+     "url": "https://api.github.com/orgs/fenixedu/repos?type=public&sort=pushed&direction=desc&per_page=100",
+     "at": "2026-11-19T06:12:40Z",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-centraldedados",
+     "url": "https://api.github.com/orgs/centraldedados/repos?type=public&sort=pushed&direction=desc&per_page=100",
+     "at": "2026-11-19T06:12:41Z",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-transparenciahackday",
+     "url": "https://api.github.com/orgs/transparenciahackday/repos?type=public&sort=pushed&direction=desc&per_page=100",
+     "at": "2026-11-19T06:12:42Z",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    }
+   ]
+  },
   {
    "at": "2026-11-18T23:43:57Z",
    "finished": "2026-11-18T23:46:49Z",

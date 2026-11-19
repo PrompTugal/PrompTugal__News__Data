@@ -1,28 +1,11 @@
 {
- "data_read_at": "2026-11-18T23:59:24Z",
- "expected_cadence": {
-  "name": "every 6 hours",
-  "seconds": 21600
- },
- "schema": {
-  "openapi": "https://data.promptugal.news/api/v1/enisa-pubs/openapi.json",
-  "path": "/api/v1/enisa-pubs/latest.json",
-  "version": "v1"
- },
- "license": {
-  "name": "ENISA legal notice (reproduction authorised with the source acknowledged)",
-  "url": "https://www.enisa.europa.eu/about-enisa/legal-notice",
-  "holder": "ENISA",
-  "commercial_use": "allowed",
-  "note": "Credit: \"Source: ENISA\". Legal notice 1.2: reproduction is authorised provided the source is acknowledged, unless stated otherwise. Title, date, link and topics only; no ENISA logo (press and media use only), report text or images."
- },
  "source": "enisa-pubs",
  "title": "ENISA publications",
- "read_at": "2026-11-18T23:59:24Z",
+ "read_at": "2026-11-19T06:06:27Z",
  "provenance": {
   "source": "https://www.enisa.europa.eu/",
   "page": "https://www.enisa.europa.eu/publications",
-  "read_at": "2026-11-18T23:59:24Z",
+  "read_at": "2026-11-19T06:06:27Z",
   "by": "sources/enisa-pubs/collect.mjs (code, no model; run by data.b@PrompTugal.dinis)",
   "terms": "ENISA legal notice 1.2: reproduction of material on its website is authorised if the source is acknowledged, unless stated otherwise; the logo only for press and media use with the source acknowledged. robots.txt allows /publications to our agent and asks for a 10 second crawl delay; it blocks named AI crawlers (we are code, no model, and not named). Dinis decided on 18 Nov 2026 that ENISA is read through its published interfaces. Not reviewed by a person.",
   "robots": "https://www.enisa.europa.eu/robots.txt (Crawl-delay 10; this path allowed)",
