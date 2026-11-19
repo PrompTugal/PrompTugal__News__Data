@@ -1,10 +1,10 @@
 {
- "at": "2026-11-19T13:08:53Z",
+ "at": "2026-11-19T14:08:23Z",
  "sources": [
   {
    "id": "adsb-faro",
-   "ok": 0,
-   "failed": 1,
+   "ok": 1,
+   "failed": 0,
    "wrote": true
   },
   {
@@ -16,12 +16,6 @@
   {
    "id": "ea-flood",
    "ok": 23,
-   "failed": 0,
-   "wrote": true
-  },
-  {
-   "id": "eurostat-tourism",
-   "ok": 3,
    "failed": 0,
    "wrote": true
   },
@@ -68,20 +62,8 @@
    "wrote": true
   },
   {
-   "id": "open-meteo-london",
-   "ok": 0,
-   "failed": 1,
-   "wrote": false
-  },
-  {
    "id": "tfl-jamcams",
    "ok": 1,
-   "failed": 0,
-   "wrote": true
-  },
-  {
-   "id": "youtube-replays",
-   "ok": 3,
    "failed": 0,
    "wrote": true
   }
