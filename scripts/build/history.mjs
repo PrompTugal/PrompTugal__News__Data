@@ -57,6 +57,6 @@ export function buildHistory(sources) {
         sources: { observed: { url: 'https://data.promptugal.news/api/v1/ea-flood/latest.json', field: 'daily_rain', license: EA_LIC }, forecast: { url: 'https://data.promptugal.news/api/v1/open-meteo-london/latest.json', field: 'history', license: OM_LIC } },
         commit: process.env.GITHUB_SHA || 'local', rows });
       files.push({ place: 'london', first_day: first, days: rows.length, url: 'https://data.promptugal.news/api/v1/history/weather/london.json' }); } }
-  writeJson('api/v1/history/index.json', { about: 'The past, per place, from what this site keeps: weather observed beside what was forecast. Each file states its first day: station days from 17 November 2026 (partial), IPMA's issued forecasts from 19 November 2026. Collections before that were not kept, because the raw history vault is not yet switched on.', data_read_at: obs.read_at || null, weather: files });
+  writeJson('api/v1/history/index.json', { about: 'The past, per place, from what this site keeps: weather observed beside what was forecast. Each file states its first day: station days from 17 November 2026 (partial), IPMA\'s issued forecasts from 19 November 2026. Collections before that were not kept, because the raw history vault is not yet switched on.', data_read_at: obs.read_at || null, weather: files });
   return files.length;
 }
