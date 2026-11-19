@@ -21,8 +21,8 @@ One file per automation, by its owner, reviewed by security@PrompTugal.dinis (Di
 - ipma-city-forecasts, ipma-fire-risk, ipma-uv (and any other ipma-* collector).
 - adsb-faro.
 - meteoalarm-pt.
-- The Pages workflow (.github/workflows/pages.yml: schedules, permissions, vault push with secrets, pinned and unpinned actions).
-- The observability lane (src/assets/obs/obs.js, scripts/obs-data-setup.py, team/keys/obs-data.json: public append tokens, geo lookups by third parties).
+- The Pages workflow (.github/workflows/pages.yml: no schedule since 19 Nov 2026, permissions, vault push with secrets, pinned and unpinned actions).
+- The observability lane (src/assets/obs/obs.js, scripts/obs-data-setup.py, team/keys/obs-data.json: public append tokens; no geo lookup by any third party since 19 Nov 2026, the country only, from the browser's time zone through a fixed table).
 - The storm build (scripts/build/storm.mjs, scripts/storm-flights-map.mjs, storm/charles tools, src/assets/viz/ charts).
 
 Format for each: Parts, What it reads, What it writes, What it trusts, Secrets, What could go wrong (table: risk, mitigation with file:line, residual), Residual risks and owners.

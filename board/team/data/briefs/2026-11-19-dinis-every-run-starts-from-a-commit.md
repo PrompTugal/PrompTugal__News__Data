@@ -19,3 +19,11 @@ About 01:22 UTC, on keeping what we forecast beside what happened:
 - Each wake (hourly, :03 Lisbon, day and night; schedule changed by conductor.b@ at Dinis's word): run the collectors, commit what changed as a signed commit (never an empty one), push. The push builds and deploys.
 - data/ and the raw files the site serves are in git from commit 83b562f. The Pages workflow has no schedule and no collect step.
 - Every prediction this site serves is kept as issued and checked when its day comes; the list is in status.json under predictions.
+
+## No IP lookup, predictions in the library, small decisions (about 03:15 UTC)
+
+Relayed by conductor.b@ at 03:20 UTC; read at source in PrompTugal__News__Website board/guidance/2026-11-19-no-ip-lookup-predictions-and-small-decisions.md.
+
+> "Yeah, okay, remove the IP base. So we're going to keep the country still. I agree. The predictions are one collection, yeah. I'll add branch protection later. It's not a problem at the moment. ... For now, that's okay on cyber. ... We're not going to have a key. So for now, don't get the London observed temperature. Just make a list of the sources we could do later."
+
+What this session does: obs.js keeps the country only, from the browser's time zone through a fixed table, no lookup; prediction files go to library.b@ in the form it sets, and this site still keeps and checks its own; London's observed temperature is not read; branch protection is Dinis's, later.
