@@ -1,6 +1,6 @@
 {
  "place": "algarve",
- "read_at": "2026-11-19T03:08:08Z",
+ "read_at": "2026-11-19T04:10:17Z",
  "by": "collect/by-place-now.mjs (code, no model; data@PrompTugal.dinis), from this site's collected sources",
  "about": "Now in the Algarve: IPMA's warnings for the Faro district, Faro airport, and each place's nearest station. Not a warning service.",
  "warnings": {
@@ -22,25 +22,8 @@
   "icao": "LPFR",
   "name": "Faro airport",
   "within_nm": 40,
-  "at": "2026-11-19T03:03:50Z",
-  "airline": [
-   {
-    "callsign": "AFR530",
-    "airline": "AFR",
-    "type": "A359",
-    "alt_ft": 40000,
-    "on_ground": false,
-    "ground_speed_kt": 533.4
-   },
-   {
-    "callsign": "AFR719",
-    "airline": "AFR",
-    "type": "A359",
-    "alt_ft": 40000,
-    "on_ground": false,
-    "ground_speed_kt": 535.1
-   }
-  ],
+  "at": "2026-11-19T04:03:52Z",
+  "airline": [],
   "other_aircraft": 0,
   "page": "https://globe.adsb.lol/?lat=37.014&lon=-7.966&zoom=9",
   "source": "https://api.adsb.lol/",
@@ -50,7 +33,7 @@
   {
    "place": "faro",
    "station": "Faro (Aeródromo)",
-   "temp_c": 18.5
+   "temp_c": 17.3
   },
   {
    "place": "loule",
@@ -90,7 +73,7 @@
   {
    "place": "olhao",
    "station": "Olhão, EPPO",
-   "temp_c": 18.1
+   "temp_c": 17.5
   },
   {
    "place": "albufeira",
@@ -105,12 +88,12 @@
   {
    "place": "monchique",
    "station": "Fóia",
-   "temp_c": 12.3
+   "temp_c": 12
   },
   {
    "place": "aljezur",
    "station": "Aljezur",
-   "temp_c": 17.6
+   "temp_c": 17.3
   },
   {
    "place": "vila-do-bispo",
@@ -125,48 +108,48 @@
   {
    "place": "alcoutim",
    "station": "Alcoutim, Mart.Longo",
-   "temp_c": 15.7
+   "temp_c": 15.4
   },
   {
    "place": "sao-bras-de-alportel",
    "station": "Olhão, EPPO",
-   "temp_c": 18.1
+   "temp_c": 17.5
   }
  ],
  "reads": {
   "observations": {
    "url": "https://data.promptugal.news/api/v1/ipma-observations/latest.json",
-   "at": "2026-11-19T03:07:43Z",
+   "at": "2026-11-19T04:09:52Z",
    "status": 200
   },
   "warnings": {
    "url": "https://data.promptugal.news/api/v1/ipma-warnings/latest.json",
-   "at": "2026-11-19T03:08:01Z",
+   "at": "2026-11-19T04:10:10Z",
    "status": 200
   },
   "forecasts": {
    "url": "https://data.promptugal.news/api/v1/ipma-city-forecasts/latest.json",
-   "at": "2026-11-19T03:06:07Z",
+   "at": "2026-11-19T04:08:17Z",
    "status": 200
   },
   "fire-risk": {
    "url": "https://data.promptugal.news/api/v1/ipma-fire-risk/latest.json",
-   "at": "2026-11-19T03:07:36Z",
+   "at": "2026-11-19T04:09:45Z",
    "status": 200
   },
   "uv": {
    "url": "https://data.promptugal.news/api/v1/ipma-uv/latest.json",
-   "at": "2026-11-19T03:07:58Z",
+   "at": "2026-11-19T04:10:07Z",
    "status": 200
   },
   "sea": {
    "url": "https://data.promptugal.news/api/v1/ipma-sea/latest.json",
-   "at": "2026-11-19T03:07:48Z",
+   "at": "2026-11-19T04:09:58Z",
    "status": 200
   },
   "adsb": {
    "url": "https://data.promptugal.news/api/v1/adsb-faro/latest.json",
-   "at": "2026-11-19T03:03:50Z",
+   "at": "2026-11-19T04:03:52Z",
    "status": 200
   }
  }

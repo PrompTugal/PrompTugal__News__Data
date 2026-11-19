@@ -1,6 +1,6 @@
 {
  "place": "silves",
- "read_at": "2026-11-19T03:08:08Z",
+ "read_at": "2026-11-19T04:10:17Z",
  "by": "collect/by-place-now.mjs (code, no model; data@PrompTugal.dinis), from this site's collected sources",
  "coords": {
   "lat": 37.18333,
@@ -116,37 +116,37 @@
  "reads": {
   "observations": {
    "url": "https://data.promptugal.news/api/v1/ipma-observations/latest.json",
-   "at": "2026-11-19T03:07:43Z",
+   "at": "2026-11-19T04:09:52Z",
    "status": 200
   },
   "warnings": {
    "url": "https://data.promptugal.news/api/v1/ipma-warnings/latest.json",
-   "at": "2026-11-19T03:08:01Z",
+   "at": "2026-11-19T04:10:10Z",
    "status": 200
   },
   "forecasts": {
    "url": "https://data.promptugal.news/api/v1/ipma-city-forecasts/latest.json",
-   "at": "2026-11-19T03:06:07Z",
+   "at": "2026-11-19T04:08:17Z",
    "status": 200
   },
   "fire-risk": {
    "url": "https://data.promptugal.news/api/v1/ipma-fire-risk/latest.json",
-   "at": "2026-11-19T03:07:36Z",
+   "at": "2026-11-19T04:09:45Z",
    "status": 200
   },
   "uv": {
    "url": "https://data.promptugal.news/api/v1/ipma-uv/latest.json",
-   "at": "2026-11-19T03:07:58Z",
+   "at": "2026-11-19T04:10:07Z",
    "status": 200
   },
   "sea": {
    "url": "https://data.promptugal.news/api/v1/ipma-sea/latest.json",
-   "at": "2026-11-19T03:07:48Z",
+   "at": "2026-11-19T04:09:58Z",
    "status": 200
   },
   "adsb": {
    "url": "https://data.promptugal.news/api/v1/adsb-faro/latest.json",
-   "at": "2026-11-19T03:03:50Z",
+   "at": "2026-11-19T04:03:52Z",
    "status": 200
   }
  }
