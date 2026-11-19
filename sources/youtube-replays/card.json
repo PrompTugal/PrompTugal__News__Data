@@ -1,0 +1,52 @@
+{
+ "id": "youtube-replays",
+ "title": "Web Summit 2026 replays on YouTube",
+ "what": "The recorded talks of Web Summit 2026 (Lisbon, 9 to 12 November 2026; Day Two, 11 November, cancelled) that Web Summit's official YouTube channel published since 1 November 2026: title, time published, length, view and like counts as read, a link to YouTube, the address for YouTube's own player, and the chapters (talk start times and titles, speakers where the line names them) read from each description's timestamp lines. The videos stay Web Summit's: we link and embed with YouTube's player, and keep no description, thumbnail or comment.",
+ "publisher": "Web Summit, through YouTube (YouTube LLC, Google)",
+ "owner": "data.b@PrompTugal.dinis",
+ "collector": "sources/youtube-replays/collect.mjs",
+ "source_home": "https://www.youtube.com/@WebSummit",
+ "reader_page": "https://www.youtube.com/@WebSummit",
+ "country": "PT",
+ "places": ["lisboa"],
+ "schedule": {
+  "cadence": "every 6 hours",
+  "how": "the Pages workflow (.github/workflows/pages.yml) at 17 minutes past 00, 06, 12 and 18 UTC; 3 or 4 requests a run (as many quota units, of the 10,000 a day by default; the run stops at 200 units); where the environment has no key (GitHub Actions), the run does nothing and keeps the last read, copied from the live site, until it is 25 days old, then deletes the videos from it"
+ },
+ "terms": {
+  "summary": "YouTube API Services Terms of Service and Developer Policies (both last updated 2026-11-06 UTC). Data read without a user's sign-in is Non-Authorized Data: stored for no longer than 30 calendar days, then deleted or refreshed; so this source keeps only the latest read, replaced every run, with no raw copy or history in a vault. YouTube must be shown as the source and its Terms linked (https://www.youtube.com/t/terms); no copy or offline use of the audiovisual content (we link and use YouTube's embedded player only); no aggregation of API Data beyond one content owner's own channels (we read one channel and add no totals across channels). The videos, titles and descriptions stay Web Summit's. Not reviewed by a person.",
+  "page": "https://developers.google.com/youtube/terms/developer-policies",
+  "read_at": "2026-11-19",
+  "quote": "API Clients may temporarily store limited amounts of Non-Authorized Data for as long as is necessary for the purposes of the API Client but not longer than 30 calendar days. As in section (III.E.4.c) immediately above, this means that after 30 calendar days, the API Client must either delete or refresh the stored data.",
+  "quote_lang": "en",
+  "quotes": [
+   { "page": "https://developers.google.com/youtube/terms/developer-policies", "section": "III.E.4 Refreshing, Storing, and Displaying API Data", "text": "To be clear, an API Client must not store statistics retrieved as Non-Authorized Data for more than 30 days. For example, an API Client must not store the subscriber count for a YouTube channel for more than 30 days without authorization from the channel owner." },
+   { "page": "https://developers.google.com/youtube/terms/developer-policies", "section": "III.E.4", "text": "In all cases, API Clients must use reasonable efforts to ensure that their stored API Data is consistent with the current data available through YouTube API Services. For example, API Clients should reflect metadata changes and viewcount updates as quickly as possible." },
+   { "page": "https://developers.google.com/youtube/terms/developer-policies", "section": "III.E.4", "text": "API Clients must display the most updated API Data available in their user-facing presentations, including in user interfaces, although API Clients may display historical API Data provided that it is presented accurately in context of time." },
+   { "page": "https://developers.google.com/youtube/terms/developer-policies", "section": "III.E Audiovisual Content", "text": "download, import, backup, cache, or store copies of YouTube audiovisual content without YouTube's prior written approval," },
+   { "page": "https://developers.google.com/youtube/terms/developer-policies", "section": "III.E Data Aggregation", "text": "Do not aggregate API Data except that you may only aggregate API Data relating to YouTube channels that are under the same content owner as recognized by YouTube pursuant to content licensing agreement(s) between YouTube and such content owner." },
+   { "page": "https://developers.google.com/youtube/terms/developer-policies", "section": "Branding", "text": "Any API Client page or feature that displays YouTube content, including, without limitation, search results, YouTube videos, channels, playlists, thumbnails, and YouTube players, must make clear to the viewer that YouTube is the source of the relevant content by displaying YouTube Brand Features in accordance with the requirements below and the YouTube Branding Guidelines (https://developers.google.com/youtube/terms/branding-guidelines)." },
+   { "page": "https://developers.google.com/youtube/terms/developer-policies", "section": "III.A.2 terms of use", "text": "API Clients must display a link to YouTube's Terms of Service (https://www.youtube.com/t/terms), and they must also state in their own terms of use that, by using those API Clients, users are agreeing to be bound by the YouTube Terms of Service." },
+   { "page": "https://developers.google.com/youtube/terms/developer-policies", "section": "Playback Integrity", "text": "API Clients must not charge users to watch content in an embedded YouTube player." },
+   { "page": "https://developers.google.com/youtube/terms/api-services-terms-of-service", "section": "10.3 Attribution", "text": "All API Clients must provide proper attribution in accordance with the YouTube Branding Guidelines and these Terms of Service (where applicable) when using the YouTube Brand Features." },
+   { "page": "https://developers.google.com/youtube/v3/determine_quota_cost", "section": "Quota (Data API documentation, not the two terms pages)", "text": "Projects that enable the YouTube Data API have a default quota allocation of 100 search.list calls, 100 videos.insert calls, and 10,000 units per day combined for all other endpoints." }
+  ],
+  "republish": "per item: the videos, titles and descriptions stay Web Summit's; we publish the link, the embed address and values read through the API, replaced every run (at most 30 calendar days old), with YouTube named as the source and its Terms linked. Commercial use of what YouTube serves is not ours to grant: unclear. A site that sells subscriptions should link and embed the videos with YouTube's player and not charge to watch them.",
+  "open_question": "Dinis: (1) who accepted the YouTube API Services Terms of Service for the project the key belongs to (an agent never does)? (2) The Developer Policies ask an API Client to display a link to YouTube's Terms and the YouTube Brand Features where it shows YouTube content: the sites that show these videos (library.b@'s pages, the Website) must do so, and library.b@ should be told. (3) Whether our reading of the 30-day rule is right (latest read only, refreshed every 6 hours, deleted if 25 days old without a refresh) is for a person to confirm. (4) No dated copy of a read is kept anywhere, so there is no way to show later what a count was on a given day; history needs YouTube's written approval or the channel owner's own authorisation."
+ },
+ "api": {
+  "latest": "https://data.promptugal.news/api/v1/youtube-replays/latest.json",
+  "reads": "https://data.promptugal.news/api/v1/youtube-replays/reads.json",
+  "card": "https://data.promptugal.news/api/v1/youtube-replays/card.json",
+  "openapi": "https://data.promptugal.news/api/v1/youtube-replays/openapi.json",
+  "page": "https://data.promptugal.news/sources/youtube-replays/"
+ },
+ "vault": null,
+ "split": {
+  "code": ["the collector asks the YouTube Data API for the channel, its uploads since 1 November 2026 and each video's details (channels.list, playlistItems.list, videos.list; never search.list), and parses chapters from the timestamp lines", "GitHub Actions runs it and deploys the site; the key is a network secret of the environment that the code never holds"],
+  "agents": ["data.b.dev@PrompTugal.dinis wrote the collector, card and threat model on 19 November 2026, for data.b@PrompTugal.dinis, at library.b@PrompTugal.dinis's request REQ-2026-0001"],
+  "people": ["Dinis Cruz provided the key through the environment and set the terms-first rule (R15); no person has checked the values (not reviewed)"]
+ },
+ "cost": { "per_run_tokens": 0, "per_run_model_cost_usd": 0, "runner": "GitHub Actions on a public repository: no charge; 3 or 4 requests and as many quota units a run (cap 200)", "build_tokens": "not measured", "note": "Code only: no model is called when the data is collected." },
+ "since": "2026-11-19"
+}

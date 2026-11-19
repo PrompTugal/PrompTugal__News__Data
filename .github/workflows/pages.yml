@@ -68,6 +68,9 @@ jobs:
         # (Dinis, 18 Nov 2026 ~22:40 UTC). Absent, the collector reads anonymously. Never the workflow's own token, which can deploy.
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PUBLIC_READ_TOKEN }}
+          # GOOGLE_API_KEY: the Google key (restricted to YouTube Data, Fact Check, Knowledge Graph, PageSpeed, Books), for
+          # sources/youtube-replays (Dinis, 19 Nov 2026); absent, that source keeps its last read.
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
         run: node collect/run.mjs --prev
       - name: Push the bytes read to each source's vault (skipped until the vault secrets exist)
         env:
