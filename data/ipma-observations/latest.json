@@ -1,20 +1,20 @@
 {
  "source": "ipma-observations",
  "title": "IPMA station observations",
- "read_at": "2026-11-19T15:06:56Z",
+ "read_at": "2026-11-19T16:07:13Z",
  "provenance": {
   "source": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
   "page": "https://www.ipma.pt/en/otempo/obs.superficie/",
-  "read_at": "2026-11-19T15:06:56Z",
+  "read_at": "2026-11-19T16:07:13Z",
   "by": "sources/ipma-observations/collect.mjs (code, no model; run by data@PrompTugal.dinis)",
   "terms": "IPMA: free to copy and use for personal or public use if the use has no profit-making or offensive purpose; always name IPMA as the source."
  },
  "about": "The latest hour IPMA published for each of its surface stations. Missing values (IPMA writes -99) are null; a station that sent nothing that hour has reading null. The hour is UTC.",
- "hour_utc": "2026-11-19T14:00:00Z",
+ "hour_utc": "2026-11-19T15:00:00Z",
  "hours_in_feed": 24,
  "counts": {
   "stations": 227,
-  "reporting": 180,
+  "reporting": 154,
   "daily_days": 3
  },
  "stations": [
@@ -24,13 +24,13 @@
    "lat": 39.45819,
    "lon": -31.1301,
    "reading": {
-    "temp_c": 17.8,
-    "humidity_pct": 66,
-    "wind_kmh": 15.8,
+    "temp_c": 17.4,
+    "humidity_pct": 68,
+    "wind_kmh": 16.9,
     "wind_dir_id": 5,
     "rain_mm": 0,
-    "pressure_hpa": 1018.6,
-    "radiation_kj_m2": 336.9
+    "pressure_hpa": 1017.6,
+    "radiation_kj_m2": 333.1
    }
   },
   {
@@ -39,13 +39,13 @@
    "lat": 39.67389,
    "lon": -31.11362,
    "reading": {
-    "temp_c": 17.7,
-    "humidity_pct": 65,
+    "temp_c": 17.8,
+    "humidity_pct": 64,
     "wind_kmh": 10.8,
-    "wind_dir_id": 6,
+    "wind_dir_id": 7,
     "rain_mm": 0,
-    "pressure_hpa": 1018.4,
-    "radiation_kj_m2": 1375.1
+    "pressure_hpa": 1017.5,
+    "radiation_kj_m2": 1076.4
    }
   },
   {
@@ -54,13 +54,13 @@
    "lat": 38.55219,
    "lon": -28.44137,
    "reading": {
-    "temp_c": 15.4,
-    "humidity_pct": 69,
-    "wind_kmh": 7.2,
-    "wind_dir_id": 6,
-    "rain_mm": 0,
-    "pressure_hpa": 1019.7,
-    "radiation_kj_m2": 155.4
+    "temp_c": 14,
+    "humidity_pct": 84,
+    "wind_kmh": 3.6,
+    "wind_dir_id": 5,
+    "rain_mm": 0.4,
+    "pressure_hpa": 1019.3,
+    "radiation_kj_m2": 212
    }
   },
   {
@@ -69,12 +69,12 @@
    "lat": 38.5211,
    "lon": -28.7128,
    "reading": {
-    "temp_c": 16.1,
-    "humidity_pct": 74,
-    "wind_kmh": 21.6,
+    "temp_c": 15,
+    "humidity_pct": 84,
+    "wind_kmh": 18.4,
     "wind_dir_id": 5,
-    "rain_mm": 0.5,
-    "pressure_hpa": 1020.5,
+    "rain_mm": 1.3,
+    "pressure_hpa": 1019.5,
     "radiation_kj_m2": null
    }
   },
@@ -84,13 +84,13 @@
    "lat": 38.540781,
    "lon": -28.63225,
    "reading": {
-    "temp_c": 16,
-    "humidity_pct": 76,
-    "wind_kmh": 22.7,
+    "temp_c": 14.4,
+    "humidity_pct": 87,
+    "wind_kmh": 14.4,
     "wind_dir_id": 5,
-    "rain_mm": 0.1,
-    "pressure_hpa": 1020.8,
-    "radiation_kj_m2": 145.3
+    "rain_mm": 3.2,
+    "pressure_hpa": 1019.9,
+    "radiation_kj_m2": 177.5
    }
   },
   {
@@ -99,12 +99,12 @@
    "lat": 39.09036,
    "lon": -28.02852,
    "reading": {
-    "temp_c": 16.3,
-    "humidity_pct": 65,
-    "wind_kmh": 8.6,
-    "wind_dir_id": 6,
+    "temp_c": 16.2,
+    "humidity_pct": 66,
+    "wind_kmh": 12.2,
+    "wind_dir_id": 5,
     "rain_mm": 0,
-    "pressure_hpa": 1019.9,
+    "pressure_hpa": 1019,
     "radiation_kj_m2": 0
    }
   },
@@ -114,13 +114,13 @@
    "lat": 38.66,
    "lon": -28.17,
    "reading": {
-    "temp_c": 15.2,
-    "humidity_pct": 72,
-    "wind_kmh": 7.9,
+    "temp_c": 14.8,
+    "humidity_pct": 79,
+    "wind_kmh": 10.8,
     "wind_dir_id": 3,
-    "rain_mm": 0,
-    "pressure_hpa": 1020.2,
-    "radiation_kj_m2": 165.1
+    "rain_mm": 0.2,
+    "pressure_hpa": 1019.6,
+    "radiation_kj_m2": 221.8
    }
   },
   {
@@ -129,13 +129,13 @@
    "lat": 38.6659435,
    "lon": -27.216567,
    "reading": {
-    "temp_c": 16.1,
-    "humidity_pct": 70,
-    "wind_kmh": 14.8,
-    "wind_dir_id": 6,
-    "rain_mm": 0,
-    "pressure_hpa": 1021.3,
-    "radiation_kj_m2": 175.1
+    "temp_c": 15.4,
+    "humidity_pct": 75,
+    "wind_kmh": 16.9,
+    "wind_dir_id": 5,
+    "rain_mm": 0.3,
+    "pressure_hpa": 1020.6,
+    "radiation_kj_m2": 170.2
    }
   },
   {
@@ -144,13 +144,13 @@
    "lat": 37.74414,
    "lon": -25.6953048,
    "reading": {
-    "temp_c": 14.2,
-    "humidity_pct": 83,
-    "wind_kmh": 5.8,
-    "wind_dir_id": 8,
-    "rain_mm": 0.2,
-    "pressure_hpa": 1022.2,
-    "radiation_kj_m2": 128.8
+    "temp_c": 13.8,
+    "humidity_pct": 87,
+    "wind_kmh": 4.3,
+    "wind_dir_id": 1,
+    "rain_mm": 2.6,
+    "pressure_hpa": 1021.6,
+    "radiation_kj_m2": 134.1
    }
   },
   {
@@ -166,13 +166,13 @@
    "lat": 32.69688,
    "lon": -16.77612,
    "reading": {
-    "temp_c": 22.4,
+    "temp_c": 22.1,
     "humidity_pct": null,
-    "wind_kmh": 11.9,
+    "wind_kmh": 16.2,
     "wind_dir_id": 2,
     "rain_mm": 0,
-    "pressure_hpa": 1022.3,
-    "radiation_kj_m2": 2062.3
+    "pressure_hpa": 1022,
+    "radiation_kj_m2": 1209.3
    }
   },
   {
@@ -181,13 +181,13 @@
    "lat": 32.64786,
    "lon": -16.888,
    "reading": {
-    "temp_c": 24.8,
+    "temp_c": 24.5,
     "humidity_pct": 65,
-    "wind_kmh": 7.2,
-    "wind_dir_id": 4,
+    "wind_kmh": 12.2,
+    "wind_dir_id": 3,
     "rain_mm": 0,
-    "pressure_hpa": 1021.7,
-    "radiation_kj_m2": 2354.8
+    "pressure_hpa": 1021.2,
+    "radiation_kj_m2": 2056.1
    }
   },
   {
@@ -196,12 +196,12 @@
    "lat": 33.074029,
    "lon": -16.34868,
    "reading": {
-    "temp_c": 21.8,
+    "temp_c": 21.5,
     "humidity_pct": null,
-    "wind_kmh": 16.2,
+    "wind_kmh": 16.9,
     "wind_dir_id": 3,
-    "rain_mm": null,
-    "pressure_hpa": 1022.3,
+    "rain_mm": 0,
+    "pressure_hpa": 1022.1,
     "radiation_kj_m2": null
    }
   },
@@ -213,10 +213,10 @@
    "reading": {
     "temp_c": null,
     "humidity_pct": 68,
-    "wind_kmh": 19.1,
+    "wind_kmh": 19.4,
     "wind_dir_id": 7,
     "rain_mm": 0,
-    "pressure_hpa": 1020.5,
+    "pressure_hpa": 1020.7,
     "radiation_kj_m2": null
    }
   },
@@ -226,13 +226,13 @@
    "lat": 37.012835,
    "lon": -8.949089,
    "reading": {
-    "temp_c": 19.9,
-    "humidity_pct": 48,
-    "wind_kmh": 15.1,
+    "temp_c": 19.7,
+    "humidity_pct": 52,
+    "wind_kmh": 19.4,
     "wind_dir_id": 8,
     "rain_mm": 0,
     "pressure_hpa": 1021.5,
-    "radiation_kj_m2": 1836.5
+    "radiation_kj_m2": 1502.6
    }
   },
   {
@@ -241,13 +241,13 @@
    "lat": 38.71907778,
    "lon": -9.14972222,
    "reading": {
-    "temp_c": 18.7,
-    "humidity_pct": 66,
-    "wind_kmh": 13,
+    "temp_c": 19.4,
+    "humidity_pct": 58,
+    "wind_kmh": 12.2,
     "wind_dir_id": 7,
     "rain_mm": 0,
     "pressure_hpa": 1020.7,
-    "radiation_kj_m2": 1411.7
+    "radiation_kj_m2": 1448
    }
   },
   {
@@ -256,13 +256,13 @@
    "lat": 37.954504,
    "lon": -8.838271,
    "reading": {
-    "temp_c": 18.3,
-    "humidity_pct": 71,
-    "wind_kmh": 18.7,
+    "temp_c": 18.4,
+    "humidity_pct": 68,
+    "wind_kmh": 20.2,
     "wind_dir_id": 8,
     "rain_mm": 0,
     "pressure_hpa": 1021.3,
-    "radiation_kj_m2": 1862.1
+    "radiation_kj_m2": 1511.2
    }
   },
   {
@@ -271,13 +271,13 @@
    "lat": 41.233502,
    "lon": -8.681332,
    "reading": {
-    "temp_c": 15.4,
-    "humidity_pct": 79,
-    "wind_kmh": 20.2,
-    "wind_dir_id": 7,
-    "rain_mm": 0.4,
+    "temp_c": 15.6,
+    "humidity_pct": 82,
+    "wind_kmh": 17.6,
+    "wind_dir_id": 6,
+    "rain_mm": 0.1,
     "pressure_hpa": 1018.4,
-    "radiation_kj_m2": 701.3
+    "radiation_kj_m2": 595.1
    }
   },
   {
@@ -293,13 +293,13 @@
    "lat": 41.648875,
    "lon": -8.804606,
    "reading": {
-    "temp_c": 15.2,
-    "humidity_pct": 93,
-    "wind_kmh": 6.8,
-    "wind_dir_id": 8,
-    "rain_mm": 0,
+    "temp_c": 14.9,
+    "humidity_pct": 98,
+    "wind_kmh": 20.2,
+    "wind_dir_id": 6,
+    "rain_mm": 0.3,
     "pressure_hpa": 1017.4,
-    "radiation_kj_m2": 473.7
+    "radiation_kj_m2": 779.9
    }
   },
   {
@@ -309,12 +309,12 @@
    "lon": -7.971953,
    "reading": {
     "temp_c": 21.3,
-    "humidity_pct": 51,
-    "wind_kmh": 13,
+    "humidity_pct": 41,
+    "wind_kmh": 20.2,
     "wind_dir_id": 8,
     "rain_mm": 0,
-    "pressure_hpa": 1021.1,
-    "radiation_kj_m2": 1965.5
+    "pressure_hpa": 1020.8,
+    "radiation_kj_m2": 1615.3
    }
   },
   {
@@ -323,13 +323,13 @@
    "lat": 38.53336389,
    "lon": -7.88338056,
    "reading": {
-    "temp_c": 17.8,
+    "temp_c": 18.1,
     "humidity_pct": null,
-    "wind_kmh": 21.2,
-    "wind_dir_id": 7,
+    "wind_kmh": 19.4,
+    "wind_dir_id": 8,
     "rain_mm": null,
-    "pressure_hpa": 1020.5,
-    "radiation_kj_m2": 1177.7
+    "pressure_hpa": 1020.3,
+    "radiation_kj_m2": 1426.7
    }
   },
   {
@@ -338,12 +338,12 @@
    "lat": 40.72645,
    "lon": -7.887472,
    "reading": {
-    "temp_c": 12.3,
-    "humidity_pct": 74,
-    "wind_kmh": 14.4,
+    "temp_c": 12.1,
+    "humidity_pct": 77,
+    "wind_kmh": 13.7,
     "wind_dir_id": 7,
     "rain_mm": 0,
-    "pressure_hpa": 1018.9,
+    "pressure_hpa": 1019.3,
     "radiation_kj_m2": null
    }
   },
@@ -353,13 +353,13 @@
    "lat": 40.71492222,
    "lon": -7.89592222,
    "reading": {
-    "temp_c": 12.2,
-    "humidity_pct": 72,
-    "wind_kmh": 16.6,
+    "temp_c": 11.9,
+    "humidity_pct": 73,
+    "wind_kmh": 19.4,
     "wind_dir_id": 7,
     "rain_mm": 0,
-    "pressure_hpa": 1019.1,
-    "radiation_kj_m2": 1338.9
+    "pressure_hpa": 1019.4,
+    "radiation_kj_m2": 649.6
    }
   },
   {
@@ -375,13 +375,13 @@
    "lat": 41.27418611,
    "lon": -7.7171,
    "reading": {
-    "temp_c": 11.8,
-    "humidity_pct": 83,
-    "wind_kmh": 14.8,
+    "temp_c": 11.5,
+    "humidity_pct": 89,
+    "wind_kmh": 11.9,
     "wind_dir_id": 6,
-    "rain_mm": 0,
-    "pressure_hpa": 1017.3,
-    "radiation_kj_m2": 634.8
+    "rain_mm": 0.1,
+    "pressure_hpa": 1017.5,
+    "radiation_kj_m2": 793.1
    }
   },
   {
@@ -390,13 +390,13 @@
    "lat": 40.41136667,
    "lon": -7.55865278,
    "reading": {
-    "temp_c": 5.4,
+    "temp_c": 5.5,
     "humidity_pct": 97,
     "wind_kmh": 0,
     "wind_dir_id": 0,
     "rain_mm": null,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1024.4
+    "radiation_kj_m2": 606.9
    }
   },
   {
@@ -405,13 +405,13 @@
    "lat": 39.83339444,
    "lon": -7.46678889,
    "reading": {
-    "temp_c": 16.5,
+    "temp_c": 16.6,
     "humidity_pct": 57,
-    "wind_kmh": 20.5,
+    "wind_kmh": 17.3,
     "wind_dir_id": 7,
     "rain_mm": 0,
-    "pressure_hpa": 1017.9,
-    "radiation_kj_m2": 1795.4
+    "pressure_hpa": 1018.2,
+    "radiation_kj_m2": 1531.6
    }
   },
   {
@@ -420,13 +420,13 @@
    "lat": 39.29546944,
    "lon": -7.41996944,
    "reading": {
-    "temp_c": 12.4,
-    "humidity_pct": 90,
-    "wind_kmh": 17.3,
+    "temp_c": 13.5,
+    "humidity_pct": 74,
+    "wind_kmh": 19.8,
     "wind_dir_id": 8,
     "rain_mm": 0,
-    "pressure_hpa": 1020.4,
-    "radiation_kj_m2": 1498.9
+    "pressure_hpa": 1020.1,
+    "radiation_kj_m2": 1680.9
    }
   },
   {
@@ -435,13 +435,13 @@
    "lat": 41.80388889,
    "lon": -6.74283889,
    "reading": {
-    "temp_c": 11.5,
-    "humidity_pct": 62,
-    "wind_kmh": 20.9,
+    "temp_c": 11.6,
+    "humidity_pct": 63,
+    "wind_kmh": 23.4,
     "wind_dir_id": 7,
     "rain_mm": 0,
-    "pressure_hpa": 1015.9,
-    "radiation_kj_m2": 1168.8
+    "pressure_hpa": 1015.8,
+    "radiation_kj_m2": 830.9
    }
   },
   {
@@ -450,12 +450,12 @@
    "lat": 41.85763611,
    "lon": -6.70796389,
    "reading": {
-    "temp_c": 11,
-    "humidity_pct": 71,
-    "wind_kmh": 33.8,
+    "temp_c": 11.1,
+    "humidity_pct": 75,
+    "wind_kmh": 30.2,
     "wind_dir_id": 7,
     "rain_mm": 0,
-    "pressure_hpa": 1015.3,
+    "pressure_hpa": 1015.4,
     "radiation_kj_m2": null
    }
   },
@@ -465,12 +465,12 @@
    "lat": 38.5296,
    "lon": -7.8916,
    "reading": {
-    "temp_c": 17.4,
-    "humidity_pct": 61,
-    "wind_kmh": 19.8,
-    "wind_dir_id": 7,
+    "temp_c": 17.5,
+    "humidity_pct": 58,
+    "wind_kmh": 18.4,
+    "wind_dir_id": 8,
     "rain_mm": 0,
-    "pressure_hpa": 1020.5,
+    "pressure_hpa": 1020.4,
     "radiation_kj_m2": null
    }
   },
@@ -480,13 +480,13 @@
    "lat": 37.7464,
    "lon": -25.662283,
    "reading": {
-    "temp_c": 14.4,
-    "humidity_pct": 79,
-    "wind_kmh": 1.4,
-    "wind_dir_id": 2,
-    "rain_mm": 0,
+    "temp_c": 14,
+    "humidity_pct": 83,
+    "wind_kmh": 2.9,
+    "wind_dir_id": 8,
+    "rain_mm": 2.3,
     "pressure_hpa": null,
-    "radiation_kj_m2": 81.2
+    "radiation_kj_m2": 77.8
    }
   },
   {
@@ -508,7 +508,15 @@
    "name": "Ilhas selvagens",
    "lat": 30.140595,
    "lon": -15.869153,
-   "reading": null
+   "reading": {
+    "temp_c": 22.4,
+    "humidity_pct": 83,
+    "wind_kmh": 0,
+    "wind_dir_id": 0,
+    "rain_mm": 0,
+    "pressure_hpa": 1021.3,
+    "radiation_kj_m2": 2011.4
+   }
   },
   {
    "id": 1210550,
@@ -516,9 +524,9 @@
    "lat": 39.07101,
    "lon": -8.4,
    "reading": {
-    "temp_c": 18.1,
-    "humidity_pct": 59,
-    "wind_kmh": 11.2,
+    "temp_c": 17.7,
+    "humidity_pct": 60,
+    "wind_kmh": 6.8,
     "wind_dir_id": 8,
     "rain_mm": 0,
     "pressure_hpa": 1020.5,
@@ -531,12 +539,12 @@
    "lat": 37.3042,
    "lon": -7.9534,
    "reading": {
-    "temp_c": 16,
-    "humidity_pct": 60,
-    "wind_kmh": 14.4,
-    "wind_dir_id": 8,
+    "temp_c": 16.3,
+    "humidity_pct": 59,
+    "wind_kmh": 13.7,
+    "wind_dir_id": 9,
     "rain_mm": 0,
-    "pressure_hpa": 1021.1,
+    "pressure_hpa": 1020.8,
     "radiation_kj_m2": null
    }
   },
@@ -546,13 +554,13 @@
    "lat": 37.54710833,
    "lon": -8.72899167,
    "reading": {
-    "temp_c": 18.2,
+    "temp_c": 18.6,
     "humidity_pct": 67,
-    "wind_kmh": 12.2,
+    "wind_kmh": 12.6,
     "wind_dir_id": 8,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1047.6
+    "radiation_kj_m2": 1335.4
    }
   },
   {
@@ -561,9 +569,9 @@
    "lat": 38.7618,
    "lon": -9.1254,
    "reading": {
-    "temp_c": 17.8,
-    "humidity_pct": 54,
-    "wind_kmh": 19.1,
+    "temp_c": 18.2,
+    "humidity_pct": 52,
+    "wind_kmh": 19.8,
     "wind_dir_id": 7,
     "rain_mm": 0,
     "pressure_hpa": null,
@@ -576,13 +584,13 @@
    "lat": 41.96673056,
    "lon": -8.66676111,
    "reading": {
-    "temp_c": 15.2,
-    "humidity_pct": 79,
-    "wind_kmh": 13,
-    "wind_dir_id": 6,
-    "rain_mm": 0.3,
-    "pressure_hpa": 1017,
-    "radiation_kj_m2": 680.6
+    "temp_c": 14.8,
+    "humidity_pct": 83,
+    "wind_kmh": 21.2,
+    "wind_dir_id": 7,
+    "rain_mm": 2.5,
+    "pressure_hpa": 1016.9,
+    "radiation_kj_m2": 753.6
    }
   },
   {
@@ -591,13 +599,13 @@
    "lat": 42.06669,
    "lon": -8.383347,
    "reading": {
-    "temp_c": 13.9,
-    "humidity_pct": 89,
-    "wind_kmh": 13,
+    "temp_c": 13.8,
+    "humidity_pct": 88,
+    "wind_kmh": 9.7,
     "wind_dir_id": 7,
-    "rain_mm": 3.6,
+    "rain_mm": 1.6,
     "pressure_hpa": null,
-    "radiation_kj_m2": 476.6
+    "radiation_kj_m2": 357.8
    }
   },
   {
@@ -606,12 +614,12 @@
    "lat": 42.03333333,
    "lon": -8.18333333,
    "reading": {
-    "temp_c": 8.3,
-    "humidity_pct": 93,
-    "wind_kmh": 18.7,
-    "wind_dir_id": 7,
+    "temp_c": 7.9,
+    "humidity_pct": 99,
+    "wind_kmh": 21.6,
+    "wind_dir_id": 6,
     "rain_mm": 2.7,
-    "pressure_hpa": 1017.3,
+    "pressure_hpa": 1017.8,
     "radiation_kj_m2": null
    }
   },
@@ -621,13 +629,13 @@
    "lat": 41.82276667,
    "lon": -7.78797778,
    "reading": {
-    "temp_c": 7.9,
+    "temp_c": 7.3,
     "humidity_pct": 99,
-    "wind_kmh": 16.9,
+    "wind_kmh": 18.7,
     "wind_dir_id": 7,
-    "rain_mm": 0.1,
+    "rain_mm": 2.2,
     "pressure_hpa": null,
-    "radiation_kj_m2": 844
+    "radiation_kj_m2": 308.5
    }
   },
   {
@@ -636,9 +644,9 @@
    "lat": 41.8434,
    "lon": -7.0034416,
    "reading": {
-    "temp_c": 9.1,
-    "humidity_pct": 91,
-    "wind_kmh": 14.4,
+    "temp_c": 9.8,
+    "humidity_pct": 88,
+    "wind_kmh": 17.6,
     "wind_dir_id": 7,
     "rain_mm": 0,
     "pressure_hpa": null,
@@ -651,13 +659,13 @@
    "lat": 41.75013889,
    "lon": -8.56671389,
    "reading": {
-    "temp_c": 15.2,
-    "humidity_pct": 81,
+    "temp_c": 13.3,
+    "humidity_pct": 92,
     "wind_kmh": 5.4,
-    "wind_dir_id": 4,
-    "rain_mm": 1.7,
+    "wind_dir_id": 5,
+    "rain_mm": 0.2,
     "pressure_hpa": null,
-    "radiation_kj_m2": 720.9
+    "radiation_kj_m2": 541.8
    }
   },
   {
@@ -666,13 +674,13 @@
    "lat": 41.72516667,
    "lon": -7.46540833,
    "reading": {
-    "temp_c": 12.9,
-    "humidity_pct": 81,
-    "wind_kmh": 7.6,
+    "temp_c": 14.1,
+    "humidity_pct": 73,
+    "wind_kmh": 9.7,
     "wind_dir_id": 5,
     "rain_mm": 0,
-    "pressure_hpa": 1016.4,
-    "radiation_kj_m2": 563.8
+    "pressure_hpa": 1016.3,
+    "radiation_kj_m2": 707.4
    }
   },
   {
@@ -681,11 +689,11 @@
    "lat": 41.71666667,
    "lon": -8.01666667,
    "reading": {
-    "temp_c": 10.6,
+    "temp_c": 9.8,
     "humidity_pct": 99,
-    "wind_kmh": 20.9,
+    "wind_kmh": 16.9,
     "wind_dir_id": 7,
-    "rain_mm": 0.8,
+    "rain_mm": 4.5,
     "pressure_hpa": null,
     "radiation_kj_m2": null
    }
@@ -703,13 +711,13 @@
    "lat": 41.4289,
    "lon": -8.3178,
    "reading": {
-    "temp_c": 14.1,
-    "humidity_pct": 81,
+    "temp_c": 14.6,
+    "humidity_pct": 79,
     "wind_kmh": 6.5,
-    "wind_dir_id": 7,
+    "wind_dir_id": 6,
     "rain_mm": null,
     "pressure_hpa": 1018,
-    "radiation_kj_m2": 977.3
+    "radiation_kj_m2": 779.8
    }
   },
   {
@@ -718,13 +726,13 @@
    "lat": 41.53333333,
    "lon": -7.96666667,
    "reading": {
-    "temp_c": 13.2,
-    "humidity_pct": 89,
-    "wind_kmh": 7.9,
+    "temp_c": 14.1,
+    "humidity_pct": 83,
+    "wind_kmh": 14,
     "wind_dir_id": 7,
-    "rain_mm": 1.5,
+    "rain_mm": 0.5,
     "pressure_hpa": null,
-    "radiation_kj_m2": 640.4
+    "radiation_kj_m2": 1083.1
    }
   },
   {
@@ -733,13 +741,13 @@
    "lat": 41.51478611,
    "lon": -7.19083889,
    "reading": {
-    "temp_c": 15.1,
-    "humidity_pct": 59,
-    "wind_kmh": 22.3,
+    "temp_c": 14.6,
+    "humidity_pct": 63,
+    "wind_kmh": 19.4,
     "wind_dir_id": 7,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 624.4
+    "radiation_kj_m2": 296
    }
   },
   {
@@ -748,12 +756,12 @@
    "lat": 41.56666667,
    "lon": -6.78333333,
    "reading": {
-    "temp_c": 11.8,
-    "humidity_pct": 77,
-    "wind_kmh": 18.4,
+    "temp_c": 12,
+    "humidity_pct": 76,
+    "wind_kmh": 19.8,
     "wind_dir_id": 7,
     "rain_mm": 0,
-    "pressure_hpa": 1015.7,
+    "pressure_hpa": 1015.8,
     "radiation_kj_m2": null
    }
   },
@@ -763,13 +771,13 @@
    "lat": 41.51666667,
    "lon": -6.28333333,
    "reading": {
-    "temp_c": 10.6,
-    "humidity_pct": 76,
-    "wind_kmh": 27.7,
+    "temp_c": 10.8,
+    "humidity_pct": 77,
+    "wind_kmh": 23.8,
     "wind_dir_id": 7,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 711.4
+    "radiation_kj_m2": 441.3
    }
   },
   {
@@ -778,13 +786,13 @@
    "lat": 41.33333333,
    "lon": -6.73333333,
    "reading": {
-    "temp_c": 10.5,
-    "humidity_pct": 77,
-    "wind_kmh": 37.4,
-    "wind_dir_id": 6,
+    "temp_c": 10.2,
+    "humidity_pct": 79,
+    "wind_kmh": 38.5,
+    "wind_dir_id": 7,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1336.8
+    "radiation_kj_m2": 116.3
    }
   },
   {
@@ -794,10 +802,10 @@
    "lon": -8.38012,
    "reading": {
     "temp_c": 12.2,
-    "humidity_pct": 89,
-    "wind_kmh": 9,
+    "humidity_pct": 90,
+    "wind_kmh": 9.4,
     "wind_dir_id": 6,
-    "rain_mm": 2,
+    "rain_mm": 0.2,
     "pressure_hpa": null,
     "radiation_kj_m2": null
    }
@@ -808,13 +816,13 @@
    "lat": 41.23333333,
    "lon": -7.28333333,
    "reading": {
-    "temp_c": 10.3,
-    "humidity_pct": 87,
-    "wind_kmh": 8.3,
+    "temp_c": 10.7,
+    "humidity_pct": 83,
+    "wind_kmh": 5,
     "wind_dir_id": 6,
     "rain_mm": 0.1,
     "pressure_hpa": null,
-    "radiation_kj_m2": 318
+    "radiation_kj_m2": 215.1
    }
   },
   {
@@ -830,13 +838,13 @@
    "lat": 41.18333333,
    "lon": -7.01666667,
    "reading": {
-    "temp_c": 12.8,
-    "humidity_pct": 67,
-    "wind_kmh": 19.1,
+    "temp_c": 13.2,
+    "humidity_pct": 61,
+    "wind_kmh": 20.5,
     "wind_dir_id": 7,
     "rain_mm": 0,
-    "pressure_hpa": 1017.1,
-    "radiation_kj_m2": 1043.4
+    "pressure_hpa": 1017.2,
+    "radiation_kj_m2": 254.4
    }
   },
   {
@@ -845,10 +853,10 @@
    "lat": 41.172775,
    "lon": -7.5489722,
    "reading": {
-    "temp_c": 17.4,
-    "humidity_pct": 54,
-    "wind_kmh": 12.6,
-    "wind_dir_id": 4,
+    "temp_c": 16.5,
+    "humidity_pct": 57,
+    "wind_kmh": 13,
+    "wind_dir_id": 8,
     "rain_mm": 0,
     "pressure_hpa": null,
     "radiation_kj_m2": null
@@ -860,13 +868,13 @@
    "lat": 41.14585,
    "lon": -8.2490333,
    "reading": {
-    "temp_c": 14,
-    "humidity_pct": 70,
+    "temp_c": 13.1,
+    "humidity_pct": 81,
     "wind_kmh": 10.1,
-    "wind_dir_id": 6,
-    "rain_mm": 0,
+    "wind_dir_id": 5,
+    "rain_mm": 1.8,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1050
+    "radiation_kj_m2": 946.4
    }
   },
   {
@@ -875,10 +883,10 @@
    "lat": 40.97374,
    "lon": -8.6434,
    "reading": {
-    "temp_c": 15.5,
-    "humidity_pct": 72,
-    "wind_kmh": 30.2,
-    "wind_dir_id": 7,
+    "temp_c": 14.8,
+    "humidity_pct": 81,
+    "wind_kmh": 20.9,
+    "wind_dir_id": 6,
     "rain_mm": null,
     "pressure_hpa": 1018.6,
     "radiation_kj_m2": null
@@ -890,13 +898,13 @@
    "lat": 40.98333333,
    "lon": -7.6,
    "reading": {
-    "temp_c": 12.8,
-    "humidity_pct": 66,
-    "wind_kmh": 24.1,
+    "temp_c": 12.9,
+    "humidity_pct": 64,
+    "wind_kmh": 23,
     "wind_dir_id": 7,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1545.6
+    "radiation_kj_m2": 1308.7
    }
   },
   {
@@ -912,13 +920,13 @@
    "lat": 40.78333333,
    "lon": -7.36666667,
    "reading": {
-    "temp_c": 11.1,
-    "humidity_pct": 73,
-    "wind_kmh": 31.7,
+    "temp_c": 10.8,
+    "humidity_pct": 72,
+    "wind_kmh": 33.5,
     "wind_dir_id": 6,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1335.5
+    "radiation_kj_m2": 853.6
    }
   },
   {
@@ -927,13 +935,13 @@
    "lat": 40.93333333,
    "lon": -8.25,
    "reading": {
-    "temp_c": 15.3,
-    "humidity_pct": 68,
-    "wind_kmh": 13.7,
+    "temp_c": 13.7,
+    "humidity_pct": 83,
+    "wind_kmh": 9.7,
     "wind_dir_id": 7,
-    "rain_mm": 0.2,
+    "rain_mm": 0.3,
     "pressure_hpa": null,
-    "radiation_kj_m2": 714.5
+    "radiation_kj_m2": 251
    }
   },
   {
@@ -942,13 +950,13 @@
    "lat": 40.75,
    "lon": -6.88333333,
    "reading": {
-    "temp_c": 12,
-    "humidity_pct": 75,
-    "wind_kmh": 31,
+    "temp_c": 12.6,
+    "humidity_pct": 66,
+    "wind_kmh": 35.6,
     "wind_dir_id": 7,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 929.3
+    "radiation_kj_m2": 813.2
    }
   },
   {
@@ -957,13 +965,13 @@
    "lat": 40.53333333,
    "lon": -7.26666667,
    "reading": {
-    "temp_c": 8.8,
-    "humidity_pct": 76,
-    "wind_kmh": 10.4,
-    "wind_dir_id": 7,
+    "temp_c": 9.1,
+    "humidity_pct": 71,
+    "wind_kmh": 16.9,
+    "wind_dir_id": 6,
     "rain_mm": 0,
     "pressure_hpa": 1019.1,
-    "radiation_kj_m2": 557.3
+    "radiation_kj_m2": 512.9
    }
   },
   {
@@ -972,13 +980,13 @@
    "lat": 40.51666667,
    "lon": -7.85,
    "reading": {
-    "temp_c": 14.6,
-    "humidity_pct": 68,
-    "wind_kmh": 15.5,
+    "temp_c": 14.3,
+    "humidity_pct": 70,
+    "wind_kmh": 18,
     "wind_dir_id": 6,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1214.5
+    "radiation_kj_m2": 862
    }
   },
   {
@@ -987,9 +995,9 @@
    "lat": 40.145653,
    "lon": -7.92704,
    "reading": {
-    "temp_c": 10.4,
-    "humidity_pct": 86,
-    "wind_kmh": 22,
+    "temp_c": 10.9,
+    "humidity_pct": 82,
+    "wind_kmh": 13.7,
     "wind_dir_id": 7,
     "rain_mm": 0,
     "pressure_hpa": null,
@@ -1002,13 +1010,13 @@
    "lat": 40.264309,
    "lon": -7.482302,
    "reading": {
-    "temp_c": 15.6,
-    "humidity_pct": 53,
-    "wind_kmh": 16.9,
+    "temp_c": 15.1,
+    "humidity_pct": 55,
+    "wind_kmh": 17.6,
     "wind_dir_id": 6,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1569
+    "radiation_kj_m2": 1184.9
    }
   },
   {
@@ -1019,11 +1027,11 @@
    "reading": {
     "temp_c": 15.4,
     "humidity_pct": 44,
-    "wind_kmh": 3.6,
-    "wind_dir_id": 4,
+    "wind_kmh": 5.8,
+    "wind_dir_id": 6,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 661.9
+    "radiation_kj_m2": 741.2
    }
   },
   {
@@ -1032,10 +1040,10 @@
    "lat": 40.143922,
    "lon": -8.244066,
    "reading": {
-    "temp_c": 17,
+    "temp_c": 17.5,
     "humidity_pct": 69,
-    "wind_kmh": 8.6,
-    "wind_dir_id": 6,
+    "wind_kmh": 14,
+    "wind_dir_id": 7,
     "rain_mm": 0,
     "pressure_hpa": null,
     "radiation_kj_m2": null
@@ -1047,13 +1055,13 @@
    "lat": 40.14063611,
    "lon": -7.55362778,
    "reading": {
-    "temp_c": 14.4,
-    "humidity_pct": 56,
-    "wind_kmh": 18.7,
-    "wind_dir_id": 8,
+    "temp_c": 14.8,
+    "humidity_pct": 53,
+    "wind_kmh": 10.4,
+    "wind_dir_id": 7,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 988.9
+    "radiation_kj_m2": 1263.3
    }
   },
   {
@@ -1062,13 +1070,13 @@
    "lat": 40.63529722,
    "lon": -8.65958333,
    "reading": {
-    "temp_c": 18.1,
-    "humidity_pct": 64,
-    "wind_kmh": 28.4,
+    "temp_c": 17.6,
+    "humidity_pct": 67,
+    "wind_kmh": 22.7,
     "wind_dir_id": 7,
     "rain_mm": 0,
     "pressure_hpa": 1019.6,
-    "radiation_kj_m2": 1577.3
+    "radiation_kj_m2": 841.9
    }
   },
   {
@@ -1077,13 +1085,13 @@
    "lat": 40.445955,
    "lon": -8.76168055,
    "reading": {
-    "temp_c": 18,
-    "humidity_pct": 69,
-    "wind_kmh": 16.2,
-    "wind_dir_id": 7,
-    "rain_mm": 0.5,
+    "temp_c": 17.4,
+    "humidity_pct": 70,
+    "wind_kmh": 6.8,
+    "wind_dir_id": 6,
+    "rain_mm": 0.8,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1413.4
+    "radiation_kj_m2": 836
    }
   },
   {
@@ -1092,13 +1100,13 @@
    "lat": 40.438852,
    "lon": -8.439996,
    "reading": {
-    "temp_c": 17.6,
-    "humidity_pct": 62,
-    "wind_kmh": 6.8,
+    "temp_c": 16.7,
+    "humidity_pct": 70,
+    "wind_kmh": 4.7,
     "wind_dir_id": 7,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 540.6
+    "radiation_kj_m2": 417.2
    }
   },
   {
@@ -1107,13 +1115,13 @@
    "lat": 40.2134694,
    "lon": -8.45515277,
    "reading": {
-    "temp_c": 18.2,
-    "humidity_pct": 62,
-    "wind_kmh": 14.8,
+    "temp_c": 17.6,
+    "humidity_pct": 65,
+    "wind_kmh": 14,
     "wind_dir_id": 7,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1422.8
+    "radiation_kj_m2": 705.1
    }
   },
   {
@@ -1123,8 +1131,8 @@
    "lon": -8.805945,
    "reading": {
     "temp_c": 18.4,
-    "humidity_pct": 61,
-    "wind_kmh": 20.2,
+    "humidity_pct": 64,
+    "wind_kmh": 17.3,
     "wind_dir_id": 7,
     "rain_mm": 0,
     "pressure_hpa": null,
@@ -1137,13 +1145,13 @@
    "lat": 39.9,
    "lon": -8.4,
    "reading": {
-    "temp_c": 14.5,
-    "humidity_pct": 67,
-    "wind_kmh": 22.7,
+    "temp_c": 16.1,
+    "humidity_pct": 61,
+    "wind_kmh": 21.6,
     "wind_dir_id": 7,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 775.5
+    "radiation_kj_m2": 1720.9
    }
   },
   {
@@ -1152,13 +1160,13 @@
    "lat": 39.780553,
    "lon": -8.818166,
    "reading": {
-    "temp_c": 18.4,
+    "temp_c": 18.2,
     "humidity_pct": 61,
-    "wind_kmh": 18,
+    "wind_kmh": 15.8,
     "wind_dir_id": 7,
     "rain_mm": 0,
-    "pressure_hpa": 1020.4,
-    "radiation_kj_m2": 1452.8
+    "pressure_hpa": 1020.3,
+    "radiation_kj_m2": 1306.9
    }
   },
   {
@@ -1167,11 +1175,11 @@
    "lat": 39.76361944,
    "lon": -9.03058889,
    "reading": {
-    "temp_c": 17.6,
-    "humidity_pct": 69,
-    "wind_kmh": 22,
+    "temp_c": 17.5,
+    "humidity_pct": 70,
+    "wind_kmh": 29.5,
     "wind_dir_id": 7,
-    "rain_mm": 0.1,
+    "rain_mm": 0,
     "pressure_hpa": null,
     "radiation_kj_m2": null
    }
@@ -1189,13 +1197,13 @@
    "lat": 39.6,
    "lon": -8.36666667,
    "reading": {
-    "temp_c": 19,
-    "humidity_pct": 56,
-    "wind_kmh": null,
-    "wind_dir_id": 0,
+    "temp_c": 18.8,
+    "humidity_pct": 57,
+    "wind_kmh": 14.8,
+    "wind_dir_id": 8,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1131.2
+    "radiation_kj_m2": 414.9
    }
   },
   {
@@ -1204,13 +1212,13 @@
    "lat": 39.51666667,
    "lon": -8.96666667,
    "reading": {
-    "temp_c": 18.6,
-    "humidity_pct": 60,
-    "wind_kmh": 14.4,
+    "temp_c": 18.4,
+    "humidity_pct": 61,
+    "wind_kmh": 14.8,
     "wind_dir_id": 7,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1568.6
+    "radiation_kj_m2": 979.1
    }
   },
   {
@@ -1219,13 +1227,13 @@
    "lat": 39.35,
    "lon": -8.93333333,
    "reading": {
-    "temp_c": 17.8,
-    "humidity_pct": 63,
-    "wind_kmh": 11.5,
+    "temp_c": 17.6,
+    "humidity_pct": 64,
+    "wind_kmh": 6.8,
     "wind_dir_id": 8,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1307.8
+    "radiation_kj_m2": 737.6
    }
   },
   {
@@ -1234,13 +1242,13 @@
    "lat": 39.201216,
    "lon": -8.736656,
    "reading": {
-    "temp_c": 18.6,
-    "humidity_pct": 58,
-    "wind_kmh": 12.2,
+    "temp_c": 18.3,
+    "humidity_pct": 60,
+    "wind_kmh": 12.6,
     "wind_dir_id": 8,
     "rain_mm": 0,
-    "pressure_hpa": 1020.5,
-    "radiation_kj_m2": 1434.8
+    "pressure_hpa": 1020.7,
+    "radiation_kj_m2": 1096.4
    }
   },
   {
@@ -1249,13 +1257,13 @@
    "lat": 39.27,
    "lon": -8.3508,
    "reading": {
-    "temp_c": 18.3,
-    "humidity_pct": 55,
-    "wind_kmh": 12.2,
+    "temp_c": 17.4,
+    "humidity_pct": 60,
+    "wind_kmh": 11.5,
     "wind_dir_id": 7,
     "rain_mm": 0,
-    "pressure_hpa": 1020.3,
-    "radiation_kj_m2": 1826.7
+    "pressure_hpa": 1020.5,
+    "radiation_kj_m2": 772.3
    }
   },
   {
@@ -1265,12 +1273,12 @@
    "lon": -9.179,
    "reading": {
     "temp_c": 17.9,
-    "humidity_pct": 59,
-    "wind_kmh": 18,
-    "wind_dir_id": 7,
+    "humidity_pct": 58,
+    "wind_kmh": 16.6,
+    "wind_dir_id": 8,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1379.4
+    "radiation_kj_m2": 1154.3
    }
   },
   {
@@ -1279,13 +1287,13 @@
    "lat": 38.94096667,
    "lon": -8.51073611,
    "reading": {
-    "temp_c": 18.8,
-    "humidity_pct": 60,
-    "wind_kmh": 12.2,
-    "wind_dir_id": 8,
+    "temp_c": 19.1,
+    "humidity_pct": 61,
+    "wind_kmh": 10.1,
+    "wind_dir_id": 7,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1389
+    "radiation_kj_m2": 1368.4
    }
   },
   {
@@ -1308,13 +1316,13 @@
    "lat": 38.78171,
    "lon": -9.4975361,
    "reading": {
-    "temp_c": 16.9,
-    "humidity_pct": 63,
-    "wind_kmh": 17.3,
+    "temp_c": 17.3,
+    "humidity_pct": 58,
+    "wind_kmh": 15.8,
     "wind_dir_id": 8,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1933
+    "radiation_kj_m2": 1558.6
    }
   },
   {
@@ -1330,13 +1338,13 @@
    "lat": 38.70956111,
    "lon": -9.182825,
    "reading": {
-    "temp_c": 18.1,
-    "humidity_pct": 59,
-    "wind_kmh": 10.4,
+    "temp_c": 18.7,
+    "humidity_pct": 52,
+    "wind_kmh": 10.8,
     "wind_dir_id": 7,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1399.5
+    "radiation_kj_m2": 1423.8
    }
   },
   {
@@ -1345,8 +1353,8 @@
    "lat": 38.70900833,
    "lon": -9.48538333,
    "reading": {
-    "temp_c": 18.6,
-    "humidity_pct": 66,
+    "temp_c": 18.7,
+    "humidity_pct": 62,
     "wind_kmh": 21.2,
     "wind_dir_id": 8,
     "rain_mm": 0,
@@ -1360,13 +1368,13 @@
    "lat": 38.67448611,
    "lon": -9.04766111,
    "reading": {
-    "temp_c": 19.6,
-    "humidity_pct": 58,
-    "wind_kmh": 14.4,
+    "temp_c": 19.9,
+    "humidity_pct": 53,
+    "wind_kmh": 12.6,
     "wind_dir_id": 7,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1474.4
+    "radiation_kj_m2": 1515.8
    }
   },
   {
@@ -1375,13 +1383,13 @@
    "lat": 38.65079,
    "lon": -8.63503,
    "reading": {
-    "temp_c": 19.4,
-    "humidity_pct": 75,
-    "wind_kmh": 17.6,
+    "temp_c": 18.9,
+    "humidity_pct": 73,
+    "wind_kmh": 18,
     "wind_dir_id": 7,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1933.2
+    "radiation_kj_m2": 1458.3
    }
   },
   {
@@ -1390,13 +1398,13 @@
    "lat": 38.54846008,
    "lon": -8.89077058,
    "reading": {
-    "temp_c": 19.7,
-    "humidity_pct": 53,
-    "wind_kmh": 12.2,
-    "wind_dir_id": 8,
+    "temp_c": 19.6,
+    "humidity_pct": 54,
+    "wind_kmh": 8.6,
+    "wind_dir_id": 7,
     "rain_mm": 0,
-    "pressure_hpa": 1020.7,
-    "radiation_kj_m2": 1844.6
+    "pressure_hpa": 1020.8,
+    "radiation_kj_m2": 1639.3
    }
   },
   {
@@ -1405,13 +1413,13 @@
    "lat": 38.617111,
    "lon": -9.212804,
    "reading": {
-    "temp_c": 19.4,
-    "humidity_pct": 64,
-    "wind_kmh": 13.3,
+    "temp_c": 19.1,
+    "humidity_pct": 61,
+    "wind_kmh": 11.9,
     "wind_dir_id": 8,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1875.5
+    "radiation_kj_m2": 1179.8
    }
   },
   {
@@ -1420,13 +1428,13 @@
    "lat": 38.36666667,
    "lon": -8.48333333,
    "reading": {
-    "temp_c": 19.6,
+    "temp_c": 19.5,
     "humidity_pct": 52,
-    "wind_kmh": 15.5,
-    "wind_dir_id": 7,
+    "wind_kmh": 14.8,
+    "wind_dir_id": 8,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1676.3
+    "radiation_kj_m2": 1263.7
    }
   },
   {
@@ -1435,13 +1443,13 @@
    "lat": 37.726755,
    "lon": -8.792547,
    "reading": {
-    "temp_c": 19.4,
-    "humidity_pct": 69,
-    "wind_kmh": 9,
-    "wind_dir_id": 7,
+    "temp_c": 19.3,
+    "humidity_pct": 66,
+    "wind_kmh": 12.2,
+    "wind_dir_id": 8,
     "rain_mm": 0,
     "pressure_hpa": 1021.7,
-    "radiation_kj_m2": 1830.9
+    "radiation_kj_m2": 1303.7
    }
   },
   {
@@ -1451,12 +1459,12 @@
    "lon": -8.394504,
    "reading": {
     "temp_c": 19.5,
-    "humidity_pct": 53,
-    "wind_kmh": 20.2,
+    "humidity_pct": 49,
+    "wind_kmh": 15.8,
     "wind_dir_id": 8,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1799.6
+    "radiation_kj_m2": 1365.3
    }
   },
   {
@@ -1466,12 +1474,12 @@
    "lon": -8.3019,
    "reading": {
     "temp_c": 18.5,
-    "humidity_pct": 52,
-    "wind_kmh": 15.5,
-    "wind_dir_id": 6,
+    "humidity_pct": 50,
+    "wind_kmh": 15.8,
+    "wind_dir_id": 7,
     "rain_mm": null,
-    "pressure_hpa": 1021,
-    "radiation_kj_m2": 1861.8
+    "pressure_hpa": 1020.8,
+    "radiation_kj_m2": 1565.4
    }
   },
   {
@@ -1480,13 +1488,13 @@
    "lat": 37.49620894,
    "lon": -8.50077748,
    "reading": {
-    "temp_c": 19.5,
-    "humidity_pct": 56,
-    "wind_kmh": 10.1,
+    "temp_c": 18.9,
+    "humidity_pct": 58,
+    "wind_kmh": 9.7,
     "wind_dir_id": 8,
     "rain_mm": 0,
     "pressure_hpa": 1021.3,
-    "radiation_kj_m2": 1603.8
+    "radiation_kj_m2": 1184
    }
   },
   {
@@ -1495,13 +1503,13 @@
    "lat": 37.58195833,
    "lon": -8.74286944,
    "reading": {
-    "temp_c": 18.8,
+    "temp_c": 18.7,
     "humidity_pct": 67,
-    "wind_kmh": 10.1,
+    "wind_kmh": 11.9,
     "wind_dir_id": 1,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1547.9
+    "radiation_kj_m2": 1473.1
    }
   },
   {
@@ -1510,13 +1518,13 @@
    "lat": 37.31675278,
    "lon": -8.80001667,
    "reading": {
-    "temp_c": 19.9,
-    "humidity_pct": 59,
-    "wind_kmh": 4.3,
-    "wind_dir_id": 8,
+    "temp_c": 20.4,
+    "humidity_pct": 62,
+    "wind_kmh": 5,
+    "wind_dir_id": 7,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1197.1
+    "radiation_kj_m2": 1536.9
    }
   },
   {
@@ -1526,12 +1534,12 @@
    "lon": -8.595733,
    "reading": {
     "temp_c": 11.6,
-    "humidity_pct": 82,
-    "wind_kmh": 32.8,
+    "humidity_pct": 85,
+    "wind_kmh": 30.6,
     "wind_dir_id": 8,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1927.9
+    "radiation_kj_m2": 1918.5
    }
   },
   {
@@ -1540,13 +1548,13 @@
    "lat": 37.373399,
    "lon": -8.79572,
    "reading": {
-    "temp_c": 18.9,
-    "humidity_pct": 62,
-    "wind_kmh": 10.8,
-    "wind_dir_id": 8,
+    "temp_c": 18.6,
+    "humidity_pct": 67,
+    "wind_kmh": 11.2,
+    "wind_dir_id": 7,
     "rain_mm": 0,
     "pressure_hpa": 1021.7,
-    "radiation_kj_m2": 1560.6
+    "radiation_kj_m2": 986
    }
   },
   {
@@ -1555,13 +1563,13 @@
    "lat": 37.36031,
    "lon": -8.37207,
    "reading": {
-    "temp_c": 18.7,
-    "humidity_pct": 53,
-    "wind_kmh": 15.1,
+    "temp_c": 18.6,
+    "humidity_pct": 57,
+    "wind_kmh": 18.7,
     "wind_dir_id": 8,
     "rain_mm": 0,
-    "pressure_hpa": 1021,
-    "radiation_kj_m2": 1362.8
+    "pressure_hpa": 1020.8,
+    "radiation_kj_m2": 1057.2
    }
   },
   {
@@ -1570,13 +1578,13 @@
    "lat": 40.33918056,
    "lon": -7.03693333,
    "reading": {
-    "temp_c": 12.2,
-    "humidity_pct": 59,
-    "wind_kmh": 10.1,
-    "wind_dir_id": 6,
+    "temp_c": 11.7,
+    "humidity_pct": 65,
+    "wind_kmh": 10.8,
+    "wind_dir_id": 7,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 790
+    "radiation_kj_m2": 434.3
    }
   },
   {
@@ -1585,13 +1593,13 @@
    "lat": 39.86666667,
    "lon": -7.01666667,
    "reading": {
-    "temp_c": 16.6,
-    "humidity_pct": 50,
-    "wind_kmh": 22.3,
+    "temp_c": 16.5,
+    "humidity_pct": 49,
+    "wind_kmh": 21.2,
     "wind_dir_id": 7,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1949.8
+    "radiation_kj_m2": 1256.9
    }
   },
   {
@@ -1600,13 +1608,13 @@
    "lat": 39.73333333,
    "lon": -7.86666667,
    "reading": {
-    "temp_c": 15.4,
+    "temp_c": 15.7,
     "humidity_pct": 62,
-    "wind_kmh": 20.9,
+    "wind_kmh": 16.9,
     "wind_dir_id": 7,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1678.6
+    "radiation_kj_m2": 1517.1
    }
   },
   {
@@ -1616,8 +1624,8 @@
    "lon": -8.05,
    "reading": {
     "temp_c": 18.6,
-    "humidity_pct": 57,
-    "wind_kmh": 8.6,
+    "humidity_pct": 52,
+    "wind_kmh": 6.5,
     "wind_dir_id": 7,
     "rain_mm": 0,
     "pressure_hpa": null,
@@ -1630,13 +1638,13 @@
    "lat": 39.1,
    "lon": -7.86666667,
    "reading": {
-    "temp_c": 17.9,
-    "humidity_pct": 63,
-    "wind_kmh": 17.3,
+    "temp_c": 18.2,
+    "humidity_pct": 53,
+    "wind_kmh": 14,
     "wind_dir_id": 7,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1944.9
+    "radiation_kj_m2": 1399.2
    }
   },
   {
@@ -1645,13 +1653,13 @@
    "lat": 38.94068,
    "lon": -8.16406,
    "reading": {
-    "temp_c": 17.7,
-    "humidity_pct": 60,
+    "temp_c": 18.2,
+    "humidity_pct": 54,
     "wind_kmh": 9.4,
     "wind_dir_id": 7,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1187.4
+    "radiation_kj_m2": 885.6
    }
   },
   {
@@ -1660,13 +1668,13 @@
    "lat": 38.8908,
    "lon": -7.13976111,
    "reading": {
-    "temp_c": 17,
-    "humidity_pct": 61,
-    "wind_kmh": 16.9,
+    "temp_c": 17.1,
+    "humidity_pct": 62,
+    "wind_kmh": 18,
     "wind_dir_id": 7,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 812.1
+    "radiation_kj_m2": 1136.5
    }
   },
   {
@@ -1675,13 +1683,13 @@
    "lat": 38.86666667,
    "lon": -7.51666667,
    "reading": {
-    "temp_c": 15.7,
-    "humidity_pct": 87,
+    "temp_c": 16,
+    "humidity_pct": 81,
     "wind_kmh": 14,
     "wind_dir_id": 7,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1172.3
+    "radiation_kj_m2": 1393.7
    }
   },
   {
@@ -1690,13 +1698,13 @@
    "lat": 38.484866,
    "lon": -7.4729166,
    "reading": {
-    "temp_c": 18.4,
-    "humidity_pct": 56,
-    "wind_kmh": 16.2,
-    "wind_dir_id": 7,
+    "temp_c": 18.1,
+    "humidity_pct": 57,
+    "wind_kmh": 15.8,
+    "wind_dir_id": 8,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1520.8
+    "radiation_kj_m2": 1007.2
    }
   },
   {
@@ -1712,13 +1720,13 @@
    "lat": 38.3319194,
    "lon": -8.04553888,
    "reading": {
-    "temp_c": 17.8,
-    "humidity_pct": 54,
-    "wind_kmh": 15.8,
-    "wind_dir_id": 7,
+    "temp_c": 18.1,
+    "humidity_pct": 53,
+    "wind_kmh": 26.3,
+    "wind_dir_id": 8,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1722.3
+    "radiation_kj_m2": 1529.3
    }
   },
   {
@@ -1727,9 +1735,9 @@
    "lat": 38.31666667,
    "lon": -7.86666667,
    "reading": {
-    "temp_c": 18.2,
-    "humidity_pct": 55,
-    "wind_kmh": 12.6,
+    "temp_c": 17.9,
+    "humidity_pct": 57,
+    "wind_kmh": 14.8,
     "wind_dir_id": 7,
     "rain_mm": null,
     "pressure_hpa": null,
@@ -1742,13 +1750,13 @@
    "lat": 38.2007,
    "lon": -7.2261,
    "reading": {
-    "temp_c": 18.2,
-    "humidity_pct": 55,
-    "wind_kmh": 15.1,
+    "temp_c": 18,
+    "humidity_pct": 54,
+    "wind_kmh": 11.5,
     "wind_dir_id": 8,
     "rain_mm": 0,
-    "pressure_hpa": 1020.1,
-    "radiation_kj_m2": 2073.6
+    "pressure_hpa": 1019.8,
+    "radiation_kj_m2": 943.4
    }
   },
   {
@@ -1757,13 +1765,13 @@
    "lat": 37.37083,
    "lon": -8.080301,
    "reading": {
-    "temp_c": 15.8,
-    "humidity_pct": 58,
+    "temp_c": 15.6,
+    "humidity_pct": 60,
     "wind_kmh": null,
     "wind_dir_id": 0,
     "rain_mm": 0,
-    "pressure_hpa": 1021,
-    "radiation_kj_m2": 1878.6
+    "pressure_hpa": 1020.8,
+    "radiation_kj_m2": 1395.5
    }
   },
   {
@@ -1772,10 +1780,10 @@
    "lat": 37.75,
    "lon": -7.55,
    "reading": {
-    "temp_c": 17.9,
-    "humidity_pct": 56,
-    "wind_kmh": 13,
-    "wind_dir_id": 8,
+    "temp_c": 19.1,
+    "humidity_pct": 51,
+    "wind_kmh": 18.4,
+    "wind_dir_id": 9,
     "rain_mm": 0,
     "pressure_hpa": null,
     "radiation_kj_m2": null
@@ -1787,13 +1795,13 @@
    "lat": 37.57655833,
    "lon": -7.97211389,
    "reading": {
-    "temp_c": 18.9,
-    "humidity_pct": 54,
-    "wind_kmh": 20.9,
+    "temp_c": 18.6,
+    "humidity_pct": 57,
+    "wind_kmh": 18,
     "wind_dir_id": 8,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1754.2
+    "radiation_kj_m2": 1458.4
    }
   },
   {
@@ -1802,12 +1810,12 @@
    "lat": 37.43333333,
    "lon": -7.76666667,
    "reading": {
-    "temp_c": 17.7,
-    "humidity_pct": 53,
-    "wind_kmh": 14.4,
-    "wind_dir_id": 7,
+    "temp_c": 18.3,
+    "humidity_pct": 51,
+    "wind_kmh": 16.6,
+    "wind_dir_id": 8,
     "rain_mm": 0,
-    "pressure_hpa": 1020.9,
+    "pressure_hpa": 1020.5,
     "radiation_kj_m2": null
    }
   },
@@ -1817,8 +1825,8 @@
    "lat": 37.1871055,
    "lon": -7.416325,
    "reading": {
-    "temp_c": 21.3,
-    "humidity_pct": 42,
+    "temp_c": 20.9,
+    "humidity_pct": 41,
     "wind_kmh": null,
     "wind_dir_id": 0,
     "rain_mm": 0,
@@ -1832,13 +1840,13 @@
    "lat": 37.21666667,
    "lon": -7.45,
    "reading": {
-    "temp_c": 21.1,
-    "humidity_pct": 43,
-    "wind_kmh": 13,
-    "wind_dir_id": 8,
+    "temp_c": 21.2,
+    "humidity_pct": 44,
+    "wind_kmh": 16.9,
+    "wind_dir_id": 9,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1913.9
+    "radiation_kj_m2": 1499.2
    }
   },
   {
@@ -1856,7 +1864,7 @@
    "reading": {
     "temp_c": null,
     "humidity_pct": null,
-    "wind_kmh": 17.6,
+    "wind_kmh": 17.3,
     "wind_dir_id": 8,
     "rain_mm": null,
     "pressure_hpa": null,
@@ -1869,12 +1877,12 @@
    "lat": 37.033,
    "lon": -7.821,
    "reading": {
-    "temp_c": 21.5,
-    "humidity_pct": 43,
+    "temp_c": 21.9,
+    "humidity_pct": 41,
     "wind_kmh": 9,
     "wind_dir_id": 7,
     "rain_mm": 0,
-    "pressure_hpa": 1020.7,
+    "pressure_hpa": 1020.3,
     "radiation_kj_m2": null
    }
   },
@@ -1891,12 +1899,12 @@
    "lat": 39.45328,
    "lon": -31.2647,
    "reading": {
-    "temp_c": 17.6,
+    "temp_c": 17.7,
     "humidity_pct": 63,
     "wind_kmh": null,
     "wind_dir_id": 0,
     "rain_mm": null,
-    "pressure_hpa": 1019,
+    "pressure_hpa": 1018,
     "radiation_kj_m2": null
    }
   },
@@ -1906,11 +1914,11 @@
    "lat": 37.83256,
    "lon": -25.150108,
    "reading": {
-    "temp_c": 13.4,
-    "humidity_pct": 89,
-    "wind_kmh": 7.2,
-    "wind_dir_id": 6,
-    "rain_mm": 3.3,
+    "temp_c": 13.3,
+    "humidity_pct": 88,
+    "wind_kmh": 5,
+    "wind_dir_id": 7,
+    "rain_mm": 0,
     "pressure_hpa": null,
     "radiation_kj_m2": null
    }
@@ -1921,13 +1929,13 @@
    "lat": 32.867477,
    "lon": -17.171373,
    "reading": {
-    "temp_c": 21.5,
-    "humidity_pct": 81,
+    "temp_c": 20.9,
+    "humidity_pct": 82,
     "wind_kmh": null,
     "wind_dir_id": 0,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 400.9
+    "radiation_kj_m2": 155.6
    }
   },
   {
@@ -1936,13 +1944,13 @@
    "lat": 32.83446944,
    "lon": -16.906219,
    "reading": {
-    "temp_c": 19.1,
-    "humidity_pct": 91,
-    "wind_kmh": 12.2,
+    "temp_c": 18.9,
+    "humidity_pct": 90,
+    "wind_kmh": 13,
     "wind_dir_id": 4,
     "rain_mm": 0,
-    "pressure_hpa": 1022.4,
-    "radiation_kj_m2": 1255.7
+    "pressure_hpa": 1022.3,
+    "radiation_kj_m2": 671.6
    }
   },
   {
@@ -1951,13 +1959,13 @@
    "lat": 32.808238,
    "lon": -16.8864166,
    "reading": {
-    "temp_c": 17.5,
-    "humidity_pct": 99,
+    "temp_c": 17.2,
+    "humidity_pct": 100,
     "wind_kmh": null,
     "wind_dir_id": 0,
-    "rain_mm": 0,
+    "rain_mm": 0.2,
     "pressure_hpa": null,
-    "radiation_kj_m2": 756.2
+    "radiation_kj_m2": 475.6
    }
   },
   {
@@ -1966,13 +1974,13 @@
    "lat": 32.8001833,
    "lon": -17.044722,
    "reading": {
-    "temp_c": 21.4,
-    "humidity_pct": 84,
+    "temp_c": 20,
+    "humidity_pct": 89,
     "wind_kmh": null,
     "wind_dir_id": 0,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1004.8
+    "radiation_kj_m2": 301.1
    }
   },
   {
@@ -1988,13 +1996,13 @@
    "lat": 32.693491,
    "lon": -16.903955,
    "reading": {
-    "temp_c": 15.8,
+    "temp_c": 16,
     "humidity_pct": 98,
-    "wind_kmh": 3.6,
-    "wind_dir_id": 6,
+    "wind_kmh": 0.4,
+    "wind_dir_id": 0,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 426.8
+    "radiation_kj_m2": 450.4
    }
   },
   {
@@ -2003,13 +2011,13 @@
    "lat": 32.71666667,
    "lon": -16.91666667,
    "reading": {
-    "temp_c": 13.5,
-    "humidity_pct": 99,
-    "wind_kmh": 14.4,
+    "temp_c": 13.4,
+    "humidity_pct": 98,
+    "wind_kmh": 10.8,
     "wind_dir_id": 7,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1222.1
+    "radiation_kj_m2": 1029.1
    }
   },
   {
@@ -2018,8 +2026,8 @@
    "lat": 32.735107,
    "lon": -16.928271,
    "reading": {
-    "temp_c": 16.1,
-    "humidity_pct": 70,
+    "temp_c": 15.8,
+    "humidity_pct": 76,
     "wind_kmh": null,
     "wind_dir_id": 0,
     "rain_mm": 0,
@@ -2033,13 +2041,13 @@
    "lat": 32.7258972,
    "lon": -16.816822,
    "reading": {
-    "temp_c": 16.3,
+    "temp_c": 16,
     "humidity_pct": 100,
     "wind_kmh": null,
     "wind_dir_id": 0,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 290.8
+    "radiation_kj_m2": 21.7
    }
   },
   {
@@ -2048,13 +2056,13 @@
    "lat": 32.675833,
    "lon": -16.906944,
    "reading": {
-    "temp_c": 21,
-    "humidity_pct": 80,
-    "wind_kmh": 4.3,
+    "temp_c": 22.2,
+    "humidity_pct": 75,
+    "wind_kmh": 6.5,
     "wind_dir_id": 5,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1466.5
+    "radiation_kj_m2": 2651.2
    }
   },
   {
@@ -2063,13 +2071,13 @@
    "lat": 32.64500556,
    "lon": -16.86575,
    "reading": {
-    "temp_c": 21.8,
-    "humidity_pct": 85,
-    "wind_kmh": 9,
+    "temp_c": 21.7,
+    "humidity_pct": 84,
+    "wind_kmh": 10.4,
     "wind_dir_id": 4,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 2327.2
+    "radiation_kj_m2": 1849.7
    }
   },
   {
@@ -2079,12 +2087,12 @@
    "lon": -16.706,
    "reading": {
     "temp_c": 20.6,
-    "humidity_pct": 90,
-    "wind_kmh": 6.5,
-    "wind_dir_id": 4,
+    "humidity_pct": 85,
+    "wind_kmh": 6.8,
+    "wind_dir_id": 2,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1197.6
+    "radiation_kj_m2": 990.2
    }
   },
   {
@@ -2100,13 +2108,13 @@
    "lat": 32.6629722,
    "lon": -17.01503611,
    "reading": {
-    "temp_c": 21.2,
-    "humidity_pct": 75,
+    "temp_c": 22.5,
+    "humidity_pct": 69,
     "wind_kmh": null,
     "wind_dir_id": 0,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 1322.7
+    "radiation_kj_m2": 1856.4
    }
   },
   {
@@ -2115,13 +2123,13 @@
    "lat": 32.681502,
    "lon": -17.104167,
    "reading": {
-    "temp_c": 24.3,
+    "temp_c": 23.9,
     "humidity_pct": 72,
-    "wind_kmh": 4.3,
-    "wind_dir_id": 5,
+    "wind_kmh": 6.8,
+    "wind_dir_id": 3,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 2001.8
+    "radiation_kj_m2": 1519.9
    }
   },
   {
@@ -2137,13 +2145,13 @@
    "lat": 32.81384167,
    "lon": -17.26321389,
    "reading": {
-    "temp_c": 20.7,
-    "humidity_pct": 91,
-    "wind_kmh": 4,
-    "wind_dir_id": 1,
+    "temp_c": 20.8,
+    "humidity_pct": 87,
+    "wind_kmh": 0.4,
+    "wind_dir_id": 2,
     "rain_mm": 0,
-    "pressure_hpa": 1019.8,
-    "radiation_kj_m2": 1984
+    "pressure_hpa": 1019.6,
+    "radiation_kj_m2": 2000.8
    }
   },
   {
@@ -2152,11 +2160,11 @@
    "lat": 41.1385194,
    "lon": -8.6025,
    "reading": {
-    "temp_c": 16.5,
-    "humidity_pct": 90,
+    "temp_c": 16.1,
+    "humidity_pct": 99,
     "wind_kmh": null,
     "wind_dir_id": 0,
-    "rain_mm": 0.2,
+    "rain_mm": 0,
     "pressure_hpa": null,
     "radiation_kj_m2": null
    }
@@ -2167,11 +2175,11 @@
    "lat": 41.30898056,
    "lon": -7.740522,
    "reading": {
-    "temp_c": 13,
-    "humidity_pct": 75,
-    "wind_kmh": 15.5,
-    "wind_dir_id": 6,
-    "rain_mm": 0,
+    "temp_c": 12.1,
+    "humidity_pct": 83,
+    "wind_kmh": 16.6,
+    "wind_dir_id": 7,
+    "rain_mm": 0.3,
     "pressure_hpa": null,
     "radiation_kj_m2": null
    }
@@ -2182,11 +2190,11 @@
    "lat": 41.695,
    "lon": -8.82916,
    "reading": {
-    "temp_c": 15.1,
-    "humidity_pct": 84,
+    "temp_c": 15.6,
+    "humidity_pct": 86,
     "wind_kmh": null,
     "wind_dir_id": 0,
-    "rain_mm": 1.3,
+    "rain_mm": 0,
     "pressure_hpa": null,
     "radiation_kj_m2": null
    }
@@ -2197,11 +2205,11 @@
    "lat": 40.662738,
    "lon": -7.9039694,
    "reading": {
-    "temp_c": 15.5,
-    "humidity_pct": 59,
+    "temp_c": 13.7,
+    "humidity_pct": 71,
     "wind_kmh": null,
     "wind_dir_id": 0,
-    "rain_mm": 0,
+    "rain_mm": 0.1,
     "pressure_hpa": null,
     "radiation_kj_m2": null
    }
@@ -2219,8 +2227,8 @@
    "lat": 41.15257,
    "lon": -8.62598,
    "reading": {
-    "temp_c": 17.1,
-    "humidity_pct": 73,
+    "temp_c": 16.7,
+    "humidity_pct": 78,
     "wind_kmh": null,
     "wind_dir_id": 0,
     "rain_mm": 0,
@@ -2255,13 +2263,13 @@
    "lat": 32.63655,
    "lon": -16.935592,
    "reading": {
-    "temp_c": 22.3,
+    "temp_c": 22.1,
     "humidity_pct": 77,
     "wind_kmh": null,
     "wind_dir_id": 0,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 2139.2
+    "radiation_kj_m2": 1833
    }
   },
   {
@@ -2285,11 +2293,11 @@
    "lon": -7.68614846,
    "reading": {
     "temp_c": 13.7,
-    "humidity_pct": 76,
-    "wind_kmh": 19.4,
+    "humidity_pct": 72,
+    "wind_kmh": 14,
     "wind_dir_id": 7,
-    "rain_mm": 0,
-    "pressure_hpa": 1019.8,
+    "rain_mm": 0.1,
+    "pressure_hpa": 1020,
     "radiation_kj_m2": null
    }
   },
@@ -2299,12 +2307,12 @@
    "lat": 40.412775,
    "lon": -7.673406,
    "reading": {
-    "temp_c": 8.4,
-    "humidity_pct": 96,
-    "wind_kmh": 13.7,
-    "wind_dir_id": 6,
-    "rain_mm": 0,
-    "pressure_hpa": 1020.3,
+    "temp_c": 8.6,
+    "humidity_pct": 91,
+    "wind_kmh": 10.1,
+    "wind_dir_id": 7,
+    "rain_mm": 0.1,
+    "pressure_hpa": 1020.6,
     "radiation_kj_m2": null
    }
   },
@@ -2321,12 +2329,12 @@
    "lat": 39.21536,
    "lon": -8.05417,
    "reading": {
-    "temp_c": 18.3,
-    "humidity_pct": 55,
-    "wind_kmh": 18.4,
-    "wind_dir_id": 7,
+    "temp_c": 18.5,
+    "humidity_pct": 52,
+    "wind_kmh": 14.4,
+    "wind_dir_id": 8,
     "rain_mm": null,
-    "pressure_hpa": 1020,
+    "pressure_hpa": 1019.9,
     "radiation_kj_m2": null
    }
   },
@@ -2338,10 +2346,10 @@
    "reading": {
     "temp_c": null,
     "humidity_pct": null,
-    "wind_kmh": 13.3,
+    "wind_kmh": 10.4,
     "wind_dir_id": 8,
     "rain_mm": 0,
-    "pressure_hpa": 1021.3,
+    "pressure_hpa": 1021.1,
     "radiation_kj_m2": null
    }
   },
@@ -2371,15 +2379,7 @@
    "name": "Paredes De Coura - Vascões (CIM)",
    "lat": 41.913444,
    "lon": -8.492111,
-   "reading": {
-    "temp_c": 10.2,
-    "humidity_pct": 93,
-    "wind_kmh": null,
-    "wind_dir_id": 0,
-    "rain_mm": null,
-    "pressure_hpa": 1016.9,
-    "radiation_kj_m2": null
-   }
+   "reading": null
   },
   {
    "id": 6211214,
@@ -2400,60 +2400,28 @@
    "name": "Arcos De Valdevez - Heliporto (CIM)",
    "lat": 41.831,
    "lon": -8.44375,
-   "reading": {
-    "temp_c": 11.9,
-    "humidity_pct": 93,
-    "wind_kmh": null,
-    "wind_dir_id": 0,
-    "rain_mm": null,
-    "pressure_hpa": 1017.4,
-    "radiation_kj_m2": null
-   }
+   "reading": null
   },
   {
    "id": 6211217,
    "name": "Viana Do Castelo - Fonte Louçã (CIM)",
    "lat": 41.745722,
    "lon": -8.815306,
-   "reading": {
-    "temp_c": null,
-    "humidity_pct": null,
-    "wind_kmh": null,
-    "wind_dir_id": 0,
-    "rain_mm": null,
-    "pressure_hpa": 1015.3,
-    "radiation_kj_m2": null
-   }
+   "reading": null
   },
   {
    "id": 6211218,
    "name": "Ponte De Lima - Anais (CIM)",
    "lat": 41.698083,
    "lon": -8.522444,
-   "reading": {
-    "temp_c": 13.2,
-    "humidity_pct": 83,
-    "wind_kmh": null,
-    "wind_dir_id": 0,
-    "rain_mm": null,
-    "pressure_hpa": 1016.8,
-    "radiation_kj_m2": null
-   }
+   "reading": null
   },
   {
    "id": 6212121,
    "name": "Terras de Bouro/Barral (CIM)",
    "lat": 41.70225278,
    "lon": -8.31808611,
-   "reading": {
-    "temp_c": 12.7,
-    "humidity_pct": 87,
-    "wind_kmh": 13.7,
-    "wind_dir_id": 7,
-    "rain_mm": 1.2,
-    "pressure_hpa": 1018,
-    "radiation_kj_m2": null
-   }
+   "reading": null
   },
   {
    "id": 6212122,
@@ -2467,30 +2435,14 @@
    "name": "Vila Verde (CIM)",
    "lat": 41.64686111,
    "lon": -8.43398056,
-   "reading": {
-    "temp_c": 15,
-    "humidity_pct": 87,
-    "wind_kmh": 7.2,
-    "wind_dir_id": 6,
-    "rain_mm": null,
-    "pressure_hpa": 1017.9,
-    "radiation_kj_m2": null
-   }
+   "reading": null
   },
   {
    "id": 6212124,
    "name": "Braga (CIM)",
    "lat": 41.53568333,
    "lon": -8.42514722,
-   "reading": {
-    "temp_c": 13.6,
-    "humidity_pct": 85,
-    "wind_kmh": null,
-    "wind_dir_id": 0,
-    "rain_mm": null,
-    "pressure_hpa": 1017.7,
-    "radiation_kj_m2": null
-   }
+   "reading": null
   },
   {
    "id": 6212125,
@@ -2504,15 +2456,7 @@
    "name": "Esposende (CIM)",
    "lat": 41.52645556,
    "lon": -8.77984444,
-   "reading": {
-    "temp_c": null,
-    "humidity_pct": 98,
-    "wind_kmh": null,
-    "wind_dir_id": 0,
-    "rain_mm": null,
-    "pressure_hpa": 1018.2,
-    "radiation_kj_m2": null
-   }
+   "reading": null
   },
   {
    "id": 6212410,
@@ -2526,60 +2470,28 @@
    "name": "Aguiar da Beira (CIM)",
    "lat": 40.81203611,
    "lon": -7.53371944,
-   "reading": {
-    "temp_c": 10.9,
-    "humidity_pct": 74,
-    "wind_kmh": 22.7,
-    "wind_dir_id": 5,
-    "rain_mm": 0,
-    "pressure_hpa": null,
-    "radiation_kj_m2": null
-   }
+   "reading": null
   },
   {
    "id": 6213012,
    "name": "Carregal do Sal (CIM)",
    "lat": 40.46718056,
    "lon": -7.92626389,
-   "reading": {
-    "temp_c": 15,
-    "humidity_pct": 67,
-    "wind_kmh": 11.9,
-    "wind_dir_id": 7,
-    "rain_mm": null,
-    "pressure_hpa": null,
-    "radiation_kj_m2": null
-   }
+   "reading": null
   },
   {
    "id": 6213013,
    "name": "Castro Daire / Mézio (CIM)",
    "lat": 40.98086111,
    "lon": -7.88318889,
-   "reading": {
-    "temp_c": 9.5,
-    "humidity_pct": 81,
-    "wind_kmh": 25.2,
-    "wind_dir_id": 6,
-    "rain_mm": null,
-    "pressure_hpa": null,
-    "radiation_kj_m2": null
-   }
+   "reading": null
   },
   {
    "id": 6213014,
    "name": "Mangualde / Chãs de Tavares  (CIM)",
    "lat": 40.61096111,
    "lon": -7.60838889,
-   "reading": {
-    "temp_c": 11.6,
-    "humidity_pct": 79,
-    "wind_kmh": 22,
-    "wind_dir_id": 6,
-    "rain_mm": 0,
-    "pressure_hpa": null,
-    "radiation_kj_m2": null
-   }
+   "reading": null
   },
   {
    "id": 6213015,
@@ -2593,30 +2505,14 @@
    "name": "Oliveira de Frades (CIM)",
    "lat": 40.716925,
    "lon": -8.20133889,
-   "reading": {
-    "temp_c": 12.3,
-    "humidity_pct": 74,
-    "wind_kmh": 15.8,
-    "wind_dir_id": 5,
-    "rain_mm": null,
-    "pressure_hpa": null,
-    "radiation_kj_m2": null
-   }
+   "reading": null
   },
   {
    "id": 6213017,
    "name": "Penalva do Castelo (CIM)",
    "lat": 40.65706389,
    "lon": -7.69655278,
-   "reading": {
-    "temp_c": 14.1,
-    "humidity_pct": 72,
-    "wind_kmh": null,
-    "wind_dir_id": 0,
-    "rain_mm": null,
-    "pressure_hpa": null,
-    "radiation_kj_m2": null
-   }
+   "reading": null
   },
   {
    "id": 6213018,
@@ -2637,15 +2533,7 @@
    "name": "Satão (CIM)",
    "lat": 40.76072778,
    "lon": -7.72019722,
-   "reading": {
-    "temp_c": 11.8,
-    "humidity_pct": 74,
-    "wind_kmh": 18.4,
-    "wind_dir_id": 6,
-    "rain_mm": 0.1,
-    "pressure_hpa": null,
-    "radiation_kj_m2": null
-   }
+   "reading": null
   },
   {
    "id": 6213021,
@@ -2659,30 +2547,14 @@
    "name": "Vila Nova de Paiva (CIM)",
    "lat": 40.85595,
    "lon": -7.72716389,
-   "reading": {
-    "temp_c": 9.9,
-    "humidity_pct": null,
-    "wind_kmh": 6.8,
-    "wind_dir_id": 6,
-    "rain_mm": 0,
-    "pressure_hpa": null,
-    "radiation_kj_m2": null
-   }
+   "reading": null
   },
   {
    "id": 6213023,
    "name": "Vouzela (CIM)",
    "lat": 40.6742,
    "lon": -8.1334,
-   "reading": {
-    "temp_c": 10.9,
-    "humidity_pct": 84,
-    "wind_kmh": 26.6,
-    "wind_dir_id": 7,
-    "rain_mm": 0,
-    "pressure_hpa": null,
-    "radiation_kj_m2": null
-   }
+   "reading": null
   },
   {
    "id": 6213024,
@@ -2696,165 +2568,77 @@
    "name": "Arganil / Aeródromo (CIM)",
    "lat": 40.274578,
    "lon": -7.974399,
-   "reading": {
-    "temp_c": 15.1,
-    "humidity_pct": 65,
-    "wind_kmh": 19.1,
-    "wind_dir_id": 7,
-    "rain_mm": 0,
-    "pressure_hpa": null,
-    "radiation_kj_m2": null
-   }
+   "reading": null
   },
   {
    "id": 6213612,
    "name": "Cantanhede / Fonte Dom Pedro (CIM)",
    "lat": 40.341894,
    "lon": -8.577613,
-   "reading": {
-    "temp_c": 17.3,
-    "humidity_pct": 62,
-    "wind_kmh": 13,
-    "wind_dir_id": 7,
-    "rain_mm": 0,
-    "pressure_hpa": null,
-    "radiation_kj_m2": null
-   }
+   "reading": null
   },
   {
    "id": 6213613,
    "name": "Coimbra / Mata de São Pedro (CIM)",
    "lat": 40.330787,
    "lon": -8.374887,
-   "reading": {
-    "temp_c": 14.9,
-    "humidity_pct": 67,
-    "wind_kmh": 10.8,
-    "wind_dir_id": 7,
-    "rain_mm": null,
-    "pressure_hpa": null,
-    "radiation_kj_m2": null
-   }
+   "reading": null
   },
   {
    "id": 6213614,
    "name": "Góis / Quinta da Ribeira (CIM)",
    "lat": 40.171642,
    "lon": -8.103238,
-   "reading": {
-    "temp_c": null,
-    "humidity_pct": null,
-    "wind_kmh": 16.9,
-    "wind_dir_id": 6,
-    "rain_mm": null,
-    "pressure_hpa": null,
-    "radiation_kj_m2": null
-   }
+   "reading": null
   },
   {
    "id": 6213615,
    "name": "Mealhada / Quinta do Vale (CIM)",
    "lat": 40.373343,
    "lon": -8.4388429,
-   "reading": {
-    "temp_c": 17.8,
-    "humidity_pct": 58,
-    "wind_kmh": 10.4,
-    "wind_dir_id": 7,
-    "rain_mm": 0,
-    "pressure_hpa": null,
-    "radiation_kj_m2": null
-   }
+   "reading": null
   },
   {
    "id": 6213616,
    "name": "Mortágua / Aeródromo (CIM)",
    "lat": 40.426239,
    "lon": -8.232142,
-   "reading": {
-    "temp_c": 16.4,
-    "humidity_pct": null,
-    "wind_kmh": 17.6,
-    "wind_dir_id": 7,
-    "rain_mm": 0,
-    "pressure_hpa": null,
-    "radiation_kj_m2": null
-   }
+   "reading": null
   },
   {
    "id": 6213617,
    "name": "Penacova / Hombres (CIM)",
    "lat": 40.280921,
    "lon": -8.198685,
-   "reading": {
-    "temp_c": null,
-    "humidity_pct": 65,
-    "wind_kmh": 21.2,
-    "wind_dir_id": 6,
-    "rain_mm": 0,
-    "pressure_hpa": null,
-    "radiation_kj_m2": null
-   }
+   "reading": null
   },
   {
    "id": 6213618,
    "name": "Penela / Serra do Espinhal (CIM)",
    "lat": 40.028817,
    "lon": -8.334616,
-   "reading": {
-    "temp_c": null,
-    "humidity_pct": 64,
-    "wind_kmh": 10.4,
-    "wind_dir_id": 8,
-    "rain_mm": 0,
-    "pressure_hpa": null,
-    "radiation_kj_m2": null
-   }
+   "reading": null
   },
   {
    "id": 6213619,
    "name": "Vila Nova de Poiares (CIM)",
    "lat": 40.211411,
    "lon": -8.241995,
-   "reading": {
-    "temp_c": 13.4,
-    "humidity_pct": 78,
-    "wind_kmh": 13,
-    "wind_dir_id": 7,
-    "rain_mm": 0,
-    "pressure_hpa": null,
-    "radiation_kj_m2": null
-   }
+   "reading": null
   },
   {
    "id": 6213620,
    "name": "Oliveira do Hospital (CIM)",
    "lat": 40.413306,
    "lon": -7.867972,
-   "reading": {
-    "temp_c": 17.3,
-    "humidity_pct": 57,
-    "wind_kmh": 15.5,
-    "wind_dir_id": 7,
-    "rain_mm": 0,
-    "pressure_hpa": null,
-    "radiation_kj_m2": null
-   }
+   "reading": null
   },
   {
    "id": 6213621,
    "name": "Soure (CIM)",
    "lat": 40.02927,
    "lon": -8.504909,
-   "reading": {
-    "temp_c": null,
-    "humidity_pct": null,
-    "wind_kmh": 25.9,
-    "wind_dir_id": 7,
-    "rain_mm": 0,
-    "pressure_hpa": null,
-    "radiation_kj_m2": null
-   }
+   "reading": null
   },
   {
    "id": 6214119,
@@ -2862,12 +2646,12 @@
    "lat": 39.926573,
    "lon": -8.150912,
    "reading": {
-    "temp_c": 14.6,
-    "humidity_pct": 65,
-    "wind_kmh": 21.6,
+    "temp_c": 14.9,
+    "humidity_pct": 67,
+    "wind_kmh": 16.9,
     "wind_dir_id": 7,
-    "rain_mm": null,
-    "pressure_hpa": 1019.4,
+    "rain_mm": 0,
+    "pressure_hpa": 1019.5,
     "radiation_kj_m2": null
    }
   },
@@ -2877,9 +2661,9 @@
    "lat": 38.7751,
    "lon": -9.1855,
    "reading": {
-    "temp_c": 18.1,
-    "humidity_pct": 62,
-    "wind_kmh": 10.8,
+    "temp_c": 18.5,
+    "humidity_pct": 61,
+    "wind_kmh": 10.1,
     "wind_dir_id": 7,
     "rain_mm": 0,
     "pressure_hpa": 1020.3,
@@ -2892,13 +2676,13 @@
    "lat": 38.7239536,
    "lon": -9.2939255,
    "reading": {
-    "temp_c": 17.5,
-    "humidity_pct": 58,
-    "wind_kmh": 18,
+    "temp_c": 17.7,
+    "humidity_pct": 54,
+    "wind_kmh": 18.4,
     "wind_dir_id": 8,
     "rain_mm": 0,
-    "pressure_hpa": 1020.1,
-    "radiation_kj_m2": 1547.1
+    "pressure_hpa": 1020.2,
+    "radiation_kj_m2": 1326.4
    }
   },
   {
@@ -2907,8 +2691,8 @@
    "lat": 38.7239,
    "lon": -9.1649,
    "reading": {
-    "temp_c": 19,
-    "humidity_pct": 67,
+    "temp_c": 20.1,
+    "humidity_pct": 60,
     "wind_kmh": 8.3,
     "wind_dir_id": 8,
     "rain_mm": 0,
@@ -2921,7 +2705,15 @@
    "name": "Santa Maria / Praia Formosa (DROTRH)",
    "lat": 36.9542,
    "lon": -25.0917,
-   "reading": null
+   "reading": {
+    "temp_c": 16.5,
+    "humidity_pct": 76,
+    "wind_kmh": null,
+    "wind_dir_id": 0,
+    "rain_mm": null,
+    "pressure_hpa": null,
+    "radiation_kj_m2": null
+   }
   },
   {
    "id": 11217165,
@@ -2929,7 +2721,7 @@
    "lat": 36.9412,
    "lon": -25.0176,
    "reading": {
-    "temp_c": 16.4,
+    "temp_c": 16.2,
     "humidity_pct": 76,
     "wind_kmh": null,
     "wind_dir_id": 0,
@@ -2944,13 +2736,13 @@
    "lat": 37.8049,
    "lon": -25.5618,
    "reading": {
-    "temp_c": 14.1,
-    "humidity_pct": 87,
-    "wind_kmh": 7.9,
-    "wind_dir_id": 5,
-    "rain_mm": 2.1,
+    "temp_c": 13.7,
+    "humidity_pct": 90,
+    "wind_kmh": 7.6,
+    "wind_dir_id": 3,
+    "rain_mm": 1.7,
     "pressure_hpa": null,
-    "radiation_kj_m2": 80.3
+    "radiation_kj_m2": 80.9
    }
   },
   {
@@ -2959,13 +2751,13 @@
    "lat": 37.8679,
    "lon": -25.772,
    "reading": {
-    "temp_c": 12.6,
-    "humidity_pct": 91,
-    "wind_kmh": 1.8,
+    "temp_c": 11.7,
+    "humidity_pct": 98,
+    "wind_kmh": 2.2,
     "wind_dir_id": 3,
-    "rain_mm": 2.2,
+    "rain_mm": 3.9,
     "pressure_hpa": null,
-    "radiation_kj_m2": 94.2
+    "radiation_kj_m2": 105.8
    }
   },
   {
@@ -2975,12 +2767,12 @@
    "lon": -25.3291,
    "reading": {
     "temp_c": 12.6,
-    "humidity_pct": 90,
-    "wind_kmh": 0.7,
+    "humidity_pct": 92,
+    "wind_kmh": 1.4,
     "wind_dir_id": 3,
     "rain_mm": 0,
     "pressure_hpa": null,
-    "radiation_kj_m2": 74.9
+    "radiation_kj_m2": 106.2
    }
   },
   {
@@ -2989,13 +2781,13 @@
    "lat": 38.754,
    "lon": -27.3245,
    "reading": {
-    "temp_c": null,
-    "humidity_pct": null,
-    "wind_kmh": 18.7,
-    "wind_dir_id": 5,
-    "rain_mm": null,
+    "temp_c": 9.9,
+    "humidity_pct": 99,
+    "wind_kmh": 7.2,
+    "wind_dir_id": 6,
+    "rain_mm": 0.8,
     "pressure_hpa": null,
-    "radiation_kj_m2": null
+    "radiation_kj_m2": 129.4
    }
   },
   {
@@ -4985,859 +4777,865 @@
     "low_c": 13.6,
     "high_c": 17.8,
     "rain_mm": 0,
-    "hours": 15
+    "hours": 16
    },
    "1200502": {
     "low_c": 15.9,
-    "high_c": 17.7,
+    "high_c": 17.8,
     "rain_mm": 0,
-    "hours": 15
+    "hours": 16
    },
    "1200504": {
     "low_c": 12.4,
     "high_c": 15.4,
-    "rain_mm": 0,
-    "hours": 15
+    "rain_mm": 0.4,
+    "hours": 16
    },
    "1200505": {
     "low_c": 13.5,
     "high_c": 16.6,
-    "rain_mm": 0.5,
-    "hours": 15
+    "rain_mm": 1.8,
+    "hours": 16
    },
    "1200506": {
     "low_c": 12.7,
     "high_c": 16.4,
-    "rain_mm": 0.1,
-    "hours": 15
+    "rain_mm": 3.3,
+    "hours": 16
    },
    "1200507": {
     "low_c": 15.4,
     "high_c": 16.4,
     "rain_mm": 0,
-    "hours": 15
+    "hours": 16
    },
    "1200510": {
     "low_c": 13,
     "high_c": 15.7,
-    "rain_mm": 0,
-    "hours": 15
+    "rain_mm": 0.2,
+    "hours": 16
    },
    "1200511": {
     "low_c": 14.8,
     "high_c": 16.1,
-    "rain_mm": 0,
-    "hours": 5
+    "rain_mm": 0.3,
+    "hours": 6
    },
    "1200512": {
     "low_c": 11.8,
     "high_c": 16.6,
-    "rain_mm": 0.4,
-    "hours": 15
+    "rain_mm": 3,
+    "hours": 16
    },
    "1200521": {
     "low_c": 19.5,
     "high_c": 22.4,
     "rain_mm": 1.4,
-    "hours": 15
+    "hours": 16
    },
    "1200522": {
     "low_c": 19.6,
     "high_c": 24.8,
     "rain_mm": 0,
-    "hours": 15
+    "hours": 16
    },
    "1200524": {
     "low_c": 19.2,
     "high_c": 21.9,
     "rain_mm": 3.6,
-    "hours": 15
+    "hours": 16
    },
    "1200531": {
     "low_c": null,
     "high_c": null,
     "rain_mm": 0.2,
-    "hours": 15
+    "hours": 16
    },
    "1200533": {
     "low_c": 16.7,
     "high_c": 19.9,
     "rain_mm": 0.6,
-    "hours": 15
+    "hours": 16
    },
    "1200535": {
     "low_c": 13.6,
     "high_c": 19.5,
     "rain_mm": 0.1,
-    "hours": 15
+    "hours": 16
    },
    "1200541": {
     "low_c": 16,
-    "high_c": 18.3,
+    "high_c": 18.4,
     "rain_mm": 0,
-    "hours": 15
+    "hours": 16
    },
    "1200545": {
     "low_c": 13.2,
     "high_c": 16.8,
-    "rain_mm": 3,
-    "hours": 15
+    "rain_mm": 3.1,
+    "hours": 16
    },
    "1200551": {
     "low_c": 12.8,
     "high_c": 15.8,
-    "rain_mm": 3.1,
-    "hours": 15
+    "rain_mm": 3.4,
+    "hours": 16
    },
    "1200554": {
     "low_c": 16.4,
     "high_c": 21.3,
     "rain_mm": 0.3,
-    "hours": 15
+    "hours": 16
    },
    "1200558": {
     "low_c": 11.6,
-    "high_c": 17.8,
+    "high_c": 18.1,
     "rain_mm": null,
-    "hours": 15
+    "hours": 16
    },
    "1200559": {
     "low_c": 9.1,
     "high_c": 12.3,
     "rain_mm": 0.7,
-    "hours": 15
+    "hours": 16
    },
    "1200560": {
     "low_c": 8.9,
     "high_c": 12.4,
     "rain_mm": 0.5,
-    "hours": 15
+    "hours": 16
    },
    "1200567": {
     "low_c": 9.2,
     "high_c": 11.8,
-    "rain_mm": 4.7,
-    "hours": 15
+    "rain_mm": 4.8,
+    "hours": 16
    },
    "1200568": {
     "low_c": 3.8,
     "high_c": 6.1,
     "rain_mm": null,
-    "hours": 15
+    "hours": 16
    },
    "1200570": {
     "low_c": 11,
-    "high_c": 16.5,
+    "high_c": 16.6,
     "rain_mm": 0.2,
-    "hours": 15
+    "hours": 16
    },
    "1200571": {
     "low_c": 9.8,
-    "high_c": 12.4,
+    "high_c": 13.5,
     "rain_mm": 0.9,
-    "hours": 15
+    "hours": 16
    },
    "1200575": {
     "low_c": 7.4,
     "high_c": 11.6,
     "rain_mm": 1.1,
-    "hours": 15
+    "hours": 16
    },
    "1200576": {
     "low_c": 7.4,
-    "high_c": 11,
+    "high_c": 11.1,
     "rain_mm": 1.4,
-    "hours": 15
+    "hours": 16
    },
    "1200843": {
     "low_c": 11.6,
-    "high_c": 17.4,
+    "high_c": 17.5,
     "rain_mm": 0.1,
-    "hours": 15
+    "hours": 16
    },
    "1210513": {
     "low_c": 12.5,
     "high_c": 15.9,
-    "rain_mm": 0.2,
-    "hours": 5
+    "rain_mm": 2.5,
+    "hours": 6
+   },
+   "1210520": {
+    "low_c": 22.4,
+    "high_c": 22.5,
+    "rain_mm": 0,
+    "hours": 2
    },
    "1210550": {
     "low_c": 11.5,
     "high_c": 18.1,
     "rain_mm": 0,
-    "hours": 15
+    "hours": 16
    },
    "1210553": {
     "low_c": 12,
-    "high_c": 16,
+    "high_c": 16.3,
     "rain_mm": 2,
-    "hours": 15
+    "hours": 16
    },
    "1210577": {
     "low_c": 15.4,
     "high_c": 18.9,
     "rain_mm": 0.3,
-    "hours": 15
+    "hours": 16
    },
    "1210580": {
     "low_c": 13.5,
     "high_c": 18.2,
     "rain_mm": 0.1,
-    "hours": 15
+    "hours": 16
    },
    "1210604": {
     "low_c": 11.4,
     "high_c": 16,
-    "rain_mm": 9,
-    "hours": 15
+    "rain_mm": 11.5,
+    "hours": 16
    },
    "1210605": {
     "low_c": 10.6,
     "high_c": 15.6,
-    "rain_mm": 20.2,
-    "hours": 15
+    "rain_mm": 21.8,
+    "hours": 16
    },
    "1210606": {
     "low_c": 6.3,
     "high_c": 8.5,
-    "rain_mm": 19.4,
-    "hours": 15
+    "rain_mm": 22.1,
+    "hours": 16
    },
    "1210611": {
     "low_c": 5.2,
     "high_c": 7.9,
-    "rain_mm": 6.8,
-    "hours": 15
+    "rain_mm": 9,
+    "hours": 16
    },
    "1210612": {
     "low_c": 6.7,
-    "high_c": 9.3,
+    "high_c": 9.8,
     "rain_mm": 1.4,
-    "hours": 15
+    "hours": 16
    },
    "1210615": {
     "low_c": 9.9,
     "high_c": 15.4,
-    "rain_mm": 8.7,
-    "hours": 15
+    "rain_mm": 8.9,
+    "hours": 16
    },
    "1210616": {
     "low_c": 8.6,
-    "high_c": 12.9,
+    "high_c": 14.1,
     "rain_mm": 1.4,
-    "hours": 15
+    "hours": 16
    },
    "1210619": {
     "low_c": 7.6,
     "high_c": 10.6,
-    "rain_mm": 16.5,
-    "hours": 15
+    "rain_mm": 21,
+    "hours": 16
    },
    "1210625": {
     "low_c": 10.6,
     "high_c": 15.5,
     "rain_mm": null,
-    "hours": 15
+    "hours": 16
    },
    "1210630": {
     "low_c": 9.9,
     "high_c": 14.1,
-    "rain_mm": 8.7,
-    "hours": 15
+    "rain_mm": 9.2,
+    "hours": 16
    },
    "1210632": {
     "low_c": 10.6,
     "high_c": 15.4,
     "rain_mm": 1.9,
-    "hours": 15
+    "hours": 16
    },
    "1210633": {
     "low_c": 7.1,
-    "high_c": 11.8,
+    "high_c": 12,
     "rain_mm": 0.5,
-    "hours": 15
+    "hours": 16
    },
    "1210635": {
     "low_c": 7.7,
-    "high_c": 10.6,
+    "high_c": 10.8,
     "rain_mm": 0.5,
-    "hours": 15
+    "hours": 16
    },
    "1210637": {
     "low_c": 7,
     "high_c": 10.5,
     "rain_mm": 2.6,
-    "hours": 15
+    "hours": 16
    },
    "1210643": {
     "low_c": 9.9,
     "high_c": 14,
-    "rain_mm": 6.2,
-    "hours": 15
+    "rain_mm": 6.4,
+    "hours": 16
    },
    "1210644": {
     "low_c": 7.4,
     "high_c": 11,
-    "rain_mm": 0.9,
-    "hours": 15
+    "rain_mm": 1,
+    "hours": 16
    },
    "1210654": {
     "low_c": 10.4,
-    "high_c": 13.1,
+    "high_c": 13.2,
     "rain_mm": 0.2,
-    "hours": 15
+    "hours": 16
    },
    "1210655": {
     "low_c": 13.2,
     "high_c": 17.4,
     "rain_mm": 3,
-    "hours": 15
+    "hours": 16
    },
    "1210657": {
     "low_c": 9.3,
     "high_c": 14,
-    "rain_mm": 4,
-    "hours": 15
+    "rain_mm": 5.8,
+    "hours": 16
    },
    "1210659": {
     "low_c": 13.7,
     "high_c": 16.5,
     "rain_mm": null,
-    "hours": 15
+    "hours": 16
    },
    "1210663": {
     "low_c": 7.4,
-    "high_c": 12.8,
+    "high_c": 12.9,
     "rain_mm": 3.2,
-    "hours": 15
+    "hours": 16
    },
    "1210666": {
     "low_c": 7.5,
     "high_c": 11.1,
     "rain_mm": 1.4,
-    "hours": 15
+    "hours": 16
    },
    "1210669": {
     "low_c": 10.4,
     "high_c": 15.4,
-    "rain_mm": 8.9,
-    "hours": 15
+    "rain_mm": 9.2,
+    "hours": 16
    },
    "1210671": {
     "low_c": 8.3,
-    "high_c": 12,
+    "high_c": 12.6,
     "rain_mm": 1,
-    "hours": 15
+    "hours": 16
    },
    "1210683": {
     "low_c": 6.5,
-    "high_c": 8.9,
+    "high_c": 9.1,
     "rain_mm": 0.4,
-    "hours": 15
+    "hours": 16
    },
    "1210685": {
     "low_c": 9.2,
     "high_c": 14.6,
     "rain_mm": 0.2,
-    "hours": 15
+    "hours": 16
    },
    "1210686": {
     "low_c": 7.2,
-    "high_c": 10.5,
+    "high_c": 10.9,
     "rain_mm": 2.5,
-    "hours": 15
+    "hours": 16
    },
    "1210687": {
     "low_c": 11.1,
     "high_c": 15.6,
     "rain_mm": 0.3,
-    "hours": 15
+    "hours": 16
    },
    "1210690": {
     "low_c": 10.4,
     "high_c": 15.8,
     "rain_mm": 0,
-    "hours": 15
+    "hours": 16
    },
    "1210697": {
     "low_c": 12.3,
-    "high_c": 17,
+    "high_c": 17.5,
     "rain_mm": 1.7,
-    "hours": 15
+    "hours": 16
    },
    "1210698": {
     "low_c": 10.7,
-    "high_c": 14.4,
+    "high_c": 14.8,
     "rain_mm": 0.2,
-    "hours": 15
+    "hours": 16
    },
    "1210702": {
     "low_c": 14.5,
     "high_c": 18.1,
     "rain_mm": 0,
-    "hours": 15
+    "hours": 16
    },
    "1210704": {
     "low_c": 14.7,
     "high_c": 19.1,
-    "rain_mm": 1,
-    "hours": 15
+    "rain_mm": 1.8,
+    "hours": 16
    },
    "1210705": {
     "low_c": 11.3,
     "high_c": 17.7,
     "rain_mm": 2.3,
-    "hours": 15
+    "hours": 16
    },
    "1210707": {
     "low_c": 11.6,
     "high_c": 18.4,
     "rain_mm": 4.8,
-    "hours": 15
+    "hours": 16
    },
    "1210713": {
     "low_c": 15,
     "high_c": 18.4,
     "rain_mm": 2.5,
-    "hours": 15
+    "hours": 16
    },
    "1210716": {
     "low_c": 10.4,
-    "high_c": 14.8,
+    "high_c": 16.1,
     "rain_mm": 1.8,
-    "hours": 15
+    "hours": 16
    },
    "1210718": {
     "low_c": 13.8,
     "high_c": 18.4,
     "rain_mm": 0.3,
-    "hours": 15
+    "hours": 16
    },
    "1210721": {
     "low_c": 14.6,
     "high_c": 17.6,
     "rain_mm": 1.2,
-    "hours": 15
+    "hours": 16
    },
    "1210724": {
     "low_c": 11.6,
     "high_c": 19.1,
     "rain_mm": 0.1,
-    "hours": 15
+    "hours": 16
    },
    "1210726": {
     "low_c": 14.5,
     "high_c": 18.6,
     "rain_mm": 1.8,
-    "hours": 15
+    "hours": 16
    },
    "1210729": {
     "low_c": 11.9,
     "high_c": 18.1,
     "rain_mm": 1.2,
-    "hours": 15
+    "hours": 16
    },
    "1210734": {
     "low_c": 12.5,
     "high_c": 18.6,
     "rain_mm": 0,
-    "hours": 15
+    "hours": 16
    },
    "1210735": {
     "low_c": 10.4,
     "high_c": 18.3,
     "rain_mm": 0.1,
-    "hours": 15
+    "hours": 16
    },
    "1210739": {
     "low_c": 14.1,
     "high_c": 17.9,
     "rain_mm": 0.7,
-    "hours": 15
+    "hours": 16
    },
    "1210744": {
     "low_c": 12.5,
-    "high_c": 18.8,
+    "high_c": 19.1,
     "rain_mm": 0.5,
-    "hours": 15
+    "hours": 16
    },
    "1210750": {
     "low_c": 14.7,
-    "high_c": 16.9,
+    "high_c": 17.3,
     "rain_mm": 0.3,
-    "hours": 15
+    "hours": 16
    },
    "1210762": {
     "low_c": 14.3,
-    "high_c": 18.4,
+    "high_c": 18.7,
     "rain_mm": 0.1,
-    "hours": 7
+    "hours": 8
    },
    "1210765": {
     "low_c": 16.6,
-    "high_c": 18.6,
+    "high_c": 18.7,
     "rain_mm": 0,
-    "hours": 15
+    "hours": 16
    },
    "1210766": {
     "low_c": 15.6,
-    "high_c": 19.7,
+    "high_c": 19.9,
     "rain_mm": 0.1,
-    "hours": 15
+    "hours": 16
    },
    "1210767": {
     "low_c": 11.1,
     "high_c": 19.4,
     "rain_mm": 0.1,
-    "hours": 15
+    "hours": 16
    },
    "1210770": {
     "low_c": 15.1,
     "high_c": 19.7,
     "rain_mm": 0,
-    "hours": 15
+    "hours": 16
    },
    "1210773": {
     "low_c": 15.5,
     "high_c": 19.4,
     "rain_mm": 0,
-    "hours": 6
+    "hours": 7
    },
    "1210776": {
     "low_c": 12.3,
     "high_c": 19.6,
     "rain_mm": 0.1,
-    "hours": 15
+    "hours": 16
    },
    "1210782": {
     "low_c": 17.9,
     "high_c": 19.4,
     "rain_mm": 0,
-    "hours": 6
+    "hours": 7
    },
    "1210783": {
     "low_c": 13.5,
     "high_c": 19.5,
     "rain_mm": 0,
-    "hours": 15
+    "hours": 16
    },
    "1210785": {
     "low_c": 14.3,
     "high_c": 18.5,
     "rain_mm": null,
-    "hours": 15
+    "hours": 16
    },
    "1210787": {
     "low_c": 17.2,
     "high_c": 19.5,
     "rain_mm": 0,
-    "hours": 5
+    "hours": 6
    },
    "1210788": {
     "low_c": 15,
     "high_c": 19.4,
     "rain_mm": 0.6,
-    "hours": 15
+    "hours": 16
    },
    "1210789": {
     "low_c": 15.4,
     "high_c": 20.6,
     "rain_mm": 0,
-    "hours": 15
+    "hours": 16
    },
    "1210790": {
     "low_c": 9.8,
     "high_c": 12.5,
     "rain_mm": 3,
-    "hours": 15
+    "hours": 16
    },
    "1210791": {
     "low_c": 18,
     "high_c": 19,
     "rain_mm": 0,
-    "hours": 5
+    "hours": 6
    },
    "1210793": {
     "low_c": 14.9,
     "high_c": 19,
     "rain_mm": 0,
-    "hours": 6
+    "hours": 7
    },
    "1210800": {
     "low_c": 7,
     "high_c": 12.3,
     "rain_mm": 0,
-    "hours": 15
+    "hours": 16
    },
    "1210803": {
     "low_c": 11.1,
     "high_c": 16.6,
     "rain_mm": 0,
-    "hours": 15
+    "hours": 16
    },
    "1210806": {
     "low_c": 10.8,
-    "high_c": 15.4,
+    "high_c": 15.7,
     "rain_mm": 0.1,
-    "hours": 15
+    "hours": 16
    },
    "1210812": {
     "low_c": 10.3,
     "high_c": 18.6,
     "rain_mm": 1.2,
-    "hours": 15
+    "hours": 16
    },
    "1210824": {
     "low_c": 12.5,
-    "high_c": 17.9,
+    "high_c": 18.2,
     "rain_mm": 0.1,
-    "hours": 15
+    "hours": 16
    },
    "1210826": {
     "low_c": 12.5,
-    "high_c": 17.7,
+    "high_c": 18.2,
     "rain_mm": 0.7,
-    "hours": 15
+    "hours": 16
    },
    "1210835": {
     "low_c": 12.3,
-    "high_c": 17,
+    "high_c": 17.1,
     "rain_mm": 0,
-    "hours": 15
+    "hours": 16
    },
    "1210837": {
     "low_c": 11.7,
-    "high_c": 15.7,
+    "high_c": 16,
     "rain_mm": 0.5,
-    "hours": 15
+    "hours": 16
    },
    "1210840": {
     "low_c": 11.7,
     "high_c": 18.7,
     "rain_mm": 0,
-    "hours": 15
+    "hours": 16
    },
    "1210847": {
     "low_c": 12.9,
-    "high_c": 17.8,
+    "high_c": 18.1,
     "rain_mm": 0.1,
-    "hours": 15
+    "hours": 16
    },
    "1210848": {
     "low_c": 12.3,
     "high_c": 18.2,
     "rain_mm": null,
-    "hours": 15
+    "hours": 16
    },
    "1210851": {
     "low_c": 13.8,
     "high_c": 18.2,
     "rain_mm": 0.3,
-    "hours": 15
+    "hours": 16
    },
    "1210861": {
     "low_c": 12.7,
     "high_c": 15.8,
     "rain_mm": 0,
-    "hours": 5
+    "hours": 6
    },
    "1210863": {
     "low_c": 14.4,
-    "high_c": 18.1,
+    "high_c": 19.1,
     "rain_mm": 0.4,
-    "hours": 15
+    "hours": 16
    },
    "1210864": {
     "low_c": 14.2,
     "high_c": 18.9,
     "rain_mm": 0.6,
-    "hours": 15
+    "hours": 16
    },
    "1210865": {
     "low_c": 14,
-    "high_c": 17.7,
+    "high_c": 18.3,
     "rain_mm": 2,
-    "hours": 15
+    "hours": 16
    },
    "1210866": {
     "low_c": 15,
     "high_c": 21.3,
     "rain_mm": 4.3,
-    "hours": 15
+    "hours": 16
    },
    "1210867": {
     "low_c": 16.2,
-    "high_c": 21.1,
+    "high_c": 21.2,
     "rain_mm": 2,
-    "hours": 15
+    "hours": 16
    },
    "1210878": {
     "low_c": 15,
     "high_c": 20.1,
     "rain_mm": 0.3,
-    "hours": 14
+    "hours": 15
    },
    "1210881": {
     "low_c": 16.4,
-    "high_c": 21.5,
+    "high_c": 21.9,
     "rain_mm": 0.5,
-    "hours": 15
+    "hours": 16
    },
    "1210907": {
     "low_c": 16.1,
-    "high_c": 17.6,
+    "high_c": 17.7,
     "rain_mm": 0,
-    "hours": 15
+    "hours": 16
    },
    "1210932": {
     "low_c": 12.9,
     "high_c": 15.1,
     "rain_mm": 3.9,
-    "hours": 15
+    "hours": 16
    },
    "1210956": {
     "low_c": 19.9,
     "high_c": 22.2,
     "rain_mm": 2.7,
-    "hours": 15
+    "hours": 16
    },
    "1210960": {
     "low_c": 17.9,
     "high_c": 19.8,
     "rain_mm": 14.7,
-    "hours": 15
+    "hours": 16
    },
    "1210965": {
     "low_c": 16.6,
     "high_c": 17.9,
-    "rain_mm": 21.4,
-    "hours": 15
+    "rain_mm": 21.6,
+    "hours": 16
    },
    "1210967": {
     "low_c": 16.8,
     "high_c": 21.4,
     "rain_mm": 6.9,
-    "hours": 15
+    "hours": 16
    },
    "1210972": {
     "low_c": 13.8,
     "high_c": 16.7,
     "rain_mm": 0,
-    "hours": 15
+    "hours": 16
    },
    "1210973": {
     "low_c": 11.2,
     "high_c": 14.2,
     "rain_mm": 0.1,
-    "hours": 15
+    "hours": 16
    },
    "1210974": {
     "low_c": 10.3,
     "high_c": 16.8,
     "rain_mm": 0,
-    "hours": 15
+    "hours": 16
    },
    "1210975": {
     "low_c": 13.4,
     "high_c": 16.5,
     "rain_mm": 8.2,
-    "hours": 15
+    "hours": 16
    },
    "1210976": {
     "low_c": 14.9,
-    "high_c": 21,
+    "high_c": 22.2,
     "rain_mm": 0,
-    "hours": 15
+    "hours": 16
    },
    "1210977": {
     "low_c": 18,
     "high_c": 21.8,
     "rain_mm": 0,
-    "hours": 15
+    "hours": 16
    },
    "1210978": {
     "low_c": 19.1,
     "high_c": 20.8,
     "rain_mm": 3.3,
-    "hours": 15
+    "hours": 16
    },
    "1210984": {
     "low_c": 16.2,
-    "high_c": 21.2,
+    "high_c": 22.5,
     "rain_mm": 0,
-    "hours": 15
+    "hours": 16
    },
    "1210986": {
     "low_c": 20.1,
     "high_c": 24.3,
     "rain_mm": 0,
-    "hours": 15
+    "hours": 16
    },
    "1210990": {
     "low_c": 17.7,
-    "high_c": 20.7,
+    "high_c": 20.8,
     "rain_mm": 1.6,
-    "hours": 15
+    "hours": 16
    },
    "1240546": {
     "low_c": 12.5,
     "high_c": 16.9,
     "rain_mm": 4.6,
-    "hours": 15
+    "hours": 16
    },
    "1240566": {
     "low_c": 9.7,
     "high_c": 13,
-    "rain_mm": 7.1,
-    "hours": 15
+    "rain_mm": 7.4,
+    "hours": 16
    },
    "1240610": {
     "low_c": 12.3,
     "high_c": 17,
     "rain_mm": 9.4,
-    "hours": 15
+    "hours": 16
    },
    "1240675": {
     "low_c": 10.5,
     "high_c": 15.7,
-    "rain_mm": 0.4,
-    "hours": 15
+    "rain_mm": 0.5,
+    "hours": 16
    },
    "1240903": {
     "low_c": 12.8,
     "high_c": 17.6,
     "rain_mm": 3.8,
-    "hours": 15
+    "hours": 16
    },
    "1240971": {
     "low_c": 20.7,
     "high_c": 22.5,
     "rain_mm": 0,
-    "hours": 15
+    "hours": 16
    },
    "1259203": {
     "low_c": 10.6,
     "high_c": 13.7,
-    "rain_mm": 0.9,
-    "hours": 13
+    "rain_mm": 1,
+    "hours": 14
    },
    "1259204": {
     "low_c": 6.1,
     "high_c": 9,
-    "rain_mm": 1.1,
-    "hours": 15
+    "rain_mm": 1.2,
+    "hours": 16
    },
    "6210817": {
     "low_c": 12,
-    "high_c": 18.3,
+    "high_c": 18.5,
     "rain_mm": 0.8,
-    "hours": 15
+    "hours": 16
    },
    "6210872": {
     "low_c": null,
     "high_c": null,
     "rain_mm": 1.2,
-    "hours": 15
+    "hours": 16
    },
    "6211213": {
     "low_c": 6.5,
@@ -5847,7 +5645,7 @@
    },
    "6211216": {
     "low_c": 8.7,
-    "high_c": 11.9,
+    "high_c": 11.8,
     "rain_mm": 9.5,
     "hours": 15
    },
@@ -5859,7 +5657,7 @@
    },
    "6211218": {
     "low_c": 9.4,
-    "high_c": 13.2,
+    "high_c": 13,
     "rain_mm": null,
     "hours": 15
    },
@@ -6009,99 +5807,99 @@
    },
    "6214119": {
     "low_c": 10.5,
-    "high_c": 14.6,
+    "high_c": 14.9,
     "rain_mm": 0.2,
-    "hours": 15
+    "hours": 16
    },
    "6215302": {
     "low_c": 14.1,
     "high_c": 18.5,
     "rain_mm": 0.1,
-    "hours": 15
+    "hours": 16
    },
    "6215360": {
     "low_c": 14.1,
-    "high_c": 17.5,
+    "high_c": 17.7,
     "rain_mm": 0,
-    "hours": 15
+    "hours": 16
    },
    "7240919": {
     "low_c": 13.1,
-    "high_c": 19.9,
+    "high_c": 20.1,
     "rain_mm": 0,
-    "hours": 15
+    "hours": 16
    },
    "11217160": {
     "low_c": 13.4,
     "high_c": 16.6,
     "rain_mm": 0,
-    "hours": 14
+    "hours": 16
    },
    "11217165": {
     "low_c": 12.9,
     "high_c": 16.8,
     "rain_mm": 0,
-    "hours": 15
+    "hours": 16
    },
    "11217217": {
     "low_c": 13.5,
     "high_c": 15.6,
-    "rain_mm": 2.3,
-    "hours": 15
+    "rain_mm": 4,
+    "hours": 16
    },
    "11217225": {
     "low_c": 10.1,
     "high_c": 13.9,
-    "rain_mm": 2.3,
-    "hours": 15
+    "rain_mm": 6.2,
+    "hours": 16
    },
    "11217255": {
     "low_c": 11.1,
     "high_c": 13.3,
     "rain_mm": 0.1,
-    "hours": 15
+    "hours": 16
    },
    "11217370": {
     "low_c": 7.8,
-    "high_c": 10.2,
-    "rain_mm": 0,
-    "hours": 14
+    "high_c": 10.3,
+    "rain_mm": 0.8,
+    "hours": 16
    },
    "11217372": {
     "low_c": 9.7,
     "high_c": 12.3,
     "rain_mm": 0,
-    "hours": 14
+    "hours": 15
    },
    "11217430": {
     "low_c": 13,
     "high_c": 14.3,
     "rain_mm": 0,
-    "hours": 14
+    "hours": 15
    },
    "11217510": {
     "low_c": 7.5,
     "high_c": 9,
     "rain_mm": 0,
-    "hours": 14
+    "hours": 15
    },
    "11217625": {
     "low_c": 7.1,
     "high_c": 9.1,
-    "rain_mm": 0,
-    "hours": 14
+    "rain_mm": 2.5,
+    "hours": 15
    },
    "11217645": {
     "low_c": 9.3,
     "high_c": 11.6,
-    "rain_mm": 0,
-    "hours": 14
+    "rain_mm": 1.2,
+    "hours": 15
    },
    "11217710": {
     "low_c": 7.7,
     "high_c": 9.1,
-    "rain_mm": 0,
-    "hours": 14
+    "rain_mm": 2,
+    "hours": 15
    }
   }
  },
@@ -21476,6 +21274,10 @@
      17.8,
      0
     ],
+    "15": [
+     17.4,
+     0
+    ],
     "00": [
      13.7,
      0
@@ -21536,6 +21338,10 @@
     ],
     "14": [
      17.7,
+     0
+    ],
+    "15": [
+     17.8,
      0
     ],
     "00": [
@@ -21600,6 +21406,10 @@
      15.4,
      0
     ],
+    "15": [
+     14,
+     0.4
+    ],
     "00": [
      12.5,
      0
@@ -21661,6 +21471,10 @@
     "14": [
      16.1,
      0.5
+    ],
+    "15": [
+     15,
+     1.3
     ],
     "00": [
      13.9,
@@ -21724,6 +21538,10 @@
      16,
      0.1
     ],
+    "15": [
+     14.4,
+     3.2
+    ],
     "00": [
      13.8,
      0
@@ -21784,6 +21602,10 @@
     ],
     "14": [
      16.3,
+     0
+    ],
+    "15": [
+     16.2,
      0
     ],
     "00": [
@@ -21848,6 +21670,10 @@
      15.2,
      0
     ],
+    "15": [
+     14.8,
+     0.2
+    ],
     "00": [
      13.6,
      0
@@ -21909,6 +21735,10 @@
     "14": [
      16.1,
      0
+    ],
+    "15": [
+     15.4,
+     0.3
     ]
    },
    "1200512": {
@@ -21931,6 +21761,10 @@
     "14": [
      14.2,
      0.2
+    ],
+    "15": [
+     13.8,
+     2.6
     ],
     "00": [
      11.8,
@@ -21992,6 +21826,10 @@
     ],
     "14": [
      22.4,
+     0
+    ],
+    "15": [
+     22.1,
      0
     ],
     "00": [
@@ -22056,6 +21894,10 @@
      24.8,
      0
     ],
+    "15": [
+     24.5,
+     0
+    ],
     "00": [
      21.5,
      0
@@ -22116,7 +21958,11 @@
     ],
     "14": [
      21.8,
-     null
+     0
+    ],
+    "15": [
+     21.5,
+     0
     ],
     "00": [
      20.4,
@@ -22177,6 +22023,10 @@
      0
     ],
     "14": [
+     null,
+     0
+    ],
+    "15": [
      null,
      0
     ],
@@ -22242,6 +22092,10 @@
      19.9,
      0
     ],
+    "15": [
+     19.7,
+     0
+    ],
     "00": [
      18.4,
      0
@@ -22302,6 +22156,10 @@
     ],
     "14": [
      18.7,
+     0
+    ],
+    "15": [
+     19.4,
      0
     ],
     "00": [
@@ -22366,6 +22224,10 @@
      18.3,
      0
     ],
+    "15": [
+     18.4,
+     0
+    ],
     "00": [
      17.7,
      0
@@ -22427,6 +22289,10 @@
     "14": [
      15.4,
      0.4
+    ],
+    "15": [
+     15.6,
+     0.1
     ],
     "00": [
      14.9,
@@ -22490,6 +22356,10 @@
      15.2,
      0
     ],
+    "15": [
+     14.9,
+     0.3
+    ],
     "00": [
      15.2,
      0
@@ -22549,6 +22419,10 @@
      0
     ],
     "14": [
+     21.3,
+     0
+    ],
+    "15": [
      21.3,
      0
     ],
@@ -22614,6 +22488,10 @@
      17.8,
      null
     ],
+    "15": [
+     18.1,
+     null
+    ],
     "00": [
      15.1,
      null
@@ -22674,6 +22552,10 @@
     ],
     "14": [
      12.3,
+     0
+    ],
+    "15": [
+     12.1,
      0
     ],
     "00": [
@@ -22738,6 +22620,10 @@
      12.2,
      0
     ],
+    "15": [
+     11.9,
+     0
+    ],
     "00": [
      10.5,
      0.3
@@ -22800,6 +22686,10 @@
      11.8,
      0
     ],
+    "15": [
+     11.5,
+     0.1
+    ],
     "00": [
      10.6,
      0.9
@@ -22860,6 +22750,10 @@
     ],
     "14": [
      5.4,
+     null
+    ],
+    "15": [
+     5.5,
      null
     ],
     "00": [
@@ -22924,6 +22818,10 @@
      16.5,
      0
     ],
+    "15": [
+     16.6,
+     0
+    ],
     "00": [
      14.3,
      0
@@ -22984,6 +22882,10 @@
     ],
     "14": [
      12.4,
+     0
+    ],
+    "15": [
+     13.5,
      0
     ],
     "00": [
@@ -23048,6 +22950,10 @@
      11.5,
      0
     ],
+    "15": [
+     11.6,
+     0
+    ],
     "00": [
      10.1,
      0
@@ -23108,6 +23014,10 @@
     ],
     "14": [
      11,
+     0
+    ],
+    "15": [
+     11.1,
      0
     ],
     "00": [
@@ -23172,6 +23082,10 @@
      17.4,
      0
     ],
+    "15": [
+     17.5,
+     0
+    ],
     "00": [
      14.9,
      0
@@ -23230,8 +23144,22 @@
      14.4,
      0
     ],
+    "15": [
+     14,
+     2.3
+    ],
     "00": [
      12.5,
+     0
+    ]
+   },
+   "1210520": {
+    "14": [
+     22.5,
+     0
+    ],
+    "15": [
+     22.4,
      0
     ]
    },
@@ -23254,6 +23182,10 @@
     ],
     "14": [
      18.1,
+     0
+    ],
+    "15": [
+     17.7,
      0
     ],
     "00": [
@@ -23318,6 +23250,10 @@
      16,
      0
     ],
+    "15": [
+     16.3,
+     0
+    ],
     "00": [
      16,
      1.7
@@ -23378,6 +23314,10 @@
     ],
     "14": [
      18.2,
+     0
+    ],
+    "15": [
+     18.6,
      0
     ],
     "00": [
@@ -23442,6 +23382,10 @@
      17.8,
      0
     ],
+    "15": [
+     18.2,
+     0
+    ],
     "00": [
      16.3,
      0
@@ -23503,6 +23447,10 @@
     "14": [
      15.2,
      0.3
+    ],
+    "15": [
+     14.8,
+     2.5
     ],
     "00": [
      14.3,
@@ -23566,6 +23514,10 @@
      13.9,
      3.6
     ],
+    "15": [
+     13.8,
+     1.6
+    ],
     "00": [
      13.7,
      0
@@ -23626,6 +23578,10 @@
     ],
     "14": [
      8.3,
+     2.7
+    ],
+    "15": [
+     7.9,
      2.7
     ],
     "00": [
@@ -23690,6 +23646,10 @@
      7.9,
      0.1
     ],
+    "15": [
+     7.3,
+     2.2
+    ],
     "00": [
      6.8,
      0.1
@@ -23750,6 +23710,10 @@
     ],
     "14": [
      9.1,
+     0
+    ],
+    "15": [
+     9.8,
      0
     ],
     "00": [
@@ -23814,6 +23778,10 @@
      15.2,
      1.7
     ],
+    "15": [
+     13.3,
+     0.2
+    ],
     "00": [
      12.9,
      0
@@ -23874,6 +23842,10 @@
     ],
     "14": [
      12.9,
+     0
+    ],
+    "15": [
+     14.1,
      0
     ],
     "00": [
@@ -23938,6 +23910,10 @@
      10.6,
      0.8
     ],
+    "15": [
+     9.8,
+     4.5
+    ],
     "00": [
      9.3,
      0
@@ -23998,6 +23974,10 @@
     ],
     "14": [
      14.1,
+     null
+    ],
+    "15": [
+     14.6,
      null
     ],
     "00": [
@@ -24062,6 +24042,10 @@
      13.2,
      1.5
     ],
+    "15": [
+     14.1,
+     0.5
+    ],
     "00": [
      13,
      1.8
@@ -24122,6 +24106,10 @@
     ],
     "14": [
      15.1,
+     0
+    ],
+    "15": [
+     14.6,
      0
     ],
     "00": [
@@ -24186,6 +24174,10 @@
      11.8,
      0
     ],
+    "15": [
+     12,
+     0
+    ],
     "00": [
      10,
      0
@@ -24246,6 +24238,10 @@
     ],
     "14": [
      10.6,
+     0
+    ],
+    "15": [
+     10.8,
      0
     ],
     "00": [
@@ -24310,6 +24306,10 @@
      10.5,
      0
     ],
+    "15": [
+     10.2,
+     0
+    ],
     "00": [
      9.8,
      0
@@ -24372,6 +24372,10 @@
      12.2,
      2
     ],
+    "15": [
+     12.2,
+     0.2
+    ],
     "00": [
      11.4,
      1.1
@@ -24432,6 +24436,10 @@
     ],
     "14": [
      10.3,
+     0.1
+    ],
+    "15": [
+     10.7,
      0.1
     ],
     "00": [
@@ -24496,6 +24504,10 @@
      12.8,
      0
     ],
+    "15": [
+     13.2,
+     0
+    ],
     "00": [
      12.2,
      0
@@ -24556,6 +24568,10 @@
     ],
     "14": [
      17.4,
+     0
+    ],
+    "15": [
+     16.5,
      0
     ],
     "00": [
@@ -24620,6 +24636,10 @@
      14,
      0
     ],
+    "15": [
+     13.1,
+     1.8
+    ],
     "00": [
      11.3,
      0.5
@@ -24680,6 +24700,10 @@
     ],
     "14": [
      15.5,
+     null
+    ],
+    "15": [
+     14.8,
      null
     ],
     "00": [
@@ -24744,6 +24768,10 @@
      12.8,
      0
     ],
+    "15": [
+     12.9,
+     0
+    ],
     "00": [
      10.1,
      0
@@ -24804,6 +24832,10 @@
     ],
     "14": [
      11.1,
+     0
+    ],
+    "15": [
+     10.8,
      0
     ],
     "00": [
@@ -24868,6 +24900,10 @@
      15.3,
      0.2
     ],
+    "15": [
+     13.7,
+     0.3
+    ],
     "00": [
      13.5,
      1
@@ -24928,6 +24964,10 @@
     ],
     "14": [
      12,
+     0
+    ],
+    "15": [
+     12.6,
      0
     ],
     "00": [
@@ -24992,6 +25032,10 @@
      8.8,
      0
     ],
+    "15": [
+     9.1,
+     0
+    ],
     "00": [
      8.9,
      0
@@ -25052,6 +25096,10 @@
     ],
     "14": [
      14.6,
+     0
+    ],
+    "15": [
+     14.3,
      0
     ],
     "00": [
@@ -25116,6 +25164,10 @@
      10.4,
      0
     ],
+    "15": [
+     10.9,
+     0
+    ],
     "00": [
      9.3,
      0.3
@@ -25178,6 +25230,10 @@
      15.6,
      0
     ],
+    "15": [
+     15.1,
+     0
+    ],
     "00": [
      14.2,
      0
@@ -25237,6 +25293,10 @@
      0
     ],
     "14": [
+     15.4,
+     0
+    ],
+    "15": [
      15.4,
      0
     ],
@@ -25302,6 +25362,10 @@
      17,
      0
     ],
+    "15": [
+     17.5,
+     0
+    ],
     "00": [
      16,
      0
@@ -25362,6 +25426,10 @@
     ],
     "14": [
      14.4,
+     0
+    ],
+    "15": [
+     14.8,
      0
     ],
     "00": [
@@ -25426,6 +25494,10 @@
      18.1,
      0
     ],
+    "15": [
+     17.6,
+     0
+    ],
     "00": [
      16.5,
      0
@@ -25488,6 +25560,10 @@
      18,
      0.5
     ],
+    "15": [
+     17.4,
+     0.8
+    ],
     "00": [
      16.9,
      0
@@ -25548,6 +25624,10 @@
     ],
     "14": [
      17.6,
+     0
+    ],
+    "15": [
+     16.7,
      0
     ],
     "00": [
@@ -25612,6 +25692,10 @@
      18.2,
      0
     ],
+    "15": [
+     17.6,
+     0
+    ],
     "00": [
      16.1,
      0
@@ -25671,6 +25755,10 @@
      0.1
     ],
     "14": [
+     18.4,
+     0
+    ],
+    "15": [
      18.4,
      0
     ],
@@ -25736,6 +25824,10 @@
      14.5,
      0
     ],
+    "15": [
+     16.1,
+     0
+    ],
     "00": [
      13.3,
      0
@@ -25796,6 +25888,10 @@
     ],
     "14": [
      18.4,
+     0
+    ],
+    "15": [
+     18.2,
      0
     ],
     "00": [
@@ -25860,6 +25956,10 @@
      17.6,
      0.1
     ],
+    "15": [
+     17.5,
+     0
+    ],
     "00": [
      16.7,
      0
@@ -25920,6 +26020,10 @@
     ],
     "14": [
      19,
+     0
+    ],
+    "15": [
+     18.8,
      0
     ],
     "00": [
@@ -25984,6 +26088,10 @@
      18.6,
      0
     ],
+    "15": [
+     18.4,
+     0
+    ],
     "00": [
      17,
      0
@@ -26044,6 +26152,10 @@
     ],
     "14": [
      17.8,
+     0
+    ],
+    "15": [
+     17.6,
      0
     ],
     "00": [
@@ -26108,6 +26220,10 @@
      18.6,
      0
     ],
+    "15": [
+     18.3,
+     0
+    ],
     "00": [
      16.6,
      0
@@ -26170,6 +26286,10 @@
      18.3,
      0
     ],
+    "15": [
+     17.4,
+     0
+    ],
     "00": [
      15.8,
      0
@@ -26229,6 +26349,10 @@
      0
     ],
     "14": [
+     17.9,
+     0
+    ],
+    "15": [
      17.9,
      0
     ],
@@ -26294,6 +26418,10 @@
      18.8,
      0
     ],
+    "15": [
+     19.1,
+     0
+    ],
     "00": [
      16.8,
      0.2
@@ -26354,6 +26482,10 @@
     ],
     "14": [
      16.9,
+     0
+    ],
+    "15": [
+     17.3,
      0
     ],
     "00": [
@@ -26418,6 +26550,10 @@
      18.1,
      0
     ],
+    "15": [
+     18.7,
+     0
+    ],
     "00": [
      16.9,
      0
@@ -26446,6 +26582,10 @@
     ],
     "14": [
      18.6,
+     0
+    ],
+    "15": [
+     18.7,
      0
     ],
     "00": [
@@ -26510,6 +26650,10 @@
      19.6,
      0
     ],
+    "15": [
+     19.9,
+     0
+    ],
     "00": [
      18.2,
      0
@@ -26570,6 +26714,10 @@
     ],
     "14": [
      19.4,
+     0
+    ],
+    "15": [
+     18.9,
      0
     ],
     "00": [
@@ -26634,6 +26782,10 @@
      19.7,
      0
     ],
+    "15": [
+     19.6,
+     0
+    ],
     "00": [
      17.9,
      0
@@ -26696,6 +26848,10 @@
      19.4,
      0
     ],
+    "15": [
+     19.1,
+     0
+    ],
     "09": [
      15.5,
      0
@@ -26720,6 +26876,10 @@
     ],
     "14": [
      19.6,
+     0
+    ],
+    "15": [
+     19.5,
      0
     ],
     "00": [
@@ -26784,6 +26944,10 @@
      19.4,
      0
     ],
+    "15": [
+     19.3,
+     0
+    ],
     "09": [
      17.9,
      null
@@ -26807,6 +26971,10 @@
      0
     ],
     "14": [
+     19.5,
+     0
+    ],
+    "15": [
      19.5,
      0
     ],
@@ -26872,6 +27040,10 @@
      18.5,
      null
     ],
+    "15": [
+     18.5,
+     null
+    ],
     "00": [
      16.4,
      null
@@ -26933,6 +27105,10 @@
     "14": [
      19.5,
      0
+    ],
+    "15": [
+     18.9,
+     0
     ]
    },
    "1210788": {
@@ -26954,6 +27130,10 @@
     ],
     "14": [
      18.8,
+     0
+    ],
+    "15": [
+     18.7,
      0
     ],
     "00": [
@@ -27018,6 +27198,10 @@
      19.9,
      0
     ],
+    "15": [
+     20.4,
+     0
+    ],
     "00": [
      18.4,
      0
@@ -27077,6 +27261,10 @@
      0.1
     ],
     "14": [
+     11.6,
+     0
+    ],
+    "15": [
      11.6,
      0
     ],
@@ -27141,6 +27329,10 @@
     "14": [
      18.9,
      0
+    ],
+    "15": [
+     18.6,
+     0
     ]
    },
    "1210793": {
@@ -27162,6 +27354,10 @@
     ],
     "14": [
      18.7,
+     0
+    ],
+    "15": [
+     18.6,
      0
     ],
     "09": [
@@ -27188,6 +27384,10 @@
     ],
     "14": [
      12.2,
+     0
+    ],
+    "15": [
+     11.7,
      0
     ],
     "00": [
@@ -27252,6 +27452,10 @@
      16.6,
      0
     ],
+    "15": [
+     16.5,
+     0
+    ],
     "00": [
      14.1,
      0
@@ -27314,6 +27518,10 @@
      15.4,
      0
     ],
+    "15": [
+     15.7,
+     0
+    ],
     "00": [
      13.9,
      0
@@ -27373,6 +27581,10 @@
      0
     ],
     "14": [
+     18.6,
+     0
+    ],
+    "15": [
      18.6,
      0
     ],
@@ -27438,6 +27650,10 @@
      17.9,
      0
     ],
+    "15": [
+     18.2,
+     0
+    ],
     "00": [
      15.8,
      0
@@ -27498,6 +27714,10 @@
     ],
     "14": [
      17.7,
+     0
+    ],
+    "15": [
+     18.2,
      0
     ],
     "00": [
@@ -27562,6 +27782,10 @@
      17,
      0
     ],
+    "15": [
+     17.1,
+     0
+    ],
     "00": [
      15.7,
      0
@@ -27622,6 +27846,10 @@
     ],
     "14": [
      15.7,
+     0
+    ],
+    "15": [
+     16,
      0
     ],
     "00": [
@@ -27686,6 +27914,10 @@
      18.4,
      0
     ],
+    "15": [
+     18.1,
+     0
+    ],
     "00": [
      14.5,
      0
@@ -27746,6 +27978,10 @@
     ],
     "14": [
      17.8,
+     0
+    ],
+    "15": [
+     18.1,
      0
     ],
     "00": [
@@ -27810,6 +28046,10 @@
      18.2,
      null
     ],
+    "15": [
+     17.9,
+     null
+    ],
     "00": [
      15.4,
      null
@@ -27870,6 +28110,10 @@
     ],
     "14": [
      18.2,
+     0
+    ],
+    "15": [
+     18,
      0
     ],
     "00": [
@@ -27933,6 +28177,10 @@
     "14": [
      15.8,
      0
+    ],
+    "15": [
+     15.6,
+     0
     ]
    },
    "1210863": {
@@ -27954,6 +28202,10 @@
     ],
     "14": [
      17.9,
+     0
+    ],
+    "15": [
+     19.1,
      0
     ],
     "00": [
@@ -28018,6 +28270,10 @@
      18.9,
      0
     ],
+    "15": [
+     18.6,
+     0
+    ],
     "00": [
      16,
      0.5
@@ -28078,6 +28334,10 @@
     ],
     "14": [
      17.7,
+     0
+    ],
+    "15": [
+     18.3,
      0
     ],
     "00": [
@@ -28142,6 +28402,10 @@
      21.3,
      0
     ],
+    "15": [
+     20.9,
+     0
+    ],
     "00": [
      19.3,
      0
@@ -28204,6 +28468,10 @@
      21.1,
      0
     ],
+    "15": [
+     21.2,
+     0
+    ],
     "00": [
      19.9,
      0
@@ -28259,6 +28527,10 @@
      0
     ],
     "13": [
+     20.1,
+     0
+    ],
+    "14": [
      20.1,
      0
     ],
@@ -28324,6 +28596,10 @@
      21.5,
      0
     ],
+    "15": [
+     21.9,
+     0
+    ],
     "00": [
      19.9,
      0.1
@@ -28384,6 +28660,10 @@
     ],
     "14": [
      17.6,
+     null
+    ],
+    "15": [
+     17.7,
      null
     ],
     "00": [
@@ -28448,6 +28728,10 @@
      13.4,
      3.3
     ],
+    "15": [
+     13.3,
+     0
+    ],
     "00": [
      13.7,
      0
@@ -28508,6 +28792,10 @@
     ],
     "14": [
      21.5,
+     0
+    ],
+    "15": [
+     20.9,
      0
     ],
     "00": [
@@ -28572,6 +28860,10 @@
      19.1,
      0
     ],
+    "15": [
+     18.9,
+     0
+    ],
     "00": [
      19.2,
      0
@@ -28634,6 +28926,10 @@
      17.5,
      0
     ],
+    "15": [
+     17.2,
+     0.2
+    ],
     "00": [
      16.6,
      0
@@ -28694,6 +28990,10 @@
     ],
     "14": [
      21.4,
+     0
+    ],
+    "15": [
+     20,
      0
     ],
     "00": [
@@ -28758,6 +29058,10 @@
      15.8,
      0
     ],
+    "15": [
+     16,
+     0
+    ],
     "00": [
      14.3,
      0
@@ -28818,6 +29122,10 @@
     ],
     "14": [
      13.5,
+     0
+    ],
+    "15": [
+     13.4,
      0
     ],
     "00": [
@@ -28882,6 +29190,10 @@
      16.1,
      0
     ],
+    "15": [
+     15.8,
+     0
+    ],
     "00": [
      13.3,
      0
@@ -28942,6 +29254,10 @@
     ],
     "14": [
      16.3,
+     0
+    ],
+    "15": [
+     16,
      0
     ],
     "00": [
@@ -29006,6 +29322,10 @@
      21,
      0
     ],
+    "15": [
+     22.2,
+     0
+    ],
     "00": [
      16.5,
      0
@@ -29068,6 +29388,10 @@
      21.8,
      0
     ],
+    "15": [
+     21.7,
+     0
+    ],
     "00": [
      19.4,
      0
@@ -29127,6 +29451,10 @@
      0
     ],
     "14": [
+     20.6,
+     0
+    ],
+    "15": [
      20.6,
      0
     ],
@@ -29192,6 +29520,10 @@
      21.2,
      0
     ],
+    "15": [
+     22.5,
+     0
+    ],
     "00": [
      17.8,
      0
@@ -29252,6 +29584,10 @@
     ],
     "14": [
      24.3,
+     0
+    ],
+    "15": [
+     23.9,
      0
     ],
     "00": [
@@ -29316,6 +29652,10 @@
      20.7,
      0
     ],
+    "15": [
+     20.8,
+     0
+    ],
     "00": [
      18.6,
      0
@@ -29377,6 +29717,10 @@
     "14": [
      16.5,
      0.2
+    ],
+    "15": [
+     16.1,
+     0
     ],
     "00": [
      14.1,
@@ -29440,6 +29784,10 @@
      13,
      0
     ],
+    "15": [
+     12.1,
+     0.3
+    ],
     "00": [
      11.7,
      0.1
@@ -29501,6 +29849,10 @@
     "14": [
      15.1,
      1.3
+    ],
+    "15": [
+     15.6,
+     0
     ],
     "00": [
      15.8,
@@ -29564,6 +29916,10 @@
      15.5,
      0
     ],
+    "15": [
+     13.7,
+     0.1
+    ],
     "00": [
      12.4,
      0.2
@@ -29624,6 +29980,10 @@
     ],
     "14": [
      17.1,
+     0
+    ],
+    "15": [
+     16.7,
      0
     ],
     "00": [
@@ -29688,6 +30048,10 @@
      22.3,
      0
     ],
+    "15": [
+     22.1,
+     0
+    ],
     "00": [
      21.5,
      0
@@ -29750,6 +30114,10 @@
      13.7,
      0
     ],
+    "15": [
+     13.7,
+     0.1
+    ],
     "00": [
      12.7,
      0
@@ -29803,6 +30171,10 @@
     "14": [
      8.4,
      0
+    ],
+    "15": [
+     8.6,
+     0.1
     ],
     "00": [
      9,
@@ -29864,6 +30236,10 @@
     ],
     "14": [
      18.3,
+     0
+    ],
+    "15": [
+     18.5,
      null
     ],
     "00": [
@@ -29925,6 +30301,10 @@
      0
     ],
     "14": [
+     null,
+     0
+    ],
+    "15": [
      null,
      0
     ],
@@ -30049,7 +30429,7 @@
      0.1
     ],
     "14": [
-     11.9,
+     11.8,
      null
     ],
     "00": [
@@ -30133,7 +30513,7 @@
      null
     ],
     "14": [
-     13.2,
+     13,
      null
     ],
     "00": [
@@ -30699,8 +31079,8 @@
      0
     ],
     "14": [
-     14.1,
-     null
+     14.2,
+     0
     ],
     "00": [
      12.3,
@@ -31570,6 +31950,10 @@
      14.6,
      null
     ],
+    "15": [
+     14.9,
+     0
+    ],
     "00": [
      13.9,
      0
@@ -31630,6 +32014,10 @@
     ],
     "14": [
      18.1,
+     0
+    ],
+    "15": [
+     18.5,
      0
     ],
     "00": [
@@ -31694,6 +32082,10 @@
      17.5,
      0
     ],
+    "15": [
+     17.7,
+     0
+    ],
     "00": [
      16.6,
      0
@@ -31756,6 +32148,10 @@
      19,
      0
     ],
+    "15": [
+     20.1,
+     0
+    ],
     "00": [
      15.9,
      0
@@ -31812,6 +32208,14 @@
     ],
     "13": [
      16.6,
+     null
+    ],
+    "14": [
+     16.5,
+     null
+    ],
+    "15": [
+     16.5,
      null
     ],
     "00": [
@@ -31874,6 +32278,10 @@
     ],
     "14": [
      16.4,
+     0
+    ],
+    "15": [
+     16.2,
      null
     ],
     "00": [
@@ -31938,6 +32346,10 @@
      14.1,
      2.1
     ],
+    "15": [
+     13.7,
+     1.7
+    ],
     "00": [
      13.8,
      0
@@ -31999,6 +32411,10 @@
     "14": [
      12.6,
      2.2
+    ],
+    "15": [
+     11.7,
+     3.9
     ],
     "00": [
      11.1,
@@ -32062,6 +32478,10 @@
      12.6,
      0
     ],
+    "15": [
+     12.6,
+     0
+    ],
     "00": [
      11.9,
      0
@@ -32120,6 +32540,14 @@
      10.2,
      0
     ],
+    "14": [
+     10.3,
+     0
+    ],
+    "15": [
+     9.9,
+     0.8
+    ],
     "00": [
      8.1,
      0
@@ -32176,6 +32604,10 @@
     ],
     "13": [
      12.3,
+     0
+    ],
+    "14": [
+     12.1,
      0
     ],
     "00": [
@@ -32236,6 +32668,10 @@
      14.2,
      0
     ],
+    "14": [
+     14.1,
+     0
+    ],
     "00": [
      13,
      0
@@ -32292,6 +32728,10 @@
     ],
     "13": [
      8.6,
+     0
+    ],
+    "14": [
+     8.7,
      0
     ],
     "00": [
@@ -32352,6 +32792,10 @@
      9.1,
      0
     ],
+    "14": [
+     8.9,
+     2.5
+    ],
     "00": [
      7.1,
      0
@@ -32410,6 +32854,10 @@
      11.6,
      0
     ],
+    "14": [
+     11.1,
+     1.2
+    ],
     "00": [
      9.5,
      0
@@ -32467,6 +32915,10 @@
     "13": [
      9,
      0
+    ],
+    "14": [
+     9,
+     2
     ],
     "00": [
      7.9,

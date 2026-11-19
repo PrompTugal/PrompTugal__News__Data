@@ -3,6 +3,221 @@
  "source": "ea-flood",
  "runs": [
   {
+   "at": "2026-11-19T16:04:01Z",
+   "finished": "2026-11-19T16:05:38Z",
+   "ok": 23,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "floods",
+     "url": "https://environment.data.gov.uk/flood-monitoring/id/floods?lat=51.5074&long=-0.1278&dist=30",
+     "at": "2026-11-19T16:04:02Z",
+     "status": 200,
+     "bytes": 4039,
+     "sha256_prefix": "d7ad0d958891ad3b",
+     "changed": false
+    },
+    {
+     "name": "stations",
+     "url": "https://environment.data.gov.uk/flood-monitoring/id/stations?lat=51.5074&long=-0.1278&dist=15&parameter=level",
+     "at": "2026-11-19T16:04:05Z",
+     "status": 200,
+     "bytes": 99748,
+     "sha256_prefix": "5fce9b4bcac33fd5",
+     "changed": false
+    },
+    {
+     "name": "readings-0001",
+     "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/0001/readings?latest",
+     "at": "2026-11-19T16:04:07Z",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "c87f31ee8fc57ce7",
+     "changed": true
+    },
+    {
+     "name": "readings-0003",
+     "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/0003/readings?latest",
+     "at": "2026-11-19T16:04:10Z",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "04f039afe09856d4",
+     "changed": true
+    },
+    {
+     "name": "readings-0006",
+     "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/0006/readings?latest",
+     "at": "2026-11-19T16:04:12Z",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "fbbbb5e6f76a24c0",
+     "changed": true
+    },
+    {
+     "name": "readings-0007",
+     "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/0007/readings?latest",
+     "at": "2026-11-19T16:04:15Z",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "dc30db3f6049ae21",
+     "changed": true
+    },
+    {
+     "name": "readings-0009",
+     "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/0009/readings?latest",
+     "at": "2026-11-19T16:04:17Z",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "fb6eadaf10d6cb6e",
+     "changed": true
+    },
+    {
+     "name": "readings-0010",
+     "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/0010/readings?latest",
+     "at": "2026-11-19T16:04:23Z",
+     "status": 200,
+     "bytes": 795,
+     "sha256_prefix": "d8f0dfc44f264c31",
+     "changed": false
+    },
+    {
+     "name": "readings-3104TH",
+     "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/3104TH/readings?latest",
+     "at": "2026-11-19T16:04:29Z",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "fc3aa5e3b775d158",
+     "changed": true
+    },
+    {
+     "name": "readings-3400TH",
+     "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/3400TH/readings?latest",
+     "at": "2026-11-19T16:04:31Z",
+     "status": 200,
+     "bytes": 1436,
+     "sha256_prefix": "04fa168d10f078ab",
+     "changed": true
+    },
+    {
+     "name": "readings-3401TH",
+     "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/3401TH/readings?latest",
+     "at": "2026-11-19T16:04:38Z",
+     "status": 200,
+     "bytes": 1445,
+     "sha256_prefix": "cff825c2406a6a24",
+     "changed": true
+    },
+    {
+     "name": "readings-3404TH",
+     "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/3404TH/readings?latest",
+     "at": "2026-11-19T16:04:40Z",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "686ddd19798f8673",
+     "changed": true
+    },
+    {
+     "name": "rain-stations",
+     "url": "https://environment.data.gov.uk/flood-monitoring/id/stations?lat=51.5074&long=-0.1278&dist=15&parameter=rainfall",
+     "at": "2026-11-19T16:04:45Z",
+     "status": 200,
+     "bytes": 10264,
+     "sha256_prefix": "53899def93f61725",
+     "changed": false
+    },
+    {
+     "name": "rain-246424TP",
+     "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/246424TP/readings?since=2026-11-18T00:00:00Z&_limit=500",
+     "at": "2026-11-19T16:04:48Z",
+     "status": 200,
+     "bytes": 56769,
+     "sha256_prefix": "180e4c3c1010d5f4",
+     "changed": true
+    },
+    {
+     "name": "rain-289102TP",
+     "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/289102TP/readings?since=2026-11-18T00:00:00Z&_limit=500",
+     "at": "2026-11-19T16:04:50Z",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "8d1ba650af1f41e6",
+     "changed": false
+    },
+    {
+     "name": "rain-245176TP",
+     "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/245176TP/readings?since=2026-11-18T00:00:00Z&_limit=500",
+     "at": "2026-11-19T16:04:59Z",
+     "status": 200,
+     "bytes": 57849,
+     "sha256_prefix": "1d5bb409036ba77e",
+     "changed": true
+    },
+    {
+     "name": "rain-287283TP",
+     "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/287283TP/readings?since=2026-11-18T00:00:00Z&_limit=500",
+     "at": "2026-11-19T16:05:02Z",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "8a64a79cbccd3d8d",
+     "changed": false
+    },
+    {
+     "name": "rain-288092TP",
+     "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/288092TP/readings?since=2026-11-18T00:00:00Z&_limit=500",
+     "at": "2026-11-19T16:05:07Z",
+     "status": 200,
+     "bytes": 57876,
+     "sha256_prefix": "79493a159aa072ef",
+     "changed": true
+    },
+    {
+     "name": "rain-287946TP",
+     "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/287946TP/readings?since=2026-11-18T00:00:00Z&_limit=500",
+     "at": "2026-11-19T16:05:10Z",
+     "status": 200,
+     "bytes": 57868,
+     "sha256_prefix": "3dbe8acd02bcda32",
+     "changed": true
+    },
+    {
+     "name": "rain-246847TP",
+     "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/246847TP/readings?since=2026-11-18T00:00:00Z&_limit=500",
+     "at": "2026-11-19T16:05:19Z",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "9fd19e86139afa03",
+     "changed": false
+    },
+    {
+     "name": "rain-380002TP",
+     "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/380002TP/readings?since=2026-11-18T00:00:00Z&_limit=500",
+     "at": "2026-11-19T16:05:22Z",
+     "status": 200,
+     "bytes": 57129,
+     "sha256_prefix": "3a4e0ee53e9ad694",
+     "changed": true
+    },
+    {
+     "name": "rain-239374TP",
+     "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/239374TP/readings?since=2026-11-18T00:00:00Z&_limit=500",
+     "at": "2026-11-19T16:05:27Z",
+     "status": 200,
+     "bytes": 56049,
+     "sha256_prefix": "74e49bbef5fd69c0",
+     "changed": true
+    },
+    {
+     "name": "rain-287864TP",
+     "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/287864TP/readings?since=2026-11-18T00:00:00Z&_limit=500",
+     "at": "2026-11-19T16:05:30Z",
+     "status": 200,
+     "bytes": 57869,
+     "sha256_prefix": "9e34f9ef9f5b4a0f",
+     "changed": true
+    }
+   ]
+  },
+  {
    "at": "2026-11-19T15:03:44Z",
    "finished": "2026-11-19T15:05:21Z",
    "ok": 23,
