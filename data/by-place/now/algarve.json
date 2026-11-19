@@ -1,6 +1,6 @@
 {
  "place": "algarve",
- "read_at": "2026-11-19T14:08:23Z",
+ "read_at": "2026-11-19T15:07:21Z",
  "by": "collect/by-place-now.mjs (code, no model; data@PrompTugal.dinis), from this site's collected sources",
  "about": "Now in the Algarve: IPMA's warnings for the Faro district, Faro airport, and each place's nearest station. Not a warning service.",
  "warnings": {
@@ -22,31 +22,39 @@
   "icao": "LPFR",
   "name": "Faro airport",
   "within_nm": 40,
-  "at": "2026-11-19T14:04:04Z",
+  "at": "2026-11-19T15:03:38Z",
   "airline": [
    {
-    "callsign": "BRD999P",
-    "airline": "BRD",
-    "type": "C56X",
-    "alt_ft": 39000,
+    "callsign": "AYR1NG",
+    "airline": "AYR",
+    "type": "P28A",
+    "alt_ft": 2750,
     "on_ground": false,
-    "ground_speed_kt": 446.4
+    "ground_speed_kt": 95.9
    },
    {
-    "callsign": "CFG7LE",
+    "callsign": "CFG5WM",
     "airline": "CFG",
-    "type": "A21N",
-    "alt_ft": 35000,
+    "type": "A20N",
+    "alt_ft": 38025,
     "on_ground": false,
-    "ground_speed_kt": 428.6
+    "ground_speed_kt": 515.6
    },
    {
-    "callsign": "EXS57L",
-    "airline": "EXS",
-    "type": "B738",
-    "alt_ft": 38000,
+    "callsign": "EJU62QU",
+    "airline": "EJU",
+    "type": "A320",
+    "alt_ft": 37000,
     "on_ground": false,
-    "ground_speed_kt": 466.4
+    "ground_speed_kt": 416.2
+   },
+   {
+    "callsign": "TAP1105",
+    "airline": "TAP",
+    "type": "E190",
+    "alt_ft": 25000,
+    "on_ground": false,
+    "ground_speed_kt": 325.4
    }
   ],
   "other_aircraft": 0,
@@ -58,7 +66,7 @@
   {
    "place": "faro",
    "station": "Faro (Aeródromo)",
-   "temp_c": 20.6
+   "temp_c": 21.3
   },
   {
    "place": "loule",
@@ -83,7 +91,7 @@
   {
    "place": "vila-real-de-santo-antonio",
    "station": "Vila Real de S. António",
-   "temp_c": 20.6
+   "temp_c": 21.3
   },
   {
    "place": "portimao",
@@ -98,7 +106,7 @@
   {
    "place": "olhao",
    "station": "Olhão, EPPO",
-   "temp_c": 21.2
+   "temp_c": 21.5
   },
   {
    "place": "albufeira",
@@ -113,12 +121,12 @@
   {
    "place": "monchique",
    "station": "Fóia",
-   "temp_c": 11.2
+   "temp_c": 11.6
   },
   {
    "place": "aljezur",
    "station": "Aljezur",
-   "temp_c": 20.6
+   "temp_c": 19.9
   },
   {
    "place": "vila-do-bispo",
@@ -128,53 +136,53 @@
   {
    "place": "castro-marim",
    "station": "Castro Marim (RN Sapal)",
-   "temp_c": 20.5
+   "temp_c": 21.1
   },
   {
    "place": "alcoutim",
    "station": "Alcoutim, Mart.Longo",
-   "temp_c": 17.6
+   "temp_c": 17.7
   },
   {
    "place": "sao-bras-de-alportel",
    "station": "Olhão, EPPO",
-   "temp_c": 21.2
+   "temp_c": 21.5
   }
  ],
  "reads": {
   "observations": {
    "url": "https://data.promptugal.news/api/v1/ipma-observations/latest.json",
-   "at": "2026-11-19T14:07:57Z",
+   "at": "2026-11-19T15:06:56Z",
    "status": 200
   },
   "warnings": {
    "url": "https://data.promptugal.news/api/v1/ipma-warnings/latest.json",
-   "at": "2026-11-19T14:08:15Z",
+   "at": "2026-11-19T15:07:13Z",
    "status": 200
   },
   "forecasts": {
    "url": "https://data.promptugal.news/api/v1/ipma-city-forecasts/latest.json",
-   "at": "2026-11-19T14:06:22Z",
+   "at": "2026-11-19T15:05:21Z",
    "status": 200
   },
   "fire-risk": {
    "url": "https://data.promptugal.news/api/v1/ipma-fire-risk/latest.json",
-   "at": "2026-11-19T14:07:50Z",
+   "at": "2026-11-19T15:06:48Z",
    "status": 200
   },
   "uv": {
    "url": "https://data.promptugal.news/api/v1/ipma-uv/latest.json",
-   "at": "2026-11-19T14:08:12Z",
+   "at": "2026-11-19T15:07:11Z",
    "status": 200
   },
   "sea": {
    "url": "https://data.promptugal.news/api/v1/ipma-sea/latest.json",
-   "at": "2026-11-19T14:08:03Z",
+   "at": "2026-11-19T15:07:01Z",
    "status": 200
   },
   "adsb": {
    "url": "https://data.promptugal.news/api/v1/adsb-faro/latest.json",
-   "at": "2026-11-19T14:04:04Z",
+   "at": "2026-11-19T15:03:38Z",
    "status": 200
   }
  }

@@ -1,6 +1,6 @@
 {
  "place": "tavira",
- "read_at": "2026-11-19T14:08:23Z",
+ "read_at": "2026-11-19T15:07:21Z",
  "by": "collect/by-place-now.mjs (code, no model; data@PrompTugal.dinis), from this site's collected sources",
  "coords": {
   "lat": 37.13085,
@@ -124,37 +124,37 @@
  "reads": {
   "observations": {
    "url": "https://data.promptugal.news/api/v1/ipma-observations/latest.json",
-   "at": "2026-11-19T14:07:57Z",
+   "at": "2026-11-19T15:06:56Z",
    "status": 200
   },
   "warnings": {
    "url": "https://data.promptugal.news/api/v1/ipma-warnings/latest.json",
-   "at": "2026-11-19T14:08:15Z",
+   "at": "2026-11-19T15:07:13Z",
    "status": 200
   },
   "forecasts": {
    "url": "https://data.promptugal.news/api/v1/ipma-city-forecasts/latest.json",
-   "at": "2026-11-19T14:06:22Z",
+   "at": "2026-11-19T15:05:21Z",
    "status": 200
   },
   "fire-risk": {
    "url": "https://data.promptugal.news/api/v1/ipma-fire-risk/latest.json",
-   "at": "2026-11-19T14:07:50Z",
+   "at": "2026-11-19T15:06:48Z",
    "status": 200
   },
   "uv": {
    "url": "https://data.promptugal.news/api/v1/ipma-uv/latest.json",
-   "at": "2026-11-19T14:08:12Z",
+   "at": "2026-11-19T15:07:11Z",
    "status": 200
   },
   "sea": {
    "url": "https://data.promptugal.news/api/v1/ipma-sea/latest.json",
-   "at": "2026-11-19T14:08:03Z",
+   "at": "2026-11-19T15:07:01Z",
    "status": 200
   },
   "adsb": {
    "url": "https://data.promptugal.news/api/v1/adsb-faro/latest.json",
-   "at": "2026-11-19T14:04:04Z",
+   "at": "2026-11-19T15:03:38Z",
    "status": 200
   }
  }

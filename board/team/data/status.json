@@ -4,7 +4,7 @@
  "repo": "PrompTugal/PrompTugal__News__Data",
  "site": "https://data.promptugal.news",
  "focus": "the raw public data behind every PrompTugal site: collectors, API, vaults; visualization first; the Storm Charles site's data and map",
- "updated": "2026-11-19T14:08Z",
+ "updated": "2026-11-19T15:07Z",
  "observability_lane": "data (own lane since 18 Nov ~15:00 UTC: vault 349t1w6w, 2 append lanes, drain key sha256:5109a3745ff9fdb4; drain credentials sealed to conductor.b-promptugal and sent to conductor.b@)",
  "observability_note": "obs.js reads team/keys/obs-data.json from GitHub (public half: endpoint, vault id, 2 append tokens, drain public key); every event tagged lane: \"data\"; country only, from the browser time zone through a fixed table, no lookup (Dinis, 19 Nov ~03:15 UTC).",
  "state": "Hourly wake 03:03 UTC: data committed (7fc91c8); daily hand-over written (debriefs/2026-11-19-data-b-hourly-collector.md).",
@@ -87,7 +87,8 @@
   "06:03 UTC wake: every hourly and 6-hourly source read (two commits: 6ee935e, then this one); the 6-hourly run takes over ten minutes, so it now runs in the background with a log",
   "Sites bar 1.2.0 (the one switcher): pinned by bar.versions[\"1.2.0\"]; a piece is off only when the registry no longer lists its version; this site's nav CSS no longer leaks into the bar (it made the phone page scroll sideways)",
   "Sites bar 1.2.1 (security@ go 07:54 UTC): files checked against versions[\"1.2.1\"].integrity; 375 px with no sideways scroll on four pages",
-  "19 Nov 14:10 UTC, 01cebcd: the signing check refuses orphan commits (only the pinned trusted base c243ef7 may have no parent), no longer skips a commit that drops it, and runs from the last release copy in CI and release.sh (proposed controls 6 and 7, from videos.b@ pre-review via conductor.b@); 15 tests pass."
+  "19 Nov 14:10 UTC, 01cebcd: the signing check refuses orphan commits (only the pinned trusted base c243ef7 may have no parent), no longer skips a commit that drops it, and runs from the last release copy in CI and release.sh (proposed controls 6 and 7, from videos.b@ pre-review via conductor.b@); 15 tests pass.",
+  "19 Nov 14:20 to 14:35 UTC (4789fdd, 5308cd5, 7b19a5b, a41ca50, 90d6d59, 72bff13, d2e5b3b): the signing, trailer and leak checks meet security@ controls 1 to 9, run from the anchor (latest successful push run on dev) in a separate verify job, with peers findings fixed; 28 and 21 tests pass."
  ],
  "blocked": [
   "Change to scripts/check-commits.mjs to accept @PrompTugal.dinis refused by the permission check: commits use Agent: data.b@AgentiCCells.dinis",
@@ -110,7 +111,8 @@
   "Dinis: ask Shadowserver, Cloudflare (Radar is CC BY-NC), RIPE NCC (RIPEstat bars commercial derivatives) and CNPD (commercial use excluded) for written permission on the record? outreach@ drafts, you send.",
   "Dinis: ENISA's robots.txt disallows named AI crawlers (ClaudeBot, GPTBot and others) everywhere; /publications is allowed to everyone and our collector is plain code, unnamed. This site is built by AI agents, so I have held it (on-hold/enisa-pubs). Read it, or leave it?",
   "Dinis (for dev@): GitHub Pages sets its own headers, so this site cannot add X-Content-Type-Options: nosniff to /preview.svg as the sites bar spec asks; Pages serves it as image/svg+xml. If nosniff is required, it needs a host that sets headers.",
-  "Dinis (for security@): team/keys.json may hold a public key only as a PEM block, and the leak scan reads an SSH key line, a base64 fingerprint and a session id as long high-entropy strings. So the key is published as an Ed25519 PEM block, the fingerprint as 16 hex, and the session as the first 16 hex of its sha256 (each commit carries the full id in its Claude-Session: trailer). If the full session id should be in the file, the leak scan's allowlist needs an entry for team/keys.json, which is security@'s call, not mine."
+  "Dinis (for security@): team/keys.json may hold a public key only as a PEM block, and the leak scan reads an SSH key line, a base64 fingerprint and a session id as long high-entropy strings. So the key is published as an Ed25519 PEM block, the fingerprint as 16 hex, and the session as the first 16 hex of its sha256 (each commit carries the full id in its Claude-Session: trailer). If the full session id should be in the file, the leak scan's allowlist needs an entry for team/keys.json, which is security@'s call, not mine.",
+  "Dinis: branch protection on dev with the verify check required, a tag ruleset limiting release tags to GitHub Actions, and a github-pages environment that accepts deployments only from dev (security@ asks; the workflow file still comes from the pushed tree)."
  ],
  "next": [
   "Predictions: send this site's prediction files (IPMA city forecasts, Open-Meteo London) to library.b@ in the form it sets, once it sets it; keep and check our own.",

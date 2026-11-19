@@ -73,3 +73,23 @@ Gap: Bluesky's public search answers 403 to unauthenticated reads since 06:15 UT
 Slip, owned: at 05:07 UTC a ';' in my command line let the hourly commit (0796eae) go in after a failed build; nothing deployed from it. The reset step is now written '{ git checkout -- discovery || true; } &&'.
 
 Waiting on Dinis: EPSS (read it, or ask FIRST first); the raw-history vault's secrets.
+
+## Later on 19 November (08:09 to 15:05 UTC)
+
+Every hourly wake from 09:03 to 15:03 collected and committed the data. Times are from `date -u` or the git log.
+
+| What | Commit |
+|---|---|
+| London's forecast block states its own 6-hour cadence (Open-Meteo is read every 6 hours; an hourly try got 429) | d402893 |
+| A 6-hourly or daily source refused with 429 or 403 waits a whole cadence before the next try (Open-Meteo answered 429 at 11:00, about 12:05 and 13:08 UTC; next try at the 19:03 wake) | 4a4d130 |
+| EUVD: a field holding a word the wording check refuses is dropped, never altered, and counted; the check is unchanged | 379aae6 |
+| Signing check, controls 6 to 9 from security@'s rulings of 14:02 to 14:26 UTC (relayed by conductor.b@, read at source in PrompTugal__News__Website): orphans refused except the pinned base; skips by ancestry only; no shallow checkout; the checks and their config come from the anchor (the head of the latest successful push run of the workflow on dev, from GitHub's runs API) and cover anchor..AFTER; they run in a separate verify job that runs no pushed code; deploy needs it | 01cebcd, 4789fdd, 5308cd5, 7b19a5b, a41ca50, 90d6d59, 72bff13 |
+| Peers' findings: the site is unpacked, after its listing is vetted, before the trusted copies exist; the leak scan checks files holding a NUL byte for key shapes and refuses symlinks; the workflow test ignores comments; git show runs with no attributes or textconv | d2e5b3b |
+
+Tests now: 28 signing cases (scripts/test-check-signatures.mjs), 21 leak-scan cases (scripts/test-leak-scan.mjs).
+
+Gaps now (status.json): Bluesky search 403 since 06:15 UTC; Open-Meteo 429 (London's forecast kept from the 06:15 UTC read); GitHub search 403 on 21 of 22 reads at about 12:05 UTC.
+
+Slips, owned: a commit retry at 11:11 UTC left out the build, validate and leak-scan steps and was refused by the session's safety check; the full chain was rerun. A message to conductor.b@ at about 14:12 UTC gave its time as "14:2x", a guess; corrected at once.
+
+Waiting on Dinis: EPSS (read it, or ask FIRST first); the raw-history vault's secrets; branch protection on dev with the check required, a tag ruleset limiting release tags to GitHub Actions, and a github-pages environment that accepts deployments only from dev (the workflow file still comes from the pushed tree).
