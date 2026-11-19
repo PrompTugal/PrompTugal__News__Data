@@ -3,6 +3,23 @@
  "source": "tfl-jamcams",
  "runs": [
   {
+   "at": "2026-11-19T11:10:41Z",
+   "finished": "2026-11-19T11:10:43Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "jamcams",
+     "url": "https://api.tfl.gov.uk/Place/Type/JamCam",
+     "at": "2026-11-19T11:10:43Z",
+     "status": 200,
+     "bytes": 1146502,
+     "sha256_prefix": "2f63e6779bdbd686",
+     "changed": true
+    }
+   ]
+  },
+  {
    "at": "2026-11-19T10:09:34Z",
    "finished": "2026-11-19T10:09:36Z",
    "ok": 1,

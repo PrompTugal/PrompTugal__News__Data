@@ -1,11 +1,11 @@
 {
  "source": "adsb-faro",
  "title": "Flights around Faro airport",
- "read_at": "2026-11-19T10:04:18Z",
+ "read_at": "2026-11-19T11:04:46Z",
  "provenance": {
   "source": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
   "page": "https://globe.adsb.lol/?lat=37.014&lon=-7.966&zoom=9",
-  "read_at": "2026-11-19T10:04:18Z",
+  "read_at": "2026-11-19T11:04:46Z",
   "by": "sources/adsb-faro/collect.mjs (code, no model; run by data@PrompTugal.dinis)",
   "terms": "adsb.lol: its API data is licensed under the Open Database License (ODbL 1.0): share-alike, with attribution; no key needed up to 500 requests a day per address.",
   "licence": "ODbL 1.0 (adsb.lol)"
@@ -18,102 +18,113 @@
   "lon": -7.9659,
   "within_nm": 40
  },
- "feed_time_ms": 1795082658500,
+ "feed_time_ms": 1795086286501,
  "counts": {
-  "airline": 7,
+  "airline": 8,
   "other_aircraft": 0,
   "other_on_ground": 0,
   "by_airline": {
    "CFG": 1,
-   "EWG": 1,
    "EXS": 2,
-   "FIN": 1,
-   "LNX": 1,
-   "TAP": 1
+   "EZY": 1,
+   "FNY": 1,
+   "IBS": 2,
+   "TOM": 1
   },
   "by_altitude_band": {
-   "30,000 ft and above": 5,
+   "30,000 ft and above": 6,
    "below 5,000 ft": 1,
    "5,000 to 15,000 ft": 1
   }
  },
  "airline": [
   {
-   "callsign": "CFG6DL",
+   "callsign": "CFG2YX",
    "airline_icao": "CFG",
    "type": "A321",
-   "alt_ft": 35000,
+   "alt_ft": 35050,
    "on_ground": false,
-   "ground_speed_kt": 419.4,
-   "track_deg": 193.37,
-   "lat": 37.08,
-   "lon": -7.99
+   "ground_speed_kt": 397.2,
+   "track_deg": 207.6,
+   "lat": 37.07,
+   "lon": -8.67
   },
   {
-   "callsign": "EWG41C",
-   "airline_icao": "EWG",
-   "type": "A320",
+   "callsign": "EXS1RJ",
+   "airline_icao": "EXS",
+   "type": "B738",
    "alt_ft": 37000,
    "on_ground": false,
-   "ground_speed_kt": 417.9,
-   "track_deg": 193.7,
-   "lat": 36.67,
-   "lon": -8.1
+   "ground_speed_kt": 411.2,
+   "track_deg": 185.86,
+   "lat": 36.98,
+   "lon": -7.76
   },
   {
-   "callsign": "EXS72BK",
+   "callsign": "EXS4Z",
    "airline_icao": "EXS",
    "type": "B738",
-   "alt_ft": 6075,
+   "alt_ft": 4725,
    "on_ground": false,
-   "ground_speed_kt": 266.2,
-   "track_deg": 187.34,
-   "lat": 37.15,
-   "lon": -7.65
-  },
-  {
-   "callsign": "EXS7CU",
-   "airline_icao": "EXS",
-   "type": "B738",
-   "alt_ft": 4775,
-   "on_ground": false,
-   "ground_speed_kt": 223.5,
-   "track_deg": 3.85,
+   "ground_speed_kt": 229.1,
+   "track_deg": 352.22,
    "lat": 37.06,
-   "lon": -8.12
+   "lon": -8.13
   },
   {
-   "callsign": "FIN85P",
-   "airline_icao": "FIN",
-   "type": "A359",
+   "callsign": "EZY39QM",
+   "airline_icao": "EZY",
+   "type": "A320",
+   "alt_ft": 11025,
+   "on_ground": false,
+   "ground_speed_kt": 331.3,
+   "track_deg": 5.02,
+   "lat": 37.29,
+   "lon": -8.08
+  },
+  {
+   "callsign": "FNY050",
+   "airline_icao": "FNY",
+   "type": null,
+   "alt_ft": 45000,
+   "on_ground": false,
+   "ground_speed_kt": 361.9,
+   "track_deg": 185.87,
+   "lat": 36.62,
+   "lon": -7.8
+  },
+  {
+   "callsign": "IBS15PV",
+   "airline_icao": "IBS",
+   "type": "A21N",
+   "alt_ft": 36000,
+   "on_ground": false,
+   "ground_speed_kt": 529.7,
+   "track_deg": 50.21,
+   "lat": 37.11,
+   "lon": -7.28
+  },
+  {
+   "callsign": "IBS16RN",
+   "airline_icao": "IBS",
+   "type": "A21N",
+   "alt_ft": 34025,
+   "on_ground": false,
+   "ground_speed_kt": 527.4,
+   "track_deg": 50,
+   "lat": 37.17,
+   "lon": -7.18
+  },
+  {
+   "callsign": "TOM77G",
+   "airline_icao": "TOM",
+   "type": "B738",
    "alt_ft": 39000,
    "on_ground": false,
-   "ground_speed_kt": 432.8,
-   "track_deg": 192.82,
-   "lat": 37.35,
-   "lon": -7.93
-  },
-  {
-   "callsign": "LNX26KG",
-   "airline_icao": "LNX",
-   "type": "E35L",
-   "alt_ft": 39000,
-   "on_ground": false,
-   "ground_speed_kt": 409,
-   "track_deg": 192.71,
-   "lat": 36.41,
-   "lon": -8.19
-  },
-  {
-   "callsign": "TAP1452",
-   "airline_icao": "TAP",
-   "type": "E195",
-   "alt_ft": 34100,
-   "on_ground": false,
-   "ground_speed_kt": 458.9,
-   "track_deg": 159.2,
-   "lat": 36.88,
-   "lon": -8.31
+   "ground_speed_kt": 397.9,
+   "track_deg": 192.78,
+   "lat": 37.4,
+   "lon": -7.92
   }
  ]
 }

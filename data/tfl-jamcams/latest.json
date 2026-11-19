@@ -1,11 +1,11 @@
 {
  "source": "tfl-jamcams",
  "title": "London traffic cameras (TfL JamCams)",
- "read_at": "2026-11-19T10:09:34Z",
+ "read_at": "2026-11-19T11:10:41Z",
  "provenance": {
   "source": "https://api.tfl.gov.uk/",
   "page": "https://api-portal.tfl.gov.uk/",
-  "read_at": "2026-11-19T10:09:34Z",
+  "read_at": "2026-11-19T11:10:41Z",
   "by": "sources/tfl-jamcams/collect.mjs (code, no model; run by data.b@PrompTugal.dinis)",
   "terms": "TfL's Transport Data Service terms (based on the Open Government Licence v2.0 with TfL amendments): free to copy, publish, distribute, transmit and adapt the information and to exploit it commercially and non-commercially. Required: the credit 'Powered by TfL Open Data' and 'Contains OS data © Crown copyright and database rights 2016' and Geomni UK Map data © and database rights [2019]; TfL's design and branding guidelines; at most 500 calls a minute per feed; no suggestion that TfL endorses us. Read by Dinis Cruz in a browser on 18 November 2026 (tfl.gov.uk answers agents with a bot check). Not legal advice.",
   "api": "https://api.tfl.gov.uk/Place/Type/JamCam"
@@ -20,7 +20,7 @@
  "attribution": "Powered by TfL Open Data. Contains OS data © Crown copyright and database rights 2016 and Geomni UK Map data © and database rights [2019]",
  "counts": {
   "cameras": 889,
-  "available": 808,
+  "available": 810,
   "dropped": 0
  },
  "cameras": [
@@ -99,7 +99,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01400.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01400.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-19T08:48:30.62Z"
   },
   {
    "id": "JamCams_00001.01401",
@@ -107,10 +107,10 @@
    "lat": 51.5239,
    "lon": -0.07727,
    "view": "WEST - Holywell Lane",
-   "available": false,
+   "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01401.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01401.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.01402",
@@ -132,7 +132,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01403.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01403.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-19T08:48:30.62Z"
   },
   {
    "id": "JamCams_00001.01404",
@@ -154,7 +154,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01406.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01406.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T08:48:30.62Z"
   },
   {
    "id": "JamCams_00001.01407",
@@ -198,7 +198,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01410.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01410.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T17:48:08.2Z"
   },
   {
    "id": "JamCams_00001.01411",
@@ -217,10 +217,10 @@
    "lat": 51.5484,
    "lon": -0.07533,
    "view": "Kingsland High St - South",
-   "available": false,
+   "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01412.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01412.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-19T08:48:30.62Z"
   },
   {
    "id": "JamCams_00001.01413",
@@ -264,7 +264,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01417.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01417.mp4",
-   "modified": "2026-11-18T09:47:29.547Z"
+   "modified": "2026-11-18T18:48:00.41Z"
   },
   {
    "id": "JamCams_00001.01419",
@@ -275,7 +275,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01419.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01419.mp4",
-   "modified": "2026-11-17T19:46:53.067Z"
+   "modified": "2026-11-18T17:48:08.2Z"
   },
   {
    "id": "JamCams_00001.01420",
@@ -297,7 +297,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01421.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01421.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T18:48:00.41Z"
   },
   {
    "id": "JamCams_00001.01422",
@@ -308,7 +308,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01422.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01422.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T17:48:08.2Z"
   },
   {
    "id": "JamCams_00001.01424",
@@ -341,7 +341,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01427.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01427.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.01428",
@@ -360,10 +360,10 @@
    "lat": 51.6799,
    "lon": -0.05135,
    "view": "East - Bullsmoor Lane",
-   "available": false,
+   "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01429.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01429.mp4",
-   "modified": "2026-11-18T08:47:27.603Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.01430",
@@ -374,7 +374,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01430.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01430.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T12:47:56.887Z"
   },
   {
    "id": "JamCams_00001.01432",
@@ -385,7 +385,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01432.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01432.mp4",
-   "modified": "2026-11-17T18:46:31.8Z"
+   "modified": "2026-11-18T17:48:08.2Z"
   },
   {
    "id": "JamCams_00001.01433",
@@ -418,7 +418,7 @@
    "available": false,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01437.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01437.mp4",
-   "modified": "2026-11-18T06:47:05.613Z"
+   "modified": "2026-11-19T07:48:25.57Z"
   },
   {
    "id": "JamCams_00001.01438",
@@ -429,7 +429,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01438.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01438.mp4",
-   "modified": "2026-11-18T07:47:40.04Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.01439",
@@ -440,7 +440,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01439.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01439.mp4",
-   "modified": "2026-11-18T06:47:05.613Z"
+   "modified": "2026-11-18T13:47:40.5Z"
   },
   {
    "id": "JamCams_00001.01440",
@@ -451,7 +451,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01440.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01440.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T17:48:08.2Z"
   },
   {
    "id": "JamCams_00001.01441",
@@ -470,10 +470,10 @@
    "lat": 51.5743,
    "lon": -0.07221,
    "view": "North (A10 twds Tottenham)",
-   "available": false,
+   "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01442.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01442.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-18T18:48:00.41Z"
   },
   {
    "id": "JamCams_00001.01445",
@@ -572,7 +572,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01601.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01601.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.01603",
@@ -616,7 +616,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01606.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01606.mp4",
-   "modified": "2026-11-17T18:46:31.8Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.01607",
@@ -638,7 +638,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01611.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.01611.mp4",
-   "modified": "2026-11-17T18:46:31.8Z"
+   "modified": "2026-11-18T18:48:00.41Z"
   },
   {
    "id": "JamCams_00001.01615",
@@ -693,7 +693,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02075.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02075.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.02100",
@@ -704,7 +704,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02100.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02100.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.02101",
@@ -748,7 +748,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02104.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02104.mp4",
-   "modified": "2026-11-18T00:46:48.553Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.02105",
@@ -759,7 +759,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02105.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02105.mp4",
-   "modified": "2026-11-18T01:46:54.54Z"
+   "modified": "2026-11-18T22:48:20.457Z"
   },
   {
    "id": "JamCams_00001.02106",
@@ -778,10 +778,10 @@
    "lat": 51.5199,
    "lon": -0.05565,
    "view": "Zoom - Brady St jct",
-   "available": true,
+   "available": false,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02109.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02109.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.02110",
@@ -803,7 +803,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02115.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02115.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T23:48:04.88Z"
   },
   {
    "id": "JamCams_00001.02145",
@@ -858,7 +858,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02151.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02151.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T06:48:21.217Z"
   },
   {
    "id": "JamCams_00001.02152",
@@ -957,7 +957,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02204.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02204.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.02205",
@@ -968,7 +968,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02205.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02205.mp4",
-   "modified": "2026-11-17T17:46:31.513Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.02252",
@@ -990,7 +990,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02253.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02253.mp4",
-   "modified": "2026-11-17T17:46:31.513Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.02254",
@@ -1009,10 +1009,10 @@
    "lat": 51.5143,
    "lon": -0.05451,
    "view": "WEST-A13 Commercial Rd twds Whitechapel",
-   "available": true,
+   "available": false,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02255.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02255.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.02256",
@@ -1034,7 +1034,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02257.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02257.mp4",
-   "modified": "2026-11-18T09:47:29.547Z"
+   "modified": "2026-11-19T08:48:30.62Z"
   },
   {
    "id": "JamCams_00001.02258",
@@ -1042,10 +1042,10 @@
    "lat": 51.5124,
    "lon": -0.032,
    "view": "NORTH-Salmon Lane",
-   "available": false,
+   "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02258.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02258.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-19T00:48:06.017Z"
   },
   {
    "id": "JamCams_00001.02259",
@@ -1053,10 +1053,10 @@
    "lat": 51.5117,
    "lon": -0.02756,
    "view": "WEST-A13 East India Dock Rd twds Limehou",
-   "available": true,
+   "available": false,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02259.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02259.mp4",
-   "modified": "2026-11-18T08:47:27.603Z"
+   "modified": "2026-11-19T07:48:25.57Z"
   },
   {
    "id": "JamCams_00001.02260",
@@ -1078,7 +1078,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02262.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02262.mp4",
-   "modified": "2026-11-17T16:47:05.163Z"
+   "modified": "2026-11-18T20:47:55.007Z"
   },
   {
    "id": "JamCams_00001.02263",
@@ -1089,7 +1089,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02263.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02263.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T13:47:40.5Z"
   },
   {
    "id": "JamCams_00001.02264",
@@ -1100,7 +1100,7 @@
    "available": false,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02264.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02264.mp4",
-   "modified": "2026-11-18T07:47:40.04Z"
+   "modified": "2026-11-19T08:48:30.62Z"
   },
   {
    "id": "JamCams_00001.02265",
@@ -1133,7 +1133,7 @@
    "available": false,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02268.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02268.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-19T09:48:45.403Z"
   },
   {
    "id": "JamCams_00001.02269",
@@ -1144,7 +1144,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02269.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02269.mp4",
-   "modified": "2026-11-17T19:46:53.067Z"
+   "modified": "2026-11-18T23:48:04.88Z"
   },
   {
    "id": "JamCams_00001.02301",
@@ -1265,7 +1265,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02351.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02351.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T14:48:06.817Z"
   },
   {
    "id": "JamCams_00001.02352",
@@ -1287,7 +1287,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02353.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02353.mp4",
-   "modified": "2026-11-18T09:47:29.547Z"
+   "modified": "2026-11-18T21:47:56.147Z"
   },
   {
    "id": "JamCams_00001.02414",
@@ -1419,7 +1419,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02646.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.02646.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.03005",
@@ -1471,10 +1471,10 @@
    "lat": 51.4863,
    "lon": 0.01695,
    "view": "East (Roundabout underneath flyover)",
-   "available": false,
+   "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03111.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03111.mp4",
-   "modified": "2026-11-18T09:47:29.547Z"
+   "modified": "2026-11-18T11:47:34.42Z"
   },
   {
    "id": "JamCams_00001.03115",
@@ -1551,7 +1551,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03488.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03488.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-18T18:48:00.41Z"
   },
   {
    "id": "JamCams_00001.03490",
@@ -1562,7 +1562,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03490.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03490.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-18T18:48:00.41Z"
   },
   {
    "id": "JamCams_00001.03500",
@@ -1573,7 +1573,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03500.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03500.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T12:47:56.887Z"
   },
   {
    "id": "JamCams_00001.03505",
@@ -1584,7 +1584,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03505.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03505.mp4",
-   "modified": "2026-11-18T00:46:48.553Z"
+   "modified": "2026-11-19T09:48:45.403Z"
   },
   {
    "id": "JamCams_00001.03506",
@@ -1727,7 +1727,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03606.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03606.mp4",
-   "modified": "2026-11-17T18:46:31.8Z"
+   "modified": "2026-11-19T08:48:30.62Z"
   },
   {
    "id": "JamCams_00001.03608",
@@ -1738,7 +1738,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03608.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03608.mp4",
-   "modified": "2026-11-18T09:47:29.547Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.03609",
@@ -1749,7 +1749,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03609.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03609.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.03610",
@@ -1760,7 +1760,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03610.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03610.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-19T09:48:45.403Z"
   },
   {
    "id": "JamCams_00001.03611",
@@ -1859,7 +1859,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03659.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03659.mp4",
-   "modified": "2026-11-17T19:46:53.067Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.03660",
@@ -1870,7 +1870,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03660.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03660.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-18T18:48:00.41Z"
   },
   {
    "id": "JamCams_00001.03662",
@@ -1892,7 +1892,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03663.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03663.mp4",
-   "modified": "2026-11-18T08:47:27.603Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.03664",
@@ -1914,7 +1914,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03665.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03665.mp4",
-   "modified": "2026-11-17T18:46:31.8Z"
+   "modified": "2026-11-18T18:48:00.41Z"
   },
   {
    "id": "JamCams_00001.03666",
@@ -1969,7 +1969,7 @@
    "available": false,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03671.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03671.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-19T06:48:21.217Z"
   },
   {
    "id": "JamCams_00001.03672",
@@ -2002,7 +2002,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03675.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03675.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T08:48:30.62Z"
   },
   {
    "id": "JamCams_00001.03680",
@@ -2024,7 +2024,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03700.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03700.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T13:47:40.5Z"
   },
   {
    "id": "JamCams_00001.03701",
@@ -2046,7 +2046,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03702.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03702.mp4",
-   "modified": "2026-11-17T19:46:53.067Z"
+   "modified": "2026-11-18T19:47:50.06Z"
   },
   {
    "id": "JamCams_00001.03703",
@@ -2068,7 +2068,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03704.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03704.mp4",
-   "modified": "2026-11-17T18:46:31.8Z"
+   "modified": "2026-11-18T18:48:00.41Z"
   },
   {
    "id": "JamCams_00001.03705",
@@ -2090,7 +2090,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03706.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03706.mp4",
-   "modified": "2026-11-17T19:46:53.067Z"
+   "modified": "2026-11-18T19:47:50.06Z"
   },
   {
    "id": "JamCams_00001.03707",
@@ -2211,7 +2211,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03751.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03751.mp4",
-   "modified": "2026-11-17T23:46:46.467Z"
+   "modified": "2026-11-18T18:48:00.41Z"
   },
   {
    "id": "JamCams_00001.03752",
@@ -2222,7 +2222,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03752.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03752.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.03753",
@@ -2266,7 +2266,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03756.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03756.mp4",
-   "modified": "2026-11-17T18:46:31.8Z"
+   "modified": "2026-11-18T16:48:04.68Z"
   },
   {
    "id": "JamCams_00001.03757",
@@ -2288,7 +2288,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03758.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03758.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-19T09:48:45.403Z"
   },
   {
    "id": "JamCams_00001.03760",
@@ -2307,10 +2307,10 @@
    "lat": 51.4463,
    "lon": 0.01508,
    "view": "Zoom - Baring Road jct",
-   "available": true,
+   "available": false,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03761.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03761.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T08:48:30.62Z"
   },
   {
    "id": "JamCams_00001.03762",
@@ -2409,7 +2409,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03778.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03778.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T18:48:00.41Z"
   },
   {
    "id": "JamCams_00001.03800",
@@ -2453,7 +2453,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03805.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03805.mp4",
-   "modified": "2026-11-17T22:46:44.5Z"
+   "modified": "2026-11-18T17:48:08.2Z"
   },
   {
    "id": "JamCams_00001.03806",
@@ -2508,7 +2508,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03811.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03811.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T16:48:04.68Z"
   },
   {
    "id": "JamCams_00001.03812",
@@ -2618,7 +2618,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03824.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03824.mp4",
-   "modified": "2026-11-18T00:46:48.553Z"
+   "modified": "2026-11-19T09:48:45.403Z"
   },
   {
    "id": "JamCams_00001.03825",
@@ -2640,7 +2640,7 @@
    "available": false,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03826.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.03826.mp4",
-   "modified": "2026-11-18T07:47:40.04Z"
+   "modified": "2026-11-19T07:48:25.57Z"
   },
   {
    "id": "JamCams_00001.03835",
@@ -2772,7 +2772,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04214.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04214.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-19T07:48:25.57Z"
   },
   {
    "id": "JamCams_00001.04220",
@@ -2816,7 +2816,7 @@
    "available": false,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04226.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04226.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.04227",
@@ -2915,7 +2915,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04256.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04256.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T17:48:08.2Z"
   },
   {
    "id": "JamCams_00001.04275",
@@ -2970,7 +2970,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04280.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04280.mp4",
-   "modified": "2026-11-17T19:46:53.067Z"
+   "modified": "2026-11-18T17:48:08.2Z"
   },
   {
    "id": "JamCams_00001.04281",
@@ -2992,7 +2992,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04300.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04300.mp4",
-   "modified": "2026-11-18T08:47:27.603Z"
+   "modified": "2026-11-19T07:48:25.57Z"
   },
   {
    "id": "JamCams_00001.04303",
@@ -3003,7 +3003,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04303.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04303.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T18:48:00.41Z"
   },
   {
    "id": "JamCams_00001.04304",
@@ -3047,7 +3047,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04324.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04324.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T18:48:00.41Z"
   },
   {
    "id": "JamCams_00001.04328",
@@ -3091,7 +3091,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04332.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04332.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.04333",
@@ -3110,10 +3110,10 @@
    "lat": 51.4749,
    "lon": -0.09507,
    "view": "WEST-A202 Camberwell New Rd",
-   "available": false,
+   "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04335.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04335.mp4",
-   "modified": "2026-11-18T07:47:40.04Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.04336",
@@ -3124,7 +3124,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04336.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04336.mp4",
-   "modified": "2026-11-17T18:46:31.8Z"
+   "modified": "2026-11-18T19:47:50.06Z"
   },
   {
    "id": "JamCams_00001.04338",
@@ -3135,7 +3135,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04338.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04338.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-18T21:47:56.147Z"
   },
   {
    "id": "JamCams_00001.04339",
@@ -3179,7 +3179,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04342.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04342.mp4",
-   "modified": "2026-11-17T19:46:53.067Z"
+   "modified": "2026-11-18T19:47:50.06Z"
   },
   {
    "id": "JamCams_00001.04343",
@@ -3355,7 +3355,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04474.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04474.mp4",
-   "modified": "2026-11-18T01:46:54.54Z"
+   "modified": "2026-11-18T21:47:56.147Z"
   },
   {
    "id": "JamCams_00001.04476",
@@ -3363,10 +3363,10 @@
    "lat": 51.4843,
    "lon": -0.12288,
    "view": "Zoom-Kennington Lane jct",
-   "available": false,
+   "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04476.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04476.mp4",
-   "modified": "2026-11-18T07:47:40.04Z"
+   "modified": "2026-11-19T09:48:45.403Z"
   },
   {
    "id": "JamCams_00001.04477",
@@ -3451,10 +3451,10 @@
    "lat": 51.4614,
    "lon": -0.11563,
    "view": "Zoom - St Matthews Road jct",
-   "available": false,
+   "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04506.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04506.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-18T18:48:00.41Z"
   },
   {
    "id": "JamCams_00001.04507",
@@ -3498,7 +3498,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04512.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04512.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.04513",
@@ -3520,7 +3520,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04514.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04514.mp4",
-   "modified": "2026-11-17T19:46:53.067Z"
+   "modified": "2026-11-18T15:47:44.073Z"
   },
   {
    "id": "JamCams_00001.04515",
@@ -3575,7 +3575,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04520.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04520.mp4",
-   "modified": "2026-11-17T15:46:39.883Z"
+   "modified": "2026-11-18T14:48:06.817Z"
   },
   {
    "id": "JamCams_00001.04521",
@@ -3597,7 +3597,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04522.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04522.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-19T09:48:45.403Z"
   },
   {
    "id": "JamCams_00001.04523",
@@ -3619,7 +3619,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04524.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04524.mp4",
-   "modified": "2026-11-17T19:46:53.067Z"
+   "modified": "2026-11-18T14:48:06.817Z"
   },
   {
    "id": "JamCams_00001.04526",
@@ -3630,7 +3630,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04526.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04526.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T17:48:08.2Z"
   },
   {
    "id": "JamCams_00001.04527",
@@ -3652,7 +3652,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04528.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04528.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T16:48:04.68Z"
   },
   {
    "id": "JamCams_00001.04529",
@@ -3663,7 +3663,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04529.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04529.mp4",
-   "modified": "2026-11-18T08:47:27.603Z"
+   "modified": "2026-11-18T19:47:50.06Z"
   },
   {
    "id": "JamCams_00001.04530",
@@ -3674,7 +3674,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04530.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04530.mp4",
-   "modified": "2026-11-17T17:46:31.513Z"
+   "modified": "2026-11-18T17:48:08.2Z"
   },
   {
    "id": "JamCams_00001.04532",
@@ -3740,7 +3740,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04540.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04540.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T23:48:04.88Z"
   },
   {
    "id": "JamCams_00001.04541",
@@ -3748,10 +3748,10 @@
    "lat": 51.4107,
    "lon": -0.12273,
    "view": "Zoom - Craignish Ave jct",
-   "available": false,
+   "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04541.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04541.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-19T02:48:12.79Z"
   },
   {
    "id": "JamCams_00001.04542",
@@ -3773,7 +3773,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04545.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04545.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-19T09:48:45.403Z"
   },
   {
    "id": "JamCams_00001.04546",
@@ -3784,7 +3784,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04546.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04546.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-18T17:48:08.2Z"
   },
   {
    "id": "JamCams_00001.04548",
@@ -3806,7 +3806,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04549.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04549.mp4",
-   "modified": "2026-11-17T17:46:31.513Z"
+   "modified": "2026-11-18T12:47:56.887Z"
   },
   {
    "id": "JamCams_00001.04550",
@@ -3825,10 +3825,10 @@
    "lat": 51.4436,
    "lon": -0.1526,
    "view": "NORTH - Balham High Rd",
-   "available": true,
+   "available": false,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04551.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04551.mp4",
-   "modified": "2026-11-18T07:47:40.04Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.04553",
@@ -3861,7 +3861,7 @@
    "available": false,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04560.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04560.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.04561",
@@ -3902,10 +3902,10 @@
    "lat": 51.368,
    "lon": -0.11885,
    "view": "SOUTH-A23 twds Purley",
-   "available": true,
+   "available": false,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04564.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04564.mp4",
-   "modified": "2026-11-17T18:46:31.8Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.04565",
@@ -3916,7 +3916,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04565.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04565.mp4",
-   "modified": "2026-11-17T15:46:39.883Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.04567",
@@ -3949,7 +3949,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04569.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04569.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.04570",
@@ -3960,7 +3960,7 @@
    "available": false,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04570.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04570.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.04572",
@@ -4001,10 +4001,10 @@
    "lat": 51.5048,
    "lon": -0.09006,
    "view": "Zoom - Tooley St jct",
-   "available": false,
+   "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04601.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04601.mp4",
-   "modified": "2026-11-18T09:47:29.547Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.04604",
@@ -4125,7 +4125,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04616.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04616.mp4",
-   "modified": "2026-11-18T07:47:40.04Z"
+   "modified": "2026-11-19T07:48:25.57Z"
   },
   {
    "id": "JamCams_00001.04618",
@@ -4158,7 +4158,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04621.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04621.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.04622",
@@ -4202,7 +4202,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04626.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04626.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T12:47:56.887Z"
   },
   {
    "id": "JamCams_00001.04627",
@@ -4213,7 +4213,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04627.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04627.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-18T18:48:00.41Z"
   },
   {
    "id": "JamCams_00001.04629",
@@ -4224,7 +4224,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04629.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04629.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T08:48:30.62Z"
   },
   {
    "id": "JamCams_00001.04630",
@@ -4290,7 +4290,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04636.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04636.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T19:47:50.06Z"
   },
   {
    "id": "JamCams_00001.04637",
@@ -4301,7 +4301,7 @@
    "available": false,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04637.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04637.mp4",
-   "modified": "2026-11-18T06:47:05.613Z"
+   "modified": "2026-11-19T06:48:21.217Z"
   },
   {
    "id": "JamCams_00001.04638",
@@ -4422,7 +4422,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04650.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04650.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T12:47:56.887Z"
   },
   {
    "id": "JamCams_00001.04651",
@@ -4441,10 +4441,10 @@
    "lat": 51.424,
    "lon": -0.17185,
    "view": "SOUTH - A24 jct Blackshaw Road",
-   "available": true,
+   "available": false,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04653.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04653.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-19T08:48:30.62Z"
   },
   {
    "id": "JamCams_00001.04654",
@@ -4488,7 +4488,7 @@
    "available": false,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04658.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04658.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-19T09:48:45.403Z"
   },
   {
    "id": "JamCams_00001.04659",
@@ -4521,7 +4521,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04661.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04661.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T07:48:25.57Z"
   },
   {
    "id": "JamCams_00001.04662",
@@ -4532,7 +4532,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04662.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04662.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-18T18:48:00.41Z"
   },
   {
    "id": "JamCams_00001.04663",
@@ -4554,7 +4554,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04664.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04664.mp4",
-   "modified": "2026-11-18T09:47:29.547Z"
+   "modified": "2026-11-18T17:48:08.2Z"
   },
   {
    "id": "JamCams_00001.04665",
@@ -4573,10 +4573,10 @@
    "lat": 51.4276,
    "lon": -0.16862,
    "view": "South - A24 Twds Merton",
-   "available": true,
+   "available": false,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04666.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04666.mp4",
-   "modified": "2026-11-17T15:46:39.883Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.04667",
@@ -4609,7 +4609,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04669.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04669.mp4",
-   "modified": "2026-11-17T18:46:31.8Z"
+   "modified": "2026-11-18T18:48:00.41Z"
   },
   {
    "id": "JamCams_00001.04670",
@@ -4664,7 +4664,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04676.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04676.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T17:48:08.2Z"
   },
   {
    "id": "JamCams_00001.04678",
@@ -4752,7 +4752,7 @@
    "available": false,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04901.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.04901.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.05750",
@@ -4906,7 +4906,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.05982.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.05982.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.06408",
@@ -4947,10 +4947,10 @@
    "lat": 51.5074,
    "lon": -0.12765,
    "view": "Zoom - Horse Guards Avenue",
-   "available": false,
+   "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06502.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06502.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-19T00:48:06.017Z"
   },
   {
    "id": "JamCams_00001.06503",
@@ -5005,7 +5005,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06508.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06508.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T17:48:08.2Z"
   },
   {
    "id": "JamCams_00001.06509",
@@ -5024,10 +5024,10 @@
    "lat": 51.4987,
    "lon": -0.11242,
    "view": "West - Lower Marsh",
-   "available": true,
+   "available": false,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06510.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06510.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T11:47:34.42Z"
   },
   {
    "id": "JamCams_00001.06511",
@@ -5038,7 +5038,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06511.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06511.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T22:48:20.457Z"
   },
   {
    "id": "JamCams_00001.06512",
@@ -5112,10 +5112,10 @@
    "lat": 51.4972,
    "lon": -0.14465,
    "view": "SOUTH - BPR twds Victoria station",
-   "available": false,
+   "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06519.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06519.mp4",
-   "modified": "2026-11-18T07:47:40.04Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.06520",
@@ -5134,10 +5134,10 @@
    "lat": 51.4944,
    "lon": -0.14217,
    "view": "WEST-Bridge Place",
-   "available": false,
+   "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06521.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06521.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-18T15:47:44.073Z"
   },
   {
    "id": "JamCams_00001.06522",
@@ -5181,7 +5181,7 @@
    "available": false,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06550.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06550.mp4",
-   "modified": "2026-11-18T06:47:05.613Z"
+   "modified": "2026-11-19T06:48:21.217Z"
   },
   {
    "id": "JamCams_00001.06551",
@@ -5192,7 +5192,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06551.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06551.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T17:48:08.2Z"
   },
   {
    "id": "JamCams_00001.06552",
@@ -5236,7 +5236,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06580.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06580.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T19:47:50.06Z"
   },
   {
    "id": "JamCams_00001.06581",
@@ -5280,7 +5280,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06586.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06586.mp4",
-   "modified": "2026-11-18T07:47:40.04Z"
+   "modified": "2026-11-19T07:48:25.57Z"
   },
   {
    "id": "JamCams_00001.06587",
@@ -5346,7 +5346,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06595.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06595.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.06597",
@@ -5368,7 +5368,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06598.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06598.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T18:48:00.41Z"
   },
   {
    "id": "JamCams_00001.06600",
@@ -5379,7 +5379,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06600.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06600.mp4",
-   "modified": "2026-11-17T19:46:53.067Z"
+   "modified": "2026-11-18T13:47:40.5Z"
   },
   {
    "id": "JamCams_00001.06601",
@@ -5398,10 +5398,10 @@
    "lat": 51.4908,
    "lon": -0.20694,
    "view": "E\\/B VMS 11\\/716",
-   "available": true,
+   "available": false,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06602.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06602.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T07:48:25.57Z"
   },
   {
    "id": "JamCams_00001.06603",
@@ -5467,7 +5467,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06609.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06609.mp4",
-   "modified": "2026-11-17T17:46:31.513Z"
+   "modified": "2026-11-18T13:47:40.5Z"
   },
   {
    "id": "JamCams_00001.06610",
@@ -5500,7 +5500,7 @@
    "available": false,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06614.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06614.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.06615",
@@ -5588,7 +5588,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06625.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06625.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T13:47:40.5Z"
   },
   {
    "id": "JamCams_00001.06640",
@@ -5654,7 +5654,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06648.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06648.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T20:47:55.007Z"
   },
   {
    "id": "JamCams_00001.06649",
@@ -5720,7 +5720,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06686.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06686.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T22:48:20.457Z"
   },
   {
    "id": "JamCams_00001.06688",
@@ -5786,7 +5786,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06704.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06704.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-18T17:48:08.2Z"
   },
   {
    "id": "JamCams_00001.06706",
@@ -5797,7 +5797,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06706.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06706.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.06710",
@@ -5805,10 +5805,10 @@
    "lat": 51.4891,
    "lon": -0.28764,
    "view": "VMS-25\\/718",
-   "available": true,
+   "available": false,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06710.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06710.mp4",
-   "modified": "2026-11-17T19:46:53.067Z"
+   "modified": "2026-11-19T06:48:21.217Z"
   },
   {
    "id": "JamCams_00001.06712",
@@ -5819,7 +5819,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06712.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06712.mp4",
-   "modified": "2026-11-17T17:46:31.513Z"
+   "modified": "2026-11-18T19:47:50.06Z"
   },
   {
    "id": "JamCams_00001.06713",
@@ -5882,10 +5882,10 @@
    "lat": 51.4644,
    "lon": -0.26661,
    "view": "Zoom north twds Mortlake level crossing",
-   "available": true,
+   "available": false,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06723.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06723.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.06726",
@@ -5951,7 +5951,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06740.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06740.mp4",
-   "modified": "2026-11-17T18:46:31.8Z"
+   "modified": "2026-11-18T19:47:50.06Z"
   },
   {
    "id": "JamCams_00001.06741",
@@ -5973,7 +5973,7 @@
    "available": false,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06742.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06742.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.06743",
@@ -6028,7 +6028,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06751.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06751.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T05:48:43.973Z"
   },
   {
    "id": "JamCams_00001.06850",
@@ -6061,7 +6061,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06910.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06910.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T04:48:18.58Z"
   },
   {
    "id": "JamCams_00001.06914",
@@ -6072,7 +6072,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06914.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06914.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T14:48:06.817Z"
   },
   {
    "id": "JamCams_00001.06920",
@@ -6083,7 +6083,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06920.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06920.mp4",
-   "modified": "2026-11-17T19:46:53.067Z"
+   "modified": "2026-11-18T19:47:50.06Z"
   },
   {
    "id": "JamCams_00001.06921",
@@ -6094,7 +6094,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06921.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.06921.mp4",
-   "modified": "2026-11-17T17:46:31.513Z"
+   "modified": "2026-11-18T19:47:50.06Z"
   },
   {
    "id": "JamCams_00001.06923",
@@ -6190,10 +6190,10 @@
    "lat": 51.5154,
    "lon": -0.21691,
    "view": "ZOOM - NORTH WEST - Scrubs Lane Mitre Br",
-   "available": true,
+   "available": false,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.07304.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.07304.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-19T09:48:45.403Z"
   },
   {
    "id": "JamCams_00001.07305",
@@ -6215,7 +6215,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.07307.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.07307.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T09:48:45.403Z"
   },
   {
    "id": "JamCams_00001.07308",
@@ -6465,10 +6465,10 @@
    "lat": 51.5285,
    "lon": -0.09239,
    "view": "East (A501 twds Old Street Roundabout)",
-   "available": true,
+   "available": false,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.07352.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.07352.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.07354",
@@ -6479,7 +6479,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.07354.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.07354.mp4",
-   "modified": "2026-11-17T16:47:05.163Z"
+   "modified": "2026-11-18T17:48:08.2Z"
   },
   {
    "id": "JamCams_00001.07355",
@@ -6501,7 +6501,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.07356.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.07356.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.07358",
@@ -6534,7 +6534,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.07361.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.07361.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T09:48:45.403Z"
   },
   {
    "id": "JamCams_00001.07364",
@@ -6578,7 +6578,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.07369.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.07369.mp4",
-   "modified": "2026-11-17T22:46:44.5Z"
+   "modified": "2026-11-18T21:47:56.147Z"
   },
   {
    "id": "JamCams_00001.07370",
@@ -6600,7 +6600,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.07373.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.07373.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T23:48:04.88Z"
   },
   {
    "id": "JamCams_00001.07374",
@@ -6611,7 +6611,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.07374.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.07374.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-19T03:48:15.86Z"
   },
   {
    "id": "JamCams_00001.07375",
@@ -6622,7 +6622,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.07375.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.07375.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T09:48:45.403Z"
   },
   {
    "id": "JamCams_00001.07376",
@@ -6677,7 +6677,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.07380.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.07380.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T14:48:06.817Z"
   },
   {
    "id": "JamCams_00001.07385",
@@ -6688,7 +6688,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.07385.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.07385.mp4",
-   "modified": "2026-11-17T16:47:05.163Z"
+   "modified": "2026-11-18T18:48:00.41Z"
   },
   {
    "id": "JamCams_00001.07386",
@@ -6743,7 +6743,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.07391.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.07391.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T21:47:56.147Z"
   },
   {
    "id": "JamCams_00001.07393",
@@ -6809,7 +6809,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.07500.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.07500.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T04:48:18.58Z"
   },
   {
    "id": "JamCams_00001.07550",
@@ -6875,7 +6875,7 @@
    "available": false,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.07555.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.07555.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.07590",
@@ -6897,7 +6897,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.07591.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.07591.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T14:48:06.817Z"
   },
   {
    "id": "JamCams_00001.07600",
@@ -6952,7 +6952,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.08001.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.08001.mp4",
-   "modified": "2026-11-17T19:46:53.067Z"
+   "modified": "2026-11-18T19:47:50.06Z"
   },
   {
    "id": "JamCams_00001.08003",
@@ -7117,7 +7117,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.08402.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.08402.mp4",
-   "modified": "2026-11-17T17:46:31.513Z"
+   "modified": "2026-11-18T17:48:08.2Z"
   },
   {
    "id": "JamCams_00001.08603",
@@ -7161,7 +7161,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.08752.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.08752.mp4",
-   "modified": "2026-11-17T17:46:31.513Z"
+   "modified": "2026-11-19T01:48:10.19Z"
   },
   {
    "id": "JamCams_00001.08753",
@@ -7194,7 +7194,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.08851.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.08851.mp4",
-   "modified": "2026-11-18T08:47:27.603Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.08853",
@@ -7205,7 +7205,7 @@
    "available": false,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.08853.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.08853.mp4",
-   "modified": "2026-11-18T07:47:40.04Z"
+   "modified": "2026-11-19T07:48:25.57Z"
   },
   {
    "id": "JamCams_00001.08854",
@@ -7216,7 +7216,7 @@
    "available": false,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.08854.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.08854.mp4",
-   "modified": "2026-11-18T09:47:29.547Z"
+   "modified": "2026-11-19T09:48:45.403Z"
   },
   {
    "id": "JamCams_00001.08855",
@@ -7227,7 +7227,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.08855.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.08855.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.08856",
@@ -7238,7 +7238,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.08856.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.08856.mp4",
-   "modified": "2026-11-17T22:46:44.5Z"
+   "modified": "2026-11-19T01:48:10.19Z"
   },
   {
    "id": "JamCams_00001.08858",
@@ -7326,7 +7326,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.08925.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.08925.mp4",
-   "modified": "2026-11-18T09:47:29.547Z"
+   "modified": "2026-11-19T09:48:45.403Z"
   },
   {
    "id": "JamCams_00001.08926",
@@ -7381,7 +7381,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.08954.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.08954.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-18T18:48:00.41Z"
   },
   {
    "id": "JamCams_00001.08955",
@@ -7389,10 +7389,10 @@
    "lat": 51.544,
    "lon": -0.17502,
    "view": "Demo",
-   "available": false,
+   "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.08955.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.08955.mp4",
-   "modified": "2026-11-18T07:47:40.04Z"
+   "modified": "2026-11-19T09:48:45.403Z"
   },
   {
    "id": "JamCams_00001.08956",
@@ -7480,7 +7480,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.08965.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.08965.mp4",
-   "modified": "2026-11-17T19:46:53.067Z"
+   "modified": "2026-11-18T19:47:50.06Z"
   },
   {
    "id": "JamCams_00001.08967",
@@ -7491,7 +7491,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.08967.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.08967.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-19T08:48:30.62Z"
   },
   {
    "id": "JamCams_00001.08980",
@@ -7579,7 +7579,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09055.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09055.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T16:48:04.68Z"
   },
   {
    "id": "JamCams_00001.09056",
@@ -7587,10 +7587,10 @@
    "lat": 51.6013,
    "lon": -0.17396,
    "view": "WEST - A406 twds Brent Cross",
-   "available": true,
+   "available": false,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09056.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09056.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T19:47:50.06Z"
   },
   {
    "id": "JamCams_00001.09060",
@@ -7623,7 +7623,7 @@
    "available": false,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09064.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09064.mp4",
-   "modified": "2026-11-18T06:47:05.613Z"
+   "modified": "2026-11-19T06:48:21.217Z"
   },
   {
    "id": "JamCams_00001.09078",
@@ -7631,10 +7631,10 @@
    "lat": 51.6145,
    "lon": -0.06816,
    "view": "WEST - A406 twds North Middlesex Hospita",
-   "available": true,
+   "available": false,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09078.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09078.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T07:48:25.57Z"
   },
   {
    "id": "JamCams_00001.09080",
@@ -7645,7 +7645,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09080.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09080.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T01:48:10.19Z"
   },
   {
    "id": "JamCams_00001.09088",
@@ -7744,7 +7744,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09560.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09560.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T08:48:30.62Z"
   },
   {
    "id": "JamCams_00001.09603",
@@ -7766,7 +7766,7 @@
    "available": false,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09605.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09605.mp4",
-   "modified": "2026-11-18T06:47:05.613Z"
+   "modified": "2026-11-19T06:48:21.217Z"
   },
   {
    "id": "JamCams_00001.09606",
@@ -7777,7 +7777,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09606.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09606.mp4",
-   "modified": "2026-11-17T18:46:31.8Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.09607",
@@ -7788,7 +7788,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09607.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09607.mp4",
-   "modified": "2026-11-18T08:47:27.603Z"
+   "modified": "2026-11-19T08:48:30.62Z"
   },
   {
    "id": "JamCams_00001.09608",
@@ -7898,7 +7898,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09621.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09621.mp4",
-   "modified": "2026-11-18T02:46:57.3Z"
+   "modified": "2026-11-19T09:48:45.403Z"
   },
   {
    "id": "JamCams_00001.09622",
@@ -7909,7 +7909,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09622.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09622.mp4",
-   "modified": "2026-11-17T16:47:05.163Z"
+   "modified": "2026-11-18T13:47:40.5Z"
   },
   {
    "id": "JamCams_00001.09630",
@@ -7942,7 +7942,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09640.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09640.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T16:48:04.68Z"
   },
   {
    "id": "JamCams_00001.09641",
@@ -7975,7 +7975,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09650.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09650.mp4",
-   "modified": "2026-11-17T17:46:31.513Z"
+   "modified": "2026-11-18T13:47:40.5Z"
   },
   {
    "id": "JamCams_00001.09701",
@@ -7997,7 +7997,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09702.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09702.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.09703",
@@ -8005,10 +8005,10 @@
    "lat": 51.534,
    "lon": -0.10518,
    "view": "Zoom south - Liverpool Road jct",
-   "available": false,
+   "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09703.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09703.mp4",
-   "modified": "2026-11-18T07:47:40.04Z"
+   "modified": "2026-11-18T11:47:34.42Z"
   },
   {
    "id": "JamCams_00001.09704",
@@ -8041,7 +8041,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09706.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09706.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.09707",
@@ -8096,7 +8096,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09711.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09711.mp4",
-   "modified": "2026-11-17T19:46:53.067Z"
+   "modified": "2026-11-18T17:48:08.2Z"
   },
   {
    "id": "JamCams_00001.09712",
@@ -8107,7 +8107,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09712.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09712.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T16:48:04.68Z"
   },
   {
    "id": "JamCams_00001.09714",
@@ -8126,10 +8126,10 @@
    "lat": 51.5656,
    "lon": -0.1345,
    "view": "North - Archway Road",
-   "available": false,
+   "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09716.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09716.mp4",
-   "modified": "2026-11-18T09:47:29.547Z"
+   "modified": "2026-11-19T01:48:10.19Z"
   },
   {
    "id": "JamCams_00001.09718",
@@ -8151,7 +8151,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09719.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09719.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T07:48:25.57Z"
   },
   {
    "id": "JamCams_00001.09720",
@@ -8162,7 +8162,7 @@
    "available": false,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09720.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09720.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.09721",
@@ -8184,7 +8184,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09722.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09722.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T20:47:55.007Z"
   },
   {
    "id": "JamCams_00001.09723",
@@ -8192,10 +8192,10 @@
    "lat": 51.5628,
    "lon": -0.12724,
    "view": "North (A1 twds Highgate)",
-   "available": true,
+   "available": false,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09723.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09723.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00001.09725",
@@ -8261,7 +8261,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09738.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09738.mp4",
-   "modified": "2026-11-17T17:46:31.513Z"
+   "modified": "2026-11-18T19:47:50.06Z"
   },
   {
    "id": "JamCams_00001.09740",
@@ -8305,7 +8305,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09743.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09743.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T15:47:44.073Z"
   },
   {
    "id": "JamCams_00001.09744",
@@ -8313,10 +8313,10 @@
    "lat": 51.6169,
    "lon": -0.24511,
    "view": "NOTH WEST-A1 twds Apex Corner",
-   "available": false,
+   "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09744.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00001.09744.mp4",
-   "modified": "2026-11-18T10:47:44.063Z"
+   "modified": "2026-11-18T11:47:34.42Z"
   },
   {
    "id": "JamCams_00001.09747",
@@ -8426,7 +8426,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00002.00110.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00002.00110.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T01:48:10.19Z"
   },
   {
    "id": "JamCams_00002.00113",
@@ -8588,10 +8588,10 @@
    "lat": 51.5114,
    "lon": -0.00758,
    "view": "Blackwall Tunnel Portal",
-   "available": false,
+   "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00002.00324.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00002.00324.mp4",
-   "modified": "2026-11-18T09:47:29.547Z"
+   "modified": "2026-11-18T14:48:06.817Z"
   },
   {
    "id": "JamCams_00002.00325",
@@ -8613,7 +8613,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00002.00326.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00002.00326.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T22:48:20.457Z"
   },
   {
    "id": "JamCams_00002.00327",
@@ -8679,7 +8679,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00002.00334.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00002.00334.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T16:48:04.68Z"
   },
   {
    "id": "JamCams_00002.00335",
@@ -8778,7 +8778,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00002.00345.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00002.00345.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T08:48:30.62Z"
   },
   {
    "id": "JamCams_00002.00347",
@@ -8822,7 +8822,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00002.00361.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00002.00361.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T18:48:00.41Z"
   },
   {
    "id": "JamCams_00002.00362",
@@ -8888,7 +8888,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00002.00421.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00002.00421.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T00:48:06.017Z"
   },
   {
    "id": "JamCams_00002.00422",
@@ -8910,7 +8910,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00002.00433.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00002.00433.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T19:47:50.06Z"
   },
   {
    "id": "JamCams_00002.00434",
@@ -8921,7 +8921,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00002.00434.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00002.00434.mp4",
-   "modified": "2026-11-18T00:46:48.553Z"
+   "modified": "2026-11-19T09:48:45.403Z"
   },
   {
    "id": "JamCams_00002.00435",
@@ -8954,7 +8954,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00002.00605.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00002.00605.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T12:47:56.887Z"
   },
   {
    "id": "JamCams_00002.00606",
@@ -9108,7 +9108,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00002.00627.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00002.00627.mp4",
-   "modified": "2026-11-18T08:47:27.603Z"
+   "modified": "2026-11-18T12:47:56.887Z"
   },
   {
    "id": "JamCams_00002.00628",
@@ -9295,7 +9295,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00002.00815.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00002.00815.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T09:48:45.403Z"
   },
   {
    "id": "JamCams_00002.00816",
@@ -9306,7 +9306,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00002.00816.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00002.00816.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T02:48:12.79Z"
   },
   {
    "id": "JamCams_00002.00820",
@@ -9493,7 +9493,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00002.00851.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00002.00851.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-18T12:47:56.887Z"
   },
   {
    "id": "JamCams_00002.00852",
@@ -9768,7 +9768,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00002.00884.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00002.00884.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T10:48:50.53Z"
   },
   {
    "id": "JamCams_00002.00910",
@@ -9790,7 +9790,7 @@
    "available": true,
    "image_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00002.00911.jpg",
    "video_url": "https://s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/00002.00911.mp4",
-   "modified": "2026-11-17T14:46:23.567Z"
+   "modified": "2026-11-19T05:48:43.973Z"
   },
   {
    "id": "JamCams_00002.00925",
@@ -9853,6 +9853,10 @@
    {
     "at": "2026-11-19T01:34:24Z",
     "state": "down"
+   },
+   {
+    "at": "2026-11-19T11:10:41Z",
+    "state": "up"
    }
   ],
   "JamCams_00001.01402": [
@@ -9913,6 +9917,10 @@
    {
     "at": "2026-11-19T01:34:24Z",
     "state": "down"
+   },
+   {
+    "at": "2026-11-19T11:10:41Z",
+    "state": "up"
    }
   ],
   "JamCams_00001.01413": [
@@ -9991,6 +9999,10 @@
    {
     "at": "2026-11-19T01:34:24Z",
     "state": "down"
+   },
+   {
+    "at": "2026-11-19T11:10:41Z",
+    "state": "up"
    }
   ],
   "JamCams_00001.01430": [
@@ -10051,6 +10063,10 @@
    {
     "at": "2026-11-19T01:34:24Z",
     "state": "down"
+   },
+   {
+    "at": "2026-11-19T11:10:41Z",
+    "state": "up"
    }
   ],
   "JamCams_00001.01445": [
@@ -10219,6 +10235,10 @@
    {
     "at": "2026-11-19T01:34:24Z",
     "state": "up"
+   },
+   {
+    "at": "2026-11-19T11:10:41Z",
+    "state": "down"
    }
   ],
   "JamCams_00001.02110": [
@@ -10345,6 +10365,10 @@
    {
     "at": "2026-11-19T01:34:24Z",
     "state": "up"
+   },
+   {
+    "at": "2026-11-19T11:10:41Z",
+    "state": "down"
    }
   ],
   "JamCams_00001.02256": [
@@ -10363,12 +10387,20 @@
    {
     "at": "2026-11-19T01:34:24Z",
     "state": "down"
+   },
+   {
+    "at": "2026-11-19T11:10:41Z",
+    "state": "up"
    }
   ],
   "JamCams_00001.02259": [
    {
     "at": "2026-11-19T01:34:24Z",
     "state": "up"
+   },
+   {
+    "at": "2026-11-19T11:10:41Z",
+    "state": "down"
    }
   ],
   "JamCams_00001.02260": [
@@ -10597,6 +10629,10 @@
    {
     "at": "2026-11-19T01:34:24Z",
     "state": "down"
+   },
+   {
+    "at": "2026-11-19T11:10:41Z",
+    "state": "up"
    }
   ],
   "JamCams_00001.03115": [
@@ -11053,6 +11089,10 @@
    {
     "at": "2026-11-19T01:34:24Z",
     "state": "up"
+   },
+   {
+    "at": "2026-11-19T11:10:41Z",
+    "state": "down"
    }
   ],
   "JamCams_00001.03762": [
@@ -11491,6 +11531,10 @@
    {
     "at": "2026-11-19T01:34:24Z",
     "state": "down"
+   },
+   {
+    "at": "2026-11-19T11:10:41Z",
+    "state": "up"
    }
   ],
   "JamCams_00001.04336": [
@@ -11629,6 +11673,10 @@
    {
     "at": "2026-11-19T01:34:24Z",
     "state": "down"
+   },
+   {
+    "at": "2026-11-19T11:10:41Z",
+    "state": "up"
    }
   ],
   "JamCams_00001.04477": [
@@ -11677,6 +11725,10 @@
    {
     "at": "2026-11-19T01:34:24Z",
     "state": "down"
+   },
+   {
+    "at": "2026-11-19T11:10:41Z",
+    "state": "up"
    }
   ],
   "JamCams_00001.04507": [
@@ -11839,6 +11891,10 @@
    {
     "at": "2026-11-19T01:34:24Z",
     "state": "down"
+   },
+   {
+    "at": "2026-11-19T11:10:41Z",
+    "state": "up"
    }
   ],
   "JamCams_00001.04542": [
@@ -11881,6 +11937,10 @@
    {
     "at": "2026-11-19T01:34:24Z",
     "state": "up"
+   },
+   {
+    "at": "2026-11-19T11:10:41Z",
+    "state": "down"
    }
   ],
   "JamCams_00001.04553": [
@@ -11923,6 +11983,10 @@
    {
     "at": "2026-11-19T01:34:24Z",
     "state": "up"
+   },
+   {
+    "at": "2026-11-19T11:10:41Z",
+    "state": "down"
    }
   ],
   "JamCams_00001.04565": [
@@ -11977,6 +12041,10 @@
    {
     "at": "2026-11-19T01:34:24Z",
     "state": "down"
+   },
+   {
+    "at": "2026-11-19T11:10:41Z",
+    "state": "up"
    }
   ],
   "JamCams_00001.04604": [
@@ -12217,6 +12285,10 @@
    {
     "at": "2026-11-19T01:34:24Z",
     "state": "up"
+   },
+   {
+    "at": "2026-11-19T11:10:41Z",
+    "state": "down"
    }
   ],
   "JamCams_00001.04654": [
@@ -12289,6 +12361,10 @@
    {
     "at": "2026-11-19T01:34:24Z",
     "state": "up"
+   },
+   {
+    "at": "2026-11-19T11:10:41Z",
+    "state": "down"
    }
   ],
   "JamCams_00001.04667": [
@@ -12493,6 +12569,10 @@
    {
     "at": "2026-11-19T01:34:24Z",
     "state": "down"
+   },
+   {
+    "at": "2026-11-19T11:10:41Z",
+    "state": "up"
    }
   ],
   "JamCams_00001.06503": [
@@ -12535,6 +12615,10 @@
    {
     "at": "2026-11-19T01:34:24Z",
     "state": "up"
+   },
+   {
+    "at": "2026-11-19T11:10:41Z",
+    "state": "down"
    }
   ],
   "JamCams_00001.06511": [
@@ -12583,6 +12667,10 @@
    {
     "at": "2026-11-19T01:34:24Z",
     "state": "down"
+   },
+   {
+    "at": "2026-11-19T11:10:41Z",
+    "state": "up"
    }
   ],
   "JamCams_00001.06520": [
@@ -12595,6 +12683,10 @@
    {
     "at": "2026-11-19T01:34:24Z",
     "state": "down"
+   },
+   {
+    "at": "2026-11-19T11:10:41Z",
+    "state": "up"
    }
   ],
   "JamCams_00001.06522": [
@@ -12739,6 +12831,10 @@
    {
     "at": "2026-11-19T01:34:24Z",
     "state": "up"
+   },
+   {
+    "at": "2026-11-19T11:10:41Z",
+    "state": "down"
    }
   ],
   "JamCams_00001.06603": [
@@ -12961,6 +13057,10 @@
    {
     "at": "2026-11-19T01:34:24Z",
     "state": "up"
+   },
+   {
+    "at": "2026-11-19T11:10:41Z",
+    "state": "down"
    }
   ],
   "JamCams_00001.06712": [
@@ -13003,6 +13103,10 @@
    {
     "at": "2026-11-19T01:34:24Z",
     "state": "up"
+   },
+   {
+    "at": "2026-11-19T11:10:41Z",
+    "state": "down"
    }
   ],
   "JamCams_00001.06726": [
@@ -13171,6 +13275,10 @@
    {
     "at": "2026-11-19T01:34:24Z",
     "state": "up"
+   },
+   {
+    "at": "2026-11-19T11:10:41Z",
+    "state": "down"
    }
   ],
   "JamCams_00001.07305": [
@@ -13321,6 +13429,10 @@
    {
     "at": "2026-11-19T01:34:24Z",
     "state": "up"
+   },
+   {
+    "at": "2026-11-19T11:10:41Z",
+    "state": "down"
    }
   ],
   "JamCams_00001.07354": [
@@ -13825,6 +13937,10 @@
    {
     "at": "2026-11-19T01:34:24Z",
     "state": "down"
+   },
+   {
+    "at": "2026-11-19T11:10:41Z",
+    "state": "up"
    }
   ],
   "JamCams_00001.08956": [
@@ -13933,6 +14049,10 @@
    {
     "at": "2026-11-19T01:34:24Z",
     "state": "up"
+   },
+   {
+    "at": "2026-11-19T11:10:41Z",
+    "state": "down"
    }
   ],
   "JamCams_00001.09060": [
@@ -13957,6 +14077,10 @@
    {
     "at": "2026-11-19T01:34:24Z",
     "state": "up"
+   },
+   {
+    "at": "2026-11-19T11:10:41Z",
+    "state": "down"
    }
   ],
   "JamCams_00001.09080": [
@@ -14161,6 +14285,10 @@
    {
     "at": "2026-11-19T01:34:24Z",
     "state": "down"
+   },
+   {
+    "at": "2026-11-19T11:10:41Z",
+    "state": "up"
    }
   ],
   "JamCams_00001.09704": [
@@ -14227,6 +14355,10 @@
    {
     "at": "2026-11-19T01:34:24Z",
     "state": "down"
+   },
+   {
+    "at": "2026-11-19T11:10:41Z",
+    "state": "up"
    }
   ],
   "JamCams_00001.09718": [
@@ -14263,6 +14395,10 @@
    {
     "at": "2026-11-19T01:34:24Z",
     "state": "up"
+   },
+   {
+    "at": "2026-11-19T11:10:41Z",
+    "state": "down"
    }
   ],
   "JamCams_00001.09725": [
@@ -14329,6 +14465,10 @@
    {
     "at": "2026-11-19T01:34:24Z",
     "state": "down"
+   },
+   {
+    "at": "2026-11-19T11:10:41Z",
+    "state": "up"
    }
   ],
   "JamCams_00001.09747": [
@@ -14479,6 +14619,10 @@
    {
     "at": "2026-11-19T01:34:24Z",
     "state": "down"
+   },
+   {
+    "at": "2026-11-19T11:10:41Z",
+    "state": "up"
    }
   ],
   "JamCams_00002.00325": [
