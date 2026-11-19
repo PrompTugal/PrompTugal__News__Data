@@ -4,10 +4,10 @@
  "repo": "PrompTugal/PrompTugal__News__Data",
  "site": "https://data.promptugal.news",
  "focus": "the raw public data behind every PrompTugal site: collectors, API, vaults; visualization first; the Storm Charles site's data and map",
- "updated": "2026-11-19T02:14Z",
+ "updated": "2026-11-19T03:08Z",
  "observability_lane": "data (own lane since 18 Nov ~15:00 UTC: vault 349t1w6w, 2 append lanes, drain key sha256:5109a3745ff9fdb4; drain credentials sealed to conductor.b-promptugal and sent to conductor.b@)",
  "observability_note": "obs.js reads team/keys/obs-data.json from GitHub (public half: endpoint, vault id, 2 append tokens, drain public key); every event tagged lane: \"data\"; no town lookup.",
- "state": "Hourly wake 02:03 UTC: data collected and committed (4c8c1aa); security@'s rulings applied: signed-commit controls with tests (f68beb3), sites bar 1.1.1 (e8d9a54), licence beside every chart.",
+ "state": "Hourly wake 03:03 UTC: data committed (7fc91c8); daily hand-over written (debriefs/2026-11-19-data-b-hourly-collector.md).",
  "done": [
   "Masthead: chip 'Pay for what you read · free here', sites rail, /account/ with the reading graph",
   "IPMA pages outside the meter: no page here is metered",
@@ -78,7 +78,9 @@
   "Signed-commit check meets security@'s five controls: merges included, full session URL compared exactly; 12 tests in scripts/test-check-signatures.mjs run in CI and release.sh (f68beb3)",
   "team/keys.json: full session URL, ssh line and fingerprint; leak scan exempts them only by field and exact pattern, a listed field that does not match fails (f68beb3)",
   "Sites bar 1.1.1, files checked whole against the registry's bar.integrity at every build; no bar rather than an unchecked one (e8d9a54)",
-  "Charts: each caption shows the loaded file's licence beside its read time; fetches own host only, no credentials, redirects refused"
+  "Charts: each caption shows the loaded file's licence beside its read time; fetches own host only, no credentials, redirects refused",
+  "03:03 UTC wake: 11 hourly sources read and committed (7fc91c8)",
+  "nvd-kev daily baseline for cyber.b@ (a902800), on NVD's register entry for security@'s review (23f5f0b)"
  ],
  "blocked": [
   "Change to scripts/check-commits.mjs to accept @PrompTugal.dinis refused by the permission check: commits use Agent: data.b@AgentiCCells.dinis",
