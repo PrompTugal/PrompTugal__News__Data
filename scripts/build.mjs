@@ -14,6 +14,7 @@ import { buildPreview } from './build/preview.mjs';
 import { buildHistory, buildEventsHistory } from './build/history.mjs';
 import { sitesBar, REGISTRY_READ } from './build/sitesbar.mjs';
 import { injectObsTz } from './build/obstz.mjs';
+import { placePtmap } from './build/ptmap.mjs';
 import { setSitesBar } from './build/render.mjs';
 import { buildAttribution } from './build/attribution.mjs';
 import { buildPages } from './build/pages.mjs';
@@ -27,7 +28,8 @@ const bar = await sitesBar(); setSitesBar(bar.html);
 // (security@'s ruling, 19 Nov 2026 05:09 UTC: "<piece> <version> off: the registry names <newer>")
 const OFF = [];
 if (bar.off) { OFF.push(bar.off); rmSync(join(OUT, 'assets/sites-bar'), { recursive: true, force: true }); console.log(bar.off); }
-{ const t = injectObsTz(OUT, REGISTRY_READ); if (t.off) { OFF.push(t.off); console.log(t.off) } else console.log(t.ok) }   // sites bar 1.1.0 (Dinis, 18 Nov 2026)
+{ const t = injectObsTz(OUT, REGISTRY_READ); if (t.off) { OFF.push(t.off); console.log(t.off) } else console.log(t.ok) }
+{ const P = Object.values(JSON.parse(readFileSync('register/places.json', 'utf8')).places || {}); const t = placePtmap(OUT, REGISTRY_READ, P); if (t.off) { OFF.push(t.off); console.log(t.off) } else console.log(t.ok) }   // the shared map (Dinis, 19 Nov 2026 ~17:40 UTC)   // sites bar 1.1.0 (Dinis, 18 Nov 2026)
 console.log(`sites bar: ${bar.html ? 'rendered' : 'left out'} (${bar.from || bar.off})`);
 const sources = loadSources();
 const places = loadPlaces();

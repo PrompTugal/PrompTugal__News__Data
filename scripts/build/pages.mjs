@@ -126,6 +126,7 @@ export function buildPages({ sources, places, readAt, index, storm, events = [],
     blocks: [
       p('Portugal now, from public data: flights, wind, temperature, warnings, fire risk, the sea. Code collects every source twice a day and this page draws it in your browser from the same files the [API](/api/) serves. Each chart names its source and the time it was read; open a source for its raw data and what this site makes of it.'),
       p('**Not a warning service: follow [IPMA](https://www.ipma.pt/) and [ANEPC](https://prociv.gov.pt/).**'),
+      raw('<!--PTMAP-->', ''),   // the shared map (scripts/build/ptmap.mjs places it when the registry pins match)
       raw('<div class="viz-grid">', ''),
       ...FRONT.flatMap(([id, name, srcs, text]) => [raw('<section class="viz-cell">', ''), h(text[0], 3), fig(name, srcs.map(u => abs(id, u)), text[1]), p(`[The source, the raw data and the processing](/sources/${id}/)`), raw('</section>', '')]),
       raw('</div>', ''),
