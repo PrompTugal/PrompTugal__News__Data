@@ -1,6 +1,6 @@
 {
  "place": "portimao",
- "read_at": "2026-11-19T04:10:17Z",
+ "read_at": "2026-11-19T05:07:46Z",
  "by": "collect/by-place-now.mjs (code, no model; data@PrompTugal.dinis), from this site's collected sources",
  "coords": {
   "lat": 37.13333,
@@ -124,37 +124,37 @@
  "reads": {
   "observations": {
    "url": "https://data.promptugal.news/api/v1/ipma-observations/latest.json",
-   "at": "2026-11-19T04:09:52Z",
+   "at": "2026-11-19T05:07:20Z",
    "status": 200
   },
   "warnings": {
    "url": "https://data.promptugal.news/api/v1/ipma-warnings/latest.json",
-   "at": "2026-11-19T04:10:10Z",
+   "at": "2026-11-19T05:07:38Z",
    "status": 200
   },
   "forecasts": {
    "url": "https://data.promptugal.news/api/v1/ipma-city-forecasts/latest.json",
-   "at": "2026-11-19T04:08:17Z",
+   "at": "2026-11-19T05:05:44Z",
    "status": 200
   },
   "fire-risk": {
    "url": "https://data.promptugal.news/api/v1/ipma-fire-risk/latest.json",
-   "at": "2026-11-19T04:09:45Z",
+   "at": "2026-11-19T05:07:13Z",
    "status": 200
   },
   "uv": {
    "url": "https://data.promptugal.news/api/v1/ipma-uv/latest.json",
-   "at": "2026-11-19T04:10:07Z",
+   "at": "2026-11-19T05:07:35Z",
    "status": 200
   },
   "sea": {
    "url": "https://data.promptugal.news/api/v1/ipma-sea/latest.json",
-   "at": "2026-11-19T04:09:58Z",
+   "at": "2026-11-19T05:07:25Z",
    "status": 200
   },
   "adsb": {
    "url": "https://data.promptugal.news/api/v1/adsb-faro/latest.json",
-   "at": "2026-11-19T04:03:52Z",
+   "at": "2026-11-19T05:03:49Z",
    "status": 200
   }
  }

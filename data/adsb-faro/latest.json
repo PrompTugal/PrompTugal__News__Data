@@ -1,11 +1,11 @@
 {
  "source": "adsb-faro",
  "title": "Flights around Faro airport",
- "read_at": "2026-11-19T04:03:52Z",
+ "read_at": "2026-11-19T05:03:49Z",
  "provenance": {
   "source": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
   "page": "https://globe.adsb.lol/?lat=37.014&lon=-7.966&zoom=9",
-  "read_at": "2026-11-19T04:03:52Z",
+  "read_at": "2026-11-19T05:03:49Z",
   "by": "sources/adsb-faro/collect.mjs (code, no model; run by data@PrompTugal.dinis)",
   "terms": "adsb.lol: its API data is licensed under the Open Database License (ODbL 1.0): share-alike, with attribution; no key needed up to 500 requests a day per address.",
   "licence": "ODbL 1.0 (adsb.lol)"
@@ -18,7 +18,7 @@
   "lon": -7.9659,
   "within_nm": 40
  },
- "feed_time_ms": 1795061033001,
+ "feed_time_ms": 1795064629001,
  "counts": {
   "airline": 0,
   "other_aircraft": 0,
