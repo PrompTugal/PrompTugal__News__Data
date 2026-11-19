@@ -4,7 +4,7 @@
  "repo": "PrompTugal/PrompTugal__News__Data",
  "site": "https://data.promptugal.news",
  "focus": "the raw public data behind every PrompTugal site: collectors, API, vaults; visualization first; the Storm Charles site's data and map",
- "updated": "2026-11-19T01:45Z",
+ "updated": "2026-11-19T01:38Z",
  "observability_lane": "data (own lane since 18 Nov ~15:00 UTC: vault 349t1w6w, 2 append lanes, drain key sha256:5109a3745ff9fdb4; drain credentials sealed to conductor.b-promptugal and sent to conductor.b@)",
  "observability_note": "obs.js reads team/keys/obs-data.json from GitHub (public half: endpoint, vault id, 2 append tokens, drain public key); every event tagged lane: \"data\"; no town lookup.",
  "state": "Hourly collector since 19 Nov 01:30 UTC (Dinis, ~01:20 UTC: every run starts from a commit): each wake collects, commits the data signed and pushes; the Pages workflow has no timer and no collection.",
@@ -71,7 +71,9 @@
   "data in the browser, data's part (Dinis ~01:13 UTC, guidance 2026-11-19-load-the-data-in-the-browser.md): every latest.json, by-place/now file and cameras/index.json carries data_read_at, expected_cadence and schema at a stable URL; GitHub Pages serves them with access-control-allow-origin: * and max-age 600.",
   "data_read_at on base-gov-pt per-place files and index (6a11922), for civic.b@",
   "Every run starts from a commit (83b562f): data/ and the served raw files are in git; Pages workflow has no schedule and no collect step; YouTube read from this session with the environment key",
-  "EPSS on the register (first-epss), not read: terms unclear (FIRST Services Terms limit content to cybersecurity uses; EPSS not named there)"
+  "EPSS on the register (first-epss), not read: terms unclear (FIRST Services Terms limit content to cybersecurity uses; EPSS not named there)",
+  "History licences per rights@ R8, read times on forecast rows, events history per place (432dc8c)",
+  "Clock slip owned: messages sent 01:30 to 01:38 UTC on 19 Nov carried guessed times (up to 02:10 UTC) and this file said updated 01:45Z while it was 01:3x; times now come from date -u"
  ],
  "blocked": [
   "Change to scripts/check-commits.mjs to accept @PrompTugal.dinis refused by the permission check: commits use Agent: data.b@AgentiCCells.dinis",
