@@ -1,11 +1,11 @@
 {
  "source": "adsb-faro",
  "title": "Flights around Faro airport",
- "read_at": "2026-11-19T08:04:08Z",
+ "read_at": "2026-11-19T09:04:33Z",
  "provenance": {
   "source": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
   "page": "https://globe.adsb.lol/?lat=37.014&lon=-7.966&zoom=9",
-  "read_at": "2026-11-19T08:04:08Z",
+  "read_at": "2026-11-19T09:04:33Z",
   "by": "sources/adsb-faro/collect.mjs (code, no model; run by data@PrompTugal.dinis)",
   "terms": "adsb.lol: its API data is licensed under the Open Database License (ODbL 1.0): share-alike, with attribution; no key needed up to 500 requests a day per address.",
   "licence": "ODbL 1.0 (adsb.lol)"
@@ -18,30 +18,29 @@
   "lon": -7.9659,
   "within_nm": 40
  },
- "feed_time_ms": 1795075449000,
+ "feed_time_ms": 1795079073500,
  "counts": {
   "airline": 1,
-  "other_aircraft": 1,
+  "other_aircraft": 0,
   "other_on_ground": 0,
   "by_airline": {
-   "IBS": 1
+   "TVF": 1
   },
   "by_altitude_band": {
-   "15,000 to 30,000 ft": 1,
    "30,000 ft and above": 1
   }
  },
  "airline": [
   {
-   "callsign": "IBS15UN",
-   "airline_icao": "IBS",
-   "type": "A320",
-   "alt_ft": 35975,
+   "callsign": "TVF378B",
+   "airline_icao": "TVF",
+   "type": "A20N",
+   "alt_ft": 37025,
    "on_ground": false,
-   "ground_speed_kt": 495.4,
-   "track_deg": 49.91,
-   "lat": 36.76,
-   "lon": -7.79
+   "ground_speed_kt": 415.2,
+   "track_deg": 185.94,
+   "lat": 37.63,
+   "lon": -7.67
   }
  ]
 }

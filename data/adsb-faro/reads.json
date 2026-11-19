@@ -3,6 +3,23 @@
  "source": "adsb-faro",
  "runs": [
   {
+   "at": "2026-11-19T09:04:33Z",
+   "finished": "2026-11-19T09:04:33Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-19T09:04:33Z",
+     "status": 200,
+     "bytes": 769,
+     "sha256_prefix": "5695e94100f93896",
+     "changed": true
+    }
+   ]
+  },
+  {
    "at": "2026-11-19T08:04:08Z",
    "finished": "2026-11-19T08:04:09Z",
    "ok": 1,

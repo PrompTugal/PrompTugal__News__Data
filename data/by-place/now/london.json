@@ -1,7 +1,7 @@
 {
  "place": "london",
  "country": "GB",
- "read_at": "2026-11-19T08:08:01Z",
+ "read_at": "2026-11-19T09:11:36Z",
  "by": "collect/by-place-now.mjs (code, no model; data@PrompTugal.dinis), from this site's collected sources",
  "coords": {
   "lat": 51.50722,
@@ -55,19 +55,19 @@
   "warnings": [
    {
     "id": "062WAF28UpColne",
-    "severity": "Flood alert",
+    "severity": "Warning no longer in force",
     "area": "Upper River Colne and Radlett Brook",
     "url": "https://check-for-flooding.service.gov.uk/target-area/062WAF28UpColne"
    },
    {
     "id": "062WAF53LLTribs",
-    "severity": "Flood alert",
+    "severity": "Warning no longer in force",
     "area": "Lower Lee tributaries",
     "url": "https://check-for-flooding.service.gov.uk/target-area/062WAF53LLTribs"
    }
   ],
   "stations": 10,
-  "at": "2026-11-19T08:04:14Z",
+  "at": "2026-11-19T09:04:39Z",
   "source": "https://data.promptugal.news/api/v1/ea-flood/latest.json",
   "attribution": "this uses Environment Agency flood and river level data from the real-time data API (Beta)",
   "license": {
@@ -78,7 +78,7 @@
  "reads": {
   "ea-flood": {
    "url": "https://data.promptugal.news/api/v1/ea-flood/latest.json",
-   "at": "2026-11-19T08:04:14Z"
+   "at": "2026-11-19T09:04:39Z"
   },
   "open-meteo-london": {
    "url": "https://data.promptugal.news/api/v1/open-meteo-london/latest.json",

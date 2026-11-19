@@ -3,6 +3,23 @@
  "source": "meteoalarm-pt",
  "runs": [
   {
+   "at": "2026-11-19T09:11:31Z",
+   "finished": "2026-11-19T09:11:35Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-19T09:11:33Z",
+     "status": 200,
+     "bytes": 103231,
+     "sha256_prefix": "2d56108da7a2ac24",
+     "changed": false
+    }
+   ]
+  },
+  {
    "at": "2026-11-19T08:07:56Z",
    "finished": "2026-11-19T08:08:00Z",
    "ok": 1,

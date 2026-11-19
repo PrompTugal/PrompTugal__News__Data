@@ -3,11 +3,11 @@
  "title": "London flood warnings and Thames levels (Environment Agency)",
  "place": "london",
  "country": "GB",
- "read_at": "2026-11-19T08:04:14Z",
+ "read_at": "2026-11-19T09:04:39Z",
  "provenance": {
   "source": "https://environment.data.gov.uk/flood-monitoring/doc/reference",
   "page": "https://check-for-flooding.service.gov.uk/",
-  "read_at": "2026-11-19T08:04:14Z",
+  "read_at": "2026-11-19T09:04:39Z",
   "by": "sources/ea-flood/collect.mjs (code, no model; run by data.b@PrompTugal.dinis)",
   "terms": "Open Government Licence v3.0, no registration; acknowledge with: \"this uses Environment Agency flood and river level data from the real-time data API (Beta)\". Not reviewed by a person.",
   "attribution": "this uses Environment Agency flood and river level data from the real-time data API (Beta)",
@@ -23,7 +23,7 @@
  "counts": {
   "warnings": 2,
   "by_severity": {
-   "Flood alert": 2
+   "Warning no longer in force": 2
   },
   "stations": 10,
   "readings": 11,
@@ -38,29 +38,29 @@
  "warnings": [
   {
    "id": "062WAF28UpColne",
-   "severity": "Flood alert",
-   "severity_level": 3,
+   "severity": "Warning no longer in force",
+   "severity_level": 4,
    "area": "Upper River Colne and Radlett Brook",
    "river_or_sea": "River Colne",
    "county": "Hertfordshire",
    "tidal": false,
    "ea_area": "Hertfordshire and North London",
-   "time_raised": "2026-11-18T17:13:36",
-   "time_severity_changed": "2026-11-18T17:13:00",
+   "time_raised": "2026-11-19T08:32:58",
+   "time_severity_changed": "2026-11-19T08:32:00",
    "url": "https://check-for-flooding.service.gov.uk/target-area/062WAF28UpColne",
    "api": "https://environment.data.gov.uk/flood-monitoring/id/floods/062WAF28UpColne"
   },
   {
    "id": "062WAF53LLTribs",
-   "severity": "Flood alert",
-   "severity_level": 3,
+   "severity": "Warning no longer in force",
+   "severity_level": 4,
    "area": "Lower Lee tributaries",
    "river_or_sea": "Ching Brook, Cobbins Brook, Nazeing Brook, Pymmes Brook, Salmons Brook, Turkey Brook, Small River Lee, Rags Brook, Trinity Marsh Ditch",
    "county": "Barnet, Enfield, Essex, Greater London, Haringey, Hertfordshire, Redbridge, Waltham Forest",
    "tidal": false,
    "ea_area": "Hertfordshire and North London",
-   "time_raised": "2026-11-18T17:14:14",
-   "time_severity_changed": "2026-11-18T17:14:00",
+   "time_raised": "2026-11-19T08:34:28",
+   "time_severity_changed": "2026-11-19T08:34:00",
    "url": "https://check-for-flooding.service.gov.uk/target-area/062WAF53LLTribs",
    "api": "https://environment.data.gov.uk/flood-monitoring/id/floods/062WAF53LLTribs"
   }
@@ -77,8 +77,8 @@
     {
      "qualifier": "tidal_level",
      "unit": "mAOD",
-     "value": 2.97,
-     "time": "2026-11-19T07:30:00Z"
+     "value": 2.513,
+     "time": "2026-11-19T08:30:00Z"
     }
    ],
    "url": "https://check-for-flooding.service.gov.uk/station/7388",
@@ -95,8 +95,8 @@
     {
      "qualifier": "tidal_level",
      "unit": "mAOD",
-     "value": 2.942,
-     "time": "2026-11-19T07:45:00Z"
+     "value": 2.337,
+     "time": "2026-11-19T08:45:00Z"
     }
    ],
    "url": "https://check-for-flooding.service.gov.uk/station/7390",
@@ -113,8 +113,8 @@
     {
      "qualifier": "tidal_level",
      "unit": "mAOD",
-     "value": 3.13,
-     "time": "2026-11-19T07:45:00Z"
+     "value": 2.83,
+     "time": "2026-11-19T08:45:00Z"
     }
    ],
    "url": "https://check-for-flooding.service.gov.uk/station/7389",
@@ -131,8 +131,8 @@
     {
      "qualifier": "tidal_level",
      "unit": "mAOD",
-     "value": 3.041,
-     "time": "2026-11-19T07:45:00Z"
+     "value": 2.62,
+     "time": "2026-11-19T08:45:00Z"
     }
    ],
    "url": "https://check-for-flooding.service.gov.uk/station/7391",
@@ -149,8 +149,8 @@
     {
      "qualifier": "tidal_level",
      "unit": "mAOD",
-     "value": 2.577,
-     "time": "2026-11-19T07:30:00Z"
+     "value": 3.502,
+     "time": "2026-11-19T08:45:00Z"
     }
    ],
    "url": "https://check-for-flooding.service.gov.uk/station/7393",
@@ -178,8 +178,8 @@
     {
      "qualifier": "stage",
      "unit": "mAOD",
-     "value": 4.584,
-     "time": "2026-11-19T07:45:00Z"
+     "value": 4.585,
+     "time": "2026-11-19T08:45:00Z"
     }
    ],
    "url": "https://check-for-flooding.service.gov.uk/station/7246",
@@ -196,14 +196,14 @@
     {
      "qualifier": "water",
      "unit": null,
-     "value": 35.471,
-     "time": "2026-11-19T07:45:00Z"
+     "value": 35.262,
+     "time": "2026-11-19T08:45:00Z"
     },
     {
      "qualifier": "stage",
      "unit": "mASD",
-     "value": 4.602,
-     "time": "2026-11-19T07:45:00Z"
+     "value": 4.606,
+     "time": "2026-11-19T08:45:00Z"
     }
    ],
    "url": "https://check-for-flooding.service.gov.uk/station/7267",
@@ -220,14 +220,14 @@
     {
      "qualifier": "stage",
      "unit": "mASD",
-     "value": 0.209,
-     "time": "2026-11-19T07:45:00Z"
+     "value": 0.208,
+     "time": "2026-11-19T08:45:00Z"
     },
     {
      "qualifier": "downstage",
      "unit": "mASD",
-     "value": 3.9,
-     "time": "2026-11-19T07:45:00Z"
+     "value": 4.698,
+     "time": "2026-11-19T08:45:00Z"
     }
    ],
    "url": "https://check-for-flooding.service.gov.uk/station/7268",
@@ -244,8 +244,8 @@
     {
      "qualifier": "stage",
      "unit": "mAOD",
-     "value": 4.636,
-     "time": "2026-11-19T07:45:00Z"
+     "value": 4.635,
+     "time": "2026-11-19T08:45:00Z"
     }
    ],
    "url": "https://check-for-flooding.service.gov.uk/station/7269",
@@ -260,7 +260,7 @@
    "long": -0.20555,
    "rain_mm": 0,
    "period_s": 900,
-   "time": "2026-11-19T07:15:00Z"
+   "time": "2026-11-19T08:15:00Z"
   },
   {
    "id": "289102TP",
@@ -278,7 +278,7 @@
    "long": -0.1126,
    "rain_mm": 0,
    "period_s": 900,
-   "time": "2026-11-19T07:45:00Z"
+   "time": "2026-11-19T08:45:00Z"
   },
   {
    "id": "287283TP",
@@ -294,9 +294,9 @@
    "label": "Rainfall station 288092TP",
    "lat": 51.4214,
    "long": -0.10943,
-   "rain_mm": 0,
+   "rain_mm": 0.01,
    "period_s": 900,
-   "time": "2026-11-19T07:45:00Z"
+   "time": "2026-11-19T08:45:00Z"
   },
   {
    "id": "287946TP",
@@ -305,7 +305,7 @@
    "long": -0.16287,
    "rain_mm": 0,
    "period_s": 900,
-   "time": "2026-11-19T07:45:00Z"
+   "time": "2026-11-19T08:45:00Z"
   },
   {
    "id": "246847TP",
@@ -323,7 +323,7 @@
    "long": -0.28935,
    "rain_mm": 0,
    "period_s": 900,
-   "time": "2026-11-19T07:30:00Z"
+   "time": "2026-11-19T08:30:00Z"
   },
   {
    "id": "239374TP",
@@ -332,7 +332,7 @@
    "long": 0.04127,
    "rain_mm": 0,
    "period_s": 900,
-   "time": "2026-11-19T07:15:00Z"
+   "time": "2026-11-19T08:15:00Z"
   },
   {
    "id": "287864TP",
@@ -341,7 +341,7 @@
    "long": -0.13555,
    "rain_mm": 0,
    "period_s": 900,
-   "time": "2026-11-19T07:45:00Z"
+   "time": "2026-11-19T08:45:00Z"
   }
  ],
  "daily_rain": {
@@ -408,31 +408,31 @@
   "2026-11-19": {
    "245176TP": {
     "rain_mm": 4,
-    "readings": 31
+    "readings": 35
    },
    "288092TP": {
     "rain_mm": 2.2,
-    "readings": 31
+    "readings": 35
    },
    "287946TP": {
     "rain_mm": 2,
-    "readings": 31
+    "readings": 35
    },
    "380002TP": {
     "rain_mm": 4.4,
-    "readings": 29
+    "readings": 33
    },
    "287864TP": {
     "rain_mm": 1.8,
-    "readings": 31
+    "readings": 35
    },
    "246424TP": {
     "rain_mm": 3,
-    "readings": 28
+    "readings": 32
    },
    "239374TP": {
     "rain_mm": 2.4,
-    "readings": 28
+    "readings": 32
    }
   }
  },
@@ -1157,7 +1157,11 @@
     "07:00",
     "07:15",
     "07:30",
-    "07:45"
+    "07:45",
+    "08:00",
+    "08:15",
+    "08:30",
+    "08:45"
    ],
    "288092TP": [
     "00:00",
@@ -1190,7 +1194,11 @@
     "07:00",
     "07:15",
     "07:30",
-    "07:45"
+    "07:45",
+    "08:00",
+    "08:15",
+    "08:30",
+    "08:45"
    ],
    "287946TP": [
     "00:00",
@@ -1223,7 +1231,11 @@
     "07:00",
     "07:15",
     "07:30",
-    "07:45"
+    "07:45",
+    "08:00",
+    "08:15",
+    "08:30",
+    "08:45"
    ],
    "380002TP": [
     "00:00",
@@ -1254,7 +1266,11 @@
     "06:45",
     "07:00",
     "07:15",
-    "07:30"
+    "07:30",
+    "07:45",
+    "08:00",
+    "08:15",
+    "08:30"
    ],
    "287864TP": [
     "00:00",
@@ -1287,7 +1303,11 @@
     "07:00",
     "07:15",
     "07:30",
-    "07:45"
+    "07:45",
+    "08:00",
+    "08:15",
+    "08:30",
+    "08:45"
    ],
    "246424TP": [
     "00:00",
@@ -1317,7 +1337,11 @@
     "06:30",
     "06:45",
     "07:00",
-    "07:15"
+    "07:15",
+    "07:30",
+    "07:45",
+    "08:00",
+    "08:15"
    ],
    "239374TP": [
     "00:00",
@@ -1347,7 +1371,11 @@
     "06:30",
     "06:45",
     "07:00",
-    "07:15"
+    "07:15",
+    "07:30",
+    "07:45",
+    "08:00",
+    "08:15"
    ]
   }
  },

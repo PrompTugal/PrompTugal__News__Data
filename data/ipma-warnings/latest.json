@@ -1,11 +1,11 @@
 {
  "source": "ipma-warnings",
  "title": "IPMA weather warnings",
- "read_at": "2026-11-19T08:07:53Z",
+ "read_at": "2026-11-19T09:11:28Z",
  "provenance": {
   "source": "https://api.ipma.pt/open-data/forecast/warnings/warnings_www.json",
   "page": "https://www.ipma.pt/en/otempo/prev-sam/",
-  "read_at": "2026-11-19T08:07:53Z",
+  "read_at": "2026-11-19T09:11:28Z",
   "by": "sources/ipma-warnings/collect.mjs (code, no model; run by data@PrompTugal.dinis)",
   "terms": "IPMA: free to copy and use for personal or public use if the use has no profit-making or offensive purpose; always name IPMA as the source."
  },
@@ -36,7 +36,7 @@
    "type": "rough sea",
    "type_pt": "Agitação Marítima",
    "level": "orange",
-   "start": "2026-11-18T21:17:00",
+   "start": "2026-11-19T07:54:00",
    "end": "2026-11-20T00:00:00",
    "text": "Ondas de noroeste com 5 a 6 metros, com altura máxima até 10 metros."
   },
@@ -56,7 +56,7 @@
    "type": "rough sea",
    "type_pt": "Agitação Marítima",
    "level": "yellow",
-   "start": "2026-11-18T21:17:00",
+   "start": "2026-11-19T07:54:00",
    "end": "2026-11-20T09:00:00",
    "text": "Ondas de noroeste com 4 a 5 metros."
   },
@@ -66,7 +66,7 @@
    "type": "rough sea",
    "type_pt": "Agitação Marítima",
    "level": "orange",
-   "start": "2026-11-18T21:17:00",
+   "start": "2026-11-19T07:54:00",
    "end": "2026-11-20T00:00:00",
    "text": "Ondas de noroeste com 5 a 6 metros, com altura máxima até 10 metros."
   },
@@ -86,7 +86,7 @@
    "type": "rough sea",
    "type_pt": "Agitação Marítima",
    "level": "orange",
-   "start": "2026-11-18T21:17:00",
+   "start": "2026-11-19T07:54:00",
    "end": "2026-11-20T00:00:00",
    "text": "Ondas de noroeste com 5 a 6 metros, com altura máxima até 10 metros."
   },
@@ -106,7 +106,7 @@
    "type": "rough sea",
    "type_pt": "Agitação Marítima",
    "level": "yellow",
-   "start": "2026-11-18T21:17:00",
+   "start": "2026-11-19T07:54:00",
    "end": "2026-11-20T09:00:00",
    "text": "Na costa Ocidental, ondas de noroeste com 4 a 5 metros."
   },
@@ -116,7 +116,7 @@
    "type": "rough sea",
    "type_pt": "Agitação Marítima",
    "level": "orange",
-   "start": "2026-11-18T21:17:00",
+   "start": "2026-11-19T07:54:00",
    "end": "2026-11-20T00:00:00",
    "text": "Ondas de noroeste com 5 a 6 metros, com altura máxima até 10 metros."
   },
@@ -136,7 +136,7 @@
    "type": "rough sea",
    "type_pt": "Agitação Marítima",
    "level": "orange",
-   "start": "2026-11-19T06:00:00",
+   "start": "2026-11-19T07:54:00",
    "end": "2026-11-19T12:00:00",
    "text": "Ondas de noroeste com 5 a 6 metros, com altura máxima até 10 metros."
   },
@@ -156,7 +156,7 @@
    "type": "rough sea",
    "type_pt": "Agitação Marítima",
    "level": "orange",
-   "start": "2026-11-18T21:17:00",
+   "start": "2026-11-19T07:54:00",
    "end": "2026-11-20T00:00:00",
    "text": "Ondas de noroeste com 5 a 6 metros, com altura máxima até 10 metros."
   },
@@ -176,7 +176,7 @@
    "type": "rough sea",
    "type_pt": "Agitação Marítima",
    "level": "yellow",
-   "start": "2026-11-18T21:17:00",
+   "start": "2026-11-19T07:54:00",
    "end": "2026-11-20T09:00:00",
    "text": "Ondas de noroeste com 4 a 5 metros."
   },
@@ -186,7 +186,7 @@
    "type": "rough sea",
    "type_pt": "Agitação Marítima",
    "level": "orange",
-   "start": "2026-11-18T21:17:00",
+   "start": "2026-11-19T07:54:00",
    "end": "2026-11-20T00:00:00",
    "text": "Ondas de noroeste com 5 a 6 metros, com altura máxima até 10 metros."
   },
