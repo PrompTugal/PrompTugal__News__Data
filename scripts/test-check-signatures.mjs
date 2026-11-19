@@ -84,16 +84,26 @@ const setup = name => { const r = repo(name); const base = r.commit('bootstrap',
   const s = join(tmp, 'shallow-clone'); execFileSync('git', ['clone', '-q', '--depth', '1', `file://${r.d}`, s]);
   const v = spawnSync('node', ['scripts/check-signatures.mjs', 'HEAD', 'HEAD'], { cwd: s, encoding: 'utf8', env: { ...noCI, SIGNING_TRUSTED_BASE: r.base } });
   expect('(6) a shallow checkout is refused', v, false, 'shallow checkout'); }
-// scripts/trusted-checks.sh (control 7, security@'s ruling of 14:11 UTC): where the checks come from
+const check = (r, before, after, script) => r.check(before, after, script);
+// scripts/trusted-checks.sh (control 7, security@'s fourth ruling, ~14:17 UTC): the anchor and where the checks come from
 const TRUST = join(dirname(CHECK), 'trusted-checks.sh');
+const outOf = r => join(tmp, `${r.d.split('/').pop()}-out`);
 const trustRun = (r, before, after) => spawnSync('bash', [TRUST, before, after, join(tmp, `${r.d.split('/').pop()}-out`)], { cwd: r.d, encoding: 'utf8', env: noCI });
 const withChecks = name => { const r = setup(name); r.commit('adds the other checks', { key: A, files: { 'scripts/check-commits.mjs': '//\n', 'scripts/leak-scan.mjs': '//\n' } }); return r; };
 { const r = withChecks('trust-ok'); const b = r.g('rev-parse', 'HEAD'); r.commit('next', { key: A, files: { 'x.txt': '1' } }); const v = trustRun(r, b, 'HEAD');
-  results.push({ name: '(7) the trusted copy comes from the commit before the push', pass: v.status === 0 && v.stdout.trim() === b, out: (v.stdout + v.stderr).trim() }); }
+  results.push({ name: '(7) the checks come from the anchor', pass: v.status === 0 && v.stdout.trim() === b, out: (v.stdout + v.stderr).trim() }); }
 { const r = setup('trust-missing'); r.commit('next', { key: A, files: { 'x.txt': '1' } }); expect('(7) a trusted commit with no copy of a check fails', trustRun(r, r.base, 'HEAD'), false, 'has no copy of scripts/check-commits.mjs'); }
-{ const r = withChecks('trust-zero'); expect('(7) a zero id before the push (a new branch) fails', trustRun(r, '0'.repeat(40), 'HEAD'), false, 'a zero id'); }
+{ const r = withChecks('trust-zero'); expect('(7) a zero anchor fails', trustRun(r, '0'.repeat(40), 'HEAD'), false, 'a zero id'); }
 { const r = withChecks('trust-force'); const old = r.commit('later dropped', { key: A, files: { 'x.txt': '1' } }); r.g('reset', '-q', '--hard', 'HEAD~1'); r.commit('rewritten', { key: A, files: { 'x.txt': '2' } });
-  expect('(7) a force push (before not an ancestor of after) fails', trustRun(r, old, 'HEAD'), false, 'force push'); }
+  expect('(7) an anchor that is not an ancestor of the pushed commit fails', trustRun(r, old, 'HEAD'), false, 'force push'); }
+{ const r = withChecks('trust-none'); expect('(7) a missing anchor fails', trustRun(r, '', 'HEAD'), false, 'no anchor'); }
+{ const r = withChecks('dropped'); const anchor = r.g('rev-parse', 'HEAD'); r.commit('from a dropped run, unsigned', { files: { 'x.txt': '1' } });
+  r.commit('the push before this one, signed', { key: A, files: { 'x.txt': '2' } }); r.commit('this push, signed', { key: A, files: { 'x.txt': '3' } });
+  const t = trustRun(r, anchor, 'HEAD'); const v = check(r, anchor, 'HEAD', join(outOf(r), 'check-signatures.mjs'));
+  expect('(7) an unsigned commit from a dropped run (between the anchor and the push before) fails', t.status === 0 ? v : t, false, 'not signed by a key'); }
+{ const r = withChecks('tagged'); const anchor = r.g('rev-parse', 'HEAD'); r.commit('unverified, weakens the check', { files: { 'scripts/check-signatures.mjs': 'console.log("OK")\n' } }); r.g('tag', 'v0.1.999');
+  const t = trustRun(r, anchor, 'HEAD');
+  results.push({ name: '(7) a pushed tag on an unverified commit is not used', pass: t.status === 0 && t.stdout.trim() === anchor && !readFileSync(join(outOf(r), 'check-signatures.mjs'), 'utf8').startsWith('console.log'), out: (t.stdout + t.stderr).trim() }); }
 { const r = setup('backdated'); r.g('checkout', '-q', '--orphan', 'o');
   const env0 = { GIT_AUTHOR_DATE: '2001-01-01T00:00:00Z', GIT_COMMITTER_DATE: '2001-01-01T00:00:00Z' }; Object.assign(process.env, env0);
   r.commit('backdated orphan, signed with its own key B', { key: B, files: { 'team/keys.json': keysWith(entry('b', B)) } }); for (const k of Object.keys(env0)) delete process.env[k];
