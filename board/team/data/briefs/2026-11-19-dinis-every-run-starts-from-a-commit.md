@@ -27,3 +27,13 @@ Relayed by conductor.b@ at 03:20 UTC; read at source in PrompTugal__News__Websit
 > "Yeah, okay, remove the IP base. So we're going to keep the country still. I agree. The predictions are one collection, yeah. I'll add branch protection later. It's not a problem at the moment. ... For now, that's okay on cyber. ... We're not going to have a key. So for now, don't get the London observed temperature. Just make a list of the sources we could do later."
 
 What this session does: obs.js keeps the country only, from the browser's time zone through a fixed table, no lookup; prediction files go to library.b@ in the form it sets, and this site still keeps and checks its own; London's observed temperature is not read; branch protection is Dinis's, later.
+
+## Twice a day (about 16:30 UTC)
+
+Relayed by conductor.b@ at 16:35 UTC; read at source in PrompTugal__News__Website board/guidance/2026-11-19-twice-a-day.md (commit cc59020f1, 16:37 UTC) by data.b@PrompTugal.dinis at about 16:40 UTC.
+
+> "for now we could mainly keep the site up-to-date a couple times a day, since there is really nobody using the site, and we don't need hourly updates"
+
+He chose "Twice a day, all" over keeping data collection hourly.
+
+What this session does: the wake runs at 07:03 and 18:03 Lisbon (the schedule was moved by conductor.b@); each wake collects, commits and pushes as before. Every served file states a cadence of twice a day with stale_after_seconds of 46800 (13 hours, as the guidance asks), and keeps the source's own cadence as collected_as. A refused 6-hourly or daily source waits at least 4 hours, so it is tried again at the next wake.

@@ -124,7 +124,7 @@ export function buildPages({ sources, places, readAt, index, storm, events = [],
     path: '', title: 'PrompTugal.news Data', h1: 'The raw public data behind every PrompTugal site',
     description: 'Public data on weather, warnings, the sea, fire risk and flights in Portugal, collected by code and served as plain files and an API. No articles. Not a warning service.',
     blocks: [
-      p('Portugal now, from public data: flights, wind, temperature, warnings, fire risk, the sea. Code collects every source each hour and this page draws it in your browser from the same files the [API](/api/) serves. Each chart names its source and the time it was read; open a source for its raw data and what this site makes of it.'),
+      p('Portugal now, from public data: flights, wind, temperature, warnings, fire risk, the sea. Code collects every source twice a day and this page draws it in your browser from the same files the [API](/api/) serves. Each chart names its source and the time it was read; open a source for its raw data and what this site makes of it.'),
       p('**Not a warning service: follow [IPMA](https://www.ipma.pt/) and [ANEPC](https://prociv.gov.pt/).**'),
       raw('<div class="viz-grid">', ''),
       ...FRONT.flatMap(([id, name, srcs, text]) => [raw('<section class="viz-cell">', ''), h(text[0], 3), fig(name, srcs.map(u => abs(id, u)), text[1]), p(`[The source, the raw data and the processing](/sources/${id}/)`), raw('</section>', '')]),
@@ -309,7 +309,7 @@ export function buildPages({ sources, places, readAt, index, storm, events = [],
       p('data.promptugal.news serves the raw public data the PrompTugal sites draw on. It publishes no articles and makes no forecast of its own.'),
       h('How it is made'),
       table(['Layer', 'What', 'Who or what'], [
-        ['Code', 'The collectors read each public source and write latest.json, reads.json and the vault copy. GitHub Actions runs them every hour and deploys the site. The build writes the API, the OpenAPI documents and these pages. No model is called when data is collected or when the site is built.', 'Node scripts in the [repository](' + REPO + ')'],
+        ['Code', 'The collectors read each public source and write latest.json, reads.json and the vault copy. data.b@\'s wake runs them twice a day (07:03 and 18:03 Lisbon) and commits the data; the push builds and deploys the site. The build writes the API, the OpenAPI documents and these pages. No model is called when data is collected or when the site is built.', 'Node scripts in the [repository](' + REPO + ')'],
         ['Agents', 'The collectors, the cards, the build and the design were written by agents on 17 November 2026; the visualizations, the raw layer, the Storm map and the Storm data move on 18 November.', 'data@PrompTugal.dinis (Opus) led on 17 November, with data.dev@, data.design@ and data.collect@ (Sonnet). From 18 November data.b@PrompTugal.dinis (Opus) leads, with data.b.design@ (the charts) and data.b.collector@ (the Storm map), both Sonnet.'],
         ['People', 'What a person has checked.', 'Nothing yet: no person has reviewed the values or the pages.'],
       ]),
@@ -400,7 +400,7 @@ export function buildPages({ sources, places, readAt, index, storm, events = [],
 <defs><marker id="pl-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="pl-h"/></marker></defs>
 ${B(10, 20, 220, 150, '1. Public sources', [`IPMA (6 feeds), adsb.lol,`, 'MeteoAlarm, Agenda LX,', 'Câmara de Lagos,', 'the Storm Charles archive', `${sources.length} with a collector`])}
 ${B(10, 200, 220, 120, '1b. Discovery', ['Perplexity (sonar) via', 'OpenRouter, once a day', 'per place, in data.b@\'s', 'session (no CI key yet)'], 'pl-ai')}
-${B(290, 20, 230, 150, '2. Collect (code, no model)', ['GitHub Actions, :17 and :47', `each hour: ${nHourly} hourly sources,`, 'events every 6 hours;', '2.5 s between requests;', 'also on every push to dev'])}
+${B(290, 20, 230, 150, '2. Collect (code, no model)', ['data.b@\'s wake, twice a day', `each wake: ${nHourly} sources read`, 'hourly; slower ones when due;', '2.5 s between requests;', 'a signed commit, then a push'])}
 ${B(290, 200, 230, 120, '2b. Claims (code)', ['each event named becomes', 'a claim; evidence marked', 'readable or not by the', 'register; gaps counted'], 'pl-ai')}
 ${B(580, 20, 200, 110, '3a. Latest + log', ['latest.json per source,', 'reads.json: 336 runs of', 'URLs, sizes, sha256 (16 hex)'], 'pl-ok')}
 ${B(580, 150, 200, 110, '3b. Raw bytes', ['every file as served,', 'dated copy when changed', 'NOT KEPT by CI today:', 'needs the vault secrets'], 'pl-bad')}
@@ -420,7 +420,7 @@ ${A(230, 95, 290, 95)}${A(230, 260, 290, 260, 'pl-ai')}${A(520, 75, 580, 75)}${A
         p('Public data comes in from its publishers, is read by code on a schedule, published on this site and its API, and should be kept whole in a vault per source. This page shows the whole path and, store by store, what is kept and what is not. [How each data set is shown and licensed](/how/).'),
         raw(svg, 'A diagram: sources, collection in GitHub Actions, the latest files and the log on this site, the raw bytes to the vaults (blocked), the readers.'),
         h('The schedule'),
-        ul([`Since 19 November 2026 (Dinis, about 01:20 UTC: every run starts from a commit), data.b@'s hourly wake reads the ${nHourly} hourly sources (and the 6-hourly and daily ones when they fall due), commits the data as a signed commit and pushes. The push runs \`.github/workflows/pages.yml\`: the build, the checks, the leak scan and the deploy. GitHub runs nothing on a timer and collects nothing.`, 'Before 19 November, GitHub ran the workflow on a timer, and fired only 2 of about 19 scheduled runs on 18 November between 00:00 and 14:40 UTC; that is why a reader could see data 6 hours old.', 'Discovery (Perplexity) runs once a day per place in data.b@\'s session, because CI has no OpenRouter key.']),
+        ul([`Since 19 November 2026 (Dinis, about 01:20 UTC: every run starts from a commit), data.b@'s wake reads the ${nHourly} sources marked hourly (and the 6-hourly and daily ones when they fall due), commits the data as a signed commit and pushes. Since about 16:30 UTC that day (Dinis: "we don't need hourly updates") the wake runs twice a day, at 07:03 and 18:03 Lisbon, so every served file states a cadence of twice a day. The push runs \`.github/workflows/pages.yml\`: the build, the checks, the leak scan and the deploy. GitHub runs nothing on a timer and collects nothing.`, 'Before 19 November, GitHub ran the workflow on a timer, and fired only 2 of about 19 scheduled runs on 18 November between 00:00 and 14:40 UTC; that is why a reader could see data 6 hours old.', 'Discovery (Perplexity) runs once a day per place in data.b@\'s session, because CI has no OpenRouter key.']),
         h('What is kept, store by store'),
         table(['Source', 'Read', 'Processed (latest.json)', 'Raw bytes per read', 'Processed history', 'Read log', 'Vault'], rows),
         table(['Store', 'What', 'Size now', 'Kept how long', 'State'], [

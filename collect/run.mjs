@@ -32,8 +32,10 @@ if (args.includes('--prev')) for (const c of pick) for (const f of ['latest.json
 // about 12:05 and 13:08 UTC on 19 Nov). Its age is then the time since the refused run.
 const refusedAgo = id => { const r = readJson(path.join(ROOT, 'data', id, 'reads.json'), null)?.runs?.[0]; if (!r || !(r.reads || []).some(x => x.status === 429 || x.status === 403)) return Infinity
     const t = Date.parse(r.at || ''); return Number.isFinite(t) ? Date.now() - t : Infinity }
-const waited = id => Math.min(ageOf(id), refusedAgo(id))
-const due = c => c.schedule?.cadence === 'hourly' || (c.schedule?.cadence === 'every 6 hours' && waited(c.id) > SIX) || (c.schedule?.cadence === 'daily' && waited(c.id) > DAILY)
+// data.b@, 19 Nov 2026 ~16:40 UTC: the wake now runs twice a day (Dinis, ~16:30 UTC), about 11 hours apart, so a refused source
+// waits at least 4 hours (not a whole cadence) and is tried again at the next wake rather than the one after
+const REFUSED_WAIT = 4 * 3600e3
+const due = c => c.schedule?.cadence === 'hourly' || (refusedAgo(c.id) > REFUSED_WAIT && ((c.schedule?.cadence === 'every 6 hours' && ageOf(c.id) > SIX) || (c.schedule?.cadence === 'daily' && ageOf(c.id) > DAILY)))
 const todo = only.length ? pick : cards.filter(due)
 const summary = []
 for (const c of todo) {

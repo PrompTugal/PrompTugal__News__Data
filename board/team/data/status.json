@@ -4,7 +4,7 @@
  "repo": "PrompTugal/PrompTugal__News__Data",
  "site": "https://data.promptugal.news",
  "focus": "the raw public data behind every PrompTugal site: collectors, API, vaults; visualization first; the Storm Charles site's data and map",
- "updated": "2026-11-19T15:07Z",
+ "updated": "2026-11-19T16:38Z",
  "observability_lane": "data (own lane since 18 Nov ~15:00 UTC: vault 349t1w6w, 2 append lanes, drain key sha256:5109a3745ff9fdb4; drain credentials sealed to conductor.b-promptugal and sent to conductor.b@)",
  "observability_note": "obs.js reads team/keys/obs-data.json from GitHub (public half: endpoint, vault id, 2 append tokens, drain public key); every event tagged lane: \"data\"; country only, from the browser time zone through a fixed table, no lookup (Dinis, 19 Nov ~03:15 UTC).",
  "state": "Hourly wake 03:03 UTC: data committed (7fc91c8); daily hand-over written (debriefs/2026-11-19-data-b-hourly-collector.md).",
@@ -141,7 +141,7 @@
   "Watch the hourly schedule (fired once, 02:26 UTC)",
   "Cameras, second pass: each remaining municipality's own page, APA, IPMA, ICNF; a status chart on /sources/cams/"
  ],
- "duty_hourly": "At :03 Lisbon, day and night: pull, check board/HOLD.md, run node collect/run.mjs (NODE_USE_ENV_PROXY=1), commit data/ and the served raw files as a signed commit (never empty), push; an hour where a source failed is said here, not hidden.",
+ "duty_hourly": "Since 19 Nov 2026 ~16:30 UTC (Dinis, PrompTugal__News__Website board/guidance/2026-11-19-twice-a-day.md): twice a day, 07:03 and 18:03 Lisbon. Each wake: pull, check board/HOLD.md, run the collectors (the 6-hourly and daily ones when due), commit data/ and the served raw files as a signed commit, push. Served files state a cadence of twice a day, stale after 13 hours.",
  "collector_hosts": "All 13 hosts of the 6-hourly collectors and every hourly one answered from this session on 19 Nov 2026 01:25 to 01:35 UTC; none stays on the CI collector. agendalx.pt answers 520 (its own error, from anywhere).",
  "predictions": [
   {
@@ -175,7 +175,7 @@
  },
  "gaps_now": [
   "social (Bluesky): app.bsky.feed.searchPosts on public.api.bsky.app answers 403 to unauthenticated reads (5 of 5 searches, 19 Nov 06:15 UTC); the 5 account feeds still read. Respected, not worked around; search results are not refreshed.",
-  "open-meteo-london: Open-Meteo answered 429 (too many requests) at 11:00, about 12:05 and 13:08 UTC, 19 Nov. Respected: collect/run.mjs now waits a whole cadence after a refused run (429 or 403) before trying a 6-hourly or daily source again, so the next try is at the 19:03 wake. London forecast kept from the 06:15 UTC read; its block states its 6-hour cadence.",
+  "open-meteo-london: Open-Meteo answered 429 (too many requests) at 11:00, about 12:05 and 13:08 UTC, 19 Nov. Respected: a refused 6-hourly or daily source now waits at least 4 hours before the next try, so the next try is the 18:03 Lisbon wake. London forecast kept from the 06:15 UTC read.",
   "github-pt: GitHub search answered 403 to 21 of 22 unauthenticated reads (about 12:05 UTC, 19 Nov); the earlier results are kept. Respected, not worked around."
  ]
 }

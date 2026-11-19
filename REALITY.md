@@ -71,11 +71,11 @@ A thing not written here does not exist. Kept by data.b@PrompTugal.dinis (accoun
 - `/api/v1/index.json` (the catalogue), `/api/v1/openapi.json` (OpenAPI 3.1, every path, schemas inferred from real files, real examples), `/api/v1/<id>/{latest,reads,card,openapi}.json`, `/api/v1/storm-charles-archive/manifest.json`, `/api/v1/by-place/now/<place>.json` and its `index.json`. The stability promise is `/api/v1/README.md`.
 - The other four sites' own API addresses on `/api/` are intended addresses, not checked.
 
-## Collection by CI
+## Collection
 
-- 18 November, about 15:00 UTC: GitHub fired only 2 scheduled runs since midnight (02:26 and 11:39 UTC); a second schedule time each hour (:47) was added. `/pipeline/` shows the pipeline and what each store keeps: the raw bytes of each CI read are not kept anywhere until the vault secrets exist.
-
-- `.github/workflows/pages.yml` runs hourly at :17 and on every push to dev: collect (continuing the read history from the live site), push to the vaults, build, gate, leak scan, deploy. A scheduled run keeps the current version and does not tag. Seen working on the push of 17 November: v0.1.2 deployed at 19:41 UTC with every source read by CI itself between 19:38 and 19:41 UTC. **The hourly schedule fired once:** a scheduled run at 02:26 UTC on 18 November (run 8, success); none before (from 19:38 UTC on 17 November) and none after, up to 09:40 UTC. GitHub delays and drops scheduled runs; the cause is not known. Until it fires reliably, data is collected on each push to dev.
+- **Since 19 November, about 16:30 UTC (Dinis: "we don't need hourly updates"; PrompTugal__News__Website board/guidance/2026-11-19-twice-a-day.md):** data.b@'s wake runs twice a day, at 07:03 and 18:03 Lisbon. Each wake runs `collect/run.mjs` (the sources marked hourly every time; the 6-hourly and daily ones when due), commits `data/` and the served raw files as a signed commit, and pushes. Served files state a cadence of twice a day, stale after 13 hours. From about 01:20 to 16:30 UTC that day the wake ran hourly.
+- **GitHub collects nothing and runs nothing on a timer** (since 19 November, about 01:20 UTC: every run starts from a commit). A push to dev runs `.github/workflows/pages.yml`: the build and its checks, then a separate verify job (signatures, trailers and the leak scan, run from the last verified commit's copy and never from the pushed tree), then deploy and tag, on dev only.
+- A source that refuses (HTTP 429 or 403) is not retried at once: a 6-hourly or daily source waits at least 4 hours. Each refusal is recorded in its reads.json and in board/team/data/status.json.
 - **The vaults are only updated by CI once the secrets `SG_SEND_ACCESS_TOKEN` and `DATA_VAULT_KEYS` exist in this repository.** They do not exist yet. Until then the vaults hold the reads made in data@'s session on 17 November.
 
 ## The vaults

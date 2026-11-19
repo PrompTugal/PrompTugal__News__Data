@@ -57,8 +57,12 @@ const licensed = stampLicences(OUT);
 // data in the browser (Dinis, 19 Nov 2026 ~01:13 UTC, PrompTugal__News__Website board/guidance/2026-11-19-load-the-data-in-the-browser.md):
 // every latest file at a stable URL carries data_read_at, its expected cadence (so a page can mark it stale) and its schema
 const CADENCE_S = { hourly: 3600, 'every 6 hours': 21600, daily: 86400 };
+// Dinis, 19 Nov 2026 ~16:30 UTC (PrompTugal__News__Website board/guidance/2026-11-19-twice-a-day.md): data.b@'s wake runs twice a
+// day (07:03 and 18:03 Lisbon), so an hourly or 6-hourly source is in fact read twice a day. expected_cadence states that, with
+// stale_after_seconds of 13 hours as the guidance asks; collected_as keeps the source's own cadence from its card.
+const SERVED = c => c === 'daily' ? { name: 'daily', seconds: 86400, stale_after_seconds: 93600 } : { name: 'twice a day', seconds: 43200, stale_after_seconds: 46800 };
 const meta = (rel, read, cadence, schema) => { const f = join(OUT, rel); let o; try { o = JSON.parse(readFileSync(f, 'utf8')); } catch { return; }
-  const out = { data_read_at: read || o.read_at || o.provenance?.read_at || null, expected_cadence: cadence ? { name: cadence, seconds: CADENCE_S[cadence] || null } : null, schema, ...o };
+  const out = { data_read_at: read || o.read_at || o.provenance?.read_at || null, expected_cadence: cadence ? { ...SERVED(cadence), collected_as: cadence, why: 'data.b@ collects twice a day (07:03 and 18:03 Lisbon) since 19 Nov 2026' } : null, schema, ...o };
   writeFileSync(f, JSON.stringify(out, null, 1) + '\n'); };
 for (const s of sources) meta(`api/v1/${s.id}/latest.json`, s.latest?.read_at || s.latest?.provenance?.read_at, s.card.schedule?.cadence, { openapi: `https://data.promptugal.news/api/v1/${s.id}/openapi.json`, path: `/api/v1/${s.id}/latest.json`, version: 'v1' });
 for (const f of readdirSync(join(OUT, 'api/v1/by-place/now')).filter(f => f.endsWith('.json') && f !== 'index.json')) meta(`api/v1/by-place/now/${f}`, null, 'hourly', { openapi: 'https://data.promptugal.news/api/v1/openapi.json', path: `/api/v1/by-place/now/${f}`, version: 'v1' });
