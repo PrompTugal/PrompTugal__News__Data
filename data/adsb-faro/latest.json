@@ -1,11 +1,11 @@
 {
  "source": "adsb-faro",
  "title": "Flights around Faro airport",
- "read_at": "2026-11-19T07:04:00Z",
+ "read_at": "2026-11-19T08:04:08Z",
  "provenance": {
   "source": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
   "page": "https://globe.adsb.lol/?lat=37.014&lon=-7.966&zoom=9",
-  "read_at": "2026-11-19T07:04:00Z",
+  "read_at": "2026-11-19T08:04:08Z",
   "by": "sources/adsb-faro/collect.mjs (code, no model; run by data@PrompTugal.dinis)",
   "terms": "adsb.lol: its API data is licensed under the Open Database License (ODbL 1.0): share-alike, with attribution; no key needed up to 500 requests a day per address.",
   "licence": "ODbL 1.0 (adsb.lol)"
@@ -18,66 +18,30 @@
   "lon": -7.9659,
   "within_nm": 40
  },
- "feed_time_ms": 1795071840501,
+ "feed_time_ms": 1795075449000,
  "counts": {
-  "airline": 4,
-  "other_aircraft": 0,
+  "airline": 1,
+  "other_aircraft": 1,
   "other_on_ground": 0,
   "by_airline": {
-   "EJU": 1,
-   "RYR": 1,
-   "TAP": 1,
-   "TRA": 1
+   "IBS": 1
   },
   "by_altitude_band": {
    "15,000 to 30,000 ft": 1,
-   "30,000 ft and above": 3
+   "30,000 ft and above": 1
   }
  },
  "airline": [
   {
-   "callsign": "EJU53DE",
-   "airline_icao": "EJU",
+   "callsign": "IBS15UN",
+   "airline_icao": "IBS",
    "type": "A320",
-   "alt_ft": 39000,
+   "alt_ft": 35975,
    "on_ground": false,
-   "ground_speed_kt": 408.1,
-   "track_deg": 185.77,
-   "lat": 36.85,
-   "lon": -7.77
-  },
-  {
-   "callsign": "RYR24GK",
-   "airline_icao": "RYR",
-   "type": "B738",
-   "alt_ft": 36000,
-   "on_ground": false,
-   "ground_speed_kt": 474.4,
-   "track_deg": 14.65,
-   "lat": 36.96,
-   "lon": -7.98
-  },
-  {
-   "callsign": "TAP901",
-   "airline_icao": "TAP",
-   "type": "A319",
-   "alt_ft": 29600,
-   "on_ground": false,
-   "ground_speed_kt": 350.7,
-   "track_deg": 290.71,
-   "lat": 37.48,
-   "lon": -8.46
-  },
-  {
-   "callsign": "TRA59X",
-   "airline_icao": "TRA",
-   "type": "B738",
-   "alt_ft": 37000,
-   "on_ground": false,
-   "ground_speed_kt": 426.2,
-   "track_deg": 185.79,
-   "lat": 36.55,
-   "lon": -7.81
+   "ground_speed_kt": 495.4,
+   "track_deg": 49.91,
+   "lat": 36.76,
+   "lon": -7.79
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T07:07:57Z",
+ "at": "2026-11-19T08:08:01Z",
  "sources": [
   {
    "id": "adsb-faro",
@@ -16,12 +16,6 @@
   {
    "id": "ea-flood",
    "ok": 23,
-   "failed": 0,
-   "wrote": true
-  },
-  {
-   "id": "eurostat-tourism",
-   "ok": 3,
    "failed": 0,
    "wrote": true
   },
@@ -70,12 +64,6 @@
   {
    "id": "tfl-jamcams",
    "ok": 1,
-   "failed": 0,
-   "wrote": true
-  },
-  {
-   "id": "youtube-replays",
-   "ok": 3,
    "failed": 0,
    "wrote": true
   }
