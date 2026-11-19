@@ -42,7 +42,7 @@ const register = buildRegister(sources);
 const discovery = buildDiscovery();
 buildPreview({ sources, builtAt });
 buildHistory(sources); buildEventsHistory(sources);   // /api/v1/history/ (Dinis, 19 Nov 2026 ~01:17 UTC: show the past)
-if (bar.html) write('assets/sites-bar/last.txt', bar.html + '\n');   // the fallback a later build uses if the registry is down   // /preview.svg for the sites bar (Dinis, 18 Nov 2026 ~22:00 UTC)
+// (no last.txt fallback since 1.1.1: an unchecked bar is never published)   // /preview.svg for the sites bar (Dinis, 18 Nov 2026 ~22:00 UTC)
 buildAttribution({ sources, events, discovery });   // the attribution ledger for the simulated payouts (Dinis, 18 Nov 2026)
 const pages = buildPages({ sources, places, readAt, index, storm, events, register, discovery });
 
