@@ -12,7 +12,8 @@ import { stampLicences, commercialTable } from './build/licence.mjs';
 import { buildCameras } from './build/cameras.mjs';
 import { buildPreview } from './build/preview.mjs';
 import { buildHistory, buildEventsHistory } from './build/history.mjs';
-import { sitesBar } from './build/sitesbar.mjs';
+import { sitesBar, REGISTRY_READ } from './build/sitesbar.mjs';
+import { injectObsTz } from './build/obstz.mjs';
 import { setSitesBar } from './build/render.mjs';
 import { buildAttribution } from './build/attribution.mjs';
 import { buildPages } from './build/pages.mjs';
@@ -21,7 +22,7 @@ const builtAt = new Date().toISOString();
 rmSync(OUT, { recursive: true, force: true });
 cpSync('src', OUT, { recursive: true });
 
-const bar = await sitesBar(); setSitesBar(bar.html);   // sites bar 1.1.0 (Dinis, 18 Nov 2026)
+const bar = await sitesBar(); setSitesBar(bar.html); console.log('obs tz table: ' + injectObsTz(OUT, REGISTRY_READ));   // sites bar 1.1.0 (Dinis, 18 Nov 2026)
 console.log(`sites bar: ${bar.html ? 'rendered' : 'left out'} (${bar.from})`);
 const sources = loadSources();
 const places = loadPlaces();

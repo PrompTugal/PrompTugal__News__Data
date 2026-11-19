@@ -18,10 +18,11 @@ const FILES = { render: 'sites-bar-render.mjs', js: 'sites-bar.js', css: 'sites-
 const REGISTRY = 'https://promptugal.news/api/v1/sites.json';
 const HERE = 'data.promptugal.news';
 
+export let REGISTRY_READ = null;   // the registry as read by this build (also used for obs_tz)
 export async function sitesBar() {
   const get = async (u, json) => { const r = await fetch(u, { signal: AbortSignal.timeout(15000), redirect: 'error' }); if (!r.ok) throw new Error(String(r.status)); return json ? r.json() : r.text(); };
   let reg;
-  try { reg = await get(REGISTRY, true); } catch { return { html: '', from: 'none (the registry could not be read, so the files could not be checked against their pins)' }; }
+  try { reg = await get(REGISTRY, true); REGISTRY_READ = reg; } catch { return { html: '', from: 'none (the registry could not be read, so the files could not be checked against their pins)' }; }
   const pins = (reg && reg.bar && reg.bar.integrity) || {};
   if (!reg.bar || reg.bar.version !== SITES_BAR) return { html: '', from: `none (the registry names version ${reg.bar && reg.bar.version}, this site vendors ${SITES_BAR})` };
   for (const [k, f] of Object.entries(FILES)) {

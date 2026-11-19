@@ -69,22 +69,12 @@
         // ~03:15 UTC, PrompTugal__News__Website board/guidance/2026-11-19-no-ip-lookup-predictions-and-small-decisions.md:
         // "remove the IP base. So we're going to keep the country still"). No region, city or map position; a zone not in the
         // table gives an empty country. No third party is asked where a reader is.
-        // a Map, not a plain object, and only a two-letter A-Z result: a browser may report any zone name, "__proto__" included
-        // (events.b@'s security review, relayed by conductor.b@ 19 Nov 2026 03:23 UTC)
-        const TZ_CC = new Map(Object.entries({ 'Europe/Lisbon': 'PT', 'Atlantic/Madeira': 'PT', 'Atlantic/Azores': 'PT', 'Europe/London': 'GB', 'Europe/Belfast': 'GB',
-            'Europe/Dublin': 'IE', 'Europe/Madrid': 'ES', 'Atlantic/Canary': 'ES', 'Africa/Ceuta': 'ES', 'Europe/Paris': 'FR', 'Europe/Berlin': 'DE',
-            'Europe/Amsterdam': 'NL', 'Europe/Brussels': 'BE', 'Europe/Luxembourg': 'LU', 'Europe/Zurich': 'CH', 'Europe/Vienna': 'AT',
-            'Europe/Rome': 'IT', 'Europe/Copenhagen': 'DK', 'Europe/Stockholm': 'SE', 'Europe/Oslo': 'NO', 'Europe/Helsinki': 'FI',
-            'Europe/Warsaw': 'PL', 'Europe/Prague': 'CZ', 'Europe/Budapest': 'HU', 'Europe/Athens': 'GR', 'Europe/Bucharest': 'RO',
-            'Europe/Sofia': 'BG', 'Europe/Kiev': 'UA', 'Europe/Kyiv': 'UA', 'Europe/Istanbul': 'TR', 'Europe/Tallinn': 'EE', 'Europe/Riga': 'LV',
-            'Europe/Vilnius': 'LT', 'Europe/Zagreb': 'HR', 'Europe/Ljubljana': 'SI', 'Europe/Bratislava': 'SK', 'Europe/Malta': 'MT',
-            'Asia/Nicosia': 'CY', 'Atlantic/Reykjavik': 'IS', 'America/New_York': 'US', 'America/Chicago': 'US', 'America/Denver': 'US',
-            'America/Los_Angeles': 'US', 'America/Phoenix': 'US', 'America/Anchorage': 'US', 'Pacific/Honolulu': 'US', 'America/Toronto': 'CA',
-            'America/Vancouver': 'CA', 'America/Sao_Paulo': 'BR', 'America/Mexico_City': 'MX', 'America/Argentina/Buenos_Aires': 'AR',
-            'Africa/Luanda': 'AO', 'Africa/Maputo': 'MZ', 'Atlantic/Cape_Verde': 'CV', 'Africa/Bissau': 'GW', 'Africa/Sao_Tome': 'ST',
-            'Asia/Dili': 'TL', 'Asia/Macau': 'MO', 'Asia/Kolkata': 'IN', 'Asia/Shanghai': 'CN', 'Asia/Tokyo': 'JP', 'Asia/Singapore': 'SG',
-            'Asia/Dubai': 'AE', 'Australia/Sydney': 'AU', 'Australia/Melbourne': 'AU', 'Pacific/Auckland': 'NZ', 'Africa/Johannesburg': 'ZA' }))
-        const place = () => { let z = ''; try { z = String(Intl.DateTimeFormat().resolvedOptions().timeZone || '') } catch { } const cc = TZ_CC.get(z); return { country_code: typeof cc === 'string' && /^[A-Z]{2}$/.test(cc) ? cc : '' } }
+        // the one shared table (promptugal.news assets/obs/tz-country.json, pinned by obs_tz in the sites registry): written in
+        // at build by scripts/build/obstz.mjs only after its full integrity string matches; empty (no country sent) otherwise.
+        // A null-prototype map, a zone looked up only as an own key, two letters A to Z only (security, 19 Nov 2026).
+        const ZONES = /*OBS_TZ_ZONES*/{}/*END_OBS_TZ_ZONES*/
+        const TZ_CC = Object.assign(Object.create(null), ZONES)
+        const place = () => { let z = ''; try { z = String(Intl.DateTimeFormat().resolvedOptions().timeZone || '') } catch { } const cc = Object.prototype.hasOwnProperty.call(TZ_CC, z) ? TZ_CC[z] : ''; return { country_code: typeof cc === 'string' && /^[A-Z]{2}$/.test(cc) ? cc : '' } }
         // a link's tag (Dinis, 6 November: "I just sent a link to somebody ... I would like to see if they open it ... and
         // forward it"): ?via=<tag> (or utm_source / utm_campaign) on the link you send. Kept for the tab, so the pages read
         // after arriving count too; a tag names the link, never the person. Letters, digits, '.', '_' and '-', 40 at most.
