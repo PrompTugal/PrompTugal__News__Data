@@ -7,7 +7,9 @@
 # release.sh the commit /version.json serves, which only a passing run's deployment writes. Tags are not used. The caller checks the range <anchor>..<after>, so commits from a dropped run are
 # covered. It fails, never falling back to the pushed tree or the trusted base's copy, when the anchor is missing or a zero
 # id, when it is not an ancestor of <after>, when the checkout is shallow, or when the anchor has no copy of a check.
-# Tests: scripts/test-check-signatures.mjs. data.b@PrompTugal.dinis.
+# Every config file comes from the anchor too (signals.b@'s finding, 75a59d0): commit-exemptions.json here; the keys come from
+# each commit's parent through git; the leak scan's allowlist is in its code. A pushed .gitattributes cannot steer git show
+# (no textconv, no attributes file). Tests: scripts/test-check-signatures.mjs. data.b@PrompTugal.dinis.
 set -euo pipefail
 anchor="${1:-}"; after="${2:-}"; out="${3:-}"
 fail() { echo "trusted-checks: $*" >&2; exit 1; }
@@ -24,8 +26,8 @@ for f in check-commits.mjs check-signatures.mjs leak-scan.mjs; do
   git cat-file -e "$anchor:scripts/$f" 2>/dev/null || fail "the anchor ${anchor:0:8} has no copy of scripts/$f"
   mode=$(git ls-tree "$anchor" "scripts/$f" | cut -c1-6)   # control 9: a symlink on a checker path is refused
   [ "$mode" = 100644 ] || [ "$mode" = 100755 ] || fail "the anchor's scripts/$f is not a plain file (mode $mode)"
-  git show "$anchor:scripts/$f" > "$out/$f"
+  git -c core.attributesFile=/dev/null show --no-textconv "$anchor:scripts/$f" > "$out/$f"
 done
 rm -f "$out/commit-exemptions.json"
-if git cat-file -e "$anchor:scripts/commit-exemptions.json" 2>/dev/null; then git show "$anchor:scripts/commit-exemptions.json" > "$out/commit-exemptions.json"; fi
+if git cat-file -e "$anchor:scripts/commit-exemptions.json" 2>/dev/null; then git -c core.attributesFile=/dev/null show --no-textconv "$anchor:scripts/commit-exemptions.json" > "$out/commit-exemptions.json"; fi
 echo "$anchor"

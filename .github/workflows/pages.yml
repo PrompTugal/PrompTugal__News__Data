@@ -112,6 +112,16 @@ jobs:
         with:
           name: github-pages
           path: ${{ runner.temp }}/pages
+      # events.b@'s finding (188bcf8): unpack the built site before any trusted copy exists, after vetting the listing (plain
+      # files and folders only, no absolute path, no ..), so no archive member can write through a link into the checks
+      - name: Unpack the built site, as data
+        run: |
+          set -euo pipefail
+          tar -tvf "$RUNNER_TEMP/pages/artifact.tar" > "$RUNNER_TEMP/pages/listing.txt"
+          if grep -qv '^[-d]' "$RUNNER_TEMP/pages/listing.txt"; then echo "the artifact holds a member that is not a plain file or folder" >&2; exit 1; fi
+          if tar -tf "$RUNNER_TEMP/pages/artifact.tar" | grep -qE '^/|(^|/)\.\.(/|$)'; then echo "the artifact holds an absolute path or .." >&2; exit 1; fi
+          rm -rf _site && mkdir _site && tar --no-same-owner --no-same-permissions -xf "$RUNNER_TEMP/pages/artifact.tar" -C _site
+          if [ -n "$(find _site -type l | head -1)" ]; then echo "the built site holds a symlink" >&2; exit 1; fi
       - name: Signatures, trailers and the leak scan, from the anchor
         env:
           AFTER: ${{ github.sha }}
@@ -132,13 +142,13 @@ jobs:
           git merge-base --is-ancestor "$anchor" "$AFTER" || { echo "the anchor is not an ancestor of the pushed commit" >&2; exit 1; }
           mode=$(git ls-tree "$anchor" scripts/trusted-checks.sh | cut -c1-6)
           [ "$mode" = 100644 ] || [ "$mode" = 100755 ] || { echo "the anchor's scripts/trusted-checks.sh is missing or not a plain file" >&2; exit 1; }
-          git show "$anchor:scripts/trusted-checks.sh" > "$RUNNER_TEMP/trusted-checks.sh"
+          [ ! -e "$RUNNER_TEMP/trusted" ] || { echo "the trusted folder exists before it is written" >&2; exit 1; }
+          git -c core.attributesFile=/dev/null show --no-textconv "$anchor:scripts/trusted-checks.sh" > "$RUNNER_TEMP/trusted-checks.sh"
           trusted=$(bash "$RUNNER_TEMP/trusted-checks.sh" "$anchor" "$AFTER" "$RUNNER_TEMP/trusted")
           "$NODE" "$RUNNER_TEMP/trusted/check-commits.mjs" "$trusted" "$AFTER"
           "$NODE" "$RUNNER_TEMP/trusted/check-signatures.mjs" "$trusted" "$AFTER"
-          # the built site, as data: unpacked from the artifact, no symlink allowed
-          rm -rf _site && mkdir _site && tar --no-same-owner --no-same-permissions -xf "$RUNNER_TEMP/pages/artifact.tar" -C _site
-          if [ -n "$(find _site -type l | head -1)" ]; then echo "the built site holds a symlink" >&2; exit 1; fi
+          # the built site was unpacked in the step before (the deployed artifact is the scanned one); check for links again
+          if [ -n "$(find _site "$RUNNER_TEMP/trusted" -type l | head -1)" ]; then echo "a symlink in the built site or the trusted folder" >&2; exit 1; fi
           "$NODE" "$RUNNER_TEMP/trusted/leak-scan.mjs"
   deploy:
     needs: [build, verify]

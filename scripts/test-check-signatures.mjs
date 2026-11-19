@@ -112,12 +112,18 @@ const withChecks = name => { const r = setup(name); r.commit('adds the other che
   expect('(8) a backdated orphan merged in fails (skips go by ancestry, never by date)', r.check(r.base, 'HEAD'), false, 'no parent (an orphan)'); }
 { const r = withChecks('symlink'); r.g('rm', '-q', 'scripts/leak-scan.mjs'); execFileSync('ln', ['-s', '/etc/hostname', join(r.d, 'scripts', 'leak-scan.mjs')]); const anchor = r.commit('a symlink on a checker path', { key: A });
   expect('(9) a symlink on a checker path is refused', trustRun(r, anchor, 'HEAD'), false, 'not a plain file'); }
-// control 9, read from this repository's workflow: the verify job runs no pushed code, so a pushed build step that writes
-// GITHUB_ENV (which reaches only later steps of its own job) cannot change its result; deploy needs it
-{ const wf = readFileSync(join(dirname(CHECK), '..', '.github', 'workflows', 'pages.yml'), 'utf8');
+// control 9, read from this repository's workflow with every comment removed first, so no comment can satisfy it
+// (library.b@'s finding, LIB-2026-067): the verify job runs no pushed code and reads no GITHUB_ENV or GITHUB_PATH; deploy
+// needs it; the site is unpacked, after its listing is vetted, before the trusted folder is written (events.b@'s finding)
+{ const wf = readFileSync(join(dirname(CHECK), '..', '.github', 'workflows', 'pages.yml'), 'utf8').split('\n').filter(l => !/^\s*#/.test(l)).map(l => l.replace(/\s+#\s.*$/, '')).join('\n');
   const job = (wf.split('\n  verify:\n')[1] || '').split(/\n  [a-z-]+:\n/)[0];
-  const pushed = job.split('\n').filter(l => /(^|[\s;&|(])(node|bash|sh|"\$NODE")\s+(\.\/)?(scripts|collect|src|sources)\//.test(l) || /GITHUB_ENV|GITHUB_PATH/.test(l));
-  results.push({ name: '(9) the verify job runs no pushed code and reads no GITHUB_ENV, and deploy needs it', pass: job.length > 0 && pushed.length === 0 && /\n  deploy:\n    needs: \[[^\]]*\bverify\b/.test(wf), out: pushed.join(' | ') || (job ? 'deploy does not need verify' : 'no verify job') }); }
+  const lines = job.split('\n');
+  const pushed = lines.filter(l => /(^|[\s;&|(])(node|bash|sh|"\$NODE")\s+(\.\/)?(scripts|collect|src|sources)\//.test(l) || /GITHUB_ENV|GITHUB_PATH/.test(l));
+  const at = re => lines.findIndex(l => re.test(l));
+  const vet = at(/tar -tvf/), unpack = at(/tar --no-same-owner/), trusted = at(/trusted-checks\.sh"? >|show .*trusted-checks\.sh/);
+  const deployNeeds = /\n  deploy:\n    needs: \[[^\]\n]*\bverify\b[^\]\n]*\]/.test(wf);
+  results.push({ name: '(9) the verify job runs no pushed code and reads no GITHUB_ENV, and deploy needs it', pass: job.length > 0 && pushed.length === 0 && deployNeeds, out: pushed.join(' | ') || (job ? 'deploy does not need verify' : 'no verify job') });
+  results.push({ name: '(9) the site is unpacked, after its listing is vetted, before any trusted copy is written', pass: vet >= 0 && unpack > vet && trusted > unpack, out: `vet ${vet}, unpack ${unpack}, trusted ${trusted}` }); }
 
 rmSync(tmp, { recursive: true, force: true });
 const bad = results.filter(r => !r.pass);

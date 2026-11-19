@@ -2,7 +2,12 @@
 // Tests for scripts/leak-scan.mjs (security@'s rulings of 19 Nov 2026, 01:20 and 05:09 UTC, PrompTugal__News__Website
 // 312c46011f and 1acd10498): each key rule fails where it should and passes only the published field. Key-shaped strings are
 // built from parts at run time, so this file holds none. Prints OK or the failing cases and exits 1. data.b@PrompTugal.dinis.
-import { scanText } from './leak-scan.mjs';
+import { scanText, scanBinary } from './leak-scan.mjs';
+import { mkdtempSync, mkdirSync, writeFileSync, symlinkSync, rmSync } from 'node:fs';
+import { join, dirname } from 'node:path';
+import { tmpdir } from 'node:os';
+import { execFileSync, spawnSync } from 'node:child_process';
+import { fileURLToPath } from 'node:url';
 import { generateKeyPairSync } from 'node:crypto';
 
 const D = '-'.repeat(5);
@@ -27,6 +32,15 @@ for (const type of ['ssh-ed25519', 'ssh-rsa', 'ecdsa-sha2-nistp256', 'ecdsa-sha2
 expect('an ssh public key in another field of the keys file fails', 'team/keys.json', keys({ other: sshLine }), 'ssh public key outside');
 expect('an ssh public key with a comment in the published field fails', 'team/keys.json', keys({ ssh_signing: { public_key: sshLine + ' me@host' } }), 'does not match its pattern');
 expect('the published field passes', 'team/keys.json', keys({}), null);
+
+// library.b@'s finding (LIB-2026-067): a file holding a NUL byte is checked, not skipped; a symlink is refused, not followed
+{ const k = scanBinary(Buffer.concat([Buffer.from([0x89, 0x50, 0x4e, 0x47, 0, 0, 1]), Buffer.from(`${D}BEGIN OPENSSH PRIVATE KEY${D}`), Buffer.from([0, 2])])).map(f => f.kind);
+  cases.push({ name: 'a private-key header in a file holding a NUL byte fails', ok: k.some(x => x.includes('private key block')), got: k.join(',') }); }
+{ const k = scanBinary(Buffer.from([0x89, 0x50, 0x4e, 0x47, 0, 0, 1, 2, 3, 255, 0])).map(f => f.kind); cases.push({ name: 'a plain binary file passes', ok: k.length === 0, got: k.join(',') }); }
+{ const d = mkdtempSync(join(tmpdir(), 'leaktest-')); const g = (...a) => execFileSync('git', a, { cwd: d, stdio: 'ignore' });
+  g('init', '-q'); mkdirSync(join(d, '_site')); writeFileSync(join(d, '_site', 'index.html'), '<p>ok</p>\n'); symlinkSync('/etc/hostname', join(d, '_site', 'link.txt'));
+  const r = spawnSync('node', [join(dirname(fileURLToPath(import.meta.url)), 'leak-scan.mjs')], { cwd: d, encoding: 'utf8' });
+  cases.push({ name: 'a symlink in the built site fails', ok: r.status === 1 && r.stderr.includes('a symlink'), got: (r.stdout + r.stderr).trim().split('\n')[0] }); rmSync(d, { recursive: true, force: true }); }
 
 const bad = cases.filter(c => !c.ok);
 for (const c of cases) console.log(`${c.ok ? 'pass' : 'FAIL'}  ${c.name}${c.ok ? '' : `  [${c.got}]`}`);
