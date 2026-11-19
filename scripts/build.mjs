@@ -29,7 +29,6 @@ const bar = await sitesBar(); setSitesBar(bar.html);
 const OFF = [];
 if (bar.off) { OFF.push(bar.off); rmSync(join(OUT, 'assets/sites-bar'), { recursive: true, force: true }); console.log(bar.off); }
 { const t = injectObsTz(OUT, REGISTRY_READ); if (t.off) { OFF.push(t.off); console.log(t.off) } else console.log(t.ok) }
-{ const P = Object.values(JSON.parse(readFileSync('register/places.json', 'utf8')).places || {}); const t = placePtmap(OUT, REGISTRY_READ, P); if (t.off) { OFF.push(t.off); console.log(t.off) } else console.log(t.ok) }   // the shared map (Dinis, 19 Nov 2026 ~17:40 UTC)   // sites bar 1.1.0 (Dinis, 18 Nov 2026)
 console.log(`sites bar: ${bar.html ? 'rendered' : 'left out'} (${bar.from || bar.off})`);
 const sources = loadSources();
 const places = loadPlaces();
@@ -74,6 +73,8 @@ const walk = d => readdirSync(d).flatMap(f => { const p = join(d, f); return sta
 for (const [dir, cad] of [['api/v1/events/by-place', 'hourly'], ['api/v1/events/claims', 'hourly'], ['api/v1/events/past', 'hourly'], ['api/v1/history/events', 'hourly'], ['api/v1/history/weather', 'hourly'], ['api/v1/history', 'hourly'], ['api/v1/cameras/history', 'hourly'], ['api/v1/social/by-place', 'hourly'], ['api/v1/discovery/by-place', 'daily']])
   if (existsSync(join(OUT, dir))) for (const f of walk(join(OUT, dir)).filter(f => f.endsWith('.json'))) { if (dir === 'api/v1/history' && f.slice(join(OUT, dir).length + 1).includes('/')) continue; meta(f.slice(OUT.length + 1), null, cad, { openapi: 'https://data.promptugal.news/api/v1/openapi.json', path: '/' + f.slice(OUT.length + 1), version: 'v1' }) }
 meta('api/v1/cameras/index.json', null, 'hourly', { openapi: 'https://data.promptugal.news/api/v1/openapi.json', path: '/api/v1/cameras/index.json', version: 'v1' });   // every JSON item carries its licence (Dinis, 18 Nov 2026)
+// the shared map, once every page is written (it fills the <!--PTMAP--> marker; placed earlier it found no page)
+{ const P = Object.values(JSON.parse(readFileSync('register/places.json', 'utf8')).places || {}); const t = placePtmap(OUT, REGISTRY_READ, P); if (t.off) { OFF.push(t.off); console.log(t.off) } else console.log(t.ok) }   // the shared map (Dinis, 19 Nov 2026 ~17:40 UTC)   // sites bar 1.1.0 (Dinis, 18 Nov 2026)
 for (const f of walk(OUT)) {
   if (f.includes('/vendor/') || !/\.(html|js|css|json|md|txt|xml)$/.test(f)) continue;
   const s = readFileSync(f, 'utf8');
