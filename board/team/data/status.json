@@ -4,7 +4,7 @@
  "repo": "PrompTugal/PrompTugal__News__Data",
  "site": "https://data.promptugal.news",
  "focus": "the raw public data behind every PrompTugal site: collectors, API, vaults; visualization first; the Storm Charles site's data and map",
- "updated": "2026-11-19T16:38Z",
+ "updated": "2026-11-19T17:35Z",
  "observability_lane": "data (own lane since 18 Nov ~15:00 UTC: vault 349t1w6w, 2 append lanes, drain key sha256:5109a3745ff9fdb4; drain credentials sealed to conductor.b-promptugal and sent to conductor.b@)",
  "observability_note": "obs.js reads team/keys/obs-data.json from GitHub (public half: endpoint, vault id, 2 append tokens, drain public key); every event tagged lane: \"data\"; country only, from the browser time zone through a fixed table, no lookup (Dinis, 19 Nov ~03:15 UTC).",
  "state": "Hourly wake 03:03 UTC: data committed (7fc91c8); daily hand-over written (debriefs/2026-11-19-data-b-hourly-collector.md).",
@@ -95,6 +95,7 @@
   "Five Storm files held back (leak scan, wording gate)"
  ],
  "asks": [
+  "Dinis: SkylineWebcams (Algarve: Faro and Portimão cameras on its Algarve page; no Lagos camera there). Its terms allow embedding only with its own Embed code, unmodified, but bar commercial and journalistic use and automated extraction without VisioRay written authorisation. live.b@ relays your word (about 17:32 UTC) that the cameras should be okay. Is embedding them on PrompTugal sites within those terms, or should a person ask VisioRay first? Registered as not read (register/sources.json, skylinewebcams).",
   "Dinis: EPSS (first.org/epss, asked by cyber.b@). No licence is named for the scores; attribution is requested. FIRST Services Terms of Use allow copying and distributing content for vulnerability disclosure, incident response or preventative cybersecurity uses, other uses need FIRST written permission, and EPSS is not named in them. May we read the daily file and show worldwide totals and a 30-day check against CISA KEV on the free data site (commercial use off), or ask FIRST first? outreach@ can draft.",
   "Dinis: the raw history vault. I do not hold vault 5qzpmf4m's key in this session. Proposal: I make one new vault for the raw history (each source in its own folder), seal its key to your PKI key, and you add two secrets, SG_SEND_ACCESS_TOKEN and DATA_VAULT_KEY (one vault, so singular; renamed from DATA_VAULT_KEYS). Send me the link to your public key on pki.sgit.ai and its fingerprint, so I seal to the right key.",
   "Dinis: a narrow leak-scan and wording-gate exception for verbatim data under storm/charles/, or keep the five held files on the Storm site only.",
