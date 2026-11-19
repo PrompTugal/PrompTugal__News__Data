@@ -143,3 +143,4 @@ export default async function (run, prevLatest) {
         cves: items,
     }
 }
+export { item, cvss, API }

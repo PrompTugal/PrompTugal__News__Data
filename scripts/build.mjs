@@ -50,7 +50,7 @@ writeJson('api/v1/sources/commercial.json', commercialTable(sources));   // whic
 const licensed = stampLicences(OUT);
 // data in the browser (Dinis, 19 Nov 2026 ~01:13 UTC, PrompTugal__News__Website board/guidance/2026-11-19-load-the-data-in-the-browser.md):
 // every latest file at a stable URL carries data_read_at, its expected cadence (so a page can mark it stale) and its schema
-const CADENCE_S = { hourly: 3600, 'every 6 hours': 21600 };
+const CADENCE_S = { hourly: 3600, 'every 6 hours': 21600, daily: 86400 };
 const meta = (rel, read, cadence, schema) => { const f = join(OUT, rel); let o; try { o = JSON.parse(readFileSync(f, 'utf8')); } catch { return; }
   const out = { data_read_at: read || o.read_at || o.provenance?.read_at || null, expected_cadence: cadence ? { name: cadence, seconds: CADENCE_S[cadence] || null } : null, schema, ...o };
   writeFileSync(f, JSON.stringify(out, null, 1) + '\n'); };

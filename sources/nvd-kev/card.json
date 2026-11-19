@@ -1,0 +1,97 @@
+{
+ "id": "nvd-kev",
+ "title": "NVD's record of every CVE on CISA's KEV list",
+ "what": "NIST's National Vulnerability Database, CVE API 2.0 with the hasKev filter: every CVE on CISA's Known Exploited Vulnerabilities list as NVD records it (CNA domain, status, CVSS, weakness types, vendors and products, published and lastModified, NVD's copy of the KEV dates), once a day. Descriptions and references are not kept.",
+ "publisher": "NIST, National Vulnerability Database (United States)",
+ "owner": "data.b@PrompTugal.dinis",
+ "collector": "sources/nvd-kev/collect.mjs",
+ "source_home": "https://nvd.nist.gov/",
+ "reader_page": "https://nvd.nist.gov/developers/vulnerabilities",
+ "schedule": {
+  "cadence": "daily",
+  "how": "data.b@'s hourly wake runs it when its last read is more than 23.5 hours old: one GET of the CVE API with hasKev (pages of 2000, seven seconds apart, no key), committed with the rest of the data"
+ },
+ "terms": {
+  "summary": "NVD API Terms of Use: the API is for building a service to \"search, display, analyze, retrieve, view and otherwise get\" NVD data; asked to display \"This product uses the NVD API but is not endorsed or certified by the NVD.\"; the NVD name may identify the source but not imply endorsement; if you modify the content you may not attribute it to the NVD (our totals are ours, our per-CVE values are kept as served); public rate limit 5 requests in a rolling 30 seconds without a key (we use none, seven seconds apart); no more than once every two hours (we read every 6 hours). Not reviewed by a person.",
+  "page": "https://nvd.nist.gov/developers/terms-of-use",
+  "read_at": "2026-11-18",
+  "quote": "The NVD API is intended to be used to develop a service or services to search, display, analyze, retrieve, view and otherwise \"get\" information from NVD data.",
+  "quote_lang": "en",
+  "quotes": [
+   {
+    "page": "https://nvd.nist.gov/developers/terms-of-use",
+    "read_at": "2026-11-18",
+    "topic": "attribution notice",
+    "quote": "Services which utilize or access the NVD API are asked to display the following notice prominently within the application: \"This product uses the NVD API but is not endorsed or certified by the NVD.\""
+   },
+   {
+    "page": "https://nvd.nist.gov/developers/terms-of-use",
+    "read_at": "2026-11-18",
+    "topic": "name and endorsement",
+    "quote": "You may use the NVD name in order to identify the source of API content subject to these rules. You may not use the NVD name, to imply endorsement of any product, service, or entity, not-for-profit, commercial or otherwise."
+   },
+   {
+    "page": "https://nvd.nist.gov/developers/terms-of-use",
+    "read_at": "2026-11-18",
+    "topic": "modified content",
+    "quote": "If you modify the content accessed through the API, you may not attribute the source as the NVD."
+   },
+   {
+    "page": "https://nvd.nist.gov/developers/terms-of-use",
+    "read_at": "2026-11-18",
+    "topic": "limits without a key",
+    "quote": "Without an API key, you may make a number of queries equal to the public rate limits posted at nvd.nist.gov/developers. More than the public rate limit requires that you register for an API key."
+   },
+   {
+    "page": "https://nvd.nist.gov/developers/start-here",
+    "read_at": "2026-11-18",
+    "topic": "rate limit",
+    "quote": "The public rate limit (without an API key) is 5 requests in a rolling 30 second window; the rate limit with an API key is 50 requests in a rolling 30 second window."
+   },
+   {
+    "page": "https://nvd.nist.gov/developers/start-here",
+    "read_at": "2026-11-18",
+    "topic": "pacing and frequency",
+    "quote": "No more than once every two hours, automated requests should include a range where lastModStartDate equals the time of the last CVE or CPE received and lastModEndDate equals the current time. It is recommended that users \"sleep\" their scripts for six seconds between requests."
+   },
+   {
+    "page": "https://nvd.nist.gov/developers/terms-of-use",
+    "read_at": "2026-11-18",
+    "topic": "warranty",
+    "quote": "The API is provided \"as is\" and on an \"as-available\" basis."
+   }
+  ],
+  "reading_note": "Both pages are script-rendered (only a shell is served); the text was read from the strings in the page bundle NVD serves for them (https://nvd.nist.gov/main-qn4plkkz.js), which the pages display.",
+  "notice": "This product uses the NVD API but is not endorsed or certified by the NVD.",
+  "republish": "yes, with the notice shown; per-CVE values as served, attributed to the NVD API; totals are our own count and are not attributed to the NVD; no endorsement implied",
+  "open_question": "security@PrompTugal.dinis to review the cyber limits (aggregates only on cyber.promptugal.news; no IPs, hosts or victims). Whether a person wants to register an API key is open; none is used."
+ },
+ "api": {
+  "latest": "https://data.promptugal.news/api/v1/nvd-kev/latest.json",
+  "reads": "https://data.promptugal.news/api/v1/nvd-kev/reads.json",
+  "card": "https://data.promptugal.news/api/v1/nvd-kev/card.json",
+  "openapi": "https://data.promptugal.news/api/v1/nvd-kev/openapi.json",
+  "page": "https://data.promptugal.news/sources/nvd-kev/"
+ },
+ "vault": null,
+ "split": {
+  "code": [
+   "the collector reads NVD's CVE API once a day with hasKev and keeps the per-CVE identifiers and classifications",
+   "data.b@'s hourly wake runs it when due and commits the data; a push builds and deploys"
+  ],
+  "agents": [
+   "data.b@PrompTugal.dinis wrote the collector at cyber.b@'s request (19 Nov 2026)"
+  ],
+  "people": [
+   "Dinis decides"
+  ]
+ },
+ "cost": {
+  "per_run_tokens": 0,
+  "per_run_model_cost_usd": 0,
+  "runner": "one request a day (about 6 MB)",
+  "build_tokens": "not measured",
+  "note": "Code only: no model is called when the data is collected."
+ },
+ "since": "2026-11-19"
+}

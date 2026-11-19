@@ -1,0 +1,23 @@
+{
+ "about": "Every run of sources/nvd-kev/collect.mjs, newest first: each request's address, HTTP status, size, the first 16 hex of its sha256, and whether the bytes changed since the run before. The bytes and the full sha256 go to the source's vault (see card.json: latest/reads-full.json), never to git.",
+ "source": "nvd-kev",
+ "runs": [
+  {
+   "at": "2026-11-19T02:17:02Z",
+   "finished": "2026-11-19T02:17:05Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "kev-0",
+     "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?hasKev&resultsPerPage=2000&startIndex=0",
+     "at": "2026-11-19T02:17:02Z",
+     "status": 200,
+     "bytes": 19509072,
+     "sha256_prefix": "e907292651acdd16",
+     "changed": "first read"
+    }
+   ]
+  }
+ ]
+}

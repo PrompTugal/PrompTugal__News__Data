@@ -20,13 +20,14 @@ const cards = fs.readdirSync(path.join(ROOT, 'sources')).filter(d => fs.existsSy
 // more than one automated read every two hours, and EUVD's run is about 31 requests to ENISA.
 const SIX = 5.5 * 3600e3
 const ageOf = id => { const t = Date.parse(readJson(path.join(ROOT, 'data', id, 'latest.json'), null)?.read_at || ''); return Number.isFinite(t) ? Date.now() - t : Infinity }
-const kept = cards.filter(c => ['hourly', 'every 6 hours'].includes(c.schedule?.cadence))
+const DAILY = 23.5 * 3600e3   // data.b@, 19 Nov 2026: a 'daily' source (nvd-kev) runs when its last read is more than 23.5 hours old
+const kept = cards.filter(c => ['hourly', 'every 6 hours', 'daily'].includes(c.schedule?.cadence))
 const pick = only.length ? cards.filter(c => only.includes(c.id)) : kept
 if (args.includes('--prev')) for (const c of pick) for (const f of ['latest.json', 'reads.json']) {
     const local = path.join(ROOT, 'data', c.id, f); if (fs.existsSync(local)) continue
     try { const r = await fetch(`${SITE}/api/v1/${c.id}/${f}`, { headers: { 'user-agent': UA }, signal: AbortSignal.timeout(20000) }); if (r.ok) writeJson(local, await r.json()) } catch {}
 }
-const due = c => c.schedule?.cadence === 'hourly' || (c.schedule?.cadence === 'every 6 hours' && ageOf(c.id) > SIX)
+const due = c => c.schedule?.cadence === 'hourly' || (c.schedule?.cadence === 'every 6 hours' && ageOf(c.id) > SIX) || (c.schedule?.cadence === 'daily' && ageOf(c.id) > DAILY)
 const todo = only.length ? pick : cards.filter(due)
 const summary = []
 for (const c of todo) {
