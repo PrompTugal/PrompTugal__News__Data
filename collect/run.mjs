@@ -43,5 +43,7 @@ if (todo.some(c => c.id.startsWith('ipma-') || c.id === 'adsb-faro')) await impo
 if (fs.existsSync(path.join(ROOT, 'data', 'events-pt', 'latest.json'))) await import('./events-by-place.mjs')   // also from the copied last read
 if (fs.existsSync(path.join(ROOT, 'data', 'social', 'latest.json'))) await import('./social-by-place.mjs')   // also from the copied last read
 if (fs.existsSync(path.join(ROOT, 'discovery', 'by-place'))) await import('./claims.mjs')   // claims from the stored discovery answers (code, no model)
+// the predictions file for the library's PRED collection (append only; collect/predictions.mjs), after every collection
+{ const { predictions } = await import('./predictions.mjs'); const r = predictions(); console.log(`predictions: ${r.added} added, ${r.outcomes} outcomes`) }
 writeJson(path.join(ROOT, 'data', 'run.json'), { at: now(), sources: summary })
 if (summary.length && summary.every(s => !s.ok)) { console.error('no source could be read'); process.exit(1) }
