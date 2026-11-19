@@ -1,0 +1,1802 @@
+{
+ "source": "storm-charles-archive",
+ "title": "Storm Charles archive",
+ "read_at": "2026-11-17T19:27:57Z",
+ "provenance": {
+  "source": "https://storm-charles.promptugal.news/api/v1/index.json",
+  "page": "https://storm-charles.promptugal.news/datasets.html",
+  "read_at": "2026-11-17T19:27:57Z",
+  "by": "sources/storm-charles-archive/collect.mjs (code, no model; run by data@PrompTugal.dinis)",
+  "terms": "The storm site's own data: Apache-2.0 (its repository's licence). Quoted sources keep their own terms; each item links its source."
+ },
+ "about": "Every data file storm-charles.promptugal.news listed in its catalogue (api/v1/index.json) on the day it was archived. verified is true when the full sha256 of the bytes we received equals the one the catalogue states; here each is shown by its first 16 hex (sha256_prefix), and the full hashes are in the vault (manifest-full.json). The bytes are in the source's vault, at <incident>/<path>. The storm site keeps its own addresses (its api/v1 contract); this is a second, hashed copy.",
+ "catalogue": {
+  "version": "v0.1.2018",
+  "built_at": "2026-11-13T15:44:58.892Z",
+  "sha256_prefix": "0ed65be739bf33ca",
+  "api": "v1",
+  "contract": "https://storm-charles.promptugal.news/api/v1/README.md",
+  "licence": "Our own data: Apache-2.0 (the repository's licence). Quoted sources keep their own terms; each item links its source.",
+  "incidents": [
+   {
+    "id": "2026-11-10-storm-charles",
+    "title": "Storm Charles, Lisbon: Wednesday 11 November 2026",
+    "status": "open",
+    "headline": {
+     "text": "Web Summit's Day 3 (Thursday) is running: \"today is officially Web Summit's biggest-ever day\", the organisers say; Wednesday was cancelled",
+     "source": "Web Summit on Bluesky (@websummit.bsky.social)",
+     "url": "https://bsky.app/profile/websummit.bsky.social/post/3n245iu57wk2i",
+     "at": "12 Nov 2026, 09:23 UTC (first posted 09:00:19, deleted and posted again 09:23:34; read 09:46)",
+     "label": "fact"
+    }
+   }
+  ]
+ },
+ "counts": {
+  "files": 142,
+  "verified": 142,
+  "bytes": 5127487,
+  "datasets": 39
+ },
+ "datasets": [
+  {
+   "dataset": "decisions/addresses",
+   "files": 1,
+   "bytes": 9694
+  },
+  {
+   "dataset": "decisions/entities",
+   "files": 19,
+   "bytes": 78139
+  },
+  {
+   "dataset": "decisions/graph",
+   "files": 1,
+   "bytes": 141918
+  },
+  {
+   "dataset": "decisions/sources",
+   "files": 1,
+   "bytes": 25977
+  },
+  {
+   "dataset": "exposure/ensemble",
+   "files": 1,
+   "bytes": 17375
+  },
+  {
+   "dataset": "exposure/hospitals",
+   "files": 1,
+   "bytes": 100691
+  },
+  {
+   "dataset": "exposure/lisbon-grid",
+   "files": 1,
+   "bytes": 12839
+  },
+  {
+   "dataset": "exposure/lisbon-municipalities",
+   "files": 1,
+   "bytes": 6788
+  },
+  {
+   "dataset": "exposure/people-by-hour",
+   "files": 1,
+   "bytes": 8028
+  },
+  {
+   "dataset": "exposure/population",
+   "files": 1,
+   "bytes": 39109
+  },
+  {
+   "dataset": "exposure/tides",
+   "files": 1,
+   "bytes": 24842
+  },
+  {
+   "dataset": "flights/crosswind",
+   "files": 1,
+   "bytes": 226307
+  },
+  {
+   "dataset": "flights/frames",
+   "files": 40,
+   "bytes": 1815387
+  },
+  {
+   "dataset": "flights/index",
+   "files": 1,
+   "bytes": 145983
+  },
+  {
+   "dataset": "flights/snapshots",
+   "files": 21,
+   "bytes": 605102
+  },
+  {
+   "dataset": "flights/summaries",
+   "files": 12,
+   "bytes": 36870
+  },
+  {
+   "dataset": "flights/wind",
+   "files": 16,
+   "bytes": 727986
+  },
+  {
+   "dataset": "signals",
+   "files": 1,
+   "bytes": 161170
+  },
+  {
+   "dataset": "transport/bridges",
+   "files": 1,
+   "bytes": 2966
+  },
+  {
+   "dataset": "transport/buses",
+   "files": 1,
+   "bytes": 10937
+  },
+  {
+   "dataset": "transport/ferries",
+   "files": 1,
+   "bytes": 6068
+  },
+  {
+   "dataset": "transport/flights",
+   "files": 1,
+   "bytes": 21318
+  },
+  {
+   "dataset": "transport/metro",
+   "files": 1,
+   "bytes": 3312
+  },
+  {
+   "dataset": "transport/metro-schedule",
+   "files": 1,
+   "bytes": 9109
+  },
+  {
+   "dataset": "transport/services",
+   "files": 1,
+   "bytes": 17175
+  },
+  {
+   "dataset": "transport/trains",
+   "files": 1,
+   "bytes": 8914
+  },
+  {
+   "dataset": "watch/websummit",
+   "files": 1,
+   "bytes": 67302
+  },
+  {
+   "dataset": "weather/airport",
+   "files": 1,
+   "bytes": 68366
+  },
+  {
+   "dataset": "weather/airport-madeira",
+   "files": 1,
+   "bytes": 57228
+  },
+  {
+   "dataset": "weather/analysis",
+   "files": 1,
+   "bytes": 26069
+  },
+  {
+   "dataset": "weather/cap",
+   "files": 1,
+   "bytes": 187068
+  },
+  {
+   "dataset": "weather/changes",
+   "files": 1,
+   "bytes": 48698
+  },
+  {
+   "dataset": "weather/communiques",
+   "files": 1,
+   "bytes": 9146
+  },
+  {
+   "dataset": "weather/forecast",
+   "files": 1,
+   "bytes": 77199
+  },
+  {
+   "dataset": "weather/gusts-vs-forecast",
+   "files": 1,
+   "bytes": 2890
+  },
+  {
+   "dataset": "weather/lisbon-rain",
+   "files": 1,
+   "bytes": 65138
+  },
+  {
+   "dataset": "weather/madeira",
+   "files": 1,
+   "bytes": 129723
+  },
+  {
+   "dataset": "weather/stations",
+   "files": 1,
+   "bytes": 103683
+  },
+  {
+   "dataset": "weather/warnings",
+   "files": 1,
+   "bytes": 20973
+  }
+ ],
+ "files": [
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "decisions/addresses.json",
+   "dataset": "decisions/addresses",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/decisions/addresses.json",
+   "bytes": 9694,
+   "sha256_prefix": "852e9cd1e12e0229",
+   "status": 200,
+   "verified": true,
+   "about": "For each timeline row in signals.json (the new site, made_at 2026-11-11T01:53Z) that had no openable address: the exact public address(es) of its primary source, the time read, and what kind of address it is. Internal records are this team's public repository files; \"withheld\" is by policy. Kept by incident.researcher@web-summit.dinis for incident.conductor@ (WS-214)."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "decisions/entities/airport.json",
+   "dataset": "decisions/entities",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/decisions/entities/airport.json",
+   "bytes": 8443,
+   "sha256_prefix": "8ca6a86ff4c84a50",
+   "status": 200,
+   "verified": true,
+   "about": "Every decision in graph.json about airport: who decided, when published, when it takes effect, the exact address, the time read, fact or evidence. Generated from graph.json by incident.researcher@web-summit.dinis; graph.json is the source of truth."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "decisions/entities/bridges.json",
+   "dataset": "decisions/entities",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/decisions/entities/bridges.json",
+   "bytes": 6508,
+   "sha256_prefix": "6b8b7f981de872fc",
+   "status": 200,
+   "verified": true,
+   "about": "Every decision in graph.json about bridges: who decided, when published, when it takes effect, the exact address, the time read, fact or evidence. Generated from graph.json by incident.researcher@web-summit.dinis; graph.json is the source of truth."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "decisions/entities/carris.json",
+   "dataset": "decisions/entities",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/decisions/entities/carris.json",
+   "bytes": 1456,
+   "sha256_prefix": "a1fba73c6805b290",
+   "status": 200,
+   "verified": true,
+   "about": "Carris (Lisbon buses, trams, funiculars)."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "decisions/entities/courts.json",
+   "dataset": "decisions/entities",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/decisions/entities/courts.json",
+   "bytes": 2176,
+   "sha256_prefix": "a3818a594108a19a",
+   "status": 200,
+   "verified": true,
+   "about": "Every decision in graph.json about courts: who decided, when published, when it takes effect, the exact address, the time read, fact or evidence. Generated from graph.json by incident.researcher@web-summit.dinis; graph.json is the source of truth."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "decisions/entities/cp.json",
+   "dataset": "decisions/entities",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/decisions/entities/cp.json",
+   "bytes": 7874,
+   "sha256_prefix": "f7dac16c64575264",
+   "status": 200,
+   "verified": true,
+   "about": "Every decision in graph.json about cp: who decided, when published, when it takes effect, the exact address, the time read, fact or evidence. Generated from graph.json by incident.researcher@web-summit.dinis; graph.json is the source of truth."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "decisions/entities/ferries.json",
+   "dataset": "decisions/entities",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/decisions/entities/ferries.json",
+   "bytes": 1778,
+   "sha256_prefix": "7d871dbaf9bc5856",
+   "status": 200,
+   "verified": true,
+   "about": "Every decision we hold about ferries (generated by incident.researcher@web-summit.dinis; graph.json is the source of truth where an edge exists)."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "decisions/entities/fertagus.json",
+   "dataset": "decisions/entities",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/decisions/entities/fertagus.json",
+   "bytes": 904,
+   "sha256_prefix": "449a326fe5c9b013",
+   "status": 200,
+   "verified": true,
+   "about": "Fertagus (trains across the 25 de Abril bridge)."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "decisions/entities/flixbus.json",
+   "dataset": "decisions/entities",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/decisions/entities/flixbus.json",
+   "bytes": 915,
+   "sha256_prefix": "66b0cc0c8d6db1a6",
+   "status": 200,
+   "verified": true,
+   "about": "Every decision we hold about flixbus (generated by incident.researcher@web-summit.dinis; graph.json is the source of truth where an edge exists)."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "decisions/entities/hospitals.json",
+   "dataset": "decisions/entities",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/decisions/entities/hospitals.json",
+   "bytes": 705,
+   "sha256_prefix": "dd4134be6f8c806b",
+   "status": 200,
+   "verified": true,
+   "about": "Every decision we hold about hospitals (generated by incident.researcher@web-summit.dinis; graph.json is the source of truth where an edge exists)."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "decisions/entities/madeira.json",
+   "dataset": "decisions/entities",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/decisions/entities/madeira.json",
+   "bytes": 12366,
+   "sha256_prefix": "8b94d7393173601b",
+   "status": 200,
+   "verified": true,
+   "about": "Every decision and official count we hold about Madeira (generated from graph.json by incident.researcher@web-summit.dinis)."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "decisions/entities/metro.json",
+   "dataset": "decisions/entities",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/decisions/entities/metro.json",
+   "bytes": 8068,
+   "sha256_prefix": "ba685f36ecce166c",
+   "status": 200,
+   "verified": true,
+   "about": "Every decision in graph.json about metro: who decided, when published, when it takes effect, the exact address, the time read, fact or evidence. Generated from graph.json by incident.researcher@web-summit.dinis; graph.json is the source of truth."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "decisions/entities/museums.json",
+   "dataset": "decisions/entities",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/decisions/entities/museums.json",
+   "bytes": 1789,
+   "sha256_prefix": "0c2fcb22c0eaebcd",
+   "status": 200,
+   "verified": true,
+   "about": "Every decision in graph.json about museums: who decided, when published, when it takes effect, the exact address, the time read, fact or evidence. Generated from graph.json by incident.researcher@web-summit.dinis; graph.json is the source of truth."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "decisions/entities/parliament.json",
+   "dataset": "decisions/entities",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/decisions/entities/parliament.json",
+   "bytes": 746,
+   "sha256_prefix": "1ac790aa45105fc5",
+   "status": 200,
+   "verified": true,
+   "about": "Every decision we hold about parliament (generated by incident.researcher@web-summit.dinis; graph.json is the source of truth where an edge exists)."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "decisions/entities/port.json",
+   "dataset": "decisions/entities",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/decisions/entities/port.json",
+   "bytes": 2434,
+   "sha256_prefix": "1a05779fd699b55f",
+   "status": 200,
+   "verified": true,
+   "about": "Every decision in graph.json about port: who decided, when published, when it takes effect, the exact address, the time read, fact or evidence. Generated from graph.json by incident.researcher@web-summit.dinis; graph.json is the source of truth."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "decisions/entities/rede-expressos.json",
+   "dataset": "decisions/entities",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/decisions/entities/rede-expressos.json",
+   "bytes": 5473,
+   "sha256_prefix": "7da450c823cdd3e9",
+   "status": 200,
+   "verified": true,
+   "about": "Every decision in graph.json about rede-expressos: who decided, when published, when it takes effect, the exact address, the time read, fact or evidence. Generated from graph.json by incident.researcher@web-summit.dinis; graph.json is the source of truth."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "decisions/entities/retail.json",
+   "dataset": "decisions/entities",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/decisions/entities/retail.json",
+   "bytes": 891,
+   "sha256_prefix": "f469a79dc5b04845",
+   "status": 200,
+   "verified": true,
+   "about": "Every decision we hold about retail (generated by incident.researcher@web-summit.dinis; graph.json is the source of truth where an edge exists)."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "decisions/entities/schools.json",
+   "dataset": "decisions/entities",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/decisions/entities/schools.json",
+   "bytes": 4228,
+   "sha256_prefix": "d40cdd4adf091e1e",
+   "status": 200,
+   "verified": true,
+   "about": "Every decision in graph.json about schools: who decided, when published, when it takes effect, the exact address, the time read, fact or evidence. Generated from graph.json by incident.researcher@web-summit.dinis; graph.json is the source of truth."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "decisions/entities/tap.json",
+   "dataset": "decisions/entities",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/decisions/entities/tap.json",
+   "bytes": 1633,
+   "sha256_prefix": "58eb02df93702d27",
+   "status": 200,
+   "verified": true,
+   "about": "Every decision in graph.json about tap: who decided, when published, when it takes effect, the exact address, the time read, fact or evidence. Generated from graph.json by incident.researcher@web-summit.dinis; graph.json is the source of truth."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "decisions/entities/tunnels.json",
+   "dataset": "decisions/entities",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/decisions/entities/tunnels.json",
+   "bytes": 9752,
+   "sha256_prefix": "94809a4ab4ce13bf",
+   "status": 200,
+   "verified": true,
+   "about": "Every decision in graph.json about tunnels: who decided, when published, when it takes effect, the exact address, the time read, fact or evidence. Generated from graph.json by incident.researcher@web-summit.dinis; graph.json is the source of truth."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "decisions/graph.json",
+   "dataset": "decisions/graph",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/decisions/graph.json",
+   "bytes": 141918,
+   "sha256_prefix": "fc0805d91c9bdf85",
+   "status": 200,
+   "verified": true,
+   "about": "The decision graph of the storm (WS-214), kept by incident.researcher@web-summit.dinis. Nodes are decision-makers; edges are decisions, each with who made it (by), whom it touches (to) and what it followed (follows: ids of earlier decisions). Every node and edge carries a label (fact, evidence or hypothesis), its source URL and the UTC time it was read, and who read it. Read the README first."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "decisions/sources.json",
+   "dataset": "decisions/sources",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/decisions/sources.json",
+   "bytes": 25977,
+   "sha256_prefix": "5cfdcc022c974727",
+   "status": 200,
+   "verified": true,
+   "about": "Every source incident.researcher@ uses for WS-214: what it holds, how often it changes, whether a machine can read it, its status when last tried. parser_ask = the part we ask incident.dev@ to parse."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "exposure/ensemble.json",
+   "dataset": "exposure/ensemble",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/exposure/ensemble.json",
+   "bytes": 17375,
+   "sha256_prefix": "77419dd21d3bcc59",
+   "status": 200,
+   "verified": true,
+   "about": "Where the storm's centre crosses 9.5 W (off Lisbon) in each of the 51 ECMWF ensemble forecasts, grouped north / near / south of Lisbon, and the spread of model gusts at Lisbon hour by hour. SHARES OF FORECASTS, NOT THE CHANCE OF IT HAPPENING. Not a forecast of ours and not a warning: IPMA issues the warnings."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "exposure/hospitals.json",
+   "dataset": "exposure/hospitals",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/exposure/hospitals.json",
+   "bytes": 100691,
+   "sha256_prefix": "d741ed86c061c2c4",
+   "status": 200,
+   "verified": true,
+   "about": "Hospitals mapped in OpenStreetMap in Portugal (amenity=hospital or healthcare=hospital), each placed in its municipality and IPMA warning area. A map of buildings, not a statement that any is open, has an emergency service, or has capacity: for that, the SNS and each hospital."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "exposure/lisbon-grid.json",
+   "dataset": "exposure/lisbon-grid",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/exposure/lisbon-grid.json",
+   "bytes": 12839,
+   "sha256_prefix": "0d834d8b405bcbaf",
+   "status": 200,
+   "verified": true,
+   "about": "Lisbon in 49 squares of 2 km (7 x 7, rows A to G from north, columns 1 to 7 from west, centred on 38.745 N, 9.16 W): residents, land 0.5 to 5 m above sea level, residents on it, and hospitals mapped in OSM. Residents are where people sleep, not where they are at a given hour."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "exposure/lisbon-municipalities.json",
+   "dataset": "exposure/lisbon-municipalities",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/exposure/lisbon-municipalities.json",
+   "bytes": 6788,
+   "sha256_prefix": "ac3c7bd564629a02",
+   "status": 200,
+   "verified": true,
+   "about": "The 18 municipalities of the Lisbon metropolitan area: residents, aged 65+ and 0-14 (Census 2021), land 0.5 to 5 m above sea level (Copernicus DEM) and an estimate of residents living on it, and OSM hospitals. Low land is where sea water or river flooding CAN reach first; it is not a flood map and not a warning."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "exposure/people-by-hour.json",
+   "dataset": "exposure/people-by-hour",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/exposure/people-by-hour.json",
+   "bytes": 8028,
+   "sha256_prefix": "739f4269c1ec7d44",
+   "status": 200,
+   "verified": true,
+   "about": "Residents (INE Census 2021) living in each IPMA warning area, by hour, under the highest level in force there (any hazard). Where people sleep, not where they are at a given hour, and never a count of people harmed. Not a warning: IPMA issues the warnings and ANEPC the instructions."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "exposure/population.json",
+   "dataset": "exposure/population",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/exposure/population.json",
+   "bytes": 39109,
+   "sha256_prefix": "fb437a9bbcf1f5e4",
+   "status": 200,
+   "verified": true,
+   "about": "Residents counted by the 2021 Census, by IPMA warning area (district; Madeira by zone) and by municipality: total, aged 0-14 and aged 65+. Where people sleep, not where they are at a given hour."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "exposure/tides.json",
+   "dataset": "exposure/tides",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/exposure/tides.json",
+   "bytes": 24842,
+   "sha256_prefix": "c99f98b06ca62105",
+   "status": 200,
+   "verified": true,
+   "about": "High and low water, sea level and wave height at Cascais, the Tagus and Funchal, yesterday to tomorrow (UTC). A model, not Instituto Hidrográfico's official tide table and not a warning: IPMA issues the coastal warnings (Agitação Marítima) and the Captaincies close bars and beaches."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/crosswind.json",
+   "dataset": "flights/crosswind",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/crosswind.json",
+   "bytes": 226307,
+   "sha256_prefix": "5b6f2bb0b804ab7f",
+   "status": 200,
+   "verified": true,
+   "about": "The wind the airports reported (METAR) during Storm Charles, from 10 November 18:00 UTC to 12 November 12:00 UTC, resolved onto each runway end as headwind (negative: tailwind) and crosswind, joined per hour to the airline departures OpenSky's receivers saw and to ANA's own cancellation figures. Facts: the METAR (IPMA's observations) and the counts as their sources give them; the components are ar"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/funchal/2026-11-11/23.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-11/23.json",
+   "bytes": 3280,
+   "sha256_prefix": "e6a92694300b3b85",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Madeira and its approaches: within 150 nautical miles (278 km) of 32.75 N, 16.85 W (LPMA, Funchal), 2026-11-11 23:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, which is in our vault). row"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/funchal/2026-11-12/00.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/00.json",
+   "bytes": 5083,
+   "sha256_prefix": "1d310b535fc909a5",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Madeira and its approaches: within 150 nautical miles (278 km) of 32.75 N, 16.85 W (LPMA, Funchal), 2026-11-12 00:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, which is in our vault). row"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/funchal/2026-11-12/01.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/01.json",
+   "bytes": 5104,
+   "sha256_prefix": "04607d35b766727b",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Madeira and its approaches: within 150 nautical miles (278 km) of 32.75 N, 16.85 W (LPMA, Funchal), 2026-11-12 01:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, which is in our vault). row"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/funchal/2026-11-12/02.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/02.json",
+   "bytes": 4829,
+   "sha256_prefix": "1dc0917bc6bf9b5a",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Madeira and its approaches: within 150 nautical miles (278 km) of 32.75 N, 16.85 W (LPMA, Funchal), 2026-11-12 02:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, which is in our vault). row"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/funchal/2026-11-12/03.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/03.json",
+   "bytes": 4776,
+   "sha256_prefix": "c9f911c57318c198",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Madeira and its approaches: within 150 nautical miles (278 km) of 32.75 N, 16.85 W (LPMA, Funchal), 2026-11-12 03:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, which is in our vault). row"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/funchal/2026-11-12/04.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/04.json",
+   "bytes": 4587,
+   "sha256_prefix": "02d30501488fb01e",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Madeira and its approaches: within 150 nautical miles (278 km) of 32.75 N, 16.85 W (LPMA, Funchal), 2026-11-12 04:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, which is in our vault). row"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/funchal/2026-11-12/05.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/05.json",
+   "bytes": 4807,
+   "sha256_prefix": "8e370565f8885594",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Madeira and its approaches: within 150 nautical miles (278 km) of 32.75 N, 16.85 W (LPMA, Funchal), 2026-11-12 05:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, which is in our vault). row"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/funchal/2026-11-12/06.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/06.json",
+   "bytes": 4681,
+   "sha256_prefix": "8c71f7811898cc00",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Madeira and its approaches: within 150 nautical miles (278 km) of 32.75 N, 16.85 W (LPMA, Funchal), 2026-11-12 06:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, which is in our vault). row"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/funchal/2026-11-12/07.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/07.json",
+   "bytes": 4972,
+   "sha256_prefix": "e625b5f450150f89",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Madeira and its approaches: within 150 nautical miles (278 km) of 32.75 N, 16.85 W (LPMA, Funchal), 2026-11-12 07:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, which is in our vault). row"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/funchal/2026-11-12/08.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/08.json",
+   "bytes": 4577,
+   "sha256_prefix": "91100c62616d7019",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Madeira and its approaches: within 150 nautical miles (278 km) of 32.75 N, 16.85 W (LPMA, Funchal), 2026-11-12 08:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, which is in our vault). row"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/funchal/2026-11-12/09.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/09.json",
+   "bytes": 5536,
+   "sha256_prefix": "3c7a646f6c22fe37",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Madeira and its approaches: within 150 nautical miles (278 km) of 32.75 N, 16.85 W (LPMA, Funchal), 2026-11-12 09:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, which is in our vault). row"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/funchal/2026-11-12/10.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/10.json",
+   "bytes": 5233,
+   "sha256_prefix": "50e4aca9b4ed6221",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Madeira and its approaches: within 150 nautical miles (278 km) of 32.75 N, 16.85 W (LPMA, Funchal), 2026-11-12 10:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, which is in our vault). row"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/funchal/2026-11-12/11.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/11.json",
+   "bytes": 5923,
+   "sha256_prefix": "3ae58535be1cc0a5",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Madeira and its approaches: within 150 nautical miles (278 km) of 32.75 N, 16.85 W (LPMA, Funchal), 2026-11-12 11:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, which is in our vault). row"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/funchal/2026-11-12/12.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/12.json",
+   "bytes": 5517,
+   "sha256_prefix": "89055a214c7903e1",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Madeira and its approaches: within 150 nautical miles (278 km) of 32.75 N, 16.85 W (LPMA, Funchal), 2026-11-12 12:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, which is in our vault). row"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/funchal/2026-11-12/13.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/13.json",
+   "bytes": 6631,
+   "sha256_prefix": "6af9e7ea6427c2d3",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Madeira and its approaches: within 150 nautical miles (278 km) of 32.75 N, 16.85 W (LPMA, Funchal), 2026-11-12 13:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, which is in our vault). row"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/funchal/2026-11-12/14.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/14.json",
+   "bytes": 6449,
+   "sha256_prefix": "824ba39ece0c8708",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Madeira and its approaches: within 150 nautical miles (278 km) of 32.75 N, 16.85 W (LPMA, Funchal), 2026-11-12 14:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, which is in our vault). row"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/funchal/2026-11-12/15.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/15.json",
+   "bytes": 6430,
+   "sha256_prefix": "9de28e13c7cc20d2",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Madeira and its approaches: within 150 nautical miles (278 km) of 32.75 N, 16.85 W (LPMA, Funchal), 2026-11-12 15:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, which is in our vault). row"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/funchal/2026-11-12/16.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/16.json",
+   "bytes": 6124,
+   "sha256_prefix": "f25d7b528db9e6f0",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Madeira and its approaches: within 150 nautical miles (278 km) of 32.75 N, 16.85 W (LPMA, Funchal), 2026-11-12 16:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, which is in our vault). row"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/funchal/2026-11-12/17.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/17.json",
+   "bytes": 6479,
+   "sha256_prefix": "b64277a68852d28c",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Madeira and its approaches: within 150 nautical miles (278 km) of 32.75 N, 16.85 W (LPMA, Funchal), 2026-11-12 17:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, which is in our vault). row"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/funchal/2026-11-12/18.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/funchal/2026-11-12/18.json",
+   "bytes": 4134,
+   "sha256_prefix": "789631a9ee25dbb7",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Madeira and its approaches: within 150 nautical miles (278 km) of 32.75 N, 16.85 W (LPMA, Funchal), 2026-11-12 18:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, which is in our vault). row"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/lisbon/2026-11-11/23.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-11/23.json",
+   "bytes": 13823,
+   "sha256_prefix": "bdb8673d11e91a7d",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Lisbon and the Atlantic approaches: within 250 nautical miles (463 km) of 38.75 N, 9.20 W (LPPT is 8 km north of the centre), 2026-11-11 23:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, w"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/lisbon/2026-11-12/00.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/00.json",
+   "bytes": 29422,
+   "sha256_prefix": "460a3b966bd74c1d",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Lisbon and the Atlantic approaches: within 250 nautical miles (463 km) of 38.75 N, 9.20 W (LPPT is 8 km north of the centre), 2026-11-12 00:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, w"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/lisbon/2026-11-12/01.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/01.json",
+   "bytes": 22952,
+   "sha256_prefix": "fe417be8812817d9",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Lisbon and the Atlantic approaches: within 250 nautical miles (463 km) of 38.75 N, 9.20 W (LPPT is 8 km north of the centre), 2026-11-12 01:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, w"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/lisbon/2026-11-12/02.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/02.json",
+   "bytes": 24243,
+   "sha256_prefix": "59ec2f4e222862ef",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Lisbon and the Atlantic approaches: within 250 nautical miles (463 km) of 38.75 N, 9.20 W (LPPT is 8 km north of the centre), 2026-11-12 02:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, w"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/lisbon/2026-11-12/03.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/03.json",
+   "bytes": 25232,
+   "sha256_prefix": "dd861d611b6aece1",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Lisbon and the Atlantic approaches: within 250 nautical miles (463 km) of 38.75 N, 9.20 W (LPPT is 8 km north of the centre), 2026-11-12 03:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, w"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/lisbon/2026-11-12/04.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/04.json",
+   "bytes": 21820,
+   "sha256_prefix": "6459adc7a905742b",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Lisbon and the Atlantic approaches: within 250 nautical miles (463 km) of 38.75 N, 9.20 W (LPPT is 8 km north of the centre), 2026-11-12 04:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, w"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/lisbon/2026-11-12/05.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/05.json",
+   "bytes": 33089,
+   "sha256_prefix": "2d3510d4c0b85c43",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Lisbon and the Atlantic approaches: within 250 nautical miles (463 km) of 38.75 N, 9.20 W (LPPT is 8 km north of the centre), 2026-11-12 05:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, w"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/lisbon/2026-11-12/06.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/06.json",
+   "bytes": 73273,
+   "sha256_prefix": "2f3b3350538c51d7",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Lisbon and the Atlantic approaches: within 250 nautical miles (463 km) of 38.75 N, 9.20 W (LPPT is 8 km north of the centre), 2026-11-12 06:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, w"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/lisbon/2026-11-12/07.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/07.json",
+   "bytes": 94727,
+   "sha256_prefix": "ae087e055674c3b6",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Lisbon and the Atlantic approaches: within 250 nautical miles (463 km) of 38.75 N, 9.20 W (LPPT is 8 km north of the centre), 2026-11-12 07:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, w"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/lisbon/2026-11-12/08.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/08.json",
+   "bytes": 131184,
+   "sha256_prefix": "b99ea16a71511450",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Lisbon and the Atlantic approaches: within 250 nautical miles (463 km) of 38.75 N, 9.20 W (LPPT is 8 km north of the centre), 2026-11-12 08:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, w"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/lisbon/2026-11-12/09.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/09.json",
+   "bytes": 136407,
+   "sha256_prefix": "b5aa0d7c77659a62",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Lisbon and the Atlantic approaches: within 250 nautical miles (463 km) of 38.75 N, 9.20 W (LPPT is 8 km north of the centre), 2026-11-12 09:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, w"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/lisbon/2026-11-12/10.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/10.json",
+   "bytes": 124839,
+   "sha256_prefix": "09319e7f101492b5",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Lisbon and the Atlantic approaches: within 250 nautical miles (463 km) of 38.75 N, 9.20 W (LPPT is 8 km north of the centre), 2026-11-12 10:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, w"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/lisbon/2026-11-12/11.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/11.json",
+   "bytes": 142116,
+   "sha256_prefix": "e670853feac030eb",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Lisbon and the Atlantic approaches: within 250 nautical miles (463 km) of 38.75 N, 9.20 W (LPPT is 8 km north of the centre), 2026-11-12 11:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, w"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/lisbon/2026-11-12/12.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/12.json",
+   "bytes": 138467,
+   "sha256_prefix": "444ecdd00bec90cd",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Lisbon and the Atlantic approaches: within 250 nautical miles (463 km) of 38.75 N, 9.20 W (LPPT is 8 km north of the centre), 2026-11-12 12:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, w"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/lisbon/2026-11-12/13.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/13.json",
+   "bytes": 150634,
+   "sha256_prefix": "91da19a54dd5040e",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Lisbon and the Atlantic approaches: within 250 nautical miles (463 km) of 38.75 N, 9.20 W (LPPT is 8 km north of the centre), 2026-11-12 13:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, w"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/lisbon/2026-11-12/14.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/14.json",
+   "bytes": 140017,
+   "sha256_prefix": "975aff7ac0cc8068",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Lisbon and the Atlantic approaches: within 250 nautical miles (463 km) of 38.75 N, 9.20 W (LPPT is 8 km north of the centre), 2026-11-12 14:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, w"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/lisbon/2026-11-12/15.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/15.json",
+   "bytes": 129122,
+   "sha256_prefix": "ac2149eb6c9a433b",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Lisbon and the Atlantic approaches: within 250 nautical miles (463 km) of 38.75 N, 9.20 W (LPPT is 8 km north of the centre), 2026-11-12 15:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, w"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/lisbon/2026-11-12/16.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/16.json",
+   "bytes": 138220,
+   "sha256_prefix": "bb0644f37f1d9441",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Lisbon and the Atlantic approaches: within 250 nautical miles (463 km) of 38.75 N, 9.20 W (LPPT is 8 km north of the centre), 2026-11-12 16:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, w"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/lisbon/2026-11-12/17.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/17.json",
+   "bytes": 126573,
+   "sha256_prefix": "2662c0ef2bf0de84",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Lisbon and the Atlantic approaches: within 250 nautical miles (463 km) of 38.75 N, 9.20 W (LPPT is 8 km north of the centre), 2026-11-12 17:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, w"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/frames/lisbon/2026-11-12/18.json",
+   "dataset": "flights/frames",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/frames/lisbon/2026-11-12/18.json",
+   "bytes": 14075,
+   "sha256_prefix": "5a6b23ea17ab1ab7",
+   "status": 200,
+   "verified": true,
+   "about": "Aircraft adsb.lol's community receivers saw in Lisbon and the Atlantic approaches: within 250 nautical miles (463 km) of 38.75 N, 9.20 W (LPPT is 8 km north of the centre), 2026-11-12 18:00 to :59 UTC, one frame per poll (Lisbon every 5 minutes, Madeira every 20). Fact: what adsb.lol shows at the time read (frames[].t; frames[].request holds the URL, status, bytes and sha256 of the raw response, w"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/index.json",
+   "dataset": "flights/index",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/index.json",
+   "bytes": 145983,
+   "sha256_prefix": "a01a39c17fdcb8cf",
+   "status": 200,
+   "verified": true,
+   "about": "Every flights file: what it covers, its size and sha256. Replay: crosswind.json (the airports' wind on each runway, hour by hour, with departures), wind/<area>-<date>.json (the wind field), snapshots/<date>/<HH>.json (airline aircraft every 10 minutes within 40 nm of Lisbon and 30 nm of Madeira, from adsb.lol (ODbL), from 11 November 22:23 UTC), frames/<area>/<date>/<HH>.json (from 11 November abo"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/snapshots/2026-11-11/22.json",
+   "dataset": "flights/snapshots",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-11/22.json",
+   "bytes": 20504,
+   "sha256_prefix": "971846bad4123da3",
+   "status": 200,
+   "verified": true,
+   "about": "Airline aircraft adsb.lol's community receivers saw around Lisbon and Madeira, 2026-11-11 22:00 to :59 UTC, one snapshot every 10 minutes for each. Airline flights only (an airline's ICAO code plus a flight number); every other aircraft is dropped and only counted. Fact: what adsb.lol shows at the time read; position_age_s says how old each position is. Not the storm's peak: these start on 11 Nove"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/snapshots/2026-11-11/23.json",
+   "dataset": "flights/snapshots",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-11/23.json",
+   "bytes": 27407,
+   "sha256_prefix": "fcc7500398217d0e",
+   "status": 200,
+   "verified": true,
+   "about": "Airline aircraft adsb.lol's community receivers saw around Lisbon and Madeira, 2026-11-11 23:00 to :59 UTC, one snapshot every 10 minutes for each. Airline flights only (an airline's ICAO code plus a flight number); every other aircraft is dropped and only counted. Fact: what adsb.lol shows at the time read; position_age_s says how old each position is. Not the storm's peak: these start on 11 Nove"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/snapshots/2026-11-12/00.json",
+   "dataset": "flights/snapshots",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/00.json",
+   "bytes": 13460,
+   "sha256_prefix": "621bef7a0dd6c600",
+   "status": 200,
+   "verified": true,
+   "about": "Airline aircraft adsb.lol's community receivers saw around Lisbon (40 nm) and Madeira (30 nm), 2026-11-12 00:00 to :59 UTC, one snapshot every 10 minutes for Lisbon and every 20 for Madeira. Airline flights only (an airline's ICAO code plus a flight number); every other aircraft is dropped and only counted. Fact: what adsb.lol shows at the time read; position_age_s says how old each position is. T"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/snapshots/2026-11-12/01.json",
+   "dataset": "flights/snapshots",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/01.json",
+   "bytes": 12414,
+   "sha256_prefix": "edcb3df614df088f",
+   "status": 200,
+   "verified": true,
+   "about": "Airline aircraft adsb.lol's community receivers saw around Lisbon (40 nm) and Madeira (30 nm), 2026-11-12 01:00 to :59 UTC, one snapshot every 10 minutes for Lisbon and every 20 for Madeira. Airline flights only (an airline's ICAO code plus a flight number); every other aircraft is dropped and only counted. Fact: what adsb.lol shows at the time read; position_age_s says how old each position is. T"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/snapshots/2026-11-12/02.json",
+   "dataset": "flights/snapshots",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/02.json",
+   "bytes": 13589,
+   "sha256_prefix": "5be4a72d64f953b9",
+   "status": 200,
+   "verified": true,
+   "about": "Airline aircraft adsb.lol's community receivers saw around Lisbon (40 nm) and Madeira (30 nm), 2026-11-12 02:00 to :59 UTC, one snapshot every 10 minutes for Lisbon and every 20 for Madeira. Airline flights only (an airline's ICAO code plus a flight number); every other aircraft is dropped and only counted. Fact: what adsb.lol shows at the time read; position_age_s says how old each position is. T"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/snapshots/2026-11-12/03.json",
+   "dataset": "flights/snapshots",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/03.json",
+   "bytes": 12394,
+   "sha256_prefix": "e4833a8ea9099660",
+   "status": 200,
+   "verified": true,
+   "about": "Airline aircraft adsb.lol's community receivers saw around Lisbon (40 nm) and Madeira (30 nm), 2026-11-12 03:00 to :59 UTC, one snapshot every 10 minutes for Lisbon and every 20 for Madeira. Airline flights only (an airline's ICAO code plus a flight number); every other aircraft is dropped and only counted. Fact: what adsb.lol shows at the time read; position_age_s says how old each position is. T"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/snapshots/2026-11-12/04.json",
+   "dataset": "flights/snapshots",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/04.json",
+   "bytes": 13567,
+   "sha256_prefix": "c48b1fb352b236bd",
+   "status": 200,
+   "verified": true,
+   "about": "Airline aircraft adsb.lol's community receivers saw around Lisbon (40 nm) and Madeira (30 nm), 2026-11-12 04:00 to :59 UTC, one snapshot every 10 minutes for Lisbon and every 20 for Madeira. Airline flights only (an airline's ICAO code plus a flight number); every other aircraft is dropped and only counted. Fact: what adsb.lol shows at the time read; position_age_s says how old each position is. T"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/snapshots/2026-11-12/05.json",
+   "dataset": "flights/snapshots",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/05.json",
+   "bytes": 17964,
+   "sha256_prefix": "a61ee56dfaf71cc8",
+   "status": 200,
+   "verified": true,
+   "about": "Airline aircraft adsb.lol's community receivers saw around Lisbon (40 nm) and Madeira (30 nm), 2026-11-12 05:00 to :59 UTC, one snapshot every 10 minutes for Lisbon and every 20 for Madeira. Airline flights only (an airline's ICAO code plus a flight number); every other aircraft is dropped and only counted. Fact: what adsb.lol shows at the time read; position_age_s says how old each position is. T"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/snapshots/2026-11-12/06.json",
+   "dataset": "flights/snapshots",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/06.json",
+   "bytes": 27209,
+   "sha256_prefix": "b5d88805880b7a89",
+   "status": 200,
+   "verified": true,
+   "about": "Airline aircraft adsb.lol's community receivers saw around Lisbon (40 nm) and Madeira (30 nm), 2026-11-12 06:00 to :59 UTC, one snapshot every 10 minutes for Lisbon and every 20 for Madeira. Airline flights only (an airline's ICAO code plus a flight number); every other aircraft is dropped and only counted. Fact: what adsb.lol shows at the time read; position_age_s says how old each position is. T"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/snapshots/2026-11-12/07.json",
+   "dataset": "flights/snapshots",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/07.json",
+   "bytes": 32846,
+   "sha256_prefix": "d146a4e992bfbd36",
+   "status": 200,
+   "verified": true,
+   "about": "Airline aircraft adsb.lol's community receivers saw around Lisbon (40 nm) and Madeira (30 nm), 2026-11-12 07:00 to :59 UTC, one snapshot every 10 minutes for Lisbon and every 20 for Madeira. Airline flights only (an airline's ICAO code plus a flight number); every other aircraft is dropped and only counted. Fact: what adsb.lol shows at the time read; position_age_s says how old each position is. T"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/snapshots/2026-11-12/08.json",
+   "dataset": "flights/snapshots",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/08.json",
+   "bytes": 37798,
+   "sha256_prefix": "8c8c105c414c98d2",
+   "status": 200,
+   "verified": true,
+   "about": "Airline aircraft adsb.lol's community receivers saw around Lisbon (40 nm) and Madeira (30 nm), 2026-11-12 08:00 to :59 UTC, one snapshot every 10 minutes for Lisbon and every 20 for Madeira. Airline flights only (an airline's ICAO code plus a flight number); every other aircraft is dropped and only counted. Fact: what adsb.lol shows at the time read; position_age_s says how old each position is. T"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/snapshots/2026-11-12/09.json",
+   "dataset": "flights/snapshots",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/09.json",
+   "bytes": 39615,
+   "sha256_prefix": "51d2a594bf1aa01f",
+   "status": 200,
+   "verified": true,
+   "about": "Airline aircraft adsb.lol's community receivers saw around Lisbon (40 nm) and Madeira (30 nm), 2026-11-12 09:00 to :59 UTC, one snapshot every 10 minutes for Lisbon and every 20 for Madeira. Airline flights only (an airline's ICAO code plus a flight number); every other aircraft is dropped and only counted. Fact: what adsb.lol shows at the time read; position_age_s says how old each position is. T"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/snapshots/2026-11-12/10.json",
+   "dataset": "flights/snapshots",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/10.json",
+   "bytes": 38653,
+   "sha256_prefix": "76d04ae39f981e75",
+   "status": 200,
+   "verified": true,
+   "about": "Airline aircraft adsb.lol's community receivers saw around Lisbon (40 nm) and Madeira (30 nm), 2026-11-12 10:00 to :59 UTC, one snapshot every 10 minutes for Lisbon and every 20 for Madeira. Airline flights only (an airline's ICAO code plus a flight number); every other aircraft is dropped and only counted. Fact: what adsb.lol shows at the time read; position_age_s says how old each position is. T"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/snapshots/2026-11-12/11.json",
+   "dataset": "flights/snapshots",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/11.json",
+   "bytes": 40473,
+   "sha256_prefix": "a8c6ea30e0ecc665",
+   "status": 200,
+   "verified": true,
+   "about": "Airline aircraft adsb.lol's community receivers saw around Lisbon (40 nm) and Madeira (30 nm), 2026-11-12 11:00 to :59 UTC, one snapshot every 10 minutes for Lisbon and every 20 for Madeira. Airline flights only (an airline's ICAO code plus a flight number); every other aircraft is dropped and only counted. Fact: what adsb.lol shows at the time read; position_age_s says how old each position is. T"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/snapshots/2026-11-12/12.json",
+   "dataset": "flights/snapshots",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/12.json",
+   "bytes": 39427,
+   "sha256_prefix": "f194d1881ca8d905",
+   "status": 200,
+   "verified": true,
+   "about": "Airline aircraft adsb.lol's community receivers saw around Lisbon (40 nm) and Madeira (30 nm), 2026-11-12 12:00 to :59 UTC, one snapshot every 10 minutes for Lisbon and every 20 for Madeira. Airline flights only (an airline's ICAO code plus a flight number); every other aircraft is dropped and only counted. Fact: what adsb.lol shows at the time read; position_age_s says how old each position is. T"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/snapshots/2026-11-12/13.json",
+   "dataset": "flights/snapshots",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/13.json",
+   "bytes": 41741,
+   "sha256_prefix": "0e85d7e93a0dca28",
+   "status": 200,
+   "verified": true,
+   "about": "Airline aircraft adsb.lol's community receivers saw around Lisbon (40 nm) and Madeira (30 nm), 2026-11-12 13:00 to :59 UTC, one snapshot every 10 minutes for Lisbon and every 20 for Madeira. Airline flights only (an airline's ICAO code plus a flight number); every other aircraft is dropped and only counted. Fact: what adsb.lol shows at the time read; position_age_s says how old each position is. T"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/snapshots/2026-11-12/14.json",
+   "dataset": "flights/snapshots",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/14.json",
+   "bytes": 35115,
+   "sha256_prefix": "50cd329b457fe143",
+   "status": 200,
+   "verified": true,
+   "about": "Airline aircraft adsb.lol's community receivers saw around Lisbon (40 nm) and Madeira (30 nm), 2026-11-12 14:00 to :59 UTC, one snapshot every 10 minutes for Lisbon and every 20 for Madeira. Airline flights only (an airline's ICAO code plus a flight number); every other aircraft is dropped and only counted. Fact: what adsb.lol shows at the time read; position_age_s says how old each position is. T"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/snapshots/2026-11-12/15.json",
+   "dataset": "flights/snapshots",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/15.json",
+   "bytes": 42568,
+   "sha256_prefix": "0bab363d04cdf311",
+   "status": 200,
+   "verified": true,
+   "about": "Airline aircraft adsb.lol's community receivers saw around Lisbon (40 nm) and Madeira (30 nm), 2026-11-12 15:00 to :59 UTC, one snapshot every 10 minutes for Lisbon and every 20 for Madeira. Airline flights only (an airline's ICAO code plus a flight number); every other aircraft is dropped and only counted. Fact: what adsb.lol shows at the time read; position_age_s says how old each position is. T"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/snapshots/2026-11-12/16.json",
+   "dataset": "flights/snapshots",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/16.json",
+   "bytes": 45314,
+   "sha256_prefix": "2380b6e1866222ee",
+   "status": 200,
+   "verified": true,
+   "about": "Airline aircraft adsb.lol's community receivers saw around Lisbon (40 nm) and Madeira (30 nm), 2026-11-12 16:00 to :59 UTC, one snapshot every 10 minutes for Lisbon and every 20 for Madeira. Airline flights only (an airline's ICAO code plus a flight number); every other aircraft is dropped and only counted. Fact: what adsb.lol shows at the time read; position_age_s says how old each position is. T"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/snapshots/2026-11-12/17.json",
+   "dataset": "flights/snapshots",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/17.json",
+   "bytes": 43337,
+   "sha256_prefix": "781032b7b8acfa33",
+   "status": 200,
+   "verified": true,
+   "about": "Airline aircraft adsb.lol's community receivers saw around Lisbon (40 nm) and Madeira (30 nm), 2026-11-12 17:00 to :59 UTC, one snapshot every 10 minutes for Lisbon and every 20 for Madeira. Airline flights only (an airline's ICAO code plus a flight number); every other aircraft is dropped and only counted. Fact: what adsb.lol shows at the time read; position_age_s says how old each position is. T"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/snapshots/2026-11-12/18.json",
+   "dataset": "flights/snapshots",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/snapshots/2026-11-12/18.json",
+   "bytes": 9707,
+   "sha256_prefix": "6b0a39a9c659453a",
+   "status": 200,
+   "verified": true,
+   "about": "Airline aircraft adsb.lol's community receivers saw around Lisbon (40 nm) and Madeira (30 nm), 2026-11-12 18:00 to :59 UTC, one snapshot every 10 minutes for Lisbon and every 20 for Madeira. Airline flights only (an airline's ICAO code plus a flight number); every other aircraft is dropped and only counted. Fact: what adsb.lol shows at the time read; position_age_s says how old each position is. T"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/summaries/2026-11-11/22.json",
+   "dataset": "flights/summaries",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/summaries/2026-11-11/22.json",
+   "bytes": 3139,
+   "sha256_prefix": "29a95dd642135292",
+   "status": 200,
+   "verified": true,
+   "about": "A two-sentence summary of the flight picture for 2026-11-11 22:00-22:59 UTC, written by an open-weight model (meta-llama/llama-4-maverick) through OpenRouter from the JSON in input, and published only because every number in it is one of the input's numbers and it is two sentences (check). Model output: not checked for meaning beyond that, and not ours. The data itself: snapshots/ and crosswind.js"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/summaries/2026-11-11/23.json",
+   "dataset": "flights/summaries",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/summaries/2026-11-11/23.json",
+   "bytes": 3103,
+   "sha256_prefix": "5d8b4ab13e0222f8",
+   "status": 200,
+   "verified": true,
+   "about": "A two-sentence summary of the flight picture for 2026-11-11 23:00-23:59 UTC, written by an open-weight model (meta-llama/llama-4-maverick) through OpenRouter from the JSON in input, and published only because every number in it is one of the input's numbers and it is two sentences (check). Model output: not checked for meaning beyond that, and not ours. The data itself: snapshots/ and crosswind.js"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/summaries/2026-11-12/01.json",
+   "dataset": "flights/summaries",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/summaries/2026-11-12/01.json",
+   "bytes": 3000,
+   "sha256_prefix": "c91dad7cf8ba0883",
+   "status": 200,
+   "verified": true,
+   "about": "A two-sentence summary of the flight picture for 2026-11-12 01:00-01:59 UTC, written by an open-weight model (meta-llama/llama-4-maverick) through OpenRouter from the JSON in input, and published only because every number in it is one of the input's numbers and it is two sentences (check). Model output: not checked for meaning beyond that, and not ours. The data itself: snapshots/ and crosswind.js"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/summaries/2026-11-12/02.json",
+   "dataset": "flights/summaries",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/summaries/2026-11-12/02.json",
+   "bytes": 2925,
+   "sha256_prefix": "05eb7869a0d29d42",
+   "status": 200,
+   "verified": true,
+   "about": "A two-sentence summary of the flight picture for 2026-11-12 02:00-02:59 UTC, written by an open-weight model (meta-llama/llama-4-maverick) through OpenRouter from the JSON in input, and published only because every number in it is one of the input's numbers and it is two sentences (check). Model output: not checked for meaning beyond that, and not ours. The data itself: snapshots/ and crosswind.js"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/summaries/2026-11-12/03.json",
+   "dataset": "flights/summaries",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/summaries/2026-11-12/03.json",
+   "bytes": 2919,
+   "sha256_prefix": "b5ec3872ebec8fb5",
+   "status": 200,
+   "verified": true,
+   "about": "A two-sentence summary of the flight picture for 2026-11-12 03:00-03:59 UTC, written by an open-weight model (meta-llama/llama-4-maverick) through OpenRouter from the JSON in input, and published only because every number in it is one of the input's numbers and it is two sentences (check). Model output: not checked for meaning beyond that, and not ours. The data itself: snapshots/ and crosswind.js"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/summaries/2026-11-12/04.json",
+   "dataset": "flights/summaries",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/summaries/2026-11-12/04.json",
+   "bytes": 2972,
+   "sha256_prefix": "fc415c97abfea17c",
+   "status": 200,
+   "verified": true,
+   "about": "A two-sentence summary of the flight picture for 2026-11-12 04:00-04:59 UTC, written by an open-weight model (meta-llama/llama-4-maverick) through OpenRouter from the JSON in input, and published only because every number in it is one of the input's numbers and it is two sentences (check). Model output: not checked for meaning beyond that, and not ours. The data itself: snapshots/ and crosswind.js"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/summaries/2026-11-12/05.json",
+   "dataset": "flights/summaries",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/summaries/2026-11-12/05.json",
+   "bytes": 3078,
+   "sha256_prefix": "1d61b926eac4ec7e",
+   "status": 200,
+   "verified": true,
+   "about": "A two-sentence summary of the flight picture for 2026-11-12 05:00-05:59 UTC, written by an open-weight model (meta-llama/llama-4-maverick) through OpenRouter from the JSON in input, and published only because every number in it is one of the input's numbers and it is two sentences (check). Model output: not checked for meaning beyond that, and not ours. The data itself: snapshots/ and crosswind.js"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/summaries/2026-11-12/08.json",
+   "dataset": "flights/summaries",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/summaries/2026-11-12/08.json",
+   "bytes": 3064,
+   "sha256_prefix": "56915fc462ff1c64",
+   "status": 200,
+   "verified": true,
+   "about": "A two-sentence summary of the flight picture for 2026-11-12 08:00-08:59 UTC, written by an open-weight model (meta-llama/llama-4-maverick) through OpenRouter from the JSON in input, and published only because every number in it is one of the input's numbers and it is two sentences (check). Model output: not checked for meaning beyond that, and not ours. The data itself: snapshots/ and crosswind.js"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/summaries/2026-11-12/10.json",
+   "dataset": "flights/summaries",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/summaries/2026-11-12/10.json",
+   "bytes": 3055,
+   "sha256_prefix": "1b878396c08d7bf5",
+   "status": 200,
+   "verified": true,
+   "about": "A two-sentence summary of the flight picture for 2026-11-12 10:00-10:59 UTC, written by an open-weight model (meta-llama/llama-4-maverick) through OpenRouter from the JSON in input, and published only because every number in it is one of the input's numbers and it is two sentences (check). Model output: not checked for meaning beyond that, and not ours. The data itself: snapshots/ and crosswind.js"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/summaries/2026-11-12/11.json",
+   "dataset": "flights/summaries",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/summaries/2026-11-12/11.json",
+   "bytes": 3314,
+   "sha256_prefix": "ca817b55c6c428d3",
+   "status": 200,
+   "verified": true,
+   "about": "A two-sentence summary of the flight picture for 2026-11-12 11:00-11:59 UTC, written by an open-weight model (meta-llama/llama-4-maverick) through OpenRouter from the JSON in input, and published only because every number in it is one of the input's numbers and it is two sentences (check). Model output: not checked for meaning beyond that, and not ours. The data itself: snapshots/ and crosswind.js"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/summaries/2026-11-12/12.json",
+   "dataset": "flights/summaries",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/summaries/2026-11-12/12.json",
+   "bytes": 3263,
+   "sha256_prefix": "4cffa4c94f082ff2",
+   "status": 200,
+   "verified": true,
+   "about": "A two-sentence summary of the flight picture for 2026-11-12 12:00-12:59 UTC, written by an open-weight model (meta-llama/llama-4-maverick) through OpenRouter from the JSON in input, and published only because every number in it is one of the input's numbers and it is two sentences (check). Model output: not checked for meaning beyond that, and not ours. The data itself: snapshots/ and crosswind.js"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/summaries/2026-11-12/17.json",
+   "dataset": "flights/summaries",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/summaries/2026-11-12/17.json",
+   "bytes": 3038,
+   "sha256_prefix": "ca612d962dc7f98e",
+   "status": 200,
+   "verified": true,
+   "about": "A two-sentence summary of the flight picture for 2026-11-12 17:00-17:59 UTC, written by an open-weight model (meta-llama/llama-4-maverick) through OpenRouter from the JSON in input, and published only because every number in it is one of the input's numbers and it is two sentences (check). Model output: not checked for meaning beyond that, and not ours. The data itself: snapshots/ and crosswind.js"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/wind/lisbon-2026-11-10.json",
+   "dataset": "flights/wind",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/wind/lisbon-2026-11-10.json",
+   "bytes": 95287,
+   "sha256_prefix": "4dc024f4fe24d32b",
+   "status": 200,
+   "verified": true,
+   "about": "Open-Meteo's hourly wind over the Lisbon area and the Atlantic approaches on 2026-11-10 (UTC), on a 0.5-degree lattice: at 10 m (speed, direction, gusts) and at 850 hPa (speed and direction, roughly 1,500 m up, where aircraft climb and descend). Evidence: a weather model's data as Open-Meteo serves it, not observations and not ours; for what was measured at the airports see crosswind.json (METAR)."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/wind/lisbon-2026-11-11.json",
+   "dataset": "flights/wind",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/wind/lisbon-2026-11-11.json",
+   "bytes": 173470,
+   "sha256_prefix": "635485b37f5bb537",
+   "status": 200,
+   "verified": true,
+   "about": "Open-Meteo's hourly wind over the Lisbon area and the Atlantic approaches on 2026-11-11 (UTC), on a 0.5-degree lattice: at 10 m (speed, direction, gusts) and at 850 hPa (speed and direction, roughly 1,500 m up, where aircraft climb and descend). Evidence: a weather model's data as Open-Meteo serves it, not observations and not ours; for what was measured at the airports see crosswind.json (METAR)."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/wind/lisbon-2026-11-12.json",
+   "dataset": "flights/wind",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/wind/lisbon-2026-11-12.json",
+   "bytes": 47280,
+   "sha256_prefix": "6d37ae0161e5eaa5",
+   "status": 200,
+   "verified": true,
+   "about": "Open-Meteo's hourly wind over the Lisbon area and the Atlantic approaches on 2026-11-12 (UTC), on a 1-degree lattice: at 10 m (speed, direction, gusts) and at 850 hPa (speed and direction, roughly 1,500 m up, where aircraft climb and descend). Evidence: a weather model's data as Open-Meteo serves it, not observations and not ours; for what was measured at the airports see crosswind.json (METAR). H"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/wind/lisbon-2026-11-13.json",
+   "dataset": "flights/wind",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/wind/lisbon-2026-11-13.json",
+   "bytes": 27947,
+   "sha256_prefix": "ae7085e14539554f",
+   "status": 200,
+   "verified": true,
+   "about": "Open-Meteo's hourly wind over the Lisbon area and the Atlantic approaches on 2026-11-13 (UTC), on a 1-degree lattice: at 10 m (speed, direction, gusts) and at 850 hPa (speed and direction, roughly 1,500 m up, where aircraft climb and descend). Evidence: a weather model's data as Open-Meteo serves it, not observations and not ours; for what was measured at the airports see crosswind.json (METAR). H"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/wind/lisbon-close-2026-11-10.json",
+   "dataset": "flights/wind",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/wind/lisbon-close-2026-11-10.json",
+   "bytes": 31809,
+   "sha256_prefix": "9a42bf2e38156185",
+   "status": 200,
+   "verified": true,
+   "about": "Open-Meteo's hourly wind over the Lisbon area (close view) on 2026-11-10 (UTC), on a 0.25-degree lattice: at 10 m (speed, direction, gusts) and at 850 hPa (speed and direction, roughly 1,500 m up, where aircraft climb and descend). Evidence: a weather model's data as Open-Meteo serves it, not observations and not ours; for what was measured at the airports see crosswind.json (METAR). Hours from fo"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/wind/lisbon-close-2026-11-11.json",
+   "dataset": "flights/wind",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/wind/lisbon-close-2026-11-11.json",
+   "bytes": 56699,
+   "sha256_prefix": "0d2f10815f0260de",
+   "status": 200,
+   "verified": true,
+   "about": "Open-Meteo's hourly wind over the Lisbon area (close view) on 2026-11-11 (UTC), on a 0.25-degree lattice: at 10 m (speed, direction, gusts) and at 850 hPa (speed and direction, roughly 1,500 m up, where aircraft climb and descend). Evidence: a weather model's data as Open-Meteo serves it, not observations and not ours; for what was measured at the airports see crosswind.json (METAR). Hours from fo"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/wind/lisbon-close-2026-11-12.json",
+   "dataset": "flights/wind",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/wind/lisbon-close-2026-11-12.json",
+   "bytes": 56911,
+   "sha256_prefix": "e7e6d5d9a55715bc",
+   "status": 200,
+   "verified": true,
+   "about": "Open-Meteo's hourly wind over the Lisbon area (close view) on 2026-11-12 (UTC), on a 0.25-degree lattice: at 10 m (speed, direction, gusts) and at 850 hPa (speed and direction, roughly 1,500 m up, where aircraft climb and descend). Evidence: a weather model's data as Open-Meteo serves it, not observations and not ours; for what was measured at the airports see crosswind.json (METAR). Hours from fo"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/wind/lisbon-close-2026-11-13.json",
+   "dataset": "flights/wind",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/wind/lisbon-close-2026-11-13.json",
+   "bytes": 33584,
+   "sha256_prefix": "13170b77503819b8",
+   "status": 200,
+   "verified": true,
+   "about": "Open-Meteo's hourly wind over the Lisbon area (close view) on 2026-11-13 (UTC), on a 0.25-degree lattice: at 10 m (speed, direction, gusts) and at 850 hPa (speed and direction, roughly 1,500 m up, where aircraft climb and descend). Evidence: a weather model's data as Open-Meteo serves it, not observations and not ours; for what was measured at the airports see crosswind.json (METAR). Hours from fo"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/wind/madeira-2026-11-10.json",
+   "dataset": "flights/wind",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/wind/madeira-2026-11-10.json",
+   "bytes": 43065,
+   "sha256_prefix": "093fc0fc83db1507",
+   "status": 200,
+   "verified": true,
+   "about": "Open-Meteo's hourly wind over the Madeira and its approaches on 2026-11-10 (UTC), on a 0.5-degree lattice: at 10 m (speed, direction, gusts) and at 850 hPa (speed and direction, roughly 1,500 m up, where aircraft climb and descend). Evidence: a weather model's data as Open-Meteo serves it, not observations and not ours; for what was measured at the airports see crosswind.json (METAR). Hours from f"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/wind/madeira-2026-11-11.json",
+   "dataset": "flights/wind",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/wind/madeira-2026-11-11.json",
+   "bytes": 78085,
+   "sha256_prefix": "7b347bd93ba1f680",
+   "status": 200,
+   "verified": true,
+   "about": "Open-Meteo's hourly wind over the Madeira and its approaches on 2026-11-11 (UTC), on a 0.5-degree lattice: at 10 m (speed, direction, gusts) and at 850 hPa (speed and direction, roughly 1,500 m up, where aircraft climb and descend). Evidence: a weather model's data as Open-Meteo serves it, not observations and not ours; for what was measured at the airports see crosswind.json (METAR). Hours from f"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/wind/madeira-2026-11-12.json",
+   "dataset": "flights/wind",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/wind/madeira-2026-11-12.json",
+   "bytes": 22479,
+   "sha256_prefix": "67a7fed63be88b83",
+   "status": 200,
+   "verified": true,
+   "about": "Open-Meteo's hourly wind over the Madeira and its approaches on 2026-11-12 (UTC), on a 1-degree lattice: at 10 m (speed, direction, gusts) and at 850 hPa (speed and direction, roughly 1,500 m up, where aircraft climb and descend). Evidence: a weather model's data as Open-Meteo serves it, not observations and not ours; for what was measured at the airports see crosswind.json (METAR). Hours from for"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/wind/madeira-2026-11-13.json",
+   "dataset": "flights/wind",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/wind/madeira-2026-11-13.json",
+   "bytes": 13609,
+   "sha256_prefix": "44c90d5114f3ee97",
+   "status": 200,
+   "verified": true,
+   "about": "Open-Meteo's hourly wind over the Madeira and its approaches on 2026-11-13 (UTC), on a 1-degree lattice: at 10 m (speed, direction, gusts) and at 850 hPa (speed and direction, roughly 1,500 m up, where aircraft climb and descend). Evidence: a weather model's data as Open-Meteo serves it, not observations and not ours; for what was measured at the airports see crosswind.json (METAR). Hours from for"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/wind/madeira-close-2026-11-10.json",
+   "dataset": "flights/wind",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/wind/madeira-close-2026-11-10.json",
+   "bytes": 9018,
+   "sha256_prefix": "bdea995fa5eae93f",
+   "status": 200,
+   "verified": true,
+   "about": "Open-Meteo's hourly wind over the Madeira (close view) on 2026-11-10 (UTC), on a 0.25-degree lattice: at 10 m (speed, direction, gusts) and at 850 hPa (speed and direction, roughly 1,500 m up, where aircraft climb and descend). Evidence: a weather model's data as Open-Meteo serves it, not observations and not ours; for what was measured at the airports see crosswind.json (METAR). Hours from foreca"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/wind/madeira-close-2026-11-11.json",
+   "dataset": "flights/wind",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/wind/madeira-close-2026-11-11.json",
+   "bytes": 14827,
+   "sha256_prefix": "fb3be33bd921d0cf",
+   "status": 200,
+   "verified": true,
+   "about": "Open-Meteo's hourly wind over the Madeira (close view) on 2026-11-11 (UTC), on a 0.25-degree lattice: at 10 m (speed, direction, gusts) and at 850 hPa (speed and direction, roughly 1,500 m up, where aircraft climb and descend). Evidence: a weather model's data as Open-Meteo serves it, not observations and not ours; for what was measured at the airports see crosswind.json (METAR). Hours from foreca"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/wind/madeira-close-2026-11-12.json",
+   "dataset": "flights/wind",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/wind/madeira-close-2026-11-12.json",
+   "bytes": 14589,
+   "sha256_prefix": "a7d25085752e2b37",
+   "status": 200,
+   "verified": true,
+   "about": "Open-Meteo's hourly wind over the Madeira (close view) on 2026-11-12 (UTC), on a 0.25-degree lattice: at 10 m (speed, direction, gusts) and at 850 hPa (speed and direction, roughly 1,500 m up, where aircraft climb and descend). Evidence: a weather model's data as Open-Meteo serves it, not observations and not ours; for what was measured at the airports see crosswind.json (METAR). Hours from foreca"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "flights/wind/madeira-close-2026-11-13.json",
+   "dataset": "flights/wind",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/flights/wind/madeira-close-2026-11-13.json",
+   "bytes": 9327,
+   "sha256_prefix": "3c7f80f906f15113",
+   "status": 200,
+   "verified": true,
+   "about": "Open-Meteo's hourly wind over the Madeira (close view) on 2026-11-13 (UTC), on a 0.25-degree lattice: at 10 m (speed, direction, gusts) and at 850 hPa (speed and direction, roughly 1,500 m up, where aircraft climb and descend). Evidence: a weather model's data as Open-Meteo serves it, not observations and not ours; for what was measured at the airports see crosswind.json (METAR). Hours from foreca"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "signals.json",
+   "dataset": "signals",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/signals.json",
+   "bytes": 161170,
+   "sha256_prefix": "358876bb31945c4c",
+   "status": 200,
+   "verified": true,
+   "about": "The incident timeline as data, made from timeline.md by tools/timeline.mjs (never edit by hand; edit timeline.md). See README.md."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "transport/bridges.json",
+   "dataset": "transport/bridges",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/transport/bridges.json",
+   "bytes": 2966,
+   "sha256_prefix": "6d65536f8ef37c9f",
+   "status": 200,
+   "verified": true,
+   "about": "Bridges and tunnels: each operator's own site, feed or open API first; the press only where the operator publishes nothing readable (those are the researcher's decisions, linked). Short excerpts with the link."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "transport/buses.json",
+   "dataset": "transport/buses",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/transport/buses.json",
+   "bytes": 10937,
+   "sha256_prefix": "2e6f79d89afc9d8d",
+   "status": 200,
+   "verified": true,
+   "about": "Buses and trams: each operator's own site, feed or open API first; the press only where the operator publishes nothing readable (those are the researcher's decisions, linked). Short excerpts with the link."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "transport/ferries.json",
+   "dataset": "transport/ferries",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/transport/ferries.json",
+   "bytes": 6068,
+   "sha256_prefix": "7a9952a370688f2a",
+   "status": 200,
+   "verified": true,
+   "about": "Ferries: each operator's own site, feed or open API first; the press only where the operator publishes nothing readable (those are the researcher's decisions, linked). Short excerpts with the link."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "transport/flights.json",
+   "dataset": "transport/flights",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/transport/flights.json",
+   "bytes": 21318,
+   "sha256_prefix": "9b7799da4d9b0b4f",
+   "status": 200,
+   "verified": true,
+   "about": "Airline flights at Lisbon, Porto, Faro and Funchal as OpenSky Network's public data shows them: counts only, never an aircraft. Facts are what the source shows; the caveat is our reading. Cancellations: ANA's own figures (scheduled, cancelled, operated movements) from its newsroom where it has published them (ana_statement, and ana on each airport); diversions: no open source states them; the deci"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "transport/metro-schedule.json",
+   "dataset": "transport/metro-schedule",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/transport/metro-schedule.json",
+   "bytes": 9109,
+   "sha256_prefix": "21cee1d43da99654",
+   "status": 200,
+   "verified": true,
+   "about": ""
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "transport/metro.json",
+   "dataset": "transport/metro",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/transport/metro.json",
+   "bytes": 3312,
+   "sha256_prefix": "54b385f5bdd928c4",
+   "status": 200,
+   "verified": true,
+   "about": "Metro and light rail: each operator's own site, feed or open API first; the press only where the operator publishes nothing readable (those are the researcher's decisions, linked). Short excerpts with the link."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "transport/services.json",
+   "dataset": "transport/services",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/transport/services.json",
+   "bytes": 17175,
+   "sha256_prefix": "88637082aadc4971",
+   "status": 200,
+   "verified": true,
+   "about": "Each operator's current state from its own notices where an open, machine-readable source exists, with short excerpts and the link. Operators without an open source (Metro, CP, Fertagus, Carris, the bridges, the airport) are in the decisions kept by incident.researcher@ (data/decisions/entities/), linked from the page."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "transport/trains.json",
+   "dataset": "transport/trains",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/transport/trains.json",
+   "bytes": 8914,
+   "sha256_prefix": "1930fcd2b6ce9722",
+   "status": 200,
+   "verified": true,
+   "about": "Trains: each operator's own site, feed or open API first; the press only where the operator publishes nothing readable (those are the researcher's decisions, linked). Short excerpts with the link."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "watch/websummit.json",
+   "dataset": "watch/websummit",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/watch/websummit.json",
+   "bytes": 67302,
+   "sha256_prefix": "7a5607c35d5c692f",
+   "status": 200,
+   "verified": true,
+   "about": "Web Summit's own channels, watched for its decisions (Wednesday 11 November: off, 19:38; now Day 3 and the open items: talks, PITCH, side events, tickets): the blog's listings (polled every 2 minutes, --quick), the sitemaps' URL set and the organisers' Bluesky posts. Written by tools/websummit.mjs (see ../README.md). An alert is a keyword match on the organiser's own channel: read it before you ac"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "weather/airport-madeira.json",
+   "dataset": "weather/airport-madeira",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/weather/airport-madeira.json",
+   "bytes": 57228,
+   "sha256_prefix": "94e626cff26385c3",
+   "status": 200,
+   "verified": true,
+   "about": "IPMA's aeronautical forecast (TAF) and observations (METAR) for Madeira airport (LPMA, Santa Cruz, on the south-east coast), read through the US NOAA Aviation Weather Center's public API. Knots, with km/h (1 kt = 1.852 km/h). A point forecast for pilots at the airport; not a public warning."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "weather/airport.json",
+   "dataset": "weather/airport",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/weather/airport.json",
+   "bytes": 68366,
+   "sha256_prefix": "5432955720bdb363",
+   "status": 200,
+   "verified": true,
+   "about": "IPMA's aeronautical forecast (TAF) and observations (METAR) for Lisbon airport (LPPT), 8 km north of the centre, read through the US NOAA Aviation Weather Center's public API. Knots, with km/h (1 kt = 1.852 km/h). A point forecast for pilots at the airport; not a public warning."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "weather/analysis.json",
+   "dataset": "weather/analysis",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/weather/analysis.json",
+   "bytes": 26069,
+   "sha256_prefix": "abaeef253ef9ce39",
+   "status": 200,
+   "verified": true,
+   "about": ""
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "weather/cap.json",
+   "dataset": "weather/cap",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/weather/cap.json",
+   "bytes": 187068,
+   "sha256_prefix": "457b290da5911834",
+   "status": 200,
+   "verified": true,
+   "about": "IPMA's warnings for the Lisbon district as CAP messages (Common Alerting Protocol), read through MeteoAlarm's public feed (https://www.meteoalarm.org). A dated record, not a live feed: read 2026-11-12T14:23:11Z. MeteoAlarm: \"Time delays between this website and the www.meteoalarm.org website are possible. For the most up-to-date awareness information as published by the participating National Mete"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "weather/changes.json",
+   "dataset": "weather/changes",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/weather/changes.json",
+   "bytes": 48698,
+   "sha256_prefix": "b7f9c1377232e798",
+   "status": 200,
+   "verified": true,
+   "about": "thursday (first): Lisbon warnings touching Thursday 12 Nov and the forecasts for its morning. gusts_above_warned: every LPPT METAR gust from Wed 05:00 above the gust warned for that hour (the IPMA wind warning in force, from its text; outside a wind warning, the highest gust in the TAF groups covering that hour). Facts, each with its source. Then what each refresh found changed, newest last. Writt"
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "weather/communiques.json",
+   "dataset": "weather/communiques",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/weather/communiques.json",
+   "bytes": 9146,
+   "sha256_prefix": "7a079a8196e43658",
+   "status": 200,
+   "verified": true,
+   "about": "IPMA's communiqués (special weather information) from its RSS feed, kept across reads; earthquake notices left out."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "weather/forecast.json",
+   "dataset": "weather/forecast",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/weather/forecast.json",
+   "bytes": 77199,
+   "sha256_prefix": "17aeb234d6139443",
+   "status": 200,
+   "verified": true,
+   "about": "IPMA's own forecast for Lisbon (globalIdLocal 1110600): the 5-day daily forecast and the hourly model forecast (mean wind, no gusts). IPMA's wind classes: 1 weak, 2 moderate, 3 strong, 4 very strong."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "weather/gusts-vs-forecast.json",
+   "dataset": "weather/gusts-vs-forecast",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/weather/gusts-vs-forecast.json",
+   "bytes": 2890,
+   "sha256_prefix": "cfe6be10892f0703",
+   "status": 200,
+   "verified": true,
+   "about": "The latest observed wind in Lisbon against what was forecast for that hour. Facts with sources; no analysis here (see analysis.md)."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "weather/lisbon-rain.json",
+   "dataset": "weather/lisbon-rain",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/weather/lisbon-rain.json",
+   "bytes": 65138,
+   "sha256_prefix": "d51a9ceee6f25ca1",
+   "status": 200,
+   "verified": true,
+   "about": "IPMA's hourly station observations at Lisbon's stations (the same eight as stations.json), in madeira.json's shape: rain in mm per hour and mean wind, kept across reads, sorted by each station's largest rain over six consecutive hourly values. For the warned-against-observed card from Wed 09:00 (red rain 09:00-18:00). Facts."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "weather/madeira.json",
+   "dataset": "weather/madeira",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/weather/madeira.json",
+   "bytes": 129723,
+   "sha256_prefix": "7a7ae393173963ec",
+   "status": 200,
+   "verified": true,
+   "about": "IPMA's hourly station observations in Madeira (rain in mm per hour, mean wind), kept across reads (the feed holds 24 hours), sorted by each station's largest rain over six consecutive hourly values. Facts."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "weather/stations.json",
+   "dataset": "weather/stations",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/weather/stations.json",
+   "bytes": 103683,
+   "sha256_prefix": "72ac3e8764680dae",
+   "status": 200,
+   "verified": true,
+   "about": "IPMA's hourly station observations in and next to Lisbon, kept across reads (the feed holds 24 hours). Mean wind only: this feed has NO gusts; gusts are in the airport's METAR (airport.json)."
+  },
+  {
+   "incident": "2026-11-10-storm-charles",
+   "path": "weather/warnings.json",
+   "dataset": "weather/warnings",
+   "url": "https://storm-charles.promptugal.news/api/v1/2026-11-10-storm-charles/weather/warnings.json",
+   "bytes": 20973,
+   "sha256_prefix": "81b2cf946e31060a",
+   "status": 200,
+   "verified": true,
+   "about": "IPMA's weather warnings for the Lisbon district (idAreaAviso LSB), non-green only; red and orange warnings elsewhere; and how Lisbon's warnings changed over time. Times are local = UTC (WET). IPMA's open data carries no issue time: `sent_utc` is the sent time of the CAP message (MeteoAlarm, cap.json) matching the warning's area, type, level and window exactly, or null where none matches (never gue"
+  }
+ ]
+}

@@ -1,0 +1,3458 @@
+{
+ "license": {
+  "name": "CC BY 4.0",
+  "url": "https://creativecommons.org/licenses/by/4.0/",
+  "holder": "PrompTugal.news",
+  "note": "What PrompTugal.news makes: this file's structure, records and derived values.",
+  "commercial_use": "allowed",
+  "commercial_note": "With credit to PrompTugal.news; values taken from a source keep that source's licence."
+ },
+ "about": "Every run of sources/events-pt/collect.mjs, newest first: each request's address, HTTP status, size, the first 16 hex of its sha256, and whether the bytes changed since the run before. The bytes and the full sha256 go to the source's vault (see card.json: latest/reads-full.json), never to git.",
+ "source": "events-pt",
+ "runs": [
+  {
+   "at": "2026-11-18T23:43:33Z",
+   "finished": "2026-11-18T23:43:57Z",
+   "ok": 6,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T23:43:35Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T23:43:38Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "61a390b19b6a9138",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T23:43:40Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T23:43:43Z",
+     "status": 200,
+     "bytes": 231255,
+     "sha256_prefix": "956e7486e2fa422a",
+     "changed": false
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-18T23:43:45Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-18T23:43:48Z",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "a383c4c302e8f0e4",
+     "changed": false
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-18T23:43:50Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-18&end_date=2027-01-17",
+     "at": "2026-11-18T23:43:53Z",
+     "status": 200,
+     "bytes": 147059,
+     "sha256_prefix": "d8ed8fda37bb56d9",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T23:35:32Z",
+   "finished": "2026-11-18T23:35:57Z",
+   "ok": 6,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T23:35:34Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T23:35:37Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "f8e2026e76b54c18",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T23:35:39Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T23:35:42Z",
+     "status": 200,
+     "bytes": 231255,
+     "sha256_prefix": "956e7486e2fa422a",
+     "changed": false
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-18T23:35:44Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-18T23:35:47Z",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "a383c4c302e8f0e4",
+     "changed": true
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-18T23:35:49Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-18&end_date=2027-01-17",
+     "at": "2026-11-18T23:35:52Z",
+     "status": 200,
+     "bytes": 147059,
+     "sha256_prefix": "d8ed8fda37bb56d9",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T23:28:33Z",
+   "finished": "2026-11-18T23:28:59Z",
+   "ok": 6,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T23:28:36Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T23:28:38Z",
+     "status": 403,
+     "bytes": 5645,
+     "sha256_prefix": "75dffb5f31494585",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T23:28:41Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T23:28:43Z",
+     "status": 200,
+     "bytes": 231255,
+     "sha256_prefix": "956e7486e2fa422a",
+     "changed": false
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-18T23:28:46Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-18T23:28:48Z",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "5d5d0f0dc48d97bd",
+     "changed": true
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-18T23:28:51Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-18&end_date=2027-01-17",
+     "at": "2026-11-18T23:28:53Z",
+     "status": 200,
+     "bytes": 147059,
+     "sha256_prefix": "d8ed8fda37bb56d9",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T23:22:36Z",
+   "finished": "2026-11-18T23:23:00Z",
+   "ok": 6,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T23:22:38Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T23:22:41Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "4ffb3e026ddf08c6",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T23:22:43Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T23:22:46Z",
+     "status": 200,
+     "bytes": 231255,
+     "sha256_prefix": "956e7486e2fa422a",
+     "changed": true
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-18T23:22:48Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-18T23:22:51Z",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "a383c4c302e8f0e4",
+     "changed": true
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-18T23:22:53Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-18&end_date=2027-01-17",
+     "at": "2026-11-18T23:22:56Z",
+     "status": 200,
+     "bytes": 147059,
+     "sha256_prefix": "d8ed8fda37bb56d9",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:53:03Z",
+   "finished": "2026-11-18T22:53:28Z",
+   "ok": 6,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T22:53:05Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T22:53:08Z",
+     "status": 403,
+     "bytes": 5645,
+     "sha256_prefix": "9a24d3b7233d10dc",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T22:53:10Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T22:53:13Z",
+     "status": 200,
+     "bytes": 232932,
+     "sha256_prefix": "3feab7af179dc934",
+     "changed": false
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-18T22:53:15Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-18T22:53:18Z",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "6ebb905f9c0d7526",
+     "changed": true
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-18T22:53:20Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-18&end_date=2027-01-17",
+     "at": "2026-11-18T22:53:23Z",
+     "status": 200,
+     "bytes": 147059,
+     "sha256_prefix": "d8ed8fda37bb56d9",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:43:15Z",
+   "finished": "2026-11-18T22:43:39Z",
+   "ok": 6,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T22:43:17Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T22:43:20Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "62cff52b754283e7",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T22:43:22Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T22:43:25Z",
+     "status": 200,
+     "bytes": 232932,
+     "sha256_prefix": "3feab7af179dc934",
+     "changed": false
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-18T22:43:27Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-18T22:43:30Z",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "a383c4c302e8f0e4",
+     "changed": true
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-18T22:43:32Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-18&end_date=2027-01-17",
+     "at": "2026-11-18T22:43:35Z",
+     "status": 200,
+     "bytes": 147059,
+     "sha256_prefix": "d8ed8fda37bb56d9",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:37:35Z",
+   "finished": "2026-11-18T22:38:00Z",
+   "ok": 6,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T22:37:38Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T22:37:40Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "575aa3d3309bb130",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T22:37:43Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T22:37:45Z",
+     "status": 200,
+     "bytes": 232932,
+     "sha256_prefix": "3feab7af179dc934",
+     "changed": false
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-18T22:37:48Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-18T22:37:50Z",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "23dee616f470e61d",
+     "changed": true
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-18T22:37:53Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-18&end_date=2027-01-17",
+     "at": "2026-11-18T22:37:56Z",
+     "status": 200,
+     "bytes": 147059,
+     "sha256_prefix": "d8ed8fda37bb56d9",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:31:48Z",
+   "finished": "2026-11-18T22:32:15Z",
+   "ok": 6,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T22:31:50Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T22:31:53Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "1b3ea577ae1f6b04",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T22:31:55Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T22:31:58Z",
+     "status": 200,
+     "bytes": 232932,
+     "sha256_prefix": "3feab7af179dc934",
+     "changed": false
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-18T22:32:00Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-18T22:32:03Z",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "a383c4c302e8f0e4",
+     "changed": false
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-18T22:32:07Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-18&end_date=2027-01-17",
+     "at": "2026-11-18T22:32:10Z",
+     "status": 200,
+     "bytes": 147059,
+     "sha256_prefix": "d8ed8fda37bb56d9",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:26:48Z",
+   "finished": "2026-11-18T22:27:13Z",
+   "ok": 6,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T22:26:50Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T22:26:53Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "e3e69d106f86ee53",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T22:26:55Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T22:26:58Z",
+     "status": 200,
+     "bytes": 232932,
+     "sha256_prefix": "3feab7af179dc934",
+     "changed": false
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-18T22:27:00Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-18T22:27:03Z",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "a383c4c302e8f0e4",
+     "changed": false
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-18T22:27:05Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-18&end_date=2027-01-17",
+     "at": "2026-11-18T22:27:08Z",
+     "status": 200,
+     "bytes": 147059,
+     "sha256_prefix": "d8ed8fda37bb56d9",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:20:44Z",
+   "finished": "2026-11-18T22:21:09Z",
+   "ok": 6,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T22:20:46Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T22:20:49Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "0ef69d4224efc4a6",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T22:20:51Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T22:20:54Z",
+     "status": 200,
+     "bytes": 232932,
+     "sha256_prefix": "3feab7af179dc934",
+     "changed": true
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-18T22:20:57Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-18T22:20:59Z",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "a383c4c302e8f0e4",
+     "changed": false
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-18T22:21:02Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-18&end_date=2027-01-17",
+     "at": "2026-11-18T22:21:04Z",
+     "status": 200,
+     "bytes": 147059,
+     "sha256_prefix": "d8ed8fda37bb56d9",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:11:35Z",
+   "finished": "2026-11-18T22:12:00Z",
+   "ok": 6,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T22:11:37Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T22:11:40Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "6f63c210660a6ab2",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T22:11:42Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T22:11:45Z",
+     "status": 200,
+     "bytes": 231255,
+     "sha256_prefix": "c4b36a45abcbf120",
+     "changed": false
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-18T22:11:47Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-18T22:11:50Z",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "a383c4c302e8f0e4",
+     "changed": true
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-18T22:11:52Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-18&end_date=2027-01-17",
+     "at": "2026-11-18T22:11:55Z",
+     "status": 200,
+     "bytes": 147059,
+     "sha256_prefix": "d8ed8fda37bb56d9",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:06:31Z",
+   "finished": "2026-11-18T22:06:56Z",
+   "ok": 6,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T22:06:34Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T22:06:36Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "cfc1a7cc41de1909",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T22:06:39Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T22:06:41Z",
+     "status": 200,
+     "bytes": 231255,
+     "sha256_prefix": "c4b36a45abcbf120",
+     "changed": true
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-18T22:06:44Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-18T22:06:46Z",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "23dee616f470e61d",
+     "changed": true
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-18T22:06:49Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-18&end_date=2027-01-17",
+     "at": "2026-11-18T22:06:51Z",
+     "status": 200,
+     "bytes": 147059,
+     "sha256_prefix": "d8ed8fda37bb56d9",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T21:12:22Z",
+   "finished": "2026-11-18T21:12:48Z",
+   "ok": 6,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T21:12:24Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T21:12:26Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "0887148ac3768bcf",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T21:12:29Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T21:12:31Z",
+     "status": 200,
+     "bytes": 231255,
+     "sha256_prefix": "a962d9d6fb9812ee",
+     "changed": false
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-18T21:12:34Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-18T21:12:36Z",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "a383c4c302e8f0e4",
+     "changed": false
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-18T21:12:39Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-18&end_date=2027-01-17",
+     "at": "2026-11-18T21:12:41Z",
+     "status": 200,
+     "bytes": 147059,
+     "sha256_prefix": "d8ed8fda37bb56d9",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T21:03:16Z",
+   "finished": "2026-11-18T21:03:40Z",
+   "ok": 6,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T21:03:18Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T21:03:21Z",
+     "status": 403,
+     "bytes": 5645,
+     "sha256_prefix": "b25aee2e32c585e8",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T21:03:23Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T21:03:26Z",
+     "status": 200,
+     "bytes": 231255,
+     "sha256_prefix": "a962d9d6fb9812ee",
+     "changed": true
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-18T21:03:28Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-18T21:03:31Z",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "a383c4c302e8f0e4",
+     "changed": true
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-18T21:03:33Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-18&end_date=2027-01-17",
+     "at": "2026-11-18T21:03:36Z",
+     "status": 200,
+     "bytes": 147059,
+     "sha256_prefix": "d8ed8fda37bb56d9",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T19:14:33Z",
+   "finished": "2026-11-18T19:14:57Z",
+   "ok": 6,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T19:14:35Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T19:14:37Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "ff58f8396ad24c8d",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T19:14:40Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T19:14:42Z",
+     "status": 200,
+     "bytes": 231255,
+     "sha256_prefix": "b1a273554bb153bb",
+     "changed": false
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-18T19:14:45Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-18T19:14:47Z",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "23dee616f470e61d",
+     "changed": true
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-18T19:14:50Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-18&end_date=2027-01-17",
+     "at": "2026-11-18T19:14:52Z",
+     "status": 200,
+     "bytes": 147059,
+     "sha256_prefix": "d8ed8fda37bb56d9",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T19:10:07Z",
+   "finished": "2026-11-18T19:10:31Z",
+   "ok": 6,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T19:10:09Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T19:10:11Z",
+     "status": 403,
+     "bytes": 5645,
+     "sha256_prefix": "6df6a7b2689533f5",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T19:10:14Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T19:10:16Z",
+     "status": 200,
+     "bytes": 231255,
+     "sha256_prefix": "b1a273554bb153bb",
+     "changed": false
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-18T19:10:19Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-18T19:10:21Z",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "a383c4c302e8f0e4",
+     "changed": false
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-18T19:10:24Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-18&end_date=2027-01-17",
+     "at": "2026-11-18T19:10:26Z",
+     "status": 200,
+     "bytes": 147059,
+     "sha256_prefix": "d8ed8fda37bb56d9",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T19:06:34Z",
+   "finished": "2026-11-18T19:06:59Z",
+   "ok": 6,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T19:06:36Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T19:06:39Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "fad1f4c12b3a4510",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T19:06:41Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T19:06:44Z",
+     "status": 200,
+     "bytes": 231255,
+     "sha256_prefix": "b1a273554bb153bb",
+     "changed": false
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-18T19:06:46Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-18T19:06:49Z",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "a383c4c302e8f0e4",
+     "changed": false
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-18T19:06:52Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-18&end_date=2027-01-17",
+     "at": "2026-11-18T19:06:54Z",
+     "status": 200,
+     "bytes": 147059,
+     "sha256_prefix": "d8ed8fda37bb56d9",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T19:03:00Z",
+   "finished": "2026-11-18T19:03:25Z",
+   "ok": 6,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T19:03:02Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T19:03:04Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "74f00438c2a43fa4",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T19:03:07Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T19:03:09Z",
+     "status": 200,
+     "bytes": 231255,
+     "sha256_prefix": "b1a273554bb153bb",
+     "changed": false
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-18T19:03:12Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-18T19:03:14Z",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "a383c4c302e8f0e4",
+     "changed": false
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-18T19:03:18Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-18&end_date=2027-01-17",
+     "at": "2026-11-18T19:03:20Z",
+     "status": 200,
+     "bytes": 147059,
+     "sha256_prefix": "d8ed8fda37bb56d9",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T18:55:21Z",
+   "finished": "2026-11-18T18:55:45Z",
+   "ok": 6,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T18:55:23Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T18:55:25Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "32564100f2db8268",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T18:55:28Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T18:55:30Z",
+     "status": 200,
+     "bytes": 231255,
+     "sha256_prefix": "b1a273554bb153bb",
+     "changed": false
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-18T18:55:33Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-18T18:55:35Z",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "a383c4c302e8f0e4",
+     "changed": false
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-18T18:55:38Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-18&end_date=2027-01-17",
+     "at": "2026-11-18T18:55:40Z",
+     "status": 200,
+     "bytes": 147059,
+     "sha256_prefix": "d8ed8fda37bb56d9",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T18:51:40Z",
+   "finished": "2026-11-18T18:52:03Z",
+   "ok": 6,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T18:51:40Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T18:51:43Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "fe69809ebb3c112d",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T18:51:45Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T18:51:48Z",
+     "status": 200,
+     "bytes": 231255,
+     "sha256_prefix": "b1a273554bb153bb",
+     "changed": true
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-18T18:51:50Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-18T18:51:53Z",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "a383c4c302e8f0e4",
+     "changed": true
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-18T18:51:55Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-18&end_date=2027-01-17",
+     "at": "2026-11-18T18:51:58Z",
+     "status": 200,
+     "bytes": 147059,
+     "sha256_prefix": "d8ed8fda37bb56d9",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T17:54:03Z",
+   "finished": "2026-11-18T17:54:27Z",
+   "ok": 6,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T17:54:04Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T17:54:07Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "9a546bdcb6f12109",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T17:54:09Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T17:54:12Z",
+     "status": 200,
+     "bytes": 231255,
+     "sha256_prefix": "3893907567ffa5db",
+     "changed": false
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-18T17:54:14Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-18T17:54:17Z",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "5d5d0f0dc48d97bd",
+     "changed": true
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-18T17:54:20Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-18&end_date=2027-01-17",
+     "at": "2026-11-18T17:54:22Z",
+     "status": 200,
+     "bytes": 147059,
+     "sha256_prefix": "d8ed8fda37bb56d9",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T17:39:01Z",
+   "finished": "2026-11-18T17:39:25Z",
+   "ok": 6,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T17:39:02Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T17:39:05Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "6f328306535d4681",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T17:39:07Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T17:39:10Z",
+     "status": 200,
+     "bytes": 231255,
+     "sha256_prefix": "3893907567ffa5db",
+     "changed": true
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-18T17:39:12Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-18T17:39:15Z",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "a383c4c302e8f0e4",
+     "changed": false
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-18T17:39:17Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-18&end_date=2027-01-17",
+     "at": "2026-11-18T17:39:20Z",
+     "status": 200,
+     "bytes": 147059,
+     "sha256_prefix": "d8ed8fda37bb56d9",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T16:30:08Z",
+   "finished": "2026-11-18T16:30:33Z",
+   "ok": 6,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T16:30:10Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T16:30:12Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "5af780cd3a822870",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T16:30:15Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T16:30:17Z",
+     "status": 200,
+     "bytes": 232932,
+     "sha256_prefix": "6f41d5c02d8c08a0",
+     "changed": true
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-18T16:30:20Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-18T16:30:22Z",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "a383c4c302e8f0e4",
+     "changed": true
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-18T16:30:25Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-18&end_date=2027-01-17",
+     "at": "2026-11-18T16:30:27Z",
+     "status": 200,
+     "bytes": 147059,
+     "sha256_prefix": "d8ed8fda37bb56d9",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T16:11:33Z",
+   "finished": "2026-11-18T16:11:56Z",
+   "ok": 6,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T16:11:35Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T16:11:37Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "d28deb6b0f4436b3",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T16:11:40Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T16:11:42Z",
+     "status": 200,
+     "bytes": 232932,
+     "sha256_prefix": "bff03010cb9c25c5",
+     "changed": false
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-18T16:11:45Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-18T16:11:47Z",
+     "status": 200,
+     "bytes": 412173,
+     "sha256_prefix": "c0279e7aa2334a7d",
+     "changed": true
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-18T16:11:50Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-18&end_date=2027-01-17",
+     "at": "2026-11-18T16:11:52Z",
+     "status": 200,
+     "bytes": 147059,
+     "sha256_prefix": "d8ed8fda37bb56d9",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T16:07:44Z",
+   "finished": "2026-11-18T16:08:08Z",
+   "ok": 6,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T16:07:45Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T16:07:48Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "b9ffb21188853b63",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T16:07:50Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T16:07:53Z",
+     "status": 200,
+     "bytes": 232932,
+     "sha256_prefix": "bff03010cb9c25c5",
+     "changed": false
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-18T16:07:55Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-18T16:07:58Z",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "a383c4c302e8f0e4",
+     "changed": false
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-18T16:08:00Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-18&end_date=2027-01-17",
+     "at": "2026-11-18T16:08:03Z",
+     "status": 200,
+     "bytes": 147059,
+     "sha256_prefix": "2df00c8e99224da5",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T16:04:06Z",
+   "finished": "2026-11-18T16:04:31Z",
+   "ok": 6,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T16:04:08Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T16:04:11Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "187d7b6101dc9680",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T16:04:13Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T16:04:16Z",
+     "status": 200,
+     "bytes": 232932,
+     "sha256_prefix": "bff03010cb9c25c5",
+     "changed": false
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-18T16:04:18Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-18T16:04:21Z",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "a383c4c302e8f0e4",
+     "changed": false
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-18T16:04:23Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-18&end_date=2027-01-17",
+     "at": "2026-11-18T16:04:26Z",
+     "status": 200,
+     "bytes": 147059,
+     "sha256_prefix": "2df00c8e99224da5",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:58:47Z",
+   "finished": "2026-11-18T15:59:12Z",
+   "ok": 6,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T15:58:49Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T15:58:51Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "c13014497ea13ea9",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T15:58:54Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T15:58:56Z",
+     "status": 200,
+     "bytes": 232932,
+     "sha256_prefix": "bff03010cb9c25c5",
+     "changed": false
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-18T15:58:59Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-18T15:59:01Z",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "a383c4c302e8f0e4",
+     "changed": false
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-18T15:59:05Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-18&end_date=2027-01-17",
+     "at": "2026-11-18T15:59:07Z",
+     "status": 200,
+     "bytes": 143612,
+     "sha256_prefix": "4cc21d0c1c9e93b3",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:54:59Z",
+   "finished": "2026-11-18T15:55:22Z",
+   "ok": 6,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T15:55:00Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T15:55:03Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "81975c3872ff90b9",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T15:55:05Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T15:55:08Z",
+     "status": 200,
+     "bytes": 232932,
+     "sha256_prefix": "bff03010cb9c25c5",
+     "changed": false
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-18T15:55:10Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-18T15:55:13Z",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "a383c4c302e8f0e4",
+     "changed": true
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-18T15:55:15Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-18&end_date=2027-01-17",
+     "at": "2026-11-18T15:55:18Z",
+     "status": 200,
+     "bytes": 143612,
+     "sha256_prefix": "4cc21d0c1c9e93b3",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:51:10Z",
+   "finished": "2026-11-18T15:51:34Z",
+   "ok": 6,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T15:51:10Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T15:51:12Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "1b4183e56fd5eae1",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T15:51:15Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T15:51:17Z",
+     "status": 200,
+     "bytes": 232932,
+     "sha256_prefix": "bff03010cb9c25c5",
+     "changed": false
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-18T15:51:20Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-18T15:51:22Z",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "23dee616f470e61d",
+     "changed": false
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-18T15:51:25Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-18&end_date=2027-01-17",
+     "at": "2026-11-18T15:51:28Z",
+     "status": 200,
+     "bytes": 143612,
+     "sha256_prefix": "4cc21d0c1c9e93b3",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:47:17Z",
+   "finished": "2026-11-18T15:47:41Z",
+   "ok": 6,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T15:47:17Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T15:47:20Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "37809ce1ebc630bc",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T15:47:22Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T15:47:25Z",
+     "status": 200,
+     "bytes": 232932,
+     "sha256_prefix": "bff03010cb9c25c5",
+     "changed": false
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-18T15:47:27Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-18T15:47:30Z",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "23dee616f470e61d",
+     "changed": false
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-18T15:47:34Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-18&end_date=2027-01-17",
+     "at": "2026-11-18T15:47:36Z",
+     "status": 200,
+     "bytes": 143612,
+     "sha256_prefix": "4cc21d0c1c9e93b3",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:43:27Z",
+   "finished": "2026-11-18T15:43:52Z",
+   "ok": 6,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T15:43:29Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T15:43:31Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "f0fb065392be72a8",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T15:43:34Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T15:43:36Z",
+     "status": 200,
+     "bytes": 232932,
+     "sha256_prefix": "bff03010cb9c25c5",
+     "changed": false
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-18T15:43:39Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-18T15:43:41Z",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "23dee616f470e61d",
+     "changed": true
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-18T15:43:44Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-18&end_date=2027-01-17",
+     "at": "2026-11-18T15:43:47Z",
+     "status": 200,
+     "bytes": 143612,
+     "sha256_prefix": "4cc21d0c1c9e93b3",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:39:53Z",
+   "finished": "2026-11-18T15:40:18Z",
+   "ok": 6,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T15:39:55Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T15:39:57Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "27c06df630bb5577",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T15:40:00Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T15:40:02Z",
+     "status": 200,
+     "bytes": 232932,
+     "sha256_prefix": "bff03010cb9c25c5",
+     "changed": false
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-18T15:40:05Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-18T15:40:07Z",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "5d5d0f0dc48d97bd",
+     "changed": true
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-18T15:40:10Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-18&end_date=2027-01-17",
+     "at": "2026-11-18T15:40:12Z",
+     "status": 200,
+     "bytes": 143612,
+     "sha256_prefix": "4cc21d0c1c9e93b3",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:36:18Z",
+   "finished": "2026-11-18T15:36:40Z",
+   "ok": 6,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T15:36:18Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T15:36:20Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "236f8effd7af0479",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T15:36:23Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T15:36:25Z",
+     "status": 200,
+     "bytes": 232932,
+     "sha256_prefix": "bff03010cb9c25c5",
+     "changed": false
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-18T15:36:28Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-18T15:36:30Z",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "a383c4c302e8f0e4",
+     "changed": true
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-18T15:36:33Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-18&end_date=2027-01-17",
+     "at": "2026-11-18T15:36:35Z",
+     "status": 200,
+     "bytes": 143612,
+     "sha256_prefix": "4cc21d0c1c9e93b3",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:32:46Z",
+   "finished": "2026-11-18T15:33:13Z",
+   "ok": 6,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T15:32:48Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T15:32:51Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "23003454e963cce3",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T15:32:53Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T15:32:56Z",
+     "status": 200,
+     "bytes": 232932,
+     "sha256_prefix": "bff03010cb9c25c5",
+     "changed": false
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-18T15:32:58Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-18T15:33:01Z",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "23dee616f470e61d",
+     "changed": true
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-18T15:33:05Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-18&end_date=2027-01-17",
+     "at": "2026-11-18T15:33:08Z",
+     "status": 200,
+     "bytes": 143612,
+     "sha256_prefix": "4cc21d0c1c9e93b3",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:27:57Z",
+   "finished": "2026-11-18T15:28:23Z",
+   "ok": 6,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T15:27:59Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T15:28:02Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "cdc475ec7ffc931f",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T15:28:04Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T15:28:07Z",
+     "status": 200,
+     "bytes": 232932,
+     "sha256_prefix": "bff03010cb9c25c5",
+     "changed": false
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-18T15:28:09Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-18T15:28:12Z",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "a383c4c302e8f0e4",
+     "changed": false
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-18T15:28:16Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-18&end_date=2027-01-17",
+     "at": "2026-11-18T15:28:18Z",
+     "status": 200,
+     "bytes": 143612,
+     "sha256_prefix": "4cc21d0c1c9e93b3",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:13:38Z",
+   "finished": "2026-11-18T15:14:04Z",
+   "ok": 6,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T15:13:40Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T15:13:42Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "92657f557e1e8508",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T15:13:45Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T15:13:47Z",
+     "status": 200,
+     "bytes": 232932,
+     "sha256_prefix": "bff03010cb9c25c5",
+     "changed": true
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-18T15:13:50Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-18T15:13:52Z",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "a383c4c302e8f0e4",
+     "changed": false
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-18T15:13:55Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-18&end_date=2027-01-17",
+     "at": "2026-11-18T15:13:57Z",
+     "status": 200,
+     "bytes": 143612,
+     "sha256_prefix": "4cc21d0c1c9e93b3",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:08:14Z",
+   "finished": "2026-11-18T15:08:39Z",
+   "ok": 6,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T15:08:16Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T15:08:19Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "b0e405944a003d29",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T15:08:21Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T15:08:24Z",
+     "status": 200,
+     "bytes": 227781,
+     "sha256_prefix": "04d017f5c93f1df1",
+     "changed": false
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-18T15:08:26Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": "first read"
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-18T15:08:29Z",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "a383c4c302e8f0e4",
+     "changed": "first read"
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-18T15:08:31Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": "first read"
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-18&end_date=2027-01-17",
+     "at": "2026-11-18T15:08:34Z",
+     "status": 200,
+     "bytes": 143612,
+     "sha256_prefix": "4cc21d0c1c9e93b3",
+     "changed": "first read"
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:50:37Z",
+   "finished": "2026-11-18T14:50:48Z",
+   "ok": 3,
+   "failed": 1,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T14:50:39Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T14:50:42Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "7e6f4d4c4518bae0",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T14:50:44Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T14:50:47Z",
+     "status": 200,
+     "bytes": 227781,
+     "sha256_prefix": "04d017f5c93f1df1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:47:45Z",
+   "finished": "2026-11-18T14:47:56Z",
+   "ok": 3,
+   "failed": 1,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T14:47:47Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T14:47:49Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "1ae05c00a6637d9a",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T14:47:52Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T14:47:54Z",
+     "status": 200,
+     "bytes": 227781,
+     "sha256_prefix": "04d017f5c93f1df1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:43:12Z",
+   "finished": "2026-11-18T14:43:22Z",
+   "ok": 3,
+   "failed": 1,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T14:43:14Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T14:43:16Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "d6f83637417bfda0",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T14:43:19Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T14:43:21Z",
+     "status": 200,
+     "bytes": 227781,
+     "sha256_prefix": "04d017f5c93f1df1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:40:08Z",
+   "finished": "2026-11-18T14:40:20Z",
+   "ok": 3,
+   "failed": 1,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T14:40:10Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T14:40:13Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "c5f6defa25fb0b1e",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T14:40:15Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T14:40:18Z",
+     "status": 200,
+     "bytes": 227781,
+     "sha256_prefix": "04d017f5c93f1df1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:33:19Z",
+   "finished": "2026-11-18T14:33:29Z",
+   "ok": 3,
+   "failed": 1,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T14:33:21Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T14:33:23Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "f0eb7410daee5573",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T14:33:26Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T14:33:28Z",
+     "status": 200,
+     "bytes": 227781,
+     "sha256_prefix": "04d017f5c93f1df1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:26:57Z",
+   "finished": "2026-11-18T14:27:07Z",
+   "ok": 3,
+   "failed": 1,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T14:26:58Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T14:27:01Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "f1909750b0f8e40c",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T14:27:03Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T14:27:06Z",
+     "status": 200,
+     "bytes": 227781,
+     "sha256_prefix": "04d017f5c93f1df1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:24:10Z",
+   "finished": "2026-11-18T14:24:20Z",
+   "ok": 3,
+   "failed": 1,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T14:24:11Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T14:24:14Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "041d295bd6d0d27f",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T14:24:16Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T14:24:19Z",
+     "status": 200,
+     "bytes": 227781,
+     "sha256_prefix": "04d017f5c93f1df1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:20:49Z",
+   "finished": "2026-11-18T14:20:58Z",
+   "ok": 3,
+   "failed": 1,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T14:20:49Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T14:20:52Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "ef4252be870ea309",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T14:20:54Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T14:20:57Z",
+     "status": 200,
+     "bytes": 227781,
+     "sha256_prefix": "04d017f5c93f1df1",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:14:36Z",
+   "finished": "2026-11-18T14:14:46Z",
+   "ok": 3,
+   "failed": 1,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T14:14:38Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T14:14:40Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "0459b31df0b8f4f0",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T14:14:43Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T14:14:45Z",
+     "status": 200,
+     "bytes": 227781,
+     "sha256_prefix": "b4dffc41bc56cfdd",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:11:31Z",
+   "finished": "2026-11-18T14:11:42Z",
+   "ok": 3,
+   "failed": 1,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T14:11:33Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T14:11:35Z",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "077ad7cd6ddd9954",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T14:11:38Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T14:11:40Z",
+     "status": 200,
+     "bytes": 227781,
+     "sha256_prefix": "b4dffc41bc56cfdd",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:07:49Z",
+   "finished": "2026-11-18T14:08:00Z",
+   "ok": 3,
+   "failed": 1,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-18T14:07:51Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": "first read"
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-18T14:07:54Z",
+     "status": 403,
+     "bytes": 5645,
+     "sha256_prefix": "aa5f15f135a9f9a9",
+     "changed": "first read"
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-18T14:07:56Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": "first read"
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-18T14:07:59Z",
+     "status": 200,
+     "bytes": 227781,
+     "sha256_prefix": "b4dffc41bc56cfdd",
+     "changed": "first read"
+    }
+   ]
+  }
+ ]
+}

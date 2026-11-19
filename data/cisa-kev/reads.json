@@ -1,0 +1,252 @@
+{
+ "license": {
+  "name": "CC BY 4.0",
+  "url": "https://creativecommons.org/licenses/by/4.0/",
+  "holder": "PrompTugal.news",
+  "note": "What PrompTugal.news makes: this file's structure, records and derived values.",
+  "commercial_use": "allowed",
+  "commercial_note": "With credit to PrompTugal.news; values taken from a source keep that source's licence."
+ },
+ "about": "Every run of sources/cisa-kev/collect.mjs, newest first: each request's address, HTTP status, size, the first 16 hex of its sha256, and whether the bytes changed since the run before. The bytes and the full sha256 go to the source's vault (see card.json: latest/reads-full.json), never to git.",
+ "source": "cisa-kev",
+ "runs": [
+  {
+   "at": "2026-11-18T23:42:26Z",
+   "finished": "2026-11-18T23:42:28Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "kev",
+     "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+     "at": "2026-11-18T23:42:28Z",
+     "status": 200,
+     "bytes": 1863915,
+     "sha256_prefix": "ad618e404a43d72a",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T23:33:46Z",
+   "finished": "2026-11-18T23:33:49Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "kev",
+     "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+     "at": "2026-11-18T23:33:48Z",
+     "status": 200,
+     "bytes": 1863915,
+     "sha256_prefix": "ad618e404a43d72a",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T23:27:26Z",
+   "finished": "2026-11-18T23:27:28Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "kev",
+     "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+     "at": "2026-11-18T23:27:28Z",
+     "status": 200,
+     "bytes": 1863915,
+     "sha256_prefix": "ad618e404a43d72a",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T23:21:09Z",
+   "finished": "2026-11-18T23:21:12Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "kev",
+     "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+     "at": "2026-11-18T23:21:11Z",
+     "status": 200,
+     "bytes": 1863915,
+     "sha256_prefix": "ad618e404a43d72a",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:51:56Z",
+   "finished": "2026-11-18T22:51:58Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "kev",
+     "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+     "at": "2026-11-18T22:51:58Z",
+     "status": 200,
+     "bytes": 1863915,
+     "sha256_prefix": "ad618e404a43d72a",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:42:35Z",
+   "finished": "2026-11-18T22:42:37Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "kev",
+     "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+     "at": "2026-11-18T22:42:37Z",
+     "status": 200,
+     "bytes": 1863915,
+     "sha256_prefix": "ad618e404a43d72a",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:37:04Z",
+   "finished": "2026-11-18T22:37:05Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "kev",
+     "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+     "at": "2026-11-18T22:37:05Z",
+     "status": 200,
+     "bytes": 1863915,
+     "sha256_prefix": "ad618e404a43d72a",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:31:46Z",
+   "finished": "2026-11-18T22:31:48Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "kev",
+     "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+     "at": "2026-11-18T22:31:48Z",
+     "status": 200,
+     "bytes": 1863915,
+     "sha256_prefix": "ad618e404a43d72a",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:26:46Z",
+   "finished": "2026-11-18T22:26:48Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "kev",
+     "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+     "at": "2026-11-18T22:26:48Z",
+     "status": 200,
+     "bytes": 1863915,
+     "sha256_prefix": "ad618e404a43d72a",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:20:41Z",
+   "finished": "2026-11-18T22:20:44Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "kev",
+     "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+     "at": "2026-11-18T22:20:44Z",
+     "status": 200,
+     "bytes": 1863915,
+     "sha256_prefix": "ad618e404a43d72a",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:11:33Z",
+   "finished": "2026-11-18T22:11:35Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "kev",
+     "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+     "at": "2026-11-18T22:11:35Z",
+     "status": 200,
+     "bytes": 1863915,
+     "sha256_prefix": "ad618e404a43d72a",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:06:29Z",
+   "finished": "2026-11-18T22:06:31Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "kev",
+     "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+     "at": "2026-11-18T22:06:31Z",
+     "status": 200,
+     "bytes": 1863915,
+     "sha256_prefix": "ad618e404a43d72a",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T21:12:19Z",
+   "finished": "2026-11-18T21:12:22Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "kev",
+     "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+     "at": "2026-11-18T21:12:21Z",
+     "status": 200,
+     "bytes": 1863915,
+     "sha256_prefix": "ad618e404a43d72a",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T21:03:13Z",
+   "finished": "2026-11-18T21:03:16Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "kev",
+     "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+     "at": "2026-11-18T21:03:16Z",
+     "status": 200,
+     "bytes": 1863915,
+     "sha256_prefix": "ad618e404a43d72a",
+     "changed": "first read"
+    }
+   ]
+  }
+ ]
+}

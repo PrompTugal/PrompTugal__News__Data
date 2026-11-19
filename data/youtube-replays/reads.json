@@ -1,0 +1,109 @@
+{
+ "about": "Every run of sources/youtube-replays/collect.mjs, newest first: each request's address, HTTP status, size, the first 16 hex of its sha256, and whether the bytes changed since the run before. The bytes and the full sha256 go to the source's vault (see card.json: latest/reads-full.json), never to git.",
+ "source": "youtube-replays",
+ "runs": [
+  {
+   "at": "2026-11-19T01:28:37Z",
+   "finished": "2026-11-19T01:28:44Z",
+   "ok": 3,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "channel",
+     "url": "https://www.googleapis.com/youtube/v3/channels?(channels.list, 1 unit)",
+     "at": "2026-11-19T01:28:39Z",
+     "status": 200,
+     "bytes": 288,
+     "sha256_prefix": "acb718bbb1b98be3",
+     "changed": true
+    },
+    {
+     "name": "uploads",
+     "url": "https://www.googleapis.com/youtube/v3/playlistItems?(playlistItems.list, 1 unit)",
+     "at": "2026-11-19T01:28:42Z",
+     "status": 200,
+     "bytes": 6689,
+     "sha256_prefix": "715198b344f8a4db",
+     "changed": "first read"
+    },
+    {
+     "name": "videos",
+     "url": "https://www.googleapis.com/youtube/v3/videos?(videos.list, 1 unit)",
+     "at": "2026-11-19T01:28:44Z",
+     "status": 200,
+     "bytes": 2309,
+     "sha256_prefix": "871bba219b8bb1fa",
+     "changed": "first read"
+    }
+   ]
+  },
+  {
+   "at": "2026-11-19T01:20:53Z",
+   "finished": "2026-11-19T01:20:55Z",
+   "ok": 0,
+   "failed": 1,
+   "reads": [
+    {
+     "name": "channel",
+     "url": "https://www.googleapis.com/youtube/v3/channels?(channels.list, 1 unit)",
+     "at": "2026-11-19T01:20:55Z",
+     "status": 403,
+     "bytes": 694,
+     "sha256_prefix": "c69c9afb916f71ea",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-19T01:16:05Z",
+   "finished": "2026-11-19T01:16:07Z",
+   "ok": 0,
+   "failed": 1,
+   "reads": [
+    {
+     "name": "channel",
+     "url": "https://www.googleapis.com/youtube/v3/channels?(channels.list, 1 unit)",
+     "at": "2026-11-19T01:16:07Z",
+     "status": 403,
+     "bytes": 694,
+     "sha256_prefix": "c69c9afb916f71ea",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-19T00:59:17Z",
+   "finished": "2026-11-19T00:59:20Z",
+   "ok": 0,
+   "failed": 1,
+   "reads": [
+    {
+     "name": "channel",
+     "url": "https://www.googleapis.com/youtube/v3/channels?(channels.list, 1 unit)",
+     "at": "2026-11-19T00:59:20Z",
+     "status": 403,
+     "bytes": 694,
+     "sha256_prefix": "c69c9afb916f71ea",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-19T00:29:47Z",
+   "finished": "2026-11-19T00:29:50Z",
+   "ok": 0,
+   "failed": 1,
+   "reads": [
+    {
+     "name": "channel",
+     "url": "https://www.googleapis.com/youtube/v3/channels?(channels.list, 1 unit)",
+     "at": "2026-11-19T00:29:50Z",
+     "status": 403,
+     "bytes": 694,
+     "sha256_prefix": "c69c9afb916f71ea",
+     "changed": "first read"
+    }
+   ]
+  }
+ ]
+}

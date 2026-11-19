@@ -1,0 +1,1179 @@
+{
+ "about": "Every run of sources/meteoalarm-pt/collect.mjs, newest first: each request's address, HTTP status, size, the first 16 hex of its sha256, and whether the bytes changed since the run before. The bytes and the full sha256 go to the source's vault (see card.json: latest/reads-full.json), never to git.",
+ "source": "meteoalarm-pt",
+ "runs": [
+  {
+   "at": "2026-11-19T01:28:32Z",
+   "finished": "2026-11-19T01:28:36Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-19T01:28:34Z",
+     "status": 200,
+     "bytes": 103231,
+     "sha256_prefix": "2d56108da7a2ac24",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-19T01:20:48Z",
+   "finished": "2026-11-19T01:20:52Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-19T01:20:50Z",
+     "status": 200,
+     "bytes": 103231,
+     "sha256_prefix": "2d56108da7a2ac24",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-19T01:16:00Z",
+   "finished": "2026-11-19T01:16:04Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-19T01:16:02Z",
+     "status": 200,
+     "bytes": 103231,
+     "sha256_prefix": "2d56108da7a2ac24",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-19T00:59:12Z",
+   "finished": "2026-11-19T00:59:16Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-19T00:59:15Z",
+     "status": 200,
+     "bytes": 119048,
+     "sha256_prefix": "1369533e7e47e519",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-19T00:29:42Z",
+   "finished": "2026-11-19T00:29:46Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-19T00:29:45Z",
+     "status": 200,
+     "bytes": 119048,
+     "sha256_prefix": "1369533e7e47e519",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-19T00:06:51Z",
+   "finished": "2026-11-19T00:06:55Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-19T00:06:53Z",
+     "status": 200,
+     "bytes": 119048,
+     "sha256_prefix": "1369533e7e47e519",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T23:48:47Z",
+   "finished": "2026-11-18T23:48:50Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T23:48:49Z",
+     "status": 200,
+     "bytes": 119048,
+     "sha256_prefix": "1369533e7e47e519",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T23:40:47Z",
+   "finished": "2026-11-18T23:40:50Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T23:40:49Z",
+     "status": 200,
+     "bytes": 119048,
+     "sha256_prefix": "1369533e7e47e519",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T23:31:51Z",
+   "finished": "2026-11-18T23:31:54Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T23:31:53Z",
+     "status": 200,
+     "bytes": 119048,
+     "sha256_prefix": "1369533e7e47e519",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T23:25:50Z",
+   "finished": "2026-11-18T23:25:53Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T23:25:52Z",
+     "status": 200,
+     "bytes": 119048,
+     "sha256_prefix": "1369533e7e47e519",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:57:07Z",
+   "finished": "2026-11-18T22:57:10Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T22:57:09Z",
+     "status": 200,
+     "bytes": 119048,
+     "sha256_prefix": "1369533e7e47e519",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:46:27Z",
+   "finished": "2026-11-18T22:46:31Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T22:46:30Z",
+     "status": 200,
+     "bytes": 119048,
+     "sha256_prefix": "1369533e7e47e519",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:39:58Z",
+   "finished": "2026-11-18T22:40:02Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T22:40:00Z",
+     "status": 200,
+     "bytes": 119048,
+     "sha256_prefix": "1369533e7e47e519",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:35:07Z",
+   "finished": "2026-11-18T22:35:11Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T22:35:09Z",
+     "status": 200,
+     "bytes": 119048,
+     "sha256_prefix": "1369533e7e47e519",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:29:11Z",
+   "finished": "2026-11-18T22:29:15Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T22:29:13Z",
+     "status": 200,
+     "bytes": 119048,
+     "sha256_prefix": "1369533e7e47e519",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:23:53Z",
+   "finished": "2026-11-18T22:23:56Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T22:23:55Z",
+     "status": 200,
+     "bytes": 119048,
+     "sha256_prefix": "1369533e7e47e519",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:14:47Z",
+   "finished": "2026-11-18T22:14:51Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T22:14:50Z",
+     "status": 200,
+     "bytes": 119048,
+     "sha256_prefix": "1369533e7e47e519",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:10:01Z",
+   "finished": "2026-11-18T22:10:04Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T22:10:03Z",
+     "status": 200,
+     "bytes": 119048,
+     "sha256_prefix": "1369533e7e47e519",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T21:15:38Z",
+   "finished": "2026-11-18T21:15:42Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T21:15:40Z",
+     "status": 200,
+     "bytes": 119048,
+     "sha256_prefix": "1369533e7e47e519",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T21:06:45Z",
+   "finished": "2026-11-18T21:06:49Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T21:06:48Z",
+     "status": 200,
+     "bytes": 119048,
+     "sha256_prefix": "1369533e7e47e519",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T20:31:46Z",
+   "finished": "2026-11-18T20:31:50Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T20:31:49Z",
+     "status": 200,
+     "bytes": 119048,
+     "sha256_prefix": "1369533e7e47e519",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T19:17:49Z",
+   "finished": "2026-11-18T19:17:54Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T19:17:52Z",
+     "status": 200,
+     "bytes": 117257,
+     "sha256_prefix": "b5ec261df9bae5b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T19:12:26Z",
+   "finished": "2026-11-18T19:12:30Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T19:12:29Z",
+     "status": 200,
+     "bytes": 117257,
+     "sha256_prefix": "b5ec261df9bae5b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T19:08:54Z",
+   "finished": "2026-11-18T19:08:59Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T19:08:57Z",
+     "status": 200,
+     "bytes": 117257,
+     "sha256_prefix": "b5ec261df9bae5b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T19:05:20Z",
+   "finished": "2026-11-18T19:05:24Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T19:05:23Z",
+     "status": 200,
+     "bytes": 117257,
+     "sha256_prefix": "b5ec261df9bae5b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T18:57:40Z",
+   "finished": "2026-11-18T18:57:44Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T18:57:43Z",
+     "status": 200,
+     "bytes": 117257,
+     "sha256_prefix": "b5ec261df9bae5b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T18:53:58Z",
+   "finished": "2026-11-18T18:54:02Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T18:54:00Z",
+     "status": 200,
+     "bytes": 117257,
+     "sha256_prefix": "b5ec261df9bae5b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T17:56:22Z",
+   "finished": "2026-11-18T17:56:26Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T17:56:25Z",
+     "status": 200,
+     "bytes": 117257,
+     "sha256_prefix": "b5ec261df9bae5b1",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T17:41:20Z",
+   "finished": "2026-11-18T17:41:24Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T17:41:23Z",
+     "status": 200,
+     "bytes": 102818,
+     "sha256_prefix": "c8c4db0f3db759b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T16:32:28Z",
+   "finished": "2026-11-18T16:32:32Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T16:32:31Z",
+     "status": 200,
+     "bytes": 102818,
+     "sha256_prefix": "c8c4db0f3db759b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T16:13:52Z",
+   "finished": "2026-11-18T16:13:55Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T16:13:54Z",
+     "status": 200,
+     "bytes": 102818,
+     "sha256_prefix": "c8c4db0f3db759b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T16:10:03Z",
+   "finished": "2026-11-18T16:10:07Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T16:10:05Z",
+     "status": 200,
+     "bytes": 102818,
+     "sha256_prefix": "c8c4db0f3db759b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T16:06:26Z",
+   "finished": "2026-11-18T16:06:30Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T16:06:28Z",
+     "status": 200,
+     "bytes": 102818,
+     "sha256_prefix": "c8c4db0f3db759b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T16:01:08Z",
+   "finished": "2026-11-18T16:01:12Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T16:01:10Z",
+     "status": 200,
+     "bytes": 102818,
+     "sha256_prefix": "c8c4db0f3db759b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:57:17Z",
+   "finished": "2026-11-18T15:57:21Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T15:57:20Z",
+     "status": 200,
+     "bytes": 102818,
+     "sha256_prefix": "c8c4db0f3db759b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:53:29Z",
+   "finished": "2026-11-18T15:53:33Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T15:53:31Z",
+     "status": 200,
+     "bytes": 102818,
+     "sha256_prefix": "c8c4db0f3db759b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:49:37Z",
+   "finished": "2026-11-18T15:49:40Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T15:49:39Z",
+     "status": 200,
+     "bytes": 102818,
+     "sha256_prefix": "c8c4db0f3db759b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:45:47Z",
+   "finished": "2026-11-18T15:45:50Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T15:45:49Z",
+     "status": 200,
+     "bytes": 102818,
+     "sha256_prefix": "c8c4db0f3db759b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:42:13Z",
+   "finished": "2026-11-18T15:42:16Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T15:42:15Z",
+     "status": 200,
+     "bytes": 102818,
+     "sha256_prefix": "c8c4db0f3db759b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:38:35Z",
+   "finished": "2026-11-18T15:38:39Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T15:38:38Z",
+     "status": 200,
+     "bytes": 102818,
+     "sha256_prefix": "c8c4db0f3db759b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:35:08Z",
+   "finished": "2026-11-18T15:35:12Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T15:35:10Z",
+     "status": 200,
+     "bytes": 102818,
+     "sha256_prefix": "c8c4db0f3db759b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:30:19Z",
+   "finished": "2026-11-18T15:30:22Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T15:30:21Z",
+     "status": 200,
+     "bytes": 102818,
+     "sha256_prefix": "c8c4db0f3db759b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:15:59Z",
+   "finished": "2026-11-18T15:16:03Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T15:16:01Z",
+     "status": 200,
+     "bytes": 102818,
+     "sha256_prefix": "c8c4db0f3db759b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:10:34Z",
+   "finished": "2026-11-18T15:10:38Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T15:10:36Z",
+     "status": 200,
+     "bytes": 102818,
+     "sha256_prefix": "c8c4db0f3db759b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:07:13Z",
+   "finished": "2026-11-18T15:07:14Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T15:07:13Z",
+     "status": 200,
+     "bytes": 102818,
+     "sha256_prefix": "c8c4db0f3db759b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:49:52Z",
+   "finished": "2026-11-18T14:49:56Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T14:49:54Z",
+     "status": 200,
+     "bytes": 102818,
+     "sha256_prefix": "c8c4db0f3db759b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:45:19Z",
+   "finished": "2026-11-18T14:45:23Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T14:45:21Z",
+     "status": 200,
+     "bytes": 102818,
+     "sha256_prefix": "c8c4db0f3db759b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:42:15Z",
+   "finished": "2026-11-18T14:42:19Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T14:42:18Z",
+     "status": 200,
+     "bytes": 102818,
+     "sha256_prefix": "c8c4db0f3db759b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:35:26Z",
+   "finished": "2026-11-18T14:35:29Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T14:35:28Z",
+     "status": 200,
+     "bytes": 102818,
+     "sha256_prefix": "c8c4db0f3db759b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:29:04Z",
+   "finished": "2026-11-18T14:29:07Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T14:29:06Z",
+     "status": 200,
+     "bytes": 102818,
+     "sha256_prefix": "c8c4db0f3db759b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:26:17Z",
+   "finished": "2026-11-18T14:26:20Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T14:26:19Z",
+     "status": 200,
+     "bytes": 102818,
+     "sha256_prefix": "c8c4db0f3db759b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:23:07Z",
+   "finished": "2026-11-18T14:23:11Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T14:23:09Z",
+     "status": 200,
+     "bytes": 102818,
+     "sha256_prefix": "c8c4db0f3db759b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:16:43Z",
+   "finished": "2026-11-18T14:16:47Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T14:16:45Z",
+     "status": 200,
+     "bytes": 102818,
+     "sha256_prefix": "c8c4db0f3db759b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:13:38Z",
+   "finished": "2026-11-18T14:13:42Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T14:13:40Z",
+     "status": 200,
+     "bytes": 102818,
+     "sha256_prefix": "c8c4db0f3db759b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:09:56Z",
+   "finished": "2026-11-18T14:10:01Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T14:09:59Z",
+     "status": 200,
+     "bytes": 102818,
+     "sha256_prefix": "c8c4db0f3db759b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:05:10Z",
+   "finished": "2026-11-18T14:05:14Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T14:05:12Z",
+     "status": 200,
+     "bytes": 102818,
+     "sha256_prefix": "c8c4db0f3db759b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:02:32Z",
+   "finished": "2026-11-18T14:02:36Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T14:02:34Z",
+     "status": 200,
+     "bytes": 102818,
+     "sha256_prefix": "c8c4db0f3db759b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T13:10:22Z",
+   "finished": "2026-11-18T13:10:26Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T13:10:24Z",
+     "status": 200,
+     "bytes": 102818,
+     "sha256_prefix": "c8c4db0f3db759b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T13:06:33Z",
+   "finished": "2026-11-18T13:06:36Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T13:06:35Z",
+     "status": 200,
+     "bytes": 102818,
+     "sha256_prefix": "c8c4db0f3db759b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T11:41:57Z",
+   "finished": "2026-11-18T11:42:00Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T11:41:59Z",
+     "status": 200,
+     "bytes": 102818,
+     "sha256_prefix": "c8c4db0f3db759b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T10:11:44Z",
+   "finished": "2026-11-18T10:11:48Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T10:11:46Z",
+     "status": 200,
+     "bytes": 102818,
+     "sha256_prefix": "c8c4db0f3db759b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T10:08:44Z",
+   "finished": "2026-11-18T10:08:48Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T10:08:46Z",
+     "status": 200,
+     "bytes": 102818,
+     "sha256_prefix": "c8c4db0f3db759b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T09:48:25Z",
+   "finished": "2026-11-18T09:48:29Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T09:48:27Z",
+     "status": 200,
+     "bytes": 102818,
+     "sha256_prefix": "c8c4db0f3db759b1",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T09:43:40Z",
+   "finished": "2026-11-18T09:43:43Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T09:43:42Z",
+     "status": 200,
+     "bytes": 102818,
+     "sha256_prefix": "c8c4db0f3db759b1",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T02:28:25Z",
+   "finished": "2026-11-18T02:28:29Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-18T02:28:27Z",
+     "status": 200,
+     "bytes": 99355,
+     "sha256_prefix": "14293e7a0d57c4f3",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-17T23:07:37Z",
+   "finished": "2026-11-17T23:07:40Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-17T23:07:39Z",
+     "status": 200,
+     "bytes": 96540,
+     "sha256_prefix": "c26e5f7a5ed248ca",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-17T23:05:02Z",
+   "finished": "2026-11-17T23:05:06Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-17T23:05:05Z",
+     "status": 200,
+     "bytes": 96540,
+     "sha256_prefix": "c26e5f7a5ed248ca",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-17T19:44:08Z",
+   "finished": "2026-11-17T19:44:12Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-17T19:44:10Z",
+     "status": 200,
+     "bytes": 96540,
+     "sha256_prefix": "c26e5f7a5ed248ca",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-17T19:40:54Z",
+   "finished": "2026-11-17T19:40:57Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "feeds-portugal",
+     "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+     "at": "2026-11-17T19:40:56Z",
+     "status": 200,
+     "bytes": 96540,
+     "sha256_prefix": "c26e5f7a5ed248ca",
+     "changed": "first read"
+    }
+   ]
+  }
+ ]
+}

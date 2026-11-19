@@ -1,0 +1,379 @@
+{
+ "license": {
+  "name": "CC BY 4.0",
+  "url": "https://creativecommons.org/licenses/by/4.0/",
+  "holder": "PrompTugal.news",
+  "note": "What PrompTugal.news makes: this file's structure, records and derived values.",
+  "commercial_use": "allowed",
+  "commercial_note": "With credit to PrompTugal.news; values taken from a source keep that source's licence."
+ },
+ "about": "Every run of sources/nvd-cve/collect.mjs, newest first: each request's address, HTTP status, size, the first 16 hex of its sha256, and whether the bytes changed since the run before. The bytes and the full sha256 go to the source's vault (see card.json: latest/reads-full.json), never to git.",
+ "source": "nvd-cve",
+ "runs": [
+  {
+   "at": "2026-11-18T23:48:50Z",
+   "finished": "2026-11-18T23:49:04Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "modified-0",
+     "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?lastModStartDate=2026-11-17T23:48:50.000&lastModEndDate=2026-11-18T23:48:50.000&resultsPerPage=2000&startIndex=0",
+     "at": "2026-11-18T23:48:56Z",
+     "status": 200,
+     "bytes": 6121973,
+     "sha256_prefix": "3fb02efb3b4a9db3",
+     "changed": true
+    },
+    {
+     "name": "published-0",
+     "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?pubStartDate=2026-11-17T00:00:00.000&pubEndDate=2026-11-18T23:48:50.000&resultsPerPage=2000&startIndex=0",
+     "at": "2026-11-18T23:49:03Z",
+     "status": 200,
+     "bytes": 5065165,
+     "sha256_prefix": "53131a3c69fee573",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T23:40:50Z",
+   "finished": "2026-11-18T23:41:04Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "modified-0",
+     "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?lastModStartDate=2026-11-17T23:40:50.000&lastModEndDate=2026-11-18T23:40:50.000&resultsPerPage=2000&startIndex=0",
+     "at": "2026-11-18T23:40:56Z",
+     "status": 200,
+     "bytes": 6121973,
+     "sha256_prefix": "ec2c6e7bce6b4639",
+     "changed": true
+    },
+    {
+     "name": "published-0",
+     "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?pubStartDate=2026-11-17T00:00:00.000&pubEndDate=2026-11-18T23:40:50.000&resultsPerPage=2000&startIndex=0",
+     "at": "2026-11-18T23:41:03Z",
+     "status": 200,
+     "bytes": 5065165,
+     "sha256_prefix": "2263b8c18a928729",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T23:31:54Z",
+   "finished": "2026-11-18T23:32:20Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "modified-0",
+     "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?lastModStartDate=2026-11-17T23:31:54.000&lastModEndDate=2026-11-18T23:31:54.000&resultsPerPage=2000&startIndex=0",
+     "at": "2026-11-18T23:32:00Z",
+     "status": 200,
+     "bytes": 6121973,
+     "sha256_prefix": "ab9f64d92d42dd67",
+     "changed": true
+    },
+    {
+     "name": "published-0",
+     "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?pubStartDate=2026-11-17T00:00:00.000&pubEndDate=2026-11-18T23:31:54.000&resultsPerPage=2000&startIndex=0",
+     "at": "2026-11-18T23:32:15Z",
+     "status": 200,
+     "bytes": 5065165,
+     "sha256_prefix": "6508c9a7a74a9e57",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T23:25:53Z",
+   "finished": "2026-11-18T23:26:07Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "modified-0",
+     "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?lastModStartDate=2026-11-17T23:25:53.000&lastModEndDate=2026-11-18T23:25:53.000&resultsPerPage=2000&startIndex=0",
+     "at": "2026-11-18T23:25:59Z",
+     "status": 200,
+     "bytes": 6121973,
+     "sha256_prefix": "47fc585cc2c71f7a",
+     "changed": true
+    },
+    {
+     "name": "published-0",
+     "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?pubStartDate=2026-11-17T00:00:00.000&pubEndDate=2026-11-18T23:25:53.000&resultsPerPage=2000&startIndex=0",
+     "at": "2026-11-18T23:26:06Z",
+     "status": 200,
+     "bytes": 5065165,
+     "sha256_prefix": "13f69cfb0f461197",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:57:10Z",
+   "finished": "2026-11-18T22:57:24Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "modified-0",
+     "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?lastModStartDate=2026-11-17T22:57:10.000&lastModEndDate=2026-11-18T22:57:10.000&resultsPerPage=2000&startIndex=0",
+     "at": "2026-11-18T22:57:16Z",
+     "status": 200,
+     "bytes": 6330435,
+     "sha256_prefix": "a64b845fcf481f8a",
+     "changed": true
+    },
+    {
+     "name": "published-0",
+     "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?pubStartDate=2026-11-17T00:00:00.000&pubEndDate=2026-11-18T22:57:10.000&resultsPerPage=2000&startIndex=0",
+     "at": "2026-11-18T22:57:23Z",
+     "status": 200,
+     "bytes": 5012476,
+     "sha256_prefix": "30c5b34bc8f04c4a",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:46:31Z",
+   "finished": "2026-11-18T22:46:44Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "modified-0",
+     "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?lastModStartDate=2026-11-17T22:46:31.000&lastModEndDate=2026-11-18T22:46:31.000&resultsPerPage=2000&startIndex=0",
+     "at": "2026-11-18T22:46:37Z",
+     "status": 200,
+     "bytes": 6373952,
+     "sha256_prefix": "37b097e999815ab9",
+     "changed": true
+    },
+    {
+     "name": "published-0",
+     "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?pubStartDate=2026-11-17T00:00:00.000&pubEndDate=2026-11-18T22:46:31.000&resultsPerPage=2000&startIndex=0",
+     "at": "2026-11-18T22:46:44Z",
+     "status": 200,
+     "bytes": 5012476,
+     "sha256_prefix": "ca1c803a2ed91dce",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:40:02Z",
+   "finished": "2026-11-18T22:40:16Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "modified-0",
+     "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?lastModStartDate=2026-11-17T22:40:02.000&lastModEndDate=2026-11-18T22:40:02.000&resultsPerPage=2000&startIndex=0",
+     "at": "2026-11-18T22:40:07Z",
+     "status": 200,
+     "bytes": 6463742,
+     "sha256_prefix": "23674c00540fd60a",
+     "changed": true
+    },
+    {
+     "name": "published-0",
+     "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?pubStartDate=2026-11-17T00:00:00.000&pubEndDate=2026-11-18T22:40:02.000&resultsPerPage=2000&startIndex=0",
+     "at": "2026-11-18T22:40:14Z",
+     "status": 200,
+     "bytes": 5012476,
+     "sha256_prefix": "fb18245540be32fe",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:35:11Z",
+   "finished": "2026-11-18T22:35:24Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "modified-0",
+     "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?lastModStartDate=2026-11-17T22:35:11.000&lastModEndDate=2026-11-18T22:35:11.000&resultsPerPage=2000&startIndex=0",
+     "at": "2026-11-18T22:35:16Z",
+     "status": 200,
+     "bytes": 6483172,
+     "sha256_prefix": "97f136ccd85ee803",
+     "changed": true
+    },
+    {
+     "name": "published-0",
+     "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?pubStartDate=2026-11-17T00:00:00.000&pubEndDate=2026-11-18T22:35:11.000&resultsPerPage=2000&startIndex=0",
+     "at": "2026-11-18T22:35:23Z",
+     "status": 200,
+     "bytes": 5012476,
+     "sha256_prefix": "857a89dfd94bd8e6",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:29:15Z",
+   "finished": "2026-11-18T22:29:28Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "modified-0",
+     "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?lastModStartDate=2026-11-17T22:29:15.000&lastModEndDate=2026-11-18T22:29:15.000&resultsPerPage=2000&startIndex=0",
+     "at": "2026-11-18T22:29:20Z",
+     "status": 200,
+     "bytes": 6510045,
+     "sha256_prefix": "2ec2a84b40a2c5d7",
+     "changed": true
+    },
+    {
+     "name": "published-0",
+     "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?pubStartDate=2026-11-17T00:00:00.000&pubEndDate=2026-11-18T22:29:15.000&resultsPerPage=2000&startIndex=0",
+     "at": "2026-11-18T22:29:27Z",
+     "status": 200,
+     "bytes": 5012476,
+     "sha256_prefix": "2962ca366024236d",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:23:56Z",
+   "finished": "2026-11-18T22:24:10Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "modified-0",
+     "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?lastModStartDate=2026-11-17T22:23:56.000&lastModEndDate=2026-11-18T22:23:56.000&resultsPerPage=2000&startIndex=0",
+     "at": "2026-11-18T22:24:02Z",
+     "status": 200,
+     "bytes": 6513829,
+     "sha256_prefix": "5e1321ef27c9f75f",
+     "changed": true
+    },
+    {
+     "name": "published-0",
+     "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?pubStartDate=2026-11-17T00:00:00.000&pubEndDate=2026-11-18T22:23:56.000&resultsPerPage=2000&startIndex=0",
+     "at": "2026-11-18T22:24:09Z",
+     "status": 200,
+     "bytes": 5012476,
+     "sha256_prefix": "eb3871c1e94e94c7",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:14:51Z",
+   "finished": "2026-11-18T22:15:12Z",
+   "ok": 3,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "modified-0",
+     "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?lastModStartDate=2026-11-17T22:14:51.000&lastModEndDate=2026-11-18T22:14:51.000&resultsPerPage=2000&startIndex=0",
+     "at": "2026-11-18T22:14:57Z",
+     "status": 200,
+     "bytes": 6405486,
+     "sha256_prefix": "3b51b0ab11ce7ab3",
+     "changed": true
+    },
+    {
+     "name": "modified-1",
+     "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?lastModStartDate=2026-11-17T22:14:51.000&lastModEndDate=2026-11-18T22:14:51.000&resultsPerPage=2000&startIndex=2000",
+     "at": "2026-11-18T22:15:04Z",
+     "status": 200,
+     "bytes": 1355988,
+     "sha256_prefix": "fcb706b98ed624a0",
+     "changed": true
+    },
+    {
+     "name": "published-0",
+     "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?pubStartDate=2026-11-17T00:00:00.000&pubEndDate=2026-11-18T22:14:51.000&resultsPerPage=2000&startIndex=0",
+     "at": "2026-11-18T22:15:11Z",
+     "status": 200,
+     "bytes": 4930645,
+     "sha256_prefix": "1fc97303b86984c2",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:10:04Z",
+   "finished": "2026-11-18T22:10:24Z",
+   "ok": 3,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "modified-0",
+     "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?lastModStartDate=2026-11-17T22:10:04.000&lastModEndDate=2026-11-18T22:10:04.000&resultsPerPage=2000&startIndex=0",
+     "at": "2026-11-18T22:10:10Z",
+     "status": 200,
+     "bytes": 6405486,
+     "sha256_prefix": "69e95770ce94d242",
+     "changed": true
+    },
+    {
+     "name": "modified-1",
+     "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?lastModStartDate=2026-11-17T22:10:04.000&lastModEndDate=2026-11-18T22:10:04.000&resultsPerPage=2000&startIndex=2000",
+     "at": "2026-11-18T22:10:17Z",
+     "status": 200,
+     "bytes": 1355988,
+     "sha256_prefix": "ea3d9db1a973682c",
+     "changed": true
+    },
+    {
+     "name": "published-0",
+     "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?pubStartDate=2026-11-17T00:00:00.000&pubEndDate=2026-11-18T22:10:04.000&resultsPerPage=2000&startIndex=0",
+     "at": "2026-11-18T22:10:24Z",
+     "status": 200,
+     "bytes": 4930645,
+     "sha256_prefix": "8363cddccd3bd31f",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T21:15:42Z",
+   "finished": "2026-11-18T21:16:06Z",
+   "ok": 3,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "modified-0",
+     "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?lastModStartDate=2026-11-17T21:15:42.000&lastModEndDate=2026-11-18T21:15:42.000&resultsPerPage=2000&startIndex=0",
+     "at": "2026-11-18T21:15:47Z",
+     "status": 200,
+     "bytes": 6317675,
+     "sha256_prefix": "9a60c2564d246144",
+     "changed": "first read"
+    },
+    {
+     "name": "modified-1",
+     "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?lastModStartDate=2026-11-17T21:15:42.000&lastModEndDate=2026-11-18T21:15:42.000&resultsPerPage=2000&startIndex=2000",
+     "at": "2026-11-18T21:15:54Z",
+     "status": 200,
+     "bytes": 1529491,
+     "sha256_prefix": "8bb71859854df69e",
+     "changed": "first read"
+    },
+    {
+     "name": "published-0",
+     "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?pubStartDate=2026-11-17T00:00:00.000&pubEndDate=2026-11-18T21:15:42.000&resultsPerPage=2000&startIndex=0",
+     "at": "2026-11-18T21:16:01Z",
+     "status": 200,
+     "bytes": 4737937,
+     "sha256_prefix": "cc1a0dd95313e875",
+     "changed": "first read"
+    }
+   ]
+  }
+ ]
+}

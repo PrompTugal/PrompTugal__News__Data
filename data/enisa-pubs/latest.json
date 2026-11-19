@@ -1,0 +1,120 @@
+{
+ "data_read_at": "2026-11-18T23:59:24Z",
+ "expected_cadence": {
+  "name": "every 6 hours",
+  "seconds": 21600
+ },
+ "schema": {
+  "openapi": "https://data.promptugal.news/api/v1/enisa-pubs/openapi.json",
+  "path": "/api/v1/enisa-pubs/latest.json",
+  "version": "v1"
+ },
+ "license": {
+  "name": "ENISA legal notice (reproduction authorised with the source acknowledged)",
+  "url": "https://www.enisa.europa.eu/about-enisa/legal-notice",
+  "holder": "ENISA",
+  "commercial_use": "allowed",
+  "note": "Credit: \"Source: ENISA\". Legal notice 1.2: reproduction is authorised provided the source is acknowledged, unless stated otherwise. Title, date, link and topics only; no ENISA logo (press and media use only), report text or images."
+ },
+ "source": "enisa-pubs",
+ "title": "ENISA publications",
+ "read_at": "2026-11-18T23:59:24Z",
+ "provenance": {
+  "source": "https://www.enisa.europa.eu/",
+  "page": "https://www.enisa.europa.eu/publications",
+  "read_at": "2026-11-18T23:59:24Z",
+  "by": "sources/enisa-pubs/collect.mjs (code, no model; run by data.b@PrompTugal.dinis)",
+  "terms": "ENISA legal notice 1.2: reproduction of material on its website is authorised if the source is acknowledged, unless stated otherwise; the logo only for press and media use with the source acknowledged. robots.txt allows /publications to our agent and asks for a 10 second crawl delay; it blocks named AI crawlers (we are code, no model, and not named). Dinis decided on 18 Nov 2026 that ENISA is read through its published interfaces. Not reviewed by a person.",
+  "robots": "https://www.enisa.europa.eu/robots.txt (Crawl-delay 10; this path allowed)",
+  "feed": "none: the HTML list is read"
+ },
+ "about": "The newest publications on ENISA's publications page (title, date, link and the topics ENISA gives), as listed. The listing gives topics and audience, not a document type. Source: ENISA, www.enisa.europa.eu (legal notice 1.2: reproduction authorised if the source is acknowledged).",
+ "counts": {
+  "publications": 10,
+  "newest": "2026-11-16",
+  "fields_dropped_em_dash": 0,
+  "page_bytes": 79005
+ },
+ "publications": [
+  {
+   "title": "CRA-Module B and H: CABs accreditation for notification",
+   "date": "2026-11-16",
+   "url": "https://www.enisa.europa.eu/publications/cra-module-b-and-h-cabs-accreditation-for-notification",
+   "topics": [
+    "Certification and Standards"
+   ]
+  },
+  {
+   "title": "Joint Advisory on the Use of Frontier AI Models for Code Review",
+   "date": "2026-11-12",
+   "url": "https://www.enisa.europa.eu/publications/joint-advisory-on-the-use-of-frontier-ai-models-for-code-review",
+   "topics": [
+    "Artificial Intelligence and Next Gen Technologies"
+   ]
+  },
+  {
+   "title": "2026 Report on the State of Cybersecurity in the Union",
+   "date": "2026-11-10",
+   "url": "https://www.enisa.europa.eu/publications/2026-report-on-the-state-of-cybersecurity-in-the-union",
+   "topics": [
+    "State of cybersecurity in the EU"
+   ]
+  },
+  {
+   "title": "ENISA Technical Advisory on Secure Update Mechanisms",
+   "date": "2026-11-04",
+   "url": "https://www.enisa.europa.eu/publications/enisa-technical-advisory-on-secure-update-mechanisms",
+   "topics": [
+    "Product Security"
+   ]
+  },
+  {
+   "title": "ENISA Technical Advisory for Software Bill of Materials",
+   "date": "2026-10-22",
+   "url": "https://www.enisa.europa.eu/publications/enisa-technical-advisory-for-software-bill-of-materials",
+   "topics": [
+    "Product Security"
+   ]
+  },
+  {
+   "title": "ENISA Threat Landscape 2026",
+   "date": "2026-09-22",
+   "url": "https://www.enisa.europa.eu/publications/enisa-threat-landscape-2026",
+   "topics": [
+    "Cyber Threats"
+   ]
+  },
+  {
+   "title": "ENISA Secure by Design and Default Playbook",
+   "date": "2026-07-30",
+   "url": "https://www.enisa.europa.eu/publications/enisa-secure-by-design-and-default-playbook",
+   "topics": [
+    "Product Security"
+   ]
+  },
+  {
+   "title": "Procurement guidelines for the cybersecurity of hospitals and healthcare providers",
+   "date": "2026-07-22",
+   "url": "https://www.enisa.europa.eu/publications/procurement-guidelines-for-the-cybersecurity-of-hospitals-and-healthcare-providers",
+   "topics": [
+    "Cybersecurity of Critical Sectors"
+   ]
+  },
+  {
+   "title": "SME Cyber Resilience Maturity Assessment Model",
+   "date": "2026-07-13",
+   "url": "https://www.enisa.europa.eu/publications/sme-cyber-resilience-maturity-assessment-model",
+   "topics": [
+    "Product Security"
+   ]
+  },
+  {
+   "title": "ENISA’s view on Cybersecurity in the Frontier AI Era",
+   "date": "2026-07-07",
+   "url": "https://www.enisa.europa.eu/publications/enisas-view-on-cybersecurity-in-the-frontier-ai-era",
+   "topics": [
+    "Artificial Intelligence and Next Gen Technologies"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,103 @@
+{
+ "about": "The places with an events file, how many events each holds, and whether any source covers it.",
+ "read_at": "2026-11-19T01:30:48Z",
+ "source_read_at": "2026-11-18T23:43:33Z",
+ "by": "collect/events-by-place.mjs (code, no model; data.b@PrompTugal.dinis), from data/events-pt/latest.json",
+ "places": [
+  {
+   "place": "faro",
+   "count": 10,
+   "covered": true
+  },
+  {
+   "place": "loule",
+   "count": 0,
+   "covered": false
+  },
+  {
+   "place": "quarteira",
+   "count": 0,
+   "covered": false
+  },
+  {
+   "place": "silves",
+   "count": 0,
+   "covered": false
+  },
+  {
+   "place": "tavira",
+   "count": 39,
+   "covered": true
+  },
+  {
+   "place": "vila-real-de-santo-antonio",
+   "count": 0,
+   "covered": false
+  },
+  {
+   "place": "portimao",
+   "count": 0,
+   "covered": false
+  },
+  {
+   "place": "lagos",
+   "count": 92,
+   "covered": true
+  },
+  {
+   "place": "olhao",
+   "count": 0,
+   "covered": false
+  },
+  {
+   "place": "albufeira",
+   "count": 0,
+   "covered": false
+  },
+  {
+   "place": "lagoa",
+   "count": 0,
+   "covered": false
+  },
+  {
+   "place": "monchique",
+   "count": 0,
+   "covered": false
+  },
+  {
+   "place": "aljezur",
+   "count": 0,
+   "covered": false
+  },
+  {
+   "place": "vila-do-bispo",
+   "count": 0,
+   "covered": false
+  },
+  {
+   "place": "castro-marim",
+   "count": 0,
+   "covered": false
+  },
+  {
+   "place": "alcoutim",
+   "count": 0,
+   "covered": false
+  },
+  {
+   "place": "sao-bras-de-alportel",
+   "count": 0,
+   "covered": false
+  },
+  {
+   "place": "lisboa",
+   "count": 0,
+   "covered": true
+  },
+  {
+   "place": "algarve",
+   "count": 141,
+   "covered": true
+  }
+ ]
+}

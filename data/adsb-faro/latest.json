@@ -1,0 +1,30 @@
+{
+ "source": "adsb-faro",
+ "title": "Flights around Faro airport",
+ "read_at": "2026-11-19T01:25:08Z",
+ "provenance": {
+  "source": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+  "page": "https://globe.adsb.lol/?lat=37.014&lon=-7.966&zoom=9",
+  "read_at": "2026-11-19T01:25:08Z",
+  "by": "sources/adsb-faro/collect.mjs (code, no model; run by data@PrompTugal.dinis)",
+  "terms": "adsb.lol: its API data is licensed under the Open Database License (ODbL 1.0): share-alike, with attribution; no key needed up to 500 requests a day per address.",
+  "licence": "ODbL 1.0 (adsb.lol)"
+ },
+ "about": "What adsb.lol's community receivers saw within 40 nautical miles of Faro airport at the time read. Airline flights (an ICAO airline code and a flight number as callsign) by callsign; every other aircraft only counted. Coverage depends on volunteers' receivers: absence here is not proof an aircraft was not there.",
+ "airport": {
+  "icao": "LPFR",
+  "name": "Faro airport",
+  "lat": 37.0144,
+  "lon": -7.9659,
+  "within_nm": 40
+ },
+ "feed_time_ms": 1795051509001,
+ "counts": {
+  "airline": 0,
+  "other_aircraft": 0,
+  "other_on_ground": 0,
+  "by_airline": {},
+  "by_altitude_band": {}
+ },
+ "airline": []
+}

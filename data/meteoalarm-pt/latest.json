@@ -1,0 +1,1406 @@
+{
+ "source": "meteoalarm-pt",
+ "title": "MeteoAlarm CAP feed for Portugal",
+ "read_at": "2026-11-19T01:28:32Z",
+ "provenance": {
+  "source": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
+  "page": "https://www.meteoalarm.org/en/live/region/PT",
+  "read_at": "2026-11-19T01:28:32Z",
+  "by": "sources/meteoalarm-pt/collect.mjs (code, no model; run by data@PrompTugal.dinis)",
+  "terms": "MeteoAlarm: re-users must name the national service (IPMA), keep the time of issue, link www.meteoalarm.org and publish MeteoAlarm's disclaimer. latest.json carries all four."
+ },
+ "about": "MeteoAlarm's feed for Portugal as a compact table, one line per CAP message (English text where given, the national event name beside it). The national service is IPMA (Instituto Português do Mar e da Atmosfera); sent_utc is each message's time of issue. A dated record, not a warning service.",
+ "attribution": {
+  "national_service": "IPMA, Instituto Português do Mar e da Atmosfera",
+  "meteoalarm": "https://www.meteoalarm.org/",
+  "disclaimer": "Time delays between this website and the www.meteoalarm.org website are possible. For the most up-to-date awareness information as published by the participating National Meteorological and Hydrological Services, please refer to www.meteoalarm.org."
+ },
+ "sha256_prefix": "2d56108da7a2ac24",
+ "bytes": 103231,
+ "counts": {
+  "messages": 58,
+  "not_expired": 19
+ },
+ "changes": {
+  "since": "2026-11-19T01:20:48Z",
+  "appeared": [],
+  "left": []
+ },
+ "messages": [
+  {
+   "id": "2.49.0.0.620.0.PT.261114193153.AZ-10-671",
+   "sent_utc": "2026-11-14T19:31:53Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261113194836.AZ-10-670",
+     "sent_utc": "2026-11-13T19:48:36Z"
+    }
+   ],
+   "area": "Açores - Grupo Central",
+   "emma": "PT002",
+   "level": "yellow",
+   "hazard": "Rain",
+   "event": "Yellow Rain Warning",
+   "event_national": "Aviso Amarelo Precipitação",
+   "onset_utc": "2026-11-14T09:00:00Z",
+   "expires_utc": "2026-11-14T19:32:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Precipitation at times HEAVY.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "e4739358b85ff634"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261115023406.PO-10-6368",
+   "sent_utc": "2026-11-15T02:34:06Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261113183935.PO-10-6360",
+     "sent_utc": "2026-11-13T18:39:35Z"
+    }
+   ],
+   "area": "Viana do Castelo",
+   "emma": "PT006",
+   "level": "yellow",
+   "hazard": "Rain",
+   "event": "Yellow Rain Warning",
+   "event_national": "Aviso Amarelo Precipitação",
+   "onset_utc": "2026-11-15T03:00:00Z",
+   "expires_utc": "2026-11-15T15:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Persistent and sometimes heavy precipitation.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "8a7642def14abc32"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261115023406.PO-10-6369",
+   "sent_utc": "2026-11-15T02:34:06Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261113183935.PO-10-6361",
+     "sent_utc": "2026-11-13T18:39:35Z"
+    }
+   ],
+   "area": "Braga",
+   "emma": "PT022",
+   "level": "yellow",
+   "hazard": "Rain",
+   "event": "Yellow Rain Warning",
+   "event_national": "Aviso Amarelo Precipitação",
+   "onset_utc": "2026-11-15T03:00:00Z",
+   "expires_utc": "2026-11-15T15:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Persistent and sometimes heavy precipitation.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "85deddde1e35e121"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261115023406.PO-10-6370",
+   "sent_utc": "2026-11-15T02:34:06Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261113183935.PO-10-6362",
+     "sent_utc": "2026-11-13T18:39:35Z"
+    }
+   ],
+   "area": "Porto",
+   "emma": "PT009",
+   "level": "yellow",
+   "hazard": "Rain",
+   "event": "Yellow Rain Warning",
+   "event_national": "Aviso Amarelo Precipitação",
+   "onset_utc": "2026-11-15T03:00:00Z",
+   "expires_utc": "2026-11-15T15:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Persistent and sometimes heavy precipitation.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "4afc6d37a953da59"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261115023406.PO-10-6371",
+   "sent_utc": "2026-11-15T02:34:06Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261113183935.PO-10-6363",
+     "sent_utc": "2026-11-13T18:39:35Z"
+    }
+   ],
+   "area": "Vila Real",
+   "emma": "PT007",
+   "level": "yellow",
+   "hazard": "Rain",
+   "event": "Yellow Rain Warning",
+   "event_national": "Aviso Amarelo Precipitação",
+   "onset_utc": "2026-11-15T03:00:00Z",
+   "expires_utc": "2026-11-15T15:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Persistent and sometimes heavy precipitation.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "3b72986b7b85603e"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261115023406.PO-10-6372",
+   "sent_utc": "2026-11-15T02:34:06Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261113183935.PO-10-6364",
+     "sent_utc": "2026-11-13T18:39:35Z"
+    }
+   ],
+   "area": "Viseu",
+   "emma": "PT011",
+   "level": "yellow",
+   "hazard": "Rain",
+   "event": "Yellow Rain Warning",
+   "event_national": "Aviso Amarelo Precipitação",
+   "onset_utc": "2026-11-15T03:00:00Z",
+   "expires_utc": "2026-11-15T15:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Persistent and sometimes heavy precipitation.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "e9875ab0b964adef"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261115023406.PO-10-6373",
+   "sent_utc": "2026-11-15T02:34:06Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261113183935.PO-10-6365",
+     "sent_utc": "2026-11-13T18:39:35Z"
+    }
+   ],
+   "area": "Aveiro",
+   "emma": "PT010",
+   "level": "yellow",
+   "hazard": "Rain",
+   "event": "Yellow Rain Warning",
+   "event_national": "Aviso Amarelo Precipitação",
+   "onset_utc": "2026-11-15T03:00:00Z",
+   "expires_utc": "2026-11-15T15:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Persistent and sometimes heavy precipitation.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "76bf7ab337c2a108"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261115023406.PO-10-6374",
+   "sent_utc": "2026-11-15T02:34:06Z",
+   "msg_type": "Alert",
+   "replaces": null,
+   "area": "Coimbra",
+   "emma": "PT013",
+   "level": "yellow",
+   "hazard": "Rain",
+   "event": "Yellow Rain Warning",
+   "event_national": "Aviso Amarelo Precipitação",
+   "onset_utc": "2026-11-15T03:00:00Z",
+   "expires_utc": "2026-11-15T12:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Persistent and sometimes heavy precipitation.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "243cba3f5e71f819"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261115124522.PO-10-6375",
+   "sent_utc": "2026-11-15T12:45:22Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261115023406.PO-10-6372",
+     "sent_utc": "2026-11-15T02:34:06Z"
+    }
+   ],
+   "area": "Viseu",
+   "emma": "PT011",
+   "level": "yellow",
+   "hazard": "Rain",
+   "event": "Yellow Rain Warning",
+   "event_national": "Aviso Amarelo Precipitação",
+   "onset_utc": "2026-11-15T03:00:00Z",
+   "expires_utc": "2026-11-15T12:46:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Persistent and sometimes heavy precipitation.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "b5fba0b3bf5dfcba"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261115124522.PO-10-6376",
+   "sent_utc": "2026-11-15T12:45:22Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261115023406.PO-10-6373",
+     "sent_utc": "2026-11-15T02:34:06Z"
+    }
+   ],
+   "area": "Aveiro",
+   "emma": "PT010",
+   "level": "yellow",
+   "hazard": "Rain",
+   "event": "Yellow Rain Warning",
+   "event_national": "Aviso Amarelo Precipitação",
+   "onset_utc": "2026-11-15T03:00:00Z",
+   "expires_utc": "2026-11-15T12:46:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Persistent and sometimes heavy precipitation.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "1fcecc6c62be0502"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261116070855.PO-10-6379",
+   "sent_utc": "2026-11-16T07:08:55Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261114192948.PO-10-6366",
+     "sent_utc": "2026-11-14T19:29:48Z"
+    }
+   ],
+   "area": "Viana do Castelo",
+   "emma": "PT006",
+   "level": "yellow",
+   "hazard": "Rain",
+   "event": "Yellow Rain Warning",
+   "event_national": "Aviso Amarelo Precipitação",
+   "onset_utc": "2026-11-16T18:00:00Z",
+   "expires_utc": "2026-11-17T06:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Persistent rain, sometimes heavy, especially in highlands.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "9ebdf32f4cba5506"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261116070855.PO-10-6380",
+   "sent_utc": "2026-11-16T07:08:55Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261114192948.PO-10-6367",
+     "sent_utc": "2026-11-14T19:29:48Z"
+    }
+   ],
+   "area": "Braga",
+   "emma": "PT022",
+   "level": "yellow",
+   "hazard": "Rain",
+   "event": "Yellow Rain Warning",
+   "event_national": "Aviso Amarelo Precipitação",
+   "onset_utc": "2026-11-16T18:00:00Z",
+   "expires_utc": "2026-11-17T06:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Persistent rain, sometimes heavy, especially in highlands.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "df7a7f6956838a37"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261116070855.PO-10-6381",
+   "sent_utc": "2026-11-16T07:08:55Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261115124522.PO-10-6377",
+     "sent_utc": "2026-11-15T12:45:22Z"
+    }
+   ],
+   "area": "Porto",
+   "emma": "PT009",
+   "level": "yellow",
+   "hazard": "Rain",
+   "event": "Yellow Rain Warning",
+   "event_national": "Aviso Amarelo Precipitação",
+   "onset_utc": "2026-11-16T18:00:00Z",
+   "expires_utc": "2026-11-17T06:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Persistent and sometimes heavy precipitation.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "1171e4718c270021"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261116070855.PO-10-6382",
+   "sent_utc": "2026-11-16T07:08:55Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261115124522.PO-10-6378",
+     "sent_utc": "2026-11-15T12:45:22Z"
+    }
+   ],
+   "area": "Aveiro",
+   "emma": "PT010",
+   "level": "yellow",
+   "hazard": "Rain",
+   "event": "Yellow Rain Warning",
+   "event_national": "Aviso Amarelo Precipitação",
+   "onset_utc": "2026-11-16T18:00:00Z",
+   "expires_utc": "2026-11-17T06:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Persistent and sometimes heavy precipitation.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "a72267875a82af9f"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261116125351.PO-10-6383",
+   "sent_utc": "2026-11-16T12:53:51Z",
+   "msg_type": "Alert",
+   "replaces": null,
+   "area": "Vila Real",
+   "emma": "PT007",
+   "level": "yellow",
+   "hazard": "Rain",
+   "event": "Yellow Rain Warning",
+   "event_national": "Aviso Amarelo Precipitação",
+   "onset_utc": "2026-11-16T18:00:00Z",
+   "expires_utc": "2026-11-17T06:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Persistent rain, sometimes heavy, especially in highlands.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "f7b0841b264bc541"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261117071146.PO-10-6388",
+   "sent_utc": "2026-11-17T07:11:46Z",
+   "msg_type": "Alert",
+   "replaces": null,
+   "area": "Viana do Castelo",
+   "emma": "PT006",
+   "level": "yellow",
+   "hazard": "Rain",
+   "event": "Yellow Rain Warning",
+   "event_national": "Aviso Amarelo Precipitação",
+   "onset_utc": "2026-11-17T18:00:00Z",
+   "expires_utc": "2026-11-18T03:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Periods of rain or showers, sometimes heavy.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "2e9e260d876c01e8"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261117071146.PO-10-6389",
+   "sent_utc": "2026-11-17T07:11:46Z",
+   "msg_type": "Alert",
+   "replaces": null,
+   "area": "Braga",
+   "emma": "PT022",
+   "level": "yellow",
+   "hazard": "Rain",
+   "event": "Yellow Rain Warning",
+   "event_national": "Aviso Amarelo Precipitação",
+   "onset_utc": "2026-11-17T18:00:00Z",
+   "expires_utc": "2026-11-18T03:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Periods of rain or showers, sometimes heavy.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "0f285cab211401b0"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261117101115.PO-10-6394",
+   "sent_utc": "2026-11-17T10:11:15Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261116191553.PO-10-6386",
+     "sent_utc": "2026-11-16T19:15:53Z"
+    }
+   ],
+   "area": "Leiria",
+   "emma": "PT015",
+   "level": "yellow",
+   "hazard": "Rain",
+   "event": "Yellow Rain Warning",
+   "event_national": "Aviso Amarelo Precipitação",
+   "onset_utc": "2026-11-18T09:00:00Z",
+   "expires_utc": "2026-11-18T18:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Persistent and sometimes heavy precipitation.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "ce3ae5171405074d"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118020147.PO-07-4609",
+   "sent_utc": "2026-11-18T02:01:47Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261117020805.PO-07-4583",
+     "sent_utc": "2026-11-17T02:08:05Z"
+    }
+   ],
+   "area": "Viana do Castelo",
+   "emma": "PT006",
+   "level": "yellow",
+   "hazard": "coastalevent",
+   "event": "Yellow Coastal Event Warning",
+   "event_national": "Aviso Amarelo Agitação Marítima",
+   "onset_utc": "2026-11-18T03:00:00Z",
+   "expires_utc": "2026-11-18T18:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Northwest waves with 4 to 5 meters.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "0f97466222f5aa22"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118020147.PO-07-4610",
+   "sent_utc": "2026-11-18T02:01:47Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261117020805.PO-07-4584",
+     "sent_utc": "2026-11-17T02:08:05Z"
+    }
+   ],
+   "area": "Braga",
+   "emma": "PT022",
+   "level": "yellow",
+   "hazard": "coastalevent",
+   "event": "Yellow Coastal Event Warning",
+   "event_national": "Aviso Amarelo Agitação Marítima",
+   "onset_utc": "2026-11-18T03:00:00Z",
+   "expires_utc": "2026-11-18T18:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Northwest waves with 4 to 5 meters.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "69a1a0a6ee587218"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118020147.PO-07-4611",
+   "sent_utc": "2026-11-18T02:01:47Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261117020805.PO-07-4585",
+     "sent_utc": "2026-11-17T02:08:05Z"
+    }
+   ],
+   "area": "Porto",
+   "emma": "PT009",
+   "level": "yellow",
+   "hazard": "coastalevent",
+   "event": "Yellow Coastal Event Warning",
+   "event_national": "Aviso Amarelo Agitação Marítima",
+   "onset_utc": "2026-11-18T03:00:00Z",
+   "expires_utc": "2026-11-18T18:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Northwest waves with 4 to 5 meters.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "5954d8602b16a95a"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118020147.PO-07-4612",
+   "sent_utc": "2026-11-18T02:01:47Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261117020805.PO-07-4586",
+     "sent_utc": "2026-11-17T02:08:05Z"
+    }
+   ],
+   "area": "Aveiro",
+   "emma": "PT010",
+   "level": "yellow",
+   "hazard": "coastalevent",
+   "event": "Yellow Coastal Event Warning",
+   "event_national": "Aviso Amarelo Agitação Marítima",
+   "onset_utc": "2026-11-18T03:00:00Z",
+   "expires_utc": "2026-11-18T18:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Northwest waves with 4 to 5 meters.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "6de2c8a227939cd9"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118020147.PO-07-4617",
+   "sent_utc": "2026-11-18T02:01:47Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261117020805.PO-07-4591",
+     "sent_utc": "2026-11-17T02:08:05Z"
+    }
+   ],
+   "area": "Coimbra",
+   "emma": "PT013",
+   "level": "yellow",
+   "hazard": "coastalevent",
+   "event": "Yellow Coastal Event Warning",
+   "event_national": "Aviso Amarelo Agitação Marítima",
+   "onset_utc": "2026-11-18T06:00:00Z",
+   "expires_utc": "2026-11-18T18:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Northwest waves with 4 to 5 meters.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "67539757ef33b03f"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118020147.PO-07-4618",
+   "sent_utc": "2026-11-18T02:01:47Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261117020805.PO-07-4592",
+     "sent_utc": "2026-11-17T02:08:05Z"
+    }
+   ],
+   "area": "Leiria",
+   "emma": "PT015",
+   "level": "yellow",
+   "hazard": "coastalevent",
+   "event": "Yellow Coastal Event Warning",
+   "event_national": "Aviso Amarelo Agitação Marítima",
+   "onset_utc": "2026-11-18T06:00:00Z",
+   "expires_utc": "2026-11-18T18:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Northwest waves with 4 to 5 meters.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "66f220b4c5c8c3ec"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118020147.PO-07-4620",
+   "sent_utc": "2026-11-18T02:01:47Z",
+   "msg_type": "Alert",
+   "replaces": null,
+   "area": "Viana do Castelo",
+   "emma": "PT006",
+   "level": "yellow",
+   "hazard": "coastalevent",
+   "event": "Yellow Coastal Event Warning",
+   "event_national": "Aviso Amarelo Agitação Marítima",
+   "onset_utc": "2026-11-20T00:00:00Z",
+   "expires_utc": "2026-11-20T12:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Northwest waves measuringup to  4 to 5 meters.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "06990f5156fb37d1"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118020147.PO-07-4621",
+   "sent_utc": "2026-11-18T02:01:47Z",
+   "msg_type": "Alert",
+   "replaces": null,
+   "area": "Braga",
+   "emma": "PT022",
+   "level": "yellow",
+   "hazard": "coastalevent",
+   "event": "Yellow Coastal Event Warning",
+   "event_national": "Aviso Amarelo Agitação Marítima",
+   "onset_utc": "2026-11-20T00:00:00Z",
+   "expires_utc": "2026-11-20T12:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Northwest waves measuringup to  4 to 5 meters.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "11ee9f3099464f43"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118020147.PO-07-4622",
+   "sent_utc": "2026-11-18T02:01:47Z",
+   "msg_type": "Alert",
+   "replaces": null,
+   "area": "Porto",
+   "emma": "PT009",
+   "level": "yellow",
+   "hazard": "coastalevent",
+   "event": "Yellow Coastal Event Warning",
+   "event_national": "Aviso Amarelo Agitação Marítima",
+   "onset_utc": "2026-11-20T00:00:00Z",
+   "expires_utc": "2026-11-20T12:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Northwest waves measuringup to  4 to 5 meters.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "3d7c4623e9b58cc2"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118020147.PO-07-4623",
+   "sent_utc": "2026-11-18T02:01:47Z",
+   "msg_type": "Alert",
+   "replaces": null,
+   "area": "Aveiro",
+   "emma": "PT010",
+   "level": "yellow",
+   "hazard": "coastalevent",
+   "event": "Yellow Coastal Event Warning",
+   "event_national": "Aviso Amarelo Agitação Marítima",
+   "onset_utc": "2026-11-20T00:00:00Z",
+   "expires_utc": "2026-11-20T12:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Northwest waves measuringup to  4 to 5 meters.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "09e99e148baba34b"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118020147.PO-07-4624",
+   "sent_utc": "2026-11-18T02:01:47Z",
+   "msg_type": "Alert",
+   "replaces": null,
+   "area": "Coimbra",
+   "emma": "PT013",
+   "level": "yellow",
+   "hazard": "coastalevent",
+   "event": "Yellow Coastal Event Warning",
+   "event_national": "Aviso Amarelo Agitação Marítima",
+   "onset_utc": "2026-11-20T00:00:00Z",
+   "expires_utc": "2026-11-20T12:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Northwest waves measuringup to  4 to 5 meters.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "c82c5e740d74d22f"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118020147.PO-07-4625",
+   "sent_utc": "2026-11-18T02:01:47Z",
+   "msg_type": "Alert",
+   "replaces": null,
+   "area": "Leiria",
+   "emma": "PT015",
+   "level": "yellow",
+   "hazard": "coastalevent",
+   "event": "Yellow Coastal Event Warning",
+   "event_national": "Aviso Amarelo Agitação Marítima",
+   "onset_utc": "2026-11-20T00:00:00Z",
+   "expires_utc": "2026-11-20T12:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Northwest waves measuringup to  4 to 5 meters.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "ba3bfb6e19bab659"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118020147.PO-07-4627",
+   "sent_utc": "2026-11-18T02:01:47Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261117071146.PO-07-4605",
+     "sent_utc": "2026-11-17T07:11:46Z"
+    }
+   ],
+   "area": "Setúbal",
+   "emma": "PT020",
+   "level": "yellow",
+   "hazard": "coastalevent",
+   "event": "Yellow Coastal Event Warning",
+   "event_national": "Aviso Amarelo Agitação Marítima",
+   "onset_utc": "2026-11-18T12:00:00Z",
+   "expires_utc": "2026-11-20T09:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Northwest waves with 4 to 5 meters.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "aeb13e09bd14560f"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118020147.PO-07-4628",
+   "sent_utc": "2026-11-18T02:01:47Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261117071146.PO-07-4606",
+     "sent_utc": "2026-11-17T07:11:46Z"
+    }
+   ],
+   "area": "Beja",
+   "emma": "PT005",
+   "level": "yellow",
+   "hazard": "coastalevent",
+   "event": "Yellow Coastal Event Warning",
+   "event_national": "Aviso Amarelo Agitação Marítima",
+   "onset_utc": "2026-11-18T12:00:00Z",
+   "expires_utc": "2026-11-20T09:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Northwest waves with 4 to 5 meters.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "4196a3e0b5865579"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118020147.PO-07-4629",
+   "sent_utc": "2026-11-18T02:01:47Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261117071146.PO-07-4607",
+     "sent_utc": "2026-11-17T07:11:46Z"
+    }
+   ],
+   "area": "Faro",
+   "emma": "PT021",
+   "level": "yellow",
+   "hazard": "coastalevent",
+   "event": "Yellow Coastal Event Warning",
+   "event_national": "Aviso Amarelo Agitação Marítima",
+   "onset_utc": "2026-11-18T12:00:00Z",
+   "expires_utc": "2026-11-20T09:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "On the west coast, northwest waves with 4 to 5 meters.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "145098d8e4206199"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118032924.PO-07-4630",
+   "sent_utc": "2026-11-18T03:29:24Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261118020147.PO-07-4626",
+     "sent_utc": "2026-11-18T02:01:47Z"
+    }
+   ],
+   "area": "Lisboa",
+   "emma": "PT016",
+   "level": "yellow",
+   "hazard": "coastalevent",
+   "event": "Yellow Coastal Event Warning",
+   "event_national": "Aviso Amarelo Agitação Marítima",
+   "onset_utc": "2026-11-18T06:00:00Z",
+   "expires_utc": "2026-11-19T06:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Northwest waves with 4 to 5 meters.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "9d42fa2cbd199476"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118032924.PO-07-4631",
+   "sent_utc": "2026-11-18T03:29:24Z",
+   "msg_type": "Alert",
+   "replaces": null,
+   "area": "Lisboa",
+   "emma": "PT016",
+   "level": "orange",
+   "hazard": "coastalevent",
+   "event": "Orange Coastal Event Warning",
+   "event_national": "Aviso Laranja Agitação Marítima",
+   "onset_utc": "2026-11-19T06:00:00Z",
+   "expires_utc": "2026-11-19T12:00:00Z",
+   "severity": "Severe",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Northwest waves measuring 5 to 6 meters, with a maximum height of up to 10 meters.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "e06a560d581a0a44"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118032924.PO-07-4632",
+   "sent_utc": "2026-11-18T03:29:24Z",
+   "msg_type": "Alert",
+   "replaces": null,
+   "area": "Lisboa",
+   "emma": "PT016",
+   "level": "yellow",
+   "hazard": "coastalevent",
+   "event": "Yellow Coastal Event Warning",
+   "event_national": "Aviso Amarelo Agitação Marítima",
+   "onset_utc": "2026-11-19T12:00:00Z",
+   "expires_utc": "2026-11-20T09:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Northwest waves measuring 4 to 5 meters.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "0f268328395003be"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118171845.PO-07-4633",
+   "sent_utc": "2026-11-18T17:18:45Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261118020147.PO-07-4609",
+     "sent_utc": "2026-11-18T02:01:47Z"
+    }
+   ],
+   "area": "Viana do Castelo",
+   "emma": "PT006",
+   "level": "yellow",
+   "hazard": "coastalevent",
+   "event": "Yellow Coastal Event Warning",
+   "event_national": "Aviso Amarelo Agitação Marítima",
+   "onset_utc": "2026-11-18T03:00:00Z",
+   "expires_utc": "2026-11-18T17:19:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Northwest waves with 4 to 5 meters.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "8998492456f8a163"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118171845.PO-07-4634",
+   "sent_utc": "2026-11-18T17:18:45Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261118020147.PO-07-4610",
+     "sent_utc": "2026-11-18T02:01:47Z"
+    }
+   ],
+   "area": "Braga",
+   "emma": "PT022",
+   "level": "yellow",
+   "hazard": "coastalevent",
+   "event": "Yellow Coastal Event Warning",
+   "event_national": "Aviso Amarelo Agitação Marítima",
+   "onset_utc": "2026-11-18T03:00:00Z",
+   "expires_utc": "2026-11-18T17:19:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Northwest waves with 4 to 5 meters.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "9f58459f6c5f6056"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118171845.PO-07-4635",
+   "sent_utc": "2026-11-18T17:18:45Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261118020147.PO-07-4611",
+     "sent_utc": "2026-11-18T02:01:47Z"
+    }
+   ],
+   "area": "Porto",
+   "emma": "PT009",
+   "level": "yellow",
+   "hazard": "coastalevent",
+   "event": "Yellow Coastal Event Warning",
+   "event_national": "Aviso Amarelo Agitação Marítima",
+   "onset_utc": "2026-11-18T03:00:00Z",
+   "expires_utc": "2026-11-18T17:19:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Northwest waves with 4 to 5 meters.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "87bba185fa8e0dff"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118171845.PO-07-4636",
+   "sent_utc": "2026-11-18T17:18:45Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261118020147.PO-07-4612",
+     "sent_utc": "2026-11-18T02:01:47Z"
+    }
+   ],
+   "area": "Aveiro",
+   "emma": "PT010",
+   "level": "yellow",
+   "hazard": "coastalevent",
+   "event": "Yellow Coastal Event Warning",
+   "event_national": "Aviso Amarelo Agitação Marítima",
+   "onset_utc": "2026-11-18T03:00:00Z",
+   "expires_utc": "2026-11-18T17:19:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Northwest waves with 4 to 5 meters.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "bc401f59131e3941"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118171845.PO-07-4637",
+   "sent_utc": "2026-11-18T17:18:45Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261118020147.PO-07-4617",
+     "sent_utc": "2026-11-18T02:01:47Z"
+    }
+   ],
+   "area": "Coimbra",
+   "emma": "PT013",
+   "level": "yellow",
+   "hazard": "coastalevent",
+   "event": "Yellow Coastal Event Warning",
+   "event_national": "Aviso Amarelo Agitação Marítima",
+   "onset_utc": "2026-11-18T06:00:00Z",
+   "expires_utc": "2026-11-18T17:19:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Northwest waves with 4 to 5 meters.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "4f9701c4c5df75d7"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118171845.PO-07-4638",
+   "sent_utc": "2026-11-18T17:18:45Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261118020147.PO-07-4618",
+     "sent_utc": "2026-11-18T02:01:47Z"
+    }
+   ],
+   "area": "Leiria",
+   "emma": "PT015",
+   "level": "yellow",
+   "hazard": "coastalevent",
+   "event": "Yellow Coastal Event Warning",
+   "event_national": "Aviso Amarelo Agitação Marítima",
+   "onset_utc": "2026-11-18T06:00:00Z",
+   "expires_utc": "2026-11-18T17:19:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Northwest waves with 4 to 5 meters.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "6af4d249dd0c76f8"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118171845.PO-07-4639",
+   "sent_utc": "2026-11-18T17:18:45Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261118020147.PO-07-4608",
+     "sent_utc": "2026-11-18T02:01:47Z"
+    }
+   ],
+   "area": "Viana do Castelo",
+   "emma": "PT006",
+   "level": "orange",
+   "hazard": "coastalevent",
+   "event": "Orange Coastal Event Warning",
+   "event_national": "Aviso Laranja Agitação Marítima",
+   "onset_utc": "2026-11-18T17:19:00Z",
+   "expires_utc": "2026-11-20T00:00:00Z",
+   "severity": "Severe",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "NW waves 5 to 6 meters, with maximum height up to 10 meters.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "44d2a380b8c8c00c"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118171845.PO-07-4640",
+   "sent_utc": "2026-11-18T17:18:45Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261118020147.PO-07-4613",
+     "sent_utc": "2026-11-18T02:01:47Z"
+    }
+   ],
+   "area": "Braga",
+   "emma": "PT022",
+   "level": "orange",
+   "hazard": "coastalevent",
+   "event": "Orange Coastal Event Warning",
+   "event_national": "Aviso Laranja Agitação Marítima",
+   "onset_utc": "2026-11-18T17:19:00Z",
+   "expires_utc": "2026-11-20T00:00:00Z",
+   "severity": "Severe",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "NW waves 5 to 6 meters, with maximum height up to 10 meters.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "bcf787af72250cfd"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118171845.PO-07-4641",
+   "sent_utc": "2026-11-18T17:18:45Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261118020147.PO-07-4614",
+     "sent_utc": "2026-11-18T02:01:47Z"
+    }
+   ],
+   "area": "Porto",
+   "emma": "PT009",
+   "level": "orange",
+   "hazard": "coastalevent",
+   "event": "Orange Coastal Event Warning",
+   "event_national": "Aviso Laranja Agitação Marítima",
+   "onset_utc": "2026-11-18T17:19:00Z",
+   "expires_utc": "2026-11-20T00:00:00Z",
+   "severity": "Severe",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "NW waves 5 to 6 meters, with maximum height up to 10 meters.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "e357c2243ee77916"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118171845.PO-07-4642",
+   "sent_utc": "2026-11-18T17:18:45Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261118020147.PO-07-4615",
+     "sent_utc": "2026-11-18T02:01:47Z"
+    }
+   ],
+   "area": "Aveiro",
+   "emma": "PT010",
+   "level": "orange",
+   "hazard": "coastalevent",
+   "event": "Orange Coastal Event Warning",
+   "event_national": "Aviso Laranja Agitação Marítima",
+   "onset_utc": "2026-11-18T17:19:00Z",
+   "expires_utc": "2026-11-20T00:00:00Z",
+   "severity": "Severe",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "NW waves 5 to 6 meters, with maximum height up to 10 meters.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "75b105d77057a575"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118171845.PO-07-4643",
+   "sent_utc": "2026-11-18T17:18:45Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261118020147.PO-07-4616",
+     "sent_utc": "2026-11-18T02:01:47Z"
+    }
+   ],
+   "area": "Coimbra",
+   "emma": "PT013",
+   "level": "orange",
+   "hazard": "coastalevent",
+   "event": "Orange Coastal Event Warning",
+   "event_national": "Aviso Laranja Agitação Marítima",
+   "onset_utc": "2026-11-18T17:19:00Z",
+   "expires_utc": "2026-11-20T00:00:00Z",
+   "severity": "Severe",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "NW waves 5 to 6 meters, with maximum height up to 10 meters.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "adafeeb410d5e677"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118171845.PO-07-4644",
+   "sent_utc": "2026-11-18T17:18:45Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261118020147.PO-07-4619",
+     "sent_utc": "2026-11-18T02:01:47Z"
+    }
+   ],
+   "area": "Leiria",
+   "emma": "PT015",
+   "level": "orange",
+   "hazard": "coastalevent",
+   "event": "Orange Coastal Event Warning",
+   "event_national": "Aviso Laranja Agitação Marítima",
+   "onset_utc": "2026-11-18T17:19:00Z",
+   "expires_utc": "2026-11-20T00:00:00Z",
+   "severity": "Severe",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "NW waves 5 to 6 meters, with maximum height up to 10 meters.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "bc77958b98b0e2d1"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118171845.PO-10-6399",
+   "sent_utc": "2026-11-18T17:18:45Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261118020147.PO-10-6397",
+     "sent_utc": "2026-11-18T02:01:47Z"
+    }
+   ],
+   "area": "Viana do Castelo",
+   "emma": "PT006",
+   "level": "yellow",
+   "hazard": "Rain",
+   "event": "Yellow Rain Warning",
+   "event_national": "Aviso Amarelo Precipitação",
+   "onset_utc": "2026-11-18T17:19:00Z",
+   "expires_utc": "2026-11-18T21:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Periods of rain or showers, persistent and sometimes heavy.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "2ef726ade78da55a"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118171845.PO-10-6400",
+   "sent_utc": "2026-11-18T17:18:45Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261118020147.PO-10-6398",
+     "sent_utc": "2026-11-18T02:01:47Z"
+    }
+   ],
+   "area": "Braga",
+   "emma": "PT022",
+   "level": "yellow",
+   "hazard": "Rain",
+   "event": "Yellow Rain Warning",
+   "event_national": "Aviso Amarelo Precipitação",
+   "onset_utc": "2026-11-18T17:19:00Z",
+   "expires_utc": "2026-11-18T21:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Periods of rain or showers, persistent and sometimes heavy.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "e4ec8da852a6319e"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118171845.PO-10-6401",
+   "sent_utc": "2026-11-18T17:18:45Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261117101115.PO-10-6392",
+     "sent_utc": "2026-11-17T10:11:15Z"
+    }
+   ],
+   "area": "Castelo Branco",
+   "emma": "PT014",
+   "level": "yellow",
+   "hazard": "Rain",
+   "event": "Yellow Rain Warning",
+   "event_national": "Aviso Amarelo Precipitação",
+   "onset_utc": "2026-11-18T17:19:00Z",
+   "expires_utc": "2026-11-18T21:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Persistent and sometimes heavy precipitation.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "c1c68e362a9a1de2"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118171845.PO-10-6402",
+   "sent_utc": "2026-11-18T17:18:45Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261117101115.PO-10-6393",
+     "sent_utc": "2026-11-17T10:11:15Z"
+    }
+   ],
+   "area": "Coimbra",
+   "emma": "PT013",
+   "level": "yellow",
+   "hazard": "Rain",
+   "event": "Yellow Rain Warning",
+   "event_national": "Aviso Amarelo Precipitação",
+   "onset_utc": "2026-11-18T17:19:00Z",
+   "expires_utc": "2026-11-18T21:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Persistent and sometimes heavy precipitation.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "88a60798ae4ae4dd"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118171845.PO-10-6403",
+   "sent_utc": "2026-11-18T17:18:45Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261117101115.PO-10-6395",
+     "sent_utc": "2026-11-17T10:11:15Z"
+    }
+   ],
+   "area": "Santarém",
+   "emma": "PT017",
+   "level": "yellow",
+   "hazard": "Rain",
+   "event": "Yellow Rain Warning",
+   "event_national": "Aviso Amarelo Precipitação",
+   "onset_utc": "2026-11-18T17:19:00Z",
+   "expires_utc": "2026-11-18T21:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Persistent and sometimes heavy precipitation.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "fe36fe27684534ed"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118171845.PO-10-6404",
+   "sent_utc": "2026-11-18T17:18:45Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261117101115.PO-10-6396",
+     "sent_utc": "2026-11-17T10:11:15Z"
+    }
+   ],
+   "area": "Portalegre",
+   "emma": "PT018",
+   "level": "yellow",
+   "hazard": "Rain",
+   "event": "Yellow Rain Warning",
+   "event_national": "Aviso Amarelo Precipitação",
+   "onset_utc": "2026-11-18T17:19:00Z",
+   "expires_utc": "2026-11-18T21:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Persistent and sometimes heavy precipitation.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "aaf4de5672d90c3e"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118171845.PO-10-6405",
+   "sent_utc": "2026-11-18T17:18:45Z",
+   "msg_type": "Update",
+   "replaces": [
+    {
+     "id": "2.49.0.0.620.0.PT.261117101115.PO-10-6391",
+     "sent_utc": "2026-11-17T10:11:15Z"
+    }
+   ],
+   "area": "Lisboa",
+   "emma": "PT016",
+   "level": "yellow",
+   "hazard": "Rain",
+   "event": "Yellow Rain Warning",
+   "event_national": "Aviso Amarelo Precipitação",
+   "onset_utc": "2026-11-18T17:19:00Z",
+   "expires_utc": "2026-11-18T20:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Persistent and sometimes heavy precipitation.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "b4cfe2efde4e4017"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118171845.PO-10-6406",
+   "sent_utc": "2026-11-18T17:18:45Z",
+   "msg_type": "Alert",
+   "replaces": null,
+   "area": "Setúbal",
+   "emma": "PT020",
+   "level": "yellow",
+   "hazard": "Rain",
+   "event": "Yellow Rain Warning",
+   "event_national": "Aviso Amarelo Precipitação",
+   "onset_utc": "2026-11-18T17:19:00Z",
+   "expires_utc": "2026-11-18T21:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Precipitation, sometimes heavy.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "4a84ed3649cabe0b"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118171845.PO-10-6407",
+   "sent_utc": "2026-11-18T17:18:45Z",
+   "msg_type": "Alert",
+   "replaces": null,
+   "area": "Évora",
+   "emma": "PT019",
+   "level": "yellow",
+   "hazard": "Rain",
+   "event": "Yellow Rain Warning",
+   "event_national": "Aviso Amarelo Precipitação",
+   "onset_utc": "2026-11-18T17:19:00Z",
+   "expires_utc": "2026-11-18T21:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Precipitation, sometimes heavy.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "9ae16ae5173ced5a"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261118195459.AZ-10-672",
+   "sent_utc": "2026-11-18T19:54:59Z",
+   "msg_type": "Alert",
+   "replaces": null,
+   "area": "Açores - Grupo Oriental",
+   "emma": "PT003",
+   "level": "yellow",
+   "hazard": "Rain",
+   "event": "Yellow Rain Warning",
+   "event_national": "Aviso Amarelo Precipitação",
+   "onset_utc": "2026-11-19T18:00:00Z",
+   "expires_utc": "2026-11-20T06:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Precipitation, sometimes HEAVY, potentially accompanied by thunderstorms.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "7c9fc7bbb08569aa"
+  }
+ ]
+}

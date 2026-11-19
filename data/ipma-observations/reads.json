@@ -1,0 +1,1802 @@
+{
+ "about": "Every run of sources/ipma-observations/collect.mjs, newest first: each request's address, HTTP status, size, the first 16 hex of its sha256, and whether the bytes changed since the run before. The bytes and the full sha256 go to the source's vault (see card.json: latest/reads-full.json), never to git.",
+ "source": "ipma-observations",
+ "runs": [
+  {
+   "at": "2026-11-19T01:28:12Z",
+   "finished": "2026-11-19T01:28:17Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-19T01:28:14Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-19T01:28:17Z",
+     "status": 200,
+     "bytes": 891035,
+     "sha256_prefix": "2352d4b2cf3d5675",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-19T01:20:28Z",
+   "finished": "2026-11-19T01:20:33Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-19T01:20:30Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-19T01:20:33Z",
+     "status": 200,
+     "bytes": 891035,
+     "sha256_prefix": "2352d4b2cf3d5675",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-19T01:15:40Z",
+   "finished": "2026-11-19T01:15:45Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-19T01:15:42Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-19T01:15:45Z",
+     "status": 200,
+     "bytes": 891035,
+     "sha256_prefix": "2352d4b2cf3d5675",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-19T00:58:52Z",
+   "finished": "2026-11-19T00:58:57Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-19T00:58:55Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-19T00:58:57Z",
+     "status": 200,
+     "bytes": 891035,
+     "sha256_prefix": "2352d4b2cf3d5675",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-19T00:29:22Z",
+   "finished": "2026-11-19T00:29:27Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-19T00:29:25Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-19T00:29:27Z",
+     "status": 200,
+     "bytes": 883080,
+     "sha256_prefix": "5fd5b9c22bf03550",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-19T00:06:31Z",
+   "finished": "2026-11-19T00:06:36Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-19T00:06:33Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-19T00:06:36Z",
+     "status": 200,
+     "bytes": 883080,
+     "sha256_prefix": "5fd5b9c22bf03550",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T23:48:27Z",
+   "finished": "2026-11-18T23:48:32Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T23:48:29Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T23:48:32Z",
+     "status": 200,
+     "bytes": 883080,
+     "sha256_prefix": "5fd5b9c22bf03550",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T23:40:27Z",
+   "finished": "2026-11-18T23:40:32Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T23:40:29Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T23:40:32Z",
+     "status": 200,
+     "bytes": 883080,
+     "sha256_prefix": "5fd5b9c22bf03550",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T23:31:31Z",
+   "finished": "2026-11-18T23:31:36Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T23:31:33Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T23:31:36Z",
+     "status": 200,
+     "bytes": 874099,
+     "sha256_prefix": "8b4dec4aacabbb08",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T23:25:30Z",
+   "finished": "2026-11-18T23:25:35Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T23:25:32Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T23:25:34Z",
+     "status": 200,
+     "bytes": 874099,
+     "sha256_prefix": "8b4dec4aacabbb08",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:56:47Z",
+   "finished": "2026-11-18T22:56:52Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T22:56:49Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T22:56:52Z",
+     "status": 200,
+     "bytes": 874099,
+     "sha256_prefix": "8b4dec4aacabbb08",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:46:07Z",
+   "finished": "2026-11-18T22:46:12Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T22:46:10Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T22:46:12Z",
+     "status": 200,
+     "bytes": 874099,
+     "sha256_prefix": "8b4dec4aacabbb08",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:39:38Z",
+   "finished": "2026-11-18T22:39:43Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T22:39:40Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T22:39:43Z",
+     "status": 200,
+     "bytes": 874099,
+     "sha256_prefix": "8b4dec4aacabbb08",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:34:47Z",
+   "finished": "2026-11-18T22:34:52Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T22:34:49Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T22:34:52Z",
+     "status": 200,
+     "bytes": 865718,
+     "sha256_prefix": "d08a0aad6ea0f4dc",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:28:51Z",
+   "finished": "2026-11-18T22:28:56Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T22:28:53Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T22:28:56Z",
+     "status": 200,
+     "bytes": 865718,
+     "sha256_prefix": "d08a0aad6ea0f4dc",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:23:33Z",
+   "finished": "2026-11-18T22:23:38Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T22:23:35Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T22:23:38Z",
+     "status": 200,
+     "bytes": 865718,
+     "sha256_prefix": "d08a0aad6ea0f4dc",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:14:27Z",
+   "finished": "2026-11-18T22:14:33Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T22:14:30Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T22:14:32Z",
+     "status": 200,
+     "bytes": 865718,
+     "sha256_prefix": "d08a0aad6ea0f4dc",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:09:41Z",
+   "finished": "2026-11-18T22:09:46Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T22:09:43Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T22:09:45Z",
+     "status": 200,
+     "bytes": 865718,
+     "sha256_prefix": "d08a0aad6ea0f4dc",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T21:15:18Z",
+   "finished": "2026-11-18T21:15:23Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T21:15:20Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T21:15:23Z",
+     "status": 200,
+     "bytes": 856521,
+     "sha256_prefix": "b70bee90090e9e68",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T21:06:25Z",
+   "finished": "2026-11-18T21:06:30Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T21:06:28Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T21:06:30Z",
+     "status": 200,
+     "bytes": 856521,
+     "sha256_prefix": "b70bee90090e9e68",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T20:31:26Z",
+   "finished": "2026-11-18T20:31:32Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T20:31:29Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T20:31:31Z",
+     "status": 200,
+     "bytes": 845054,
+     "sha256_prefix": "3b46d82f36622919",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T19:17:29Z",
+   "finished": "2026-11-18T19:17:34Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T19:17:32Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T19:17:34Z",
+     "status": 200,
+     "bytes": 836992,
+     "sha256_prefix": "66907764714ff433",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T19:12:06Z",
+   "finished": "2026-11-18T19:12:11Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T19:12:09Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T19:12:11Z",
+     "status": 200,
+     "bytes": 836992,
+     "sha256_prefix": "66907764714ff433",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T19:08:34Z",
+   "finished": "2026-11-18T19:08:39Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T19:08:37Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T19:08:39Z",
+     "status": 200,
+     "bytes": 836992,
+     "sha256_prefix": "66907764714ff433",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T19:05:00Z",
+   "finished": "2026-11-18T19:05:06Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T19:05:03Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T19:05:05Z",
+     "status": 200,
+     "bytes": 836992,
+     "sha256_prefix": "66907764714ff433",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T18:57:20Z",
+   "finished": "2026-11-18T18:57:26Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T18:57:23Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T18:57:25Z",
+     "status": 200,
+     "bytes": 836992,
+     "sha256_prefix": "66907764714ff433",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T18:53:38Z",
+   "finished": "2026-11-18T18:53:43Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T18:53:40Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T18:53:43Z",
+     "status": 200,
+     "bytes": 836992,
+     "sha256_prefix": "66907764714ff433",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T17:56:02Z",
+   "finished": "2026-11-18T17:56:08Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T17:56:05Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T17:56:07Z",
+     "status": 200,
+     "bytes": 821624,
+     "sha256_prefix": "35ac038ab1ba6049",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T17:41:00Z",
+   "finished": "2026-11-18T17:41:06Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T17:41:03Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T17:41:05Z",
+     "status": 200,
+     "bytes": 821624,
+     "sha256_prefix": "35ac038ab1ba6049",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T16:32:08Z",
+   "finished": "2026-11-18T16:32:14Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T16:32:11Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T16:32:13Z",
+     "status": 200,
+     "bytes": 809315,
+     "sha256_prefix": "cc19032fd447c2ce",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T16:13:32Z",
+   "finished": "2026-11-18T16:13:37Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T16:13:34Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T16:13:36Z",
+     "status": 200,
+     "bytes": 809315,
+     "sha256_prefix": "cc19032fd447c2ce",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T16:09:43Z",
+   "finished": "2026-11-18T16:09:48Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T16:09:45Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T16:09:48Z",
+     "status": 200,
+     "bytes": 809315,
+     "sha256_prefix": "cc19032fd447c2ce",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T16:06:06Z",
+   "finished": "2026-11-18T16:06:11Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T16:06:08Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T16:06:11Z",
+     "status": 200,
+     "bytes": 809315,
+     "sha256_prefix": "cc19032fd447c2ce",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T16:00:48Z",
+   "finished": "2026-11-18T16:00:53Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T16:00:50Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T16:00:52Z",
+     "status": 200,
+     "bytes": 809315,
+     "sha256_prefix": "cc19032fd447c2ce",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:56:57Z",
+   "finished": "2026-11-18T15:57:03Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T15:57:00Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T15:57:02Z",
+     "status": 200,
+     "bytes": 809315,
+     "sha256_prefix": "cc19032fd447c2ce",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:53:09Z",
+   "finished": "2026-11-18T15:53:14Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T15:53:11Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T15:53:14Z",
+     "status": 200,
+     "bytes": 809315,
+     "sha256_prefix": "cc19032fd447c2ce",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:49:17Z",
+   "finished": "2026-11-18T15:49:22Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T15:49:19Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T15:49:21Z",
+     "status": 200,
+     "bytes": 809315,
+     "sha256_prefix": "cc19032fd447c2ce",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:45:27Z",
+   "finished": "2026-11-18T15:45:32Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T15:45:29Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T15:45:32Z",
+     "status": 200,
+     "bytes": 809315,
+     "sha256_prefix": "cc19032fd447c2ce",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:41:53Z",
+   "finished": "2026-11-18T15:41:58Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T15:41:55Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T15:41:58Z",
+     "status": 200,
+     "bytes": 809315,
+     "sha256_prefix": "cc19032fd447c2ce",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:38:15Z",
+   "finished": "2026-11-18T15:38:21Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T15:38:18Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T15:38:20Z",
+     "status": 200,
+     "bytes": 809315,
+     "sha256_prefix": "cc19032fd447c2ce",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:34:48Z",
+   "finished": "2026-11-18T15:34:53Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T15:34:50Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T15:34:53Z",
+     "status": 200,
+     "bytes": 801424,
+     "sha256_prefix": "ac5b7937d8070d69",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:29:59Z",
+   "finished": "2026-11-18T15:30:04Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T15:30:01Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T15:30:03Z",
+     "status": 200,
+     "bytes": 801424,
+     "sha256_prefix": "ac5b7937d8070d69",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:15:39Z",
+   "finished": "2026-11-18T15:15:44Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T15:15:41Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T15:15:44Z",
+     "status": 200,
+     "bytes": 801424,
+     "sha256_prefix": "ac5b7937d8070d69",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:10:14Z",
+   "finished": "2026-11-18T15:10:19Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T15:10:16Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": "first read"
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T15:10:19Z",
+     "status": 200,
+     "bytes": 801424,
+     "sha256_prefix": "ac5b7937d8070d69",
+     "changed": "first read"
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:58:00Z",
+   "finished": "2026-11-18T15:00:03Z",
+   "ok": 0,
+   "failed": 2,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T14:58:51Z",
+     "status": "error",
+     "bytes": 0,
+     "error": "UND_ERR_CONNECT_TIMEOUT",
+     "sha256_prefix": null,
+     "changed": null
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T14:59:52Z",
+     "status": "error",
+     "bytes": 0,
+     "error": "UND_ERR_CONNECT_TIMEOUT",
+     "sha256_prefix": null,
+     "changed": null
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:49:32Z",
+   "finished": "2026-11-18T14:49:37Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T14:49:34Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T14:49:37Z",
+     "status": 200,
+     "bytes": 801424,
+     "sha256_prefix": "ac5b7937d8070d69",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:44:59Z",
+   "finished": "2026-11-18T14:45:04Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T14:45:01Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T14:45:04Z",
+     "status": 200,
+     "bytes": 801424,
+     "sha256_prefix": "ac5b7937d8070d69",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:41:55Z",
+   "finished": "2026-11-18T14:42:01Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T14:41:58Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T14:42:00Z",
+     "status": 200,
+     "bytes": 801424,
+     "sha256_prefix": "ac5b7937d8070d69",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:35:06Z",
+   "finished": "2026-11-18T14:35:11Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T14:35:08Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T14:35:11Z",
+     "status": 200,
+     "bytes": 793145,
+     "sha256_prefix": "c625ad7f804a0f32",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:28:44Z",
+   "finished": "2026-11-18T14:28:49Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T14:28:46Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T14:28:48Z",
+     "status": 200,
+     "bytes": 793145,
+     "sha256_prefix": "c625ad7f804a0f32",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:25:57Z",
+   "finished": "2026-11-18T14:26:02Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T14:25:59Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T14:26:02Z",
+     "status": 200,
+     "bytes": 793145,
+     "sha256_prefix": "c625ad7f804a0f32",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:22:34Z",
+   "finished": "2026-11-18T14:22:40Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T14:22:37Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T14:22:39Z",
+     "status": 200,
+     "bytes": 793145,
+     "sha256_prefix": "c625ad7f804a0f32",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:16:23Z",
+   "finished": "2026-11-18T14:16:28Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T14:16:25Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T14:16:28Z",
+     "status": 200,
+     "bytes": 793145,
+     "sha256_prefix": "c625ad7f804a0f32",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:13:18Z",
+   "finished": "2026-11-18T14:13:23Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T14:13:20Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T14:13:23Z",
+     "status": 200,
+     "bytes": 793145,
+     "sha256_prefix": "c625ad7f804a0f32",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:09:36Z",
+   "finished": "2026-11-18T14:09:42Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T14:09:39Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T14:09:41Z",
+     "status": 200,
+     "bytes": 793145,
+     "sha256_prefix": "c625ad7f804a0f32",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:04:50Z",
+   "finished": "2026-11-18T14:04:55Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T14:04:52Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T14:04:55Z",
+     "status": 200,
+     "bytes": 793145,
+     "sha256_prefix": "c625ad7f804a0f32",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:02:12Z",
+   "finished": "2026-11-18T14:02:17Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T14:02:14Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T14:02:17Z",
+     "status": 200,
+     "bytes": 793145,
+     "sha256_prefix": "c625ad7f804a0f32",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T13:10:02Z",
+   "finished": "2026-11-18T13:10:07Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T13:10:04Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T13:10:06Z",
+     "status": 200,
+     "bytes": 783221,
+     "sha256_prefix": "0dbaec2c632100ae",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T13:06:13Z",
+   "finished": "2026-11-18T13:06:18Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T13:06:15Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T13:06:17Z",
+     "status": 200,
+     "bytes": 783221,
+     "sha256_prefix": "0dbaec2c632100ae",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T11:41:37Z",
+   "finished": "2026-11-18T11:41:42Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T11:41:39Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T11:41:42Z",
+     "status": 200,
+     "bytes": 774538,
+     "sha256_prefix": "0df24b3222f873df",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T10:11:24Z",
+   "finished": "2026-11-18T10:11:29Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T10:11:26Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T10:11:29Z",
+     "status": 200,
+     "bytes": 775209,
+     "sha256_prefix": "2be85f1f8d702d11",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T10:08:24Z",
+   "finished": "2026-11-18T10:08:29Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T10:08:26Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T10:08:29Z",
+     "status": 200,
+     "bytes": 775209,
+     "sha256_prefix": "2be85f1f8d702d11",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T09:48:05Z",
+   "finished": "2026-11-18T09:48:10Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T09:48:07Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T09:48:10Z",
+     "status": 200,
+     "bytes": 775209,
+     "sha256_prefix": "2be85f1f8d702d11",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T09:43:20Z",
+   "finished": "2026-11-18T09:43:25Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T09:43:22Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": true
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T09:43:25Z",
+     "status": 200,
+     "bytes": 775209,
+     "sha256_prefix": "2be85f1f8d702d11",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T02:28:05Z",
+   "finished": "2026-11-18T02:28:10Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-18T02:28:07Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "2d539b3686cc2c49",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-18T02:28:10Z",
+     "status": 200,
+     "bytes": 823301,
+     "sha256_prefix": "dfe2cbd6e747023f",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-17T23:07:17Z",
+   "finished": "2026-11-17T23:07:22Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-17T23:07:19Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "2d539b3686cc2c49",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-17T23:07:22Z",
+     "status": 200,
+     "bytes": 853575,
+     "sha256_prefix": "3019d962f76559db",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-17T23:04:42Z",
+   "finished": "2026-11-17T23:04:48Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-17T23:04:45Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "2d539b3686cc2c49",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-17T23:04:47Z",
+     "status": 200,
+     "bytes": 853575,
+     "sha256_prefix": "3019d962f76559db",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-17T19:43:48Z",
+   "finished": "2026-11-17T19:43:53Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-17T19:43:50Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "2d539b3686cc2c49",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-17T19:43:53Z",
+     "status": 200,
+     "bytes": 885273,
+     "sha256_prefix": "9ec9f51f6e95b603",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-17T19:40:34Z",
+   "finished": "2026-11-17T19:40:39Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-17T19:40:36Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "2d539b3686cc2c49",
+     "changed": "first read"
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-17T19:40:39Z",
+     "status": 200,
+     "bytes": 885273,
+     "sha256_prefix": "9ec9f51f6e95b603",
+     "changed": "first read"
+    }
+   ]
+  }
+ ]
+}

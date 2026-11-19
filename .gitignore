@@ -226,9 +226,24 @@ __marimo__/
 # build output
 _site/
 
-# collected data and vault working copies (data goes to the site and the vaults, never to git)
-/data/
-/vaults/
+# collected data: committed (Dinis, 19 Nov 2026 ~01:20 UTC, PrompTugal__News__Website
+# board/guidance/2026-11-19-every-run-starts-from-a-commit.md: data.b@'s hourly wake collects and commits the latest
+# files, their read times and the raw files, so every published value traces to a commit).
+# The raw files committed are those the site serves (scripts/build/lib.mjs); the rest (nvd-cve, cisa-kev, events-pt,
+# tfl-jamcams, ea-flood, and every dated copy) stay for the vaults, never git. reads-full.json is never committed.
+/vaults/*
+!/vaults/ipma-city-forecasts/
+!/vaults/ipma-fire-risk/
+!/vaults/ipma-observations/
+!/vaults/ipma-sea/
+!/vaults/ipma-uv/
+!/vaults/ipma-warnings/
+!/vaults/meteoalarm-pt/
+!/vaults/eurostat-tourism/
+!/vaults/open-meteo-london/
+/vaults/*/*
+!/vaults/*/latest/
+/vaults/*/latest/reads-full.json
 
 # sub-agents' git worktrees (data.b@, 18 Nov 2026): temporary working copies, never committed
 .claude/worktrees/

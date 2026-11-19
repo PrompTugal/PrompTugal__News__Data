@@ -1,0 +1,251 @@
+{
+ "about": "Every run of sources/eurostat-tourism/collect.mjs, newest first: each request's address, HTTP status, size, the first 16 hex of its sha256, and whether the bytes changed since the run before. The bytes and the full sha256 go to the source's vault (see card.json: latest/reads-full.json), never to git.",
+ "source": "eurostat-tourism",
+ "runs": [
+  {
+   "at": "2026-11-19T01:30:40Z",
+   "finished": "2026-11-19T01:30:46Z",
+   "ok": 3,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "tour_occ_nin2",
+     "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tour_occ_nin2?format=JSON&lang=en&geo=PT15&geo=PT17&geo=PT&geo=UKI&geo=PT1A&geo=PT1B&c_resid=DOM&c_resid=FOR&c_resid=TOTAL&nace_r2=I551-I553&unit=NR&lastTimePeriod=10",
+     "at": "2026-11-19T01:30:40Z",
+     "status": 200,
+     "bytes": 4765,
+     "sha256_prefix": "a6366be26ec89d79",
+     "changed": false
+    },
+    {
+     "name": "tour_occ_ninraw",
+     "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tour_occ_ninraw?format=JSON&lang=en&geo=PT&c_resid=UK&c_resid=DE&c_resid=FR&c_resid=ES&c_resid=NL&c_resid=US&c_resid=DOM&nace_r2=I551-I553&unit=NR&lastTimePeriod=10",
+     "at": "2026-11-19T01:30:43Z",
+     "status": 200,
+     "bytes": 4179,
+     "sha256_prefix": "071d3c091261066e",
+     "changed": false
+    },
+    {
+     "name": "tour_occ_nim",
+     "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tour_occ_nim?format=JSON&lang=en&geo=PT15&geo=PT17&geo=PT&geo=UKI&c_resid=DOM&c_resid=FOR&c_resid=TOTAL&nace_r2=I551-I553&unit=NR&lastTimePeriod=36",
+     "at": "2026-11-19T01:30:45Z",
+     "status": 200,
+     "bytes": 5509,
+     "sha256_prefix": "2fba815cb03ee4f6",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T23:43:26Z",
+   "finished": "2026-11-18T23:43:33Z",
+   "ok": 3,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "tour_occ_nin2",
+     "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tour_occ_nin2?format=JSON&lang=en&geo=PT15&geo=PT17&geo=PT&geo=UKI&geo=PT1A&geo=PT1B&c_resid=DOM&c_resid=FOR&c_resid=TOTAL&nace_r2=I551-I553&unit=NR&lastTimePeriod=10",
+     "at": "2026-11-18T23:43:28Z",
+     "status": 200,
+     "bytes": 4765,
+     "sha256_prefix": "a6366be26ec89d79",
+     "changed": false
+    },
+    {
+     "name": "tour_occ_ninraw",
+     "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tour_occ_ninraw?format=JSON&lang=en&geo=PT&c_resid=UK&c_resid=DE&c_resid=FR&c_resid=ES&c_resid=NL&c_resid=US&c_resid=DOM&nace_r2=I551-I553&unit=NR&lastTimePeriod=10",
+     "at": "2026-11-18T23:43:30Z",
+     "status": 200,
+     "bytes": 4179,
+     "sha256_prefix": "071d3c091261066e",
+     "changed": false
+    },
+    {
+     "name": "tour_occ_nim",
+     "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tour_occ_nim?format=JSON&lang=en&geo=PT15&geo=PT17&geo=PT&geo=UKI&c_resid=DOM&c_resid=FOR&c_resid=TOTAL&nace_r2=I551-I553&unit=NR&lastTimePeriod=36",
+     "at": "2026-11-18T23:43:33Z",
+     "status": 200,
+     "bytes": 5509,
+     "sha256_prefix": "2fba815cb03ee4f6",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T23:35:27Z",
+   "finished": "2026-11-18T23:35:32Z",
+   "ok": 3,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "tour_occ_nin2",
+     "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tour_occ_nin2?format=JSON&lang=en&geo=PT15&geo=PT17&geo=PT&geo=UKI&geo=PT1A&geo=PT1B&c_resid=DOM&c_resid=FOR&c_resid=TOTAL&nace_r2=I551-I553&unit=NR&lastTimePeriod=10",
+     "at": "2026-11-18T23:35:27Z",
+     "status": 200,
+     "bytes": 4765,
+     "sha256_prefix": "a6366be26ec89d79",
+     "changed": false
+    },
+    {
+     "name": "tour_occ_ninraw",
+     "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tour_occ_ninraw?format=JSON&lang=en&geo=PT&c_resid=UK&c_resid=DE&c_resid=FR&c_resid=ES&c_resid=NL&c_resid=US&c_resid=DOM&nace_r2=I551-I553&unit=NR&lastTimePeriod=10",
+     "at": "2026-11-18T23:35:29Z",
+     "status": 200,
+     "bytes": 4179,
+     "sha256_prefix": "071d3c091261066e",
+     "changed": false
+    },
+    {
+     "name": "tour_occ_nim",
+     "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tour_occ_nim?format=JSON&lang=en&geo=PT15&geo=PT17&geo=PT&geo=UKI&c_resid=DOM&c_resid=FOR&c_resid=TOTAL&nace_r2=I551-I553&unit=NR&lastTimePeriod=36",
+     "at": "2026-11-18T23:35:32Z",
+     "status": 200,
+     "bytes": 5509,
+     "sha256_prefix": "2fba815cb03ee4f6",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T23:28:26Z",
+   "finished": "2026-11-18T23:28:33Z",
+   "ok": 3,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "tour_occ_nin2",
+     "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tour_occ_nin2?format=JSON&lang=en&geo=PT15&geo=PT17&geo=PT&geo=UKI&geo=PT1A&geo=PT1B&c_resid=DOM&c_resid=FOR&c_resid=TOTAL&nace_r2=I551-I553&unit=NR&lastTimePeriod=10",
+     "at": "2026-11-18T23:28:28Z",
+     "status": 200,
+     "bytes": 4765,
+     "sha256_prefix": "a6366be26ec89d79",
+     "changed": false
+    },
+    {
+     "name": "tour_occ_ninraw",
+     "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tour_occ_ninraw?format=JSON&lang=en&geo=PT&c_resid=UK&c_resid=DE&c_resid=FR&c_resid=ES&c_resid=NL&c_resid=US&c_resid=DOM&nace_r2=I551-I553&unit=NR&lastTimePeriod=10",
+     "at": "2026-11-18T23:28:31Z",
+     "status": 200,
+     "bytes": 4179,
+     "sha256_prefix": "071d3c091261066e",
+     "changed": false
+    },
+    {
+     "name": "tour_occ_nim",
+     "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tour_occ_nim?format=JSON&lang=en&geo=PT15&geo=PT17&geo=PT&geo=UKI&c_resid=DOM&c_resid=FOR&c_resid=TOTAL&nace_r2=I551-I553&unit=NR&lastTimePeriod=36",
+     "at": "2026-11-18T23:28:33Z",
+     "status": 200,
+     "bytes": 5509,
+     "sha256_prefix": "2fba815cb03ee4f6",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T23:22:31Z",
+   "finished": "2026-11-18T23:22:36Z",
+   "ok": 3,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "tour_occ_nin2",
+     "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tour_occ_nin2?format=JSON&lang=en&geo=PT15&geo=PT17&geo=PT&geo=UKI&geo=PT1A&geo=PT1B&c_resid=DOM&c_resid=FOR&c_resid=TOTAL&nace_r2=I551-I553&unit=NR&lastTimePeriod=10",
+     "at": "2026-11-18T23:22:31Z",
+     "status": 200,
+     "bytes": 4765,
+     "sha256_prefix": "a6366be26ec89d79",
+     "changed": false
+    },
+    {
+     "name": "tour_occ_ninraw",
+     "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tour_occ_ninraw?format=JSON&lang=en&geo=PT&c_resid=UK&c_resid=DE&c_resid=FR&c_resid=ES&c_resid=NL&c_resid=US&c_resid=DOM&nace_r2=I551-I553&unit=NR&lastTimePeriod=10",
+     "at": "2026-11-18T23:22:33Z",
+     "status": 200,
+     "bytes": 4179,
+     "sha256_prefix": "071d3c091261066e",
+     "changed": false
+    },
+    {
+     "name": "tour_occ_nim",
+     "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tour_occ_nim?format=JSON&lang=en&geo=PT15&geo=PT17&geo=PT&geo=UKI&c_resid=DOM&c_resid=FOR&c_resid=TOTAL&nace_r2=I551-I553&unit=NR&lastTimePeriod=36",
+     "at": "2026-11-18T23:22:36Z",
+     "status": 200,
+     "bytes": 5509,
+     "sha256_prefix": "2fba815cb03ee4f6",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:52:55Z",
+   "finished": "2026-11-18T22:53:03Z",
+   "ok": 3,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "tour_occ_nin2",
+     "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tour_occ_nin2?format=JSON&lang=en&geo=PT15&geo=PT17&geo=PT&geo=UKI&geo=PT1A&geo=PT1B&c_resid=DOM&c_resid=FOR&c_resid=TOTAL&nace_r2=I551-I553&unit=NR&lastTimePeriod=10",
+     "at": "2026-11-18T22:52:58Z",
+     "status": 200,
+     "bytes": 4765,
+     "sha256_prefix": "a6366be26ec89d79",
+     "changed": false
+    },
+    {
+     "name": "tour_occ_ninraw",
+     "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tour_occ_ninraw?format=JSON&lang=en&geo=PT&c_resid=UK&c_resid=DE&c_resid=FR&c_resid=ES&c_resid=NL&c_resid=US&c_resid=DOM&nace_r2=I551-I553&unit=NR&lastTimePeriod=10",
+     "at": "2026-11-18T22:53:00Z",
+     "status": 200,
+     "bytes": 4179,
+     "sha256_prefix": "071d3c091261066e",
+     "changed": false
+    },
+    {
+     "name": "tour_occ_nim",
+     "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tour_occ_nim?format=JSON&lang=en&geo=PT15&geo=PT17&geo=PT&geo=UKI&c_resid=DOM&c_resid=FOR&c_resid=TOTAL&nace_r2=I551-I553&unit=NR&lastTimePeriod=36",
+     "at": "2026-11-18T22:53:03Z",
+     "status": 200,
+     "bytes": 5509,
+     "sha256_prefix": "2fba815cb03ee4f6",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:43:07Z",
+   "finished": "2026-11-18T22:43:15Z",
+   "ok": 3,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "tour_occ_nin2",
+     "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tour_occ_nin2?format=JSON&lang=en&geo=PT15&geo=PT17&geo=PT&geo=UKI&geo=PT1A&geo=PT1B&c_resid=DOM&c_resid=FOR&c_resid=TOTAL&nace_r2=I551-I553&unit=NR&lastTimePeriod=10",
+     "at": "2026-11-18T22:43:10Z",
+     "status": 200,
+     "bytes": 4765,
+     "sha256_prefix": "a6366be26ec89d79",
+     "changed": "first read"
+    },
+    {
+     "name": "tour_occ_ninraw",
+     "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tour_occ_ninraw?format=JSON&lang=en&geo=PT&c_resid=UK&c_resid=DE&c_resid=FR&c_resid=ES&c_resid=NL&c_resid=US&c_resid=DOM&nace_r2=I551-I553&unit=NR&lastTimePeriod=10",
+     "at": "2026-11-18T22:43:12Z",
+     "status": 200,
+     "bytes": 4179,
+     "sha256_prefix": "071d3c091261066e",
+     "changed": "first read"
+    },
+    {
+     "name": "tour_occ_nim",
+     "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tour_occ_nim?format=JSON&lang=en&geo=PT15&geo=PT17&geo=PT&geo=UKI&c_resid=DOM&c_resid=FOR&c_resid=TOTAL&nace_r2=I551-I553&unit=NR&lastTimePeriod=36",
+     "at": "2026-11-18T22:43:15Z",
+     "status": 200,
+     "bytes": 5509,
+     "sha256_prefix": "2fba815cb03ee4f6",
+     "changed": "first read"
+    }
+   ]
+  }
+ ]
+}

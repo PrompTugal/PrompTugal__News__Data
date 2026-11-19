@@ -1,0 +1,31 @@
+{
+ "license": {
+  "name": "CC BY 4.0",
+  "url": "https://creativecommons.org/licenses/by/4.0/",
+  "holder": "PrompTugal.news",
+  "note": "What PrompTugal.news makes: this file's structure, records and derived values.",
+  "commercial_use": "allowed",
+  "commercial_note": "With credit to PrompTugal.news; values taken from a source keep that source's licence."
+ },
+ "about": "Every run of sources/enisa-pubs/collect.mjs, newest first: each request's address, HTTP status, size, the first 16 hex of its sha256, and whether the bytes changed since the run before. The bytes and the full sha256 go to the source's vault (see card.json: latest/reads-full.json), never to git.",
+ "source": "enisa-pubs",
+ "runs": [
+  {
+   "at": "2026-11-18T23:59:24Z",
+   "finished": "2026-11-18T23:59:34Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "publications",
+     "url": "https://www.enisa.europa.eu/publications",
+     "at": "2026-11-18T23:59:33Z",
+     "status": 200,
+     "bytes": 79005,
+     "sha256_prefix": "f18d2ca6bb1a4f21",
+     "changed": "first read"
+    }
+   ]
+  }
+ ]
+}

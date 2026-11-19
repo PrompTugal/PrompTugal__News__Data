@@ -1,0 +1,1179 @@
+{
+ "about": "Every run of sources/adsb-faro/collect.mjs, newest first: each request's address, HTTP status, size, the first 16 hex of its sha256, and whether the bytes changed since the run before. The bytes and the full sha256 go to the source's vault (see card.json: latest/reads-full.json), never to git.",
+ "source": "adsb-faro",
+ "runs": [
+  {
+   "at": "2026-11-19T01:25:08Z",
+   "finished": "2026-11-19T01:25:09Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-19T01:25:08Z",
+     "status": 200,
+     "bytes": 101,
+     "sha256_prefix": "92177d372545c02d",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-19T01:17:48Z",
+   "finished": "2026-11-19T01:17:48Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-19T01:17:48Z",
+     "status": 200,
+     "bytes": 101,
+     "sha256_prefix": "d4cf0176dd0f72db",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-19T01:12:18Z",
+   "finished": "2026-11-19T01:12:18Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-19T01:12:18Z",
+     "status": 200,
+     "bytes": 101,
+     "sha256_prefix": "53083240d344ce90",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-19T00:53:11Z",
+   "finished": "2026-11-19T00:53:11Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-19T00:53:11Z",
+     "status": 200,
+     "bytes": 807,
+     "sha256_prefix": "32976a8e163c15df",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-19T00:19:22Z",
+   "finished": "2026-11-19T00:19:23Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-19T00:19:22Z",
+     "status": 200,
+     "bytes": 840,
+     "sha256_prefix": "fb7ecead3bc8da35",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T23:58:12Z",
+   "finished": "2026-11-18T23:58:12Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T23:58:12Z",
+     "status": 200,
+     "bytes": 786,
+     "sha256_prefix": "cb2d1224492d0578",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T23:42:18Z",
+   "finished": "2026-11-18T23:42:18Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T23:42:18Z",
+     "status": 200,
+     "bytes": 101,
+     "sha256_prefix": "9c47cf63179645ee",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T23:33:38Z",
+   "finished": "2026-11-18T23:33:39Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T23:33:38Z",
+     "status": 200,
+     "bytes": 101,
+     "sha256_prefix": "41d0c0512a4c5eae",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T23:27:18Z",
+   "finished": "2026-11-18T23:27:18Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T23:27:18Z",
+     "status": 200,
+     "bytes": 101,
+     "sha256_prefix": "0a142db4329918fe",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T23:21:01Z",
+   "finished": "2026-11-18T23:21:02Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T23:21:01Z",
+     "status": 200,
+     "bytes": 1431,
+     "sha256_prefix": "47bc576f3e2da553",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:51:48Z",
+   "finished": "2026-11-18T22:51:48Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T22:51:48Z",
+     "status": 200,
+     "bytes": 835,
+     "sha256_prefix": "ffaf7678e7cc3d51",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:42:27Z",
+   "finished": "2026-11-18T22:42:28Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T22:42:27Z",
+     "status": 200,
+     "bytes": 768,
+     "sha256_prefix": "8b526b402c814e25",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:36:55Z",
+   "finished": "2026-11-18T22:36:56Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T22:36:55Z",
+     "status": 200,
+     "bytes": 101,
+     "sha256_prefix": "9395eabc7eb83e7a",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:31:38Z",
+   "finished": "2026-11-18T22:31:39Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T22:31:38Z",
+     "status": 200,
+     "bytes": 101,
+     "sha256_prefix": "30dd68e1e88f5d88",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:26:38Z",
+   "finished": "2026-11-18T22:26:38Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T22:26:38Z",
+     "status": 200,
+     "bytes": 101,
+     "sha256_prefix": "84cb1f61fbd85b0e",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:20:34Z",
+   "finished": "2026-11-18T22:20:34Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T22:20:34Z",
+     "status": 200,
+     "bytes": 101,
+     "sha256_prefix": "21f0c8d12792b380",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:11:25Z",
+   "finished": "2026-11-18T22:11:25Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T22:11:25Z",
+     "status": 200,
+     "bytes": 2187,
+     "sha256_prefix": "07ba538b7ad9a298",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:06:21Z",
+   "finished": "2026-11-18T22:06:21Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T22:06:21Z",
+     "status": 200,
+     "bytes": 1480,
+     "sha256_prefix": "f69052e5a316b872",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T21:12:11Z",
+   "finished": "2026-11-18T21:12:12Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T21:12:11Z",
+     "status": 200,
+     "bytes": 813,
+     "sha256_prefix": "cd95ad49d81f679d",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T21:03:06Z",
+   "finished": "2026-11-18T21:03:06Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T21:03:06Z",
+     "status": 200,
+     "bytes": 2158,
+     "sha256_prefix": "d04d0f9cb1cf141d",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T20:29:44Z",
+   "finished": "2026-11-18T20:29:44Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T20:29:44Z",
+     "status": 200,
+     "bytes": 2838,
+     "sha256_prefix": "e81f477802ed670c",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T19:14:25Z",
+   "finished": "2026-11-18T19:14:25Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T19:14:25Z",
+     "status": 200,
+     "bytes": 806,
+     "sha256_prefix": "257eb60e3902c4d9",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T19:09:59Z",
+   "finished": "2026-11-18T19:09:59Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T19:09:59Z",
+     "status": 200,
+     "bytes": 779,
+     "sha256_prefix": "892598d0935287e2",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T19:06:26Z",
+   "finished": "2026-11-18T19:06:27Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T19:06:26Z",
+     "status": 200,
+     "bytes": 1487,
+     "sha256_prefix": "8d59b2fbf73c5790",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T19:02:52Z",
+   "finished": "2026-11-18T19:02:52Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T19:02:52Z",
+     "status": 200,
+     "bytes": 3625,
+     "sha256_prefix": "854e7b69fedca3bd",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T18:55:13Z",
+   "finished": "2026-11-18T18:55:15Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T18:55:13Z",
+     "status": 200,
+     "bytes": 1501,
+     "sha256_prefix": "0023ec5fdfc43f83",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T18:51:35Z",
+   "finished": "2026-11-18T18:51:36Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T18:51:35Z",
+     "status": 200,
+     "bytes": 2217,
+     "sha256_prefix": "ccb5da82aa837d2f",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T17:53:59Z",
+   "finished": "2026-11-18T17:54:00Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T17:53:59Z",
+     "status": 200,
+     "bytes": 2911,
+     "sha256_prefix": "3891462b4486a3b3",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T17:38:57Z",
+   "finished": "2026-11-18T17:38:58Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T17:38:57Z",
+     "status": 200,
+     "bytes": 1427,
+     "sha256_prefix": "20179745a3c8304e",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T16:30:05Z",
+   "finished": "2026-11-18T16:30:06Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T16:30:05Z",
+     "status": 200,
+     "bytes": 3524,
+     "sha256_prefix": "8b3a03427946dbd1",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T16:11:23Z",
+   "finished": "2026-11-18T16:11:32Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T16:11:23Z",
+     "status": 200,
+     "bytes": 3570,
+     "sha256_prefix": "521f6b5129224118",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T16:07:40Z",
+   "finished": "2026-11-18T16:07:41Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T16:07:40Z",
+     "status": 200,
+     "bytes": 781,
+     "sha256_prefix": "ef9ee40a145fe783",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T16:04:03Z",
+   "finished": "2026-11-18T16:04:04Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T16:04:03Z",
+     "status": 200,
+     "bytes": 2156,
+     "sha256_prefix": "03cd5b500d1f7330",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:58:44Z",
+   "finished": "2026-11-18T15:58:45Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T15:58:44Z",
+     "status": 200,
+     "bytes": 2818,
+     "sha256_prefix": "5af8fc46e32c4d46",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:54:53Z",
+   "finished": "2026-11-18T15:54:58Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T15:54:53Z",
+     "status": 200,
+     "bytes": 2749,
+     "sha256_prefix": "71b7ba0d7212c573",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:50:45Z",
+   "finished": "2026-11-18T15:50:46Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T15:50:45Z",
+     "status": 200,
+     "bytes": 2185,
+     "sha256_prefix": "dada3a86a6ddca0d",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:46:51Z",
+   "finished": "2026-11-18T15:46:51Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T15:46:51Z",
+     "status": 200,
+     "bytes": 2938,
+     "sha256_prefix": "5515989a2528274b",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:43:26Z",
+   "finished": "2026-11-18T15:43:27Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T15:43:26Z",
+     "status": 200,
+     "bytes": 2184,
+     "sha256_prefix": "18da147b012a33a0",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:39:52Z",
+   "finished": "2026-11-18T15:39:53Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T15:39:52Z",
+     "status": 200,
+     "bytes": 2164,
+     "sha256_prefix": "7adf625ca9ed62c0",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:36:14Z",
+   "finished": "2026-11-18T15:36:18Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T15:36:14Z",
+     "status": 200,
+     "bytes": 1518,
+     "sha256_prefix": "8f2d90c58677da8f",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:32:46Z",
+   "finished": "2026-11-18T15:32:46Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T15:32:46Z",
+     "status": 200,
+     "bytes": 2204,
+     "sha256_prefix": "cb4b2861a40e78d7",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:27:57Z",
+   "finished": "2026-11-18T15:27:57Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T15:27:57Z",
+     "status": 200,
+     "bytes": 768,
+     "sha256_prefix": "6641d246bd946b67",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:13:37Z",
+   "finished": "2026-11-18T15:13:38Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T15:13:37Z",
+     "status": 200,
+     "bytes": 2179,
+     "sha256_prefix": "36d1d9e80bb3ac1e",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:08:14Z",
+   "finished": "2026-11-18T15:08:14Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T15:08:14Z",
+     "status": 200,
+     "bytes": 1471,
+     "sha256_prefix": "72e55749ea84d549",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:50:37Z",
+   "finished": "2026-11-18T14:50:37Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T14:50:37Z",
+     "status": 200,
+     "bytes": 2114,
+     "sha256_prefix": "9755556c6b84d2dc",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:47:44Z",
+   "finished": "2026-11-18T14:47:45Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T14:47:44Z",
+     "status": 200,
+     "bytes": 3495,
+     "sha256_prefix": "9348efc1ad6a6636",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:43:11Z",
+   "finished": "2026-11-18T14:43:12Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T14:43:11Z",
+     "status": 200,
+     "bytes": 2807,
+     "sha256_prefix": "f3034ea50bd2d56a",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:40:08Z",
+   "finished": "2026-11-18T14:40:08Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T14:40:08Z",
+     "status": 200,
+     "bytes": 2142,
+     "sha256_prefix": "23110c2b1a0b0ed7",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:33:18Z",
+   "finished": "2026-11-18T14:33:19Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T14:33:18Z",
+     "status": 200,
+     "bytes": 766,
+     "sha256_prefix": "b04549f86c9e8b05",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:26:56Z",
+   "finished": "2026-11-18T14:26:57Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T14:26:56Z",
+     "status": 200,
+     "bytes": 4960,
+     "sha256_prefix": "199d6ed04fec844b",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:24:09Z",
+   "finished": "2026-11-18T14:24:10Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T14:24:09Z",
+     "status": 200,
+     "bytes": 4295,
+     "sha256_prefix": "9fcb8324bf85e280",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:20:45Z",
+   "finished": "2026-11-18T14:20:49Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T14:20:45Z",
+     "status": 200,
+     "bytes": 4056,
+     "sha256_prefix": "7f256ed36b27d17d",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:14:35Z",
+   "finished": "2026-11-18T14:14:36Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T14:14:35Z",
+     "status": 200,
+     "bytes": 2162,
+     "sha256_prefix": "2c211031fa580a9e",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:11:30Z",
+   "finished": "2026-11-18T14:11:31Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T14:11:30Z",
+     "status": 200,
+     "bytes": 2809,
+     "sha256_prefix": "42881889d7a1466e",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:07:49Z",
+   "finished": "2026-11-18T14:07:49Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T14:07:49Z",
+     "status": 200,
+     "bytes": 2119,
+     "sha256_prefix": "c073e09eb00b4ccd",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:03:12Z",
+   "finished": "2026-11-18T14:03:13Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T14:03:12Z",
+     "status": 200,
+     "bytes": 1458,
+     "sha256_prefix": "7471e47aef77a2af",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T14:00:14Z",
+   "finished": "2026-11-18T14:00:35Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T14:00:34Z",
+     "status": 200,
+     "bytes": 2115,
+     "sha256_prefix": "c1d9ab9343e49eeb",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T13:08:24Z",
+   "finished": "2026-11-18T13:08:24Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T13:08:24Z",
+     "status": 200,
+     "bytes": 1468,
+     "sha256_prefix": "9d219b3a05673a8e",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T13:04:35Z",
+   "finished": "2026-11-18T13:04:35Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T13:04:35Z",
+     "status": 200,
+     "bytes": 2088,
+     "sha256_prefix": "fddf4c10bf4cd79c",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T11:39:59Z",
+   "finished": "2026-11-18T11:39:59Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T11:39:59Z",
+     "status": 200,
+     "bytes": 3626,
+     "sha256_prefix": "4d65e8a43e05b343",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T10:09:46Z",
+   "finished": "2026-11-18T10:09:47Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T10:09:46Z",
+     "status": 200,
+     "bytes": 1481,
+     "sha256_prefix": "c0064d9bef48ecdd",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T10:06:46Z",
+   "finished": "2026-11-18T10:06:47Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T10:06:46Z",
+     "status": 200,
+     "bytes": 3626,
+     "sha256_prefix": "da46836e023384ca",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T09:46:27Z",
+   "finished": "2026-11-18T09:46:28Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T09:46:27Z",
+     "status": 200,
+     "bytes": 3592,
+     "sha256_prefix": "f4b524aaadb3df1e",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T09:41:42Z",
+   "finished": "2026-11-18T09:41:42Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T09:41:42Z",
+     "status": 200,
+     "bytes": 2208,
+     "sha256_prefix": "f3b415d921f29e86",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T02:26:27Z",
+   "finished": "2026-11-18T02:26:28Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-18T02:26:27Z",
+     "status": 200,
+     "bytes": 101,
+     "sha256_prefix": "aa2cc53a58fc2cfe",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-17T23:05:39Z",
+   "finished": "2026-11-17T23:05:40Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-17T23:05:39Z",
+     "status": 200,
+     "bytes": 837,
+     "sha256_prefix": "22977a848165973a",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-17T23:03:05Z",
+   "finished": "2026-11-17T23:03:05Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-17T23:03:05Z",
+     "status": 200,
+     "bytes": 101,
+     "sha256_prefix": "a6aee8f0a9cc81ee",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-17T19:42:10Z",
+   "finished": "2026-11-17T19:42:11Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-17T19:42:10Z",
+     "status": 200,
+     "bytes": 1514,
+     "sha256_prefix": "a0867965e2e3f517",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-17T19:38:56Z",
+   "finished": "2026-11-17T19:38:57Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "point-lpfr",
+     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
+     "at": "2026-11-17T19:38:56Z",
+     "status": 200,
+     "bytes": 806,
+     "sha256_prefix": "a922b5366769fa9d",
+     "changed": "first read"
+    }
+   ]
+  }
+ ]
+}

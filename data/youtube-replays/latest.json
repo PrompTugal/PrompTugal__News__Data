@@ -1,0 +1,139 @@
+{
+ "source": "youtube-replays",
+ "title": "Web Summit 2026 replays on YouTube",
+ "read_at": "2026-11-19T01:28:37Z",
+ "provenance": {
+  "source": "https://www.youtube.com/@WebSummit",
+  "page": "https://www.youtube.com/@WebSummit",
+  "read_at": "2026-11-19T01:28:37Z",
+  "by": "sources/youtube-replays/collect.mjs (code, no model; run by data.b@PrompTugal.dinis)",
+  "terms": "YouTube API Services Terms of Service and Developer Policies (both last updated 2026-11-06 UTC). Data read without a user's sign-in is Non-Authorized Data: stored for no longer than 30 calendar days, then deleted or refreshed; so this source keeps only the latest read, replaced every run, with no raw copy or history in a vault. YouTube must be shown as the source and its Terms linked (https://www.youtube.com/t/terms); no copy or offline use of the audiovisual content (we link and use YouTube's embedded player only); no aggregation of API Data beyond one content owner's own channels (we read one channel and add no totals across channels). The videos, titles and descriptions stay Web Summit's. Not reviewed by a person.",
+  "api": "https://www.googleapis.com/youtube/v3",
+  "channel_handle": "@WebSummit",
+  "quota_units_used": 3,
+  "quota_units_by_method": {
+   "channels.list": 1,
+   "playlistItems.list": 1,
+   "videos.list": 1,
+   "search.list": 0
+  },
+  "quota_cap_per_run": 200,
+  "quota_default_per_day": 10000,
+  "searched": false,
+  "key_in_code": false,
+  "window_from": "2026-11-01T00:00:00Z",
+  "storage_rule": "YouTube Developer Policies III.E.4.d: stored Non-Authorized Data is deleted or refreshed within 30 calendar days. This file is the only copy and is replaced each run; no raw answers or history are kept."
+ },
+ "about": "The uploads of Web Summit's official YouTube channel since 1 November 2026, as read from the YouTube Data API: title, time published, length, view and like counts (each read at the time shown), a link to YouTube and the embed address for YouTube's player, and chapters read from the timestamp lines of each description. The videos and their descriptions stay Web Summit's; only the link and the player show them. Descriptions, thumbnails and comments are not kept. Counts are YouTube's at the time read and are replaced on every run. Content: YouTube.",
+ "counts": {
+  "videos": 5,
+  "with_chapters": 0,
+  "chapters": 0,
+  "pages_read": 1,
+  "truncated_by_unit_cap": false
+ },
+ "channel": {
+  "id": "UCJtkHqH4Qof97TSx7BzE5IQ",
+  "title": "Web Summit",
+  "custom_url": "@websummit",
+  "url": "https://www.youtube.com/channel/UCJtkHqH4Qof97TSx7BzE5IQ",
+  "official_check": {
+   "title_is_web_summit": true,
+   "library_leads": 15,
+   "library_leads_among_uploads_since_window": 3
+  }
+ },
+ "library_title_checks": [
+  {
+   "id": "S9RHQGNIaFY",
+   "expected_title": "Web Summit 2026 | Day One",
+   "read_title": "Web Summit 2026 | Day One",
+   "match": true
+  },
+  {
+   "id": "dJi_pXLxwno",
+   "expected_title": "Web Summit 2026 | Opening Night",
+   "read_title": "Web Summit 2026 | Opening Night",
+   "match": true
+  }
+ ],
+ "delete_or_refresh_by": "2026-12-19T01:28:37Z",
+ "attribution": "Video data and players: YouTube (https://www.youtube.com/). Use of YouTube is under the YouTube Terms of Service: https://www.youtube.com/t/terms",
+ "videos": [
+  {
+   "id": "dMEvephN1mg",
+   "title": "Web Summit 2026 | Event Highlights",
+   "published_at": "2026-11-18T11:28:28Z",
+   "duration_seconds": 31,
+   "duration": "0:00:31",
+   "views": 319,
+   "likes": 6,
+   "counts_read_at": "2026-11-19T01:28:44Z",
+   "channel_title": "Web Summit",
+   "watch_url": "https://www.youtube.com/watch?v=dMEvephN1mg",
+   "embed_url": "https://www.youtube-nocookie.com/embed/dMEvephN1mg",
+   "chapters": [],
+   "chapters_valid_on_youtube": false
+  },
+  {
+   "id": "-MGZdAtbTrs",
+   "title": "Web Summit 2026 | Day Three",
+   "published_at": "2026-11-12T17:32:37Z",
+   "duration_seconds": 29666,
+   "duration": "8:14:26",
+   "views": 10579,
+   "likes": 68,
+   "counts_read_at": "2026-11-19T01:28:44Z",
+   "channel_title": "Web Summit",
+   "watch_url": "https://www.youtube.com/watch?v=-MGZdAtbTrs",
+   "embed_url": "https://www.youtube-nocookie.com/embed/-MGZdAtbTrs",
+   "chapters": [],
+   "chapters_valid_on_youtube": false
+  },
+  {
+   "id": "c4nlV5UByTk",
+   "title": "Is NVIDIA bigger than its founder?",
+   "published_at": "2026-11-12T17:13:13Z",
+   "duration_seconds": 1745,
+   "duration": "0:29:05",
+   "views": 1506,
+   "likes": 23,
+   "counts_read_at": "2026-11-19T01:28:44Z",
+   "channel_title": "Web Summit",
+   "watch_url": "https://www.youtube.com/watch?v=c4nlV5UByTk",
+   "embed_url": "https://www.youtube-nocookie.com/embed/c4nlV5UByTk",
+   "chapters": [],
+   "chapters_valid_on_youtube": false
+  },
+  {
+   "id": "S9RHQGNIaFY",
+   "title": "Web Summit 2026 | Day One",
+   "published_at": "2026-11-10T17:17:28Z",
+   "duration_seconds": 25378,
+   "duration": "7:02:58",
+   "views": 13042,
+   "likes": 88,
+   "counts_read_at": "2026-11-19T01:28:44Z",
+   "channel_title": "Web Summit",
+   "watch_url": "https://www.youtube.com/watch?v=S9RHQGNIaFY",
+   "embed_url": "https://www.youtube-nocookie.com/embed/S9RHQGNIaFY",
+   "chapters": [],
+   "chapters_valid_on_youtube": false
+  },
+  {
+   "id": "dJi_pXLxwno",
+   "title": "Web Summit 2026 | Opening Night",
+   "published_at": "2026-11-10T07:57:07Z",
+   "duration_seconds": 7590,
+   "duration": "2:06:30",
+   "views": 19078,
+   "likes": 201,
+   "counts_read_at": "2026-11-19T01:28:44Z",
+   "channel_title": "Web Summit",
+   "watch_url": "https://www.youtube.com/watch?v=dJi_pXLxwno",
+   "embed_url": "https://www.youtube-nocookie.com/embed/dJi_pXLxwno",
+   "chapters": [],
+   "chapters_valid_on_youtube": false
+  }
+ ]
+}

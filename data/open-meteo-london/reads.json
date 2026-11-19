@@ -1,0 +1,142 @@
+{
+ "about": "Every run of sources/open-meteo-london/collect.mjs, newest first: each request's address, HTTP status, size, the first 16 hex of its sha256, and whether the bytes changed since the run before. The bytes and the full sha256 go to the source's vault (see card.json: latest/reads-full.json), never to git.",
+ "source": "open-meteo-london",
+ "runs": [
+  {
+   "at": "2026-11-19T01:30:46Z",
+   "finished": "2026-11-19T01:30:48Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "forecast",
+     "url": "https://api.open-meteo.com/v1/forecast?latitude=51.5074&longitude=-0.1278&hourly=temperature_2m,precipitation_probability,precipitation,wind_speed_10m,wind_gusts_10m,wind_direction_10m,weather_code&daily=temperature_2m_min,temperature_2m_max,precipitation_sum,weather_code&forecast_days=3&timezone=UTC&wind_speed_unit=kmh",
+     "at": "2026-11-19T01:30:48Z",
+     "status": 200,
+     "bytes": 4105,
+     "sha256_prefix": "8d71141a91b86f17",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T23:49:04Z",
+   "finished": "2026-11-18T23:49:06Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "forecast",
+     "url": "https://api.open-meteo.com/v1/forecast?latitude=51.5074&longitude=-0.1278&hourly=temperature_2m,precipitation_probability,precipitation,wind_speed_10m,wind_gusts_10m,wind_direction_10m,weather_code&daily=temperature_2m_min,temperature_2m_max,precipitation_sum,weather_code&forecast_days=3&timezone=UTC&wind_speed_unit=kmh",
+     "at": "2026-11-18T23:49:06Z",
+     "status": 200,
+     "bytes": 4207,
+     "sha256_prefix": "2d044a21e3d0b71d",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T23:41:04Z",
+   "finished": "2026-11-18T23:41:06Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "forecast",
+     "url": "https://api.open-meteo.com/v1/forecast?latitude=51.5074&longitude=-0.1278&hourly=temperature_2m,precipitation_probability,precipitation,wind_speed_10m,wind_gusts_10m,wind_direction_10m,weather_code&daily=temperature_2m_min,temperature_2m_max,precipitation_sum,weather_code&forecast_days=3&timezone=UTC&wind_speed_unit=kmh",
+     "at": "2026-11-18T23:41:06Z",
+     "status": 200,
+     "bytes": 4208,
+     "sha256_prefix": "130a131b14e744b1",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T23:32:20Z",
+   "finished": "2026-11-18T23:32:20Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "forecast",
+     "url": "https://api.open-meteo.com/v1/forecast?latitude=51.5074&longitude=-0.1278&hourly=temperature_2m,precipitation_probability,precipitation,wind_speed_10m,wind_gusts_10m,wind_direction_10m,weather_code&daily=temperature_2m_min,temperature_2m_max,precipitation_sum,weather_code&forecast_days=3&timezone=UTC&wind_speed_unit=kmh",
+     "at": "2026-11-18T23:32:20Z",
+     "status": 200,
+     "bytes": 4205,
+     "sha256_prefix": "32252bbdb2d0eec7",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T23:26:07Z",
+   "finished": "2026-11-18T23:26:09Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "forecast",
+     "url": "https://api.open-meteo.com/v1/forecast?latitude=51.5074&longitude=-0.1278&hourly=temperature_2m,precipitation_probability,precipitation,wind_speed_10m,wind_gusts_10m,wind_direction_10m,weather_code&daily=temperature_2m_min,temperature_2m_max,precipitation_sum,weather_code&forecast_days=3&timezone=UTC&wind_speed_unit=kmh",
+     "at": "2026-11-18T23:26:08Z",
+     "status": 200,
+     "bytes": 4212,
+     "sha256_prefix": "d717754dfcdf04be",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:57:24Z",
+   "finished": "2026-11-18T22:57:26Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "forecast",
+     "url": "https://api.open-meteo.com/v1/forecast?latitude=51.5074&longitude=-0.1278&hourly=temperature_2m,precipitation_probability,precipitation,wind_speed_10m,wind_gusts_10m,wind_direction_10m,weather_code&daily=temperature_2m_min,temperature_2m_max,precipitation_sum,weather_code&forecast_days=3&timezone=UTC&wind_speed_unit=kmh",
+     "at": "2026-11-18T22:57:26Z",
+     "status": 200,
+     "bytes": 4212,
+     "sha256_prefix": "0045eca086aa4537",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:46:44Z",
+   "finished": "2026-11-18T22:46:46Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "forecast",
+     "url": "https://api.open-meteo.com/v1/forecast?latitude=51.5074&longitude=-0.1278&hourly=temperature_2m,precipitation_probability,precipitation,wind_speed_10m,wind_gusts_10m,wind_direction_10m,weather_code&daily=temperature_2m_min,temperature_2m_max,precipitation_sum,weather_code&forecast_days=3&timezone=UTC&wind_speed_unit=kmh",
+     "at": "2026-11-18T22:46:46Z",
+     "status": 200,
+     "bytes": 4223,
+     "sha256_prefix": "45fe88e43d15b501",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:40:16Z",
+   "finished": "2026-11-18T22:40:17Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "forecast",
+     "url": "https://api.open-meteo.com/v1/forecast?latitude=51.5074&longitude=-0.1278&hourly=temperature_2m,precipitation_probability,precipitation,wind_speed_10m,wind_gusts_10m,wind_direction_10m,weather_code&daily=temperature_2m_min,temperature_2m_max,precipitation_sum,weather_code&forecast_days=3&timezone=UTC&wind_speed_unit=kmh",
+     "at": "2026-11-18T22:40:17Z",
+     "status": 200,
+     "bytes": 4222,
+     "sha256_prefix": "78be39b8641f7430",
+     "changed": "first read"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,542 @@
+{
+ "license": {
+  "name": "CC BY 4.0",
+  "url": "https://creativecommons.org/licenses/by/4.0/",
+  "holder": "PrompTugal.news",
+  "note": "What PrompTugal.news makes: this file's structure, records and derived values.",
+  "commercial_use": "allowed",
+  "commercial_note": "With credit to PrompTugal.news; values taken from a source keep that source's licence."
+ },
+ "about": "Every run of sources/base-gov-pt/collect.mjs, newest first: each request's address, HTTP status, size, the first 16 hex of its sha256, and whether the bytes changed since the run before. The bytes and the full sha256 go to the source's vault (see card.json: latest/reads-full.json), never to git.",
+ "source": "base-gov-pt",
+ "runs": [
+  {
+   "at": "2026-11-18T23:42:18Z",
+   "finished": "2026-11-18T23:42:21Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "dataset",
+     "url": "https://dados.gov.pt/api/1/datasets/66d72d488ca4b7cb2de28712/",
+     "at": "2026-11-18T23:42:20Z",
+     "status": 200,
+     "bytes": 45931,
+     "sha256_prefix": "25b95e7d1ccbb120",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T23:33:39Z",
+   "finished": "2026-11-18T23:33:41Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "dataset",
+     "url": "https://dados.gov.pt/api/1/datasets/66d72d488ca4b7cb2de28712/",
+     "at": "2026-11-18T23:33:41Z",
+     "status": 200,
+     "bytes": 45931,
+     "sha256_prefix": "25b95e7d1ccbb120",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T23:27:18Z",
+   "finished": "2026-11-18T23:27:21Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "dataset",
+     "url": "https://dados.gov.pt/api/1/datasets/66d72d488ca4b7cb2de28712/",
+     "at": "2026-11-18T23:27:20Z",
+     "status": 200,
+     "bytes": 45931,
+     "sha256_prefix": "fa4799b3c18a8e50",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T23:21:02Z",
+   "finished": "2026-11-18T23:21:04Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "dataset",
+     "url": "https://dados.gov.pt/api/1/datasets/66d72d488ca4b7cb2de28712/",
+     "at": "2026-11-18T23:21:04Z",
+     "status": 200,
+     "bytes": 45931,
+     "sha256_prefix": "fa4799b3c18a8e50",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:51:48Z",
+   "finished": "2026-11-18T22:51:51Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "dataset",
+     "url": "https://dados.gov.pt/api/1/datasets/66d72d488ca4b7cb2de28712/",
+     "at": "2026-11-18T22:51:50Z",
+     "status": 200,
+     "bytes": 45931,
+     "sha256_prefix": "e50dd86ca961e46c",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:42:28Z",
+   "finished": "2026-11-18T22:42:30Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "dataset",
+     "url": "https://dados.gov.pt/api/1/datasets/66d72d488ca4b7cb2de28712/",
+     "at": "2026-11-18T22:42:30Z",
+     "status": 200,
+     "bytes": 45931,
+     "sha256_prefix": "6a6d81050d48e0bf",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:36:56Z",
+   "finished": "2026-11-18T22:36:59Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "dataset",
+     "url": "https://dados.gov.pt/api/1/datasets/66d72d488ca4b7cb2de28712/",
+     "at": "2026-11-18T22:36:58Z",
+     "status": 200,
+     "bytes": 45931,
+     "sha256_prefix": "6a6d81050d48e0bf",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:31:39Z",
+   "finished": "2026-11-18T22:31:41Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "dataset",
+     "url": "https://dados.gov.pt/api/1/datasets/66d72d488ca4b7cb2de28712/",
+     "at": "2026-11-18T22:31:40Z",
+     "status": 200,
+     "bytes": 45931,
+     "sha256_prefix": "0654258e8819b57f",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:26:38Z",
+   "finished": "2026-11-18T22:26:42Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "dataset",
+     "url": "https://dados.gov.pt/api/1/datasets/66d72d488ca4b7cb2de28712/",
+     "at": "2026-11-18T22:26:40Z",
+     "status": 200,
+     "bytes": 45931,
+     "sha256_prefix": "fa844bedd9a82ab0",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:20:34Z",
+   "finished": "2026-11-18T22:20:37Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "dataset",
+     "url": "https://dados.gov.pt/api/1/datasets/66d72d488ca4b7cb2de28712/",
+     "at": "2026-11-18T22:20:36Z",
+     "status": 200,
+     "bytes": 45931,
+     "sha256_prefix": "fa844bedd9a82ab0",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:11:25Z",
+   "finished": "2026-11-18T22:11:28Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "dataset",
+     "url": "https://dados.gov.pt/api/1/datasets/66d72d488ca4b7cb2de28712/",
+     "at": "2026-11-18T22:11:27Z",
+     "status": 200,
+     "bytes": 45931,
+     "sha256_prefix": "28765c03c853f3be",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T22:06:21Z",
+   "finished": "2026-11-18T22:06:24Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "dataset",
+     "url": "https://dados.gov.pt/api/1/datasets/66d72d488ca4b7cb2de28712/",
+     "at": "2026-11-18T22:06:24Z",
+     "status": 200,
+     "bytes": 45881,
+     "sha256_prefix": "b7848a1bab24fac9",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T21:12:12Z",
+   "finished": "2026-11-18T21:12:15Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "dataset",
+     "url": "https://dados.gov.pt/api/1/datasets/66d72d488ca4b7cb2de28712/",
+     "at": "2026-11-18T21:12:14Z",
+     "status": 200,
+     "bytes": 45881,
+     "sha256_prefix": "2ac2926e52341fe8",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T21:03:06Z",
+   "finished": "2026-11-18T21:03:09Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "dataset",
+     "url": "https://dados.gov.pt/api/1/datasets/66d72d488ca4b7cb2de28712/",
+     "at": "2026-11-18T21:03:08Z",
+     "status": 200,
+     "bytes": 45881,
+     "sha256_prefix": "2ac2926e52341fe8",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T19:14:25Z",
+   "finished": "2026-11-18T19:14:28Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "dataset",
+     "url": "https://dados.gov.pt/api/1/datasets/66d72d488ca4b7cb2de28712/",
+     "at": "2026-11-18T19:14:27Z",
+     "status": 200,
+     "bytes": 45881,
+     "sha256_prefix": "34e458c74591081c",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T19:09:59Z",
+   "finished": "2026-11-18T19:10:02Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "dataset",
+     "url": "https://dados.gov.pt/api/1/datasets/66d72d488ca4b7cb2de28712/",
+     "at": "2026-11-18T19:10:01Z",
+     "status": 200,
+     "bytes": 45881,
+     "sha256_prefix": "34e458c74591081c",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T19:06:27Z",
+   "finished": "2026-11-18T19:06:29Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "dataset",
+     "url": "https://dados.gov.pt/api/1/datasets/66d72d488ca4b7cb2de28712/",
+     "at": "2026-11-18T19:06:29Z",
+     "status": 200,
+     "bytes": 45881,
+     "sha256_prefix": "34e458c74591081c",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T19:02:52Z",
+   "finished": "2026-11-18T19:02:55Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "dataset",
+     "url": "https://dados.gov.pt/api/1/datasets/66d72d488ca4b7cb2de28712/",
+     "at": "2026-11-18T19:02:54Z",
+     "status": 200,
+     "bytes": 45881,
+     "sha256_prefix": "34e458c74591081c",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T18:55:15Z",
+   "finished": "2026-11-18T18:55:16Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "dataset",
+     "url": "https://dados.gov.pt/api/1/datasets/66d72d488ca4b7cb2de28712/",
+     "at": "2026-11-18T18:55:15Z",
+     "status": 200,
+     "bytes": 45881,
+     "sha256_prefix": "70b50a59192bd2c6",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T18:51:36Z",
+   "finished": "2026-11-18T18:51:40Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "dataset",
+     "url": "https://dados.gov.pt/api/1/datasets/66d72d488ca4b7cb2de28712/",
+     "at": "2026-11-18T18:51:38Z",
+     "status": 200,
+     "bytes": 45881,
+     "sha256_prefix": "70b50a59192bd2c6",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T17:54:00Z",
+   "finished": "2026-11-18T17:54:03Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "dataset",
+     "url": "https://dados.gov.pt/api/1/datasets/66d72d488ca4b7cb2de28712/",
+     "at": "2026-11-18T17:54:02Z",
+     "status": 200,
+     "bytes": 45881,
+     "sha256_prefix": "a7f78ca478edec1d",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T17:38:58Z",
+   "finished": "2026-11-18T17:39:01Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "dataset",
+     "url": "https://dados.gov.pt/api/1/datasets/66d72d488ca4b7cb2de28712/",
+     "at": "2026-11-18T17:39:00Z",
+     "status": 200,
+     "bytes": 45881,
+     "sha256_prefix": "b10dfe984be85159",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T16:30:06Z",
+   "finished": "2026-11-18T16:30:08Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "dataset",
+     "url": "https://dados.gov.pt/api/1/datasets/66d72d488ca4b7cb2de28712/",
+     "at": "2026-11-18T16:30:07Z",
+     "status": 200,
+     "bytes": 45880,
+     "sha256_prefix": "3ea36ecdaa152283",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T16:11:32Z",
+   "finished": "2026-11-18T16:11:33Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "dataset",
+     "url": "https://dados.gov.pt/api/1/datasets/66d72d488ca4b7cb2de28712/",
+     "at": "2026-11-18T16:11:32Z",
+     "status": 200,
+     "bytes": 45880,
+     "sha256_prefix": "4be097715855926c",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T16:07:41Z",
+   "finished": "2026-11-18T16:07:44Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "dataset",
+     "url": "https://dados.gov.pt/api/1/datasets/66d72d488ca4b7cb2de28712/",
+     "at": "2026-11-18T16:07:43Z",
+     "status": 200,
+     "bytes": 45880,
+     "sha256_prefix": "4be097715855926c",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T16:04:04Z",
+   "finished": "2026-11-18T16:04:06Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "dataset",
+     "url": "https://dados.gov.pt/api/1/datasets/66d72d488ca4b7cb2de28712/",
+     "at": "2026-11-18T16:04:06Z",
+     "status": 200,
+     "bytes": 45880,
+     "sha256_prefix": "4be097715855926c",
+     "changed": true
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:58:45Z",
+   "finished": "2026-11-18T15:58:47Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "dataset",
+     "url": "https://dados.gov.pt/api/1/datasets/66d72d488ca4b7cb2de28712/",
+     "at": "2026-11-18T15:58:46Z",
+     "status": 200,
+     "bytes": 45880,
+     "sha256_prefix": "e96b40d3f7aae90e",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:54:58Z",
+   "finished": "2026-11-18T15:54:59Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "dataset",
+     "url": "https://dados.gov.pt/api/1/datasets/66d72d488ca4b7cb2de28712/",
+     "at": "2026-11-18T15:54:58Z",
+     "status": 200,
+     "bytes": 45880,
+     "sha256_prefix": "e96b40d3f7aae90e",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:50:46Z",
+   "finished": "2026-11-18T15:51:10Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "dataset",
+     "url": "https://dados.gov.pt/api/1/datasets/66d72d488ca4b7cb2de28712/",
+     "at": "2026-11-18T15:50:48Z",
+     "status": 200,
+     "bytes": 45880,
+     "sha256_prefix": "e96b40d3f7aae90e",
+     "changed": false
+    },
+    {
+     "name": "contratos2026.zip",
+     "url": "https://dados.gov.pt/s/resources/contratos-publicos-portal-base-impic-contratos-de-2012-a-2026/20261115-100642-624650f6/contratos2026.zip",
+     "at": "2026-11-18T15:50:50Z",
+     "status": 200,
+     "bytes": 69765818,
+     "sha256_prefix": "b2fb8a3ce46589d0",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-18T15:46:51Z",
+   "finished": "2026-11-18T15:47:17Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "dataset",
+     "url": "https://dados.gov.pt/api/1/datasets/66d72d488ca4b7cb2de28712/",
+     "at": "2026-11-18T15:46:53Z",
+     "status": 200,
+     "bytes": 45880,
+     "sha256_prefix": "e96b40d3f7aae90e",
+     "changed": "first read"
+    },
+    {
+     "name": "contratos2026.zip",
+     "url": "https://dados.gov.pt/s/resources/contratos-publicos-portal-base-impic-contratos-de-2012-a-2026/20261115-100642-624650f6/contratos2026.zip",
+     "at": "2026-11-18T15:46:56Z",
+     "status": 200,
+     "bytes": 69765818,
+     "sha256_prefix": "b2fb8a3ce46589d0",
+     "changed": "first read"
+    }
+   ]
+  }
+ ]
+}
