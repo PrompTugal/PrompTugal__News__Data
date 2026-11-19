@@ -13,7 +13,10 @@ node scripts/test-leak-scan.mjs
 node scripts/leak-scan.mjs
 node scripts/check-commits.mjs origin/dev HEAD
 node scripts/test-check-signatures.mjs
-node scripts/check-signatures.mjs origin/dev HEAD
+# control 7: the signature check runs from dev's copy as last pushed, never from the tree being released
+trusted_check="$(mktemp -d)/check-signatures.mjs"
+git show origin/dev:scripts/check-signatures.mjs > "$trusted_check"
+node "$trusted_check" origin/dev HEAD
 for i in 1 2 3 4 5; do
   git fetch -q origin dev
   git rebase -q origin/dev
@@ -22,7 +25,8 @@ for i in 1 2 3 4 5; do
   node scripts/validate.mjs >/dev/null
   node scripts/leak-scan.mjs >/dev/null
   node scripts/check-commits.mjs origin/dev HEAD >/dev/null
-  node scripts/check-signatures.mjs origin/dev HEAD >/dev/null
+  git show origin/dev:scripts/check-signatures.mjs > "$trusted_check"
+  node "$trusted_check" origin/dev HEAD >/dev/null
   if git -c push.negotiate=true push -q origin HEAD:dev; then echo "released $(git rev-parse --short HEAD) to dev"; exit 0; fi
   sleep $((i * 3))
 done

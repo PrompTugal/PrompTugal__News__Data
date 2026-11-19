@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Tests for scripts/check-signatures.mjs against security@'s five controls (19 Nov 2026 ~01:30 UTC,
+// Tests for scripts/check-signatures.mjs against security@'s five controls and the proposed 6 and 7 (orphans; run from the trusted copy) (19 Nov 2026 ~01:30 UTC,
 // PrompTugal__News__Website board/team/security/reviews/2026-11-19-0130-bar-signing-live-data.md).
 // Builds throwaway repositories in a temporary folder with throwaway keys made for the test and deleted after;
 // no key of any agent is read. Prints OK or the failing cases and exits 1. data.b@PrompTugal.dinis.
@@ -40,8 +40,11 @@ function repo(name) {
     const args = ['-c', 'gpg.format=ssh', ...(key ? ['-c', `user.signingkey=${key.f}`] : []), 'commit', '-q', '--allow-empty', ...(key ? ['-S'] : ['--no-gpg-sign']), ...(author ? ['--author', author] : []), '-m', msg, '-m', `Agent: ${agent}\nClaude-Session: ${session}`];
     g(...args); return g('rev-parse', 'HEAD');
   };
-  const check = (before, after) => spawnSync('node', ['scripts/check-signatures.mjs', before, after], { cwd: d, encoding: 'utf8' });
-  return { d, g, commit, check };
+  // the trusted base is the range's start in every case here (SIGNING_TRUSTED_BASE, for test repositories only)
+  const check = (before, after, script = 'scripts/check-signatures.mjs') => spawnSync('node', [script, before, after], { cwd: d, encoding: 'utf8', env: { ...process.env, SIGNING_TRUSTED_BASE: g('rev-parse', before) } });
+  // control 7: run the check from the trusted base's copy, as CI and release.sh do
+  const checkFromBase = (before, after) => { const f = join(tmp, `${name}-trusted.mjs`); writeFileSync(f, g('show', `${before}:scripts/check-signatures.mjs`) + '\n'); return check(before, after, f); };
+  return { d, g, commit, check, checkFromBase };
 }
 // a failing case passes only when the check fails for the expected reason
 const expect = (name, r, ok, why) => { const out = (r.stdout + r.stderr).trim(); results.push({ name, pass: (r.status === 0) === ok && (!why || out.includes(why)), out: out.split('\n').slice(0, 3).join(' | ') }); };
@@ -66,6 +69,12 @@ const setup = name => { const r = repo(name); const base = r.commit('bootstrap',
 { const r = setup('session'); r.commit('other session', { key: A, session: 'https://claude.ai/code/session_0OtherSessionAbcdef9876', files: { 'x.txt': '1' } }); expect('(5) a Claude-Session: other than the key\'s fails', r.check(r.base, 'HEAD'), false, 'is not the session published'); }
 { const r = setup('sessionprefix'); r.commit('session with extra text', { key: A, session: SESSION + 'x', files: { 'x.txt': '1' } }); expect('(5) the session is compared exactly, not as a prefix', r.check(r.base, 'HEAD'), false, 'is not the session published'); }
 { const r = repo('mismatch'); const base = r.commit('bootstrap', { key: A, files: { 'team/keys.json': keysWith({ ...entry('a', A), ssh_signing: { public_key: B.line } }) } }); r.commit('signed with A', { key: A, files: { 'x.txt': '1' } }); expect('a key whose ssh line differs from its PEM is not used', r.check(base, 'HEAD'), false, 'no published key'); }
+{ const r = setup('orphan'); r.g('checkout', '-q', '--orphan', 'o'); r.commit('orphan trusting its own key B', { key: B, files: { 'team/keys.json': keysWith(entry('b', B)) } }); r.g('checkout', '-q', 'main');
+  r.g('-c', 'gpg.format=ssh', '-c', `user.signingkey=${A.f}`, 'merge', '-q', '-S', '--no-ff', '--allow-unrelated-histories', '-X', 'ours', '-m', 'merge', '-m', `Agent: ${AGENT}\nClaude-Session: ${SESSION}`, 'o');
+  expect('(6) an orphan commit merged in is refused, even signed with the key in its own tree', r.check(r.base, 'HEAD'), false, 'no parent (an orphan)'); }
+{ const r = setup('dropcheck'); r.g('rm', '-q', 'scripts/check-signatures.mjs'); r.commit('drops the check, unsigned'); expect('(6) a commit whose tree drops the check is checked, not skipped', r.checkFromBase(r.base, 'HEAD'), false, 'not signed by a key'); }
+{ const r = setup('swapcheck'); r.commit('replaces the check, unsigned', { files: { 'scripts/check-signatures.mjs': 'console.log("OK")\n' } });
+  expect('(7) a push that replaces the check is judged by the trusted base\'s copy', r.checkFromBase(r.base, 'HEAD'), false, 'not signed by a key'); }
 
 rmSync(tmp, { recursive: true, force: true });
 const bad = results.filter(r => !r.pass);
