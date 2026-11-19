@@ -129,6 +129,8 @@ jobs:
           # live.b@'s finding (a4c6fce): a pushed _site (a symlink into .git, say) must not steer where the site lands, and a
           # pushed .gitattributes must not steer git. The artifact was downloaded into RUNNER_TEMP, outside the checkout.
           if [ -n "$(git ls-tree --name-only HEAD _site)" ] || [ -e _site ] || [ -L _site ]; then echo "the pushed tree holds a _site path" >&2; exit 1; fi
+          # control 10 (security@, ed70bd996): no symlink in the checked-out tree (per-commit additions are refused by check-signatures)
+          if [ -n "$(find . -path ./.git -prune -o -type l -print | head -1)" ]; then echo "the checked-out tree holds a symlink" >&2; exit 1; fi
           find . -path ./.git -prune -o -name .gitattributes -print0 | xargs -0 -r rm -f --
           tar -tvf "$RUNNER_TEMP/pages/artifact.tar" > "$RUNNER_TEMP/pages/listing.txt"
           if grep -qv '^[-d]' "$RUNNER_TEMP/pages/listing.txt"; then echo "the artifact holds a member that is not a plain file or folder" >&2; exit 1; fi

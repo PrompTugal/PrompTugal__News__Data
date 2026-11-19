@@ -27,8 +27,9 @@
 // allows there), principals, session_sha256 (first 16 hex of the session id's sha256), from}; a key's "superseded" time
 // ends it for commits after that time. Prints OK or lists each failing commit and exits 1.
 import { execFileSync, spawnSync } from 'node:child_process';
-import { readFileSync, writeFileSync, mkdtempSync, rmSync } from 'node:fs';
-import { join } from 'node:path';
+import { readFileSync, writeFileSync, mkdtempSync, rmSync, existsSync } from 'node:fs';
+import { join, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { tmpdir } from 'node:os';
 import { createPublicKey, createHash } from 'node:crypto';
 
@@ -61,6 +62,17 @@ const keysAt = rev => { let j; try { j = JSON.parse(git('show', `${rev}:team/key
     const allowed = join(dir, `allowed_signers_${fileN++}`)
     writeFileSync(allowed, keys.flatMap(k => (k.ssh.principals || []).map(p => `${p} namespaces="git" ${k.sshLine}`)).join('\n') + '\n')
     return { keys, allowed } };
+// Control 10 (security@, ed70bd996, 19 Nov 2026 ~16:50 UTC): no symlinks. A commit in the range that adds or changes a
+// mode-120000 entry fails, read per commit with git diff-tree (not only the final tree), unless its path is in
+// symlink-exceptions.json beside this file, which comes from the anchor's tree with the rest of the trusted copy, so an
+// exception listed only in the pushed tree does not count: [{ "path": "...", "reason": "..." }], each reviewed by security@.
+const EXF = join(dirname(fileURLToPath(import.meta.url)), 'symlink-exceptions.json');
+let linkOk = new Set();
+if (existsSync(EXF)) { let l; try { l = JSON.parse(readFileSync(EXF, 'utf8')) } catch (e) { console.error(`check-signatures: ${EXF} is not JSON`); process.exit(1) }
+  if (!Array.isArray(l) || l.some(x => !x || typeof x.path !== 'string' || typeof x.reason !== 'string' || !x.reason.trim())) { console.error('check-signatures: symlink-exceptions.json must be a list of { path, reason }'); process.exit(1) }
+  linkOk = new Set(l.map(x => x.path)) }
+const linksIn = c => lines(tryGit('diff-tree', '-r', '--raw', '--no-commit-id', '--no-renames', '--root', '-m', c) || '')
+  .map(l => /^:\d{6} (\d{6}) \S+ \S+ [A-Z]\d*\t(.+)$/.exec(l)).filter(m => m && m[1] === '120000').map(m => m[2]).filter(p => !linkOk.has(p));
 const failures = [];
 let checked = 0, skipped = 0;
 for (const c of commits) {
@@ -69,6 +81,7 @@ for (const c of commits) {
     const parent = (git('log', '-1', '--format=%P', c).split(' ')[0] || '').trim();
     const short = c.slice(0, 8);
     if (!parent && c !== base) { failures.push(`${short}: a commit with no parent (an orphan) is refused; only the trusted base may be one`); continue }   // control 6
+    const links = linksIn(c); if (links.length) { failures.push(`${short}: adds or changes a symlink (${links.slice(0, 3).join(', ')}); no symlinks unless listed with a reason in the trusted symlink-exceptions.json`); continue }   // control 10
     const { keys, allowed } = keysAt(c === base ? c : parent);   // the parent's keys; the trusted base's own
     if (!keys.length) { failures.push(`${short}: no published key in its parent's team/keys.json`); continue }
     const agent = git('log', '-1', '--format=%(trailers:key=Agent,valueonly)', c).split('\n')[0].trim();

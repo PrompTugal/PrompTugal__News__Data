@@ -28,6 +28,7 @@ for f in check-commits.mjs check-signatures.mjs leak-scan.mjs; do
   [ "$mode" = 100644 ] || [ "$mode" = 100755 ] || fail "the anchor's scripts/$f is not a plain file (mode $mode)"
   git -c core.attributesFile=/dev/null show --no-textconv "$anchor:scripts/$f" > "$out/$f"
 done
-rm -f "$out/commit-exemptions.json"
+rm -f "$out/commit-exemptions.json" "$out/symlink-exceptions.json"
+if git cat-file -e "$anchor:scripts/symlink-exceptions.json" 2>/dev/null; then git -c core.attributesFile=/dev/null show --no-textconv "$anchor:scripts/symlink-exceptions.json" > "$out/symlink-exceptions.json"; fi
 if git cat-file -e "$anchor:scripts/commit-exemptions.json" 2>/dev/null; then git -c core.attributesFile=/dev/null show --no-textconv "$anchor:scripts/commit-exemptions.json" > "$out/commit-exemptions.json"; fi
 echo "$anchor"

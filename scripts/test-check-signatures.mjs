@@ -45,7 +45,8 @@ function repo(name) {
   // the trusted base is the range's start in every case here (SIGNING_TRUSTED_BASE, for test repositories only)
   const check = (before, after, script = 'scripts/check-signatures.mjs') => spawnSync('node', [script, before, after], { cwd: d, encoding: 'utf8', env: { ...noCI, SIGNING_TRUSTED_BASE: g('rev-parse', before) } });
   // control 7: run the check from the trusted base's copy, as CI and release.sh do
-  const checkFromBase = (before, after) => { const f = join(tmp, `${name}-trusted.mjs`); writeFileSync(f, g('show', `${before}:scripts/check-signatures.mjs`) + '\n'); return check(before, after, f); };
+  const checkFromBase = (before, after) => { const td = join(tmp, `${name}-trusted`); mkdirSync(td, { recursive: true }); const f = join(td, 'check-signatures.mjs'); writeFileSync(f, g('show', `${before}:scripts/check-signatures.mjs`) + '\n');
+    try { writeFileSync(join(td, 'symlink-exceptions.json'), g('show', `${before}:scripts/symlink-exceptions.json`) + '\n') } catch {} return check(before, after, f); };
   return { d, g, commit, check, checkFromBase };
 }
 // a failing case passes only when the check fails for the expected reason
@@ -153,6 +154,13 @@ const withChecks = name => { const r = setup(name); r.commit('adds the other che
   const cases = [['git version 2.56.1', true], ['git version 2.42.0', true], ['git version 3.0', true], ['git version 2.41.9', false], ['git version 1.99', false], ['git version', false], ['', false], ['git version x.y', false], ['git version 2', false]];
   const wrong = cases.filter(([v, ok]) => (run(v).stdout.includes('passed') && run(v).status === 0) !== ok);
   results.push({ name: 'the git version check fails closed on an unreadable or old version', pass: body.length > 0 && wrong.length === 0, out: body ? wrong.map(([v]) => JSON.stringify(v)).join(', ') : 'no version check found' }); }
+// control 10 (security@, ed70bd996): no symlinks unless listed, with a reason, in the trusted copy's exceptions file
+const withLink = (r, msg, key) => { execFileSync('ln', ['-s', 'x.txt', join(r.d, 'link.txt')]); return r.commit(msg, { key: A, files: { 'x.txt': '1' } }); };
+{ const r = setup('link-pushed'); withLink(r, 'adds a symlink, signed'); expect('(10) a pushed symlink fails, even in a signed commit', r.checkFromBase(r.base, 'HEAD'), false, 'adds or changes a symlink'); }
+{ const r = repo('link-listed'); const base = r.commit('bootstrap with an exception', { key: A, files: { 'team/keys.json': keysWith(entry('a', A)), 'scripts/symlink-exceptions.json': JSON.stringify([{ path: 'link.txt', reason: 'test' }]) } });
+  withLink(r, 'adds the listed symlink'); expect('(10) a symlink listed in the trusted exceptions file passes', r.checkFromBase(base, 'HEAD'), true); }
+{ const r = setup('link-unlisted'); r.commit('lists an exception in the pushed tree, then adds the link', { key: A, files: { 'scripts/symlink-exceptions.json': JSON.stringify([{ path: 'link.txt', reason: 'pushed' }]) } }); withLink(r, 'adds the link');
+  expect('(10) a symlink listed only in the pushed tree fails', r.checkFromBase(r.base, 'HEAD'), false, 'adds or changes a symlink'); }
 
 rmSync(tmp, { recursive: true, force: true });
 const bad = results.filter(r => !r.pass);
