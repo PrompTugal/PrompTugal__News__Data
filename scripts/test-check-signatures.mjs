@@ -161,6 +161,9 @@ const withLink = (r, msg, key) => { execFileSync('ln', ['-s', 'x.txt', join(r.d,
   withLink(r, 'adds the listed symlink'); expect('(10) a symlink listed in the trusted exceptions file passes', r.checkFromBase(base, 'HEAD'), true); }
 { const r = setup('link-unlisted'); r.commit('lists an exception in the pushed tree, then adds the link', { key: A, files: { 'scripts/symlink-exceptions.json': JSON.stringify([{ path: 'link.txt', reason: 'pushed' }]) } }); withLink(r, 'adds the link');
   expect('(10) a symlink listed only in the pushed tree fails', r.checkFromBase(r.base, 'HEAD'), false, 'adds or changes a symlink'); }
+{ const r = repo('link-newline'); const base = r.commit('bootstrap listing "a"', { key: A, files: { 'team/keys.json': keysWith(entry('a', A)), 'scripts/symlink-exceptions.json': JSON.stringify([{ path: 'a', reason: 'test' }]) } });
+  execFileSync('ln', ['-s', 'x.txt', join(r.d, 'a\nb')]); r.commit('adds a link named a, newline, b', { key: A, files: { 'x.txt': '1' } });
+  expect('(10) a symlink whose name holds a newline is not matched to a listed path', r.checkFromBase(base, 'HEAD'), false, 'adds or changes a symlink'); }
 
 rmSync(tmp, { recursive: true, force: true });
 const bad = results.filter(r => !r.pass);

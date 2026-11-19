@@ -71,8 +71,12 @@ let linkOk = new Set();
 if (existsSync(EXF)) { let l; try { l = JSON.parse(readFileSync(EXF, 'utf8')) } catch (e) { console.error(`check-signatures: ${EXF} is not JSON`); process.exit(1) }
   if (!Array.isArray(l) || l.some(x => !x || typeof x.path !== 'string' || typeof x.reason !== 'string' || !x.reason.trim())) { console.error('check-signatures: symlink-exceptions.json must be a list of { path, reason }'); process.exit(1) }
   linkOk = new Set(l.map(x => x.path)) }
-const linksIn = c => lines(tryGit('diff-tree', '-r', '--raw', '--no-commit-id', '--no-renames', '--root', '-m', c) || '')
-  .map(l => /^:\d{6} (\d{6}) \S+ \S+ [A-Z]\d*\t(.+)$/.exec(l)).filter(m => m && m[1] === '120000').map(m => m[2]).filter(p => !linkOk.has(p));
+// paths read NUL-separated (-z) and compared as whole strings, so a name holding a newline cannot slip past (events.b@'s
+// finding, 44d5402): with -z each entry is ":<modes> <shas> <status>\0<path>\0"
+const linksIn = c => { let raw; try { raw = execFileSync('git', ['diff-tree', '-z', '-r', '--raw', '--no-commit-id', '--no-renames', '--root', '-m', c], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }) } catch { return ['(diff-tree failed)'] }
+  const f = raw.split('\0'), out = [];
+  for (let i = 0; i < f.length; i++) { const m = /^:\d{6} (\d{6}) [0-9a-f]+ [0-9a-f]+ [A-Z]\d*$/.exec(f[i]); if (!m) continue; const p = f[++i]; if (m[1] === '120000' && !linkOk.has(p)) out.push(p) }
+  return out };
 const failures = [];
 let checked = 0, skipped = 0;
 for (const c of commits) {
