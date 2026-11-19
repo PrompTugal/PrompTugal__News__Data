@@ -1,0 +1,68 @@
+{
+ "about": "Every run of sources/contracts-finder/collect.mjs, newest first: each request's address, HTTP status, size, the first 16 hex of its sha256, and whether the bytes changed since the run before. The bytes and the full sha256 go to the source's vault (see card.json: latest/reads-full.json), never to git.",
+ "source": "contracts-finder",
+ "runs": [
+  {
+   "at": "2026-11-19T19:30:13Z",
+   "finished": "2026-11-19T19:30:26Z",
+   "ok": 6,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "window-1",
+     "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-18T19:30:13&publishedTo=2026-11-18T23:30:13&limit=100",
+     "at": "2026-11-19T19:30:13Z",
+     "status": 200,
+     "bytes": 7754,
+     "sha256_prefix": "f14c2fac9d352a4f",
+     "changed": "first read"
+    },
+    {
+     "name": "window-2",
+     "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-18T23:30:13&publishedTo=2026-11-19T03:30:13&limit=100",
+     "at": "2026-11-19T19:30:15Z",
+     "status": 200,
+     "bytes": 1420,
+     "sha256_prefix": "207dcc531d0ee55f",
+     "changed": "first read"
+    },
+    {
+     "name": "window-3",
+     "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-19T03:30:13&publishedTo=2026-11-19T07:30:13&limit=100",
+     "at": "2026-11-19T19:30:18Z",
+     "status": 200,
+     "bytes": 14135,
+     "sha256_prefix": "26b6e4f14d213763",
+     "changed": "first read"
+    },
+    {
+     "name": "window-4",
+     "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-19T07:30:13&publishedTo=2026-11-19T11:30:13&limit=100",
+     "at": "2026-11-19T19:30:20Z",
+     "status": 200,
+     "bytes": 286650,
+     "sha256_prefix": "ff92fb7cbb2af847",
+     "changed": "first read"
+    },
+    {
+     "name": "window-5",
+     "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-19T11:30:13&publishedTo=2026-11-19T15:30:13&limit=100",
+     "at": "2026-11-19T19:30:23Z",
+     "status": 200,
+     "bytes": 283140,
+     "sha256_prefix": "07185b412d643520",
+     "changed": "first read"
+    },
+    {
+     "name": "window-6",
+     "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-19T15:30:13&publishedTo=2026-11-19T19:30:13&limit=100",
+     "at": "2026-11-19T19:30:25Z",
+     "status": 200,
+     "bytes": 132437,
+     "sha256_prefix": "776f220833a9132c",
+     "changed": "first read"
+    }
+   ]
+  }
+ ]
+}

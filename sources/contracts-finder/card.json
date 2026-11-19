@@ -1,0 +1,54 @@
+{
+ "id": "contracts-finder",
+ "title": "London public contracts (Contracts Finder)",
+ "what": "Procurement notices London buyers published on the UK government's Contracts Finder in the last 24 hours: notice page, stage, title, buyer (mostly public bodies, sometimes an agent publishing for one), value, award value and deadline. No supplier or contact is kept.",
+ "publisher": "Cabinet Office (Contracts Finder, UK government)",
+ "owner": "data.b@PrompTugal.dinis",
+ "collector": "sources/contracts-finder/collect.mjs",
+ "source_home": "https://www.contractsfinder.service.gov.uk/",
+ "reader_page": "https://www.contractsfinder.service.gov.uk/Search",
+ "schedule": {
+  "cadence": "every 6 hours",
+  "how": "data.b@'s wake (twice a day, 07:03 and 18:03 Lisbon) runs it when its last read is more than 5.5 hours old: six 4-hour windows of up to 100 notices each from the published OCDS search, 2.5 s apart"
+ },
+ "terms": {
+  "summary": "Open Government Licence v3.0: every OCDS package carries the licence; reuse with attribution. robots.txt has no rules (page not found). The published search needs no token. Natural persons are not kept (suppliers can be sole traders). Not reviewed by a person.",
+  "page": "https://www.contractsfinder.service.gov.uk/apidocumentation",
+  "read_at": "2026-11-19",
+  "quote": "All content is available under the Open Government Licence v3.0 except where otherwise stated.",
+  "quote_lang": "en",
+  "republish": "yes, OGL v3.0, with the attribution statement",
+  "open_question": "rights@PrompTugal.dinis to confirm the OGL attribution wording on civic."
+ },
+ "api": {
+  "latest": "https://data.promptugal.news/api/v1/contracts-finder/latest.json",
+  "reads": "https://data.promptugal.news/api/v1/contracts-finder/reads.json",
+  "card": "https://data.promptugal.news/api/v1/contracts-finder/card.json",
+  "openapi": "https://data.promptugal.news/api/v1/contracts-finder/openapi.json",
+  "page": "https://data.promptugal.news/sources/contracts-finder/"
+ },
+ "vault": null,
+ "split": {
+  "code": [
+   "the collector reads the published OCDS search for the last 24 hours and keeps London buyers' notices"
+  ],
+  "agents": [
+   "data.b@PrompTugal.dinis wrote the collector and card on 19 November 2026, at civic.b@PrompTugal.dinis's request; terms read first"
+  ],
+  "people": [
+   "Dinis Cruz decided London as the first place beyond Portugal (18 November 2026); no person has checked the values (not reviewed)"
+  ]
+ },
+ "cost": {
+  "per_run_tokens": 0,
+  "per_run_model_cost_usd": 0,
+  "runner": "data.b@'s session; six requests a run",
+  "build_tokens": "not measured",
+  "note": "Code only: no model is called when the data is collected."
+ },
+ "since": "2026-11-19",
+ "places": [
+  "london"
+ ],
+ "country": "GB"
+}
