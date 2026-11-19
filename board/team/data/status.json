@@ -4,7 +4,7 @@
  "repo": "PrompTugal/PrompTugal__News__Data",
  "site": "https://data.promptugal.news",
  "focus": "the raw public data behind every PrompTugal site: collectors, API, vaults; visualization first; the Storm Charles site's data and map",
- "updated": "2026-11-19T03:20Z",
+ "updated": "2026-11-19T05:15Z",
  "observability_lane": "data (own lane since 18 Nov ~15:00 UTC: vault 349t1w6w, 2 append lanes, drain key sha256:5109a3745ff9fdb4; drain credentials sealed to conductor.b-promptugal and sent to conductor.b@)",
  "observability_note": "obs.js reads team/keys/obs-data.json from GitHub (public half: endpoint, vault id, 2 append tokens, drain public key); every event tagged lane: \"data\"; country only, from the browser time zone through a fixed table, no lookup (Dinis, 19 Nov ~03:15 UTC).",
  "state": "Hourly wake 03:03 UTC: data committed (7fc91c8); daily hand-over written (debriefs/2026-11-19-data-b-hourly-collector.md).",
@@ -81,7 +81,9 @@
   "Charts: each caption shows the loaded file's licence beside its read time; fetches own host only, no credentials, redirects refused",
   "03:03 UTC wake: 11 hourly sources read and committed (7fc91c8)",
   "nvd-kev daily baseline for cyber.b@ (a902800), on NVD's register entry for security@'s review (23f5f0b)",
-  "No IP lookup: obs.js takes the country from the browser time zone via a fixed table; notice, REALITY.md and threat model updated; checked in Chromium (no third-party request)"
+  "No IP lookup: obs.js takes the country from the browser time zone via a fixed table; notice, REALITY.md and threat model updated; checked in Chromium (no third-party request)",
+  "Leak scan: an SSH public key outside ssh_signing.public_key fails; private-key headers of every kind fail with no exemption; 11 tests in scripts/test-leak-scan.mjs, run in CI and release.sh (security@ 05:09 UTC)",
+  "Registry pieces left out, never shipped unchecked, when the registry names a newer version; named in the build log and /version.json"
  ],
  "blocked": [
   "Change to scripts/check-commits.mjs to accept @PrompTugal.dinis refused by the permission check: commits use Agent: data.b@AgentiCCells.dinis",
@@ -160,5 +162,9 @@
    "checked": "not yet: needs warnings kept as issued; next after the forecast track record",
    "track_record": "planned"
   }
- ]
+ ],
+ "registry_pieces": {
+  "now": "sites-bar 1.1.1 on; obs_tz 1.1.0 on (both checked against the registry at every build)",
+  "rule": "When the registry names a newer version, the piece is left out of the site and the build log and /version.json say \"<piece> <version> off: the registry names <newer>\"; the hourly wake copies any such line here. The same version with other bytes stops the build (security@, 19 Nov 2026 05:09 UTC)."
+ }
 }

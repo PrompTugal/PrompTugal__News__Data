@@ -22,8 +22,13 @@ const builtAt = new Date().toISOString();
 rmSync(OUT, { recursive: true, force: true });
 cpSync('src', OUT, { recursive: true });
 
-const bar = await sitesBar(); setSitesBar(bar.html); console.log('obs tz table: ' + injectObsTz(OUT, REGISTRY_READ));   // sites bar 1.1.0 (Dinis, 18 Nov 2026)
-console.log(`sites bar: ${bar.html ? 'rendered' : 'left out'} (${bar.from})`);
+const bar = await sitesBar(); setSitesBar(bar.html);
+// pieces pinned by the sites registry: when one is off, it is left out of the site and named in the log and in version.json
+// (security@'s ruling, 19 Nov 2026 05:09 UTC: "<piece> <version> off: the registry names <newer>")
+const OFF = [];
+if (bar.off) { OFF.push(bar.off); rmSync(join(OUT, 'assets/sites-bar'), { recursive: true, force: true }); console.log(bar.off); }
+{ const t = injectObsTz(OUT, REGISTRY_READ); if (t.off) { OFF.push(t.off); console.log(t.off) } else console.log(t.ok) }   // sites bar 1.1.0 (Dinis, 18 Nov 2026)
+console.log(`sites bar: ${bar.html ? 'rendered' : 'left out'} (${bar.from || bar.off})`);
 const sources = loadSources();
 const places = loadPlaces();
 const readAt = dataReadAt(sources);
@@ -64,6 +69,6 @@ for (const f of walk(OUT)) {
   const s = readFileSync(f, 'utf8');
   if (s.includes('__VERSION__')) writeFileSync(f, s.replaceAll('__VERSION__', version));
 }
-writeFileSync(join(OUT, 'version.json'), JSON.stringify({ version, commit: process.env.GITHUB_SHA || 'local', built: builtAt }, null, 2) + '\n');
+writeFileSync(join(OUT, 'version.json'), JSON.stringify({ version, commit: process.env.GITHUB_SHA || 'local', built: builtAt, ...(OFF.length ? { off: OFF } : {}) }, null, 2) + '\n');
 writeFileSync(join(OUT, '.nojekyll'), '');
 console.log(`built _site/ (${version}): ${pages.length} pages, ${sources.length} sources, ${places.length} places, ${licensed} JSON files with a licence`);

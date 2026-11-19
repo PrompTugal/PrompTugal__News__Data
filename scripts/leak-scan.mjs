@@ -45,6 +45,10 @@ const SHAPES = [
   ['Google API key', /\bAIza[0-9A-Za-z_-]{35}\b/],
   ['Slack token', /\bxox[abprs]-[A-Za-z0-9-]{10,}/],
   ['Anthropic or OpenAI API key', /\bsk-(?:ant-)?[A-Za-z0-9_-]{20,}/],
+  // security@'s ruling, 19 Nov 2026 05:09 UTC (PrompTugal__News__Website 1acd10498): an SSH public key anywhere but its published
+  // field (ssh_signing.public_key in the keys file, blanked above only when it matches exactly) means a key file was copied
+  // where it should not be. Private-key headers of every kind fail through 'private key block', with no exemption.
+  ['ssh public key outside its published field', /\b(?:ssh-ed25519|ecdsa-sha2-nistp(?:256|384|521)|ssh-rsa) AAAA[A-Za-z0-9+\/]+={0,2}/],
 ];
 
 // sgit vault key without its prefix: {passphrase}:{vault_id}. sgit generates a

@@ -22,9 +22,9 @@ export let REGISTRY_READ = null;   // the registry as read by this build (also u
 export async function sitesBar() {
   const get = async (u, json) => { const r = await fetch(u, { signal: AbortSignal.timeout(15000), redirect: 'error' }); if (!r.ok) throw new Error(String(r.status)); return json ? r.json() : r.text(); };
   let reg;
-  try { reg = await get(REGISTRY, true); REGISTRY_READ = reg; } catch { return { html: '', from: 'none (the registry could not be read, so the files could not be checked against their pins)' }; }
+  try { reg = await get(REGISTRY, true); REGISTRY_READ = reg; } catch { return { html: '', off: `sites-bar ${SITES_BAR} off: the registry could not be read` }; }
   const pins = (reg && reg.bar && reg.bar.integrity) || {};
-  if (!reg.bar || reg.bar.version !== SITES_BAR) return { html: '', from: `none (the registry names version ${reg.bar && reg.bar.version}, this site vendors ${SITES_BAR})` };
+  if (!reg.bar || reg.bar.version !== SITES_BAR) return { html: '', off: `sites-bar ${SITES_BAR} off: the registry names ${reg.bar && reg.bar.version}` };
   for (const [k, f] of Object.entries(FILES)) {
     const got = 'sha256-' + createHash('sha256').update(readFileSync(`src/assets/sites-bar/${SITES_BAR}/${f}`)).digest('base64');
     if (typeof pins[k] !== 'string' || got !== pins[k]) throw new Error(`sites bar: ${f} does not match its pin in the registry's bar.integrity; not building with a changed file`);
