@@ -4,7 +4,7 @@
  "repo": "PrompTugal/PrompTugal__News__Data",
  "site": "https://data.promptugal.news",
  "focus": "the raw public data behind every PrompTugal site: collectors, API, vaults; visualization first; the Storm Charles site's data and map",
- "updated": "2026-11-19T07:54Z",
+ "updated": "2026-11-19T12:17Z",
  "observability_lane": "data (own lane since 18 Nov ~15:00 UTC: vault 349t1w6w, 2 append lanes, drain key sha256:5109a3745ff9fdb4; drain credentials sealed to conductor.b-promptugal and sent to conductor.b@)",
  "observability_note": "obs.js reads team/keys/obs-data.json from GitHub (public half: endpoint, vault id, 2 append tokens, drain public key); every event tagged lane: \"data\"; country only, from the browser time zone through a fixed table, no lookup (Dinis, 19 Nov ~03:15 UTC).",
  "state": "Hourly wake 03:03 UTC: data committed (7fc91c8); daily hand-over written (debriefs/2026-11-19-data-b-hourly-collector.md).",
@@ -171,6 +171,9 @@
   "rule": "When the registry names a newer version, the piece is left out of the site and the build log and /version.json say \"<piece> <version> off: the registry names <newer>\"; the hourly wake copies any such line here. The same version with other bytes stops the build (security@, 19 Nov 2026 05:09 UTC)."
  },
  "gaps_now": [
-  "social (Bluesky): app.bsky.feed.searchPosts on public.api.bsky.app answers 403 to unauthenticated reads (5 of 5 searches, 19 Nov 06:15 UTC); the 5 account feeds still read. Respected, not worked around; search results are not refreshed."
+  "social (Bluesky): app.bsky.feed.searchPosts on public.api.bsky.app answers 403 to unauthenticated reads (5 of 5 searches, 19 Nov 06:15 UTC); the 5 account feeds still read. Respected, not worked around; search results are not refreshed.",
+  "open-meteo-london: Open-Meteo answered 429 (too many requests) at 11:00 UTC and again on the 6-hourly read at about 12:05 UTC, 19 Nov. Respected, not retried; London forecast kept from the 06:15 UTC read, its block states its 6-hour cadence. Next read due at the 18:03 wake.",
+  "github-pt: GitHub search answered 403 to 21 of 22 unauthenticated reads (about 12:05 UTC, 19 Nov); the earlier results are kept. Respected, not worked around.",
+  "adsb-faro: one 429 at about 12:04 UTC, 19 Nov; read again next hour."
  ]
 }

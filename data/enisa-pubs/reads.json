@@ -3,6 +3,23 @@
  "source": "enisa-pubs",
  "runs": [
   {
+   "at": "2026-11-19T12:06:54Z",
+   "finished": "2026-11-19T12:07:03Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "publications",
+     "url": "https://www.enisa.europa.eu/publications",
+     "at": "2026-11-19T12:07:02Z",
+     "status": 200,
+     "bytes": 79005,
+     "sha256_prefix": "106fc5ad153825f0",
+     "changed": true
+    }
+   ]
+  },
+  {
    "at": "2026-11-19T06:06:27Z",
    "finished": "2026-11-19T06:06:36Z",
    "ok": 1,

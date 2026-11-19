@@ -1,6 +1,6 @@
 {
  "place": "algarve",
- "read_at": "2026-11-19T11:10:43Z",
+ "read_at": "2026-11-19T12:17:23Z",
  "by": "collect/by-place-now.mjs (code, no model; data@PrompTugal.dinis), from this site's collected sources",
  "about": "Now in the Algarve: IPMA's warnings for the Faro district, Faro airport, and each place's nearest station. Not a warning service.",
  "warnings": {
@@ -92,13 +92,15 @@
   "other_aircraft": 0,
   "page": "https://globe.adsb.lol/?lat=37.014&lon=-7.966&zoom=9",
   "source": "https://api.adsb.lol/",
-  "note": "What adsb.lol's community receivers saw within 40 nautical miles at the time read. Airline flights by callsign; other aircraft only counted."
+  "note": "What adsb.lol's community receivers saw within 40 nautical miles at the time read. Airline flights by callsign; other aircraft only counted.",
+  "stale": true,
+  "stale_note": "adsb.lol could not be read at 2026-11-19T12:04:24Z; these values are from the last read, at read_at."
  },
  "places": [
   {
    "place": "faro",
    "station": "Faro (Aeródromo)",
-   "temp_c": 18.4
+   "temp_c": 19.6
   },
   {
    "place": "loule",
@@ -123,7 +125,7 @@
   {
    "place": "vila-real-de-santo-antonio",
    "station": "Vila Real de S. António",
-   "temp_c": 17.5
+   "temp_c": 18.9
   },
   {
    "place": "portimao",
@@ -138,7 +140,7 @@
   {
    "place": "olhao",
    "station": "Olhão, EPPO",
-   "temp_c": 18.9
+   "temp_c": 19.9
   },
   {
    "place": "albufeira",
@@ -153,63 +155,63 @@
   {
    "place": "monchique",
    "station": "Fóia",
-   "temp_c": 9.9
+   "temp_c": 10.5
   },
   {
    "place": "aljezur",
    "station": "Aljezur",
-   "temp_c": 18.9
+   "temp_c": 19.9
   },
   {
    "place": "vila-do-bispo",
    "station": "Sagres",
-   "temp_c": 18.7
+   "temp_c": 19.2
   },
   {
    "place": "castro-marim",
    "station": "Castro Marim (RN Sapal)",
-   "temp_c": 18.2
+   "temp_c": 19.1
   },
   {
    "place": "alcoutim",
    "station": "Alcoutim, Mart.Longo",
-   "temp_c": 15.7
+   "temp_c": 16.6
   },
   {
    "place": "sao-bras-de-alportel",
    "station": "Olhão, EPPO",
-   "temp_c": 18.9
+   "temp_c": 19.9
   }
  ],
  "reads": {
   "observations": {
    "url": "https://data.promptugal.news/api/v1/ipma-observations/latest.json",
-   "at": "2026-11-19T11:10:18Z",
+   "at": "2026-11-19T12:15:25Z",
    "status": 200
   },
   "warnings": {
    "url": "https://data.promptugal.news/api/v1/ipma-warnings/latest.json",
-   "at": "2026-11-19T11:10:35Z",
+   "at": "2026-11-19T12:15:43Z",
    "status": 200
   },
   "forecasts": {
    "url": "https://data.promptugal.news/api/v1/ipma-city-forecasts/latest.json",
-   "at": "2026-11-19T11:08:43Z",
+   "at": "2026-11-19T12:13:48Z",
    "status": 200
   },
   "fire-risk": {
    "url": "https://data.promptugal.news/api/v1/ipma-fire-risk/latest.json",
-   "at": "2026-11-19T11:10:10Z",
+   "at": "2026-11-19T12:15:18Z",
    "status": 200
   },
   "uv": {
    "url": "https://data.promptugal.news/api/v1/ipma-uv/latest.json",
-   "at": "2026-11-19T11:10:33Z",
+   "at": "2026-11-19T12:15:40Z",
    "status": 200
   },
   "sea": {
    "url": "https://data.promptugal.news/api/v1/ipma-sea/latest.json",
-   "at": "2026-11-19T11:10:23Z",
+   "at": "2026-11-19T12:15:31Z",
    "status": 200
   },
   "adsb": {

@@ -1,11 +1,11 @@
 {
  "source": "enisa-pubs",
  "title": "ENISA publications",
- "read_at": "2026-11-19T06:06:27Z",
+ "read_at": "2026-11-19T12:06:54Z",
  "provenance": {
   "source": "https://www.enisa.europa.eu/",
   "page": "https://www.enisa.europa.eu/publications",
-  "read_at": "2026-11-19T06:06:27Z",
+  "read_at": "2026-11-19T12:06:54Z",
   "by": "sources/enisa-pubs/collect.mjs (code, no model; run by data.b@PrompTugal.dinis)",
   "terms": "ENISA legal notice 1.2: reproduction of material on its website is authorised if the source is acknowledged, unless stated otherwise; the logo only for press and media use with the source acknowledged. robots.txt allows /publications to our agent and asks for a 10 second crawl delay; it blocks named AI crawlers (we are code, no model, and not named). Dinis decided on 18 Nov 2026 that ENISA is read through its published interfaces. Not reviewed by a person.",
   "robots": "https://www.enisa.europa.eu/robots.txt (Crawl-delay 10; this path allowed)",

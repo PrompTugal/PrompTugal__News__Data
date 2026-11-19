@@ -1,48 +1,48 @@
 {
  "source": "nvd-cve",
  "title": "CVEs published or modified in the last 24 hours (NVD)",
- "read_at": "2026-11-19T06:15:43Z",
+ "read_at": "2026-11-19T12:15:49Z",
  "notice": "This product uses the NVD API but is not endorsed or certified by the NVD.",
  "provenance": {
   "source": "https://nvd.nist.gov/",
   "page": "https://nvd.nist.gov/developers/vulnerabilities",
-  "read_at": "2026-11-19T06:15:43Z",
+  "read_at": "2026-11-19T12:15:49Z",
   "by": "sources/nvd-cve/collect.mjs (code, no model; run by data.b@PrompTugal.dinis)",
   "terms": "NVD API Terms of Use: the API is for building a service to \"search, display, analyze, retrieve, view and otherwise get\" NVD data; asked to display \"This product uses the NVD API but is not endorsed or certified by the NVD.\"; the NVD name may identify the source but not imply endorsement; if you modify the content you may not attribute it to the NVD (our totals are ours, our per-CVE values are kept as served); public rate limit 5 requests in a rolling 30 seconds without a key (we use none, seven seconds apart); no more than once every two hours (we read every 6 hours). Not reviewed by a person.",
   "api": "https://services.nvd.nist.gov/rest/json/cves/2.0",
   "window_from": "2026-11-18T00:00:00.000",
-  "window_to": "2026-11-19T06:15:43.000",
-  "last_24h_from": "2026-11-18T06:15:43.000",
+  "window_to": "2026-11-19T12:15:49.000",
+  "last_24h_from": "2026-11-18T12:15:49.000",
   "api_key": "none (public rate limit)"
  },
  "about": "CVEs that NVD published or modified in the 24 hours before the read: each with its CNA (the domain of NVD's sourceIdentifier, never the address), status, CVSS base severity and score, weakness types and the vendors and products (NVD's CPE configurations, else the CNA's own list in the same record, marked products_from); and totals per day and severity (daily, and daily_totals for 30 days, complete true only for a whole UTC day). Values are NVD's, kept as served; the totals are ours, counted from them. Descriptions and references are not kept. Vulnerabilities in products, never a victim, host or address. A weak signal, not an audit.",
  "counts": {
-  "cves_in_window": 1658,
-  "cves_read_since_yesterday": 1972,
-  "nvd_total_since_yesterday": 1972,
-  "new_last_24h": 708,
-  "modified_not_new_last_24h": 950,
+  "cves_in_window": 1902,
+  "cves_read_since_yesterday": 2238,
+  "nvd_total_since_yesterday": 2238,
+  "new_last_24h": 772,
+  "modified_not_new_last_24h": 1130,
   "pages_complete": true,
   "fields_dropped_em_dash": 3
  },
  "last_24h": {
-  "new": 708,
+  "new": 772,
   "new_by_severity": {
-   "CRITICAL": 96,
-   "HIGH": 257,
-   "MEDIUM": 272,
-   "LOW": 43,
+   "CRITICAL": 94,
+   "HIGH": 282,
+   "MEDIUM": 325,
+   "LOW": 50,
    "NONE": 0,
-   "unscored": 40
+   "unscored": 21
   },
-  "modified": 950,
+  "modified": 1130,
   "modified_by_severity": {
-   "CRITICAL": 99,
-   "HIGH": 431,
-   "MEDIUM": 380,
-   "LOW": 37,
+   "CRITICAL": 109,
+   "HIGH": 483,
+   "MEDIUM": 449,
+   "LOW": 77,
    "NONE": 0,
-   "unscored": 3
+   "unscored": 12
   }
  },
  "daily": [
@@ -57,10 +57,10 @@
     "NONE": 0,
     "unscored": 40
    },
-   "modified": 1033,
+   "modified": 1032,
    "modified_by_severity": {
     "CRITICAL": 68,
-    "HIGH": 443,
+    "HIGH": 442,
     "MEDIUM": 458,
     "LOW": 53,
     "NONE": 8,
@@ -70,21 +70,21 @@
   },
   {
    "day": "2026-11-19",
-   "new": 69,
+   "new": 207,
    "new_by_severity": {
-    "CRITICAL": 7,
-    "HIGH": 15,
-    "MEDIUM": 46,
-    "LOW": 1,
-    "NONE": 0,
-    "unscored": 0
-   },
-   "modified": 187,
-   "modified_by_severity": {
-    "CRITICAL": 66,
+    "CRITICAL": 11,
     "HIGH": 56,
-    "MEDIUM": 54,
+    "MEDIUM": 124,
     "LOW": 11,
+    "NONE": 0,
+    "unscored": 5
+   },
+   "modified": 318,
+   "modified_by_severity": {
+    "CRITICAL": 72,
+    "HIGH": 98,
+    "MEDIUM": 100,
+    "LOW": 48,
     "NONE": 0,
     "unscored": 0
    },
@@ -117,28 +117,28 @@
    "counted_at": "2026-11-19T06:15:43Z"
   },
   "2026-11-19": {
-   "new": 69,
-   "modified": 187,
+   "new": 207,
+   "modified": 318,
    "by_severity": {
     "new": {
-     "CRITICAL": 7,
-     "HIGH": 15,
-     "MEDIUM": 46,
-     "LOW": 1,
+     "CRITICAL": 11,
+     "HIGH": 56,
+     "MEDIUM": 124,
+     "LOW": 11,
      "NONE": 0,
-     "unscored": 0
+     "unscored": 5
     },
     "modified": {
-     "CRITICAL": 66,
-     "HIGH": 56,
-     "MEDIUM": 54,
-     "LOW": 11,
+     "CRITICAL": 72,
+     "HIGH": 98,
+     "MEDIUM": 100,
+     "LOW": 48,
      "NONE": 0,
      "unscored": 0
     }
    },
    "complete": false,
-   "counted_at": "2026-11-19T06:15:43Z"
+   "counted_at": "2026-11-19T12:15:49Z"
   }
  },
  "new_by_cna": [
@@ -147,12 +147,16 @@
    "new": 228
   },
   {
+   "cna": "jetbrains.com",
+   "new": 127
+  },
+  {
    "cna": "github.com",
    "new": 85
   },
   {
    "cna": "wordfence.com",
-   "new": 74
+   "new": 67
   },
   {
    "cna": "vuldb.com",
@@ -171,28 +175,20 @@
    "new": 22
   },
   {
-   "cna": "wpscan.com",
-   "new": 22
-  },
-  {
-   "cna": "incibe.es",
-   "new": 21
-  },
-  {
-   "cna": "jetbrains.com",
-   "new": 21
-  },
-  {
-   "cna": "mitre.org",
-   "new": 17
-  },
-  {
    "cna": "mattermost.com",
    "new": 16
   },
   {
+   "cna": "mitre.org",
+   "new": 15
+  },
+  {
+   "cna": "incibe.es",
+   "new": 14
+  },
+  {
    "cna": "cert.pl",
-   "new": 12
+   "new": 11
   },
   {
    "cna": "cisco.com",
@@ -207,24 +203,16 @@
    "new": 9
   },
   {
-   "cna": "416baaa9-dc9f-4396-8d5f-8c081fb06d67",
+   "cna": "a6d3dc9e-0591-4a13-bce7-0f5b31ff6158",
    "new": 8
-  },
-  {
-   "cna": "eclipse.org",
-   "new": 7
   },
   {
    "cna": "fe490ce8-0395-4072-90d8-2707e1bdf984",
    "new": 7
   },
   {
-   "cna": "apache.org",
-   "new": 6
-  },
-  {
-   "cna": "a6d3dc9e-0591-4a13-bce7-0f5b31ff6158",
-   "new": 5
+   "cna": "patchstack.com",
+   "new": 7
   },
   {
    "cna": "hpe.com",
@@ -241,9 +229,25 @@
   {
    "cna": "us.ibm.com",
    "new": 5
+  },
+  {
+   "cna": "56096609-bc02-44d5-8c89-cc887c27f7bb",
+   "new": 3
+  },
+  {
+   "cna": "apache.org",
+   "new": 3
+  },
+  {
+   "cna": "eclipse.org",
+   "new": 3
   }
  ],
  "new_by_vendor": [
+  {
+   "vendor": "jetbrains",
+   "new": 127
+  },
   {
    "vendor": "nocodb",
    "new": 43
@@ -259,10 +263,6 @@
   {
    "vendor": "f5",
    "new": 22
-  },
-  {
-   "vendor": "jetbrains",
-   "new": 21
   },
   {
    "vendor": "gpac",
@@ -305,20 +305,12 @@
    "new": 10
   },
   {
-   "vendor": "misp",
-   "new": 9
-  },
-  {
    "vendor": "cast software",
    "new": 8
   },
   {
-   "vendor": "linux",
+   "vendor": "misp",
    "new": 8
-  },
-  {
-   "vendor": "eclipse foundation",
-   "new": 7
   },
   {
    "vendor": "fleetdm",
@@ -327,10 +319,6 @@
   {
    "vendor": "ubiquiti inc",
    "new": 7
-  },
-  {
-   "vendor": "apache software foundation",
-   "new": 6
   },
   {
    "vendor": "craftcms",
@@ -343,14 +331,6978 @@
   {
    "vendor": "sourcecodester",
    "new": 6
+  },
+  {
+   "vendor": "draytek",
+   "new": 5
+  },
+  {
+   "vendor": "hewlett packard enterprise (hpe)",
+   "new": 5
+  },
+  {
+   "vendor": "ibm",
+   "new": 5
   }
  ],
  "coverage": {
-  "cves_with_products": 1604,
-  "from_cpe": 294,
-  "from_cna": 1310
+  "cves_with_products": 1845,
+  "from_cpe": 311,
+  "from_cna": 1534
  },
  "cves": [
+  {
+   "id": "CVE-2026-114938",
+   "published": "2026-11-17T22:18:23.777",
+   "lastModified": "2026-11-19T11:47:02.927",
+   "vulnStatus": "Analyzed",
+   "cna": "oracle.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 8.1,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-122"
+   ],
+   "products": [
+    {
+     "vendor": "amazon",
+     "product": "corretto"
+    },
+    {
+     "vendor": "chainguard",
+     "product": "cg-skills"
+    },
+    {
+     "vendor": "oracle",
+     "product": "graalvm"
+    },
+    {
+     "vendor": "oracle",
+     "product": "graalvm_for_jdk"
+    },
+    {
+     "vendor": "oracle",
+     "product": "jdk"
+    },
+    {
+     "vendor": "oracle",
+     "product": "jre"
+    },
+    {
+     "vendor": "redhat",
+     "product": "amq_broker"
+    },
+    {
+     "vendor": "redhat",
+     "product": "build_of_apicurio_registry"
+    },
+    {
+     "vendor": "redhat",
+     "product": "build_of_cryostat"
+    },
+    {
+     "vendor": "redhat",
+     "product": "build_of_keycloak"
+    },
+    {
+     "vendor": "redhat",
+     "product": "build_of_openjdk"
+    },
+    {
+     "vendor": "redhat",
+     "product": "build_of_quarkus"
+    },
+    {
+     "vendor": "redhat",
+     "product": "data_grid"
+    },
+    {
+     "vendor": "redhat",
+     "product": "enterprise_linux"
+    },
+    {
+     "vendor": "redhat",
+     "product": "hardened_images"
+    },
+    {
+     "vendor": "redhat",
+     "product": "jboss_enterprise_application_platform"
+    },
+    {
+     "vendor": "redhat",
+     "product": "jboss_web_server"
+    },
+    {
+     "vendor": "redhat",
+     "product": "openshift_pipelines"
+    },
+    {
+     "vendor": "redhat",
+     "product": "streams_for_apache_kafka"
+    },
+    {
+     "vendor": "siemens",
+     "product": "industrial_edge_management_pro"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cpe",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114938"
+  },
+  {
+   "id": "CVE-2026-82950",
+   "published": "2026-11-19T11:17:08.710",
+   "lastModified": "2026-11-19T11:17:08.710",
+   "vulnStatus": "Received",
+   "cna": "a6d3dc9e-0591-4a13-bce7-0f5b31ff6158",
+   "cvss": {
+    "version": "4.0",
+    "score": 7.1,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-390"
+   ],
+   "products": [
+    {
+     "vendor": "Onyx Cookware ApS",
+     "product": "Nexsmart Guardian 2 (Alarm system)"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82950"
+  },
+  {
+   "id": "CVE-2026-82949",
+   "published": "2026-11-19T11:17:08.580",
+   "lastModified": "2026-11-19T11:17:08.580",
+   "vulnStatus": "Received",
+   "cna": "a6d3dc9e-0591-4a13-bce7-0f5b31ff6158",
+   "cvss": {
+    "version": "4.0",
+    "score": 7.1,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-319"
+   ],
+   "products": [
+    {
+     "vendor": "Onyx Cookware ApS",
+     "product": "Nexsmart Guardian 2 (Alarm system)"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82949"
+  },
+  {
+   "id": "CVE-2026-82948",
+   "published": "2026-11-19T11:17:08.437",
+   "lastModified": "2026-11-19T11:17:08.437",
+   "vulnStatus": "Received",
+   "cna": "a6d3dc9e-0591-4a13-bce7-0f5b31ff6158",
+   "cvss": {
+    "version": "4.0",
+    "score": 7.1,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-294"
+   ],
+   "products": [
+    {
+     "vendor": "Onyx Cookware ApS",
+     "product": "Nexsmart Guardian 2 (Alarm system)"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82948"
+  },
+  {
+   "id": "CVE-2026-133001",
+   "published": "2026-11-19T11:17:08.210",
+   "lastModified": "2026-11-19T11:17:08.210",
+   "vulnStatus": "Received",
+   "cna": "5a6e4751-2f3f-4070-9419-94fb35b644e8",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.3,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-668",
+    "CWE-862"
+   ],
+   "products": [
+    {
+     "vendor": "flowintel",
+     "product": "flowintel"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133001"
+  },
+  {
+   "id": "CVE-2026-132996",
+   "published": "2026-11-19T11:17:08.083",
+   "lastModified": "2026-11-19T11:17:08.083",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 2.7,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-639"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132996"
+  },
+  {
+   "id": "CVE-2026-132995",
+   "published": "2026-11-19T11:17:07.967",
+   "lastModified": "2026-11-19T11:17:07.967",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 3.5,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132995"
+  },
+  {
+   "id": "CVE-2026-132994",
+   "published": "2026-11-19T11:17:07.840",
+   "lastModified": "2026-11-19T11:17:07.840",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 2.7,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-359"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132994"
+  },
+  {
+   "id": "CVE-2026-132993",
+   "published": "2026-11-19T11:17:07.723",
+   "lastModified": "2026-11-19T11:17:07.723",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 3.7,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132993"
+  },
+  {
+   "id": "CVE-2026-132992",
+   "published": "2026-11-19T11:17:07.603",
+   "lastModified": "2026-11-19T11:17:07.603",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 3.1,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132992"
+  },
+  {
+   "id": "CVE-2026-132991",
+   "published": "2026-11-19T11:17:07.483",
+   "lastModified": "2026-11-19T11:17:07.483",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 3.1,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132991"
+  },
+  {
+   "id": "CVE-2026-132990",
+   "published": "2026-11-19T11:17:07.343",
+   "lastModified": "2026-11-19T11:17:07.343",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 3.1,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132990"
+  },
+  {
+   "id": "CVE-2026-132989",
+   "published": "2026-11-19T11:17:07.193",
+   "lastModified": "2026-11-19T11:17:07.193",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 3.5,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132989"
+  },
+  {
+   "id": "CVE-2026-132988",
+   "published": "2026-11-19T11:17:07.060",
+   "lastModified": "2026-11-19T11:17:07.060",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 2.7,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-862"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132988"
+  },
+  {
+   "id": "CVE-2026-132987",
+   "published": "2026-11-19T11:17:06.933",
+   "lastModified": "2026-11-19T11:17:06.933",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 4.8,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-295"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132987"
+  },
+  {
+   "id": "CVE-2026-132986",
+   "published": "2026-11-19T11:17:06.817",
+   "lastModified": "2026-11-19T11:17:06.817",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 5.3,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-532"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132986"
+  },
+  {
+   "id": "CVE-2026-132985",
+   "published": "2026-11-19T11:17:06.693",
+   "lastModified": "2026-11-19T11:17:06.693",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 4.9,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-639"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132985"
+  },
+  {
+   "id": "CVE-2026-132984",
+   "published": "2026-11-19T11:17:06.577",
+   "lastModified": "2026-11-19T11:17:06.577",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 5.4,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132984"
+  },
+  {
+   "id": "CVE-2026-132983",
+   "published": "2026-11-19T11:17:06.450",
+   "lastModified": "2026-11-19T11:17:06.450",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.8,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132983"
+  },
+  {
+   "id": "CVE-2026-132982",
+   "published": "2026-11-19T11:17:06.330",
+   "lastModified": "2026-11-19T11:17:06.330",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.8,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132982"
+  },
+  {
+   "id": "CVE-2026-132981",
+   "published": "2026-11-19T11:17:06.213",
+   "lastModified": "2026-11-19T11:17:06.213",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 4.8,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132981"
+  },
+  {
+   "id": "CVE-2026-132980",
+   "published": "2026-11-19T11:17:06.093",
+   "lastModified": "2026-11-19T11:17:06.093",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.8,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132980"
+  },
+  {
+   "id": "CVE-2026-132979",
+   "published": "2026-11-19T11:17:05.970",
+   "lastModified": "2026-11-19T11:17:05.970",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.8,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132979"
+  },
+  {
+   "id": "CVE-2026-132978",
+   "published": "2026-11-19T11:17:05.850",
+   "lastModified": "2026-11-19T11:17:05.850",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.8,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132978"
+  },
+  {
+   "id": "CVE-2026-132977",
+   "published": "2026-11-19T11:17:05.737",
+   "lastModified": "2026-11-19T11:17:05.737",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.8,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132977"
+  },
+  {
+   "id": "CVE-2026-132976",
+   "published": "2026-11-19T11:17:05.613",
+   "lastModified": "2026-11-19T11:17:05.613",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.8,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132976"
+  },
+  {
+   "id": "CVE-2026-132975",
+   "published": "2026-11-19T11:17:05.490",
+   "lastModified": "2026-11-19T11:17:05.490",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.8,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132975"
+  },
+  {
+   "id": "CVE-2026-132974",
+   "published": "2026-11-19T11:17:05.377",
+   "lastModified": "2026-11-19T11:17:05.377",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.8,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132974"
+  },
+  {
+   "id": "CVE-2026-132973",
+   "published": "2026-11-19T11:17:05.257",
+   "lastModified": "2026-11-19T11:17:05.257",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.8,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132973"
+  },
+  {
+   "id": "CVE-2026-132972",
+   "published": "2026-11-19T11:17:05.137",
+   "lastModified": "2026-11-19T11:17:05.137",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 4.8,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132972"
+  },
+  {
+   "id": "CVE-2026-132971",
+   "published": "2026-11-19T11:17:05.017",
+   "lastModified": "2026-11-19T11:17:05.017",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.8,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132971"
+  },
+  {
+   "id": "CVE-2026-132970",
+   "published": "2026-11-19T11:17:04.887",
+   "lastModified": "2026-11-19T11:17:04.887",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.8,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132970"
+  },
+  {
+   "id": "CVE-2026-132969",
+   "published": "2026-11-19T11:17:04.773",
+   "lastModified": "2026-11-19T11:17:04.773",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.8,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132969"
+  },
+  {
+   "id": "CVE-2026-132968",
+   "published": "2026-11-19T11:17:04.650",
+   "lastModified": "2026-11-19T11:17:04.650",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 5.4,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132968"
+  },
+  {
+   "id": "CVE-2026-132967",
+   "published": "2026-11-19T11:17:04.533",
+   "lastModified": "2026-11-19T11:17:04.533",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.8,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132967"
+  },
+  {
+   "id": "CVE-2026-132966",
+   "published": "2026-11-19T11:17:04.413",
+   "lastModified": "2026-11-19T11:17:04.413",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 5.4,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132966"
+  },
+  {
+   "id": "CVE-2026-132965",
+   "published": "2026-11-19T11:17:04.290",
+   "lastModified": "2026-11-19T11:17:04.290",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 4.8,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132965"
+  },
+  {
+   "id": "CVE-2026-132964",
+   "published": "2026-11-19T11:17:04.173",
+   "lastModified": "2026-11-19T11:17:04.173",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 5.4,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132964"
+  },
+  {
+   "id": "CVE-2026-132963",
+   "published": "2026-11-19T11:17:04.053",
+   "lastModified": "2026-11-19T11:17:04.053",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 5.4,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132963"
+  },
+  {
+   "id": "CVE-2026-132962",
+   "published": "2026-11-19T11:17:03.927",
+   "lastModified": "2026-11-19T11:17:03.927",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.1,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132962"
+  },
+  {
+   "id": "CVE-2026-132961",
+   "published": "2026-11-19T11:17:03.793",
+   "lastModified": "2026-11-19T11:17:03.793",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 4.4,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132961"
+  },
+  {
+   "id": "CVE-2026-132960",
+   "published": "2026-11-19T11:17:03.677",
+   "lastModified": "2026-11-19T11:17:03.677",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 5.4,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132960"
+  },
+  {
+   "id": "CVE-2026-132959",
+   "published": "2026-11-19T11:17:03.560",
+   "lastModified": "2026-11-19T11:17:03.560",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 5.9,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-117"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132959"
+  },
+  {
+   "id": "CVE-2026-132958",
+   "published": "2026-11-19T11:17:03.440",
+   "lastModified": "2026-11-19T11:17:03.440",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 5.4,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132958"
+  },
+  {
+   "id": "CVE-2026-132957",
+   "published": "2026-11-19T11:17:03.327",
+   "lastModified": "2026-11-19T11:17:03.327",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.8,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132957"
+  },
+  {
+   "id": "CVE-2026-132956",
+   "published": "2026-11-19T11:17:03.207",
+   "lastModified": "2026-11-19T11:17:03.207",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 5.4,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132956"
+  },
+  {
+   "id": "CVE-2026-132955",
+   "published": "2026-11-19T11:17:03.083",
+   "lastModified": "2026-11-19T11:17:03.083",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 4.8,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132955"
+  },
+  {
+   "id": "CVE-2026-132954",
+   "published": "2026-11-19T11:17:02.963",
+   "lastModified": "2026-11-19T11:17:02.963",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 5.4,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132954"
+  },
+  {
+   "id": "CVE-2026-132953",
+   "published": "2026-11-19T11:17:02.843",
+   "lastModified": "2026-11-19T11:17:02.843",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 4.8,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132953"
+  },
+  {
+   "id": "CVE-2026-132952",
+   "published": "2026-11-19T11:17:02.727",
+   "lastModified": "2026-11-19T11:17:02.727",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 5.9,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-266"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132952"
+  },
+  {
+   "id": "CVE-2026-132951",
+   "published": "2026-11-19T11:17:02.607",
+   "lastModified": "2026-11-19T11:17:02.607",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.1,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132951"
+  },
+  {
+   "id": "CVE-2026-132950",
+   "published": "2026-11-19T11:17:02.483",
+   "lastModified": "2026-11-19T11:17:02.483",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 4.7,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132950"
+  },
+  {
+   "id": "CVE-2026-132949",
+   "published": "2026-11-19T11:17:02.360",
+   "lastModified": "2026-11-19T11:17:02.360",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.1,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132949"
+  },
+  {
+   "id": "CVE-2026-132948",
+   "published": "2026-11-19T11:17:02.240",
+   "lastModified": "2026-11-19T11:17:02.240",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.1,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132948"
+  },
+  {
+   "id": "CVE-2026-132947",
+   "published": "2026-11-19T11:17:02.120",
+   "lastModified": "2026-11-19T11:17:02.120",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.1,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132947"
+  },
+  {
+   "id": "CVE-2026-132946",
+   "published": "2026-11-19T11:17:02.000",
+   "lastModified": "2026-11-19T11:17:02.000",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.1,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132946"
+  },
+  {
+   "id": "CVE-2026-132945",
+   "published": "2026-11-19T11:17:01.813",
+   "lastModified": "2026-11-19T11:17:01.813",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.1,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132945"
+  },
+  {
+   "id": "CVE-2026-132944",
+   "published": "2026-11-19T11:17:01.690",
+   "lastModified": "2026-11-19T11:17:01.690",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 5.4,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-639"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132944"
+  },
+  {
+   "id": "CVE-2026-132943",
+   "published": "2026-11-19T11:17:01.573",
+   "lastModified": "2026-11-19T11:17:01.573",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.1,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132943"
+  },
+  {
+   "id": "CVE-2026-132942",
+   "published": "2026-11-19T11:17:01.457",
+   "lastModified": "2026-11-19T11:17:01.457",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 5.3,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-208"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132942"
+  },
+  {
+   "id": "CVE-2026-132941",
+   "published": "2026-11-19T11:17:01.330",
+   "lastModified": "2026-11-19T11:17:01.330",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 4.3,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-862"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132941"
+  },
+  {
+   "id": "CVE-2026-132940",
+   "published": "2026-11-19T11:17:01.210",
+   "lastModified": "2026-11-19T11:17:01.210",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.4,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-201"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132940"
+  },
+  {
+   "id": "CVE-2026-132939",
+   "published": "2026-11-19T11:17:01.090",
+   "lastModified": "2026-11-19T11:17:01.090",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.8,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132939"
+  },
+  {
+   "id": "CVE-2026-132938",
+   "published": "2026-11-19T11:17:00.963",
+   "lastModified": "2026-11-19T11:17:00.963",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 5.9,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-863"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132938"
+  },
+  {
+   "id": "CVE-2026-132937",
+   "published": "2026-11-19T11:17:00.843",
+   "lastModified": "2026-11-19T11:17:00.843",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.5,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-184"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132937"
+  },
+  {
+   "id": "CVE-2026-132936",
+   "published": "2026-11-19T11:17:00.720",
+   "lastModified": "2026-11-19T11:17:00.720",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 5.4,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132936"
+  },
+  {
+   "id": "CVE-2026-132935",
+   "published": "2026-11-19T11:17:00.600",
+   "lastModified": "2026-11-19T11:17:00.600",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 4.3,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-862"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132935"
+  },
+  {
+   "id": "CVE-2026-132934",
+   "published": "2026-11-19T11:17:00.477",
+   "lastModified": "2026-11-19T11:17:00.477",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 5.9,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-290"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132934"
+  },
+  {
+   "id": "CVE-2026-132933",
+   "published": "2026-11-19T11:17:00.340",
+   "lastModified": "2026-11-19T11:17:00.340",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.6,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-367"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132933"
+  },
+  {
+   "id": "CVE-2026-132932",
+   "published": "2026-11-19T11:17:00.220",
+   "lastModified": "2026-11-19T11:17:00.220",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.1,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132932"
+  },
+  {
+   "id": "CVE-2026-132931",
+   "published": "2026-11-19T11:17:00.100",
+   "lastModified": "2026-11-19T11:17:00.100",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.1,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132931"
+  },
+  {
+   "id": "CVE-2026-132930",
+   "published": "2026-11-19T11:16:59.983",
+   "lastModified": "2026-11-19T11:16:59.983",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.1,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132930"
+  },
+  {
+   "id": "CVE-2026-132929",
+   "published": "2026-11-19T11:16:59.863",
+   "lastModified": "2026-11-19T11:16:59.863",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.1,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132929"
+  },
+  {
+   "id": "CVE-2026-132928",
+   "published": "2026-11-19T11:16:59.743",
+   "lastModified": "2026-11-19T11:16:59.743",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 5.4,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132928"
+  },
+  {
+   "id": "CVE-2026-132927",
+   "published": "2026-11-19T11:16:59.630",
+   "lastModified": "2026-11-19T11:16:59.630",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 4.9,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-532"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132927"
+  },
+  {
+   "id": "CVE-2026-132926",
+   "published": "2026-11-19T11:16:59.510",
+   "lastModified": "2026-11-19T11:16:59.510",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 4.2,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-348"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132926"
+  },
+  {
+   "id": "CVE-2026-132925",
+   "published": "2026-11-19T11:16:59.390",
+   "lastModified": "2026-11-19T11:16:59.390",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 5.4,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132925"
+  },
+  {
+   "id": "CVE-2026-132924",
+   "published": "2026-11-19T11:16:59.270",
+   "lastModified": "2026-11-19T11:16:59.270",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 5.4,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-863"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132924"
+  },
+  {
+   "id": "CVE-2026-132923",
+   "published": "2026-11-19T11:16:59.150",
+   "lastModified": "2026-11-19T11:16:59.150",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 4.8,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132923"
+  },
+  {
+   "id": "CVE-2026-132922",
+   "published": "2026-11-19T11:16:59.027",
+   "lastModified": "2026-11-19T11:16:59.027",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.1,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132922"
+  },
+  {
+   "id": "CVE-2026-132921",
+   "published": "2026-11-19T11:16:58.907",
+   "lastModified": "2026-11-19T11:16:58.907",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.8,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-306"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132921"
+  },
+  {
+   "id": "CVE-2026-132920",
+   "published": "2026-11-19T11:16:58.777",
+   "lastModified": "2026-11-19T11:16:58.777",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 4.3,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-918"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132920"
+  },
+  {
+   "id": "CVE-2026-132919",
+   "published": "2026-11-19T11:16:58.643",
+   "lastModified": "2026-11-19T11:16:58.643",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 4.3,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-862"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132919"
+  },
+  {
+   "id": "CVE-2026-132918",
+   "published": "2026-11-19T11:16:58.520",
+   "lastModified": "2026-11-19T11:16:58.520",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.6,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132918"
+  },
+  {
+   "id": "CVE-2026-132917",
+   "published": "2026-11-19T11:16:58.400",
+   "lastModified": "2026-11-19T11:16:58.400",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 8.8,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-59"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132917"
+  },
+  {
+   "id": "CVE-2026-132916",
+   "published": "2026-11-19T11:16:58.280",
+   "lastModified": "2026-11-19T11:16:58.280",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.1,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-184"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132916"
+  },
+  {
+   "id": "CVE-2026-132915",
+   "published": "2026-11-19T11:16:58.160",
+   "lastModified": "2026-11-19T11:16:58.160",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.1,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-90"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132915"
+  },
+  {
+   "id": "CVE-2026-132914",
+   "published": "2026-11-19T11:16:58.040",
+   "lastModified": "2026-11-19T11:16:58.040",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 8,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132914"
+  },
+  {
+   "id": "CVE-2026-132913",
+   "published": "2026-11-19T11:16:57.917",
+   "lastModified": "2026-11-19T11:16:57.917",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 8.4,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132913"
+  },
+  {
+   "id": "CVE-2026-132912",
+   "published": "2026-11-19T11:16:57.800",
+   "lastModified": "2026-11-19T11:16:57.800",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.2,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-184"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132912"
+  },
+  {
+   "id": "CVE-2026-132911",
+   "published": "2026-11-19T11:16:57.680",
+   "lastModified": "2026-11-19T11:16:57.680",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.5,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-863"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132911"
+  },
+  {
+   "id": "CVE-2026-132910",
+   "published": "2026-11-19T11:16:57.563",
+   "lastModified": "2026-11-19T11:16:57.563",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.5,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-502"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132910"
+  },
+  {
+   "id": "CVE-2026-132909",
+   "published": "2026-11-19T11:16:57.443",
+   "lastModified": "2026-11-19T11:16:57.443",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 8.8,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-88"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132909"
+  },
+  {
+   "id": "CVE-2026-132908",
+   "published": "2026-11-19T11:16:57.327",
+   "lastModified": "2026-11-19T11:16:57.327",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.5,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-93"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132908"
+  },
+  {
+   "id": "CVE-2026-132907",
+   "published": "2026-11-19T11:16:57.207",
+   "lastModified": "2026-11-19T11:16:57.207",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 8.1,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-639"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132907"
+  },
+  {
+   "id": "CVE-2026-132906",
+   "published": "2026-11-19T11:16:57.087",
+   "lastModified": "2026-11-19T11:16:57.087",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 8.8,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-183"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132906"
+  },
+  {
+   "id": "CVE-2026-132905",
+   "published": "2026-11-19T11:16:56.940",
+   "lastModified": "2026-11-19T11:16:56.940",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.6,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132905"
+  },
+  {
+   "id": "CVE-2026-132904",
+   "published": "2026-11-19T11:16:56.803",
+   "lastModified": "2026-11-19T11:16:56.803",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 8.1,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-862"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132904"
+  },
+  {
+   "id": "CVE-2026-132903",
+   "published": "2026-11-19T11:16:56.683",
+   "lastModified": "2026-11-19T11:16:56.683",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 8.1,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-862"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132903"
+  },
+  {
+   "id": "CVE-2026-132902",
+   "published": "2026-11-19T11:16:56.563",
+   "lastModified": "2026-11-19T11:16:56.563",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.7,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-201"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132902"
+  },
+  {
+   "id": "CVE-2026-132901",
+   "published": "2026-11-19T11:16:56.447",
+   "lastModified": "2026-11-19T11:16:56.447",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.7,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-639"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132901"
+  },
+  {
+   "id": "CVE-2026-132900",
+   "published": "2026-11-19T11:16:56.323",
+   "lastModified": "2026-11-19T11:16:56.323",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.5,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-201"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132900"
+  },
+  {
+   "id": "CVE-2026-132899",
+   "published": "2026-11-19T11:16:56.210",
+   "lastModified": "2026-11-19T11:16:56.210",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.6,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132899"
+  },
+  {
+   "id": "CVE-2026-132898",
+   "published": "2026-11-19T11:16:56.093",
+   "lastModified": "2026-11-19T11:16:56.093",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.2,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-23"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132898"
+  },
+  {
+   "id": "CVE-2026-132897",
+   "published": "2026-11-19T11:16:55.983",
+   "lastModified": "2026-11-19T11:16:55.983",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.7,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-863"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132897"
+  },
+  {
+   "id": "CVE-2026-132896",
+   "published": "2026-11-19T11:16:55.867",
+   "lastModified": "2026-11-19T11:16:55.867",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.2,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-829"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132896"
+  },
+  {
+   "id": "CVE-2026-132895",
+   "published": "2026-11-19T11:16:55.750",
+   "lastModified": "2026-11-19T11:16:55.750",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.5,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-15"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132895"
+  },
+  {
+   "id": "CVE-2026-132894",
+   "published": "2026-11-19T11:16:55.630",
+   "lastModified": "2026-11-19T11:16:55.630",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.7,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-918"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132894"
+  },
+  {
+   "id": "CVE-2026-132893",
+   "published": "2026-11-19T11:16:55.517",
+   "lastModified": "2026-11-19T11:16:55.517",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.7,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-918"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132893"
+  },
+  {
+   "id": "CVE-2026-132892",
+   "published": "2026-11-19T11:16:55.397",
+   "lastModified": "2026-11-19T11:16:55.397",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 8.1,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-266"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132892"
+  },
+  {
+   "id": "CVE-2026-132891",
+   "published": "2026-11-19T11:16:55.263",
+   "lastModified": "2026-11-19T11:16:55.263",
+   "vulnStatus": "Received",
+   "cna": "jetbrains.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-696"
+   ],
+   "products": [
+    {
+     "vendor": "JetBrains",
+     "product": "TeamCity"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132891"
+  },
+  {
+   "id": "CVE-2026-129517",
+   "published": "2026-11-19T11:16:55.120",
+   "lastModified": "2026-11-19T11:16:55.120",
+   "vulnStatus": "Received",
+   "cna": "jpcert.or.jp",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.1,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "Win Bird Corporation",
+     "product": "Win Bird JYUGYO SHIEN for Chrome"
+    },
+    {
+     "vendor": "Win Bird Corporation",
+     "product": "Win Bird JYUGYO SHIEN for Edge"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129517"
+  },
+  {
+   "id": "CVE-2026-126675",
+   "published": "2026-11-18T17:17:35.173",
+   "lastModified": "2026-11-19T11:16:54.023",
+   "vulnStatus": "Received",
+   "cna": "fbbbf0fe-eb50-45e3-9c51-e027da15efb7",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.3,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-276"
+   ],
+   "products": [
+    {
+     "vendor": "Nitro",
+     "product": "Nitro PDF Pro"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126675"
+  },
+  {
+   "id": "CVE-2026-120404",
+   "published": "2026-11-19T11:16:53.887",
+   "lastModified": "2026-11-19T11:16:53.887",
+   "vulnStatus": "Received",
+   "cna": "apache.org",
+   "cvss": null,
+   "cwes": [
+    "CWE-1333"
+   ],
+   "products": [
+    {
+     "vendor": "Apache Software Foundation",
+     "product": "Apache OpenNLP"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120404"
+  },
+  {
+   "id": "CVE-2026-112216",
+   "published": "2026-11-19T11:16:52.253",
+   "lastModified": "2026-11-19T11:16:52.253",
+   "vulnStatus": "Received",
+   "cna": "incibe.es",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.3,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-598"
+   ],
+   "products": [
+    {
+     "vendor": "Universitat Oberta de Catalunya (UOC)",
+     "product": "UOC Virtual Campus"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112216"
+  },
+  {
+   "id": "CVE-2026-92613",
+   "published": "2026-11-19T10:17:29.493",
+   "lastModified": "2026-11-19T10:17:29.493",
+   "vulnStatus": "Received",
+   "cna": "eclipse.org",
+   "cvss": {
+    "version": "4.0",
+    "score": 1,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-125",
+    "CWE-843"
+   ],
+   "products": [
+    {
+     "vendor": "Eclipse Foundation",
+     "product": "Eclipse iceoryx™"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92613"
+  },
+  {
+   "id": "CVE-2026-85776",
+   "published": "2026-11-19T10:17:29.313",
+   "lastModified": "2026-11-19T10:17:29.450",
+   "vulnStatus": "Deferred",
+   "cna": "wordfence.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.5,
+    "severity": "HIGH",
+    "scored_by": "nvd"
+   },
+   "cwes": [
+    "CWE-862"
+   ],
+   "products": [
+    {
+     "vendor": "revmakx",
+     "product": "WP Duplicate – WordPress Migration Plugin"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85776"
+  },
+  {
+   "id": "CVE-2026-21618",
+   "published": "2026-01-19T15:15:50.693",
+   "lastModified": "2026-11-19T10:17:29.097",
+   "vulnStatus": "Modified",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.1,
+    "severity": "MEDIUM",
+    "scored_by": "nvd"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "hex",
+     "product": "hexpm"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cpe",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-21618"
+  },
+  {
+   "id": "CVE-2026-14492",
+   "published": "2026-11-19T10:17:28.927",
+   "lastModified": "2026-11-19T10:17:29.050",
+   "vulnStatus": "Deferred",
+   "cna": "wordfence.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "scored_by": "nvd"
+   },
+   "cwes": [
+    "CWE-434"
+   ],
+   "products": [
+    {
+     "vendor": "revmakx",
+     "product": "WP Duplicate – WordPress Migration Plugin"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-14492"
+  },
+  {
+   "id": "CVE-2026-14491",
+   "published": "2026-11-19T10:17:28.757",
+   "lastModified": "2026-11-19T10:17:28.893",
+   "vulnStatus": "Deferred",
+   "cna": "wordfence.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.5,
+    "severity": "HIGH",
+    "scored_by": "nvd"
+   },
+   "cwes": [
+    "CWE-22"
+   ],
+   "products": [
+    {
+     "vendor": "revmakx",
+     "product": "WP Duplicate – WordPress Migration Plugin"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-14491"
+  },
+  {
+   "id": "CVE-2026-132138",
+   "published": "2026-11-18T14:17:44.330",
+   "lastModified": "2026-11-19T10:17:28.607",
+   "vulnStatus": "Awaiting Analysis",
+   "cna": "redhat.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 5.3,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-476"
+   ],
+   "products": [
+    {
+     "vendor": "Red Hat",
+     "product": "Red Hat Enterprise Linux 10"
+    },
+    {
+     "vendor": "Red Hat",
+     "product": "Red Hat Enterprise Linux 6"
+    },
+    {
+     "vendor": "Red Hat",
+     "product": "Red Hat Enterprise Linux 7"
+    },
+    {
+     "vendor": "Red Hat",
+     "product": "Red Hat Enterprise Linux 8"
+    },
+    {
+     "vendor": "Red Hat",
+     "product": "Red Hat Enterprise Linux 9"
+    },
+    {
+     "vendor": "Red Hat",
+     "product": "Red Hat Hardened Images"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132138"
+  },
+  {
+   "id": "CVE-2026-126631",
+   "published": "2026-11-19T10:17:28.410",
+   "lastModified": "2026-11-19T10:17:28.567",
+   "vulnStatus": "Awaiting Analysis",
+   "cna": "redhat.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.1,
+    "severity": "HIGH",
+    "scored_by": "nvd"
+   },
+   "cwes": [
+    "CWE-59"
+   ],
+   "products": [
+    {
+     "vendor": "Red Hat",
+     "product": "Red Hat Enterprise Linux 10"
+    },
+    {
+     "vendor": "Red Hat",
+     "product": "Red Hat Enterprise Linux 6"
+    },
+    {
+     "vendor": "Red Hat",
+     "product": "Red Hat Enterprise Linux 7"
+    },
+    {
+     "vendor": "Red Hat",
+     "product": "Red Hat Enterprise Linux 8"
+    },
+    {
+     "vendor": "Red Hat",
+     "product": "Red Hat Enterprise Linux 9"
+    },
+    {
+     "vendor": "Red Hat",
+     "product": "Red Hat Hardened Images"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126631"
+  },
+  {
+   "id": "CVE-2026-110728",
+   "published": "2026-11-19T10:17:26.953",
+   "lastModified": "2026-11-19T10:17:28.020",
+   "vulnStatus": "Deferred",
+   "cna": "wordfence.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 5.3,
+    "severity": "MEDIUM",
+    "scored_by": "nvd"
+   },
+   "cwes": [
+    "CWE-285"
+   ],
+   "products": [
+    {
+     "vendor": "aiktp",
+     "product": "AIKTP"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110728"
+  },
+  {
+   "id": "CVE-2026-99320",
+   "published": "2026-11-19T09:18:18.910",
+   "lastModified": "2026-11-19T09:18:18.910",
+   "vulnStatus": "Received",
+   "cna": "416baaa9-dc9f-4396-8d5f-8c081fb06d67",
+   "cvss": null,
+   "cwes": [],
+   "products": [
+    {
+     "vendor": "Linux",
+     "product": "Linux"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99320"
+  },
+  {
+   "id": "CVE-2026-96596",
+   "published": "2026-10-14T17:20:28.983",
+   "lastModified": "2026-11-19T09:18:17.517",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.9,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-835"
+   ],
+   "products": [
+    {
+     "vendor": "erlang",
+     "product": "rebar3"
+    },
+    {
+     "vendor": "Erlang",
+     "product": "OTP"
+    },
+    {
+     "vendor": "hexpm",
+     "product": "hex"
+    },
+    {
+     "vendor": "hexpm",
+     "product": "hex_core"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96596"
+  },
+  {
+   "id": "CVE-2026-93471",
+   "published": "2026-10-22T09:17:16.827",
+   "lastModified": "2026-11-19T09:18:16.067",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.7,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-409"
+   ],
+   "products": [
+    {
+     "vendor": "arekinath",
+     "product": "esaml"
+    },
+    {
+     "vendor": "dropbox",
+     "product": "esaml"
+    },
+    {
+     "vendor": "handnot2",
+     "product": "esaml"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93471"
+  },
+  {
+   "id": "CVE-2026-88952",
+   "published": "2026-09-17T15:16:56.290",
+   "lastModified": "2026-11-19T09:18:14.863",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 9.1,
+    "severity": "CRITICAL",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-287"
+   ],
+   "products": [
+    {
+     "vendor": "team-alembic",
+     "product": "ash_authentication"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88952"
+  },
+  {
+   "id": "CVE-2026-86698",
+   "published": "2026-09-22T16:18:05.993",
+   "lastModified": "2026-11-19T09:18:14.083",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.3,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [],
+   "products": [
+    {
+     "vendor": "hexpm",
+     "product": "hexpm"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86698"
+  },
+  {
+   "id": "CVE-2026-86533",
+   "published": "2026-09-17T14:17:46.467",
+   "lastModified": "2026-11-19T09:18:13.483",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 9.1,
+    "severity": "CRITICAL",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-613"
+   ],
+   "products": [
+    {
+     "vendor": "team-alembic",
+     "product": "ash_authentication"
+    },
+    {
+     "vendor": "team-alembic",
+     "product": "ash_authentication_phoenix"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86533"
+  },
+  {
+   "id": "CVE-2026-82758",
+   "published": "2026-09-07T23:16:53.123",
+   "lastModified": "2026-11-19T09:18:12.653",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 6.3,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-287"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_authentication_oauth2_server"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82758"
+  },
+  {
+   "id": "CVE-2026-82757",
+   "published": "2026-09-07T23:16:52.957",
+   "lastModified": "2026-11-19T09:18:12.470",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 6.3,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-918"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_authentication_oauth2_server"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82757"
+  },
+  {
+   "id": "CVE-2026-82756",
+   "published": "2026-09-07T23:16:52.770",
+   "lastModified": "2026-11-19T09:18:12.280",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 6.3,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-116"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_authentication_oauth2_server"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82756"
+  },
+  {
+   "id": "CVE-2026-82755",
+   "published": "2026-09-07T23:16:52.580",
+   "lastModified": "2026-11-19T09:18:12.093",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 6.3,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-524"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_authentication_oauth2_server"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82755"
+  },
+  {
+   "id": "CVE-2026-82754",
+   "published": "2026-09-07T23:16:52.403",
+   "lastModified": "2026-11-19T09:18:11.907",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 6.3,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-424"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_authentication_oauth2_server"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82754"
+  },
+  {
+   "id": "CVE-2026-82753",
+   "published": "2026-09-07T23:16:52.227",
+   "lastModified": "2026-11-19T09:18:11.720",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.2,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-770"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_authentication_oauth2_server"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82753"
+  },
+  {
+   "id": "CVE-2026-82752",
+   "published": "2026-09-05T18:17:29.170",
+   "lastModified": "2026-11-19T09:18:11.510",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.9,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-1284"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82752"
+  },
+  {
+   "id": "CVE-2026-82751",
+   "published": "2026-09-06T17:17:56.070",
+   "lastModified": "2026-11-19T09:18:11.310",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.3,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-1284"
+   ],
+   "products": [
+    {
+     "vendor": "ZenHive",
+     "product": "mpp"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82751"
+  },
+  {
+   "id": "CVE-2026-82750",
+   "published": "2026-09-06T17:17:55.867",
+   "lastModified": "2026-11-19T09:18:11.097",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.3,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-1284"
+   ],
+   "products": [
+    {
+     "vendor": "ZenHive",
+     "product": "mpp"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82750"
+  },
+  {
+   "id": "CVE-2026-82749",
+   "published": "2026-09-01T04:18:05.340",
+   "lastModified": "2026-11-19T09:18:10.920",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.9,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-863"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82749"
+  },
+  {
+   "id": "CVE-2026-82748",
+   "published": "2026-09-01T04:18:05.143",
+   "lastModified": "2026-11-19T09:18:10.750",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.1,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-863"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82748"
+  },
+  {
+   "id": "CVE-2026-82747",
+   "published": "2026-09-01T05:17:10.430",
+   "lastModified": "2026-11-19T09:18:10.583",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.9,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-863"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82747"
+  },
+  {
+   "id": "CVE-2026-82746",
+   "published": "2026-09-01T04:18:04.977",
+   "lastModified": "2026-11-19T09:18:10.407",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.9,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-862"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82746"
+  },
+  {
+   "id": "CVE-2026-82745",
+   "published": "2026-09-01T04:18:04.803",
+   "lastModified": "2026-11-19T09:18:10.227",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.9,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-284"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82745"
+  },
+  {
+   "id": "CVE-2026-82744",
+   "published": "2026-09-01T04:18:04.600",
+   "lastModified": "2026-11-19T09:18:10.057",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.1,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-636"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82744"
+  },
+  {
+   "id": "CVE-2026-82743",
+   "published": "2026-09-01T04:18:04.363",
+   "lastModified": "2026-11-19T09:18:09.890",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.1,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-400"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82743"
+  },
+  {
+   "id": "CVE-2026-82742",
+   "published": "2026-09-01T04:18:04.147",
+   "lastModified": "2026-11-19T09:18:09.723",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.9,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-400"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82742"
+  },
+  {
+   "id": "CVE-2026-82741",
+   "published": "2026-09-01T04:18:03.943",
+   "lastModified": "2026-11-19T09:18:09.547",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.1,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-1287"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82741"
+  },
+  {
+   "id": "CVE-2026-82740",
+   "published": "2026-09-01T04:18:03.763",
+   "lastModified": "2026-11-19T09:18:09.367",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.1,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-20"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82740"
+  },
+  {
+   "id": "CVE-2026-82739",
+   "published": "2026-09-01T04:18:03.580",
+   "lastModified": "2026-11-19T09:18:09.193",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.1,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-209"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82739"
+  },
+  {
+   "id": "CVE-2026-82738",
+   "published": "2026-09-01T04:18:03.387",
+   "lastModified": "2026-11-19T09:18:09.023",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.9,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-20"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82738"
+  },
+  {
+   "id": "CVE-2026-82737",
+   "published": "2026-09-01T04:18:03.193",
+   "lastModified": "2026-11-19T09:18:08.857",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.9,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-190"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82737"
+  },
+  {
+   "id": "CVE-2026-82736",
+   "published": "2026-09-01T04:18:03.007",
+   "lastModified": "2026-11-19T09:18:08.687",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.1,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-180"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82736"
+  },
+  {
+   "id": "CVE-2026-82735",
+   "published": "2026-09-01T04:18:02.817",
+   "lastModified": "2026-11-19T09:18:08.513",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.9,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-400"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82735"
+  },
+  {
+   "id": "CVE-2026-82734",
+   "published": "2026-09-01T04:18:02.600",
+   "lastModified": "2026-11-19T09:18:08.340",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.1,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-1284"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82734"
+  },
+  {
+   "id": "CVE-2026-82733",
+   "published": "2026-09-01T03:16:53.373",
+   "lastModified": "2026-11-19T09:18:08.207",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 6.3,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-209"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_typescript"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82733"
+  },
+  {
+   "id": "CVE-2026-82732",
+   "published": "2026-09-01T03:16:53.193",
+   "lastModified": "2026-11-19T09:18:08.013",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 6.3,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-20"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_typescript"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82732"
+  },
+  {
+   "id": "CVE-2026-82731",
+   "published": "2026-09-01T03:16:52.993",
+   "lastModified": "2026-11-19T09:18:07.820",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.3,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-601"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_typescript"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82731"
+  },
+  {
+   "id": "CVE-2026-82730",
+   "published": "2026-09-01T03:16:52.787",
+   "lastModified": "2026-11-19T09:18:07.630",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.2,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-863"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_typescript"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82730"
+  },
+  {
+   "id": "CVE-2026-82729",
+   "published": "2026-09-04T15:17:36.120",
+   "lastModified": "2026-11-19T09:18:07.453",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 6.3,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-407"
+   ],
+   "products": [
+    {
+     "vendor": "elixir-mint",
+     "product": "mint"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82729"
+  },
+  {
+   "id": "CVE-2026-82728",
+   "published": "2026-09-04T15:17:35.943",
+   "lastModified": "2026-11-19T09:18:07.267",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.2,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-770"
+   ],
+   "products": [
+    {
+     "vendor": "elixir-mint",
+     "product": "mint"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82728"
+  },
+  {
+   "id": "CVE-2026-82727",
+   "published": "2026-08-31T04:17:29.560",
+   "lastModified": "2026-11-19T09:18:07.130",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.3,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-209"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_phoenix"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82727"
+  },
+  {
+   "id": "CVE-2026-82726",
+   "published": "2026-08-31T04:17:29.357",
+   "lastModified": "2026-11-19T09:18:06.940",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 6.3,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-178",
+    "CWE-625"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_phoenix"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82726"
+  },
+  {
+   "id": "CVE-2026-82725",
+   "published": "2026-08-31T04:17:29.167",
+   "lastModified": "2026-11-19T09:18:06.753",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.3,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-639"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_phoenix"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82725"
+  },
+  {
+   "id": "CVE-2026-82724",
+   "published": "2026-08-31T04:17:28.980",
+   "lastModified": "2026-11-19T09:18:06.573",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 7.6,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-863"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_phoenix"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82724"
+  },
+  {
+   "id": "CVE-2026-82722",
+   "published": "2026-08-31T03:16:43.817",
+   "lastModified": "2026-11-19T09:18:06.330",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.3,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-770"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_admin"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82722"
+  },
+  {
+   "id": "CVE-2026-82710",
+   "published": "2026-09-08T01:17:55.777",
+   "lastModified": "2026-11-19T09:18:06.137",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.3,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-150"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "usage_rules"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82710"
+  },
+  {
+   "id": "CVE-2026-82681",
+   "published": "2026-08-31T03:16:43.643",
+   "lastModified": "2026-11-19T09:18:05.887",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 2,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-116"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_admin"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82681"
+  },
+  {
+   "id": "CVE-2026-82673",
+   "published": "2026-08-31T03:16:43.473",
+   "lastModified": "2026-11-19T09:18:05.710",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.3,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-22"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_admin"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82673"
+  },
+  {
+   "id": "CVE-2026-82586",
+   "published": "2026-09-07T23:16:52.093",
+   "lastModified": "2026-11-19T09:18:05.353",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.2,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-424"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_lua"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82586"
+  },
+  {
+   "id": "CVE-2026-82584",
+   "published": "2026-09-07T23:16:51.933",
+   "lastModified": "2026-11-19T09:18:05.177",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.3,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-150"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "igniter"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82584"
+  },
+  {
+   "id": "CVE-2026-82580",
+   "published": "2026-08-31T02:17:02.440",
+   "lastModified": "2026-11-19T09:18:05.000",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.3,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-209"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_ai"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82580"
+  },
+  {
+   "id": "CVE-2026-82579",
+   "published": "2026-08-31T02:17:02.270",
+   "lastModified": "2026-11-19T09:18:04.823",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 6,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-835"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_ai"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82579"
+  },
+  {
+   "id": "CVE-2026-82564",
+   "published": "2026-08-31T02:17:02.103",
+   "lastModified": "2026-11-19T09:18:04.640",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 7.1,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-639"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_ai"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82564"
+  },
+  {
+   "id": "CVE-2026-82367",
+   "published": "2026-08-30T19:17:29.877",
+   "lastModified": "2026-11-19T09:18:04.447",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.3,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-488"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_graphql"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82367"
+  },
+  {
+   "id": "CVE-2026-81853",
+   "published": "2026-08-31T03:16:42.670",
+   "lastModified": "2026-11-19T09:18:04.110",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.3,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-639"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_admin"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81853"
+  },
+  {
+   "id": "CVE-2026-81852",
+   "published": "2026-08-31T03:16:42.500",
+   "lastModified": "2026-11-19T09:18:03.907",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.1,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-330"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_admin"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81852"
+  },
+  {
+   "id": "CVE-2026-81643",
+   "published": "2026-08-30T19:17:29.707",
+   "lastModified": "2026-11-19T09:18:03.687",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.3,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-863"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_graphql"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81643"
+  },
+  {
+   "id": "CVE-2026-81638",
+   "published": "2026-09-07T23:16:51.757",
+   "lastModified": "2026-11-19T09:18:03.487",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.1,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-173"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_double_entry"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81638"
+  },
+  {
+   "id": "CVE-2026-81636",
+   "published": "2026-08-30T19:17:29.543",
+   "lastModified": "2026-11-19T09:18:03.190",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.7,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-770"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_graphql"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81636"
+  },
+  {
+   "id": "CVE-2026-81633",
+   "published": "2026-08-30T19:17:29.390",
+   "lastModified": "2026-11-19T09:18:03.013",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 6.9,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-20"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_graphql"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81633"
+  },
+  {
+   "id": "CVE-2026-81632",
+   "published": "2026-09-17T14:17:31.953",
+   "lastModified": "2026-11-19T09:18:02.837",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 7.2,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-598"
+   ],
+   "products": [
+    {
+     "vendor": "team-alembic",
+     "product": "ash_authentication"
+    },
+    {
+     "vendor": "team-alembic",
+     "product": "ash_authentication_phoenix"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81632"
+  },
+  {
+   "id": "CVE-2026-81322",
+   "published": "2026-08-30T18:17:00.010",
+   "lastModified": "2026-11-19T09:18:02.647",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.1,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-200"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_cloak"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81322"
+  },
+  {
+   "id": "CVE-2026-81319",
+   "published": "2026-08-30T18:16:59.157",
+   "lastModified": "2026-11-19T09:18:02.457",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.9,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-502"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_cloak"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81319"
+  },
+  {
+   "id": "CVE-2026-81318",
+   "published": "2026-08-30T12:17:19.030",
+   "lastModified": "2026-11-19T09:18:02.273",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.1,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-863"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_sql"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81318"
+  },
+  {
+   "id": "CVE-2026-81316",
+   "published": "2026-08-30T12:17:18.870",
+   "lastModified": "2026-11-19T09:18:02.093",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.1,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-863"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_sql"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81316"
+  },
+  {
+   "id": "CVE-2026-81315",
+   "published": "2026-08-31T01:16:49.977",
+   "lastModified": "2026-11-19T09:18:01.910",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 7.4,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-346"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_ai"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81315"
+  },
+  {
+   "id": "CVE-2026-80227",
+   "published": "2026-08-30T12:17:18.710",
+   "lastModified": "2026-11-19T09:18:01.723",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.1,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-697"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_sql"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80227"
+  },
+  {
+   "id": "CVE-2026-80223",
+   "published": "2026-08-30T19:17:29.220",
+   "lastModified": "2026-11-19T09:18:01.530",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 7.1,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-863"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_graphql"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80223"
+  },
+  {
+   "id": "CVE-2026-78699",
+   "published": "2026-08-30T16:16:42.623",
+   "lastModified": "2026-11-19T09:18:01.270",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 7.2,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-252"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_postgres"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78699"
+  },
+  {
+   "id": "CVE-2026-78693",
+   "published": "2026-08-30T19:17:28.620",
+   "lastModified": "2026-11-19T09:18:01.090",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 6.9,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-209"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_graphql"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78693"
+  },
+  {
+   "id": "CVE-2026-78691",
+   "published": "2026-08-30T12:17:18.550",
+   "lastModified": "2026-11-19T09:18:00.893",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.1,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-943"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_sql"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78691"
+  },
+  {
+   "id": "CVE-2026-78228",
+   "published": "2026-08-30T12:17:18.380",
+   "lastModified": "2026-11-19T09:18:00.580",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.9,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-674"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_oban"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78228"
+  },
+  {
+   "id": "CVE-2026-78038",
+   "published": "2026-08-30T12:17:18.157",
+   "lastModified": "2026-11-19T09:18:00.133",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.9,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-915"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_oban"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78038"
+  },
+  {
+   "id": "CVE-2026-77970",
+   "published": "2026-08-30T01:20:29.773",
+   "lastModified": "2026-11-19T09:17:59.843",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.9,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-312"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_paper_trail"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77970"
+  },
+  {
+   "id": "CVE-2026-77956",
+   "published": "2026-08-31T01:16:49.563",
+   "lastModified": "2026-11-19T09:17:59.673",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.9,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-94"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_ai"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77956"
+  },
+  {
+   "id": "CVE-2026-77950",
+   "published": "2026-09-01T03:16:51.660",
+   "lastModified": "2026-11-19T09:17:59.480",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 6.3,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-209"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_typescript"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77950"
+  },
+  {
+   "id": "CVE-2026-77856",
+   "published": "2026-09-01T03:16:51.500",
+   "lastModified": "2026-11-19T09:17:59.187",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.2,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-770"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_typescript"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77856"
+  },
+  {
+   "id": "CVE-2026-77850",
+   "published": "2026-08-31T03:16:42.307",
+   "lastModified": "2026-11-19T09:17:59.007",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.4,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_admin"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77850"
+  },
+  {
+   "id": "CVE-2026-77846",
+   "published": "2026-08-30T03:16:32.530",
+   "lastModified": "2026-11-19T09:17:58.817",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.1,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-943"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_sqlite"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77846"
+  },
+  {
+   "id": "CVE-2026-77831",
+   "published": "2026-08-30T01:20:29.597",
+   "lastModified": "2026-11-19T09:17:58.633",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.1,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-407"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_paper_trail"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77831"
+  },
+  {
+   "id": "CVE-2026-77454",
+   "published": "2026-08-30T12:17:17.273",
+   "lastModified": "2026-11-19T09:17:58.437",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.9,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-863"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_sql"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77454"
+  },
+  {
+   "id": "CVE-2026-75847",
+   "published": "2026-08-30T01:20:24.617",
+   "lastModified": "2026-11-19T09:17:58.073",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.9,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-312"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_paper_trail"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-75847"
+  },
+  {
+   "id": "CVE-2026-75760",
+   "published": "2026-08-31T02:17:01.313",
+   "lastModified": "2026-11-19T09:17:57.727",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 7.1,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-209"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_ai"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-75760"
+  },
+  {
+   "id": "CVE-2026-75759",
+   "published": "2026-08-30T02:18:30.110",
+   "lastModified": "2026-11-19T09:17:57.250",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 7.6,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-347"
+   ],
+   "products": [
+    {
+     "vendor": "erlef",
+     "product": "oidcc"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-75759"
+  },
+  {
+   "id": "CVE-2026-75758",
+   "published": "2026-08-28T16:18:25.277",
+   "lastModified": "2026-11-19T09:17:57.007",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.9,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-674"
+   ],
+   "products": [
+    {
+     "vendor": "elixir-lang",
+     "product": "elixir"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-75758"
+  },
+  {
+   "id": "CVE-2026-75757",
+   "published": "2026-08-31T03:16:42.133",
+   "lastModified": "2026-11-19T09:17:56.817",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.3,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-565"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_admin"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-75757"
+  },
+  {
+   "id": "CVE-2026-75554",
+   "published": "2026-08-24T21:17:47.557",
+   "lastModified": "2026-11-19T09:17:56.630",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.3,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-613"
+   ],
+   "products": [
+    {
+     "vendor": "hexpm",
+     "product": "hexpm"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-75554"
+  },
+  {
+   "id": "CVE-2026-75542",
+   "published": "2026-08-24T21:17:47.373",
+   "lastModified": "2026-11-19T09:17:56.443",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.3,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-863"
+   ],
+   "products": [
+    {
+     "vendor": "hexpm",
+     "product": "hexpm"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-75542"
+  },
+  {
+   "id": "CVE-2026-75484",
+   "published": "2026-08-20T21:17:09.597",
+   "lastModified": "2026-11-19T09:17:56.120",
+   "vulnStatus": "Awaiting Analysis",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 6.9,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-93"
+   ],
+   "products": [
+    {
+     "vendor": "mtrudel",
+     "product": "bandit"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-75484"
+  },
+  {
+   "id": "CVE-2026-74837",
+   "published": "2026-09-01T03:16:51.187",
+   "lastModified": "2026-11-19T09:17:55.800",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.7,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-770"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash_typescript"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-74837"
+  },
+  {
+   "id": "CVE-2026-74836",
+   "published": "2026-08-20T21:17:09.407",
+   "lastModified": "2026-11-19T09:17:55.570",
+   "vulnStatus": "Awaiting Analysis",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.7,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-770"
+   ],
+   "products": [
+    {
+     "vendor": "mtrudel",
+     "product": "bandit"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-74836"
+  },
+  {
+   "id": "CVE-2026-73829",
+   "published": "2026-08-19T18:17:25.800",
+   "lastModified": "2026-11-19T09:17:55.370",
+   "vulnStatus": "Modified",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "3.1",
+    "score": 3.7,
+    "severity": "LOW",
+    "scored_by": "nvd"
+   },
+   "cwes": [
+    "CWE-367"
+   ],
+   "products": [
+    {
+     "vendor": "zenhive",
+     "product": "machine_payments_protocol"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cpe",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73829"
+  },
+  {
+   "id": "CVE-2026-73541",
+   "published": "2026-08-19T18:17:25.627",
+   "lastModified": "2026-11-19T09:17:55.057",
+   "vulnStatus": "Modified",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "3.1",
+    "score": 8.2,
+    "severity": "HIGH",
+    "scored_by": "nvd"
+   },
+   "cwes": [
+    "CWE-770"
+   ],
+   "products": [
+    {
+     "vendor": "zenhive",
+     "product": "machine_payments_protocol"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cpe",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73541"
+  },
+  {
+   "id": "CVE-2026-73136",
+   "published": "2026-08-19T18:17:25.453",
+   "lastModified": "2026-11-19T09:17:54.587",
+   "vulnStatus": "Modified",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.5,
+    "severity": "HIGH",
+    "scored_by": "nvd"
+   },
+   "cwes": [
+    "CWE-294"
+   ],
+   "products": [
+    {
+     "vendor": "zenhive",
+     "product": "machine_payments_protocol"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cpe",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73136"
+  },
+  {
+   "id": "CVE-2026-70395",
+   "published": "2026-08-09T19:17:02.547",
+   "lastModified": "2026-11-19T09:17:53.800",
+   "vulnStatus": "Awaiting Analysis",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.1,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-943"
+   ],
+   "products": [
+    {
+     "vendor": "ash-project",
+     "product": "ash"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-70395"
+  },
+  {
+   "id": "CVE-2026-69659",
+   "published": "2026-08-09T18:16:43.627",
+   "lastModified": "2026-11-19T09:17:53.580",
+   "vulnStatus": "Modified",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "3.1",
+    "score": 5.5,
+    "severity": "MEDIUM",
+    "scored_by": "nvd"
+   },
+   "cwes": [
+    "CWE-502"
+   ],
+   "products": [
+    {
+     "vendor": "ash-hq",
+     "product": "ash_framework"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cpe",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69659"
+  },
+  {
+   "id": "CVE-2026-68750",
+   "published": "2026-08-06T16:16:51.907",
+   "lastModified": "2026-11-19T09:17:53.373",
+   "vulnStatus": "Modified",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.5,
+    "severity": "HIGH",
+    "scored_by": "nvd"
+   },
+   "cwes": [
+    "CWE-407"
+   ],
+   "products": [
+    {
+     "vendor": "rrrene",
+     "product": "htmlsanitizeex"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cpe",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68750"
+  },
+  {
+   "id": "CVE-2026-68749",
+   "published": "2026-08-06T16:16:51.720",
+   "lastModified": "2026-11-19T09:17:53.150",
+   "vulnStatus": "Modified",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.5,
+    "severity": "HIGH",
+    "scored_by": "nvd"
+   },
+   "cwes": [
+    "CWE-1333"
+   ],
+   "products": [
+    {
+     "vendor": "rrrene",
+     "product": "htmlsanitizeex"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cpe",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68749"
+  },
+  {
+   "id": "CVE-2026-68747",
+   "published": "2026-08-06T16:16:51.533",
+   "lastModified": "2026-11-19T09:17:52.930",
+   "vulnStatus": "Modified",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.1,
+    "severity": "MEDIUM",
+    "scored_by": "nvd"
+   },
+   "cwes": [
+    "CWE-74"
+   ],
+   "products": [
+    {
+     "vendor": "rrrene",
+     "product": "htmlsanitizeex"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cpe",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68747"
+  },
+  {
+   "id": "CVE-2026-67585",
+   "published": "2026-08-07T17:17:06.927",
+   "lastModified": "2026-11-19T09:17:52.530",
+   "vulnStatus": "Awaiting Analysis",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.7,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-770"
+   ],
+   "products": [
+    {
+     "vendor": "DivvyPayHQ",
+     "product": "absinthe_federation"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-67585"
+  },
+  {
+   "id": "CVE-2026-67581",
+   "published": "2026-08-19T18:17:17.303",
+   "lastModified": "2026-11-19T09:17:52.320",
+   "vulnStatus": "Modified",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.5,
+    "severity": "HIGH",
+    "scored_by": "nvd"
+   },
+   "cwes": [
+    "CWE-294"
+   ],
+   "products": [
+    {
+     "vendor": "zenhive",
+     "product": "machine_payments_protocol"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cpe",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-67581"
+  },
+  {
+   "id": "CVE-2026-67579",
+   "published": "2026-08-12T20:17:48.440",
+   "lastModified": "2026-11-19T09:17:52.090",
+   "vulnStatus": "Modified",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.4,
+    "severity": "HIGH",
+    "scored_by": "nvd"
+   },
+   "cwes": [
+    "CWE-502",
+    "CWE-89"
+   ],
+   "products": [
+    {
+     "vendor": "ash-hq",
+     "product": "ash_framework"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cpe",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-67579"
+  },
+  {
+   "id": "CVE-2026-66884",
+   "published": "2026-08-04T12:16:36.373",
+   "lastModified": "2026-11-19T09:17:51.700",
+   "vulnStatus": "Awaiting Analysis",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.1,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-352"
+   ],
+   "products": [
+    {
+     "vendor": "Erlang Ecosystem Foundation",
+     "product": "oidcc_plug"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-66884"
+  },
+  {
+   "id": "CVE-2026-66883",
+   "published": "2026-08-04T12:16:36.163",
+   "lastModified": "2026-11-19T09:17:51.453",
+   "vulnStatus": "Awaiting Analysis",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 6.3,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-178"
+   ],
+   "products": [
+    {
+     "vendor": "Erlang Ecosystem Foundation",
+     "product": "oidcc_plug"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-66883"
+  },
+  {
+   "id": "CVE-2026-66882",
+   "published": "2026-08-25T08:18:10.143",
+   "lastModified": "2026-11-19T09:17:51.187",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.1,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "team-alembic",
+     "product": "ash_authentication"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-66882"
+  },
+  {
+   "id": "CVE-2026-66843",
+   "published": "2026-08-06T16:16:49.627",
+   "lastModified": "2026-11-19T09:17:50.740",
+   "vulnStatus": "Modified",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.1,
+    "severity": "MEDIUM",
+    "scored_by": "nvd"
+   },
+   "cwes": [
+    "CWE-829"
+   ],
+   "products": [
+    {
+     "vendor": "rrrene",
+     "product": "htmlsanitizeex"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cpe",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-66843"
+  },
+  {
+   "id": "CVE-2026-66838",
+   "published": "2026-08-07T13:16:52.960",
+   "lastModified": "2026-11-19T09:17:50.517",
+   "vulnStatus": "Modified",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "3.1",
+    "score": 8.2,
+    "severity": "HIGH",
+    "scored_by": "nvd"
+   },
+   "cwes": [
+    "CWE-89"
+   ],
+   "products": [
+    {
+     "vendor": "elixir-ecto",
+     "product": "postgrex"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cpe",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-66838"
+  },
+  {
+   "id": "CVE-2026-66829",
+   "published": "2026-08-06T16:16:49.450",
+   "lastModified": "2026-11-19T09:17:50.157",
+   "vulnStatus": "Modified",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.1,
+    "severity": "MEDIUM",
+    "scored_by": "nvd"
+   },
+   "cwes": [
+    "CWE-601"
+   ],
+   "products": [
+    {
+     "vendor": "rrrene",
+     "product": "htmlsanitizeex"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cpe",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-66829"
+  },
+  {
+   "id": "CVE-2026-66370",
+   "published": "2026-08-06T16:16:48.420",
+   "lastModified": "2026-11-19T09:17:49.917",
+   "vulnStatus": "Modified",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.1,
+    "severity": "MEDIUM",
+    "scored_by": "nvd"
+   },
+   "cwes": [
+    "CWE-601"
+   ],
+   "products": [
+    {
+     "vendor": "rrrene",
+     "product": "htmlsanitizeex"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cpe",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-66370"
+  },
+  {
+   "id": "CVE-2026-66353",
+   "published": "2026-08-27T20:18:27.967",
+   "lastModified": "2026-11-19T09:17:49.700",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.3,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "woylie",
+     "product": "doggo"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-66353"
+  },
+  {
+   "id": "CVE-2026-66296",
+   "published": "2026-08-03T20:17:25.720",
+   "lastModified": "2026-11-19T09:17:49.310",
+   "vulnStatus": "Modified",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.1,
+    "severity": "MEDIUM",
+    "scored_by": "nvd"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "lud",
+     "product": "oaskit"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cpe",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-66296"
+  },
+  {
+   "id": "CVE-2026-65633",
+   "published": "2026-08-25T08:18:09.857",
+   "lastModified": "2026-11-19T09:17:48.780",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 7.6,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-287"
+   ],
+   "products": [
+    {
+     "vendor": "team-alembic",
+     "product": "ash_authentication"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65633"
+  },
+  {
+   "id": "CVE-2026-64941",
+   "published": "2026-08-10T12:17:19.873",
+   "lastModified": "2026-11-19T09:17:48.523",
+   "vulnStatus": "Awaiting Analysis",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.1,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-601"
+   ],
+   "products": [
+    {
+     "vendor": "phoenixframework",
+     "product": "phoenix_live_view"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64941"
+  },
+  {
+   "id": "CVE-2026-59250",
+   "published": "2026-07-27T16:18:03.330",
+   "lastModified": "2026-11-19T09:17:48.137",
+   "vulnStatus": "Awaiting Analysis",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.3,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-120",
+    "CWE-787"
+   ],
+   "products": [
+    {
+     "vendor": "Erlang",
+     "product": "OTP"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59250"
+  },
+  {
+   "id": "CVE-2026-55953",
+   "published": "2026-07-27T16:17:49.500",
+   "lastModified": "2026-11-19T09:17:47.547",
+   "vulnStatus": "Modified",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.4,
+    "severity": "HIGH",
+    "scored_by": "nvd"
+   },
+   "cwes": [
+    "CWE-757"
+   ],
+   "products": [
+    {
+     "vendor": "erlang",
+     "product": "erlang/otp"
+    },
+    {
+     "vendor": "erlang",
+     "product": "erlang/ssl"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cpe",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-55953"
+  },
+  {
+   "id": "CVE-2026-54891",
+   "published": "2026-07-02T17:17:02.747",
+   "lastModified": "2026-11-19T09:17:47.183",
+   "vulnStatus": "Modified",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "3.1",
+    "score": 3.7,
+    "severity": "LOW",
+    "scored_by": "nvd"
+   },
+   "cwes": [
+    "CWE-924"
+   ],
+   "products": [
+    {
+     "vendor": "erlang",
+     "product": "erlang/otp"
+    },
+    {
+     "vendor": "erlang",
+     "product": "erlang/ssl"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cpe",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-54891"
+  },
+  {
+   "id": "CVE-2026-53425",
+   "published": "2026-08-20T18:16:27.850",
+   "lastModified": "2026-11-19T09:17:46.987",
+   "vulnStatus": "Awaiting Analysis",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 7.6,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-345"
+   ],
+   "products": [
+    {
+     "vendor": "dropbox",
+     "product": "samly"
+    },
+    {
+     "vendor": "handnot2",
+     "product": "samly"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53425"
+  },
+  {
+   "id": "CVE-2026-53424",
+   "published": "2026-08-20T18:16:27.680",
+   "lastModified": "2026-11-19T09:17:46.777",
+   "vulnStatus": "Awaiting Analysis",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 9.1,
+    "severity": "CRITICAL",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-294"
+   ],
+   "products": [
+    {
+     "vendor": "dropbox",
+     "product": "samly"
+    },
+    {
+     "vendor": "handnot2",
+     "product": "samly"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53424"
+  },
+  {
+   "id": "CVE-2026-48590",
+   "published": "2026-08-21T10:16:38.767",
+   "lastModified": "2026-11-19T09:17:45.330",
+   "vulnStatus": "Awaiting Analysis",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.1,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-91"
+   ],
+   "products": [
+    {
+     "vendor": "joshnuss",
+     "product": "xml_builder"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48590"
+  },
+  {
+   "id": "CVE-2026-47080",
+   "published": "2026-08-21T10:16:38.497",
+   "lastModified": "2026-11-19T09:17:45.127",
+   "vulnStatus": "Awaiting Analysis",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.1,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-91"
+   ],
+   "products": [
+    {
+     "vendor": "joshnuss",
+     "product": "xml_builder"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-47080"
+  },
+  {
+   "id": "CVE-2026-47079",
+   "published": "2026-08-21T10:16:38.167",
+   "lastModified": "2026-11-19T09:17:44.847",
+   "vulnStatus": "Awaiting Analysis",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 2.1,
+    "severity": "LOW",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-838"
+   ],
+   "products": [
+    {
+     "vendor": "joshnuss",
+     "product": "xml_builder"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-47079"
+  },
+  {
+   "id": "CVE-2026-28808",
+   "published": "2026-04-07T13:16:46.320",
+   "lastModified": "2026-11-19T09:17:43.793",
+   "vulnStatus": "Modified",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "3.1",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "scored_by": "nvd"
+   },
+   "cwes": [
+    "CWE-551",
+    "CWE-863"
+   ],
+   "products": [
+    {
+     "vendor": "erlang",
+     "product": "erlang/inets"
+    },
+    {
+     "vendor": "erlang",
+     "product": "erlang/otp"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cpe",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-28808"
+  },
+  {
+   "id": "CVE-2026-132043",
+   "published": "2026-11-19T09:17:43.620",
+   "lastModified": "2026-11-19T09:17:43.620",
+   "vulnStatus": "Received",
+   "cna": "eclipse.org",
+   "cvss": {
+    "version": "4.0",
+    "score": 6.3,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-362"
+   ],
+   "products": [
+    {
+     "vendor": "Eclipse Foundation",
+     "product": "Eclipse Yasson"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132043"
+  },
+  {
+   "id": "CVE-2026-105963",
+   "published": "2026-10-23T10:16:40.880",
+   "lastModified": "2026-11-19T09:17:40.097",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.1,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-532"
+   ],
+   "products": [
+    {
+     "vendor": "elixir-plug",
+     "product": "plug"
+    },
+    {
+     "vendor": "elixir-plug",
+     "product": "plug_crypto"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105963"
+  },
+  {
+   "id": "CVE-2026-101167",
+   "published": "2026-11-19T09:17:37.090",
+   "lastModified": "2026-11-19T09:17:37.090",
+   "vulnStatus": "Received",
+   "cna": "usom.gov.tr",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.5,
+    "severity": "MEDIUM",
+    "scored_by": "nvd"
+   },
+   "cwes": [
+    "CWE-862"
+   ],
+   "products": [
+    {
+     "vendor": "Dataprom Bilişim Teknolojileri LTD. ŞTİ.",
+     "product": "DataPer Access Control and Security Systems"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101167"
+  },
+  {
+   "id": "CVE-2026-97209",
+   "published": "2026-10-30T09:17:15.640",
+   "lastModified": "2026-11-19T08:17:13.850",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 5.4,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-379"
+   ],
+   "products": [
+    {
+     "vendor": "elixir-lang",
+     "product": "elixir"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97209"
+  },
+  {
+   "id": "CVE-2026-129048",
+   "published": "2026-11-19T08:17:11.650",
+   "lastModified": "2026-11-19T08:17:11.763",
+   "vulnStatus": "Deferred",
+   "cna": "patchstack.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 9.9,
+    "severity": "CRITICAL",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-94"
+   ],
+   "products": [
+    {
+     "vendor": "Jacob N. Breetvelt",
+     "product": "WP Photo Album Plus"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129048"
+  },
+  {
+   "id": "CVE-2026-129030",
+   "published": "2026-11-19T08:17:11.507",
+   "lastModified": "2026-11-19T08:17:11.620",
+   "vulnStatus": "Deferred",
+   "cna": "patchstack.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.5,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-497"
+   ],
+   "products": [
+    {
+     "vendor": "Mamunur Rashid",
+     "product": "ShopBuilder – Elementor WooCommerce Builder Addons"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129030"
+  },
+  {
+   "id": "CVE-2026-129014",
+   "published": "2026-11-19T08:17:11.367",
+   "lastModified": "2026-11-19T08:17:11.473",
+   "vulnStatus": "Deferred",
+   "cna": "patchstack.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.5,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-862"
+   ],
+   "products": [
+    {
+     "vendor": "DynamiApps",
+     "product": "Frontend Admin by DynamiApps"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129014"
+  },
+  {
+   "id": "CVE-2026-129013",
+   "published": "2026-11-19T08:17:11.223",
+   "lastModified": "2026-11-19T08:17:11.337",
+   "vulnStatus": "Deferred",
+   "cna": "patchstack.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.5,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-862"
+   ],
+   "products": [
+    {
+     "vendor": "Deepen Bajracharya",
+     "product": "Video Conferencing with Zoom"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129013"
+  },
+  {
+   "id": "CVE-2026-129001",
+   "published": "2026-11-19T08:17:11.080",
+   "lastModified": "2026-11-19T08:17:11.193",
+   "vulnStatus": "Deferred",
+   "cna": "patchstack.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.1,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "Gabe Livan",
+     "product": "Asset CleanUp: Page Speed Booster"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129001"
+  },
+  {
+   "id": "CVE-2026-128999",
+   "published": "2026-11-19T08:17:10.913",
+   "lastModified": "2026-11-19T08:17:11.043",
+   "vulnStatus": "Deferred",
+   "cna": "patchstack.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.1,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "Saphali",
+     "product": "Saphali Woocommerce Lite"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128999"
+  },
+  {
+   "id": "CVE-2026-121808",
+   "published": "2026-11-13T16:17:36.760",
+   "lastModified": "2026-11-19T08:17:10.600",
+   "vulnStatus": "Received",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.2,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-409"
+   ],
+   "products": [
+    {
+     "vendor": "elixir-grpc",
+     "product": "grpc"
+    },
+    {
+     "vendor": "elixir-grpc",
+     "product": "grpc_core"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121808"
+  },
+  {
+   "id": "CVE-2026-112163",
+   "published": "2026-11-19T08:17:07.317",
+   "lastModified": "2026-11-19T08:17:07.317",
+   "vulnStatus": "Received",
+   "cna": "usom.gov.tr",
+   "cvss": {
+    "version": "3.1",
+    "score": 4.7,
+    "severity": "MEDIUM",
+    "scored_by": "nvd"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "Kayaport Ödeme Kuruluşu A.Ş.",
+     "product": "BulutTahsilat – Virtual POS Infrastructure"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112163"
+  },
+  {
+   "id": "CVE-2026-90891",
+   "published": "2026-09-14T11:17:07.643",
+   "lastModified": "2026-11-19T07:17:13.570",
+   "vulnStatus": "Deferred",
+   "cna": "cert.org.tw",
+   "cvss": {
+    "version": "3.1",
+    "score": 5.5,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-1256"
+   ],
+   "products": [
+    {
+     "vendor": "ASRock",
+     "product": "ASRock Polychrome SYNC/RGB for MB"
+    },
+    {
+     "vendor": "ASRock",
+     "product": "ASRock Polychrome SYNC/RGB for VGA"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90891"
+  },
+  {
+   "id": "CVE-2026-90890",
+   "published": "2026-09-14T11:17:07.493",
+   "lastModified": "2026-11-19T07:17:13.393",
+   "vulnStatus": "Deferred",
+   "cna": "cert.org.tw",
+   "cvss": {
+    "version": "3.1",
+    "score": 5.5,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-822"
+   ],
+   "products": [
+    {
+     "vendor": "ASRock",
+     "product": "ASRock Polychrome SYNC/RGB for MB"
+    },
+    {
+     "vendor": "ASRock",
+     "product": "ASRock Polychrome SYNC/RGB for VGA"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90890"
+  },
+  {
+   "id": "CVE-2026-19609",
+   "published": "2026-11-19T07:17:12.243",
+   "lastModified": "2026-11-19T07:17:12.243",
+   "vulnStatus": "Received",
+   "cna": "ncsc.ch",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.6,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-79"
+   ],
+   "products": [
+    {
+     "vendor": "Unblu inc.",
+     "product": "Unblu Spark"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19609"
+  },
+  {
+   "id": "CVE-2026-18948",
+   "published": "2026-08-10T21:17:21.290",
+   "lastModified": "2026-11-19T07:17:11.973",
+   "vulnStatus": "Awaiting Analysis",
+   "cna": "redhat.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 9.9,
+    "severity": "CRITICAL",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-502"
+   ],
+   "products": [
+    {
+     "vendor": "Red Hat",
+     "product": "Red Hat OpenShift AI (RHOAI)"
+    },
+    {
+     "vendor": "Red Hat",
+     "product": "Red Hat OpenShift AI 2.25"
+    },
+    {
+     "vendor": "Red Hat",
+     "product": "Red Hat OpenShift AI 3.3"
+    },
+    {
+     "vendor": "Red Hat",
+     "product": "Red Hat OpenShift AI 3.4"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18948"
+  },
+  {
+   "id": "CVE-2026-132825",
+   "published": "2026-11-19T07:17:11.740",
+   "lastModified": "2026-11-19T07:17:11.740",
+   "vulnStatus": "Received",
+   "cna": "mitre.org",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.4,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-122"
+   ],
+   "products": [
+    {
+     "vendor": "ruby-lang",
+     "product": "Ruby"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132825"
+  },
+  {
+   "id": "CVE-2026-124278",
+   "published": "2026-11-13T16:17:39.297",
+   "lastModified": "2026-11-19T07:17:11.073",
+   "vulnStatus": "Received",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 7.6,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-436",
+    "CWE-639"
+   ],
+   "products": [
+    {
+     "vendor": "elixir-grpc",
+     "product": "grpc"
+    },
+    {
+     "vendor": "elixir-grpc",
+     "product": "grpc_server"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124278"
+  },
+  {
+   "id": "CVE-2026-121809",
+   "published": "2026-11-13T17:17:19.310",
+   "lastModified": "2026-11-19T07:17:10.590",
+   "vulnStatus": "Received",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.2,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-400",
+    "CWE-835"
+   ],
+   "products": [
+    {
+     "vendor": "elixir-grpc",
+     "product": "grpc"
+    },
+    {
+     "vendor": "elixir-grpc",
+     "product": "grpc_server"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121809"
+  },
+  {
+   "id": "CVE-2026-117656",
+   "published": "2026-10-31T00:16:51.340",
+   "lastModified": "2026-11-19T07:17:09.507",
+   "vulnStatus": "Deferred",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 9.3,
+    "severity": "CRITICAL",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-290",
+    "CWE-349"
+   ],
+   "products": [
+    {
+     "vendor": "pow-auth",
+     "product": "assent"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-117656"
+  },
+  {
+   "id": "CVE-2026-110462",
+   "published": "2026-11-19T07:17:09.183",
+   "lastModified": "2026-11-19T07:17:09.183",
+   "vulnStatus": "Received",
+   "cna": "db4dfee8-a97e-4877-bfae-eba6d14a2166",
+   "cvss": {
+    "version": "4.0",
+    "score": 8.6,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-269",
+    "CWE-312"
+   ],
+   "products": [
+    {
+     "vendor": "Comelit Group S.p.A.",
+     "product": "1456B Multi-User Gateway"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110462"
+  },
+  {
+   "id": "CVE-2026-110461",
+   "published": "2026-11-19T07:17:08.770",
+   "lastModified": "2026-11-19T07:17:08.770",
+   "vulnStatus": "Received",
+   "cna": "db4dfee8-a97e-4877-bfae-eba6d14a2166",
+   "cvss": {
+    "version": "4.0",
+    "score": 9.3,
+    "severity": "CRITICAL",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-1392"
+   ],
+   "products": [
+    {
+     "vendor": "Comelit Group S.p.A.",
+     "product": "1456B Multi-User Gateway"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110461"
+  },
+  {
+   "id": "CVE-2026-129446",
+   "published": "2026-11-19T06:16:53.870",
+   "lastModified": "2026-11-19T06:16:53.870",
+   "vulnStatus": "Received",
+   "cna": "wpscan.com",
+   "cvss": null,
+   "cwes": [],
+   "products": [],
+   "products_more": 0,
+   "products_from": null,
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129446"
+  },
+  {
+   "id": "CVE-2026-123633",
+   "published": "2026-11-18T16:18:04.207",
+   "lastModified": "2026-11-19T06:16:53.710",
+   "vulnStatus": "Received",
+   "cna": "f5.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 8.1,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-416"
+   ],
+   "products": [
+    {
+     "vendor": "F5",
+     "product": "NGINX Open Source"
+    },
+    {
+     "vendor": "F5",
+     "product": "NGINX Plus"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123633"
+  },
+  {
+   "id": "CVE-2026-123007",
+   "published": "2026-11-18T16:18:04.047",
+   "lastModified": "2026-11-19T06:16:53.520",
+   "vulnStatus": "Received",
+   "cna": "f5.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 8.1,
+    "severity": "HIGH",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-191",
+    "CWE-787"
+   ],
+   "products": [
+    {
+     "vendor": "F5",
+     "product": "NGINX Open Source"
+    },
+    {
+     "vendor": "F5",
+     "product": "NGINX Plus"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123007"
+  },
+  {
+   "id": "CVE-2026-121852",
+   "published": "2026-11-19T06:16:53.413",
+   "lastModified": "2026-11-19T06:16:53.413",
+   "vulnStatus": "Received",
+   "cna": "wpscan.com",
+   "cvss": null,
+   "cwes": [],
+   "products": [],
+   "products_more": 0,
+   "products_from": null,
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-121852"
+  },
+  {
+   "id": "CVE-2026-117678",
+   "published": "2026-11-19T06:16:53.153",
+   "lastModified": "2026-11-19T06:16:53.153",
+   "vulnStatus": "Received",
+   "cna": "6b3ad84c-e1a6-4bf7-a703-f496b71e49db",
+   "cvss": {
+    "version": "4.0",
+    "score": 6.9,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-407"
+   ],
+   "products": [
+    {
+     "vendor": "benoitc",
+     "product": "idna"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-117678"
+  },
+  {
+   "id": "CVE-2026-109555",
+   "published": "2026-11-19T06:16:52.890",
+   "lastModified": "2026-11-19T06:16:53.100",
+   "vulnStatus": "Deferred",
+   "cna": "wordfence.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 8,
+    "severity": "HIGH",
+    "scored_by": "nvd"
+   },
+   "cwes": [
+    "CWE-502"
+   ],
+   "products": [
+    {
+     "vendor": "renehermi",
+     "product": "WP STAGING – Backups & Restore, Migration & Clone Plugin – Cloud Backups, Schedu"
+    },
+    {
+     "vendor": "WPStaging",
+     "product": "WP STAGING Pro WordPress Backup Plugin"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109555"
+  },
+  {
+   "id": "CVE-2026-108687",
+   "published": "2026-11-19T06:16:51.880",
+   "lastModified": "2026-11-19T06:16:51.880",
+   "vulnStatus": "Received",
+   "cna": "wpscan.com",
+   "cvss": null,
+   "cwes": [],
+   "products": [],
+   "products_more": 0,
+   "products_from": null,
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108687"
+  },
   {
    "id": "CVE-2026-95789",
    "published": "2026-11-18T14:17:45.807",
@@ -2134,65 +9086,6 @@
    "products_more": 0,
    "products_from": "cna",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123634"
-  },
-  {
-   "id": "CVE-2026-123633",
-   "published": "2026-11-18T16:18:04.207",
-   "lastModified": "2026-11-19T05:18:30.663",
-   "vulnStatus": "Received",
-   "cna": "f5.com",
-   "cvss": {
-    "version": "3.1",
-    "score": 8.1,
-    "severity": "HIGH",
-    "scored_by": "cna"
-   },
-   "cwes": [
-    "CWE-416"
-   ],
-   "products": [
-    {
-     "vendor": "F5",
-     "product": "NGINX Open Source"
-    },
-    {
-     "vendor": "F5",
-     "product": "NGINX Plus"
-    }
-   ],
-   "products_more": 0,
-   "products_from": "cna",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123633"
-  },
-  {
-   "id": "CVE-2026-123007",
-   "published": "2026-11-18T16:18:04.047",
-   "lastModified": "2026-11-19T05:18:30.467",
-   "vulnStatus": "Received",
-   "cna": "f5.com",
-   "cvss": {
-    "version": "3.1",
-    "score": 8.1,
-    "severity": "HIGH",
-    "scored_by": "cna"
-   },
-   "cwes": [
-    "CWE-191",
-    "CWE-787"
-   ],
-   "products": [
-    {
-     "vendor": "F5",
-     "product": "NGINX Open Source"
-    },
-    {
-     "vendor": "F5",
-     "product": "NGINX Plus"
-    }
-   ],
-   "products_more": 0,
-   "products_from": "cna",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123007"
   },
   {
    "id": "CVE-2026-121810",
@@ -12241,31 +19134,6 @@
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132139"
   },
   {
-   "id": "CVE-2026-132138",
-   "published": "2026-11-18T14:17:44.330",
-   "lastModified": "2026-11-18T21:17:55.780",
-   "vulnStatus": "Awaiting Analysis",
-   "cna": "redhat.com",
-   "cvss": {
-    "version": "3.1",
-    "score": 5.3,
-    "severity": "MEDIUM",
-    "scored_by": "cna"
-   },
-   "cwes": [
-    "CWE-476"
-   ],
-   "products": [
-    {
-     "vendor": "Red Hat",
-     "product": "Red Hat Hardened Images"
-    }
-   ],
-   "products_more": 0,
-   "products_from": "cna",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132138"
-  },
-  {
    "id": "CVE-2026-132137",
    "published": "2026-11-18T21:17:55.563",
    "lastModified": "2026-11-18T21:17:55.720",
@@ -13356,59 +20224,6 @@
    "products_more": 0,
    "products_from": null,
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-122119"
-  },
-  {
-   "id": "CVE-2026-114938",
-   "published": "2026-11-17T22:18:23.777",
-   "lastModified": "2026-11-18T21:17:47.250",
-   "vulnStatus": "Undergoing Analysis",
-   "cna": "oracle.com",
-   "cvss": {
-    "version": "3.1",
-    "score": 8.1,
-    "severity": "HIGH",
-    "scored_by": "cna"
-   },
-   "cwes": [
-    "CWE-122"
-   ],
-   "products": [
-    {
-     "vendor": "Oracle Corporation",
-     "product": "Oracle GraalVM Enterprise Edition"
-    },
-    {
-     "vendor": "Oracle Corporation",
-     "product": "Oracle GraalVM for JDK"
-    },
-    {
-     "vendor": "Oracle Corporation",
-     "product": "Oracle Java SE"
-    },
-    {
-     "vendor": "Siemens",
-     "product": "Industrial Edge Device Kit"
-    },
-    {
-     "vendor": "Siemens",
-     "product": "Industrial Edge Management Cloud"
-    },
-    {
-     "vendor": "Siemens",
-     "product": "Industrial Edge Management Pro V1"
-    },
-    {
-     "vendor": "Siemens",
-     "product": "Industrial Edge Management Pro V2"
-    },
-    {
-     "vendor": "Siemens",
-     "product": "Industrial Edge Management Virtual"
-    }
-   ],
-   "products_more": 0,
-   "products_from": "cna",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114938"
   },
   {
    "id": "CVE-2026-111518",
@@ -19778,31 +26593,6 @@
    "products_more": 0,
    "products_from": null,
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-127003"
-  },
-  {
-   "id": "CVE-2026-126675",
-   "published": "2026-11-18T17:17:35.173",
-   "lastModified": "2026-11-18T19:17:38.600",
-   "vulnStatus": "Received",
-   "cna": "fbbbf0fe-eb50-45e3-9c51-e027da15efb7",
-   "cvss": {
-    "version": "3.1",
-    "score": 7.3,
-    "severity": "HIGH",
-    "scored_by": "cna"
-   },
-   "cwes": [
-    "CWE-276"
-   ],
-   "products": [
-    {
-     "vendor": "Nitro",
-     "product": "Nitro PDF Pro"
-    }
-   ],
-   "products_more": 0,
-   "products_from": "cna",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126675"
   },
   {
    "id": "CVE-2026-126574",
@@ -45434,537 +52224,6 @@
    "products_more": 0,
    "products_from": "cna",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107494"
-  },
-  {
-   "id": "CVE-2026-130491",
-   "published": "2026-11-18T10:16:54.860",
-   "lastModified": "2026-11-18T11:17:38.563",
-   "vulnStatus": "Received",
-   "cna": "eclipse.org",
-   "cvss": null,
-   "cwes": [
-    "CWE-200",
-    "CWE-908"
-   ],
-   "products": [
-    {
-     "vendor": "Eclipse Foundation",
-     "product": "Eclipse Mosquitto"
-    }
-   ],
-   "products_more": 0,
-   "products_from": "cna",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130491"
-  },
-  {
-   "id": "CVE-2026-129705",
-   "published": "2026-11-18T10:16:54.737",
-   "lastModified": "2026-11-18T11:17:38.460",
-   "vulnStatus": "Received",
-   "cna": "eclipse.org",
-   "cvss": null,
-   "cwes": [
-    "CWE-290"
-   ],
-   "products": [
-    {
-     "vendor": "Eclipse Foundation",
-     "product": "Eclipse Mosquitto"
-    }
-   ],
-   "products_more": 0,
-   "products_from": "cna",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129705"
-  },
-  {
-   "id": "CVE-2026-129509",
-   "published": "2026-11-18T10:16:54.600",
-   "lastModified": "2026-11-18T11:17:38.360",
-   "vulnStatus": "Received",
-   "cna": "apache.org",
-   "cvss": null,
-   "cwes": [
-    "CWE-295"
-   ],
-   "products": [
-    {
-     "vendor": "Apache Software Foundation",
-     "product": "Apache Airflow Microsoft Azure provider"
-    }
-   ],
-   "products_more": 0,
-   "products_from": "cna",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129509"
-  },
-  {
-   "id": "CVE-2026-129149",
-   "published": "2026-11-18T11:17:38.247",
-   "lastModified": "2026-11-18T11:17:38.247",
-   "vulnStatus": "Received",
-   "cna": "eclipse.org",
-   "cvss": null,
-   "cwes": [
-    "CWE-476"
-   ],
-   "products": [
-    {
-     "vendor": "Eclipse Foundation",
-     "product": "Eclipse Mosquitto"
-    }
-   ],
-   "products_more": 0,
-   "products_from": "cna",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129149"
-  },
-  {
-   "id": "CVE-2026-126706",
-   "published": "2026-11-18T11:17:38.123",
-   "lastModified": "2026-11-18T11:17:38.123",
-   "vulnStatus": "Received",
-   "cna": "eclipse.org",
-   "cvss": null,
-   "cwes": [
-    "CWE-20",
-    "CWE-476"
-   ],
-   "products": [
-    {
-     "vendor": "Eclipse Foundation",
-     "product": "Eclipse Mosquitto"
-    }
-   ],
-   "products_more": 0,
-   "products_from": "cna",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126706"
-  },
-  {
-   "id": "CVE-2026-110486",
-   "published": "2026-11-18T11:17:37.963",
-   "lastModified": "2026-11-18T11:17:37.963",
-   "vulnStatus": "Received",
-   "cna": "eclipse.org",
-   "cvss": {
-    "version": "3.1",
-    "score": 9.8,
-    "severity": "CRITICAL",
-    "scored_by": "cna"
-   },
-   "cwes": [
-    "CWE-191",
-    "CWE-787",
-    "CWE-908"
-   ],
-   "products": [
-    {
-     "vendor": "Eclipse Foundation",
-     "product": "Eclipse Mosquitto"
-    }
-   ],
-   "products_more": 0,
-   "products_from": "cna",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110486"
-  },
-  {
-   "id": "CVE-2026-19706",
-   "published": "2026-11-09T18:17:27.583",
-   "lastModified": "2026-11-18T10:16:54.993",
-   "vulnStatus": "Awaiting Analysis",
-   "cna": "redhat.com",
-   "cvss": {
-    "version": "3.1",
-    "score": 8.3,
-    "severity": "HIGH",
-    "scored_by": "cna"
-   },
-   "cwes": [
-    "CWE-306"
-   ],
-   "products": [
-    {
-     "vendor": "Red Hat",
-     "product": "Assisted Installer for Red Hat OpenShift Container Platform 2"
-    },
-    {
-     "vendor": "Red Hat",
-     "product": "Multicluster Engine for Kubernetes"
-    },
-    {
-     "vendor": "Red Hat",
-     "product": "Red Hat OpenShift Container Platform 4"
-    },
-    {
-     "vendor": "Red Hat",
-     "product": "Red Hat OpenShift Container Platform 5"
-    }
-   ],
-   "products_more": 0,
-   "products_from": "cna",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19706"
-  },
-  {
-   "id": "CVE-2026-128981",
-   "published": "2026-11-18T09:17:44.470",
-   "lastModified": "2026-11-18T10:16:54.467",
-   "vulnStatus": "Received",
-   "cna": "apache.org",
-   "cvss": null,
-   "cwes": [
-    "CWE-287"
-   ],
-   "products": [
-    {
-     "vendor": "Apache Software Foundation",
-     "product": "Apache SeaTunnel Web"
-    }
-   ],
-   "products_more": 0,
-   "products_from": "cna",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128981"
-  },
-  {
-   "id": "CVE-2026-126708",
-   "published": "2026-11-18T10:16:54.320",
-   "lastModified": "2026-11-18T10:16:54.320",
-   "vulnStatus": "Received",
-   "cna": "eclipse.org",
-   "cvss": null,
-   "cwes": [
-    "CWE-252"
-   ],
-   "products": [
-    {
-     "vendor": "Eclipse Foundation",
-     "product": "Eclipse Mosquitto"
-    }
-   ],
-   "products_more": 0,
-   "products_from": "cna",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126708"
-  },
-  {
-   "id": "CVE-2026-99319",
-   "published": "2026-11-18T09:17:46.050",
-   "lastModified": "2026-11-18T09:17:46.050",
-   "vulnStatus": "Received",
-   "cna": "416baaa9-dc9f-4396-8d5f-8c081fb06d67",
-   "cvss": null,
-   "cwes": [],
-   "products": [
-    {
-     "vendor": "Linux",
-     "product": "Linux"
-    }
-   ],
-   "products_more": 0,
-   "products_from": "cna",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99319"
-  },
-  {
-   "id": "CVE-2026-99318",
-   "published": "2026-11-18T09:17:45.913",
-   "lastModified": "2026-11-18T09:17:45.913",
-   "vulnStatus": "Received",
-   "cna": "416baaa9-dc9f-4396-8d5f-8c081fb06d67",
-   "cvss": null,
-   "cwes": [],
-   "products": [
-    {
-     "vendor": "Linux",
-     "product": "Linux"
-    }
-   ],
-   "products_more": 0,
-   "products_from": "cna",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99318"
-  },
-  {
-   "id": "CVE-2026-99317",
-   "published": "2026-11-18T09:17:45.787",
-   "lastModified": "2026-11-18T09:17:45.787",
-   "vulnStatus": "Received",
-   "cna": "416baaa9-dc9f-4396-8d5f-8c081fb06d67",
-   "cvss": null,
-   "cwes": [],
-   "products": [
-    {
-     "vendor": "Linux",
-     "product": "Linux"
-    }
-   ],
-   "products_more": 0,
-   "products_from": "cna",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99317"
-  },
-  {
-   "id": "CVE-2026-99316",
-   "published": "2026-11-18T09:17:45.647",
-   "lastModified": "2026-11-18T09:17:45.647",
-   "vulnStatus": "Received",
-   "cna": "416baaa9-dc9f-4396-8d5f-8c081fb06d67",
-   "cvss": null,
-   "cwes": [],
-   "products": [
-    {
-     "vendor": "Linux",
-     "product": "Linux"
-    }
-   ],
-   "products_more": 0,
-   "products_from": "cna",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99316"
-  },
-  {
-   "id": "CVE-2026-99315",
-   "published": "2026-11-18T09:17:45.510",
-   "lastModified": "2026-11-18T09:17:45.510",
-   "vulnStatus": "Received",
-   "cna": "416baaa9-dc9f-4396-8d5f-8c081fb06d67",
-   "cvss": null,
-   "cwes": [],
-   "products": [
-    {
-     "vendor": "Linux",
-     "product": "Linux"
-    }
-   ],
-   "products_more": 0,
-   "products_from": "cna",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99315"
-  },
-  {
-   "id": "CVE-2026-99314",
-   "published": "2026-11-18T09:17:45.370",
-   "lastModified": "2026-11-18T09:17:45.370",
-   "vulnStatus": "Received",
-   "cna": "416baaa9-dc9f-4396-8d5f-8c081fb06d67",
-   "cvss": null,
-   "cwes": [],
-   "products": [
-    {
-     "vendor": "Linux",
-     "product": "Linux"
-    }
-   ],
-   "products_more": 0,
-   "products_from": "cna",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99314"
-  },
-  {
-   "id": "CVE-2026-99313",
-   "published": "2026-11-18T09:17:45.197",
-   "lastModified": "2026-11-18T09:17:45.197",
-   "vulnStatus": "Received",
-   "cna": "416baaa9-dc9f-4396-8d5f-8c081fb06d67",
-   "cvss": null,
-   "cwes": [],
-   "products": [
-    {
-     "vendor": "Linux",
-     "product": "Linux"
-    }
-   ],
-   "products_more": 0,
-   "products_from": "cna",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99313"
-  },
-  {
-   "id": "CVE-2026-99312",
-   "published": "2026-11-18T09:17:45.050",
-   "lastModified": "2026-11-18T09:17:45.050",
-   "vulnStatus": "Received",
-   "cna": "416baaa9-dc9f-4396-8d5f-8c081fb06d67",
-   "cvss": null,
-   "cwes": [],
-   "products": [
-    {
-     "vendor": "Linux",
-     "product": "Linux"
-    }
-   ],
-   "products_more": 0,
-   "products_from": "cna",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99312"
-  },
-  {
-   "id": "CVE-2025-13392",
-   "published": "2026-05-27T09:16:26.607",
-   "lastModified": "2026-11-18T08:17:17.710",
-   "vulnStatus": "Modified",
-   "cna": "synology.com",
-   "cvss": {
-    "version": "3.1",
-    "score": 9.8,
-    "severity": "CRITICAL",
-    "scored_by": "nvd"
-   },
-   "cwes": [
-    "CWE-288"
-   ],
-   "products": [
-    {
-     "vendor": "synology",
-     "product": "diskstation_manager"
-    }
-   ],
-   "products_more": 0,
-   "products_from": "cpe",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-13392"
-  },
-  {
-   "id": "CVE-2026-61984",
-   "published": "2026-08-13T14:17:03.720",
-   "lastModified": "2026-11-18T07:17:23.027",
-   "vulnStatus": "Deferred",
-   "cna": "patchstack.com",
-   "cvss": {
-    "version": "3.1",
-    "score": 7.5,
-    "severity": "HIGH",
-    "scored_by": "cna"
-   },
-   "cwes": [
-    "CWE-862"
-   ],
-   "products": [
-    {
-     "vendor": "Amauri.IO",
-     "product": "WPMobile.App"
-    }
-   ],
-   "products_more": 0,
-   "products_from": "cna",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61984"
-  },
-  {
-   "id": "CVE-2023-47505",
-   "published": "2023-11-30T12:15:08.180",
-   "lastModified": "2026-11-18T07:17:20.610",
-   "vulnStatus": "Modified",
-   "cna": "patchstack.com",
-   "cvss": {
-    "version": "3.1",
-    "score": 5.4,
-    "severity": "MEDIUM",
-    "scored_by": "nvd"
-   },
-   "cwes": [
-    "CWE-79"
-   ],
-   "products": [
-    {
-     "vendor": "elementor",
-     "product": "website_builder"
-    }
-   ],
-   "products_more": 0,
-   "products_from": "cpe",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-47505"
-  },
-  {
-   "id": "CVE-2026-86563",
-   "published": "2026-10-14T17:20:05.600",
-   "lastModified": "2026-11-18T06:17:31.317",
-   "vulnStatus": "Awaiting Analysis",
-   "cna": "redhat.com",
-   "cvss": {
-    "version": "3.1",
-    "score": 7.8,
-    "severity": "HIGH",
-    "scored_by": "cna"
-   },
-   "cwes": [
-    "CWE-131"
-   ],
-   "products": [
-    {
-     "vendor": "Red Hat",
-     "product": "Fast Datapath for RHEL 10"
-    },
-    {
-     "vendor": "Red Hat",
-     "product": "Fast Datapath for RHEL 8"
-    },
-    {
-     "vendor": "Red Hat",
-     "product": "Fast Datapath for RHEL 9"
-    },
-    {
-     "vendor": "Red Hat",
-     "product": "Red Hat Enterprise Linux 10"
-    },
-    {
-     "vendor": "Red Hat",
-     "product": "Red Hat Enterprise Linux 8"
-    },
-    {
-     "vendor": "Red Hat",
-     "product": "Red Hat Enterprise Linux 9"
-    },
-    {
-     "vendor": "Red Hat",
-     "product": "Red Hat OpenShift Container Platform 4"
-    },
-    {
-     "vendor": "Red Hat",
-     "product": "Red Hat OpenStack Platform 13 (Queens)"
-    }
-   ],
-   "products_more": 0,
-   "products_from": "cna",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86563"
-  },
-  {
-   "id": "CVE-2026-86562",
-   "published": "2026-10-14T17:20:05.420",
-   "lastModified": "2026-11-18T06:17:31.053",
-   "vulnStatus": "Awaiting Analysis",
-   "cna": "redhat.com",
-   "cvss": {
-    "version": "3.1",
-    "score": 7.8,
-    "severity": "HIGH",
-    "scored_by": "cna"
-   },
-   "cwes": [
-    "CWE-362"
-   ],
-   "products": [
-    {
-     "vendor": "Red Hat",
-     "product": "Fast Datapath for RHEL 10"
-    },
-    {
-     "vendor": "Red Hat",
-     "product": "Fast Datapath for RHEL 8"
-    },
-    {
-     "vendor": "Red Hat",
-     "product": "Fast Datapath for RHEL 9"
-    },
-    {
-     "vendor": "Red Hat",
-     "product": "Red Hat Enterprise Linux 10"
-    },
-    {
-     "vendor": "Red Hat",
-     "product": "Red Hat Enterprise Linux 8"
-    },
-    {
-     "vendor": "Red Hat",
-     "product": "Red Hat Enterprise Linux 9"
-    },
-    {
-     "vendor": "Red Hat",
-     "product": "Red Hat OpenShift Container Platform 4"
-    },
-    {
-     "vendor": "Red Hat",
-     "product": "Red Hat OpenStack Platform 13 (Queens)"
-    }
-   ],
-   "products_more": 0,
-   "products_from": "cna",
-   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86562"
   }
  ]
 }

@@ -15,9 +15,11 @@ const ID = /^EUVD-\d{4}-\d{4,9}$/, CVE = /^CVE-\d{4}-\d{4,7}$/, VERSIONS = ['2.0
 const MON = { Jan: 0, Feb: 1, Mar: 2, Apr: 3, May: 4, Jun: 5, Jul: 6, Aug: 7, Sep: 8, Oct: 9, Nov: 10, Dec: 11 }
 const SEV = ['CRITICAL', 'HIGH', 'MEDIUM', 'LOW', 'NONE']
 const txt = (s, n) => typeof s === 'string' ? s.replace(/[\u0000-\u001f\u007f-\u009f​-‏‪-‮⁦-⁩﻿]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, n) || null : null
-// a field holding an em dash (which the site's wording check refuses) is dropped, never altered, and counted
-let dropped = 0
-const keep = (s, n) => { const t = txt(s, n); if (t && t.includes('—')) { dropped++; return null } return t }
+// a field holding an em dash or a word the site's wording check refuses (scripts/validate.mjs; e.g. a product named
+// "... SEAMLESS ...", 19 Nov 2026) is dropped, never altered, and counted
+const HYPE = /\b(revolutionary|cutting[- ]edge|seamless(?:ly)?|world[- ]class|game[- ]changing)\b/i   // the same words as scripts/validate.mjs
+let dropped = 0, droppedWording = 0
+const keep = (s, n) => { const t = txt(s, n); if (t && t.includes('—')) { dropped++; return null } if (t && HYPE.test(t)) { droppedWording++; return null } return t }
 const name = (s, n) => { const t = keep(s, n); return t && !/^(n\/a|na|none|unknown|unspecified|not applicable|\*|-)$/i.test(t) ? t : null }   // a placeholder is no vendor or product
 // "Nov 18, 2026, 9:31:40 PM" (the API's own format; read as UTC, which fits the server's clock) -> "2026-11-18T21:31:40Z"
 function when(s) {
@@ -85,7 +87,7 @@ const opts = { gap: GAP, tries: 2, timeout: 90000, maxBytes: MAX_BYTES, headers:
 const arr = j => Array.isArray(j) ? j : null
 
 export default async function (run, prevLatest) {
-    dropped = 0
+    dropped = 0; droppedWording = 0
     const end = new Date(run.started), cut = new Date(+end - 864e5)
     // at the 00 UTC run the window reaches back to 00:00 UTC yesterday, so that day is counted whole (about 24 hours and a few minutes)
     const from = end.getUTCHours() === 0 ? new Date(Date.UTC(end.getUTCFullYear(), end.getUTCMonth(), end.getUTCDate() - 1)) : cut
@@ -135,7 +137,7 @@ export default async function (run, prevLatest) {
         provenance: run.prov({ api: API, window_from: from.toISOString().replace(/\.\d+Z$/, 'Z'), window_to: run.started, interface: 'EUVD published API (https://euvd.enisa.europa.eu/apidoc), no key', robots: SITE + '/robots.txt (User-agent *, empty Disallow); euvdservices.enisa.europa.eu/robots.txt answered 404 (no rules)' }),
         about: 'Vulnerabilities in the EU Vulnerability Database (EUVD, run by ENISA) that were published or updated in the 24 hours before the read, plus EUVD\'s own latest and exploited lists: each with its EUVD identifier, CVE aliases, dates, CVSS base score and version, a severity band (ours, from the score by the standard CVSS ranges), vendor and product names, whether EUVD lists it as exploited, and a link to the EUVD page; and totals per day and severity (daily_totals, 14 days, complete true only for a whole UTC day). Values are EUVD\'s, kept as served; the totals are ours. Descriptions and references are not kept. Source: ENISA, EUVD (euvd.enisa.europa.eu); reproduction is authorised if the source is acknowledged. Times are read as UTC. Vulnerabilities in products, never a victim, host or address. A weak signal, not an audit.',
         counts: { in_last_24h: items.length, new_last_24h: fresh.length, updated_not_new_last_24h: modified.length, exploited_in_last_24h: explNow.length, exploited_total_euvd: explTotal && Number.isFinite(+explTotal.total) ? +explTotal.total : null,
-            euvd_total_since_window_start: total, records_read: seen, pages_complete: complete, oldest_update_reached: reached, fields_dropped_em_dash: dropped },
+            euvd_total_since_window_start: total, records_read: seen, pages_complete: complete, oldest_update_reached: reached, fields_dropped_em_dash: dropped, fields_dropped_wording: droppedWording },
         last_24h: { new: fresh.length, new_by_severity: sevRow(fresh), updated: modified.length, updated_by_severity: sevRow(modified), exploited: explNow.length },
         daily_totals: dailyTotals(prevLatest?.daily_totals, inWindow, from, end, complete, run.started),
         new_by_vendor: Object.entries(vendors).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).slice(0, 25).map(([vendor, n]) => ({ vendor, new: n })),
