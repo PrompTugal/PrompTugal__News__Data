@@ -1,6 +1,6 @@
 {
  "place": "albufeira",
- "read_at": "2026-11-19T06:16:19Z",
+ "read_at": "2026-11-19T07:07:57Z",
  "by": "collect/by-place-now.mjs (code, no model; data@PrompTugal.dinis), from this site's collected sources",
  "coords": {
   "lat": 37.0897,
@@ -124,37 +124,37 @@
  "reads": {
   "observations": {
    "url": "https://data.promptugal.news/api/v1/ipma-observations/latest.json",
-   "at": "2026-11-19T06:15:19Z",
+   "at": "2026-11-19T07:07:24Z",
    "status": 200
   },
   "warnings": {
    "url": "https://data.promptugal.news/api/v1/ipma-warnings/latest.json",
-   "at": "2026-11-19T06:15:37Z",
+   "at": "2026-11-19T07:07:42Z",
    "status": 200
   },
   "forecasts": {
    "url": "https://data.promptugal.news/api/v1/ipma-city-forecasts/latest.json",
-   "at": "2026-11-19T06:13:44Z",
+   "at": "2026-11-19T07:05:47Z",
    "status": 200
   },
   "fire-risk": {
    "url": "https://data.promptugal.news/api/v1/ipma-fire-risk/latest.json",
-   "at": "2026-11-19T06:15:12Z",
+   "at": "2026-11-19T07:07:17Z",
    "status": 200
   },
   "uv": {
    "url": "https://data.promptugal.news/api/v1/ipma-uv/latest.json",
-   "at": "2026-11-19T06:15:34Z",
+   "at": "2026-11-19T07:07:39Z",
    "status": 200
   },
   "sea": {
    "url": "https://data.promptugal.news/api/v1/ipma-sea/latest.json",
-   "at": "2026-11-19T06:15:25Z",
+   "at": "2026-11-19T07:07:29Z",
    "status": 200
   },
   "adsb": {
    "url": "https://data.promptugal.news/api/v1/adsb-faro/latest.json",
-   "at": "2026-11-19T06:03:41Z",
+   "at": "2026-11-19T07:04:00Z",
    "status": 200
   }
  }

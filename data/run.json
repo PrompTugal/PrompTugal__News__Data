@@ -1,6 +1,30 @@
 {
- "at": "2026-11-19T06:16:19Z",
+ "at": "2026-11-19T07:07:57Z",
  "sources": [
+  {
+   "id": "adsb-faro",
+   "ok": 1,
+   "failed": 0,
+   "wrote": true
+  },
+  {
+   "id": "cams",
+   "ok": 2,
+   "failed": 0,
+   "wrote": true
+  },
+  {
+   "id": "ea-flood",
+   "ok": 23,
+   "failed": 0,
+   "wrote": true
+  },
+  {
+   "id": "eurostat-tourism",
+   "ok": 3,
+   "failed": 0,
+   "wrote": true
+  },
   {
    "id": "ipma-city-forecasts",
    "ok": 36,
@@ -44,26 +68,14 @@
    "wrote": true
   },
   {
-   "id": "nvd-cve",
-   "ok": 1,
-   "failed": 0,
-   "wrote": true
-  },
-  {
-   "id": "open-meteo-london",
-   "ok": 1,
-   "failed": 0,
-   "wrote": true
-  },
-  {
-   "id": "social",
-   "ok": 5,
-   "failed": 5,
-   "wrote": true
-  },
-  {
    "id": "tfl-jamcams",
    "ok": 1,
+   "failed": 0,
+   "wrote": true
+  },
+  {
+   "id": "youtube-replays",
+   "ok": 3,
    "failed": 0,
    "wrote": true
   }

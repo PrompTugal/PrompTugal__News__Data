@@ -1,6 +1,6 @@
 {
  "place": "lisboa",
- "read_at": "2026-11-19T06:16:19Z",
+ "read_at": "2026-11-19T07:07:57Z",
  "by": "collect/by-place-now.mjs (code, no model; data@PrompTugal.dinis), from this site's collected sources",
  "coords": {
   "lat": 38.72635,
@@ -22,13 +22,13 @@
   "name": "Lisboa (Geofísico)",
   "id": 1200535,
   "reading": {
-   "at": "2026-11-19T05:00:00Z",
-   "temp_c": 14.3,
+   "at": "2026-11-19T06:00:00Z",
+   "temp_c": 14,
    "humidity_pct": 100,
-   "wind_kmh": 7.2,
+   "wind_kmh": 6.5,
    "wind_dir_id": 7,
    "rain_mm": 0,
-   "pressure_hpa": 1016.9,
+   "pressure_hpa": 1017.5,
    "radiation_kj_m2": 0
   },
   "page": "https://www.ipma.pt/en/otempo/obs.superficie/",
@@ -80,14 +80,6 @@
  "warnings": {
   "area": "LSB (the Lisboa district)",
   "active": [
-   {
-    "type": "rough sea",
-    "type_pt": "Agitação Marítima",
-    "level": "yellow",
-    "start": "2026-11-18T21:17:00",
-    "end": "2026-11-19T06:00:00",
-    "text": "Ondas de noroeste com 4 a 5 metros."
-   },
    {
     "type": "rough sea",
     "type_pt": "Agitação Marítima",
@@ -147,37 +139,37 @@
  "reads": {
   "observations": {
    "url": "https://data.promptugal.news/api/v1/ipma-observations/latest.json",
-   "at": "2026-11-19T06:15:19Z",
+   "at": "2026-11-19T07:07:24Z",
    "status": 200
   },
   "warnings": {
    "url": "https://data.promptugal.news/api/v1/ipma-warnings/latest.json",
-   "at": "2026-11-19T06:15:37Z",
+   "at": "2026-11-19T07:07:42Z",
    "status": 200
   },
   "forecasts": {
    "url": "https://data.promptugal.news/api/v1/ipma-city-forecasts/latest.json",
-   "at": "2026-11-19T06:13:44Z",
+   "at": "2026-11-19T07:05:47Z",
    "status": 200
   },
   "fire-risk": {
    "url": "https://data.promptugal.news/api/v1/ipma-fire-risk/latest.json",
-   "at": "2026-11-19T06:15:12Z",
+   "at": "2026-11-19T07:07:17Z",
    "status": 200
   },
   "uv": {
    "url": "https://data.promptugal.news/api/v1/ipma-uv/latest.json",
-   "at": "2026-11-19T06:15:34Z",
+   "at": "2026-11-19T07:07:39Z",
    "status": 200
   },
   "sea": {
    "url": "https://data.promptugal.news/api/v1/ipma-sea/latest.json",
-   "at": "2026-11-19T06:15:25Z",
+   "at": "2026-11-19T07:07:29Z",
    "status": 200
   },
   "adsb": {
    "url": "https://data.promptugal.news/api/v1/adsb-faro/latest.json",
-   "at": "2026-11-19T06:03:41Z",
+   "at": "2026-11-19T07:04:00Z",
    "status": 200
   }
  }
