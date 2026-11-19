@@ -66,10 +66,15 @@
      "data.b@PrompTugal.dinis"
     ],
     "session_sha256": "ec4625eece89e57a",
-    "session_note": "The first 16 hex of the sha256 of the session id, which every commit carries in full in its Claude-Session: trailer; the full id is not written here because the leak scan reads it as a long high-entropy string (security@ to decide whether to allow it).",
+    "session_note": "The first 16 hex of the sha256 of the session id, which every commit carries in full in its Claude-Session: trailer; the full id is not written here because the leak scan reads it as a long high-entropy string (security@ to decide whether to allow it). From 19 Nov 2026: the full session URL is in session (security@ ruling 01:20 UTC); session_sha256 is kept for commits checked against older keys files.",
     "from": "2026-11-19"
    },
-   "for": "Dinis (guidance 2026-11-19-signed-commits-paid-search-and-free-embeds.md, section 2)"
+   "for": "Dinis (guidance 2026-11-19-signed-commits-paid-search-and-free-embeds.md, section 2)",
+   "session": "https://claude.ai/code/session_01Kw9UwFhY6bP96yMHhpD5N5",
+   "ssh_signing": {
+    "public_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFphOk4ktLlKvo2CQBvXoy/+cwBQzFDtLVkhcSCAEm4Y",
+    "fingerprint": "SHA256:dyXCQtwolcu4idXIovycI1X620rhHI2PvsJ6l+bgbZ0"
+   }
   }
  ]
 }

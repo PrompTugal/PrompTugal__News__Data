@@ -92,6 +92,13 @@ const ALLOW = [
 const allowed = (path, kind) => ALLOW.some(([p, k]) => p === path && k === kind);
 
 const PUBLIC_KEY_FILES = (p) => p === 'team/keys.json' || /^team\/keys\/[a-z0-9-]+\.json$/.test(p);
+// [parent field or null for any, field, exact pattern] (security@'s ruling, 19 Nov 2026 ~01:20 UTC, rule 2)
+const FP = /^(?:sha256:[0-9a-f]{16,64}|SHA256:[A-Za-z0-9+/]{43})$/;
+const KEY_FIELD_RULES = [
+  ['ssh_signing', 'public_key', /^(?:ecdsa-sha2-nistp256|ssh-ed25519) AAAA[A-Za-z0-9+/]+={0,2}$/],
+  [null, 'fingerprint', FP], [null, 'signing_fingerprint', FP], [null, 'record', FP],
+  [null, 'session', /^https:\/\/claude\.ai\/code\/session_[A-Za-z0-9]{20,40}$/],
+];
 
 // Returns a list of {line, kind} for one file's text. Never returns the match.
 export function scanText(path, text) {
@@ -102,6 +109,29 @@ export function scanText(path, text) {
     if (/private|passphrase|secret|seed/i.test(text)) add(0, 'public key file mentions a private part');
     // Blank the allowed public key blocks, keeping line numbers.
     body = text.replace(PUBLIC_BLOCK, (b) => b.replace(/[^\n]/g, ' '));
+    // security@'s ruling for every site (19 Nov 2026 ~01:20 UTC, PrompTugal__News__Website
+    // board/team/security/reviews/2026-11-19-0120-ruling-public-keys-in-leak-scans.md): the full public forms are allowed
+    // here only by field and exact pattern. A listed field whose value does not match stays under the entropy rule.
+    if (/"d"\s*:/.test(text)) add(0, 'public key file holds a JWK private part ("d")');
+    if (/\bsgk_[A-Za-z0-9]|\bsk-[A-Za-z0-9]/.test(text)) add(0, 'public key file holds a token');
+    let json = null; try { json = JSON.parse(text); } catch { add(0, 'public key file is not JSON'); }
+    const exact = [];
+    const visit = (v, path) => {
+      if (Array.isArray(v)) return v.forEach((x) => visit(x, path));
+      if (v && typeof v === 'object') return Object.entries(v).forEach(([k, x]) => visit(x, [...path, k]));
+      if (typeof v !== 'string') return;
+      const key = path[path.length - 1], parent = path[path.length - 2];
+      const rule = KEY_FIELD_RULES.find(([p, k]) => k === key && (p === null || p === parent));
+      if (!rule) return;
+      if (rule[2].test(v)) exact.push([key, v]);
+      else add(0, `public key file field ${path.join('.')} does not match its pattern`);   // rule 3: still fails
+    };
+    if (json) visit(json, []);
+    // blank only the value written under its own field name ("field": "value"), never the same text elsewhere
+    for (const [k, v] of exact) for (const sep of [': ', ':']) {
+      const s = `${JSON.stringify(k)}${sep}${JSON.stringify(v)}`;
+      body = body.split(s).join(`${JSON.stringify(k)}${sep}${' '.repeat(JSON.stringify(v).length)}`);
+    }
   }
   body.split('\n').forEach((line, i) => {
     const n = i + 1;
