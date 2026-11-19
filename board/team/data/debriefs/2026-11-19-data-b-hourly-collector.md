@@ -93,3 +93,22 @@ Gaps now (status.json): Bluesky search 403 since 06:15 UTC; Open-Meteo 429 (Lond
 Slips, owned: a commit retry at 11:11 UTC left out the build, validate and leak-scan steps and was refused by the session's safety check; the full chain was rerun. A message to conductor.b@ at about 14:12 UTC gave its time as "14:2x", a guess; corrected at once.
 
 Waiting on Dinis: EPSS (read it, or ask FIRST first); the raw-history vault's secrets; branch protection on dev with the check required, a tag ruleset limiting release tags to GitHub Actions, and a github-pages environment that accepts deployments only from dev (the workflow file still comes from the pushed tree).
+
+## Evening, 19 November (15:06 to 18:16 UTC)
+
+Since about 16:30 UTC (Dinis: "we don't need hourly updates") the wake runs twice a day, 07:03 and 18:03 Lisbon. The 16:03 and 18:03 wakes collected and committed; the 18:03 one ran the 6-hourly sources too.
+
+| What | Commit |
+|---|---|
+| Twice a day: every served file states its cadence (twice a day, stale after 13 hours; discovery daily); a refused source waits at least 4 hours; pages, README and REALITY.md describe the two wakes | 8f6a905, 15cdd1e |
+| events.b@'s findings: cadence on every derived file; the register no longer says "(every 6 hours)"; Algarve's events history no longer repeats its towns' 99 claims | 15cdd1e |
+| Signing and CI, from security@'s rulings and peers' findings: the anchor is the latest push run on dev whose verify job passed; verify, deploy and tag only on dev; a pushed _site and .gitattributes refused; git attributes from the empty tree, git 2.42 or later, the version check failing closed; every workflow step syntax-checked; control 10, no symlinks, paths compared whole | ceadd7c, 3abec12, 1c49806, 0c9d41f, 0755fc0 |
+| Cameras (Dinis ~17:40 UTC, read at source): 19 MEO BeachCam and 2 SkylineWebcams cameras as credited links, embed off, never fetched by code | 5c999dc, 9061eff |
+
+Tests now: 38 signing cases, 21 leak-scan cases.
+
+Gaps at 18:15 UTC: Open-Meteo 429 (fourth today, one request), GitHub search 403, Bluesky search 403.
+
+Slips, owned: I read SkylineWebcams' Algarve list page before its terms (four requests in all; nothing served). An apostrophe broke a page string before a build; caught by the build, fixed before any commit.
+
+Waiting on Dinis: EPSS; the raw-history vault's secrets; branch protection on dev with verify required, a tag ruleset, and a github-pages environment limited to dev.

@@ -3,6 +3,32 @@
  "source": "nvd-cve",
  "runs": [
   {
+   "at": "2026-11-19T18:14:33Z",
+   "finished": "2026-11-19T18:14:46Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "modified-0",
+     "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?lastModStartDate=2026-11-18T00:00:00.000&lastModEndDate=2026-11-19T18:14:33.000&resultsPerPage=2000&startIndex=0",
+     "at": "2026-11-19T18:14:39Z",
+     "status": 200,
+     "bytes": 7688758,
+     "sha256_prefix": "399ac2a48fc145e0",
+     "changed": true
+    },
+    {
+     "name": "modified-1",
+     "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?lastModStartDate=2026-11-18T00:00:00.000&lastModEndDate=2026-11-19T18:14:33.000&resultsPerPage=2000&startIndex=2000",
+     "at": "2026-11-19T18:14:46Z",
+     "status": 200,
+     "bytes": 2642522,
+     "sha256_prefix": "0691c623e9834cf3",
+     "changed": true
+    }
+   ]
+  },
+  {
    "at": "2026-11-19T12:15:49Z",
    "finished": "2026-11-19T12:16:03Z",
    "ok": 2,

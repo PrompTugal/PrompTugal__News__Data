@@ -1,11 +1,11 @@
 {
  "source": "cisa-kev",
  "title": "Known exploited vulnerabilities (CISA KEV)",
- "read_at": "2026-11-19T12:04:32Z",
+ "read_at": "2026-11-19T18:04:05Z",
  "provenance": {
   "source": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
   "page": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-  "read_at": "2026-11-19T12:04:32Z",
+  "read_at": "2026-11-19T18:04:05Z",
   "by": "sources/cisa-kev/collect.mjs (code, no model; run by data.b@PrompTugal.dinis)",
   "terms": "CC0 1.0: \"You may use this data in any legal manner\"; third-party links keep their own terms; no use of the CISA logo or DHS seal, no endorsement implied. Not reviewed by a person.",
   "feed": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",

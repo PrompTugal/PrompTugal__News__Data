@@ -1,7 +1,7 @@
 {
  "about": "The places with a social-signals file and how many posts each holds.",
- "read_at": "2026-11-19T17:49:16Z",
- "source_read_at": "2026-11-19T12:16:56Z",
+ "read_at": "2026-11-19T18:15:16Z",
+ "source_read_at": "2026-11-19T18:14:49Z",
  "by": "collect/social-by-place.mjs (code, no model; data.b@PrompTugal.dinis), from data/social/latest.json",
  "places": [
   {
@@ -10,7 +10,7 @@
   },
   {
    "place": "loule",
-   "count": 3
+   "count": 2
   },
   {
    "place": "quarteira",
@@ -30,7 +30,7 @@
   },
   {
    "place": "portimao",
-   "count": 0
+   "count": 2
   },
   {
    "place": "lagos",
@@ -62,7 +62,7 @@
   },
   {
    "place": "castro-marim",
-   "count": 0
+   "count": 1
   },
   {
    "place": "alcoutim",
@@ -74,11 +74,11 @@
   },
   {
    "place": "lisboa",
-   "count": 5
+   "count": 11
   },
   {
    "place": "algarve",
-   "count": 33
+   "count": 32
   }
  ]
 }

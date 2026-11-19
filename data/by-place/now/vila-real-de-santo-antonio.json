@@ -1,6 +1,6 @@
 {
  "place": "vila-real-de-santo-antonio",
- "read_at": "2026-11-19T17:49:16Z",
+ "read_at": "2026-11-19T18:15:16Z",
  "by": "collect/by-place-now.mjs (code, no model; data@PrompTugal.dinis), from this site's collected sources",
  "coords": {
   "lat": 37.2,
@@ -23,9 +23,9 @@
   "id": 1210866,
   "km": 1,
   "reading": {
-   "at": "2026-11-19T15:00:00Z",
-   "temp_c": 20.9,
-   "humidity_pct": 41,
+   "at": "2026-11-19T17:00:00Z",
+   "temp_c": 20.2,
+   "humidity_pct": 47,
    "wind_kmh": null,
    "wind_dir_id": 0,
    "rain_mm": 0,
@@ -133,37 +133,37 @@
  "reads": {
   "observations": {
    "url": "https://data.promptugal.news/api/v1/ipma-observations/latest.json",
-   "at": "2026-11-19T16:07:13Z",
+   "at": "2026-11-19T18:14:09Z",
    "status": 200
   },
   "warnings": {
    "url": "https://data.promptugal.news/api/v1/ipma-warnings/latest.json",
-   "at": "2026-11-19T16:07:30Z",
+   "at": "2026-11-19T18:14:27Z",
    "status": 200
   },
   "forecasts": {
    "url": "https://data.promptugal.news/api/v1/ipma-city-forecasts/latest.json",
-   "at": "2026-11-19T16:05:38Z",
+   "at": "2026-11-19T18:12:32Z",
    "status": 200
   },
   "fire-risk": {
    "url": "https://data.promptugal.news/api/v1/ipma-fire-risk/latest.json",
-   "at": "2026-11-19T16:07:05Z",
+   "at": "2026-11-19T18:14:02Z",
    "status": 200
   },
   "uv": {
    "url": "https://data.promptugal.news/api/v1/ipma-uv/latest.json",
-   "at": "2026-11-19T16:07:28Z",
+   "at": "2026-11-19T18:14:24Z",
    "status": 200
   },
   "sea": {
    "url": "https://data.promptugal.news/api/v1/ipma-sea/latest.json",
-   "at": "2026-11-19T16:07:18Z",
+   "at": "2026-11-19T18:14:14Z",
    "status": 200
   },
   "adsb": {
    "url": "https://data.promptugal.news/api/v1/adsb-faro/latest.json",
-   "at": "2026-11-19T15:03:38Z",
+   "at": "2026-11-19T18:03:57Z",
    "status": 200
   }
  }

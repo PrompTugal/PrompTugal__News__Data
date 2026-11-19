@@ -1,11 +1,11 @@
 {
  "source": "adsb-faro",
  "title": "Flights around Faro airport",
- "read_at": "2026-11-19T15:03:38Z",
+ "read_at": "2026-11-19T18:03:57Z",
  "provenance": {
   "source": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
   "page": "https://globe.adsb.lol/?lat=37.014&lon=-7.966&zoom=9",
-  "read_at": "2026-11-19T15:03:38Z",
+  "read_at": "2026-11-19T18:03:57Z",
   "by": "sources/adsb-faro/collect.mjs (code, no model; run by data@PrompTugal.dinis)",
   "terms": "adsb.lol: its API data is licensed under the Open Database License (ODbL 1.0): share-alike, with attribution; no key needed up to 500 requests a day per address.",
   "licence": "ODbL 1.0 (adsb.lol)"
@@ -18,69 +18,29 @@
   "lon": -7.9659,
   "within_nm": 40
  },
- "feed_time_ms": 1795100618500,
+ "feed_time_ms": 1795111437501,
  "counts": {
-  "airline": 4,
+  "airline": 1,
   "other_aircraft": 0,
   "other_on_ground": 0,
   "by_airline": {
-   "AYR": 1,
-   "CFG": 1,
-   "EJU": 1,
-   "TAP": 1
+   "RYR": 1
   },
   "by_altitude_band": {
-   "30,000 ft and above": 2,
-   "below 5,000 ft": 1,
-   "15,000 to 30,000 ft": 1
+   "30,000 ft and above": 1
   }
  },
  "airline": [
   {
-   "callsign": "AYR1NG",
-   "airline_icao": "AYR",
-   "type": "P28A",
-   "alt_ft": 2750,
+   "callsign": "RYR8WZ",
+   "airline_icao": "RYR",
+   "type": "B38M",
+   "alt_ft": 38000,
    "on_ground": false,
-   "ground_speed_kt": 95.9,
-   "track_deg": 73.64,
-   "lat": 37.04,
-   "lon": -7.89
-  },
-  {
-   "callsign": "CFG5WM",
-   "airline_icao": "CFG",
-   "type": "A20N",
-   "alt_ft": 38025,
-   "on_ground": false,
-   "ground_speed_kt": 515.6,
-   "track_deg": 48.3,
-   "lat": 36.41,
-   "lon": -8.26
-  },
-  {
-   "callsign": "EJU62QU",
-   "airline_icao": "EJU",
-   "type": "A320",
-   "alt_ft": 37000,
-   "on_ground": false,
-   "ground_speed_kt": 416.2,
-   "track_deg": 185.93,
-   "lat": 36.74,
-   "lon": -7.78
-  },
-  {
-   "callsign": "TAP1105",
-   "airline_icao": "TAP",
-   "type": "E190",
-   "alt_ft": 25000,
-   "on_ground": false,
-   "ground_speed_kt": 325.4,
-   "track_deg": 252.29,
-   "lat": 37.14,
-   "lon": -7.33
+   "ground_speed_kt": 507,
+   "track_deg": 45.72,
+   "lat": 36.49,
+   "lon": -8.21
   }
- ],
- "stale": true,
- "stale_note": "adsb.lol could not be read at 2026-11-19T16:03:52Z; these values are from the last read, at read_at."
+ ]
 }
