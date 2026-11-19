@@ -157,13 +157,23 @@ const withChecks = name => { const r = setup(name); r.commit('adds the other che
 // control 10 (security@, ed70bd996): no symlinks unless listed, with a reason, in the trusted copy's exceptions file
 const withLink = (r, msg, key) => { execFileSync('ln', ['-s', 'x.txt', join(r.d, 'link.txt')]); return r.commit(msg, { key: A, files: { 'x.txt': '1' } }); };
 { const r = setup('link-pushed'); withLink(r, 'adds a symlink, signed'); expect('(10) a pushed symlink fails, even in a signed commit', r.checkFromBase(r.base, 'HEAD'), false, 'adds or changes a symlink'); }
-{ const r = repo('link-listed'); const base = r.commit('bootstrap with an exception', { key: A, files: { 'team/keys.json': keysWith(entry('a', A)), 'scripts/symlink-exceptions.json': JSON.stringify([{ path: 'link.txt', reason: 'test' }]) } });
+{ const r = repo('link-listed'); const base = r.commit('bootstrap with an exception', { key: A, files: { 'team/keys.json': keysWith(entry('a', A)), 'scripts/symlink-exceptions.json': JSON.stringify([{ path: 'link.txt', target: 'x.txt', reason: 'test' }]) } });
   withLink(r, 'adds the listed symlink'); expect('(10) a symlink listed in the trusted exceptions file passes', r.checkFromBase(base, 'HEAD'), true); }
-{ const r = setup('link-unlisted'); r.commit('lists an exception in the pushed tree, then adds the link', { key: A, files: { 'scripts/symlink-exceptions.json': JSON.stringify([{ path: 'link.txt', reason: 'pushed' }]) } }); withLink(r, 'adds the link');
+{ const r = setup('link-unlisted'); r.commit('lists an exception in the pushed tree, then adds the link', { key: A, files: { 'scripts/symlink-exceptions.json': JSON.stringify([{ path: 'link.txt', target: 'x.txt', reason: 'pushed' }]) } }); withLink(r, 'adds the link');
   expect('(10) a symlink listed only in the pushed tree fails', r.checkFromBase(r.base, 'HEAD'), false, 'adds or changes a symlink'); }
-{ const r = repo('link-newline'); const base = r.commit('bootstrap listing "a"', { key: A, files: { 'team/keys.json': keysWith(entry('a', A)), 'scripts/symlink-exceptions.json': JSON.stringify([{ path: 'a', reason: 'test' }]) } });
+{ const r = repo('link-newline'); const base = r.commit('bootstrap listing "a"', { key: A, files: { 'team/keys.json': keysWith(entry('a', A)), 'scripts/symlink-exceptions.json': JSON.stringify([{ path: 'a', target: 'x.txt', reason: 'test' }]) } });
   execFileSync('ln', ['-s', 'x.txt', join(r.d, 'a\nb')]); r.commit('adds a link named a, newline, b', { key: A, files: { 'x.txt': '1' } });
   expect('(10) a symlink whose name holds a newline is not matched to a listed path', r.checkFromBase(base, 'HEAD'), false, 'adds or changes a symlink'); }
+{ const r = repo('link-repointed'); const base = r.commit('bootstrap with an exception for link.txt -> x.txt', { key: A, files: { 'team/keys.json': keysWith(entry('a', A)), 'scripts/symlink-exceptions.json': JSON.stringify([{ path: 'link.txt', target: 'x.txt', reason: 'test' }]) } });
+  execFileSync('ln', ['-s', '/etc/passwd', join(r.d, 'link.txt')]); r.commit('adds link.txt pointing elsewhere', { key: A, files: { 'x.txt': '1' } });
+  expect('(10) an excepted link pointed at another target fails (the target is pinned)', r.checkFromBase(base, 'HEAD'), false, 'adds or changes a symlink'); }
+{ const r = setup('link-merge'); r.g('checkout', '-q', '-b', 'side'); r.commit('side, signed', { key: A, files: { 's.txt': '1' } }); r.g('checkout', '-q', 'main'); r.commit('main, signed', { key: A, files: { 'm.txt': '1' } });
+  r.g('-c', 'gpg.format=ssh', '-c', `user.signingkey=${A.f}`, 'merge', '-q', '-S', '--no-ff', '--no-commit', '-m', 'merge', 'side'); execFileSync('ln', ['-s', 'x.txt', join(r.d, 'merged-link')]); r.g('add', 'merged-link');
+  r.g('-c', 'gpg.format=ssh', '-c', `user.signingkey=${A.f}`, 'commit', '-q', '-S', '-m', 'merge with a link', '-m', `Agent: ${AGENT}\nClaude-Session: ${SESSION}`);
+  expect('(10) a symlink added in a merge commit fails', r.checkFromBase(r.base, 'HEAD'), false, 'symlink'); }
+{ const r = setup('link-bytes'); const nm = Buffer.from([0x6c, 0xff, 0x6b]); execFileSync('ln', ['-s', 'x.txt', Buffer.concat([Buffer.from(r.d + '/'), nm]).toString('latin1')]);
+  let made = true; try { r.commit('a link whose name is not UTF-8', { key: A, files: { 'x.txt': '1' } }) } catch { made = false }
+  if (made) expect('(10) a symlink whose name is not valid UTF-8 fails', r.checkFromBase(r.base, 'HEAD'), false, 'symlink'); }
 
 rmSync(tmp, { recursive: true, force: true });
 const bad = results.filter(r => !r.pass);

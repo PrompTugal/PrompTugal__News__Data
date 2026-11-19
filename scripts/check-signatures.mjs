@@ -67,16 +67,24 @@ const keysAt = rev => { let j; try { j = JSON.parse(git('show', `${rev}:team/key
 // symlink-exceptions.json beside this file, which comes from the anchor's tree with the rest of the trusted copy, so an
 // exception listed only in the pushed tree does not count: [{ "path": "...", "reason": "..." }], each reviewed by security@.
 const EXF = join(dirname(fileURLToPath(import.meta.url)), 'symlink-exceptions.json');
-let linkOk = new Set();
+let linkOk = new Map();   // path bytes (hex) -> the pinned target bytes (hex)
 if (existsSync(EXF)) { let l; try { l = JSON.parse(readFileSync(EXF, 'utf8')) } catch (e) { console.error(`check-signatures: ${EXF} is not JSON`); process.exit(1) }
-  if (!Array.isArray(l) || l.some(x => !x || typeof x.path !== 'string' || typeof x.reason !== 'string' || !x.reason.trim())) { console.error('check-signatures: symlink-exceptions.json must be a list of { path, reason }'); process.exit(1) }
-  linkOk = new Set(l.map(x => x.path)) }
-// paths read NUL-separated (-z) and compared as whole strings, so a name holding a newline cannot slip past (events.b@'s
-// finding, 44d5402): with -z each entry is ":<modes> <shas> <status>\0<path>\0"
-const linksIn = c => { let raw; try { raw = execFileSync('git', ['diff-tree', '-z', '-r', '--raw', '--no-commit-id', '--no-renames', '--root', '-m', c], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }) } catch { return ['(diff-tree failed)'] }
-  const f = raw.split('\0'), out = [];
-  for (let i = 0; i < f.length; i++) { const m = /^:\d{6} (\d{6}) [0-9a-f]+ [0-9a-f]+ [A-Z]\d*$/.exec(f[i]); if (!m) continue; const p = f[++i]; if (m[1] === '120000' && !linkOk.has(p)) out.push(p) }
-  return out };
+  // each exception pins its link's target too (library.b@'s finding, LIB-2026-069), so an excepted link cannot be re-pointed
+  if (!Array.isArray(l) || l.some(x => !x || typeof x.path !== 'string' || typeof x.target !== 'string' || typeof x.reason !== 'string' || !x.reason.trim())) { console.error('check-signatures: symlink-exceptions.json must be a list of { path, target, reason }'); process.exit(1) }
+  linkOk = new Map(l.map(x => [Buffer.from(x.path).toString('hex'), Buffer.from(x.target).toString('hex')])) }
+// paths and link targets read as raw bytes, NUL-separated (-z), and compared byte for byte, so a newline or a name that is
+// not valid UTF-8 cannot slip past or collide (events.b@'s 44d5402; library.b@'s LIB-2026-069): ":<modes> <shas> <st>\0<path>\0"
+const blob = sha => { try { return execFileSync('git', ['cat-file', 'blob', sha], { stdio: ['ignore', 'pipe', 'pipe'] }) } catch { return null } };
+const badLinks = entries => entries.filter(([path, sha]) => { const t = blob(sha); return !(t && linkOk.get(path.toString('hex')) === t.toString('hex')) }).map(([p]) => JSON.stringify(p.toString('latin1')));
+const splitZ = buf => { const out = []; let i = 0; for (let j = 0; j < buf.length; j++) if (buf[j] === 0) { out.push(buf.subarray(i, j)); i = j + 1 } return out };
+const linksIn = c => { let raw; try { raw = execFileSync('git', ['diff-tree', '-z', '-r', '--raw', '--no-commit-id', '--no-renames', '--root', '-m', c], { stdio: ['ignore', 'pipe', 'pipe'] }) } catch { return ['(diff-tree failed)'] }
+  const f = splitZ(raw), found = [];
+  for (let i = 0; i < f.length; i++) { const m = /^:\d{6} (\d{6}) [0-9a-f]+ ([0-9a-f]+) [A-Z]\d*$/.exec(f[i].toString('latin1')); if (!m) continue; const p = f[++i]; if (m[1] === '120000') found.push([p, m[2]]) }
+  return badLinks(found) };
+// the pushed commit's whole tree too, not only what the commits in the range changed (library.b@'s finding)
+const linksInTree = c => { let raw; try { raw = execFileSync('git', ['ls-tree', '-r', '-z', '--full-tree', c], { stdio: ['ignore', 'pipe', 'pipe'] }) } catch { return ['(ls-tree failed)'] }
+  const found = []; for (const e of splitZ(raw)) { const t = e.indexOf(9); if (t < 0) continue; const m = /^(\d{6}) \w+ ([0-9a-f]+)$/.exec(e.subarray(0, t).toString('latin1')); if (m && m[1] === '120000') found.push([e.subarray(t + 1), m[2]]) }
+  return badLinks(found) };
 const failures = [];
 let checked = 0, skipped = 0;
 for (const c of commits) {
@@ -107,6 +115,7 @@ for (const c of commits) {
     const sameSession = key.session ? session === key.session : (sid && sha16(sid) === key.ssh.session_sha256);
     if (!sameSession) { failures.push(`${short}: Claude-Session: ${session || '(none)'} is not the session published with the key`); continue }
 }
+{ const tl = linksInTree(after); if (tl.length) failures.push(`${String(git('rev-parse', '--short', after))}: its tree holds a symlink (${tl.slice(0, 3).join(', ')}) not listed, with its target, in the trusted symlink-exceptions.json`) }   // control 10, the pushed tree
 rmSync(dir, { recursive: true, force: true });
 if (failures.length) { console.error(`check-signatures: ${failures.length} commit(s) fail\n` + failures.join('\n')); process.exit(1); }
 console.log(`OK (${checked} commits checked, ${skipped} older than the check)`);
