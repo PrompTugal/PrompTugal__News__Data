@@ -1,11 +1,11 @@
 {
  "source": "adsb-faro",
  "title": "Flights around Faro airport",
- "read_at": "2026-11-19T09:04:33Z",
+ "read_at": "2026-11-19T10:04:18Z",
  "provenance": {
   "source": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
   "page": "https://globe.adsb.lol/?lat=37.014&lon=-7.966&zoom=9",
-  "read_at": "2026-11-19T09:04:33Z",
+  "read_at": "2026-11-19T10:04:18Z",
   "by": "sources/adsb-faro/collect.mjs (code, no model; run by data@PrompTugal.dinis)",
   "terms": "adsb.lol: its API data is licensed under the Open Database License (ODbL 1.0): share-alike, with attribution; no key needed up to 500 requests a day per address.",
   "licence": "ODbL 1.0 (adsb.lol)"
@@ -18,29 +18,102 @@
   "lon": -7.9659,
   "within_nm": 40
  },
- "feed_time_ms": 1795079073500,
+ "feed_time_ms": 1795082658500,
  "counts": {
-  "airline": 1,
+  "airline": 7,
   "other_aircraft": 0,
   "other_on_ground": 0,
   "by_airline": {
-   "TVF": 1
+   "CFG": 1,
+   "EWG": 1,
+   "EXS": 2,
+   "FIN": 1,
+   "LNX": 1,
+   "TAP": 1
   },
   "by_altitude_band": {
-   "30,000 ft and above": 1
+   "30,000 ft and above": 5,
+   "below 5,000 ft": 1,
+   "5,000 to 15,000 ft": 1
   }
  },
  "airline": [
   {
-   "callsign": "TVF378B",
-   "airline_icao": "TVF",
-   "type": "A20N",
-   "alt_ft": 37025,
+   "callsign": "CFG6DL",
+   "airline_icao": "CFG",
+   "type": "A321",
+   "alt_ft": 35000,
    "on_ground": false,
-   "ground_speed_kt": 415.2,
-   "track_deg": 185.94,
-   "lat": 37.63,
-   "lon": -7.67
+   "ground_speed_kt": 419.4,
+   "track_deg": 193.37,
+   "lat": 37.08,
+   "lon": -7.99
+  },
+  {
+   "callsign": "EWG41C",
+   "airline_icao": "EWG",
+   "type": "A320",
+   "alt_ft": 37000,
+   "on_ground": false,
+   "ground_speed_kt": 417.9,
+   "track_deg": 193.7,
+   "lat": 36.67,
+   "lon": -8.1
+  },
+  {
+   "callsign": "EXS72BK",
+   "airline_icao": "EXS",
+   "type": "B738",
+   "alt_ft": 6075,
+   "on_ground": false,
+   "ground_speed_kt": 266.2,
+   "track_deg": 187.34,
+   "lat": 37.15,
+   "lon": -7.65
+  },
+  {
+   "callsign": "EXS7CU",
+   "airline_icao": "EXS",
+   "type": "B738",
+   "alt_ft": 4775,
+   "on_ground": false,
+   "ground_speed_kt": 223.5,
+   "track_deg": 3.85,
+   "lat": 37.06,
+   "lon": -8.12
+  },
+  {
+   "callsign": "FIN85P",
+   "airline_icao": "FIN",
+   "type": "A359",
+   "alt_ft": 39000,
+   "on_ground": false,
+   "ground_speed_kt": 432.8,
+   "track_deg": 192.82,
+   "lat": 37.35,
+   "lon": -7.93
+  },
+  {
+   "callsign": "LNX26KG",
+   "airline_icao": "LNX",
+   "type": "E35L",
+   "alt_ft": 39000,
+   "on_ground": false,
+   "ground_speed_kt": 409,
+   "track_deg": 192.71,
+   "lat": 36.41,
+   "lon": -8.19
+  },
+  {
+   "callsign": "TAP1452",
+   "airline_icao": "TAP",
+   "type": "E195",
+   "alt_ft": 34100,
+   "on_ground": false,
+   "ground_speed_kt": 458.9,
+   "track_deg": 159.2,
+   "lat": 36.88,
+   "lon": -8.31
   }
  ]
 }

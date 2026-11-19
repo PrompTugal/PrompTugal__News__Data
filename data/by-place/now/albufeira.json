@@ -1,6 +1,6 @@
 {
  "place": "albufeira",
- "read_at": "2026-11-19T09:11:36Z",
+ "read_at": "2026-11-19T10:09:36Z",
  "by": "collect/by-place-now.mjs (code, no model; data@PrompTugal.dinis), from this site's collected sources",
  "coords": {
   "lat": 37.0897,
@@ -34,36 +34,36 @@
   "days": [
    {
     "date": "2026-11-19",
-    "t_min_c": 10.5,
-    "t_max_c": 19.7,
-    "rain_prob_pct": 0,
+    "t_min_c": 10.2,
+    "t_max_c": 19.5,
+    "rain_prob_pct": 8,
     "weather_type": 2
    },
    {
     "date": "2026-11-20",
-    "t_min_c": 9.2,
-    "t_max_c": 18.4,
+    "t_min_c": 8.9,
+    "t_max_c": 18.2,
     "rain_prob_pct": 0,
     "weather_type": 2
    },
    {
     "date": "2026-11-21",
-    "t_min_c": 10.2,
-    "t_max_c": 18.8,
-    "rain_prob_pct": 96,
+    "t_min_c": 9.8,
+    "t_max_c": 19,
+    "rain_prob_pct": 94,
     "weather_type": 6
    },
    {
     "date": "2026-11-22",
-    "t_min_c": 9.7,
-    "t_max_c": 18.3,
-    "rain_prob_pct": 0,
+    "t_min_c": 9.4,
+    "t_max_c": 18.2,
+    "rain_prob_pct": 2,
     "weather_type": 2
    },
    {
     "date": "2026-11-23",
-    "t_min_c": 8.1,
-    "t_max_c": 18.8,
+    "t_min_c": 7.2,
+    "t_max_c": 18.4,
     "rain_prob_pct": 0,
     "weather_type": 3
    }
@@ -124,37 +124,37 @@
  "reads": {
   "observations": {
    "url": "https://data.promptugal.news/api/v1/ipma-observations/latest.json",
-   "at": "2026-11-19T09:11:11Z",
+   "at": "2026-11-19T10:09:10Z",
    "status": 200
   },
   "warnings": {
    "url": "https://data.promptugal.news/api/v1/ipma-warnings/latest.json",
-   "at": "2026-11-19T09:11:28Z",
+   "at": "2026-11-19T10:09:28Z",
    "status": 200
   },
   "forecasts": {
    "url": "https://data.promptugal.news/api/v1/ipma-city-forecasts/latest.json",
-   "at": "2026-11-19T09:09:35Z",
+   "at": "2026-11-19T10:07:33Z",
    "status": 200
   },
   "fire-risk": {
    "url": "https://data.promptugal.news/api/v1/ipma-fire-risk/latest.json",
-   "at": "2026-11-19T09:11:03Z",
+   "at": "2026-11-19T10:09:03Z",
    "status": 200
   },
   "uv": {
    "url": "https://data.promptugal.news/api/v1/ipma-uv/latest.json",
-   "at": "2026-11-19T09:11:26Z",
+   "at": "2026-11-19T10:09:25Z",
    "status": 200
   },
   "sea": {
    "url": "https://data.promptugal.news/api/v1/ipma-sea/latest.json",
-   "at": "2026-11-19T09:11:16Z",
+   "at": "2026-11-19T10:09:15Z",
    "status": 200
   },
   "adsb": {
    "url": "https://data.promptugal.news/api/v1/adsb-faro/latest.json",
-   "at": "2026-11-19T09:04:33Z",
+   "at": "2026-11-19T10:04:18Z",
    "status": 200
   }
  }
