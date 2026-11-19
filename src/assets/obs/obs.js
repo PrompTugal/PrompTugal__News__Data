@@ -69,7 +69,9 @@
         // ~03:15 UTC, PrompTugal__News__Website board/guidance/2026-11-19-no-ip-lookup-predictions-and-small-decisions.md:
         // "remove the IP base. So we're going to keep the country still"). No region, city or map position; a zone not in the
         // table gives an empty country. No third party is asked where a reader is.
-        const TZ_CC = { 'Europe/Lisbon': 'PT', 'Atlantic/Madeira': 'PT', 'Atlantic/Azores': 'PT', 'Europe/London': 'GB', 'Europe/Belfast': 'GB',
+        // a Map, not a plain object, and only a two-letter A-Z result: a browser may report any zone name, "__proto__" included
+        // (events.b@'s security review, relayed by conductor.b@ 19 Nov 2026 03:23 UTC)
+        const TZ_CC = new Map(Object.entries({ 'Europe/Lisbon': 'PT', 'Atlantic/Madeira': 'PT', 'Atlantic/Azores': 'PT', 'Europe/London': 'GB', 'Europe/Belfast': 'GB',
             'Europe/Dublin': 'IE', 'Europe/Madrid': 'ES', 'Atlantic/Canary': 'ES', 'Africa/Ceuta': 'ES', 'Europe/Paris': 'FR', 'Europe/Berlin': 'DE',
             'Europe/Amsterdam': 'NL', 'Europe/Brussels': 'BE', 'Europe/Luxembourg': 'LU', 'Europe/Zurich': 'CH', 'Europe/Vienna': 'AT',
             'Europe/Rome': 'IT', 'Europe/Copenhagen': 'DK', 'Europe/Stockholm': 'SE', 'Europe/Oslo': 'NO', 'Europe/Helsinki': 'FI',
@@ -81,8 +83,8 @@
             'America/Vancouver': 'CA', 'America/Sao_Paulo': 'BR', 'America/Mexico_City': 'MX', 'America/Argentina/Buenos_Aires': 'AR',
             'Africa/Luanda': 'AO', 'Africa/Maputo': 'MZ', 'Atlantic/Cape_Verde': 'CV', 'Africa/Bissau': 'GW', 'Africa/Sao_Tome': 'ST',
             'Asia/Dili': 'TL', 'Asia/Macau': 'MO', 'Asia/Kolkata': 'IN', 'Asia/Shanghai': 'CN', 'Asia/Tokyo': 'JP', 'Asia/Singapore': 'SG',
-            'Asia/Dubai': 'AE', 'Australia/Sydney': 'AU', 'Australia/Melbourne': 'AU', 'Pacific/Auckland': 'NZ', 'Africa/Johannesburg': 'ZA' }
-        const place = () => { let z = ''; try { z = Intl.DateTimeFormat().resolvedOptions().timeZone || '' } catch { } return { country_code: TZ_CC[z] || '' } }
+            'Asia/Dubai': 'AE', 'Australia/Sydney': 'AU', 'Australia/Melbourne': 'AU', 'Pacific/Auckland': 'NZ', 'Africa/Johannesburg': 'ZA' }))
+        const place = () => { let z = ''; try { z = String(Intl.DateTimeFormat().resolvedOptions().timeZone || '') } catch { } const cc = TZ_CC.get(z); return { country_code: typeof cc === 'string' && /^[A-Z]{2}$/.test(cc) ? cc : '' } }
         // a link's tag (Dinis, 6 November: "I just sent a link to somebody ... I would like to see if they open it ... and
         // forward it"): ?via=<tag> (or utm_source / utm_campaign) on the link you send. Kept for the tab, so the pages read
         // after arriving count too; a tag names the link, never the person. Letters, digits, '.', '_' and '-', 40 at most.
