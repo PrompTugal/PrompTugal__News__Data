@@ -18,7 +18,9 @@ export function injectObsTz(out, reg) {
   if (!pin) return { off: `obs_tz ${t.version} off: the registry could not be read` };
   // this version's own pin from the append-only obs_tz.versions; off (no country sent, the data still deploys) only when the
   // registry no longer lists it; this version with other bytes is a changed file, and the build stops
-  const want = (pin.versions && pin.versions[t.version] && pin.versions[t.version].integrity) || (pin.version === t.version ? pin.integrity : null);
+  // both shapes: versions[v].integrity as a string (today) or as a map with one file entry (after the reshape)
+  const vi = pin.versions && pin.versions[t.version] && pin.versions[t.version].integrity;
+  const want = (typeof vi === 'string' ? vi : vi && typeof vi === 'object' ? (vi['tz-country.json'] || vi.file || Object.values(vi).find(x => typeof x === 'string')) : null) || (pin.version === t.version ? pin.integrity : null);
   if (typeof want !== 'string') return { off: `obs_tz ${t.version} off: the registry no longer lists it (it names ${pin.version})` };
   if (sri !== want) throw new Error('obs tz table: src/assets/obs/tz-country.json does not match the registry\'s obs_tz.integrity; not building with a changed file');
   for (const [z, cc] of Object.entries(t.zones || {})) if (/^[A-Za-z_]+(\/[A-Za-z0-9_+-]+){0,2}$/.test(z) && typeof cc === 'string' && /^[A-Z]{2}$/.test(cc)) zones[z] = cc;

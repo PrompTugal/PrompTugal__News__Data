@@ -25,7 +25,10 @@ export async function sitesBar() {
   try { reg = await get(REGISTRY, true); REGISTRY_READ = reg; } catch { return { html: '', off: `sites-bar ${SITES_BAR} off: the registry could not be read` }; }
   // this version's own pins from the registry's append-only bar.versions (security@, 19 Nov 2026 05:09 and 07:03 UTC); off only
   // when the registry no longer lists this version
-  const listed = reg && reg.bar && reg.bar.versions && reg.bar.versions[SITES_BAR];
+  // both registry shapes: versions[v] as the pin map itself (19 Nov 2026 07:15 UTC) or versions[v].integrity (dev@'s reshape,
+  // security@ "reshape, don't widen", relayed 07:19 UTC)
+  const v = reg && reg.bar && reg.bar.versions && reg.bar.versions[SITES_BAR];
+  const listed = v && typeof v === 'object' ? (v.integrity && typeof v.integrity === 'object' ? v.integrity : v) : null;
   const pins = listed || (reg && reg.bar && reg.bar.version === SITES_BAR ? reg.bar.integrity : null);
   if (!pins) return { html: '', off: `sites-bar ${SITES_BAR} off: the registry no longer lists it (it names ${reg && reg.bar && reg.bar.version})` };
   for (const [k, f] of Object.entries(FILES)) {
