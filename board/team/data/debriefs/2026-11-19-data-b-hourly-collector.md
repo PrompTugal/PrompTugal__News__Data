@@ -55,3 +55,21 @@ Hand-over for the next wake or another session. It carries on from the night han
 2. The first track record: IPMA's forecasts against the station days, per place and lead day, from /api/v1/history/.
 3. security@'s review of nvd-kev (asked through conductor.b@, 02:23 UTC); no date-range gap reader until it clears.
 4. ECMWF open forecasts; charts for KEV, NVD, Eurostat and GitHub; INE UK guests by region (terms accepted by Dinis).
+
+## Later on 19 November (03:09 to 08:08 UTC)
+
+Every hourly wake from 03:03 to 08:03 collected and committed the data. At 06:03 the 6-hourly sources were due too and the run took over ten minutes; my foreground limit stopped it, so it was finished in a second run and committed in two parts (6ee935e, a84bc21). A 6-hourly wake now runs the collection in the background with a log.
+
+| What | Commit |
+|---|---|
+| No IP-based location (Dinis ~03:15 UTC): obs.js keeps the country from the browser's time zone only | f32290a, 2de3310 |
+| Predictions for the library's PRED collection: data/predictions/predictions.jsonl, append-only, outcomes once a station day is complete (series PRED 2026/0003) | 0e3eb6b |
+| The shared time-zone table (1.0.0, then 1.1.0), checked against the registry; a newer version leaves the piece out rather than stopping the build | c535441, f827417 |
+| Leak scan: SSH public keys (sk- and ecdsa forms included) fail outside their field; tests in scripts/test-leak-scan.mjs | 9bf6c76, fd6da9a |
+| Sites bar 1.2.0, then 1.2.1, pinned per version in the registry; this site's nav CSS kept off the bar (the phone page had scrolled sideways) | 09eafc4, fe30f0b, 4d91315 |
+
+Gap: Bluesky's public search answers 403 to unauthenticated reads since 06:15 UTC; the account feeds still read. Recorded in status.json, not worked around.
+
+Slip, owned: at 05:07 UTC a ';' in my command line let the hourly commit (0796eae) go in after a failed build; nothing deployed from it. The reset step is now written '{ git checkout -- discovery || true; } &&'.
+
+Waiting on Dinis: EPSS (read it, or ask FIRST first); the raw-history vault's secrets.
