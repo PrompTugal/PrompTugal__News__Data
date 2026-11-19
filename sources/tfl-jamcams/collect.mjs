@@ -9,7 +9,11 @@ const ID = /^JamCams_\d{5}\.\d{5}$/
 const media = (u, ext) => { try { const x = new URL(String(u)); return x.protocol === 'https:' && x.host === HOST && x.pathname.startsWith(PREFIX) && x.pathname.endsWith(ext) && !x.search && !x.hash ? x.href : null } catch { return null } }
 const txt = (s, n) => typeof s === 'string' ? (s.replace(/[\u0000-\u001f\u007f-\u009f​-‏‪-‮⁦-⁩﻿]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, n) || null) : null
 
-export default async function (run) {
+// status_history (live.b@ asked, 19 Nov 2026 ~01:24 UTC, for the show-the-past guidance): per camera, the changes of TfL's
+// 'available' flag between our hourly reads only, carried from the previous read ({id: [{at, state}]}, state up, down or not
+// listed). What happened between two reads is not known. Kept 90 days, and the last change before that always.
+const KEEP = 90 * 864e5
+export default async function (run, prev) {
     const j = await run.json('jamcams', API, { timeout: 60000 })
     if (!Array.isArray(j)) return null
     let dropped = 0
@@ -23,8 +27,16 @@ export default async function (run) {
             modified: txt(p.available?.modified, 30) })
     }
     cameras.sort((a, b) => a.id.localeCompare(b.id))
+    const at = run.started, hist = {}, was = (prev && prev.status_history) || {}
+    for (const [id, h] of Object.entries(was)) if (ID.test(id) && Array.isArray(h)) hist[id] = h.filter(x => x && typeof x.at === 'string' && ['up', 'down', 'not listed'].includes(x.state))
+    const seen = new Set()
+    for (const c of cameras) { seen.add(c.id); const h = hist[c.id] ||= [], st = c.available ? 'up' : 'down'; if (!h.length || h[h.length - 1].state !== st) h.push({ at, state: st }) }
+    for (const [id, h] of Object.entries(hist)) if (!seen.has(id) && h.length && h[h.length - 1].state !== 'not listed') h.push({ at, state: 'not listed' })
+    for (const id of Object.keys(hist)) { const h = hist[id], cut = Date.parse(at) - KEEP; const i = h.findIndex(x => Date.parse(x.at) >= cut); hist[id] = i <= 0 ? h : h.slice(i - 1) }
+    const history_from = (prev && prev.status_history_from) || at
     return { source: run.id, title: run.card.title, read_at: run.started, provenance: run.prov({ api: API }), country: 'GB', place: 'london',
         about: 'Transport for London\'s traffic cameras: name, position, the way each looks, whether TfL marks it available, and the addresses of TfL\'s own latest still image and short clip (on TfL\'s bucket, s3-eu-west-1.amazonaws.com/jamcams.tfl.gov.uk/). No image or clip is fetched or kept here. Powered by TfL Open Data. Embedding allowed under TfL\'s Transport Data Service terms (read 18 Nov 2026), with both credits.',
         media: { host: HOST, path_prefix: PREFIX }, attribution: 'Powered by TfL Open Data. Contains OS data © Crown copyright and database rights 2016 and Geomni UK Map data © and database rights [2019]',
-        counts: { cameras: cameras.length, available: cameras.filter(c => c.available).length, dropped }, cameras }
+        counts: { cameras: cameras.length, available: cameras.filter(c => c.available).length, dropped }, cameras,
+        status_history_from: history_from, status_history_how: 'changes only, between our hourly reads of TfL\'s available flag; what happened between two reads is not known', status_history: hist }
 }

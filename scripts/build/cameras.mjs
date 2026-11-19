@@ -36,12 +36,34 @@ export function buildCameras(sources) {
     terms: { url: TERMS_TFL, summary: 'Open Government Licence v2.0 with TfL amendments: copy, publish, distribute, adapt and exploit commercially and non-commercially; credit "Powered by TfL Open Data" and the Ordnance Survey and Geomni statements; at most 500 calls a minute per feed; no suggestion of TfL endorsement.', checked_at: '2026-11-18', checked_by: 'Dinis Cruz, in a browser (tfl.gov.uk answers agents with a bot check)', embedding: 'allowed', commercial_use: 'allowed' },
     license: { name: "TfL's transport data terms (Powered by TfL Open Data)", url: TERMS_TFL, holder: 'Transport for London' }, credit: 'Powered by TfL Open Data. Contains OS data © Crown copyright and database rights 2016 and Geomni UK Map data © and database rights [2019]',
     status: { state: c.available ? 'up' : 'down', detail: c.available ? 'available (TfL)' : 'not available (TfL)', checked_at: J.read_at, http_status: null, since: c.modified },
-    status_history: null,
+    status_history: `https://data.promptugal.news/api/v1/cameras/history/london.json`,
     provenance: { listed_from: 'https://api.tfl.gov.uk/Place/Type/JamCam', listed_by: 'sources/tfl-jamcams/collect.mjs (code, no model)', listed_at: J.read_at, status_how: "TfL's own 'available' flag in the API answer; no image or clip fetched", licence: TERMS_TFL },
     registered_at: J.read_at, by: 'data.b@PrompTugal.dinis (sources/tfl-jamcams)' });
   const statuses = list.map(c => ({ id: c.id, about: 'Changes of state only (up, down, page up without a player), from the operator\'s page; no frame or stream is fetched.', history: (c.history || []).map(h => ({ at: h.at, state: h.state === 'down' ? 'down' : h.state === 'up' ? 'up' : 'unknown', detail: h.state, http_status: h.http })) }));
   for (const st of statuses) writeJson(`api/v1/cameras/${st.id}/status.json`, st);
   const byPlace = {}; for (const c of cameras) (byPlace[c.place] ||= []).push(c.id);
+  // /api/v1/cameras/history/<place>.json (live.b@ asked, 19 Nov 2026 ~01:24 UTC; show-the-past guidance): every camera's
+  // changes of state in one file per place, so a page can draw uptime over time. Nothing is filled in between two checks.
+  const hfiles = [];
+  for (const [place, ids] of Object.entries(byPlace)) {
+    const hc = {}, lic = {}; let first = null;
+    for (const id of ids) {
+      const cam = cameras.find(c => c.id === id);
+      const h = cam.source_id ? ((J && J.status_history) || {})[cam.source_id] : (statuses.find(x => x.id === id) || {}).history;
+      hc[id] = (h || []).map(x => ({ at: x.at, state: x.state }));
+      lic[cam.license && cam.license.url || 'none'] = cam.license;
+      for (const x of hc[id]) if (!first || x.at < first) first = x.at;
+    }
+    const tfl = ids.some(id => cameras.find(c => c.id === id).source_id);
+    const f = { place, data_read_at: tfl ? (J && J.read_at) || null : (L && L.read_at) || null, first_day: first ? first.slice(0, 10) : null, first_at: first,
+      about: tfl ? `Every camera in ${place}: its changes of state (up, down, not listed) between our hourly reads of TfL's own 'available' flag, from ${first}. A change is dated by the read that first saw it; what happened between two reads is not known, and nothing is filled in.`
+                 : `Every camera in ${place}: its changes of state (up, down, unknown) from our hourly check of the operator's page (no frame or stream fetched), from ${first}. Nothing is filled in between two checks.`,
+      licence: tfl ? { name: "TfL's transport data terms (Powered by TfL Open Data)", url: TERMS_TFL, holder: 'Transport for London', commercial_use: 'allowed', credit: J && J.attribution } : Object.values(lic),
+      sources: tfl ? { status: 'https://data.promptugal.news/api/v1/tfl-jamcams/latest.json', field: 'status_history' } : { status: 'https://data.promptugal.news/api/v1/cams/latest.json', field: 'cameras[].history' },
+      cadence: 'hourly', cameras: hc };
+    writeJson(`api/v1/cameras/history/${place}.json`, f); hfiles.push({ place, cameras: ids.length, first_at: first, url: `https://data.promptugal.news/api/v1/cameras/history/${place}.json` });
+  }
+  writeJson('api/v1/cameras/history/index.json', { about: 'Cameras\' changes of state over time, one file per place.', data_read_at: (J && J.read_at) || (L && L.read_at) || null, places: hfiles });
   const index = {
     about: 'Public live cameras in the places we cover, from public bodies and operators\' own pages only: metadata and status, never a frame, snapshot or stream. Watch each on its operator\'s page. Embedding is "allowed" only where the operator\'s terms say so and the embed is on its own host; otherwise link out. Same data as /api/v1/cams/latest.json and /api/v1/tfl-jamcams/latest.json.',
     read_at: L ? L.read_at : null, counts: { cameras: cameras.length, places: Object.keys(byPlace).length, embeddable: cameras.filter(c => c.embed && c.embed.allowed === true).length }, by_place: byPlace, cameras,
