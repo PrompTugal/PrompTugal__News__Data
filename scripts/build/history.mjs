@@ -5,7 +5,7 @@
 // collections before that were not kept (no raw history yet). A missing day is a row with nulls, never filled in.
 // data.b@PrompTugal.dinis.
 import { writeJson } from './lib.mjs';
-import { readFileSync, existsSync } from 'node:fs';
+import { readFileSync, existsSync, readdirSync } from 'node:fs';
 
 const day = t => new Date(t).toISOString().slice(0, 10);
 const addDays = (d, n) => day(Date.parse(d + 'T00:00:00Z') + n * 864e5);
@@ -23,7 +23,7 @@ export function buildHistory(sources) {
     const issuedDay = addDays(date, -k);
     const issue = (list || []).filter(h => String(h.issued).slice(0, 10) === issuedDay).sort((a, b) => String(b.issued).localeCompare(String(a.issued)))[0];
     const d = issue && (issue.days || issue.daily || []).find(x => x.date === date);
-    return d ? { issued: issue.issued, t_min_c: d.t_min_c ?? d.temperature_min_c ?? null, t_max_c: d.t_max_c ?? d.temperature_max_c ?? null, rain_prob_pct: d.rain_prob_pct ?? null, rain_mm: d.precipitation_sum_mm ?? null } : null;
+    return d ? { issued: issue.issued, read_at: issue.read_at || issue.read || null, t_min_c: d.t_min_c ?? d.temperature_min_c ?? null, t_max_c: d.t_max_c ?? d.temperature_max_c ?? null, rain_prob_pct: d.rain_prob_pct ?? null, rain_mm: d.precipitation_sum_mm ?? null } : null;
   };
   for (const m of places) {
     const daily = obs.daily || {}, fh = (fc.forecast_history || {})[m.forecast_id] || [];
@@ -48,7 +48,7 @@ export function buildHistory(sources) {
     if (first) { const rows = [];
       for (let d = first; d <= today; d = addDays(d, 1)) {
         const g = Object.values(dr[d] || {}).filter(x => x && Number.isFinite(x.rain_mm) && x.readings > 0);
-        const list = oh.map(h => ({ issued: h.issued_at || h.issued, days: h.daily || h.days || [] }));
+        const list = oh.map(h => ({ issued: h.issued_at || h.issued, read_at: h.read_at || h.issued_at || null, days: h.daily || h.days || [] }));
         rows.push({ date: d, observed: g.length ? { rain_mm_mean: Math.round(g.reduce((a, x) => a + x.rain_mm, 0) / g.length * 10) / 10, gauges: g.length, readings_min: Math.min(...g.map(x => x.readings)), complete: g.every(x => x.readings >= 96) } : null,
           forecast: { d1: forecastFor(list, d, 1), d2: forecastFor(list, d, 2), d3: forecastFor(list, d, 3) } });
       }
@@ -57,6 +57,46 @@ export function buildHistory(sources) {
         sources: { observed: { url: 'https://data.promptugal.news/api/v1/ea-flood/latest.json', field: 'daily_rain', license: EA_LIC }, forecast: { url: 'https://data.promptugal.news/api/v1/open-meteo-london/latest.json', field: 'history', license: OM_LIC } },
         commit: process.env.GITHUB_SHA || 'local', rows });
       files.push({ place: 'london', first_day: first, days: rows.length, url: 'https://data.promptugal.news/api/v1/history/weather/london.json' }); } }
-  writeJson('api/v1/history/index.json', { about: 'The past, per place, from what this site keeps: weather observed beside what was forecast. Each file states its first day: station days from 17 November 2026 (partial), IPMA\'s issued forecasts from 19 November 2026. Collections before that were not kept, because the raw history vault is not yet switched on.', data_read_at: obs.read_at || null, weather: files });
+  writeJson('api/v1/history/index.json', { events: 'https://data.promptugal.news/api/v1/history/events/index.json', about: 'The past, per place, from what this site keeps: weather observed beside what was forecast, and events as first listed (see events). Each file states its first day: station days from 17 November 2026 (partial), IPMA\'s issued forecasts from 19 November 2026. Collections before that were not kept, because the raw history vault is not yet switched on.', data_read_at: obs.read_at || null, weather: files });
+  return files.length;
+}
+
+// /api/v1/history/events/<place>.json (conductor.b@ for events.b@, 19 Nov 2026 ~01:26 UTC; show the past, and every prediction
+// is kept and checked): each event as first listed by its organiser's page (name, dates, venue, source, the read that first saw
+// it), never overwritten, then every change seen and when it stopped being listed (sources/events-pt carries this from read to
+// read). Beside them, Perplexity's claims that an event will happen, each with its evidence links, the time asked and the stored
+// answer it came from, so each can be checked when its date comes. Nothing is filled in.
+export function buildEventsHistory(sources) {
+  const L = (sources.find(s => s.id === 'events-pt') || {}).latest || {};
+  let hist = L.history;
+  if (!hist) { hist = {}; for (const e of Object.values(L.places || {}).flat()) if (e.url) hist[e.url] = { place: e.place, source: e.source, first: { at: e.read_at, name: e.name, startDate: e.startDate, endDate: e.endDate || null, venue: e.location?.name || null }, changes: [], last_seen: e.read_at, gone_at: null }; }
+  const lic = {}; for (const e of Object.values(L.places || {}).flat()) if (e.url && e.license) { try { lic[new URL(e.url).host] = e.license } catch {} }
+  const claimsOf = place => {
+    const out = [];
+    for (const f of [`discovery/claims/by-place/${place}.json`, `discovery/claims/past/${place}.json`]) {
+      if (!existsSync(f)) continue; const j = JSON.parse(readFileSync(f, 'utf8')), d = j.discovery || {};
+      for (const c of j.claims || []) out.push({ name: c.name, startDate: c.startDate, endDate: c.endDate || null, status: c.status || null,
+        evidence: (c.evidence || []).map(x => ({ url: x.url, host: x.host, readable: x.readable })), asked_at: c.asked_at || d.asked_at || null,
+        model: c.model || d.model || null, via: c.via || d.via || null, answer_file: c.file || d.file || null, kept_in: f });
+    }
+    const seen = new Set(); return out.filter(c => { const k = `${c.name}|${c.startDate}`; if (seen.has(k)) return false; seen.add(k); return true }).sort((a, b) => String(a.startDate).localeCompare(String(b.startDate)));
+  };
+  const places = new Set(Object.values(hist).map(h => h.place));
+  for (const dir of ['discovery/claims/by-place', 'discovery/claims/past']) if (existsSync(dir)) for (const f of readdirSync(dir)) if (f.endsWith('.json') && f !== 'index.json') places.add(f.replace(/\.json$/, ''));
+  const files = [];
+  for (const place of [...places].filter(Boolean).sort()) {
+    const events = Object.entries(hist).filter(([, h]) => h.place === place).map(([url, h]) => {
+      let host = null; try { host = new URL(url).host } catch {}
+      return { url, source: h.source, licence: lic[host] || { name: "the source's terms", url: host ? `https://${host}/` : null }, first: h.first, changes: h.changes, last_seen: h.last_seen, gone_at: h.gone_at };
+    }).sort((a, b) => String(a.first.startDate).localeCompare(String(b.first.startDate)) || String(a.first.name).localeCompare(String(b.first.name)));
+    const allClaims = claimsOf(place), claims = allClaims.filter(c => !/—/.test(JSON.stringify(c)));   // a claim the wording gate refuses (an em dash in its name) is dropped, never altered; counted
+    const f = { place, data_read_at: L.read_at || null, history_from: L.history_from || L.read_at || null,
+      about: `Events in ${place}: each exactly as first listed by its organiser's page (first: name, dates, venue, and the read that first saw it), never overwritten; every later change seen (changes: field, from, to, at); last_seen; gone_at when it stopped being listed before its date. Events read every 6 hours, so a change is dated by the read that first saw it. Claims: what Perplexity (through OpenRouter) said would happen, kept as answered with its evidence links and the time asked, to be checked when the date comes. Not confirmed listings.`,
+      sources: { events: { url: 'https://data.promptugal.news/api/v1/events-pt/latest.json', field: 'history' }, claims: { url: 'https://github.com/PrompTugal/PrompTugal__News__Data/tree/dev/discovery/claims', field: 'claims' } },
+      commit: process.env.GITHUB_SHA || 'local', counts: { events: events.length, changed: events.filter(e => e.changes.length).length, gone: events.filter(e => e.gone_at).length, claims: claims.length, claims_dropped_wording: allClaims.length - claims.length }, events: events.filter(e => !/—/.test(JSON.stringify(e))), claims };
+    writeJson(`api/v1/history/events/${place}.json`, f);
+    files.push({ place, ...f.counts, url: `https://data.promptugal.news/api/v1/history/events/${place}.json` });
+  }
+  writeJson('api/v1/history/events/index.json', { about: 'Events as first listed and every change since, and the claims kept to be checked, one file per place.', data_read_at: L.read_at || null, history_from: L.history_from || L.read_at || null, places: files });
   return files.length;
 }

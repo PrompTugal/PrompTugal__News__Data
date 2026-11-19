@@ -186,6 +186,34 @@ export default async function (run) {
         seen.add(e.url); (places[e.place] ||= []).push(e)
     }
     for (const p of Object.values(places)) p.sort((a, b) => a.startDate.localeCompare(b.startDate) || a.name.localeCompare(b.name))
+    // history (conductor.b@ for events.b@, 19 Nov 2026 ~01:26 UTC; show-the-past guidance, Dinis ~01:17 and ~01:22 UTC): each
+    // event exactly as first listed (name, dates, venue, source, the read that first saw it), never overwritten, then every later
+    // change seen (field, from, to, at), and when it stopped being listed. Keyed by the event's URL, carried from read to read;
+    // kept until a year after the event ends. A first read without history starts it from the events then listed, each dated
+    // by its own read_at.
+    const history = {}, at = run.started, YEAR = 365 * DAY
+    const fields = e => ({ name: e.name, startDate: e.startDate, endDate: e.endDate || null, venue: e.location?.name || null })
+    for (const [u, h] of Object.entries((prev && prev.history) || {})) if (h && h.first && /^https?:\/\//i.test(u)) history[u] = h
+    if (prev && !prev.history) for (const e of Object.values(prev.places || {}).flat()) if (e.url && !history[e.url]) history[e.url] = { place: e.place, source: e.source, first: { at: e.read_at, ...fields(e) }, changes: [], last_seen: e.read_at, gone_at: null }
+    const listed = new Set()
+    for (const e of Object.values(places).flat()) {
+        if (e.stale) continue   // not read this run: neither seen nor changed
+        listed.add(e.url)
+        const h = history[e.url]
+        if (!h) { history[e.url] = { place: e.place, source: e.source, first: { at: e.read_at, ...fields(e) }, changes: [], last_seen: e.read_at, gone_at: null }; continue }
+        const cur = { ...h.first }; for (const c of h.changes) if (c.field in cur) cur[c.field] = c.to
+        for (const [k, v] of Object.entries(fields(e))) if (cur[k] !== v) h.changes.push({ at: e.read_at, field: k, from: cur[k], to: v })
+        if (h.gone_at) h.changes.push({ at: e.read_at, field: 'listed', from: false, to: true })
+        h.last_seen = e.read_at; h.gone_at = null
+    }
+    const readHosts = new Set(Object.entries(fresh).filter(([, l]) => l.length && !l[0].stale).map(([h]) => h))
+    for (const [u, h] of Object.entries(history)) {
+        let host = null; try { host = new URL(u).host } catch {}
+        const cur = { ...h.first }; for (const c of h.changes) if (c.field in cur) cur[c.field] = c.to
+        // no longer listed by a host read this run, before its date passed: recorded (an event that has ended simply leaves)
+        if (!listed.has(u) && !h.gone_at && readHosts.has(host) && String(cur.endDate || cur.startDate).slice(0, 10) >= today) { h.gone_at = at; h.changes.push({ at, field: 'listed', from: true, to: false }) }
+        if (Date.parse(cur.endDate || cur.startDate) < Date.parse(at) - YEAR) delete history[u]
+    }
     const by_source = { 'www.agendalx.pt': 0, 'www.cm-lagos.pt': 0, 'teatrodasfiguras.pt': 0, 'cm-tavira.pt': 0 }
     for (const e of all) if (seen.has(e.url)) by_source[new URL(e.url).host] = (by_source[new URL(e.url).host] || 0) + 1
     return { source: run.id, title: run.card.title, read_at: run.started,
@@ -197,5 +225,5 @@ export default async function (run) {
         about: `Events on now or starting within ${WINDOW_DAYS} days (to ${horizon}) in the places listed, as schema.org Event records, each with its source URL and the time read. Dates are as the source gives them (Lisbon time; a time is added only where a single start hour is shown); a long-running event shows its first and last day. organizer is null where the source does not name an organiser (the agenda's publisher is in source). A dated record read by code, not a ticketing or booking service: check the organiser before travelling.`,
         counts: { events: Object.values(places).reduce((n, p) => n + p.length, 0), places: Object.keys(places).length, by_source, dropped_duplicates_or_unknown_place: dropped },
         ...(stale.length ? { stale_note: 'These hosts could not be read this run; their events are from the last good read (each has stale: true and its own read_at), kept for at most 48 hours.', stale } : {}),
-        places, gaps }
+        places, gaps, history_from: (prev && prev.history_from) || (prev && prev.read_at) || at, history }
 }
