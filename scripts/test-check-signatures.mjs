@@ -123,7 +123,14 @@ const withChecks = name => { const r = setup(name); r.commit('adds the other che
   const vet = at(/tar -tvf/), unpack = at(/tar --no-same-owner/), trusted = at(/trusted-checks\.sh"? >|show .*trusted-checks\.sh/);
   const deployNeeds = /\n  deploy:\n    needs: \[[^\]\n]*\bverify\b[^\]\n]*\]/.test(wf);
   results.push({ name: '(9) the verify job runs no pushed code and reads no GITHUB_ENV, and deploy needs it', pass: job.length > 0 && pushed.length === 0 && deployNeeds, out: pushed.join(' | ') || (job ? 'deploy does not need verify' : 'no verify job') });
-  results.push({ name: '(9) the site is unpacked, after its listing is vetted, before any trusted copy is written', pass: vet >= 0 && unpack > vet && trusted > unpack, out: `vet ${vet}, unpack ${unpack}, trusted ${trusted}` }); }
+  results.push({ name: '(9) the site is unpacked, after its listing is vetted, before any trusted copy is written', pass: vet >= 0 && unpack > vet && trusted > unpack, out: `vet ${vet}, unpack ${unpack}, trusted ${trusted}` });
+  // live.b@'s findings (a4c6fce): a pushed _site is refused and pushed .gitattributes removed before the unpack; the anchor
+  // run must have the job named verify passed; verify, deploy and tag run only for refs/heads/dev
+  const siteRefused = at(/ls-tree --name-only HEAD _site/), attrs = at(/-name \.gitattributes .*rm -f/);
+  results.push({ name: '(9) a pushed _site is refused and pushed .gitattributes removed, before the site is unpacked', pass: siteRefused >= 0 && attrs >= 0 && siteRefused < unpack && attrs < unpack, out: `site ${siteRefused}, attrs ${attrs}, unpack ${unpack}` });
+  results.push({ name: '(7) the anchor is a run whose job named verify passed', pass: lines.some(l => /actions\/runs\/.*\/jobs/.test(l)) && lines.some(l => /\.name == "verify" and \.conclusion == "success"/.test(l)), out: 'no jobs check in the verify job' });
+  const ifOf = name => ((wf.split(`\n  ${name}:\n`)[1] || '').split(/\n  [a-z-]+:\n/)[0].match(/\n    if: ([^\n]+)/) || [])[1] || '';
+  results.push({ name: 'verify, deploy and tag run only for refs/heads/dev', pass: ['verify', 'deploy', 'tag'].every(j => ifOf(j).includes("github.ref == 'refs/heads/dev'")), out: ['verify', 'deploy', 'tag'].map(j => `${j}: ${ifOf(j)}`).join(' | ') }); }
 
 rmSync(tmp, { recursive: true, force: true });
 const bad = results.filter(r => !r.pass);
