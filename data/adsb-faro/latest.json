@@ -1,11 +1,11 @@
 {
  "source": "adsb-faro",
  "title": "Flights around Faro airport",
- "read_at": "2026-11-19T02:03:37Z",
+ "read_at": "2026-11-19T03:03:50Z",
  "provenance": {
   "source": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
   "page": "https://globe.adsb.lol/?lat=37.014&lon=-7.966&zoom=9",
-  "read_at": "2026-11-19T02:03:37Z",
+  "read_at": "2026-11-19T03:03:50Z",
   "by": "sources/adsb-faro/collect.mjs (code, no model; run by data@PrompTugal.dinis)",
   "terms": "adsb.lol: its API data is licensed under the Open Database License (ODbL 1.0): share-alike, with attribution; no key needed up to 500 requests a day per address.",
   "licence": "ODbL 1.0 (adsb.lol)"
@@ -18,13 +18,40 @@
   "lon": -7.9659,
   "within_nm": 40
  },
- "feed_time_ms": 1795053817501,
+ "feed_time_ms": 1795057430501,
  "counts": {
-  "airline": 0,
+  "airline": 2,
   "other_aircraft": 0,
   "other_on_ground": 0,
-  "by_airline": {},
-  "by_altitude_band": {}
+  "by_airline": {
+   "AFR": 2
+  },
+  "by_altitude_band": {
+   "30,000 ft and above": 2
+  }
  },
- "airline": []
+ "airline": [
+  {
+   "callsign": "AFR530",
+   "airline_icao": "AFR",
+   "type": "A359",
+   "alt_ft": 40000,
+   "on_ground": false,
+   "ground_speed_kt": 533.4,
+   "track_deg": 33.06,
+   "lat": 36.56,
+   "lon": -7.77
+  },
+  {
+   "callsign": "AFR719",
+   "airline_icao": "AFR",
+   "type": "A359",
+   "alt_ft": 40000,
+   "on_ground": false,
+   "ground_speed_kt": 535.1,
+   "track_deg": 32.56,
+   "lat": 37.08,
+   "lon": -7.34
+  }
+ ]
 }

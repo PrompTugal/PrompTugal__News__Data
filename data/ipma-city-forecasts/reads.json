@@ -3,6 +3,338 @@
  "source": "ipma-city-forecasts",
  "runs": [
   {
+   "at": "2026-11-19T03:06:07Z",
+   "finished": "2026-11-19T03:07:36Z",
+   "ok": 36,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "distrits-islands",
+     "url": "https://api.ipma.pt/open-data/distrits-islands.json",
+     "at": "2026-11-19T03:06:08Z",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "city-1010500",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1010500.json",
+     "at": "2026-11-19T03:06:10Z",
+     "status": 200,
+     "bytes": 1153,
+     "sha256_prefix": "b32cc7d2a1f7dcc2",
+     "changed": true
+    },
+    {
+     "name": "city-1020500",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1020500.json",
+     "at": "2026-11-19T03:06:13Z",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "d9e0885d9b9ddc67",
+     "changed": true
+    },
+    {
+     "name": "city-1030300",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1030300.json",
+     "at": "2026-11-19T03:06:15Z",
+     "status": 200,
+     "bytes": 1153,
+     "sha256_prefix": "26fc275a82ba7381",
+     "changed": true
+    },
+    {
+     "name": "city-1030800",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1030800.json",
+     "at": "2026-11-19T03:06:18Z",
+     "status": 200,
+     "bytes": 1151,
+     "sha256_prefix": "09a76f2833591e80",
+     "changed": true
+    },
+    {
+     "name": "city-1040200",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1040200.json",
+     "at": "2026-11-19T03:06:20Z",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "1f4f9d2706805d9b",
+     "changed": true
+    },
+    {
+     "name": "city-1050200",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1050200.json",
+     "at": "2026-11-19T03:06:23Z",
+     "status": 200,
+     "bytes": 1128,
+     "sha256_prefix": "e9e58d54f6622998",
+     "changed": true
+    },
+    {
+     "name": "city-1060300",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1060300.json",
+     "at": "2026-11-19T03:06:25Z",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "2bdddc7dcc67efcb",
+     "changed": true
+    },
+    {
+     "name": "city-1070500",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1070500.json",
+     "at": "2026-11-19T03:06:28Z",
+     "status": 200,
+     "bytes": 1105,
+     "sha256_prefix": "e3df75e978c91786",
+     "changed": true
+    },
+    {
+     "name": "city-1080500",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1080500.json",
+     "at": "2026-11-19T03:06:30Z",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "55514adcb899ccd0",
+     "changed": true
+    },
+    {
+     "name": "city-1081505",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1081505.json",
+     "at": "2026-11-19T03:06:33Z",
+     "status": 200,
+     "bytes": 1109,
+     "sha256_prefix": "25bb9e0cbc7f1cfe",
+     "changed": true
+    },
+    {
+     "name": "city-1081100",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1081100.json",
+     "at": "2026-11-19T03:06:35Z",
+     "status": 200,
+     "bytes": 1109,
+     "sha256_prefix": "b281e925b4189ae1",
+     "changed": true
+    },
+    {
+     "name": "city-1080800",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1080800.json",
+     "at": "2026-11-19T03:06:38Z",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "b8f9e887878c051f",
+     "changed": true
+    },
+    {
+     "name": "city-1090700",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1090700.json",
+     "at": "2026-11-19T03:06:40Z",
+     "status": 200,
+     "bytes": 1141,
+     "sha256_prefix": "fd7ed513cb5f405d",
+     "changed": true
+    },
+    {
+     "name": "city-1090821",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1090821.json",
+     "at": "2026-11-19T03:06:43Z",
+     "status": 200,
+     "bytes": 1145,
+     "sha256_prefix": "c3cb7fadd82b779e",
+     "changed": true
+    },
+    {
+     "name": "city-1100900",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1100900.json",
+     "at": "2026-11-19T03:06:45Z",
+     "status": 200,
+     "bytes": 1148,
+     "sha256_prefix": "7244b12ef6e35fb4",
+     "changed": true
+    },
+    {
+     "name": "city-1110600",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1110600.json",
+     "at": "2026-11-19T03:06:48Z",
+     "status": 200,
+     "bytes": 1109,
+     "sha256_prefix": "1ed84c768a727f2a",
+     "changed": true
+    },
+    {
+     "name": "city-1121400",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1121400.json",
+     "at": "2026-11-19T03:06:50Z",
+     "status": 200,
+     "bytes": 1128,
+     "sha256_prefix": "4d19657db6f5c8ee",
+     "changed": true
+    },
+    {
+     "name": "city-1131200",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1131200.json",
+     "at": "2026-11-19T03:06:53Z",
+     "status": 200,
+     "bytes": 1152,
+     "sha256_prefix": "79dd02d83f9fcb75",
+     "changed": true
+    },
+    {
+     "name": "city-1141600",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1141600.json",
+     "at": "2026-11-19T03:06:55Z",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "ac20474015397727",
+     "changed": true
+    },
+    {
+     "name": "city-1151200",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1151200.json",
+     "at": "2026-11-19T03:06:58Z",
+     "status": 200,
+     "bytes": 1106,
+     "sha256_prefix": "1efb7bffc6f38c78",
+     "changed": true
+    },
+    {
+     "name": "city-1151300",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1151300.json",
+     "at": "2026-11-19T03:07:00Z",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "383697239cc31cf1",
+     "changed": true
+    },
+    {
+     "name": "city-1160900",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1160900.json",
+     "at": "2026-11-19T03:07:03Z",
+     "status": 200,
+     "bytes": 1152,
+     "sha256_prefix": "51da5255298fdd90",
+     "changed": true
+    },
+    {
+     "name": "city-1171400",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1171400.json",
+     "at": "2026-11-19T03:07:05Z",
+     "status": 200,
+     "bytes": 1152,
+     "sha256_prefix": "3007f46a59921b71",
+     "changed": true
+    },
+    {
+     "name": "city-1182300",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1182300.json",
+     "at": "2026-11-19T03:07:08Z",
+     "status": 200,
+     "bytes": 1151,
+     "sha256_prefix": "35f8a80b033ae3f3",
+     "changed": true
+    },
+    {
+     "name": "city-2310300",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/2310300.json",
+     "at": "2026-11-19T03:07:10Z",
+     "status": 200,
+     "bytes": 1175,
+     "sha256_prefix": "73620edf7d614631",
+     "changed": true
+    },
+    {
+     "name": "city-2320100",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/2320100.json",
+     "at": "2026-11-19T03:07:13Z",
+     "status": 200,
+     "bytes": 1096,
+     "sha256_prefix": "596c691e89621cb3",
+     "changed": true
+    },
+    {
+     "name": "city-3410100",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/3410100.json",
+     "at": "2026-11-19T03:07:15Z",
+     "status": 200,
+     "bytes": 1157,
+     "sha256_prefix": "261e2b5a3c2b49d6",
+     "changed": true
+    },
+    {
+     "name": "city-3420300",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/3420300.json",
+     "at": "2026-11-19T03:07:18Z",
+     "status": 200,
+     "bytes": 1138,
+     "sha256_prefix": "36200dcfcd4a51eb",
+     "changed": true
+    },
+    {
+     "name": "city-3430100",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/3430100.json",
+     "at": "2026-11-19T03:07:20Z",
+     "status": 200,
+     "bytes": 1178,
+     "sha256_prefix": "71327301f6e28916",
+     "changed": true
+    },
+    {
+     "name": "city-3440100",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/3440100.json",
+     "at": "2026-11-19T03:07:23Z",
+     "status": 200,
+     "bytes": 1158,
+     "sha256_prefix": "ca66b88b63578ad3",
+     "changed": true
+    },
+    {
+     "name": "city-3450200",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/3450200.json",
+     "at": "2026-11-19T03:07:25Z",
+     "status": 200,
+     "bytes": 1177,
+     "sha256_prefix": "7c7ec88e2021fcd4",
+     "changed": true
+    },
+    {
+     "name": "city-3460200",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/3460200.json",
+     "at": "2026-11-19T03:07:28Z",
+     "status": 200,
+     "bytes": 1159,
+     "sha256_prefix": "6eb1875ad02d67a1",
+     "changed": true
+    },
+    {
+     "name": "city-3470100",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/3470100.json",
+     "at": "2026-11-19T03:07:30Z",
+     "status": 200,
+     "bytes": 1157,
+     "sha256_prefix": "f54c67bb435e3ef7",
+     "changed": true
+    },
+    {
+     "name": "city-3480200",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/3480200.json",
+     "at": "2026-11-19T03:07:33Z",
+     "status": 200,
+     "bytes": 1140,
+     "sha256_prefix": "ba688e3c439bac7f",
+     "changed": true
+    },
+    {
+     "name": "city-3490100",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/3490100.json",
+     "at": "2026-11-19T03:07:35Z",
+     "status": 200,
+     "bytes": 1161,
+     "sha256_prefix": "25c867f981fc0ccc",
+     "changed": true
+    }
+   ]
+  },
+  {
    "at": "2026-11-19T02:06:11Z",
    "finished": "2026-11-19T02:07:40Z",
    "ok": 36,

@@ -1,8 +1,68 @@
 {
- "at": "2026-11-19T02:17:05Z",
+ "at": "2026-11-19T03:08:08Z",
  "sources": [
   {
-   "id": "nvd-kev",
+   "id": "adsb-faro",
+   "ok": 1,
+   "failed": 0,
+   "wrote": true
+  },
+  {
+   "id": "cams",
+   "ok": 2,
+   "failed": 0,
+   "wrote": true
+  },
+  {
+   "id": "ea-flood",
+   "ok": 23,
+   "failed": 0,
+   "wrote": true
+  },
+  {
+   "id": "ipma-city-forecasts",
+   "ok": 36,
+   "failed": 0,
+   "wrote": true
+  },
+  {
+   "id": "ipma-fire-risk",
+   "ok": 3,
+   "failed": 0,
+   "wrote": true
+  },
+  {
+   "id": "ipma-observations",
+   "ok": 2,
+   "failed": 0,
+   "wrote": true
+  },
+  {
+   "id": "ipma-sea",
+   "ok": 4,
+   "failed": 0,
+   "wrote": true
+  },
+  {
+   "id": "ipma-uv",
+   "ok": 2,
+   "failed": 0,
+   "wrote": true
+  },
+  {
+   "id": "ipma-warnings",
+   "ok": 1,
+   "failed": 0,
+   "wrote": true
+  },
+  {
+   "id": "meteoalarm-pt",
+   "ok": 1,
+   "failed": 0,
+   "wrote": true
+  },
+  {
+   "id": "tfl-jamcams",
    "ok": 1,
    "failed": 0,
    "wrote": true
