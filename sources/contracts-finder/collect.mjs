@@ -9,7 +9,7 @@
 // Greater London (E, EC, N, NW, SE, SW, W, WC); the outer areas that straddle the boundary (BR, CR, DA, EN, HA, IG, KT, RM, SM,
 // TW, UB, WD) are left out, so London bodies there are missed, and the file says so.
 const API = 'https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search'
-const LIC = 'http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/'
+const LIC = 'https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/'
 const INNER = new Set(['E', 'EC', 'N', 'NW', 'SE', 'SW', 'W', 'WC'])
 const LIMIT = 100
 const HYPE = /\b(revolutionary|cutting[- ]edge|seamless(?:ly)?|world[- ]class|game[- ]changing)\b/i   // the same words as scripts/validate.mjs
@@ -59,7 +59,7 @@ export default async function (run) {
     return {
         source: run.id, title: run.card.title, read_at: run.started, place: 'london',
         provenance: run.prov({ api: API, window_from: iso(from) + 'Z', window_to: iso(to) + 'Z', interface: 'Contracts Finder published OCDS search (no key)', robots: 'https://www.contractsfinder.service.gov.uk/robots.txt answered page not found (no rules), 19 Nov 2026' }),
-        license: { name: 'Open Government Licence v3.0', url: licence || LIC, holder: 'Crown copyright; Cabinet Office (publisher)', attribution: 'Contains public sector information licensed under the Open Government Licence v3.0.' },
+        license: { name: 'Open Government Licence v3.0', url: LIC, ...(licence && licence !== LIC ? { url_stated_by_source: licence } : {}), holder: 'Crown copyright (Crown Commercial Service)', commercial_use: 'allowed', attribution: 'Contains public sector information licensed under the Open Government Licence v3.0.' },
         about: 'Procurement notices that London public bodies published on Contracts Finder in the 24 hours before the read: each with its notice page, stage, title, buyer (as published: mostly public bodies, sometimes an agent publishing for one), the buyer\'s postcode district, value, award value and deadline, as published. London means the buyer\'s locality says London or its postcode area lies wholly inside Greater London (E, EC, N, NW, SE, SW, W, WC); bodies in the outer areas that straddle the boundary are not counted. Suppliers and contacts are not kept. Source: Cabinet Office, Contracts Finder; OGL v3.0. A weak signal, not an audit.',
         counts: { notices_in_window: seen, london_notices: items.length, windows_read: pages, windows_full: full, complete, buyers: Object.keys(buyers).length, fields_dropped_wording: dropped, value_gbp_listed: Math.round(sum('GBP')) },
         top_buyers: Object.entries(buyers).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).slice(0, 20).map(([buyer, n]) => ({ buyer, notices: n })),
