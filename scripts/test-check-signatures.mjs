@@ -144,6 +144,15 @@ const withChecks = name => { const r = setup(name); r.commit('adds the other che
   results.push({ name: `every run: block in pages.yml passes bash -n (${blocks.length} blocks)`, pass: blocks.length >= 8 && bad.length === 0, out: bad.map(b => `line ${b.line}: ${b.r.stderr.trim().split('\n')[0]}`).join(' | ') || `${blocks.length} blocks` }); }
 { const wf = readFileSync(join(dirname(CHECK), '..', '.github', 'workflows', 'pages.yml'), 'utf8');
   results.push({ name: 'the verify job reads git attributes from the empty tree and checks git is 2.42 or later', pass: /\n      GIT_ATTR_SOURCE: 4b825dc642cb6eb9a060e54bf8d69288fbee4904\n/.test(wf) && /is older than 2\.42/.test(wf), out: 'missing' }); }
+// the git version check fails closed (videos.b@'s finding, 7d1e31b): its lines, taken from the workflow, are run against
+// several version strings; anything unreadable or older than 2.42 must fail
+{ const wf = readFileSync(join(dirname(CHECK), '..', '.github', 'workflows', 'pages.yml'), 'utf8').split('\n');
+  const i0 = wf.findIndex(l => /gv=\$\(git --version\)/.test(l)), i1 = wf.findIndex(l => /is older than 2\.42/.test(l));
+  const body = i0 >= 0 && i1 > i0 ? wf.slice(i0, i1 + 1).map(l => l.trim()).join('\n') : '';
+  const run = v => spawnSync('bash', ['-c', 'git() { echo "$GV"; }\n' + body + '\necho passed'], { encoding: 'utf8', env: { ...noCI, GV: v } });
+  const cases = [['git version 2.56.1', true], ['git version 2.42.0', true], ['git version 3.0', true], ['git version 2.41.9', false], ['git version 1.99', false], ['git version', false], ['', false], ['git version x.y', false], ['git version 2', false]];
+  const wrong = cases.filter(([v, ok]) => (run(v).stdout.includes('passed') && run(v).status === 0) !== ok);
+  results.push({ name: 'the git version check fails closed on an unreadable or old version', pass: body.length > 0 && wrong.length === 0, out: body ? wrong.map(([v]) => JSON.stringify(v)).join(', ') : 'no version check found' }); }
 
 rmSync(tmp, { recursive: true, force: true });
 const bad = results.filter(r => !r.pass);

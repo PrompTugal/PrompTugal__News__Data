@@ -121,8 +121,11 @@ jobs:
       - name: Unpack the built site, as data
         run: |
           set -euo pipefail
-          v=$(git --version | sed -E 's/^git version ([0-9]+)\.([0-9]+).*/\1 \2/'); set -- $v
-          if [ "$1" -lt 2 ] || { [ "$1" -eq 2 ] && [ "$2" -lt 42 ]; }; then echo "git $1.$2 is older than 2.42 (GIT_ATTR_SOURCE)" >&2; exit 1; fi
+          # fail closed (videos.b@'s finding, 7d1e31b): both fields must be numbers before they are compared
+          gv=$(git --version); ma=""; mi=""
+          if [[ $gv =~ ^git\ version\ ([0-9]+)\.([0-9]+) ]]; then ma=${BASH_REMATCH[1]}; mi=${BASH_REMATCH[2]}; fi
+          if ! [[ $ma =~ ^[0-9]+$ && $mi =~ ^[0-9]+$ ]]; then echo "cannot read the git version from: $gv" >&2; exit 1; fi
+          if (( ma < 2 || (ma == 2 && mi < 42) )); then echo "git $ma.$mi is older than 2.42 (GIT_ATTR_SOURCE)" >&2; exit 1; fi
           # live.b@'s finding (a4c6fce): a pushed _site (a symlink into .git, say) must not steer where the site lands, and a
           # pushed .gitattributes must not steer git. The artifact was downloaded into RUNNER_TEMP, outside the checkout.
           if [ -n "$(git ls-tree --name-only HEAD _site)" ] || [ -e _site ] || [ -L _site ]; then echo "the pushed tree holds a _site path" >&2; exit 1; fi
