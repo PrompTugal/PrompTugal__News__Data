@@ -1,11 +1,11 @@
 {
  "source": "tfl-jamcams",
  "title": "London traffic cameras (TfL JamCams)",
- "read_at": "2026-11-19T05:07:44Z",
+ "read_at": "2026-11-19T06:16:16Z",
  "provenance": {
   "source": "https://api.tfl.gov.uk/",
   "page": "https://api-portal.tfl.gov.uk/",
-  "read_at": "2026-11-19T05:07:44Z",
+  "read_at": "2026-11-19T06:16:16Z",
   "by": "sources/tfl-jamcams/collect.mjs (code, no model; run by data.b@PrompTugal.dinis)",
   "terms": "TfL's Transport Data Service terms (based on the Open Government Licence v2.0 with TfL amendments): free to copy, publish, distribute, transmit and adapt the information and to exploit it commercially and non-commercially. Required: the credit 'Powered by TfL Open Data' and 'Contains OS data © Crown copyright and database rights 2016' and Geomni UK Map data © and database rights [2019]; TfL's design and branding guidelines; at most 500 calls a minute per feed; no suggestion that TfL endorses us. Read by Dinis Cruz in a browser on 18 November 2026 (tfl.gov.uk answers agents with a bot check). Not legal advice.",
   "api": "https://api.tfl.gov.uk/Place/Type/JamCam"

@@ -1,15 +1,24 @@
 {
- "license": {
-  "name": "CC BY 4.0",
-  "url": "https://creativecommons.org/licenses/by/4.0/",
-  "holder": "PrompTugal.news",
-  "note": "What PrompTugal.news makes: this file's structure, records and derived values.",
-  "commercial_use": "allowed",
-  "commercial_note": "With credit to PrompTugal.news; values taken from a source keep that source's licence."
- },
  "about": "Every run of sources/nvd-cve/collect.mjs, newest first: each request's address, HTTP status, size, the first 16 hex of its sha256, and whether the bytes changed since the run before. The bytes and the full sha256 go to the source's vault (see card.json: latest/reads-full.json), never to git.",
  "source": "nvd-cve",
  "runs": [
+  {
+   "at": "2026-11-19T06:15:43Z",
+   "finished": "2026-11-19T06:15:51Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "modified-0",
+     "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?lastModStartDate=2026-11-18T00:00:00.000&lastModEndDate=2026-11-19T06:15:43.000&resultsPerPage=2000&startIndex=0",
+     "at": "2026-11-19T06:15:49Z",
+     "status": 200,
+     "bytes": 6686143,
+     "sha256_prefix": "d2ace889798e2a40",
+     "changed": true
+    }
+   ]
+  },
   {
    "at": "2026-11-18T23:48:50Z",
    "finished": "2026-11-18T23:49:04Z",

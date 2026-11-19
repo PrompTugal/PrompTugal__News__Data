@@ -1,10 +1,10 @@
 {
  "place": "algarve",
- "read_at": "2026-11-19T05:07:46Z",
- "source_read_at": "2026-11-18T23:49:06Z",
+ "read_at": "2026-11-19T06:16:19Z",
+ "source_read_at": "2026-11-19T06:15:52Z",
  "by": "collect/social-by-place.mjs (code, no model; data.b@PrompTugal.dinis), from data/social/latest.json",
  "about": "Links to recent public posts by the official accounts of organisations that match this place by name in the post (basis \"text\") or, when the post names no place, that the organisation covers (basis \"account\"). Links and metadata only: the post text and media are not stored. A signal to check, not a verified fact. An empty list means no listed account posted about this place, not that nothing is happening.",
- "source_note": "Read 2026-11-18T23:49:06Z from the public APIs of bluesky and mastodon; accounts in register/social-accounts.json; gaps in https://data.promptugal.news/api/v1/social/latest.json. Terms: Organisations only, official interfaces only, by link. Bluesky: robots.txt of the public API allows crawling it and asks for backoff on 429; the Terms of Service (14 Aug 2025) leave each post's content with its author, so we store link and metadata only and credit the organisation. Mastodon: mastodon.social's terms (effective 2026-08-31) say whoever owns the content retains ownership and allow API access; its robots.txt disallows only /media_proxy/, /interact/ and a domain-blocks path. Licence on each post: the platform's terms, holder the organisation. Not reviewed by a person.",
+ "source_note": "Read 2026-11-19T06:15:52Z from the public APIs of bluesky and mastodon; accounts in register/social-accounts.json; gaps in https://data.promptugal.news/api/v1/social/latest.json. Terms: Organisations only, official interfaces only, by link. Bluesky: robots.txt of the public API allows crawling it and asks for backoff on 429; the Terms of Service (14 Aug 2025) leave each post's content with its author, so we store link and metadata only and credit the organisation. Mastodon: mastodon.social's terms (effective 2026-08-31) say whoever owns the content retains ownership and allow API access; its robots.txt disallows only /media_proxy/, /interact/ and a domain-blocks path. Licence on each post: the platform's terms, holder the organisation. Not reviewed by a person.",
  "count": 32,
  "posts": [
   {
@@ -26,7 +26,7 @@
     "url": "https://bsky.social/about/support/tos",
     "holder": "The Portugal Resident"
    },
-   "read_at": "2026-11-18T23:49:06Z",
+   "read_at": "2026-11-19T06:15:52Z",
    "place_basis": "text"
   },
   {
@@ -49,7 +49,7 @@
     "url": "https://bsky.social/about/support/tos",
     "holder": "The Portugal Resident"
    },
-   "read_at": "2026-11-18T23:49:06Z",
+   "read_at": "2026-11-19T06:15:52Z",
    "place_basis": "text"
   },
   {
@@ -73,7 +73,7 @@
     "url": "https://bsky.social/about/support/tos",
     "holder": "The Portugal Resident"
    },
-   "read_at": "2026-11-18T23:49:06Z",
+   "read_at": "2026-11-19T06:15:52Z",
    "place_basis": "text"
   },
   {
@@ -93,7 +93,7 @@
     "url": "https://bsky.social/about/support/tos",
     "holder": "The Portugal Resident"
    },
-   "read_at": "2026-11-18T23:49:06Z",
+   "read_at": "2026-11-19T06:15:52Z",
    "place_basis": "account"
   },
   {
@@ -115,7 +115,7 @@
     "url": "https://bsky.social/about/support/tos",
     "holder": "The Portugal Resident"
    },
-   "read_at": "2026-11-18T23:49:06Z",
+   "read_at": "2026-11-19T06:15:52Z",
    "place_basis": "text"
   },
   {
@@ -137,7 +137,7 @@
     "url": "https://bsky.social/about/support/tos",
     "holder": "The Portugal Resident"
    },
-   "read_at": "2026-11-18T23:49:06Z",
+   "read_at": "2026-11-19T06:15:52Z",
    "place_basis": "text"
   },
   {
@@ -160,7 +160,7 @@
     "url": "https://bsky.social/about/support/tos",
     "holder": "The Portugal Resident"
    },
-   "read_at": "2026-11-18T23:49:06Z",
+   "read_at": "2026-11-19T06:15:52Z",
    "place_basis": "text"
   },
   {
@@ -182,7 +182,7 @@
     "url": "https://bsky.social/about/support/tos",
     "holder": "The Portugal Resident"
    },
-   "read_at": "2026-11-18T23:49:06Z",
+   "read_at": "2026-11-19T06:15:52Z",
    "place_basis": "text"
   },
   {
@@ -204,7 +204,7 @@
     "url": "https://bsky.social/about/support/tos",
     "holder": "The Portugal Resident"
    },
-   "read_at": "2026-11-18T23:49:06Z",
+   "read_at": "2026-11-19T06:15:52Z",
    "place_basis": "account"
   },
   {
@@ -226,7 +226,7 @@
     "url": "https://bsky.social/about/support/tos",
     "holder": "The Portugal Resident"
    },
-   "read_at": "2026-11-18T23:49:06Z",
+   "read_at": "2026-11-19T06:15:52Z",
    "place_basis": "text"
   },
   {
@@ -248,7 +248,7 @@
     "url": "https://bsky.social/about/support/tos",
     "holder": "The Portugal Resident"
    },
-   "read_at": "2026-11-18T23:49:06Z",
+   "read_at": "2026-11-19T06:15:52Z",
    "place_basis": "text"
   },
   {
@@ -268,7 +268,7 @@
     "url": "https://bsky.social/about/support/tos",
     "holder": "The Portugal Resident"
    },
-   "read_at": "2026-11-18T23:49:06Z",
+   "read_at": "2026-11-19T06:15:52Z",
    "place_basis": "account"
   },
   {
@@ -290,7 +290,7 @@
     "url": "https://bsky.social/about/support/tos",
     "holder": "The Portugal Resident"
    },
-   "read_at": "2026-11-18T23:49:06Z",
+   "read_at": "2026-11-19T06:15:52Z",
    "place_basis": "text"
   },
   {
@@ -310,7 +310,7 @@
     "url": "https://bsky.social/about/support/tos",
     "holder": "The Portugal Resident"
    },
-   "read_at": "2026-11-18T23:49:06Z",
+   "read_at": "2026-11-19T06:15:52Z",
    "place_basis": "account"
   },
   {
@@ -330,7 +330,7 @@
     "url": "https://bsky.social/about/support/tos",
     "holder": "The Portugal Resident"
    },
-   "read_at": "2026-11-18T23:49:06Z",
+   "read_at": "2026-11-19T06:15:52Z",
    "place_basis": "account"
   },
   {
@@ -352,7 +352,7 @@
     "url": "https://bsky.social/about/support/tos",
     "holder": "The Portugal Resident"
    },
-   "read_at": "2026-11-18T23:49:06Z",
+   "read_at": "2026-11-19T06:15:52Z",
    "place_basis": "text"
   },
   {
@@ -372,7 +372,7 @@
     "url": "https://bsky.social/about/support/tos",
     "holder": "The Portugal Resident"
    },
-   "read_at": "2026-11-18T23:49:06Z",
+   "read_at": "2026-11-19T06:15:52Z",
    "place_basis": "account"
   },
   {
@@ -394,7 +394,7 @@
     "url": "https://bsky.social/about/support/tos",
     "holder": "The Portugal Resident"
    },
-   "read_at": "2026-11-18T23:49:06Z",
+   "read_at": "2026-11-19T06:15:52Z",
    "place_basis": "text"
   },
   {
@@ -416,7 +416,7 @@
     "url": "https://bsky.social/about/support/tos",
     "holder": "The Portugal Resident"
    },
-   "read_at": "2026-11-18T23:49:06Z",
+   "read_at": "2026-11-19T06:15:52Z",
    "place_basis": "text"
   },
   {
@@ -438,7 +438,7 @@
     "url": "https://bsky.social/about/support/tos",
     "holder": "The Portugal Resident"
    },
-   "read_at": "2026-11-18T23:49:06Z",
+   "read_at": "2026-11-19T06:15:52Z",
    "place_basis": "text"
   },
   {
@@ -461,7 +461,7 @@
     "url": "https://bsky.social/about/support/tos",
     "holder": "The Portugal Resident"
    },
-   "read_at": "2026-11-18T23:49:06Z",
+   "read_at": "2026-11-19T06:15:52Z",
    "place_basis": "text"
   },
   {
@@ -481,7 +481,7 @@
     "url": "https://bsky.social/about/support/tos",
     "holder": "The Portugal Resident"
    },
-   "read_at": "2026-11-18T23:49:06Z",
+   "read_at": "2026-11-19T06:15:52Z",
    "place_basis": "account"
   },
   {
@@ -501,7 +501,7 @@
     "url": "https://bsky.social/about/support/tos",
     "holder": "The Portugal Resident"
    },
-   "read_at": "2026-11-18T23:49:06Z",
+   "read_at": "2026-11-19T06:15:52Z",
    "place_basis": "account"
   },
   {
@@ -524,7 +524,7 @@
     "url": "https://bsky.social/about/support/tos",
     "holder": "The Portugal Resident"
    },
-   "read_at": "2026-11-18T23:49:06Z",
+   "read_at": "2026-11-19T06:15:52Z",
    "place_basis": "text"
   },
   {
@@ -544,7 +544,7 @@
     "url": "https://bsky.social/about/support/tos",
     "holder": "The Portugal Resident"
    },
-   "read_at": "2026-11-18T23:49:06Z",
+   "read_at": "2026-11-19T06:15:52Z",
    "place_basis": "account"
   },
   {
@@ -569,7 +569,7 @@
     "url": "https://bsky.social/about/support/tos",
     "holder": "The Portugal Resident"
    },
-   "read_at": "2026-11-18T23:49:06Z",
+   "read_at": "2026-11-19T06:15:52Z",
    "place_basis": "text"
   },
   {
@@ -589,7 +589,7 @@
     "url": "https://bsky.social/about/support/tos",
     "holder": "The Portugal Resident"
    },
-   "read_at": "2026-11-18T23:49:06Z",
+   "read_at": "2026-11-19T06:15:52Z",
    "place_basis": "account"
   },
   {
@@ -611,7 +611,7 @@
     "url": "https://bsky.social/about/support/tos",
     "holder": "The Portugal Resident"
    },
-   "read_at": "2026-11-18T23:49:06Z",
+   "read_at": "2026-11-19T06:15:52Z",
    "place_basis": "text"
   },
   {
@@ -631,7 +631,7 @@
     "url": "https://bsky.social/about/support/tos",
     "holder": "The Portugal Resident"
    },
-   "read_at": "2026-11-18T23:49:06Z",
+   "read_at": "2026-11-19T06:15:52Z",
    "place_basis": "account"
   },
   {
@@ -653,7 +653,7 @@
     "url": "https://bsky.social/about/support/tos",
     "holder": "Turismo de Portugal (Visit Portugal)"
    },
-   "read_at": "2026-11-18T23:49:06Z",
+   "read_at": "2026-11-19T06:15:52Z",
    "place_basis": "text"
   },
   {
@@ -677,7 +677,7 @@
     "url": "https://bsky.social/about/support/tos",
     "holder": "Turismo de Portugal (Visit Portugal)"
    },
-   "read_at": "2026-11-18T23:49:06Z",
+   "read_at": "2026-11-19T06:15:52Z",
    "place_basis": "text"
   },
   {
@@ -700,7 +700,7 @@
     "url": "https://bsky.social/about/support/tos",
     "holder": "Turismo de Portugal (Visit Portugal)"
    },
-   "read_at": "2026-11-18T23:49:06Z",
+   "read_at": "2026-11-19T06:15:52Z",
    "place_basis": "text"
   }
  ]
