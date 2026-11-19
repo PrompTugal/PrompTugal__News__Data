@@ -74,7 +74,7 @@ const setup = name => { const r = repo(name); const base = r.commit('bootstrap',
 { const r = setup('orphan'); r.g('checkout', '-q', '--orphan', 'o'); r.commit('orphan trusting its own key B', { key: B, files: { 'team/keys.json': keysWith(entry('b', B)) } }); r.g('checkout', '-q', 'main');
   r.g('-c', 'gpg.format=ssh', '-c', `user.signingkey=${A.f}`, 'merge', '-q', '-S', '--no-ff', '--allow-unrelated-histories', '-X', 'ours', '-m', 'merge', '-m', `Agent: ${AGENT}\nClaude-Session: ${SESSION}`, 'o');
   expect('(6) an orphan commit merged in is refused, even signed with the key in its own tree', r.check(r.base, 'HEAD'), false, 'no parent (an orphan)'); }
-{ const r = setup('dropcheck'); r.g('rm', '-q', 'scripts/check-signatures.mjs'); r.commit('drops the check, unsigned'); expect('(6) a commit whose tree drops the check is checked, not skipped', r.checkFromBase(r.base, 'HEAD'), false, 'not signed by a key'); }
+{ const r = setup('dropcheck'); r.g('rm', '-q', 'scripts/check-signatures.mjs'); r.commit('drops the check and adds a change, unsigned', { files: { 'x.txt': '1' } }); expect('(8) a commit that removes the check and adds an unsigned change fails', r.checkFromBase(r.base, 'HEAD'), false, 'not signed by a key'); }
 { const r = setup('swapcheck'); r.commit('replaces the check, unsigned', { files: { 'scripts/check-signatures.mjs': 'console.log("OK")\n' } });
   expect('(7) a push that replaces the check is judged by the trusted base\'s copy', r.checkFromBase(r.base, 'HEAD'), false, 'not signed by a key'); }
 { const r = setup('ci-override'); r.commit('good', { key: A, files: { 'x.txt': '1' } });

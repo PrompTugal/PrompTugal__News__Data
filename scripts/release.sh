@@ -18,6 +18,7 @@ trusted="$(mktemp -d)"
 trust() { for f in check-commits.mjs check-signatures.mjs leak-scan.mjs; do git show "origin/dev:scripts/$f" > "$trusted/$f"; done
   rm -f "$trusted/commit-exemptions.json"; if git cat-file -e origin/dev:scripts/commit-exemptions.json 2>/dev/null; then git show origin/dev:scripts/commit-exemptions.json > "$trusted/commit-exemptions.json"; fi; }
 trust
+node "$trusted/leak-scan.mjs"
 node "$trusted/check-commits.mjs" origin/dev HEAD
 node "$trusted/check-signatures.mjs" origin/dev HEAD
 for i in 1 2 3 4 5; do
@@ -28,6 +29,7 @@ for i in 1 2 3 4 5; do
   node scripts/validate.mjs >/dev/null
   node scripts/leak-scan.mjs >/dev/null
   trust
+  node "$trusted/leak-scan.mjs" >/dev/null
   node "$trusted/check-commits.mjs" origin/dev HEAD >/dev/null
   node "$trusted/check-signatures.mjs" origin/dev HEAD >/dev/null
   if git -c push.negotiate=true push -q origin HEAD:dev; then echo "released $(git rev-parse --short HEAD) to dev"; exit 0; fi
