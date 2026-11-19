@@ -21,10 +21,8 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
-    # deployments: read, to find the anchor (security@'s fourth ruling, 19 Nov 2026 ~14:17 UTC)
     permissions:
       contents: read
-      deployments: read
     outputs:
       version: ${{ steps.version.outputs.version }}
       deploy: ${{ steps.mode.outputs.deploy }}
@@ -87,8 +85,9 @@ jobs:
           path: _site
   # Control 9 (security@'s fifth ruling, 19 Nov 2026 ~14:20 UTC, from civic's finding): the signature, trailer and leak
   # checks run in their own job, which runs no code from the pushed tree. It checks out, finds the anchor A in GitHub's own
-  # record (the last successful github-pages deployment; never git, tags or BEFORE), requires A to be an ancestor of the
+  # record of runs (never git, tags or BEFORE), requires A to be an ancestor of the
   # pushed commit, takes scripts/trusted-checks.sh and the checks from A's tree into RUNNER_TEMP, and runs them over A..AFTER.
+  # Since the sixth ruling (~14:26 UTC) A is the head of the latest successful push run of this workflow on dev.
   # The build output reaches it only as data (the uploaded Pages artifact, unpacked with symlinks refused). Deploy needs it.
   # A pushed build step that writes GITHUB_ENV cannot reach this job: each job has its own environment.
   verify:
@@ -97,7 +96,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      deployments: read
       actions: read
     env:
       GIT_NO_REPLACE_OBJECTS: '1'
@@ -124,12 +122,13 @@ jobs:
           unset NODE_OPTIONS
           NODE="$(command -v node)"; case "$NODE" in /*) ;; *) echo "node is not at an absolute path" >&2; exit 1;; esac
           api() { curl -fsS -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" "https://api.github.com/repos/$REPO/$1"; }
-          anchor=""
-          for row in $(api "deployments?environment=github-pages&per_page=50" | jq -r '.[] | "\(.id):\(.sha)"'); do
-            if api "deployments/${row%%:*}/statuses?per_page=100" | jq -e 'any(.[]; .state == "success")' >/dev/null; then anchor="${row#*:}"; break; fi
-          done
-          echo "Anchor (last successful github-pages deployment): ${anchor:-none}"
-          [ -n "$anchor" ] || { echo "no anchor: no successful github-pages deployment found" >&2; exit 1; }
+          # security@'s sixth ruling (~14:26 UTC, civic.b@'s finding: anyone with write access can create a "successful
+          # deployment"): the anchor is the head commit of the latest run of this workflow file, on dev, from a push, that
+          # succeeded. Only GitHub Actions creates runs. Read from GitHub's API, never from git, tags or BEFORE.
+          anchor=$(api "actions/workflows/pages.yml/runs?branch=dev&event=push&status=success&per_page=20" \
+            | jq -r '[.workflow_runs[] | select(.path == ".github/workflows/pages.yml" and .head_branch == "dev" and .event == "push" and .conclusion == "success")][0].head_sha // empty')
+          echo "Anchor (head of the latest successful push run of this workflow on dev): ${anchor:-none}"
+          [ -n "$anchor" ] || { echo "no anchor: no successful run of this workflow on dev found" >&2; exit 1; }
           git merge-base --is-ancestor "$anchor" "$AFTER" || { echo "the anchor is not an ancestor of the pushed commit" >&2; exit 1; }
           mode=$(git ls-tree "$anchor" scripts/trusted-checks.sh | cut -c1-6)
           [ "$mode" = 100644 ] || [ "$mode" = 100755 ] || { echo "the anchor's scripts/trusted-checks.sh is missing or not a plain file" >&2; exit 1; }

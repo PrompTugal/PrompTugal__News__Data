@@ -2,9 +2,9 @@
 # Writes the trusted copies of the security checks and their config into <outdir> and prints the anchor, for control 7
 # (security@'s rulings of 19 Nov 2026, last the fourth at ~14:17 UTC, PrompTugal__News__Website
 # board/team/security/reviews/2026-11-19-0130-bar-signing-live-data.md). Usage: scripts/trusted-checks.sh <anchor> <after> <outdir>
-# The anchor is the newest commit a passing run verified, from a record a pusher cannot write: in CI the commit of the last
-# successful github-pages deployment (GitHub's deployments API); in release.sh the commit /version.json serves, which only
-# that deployment writes. Tags are not used. The caller checks the range <anchor>..<after>, so commits from a dropped run are
+# The anchor is the newest commit a passing run verified, from a record a pusher cannot write: in CI the head commit of the
+# latest successful push run of this workflow on dev (GitHub's runs API; security@'s sixth ruling, ~14:26 UTC); in
+# release.sh the commit /version.json serves, which only a passing run's deployment writes. Tags are not used. The caller checks the range <anchor>..<after>, so commits from a dropped run are
 # covered. It fails, never falling back to the pushed tree or the trusted base's copy, when the anchor is missing or a zero
 # id, when it is not an ancestor of <after>, when the checkout is shallow, or when the anchor has no copy of a check.
 # Tests: scripts/test-check-signatures.mjs. data.b@PrompTugal.dinis.
