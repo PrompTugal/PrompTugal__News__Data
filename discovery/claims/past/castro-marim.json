@@ -1,0 +1,56 @@
+{
+ "place": "castro-marim",
+ "about": "Claims whose dates have passed, kept as the history of each event series.",
+ "claims": [
+  {
+   "@type": "Event",
+   "name": "The Great World Race",
+   "startDate": "2026-11-19",
+   "endDate": "2026-11-19",
+   "place": "castro-marim",
+   "municipality": "Castro Marim",
+   "evidence": [
+    {
+     "url": "https://cm-castromarim.pt/site/eventos",
+     "host": "cm-castromarim.pt",
+     "readable": false,
+     "register": "cm-castromarim"
+    },
+    {
+     "url": "http://cm-castromarim.pt/info/",
+     "host": "cm-castromarim.pt",
+     "readable": false,
+     "register": "cm-castromarim"
+    }
+   ],
+   "status": "details withheld",
+   "details_from": null,
+   "details_note": "Details withheld: the sources cited (cm-castromarim.pt) are not ones whose terms let us copy them. Organiser: send them to us."
+  },
+  {
+   "@type": "Event",
+   "name": "Encontro Transfronteiriço de Mulheres Empreendedoras",
+   "startDate": "2026-11-19",
+   "endDate": "2026-11-19",
+   "place": "castro-marim",
+   "municipality": "Castro Marim",
+   "evidence": [
+    {
+     "url": "https://cm-castromarim.pt/site/eventos",
+     "host": "cm-castromarim.pt",
+     "readable": false,
+     "register": "cm-castromarim"
+    },
+    {
+     "url": "http://cm-castromarim.pt/info/",
+     "host": "cm-castromarim.pt",
+     "readable": false,
+     "register": "cm-castromarim"
+    }
+   ],
+   "status": "details withheld",
+   "details_from": null,
+   "details_note": "Details withheld: the sources cited (cm-castromarim.pt) are not ones whose terms let us copy them. Organiser: send them to us."
+  }
+ ]
+}

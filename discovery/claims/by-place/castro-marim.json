@@ -1,6 +1,6 @@
 {
  "place": "castro-marim",
- "read_at": "2026-11-19T01:21:32Z",
+ "read_at": "2026-11-20T07:18:52Z",
  "discovery": {
   "asked_at": "2026-11-18T14:18:39Z",
   "model": "perplexity/sonar",
@@ -9,61 +9,11 @@
  },
  "about": "Events claimed for this place, each with every evidence link and whether this site may read that source (the register). Name, date and place come from discovery (Perplexity, through OpenRouter); other details only from a readable source. Not a confirmed listing.",
  "counts": {
-  "claims": 4,
+  "claims": 2,
   "confirmed": 0,
-  "withheld": 4
+  "withheld": 2
  },
  "claims": [
-  {
-   "@type": "Event",
-   "name": "The Great World Race",
-   "startDate": "2026-11-19",
-   "endDate": "2026-11-19",
-   "place": "castro-marim",
-   "municipality": "Castro Marim",
-   "evidence": [
-    {
-     "url": "https://cm-castromarim.pt/site/eventos",
-     "host": "cm-castromarim.pt",
-     "readable": false,
-     "register": "cm-castromarim"
-    },
-    {
-     "url": "http://cm-castromarim.pt/info/",
-     "host": "cm-castromarim.pt",
-     "readable": false,
-     "register": "cm-castromarim"
-    }
-   ],
-   "status": "details withheld",
-   "details_from": null,
-   "details_note": "Details withheld: the sources cited (cm-castromarim.pt) are not ones whose terms let us copy them. Organiser: send them to us."
-  },
-  {
-   "@type": "Event",
-   "name": "Encontro Transfronteiriço de Mulheres Empreendedoras",
-   "startDate": "2026-11-19",
-   "endDate": "2026-11-19",
-   "place": "castro-marim",
-   "municipality": "Castro Marim",
-   "evidence": [
-    {
-     "url": "https://cm-castromarim.pt/site/eventos",
-     "host": "cm-castromarim.pt",
-     "readable": false,
-     "register": "cm-castromarim"
-    },
-    {
-     "url": "http://cm-castromarim.pt/info/",
-     "host": "cm-castromarim.pt",
-     "readable": false,
-     "register": "cm-castromarim"
-    }
-   ],
-   "status": "details withheld",
-   "details_from": null,
-   "details_note": "Details withheld: the sources cited (cm-castromarim.pt) are not ones whose terms let us copy them. Organiser: send them to us."
-  },
   {
    "@type": "Event",
    "name": "Vila Coração",
