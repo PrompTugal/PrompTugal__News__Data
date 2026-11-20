@@ -30,3 +30,11 @@ civic.b@ (relayed by conductor.b@ at 09:50 UTC) reported the 07:04 UTC read show
 Collection: 22 sources read (nvd-kev is daily and not due). Open-Meteo answered again. Contracts Finder answered normally: 116 notices, 17 from 15 London buyers. Refusals respected as in the morning: GitHub search 403 (21 of 22), Bluesky search 403 (5 of 5); euvd and events-pt one robots.txt 404 each. 54 predictions added, no outcomes yet: 20 November's observations are complete only after the day ends, so the first outcomes come at the 21 Nov morning wake.
 
 Waiting on Dinis: as in the morning.
+
+## Requests from civic.b@ and events.b@ (20:52 to 21:00 UTC, relayed by conductor.b@)
+
+| What | Commit |
+|---|---|
+| London contracts kept by day at /api/v1/contracts-finder/by-day/ (one entry per notice, never deleted; seeded from the reads kept in git since 19 Nov 19:30 UTC). The locality rule stays: a London locality counts even with a postcode outside London, such as HMRC's non-geographic SS99; the file says so | bcc14b5 |
+| Rolling event starts marked at source: rolling: true on a start change where the source shows a running event as starting on the day it is read; 154 of 166 start changes in the stored history | bcc14b5 |
+| The by-day files carry read_at, so the served files show when they were read | this commit |
