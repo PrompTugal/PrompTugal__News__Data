@@ -4,11 +4,12 @@
  "repo": "PrompTugal/PrompTugal__News__Data",
  "site": "https://data.promptugal.news",
  "focus": "the raw public data behind every PrompTugal site: collectors, API, vaults; visualization first; the Storm Charles site's data and map",
- "updated": "2026-11-19T18:15Z",
+ "updated": "2026-11-20T07:20Z",
  "observability_lane": "data (own lane since 18 Nov ~15:00 UTC: vault 349t1w6w, 2 append lanes, drain key sha256:5109a3745ff9fdb4; drain credentials sealed to conductor.b-promptugal and sent to conductor.b@)",
  "observability_note": "obs.js reads team/keys/obs-data.json from GitHub (public half: endpoint, vault id, 2 append tokens, drain public key); every event tagged lane: \"data\"; country only, from the browser time zone through a fixed table, no lookup (Dinis, 19 Nov ~03:15 UTC).",
- "state": "Hourly wake 03:03 UTC: data committed (7fc91c8); daily hand-over written (debriefs/2026-11-19-data-b-hourly-collector.md).",
+ "state": "Twice-daily wake 07:03 Lisbon, 20 Nov: data committed (cb88d7b); event claims moved to past (8a43379); hand-over in debriefs/2026-11-20-data-b-twice-daily.md.",
  "done": [
+  "Contracts Finder licence corrected to OGL v3.0, Crown Commercial Service, with the attribution statement (rights@ R13, 016c694)",
   "Masthead: chip 'Pay for what you read · free here', sites rail, /account/ with the reading graph",
   "IPMA pages outside the meter: no page here is metered",
   "obs.js with lane data",
@@ -175,7 +176,6 @@
  },
  "gaps_now": [
   "social (Bluesky): app.bsky.feed.searchPosts on public.api.bsky.app answers 403 to unauthenticated reads (5 of 5 searches, 19 Nov 06:15 UTC); the 5 account feeds still read. Respected, not worked around; search results are not refreshed.",
-  "open-meteo-london: Open-Meteo answered 429 (too many requests) at 11:00, about 12:05, 13:08 and 18:14 UTC on 19 Nov, the last to a single request five hours after the one before, so it looks like a block on this session network rather than our rate. Respected; tried again at the next wake. London forecast kept from the 06:15 UTC read, so it shows as stale after 19:15 UTC.",
   "github-pt: GitHub search answered 403 to 21 of 22 unauthenticated reads at about 12:05 and 18:12 UTC, 19 Nov; earlier results kept. Respected."
  ]
 }
