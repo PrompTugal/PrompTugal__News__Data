@@ -3,6 +3,41 @@
  "source": "eurostat-tourism",
  "runs": [
   {
+   "at": "2026-11-20T07:07:58Z",
+   "finished": "2026-11-20T07:08:05Z",
+   "ok": 3,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "tour_occ_nin2",
+     "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tour_occ_nin2?format=JSON&lang=en&geo=PT15&geo=PT17&geo=PT&geo=UKI&geo=PT1A&geo=PT1B&c_resid=DOM&c_resid=FOR&c_resid=TOTAL&nace_r2=I551-I553&unit=NR&lastTimePeriod=10",
+     "at": "2026-11-20T07:08:00Z",
+     "status": 200,
+     "bytes": 4765,
+     "sha256_prefix": "a6366be26ec89d79",
+     "changed": false
+    },
+    {
+     "name": "tour_occ_ninraw",
+     "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tour_occ_ninraw?format=JSON&lang=en&geo=PT&c_resid=UK&c_resid=DE&c_resid=FR&c_resid=ES&c_resid=NL&c_resid=US&c_resid=DOM&nace_r2=I551-I553&unit=NR&lastTimePeriod=10",
+     "at": "2026-11-20T07:08:02Z",
+     "status": 200,
+     "bytes": 4179,
+     "sha256_prefix": "071d3c091261066e",
+     "changed": false
+    },
+    {
+     "name": "tour_occ_nim",
+     "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tour_occ_nim?format=JSON&lang=en&geo=PT15&geo=PT17&geo=PT&geo=UKI&c_resid=DOM&c_resid=FOR&c_resid=TOTAL&nace_r2=I551-I553&unit=NR&lastTimePeriod=36",
+     "at": "2026-11-20T07:08:05Z",
+     "status": 200,
+     "bytes": 5509,
+     "sha256_prefix": "2fba815cb03ee4f6",
+     "changed": false
+    }
+   ]
+  },
+  {
    "at": "2026-11-19T13:06:33Z",
    "finished": "2026-11-19T13:06:40Z",
    "ok": 3,

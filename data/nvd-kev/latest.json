@@ -1,12 +1,12 @@
 {
  "source": "nvd-kev",
  "title": "NVD's record of every CVE on CISA's KEV list",
- "read_at": "2026-11-19T02:17:02Z",
+ "read_at": "2026-11-20T07:17:20Z",
  "notice": "This product uses the NVD API but is not endorsed or certified by the NVD.",
  "provenance": {
   "source": "https://nvd.nist.gov/",
   "page": "https://nvd.nist.gov/developers/vulnerabilities",
-  "read_at": "2026-11-19T02:17:02Z",
+  "read_at": "2026-11-20T07:17:20Z",
   "by": "sources/nvd-kev/collect.mjs (code, no model; run by data.b@PrompTugal.dinis)",
   "terms": "NVD API Terms of Use: the API is for building a service to \"search, display, analyze, retrieve, view and otherwise get\" NVD data; asked to display \"This product uses the NVD API but is not endorsed or certified by the NVD.\"; the NVD name may identify the source but not imply endorsement; if you modify the content you may not attribute it to the NVD (our totals are ours, our per-CVE values are kept as served); public rate limit 5 requests in a rolling 30 seconds without a key (we use none, seven seconds apart); no more than once every two hours (we read every 6 hours). Not reviewed by a person.",
   "api": "https://services.nvd.nist.gov/rest/json/cves/2.0?hasKev",
@@ -53449,8 +53449,8 @@
   {
    "id": "CVE-2024-10441",
    "published": "2025-03-19T02:15:27.120",
-   "lastModified": "2026-11-18T21:17:43.400",
-   "vulnStatus": "Modified",
+   "lastModified": "2026-11-19T17:17:51.900",
+   "vulnStatus": "Analyzed",
    "cna": "synology.com",
    "cvss": {
     "version": "3.1",
@@ -72589,8 +72589,8 @@
   {
    "id": "CVE-2026-40217",
    "published": "2026-04-10T14:16:36.307",
-   "lastModified": "2026-11-18T21:17:58.927",
-   "vulnStatus": "Modified",
+   "lastModified": "2026-11-19T17:18:57.120",
+   "vulnStatus": "Analyzed",
    "cna": "mitre.org",
    "cvss": {
     "version": "3.1",
@@ -72606,6 +72606,18 @@
     {
      "vendor": "litellm",
      "product": "litellm"
+    },
+    {
+     "vendor": "redhat",
+     "product": "ansible_automation_platform"
+    },
+    {
+     "vendor": "redhat",
+     "product": "openshift_ai"
+    },
+    {
+     "vendor": "redhat",
+     "product": "openshift_lightspeed"
     }
    ],
    "products_more": 0,
@@ -74148,8 +74160,8 @@
   {
    "id": "CVE-2026-64849",
    "published": "2026-08-17T22:17:23.580",
-   "lastModified": "2026-10-26T13:10:00.140",
-   "vulnStatus": "Analyzed",
+   "lastModified": "2026-11-19T22:18:07.680",
+   "vulnStatus": "Modified",
    "cna": "github.com",
    "cvss": {
     "version": "3.1",
@@ -75648,8 +75660,8 @@
   {
    "id": "CVE-2026-90436",
    "published": "2026-11-06T16:18:59.763",
-   "lastModified": "2026-11-18T21:18:04.433",
-   "vulnStatus": "Undergoing Analysis",
+   "lastModified": "2026-11-19T14:33:21.617",
+   "vulnStatus": "Analyzed",
    "cna": "apache.org",
    "cvss": {
     "version": "3.1",
@@ -75662,12 +75674,12 @@
    ],
    "products": [
     {
-     "vendor": "Apache Software Foundation",
-     "product": "Apache Axis 1.x (EOL)"
+     "vendor": "apache",
+     "product": "axis"
     }
    ],
    "products_more": 0,
-   "products_from": "cna",
+   "products_from": "cpe",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90436",
    "kev": {
     "added": "2026-11-18",
@@ -75677,8 +75689,8 @@
   {
    "id": "CVE-2026-90817",
    "published": "2026-09-20T13:17:44.973",
-   "lastModified": "2026-11-18T21:18:04.643",
-   "vulnStatus": "Undergoing Analysis",
+   "lastModified": "2026-11-19T17:19:06.413",
+   "vulnStatus": "Analyzed",
    "cna": "securifera.com",
    "cvss": {
     "version": "3.1",
@@ -75692,12 +75704,12 @@
    ],
    "products": [
     {
-     "vendor": "Vanderbilt University",
-     "product": "REDCap"
+     "vendor": "vanderbilt",
+     "product": "redcap"
     }
    ],
    "products_more": 0,
-   "products_from": "cna",
+   "products_from": "cpe",
    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90817",
    "kev": {
     "added": "2026-11-18",

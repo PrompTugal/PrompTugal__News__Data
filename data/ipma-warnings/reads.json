@@ -3,6 +3,23 @@
  "source": "ipma-warnings",
  "runs": [
   {
+   "at": "2026-11-20T07:17:00Z",
+   "finished": "2026-11-20T07:17:03Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "warnings",
+     "url": "https://api.ipma.pt/open-data/forecast/warnings/warnings_www.json",
+     "at": "2026-11-20T07:17:03Z",
+     "status": 200,
+     "bytes": 41621,
+     "sha256_prefix": "d2a802d6dd8818c9",
+     "changed": true
+    }
+   ]
+  },
+  {
    "at": "2026-11-19T18:14:27Z",
    "finished": "2026-11-19T18:14:29Z",
    "ok": 1,

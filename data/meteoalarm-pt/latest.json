@@ -1,11 +1,11 @@
 {
  "source": "meteoalarm-pt",
  "title": "MeteoAlarm CAP feed for Portugal",
- "read_at": "2026-11-19T18:14:29Z",
+ "read_at": "2026-11-20T07:17:03Z",
  "provenance": {
   "source": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
   "page": "https://www.meteoalarm.org/en/live/region/PT",
-  "read_at": "2026-11-19T18:14:29Z",
+  "read_at": "2026-11-20T07:17:03Z",
   "by": "sources/meteoalarm-pt/collect.mjs (code, no model; run by data@PrompTugal.dinis)",
   "terms": "MeteoAlarm: re-users must name the national service (IPMA), keep the time of issue, link www.meteoalarm.org and publish MeteoAlarm's disclaimer. latest.json carries all four."
  },
@@ -15,43 +15,25 @@
   "meteoalarm": "https://www.meteoalarm.org/",
   "disclaimer": "Time delays between this website and the www.meteoalarm.org website are possible. For the most up-to-date awareness information as published by the participating National Meteorological and Hydrological Services, please refer to www.meteoalarm.org."
  },
- "sha256_prefix": "6de1e86cee72baf0",
- "bytes": 139158,
+ "sha256_prefix": "f3e7171b7cfbed09",
+ "bytes": 144180,
  "counts": {
-  "messages": 80,
-  "not_expired": 39
+  "messages": 83,
+  "not_expired": 36
  },
  "changes": {
-  "since": "2026-11-19T16:07:33Z",
-  "appeared": [],
-  "left": []
+  "since": "2026-11-19T18:14:29Z",
+  "appeared": [
+   "2.49.0.0.620.0.PT.261120065235.PO-10-6430",
+   "2.49.0.0.620.0.PT.261120065235.PO-10-6431",
+   "2.49.0.0.620.0.PT.261120065235.PO-10-6432",
+   "2.49.0.0.620.0.PT.261120065235.PO-10-6433"
+  ],
+  "left": [
+   "2.49.0.0.620.0.PT.261114193153.AZ-10-671"
+  ]
  },
  "messages": [
-  {
-   "id": "2.49.0.0.620.0.PT.261114193153.AZ-10-671",
-   "sent_utc": "2026-11-14T19:31:53Z",
-   "msg_type": "Update",
-   "replaces": [
-    {
-     "id": "2.49.0.0.620.0.PT.261113194836.AZ-10-670",
-     "sent_utc": "2026-11-13T19:48:36Z"
-    }
-   ],
-   "area": "Açores - Grupo Central",
-   "emma": "PT002",
-   "level": "yellow",
-   "hazard": "Rain",
-   "event": "Yellow Rain Warning",
-   "event_national": "Aviso Amarelo Precipitação",
-   "onset_utc": "2026-11-14T09:00:00Z",
-   "expires_utc": "2026-11-14T19:32:00Z",
-   "severity": "Moderate",
-   "certainty": "Likely",
-   "urgency": "Expected",
-   "text": "Precipitation at times HEAVY.",
-   "sender": "Instituto Português do Mar e da Atmosfera",
-   "h": "e4739358b85ff634"
-  },
   {
    "id": "2.49.0.0.620.0.PT.261115023406.PO-10-6368",
    "sent_utc": "2026-11-15T02:34:06Z",
@@ -1841,6 +1823,86 @@
    "text": "Persistent rain",
    "sender": "Instituto Português do Mar e da Atmosfera",
    "h": "25834581f5d6e220"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261120065235.PO-10-6430",
+   "sent_utc": "2026-11-20T06:52:35Z",
+   "msg_type": "Alert",
+   "replaces": null,
+   "area": "Viana do Castelo",
+   "emma": "PT006",
+   "level": "yellow",
+   "hazard": "Rain",
+   "event": "Yellow Rain Warning",
+   "event_national": "Aviso Amarelo Precipitação",
+   "onset_utc": "2026-11-21T18:00:00Z",
+   "expires_utc": "2026-11-21T21:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Showers, sometimes heavy. Chance of thunderstorm.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "be1a77683e0ef458"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261120065235.PO-10-6431",
+   "sent_utc": "2026-11-20T06:52:35Z",
+   "msg_type": "Alert",
+   "replaces": null,
+   "area": "Braga",
+   "emma": "PT022",
+   "level": "yellow",
+   "hazard": "Rain",
+   "event": "Yellow Rain Warning",
+   "event_national": "Aviso Amarelo Precipitação",
+   "onset_utc": "2026-11-21T18:00:00Z",
+   "expires_utc": "2026-11-21T21:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Showers, sometimes heavy. Chance of thunderstorm.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "17e9be2e3b6388fb"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261120065235.PO-10-6432",
+   "sent_utc": "2026-11-20T06:52:35Z",
+   "msg_type": "Alert",
+   "replaces": null,
+   "area": "Porto",
+   "emma": "PT009",
+   "level": "yellow",
+   "hazard": "Rain",
+   "event": "Yellow Rain Warning",
+   "event_national": "Aviso Amarelo Precipitação",
+   "onset_utc": "2026-11-21T18:00:00Z",
+   "expires_utc": "2026-11-21T21:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Showers, sometimes heavy. Chance of thunderstorm.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "73b820636acfb996"
+  },
+  {
+   "id": "2.49.0.0.620.0.PT.261120065235.PO-10-6433",
+   "sent_utc": "2026-11-20T06:52:35Z",
+   "msg_type": "Alert",
+   "replaces": null,
+   "area": "Vila Real",
+   "emma": "PT007",
+   "level": "yellow",
+   "hazard": "Rain",
+   "event": "Yellow Rain Warning",
+   "event_national": "Aviso Amarelo Precipitação",
+   "onset_utc": "2026-11-21T18:00:00Z",
+   "expires_utc": "2026-11-21T21:00:00Z",
+   "severity": "Moderate",
+   "certainty": "Likely",
+   "urgency": "Expected",
+   "text": "Showers, sometimes heavy. Chance of thunderstorm.",
+   "sender": "Instituto Português do Mar e da Atmosfera",
+   "h": "87cd6e8590a57f86"
   }
  ]
 }

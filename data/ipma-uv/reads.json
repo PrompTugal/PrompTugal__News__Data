@@ -3,6 +3,32 @@
  "source": "ipma-uv",
  "runs": [
   {
+   "at": "2026-11-20T07:16:58Z",
+   "finished": "2026-11-20T07:17:00Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "distrits-islands",
+     "url": "https://api.ipma.pt/open-data/distrits-islands.json",
+     "at": "2026-11-20T07:15:08Z",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "uv",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/uv/uv.json",
+     "at": "2026-11-20T07:17:00Z",
+     "status": 200,
+     "bytes": 16080,
+     "sha256_prefix": "78b541edb777ed22",
+     "changed": true
+    }
+   ]
+  },
+  {
    "at": "2026-11-19T18:14:24Z",
    "finished": "2026-11-19T18:14:27Z",
    "ok": 2,
