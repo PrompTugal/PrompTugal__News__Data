@@ -51,7 +51,11 @@ export default async function (run) {
                 deadline: txt(t.tenderPeriod?.endDate, 25), procurement_method: txt(t.procurementMethod, 40) })
         }
     }
-    const complete = full === 0
+    // a read where every window answered with no notices at all is not a complete read of a quiet day: on 20 Nov 2026
+    // 07:04 UTC all six windows answered 200 with an empty package (1,387 bytes) while the same windows answered 47 notices
+    // and more at 09:50 UTC (civic.b@'s report, relayed by conductor.b@ at 09:50 UTC). So an all-empty read says so plainly.
+    const empty = seen === 0
+    const complete = full === 0 && !empty
     if (!pages) return null
     const items = [...kept.values()].sort((a, b) => String(b.published).localeCompare(String(a.published)))
     const buyers = {}; for (const i of items) if (i.buyer) buyers[i.buyer] = (buyers[i.buyer] || 0) + 1
@@ -61,7 +65,8 @@ export default async function (run) {
         provenance: run.prov({ api: API, window_from: iso(from) + 'Z', window_to: iso(to) + 'Z', interface: 'Contracts Finder published OCDS search (no key)', robots: 'https://www.contractsfinder.service.gov.uk/robots.txt answered page not found (no rules), 19 Nov 2026' }),
         license: { name: 'Open Government Licence v3.0', url: LIC, ...(licence && licence !== LIC ? { url_stated_by_source: licence } : {}), holder: 'Crown copyright (Crown Commercial Service)', commercial_use: 'allowed', attribution: 'Contains public sector information licensed under the Open Government Licence v3.0.' },
         about: 'Procurement notices that London public bodies published on Contracts Finder in the 24 hours before the read: each with its notice page, stage, title, buyer (as published: mostly public bodies, sometimes an agent publishing for one), the buyer\'s postcode district, value, award value and deadline, as published. London means the buyer\'s locality says London or its postcode area lies wholly inside Greater London (E, EC, N, NW, SE, SW, W, WC); bodies in the outer areas that straddle the boundary are not counted. Suppliers and contacts are not kept. Source: Cabinet Office, Contracts Finder; OGL v3.0. A weak signal, not an audit.',
-        counts: { notices_in_window: seen, london_notices: items.length, windows_read: pages, windows_full: full, complete, buyers: Object.keys(buyers).length, fields_dropped_wording: dropped, value_gbp_listed: Math.round(sum('GBP')) },
+        counts: { notices_in_window: seen, london_notices: items.length, windows_read: pages, windows_full: full, complete, ...(empty ? { empty_read: true } : {}), buyers: Object.keys(buyers).length, fields_dropped_wording: dropped, value_gbp_listed: Math.round(sum('GBP')) },
+        ...(empty ? { read_note: 'Every window answered with no notices at all. A whole day with no notices anywhere in the UK is unlikely, so this most likely means the source answered empty, not that London published nothing. Treat it as a gap, not as a count of zero.' } : {}),
         top_buyers: Object.entries(buyers).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).slice(0, 20).map(([buyer, n]) => ({ buyer, notices: n })),
         notices: items,
     }
