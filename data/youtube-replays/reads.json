@@ -3,6 +3,41 @@
  "source": "youtube-replays",
  "runs": [
   {
+   "at": "2026-11-20T18:16:36Z",
+   "finished": "2026-11-20T18:16:43Z",
+   "ok": 3,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "channel",
+     "url": "https://www.googleapis.com/youtube/v3/channels?(channels.list, 1 unit)",
+     "at": "2026-11-20T18:16:38Z",
+     "status": 200,
+     "bytes": 288,
+     "sha256_prefix": "acb718bbb1b98be3",
+     "changed": false
+    },
+    {
+     "name": "uploads",
+     "url": "https://www.googleapis.com/youtube/v3/playlistItems?(playlistItems.list, 1 unit)",
+     "at": "2026-11-20T18:16:40Z",
+     "status": 200,
+     "bytes": 6689,
+     "sha256_prefix": "0f04f2c7a24f12ca",
+     "changed": true
+    },
+    {
+     "name": "videos",
+     "url": "https://www.googleapis.com/youtube/v3/videos?(videos.list, 1 unit)",
+     "at": "2026-11-20T18:16:43Z",
+     "status": 200,
+     "bytes": 2729,
+     "sha256_prefix": "9082a187d55f581c",
+     "changed": true
+    }
+   ]
+  },
+  {
    "at": "2026-11-20T07:17:56Z",
    "finished": "2026-11-20T07:18:04Z",
    "ok": 3,

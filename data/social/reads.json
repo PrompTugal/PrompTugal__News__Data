@@ -3,6 +3,104 @@
  "source": "social",
  "runs": [
   {
+   "at": "2026-11-20T18:16:08Z",
+   "finished": "2026-11-20T18:16:33Z",
+   "ok": 5,
+   "failed": 5,
+   "reads": [
+    {
+     "name": "bsky-feed-bsky-visitportugal",
+     "url": "https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=visitportugal.com&filter=posts_no_replies&limit=30",
+     "at": "2026-11-20T18:16:10Z",
+     "status": 200,
+     "bytes": 81399,
+     "sha256_prefix": "28c4605ae637d5b5",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-publico",
+     "url": "https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=publico.pt&filter=posts_no_replies&limit=30",
+     "at": "2026-11-20T18:16:13Z",
+     "status": 200,
+     "bytes": 77861,
+     "sha256_prefix": "3e7f782d8cc1668f",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-lusa",
+     "url": "https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=lusa.pt&filter=posts_no_replies&limit=30",
+     "at": "2026-11-20T18:16:15Z",
+     "status": 200,
+     "bytes": 60020,
+     "sha256_prefix": "299d3a1c28c6fda4",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-portugalresident",
+     "url": "https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=portugalresident.com&filter=posts_no_replies&limit=30",
+     "at": "2026-11-20T18:16:18Z",
+     "status": 200,
+     "bytes": 73083,
+     "sha256_prefix": "0f8d9d16cd6858fc",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-sapo",
+     "url": "https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=sapo.pt&filter=posts_no_replies&limit=30",
+     "at": "2026-11-20T18:16:20Z",
+     "status": 200,
+     "bytes": 68811,
+     "sha256_prefix": "085eb56499bd26f8",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-web-summit",
+     "url": "https://public.api.bsky.app/xrpc/app.bsky.feed.searchPosts?q=%22Web%20Summit%22&sort=latest&limit=25",
+     "at": "2026-11-20T18:16:23Z",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-lisboa",
+     "url": "https://public.api.bsky.app/xrpc/app.bsky.feed.searchPosts?q=Lisboa&sort=latest&limit=25",
+     "at": "2026-11-20T18:16:25Z",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-algarve",
+     "url": "https://public.api.bsky.app/xrpc/app.bsky.feed.searchPosts?q=Algarve&sort=latest&limit=25",
+     "at": "2026-11-20T18:16:28Z",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-startup-portugal",
+     "url": "https://public.api.bsky.app/xrpc/app.bsky.feed.searchPosts?q=startup%20Portugal&sort=latest&limit=25",
+     "at": "2026-11-20T18:16:30Z",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-ia-portugal",
+     "url": "https://public.api.bsky.app/xrpc/app.bsky.feed.searchPosts?q=IA%20Portugal&sort=latest&limit=25",
+     "at": "2026-11-20T18:16:33Z",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    }
+   ]
+  },
+  {
    "at": "2026-11-20T07:17:29Z",
    "finished": "2026-11-20T07:17:54Z",
    "ok": 5,

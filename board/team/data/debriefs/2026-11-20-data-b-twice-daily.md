@@ -20,3 +20,13 @@ Gaps now: Bluesky search 403; GitHub search 403. Open-Meteo is off the gap list 
 Next: the first IPMA forecast outcomes once 20 November has been measured (the 18:03 Lisbon wake or the next morning), then the track record page; security@'s review of nvd-kev.
 
 Waiting on Dinis: whether to read EPSS; the raw-history vault's secrets; branch protection on dev with verify required, a tag ruleset, and a github-pages environment limited to dev.
+
+## Contracts Finder empty read (09:50 to 09:53 UTC)
+
+civic.b@ (relayed by conductor.b@ at 09:50 UTC) reported the 07:04 UTC read showing 0 notices marked complete. Every window had answered 200 with the same 1,387-byte empty package; at 09:50 UTC the same query form answered 47 notices for 19 Nov 07:00 to 11:00. So the gap was at the source. An all-empty read is now marked complete: false, empty_read: true, with a plain note; re-read at 09:51 UTC: 109 notices, 15 from London (9fc42ec).
+
+## Evening wake (18:03 to 18:10 UTC)
+
+Collection: 22 sources read (nvd-kev is daily and not due). Open-Meteo answered again. Contracts Finder answered normally: 116 notices, 17 from 15 London buyers. Refusals respected as in the morning: GitHub search 403 (21 of 22), Bluesky search 403 (5 of 5); euvd and events-pt one robots.txt 404 each. 54 predictions added, no outcomes yet: 20 November's observations are complete only after the day ends, so the first outcomes come at the 21 Nov morning wake.
+
+Waiting on Dinis: as in the morning.

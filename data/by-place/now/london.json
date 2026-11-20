@@ -1,7 +1,7 @@
 {
  "place": "london",
  "country": "GB",
- "read_at": "2026-11-20T07:18:04Z",
+ "read_at": "2026-11-20T18:16:43Z",
  "by": "collect/by-place-now.mjs (code, no model; data@PrompTugal.dinis), from this site's collected sources",
  "coords": {
   "lat": 51.50722,
@@ -23,27 +23,27 @@
   "days": [
    {
     "date": "2026-11-20",
-    "t_min_c": 5,
-    "t_max_c": 9.9,
+    "t_min_c": 6.5,
+    "t_max_c": 10.2,
     "rain_mm": 0.2,
     "weather_code": 51
    },
    {
     "date": "2026-11-21",
-    "t_min_c": 5,
-    "t_max_c": 10.2,
+    "t_min_c": 4.9,
+    "t_max_c": 9.4,
     "rain_mm": 0,
     "weather_code": 3
    },
    {
     "date": "2026-11-22",
     "t_min_c": 5.9,
-    "t_max_c": 8.6,
+    "t_max_c": 9.2,
     "rain_mm": 0,
     "weather_code": 3
    }
   ],
-  "at": "2026-11-20T07:17:28Z",
+  "at": "2026-11-20T18:16:06Z",
   "expected_cadence": {
    "name": "twice a day",
    "seconds": 43200,
@@ -58,22 +58,9 @@
   }
  },
  "floods": {
-  "warnings": [
-   {
-    "id": "062WAF28UpColne",
-    "severity": "Warning no longer in force",
-    "area": "Upper River Colne and Radlett Brook",
-    "url": "https://check-for-flooding.service.gov.uk/target-area/062WAF28UpColne"
-   },
-   {
-    "id": "062WAF53LLTribs",
-    "severity": "Warning no longer in force",
-    "area": "Lower Lee tributaries",
-    "url": "https://check-for-flooding.service.gov.uk/target-area/062WAF53LLTribs"
-   }
-  ],
+  "warnings": [],
   "stations": 10,
-  "at": "2026-11-20T07:04:32Z",
+  "at": "2026-11-20T18:04:54Z",
   "source": "https://data.promptugal.news/api/v1/ea-flood/latest.json",
   "attribution": "this uses Environment Agency flood and river level data from the real-time data API (Beta)",
   "license": {
@@ -84,11 +71,11 @@
  "reads": {
   "ea-flood": {
    "url": "https://data.promptugal.news/api/v1/ea-flood/latest.json",
-   "at": "2026-11-20T07:04:32Z"
+   "at": "2026-11-20T18:04:54Z"
   },
   "open-meteo-london": {
    "url": "https://data.promptugal.news/api/v1/open-meteo-london/latest.json",
-   "at": "2026-11-20T07:17:28Z"
+   "at": "2026-11-20T18:16:06Z"
   }
  }
 }

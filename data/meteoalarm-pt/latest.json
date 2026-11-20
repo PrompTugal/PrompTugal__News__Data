@@ -1,11 +1,11 @@
 {
  "source": "meteoalarm-pt",
  "title": "MeteoAlarm CAP feed for Portugal",
- "read_at": "2026-11-20T07:17:03Z",
+ "read_at": "2026-11-20T18:15:49Z",
  "provenance": {
   "source": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
   "page": "https://www.meteoalarm.org/en/live/region/PT",
-  "read_at": "2026-11-20T07:17:03Z",
+  "read_at": "2026-11-20T18:15:49Z",
   "by": "sources/meteoalarm-pt/collect.mjs (code, no model; run by data@PrompTugal.dinis)",
   "terms": "MeteoAlarm: re-users must name the national service (IPMA), keep the time of issue, link www.meteoalarm.org and publish MeteoAlarm's disclaimer. latest.json carries all four."
  },
@@ -19,19 +19,12 @@
  "bytes": 144180,
  "counts": {
   "messages": 83,
-  "not_expired": 36
+  "not_expired": 26
  },
  "changes": {
-  "since": "2026-11-19T18:14:29Z",
-  "appeared": [
-   "2.49.0.0.620.0.PT.261120065235.PO-10-6430",
-   "2.49.0.0.620.0.PT.261120065235.PO-10-6431",
-   "2.49.0.0.620.0.PT.261120065235.PO-10-6432",
-   "2.49.0.0.620.0.PT.261120065235.PO-10-6433"
-  ],
-  "left": [
-   "2.49.0.0.620.0.PT.261114193153.AZ-10-671"
-  ]
+  "since": "2026-11-20T07:17:03Z",
+  "appeared": [],
+  "left": []
  },
  "messages": [
   {

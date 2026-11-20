@@ -1,11 +1,11 @@
 {
  "source": "adsb-faro",
  "title": "Flights around Faro airport",
- "read_at": "2026-11-20T07:04:06Z",
+ "read_at": "2026-11-20T18:04:26Z",
  "provenance": {
   "source": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
   "page": "https://globe.adsb.lol/?lat=37.014&lon=-7.966&zoom=9",
-  "read_at": "2026-11-20T07:04:06Z",
+  "read_at": "2026-11-20T18:04:26Z",
   "by": "sources/adsb-faro/collect.mjs (code, no model; run by data@PrompTugal.dinis)",
   "terms": "adsb.lol: its API data is licensed under the Open Database License (ODbL 1.0): share-alike, with attribution; no key needed up to 500 requests a day per address.",
   "licence": "ODbL 1.0 (adsb.lol)"
@@ -18,29 +18,91 @@
   "lon": -7.9659,
   "within_nm": 40
  },
- "feed_time_ms": 1795158247000,
+ "feed_time_ms": 1795197870500,
  "counts": {
-  "airline": 1,
+  "airline": 6,
   "other_aircraft": 0,
   "other_on_ground": 0,
   "by_airline": {
-   "RYR": 1
+   "GAF": 1,
+   "LGL": 1,
+   "TAP": 1,
+   "TRA": 1,
+   "TUI": 1,
+   "VLG": 1
   },
   "by_altitude_band": {
-   "30,000 ft and above": 1
+   "5,000 to 15,000 ft": 1,
+   "15,000 to 30,000 ft": 2,
+   "30,000 ft and above": 3
   }
  },
  "airline": [
   {
-   "callsign": "RYR24GK",
-   "airline_icao": "RYR",
+   "callsign": "GAF860",
+   "airline_icao": "GAF",
+   "type": "A319",
+   "alt_ft": 39000,
+   "on_ground": false,
+   "ground_speed_kt": 444.9,
+   "track_deg": 174.71,
+   "lat": 36.42,
+   "lon": -7.93
+  },
+  {
+   "callsign": "LGL785",
+   "airline_icao": "LGL",
+   "type": "B738",
+   "alt_ft": 6200,
+   "on_ground": false,
+   "ground_speed_kt": 266,
+   "track_deg": 192.15,
+   "lat": 37.23,
+   "lon": -8.22
+  },
+  {
+   "callsign": "TAP1906",
+   "airline_icao": "TAP",
+   "type": "E190",
+   "alt_ft": 20000,
+   "on_ground": false,
+   "ground_speed_kt": 381.2,
+   "track_deg": 343.23,
+   "lat": 37.55,
+   "lon": -8.18
+  },
+  {
+   "callsign": "TRA6534",
+   "airline_icao": "TRA",
    "type": "B738",
    "alt_ft": 36000,
    "on_ground": false,
-   "ground_speed_kt": 457,
-   "track_deg": 14.71,
-   "lat": 36.6,
-   "lon": -8.1
+   "ground_speed_kt": 462.5,
+   "track_deg": 4.59,
+   "lat": 36.77,
+   "lon": -7.75
+  },
+  {
+   "callsign": "TUI4AB",
+   "airline_icao": "TUI",
+   "type": "B738",
+   "alt_ft": 34000,
+   "on_ground": false,
+   "ground_speed_kt": 502.3,
+   "track_deg": 48.47,
+   "lat": 36.52,
+   "lon": -8.11
+  },
+  {
+   "callsign": "VLG81WX",
+   "airline_icao": "VLG",
+   "type": "A321",
+   "alt_ft": 17350,
+   "on_ground": false,
+   "ground_speed_kt": 417.4,
+   "track_deg": 60.43,
+   "lat": 37.05,
+   "lon": -7.2
   }
  ]
 }

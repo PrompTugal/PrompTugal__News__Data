@@ -3,6 +3,23 @@
  "source": "open-meteo-london",
  "runs": [
   {
+   "at": "2026-11-20T18:16:06Z",
+   "finished": "2026-11-20T18:16:08Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "forecast",
+     "url": "https://api.open-meteo.com/v1/forecast?latitude=51.5074&longitude=-0.1278&hourly=temperature_2m,precipitation_probability,precipitation,wind_speed_10m,wind_gusts_10m,wind_direction_10m,weather_code&daily=temperature_2m_min,temperature_2m_max,precipitation_sum,weather_code&forecast_days=3&timezone=UTC&wind_speed_unit=kmh",
+     "at": "2026-11-20T18:16:08Z",
+     "status": 200,
+     "bytes": 4082,
+     "sha256_prefix": "810710dae8e7b7e4",
+     "changed": true
+    }
+   ]
+  },
+  {
    "at": "2026-11-20T07:17:28Z",
    "finished": "2026-11-20T07:17:29Z",
    "ok": 1,

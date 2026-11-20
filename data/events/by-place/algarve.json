@@ -1,11 +1,11 @@
 {
  "place": "algarve",
- "read_at": "2026-11-20T09:51:26Z",
- "source_read_at": "2026-11-20T07:13:56Z",
+ "read_at": "2026-11-20T18:16:43Z",
+ "source_read_at": "2026-11-20T18:12:44Z",
  "by": "collect/events-by-place.mjs (code, no model; data.b@PrompTugal.dinis), from data/events-pt/latest.json",
  "about": "Public events on now or starting within 60 days in this place, as schema.org Event records, each with its source URL and the time read. A dated record, not a ticketing service. An empty list means no source covers this place yet, not that nothing is happening.",
- "source_note": "Read 2026-11-20T07:13:56Z from www.agendalx.pt and www.cm-lagos.pt and teatrodasfiguras.pt and cm-tavira.pt; sources with no feed or refused are in gaps (https://data.promptugal.news/api/v1/events-pt/latest.json). Terms: Strictest of the sources: no reuse licence or terms page was found for any of the four hosts (teatrodasfiguras.pt and cm-tavira.pt show only \"Todos os direitos reservados\" in their footers, and cm-tavira.pt has no robots.txt). The robots.txt files that exist allow the paths read; agendalx.pt sets Content-Signal search=yes, ai-train=no, use=reference. So: reference use only, name the source, link to the event, no AI training. Not reviewed by a person: whether this is enough to republish is for Dinis.",
- "count": 137,
+ "source_note": "Read 2026-11-20T18:12:44Z from www.agendalx.pt and www.cm-lagos.pt and teatrodasfiguras.pt and cm-tavira.pt; sources with no feed or refused are in gaps (https://data.promptugal.news/api/v1/events-pt/latest.json). Terms: Strictest of the sources: no reuse licence or terms page was found for any of the four hosts (teatrodasfiguras.pt and cm-tavira.pt show only \"Todos os direitos reservados\" in their footers, and cm-tavira.pt has no robots.txt). The robots.txt files that exist allow the paths read; agendalx.pt sets Content-Signal search=yes, ai-train=no, use=reference. So: reference use only, name the source, link to the event, no AI training. Not reviewed by a person: whether this is enough to republish is for Dinis.",
+ "count": 141,
  "events": [
   {
    "@type": "Event",
@@ -21,7 +21,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16100-exposição-“o-cruzeiro”,-de-timo-dillner",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -38,7 +38,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16162-clube-da-ciência_16162",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -55,7 +55,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16149-workshops-no-espaço-jovem-–-escultura-em-plástico",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -72,7 +72,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16251-pedra-dura-exposição-cendda-centro-de-documentação-de-dança-do-algarve",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -89,7 +89,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16252-pedra-dura-exposição-roommates,-de-ruben-bellinkx",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -106,7 +106,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16253-exposição-acervo-roots-2011-2025",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -123,7 +123,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16178-roots-2026-residência-artística-“territórios-íntimos-–-paisagens-pós-coloniais”",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -140,7 +140,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16184-animação-musical-no-viv’o-mercado-–-novembro",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -157,7 +157,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16254-exposição-de-artesanato,-pelo-coletivo-pr-mas",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -174,7 +174,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16213-formação-“ferramentas-de-intervenção-social-integrada-para-técnicos-de-atendimento-e-acompanhamento-social”",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -191,7 +191,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16216-5-º-encontro-secreto-de-tango",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -208,7 +208,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16218-clube-d’espectador-emancipado,-por-karol-da-matta-e-xana-piteira_16218",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -225,7 +225,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16215-feira-franca_16215",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -242,7 +242,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16238-workshops-no-espaço-jovem-–-modelação-cerâmica",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -259,7 +259,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16183-magusto-em-bensafrim_16183",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -276,7 +276,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/festival-internacional-de-orgao-do-algarve-2026-visita-ao-novo-orgao-pelo-organeiro-dinarte-machado/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
   },
   {
@@ -293,7 +293,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/encontro-com-autores-apresentacao-do-livro-comer-a-natureza-de-paulo-moreira/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
   },
   {
@@ -310,7 +310,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16217-diagnóstico-social-livros-que-nos-curam-ou-nos-inquietam-,-por-raquel-vareda-e-tânia-cavaco",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -327,7 +327,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/festival-internacional-de-orgao-do-algarve-2026-concerto-por-daniel-ricardo-de-pinho/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
   },
   {
@@ -344,7 +344,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16219-techno-zombies,-de-ana-borralho-joão-galante",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -361,7 +361,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/seroes-de-outono-2026-ana-lua-caiano/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
   },
   {
@@ -378,7 +378,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16255-exposição-roots-2026-“territórios-íntimos-–-paisagens-pós-coloniais”",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -395,7 +395,7 @@
    "organizer": null,
    "url": "https://teatrodasfiguras.pt/agenda/o-mund-inteiro-a-espera",
    "source": "https://teatrodasfiguras.pt/agenda (Teatro das Figuras, Faro, agenda page)",
-   "read_at": "2026-11-20T07:14:32Z",
+   "read_at": "2026-11-20T18:13:20Z",
    "place": "faro"
   },
   {
@@ -412,7 +412,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16220-workshop-de-vela-de-cera-biodegradável,-por-márcia-rodrigues",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -429,7 +429,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/em-familia-no-museu-presepios-algarvios-em-barro-pelo-ceramista-mario-mendonca/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
   },
   {
@@ -446,7 +446,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16221-visita-orientada-à-exposição-“as-nossas-casas-50-anos-de-habitação-digna”",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -463,7 +463,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/visita-orientada-ao-lagar-de-azeite-da-cooperativa-agricola-de-santa-catarina/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
   },
   {
@@ -480,7 +480,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16222-festival-e-concurso-de-música-infante-d-henrique-maratona-musical-gil-eanes_16222",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -497,7 +497,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/tavira-convida-pedalar-74/2026-11-21/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
   },
   {
@@ -514,7 +514,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16223-encontros-diálogos-do-sul-acontece-a-sul,-sobre-o-sul,-com-paisagens-a-sul",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -531,7 +531,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/passeios-na-historia-de-tavira-pao-vinho-e-azeite-a-dieta-mediterranica-na-arte-sacra-de-tavira/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
   },
   {
@@ -548,7 +548,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/encontro-com-autores-apresentacao-do-livro-romanceiro-da-urgencia-de-afonso-dias/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
   },
   {
@@ -565,7 +565,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16167-exposição-“o-cruzeiro”-–-visitas-guiadas_16167",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -582,7 +582,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16224-festival-e-concurso-de-música-infante-d-henrique-concerto-de-piano,-por-igancio-torner-proyecto-piano-joven",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -599,7 +599,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/musica-nas-igrejas-duo-fortissimo-guitarra/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
   },
   {
@@ -616,7 +616,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16226-bora-cultura",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -633,7 +633,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16225-festival-e-concurso-de-música-infante-d-henrique-concerto-de-piano-solo-–-obras-de-frédéric-chopin,-por-rem-urasin",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -650,7 +650,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16227-dialetos-poéticos-recital-de-poesia-pelo-poeta-da-cidade",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -667,7 +667,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/festa-na-horta/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
   },
   {
@@ -684,7 +684,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/todos-a-caminhar-103/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
   },
   {
@@ -701,7 +701,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/todos-a-caminhar-106/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
   },
   {
@@ -718,7 +718,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/festival-internacional-de-orgao-do-algarve-2026-concerto-por-arturo-barba-espanha-e-coro-jubilate-deo/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
   },
   {
@@ -735,7 +735,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16228-festival-e-concurso-de-música-infante-d-henrique-concerto-de-guitarra-solo,-por-jesus-piñeda",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -752,7 +752,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16230-roubei-um-livro-na-cabine-de-leitura-e-hoje-vou-ler-mediação,-por-sandra-pereira-e-joão-de-brito-lama-teatro",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -769,7 +769,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16229-dia-nacional-da-cultura-científica",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -786,7 +786,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/a-apanha-da-azeitona-workshop-de-expressao-plastica/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
   },
   {
@@ -803,7 +803,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/documentario-the-librarians/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
   },
   {
@@ -820,8 +820,25 @@
    "organizer": null,
    "url": "https://teatrodasfiguras.pt/agenda/o-principezinho",
    "source": "https://teatrodasfiguras.pt/agenda (Teatro das Figuras, Faro, agenda page)",
-   "read_at": "2026-11-20T07:14:32Z",
+   "read_at": "2026-11-20T18:13:20Z",
    "place": "faro"
+  },
+  {
+   "@type": "Event",
+   "name": "FORÚM LAGOS – ECOSSISTEMA AZUL",
+   "startDate": "2026-11-25T09:00",
+   "endDate": null,
+   "location": {
+    "@type": "Place",
+    "name": "Auditório Paços do Concelho Séc. XXI",
+    "address": null,
+    "geo": null
+   },
+   "organizer": null,
+   "url": "https://www.cm-lagos.pt/municipio/eventos/16367-forúm-lagos-–-ecossistema-azul",
+   "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
+   "read_at": "2026-11-20T18:13:15Z",
+   "place": "lagos"
   },
   {
    "@type": "Event",
@@ -837,7 +854,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/workshop-solidario-de-costura/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
   },
   {
@@ -854,7 +871,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16231-alut-–-algarviana-ultra-trail-2026",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -871,7 +888,7 @@
    "organizer": null,
    "url": "https://teatrodasfiguras.pt/agenda/picota-este-lugar-tambem-me-pertence",
    "source": "https://teatrodasfiguras.pt/agenda (Teatro das Figuras, Faro, agenda page)",
-   "read_at": "2026-11-20T07:14:32Z",
+   "read_at": "2026-11-20T18:13:20Z",
    "place": "faro"
   },
   {
@@ -888,7 +905,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16232-iii-fórum-“escolhas-de-vida-inclusivas-–-mais-acesso,-mais-saúde”",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -905,7 +922,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/conferencia-o-impacto-dos-sistemas-alimentares-na-acao-climatica-o-papel-do-poder-local/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
   },
   {
@@ -922,7 +939,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/alut-algarviana-ultra-trail-3/2026-11-26/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
   },
   {
@@ -939,7 +956,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/artes-letra-conferencia-filosofica-e-psicanalitica-a-alma-deus-espiritualidade-o-que-e-o-homem-por-fernand-viegas/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
   },
   {
@@ -956,7 +973,7 @@
    "organizer": null,
    "url": "https://teatrodasfiguras.pt/agenda/moby-dick",
    "source": "https://teatrodasfiguras.pt/agenda (Teatro das Figuras, Faro, agenda page)",
-   "read_at": "2026-11-20T07:14:32Z",
+   "read_at": "2026-11-20T18:13:20Z",
    "place": "faro"
   },
   {
@@ -973,7 +990,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16233-worthless-savage-–-espetáculo-de-dança",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -990,7 +1007,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/alut-algarviana-ultra-trail-3/2026-11-27/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
   },
   {
@@ -1007,7 +1024,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/o-arquiteto-a-ativista-e-a-comunidade-em-prol-do-bairro-evocacao-de-joao-moitinho-luisa-anselmo-e-associacoes-saal/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
   },
   {
@@ -1024,7 +1041,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16234-festival-internacional-de-órgão-do-algarve-2026,-por-cristina-garcía-banegas",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -1041,7 +1058,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/noite-de-fados-5/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
   },
   {
@@ -1058,7 +1075,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16235-baja-de-lagos-2026",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -1075,7 +1092,7 @@
    "organizer": null,
    "url": "https://teatrodasfiguras.pt/agenda/dario-guerreiro--primogenito",
    "source": "https://teatrodasfiguras.pt/agenda (Teatro das Figuras, Faro, agenda page)",
-   "read_at": "2026-11-20T07:14:32Z",
+   "read_at": "2026-11-20T18:13:20Z",
    "place": "faro"
   },
   {
@@ -1092,7 +1109,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16237-festival-e-concurso-de-música-infante-d-henrique-concurso-de-instrumentistas_16237",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -1109,7 +1126,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16236-natal-em-lagos-2026",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -1126,7 +1143,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16358-natal-no-comércio-local-2026",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -1143,7 +1160,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16256-presépio-animado-de-natal,-de-josé-cortes",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -1160,7 +1177,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16239-quem-espera,-de-inês-fonseca-santos-e-maria-joão-cruz-–-boca-aberta",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -1177,7 +1194,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/as-mulheres-vao-sempre-a-frente-e-ainda-hoje-continuamvisita-a-exposicao-tudo-em-prol-do-bairro/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
   },
   {
@@ -1194,7 +1211,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/alut-algarviana-ultra-trail-3/2026-11-28/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
   },
   {
@@ -1211,7 +1228,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/tavira-convida-pedalar-75/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
   },
   {
@@ -1228,7 +1245,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/tavira-convida-pedalar-76/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
   },
   {
@@ -1245,8 +1262,25 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/tecnica-e-interpretacao-da-voz-cantada-com-lidia-brandao/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
+  },
+  {
+   "@type": "Event",
+   "name": "V JORNADAS DE LAGOS | SEMINÁRIO “MOBILIDADE E QUALIDADE DE VIDA”",
+   "startDate": "2026-11-28T15:00",
+   "endDate": null,
+   "location": {
+    "@type": "Place",
+    "name": "Auditório Paços do Concelho Séc. XXI",
+    "address": null,
+    "geo": null
+   },
+   "organizer": null,
+   "url": "https://www.cm-lagos.pt/municipio/eventos/16366-v-jornadas-de-lagos-seminário-“mobilidade-e-qualidade-de-vida”",
+   "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
+   "read_at": "2026-11-20T18:13:15Z",
+   "place": "lagos"
   },
   {
    "@type": "Event",
@@ -1262,7 +1296,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/visita-orientada-a-exposicao-judeus-em-tavira-fragmentos-de-uma-historia-sob-a-orientacao-de-marco-sousa-santos-historiador-de-arte-museu-municipal-de-tavira/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
   },
   {
@@ -1279,7 +1313,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/encontro-de-coros-grupo-coral-de-tavira/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
   },
   {
@@ -1296,7 +1330,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/iniciativa-mostra-la/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
   },
   {
@@ -1313,7 +1347,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/musica-nas-igrejas-josue-nunes-guitarra-8/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
   },
   {
@@ -1330,7 +1364,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16240-oficina-de-escrita-criativa-a-jornada-do-herói,-com-david-roque",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -1347,7 +1381,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16241-apresentação-do-livro-“os-manifestos-rosacruzes”,-de-rui-lomelino-de-freitas",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -1364,7 +1398,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16248-concertos-em-cadeia-18-spiralist-e-sunny-slam",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -1381,7 +1415,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/4-o-encontro-cidade-de-tavira/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
   },
   {
@@ -1398,7 +1432,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/todos-a-caminhar-104/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
   },
   {
@@ -1415,7 +1449,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16249-ciência-em-família_16249",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -1432,7 +1466,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/procissao-em-honra-de-santa-catarina-e-sao-luis-2/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
   },
   {
@@ -1449,7 +1483,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16250-festival-e-concurso-de-música-infante-d-henrique-concerto-de-estreia-de-peças-de-compositores-portugueses",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -1466,7 +1500,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16263-chalumeaux,-excentricidades-do-barroco-–-telemann,-graupner-e-fasch",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -1483,7 +1517,7 @@
    "organizer": null,
    "url": "https://teatrodasfiguras.pt/agenda/antonio-zambujo",
    "source": "https://teatrodasfiguras.pt/agenda (Teatro das Figuras, Faro, agenda page)",
-   "read_at": "2026-11-20T07:14:32Z",
+   "read_at": "2026-11-20T18:13:20Z",
    "place": "faro"
   },
   {
@@ -1500,7 +1534,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16314-jazzing-around-the-christmas-tree-orquestra-ligeira-de-lagos-gabriel-fialho",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -1517,7 +1551,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16329-animação-musical-no-viv’o-mercado-–-dezembro",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -1534,7 +1568,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16315-exposição-de-presépios-de-natal_16315",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -1551,7 +1585,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16316-ciclo-“à-conversa-no-museu”-habitação,-que-futuro",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -1568,7 +1602,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16317-audições-de-final-de-1-º-período",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -1585,7 +1619,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16359-natalândia-2026",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -1602,7 +1636,7 @@
    "organizer": null,
    "url": "https://teatrodasfiguras.pt/agenda/rastro",
    "source": "https://teatrodasfiguras.pt/agenda (Teatro das Figuras, Faro, agenda page)",
-   "read_at": "2026-11-20T07:14:32Z",
+   "read_at": "2026-11-20T18:13:20Z",
    "place": "faro"
   },
   {
@@ -1619,7 +1653,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16299-ciclo-de-conversas-sobre-migrações-“desinformação-e-fake-news”,-por-pedro-lemos",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -1636,7 +1670,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16318-esta-noite-grita-se-“cry-baby-from-hell”,-de-lara-duarte",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -1653,7 +1687,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16319-exibição-do-documentário-“the-librarians”,-de-kim-a-snyder",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -1670,7 +1704,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16320-rua-flórida,-pelo-coletivo-jat",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -1687,7 +1721,7 @@
    "organizer": null,
    "url": "https://teatrodasfiguras.pt/agenda/vitorino",
    "source": "https://teatrodasfiguras.pt/agenda (Teatro das Figuras, Faro, agenda page)",
-   "read_at": "2026-11-20T07:14:32Z",
+   "read_at": "2026-11-20T18:13:20Z",
    "place": "faro"
   },
   {
@@ -1704,7 +1738,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16321-visita-guiada-“à-descoberta-do-natal-em-lagos”,-por-artur-de-jesus",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -1721,7 +1755,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16322-empreitarte-do-coração-à-mão-moldura,-por-ana-carla",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -1738,7 +1772,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16323-lagos-através-das-suas-ruas-henrique-correia-da-silva,-por-artur-jesus",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -1755,7 +1789,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16324-ciclo-de-cinema-na-cadeia",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -1772,7 +1806,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16325-concerto-de-natal,-pela-orquestra-do-algarve-e-coro-comunitário-do-algarve",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -1789,7 +1823,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16327-baile-de-natal-sénior_16327",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -1806,7 +1840,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16326-workshop-de-enfeites-de-natal-em-empreita-de-palma,-por-judite-baião",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -1823,7 +1857,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16328-desfile-de-natal,-pelo-moto-clube-de-lagos",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -1840,7 +1874,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/desfile-de-natal-solidario-moto-manos/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
   },
   {
@@ -1857,7 +1891,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16330-workshop-de-coroa-do-advento,-por-isabel-joão",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -1874,7 +1908,7 @@
    "organizer": null,
    "url": "https://teatrodasfiguras.pt/agenda/branca-de-neve",
    "source": "https://teatrodasfiguras.pt/agenda (Teatro das Figuras, Faro, agenda page)",
-   "read_at": "2026-11-20T07:14:32Z",
+   "read_at": "2026-11-20T18:13:20Z",
    "place": "faro"
   },
   {
@@ -1891,7 +1925,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16331-mostra-de-artesanato-de-natal_16331",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -1908,7 +1942,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16332-os-memoráveis-–-a-partir-da-obra-de-lídia-jorge",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -1925,7 +1959,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16333-ciclo-de-biblioterapia-consciente-bibliotecas-interiores,-por-alfredo-rollo",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -1942,7 +1976,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/diogo-zambujo-vir-a-ser/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
   },
   {
@@ -1959,7 +1993,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16335-natal-em-odiáxere-pai-natal-presépio-ao-vivo_16335",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -1976,7 +2010,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16334-dança-te-famílias-mundo-colorido-das-emoções,-por-vanessa-alexandra-e-jeanjacques",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -1993,7 +2027,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16336-ciclo-“à-conversa-no-museu”-memória-do-poder-local-democrático-50-anos-de-eleições-autárquicas",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -2010,7 +2044,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16337-concerto-de-natal,-pela-sociedade-filarmónica-lacobrigense-1-º-de-maio",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -2027,7 +2061,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16338-clube-de-leitura-de-lagos,-por-josé-garrido_16338",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -2044,7 +2078,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16340-festa-de-natal-de-bensafrim",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -2061,7 +2095,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/mercadinho-de-natal-2/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-20T07:14:38Z",
+   "read_at": "2026-11-20T18:13:25Z",
    "place": "tavira"
   },
   {
@@ -2078,7 +2112,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16339-histórias-vivas-aqui-estamos-nós,-de-oliver-jeffers",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -2095,7 +2129,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16342-natal-em-movimento,-pela-associação-de-dança-de-lagos",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -2112,7 +2146,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16341-o-natal-das-bruxas-–-uma-aventura-mágica-na-noite-de-natal,-pelo-clube-artístico-lacobrigense",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -2129,7 +2163,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16343-concerto-de-natal-solidário,-pela-associação-grupo-coral-de-lagos",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -2146,7 +2180,7 @@
    "organizer": null,
    "url": "https://teatrodasfiguras.pt/agenda/quando-menos-se-espera",
    "source": "https://teatrodasfiguras.pt/agenda (Teatro das Figuras, Faro, agenda page)",
-   "read_at": "2026-11-20T07:14:32Z",
+   "read_at": "2026-11-20T18:13:20Z",
    "place": "faro"
   },
   {
@@ -2163,7 +2197,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16344-férias-com-ciência-oficinas-de-natal",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -2180,7 +2214,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16345-astronomia-no-centro-ciência-viva-de-lagos_16345",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -2197,7 +2231,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16346-diagnóstico-social-livros-que-nos-curam-ou-nos-inquietam-,-por-raquel-vareda-e-juan-rachadell-filho",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -2214,7 +2248,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16347-entre-dobras-e-papéis,-oficina-de-origami-natal-em-papel-luz,-estrelas-e-encanto,-por-odete-azevedo",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -2231,7 +2265,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16349-workshop-de-mosaico,-por-madfildz",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -2248,7 +2282,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16350-mindfulness-crescimento-pessoal-afirmações-positivas-para-o-ano-novo,-por-sofia-loureiro",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -2265,7 +2299,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16351-o-super-herói,-pelo-el-perro-azul",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -2282,7 +2316,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16352-sons-ao-crepúsculo-concerto-de-natal,-pelo-voxaradexxv",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -2299,7 +2333,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16353-oficina-de-escrita-criativa-personagem-e-emoções,-por-david-roque",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -2316,7 +2350,7 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16354-passeio-de-bicicleta-de-pais-natais_16354",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
   },
   {
@@ -2333,8 +2367,42 @@
    "organizer": null,
    "url": "https://www.cm-lagos.pt/municipio/eventos/16355-festa-de-passagem-de-ano-nininho-vaz-maia",
    "source": "https://www.cm-lagos.pt/municipio/eventos (Camara Municipal de Lagos, events list page)",
-   "read_at": "2026-11-20T07:14:27Z",
+   "read_at": "2026-11-20T18:13:15Z",
    "place": "lagos"
+  },
+  {
+   "@type": "Event",
+   "name": "Rua Flórida",
+   "startDate": "2027-01-15",
+   "endDate": "2027-01-16",
+   "location": {
+    "@type": "Place",
+    "name": "Teatro das Figuras",
+    "address": null,
+    "geo": null
+   },
+   "organizer": null,
+   "url": "https://teatrodasfiguras.pt/agenda/rua-florida",
+   "source": "https://teatrodasfiguras.pt/agenda (Teatro das Figuras, Faro, agenda page)",
+   "read_at": "2026-11-20T18:13:20Z",
+   "place": "faro"
+  },
+  {
+   "@type": "Event",
+   "name": "XI Festival Internacional de Piano do Algarve",
+   "startDate": "2027-01-17",
+   "endDate": null,
+   "location": {
+    "@type": "Place",
+    "name": "Teatro das Figuras",
+    "address": null,
+    "geo": null
+   },
+   "organizer": null,
+   "url": "https://teatrodasfiguras.pt/agenda/festival-de-piano-janeiro",
+   "source": "https://teatrodasfiguras.pt/agenda (Teatro das Figuras, Faro, agenda page)",
+   "read_at": "2026-11-20T18:13:20Z",
+   "place": "faro"
   }
  ]
 }

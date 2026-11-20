@@ -1,6 +1,6 @@
 {
  "place": "lisboa",
- "read_at": "2026-11-20T07:18:04Z",
+ "read_at": "2026-11-20T18:16:43Z",
  "by": "collect/by-place-now.mjs (code, no model; data@PrompTugal.dinis), from this site's collected sources",
  "coords": {
   "lat": 38.72635,
@@ -21,16 +21,7 @@
  "station": {
   "name": "Lisboa (Geofísico)",
   "id": 1200535,
-  "reading": {
-   "at": "2026-11-20T06:00:00Z",
-   "temp_c": 14.5,
-   "humidity_pct": 100,
-   "wind_kmh": 1.8,
-   "wind_dir_id": 5,
-   "rain_mm": 0,
-   "pressure_hpa": 1021.9,
-   "radiation_kj_m2": 0
-  },
+  "reading": null,
   "page": "https://www.ipma.pt/en/otempo/obs.superficie/",
   "source": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json"
  },
@@ -41,37 +32,37 @@
   "days": [
    {
     "date": "2026-11-20",
-    "t_min_c": 13.3,
+    "t_min_c": 12.9,
     "t_max_c": 17.5,
-    "rain_prob_pct": 37,
+    "rain_prob_pct": 33,
     "weather_type": 3
    },
    {
     "date": "2026-11-21",
-    "t_min_c": 14.2,
-    "t_max_c": 18.8,
+    "t_min_c": 14.5,
+    "t_max_c": 19.2,
     "rain_prob_pct": 100,
     "weather_type": 9
    },
    {
     "date": "2026-11-22",
-    "t_min_c": 10.6,
-    "t_max_c": 17.3,
-    "rain_prob_pct": 0,
-    "weather_type": 2
-   },
-   {
-    "date": "2026-11-23",
-    "t_min_c": 9,
-    "t_max_c": 15.6,
+    "t_min_c": 11.2,
+    "t_max_c": 17.6,
     "rain_prob_pct": 0,
     "weather_type": 3
    },
    {
+    "date": "2026-11-23",
+    "t_min_c": 9.1,
+    "t_max_c": 16.1,
+    "rain_prob_pct": 6,
+    "weather_type": 5
+   },
+   {
     "date": "2026-11-24",
-    "t_min_c": 10.4,
-    "t_max_c": 16.3,
-    "rain_prob_pct": 80,
+    "t_min_c": 10.5,
+    "t_max_c": 15.5,
+    "rain_prob_pct": 92,
     "weather_type": 10
    }
   ],
@@ -80,14 +71,6 @@
  "warnings": {
   "area": "LSB (the Lisboa district)",
   "active": [
-   {
-    "type": "rough sea",
-    "type_pt": "Agitação Marítima",
-    "level": "yellow",
-    "start": "2026-11-20T00:50:00",
-    "end": "2026-11-20T09:00:00",
-    "text": "Ondas de noroeste com 4 a 5 metros."
-   },
    {
     "type": "rain",
     "type_pt": "Precipitação",
@@ -121,8 +104,8 @@
  },
  "uv": {
   "place": "Lisboa",
-  "date": "2026-11-23",
-  "index": 2.2,
+  "date": "2026-11-24",
+  "index": 1.9,
   "page": "https://www.ipma.pt/en/otempo/prev.uv/",
   "source": "https://api.ipma.pt/open-data/forecast/meteorology/uv/uv.json"
  },
@@ -139,37 +122,37 @@
  "reads": {
   "observations": {
    "url": "https://data.promptugal.news/api/v1/ipma-observations/latest.json",
-   "at": "2026-11-20T07:16:43Z",
+   "at": "2026-11-20T18:15:29Z",
    "status": 200
   },
   "warnings": {
    "url": "https://data.promptugal.news/api/v1/ipma-warnings/latest.json",
-   "at": "2026-11-20T07:17:00Z",
+   "at": "2026-11-20T18:15:47Z",
    "status": 200
   },
   "forecasts": {
    "url": "https://data.promptugal.news/api/v1/ipma-city-forecasts/latest.json",
-   "at": "2026-11-20T07:15:05Z",
+   "at": "2026-11-20T18:13:52Z",
    "status": 200
   },
   "fire-risk": {
    "url": "https://data.promptugal.news/api/v1/ipma-fire-risk/latest.json",
-   "at": "2026-11-20T07:16:35Z",
+   "at": "2026-11-20T18:15:22Z",
    "status": 200
   },
   "uv": {
    "url": "https://data.promptugal.news/api/v1/ipma-uv/latest.json",
-   "at": "2026-11-20T07:16:58Z",
+   "at": "2026-11-20T18:15:44Z",
    "status": 200
   },
   "sea": {
    "url": "https://data.promptugal.news/api/v1/ipma-sea/latest.json",
-   "at": "2026-11-20T07:16:48Z",
+   "at": "2026-11-20T18:15:34Z",
    "status": 200
   },
   "adsb": {
    "url": "https://data.promptugal.news/api/v1/adsb-faro/latest.json",
-   "at": "2026-11-20T07:04:06Z",
+   "at": "2026-11-20T18:04:26Z",
    "status": 200
   }
  }

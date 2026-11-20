@@ -3,6 +3,41 @@
  "source": "ipma-fire-risk",
  "runs": [
   {
+   "at": "2026-11-20T18:15:22Z",
+   "finished": "2026-11-20T18:15:29Z",
+   "ok": 3,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "rcm-d0",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/rcm/rcm-d0.json",
+     "at": "2026-11-20T18:15:24Z",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "14a761db8630eacf",
+     "changed": true
+    },
+    {
+     "name": "rcm-d1",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/rcm/rcm-d1.json",
+     "at": "2026-11-20T18:15:26Z",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "adb83d8f35e6c5b5",
+     "changed": true
+    },
+    {
+     "name": "rcm-d2",
+     "url": "https://api.ipma.pt/open-data/forecast/meteorology/rcm/rcm-d2.json",
+     "at": "2026-11-20T18:15:29Z",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "c726699d3cf06e94",
+     "changed": true
+    }
+   ]
+  },
+  {
    "at": "2026-11-20T07:16:35Z",
    "finished": "2026-11-20T07:16:43Z",
    "ok": 3,

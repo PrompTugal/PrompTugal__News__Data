@@ -4,10 +4,10 @@
  "repo": "PrompTugal/PrompTugal__News__Data",
  "site": "https://data.promptugal.news",
  "focus": "the raw public data behind every PrompTugal site: collectors, API, vaults; visualization first; the Storm Charles site's data and map",
- "updated": "2026-11-20T07:20Z",
+ "updated": "2026-11-20T18:10Z",
  "observability_lane": "data (own lane since 18 Nov ~15:00 UTC: vault 349t1w6w, 2 append lanes, drain key sha256:5109a3745ff9fdb4; drain credentials sealed to conductor.b-promptugal and sent to conductor.b@)",
  "observability_note": "obs.js reads team/keys/obs-data.json from GitHub (public half: endpoint, vault id, 2 append tokens, drain public key); every event tagged lane: \"data\"; country only, from the browser time zone through a fixed table, no lookup (Dinis, 19 Nov ~03:15 UTC).",
- "state": "Twice-daily wake 07:03 Lisbon, 20 Nov: data committed (cb88d7b); event claims moved to past (8a43379); hand-over in debriefs/2026-11-20-data-b-twice-daily.md.",
+ "state": "Twice-daily wake 18:03 Lisbon, 20 Nov: data collected and committed; Contracts Finder normal again (an all-empty read is now marked as a gap, 9fc42ec); hand-over in debriefs/2026-11-20-data-b-twice-daily.md.",
  "done": [
   "Contracts Finder licence corrected to OGL v3.0, Crown Commercial Service, with the attribution statement (rights@ R13, 016c694)",
   "Masthead: chip 'Pay for what you read · free here', sites rail, /account/ with the reading graph",
