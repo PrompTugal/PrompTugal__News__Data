@@ -41,6 +41,7 @@ const cameras = buildCameras(sources);   // /api/v1/cameras/ for live.promptugal
 const { index } = buildApi({ sources, places, version: '__VERSION__', builtAt, readAt, storm, events, cameras });
 buildStormApi({ storm, version: '__VERSION__' });
 write('api/v1/README.md', readme());
+if (existsSync('data/contracts-finder/by-day')) for (const f of readdirSync('data/contracts-finder/by-day').filter(f => f.endsWith('.json'))) writeJson(`api/v1/contracts-finder/by-day/${f}`, JSON.parse(readFileSync(`data/contracts-finder/by-day/${f}`, 'utf8')));   // London notices kept by day (civic.b@, 20 Nov 2026)
 for (const f of loadSocial()) writeJson(`api/v1/social/by-place/${f.file}`, f.data);   // social signals per place (Dinis, 18 Nov 2026 ~14:45 UTC)
 // folder indexes, so /api/v1/events/ and /api/v1/social/ answer (signals.b@ saw a 404/503 on the folder, 18 Nov)
 writeJson('api/v1/events/index.json', { about: 'Events: read from official agendas (by-place), found through Perplexity (claims), and past ones.', by_place: '/api/v1/events/by-place/index.json', claims: '/api/v1/events/claims/by-place/index.json', past: '/api/v1/events/past/<place>.json (appears when a claim\'s date passes)', openapi: '/api/v1/openapi.json' });
@@ -70,7 +71,7 @@ for (const f of readdirSync(join(OUT, 'api/v1/by-place/now')).filter(f => f.ends
 const walk = d => readdirSync(d).flatMap(f => { const p = join(d, f); return statSync(p).isDirectory() ? walk(p) : [p]; });
 // events.b@'s finding (fde585a): the derived files carry the cadence too: events, claims, history, social and cameras per place
 // are rebuilt at every wake (twice a day); discovery answers are asked once a day per place
-for (const [dir, cad] of [['api/v1/events/by-place', 'hourly'], ['api/v1/events/claims', 'hourly'], ['api/v1/events/past', 'hourly'], ['api/v1/history/events', 'hourly'], ['api/v1/history/weather', 'hourly'], ['api/v1/history', 'hourly'], ['api/v1/cameras/history', 'hourly'], ['api/v1/social/by-place', 'hourly'], ['api/v1/discovery/by-place', 'daily']])
+for (const [dir, cad] of [['api/v1/events/by-place', 'hourly'], ['api/v1/contracts-finder/by-day', 'hourly'], ['api/v1/events/claims', 'hourly'], ['api/v1/events/past', 'hourly'], ['api/v1/history/events', 'hourly'], ['api/v1/history/weather', 'hourly'], ['api/v1/history', 'hourly'], ['api/v1/cameras/history', 'hourly'], ['api/v1/social/by-place', 'hourly'], ['api/v1/discovery/by-place', 'daily']])
   if (existsSync(join(OUT, dir))) for (const f of walk(join(OUT, dir)).filter(f => f.endsWith('.json'))) { if (dir === 'api/v1/history' && f.slice(join(OUT, dir).length + 1).includes('/')) continue; meta(f.slice(OUT.length + 1), null, cad, { openapi: 'https://data.promptugal.news/api/v1/openapi.json', path: '/' + f.slice(OUT.length + 1), version: 'v1' }) }
 meta('api/v1/cameras/index.json', null, 'hourly', { openapi: 'https://data.promptugal.news/api/v1/openapi.json', path: '/api/v1/cameras/index.json', version: 'v1' });   // every JSON item carries its licence (Dinis, 18 Nov 2026)
 // the shared map, once every page is written (it fills the <!--PTMAP--> marker; placed earlier it found no page)

@@ -202,9 +202,27 @@ export default async function (run) {
         const h = history[e.url]
         if (!h) { history[e.url] = { place: e.place, source: e.source, first: { at: e.read_at, ...fields(e) }, changes: [], last_seen: e.read_at, gone_at: null }; continue }
         const cur = { ...h.first }; for (const c of h.changes) if (c.field in cur) cur[c.field] = c.to
-        for (const [k, v] of Object.entries(fields(e))) if (cur[k] !== v) h.changes.push({ at: e.read_at, field: k, from: cur[k], to: v })
+        const f = fields(e)
+        for (const [k, v] of Object.entries(f)) if (cur[k] !== v) h.changes.push({ at: e.read_at, field: k, from: cur[k], to: v })
         if (h.gone_at) h.changes.push({ at: e.read_at, field: 'listed', from: false, to: true })
         h.last_seen = e.read_at; h.gone_at = null
+    }
+    // a rolling start (events.b@'s finding, 77c4e41, 20 Nov 2026): a source such as Agenda LX shows a running event's start as
+    // the day it is read, so the start moves forward a day at a time while the end stays. Every change is still kept; such a
+    // change is marked rolling: true, so it is not read as the organiser moving the event. The pass replays each event's
+    // changes, so changes recorded before this rule are marked too; it only ever adds the mark.
+    const dayOf = t => String(t || '').slice(0, 10), nextDay = d => new Date(Date.parse(d + 'T00:00:00Z') + 864e5).toISOString().slice(0, 10)
+    let rollingMarked = 0
+    for (const h of Object.values(history)) {
+        const cur = { ...h.first }
+        for (const c of h.changes) {
+            if (c.field === 'startDate' && !c.rolling) {
+                const from = dayOf(c.from), to = dayOf(c.to), readDay = dayOf(c.at), end = dayOf(cur.endDate)
+                const endSame = !h.changes.some(x => x.at === c.at && x.field === 'endDate')
+                if (from && to > from && from <= readDay && to <= nextDay(readDay) && end && end >= to && endSame) { c.rolling = true; rollingMarked++ }
+            }
+            if (c.field in cur) cur[c.field] = c.to
+        }
     }
     const readHosts = new Set(Object.entries(fresh).filter(([, l]) => l.length && !l[0].stale).map(([h]) => h))
     for (const [u, h] of Object.entries(history)) {
@@ -225,5 +243,6 @@ export default async function (run) {
         about: `Events on now or starting within ${WINDOW_DAYS} days (to ${horizon}) in the places listed, as schema.org Event records, each with its source URL and the time read. Dates are as the source gives them (Lisbon time; a time is added only where a single start hour is shown); a long-running event shows its first and last day. organizer is null where the source does not name an organiser (the agenda's publisher is in source). A dated record read by code, not a ticketing or booking service: check the organiser before travelling.`,
         counts: { events: Object.values(places).reduce((n, p) => n + p.length, 0), places: Object.keys(places).length, by_source, dropped_duplicates_or_unknown_place: dropped },
         ...(stale.length ? { stale_note: 'These hosts could not be read this run; their events are from the last good read (each has stale: true and its own read_at), kept for at most 48 hours.', stale } : {}),
+        history_rolling_starts: { marked: Object.values(history).reduce((n, h) => n + h.changes.filter(c => c.rolling).length, 0), about: 'Start-date changes marked rolling: true, where the source shows a running event as starting on the day it is read (the end unchanged). Kept as changes; not the organiser moving the event.' },
         places, gaps, history_from: (prev && prev.history_from) || (prev && prev.read_at) || at, history }
 }

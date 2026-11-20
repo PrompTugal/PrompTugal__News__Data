@@ -50,6 +50,7 @@ for (const c of todo) {
 if (todo.some(c => c.id.startsWith('ipma-') || c.id === 'adsb-faro')) await import('./by-place-now.mjs')
 if (fs.existsSync(path.join(ROOT, 'data', 'events-pt', 'latest.json'))) await import('./events-by-place.mjs')   // also from the copied last read
 if (fs.existsSync(path.join(ROOT, 'data', 'social', 'latest.json'))) await import('./social-by-place.mjs')   // also from the copied last read
+if (fs.existsSync(path.join(ROOT, 'data', 'contracts-finder', 'latest.json'))) await import('./contracts-history.mjs')   // London notices kept by day (civic.b@, 20 Nov 2026)
 if (fs.existsSync(path.join(ROOT, 'discovery', 'by-place'))) await import('./claims.mjs')   // claims from the stored discovery answers (code, no model)
 // the predictions file for the library's PRED collection (append only; collect/predictions.mjs), after every collection
 { const { predictions } = await import('./predictions.mjs'); const r = predictions(); console.log(`predictions: ${r.added} added, ${r.outcomes} outcomes`) }

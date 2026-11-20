@@ -1,0 +1,24 @@
+{
+ "about": "Days with London notices kept, newest first. The first day may be partial: the history starts with the read of 19 Nov 2026 19:30 UTC (earlier reads replayed from git), and each read covers the 24 hours before it.",
+ "license": {
+  "name": "Open Government Licence v3.0",
+  "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+  "url_stated_by_source": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+  "holder": "Crown copyright (Crown Commercial Service)",
+  "commercial_use": "allowed",
+  "attribution": "Contains public sector information licensed under the Open Government Licence v3.0."
+ },
+ "last_read": "2026-11-20T18:04:39Z",
+ "days": [
+  {
+   "day": "2026-11-20",
+   "notices": 16,
+   "url": "https://data.promptugal.news/api/v1/contracts-finder/by-day/2026-11-20.json"
+  },
+  {
+   "day": "2026-11-19",
+   "notices": 16,
+   "url": "https://data.promptugal.news/api/v1/contracts-finder/by-day/2026-11-19.json"
+  }
+ ]
+}
