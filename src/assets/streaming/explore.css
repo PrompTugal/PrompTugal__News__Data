@@ -20,3 +20,8 @@
 .st-err { color: #a40e26; }
 @media (prefers-color-scheme: dark) { .st-err { color: #ffa198; } }
 .st-results td:nth-child(2), .st-results td:nth-child(6), .st-results td:nth-child(7) { white-space: nowrap; }
+.st-netsvg { max-height: 36rem; }
+.st-link { stroke: currentColor; stroke-opacity: .18; }
+.st-node { cursor: pointer; }
+.st-node:focus circle, .st-node:hover circle { stroke: currentColor; stroke-width: 2; }
+.st-pinfo ul { margin-top: .2rem; }

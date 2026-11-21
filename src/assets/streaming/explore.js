@@ -126,6 +126,57 @@
     pout.appendChild(table([DIMS.find(function (d) { return d[0] === rd; })[1]].concat(ck), rk.map(function (a) { return [a].concat(ck.map(function (b) { return fmt(cells[a + '\u0001' + b]); })); })));
   }
 
+  // ---- people: who appears with whom (Dinis, 21 Nov 2026: directors and actors) ----
+  var pps = section('People', 'Actors (top five billed) and directors or creators in at least two of the titles matching the filters. A line joins two people who share a title. Dot size is the number of titles; colour is the service they appear on most. Click a person to list their titles.');
+  var pinfo = el('div', { class: 'st-pinfo' }), pnet = el('div', { class: 'st-net' }), ptab = el('div');
+  pps.appendChild(pnet); pps.appendChild(pinfo); pps.appendChild(el('h4', null, 'On the most titles')); pps.appendChild(ptab);
+  function people(rows) {
+    var byTitle = {}, P = {};
+    rows.forEach(function (r) { var k = r.type + ':' + r.id; var t = byTitle[k] = byTitle[k] || { key: k, title: r.title, year: r.year, type: r.type, id: r.id, people: {}, services: {} };
+      t.services[r.service] = 1; r.cast.forEach(function (n) { t.people[n] = t.people[n] || 'cast'; }); r.makers.forEach(function (n) { t.people[n] = r.type === 'film' ? 'director' : 'creator'; }); });
+    Object.keys(byTitle).forEach(function (k) { var t = byTitle[k]; Object.keys(t.people).forEach(function (n) {
+      var p = P[n] = P[n] || { name: n, titles: [], roles: {}, services: {} }; p.titles.push(t); p.roles[t.people[n]] = 1; Object.keys(t.services).forEach(function (s) { p.services[s] = (p.services[s] || 0) + 1; }); }); });
+    return { titles: byTitle, people: Object.keys(P).map(function (n) { return P[n]; }) };
+  }
+  function topService(p) { return Object.keys(p.services).sort(function (a, b) { return p.services[b] - p.services[a]; })[0]; }
+  function showPerson(p) {
+    clear(pinfo);
+    pinfo.appendChild(el('p', null, p.name + ' (' + Object.keys(p.roles).join(', ') + '): ' + p.titles.length + ' titles.'));
+    var ul = el('ul'); p.titles.slice().sort(function (a, b) { return (b.year || 0) - (a.year || 0); }).forEach(function (t) { var li = el('li'); li.appendChild(el('a', { href: 'https://www.themoviedb.org/' + (t.type === 'film' ? 'movie' : 'tv') + '/' + encodeURIComponent(t.id) }, t.title || '(title not shown)')); li.appendChild(document.createTextNode(' (' + (t.year || '?') + ', ' + t.type + '; ' + Object.keys(t.services).join(', ') + ')')); ul.appendChild(li); });
+    pinfo.appendChild(ul);
+  }
+  function renderPeople(rows) {
+    clear(pnet); clear(pinfo); clear(ptab);
+    var d = people(rows), nodes = d.people.filter(function (p) { return p.titles.length >= 2; }).sort(function (a, b) { return b.titles.length - a.titles.length; }).slice(0, 120);
+    ptab.appendChild(table(['Person', 'Role', 'Titles', 'Services'], d.people.sort(function (a, b) { return b.titles.length - a.titles.length || a.name.localeCompare(b.name); }).slice(0, 15).map(function (p) { return [p.name, Object.keys(p.roles).join(', '), p.titles.length, Object.keys(p.services).join(', ')]; })));
+    if (nodes.length < 2) { pnet.appendChild(el('p', { class: 'small' }, 'Fewer than two people appear in two or more of the matching titles.')); return; }
+    var idx = {}; nodes.forEach(function (n, i) { idx[n.name] = i; });
+    var links = [], seen = {};
+    Object.keys(d.titles).forEach(function (k) { var ps = Object.keys(d.titles[k].people).filter(function (n) { return n in idx; });
+      for (var i = 0; i < ps.length; i++) for (var j = i + 1; j < ps.length; j++) { var a = idx[ps[i]], b = idx[ps[j]], key = Math.min(a, b) + '-' + Math.max(a, b); if (seen[key]) seen[key].w++; else { seen[key] = { a: a, b: b, w: 1 }; links.push(seen[key]); } } });
+    // a small force layout: repulsion between all nodes, springs along links, a pull to the centre (deterministic start on a circle)
+    var W = 940, H = 560, N = nodes.length;
+    nodes.forEach(function (n, i) { var t = 2 * Math.PI * i / N; n.x = W / 2 + Math.cos(t) * 200; n.y = H / 2 + Math.sin(t) * 200; n.vx = 0; n.vy = 0; n.r = 3 + Math.sqrt(n.titles.length) * 2.5; });
+    for (var it = 0; it < 300; it++) {
+      var alpha = 1 - it / 300;
+      for (var i = 0; i < N; i++) for (var j = i + 1; j < N; j++) { var a = nodes[i], b = nodes[j], dx = b.x - a.x, dy = b.y - a.y, d2 = dx * dx + dy * dy + 0.01, f = 900 / d2 * alpha, dd = Math.sqrt(d2); a.vx -= f * dx / dd; a.vy -= f * dy / dd; b.vx += f * dx / dd; b.vy += f * dy / dd; }
+      links.forEach(function (l) { var a = nodes[l.a], b = nodes[l.b], dx = b.x - a.x, dy = b.y - a.y, dd = Math.sqrt(dx * dx + dy * dy) || 1, f = (dd - 60) * 0.02 * alpha; a.vx += f * dx / dd; a.vy += f * dy / dd; b.vx -= f * dx / dd; b.vy -= f * dy / dd; });
+      nodes.forEach(function (n) { n.vx += (W / 2 - n.x) * 0.004 * alpha; n.vy += (H / 2 - n.y) * 0.006 * alpha; n.x += Math.max(-10, Math.min(10, n.vx)); n.y += Math.max(-10, Math.min(10, n.vy)); n.vx *= 0.6; n.vy *= 0.6; n.x = Math.max(n.r + 2, Math.min(W - n.r - 2, n.x)); n.y = Math.max(n.r + 2, Math.min(H - n.r - 2, n.y)); });
+    }
+    var svg = svgEl('svg', { viewBox: '0 0 ' + W + ' ' + H, role: 'img', 'aria-label': 'Network of people who share titles', class: 'st-svg st-netsvg' });
+    links.forEach(function (l) { svg.appendChild(svgEl('line', { x1: nodes[l.a].x.toFixed(1), y1: nodes[l.a].y.toFixed(1), x2: nodes[l.b].x.toFixed(1), y2: nodes[l.b].y.toFixed(1), class: 'st-link', 'stroke-width': Math.min(4, l.w) })); });
+    nodes.forEach(function (n, i) {
+      var g = svgEl('g', { class: 'st-node', tabindex: '0', role: 'button', 'aria-label': n.name + ', ' + n.titles.length + ' titles' });
+      g.appendChild(svgEl('circle', { cx: n.x.toFixed(1), cy: n.y.toFixed(1), r: n.r.toFixed(1), fill: SERV_COL[topService(n)] || '#888' }));
+      if (i < 25) g.appendChild(svgEl('text', { x: (n.x + n.r + 2).toFixed(1), y: (n.y + 4).toFixed(1), class: 'st-lab' }, n.name));
+      g.appendChild(svgEl('title', {}, n.name + ': ' + n.titles.length + ' titles'));
+      g.addEventListener('click', function () { showPerson(n); }); g.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); showPerson(n); } });
+      svg.appendChild(g);
+    });
+    pnet.appendChild(svg);
+    pnet.appendChild(el('p', { class: 'small' }, nodes.length + ' people, ' + links.length + ' links' + (d.people.filter(function (p) { return p.titles.length >= 2; }).length > nodes.length ? ' (the 120 with the most titles)' : '') + '. Names shown for the 25 with the most titles; hover or click any dot.'));
+  }
+
   // ---- SQL ----
   var ss = section('SQL', 'SQLite, running in this browser (sql.js). Tables: titles (one row per list entry) and title_genres (country, service, type, tmdb_id, genre). Only SELECT is useful here; nothing leaves the page.');
   var EX = [
@@ -172,6 +223,6 @@
   runBtn.addEventListener('click', run);
   ta.addEventListener('keydown', function (e) { if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') run(); });
 
-  function update() { var rows = filtered(); count.textContent = rows.length + ' of ' + ROWS.length + ' list entries match.'; renderResults(rows); renderCharts(rows); renderPivot(rows); }
+  function update() { var rows = filtered(); count.textContent = rows.length + ' of ' + ROWS.length + ' list entries match.'; renderResults(rows); renderCharts(rows); renderPivot(rows); renderPeople(rows); }
   update();
 })();
