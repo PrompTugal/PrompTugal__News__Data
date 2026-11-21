@@ -14,7 +14,10 @@ import { write } from './lib.mjs';
 
 const API = 'https://api.themoviedb.org/3';
 const REGIONS = [['GB', 'United Kingdom', 'en-GB'], ['PT', 'Portugal', 'pt-PT']];
-const SERVICES = [['Netflix', /^netflix$/i], ['Disney+', /^disney (plus|\+)$/i]];
+// subscription services only, matched by TMDB's provider name in each country (ids differ by country: Prime Video is 9 in GB and
+// 119 in PT). "Apple TV" is Apple TV+, the subscription; "Apple TV Store" and "Amazon Video" (rent or buy) and the add-on
+// channels sold through Amazon and Apple are left out. Dinis, 21 Nov 2026 about 18:53 UTC, asked for Apple TV and Amazon Prime.
+const SERVICES = [['Netflix', /^netflix$/i], ['Disney+', /^disney (plus|\+)$/i], ['Prime Video', /^amazon prime video$/i], ['Apple TV+', /^apple tv( ?\+| plus)?$/i]];
 const TYPES = [['movie', 'Films'], ['tv', 'Series']];
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 
@@ -52,9 +55,9 @@ export function writeStreaming(page, d) {
   const body = !d.ok ? `<p>The list is not available in this build (${esc(d.why)}). It is fetched from TMDB when the site is built, and shown only here.</p>` :
     REGIONS.map(([region, country]) => `<h2 id="${region.toLowerCase()}">${esc(country)}</h2>\n` + d.lists.filter(l => l.region === region).map(l => l.missing
       ? `<p>${esc(l.service)}: TMDB lists no such service in ${esc(country)}.</p>`
-      : `<h3>${esc(l.service)}: ${esc(l.label)}</h3>\n<p class="small">The 20 most popular of ${esc(l.total)} ${esc(l.label.toLowerCase())} TMDB lists as included with a ${esc(l.service)} subscription in ${esc(country)}.</p>\n<div class="scroll"><table><thead><tr><th scope="col">#</th><th scope="col">Title</th><th scope="col">Year</th><th scope="col">TMDB rating</th></tr></thead><tbody>${l.titles.map((t, i) => `<tr><td>${i + 1}</td><td><a href="https://www.themoviedb.org/${l.type}/${encodeURIComponent(t.id)}">${esc(t.title)}</a>${t.original && t.original !== t.title ? ` <span class="small">(${esc(t.original)})</span>` : ''}</td><td>${esc(t.year)}</td><td>${t.votes ? `${esc(Number(t.rating).toFixed(1))} (${esc(t.votes)} votes)` : 'no votes'}</td></tr>`).join('')}</tbody></table></div>`).join('\n')).join('\n');
-  const url = page({ path: 'streaming/', title: 'Streaming in the UK and Portugal: PrompTugal.news Data', h1: 'What is streaming: Netflix and Disney+, UK and Portugal',
-    description: 'The most popular films and series included with Netflix and Disney+ in the United Kingdom and Portugal, from TMDB and JustWatch, shown at the time this site was built.',
+      : `<h3>${esc(l.service)}: ${esc(l.label)}</h3>\n<p class="small">The 20 most popular of ${esc(l.total)} ${esc(l.label.toLowerCase())} TMDB lists as included with ${/^[AEIOU]/i.test(l.service) ? "an" : "a"} ${esc(l.service)} subscription in ${esc(country)}.</p>\n<div class="scroll"><table><thead><tr><th scope="col">#</th><th scope="col">Title</th><th scope="col">Year</th><th scope="col">TMDB rating</th></tr></thead><tbody>${l.titles.map((t, i) => `<tr><td>${i + 1}</td><td><a href="https://www.themoviedb.org/${l.type}/${encodeURIComponent(t.id)}">${esc(t.title)}</a>${t.original && t.original !== t.title ? ` <span class="small">(${esc(t.original)})</span>` : ''}</td><td>${esc(t.year)}</td><td>${t.votes ? `${esc(Number(t.rating).toFixed(1))} (${esc(t.votes)} votes)` : 'no votes'}</td></tr>`).join('')}</tbody></table></div>`).join('\n')).join('\n');
+  const url = page({ path: 'streaming/', title: 'Streaming in the UK and Portugal: PrompTugal.news Data', h1: 'What is streaming in the UK and Portugal: Netflix, Disney+, Prime Video and Apple TV+',
+    description: 'The most popular films and series included with Netflix, Disney+, Prime Video and Apple TV+ in the United Kingdom and Portugal, from TMDB and JustWatch, shown at the time this site was built.',
     readAt: d.ok ? d.at : null, head: '<meta name="robots" content="noai, noimageai">\n',
     blocks: [{ t: 'html', md: '', x: `<p>Read from TMDB when this site was built${d.ok ? `, at ${esc(d.at.replace('T', ' ').replace(/:\d\dZ$/, ' UTC'))}` : ''}. Shown on this page only: under TMDB's terms this list is not offered as data, through our API, as a download, or for use by AI systems, and it is not kept in our archive.</p>\n${credit}\n${body}` }] });
   // no markdown twin for this page (the twin is what agents read): overwrite it with a pointer only
