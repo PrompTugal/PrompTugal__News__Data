@@ -26,6 +26,31 @@
    "status": "details withheld",
    "details_from": null,
    "details_note": "Details withheld: the sources cited (eventos.visitalgarve.pt, algarvecircle.com) are not ones whose terms let us copy them. Organiser: send them to us."
+  },
+  {
+   "@type": "Event",
+   "name": "Concert Os Amadores",
+   "startDate": "2026-11-20",
+   "endDate": null,
+   "place": "sao-bras-de-alportel",
+   "municipality": "São Brás de Alportel",
+   "evidence": [
+    {
+     "url": "https://www.algarveatlas.com/en/municipalities/sao-bras-de-alportel",
+     "host": "algarveatlas.com",
+     "readable": false,
+     "register": "algarveatlas"
+    },
+    {
+     "url": "https://algarvecircle.com/events",
+     "host": "algarvecircle.com",
+     "readable": false,
+     "register": "algarvecircle"
+    }
+   ],
+   "status": "details withheld",
+   "details_from": null,
+   "details_note": "Details withheld: the sources cited (algarveatlas.com, algarvecircle.com) are not ones whose terms let us copy them. Organiser: send them to us."
   }
  ]
 }

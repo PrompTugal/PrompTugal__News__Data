@@ -1,0 +1,25 @@
+{
+ "place": "monchique",
+ "about": "Claims whose dates have passed, kept as the history of each event series.",
+ "claims": [
+  {
+   "@type": "Event",
+   "name": "Hridaya Silent Meditation Retreat November 2026",
+   "startDate": "2026-11-18",
+   "endDate": "2026-11-20",
+   "place": "monchique",
+   "municipality": "Monchique",
+   "evidence": [
+    {
+     "url": "https://ecstatic.events/popular/portugal/november-2026",
+     "host": "ecstatic.events",
+     "readable": false,
+     "register": null
+    }
+   ],
+   "status": "details withheld",
+   "details_from": null,
+   "details_note": "Details withheld: the sources cited (ecstatic.events) are not ones whose terms let us copy them. Organiser: send them to us."
+  }
+ ]
+}

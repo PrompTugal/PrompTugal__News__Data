@@ -3,6 +3,23 @@
  "source": "cisa-kev",
  "runs": [
   {
+   "at": "2026-11-21T07:04:27Z",
+   "finished": "2026-11-21T07:04:29Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "kev",
+     "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+     "at": "2026-11-21T07:04:29Z",
+     "status": 200,
+     "bytes": 1871127,
+     "sha256_prefix": "12c9ca4c5350ecac",
+     "changed": true
+    }
+   ]
+  },
+  {
    "at": "2026-11-20T18:04:37Z",
    "finished": "2026-11-20T18:04:39Z",
    "ok": 1,

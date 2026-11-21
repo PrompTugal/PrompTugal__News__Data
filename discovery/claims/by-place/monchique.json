@@ -1,6 +1,6 @@
 {
  "place": "monchique",
- "read_at": "2026-11-20T18:16:43Z",
+ "read_at": "2026-11-21T07:13:28Z",
  "discovery": {
   "asked_at": "2026-11-18T14:18:16Z",
   "model": "perplexity/sonar",
@@ -9,30 +9,11 @@
  },
  "about": "Events claimed for this place, each with every evidence link and whether this site may read that source (the register). Name, date and place come from discovery (Perplexity, through OpenRouter); other details only from a readable source. Not a confirmed listing.",
  "counts": {
-  "claims": 3,
+  "claims": 2,
   "confirmed": 0,
-  "withheld": 3
+  "withheld": 2
  },
  "claims": [
-  {
-   "@type": "Event",
-   "name": "Hridaya Silent Meditation Retreat November 2026",
-   "startDate": "2026-11-18",
-   "endDate": "2026-11-20",
-   "place": "monchique",
-   "municipality": "Monchique",
-   "evidence": [
-    {
-     "url": "https://ecstatic.events/popular/portugal/november-2026",
-     "host": "ecstatic.events",
-     "readable": false,
-     "register": null
-    }
-   ],
-   "status": "details withheld",
-   "details_from": null,
-   "details_note": "Details withheld: the sources cited (ecstatic.events) are not ones whose terms let us copy them. Organiser: send them to us."
-  },
   {
    "@type": "Event",
    "name": "Monchique Walking Festival",

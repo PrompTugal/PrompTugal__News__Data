@@ -1,5 +1,5 @@
 {
- "at": "2026-11-20T18:16:44Z",
+ "at": "2026-11-21T07:13:28Z",
  "sources": [
   {
    "id": "adsb-faro",
@@ -51,7 +51,7 @@
   },
   {
    "id": "euvd",
-   "ok": 34,
+   "ok": 16,
    "failed": 1,
    "wrote": true
   },
@@ -111,7 +111,13 @@
   },
   {
    "id": "nvd-cve",
-   "ok": 2,
+   "ok": 1,
+   "failed": 0,
+   "wrote": true
+  },
+  {
+   "id": "nvd-kev",
+   "ok": 1,
    "failed": 0,
    "wrote": true
   },

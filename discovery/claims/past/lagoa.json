@@ -1,0 +1,31 @@
+{
+ "place": "lagoa",
+ "about": "Claims whose dates have passed, kept as the history of each event series.",
+ "claims": [
+  {
+   "@type": "Event",
+   "name": "Algarve Real Estate Summit 2026",
+   "startDate": "2026-11-20",
+   "endDate": "2026-11-20",
+   "place": "lagoa",
+   "municipality": "Lagoa",
+   "evidence": [
+    {
+     "url": "https://www.theportugalnews.com/news/2026-11-02/the-algarve-deserves-its-own-stage-the-vision-behind-the-algarve-real-estate-summit-2026/1109007",
+     "host": "theportugalnews.com",
+     "readable": false,
+     "register": "theportugalnews"
+    },
+    {
+     "url": "https://www.theportugalnews.com/news/2026-10-09/algarve-real-estate-summit-2026-where-the-algarve-meets-the-world/1097777",
+     "host": "theportugalnews.com",
+     "readable": false,
+     "register": "theportugalnews"
+    }
+   ],
+   "status": "details withheld",
+   "details_from": null,
+   "details_note": "Details withheld: the sources cited (theportugalnews.com) are not ones whose terms let us copy them. Organiser: send them to us."
+  }
+ ]
+}

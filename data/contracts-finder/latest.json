@@ -1,17 +1,17 @@
 {
  "source": "contracts-finder",
  "title": "London public contracts (Contracts Finder)",
- "read_at": "2026-11-20T18:04:39Z",
+ "read_at": "2026-11-21T07:04:29Z",
  "place": "london",
  "provenance": {
   "source": "https://www.contractsfinder.service.gov.uk/",
   "page": "https://www.contractsfinder.service.gov.uk/Search",
-  "read_at": "2026-11-20T18:04:39Z",
+  "read_at": "2026-11-21T07:04:29Z",
   "by": "sources/contracts-finder/collect.mjs (code, no model; run by data.b@PrompTugal.dinis)",
   "terms": "Open Government Licence v3.0, Crown copyright (Crown Commercial Service); credit every value with: \"Contains public sector information licensed under the Open Government Licence v3.0.\" Every OCDS package carries the licence. robots.txt has no rules (page not found). The published search needs no token. Natural persons are not kept (suppliers can be sole traders). Not reviewed by a person.",
   "api": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search",
-  "window_from": "2026-11-19T18:04:39Z",
-  "window_to": "2026-11-20T18:04:39Z",
+  "window_from": "2026-11-20T07:04:29Z",
+  "window_to": "2026-11-21T07:04:29Z",
   "interface": "Contracts Finder published OCDS search (no key)",
   "robots": "https://www.contractsfinder.service.gov.uk/robots.txt answered page not found (no rules), 19 Nov 2026"
  },
@@ -25,20 +25,16 @@
  },
  "about": "Procurement notices that London public bodies published on Contracts Finder in the 24 hours before the read: each with its notice page, stage, title, buyer (as published: mostly public bodies, sometimes an agent publishing for one), the buyer's postcode district, value, award value and deadline, as published. London means the buyer's locality says London or its postcode area lies wholly inside Greater London (E, EC, N, NW, SE, SW, W, WC); bodies in the outer areas that straddle the boundary are not counted. When the locality says London it counts even if the postcode lies outside London: some national bodies publish a non-geographic postcode (HMRC uses SS99, Southend) with a London address. Suppliers and contacts are not kept. Source: Contracts Finder (Crown Commercial Service); OGL v3.0. A weak signal, not an audit.",
  "counts": {
-  "notices_in_window": 116,
-  "london_notices": 17,
+  "notices_in_window": 110,
+  "london_notices": 16,
   "windows_read": 6,
   "windows_full": 0,
   "complete": true,
   "buyers": 15,
   "fields_dropped_wording": 0,
-  "value_gbp_listed": 31247232
+  "value_gbp_listed": 31263420
  },
  "top_buyers": [
-  {
-   "buyer": "Foreign Commonwealth and Development Office",
-   "notices": 2
-  },
   {
    "buyer": "UK Health Security Agency",
    "notices": 2
@@ -52,7 +48,7 @@
    "notices": 1
   },
   {
-   "buyer": "Financial Conduct Authority",
+   "buyer": "Foreign Commonwealth and Development Office",
    "notices": 1
   },
   {
@@ -73,6 +69,10 @@
   },
   {
    "buyer": "National Institute for Health and Care Excellence",
+   "notices": 1
+  },
+  {
+   "buyer": "Nursing And Midwifery Council",
    "notices": 1
   },
   {
@@ -97,6 +97,29 @@
   }
  ],
  "notices": [
+  {
+   "ocid": "ocds-b5fd17-48db6cd2-cabf-4498-8255-a1635c8180e6",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/d991582b-b97f-48c9-a726-a12bba6aa933",
+   "published": "2026-11-20T20:21:31Z",
+   "stage": [
+    "award"
+   ],
+   "title": "Provision of Laptops",
+   "buyer": "Nursing And Midwifery Council",
+   "buyer_locality": "LONDON",
+   "buyer_postcode_district": "W1B",
+   "status": "complete",
+   "value": {
+    "amount": 241000,
+    "currency": "GBP"
+   },
+   "award_value": {
+    "amount": 241000,
+    "currency": "GBP"
+   },
+   "deadline": "2026-10-12T17:00:00+01:00",
+   "procurement_method": "selective"
+  },
   {
    "ocid": "ocds-b5fd17-3c8a7dd7-da67-4eed-9902-c536132b11e0",
    "notice": "https://www.contractsfinder.service.gov.uk/Notice/1e57f29a-b739-4b60-bbff-bb7f58f756e1",
@@ -431,52 +454,6 @@
     "currency": "GBP"
    },
    "deadline": "2026-08-21T23:59:00+01:00",
-   "procurement_method": "selective"
-  },
-  {
-   "ocid": "ocds-b5fd17-41fb8732-df80-4941-bcef-c2243fa449f7",
-   "notice": "https://www.contractsfinder.service.gov.uk/Notice/137153d1-da88-42bd-acec-a04ecb08c160",
-   "published": "2026-11-20T06:37:38Z",
-   "stage": [
-    "award"
-   ],
-   "title": "Provision of Contracted Guards for British Embassy Dakar",
-   "buyer": "Foreign Commonwealth and Development Office",
-   "buyer_locality": "London",
-   "buyer_postcode_district": "SW1A",
-   "status": "complete",
-   "value": {
-    "amount": 74811.67,
-    "currency": "GBP"
-   },
-   "award_value": {
-    "amount": 74811.67,
-    "currency": "GBP"
-   },
-   "deadline": "2026-11-13T14:00:00Z",
-   "procurement_method": "open"
-  },
-  {
-   "ocid": "ocds-b5fd17-e814f77b-1904-4a75-a2d7-57659fcf25e5",
-   "notice": "https://www.contractsfinder.service.gov.uk/Notice/523a8e27-7c24-419d-b2d5-9765ce5a1561",
-   "published": "2026-11-19T18:04:52Z",
-   "stage": [
-    "award"
-   ],
-   "title": "End user computing support and related services",
-   "buyer": "Financial Conduct Authority",
-   "buyer_locality": "London",
-   "buyer_postcode_district": "E20",
-   "status": "complete",
-   "value": {
-    "amount": 150000,
-    "currency": "GBP"
-   },
-   "award_value": {
-    "amount": 115710,
-    "currency": "GBP"
-   },
-   "deadline": "2026-08-19T17:00:00+01:00",
    "procurement_method": "selective"
   }
  ]

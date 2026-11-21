@@ -1,6 +1,6 @@
 {
  "place": "vila-do-bispo",
- "read_at": "2026-11-20T18:16:43Z",
+ "read_at": "2026-11-21T07:13:28Z",
  "discovery": {
   "asked_at": "2026-11-18T14:18:26Z",
   "model": "perplexity/sonar",
@@ -9,9 +9,9 @@
  },
  "about": "Events claimed for this place, each with every evidence link and whether this site may read that source (the register). Name, date and place come from discovery (Perplexity, through OpenRouter); other details only from a readable source. Not a confirmed listing.",
  "counts": {
-  "claims": 6,
+  "claims": 5,
   "confirmed": 0,
-  "withheld": 6
+  "withheld": 5
  },
  "claims": [
   {
@@ -32,31 +32,6 @@
    "status": "details withheld",
    "details_from": null,
    "details_note": "Details withheld: the sources cited (algarveatlas.com) are not ones whose terms let us copy them. Organiser: send them to us."
-  },
-  {
-   "@type": "Event",
-   "name": "The Eternal Boy",
-   "startDate": "2026-11-20",
-   "endDate": null,
-   "place": "vila-do-bispo",
-   "municipality": "Vila do Bispo",
-   "evidence": [
-    {
-     "url": "https://www.algarveatlas.com/en/events/exposicao-itinerante-principios-da-carta-das-cidades-educado-7722",
-     "host": "algarveatlas.com",
-     "readable": false,
-     "register": "algarveatlas"
-    },
-    {
-     "url": "https://algarvecircle.com/whats-on/november-2026",
-     "host": "algarvecircle.com",
-     "readable": false,
-     "register": "algarvecircle"
-    }
-   ],
-   "status": "details withheld",
-   "details_from": null,
-   "details_note": "Details withheld: the sources cited (algarveatlas.com, algarvecircle.com) are not ones whose terms let us copy them. Organiser: send them to us."
   },
   {
    "@type": "Event",

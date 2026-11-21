@@ -1,12 +1,12 @@
 {
  "source": "nvd-kev",
  "title": "NVD's record of every CVE on CISA's KEV list",
- "read_at": "2026-11-20T07:17:20Z",
+ "read_at": "2026-11-21T07:12:44Z",
  "notice": "This product uses the NVD API but is not endorsed or certified by the NVD.",
  "provenance": {
   "source": "https://nvd.nist.gov/",
   "page": "https://nvd.nist.gov/developers/vulnerabilities",
-  "read_at": "2026-11-20T07:17:20Z",
+  "read_at": "2026-11-21T07:12:44Z",
   "by": "sources/nvd-kev/collect.mjs (code, no model; run by data.b@PrompTugal.dinis)",
   "terms": "NVD API Terms of Use: the API is for building a service to \"search, display, analyze, retrieve, view and otherwise get\" NVD data; asked to display \"This product uses the NVD API but is not endorsed or certified by the NVD.\"; the NVD name may identify the source but not imply endorsement; if you modify the content you may not attribute it to the NVD (our totals are ours, our per-CVE values are kept as served); public rate limit 5 requests in a rolling 30 seconds without a key (we use none, seven seconds apart); no more than once every two hours (we read every 6 hours). Not reviewed by a person.",
   "api": "https://services.nvd.nist.gov/rest/json/cves/2.0?hasKev",
@@ -14,10 +14,10 @@
  },
  "about": "NVD's record of every CVE on CISA's Known Exploited Vulnerabilities list, read once a day with the API's hasKev filter, in the same per-CVE shape as /api/v1/nvd-cve/latest.json (cves[]): CNA (domain only), status, CVSS, weakness types, vendors and products, published and lastModified, plus kev.added and kev.action_due as NVD serves them. Descriptions and references are not kept. Values are NVD's, as served.",
  "counts": {
-  "cves": 1786,
-  "nvd_total": 1786,
+  "cves": 1790,
+  "nvd_total": 1790,
   "pages_complete": true,
-  "with_products": 1786
+  "with_products": 1790
  },
  "cves": [
   {
@@ -53449,7 +53449,7 @@
   {
    "id": "CVE-2024-10441",
    "published": "2025-03-19T02:15:27.120",
-   "lastModified": "2026-11-19T17:17:51.900",
+   "lastModified": "2026-11-21T05:18:09.090",
    "vulnStatus": "Analyzed",
    "cna": "synology.com",
    "cvss": {
@@ -65294,6 +65294,35 @@
    }
   },
   {
+   "id": "CVE-2025-42884",
+   "published": "2025-11-11T01:15:36.893",
+   "lastModified": "2026-11-21T05:18:10.650",
+   "vulnStatus": "Analyzed",
+   "cna": "sap.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 6.5,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-943"
+   ],
+   "products": [
+    {
+     "vendor": "sap",
+     "product": "netweaver_enterprise_portal"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cpe",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-42884",
+   "kev": {
+    "added": "2026-11-20",
+    "action_due": "2026-11-23"
+   }
+  },
+  {
    "id": "CVE-2025-42999",
    "published": "2025-05-13T01:15:48.440",
    "lastModified": "2026-08-11T04:17:17.240",
@@ -68565,7 +68594,7 @@
   {
    "id": "CVE-2026-109618",
    "published": "2026-10-21T14:17:09.357",
-   "lastModified": "2026-11-18T19:17:25.813",
+   "lastModified": "2026-11-20T12:18:18.987",
    "vulnStatus": "Analyzed",
    "cna": "php.net",
    "cvss": {
@@ -68641,7 +68670,7 @@
   {
    "id": "CVE-2026-109619",
    "published": "2026-10-21T14:17:09.823",
-   "lastModified": "2026-11-18T19:17:26.517",
+   "lastModified": "2026-11-20T12:18:19.730",
    "vulnStatus": "Analyzed",
    "cna": "php.net",
    "cvss": {
@@ -69350,6 +69379,47 @@
    }
   },
   {
+   "id": "CVE-2026-123890",
+   "published": "2026-11-19T15:17:25.407",
+   "lastModified": "2026-11-21T05:18:10.817",
+   "vulnStatus": "Analyzed",
+   "cna": "vmware.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-288"
+   ],
+   "products": [
+    {
+     "vendor": "vmware",
+     "product": "cloud_foundation"
+    },
+    {
+     "vendor": "vmware",
+     "product": "telco_cloud_infrastructure"
+    },
+    {
+     "vendor": "vmware",
+     "product": "telco_cloud_platform"
+    },
+    {
+     "vendor": "vmware",
+     "product": "vcenter_server"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cpe",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123890",
+   "kev": {
+    "added": "2026-11-20",
+    "action_due": "2026-11-23"
+   }
+  },
+  {
    "id": "CVE-2026-124194",
    "published": "2026-11-10T19:20:48.180",
    "lastModified": "2026-11-11T05:19:35.990",
@@ -69476,6 +69546,35 @@
    "kev": {
     "added": "2026-01-29",
     "action_due": "2026-02-01"
+   }
+  },
+  {
+   "id": "CVE-2026-129448",
+   "published": "2026-11-17T11:17:28.190",
+   "lastModified": "2026-11-21T05:18:11.013",
+   "vulnStatus": "Analyzed",
+   "cna": "apache.org",
+   "cvss": {
+    "version": "3.1",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-502"
+   ],
+   "products": [
+    {
+     "vendor": "apache",
+     "product": "roller"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cpe",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129448",
+   "kev": {
+    "added": "2026-11-20",
+    "action_due": "2026-11-23"
    }
   },
   {
@@ -74160,8 +74259,8 @@
   {
    "id": "CVE-2026-64849",
    "published": "2026-08-17T22:17:23.580",
-   "lastModified": "2026-11-19T22:18:07.680",
-   "vulnStatus": "Modified",
+   "lastModified": "2026-11-20T14:36:49.327",
+   "vulnStatus": "Analyzed",
    "cna": "github.com",
    "cvss": {
     "version": "3.1",
@@ -74814,6 +74913,35 @@
    "kev": {
     "added": "2026-09-14",
     "action_due": "2026-09-17"
+   }
+  },
+  {
+   "id": "CVE-2026-76466",
+   "published": "2026-10-21T17:19:06.813",
+   "lastModified": "2026-11-21T05:18:23.937",
+   "vulnStatus": "Analyzed",
+   "cna": "cisco.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-798"
+   ],
+   "products": [
+    {
+     "vendor": "cisco",
+     "product": "expressway"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cpe",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76466",
+   "kev": {
+    "added": "2026-11-20",
+    "action_due": "2026-11-23"
    }
   },
   {

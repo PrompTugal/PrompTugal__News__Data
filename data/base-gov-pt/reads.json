@@ -3,6 +3,23 @@
  "source": "base-gov-pt",
  "runs": [
   {
+   "at": "2026-11-21T07:04:19Z",
+   "finished": "2026-11-21T07:04:22Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "dataset",
+     "url": "https://dados.gov.pt/api/1/datasets/66d72d488ca4b7cb2de28712/",
+     "at": "2026-11-21T07:04:21Z",
+     "status": 200,
+     "bytes": 45882,
+     "sha256_prefix": "fa7bed34313a07ad",
+     "changed": true
+    }
+   ]
+  },
+  {
    "at": "2026-11-20T18:04:31Z",
    "finished": "2026-11-20T18:04:32Z",
    "ok": 1,

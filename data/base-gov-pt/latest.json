@@ -2,18 +2,18 @@
  "shape": "2",
  "source": "base-gov-pt",
  "title": "Public contracts (Portal BASE)",
- "read_at": "2026-11-20T18:04:31Z",
+ "read_at": "2026-11-21T07:04:19Z",
  "provenance": {
   "source": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
   "page": "https://www.base.gov.pt/",
-  "read_at": "2026-11-20T18:04:31Z",
+  "read_at": "2026-11-21T07:04:19Z",
   "by": "sources/base-gov-pt/collect.mjs (code, no model; run by data@PrompTugal.dinis)",
   "terms": "IMPIC publishes these contracts as open data on dados.gov.pt with the licence \"Outra (Domínio Público)\" (other-pd, public domain); we name IMPIC and the Portal BASE as the source and link each contract's page.",
   "dataset": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
   "terms_page": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
   "how": "IMPIC's yearly file on dados.gov.pt (contratos2026.zip), stream-parsed in memory, the approach of PrompTugal__News__Civic tools/extract-base.mjs"
  },
- "about": "Public contracts published on the Portal BASE in the last 90 days (from 2026-08-22) where the contracting entity is the câmara municipal of Lisboa or of one of the Algarve's 16 municipalities (Quarteira is a parish of Loulé and has no câmara of its own). From IMPIC's open data, which is updated about weekly: a contract appears here some days after it is signed. object is cut to 200 characters. A contractor that is a company keeps its name and NIF; a contractor that looks like a natural person (its NIF, or none) is shown only as \"a natural person\", and the contract's object text is then left out. Our record, not an official one: each contract links its page on base.gov.pt.",
+ "about": "Public contracts published on the Portal BASE in the last 90 days (from 2026-08-23) where the contracting entity is the câmara municipal of Lisboa or of one of the Algarve's 16 municipalities (Quarteira is a parish of Loulé and has no câmara of its own). From IMPIC's open data, which is updated about weekly: a contract appears here some days after it is signed. object is cut to 200 characters. A contractor that is a company keeps its name and NIF; a contractor that looks like a natural person (its NIF, or none) is shown only as \"a natural person\", and the contract's object text is then left out. Our record, not an official one: each contract links its page on base.gov.pt.",
  "counts": {
   "contracts": 1471,
   "places": 17,
