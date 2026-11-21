@@ -22,3 +22,6 @@
 }
 .ldn table th[scope="row"], .ldn table td:nth-child(2), .ldn table td:nth-child(3) { white-space: nowrap; }
 .ldn table th[scope="col"] { white-space: nowrap; }
+.ldn-when.is-kept::before { content: "\25D0  "; color: #1a7f37; }
+.ldn-refresh { font-size: .9em; }
+.ldn-refresh button { font: inherit; padding: .2rem .6rem; cursor: pointer; }

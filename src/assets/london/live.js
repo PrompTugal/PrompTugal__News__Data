@@ -4,19 +4,31 @@
 (function () {
   'use strict';
   var T = 15000;
-  function get(url) {
+  // the browser keeps each live answer for 10 minutes (Dinis, 21 Nov 2026: "keeping it on the browser local storage for a bit"):
+  // a reload within that time shows the kept copy at once and does not ask the source again. Answers are cut down to the fields
+  // this page uses before they are kept, so they fit. Kept in this browser only (localStorage pt.live.*); nothing is sent anywhere.
+  var TTL = 10 * 60 * 1000, force = false;
+  function kept(url) { try { var v = JSON.parse(localStorage.getItem('pt.live.' + url) || 'null'); return v && typeof v.at === 'number' && v.data != null ? v : null; } catch (e) { return null; } }
+  function keep(url, data) { try { localStorage.setItem('pt.live.' + url, JSON.stringify({ at: Date.now(), data: data })); } catch (e) { /* full or blocked: the page still works */ } }
+  function get(url, sec, reduce) {
+    var k = kept(url);
+    if (k && !force && Date.now() - k.at < TTL) { if (sec) sec._from = { cached: true, at: k.at }; return Promise.resolve(k.data); }
     var c = typeof AbortController === 'function' ? new AbortController() : null;
     var t = c ? setTimeout(function () { c.abort(); }, T) : null;
     return fetch(url, { headers: { accept: 'application/json' }, signal: c ? c.signal : undefined, credentials: 'omit', referrerPolicy: 'no-referrer' })
-      .then(function (r) { if (t) clearTimeout(t); if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); });
+      .then(function (r) { if (t) clearTimeout(t); if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+      .then(function (j) { var d = reduce ? reduce(j) : j; keep(url, d); if (sec) sec._from = { cached: false, at: Date.now() }; return d; },
+        function (e) { if (k) { if (sec) sec._from = { cached: true, at: k.at, stale: true }; return k.data; } throw e; });
   }
+  function pick(o, keys) { var r = {}; keys.forEach(function (k) { if (o && o[k] != null) r[k] = o[k]; }); return r; }
   function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = String(text); return e; }
   function hhmm(d) { return d.toISOString().slice(11, 16) + ' UTC'; }
   function when(sec, ok, note) {
     var w = sec.querySelector('[data-when]'); if (!w) return;
-    w.textContent = ok ? 'Live from the source at ' + hhmm(new Date()) + (note ? ' (' + note + ')' : '') + '. Our once-a-day read is the archive.'
+    var f = sec._from || { cached: false, at: Date.now() };
+    w.textContent = ok ? (f.cached ? (f.stale ? 'The source did not answer, so this shows the copy your browser kept from ' : 'From the copy your browser kept from the source at ') + hhmm(new Date(f.at)) + (f.stale ? '' : ' (kept for 10 minutes)') : 'Live from the source at ' + hhmm(new Date(f.at))) + (note ? ' (' + note + ')' : '') + '. Our once-a-day read is the archive.'
                        : 'The source did not answer (' + note + '), so this panel shows our read: ' + w.textContent.replace(/^From our read at /, '').replace(/ \(the archive\).*$/, '') + '.';
-    w.classList.add(ok ? 'is-live' : 'is-archive');
+    w.classList.remove('is-live', 'is-archive', 'is-kept'); w.classList.add(ok ? (f.cached ? 'is-kept' : 'is-live') : 'is-archive');
   }
   function sev(s) { return s === 10 ? 'good' : s >= 9 ? 'minor' : s >= 6 ? 'severe' : 'closed'; }
   function table(head, rows) {
@@ -28,7 +40,7 @@
 
   var run = {
     'tfl-status': function (sec) {
-      return get('https://api.tfl.gov.uk/Line/Mode/tube,overground,elizabeth-line,dlr,tram/Status').then(function (j) {
+      return get('https://api.tfl.gov.uk/Line/Mode/tube,overground,elizabeth-line,dlr,tram/Status', sec, function (j) { return Array.isArray(j) ? j.map(function (l) { return { name: l.name, modeName: l.modeName, lineStatuses: (l.lineStatuses || []).map(function (x) { return pick(x, ['statusSeverity', 'statusSeverityDescription', 'reason']); }) }; }) : j; }).then(function (j) {
         if (!Array.isArray(j)) throw new Error('unexpected answer');
         j.sort(function (a, b) { return String(a.modeName).localeCompare(String(b.modeName)) || String(a.name).localeCompare(String(b.name)); });
         var rows = j.map(function (l) {
@@ -42,7 +54,7 @@
       });
     },
     'tfl-bikepoint': function (sec) {
-      return get('https://api.tfl.gov.uk/BikePoint').then(function (j) {
+      return get('https://api.tfl.gov.uk/BikePoint', sec, function (j) { var K = ['NbBikes', 'NbEBikes', 'NbEmptyDocks', 'Installed', 'Locked']; return Array.isArray(j) ? j.map(function (d) { return { additionalProperties: (d.additionalProperties || []).filter(function (x) { return K.indexOf(x.key) >= 0; }).map(function (x) { return { key: x.key, value: x.value }; }) }; }) : j; }).then(function (j) {
         if (!Array.isArray(j)) throw new Error('unexpected answer');
         var n = { bikes: 0, ebikes: 0, empty: 0, live: 0 };
         j.forEach(function (d) { var p = {}; (d.additionalProperties || []).forEach(function (x) { p[x.key] = x.value; });
@@ -53,7 +65,7 @@
       });
     },
     'tfl-road-disruptions': function (sec) {
-      return get('https://api.tfl.gov.uk/Road/all/Disruption').then(function (j) {
+      return get('https://api.tfl.gov.uk/Road/all/Disruption', sec, function (j) { return Array.isArray(j) ? j.map(function (d) { return pick(d, ['severity', 'lastModifiedTime', 'location', 'comments']); }) : j; }).then(function (j) {
         if (!Array.isArray(j)) throw new Error('unexpected answer');
         var by = {}; j.forEach(function (d) { by[d.severity || 'unknown'] = (by[d.severity || 'unknown'] || 0) + 1; });
         var box = el('div'), p = el('p'); p.appendChild(el('b', null, j.length)); p.appendChild(document.createTextNode(' listed: ' + Object.keys(by).map(function (k) { return by[k] + ' ' + k.toLowerCase(); }).join(', ') + '.')); box.appendChild(p);
@@ -64,7 +76,7 @@
       });
     },
     'carbon-intensity-london': function (sec) {
-      return get('https://api.carbonintensity.org.uk/regional/regionid/13').then(function (j) {
+      return get('https://api.carbonintensity.org.uk/regional/regionid/13', sec).then(function (j) {
         var r = j && j.data && j.data[0], d = r && r.data && r.data[0]; if (!d || r.regionid !== 13) throw new Error('unexpected answer');
         var box = el('div'), p = el('p', 'ldn-big'); p.appendChild(el('b', null, d.intensity.forecast)); p.appendChild(document.createTextNode(' gCO₂/kWh, '));
         p.appendChild(el('span', 'ci ci-' + String(d.intensity.index).replace(/\s+/g, '-'), d.intensity.index)); p.appendChild(document.createTextNode(' (' + d.from + ' to ' + d.to + ')')); box.appendChild(p);
@@ -77,18 +89,26 @@
       var rows = sec.querySelectorAll('tr[data-gauge]'), ok = 0;
       return Promise.all(Array.prototype.map.call(rows, function (tr) {
         var id = tr.getAttribute('data-gauge'); if (!/^[0-9A-Za-z_]{1,20}$/.test(id)) return null;
-        return get('https://environment.data.gov.uk/flood-monitoring/id/stations/' + id + '/readings?_sorted&_limit=1').then(function (j) {
+        return get('https://environment.data.gov.uk/flood-monitoring/id/stations/' + id + '/readings?_sorted&_limit=1', sec, function (j) { return { items: (j.items || []).slice(0, 1).map(function (r) { return pick(r, ['value', 'dateTime']); }) }; }).then(function (j) {
           var r = j && j.items && j.items[0]; if (!r) return;
           tr.querySelector('[data-v]').textContent = String(r.value); tr.querySelector('[data-t]').textContent = String(r.dateTime).slice(11, 16) + ' UTC'; ok++;
         }).catch(function () {});
       })).then(function () { if (!ok) throw new Error('no gauge answered'); return ok + ' of ' + rows.length + ' gauges'; });
     }
   };
+  function addRefresh() {
+    var first = document.querySelector('section[data-live]'); if (!first || document.getElementById('ldn-refresh')) return;
+    var p = el('p', 'ldn-refresh'), b = el('button', null, 'Refresh now'); b.type = 'button'; b.id = 'ldn-refresh';
+    b.addEventListener('click', function () { force = true; start(); force = false; });
+    p.appendChild(b); p.appendChild(document.createTextNode(' Your browser keeps each live answer for 10 minutes; this asks the sources again.'));
+    first.parentNode.insertBefore(p, first);
+  }
   function start() {
     Array.prototype.forEach.call(document.querySelectorAll('section[data-live]'), function (sec) {
       var f = run[sec.getAttribute('data-live')]; if (!f) return;
       f(sec).then(function (note) { when(sec, true, note); }, function (e) { when(sec, false, (e && e.name === 'AbortError') ? 'no answer in 15 s' : String(e && e.message || e)); });
     });
   }
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
+  function boot() { addRefresh(); start(); }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot); else boot();
 })();

@@ -33,6 +33,7 @@ export function buildConsolidated(sources, builtAt) {
     const raw = readFileSync(join(OUT, `api/v1/consolidated/${g}.json`));
     index.push({ group: g, title: def.title, sources: Object.keys(out.sources), url: `${SITE}/api/v1/consolidated/${g}.json`, bytes: raw.length, gzip_bytes: gzipSync(raw).length });
   }
-  writeJson('api/v1/consolidated/index.json', { about: 'Consolidated files: every source of a group in one file, for pages that load data in the browser. Sizes as built; GitHub Pages serves them compressed.', built_at: builtAt, groups: index });
+  writeJson('api/v1/consolidated/index.json', { about: 'Consolidated files: every source of a group in one file, for pages that load data in the browser. Sizes as built; GitHub Pages serves them compressed.', built_at: builtAt,
+    in_the_browser: { script: `${SITE}/assets/data/ptdata.js`, use: "PTData.load('/api/v1/consolidated/london.json', { maxAgeMinutes: 60, onUpdate: render }).then(render)", how: 'Keeps a copy in the browser (Cache Storage), returns it at once, and refreshes it in the background when older than maxAgeMinutes. Same-site files only; nothing is sent anywhere.' }, groups: index });
   return index;
 }
