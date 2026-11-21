@@ -4,6 +4,7 @@
  "what": "Public repositories and latest releases of Portuguese startups, companies, public bodies, universities and open-source projects on GitHub, each with its source URL, licence and the time read.",
  "publisher": "The organisations listed in sources/github-pt/orgs.json, through GitHub, Inc.'s REST API",
  "owner": "data.b.dev@PrompTugal.dinis",
+ "region": "portugal",
  "collector": "sources/github-pt/collect.mjs",
  "source_home": "https://api.github.com/",
  "reader_page": "https://github.com/",

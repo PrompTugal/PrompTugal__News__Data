@@ -1,0 +1,23 @@
+{
+ "about": "Every run of sources/tfl-road-disruptions/collect.mjs, newest first: each request's address, HTTP status, size, the first 16 hex of its sha256, and whether the bytes changed since the run before. The bytes and the full sha256 go to the source's vault (see card.json: latest/reads-full.json), never to git.",
+ "source": "tfl-road-disruptions",
+ "runs": [
+  {
+   "at": "2026-11-21T09:20:35Z",
+   "finished": "2026-11-21T09:20:37Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "disruptions",
+     "url": "https://api.tfl.gov.uk/Road/all/Disruption",
+     "at": "2026-11-21T09:20:37Z",
+     "status": 200,
+     "bytes": 254809,
+     "sha256_prefix": "0237c437e3fc36ae",
+     "changed": "first read"
+    }
+   ]
+  }
+ ]
+}

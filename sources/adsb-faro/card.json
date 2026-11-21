@@ -4,6 +4,7 @@
  "what": "Aircraft seen within 40 nautical miles of Faro airport: airline flights by callsign, airline and type; every other aircraft only counted.",
  "publisher": "adsb.lol (community ADS-B receivers)",
  "owner": "data@PrompTugal.dinis",
+ "region": "portugal",
  "collector": "sources/adsb-faro/collect.mjs",
  "source_home": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
  "reader_page": "https://globe.adsb.lol/?lat=37.014&lon=-7.966&zoom=9",

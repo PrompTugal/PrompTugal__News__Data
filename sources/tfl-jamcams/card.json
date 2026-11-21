@@ -4,6 +4,7 @@
  "what": "Transport for London's 889 traffic cameras: name, position, view, whether TfL marks each available, and the addresses of TfL's own still image and short clip. No image or clip is fetched or kept. Powered by TfL Open Data. Contains OS data © Crown copyright and database rights 2016 and Geomni UK Map data © and database rights [2019].",
  "publisher": "Transport for London (TfL), Unified API",
  "owner": "data.b@PrompTugal.dinis",
+ "region": "london",
  "country": "GB",
  "collector": "sources/tfl-jamcams/collect.mjs",
  "source_home": "https://api.tfl.gov.uk/",

@@ -4,12 +4,23 @@
  "what": "Nights spent at tourist accommodation (hotels, short-stay accommodation and camping) by the guest's residence, for Portugal, the Algarve (PT15), the Lisbon metropolitan area (PT17) and London (UKI): annual for the last 10 years and monthly for Portugal for 36 months. Regions are split into domestic, foreign and total guests; Portugal as a whole is also split by named country (United Kingdom, Germany, France, Spain, the Netherlands, the United States). Lisbon is PT17 to 2022 and Grande Lisboa (PT1A) plus Península de Setúbal (PT1B) from 2023, as Eurostat changed the regions. Eurostat's London data stops in 2016.",
  "publisher": "Eurostat (European Commission)",
  "owner": "data.b@PrompTugal.dinis",
+ "region": "portugal",
  "collector": "sources/eurostat-tourism/collect.mjs",
  "country": "EU",
- "places": ["europe", "portugal", "algarve", "lisboa", "london"],
+ "places": [
+  "europe",
+  "portugal",
+  "algarve",
+  "lisboa",
+  "london"
+ ],
  "source_home": "https://ec.europa.eu/eurostat/web/tourism/database",
  "reader_page": "https://ec.europa.eu/eurostat/databrowser/view/tour_occ_nin2/default/table",
- "datasets": ["tour_occ_nin2", "tour_occ_ninraw", "tour_occ_nim"],
+ "datasets": [
+  "tour_occ_nin2",
+  "tour_occ_ninraw",
+  "tour_occ_nim"
+ ],
  "schedule": {
   "cadence": "every 6 hours",
   "how": "the Pages workflow (.github/workflows/pages.yml) at 00, 06, 12 and 18 UTC; three requests a run, 2.5 seconds apart (about 14 KB in all); every other run keeps the last read, copied from the live site. Eurostat updates these tables a few times a year."
@@ -26,9 +37,18 @@
  "attribution": {
   "text": "Source: Eurostat",
   "datasets": [
-   { "code": "tour_occ_nin2", "link": "https://ec.europa.eu/eurostat/databrowser/view/tour_occ_nin2/default/table" },
-   { "code": "tour_occ_ninraw", "link": "https://ec.europa.eu/eurostat/databrowser/view/tour_occ_ninraw/default/table" },
-   { "code": "tour_occ_nim", "link": "https://ec.europa.eu/eurostat/databrowser/view/tour_occ_nim/default/table" }
+   {
+    "code": "tour_occ_nin2",
+    "link": "https://ec.europa.eu/eurostat/databrowser/view/tour_occ_nin2/default/table"
+   },
+   {
+    "code": "tour_occ_ninraw",
+    "link": "https://ec.europa.eu/eurostat/databrowser/view/tour_occ_ninraw/default/table"
+   },
+   {
+    "code": "tour_occ_nim",
+    "link": "https://ec.europa.eu/eurostat/databrowser/view/tour_occ_nim/default/table"
+   }
   ]
  },
  "api": {
@@ -40,10 +60,23 @@
  },
  "vault": null,
  "split": {
-  "code": ["the collector asks Eurostat's JSON-stat API for three tables, decodes each value with its dimension codes and labels, and keeps number, unit and flag", "GitHub Actions runs it and deploys the site"],
-  "agents": ["data.b.dev2@PrompTugal.dinis wrote the collector and card on 18 November 2026 for data.b@ (WS-177)"],
-  "people": ["Dinis Cruz decided to add the EU, keyless first, on 18 November 2026 (board/team/data/briefs/2026-11-18-dinis-europe-open-data-public-service.md); no person has checked the values (not reviewed)"]
+  "code": [
+   "the collector asks Eurostat's JSON-stat API for three tables, decodes each value with its dimension codes and labels, and keeps number, unit and flag",
+   "GitHub Actions runs it and deploys the site"
+  ],
+  "agents": [
+   "data.b.dev2@PrompTugal.dinis wrote the collector and card on 18 November 2026 for data.b@ (WS-177)"
+  ],
+  "people": [
+   "Dinis Cruz decided to add the EU, keyless first, on 18 November 2026 (board/team/data/briefs/2026-11-18-dinis-europe-open-data-public-service.md); no person has checked the values (not reviewed)"
+  ]
  },
- "cost": { "per_run_tokens": 0, "per_run_model_cost_usd": 0, "runner": "GitHub Actions on a public repository: no charge; three requests a run (about 14 KB)", "build_tokens": "not measured", "note": "Code only: no model is called when the data is collected." },
+ "cost": {
+  "per_run_tokens": 0,
+  "per_run_model_cost_usd": 0,
+  "runner": "GitHub Actions on a public repository: no charge; three requests a run (about 14 KB)",
+  "build_tokens": "not measured",
+  "note": "Code only: no model is called when the data is collected."
+ },
  "since": "2026-11-18"
 }

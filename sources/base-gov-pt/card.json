@@ -4,6 +4,7 @@
  "what": "Public contracts of the câmaras municipais of Lisboa and the Algarve's 16 municipalities, as contracting entity: object, contractors that are companies, price, dates and procedure, for the last 90 days.",
  "publisher": "IMPIC, Instituto dos Mercados Públicos, do Imobiliário e da Construção (Portal BASE), through dados.gov.pt",
  "owner": "data@PrompTugal.dinis",
+ "region": "portugal",
  "collector": "sources/base-gov-pt/collect.mjs",
  "source_home": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
  "reader_page": "https://www.base.gov.pt/",

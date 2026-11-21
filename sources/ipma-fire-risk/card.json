@@ -4,6 +4,7 @@
  "what": "The daily fire risk class (RCM, low to maximum) for every municipality of mainland Portugal, today and the next two days.",
  "publisher": "IPMA, Instituto Português do Mar e da Atmosfera",
  "owner": "data@PrompTugal.dinis",
+ "region": "portugal",
  "collector": "sources/ipma-fire-risk/collect.mjs",
  "source_home": "https://api.ipma.pt/open-data/forecast/meteorology/rcm/",
  "reader_page": "https://www.ipma.pt/en/riscoincendio/rcm.pt/",

@@ -1,0 +1,56 @@
+{
+ "id": "tfl-status",
+ "title": "London line status (TfL)",
+ "what": "Each London Tube, Overground, Elizabeth line, DLR and tram line and its status as Transport for London publishes it (good service, delays, closures), with TfL's reason.",
+ "publisher": "Transport for London (TfL), Unified API",
+ "owner": "data.b@PrompTugal.dinis",
+ "region": "london",
+ "collector": "sources/tfl-status/collect.mjs",
+ "source_home": "https://api.tfl.gov.uk/",
+ "reader_page": "https://api-portal.tfl.gov.uk/",
+ "schedule": {
+  "cadence": "daily",
+  "how": "once a day at data.b@'s morning wake (when the last read is more than 23.5 hours old): one GET of api.tfl.gov.uk/Line/Mode/.../Status, no key; the page reads it live in the browser"
+ },
+ "terms": {
+  "summary": "TfL's Transport Data Service terms (based on the Open Government Licence v2.0 with TfL amendments): free to copy, publish, distribute, transmit and adapt the information and to exploit it commercially and non-commercially; credit \"Powered by TfL Open Data\"; at most 500 calls a minute per feed; no implied endorsement.",
+  "page": "https://tfl.gov.uk/corporate/terms-and-conditions/transport-data-service",
+  "read_at": "2026-11-18",
+  "quote": "You are free to: Copy, publish, distribute and transmit the Information; Adapt the Information and Exploit the Information commercially and non-commercially",
+  "quote_lang": "en",
+  "republish": "yes, with the credit \"Powered by TfL Open Data\"; commercial use allowed",
+  "commercial_use": "allowed",
+  "read_by": "Dinis Cruz (pasted into data.b@'s session; board/team/data/briefs/2026-11-18-dinis-commercial-line-ine-tfl.md)"
+ },
+ "api": {
+  "latest": "https://data.promptugal.news/api/v1/tfl-status/latest.json",
+  "reads": "https://data.promptugal.news/api/v1/tfl-status/reads.json",
+  "card": "https://data.promptugal.news/api/v1/tfl-status/card.json",
+  "openapi": "https://data.promptugal.news/api/v1/tfl-status/openapi.json",
+  "page": "https://data.promptugal.news/sources/tfl-status/"
+ },
+ "vault": null,
+ "split": {
+  "code": [
+   "the collector reads the source once a day and keeps the archive; the page reads the live figures in the visitor's browser"
+  ],
+  "agents": [
+   "data.b@PrompTugal.dinis wrote the collector and card on 21 November 2026, for Dinis's London demos (tier 1 of board/team/data/london-feeds.md)"
+  ],
+  "people": [
+   "Dinis Cruz chose tier 1 on 21 November 2026, about 09:16 UTC; no person has checked the values (not reviewed)"
+  ]
+ },
+ "cost": {
+  "per_run_tokens": 0,
+  "per_run_model_cost_usd": 0,
+  "runner": "data.b@'s session",
+  "build_tokens": "not measured",
+  "note": "Code only: no model is called when the data is collected."
+ },
+ "since": "2026-11-21",
+ "places": [
+  "london"
+ ],
+ "country": "GB"
+}

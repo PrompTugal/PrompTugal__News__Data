@@ -11,3 +11,11 @@ What data.b@ takes from it:
 - Map what London has today and what could be added.
 - London treated almost as a country: two strong places, Portugal and London.
 - A proposal to split the data work into two agents, data.london and data.portugal, isolated from each other and able to run different schedules. data.b@ does not create sessions or scheduled tasks; the split is a proposal for Dinis.
+
+## Dinis's answers, 21 November 2026, about 09:16 UTC (to data.b@'s three questions)
+
+- Build tier 1 now: "Yes, all of tier 1" (TfL line status, Santander Cycles docks, road disruptions, London carbon intensity, Thames tide gauges).
+- The split: "One repo, two region owners".
+- Cadence, in his words: "Keep it once a day (like the others now) but I really like the live in browser view, where we the data we collect also as archive".
+
+What data.b@ takes from the cadence answer: the new London feeds are collected once a day and kept as the archive; the pages show the live figures by reading the source in the visitor's browser, with our collected file as the fallback and the history. Note: the existing sources are collected twice a day (Dinis, 19 Nov 16:30 UTC), not once; data.b@ leaves them at twice a day and asks Dinis whether he meant once a day for all.

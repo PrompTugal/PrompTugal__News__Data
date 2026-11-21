@@ -4,6 +4,7 @@
  "what": "The newest publications on the European Union Agency for Cybersecurity's publications page: title, date, link and the topics ENISA gives, for cyber.promptugal.news. ENISA has no feed, so the HTML list (one page) is read. No report text is kept.",
  "publisher": "ENISA (European Union Agency for Cybersecurity)",
  "owner": "data.b@PrompTugal.dinis",
+ "region": "portugal",
  "collector": "sources/enisa-pubs/collect.mjs",
  "source_home": "https://www.enisa.europa.eu/",
  "reader_page": "https://www.enisa.europa.eu/publications",

@@ -27,7 +27,7 @@ A thing not written here does not exist. Kept by data.b@PrompTugal.dinis (accoun
 
 - Each source has `sources/<id>/card.json`: owner, schedule, the source's reuse terms (quoted, with the page and date read), code/agents/people, cost, the vault with its public read key and clone command.
 - `collect/run.mjs` runs the hourly ones (about 2 minutes, 2.5 s between requests, three tries with backoff) and derives `by-place/now/` (18 Algarve files) with `collect/by-place-now.mjs`, the move of PrompTugal__News__Website's `board/tools/local-now.mjs`, in the same shape.
-- Collected data (`data/`) and vault working copies (`vaults/`) are gitignored. Only `sources/storm-charles-archive/manifest.json` is in git.
+- Collected data (`data/`: each source's `latest.json` and `reads.json`, plus derived files) is in git, about 124 files and 13 MB at 21 Nov 2026. The vault working copies (`vaults/`: every raw answer, dated) stay out of git (about 1,700 files and 256 MB in data.b@'s container at 21 Nov 09:24 UTC), except the latest raw files of nine sources. They have not reached the sgit vaults since 17 November: see The vaults below.
 - Files in git and on the site carry the first 16 hex of each sha256 (`sha256_prefix`). The full hashes are in the vaults (`latest/reads-full.json`, `manifest-full.json`).
 - The Storm Charles archive groups into 39 datasets by the rule in its collector. The brief's "34 datasets" could not be reproduced: the count depends on how files are grouped.
 
@@ -93,3 +93,11 @@ A thing not written here does not exist. Kept by data.b@PrompTugal.dinis (accoun
 ## Not yet
 
 - Wikipedia pinned revisions; the place files' public sources; accountant@'s token ledger on the cards; a person's review of any value; vendored fonts; Swagger UI itself (see the debrief).
+
+## London, live (21 November 2026)
+
+- Dinis, about 09:16 UTC: tier 1 of `board/team/data/london-feeds.md`, one repository with two region owners, the new London feeds collected once a day as the archive and shown live in the browser.
+- Five new sources, all `daily`, region `london`: `tfl-status`, `tfl-bikepoint`, `tfl-road-disruptions`, `carbon-intensity-london`, `ea-thames-tide`. First read at 09:19 to 09:20 UTC.
+- The page `/london/` builds each panel from our read, and `src/assets/london/live.js` replaces it with the source's live figures in the visitor's browser (TfL, NESO and the EA all allow browser reads). Every value is set as text. A source that does not answer leaves our read in place, and the panel says so.
+- Every card names its region (`london` or `portugal`); `node collect/run.mjs --region london` runs only London's sources; `scripts/validate.mjs` fails a card without a region. data.london and data.portugal do not exist yet: Dinis or a conductor starts them.
+

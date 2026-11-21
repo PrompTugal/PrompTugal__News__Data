@@ -4,6 +4,7 @@
  "what": "Public events on now or in the next 60 days in Lisbon and the Algarve places, as schema.org Event records, each with its source URL and the time read.",
  "publisher": "Câmara Municipal de Lisboa (Agenda Cultural de Lisboa, agendalx.pt) Câmara Municipal de Lagos (cm-lagos.pt), Teatro das Figuras, Faro (teatrodasfiguras.pt) and Câmara Municipal de Tavira (cm-tavira.pt)",
  "owner": "data.b@PrompTugal.dinis",
+ "region": "portugal",
  "collector": "sources/events-pt/collect.mjs",
  "source_home": "https://www.agendalx.pt/wp-json/agendalx/v1/events",
  "reader_page": "https://www.agendalx.pt/",

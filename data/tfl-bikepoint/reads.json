@@ -1,0 +1,23 @@
+{
+ "about": "Every run of sources/tfl-bikepoint/collect.mjs, newest first: each request's address, HTTP status, size, the first 16 hex of its sha256, and whether the bytes changed since the run before. The bytes and the full sha256 go to the source's vault (see card.json: latest/reads-full.json), never to git.",
+ "source": "tfl-bikepoint",
+ "runs": [
+  {
+   "at": "2026-11-21T09:20:34Z",
+   "finished": "2026-11-21T09:20:35Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "bikepoint",
+     "url": "https://api.tfl.gov.uk/BikePoint",
+     "at": "2026-11-21T09:20:34Z",
+     "status": 200,
+     "bytes": 2173228,
+     "sha256_prefix": "94160d4a9548ae29",
+     "changed": "first read"
+    }
+   ]
+  }
+ ]
+}

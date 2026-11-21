@@ -1,0 +1,330 @@
+{
+ "source": "tfl-status",
+ "title": "London line status (TfL)",
+ "read_at": "2026-11-21T09:20:37Z",
+ "provenance": {
+  "source": "https://api.tfl.gov.uk/",
+  "page": "https://api-portal.tfl.gov.uk/",
+  "read_at": "2026-11-21T09:20:37Z",
+  "by": "sources/tfl-status/collect.mjs (code, no model; run by data.b@PrompTugal.dinis)",
+  "terms": "TfL's Transport Data Service terms (based on the Open Government Licence v2.0 with TfL amendments): free to copy, publish, distribute, transmit and adapt the information and to exploit it commercially and non-commercially; credit \"Powered by TfL Open Data\"; at most 500 calls a minute per feed; no implied endorsement.",
+  "api": "https://api.tfl.gov.uk/Line/Mode/tube,overground,elizabeth-line,dlr,tram/Status"
+ },
+ "country": "GB",
+ "place": "london",
+ "about": "Each London Tube, Overground, Elizabeth line, DLR and tram line and its status as Transport for London published it at the read (severity 10 is good service), with TfL's reason. Collected once a day as the archive; the page shows the live status read in your browser from TfL.",
+ "live": {
+  "url": "https://api.tfl.gov.uk/Line/Mode/tube,overground,elizabeth-line,dlr,tram/Status",
+  "how": "the page asks TfL for this address when it opens; TfL allows browser reads (CORS *)"
+ },
+ "attribution": "Powered by TfL Open Data",
+ "counts": {
+  "lines": 20,
+  "good_service": 12,
+  "not_good": 8,
+  "fields_dropped_wording": 0
+ },
+ "lines": [
+  {
+   "id": "dlr",
+   "name": "DLR",
+   "mode": "dlr",
+   "statuses": [
+    {
+     "severity": 5,
+     "status": "Part Closure",
+     "reason": "DOCKLANDS LIGHT RAILWAY: Saturday 21 and Sunday 22 November, no service between Canning Town and Stratford International. Please use JUBILEE LINE and local London Buses services.",
+     "from": "2026-11-21T04:30:00Z",
+     "to": "2026-11-23T01:29:00Z"
+    }
+   ]
+  },
+  {
+   "id": "elizabeth",
+   "name": "Elizabeth line",
+   "mode": "elizabeth-line",
+   "statuses": [
+    {
+     "severity": 10,
+     "status": "Good Service",
+     "reason": null,
+     "from": null,
+     "to": null
+    }
+   ]
+  },
+  {
+   "id": "liberty",
+   "name": "Liberty",
+   "mode": "overground",
+   "statuses": [
+    {
+     "severity": 10,
+     "status": "Good Service",
+     "reason": null,
+     "from": null,
+     "to": null
+    }
+   ]
+  },
+  {
+   "id": "lioness",
+   "name": "Lioness",
+   "mode": "overground",
+   "statuses": [
+    {
+     "severity": 4,
+     "status": "Planned Closure",
+     "reason": "LIONESS LINE: Saturday 21 and Sunday 22 November, no service between Euston and Watford Junction. There will also be no BAKERLOO LINE service between Queens Park and Harrow & Wealdstone. Special bus service 720 operates (please note service 718 will NOT operate). LONDON NORTH WESTERN RAILWAY trains continue to serve Euston, Harrow & Wealdstone, Bushey and Watford Junction. SOUTHERN trains serve Wembley Central, Harrow & Wealdstone and Watford Junction until 1900 Saturday only, not on Sunday.",
+     "from": "2026-11-21T04:30:00Z",
+     "to": "2026-11-23T01:29:00Z"
+    }
+   ]
+  },
+  {
+   "id": "mildmay",
+   "name": "Mildmay",
+   "mode": "overground",
+   "statuses": [
+    {
+     "severity": 10,
+     "status": "Good Service",
+     "reason": null,
+     "from": null,
+     "to": null
+    }
+   ]
+  },
+  {
+   "id": "suffragette",
+   "name": "Suffragette",
+   "mode": "overground",
+   "statuses": [
+    {
+     "severity": 10,
+     "status": "Good Service",
+     "reason": null,
+     "from": null,
+     "to": null
+    }
+   ]
+  },
+  {
+   "id": "weaver",
+   "name": "Weaver",
+   "mode": "overground",
+   "statuses": [
+    {
+     "severity": 10,
+     "status": "Good Service",
+     "reason": null,
+     "from": null,
+     "to": null
+    }
+   ]
+  },
+  {
+   "id": "windrush",
+   "name": "Windrush",
+   "mode": "overground",
+   "statuses": [
+    {
+     "severity": 10,
+     "status": "Good Service",
+     "reason": null,
+     "from": null,
+     "to": null
+    }
+   ]
+  },
+  {
+   "id": "tram",
+   "name": "Tram",
+   "mode": "tram",
+   "statuses": [
+    {
+     "severity": 10,
+     "status": "Good Service",
+     "reason": null,
+     "from": null,
+     "to": null
+    }
+   ]
+  },
+  {
+   "id": "bakerloo",
+   "name": "Bakerloo",
+   "mode": "tube",
+   "statuses": [
+    {
+     "severity": 5,
+     "status": "Part Closure",
+     "reason": "BAKERLOO LINE: Saturday 21 and Sunday 22 November, no service between Queens Park and Harrow & Wealdstone. Please note that special bus service 718 will NOT operate. There will also be no LIONESS LINE service between Euston and Watford Junction. LONDON NORTH WESTERN RAILWAY trains continue to stop at Harrow & Wealdstone. SOUTHERN trains stop at Wembley Central and Harrow & Wealdstone until 1900 Saturday only, not on Sunday.",
+     "from": "2026-11-21T04:30:00Z",
+     "to": "2026-11-23T01:29:00Z"
+    }
+   ]
+  },
+  {
+   "id": "central",
+   "name": "Central",
+   "mode": "tube",
+   "statuses": [
+    {
+     "severity": 10,
+     "status": "Good Service",
+     "reason": null,
+     "from": null,
+     "to": null
+    }
+   ]
+  },
+  {
+   "id": "circle",
+   "name": "Circle",
+   "mode": "tube",
+   "statuses": [
+    {
+     "severity": 10,
+     "status": "Good Service",
+     "reason": null,
+     "from": null,
+     "to": null
+    }
+   ]
+  },
+  {
+   "id": "district",
+   "name": "District",
+   "mode": "tube",
+   "statuses": [
+    {
+     "severity": 5,
+     "status": "Part Closure",
+     "reason": "TUBE STRIKE: Piccadilly line service control staff are taking strike action from Friday 20 until Saturday evening, 21 November. Due to shared infrastructure around the Ealing Common District line depot, there will be no DISTRICT LINE service between Turnham Green and Ealing Broadway from midday on Friday until Saturday evening, with a reduced service on the rest of the line. No Piccadilly line service is expected during the strike. Replacement bus services operate during Friday Night Tube and Saturday daytime hours only. Please use MILDMAY LINE services between Gunnersbury, Kew Gardens and Ric",
+     "from": "2026-11-20T12:09:00Z",
+     "to": "2026-11-21T20:30:00Z"
+    },
+    {
+     "severity": 6,
+     "status": "Severe Delays",
+     "reason": "District Line: No service between Kensington (Olympia) and Earl's Court due to train cancellations. NO SERVICE between Turnham Green and Ealing Broadway due to strike action. Tickets will be accepted on London Buses, Mildmay line, DLR, Elizabeth line, C2C and South Western services. SEVERE DELAYS on the rest of the line.",
+     "from": "2026-11-21T08:21:08Z",
+     "to": "2026-11-22T01:29:00Z"
+    },
+    {
+     "severity": 3,
+     "status": "Part Suspended",
+     "reason": "District Line: No service between Kensington (Olympia) and Earl's Court due to train cancellations. NO SERVICE between Turnham Green and Ealing Broadway due to strike action. Tickets will be accepted on London Buses, Mildmay line, DLR, Elizabeth line, C2C and South Western services. SEVERE DELAYS on the rest of the line.",
+     "from": "2026-11-21T08:21:08Z",
+     "to": "2026-11-21T12:19:44Z"
+    }
+   ]
+  },
+  {
+   "id": "hammersmith-city",
+   "name": "Hammersmith & City",
+   "mode": "tube",
+   "statuses": [
+    {
+     "severity": 6,
+     "status": "Severe Delays",
+     "reason": "Hammersmith and City Line: Severe delays due to train cancellations. Tickets will be accepted on C2C, and local bus services.",
+     "from": "2026-11-21T07:09:07Z",
+     "to": "2026-11-22T01:29:00Z"
+    }
+   ]
+  },
+  {
+   "id": "jubilee",
+   "name": "Jubilee",
+   "mode": "tube",
+   "statuses": [
+    {
+     "severity": 10,
+     "status": "Good Service",
+     "reason": null,
+     "from": null,
+     "to": null
+    }
+   ]
+  },
+  {
+   "id": "metropolitan",
+   "name": "Metropolitan",
+   "mode": "tube",
+   "statuses": [
+    {
+     "severity": 9,
+     "status": "Minor Delays",
+     "reason": "Metropolitan Line: Minor delays between Moor Park and Amersham due to train cancellations. The next southbound train from Amersham will be at 09:48. GOOD SERVICE on the rest of the line.",
+     "from": "2026-11-21T08:42:38Z",
+     "to": "2026-11-22T01:29:00Z"
+    }
+   ]
+  },
+  {
+   "id": "northern",
+   "name": "Northern",
+   "mode": "tube",
+   "statuses": [
+    {
+     "severity": 10,
+     "status": "Good Service",
+     "reason": null,
+     "from": null,
+     "to": null
+    }
+   ]
+  },
+  {
+   "id": "piccadilly",
+   "name": "Piccadilly",
+   "mode": "tube",
+   "statuses": [
+    {
+     "severity": 4,
+     "status": "Planned Closure",
+     "reason": "TUBE STRIKE: Piccadilly line service control staff are planning to take strike action from Friday 20 until Saturday evening 21 November. There will be no service from midday on Friday until Saturday evening, including Night Tube on Friday night. Normal Night Tube service is expected to operate on Saturday night. Due to shared infrastructure around the Ealing Common District line depot, there will be no DISTRICT LINE service between Turnham Green and Ealing Broadway from midday on Friday until Saturday evening. Replacement buses will operate during Friday Night Tube hours and Saturday daytime o",
+     "from": "2026-11-20T11:59:00Z",
+     "to": "2026-11-21T20:30:00Z"
+    }
+   ]
+  },
+  {
+   "id": "victoria",
+   "name": "Victoria",
+   "mode": "tube",
+   "statuses": [
+    {
+     "severity": 10,
+     "status": "Good Service",
+     "reason": null,
+     "from": null,
+     "to": null
+    }
+   ]
+  },
+  {
+   "id": "waterloo-city",
+   "name": "Waterloo & City",
+   "mode": "tube",
+   "statuses": [
+    {
+     "severity": 4,
+     "status": "Planned Closure",
+     "reason": "Waterloo & City line: service operates 06:00 until 00:30, Monday to Friday only. There is no service on Saturdays, Sundays and on bank/public holidays.",
+     "from": "2026-11-21T04:15:00Z",
+     "to": "2026-11-21T23:59:00Z"
+    },
+    {
+     "severity": 20,
+     "status": "Service Closed",
+     "reason": "Waterloo and City Line: Service will resume at 06:00 on Monday.",
+     "from": "2026-11-21T00:30:11Z",
+     "to": "2026-11-21T12:19:44Z"
+    }
+   ]
+  }
+ ]
+}

@@ -4,6 +4,7 @@
  "what": "Five-day forecasts (minimum and maximum temperature, chance of rain, weather type, wind) for each district capital and island, and Loulé, Portimão and Sagres.",
  "publisher": "IPMA, Instituto Português do Mar e da Atmosfera",
  "owner": "data@PrompTugal.dinis",
+ "region": "portugal",
  "collector": "sources/ipma-city-forecasts/collect.mjs",
  "source_home": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/",
  "reader_page": "https://www.ipma.pt/en/otempo/prev.localidade.hora/",

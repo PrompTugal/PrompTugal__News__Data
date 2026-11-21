@@ -2,6 +2,7 @@
 import { SITE, REPO, ACCOUNT, write, writeJson, readJson, fmtTime } from './lib.mjs';
 import { page, h, p, ul, table, pre, quote, raw } from './render.mjs';
 import { licenceOf, OURS } from './licence.mjs';
+import { londonBlocks } from './london.mjs';
 const lic = l => `[${l.name}](${l.url})`;
 
 // ---- the visualizations (data.b@PrompTugal.dinis, 18 Nov 2026; drawn by src/assets/viz/viz.js, data.b.design@) ----
@@ -51,6 +52,11 @@ const LAYERS = {
   'tfl-jamcams': { raw: null, rawNote: 'The raw answer is TfL\'s camera list (about 1.1 MB), kept in the vault copy: [TfL\'s API](https://api.tfl.gov.uk/Place/Type/JamCam). No image or clip is ever fetched.',
     processed: [['jamcams-map', ['latest.json'], 'London\'s traffic cameras: where they are and how many TfL marks available.']],
     how: 'The collector reads TfL\'s camera list once a run and keeps each camera\'s name, position, view, availability and the addresses of TfL\'s own image and clip, checked to be on TfL\'s bucket path. Powered by TfL Open Data.' },
+  'tfl-status': { raw: null, rawNote: 'The raw answer is TfL\'s line status list (about 30 KB), kept in the vault copy: [the address](https://api.tfl.gov.uk/Line/Mode/tube,overground,elizabeth-line,dlr,tram/Status).', processed: [['tfl-status-now', ['latest.json'], 'Each line and its status at the read. The live status is on [London, live](/london/).']], how: 'The collector reads TfL\'s status for the Tube, Overground, Elizabeth line, DLR and tram once a day and keeps each line\'s name, mode, status, severity, reason and period. Powered by TfL Open Data.' },
+  'tfl-bikepoint': { raw: null, rawNote: 'The raw answer is TfL\'s BikePoint list (about 2.2 MB), kept in the vault copy: [the address](https://api.tfl.gov.uk/BikePoint).', processed: [['tfl-bikepoint-now', ['latest.json'], 'Every dock with its bikes, e-bikes and empty docks at the read. The live totals are on [London, live](/london/).']], how: 'The collector reads TfL\'s dock list once a day and keeps each dock\'s name, position, bikes, e-bikes, empty docks and whether it is in service, with London\'s totals. Powered by TfL Open Data.' },
+  'tfl-road-disruptions': { raw: null, rawNote: 'The raw answer is TfL\'s road disruption list (about 250 KB), kept in the vault copy: [the address](https://api.tfl.gov.uk/Road/all/Disruption).', processed: [['tfl-roads-now', ['latest.json'], 'Each disruption with its severity, category, place and period at the read. The live list is on [London, live](/london/).']], how: 'The collector reads TfL\'s road disruptions once a day and keeps each one\'s id, severity, category, place, description, period and position; a field our wording check refuses is dropped and counted. Powered by TfL Open Data.' },
+  'carbon-intensity-london': { raw: null, rawNote: 'The raw answers are two small JSON files from the Carbon Intensity API: [now](https://api.carbonintensity.org.uk/regional/regionid/13) and the 48-hour forecast for region 13.', processed: [['carbon-now', ['latest.json'], 'The half hour of the read and the 48-hour forecast. The live half hour is on [London, live](/london/).']], how: 'The collector asks NESO\'s Carbon Intensity API once a day for London (region 13, UKPN London): the current half hour and the 48 hours ahead, each with its index and generation mix. CC BY 4.0.' },
+  'ea-thames-tide': { raw: null, rawNote: 'The raw answers are the Environment Agency\'s readings for each gauge, as served: for example [Westminster](https://environment.data.gov.uk/flood-monitoring/id/stations/0006/readings?_sorted&_limit=96).', processed: [['thames-tide-now', ['latest.json'], 'The level at each gauge, every 15 minutes over the 24 hours before the read. The live levels are on [London, live](/london/).']], how: 'The collector asks the Environment Agency once a day for the last 96 readings (24 hours) at seven Thames Tideway gauges from Richmond to Erith, one request every 2.5 seconds, and keeps each reading\'s time and level, with the high and low.' },
   'youtube-replays': { raw: null, rawNote: 'There is no raw layer: YouTube\'s terms let us store API data for 30 calendar days at most, so this source keeps only its latest read, replaced every run, and no raw answer or history anywhere (not in a vault either). [Web Summit\'s channel](https://www.youtube.com/@WebSummit). Source: YouTube. By using these links and players you are bound by the [YouTube Terms of Service](https://www.youtube.com/t/terms).',
     processed: [['replays-list', ['latest.json'], 'Web Summit 2026 replays: each upload with its time, length, counts as read and chapters, with a link to YouTube.']],
     how: 'The collector asks the YouTube Data API for the channel Web Summit (@WebSummit), its uploads playlist back to 1 November 2026 and each video\'s details (3 or 4 requests, as many quota units, never search), and keeps each video\'s id, title, time published, length, view and like counts with the time read, a link to YouTube and the address of YouTube\'s embedded player, and chapters read from timestamp lines in the description. The description, thumbnails and comments are not kept. The key is added by the environment, never held by the code; with no key the run does nothing and keeps the last read, and a read more than 25 days old is deleted. Content: YouTube; the videos stay Web Summit\'s.' },
@@ -497,6 +503,13 @@ ${A(230, 95, 290, 95)}${A(230, 260, 290, 260, 'pl-ai')}${A(520, 75, 580, 75)}${A
       h('What is kept'),
       ul(['In this browser only (localStorage `pt.data.reads`): the address and title of each page you open here, and the minute. The last 200.', 'Page views and reading time are also counted, publicly and without an IP address or cookie, on the PrompTugal observability lane `data`: see the note at the foot of each page.']),
     ],
+  });
+
+  // ---- London, live (Dinis, 21 Nov 2026 ~09:16 UTC; scripts/build/london.mjs, src/assets/london/live.js) ----
+  if (sources.some(s => s.id === 'tfl-status')) add({
+    path: 'london/', title: 'London, live: PrompTugal.news Data', h1: 'London, live', description: 'Live London figures read in your browser from TfL, NESO and the Environment Agency (line status, cycle hire, road disruptions, the carbon intensity of the electricity, the tidal Thames), with our once-a-day archive.',
+    head: '<link rel="stylesheet" href="/assets/london/live.css">\n<script src="/assets/london/live.js" defer></script>\n',
+    blocks: londonBlocks(sources),
   });
 
   // ---- llms.txt and sitemap ----

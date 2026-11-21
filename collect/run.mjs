@@ -11,7 +11,7 @@ import path from 'node:path'
 import { ROOT, SITE, readJson, writeJson, now, UA } from './lib.mjs'
 import { Run } from './lib.mjs'
 
-const args = process.argv.slice(2), only = args.filter(a => !a.startsWith('--'))
+const args = process.argv.slice(2), only = args.filter((a, i) => !a.startsWith('--') && args[i - 1] !== '--region')
 const cards = fs.readdirSync(path.join(ROOT, 'sources')).filter(d => fs.existsSync(path.join(ROOT, 'sources', d, 'card.json'))).map(d => readJson(path.join(ROOT, 'sources', d, 'card.json')))
 // data.b@, 18 Nov 2026: 'every 6 hours' sources (events-pt: agendas change daily) run at 00, 06, 12 and 18 UTC; their last
 // read is still copied from the live site (--prev) on every run, so each build keeps them
@@ -21,7 +21,13 @@ const cards = fs.readdirSync(path.join(ROOT, 'sources')).filter(d => fs.existsSy
 const SIX = 5.5 * 3600e3
 const ageOf = id => { const t = Date.parse(readJson(path.join(ROOT, 'data', id, 'latest.json'), null)?.read_at || ''); return Number.isFinite(t) ? Date.now() - t : Infinity }
 const DAILY = 23.5 * 3600e3   // data.b@, 19 Nov 2026: a 'daily' source (nvd-kev) runs when its last read is more than 23.5 hours old
-const kept = cards.filter(c => ['hourly', 'every 6 hours', 'daily'].includes(c.schedule?.cadence))
+// data.b@, 21 Nov 2026 (Dinis, ~09:16 UTC: "One repo, two region owners"): every card names its region, london or portugal;
+// --region london (or portugal) reads only that region's sources, so data.london and data.portugal can each run their own on
+// their own schedule. Without --region every region runs, as before.
+const regionArg = (args.find(a => a.startsWith('--region=')) || '').slice(9) || (args.includes('--region') ? args[args.indexOf('--region') + 1] : '')
+if (regionArg && !['london', 'portugal'].includes(regionArg)) { console.error(`unknown region: ${regionArg}`); process.exit(2) }
+const inRegion = c => !regionArg || c.region === regionArg
+const kept = cards.filter(c => inRegion(c) && ['hourly', 'every 6 hours', 'daily'].includes(c.schedule?.cadence))
 const pick = only.length ? cards.filter(c => only.includes(c.id)) : kept
 if (args.includes('--prev')) for (const c of pick) for (const f of ['latest.json', 'reads.json']) {
     const local = path.join(ROOT, 'data', c.id, f); if (fs.existsSync(local)) continue
@@ -36,7 +42,7 @@ const refusedAgo = id => { const r = readJson(path.join(ROOT, 'data', id, 'reads
 // waits at least 4 hours (not a whole cadence) and is tried again at the next wake rather than the one after
 const REFUSED_WAIT = 4 * 3600e3
 const due = c => c.schedule?.cadence === 'hourly' || (refusedAgo(c.id) > REFUSED_WAIT && ((c.schedule?.cadence === 'every 6 hours' && ageOf(c.id) > SIX) || (c.schedule?.cadence === 'daily' && ageOf(c.id) > DAILY)))
-const todo = only.length ? pick : cards.filter(due)
+const todo = only.length ? pick : cards.filter(c => inRegion(c) && due(c))
 const summary = []
 for (const c of todo) {
     const mod = await import(path.join(ROOT, 'sources', c.id, 'collect.mjs'))

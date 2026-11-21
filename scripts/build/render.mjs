@@ -51,7 +51,7 @@ function toMd(b) {
 
 // (the sites rail was replaced by the sites bar 1.1.0, 19 Nov 2026; 1.1.1 since 19 Nov 02:15 UTC, 1.2.0 since 07:20 UTC, 1.2.1 since 07:55 UTC)
 const SITES = [['https://weather.promptugal.news/', 'Weather'], ['https://civic.promptugal.news/', 'Civic'], ['https://startups.promptugal.news/', 'Startups'], ['https://travel.promptugal.news/', 'Travel'], ['https://data.promptugal.news/', 'Data']];
-const NAV = [['/sources/', 'Sources'], ...(existsSync('data/events/by-place/index.json') ? [['/events/', 'Events']] : []), ['/storm/', 'Storm'], ['/api/', 'API'], ['/api/swagger/', 'Explorer'], ['/vaults/', 'Vaults'], ['/pipeline/', 'Pipeline'], ['/how/', 'How'], ['/about/', 'About']];
+const NAV = [['/sources/', 'Sources'], ...(existsSync('data/tfl-status/latest.json') ? [['/london/', 'London']] : []), ...(existsSync('data/events/by-place/index.json') ? [['/events/', 'Events']] : []), ['/storm/', 'Storm'], ['/api/', 'API'], ['/api/swagger/', 'Explorer'], ['/vaults/', 'Vaults'], ['/pipeline/', 'Pipeline'], ['/how/', 'How'], ['/about/', 'About']];
 
 // path: 'sources/ipma-uv/' (directory, with trailing slash) or '' for the front page
 export function page({ path, title, description, h1, blocks, readAt, head = '', foot = '', skipH1 = false }) {

@@ -4,10 +4,24 @@
  "what": "Flood warnings and alerts in force around London, and the latest water or tidal level at the Thames stations in London, and the nearest ten rainfall gauges (latest 15-minute total and rain per UTC day, 14 days kept), from the Environment Agency's real-time flood-monitoring API. Each warning with its severity, area and times; each station with its latest readings. Not a warning service.",
  "publisher": "Environment Agency (England)",
  "owner": "data.b@PrompTugal.dinis",
+ "region": "london",
  "collector": "sources/ea-flood/collect.mjs",
  "country": "GB",
- "places": ["london"],
- "place": { "id": "london", "name": "London", "lat": 51.5074, "lon": -0.1278, "dist_km_warnings": 30, "dist_km_stations": 15, "river_match": "Thames", "max_stations": 12, "rain_dist_km": 15, "max_rain_gauges": 10 },
+ "places": [
+  "london"
+ ],
+ "place": {
+  "id": "london",
+  "name": "London",
+  "lat": 51.5074,
+  "lon": -0.1278,
+  "dist_km_warnings": 30,
+  "dist_km_stations": 15,
+  "river_match": "Thames",
+  "max_stations": 12,
+  "rain_dist_km": 15,
+  "max_rain_gauges": 10
+ },
  "source_home": "https://environment.data.gov.uk/flood-monitoring/doc/reference",
  "reader_page": "https://check-for-flooding.service.gov.uk/",
  "schedule": {
@@ -32,10 +46,23 @@
  },
  "vault": null,
  "split": {
-  "code": ["the collector reads the EA's warnings and stations near the point on the card, keeps the named fields and the latest readings", "GitHub Actions runs it and deploys the site"],
-  "agents": ["data.b.dev@PrompTugal.dinis wrote the collector and card on 18 November 2026 for data.b@ (WS-177)"],
-  "people": ["Dinis Cruz decided London as the first place beyond Portugal on 18 November 2026 (board/guidance/2026-11-18-london.md); no person has checked the values (not reviewed)"]
+  "code": [
+   "the collector reads the EA's warnings and stations near the point on the card, keeps the named fields and the latest readings",
+   "GitHub Actions runs it and deploys the site"
+  ],
+  "agents": [
+   "data.b.dev@PrompTugal.dinis wrote the collector and card on 18 November 2026 for data.b@ (WS-177)"
+  ],
+  "people": [
+   "Dinis Cruz decided London as the first place beyond Portugal on 18 November 2026 (board/guidance/2026-11-18-london.md); no person has checked the values (not reviewed)"
+  ]
  },
- "cost": { "per_run_tokens": 0, "per_run_model_cost_usd": 0, "runner": "GitHub Actions on a public repository: no charge; about twenty-two requests a run (under 300 KB)", "build_tokens": "not measured", "note": "Code only: no model is called when the data is collected." },
+ "cost": {
+  "per_run_tokens": 0,
+  "per_run_model_cost_usd": 0,
+  "runner": "GitHub Actions on a public repository: no charge; about twenty-two requests a run (under 300 KB)",
+  "build_tokens": "not measured",
+  "note": "Code only: no model is called when the data is collected."
+ },
  "since": "2026-11-18"
 }

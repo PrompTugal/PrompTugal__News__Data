@@ -4,6 +4,7 @@
  "what": "Links to recent public posts by the official accounts of organisations (câmaras, public bodies, venues, organisers, news outlets, companies) on Bluesky and Mastodon, with metadata only: account, time, matched topics and places, language, media or not. No post text or media is stored.",
  "publisher": "The organisations themselves, through Bluesky (public AppView API) and Mastodon (public instance API)",
  "owner": "data.b@PrompTugal.dinis",
+ "region": "portugal",
  "collector": "sources/social/collect.mjs",
  "source_home": "https://public.api.bsky.app/xrpc/",
  "reader_page": "https://bsky.app/",

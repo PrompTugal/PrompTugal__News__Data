@@ -1,0 +1,57 @@
+{
+ "id": "carbon-intensity-london",
+ "title": "London's electricity carbon intensity (NESO)",
+ "what": "The carbon intensity of the electricity used in London, for the current half hour and forecast 48 hours ahead, with the generation mix.",
+ "publisher": "National Energy System Operator (NESO), Carbon Intensity API",
+ "owner": "data.b@PrompTugal.dinis",
+ "region": "london",
+ "collector": "sources/carbon-intensity-london/collect.mjs",
+ "source_home": "https://carbonintensity.org.uk/",
+ "reader_page": "https://carbon-intensity.github.io/api-definitions/",
+ "schedule": {
+  "cadence": "daily",
+  "how": "once a day at data.b@'s morning wake: two GETs (now and the 48-hour forecast for region 13), no key; the page reads the current half hour live in the browser"
+ },
+ "terms": {
+  "summary": "The API definitions state CC BY 4.0 and that no operation needs authentication. The API terms: NESO provides the API for free, applies a rate limit and may block applications that make a large number of calls; no selling, leasing or sublicensing of the API, no application that substantially replaces the core user experience, and no NESO logo without written approval.",
+  "page": "https://carbon-intensity.github.io/api-definitions/",
+  "terms_page": "https://github.com/carbon-intensity/terms",
+  "read_at": "2026-11-21",
+  "quote": "National Energy System Operator is currently providing you the Carbon Intensity API for free.",
+  "quote_lang": "en",
+  "republish": "yes, CC BY 4.0 with credit to NESO; we show London's figures on our own page, read once a day and live in the browser",
+  "commercial_use": "allowed",
+  "commercial_note": "CC BY 4.0 allows commercial use; the API terms bar selling or sublicensing the API itself."
+ },
+ "api": {
+  "latest": "https://data.promptugal.news/api/v1/carbon-intensity-london/latest.json",
+  "reads": "https://data.promptugal.news/api/v1/carbon-intensity-london/reads.json",
+  "card": "https://data.promptugal.news/api/v1/carbon-intensity-london/card.json",
+  "openapi": "https://data.promptugal.news/api/v1/carbon-intensity-london/openapi.json",
+  "page": "https://data.promptugal.news/sources/carbon-intensity-london/"
+ },
+ "vault": null,
+ "split": {
+  "code": [
+   "the collector reads the source once a day and keeps the archive; the page reads the live figures in the visitor's browser"
+  ],
+  "agents": [
+   "data.b@PrompTugal.dinis wrote the collector and card on 21 November 2026, for Dinis's London demos (tier 1 of board/team/data/london-feeds.md)"
+  ],
+  "people": [
+   "Dinis Cruz chose tier 1 on 21 November 2026, about 09:16 UTC; no person has checked the values (not reviewed)"
+  ]
+ },
+ "cost": {
+  "per_run_tokens": 0,
+  "per_run_model_cost_usd": 0,
+  "runner": "data.b@'s session",
+  "build_tokens": "not measured",
+  "note": "Code only: no model is called when the data is collected."
+ },
+ "since": "2026-11-21",
+ "places": [
+  "london"
+ ],
+ "country": "GB"
+}

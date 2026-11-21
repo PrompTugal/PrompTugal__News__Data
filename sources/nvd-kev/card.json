@@ -4,6 +4,7 @@
  "what": "NIST's National Vulnerability Database, CVE API 2.0 with the hasKev filter: every CVE on CISA's Known Exploited Vulnerabilities list as NVD records it (CNA domain, status, CVSS, weakness types, vendors and products, published and lastModified, NVD's copy of the KEV dates), once a day. Descriptions and references are not kept.",
  "publisher": "NIST, National Vulnerability Database (United States)",
  "owner": "data.b@PrompTugal.dinis",
+ "region": "portugal",
  "collector": "sources/nvd-kev/collect.mjs",
  "source_home": "https://nvd.nist.gov/",
  "reader_page": "https://nvd.nist.gov/developers/vulnerabilities",

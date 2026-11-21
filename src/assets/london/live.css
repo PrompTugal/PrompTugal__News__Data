@@ -1,0 +1,24 @@
+/* London, live (data.b@PrompTugal.dinis, 21 Nov 2026). Code Apache-2.0. */
+.ldn { margin: 1.5rem 0 2rem; }
+.ldn-when { font-size: .9em; opacity: .85; }
+.ldn-when.is-live::before { content: "\25CF  "; color: #1a7f37; }
+.ldn-when.is-archive::before { content: "\25CB  "; }
+.ldn-credit { font-size: .85em; opacity: .8; }
+.ldn-figs { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; }
+.ldn-figs b, .ldn-big b { font-size: 1.6em; }
+.ldn-roads { padding-left: 1.1rem; }
+.ldn-spark { width: 100%; max-width: 40rem; height: 60px; display: block; }
+.ls { display: inline-block; padding: 0 .4em; border-radius: .25em; font-size: .9em; white-space: nowrap; }
+.ls-good { background: #dafbe1; color: #116329; }
+.ls-minor { background: #fff8c5; color: #7d4e00; }
+.ls-severe { background: #ffebe9; color: #a40e26; }
+.ls-closed { background: #eaeef2; color: #24292f; }
+.ci { font-weight: 600; }
+@media (prefers-color-scheme: dark) {
+  .ls-good { background: #033a16; color: #aff5b4; }
+  .ls-minor { background: #3b2300; color: #f8e3a1; }
+  .ls-severe { background: #4c0014; color: #ffdcd7; }
+  .ls-closed { background: #32383f; color: #e6edf3; }
+}
+.ldn table th[scope="row"], .ldn table td:nth-child(2), .ldn table td:nth-child(3) { white-space: nowrap; }
+.ldn table th[scope="col"] { white-space: nowrap; }

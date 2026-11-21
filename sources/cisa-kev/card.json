@@ -4,6 +4,7 @@
  "what": "The US Cybersecurity and Infrastructure Security Agency's catalogue of vulnerabilities known to be exploited: each CVE with vendor, product, the day added and ransomware use; and totals per week and vendor, for cyber.promptugal.news's pulse. Products only, never a victim, host or address.",
  "publisher": "CISA (Cybersecurity and Infrastructure Security Agency, United States)",
  "owner": "data.b@PrompTugal.dinis",
+ "region": "portugal",
  "collector": "sources/cisa-kev/collect.mjs",
  "source_home": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
  "reader_page": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
@@ -29,10 +30,23 @@
  },
  "vault": null,
  "split": {
-  "code": ["the collector reads CISA's feed, keeps each entry's identifying fields, and counts per week and vendor", "GitHub Actions runs it and deploys the site"],
-  "agents": ["data.b@PrompTugal.dinis wrote the collector and card on 18 November 2026, at cyber.b@PrompTugal.dinis's request; terms read for the register by data.b.collector@ (Sonnet)"],
-  "people": ["Dinis Cruz decided the cyber signals on 18 November 2026 (board/guidance/2026-11-18-people-blogs-cyber-and-simulated-payments.md); no person has checked the values (not reviewed)"]
+  "code": [
+   "the collector reads CISA's feed, keeps each entry's identifying fields, and counts per week and vendor",
+   "GitHub Actions runs it and deploys the site"
+  ],
+  "agents": [
+   "data.b@PrompTugal.dinis wrote the collector and card on 18 November 2026, at cyber.b@PrompTugal.dinis's request; terms read for the register by data.b.collector@ (Sonnet)"
+  ],
+  "people": [
+   "Dinis Cruz decided the cyber signals on 18 November 2026 (board/guidance/2026-11-18-people-blogs-cyber-and-simulated-payments.md); no person has checked the values (not reviewed)"
+  ]
  },
- "cost": { "per_run_tokens": 0, "per_run_model_cost_usd": 0, "runner": "GitHub Actions on a public repository: no charge; one request a run (about 1.9 MB)", "build_tokens": "not measured", "note": "Code only: no model is called when the data is collected." },
+ "cost": {
+  "per_run_tokens": 0,
+  "per_run_model_cost_usd": 0,
+  "runner": "GitHub Actions on a public repository: no charge; one request a run (about 1.9 MB)",
+  "build_tokens": "not measured",
+  "note": "Code only: no model is called when the data is collected."
+ },
  "since": "2026-11-18"
 }

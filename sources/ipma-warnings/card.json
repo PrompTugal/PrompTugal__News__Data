@@ -4,6 +4,7 @@
  "what": "The weather warnings for every warning area of Portugal (the 18 mainland districts, Madeira and the Azores): yellow, orange and red in full, green counted.",
  "publisher": "IPMA, Instituto Português do Mar e da Atmosfera",
  "owner": "data@PrompTugal.dinis",
+ "region": "portugal",
  "collector": "sources/ipma-warnings/collect.mjs",
  "source_home": "https://api.ipma.pt/open-data/forecast/warnings/warnings_www.json",
  "reader_page": "https://www.ipma.pt/en/otempo/prev-sam/",

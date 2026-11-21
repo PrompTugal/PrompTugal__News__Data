@@ -4,9 +4,12 @@
  "what": "ENISA's EU Vulnerability Database (EUVD), read through its published API: the vulnerabilities published or updated in the 24 hours before each read, and EUVD's own latest and exploited lists. Each has its EUVD identifier, CVE aliases (checked), published and updated times, CVSS base score and version, a severity band (ours, from the score), vendor and product names, whether EUVD lists it as exploited, and a link to its EUVD page; and totals per day and severity (14 days), for cyber.promptugal.news's pulse. Products only, never a victim, host or address. No descriptions or reference links are kept.",
  "publisher": "ENISA (European Union Agency for Cybersecurity), EU Vulnerability Database",
  "owner": "data.b@PrompTugal.dinis",
+ "region": "portugal",
  "collector": "sources/euvd/collect.mjs",
  "country": "EU",
- "places": ["europe"],
+ "places": [
+  "europe"
+ ],
  "source_home": "https://euvd.enisa.europa.eu/",
  "reader_page": "https://euvd.enisa.europa.eu/apidoc",
  "schedule": {
@@ -69,10 +72,23 @@
  },
  "vault": null,
  "split": {
-  "code": ["the collector reads EUVD's published API (robots.txt first), keeps each record's identifying fields, and counts per day and severity", "GitHub Actions runs it and deploys the site"],
-  "agents": ["data.b@PrompTugal.dinis wrote the collector and card on 18 November 2026, at cyber.b@PrompTugal.dinis's request; terms and API documentation read the same day by data.b.dev@"],
-  "people": ["Dinis Cruz decided on 18 November 2026 (about 23:40 UTC) that ENISA is read through its published interfaces; no person has checked the values (not reviewed)"]
+  "code": [
+   "the collector reads EUVD's published API (robots.txt first), keeps each record's identifying fields, and counts per day and severity",
+   "GitHub Actions runs it and deploys the site"
+  ],
+  "agents": [
+   "data.b@PrompTugal.dinis wrote the collector and card on 18 November 2026, at cyber.b@PrompTugal.dinis's request; terms and API documentation read the same day by data.b.dev@"
+  ],
+  "people": [
+   "Dinis Cruz decided on 18 November 2026 (about 23:40 UTC) that ENISA is read through its published interfaces; no person has checked the values (not reviewed)"
+  ]
  },
- "cost": { "per_run_tokens": 0, "per_run_model_cost_usd": 0, "runner": "GitHub Actions on a public repository: no charge; about 30 requests a run, 10 seconds apart (about 5 minutes; up to 5 MB each, usually about 160 KB)", "build_tokens": "not measured", "note": "Code only: no model is called when the data is collected." },
+ "cost": {
+  "per_run_tokens": 0,
+  "per_run_model_cost_usd": 0,
+  "runner": "GitHub Actions on a public repository: no charge; about 30 requests a run, 10 seconds apart (about 5 minutes; up to 5 MB each, usually about 160 KB)",
+  "build_tokens": "not measured",
+  "note": "Code only: no model is called when the data is collected."
+ },
  "since": "2026-11-18"
 }

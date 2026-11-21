@@ -4,6 +4,7 @@
  "what": "Every CAP warning message in MeteoAlarm's Portugal feed, one line each: area, hazard, level, onset, expiry, time of issue and text, with what appeared or left since the read before.",
  "publisher": "MeteoAlarm (EUMETNET), from IPMA",
  "owner": "data@PrompTugal.dinis",
+ "region": "portugal",
  "collector": "sources/meteoalarm-pt/collect.mjs",
  "source_home": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
  "reader_page": "https://www.meteoalarm.org/en/live/region/PT",

@@ -4,10 +4,18 @@
  "what": "Forecast for London from Open-Meteo: hourly temperature, chance and amount of rain, wind and weather code for 3 days, each day's lowest and highest temperature, and every forecast we served kept for 14 days. A model forecast for a grid point, not a warning.",
  "publisher": "Open-Meteo (OpenMeteo GmbH, Switzerland)",
  "owner": "data.b@PrompTugal.dinis",
+ "region": "london",
  "collector": "sources/open-meteo-london/collect.mjs",
  "country": "GB",
- "places": ["london"],
- "place": { "id": "london", "name": "London", "lat": 51.5074, "lon": -0.1278 },
+ "places": [
+  "london"
+ ],
+ "place": {
+  "id": "london",
+  "name": "London",
+  "lat": 51.5074,
+  "lon": -0.1278
+ },
  "source_home": "https://open-meteo.com/",
  "reader_page": "https://open-meteo.com/en/docs",
  "schedule": {
@@ -32,10 +40,23 @@
  },
  "vault": null,
  "split": {
-  "code": ["the collector reads Open-Meteo's forecast API for the point on the card, names the fields, and carries earlier forecasts into history", "GitHub Actions runs it and deploys the site"],
-  "agents": ["data.b.dev@PrompTugal.dinis wrote the collector and card on 18 November 2026 for data.b@ (WS-177)"],
-  "people": ["Dinis Cruz decided London as the first place beyond Portugal (board/guidance/2026-11-18-london.md) and the use of the free non-commercial API (18 November 2026, about 22:40 UTC); no person has checked the values (not reviewed)"]
+  "code": [
+   "the collector reads Open-Meteo's forecast API for the point on the card, names the fields, and carries earlier forecasts into history",
+   "GitHub Actions runs it and deploys the site"
+  ],
+  "agents": [
+   "data.b.dev@PrompTugal.dinis wrote the collector and card on 18 November 2026 for data.b@ (WS-177)"
+  ],
+  "people": [
+   "Dinis Cruz decided London as the first place beyond Portugal (board/guidance/2026-11-18-london.md) and the use of the free non-commercial API (18 November 2026, about 22:40 UTC); no person has checked the values (not reviewed)"
+  ]
  },
- "cost": { "per_run_tokens": 0, "per_run_model_cost_usd": 0, "runner": "GitHub Actions on a public repository: no charge; one request a run (about 4 KB)", "build_tokens": "not measured", "note": "Code only: no model is called when the data is collected." },
+ "cost": {
+  "per_run_tokens": 0,
+  "per_run_model_cost_usd": 0,
+  "runner": "GitHub Actions on a public repository: no charge; one request a run (about 4 KB)",
+  "build_tokens": "not measured",
+  "note": "Code only: no model is called when the data is collected."
+ },
  "since": "2026-11-18"
 }

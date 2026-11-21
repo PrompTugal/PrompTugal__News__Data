@@ -48,6 +48,8 @@ const warn = m => warnings.push(m);
 const cards = existsSync('sources') ? readdirSync('sources').filter(d => existsSync(join('sources', d, 'card.json'))) : [];
 if (!cards.length) fail('no sources/<id>/card.json');
 for (const id of cards) {
+  // every source belongs to one region owner (Dinis, 21 Nov 2026 ~09:16 UTC: one repo, two region owners)
+  { const c = JSON.parse(readFileSync(join('sources', id, 'card.json'), 'utf8')); if (!['london', 'portugal'].includes(c.region)) fail(`sources/${id}/card.json: region must be london or portugal`); }
   for (const f of ['card', 'openapi']) if (!existsSync(`_site/api/v1/${id}/${f}.json`)) fail(`_site/api/v1/${id}/${f}.json is missing`);
   if (!existsSync(`_site/api/v1/${id}/latest.json`)) warn(`${id}: no latest.json (not read yet)`);
   if (!existsSync(`_site/sources/${id}/index.html`)) fail(`no page for source ${id}`);

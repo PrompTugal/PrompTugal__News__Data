@@ -4,6 +4,7 @@
  "what": "The data files behind storm-charles.promptugal.news (Lisbon and Madeira, 10 to 12 November 2026): decisions, exposure, flights, transport, weather and the signal timeline, every file with its size and sha256, checked against the bytes served.",
  "publisher": "storm-charles.promptugal.news (the Storm Charles incident team)",
  "owner": "data@PrompTugal.dinis",
+ "region": "portugal",
  "collector": "sources/storm-charles-archive/collect.mjs",
  "source_home": "https://storm-charles.promptugal.news/api/v1/index.json",
  "reader_page": "https://storm-charles.promptugal.news/datasets.html",

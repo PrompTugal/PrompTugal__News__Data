@@ -4,6 +4,7 @@
  "what": "The UV index forecast by place and day.",
  "publisher": "IPMA, Instituto Português do Mar e da Atmosfera",
  "owner": "data@PrompTugal.dinis",
+ "region": "portugal",
  "collector": "sources/ipma-uv/collect.mjs",
  "source_home": "https://api.ipma.pt/open-data/forecast/meteorology/uv/uv.json",
  "reader_page": "https://www.ipma.pt/en/otempo/prev.uv/",

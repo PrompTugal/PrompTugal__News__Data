@@ -4,6 +4,7 @@
  "what": "Wave height, period and direction, total sea and sea temperature for each coastal place, today and the next two days.",
  "publisher": "IPMA, Instituto Português do Mar e da Atmosfera",
  "owner": "data@PrompTugal.dinis",
+ "region": "portugal",
  "collector": "sources/ipma-sea/collect.mjs",
  "source_home": "https://api.ipma.pt/open-data/forecast/oceanography/daily/",
  "reader_page": "https://www.ipma.pt/en/maritima/costeira/",

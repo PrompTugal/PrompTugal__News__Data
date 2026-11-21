@@ -4,6 +4,7 @@
  "what": "Procurement notices London buyers published on the UK government's Contracts Finder in the last 24 hours: notice page, stage, title, buyer (mostly public bodies, sometimes an agent publishing for one), value, award value and deadline. No supplier or contact is kept.",
  "publisher": "Cabinet Office (Contracts Finder, UK government)",
  "owner": "data.b@PrompTugal.dinis",
+ "region": "london",
  "collector": "sources/contracts-finder/collect.mjs",
  "source_home": "https://www.contractsfinder.service.gov.uk/",
  "reader_page": "https://www.contractsfinder.service.gov.uk/Search",

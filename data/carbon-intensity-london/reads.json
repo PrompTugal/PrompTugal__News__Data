@@ -1,0 +1,32 @@
+{
+ "about": "Every run of sources/carbon-intensity-london/collect.mjs, newest first: each request's address, HTTP status, size, the first 16 hex of its sha256, and whether the bytes changed since the run before. The bytes and the full sha256 go to the source's vault (see card.json: latest/reads-full.json), never to git.",
+ "source": "carbon-intensity-london",
+ "runs": [
+  {
+   "at": "2026-11-21T09:19:18Z",
+   "finished": "2026-11-21T09:19:22Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "now",
+     "url": "https://api.carbonintensity.org.uk/regional/regionid/13",
+     "at": "2026-11-21T09:19:18Z",
+     "status": 200,
+     "bytes": 448,
+     "sha256_prefix": "823d548bbc41a258",
+     "changed": "first read"
+    },
+    {
+     "name": "forecast-48h",
+     "url": "https://api.carbonintensity.org.uk/regional/intensity/2026-11-21T09:00Z/fw48h/regionid/13",
+     "at": "2026-11-21T09:19:21Z",
+     "status": 200,
+     "bytes": 35752,
+     "sha256_prefix": "62ef784c38e98cf7",
+     "changed": "first read"
+    }
+   ]
+  }
+ ]
+}

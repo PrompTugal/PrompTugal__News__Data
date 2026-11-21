@@ -4,6 +4,7 @@
  "what": "The latest hourly observation of each IPMA surface station: temperature, humidity, wind, rain, pressure and radiation, with the station's name and position.",
  "publisher": "IPMA, Instituto Português do Mar e da Atmosfera",
  "owner": "data@PrompTugal.dinis",
+ "region": "portugal",
  "collector": "sources/ipma-observations/collect.mjs",
  "source_home": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
  "reader_page": "https://www.ipma.pt/en/otempo/obs.superficie/",

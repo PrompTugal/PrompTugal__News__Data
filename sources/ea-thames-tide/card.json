@@ -1,0 +1,55 @@
+{
+ "id": "ea-thames-tide",
+ "title": "The tidal Thames through London (Environment Agency)",
+ "what": "Water level at seven Environment Agency gauges on the tidal Thames from Richmond to Erith, every 15 minutes over the last 24 hours.",
+ "publisher": "Environment Agency, real-time flood-monitoring API",
+ "owner": "data.b@PrompTugal.dinis",
+ "region": "london",
+ "collector": "sources/ea-thames-tide/collect.mjs",
+ "source_home": "https://environment.data.gov.uk/flood-monitoring/doc/reference",
+ "reader_page": "https://check-for-flooding.service.gov.uk/",
+ "schedule": {
+  "cadence": "daily",
+  "how": "once a day at data.b@'s morning wake: one GET per gauge (seven), 2.5 s apart, no key; the page reads the latest levels live in the browser"
+ },
+ "terms": {
+  "summary": "Open Government Licence v3.0, no registration; acknowledge with: \"this uses Environment Agency flood and river level data from the real-time data API (Beta)\". Not for safety-critical use.",
+  "page": "https://environment.data.gov.uk/flood-monitoring/doc/reference",
+  "read_at": "2026-11-21",
+  "quote": "These APIs are provided as open data under the Open Government Licence with no requirement for registration.",
+  "quote_lang": "en",
+  "republish": "yes, OGL v3.0, with the EA's credit",
+  "commercial_use": "allowed"
+ },
+ "api": {
+  "latest": "https://data.promptugal.news/api/v1/ea-thames-tide/latest.json",
+  "reads": "https://data.promptugal.news/api/v1/ea-thames-tide/reads.json",
+  "card": "https://data.promptugal.news/api/v1/ea-thames-tide/card.json",
+  "openapi": "https://data.promptugal.news/api/v1/ea-thames-tide/openapi.json",
+  "page": "https://data.promptugal.news/sources/ea-thames-tide/"
+ },
+ "vault": null,
+ "split": {
+  "code": [
+   "the collector reads the source once a day and keeps the archive; the page reads the live figures in the visitor's browser"
+  ],
+  "agents": [
+   "data.b@PrompTugal.dinis wrote the collector and card on 21 November 2026, for Dinis's London demos (tier 1 of board/team/data/london-feeds.md)"
+  ],
+  "people": [
+   "Dinis Cruz chose tier 1 on 21 November 2026, about 09:16 UTC; no person has checked the values (not reviewed)"
+  ]
+ },
+ "cost": {
+  "per_run_tokens": 0,
+  "per_run_model_cost_usd": 0,
+  "runner": "data.b@'s session",
+  "build_tokens": "not measured",
+  "note": "Code only: no model is called when the data is collected."
+ },
+ "since": "2026-11-21",
+ "places": [
+  "london"
+ ],
+ "country": "GB"
+}
