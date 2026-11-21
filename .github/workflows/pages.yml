@@ -68,6 +68,7 @@ jobs:
       - run: node scripts/build.mjs
         env:
           SITE_VERSION: ${{ steps.version.outputs.version }}
+          TMDB_READ_TOKEN: ${{ secrets.TMDB_READ_TOKEN }}
       - name: The preview for social cards (/preview.png from /preview-card.svg; skipped where the runner has no converter)
         run: |
           command -v rsvg-convert >/dev/null || (sudo apt-get -qq update && sudo apt-get -qq install -y librsvg2-bin) >/dev/null 2>&1 || true
