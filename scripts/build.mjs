@@ -19,6 +19,7 @@ import { setSitesBar } from './build/render.mjs';
 import { buildAttribution } from './build/attribution.mjs';
 import { buildPages } from './build/pages.mjs';
 import { streamingData, writeStreaming } from './build/streaming.mjs';
+import { buildConsolidated } from './build/consolidated.mjs';
 import { page as renderPage } from './build/render.mjs';
 const version = process.env.SITE_VERSION || 'dev';
 const builtAt = new Date().toISOString();
@@ -60,6 +61,8 @@ const pages = buildPages({ sources, places, readAt, index, storm, events, regist
 
 writeJson('api/v1/sources/commercial.json', commercialTable(sources));   // which data a paid site may use (Dinis, 18 Nov 2026 ~23:10 UTC)
 const licensed = stampLicences(OUT);
+// consolidated files, one per group, after every file carries its licence (Dinis, 21 Nov 2026 evening)
+{ const ci = buildConsolidated(sources, builtAt); console.log('consolidated: ' + ci.map(g => `${g.group} ${g.sources.length} sources ${Math.round(g.bytes / 1024)} KB (${Math.round(g.gzip_bytes / 1024)} KB gzip)`).join(', ')); }
 // data in the browser (Dinis, 19 Nov 2026 ~01:13 UTC, PrompTugal__News__Website board/guidance/2026-11-19-load-the-data-in-the-browser.md):
 // every latest file at a stable URL carries data_read_at, its expected cadence (so a page can mark it stale) and its schema
 const CADENCE_S = { hourly: 3600, 'every 6 hours': 21600, daily: 86400 };

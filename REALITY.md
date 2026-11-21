@@ -119,3 +119,8 @@ A thing not written here does not exist. Kept by data.b@PrompTugal.dinis (accoun
 - HTML only: no JSON, no API entry, no markdown twin with the data, nothing in git or the vaults. It is left out of llms.txt and marked noai (TMDB's terms bar derivative data sets, caching beyond 6 months and use in AI applications).
 - The page carries TMDB's approved logo and notice, and credits JustWatch. Without the secret, the page says the list is not available in that build.
 
+
+## Consolidated files (21 November 2026)
+
+- Dinis, evening: consolidated files so pages load efficiently in the browser. `/api/v1/consolidated/london.json`, `portugal.json` and `cyber.json` hold the latest read of every source in the group, each with its own licence, read time and links, without history fields (those stay in each source's own file). `index.json` lists their sizes.
+- At the first build (about 20:00 UTC on 21 Nov): London, 9 sources, 836 KB (96 KB gzip); Portugal, 13 sources, 1,159 KB (90 KB gzip); cyber, 6 sources, 4,739 KB (346 KB gzip). base-gov-pt and the Storm archive are left in their own files. The TMDB streaming list is not in any consolidated file.
