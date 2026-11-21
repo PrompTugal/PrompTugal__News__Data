@@ -41,7 +41,7 @@ async function details(type, id, lang, region, token) {
     ? ((j.release_dates?.results || []).find(r => r.iso_3166_1 === region)?.release_dates || []).map(r => r.certification).find(Boolean)
     : (j.content_ratings?.results || []).find(r => r.iso_3166_1 === region)?.rating;
   return {
-    overview: keep(j.overview), tagline: keep(j.tagline), genres: (j.genres || []).map(g => keep(g.name)).filter(Boolean),
+    overview: keep(j.overview), tagline: keep(j.tagline), genres: (j.genres || []).map(g => keep(g.name)).filter(Boolean), genre_ids: (j.genres || []).map(g => g.id).filter(Number.isInteger),
     runtime: type === 'movie' ? (Number.isFinite(j.runtime) && j.runtime > 0 ? j.runtime : null) : null,
     seasons: type === 'tv' ? j.number_of_seasons ?? null : null, episodes: type === 'tv' ? j.number_of_episodes ?? null : null, status: keep(j.status),
     language: keep(j.original_language), countries: (j.origin_country || (j.production_countries || []).map(c => c.iso_3166_1)).filter(c => /^[A-Z]{2}$/.test(c)),
@@ -78,6 +78,10 @@ export async function streamingData() {
     let failed = 0;
     await Promise.all([0, 1, 2, 3].map(async w => { for (let i = w; i < list.length; i += 4) { const [k, a] = list[i]; try { got.set(k, await details(...a, token)); } catch { failed++; } await new Promise(r => setTimeout(r, 100)); } }));
     for (const l of out) if (!l.missing) for (const t of l.titles) t.details = got.get(`${l.type}:${t.id}:${l.region}`) || null;
+    // genre names in English for every country, by TMDB's genre id, so filters, charts and the pivot compare like with like
+    const en = {};
+    for (const type of ['movie', 'tv']) for (const g of (await get(`/genre/${type}/list?language=en-GB`, token)).genres || []) if (Number.isInteger(g.id) && keep(g.name)) en[g.id] = g.name;
+    for (const l of out) if (!l.missing) for (const t of l.titles) if (t.details) t.details.genres_en = t.details.genre_ids.map(id => en[id]).filter(Boolean);
     return { ok: true, at, lists: out, details: { asked: list.length, got: got.size, failed }, dropped };
   } catch (e) { return { ok: false, why: String(e.message).replace(/Bearer\s+\S+/g, 'Bearer [masked]') }; }
 }
@@ -98,6 +102,19 @@ function more(t, l) {
   return `<tr class="more"><td></td><td colspan="3"><details><summary>Details</summary><div class="st-more">${img}<div>${d.tagline ? `<p><i>${esc(d.tagline)}</i></p>` : ''}${d.overview ? `<p>${esc(d.overview)}</p>` : '<p class="small">No summary in this language on TMDB.</p>'}<p class="small">${facts}</p></div></div></details></td></tr>`;
 }
 
+// the rows the page's own explore tools use, inline in the page (not a separate file: under TMDB's terms the list is not offered as a
+// data set). One row per list entry. '<' is escaped so the JSON cannot close its script element.
+function rowsOf(d) {
+  if (!d.ok) return [];
+  const rows = [];
+  for (const l of d.lists) if (!l.missing) l.titles.forEach((t, i) => { const x = t.details || {};
+    rows.push({ country: l.region, service: l.service, type: l.type === 'movie' ? 'film' : 'series', rank: i + 1, id: t.id, title: t.title, original: t.original,
+      year: /^\d{4}$/.test(t.year) ? +t.year : null, rating: t.votes ? Math.round(t.rating * 10) / 10 : null, votes: t.votes || 0,
+      runtime: x.runtime ?? null, seasons: x.seasons ?? null, episodes: x.episodes ?? null, age_rating: x.age_rating ?? null, language: x.language ?? null,
+      genres: x.genres_en || x.genres || [], makers: x.makers || [], cast: x.cast || [] }); });
+  return rows;
+}
+
 export function writeStreaming(page, d) {
   const credit = `<div class="tmdb-credit"><a href="https://www.themoviedb.org/"><img src="/assets/streaming/tmdb-logo.svg" alt="TMDB" width="140" height="18"></a>
 <p>This website uses TMDB and the TMDB APIs but is not endorsed, certified, or otherwise approved by TMDB. Where each title streams comes from <a href="https://www.justwatch.com/">JustWatch</a>, through TMDB.</p></div>`;
@@ -107,8 +124,8 @@ export function writeStreaming(page, d) {
       : `<h3>${esc(l.service)}: ${esc(l.label)}</h3>\n<p class="small">The 20 most popular of ${esc(l.total)} ${esc(l.label.toLowerCase())} TMDB lists as included with ${/^[AEIOU]/i.test(l.service) ? "an" : "a"} ${esc(l.service)} subscription in ${esc(country)}.</p>\n<div class="scroll"><table><thead><tr><th scope="col">#</th><th scope="col">Title</th><th scope="col">Year</th><th scope="col">TMDB rating</th></tr></thead><tbody>${l.titles.map((t, i) => `<tr><td>${i + 1}</td><td><a href="https://www.themoviedb.org/${l.type}/${encodeURIComponent(t.id)}">${t.title ? esc(t.title) : 'title not shown (our wording check)'}</a>${t.original && t.original !== t.title ? ` <span class="small">(${esc(t.original)})</span>` : ''}</td><td>${esc(t.year)}</td><td>${t.votes ? `${esc(Number(t.rating).toFixed(1))} (${esc(t.votes)} votes)` : 'no votes'}</td></tr>${more(t, l)}`).join('')}</tbody></table></div>`).join('\n')).join('\n');
   const url = page({ path: 'streaming/', title: 'Streaming in the UK and Portugal: PrompTugal.news Data', h1: 'What is streaming in the UK and Portugal: Netflix, Disney+, Prime Video and Apple TV+',
     description: 'The most popular films and series included with Netflix, Disney+, Prime Video and Apple TV+ in the United Kingdom and Portugal, from TMDB and JustWatch, shown at the time this site was built.',
-    readAt: d.ok ? d.at : null, head: '<meta name="robots" content="noai, noimageai">\n',
-    blocks: [{ t: 'html', md: '', x: `<style>.st-more{display:flex;gap:1rem;align-items:flex-start}.st-more img.poster{flex:0 0 auto;border-radius:4px}.st-more p{margin:.3rem 0}tr.more td{border-top:0;padding-top:0}details summary{cursor:pointer;font-size:.9em}</style>\n<p>Read from TMDB when this site was built${d.ok ? `, at ${esc(d.at.replace('T', ' ').replace(/:\d\dZ$/, ' UTC'))}` : ''}. Shown on this page only: under TMDB's terms this list is not offered as data, through our API, as a download, or for use by AI systems, and it is not kept in our archive.${d.ok && d.details ? ` Details for ${esc(d.details.got)} of ${esc(d.details.asked)} titles${d.details.failed ? ` (${esc(d.details.failed)} did not answer)` : ''}; ${esc(d.dropped)} field(s) left out by our wording check.` : ''}</p>\n${credit}\n${body}` }] });
+    readAt: d.ok ? d.at : null, head: '<meta name="robots" content="noai, noimageai">\n<link rel="stylesheet" href="/assets/streaming/explore.css">\n<script src="/assets/streaming/explore.js" defer></script>\n',
+    blocks: [{ t: 'html', md: '', x: `<style>.st-more{display:flex;gap:1rem;align-items:flex-start}.st-more img.poster{flex:0 0 auto;border-radius:4px}.st-more p{margin:.3rem 0}tr.more td{border-top:0;padding-top:0}details summary{cursor:pointer;font-size:.9em}</style>\n<p>Read from TMDB when this site was built${d.ok ? `, at ${esc(d.at.replace('T', ' ').replace(/:\d\dZ$/, ' UTC'))}` : ''}. Shown on this page only: under TMDB's terms this list is not offered as data, through our API, as a download, or for use by AI systems, and it is not kept in our archive.${d.ok && d.details ? ` Details for ${esc(d.details.got)} of ${esc(d.details.asked)} titles${d.details.failed ? ` (${esc(d.details.failed)} did not answer)` : ''}; ${esc(d.dropped)} field(s) left out by our wording check.` : ''}</p>\n${credit}\n${d.ok ? `<script type="application/json" id="st-data">${JSON.stringify({ rows: rowsOf(d) }).replace(/</g, '\\u003c')}</script>\n<section id="st-explore" aria-labelledby="h-explore"><h2 id="h-explore">Explore</h2><p class="small">Filters, charts, a pivot table and SQL, all in this browser, over the lists below. Needs JavaScript; the lists below work without it.</p></section>\n<h2 id="lists">The lists</h2>` : ''}\n${body}` }] });
   // no markdown twin for this page (the twin is what agents read): overwrite it with a pointer only
   write('streaming/index.md', '# Streaming\n\nThis page is HTML only: under TMDB\'s terms its list is not offered to agents or AI systems. See https://data.promptugal.news/streaming/ in a browser.\n');
   return url;

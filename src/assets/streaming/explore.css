@@ -1,0 +1,22 @@
+/* Explore the streaming lists (data.b@PrompTugal.dinis, 21 Nov 2026). Code Apache-2.0. */
+#st-explore { margin: 1rem 0 2.5rem; }
+.st-sec { margin: 1.5rem 0; }
+.st-bar { display: flex; flex-wrap: wrap; gap: .6rem 1rem; align-items: flex-end; margin: .5rem 0; }
+.st-f { display: flex; flex-direction: column; font-size: .85em; gap: .2rem; }
+.st-f input, .st-f select { font: inherit; padding: .25rem .4rem; min-width: 8rem; }
+.st-count { font-weight: 600; }
+.st-results { max-height: 28rem; overflow: auto; }
+.st-sort { background: none; border: 0; font: inherit; font-weight: 600; cursor: pointer; padding: 0; color: inherit; white-space: nowrap; }
+.st-charts { display: flex; flex-wrap: wrap; gap: 1.5rem; }
+.st-chart { margin: 0; flex: 1 1 22rem; }
+.st-chart.st-wide { flex-basis: 100%; }
+.st-chart figcaption { font-weight: 600; font-size: .9em; margin-bottom: .3rem; }
+.st-svg { width: 100%; height: auto; display: block; }
+.st-lab, .st-val { font-size: 11px; fill: currentColor; }
+.st-grid { stroke: currentColor; stroke-opacity: .15; }
+.st-key { display: inline-block; width: .8em; height: .8em; border-radius: 50%; vertical-align: middle; }
+.st-btn { font: inherit; font-size: .85em; padding: .3rem .6rem; cursor: pointer; }
+.st-sql { width: 100%; font-family: ui-monospace, monospace; font-size: .9em; margin: .4rem 0; box-sizing: border-box; }
+.st-err { color: #a40e26; }
+@media (prefers-color-scheme: dark) { .st-err { color: #ffa198; } }
+.st-results td:nth-child(2), .st-results td:nth-child(6), .st-results td:nth-child(7) { white-space: nowrap; }
