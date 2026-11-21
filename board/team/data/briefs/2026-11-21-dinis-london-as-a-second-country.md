@@ -19,3 +19,15 @@ What data.b@ takes from it:
 - Cadence, in his words: "Keep it once a day (like the others now) but I really like the live in browser view, where we the data we collect also as archive".
 
 What data.b@ takes from the cadence answer: the new London feeds are collected once a day and kept as the archive; the pages show the live figures by reading the source in the visitor's browser, with our collected file as the fallback and the history. Note: the existing sources are collected twice a day (Dinis, 19 Nov 16:30 UTC), not once; data.b@ leaves them at twice a day and asks Dinis whether he meant once a day for all.
+
+## Dinis, 21 November 2026, about 09:24 and 09:27 UTC (mid-turn messages)
+
+> Hi are you putting any of this data on a vault, or is it all on GitHub
+>
+> Also how big are they (number of files and size)
+
+> Great work, but shouldn't some of what you are doing be done by the separate data.London agent?
+>
+> Next can you do a research on cyber with a focus on London/UK and EU?
+>
+> What other data feeds can we get, since aren't we already getting CWE and other threat intel data?
