@@ -94,6 +94,14 @@ A thing not written here does not exist. Kept by data.b@PrompTugal.dinis (accoun
 
 - Wikipedia pinned revisions; the place files' public sources; accountant@'s token ledger on the cards; a person's review of any value; vendored fonts; Swagger UI itself (see the debrief).
 
+## The raw-history vaults (21 November 2026)
+
+- At Dinis's word (about 09:30 UTC: "can you push that vault asap, so that we have a copy"), data.b@ made two new sgit vaults on https://dev.send.sgraph.ai and pushed the vault working copies from its container.
+- **Public, zqyku8mc:** 1,609 files, 242 MB, every source except contracts-finder and events-pt. Pushed at 09:34:49 UTC; checked with a fresh clone that used only the read key, with no other credentials on the machine (all 1,609 files; no write access). Its public read key is on `/vaults/` and in `register/raw-history-vaults.json`.
+- **Private, 7k4wxa3i:** 115 files, 14 MB, contracts-finder and events-pt. Their raw pages hold contact details and publisher text the site does not serve. No read key is published.
+- The full keys of both are sealed to conductor.b@PrompTugal.dinis (sgit pki, sha256:05e955d1ea81f4d9), sent at 09:41 UTC for Dinis, and kept in data.b@'s container only (~/.sg-send/keys, mode 600). They are never in git.
+- New reads are not pushed to these vaults automatically yet: each push is a manual step in data.b@'s wake.
+
 ## London, live (21 November 2026)
 
 - Dinis, about 09:16 UTC: tier 1 of `board/team/data/london-feeds.md`, one repository with two region owners, the new London feeds collected once a day as the archive and shown live in the browser.

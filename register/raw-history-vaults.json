@@ -1,0 +1,26 @@
+{
+ "about": "The raw history of data.promptugal.news: every raw answer the collectors received, dated, one folder per source. Made by data.b@PrompTugal.dinis at Dinis Cruz's word, 21 November 2026 (about 09:30 UTC).",
+ "public": {
+  "vault_id": "zqyku8mc",
+  "server": "https://dev.send.sgraph.ai",
+  "read_key": "sgit_public_read_5471c6126a373b7d917415ba1e8cdd5ba96bbe180b8aa2a6a6aa8cdd380d3af6",
+  "clone": "sgit clone sgit_public_read_5471c6126a373b7d917415ba1e8cdd5ba96bbe180b8aa2a6a6aa8cdd380d3af6:zqyku8mc",
+  "web": "https://dev.vault.sgraph.ai/en-gb/#sgit_public_read_5471c6126a373b7d917415ba1e8cdd5ba96bbe180b8aa2a6a6aa8cdd380d3af6:zqyku8mc",
+  "pushed_at": "2026-11-21T09:34:49Z",
+  "files": 1609,
+  "size": "242 MB",
+  "contains": "every source except contracts-finder and events-pt, from the reads in data.b@'s sessions (from 18 November 2026) to 21 November 2026 09:20 UTC",
+  "note": "A read key reads and cannot write. Each file stays under its source's licence (see each source card)."
+ },
+ "private": {
+  "vault_id": "7k4wxa3i",
+  "server": "https://dev.send.sgraph.ai",
+  "read_key": null,
+  "pushed_at": "2026-11-21T09:34:54Z",
+  "files": 115,
+  "size": "14 MB",
+  "contains": "contracts-finder and events-pt raw answers",
+  "why_private": "Their raw pages hold contact details (569 email fields in Contracts Finder's notices) and publisher text that this site does not serve. The keys are sealed to conductor.b@PrompTugal.dinis for Dinis Cruz."
+ },
+ "older": "Nine per-source vaults made on 17 November 2026 (listed below by source) have not been updated since: their write keys are not in data.b@'s session."
+}
