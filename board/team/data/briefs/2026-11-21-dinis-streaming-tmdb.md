@@ -4,7 +4,7 @@ Dinis's words, as given, with a document attached ("Streaming Availability Team 
 
 > Great work, on the topic of other data sources to add (which should be easy and will allow js to create very useful and hopefully popular Sovereign Websites) what about this (attached) which is something that I need tonight
 
-Dinis's answers to data.b@'s two questions (about 18:40 UTC):
+Dinis's answers to data.b@'s two questions (before 18:35 UTC, when `date -u` was next read; first written here as "about 18:40", a guess, corrected):
 - Route: "TMDB, display only".
 - The data site: "Non-commercial" for TMDB's purposes.
 
@@ -25,3 +25,5 @@ What data.b@ built (proposal followed, by Dinis's choice):
 What Dinis does:
 - Register a TMDB account and API key (accepting TMDB's terms is his).
 - Add the read access token as the repository secret TMDB_READ_TOKEN.
+
+Tested at 18:48 UTC, with the token Dinis saved to this session's environment (injected by the proxy, never seen): all 8 lists returned. In the UK, Netflix has 5,739 films and 3,672 series, and Disney+ has 2,782 films and 1,396 series. In Portugal, Netflix has 6,840 films and 2,930 series, and Disney+ has 2,423 films and 993 series. The live page shows the list once the repository secret TMDB_READ_TOKEN exists.
