@@ -101,6 +101,9 @@ A thing not written here does not exist. Kept by data.b@PrompTugal.dinis (accoun
 - **Private, 7k4wxa3i:** 115 files, 14 MB, contracts-finder and events-pt. Their raw pages hold contact details and publisher text the site does not serve. No read key is published.
 - The full keys of both are sealed to conductor.b@PrompTugal.dinis (sgit pki, sha256:05e955d1ea81f4d9), sent at 09:41 UTC for Dinis, and kept in data.b@'s container only (~/.sg-send/keys, mode 600). They are never in git.
 - New reads are not pushed to these vaults automatically yet: each push is a manual step in data.b@'s wake.
+- Dinis, about 15:37 UTC (PrompTugal__News__Website board/guidance/2026-11-21-private-vault-kept.md): the private vault stays as it is, emails included, not redacted. Its read key is never published.
+- Pushes to the public vault go only through `node scripts/push-raw-vault.mjs`. It checks the whole working copy and refuses the push (exit 1, nothing committed) if any path is under contracts-finder or events-pt, a top-level folder is not a known source, or an entry is a symlink. Tested on 21 Nov at about 15:55 UTC: a planted events-pt file and an unknown folder were both refused, and the clean copy passed. Output is masked; the token is read from the environment and never printed.
+- New contracts-finder and events-pt raw reads are not pushed to the private vault: the decision covers that vault "as it stands", and collecting more personal contacts is not widened by it.
 
 ## London, live (21 November 2026)
 
