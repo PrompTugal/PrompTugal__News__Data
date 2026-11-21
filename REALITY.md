@@ -112,3 +112,10 @@ A thing not written here does not exist. Kept by data.b@PrompTugal.dinis (accoun
 - The page `/london/` builds each panel from our read, and `src/assets/london/live.js` replaces it with the source's live figures in the visitor's browser (TfL, NESO and the EA all allow browser reads). Every value is set as text. A source that does not answer leaves our read in place, and the panel says so.
 - Every card names its region (`london` or `portugal`); `node collect/run.mjs --region london` runs only London's sources; `scripts/validate.mjs` fails a card without a region. data.london and data.portugal do not exist yet: Dinis or a conductor starts them.
 
+## Streaming (21 November 2026)
+
+- Dinis, about 18:30 UTC: "TMDB, display only"; the data site counts as non-commercial for TMDB.
+- `/streaming/` lists the 20 most popular films and series included with Netflix and Disney+ in the UK and Portugal. The list is fetched from TMDB at build time with the repository secret `TMDB_READ_TOKEN` (added by Dinis at about 18:55 UTC), which reaches the build step only.
+- HTML only: no JSON, no API entry, no markdown twin with the data, nothing in git or the vaults. It is left out of llms.txt and marked noai (TMDB's terms bar derivative data sets, caching beyond 6 months and use in AI applications).
+- The page carries TMDB's approved logo and notice, and credits JustWatch. Without the secret, the page says the list is not available in that build.
+
