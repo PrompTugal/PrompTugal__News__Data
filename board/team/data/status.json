@@ -4,10 +4,10 @@
  "repo": "PrompTugal/PrompTugal__News__Data",
  "site": "https://data.promptugal.news",
  "focus": "the raw public data behind every PrompTugal site: collectors, API, vaults; visualization first; the Storm Charles site's data and map",
- "updated": "2026-11-21T07:20Z",
+ "updated": "2026-11-21T09:52Z",
  "observability_lane": "data (own lane since 18 Nov ~15:00 UTC: vault 349t1w6w, 2 append lanes, drain key sha256:5109a3745ff9fdb4; drain credentials sealed to conductor.b-promptugal and sent to conductor.b@)",
  "observability_note": "obs.js reads team/keys/obs-data.json from GitHub (public half: endpoint, vault id, 2 append tokens, drain public key); every event tagged lane: \"data\"; country only, from the browser time zone through a fixed table, no lookup (Dinis, 19 Nov ~03:15 UTC).",
- "state": "Twice-daily wake 07:03 Lisbon, 21 Nov: data committed; first forecast outcomes (153 checks for 20 Nov: 103 held, 50 missed); hand-over in debriefs/2026-11-21-data-b-twice-daily.md.",
+ "state": "21 Nov morning: London live (/london/, five tier 1 feeds, f300703); region on every source; hand-overs for data.london and data.portugal (6862b69); the raw history in two new vaults, public read key on /vaults/ (2be008c); London and cyber feed maps in board/team/data/.",
  "done": [
   "London contracts kept by day; rolling event starts marked at source (bcc14b5, 2c20e2c)",
   "First forecast outcomes recorded (21 Nov 07:13 UTC)",
@@ -99,7 +99,6 @@
  ],
  "asks": [
   "Dinis: EPSS (first.org/epss, asked by cyber.b@). No licence is named for the scores; attribution is requested. FIRST Services Terms of Use allow copying and distributing content for vulnerability disclosure, incident response or preventative cybersecurity uses, other uses need FIRST written permission, and EPSS is not named in them. May we read the daily file and show worldwide totals and a 30-day check against CISA KEV on the free data site (commercial use off), or ask FIRST first? outreach@ can draft.",
-  "Dinis: the raw history vault. I do not hold vault 5qzpmf4m's key in this session. Proposal: I make one new vault for the raw history (each source in its own folder), seal its key to your PKI key, and you add two secrets, SG_SEND_ACCESS_TOKEN and DATA_VAULT_KEY (one vault, so singular; renamed from DATA_VAULT_KEYS). Send me the link to your public key on pki.sgit.ai and its fingerprint, so I seal to the right key.",
   "Dinis: a narrow leak-scan and wording-gate exception for verbatim data under storm/charles/, or keep the five held files on the Storm site only.",
   "Dinis: a new rekeyed vault for the Storm parts not in vault j2fq58kn (entities, graph, meteorology)? Its write key needs sealing to you, which needs the session key.",
   "Dinis: the adsb-faro vault (sd1fblzs) holds raw adsb.lol answers from 17 November with private aircraft hex ids: remove them?",
@@ -115,11 +114,14 @@
   "Dinis: ENISA's robots.txt disallows named AI crawlers (ClaudeBot, GPTBot and others) everywhere; /publications is allowed to everyone and our collector is plain code, unnamed. This site is built by AI agents, so I have held it (on-hold/enisa-pubs). Read it, or leave it?",
   "Dinis (for dev@): GitHub Pages sets its own headers, so this site cannot add X-Content-Type-Options: nosniff to /preview.svg as the sites bar spec asks; Pages serves it as image/svg+xml. If nosniff is required, it needs a host that sets headers.",
   "Dinis (for security@): team/keys.json may hold a public key only as a PEM block, and the leak scan reads an SSH key line, a base64 fingerprint and a session id as long high-entropy strings. So the key is published as an Ed25519 PEM block, the fingerprint as 16 hex, and the session as the first 16 hex of its sha256 (each commit carries the full id in its Claude-Session: trailer). If the full session id should be in the file, the leak scan's allowlist needs an entry for team/keys.json, which is security@'s call, not mine.",
-  "Dinis: branch protection on dev with the verify check required, a tag ruleset limiting release tags to GitHub Actions, and a github-pages environment that accepts deployments only from dev (security@ asks; the workflow file still comes from the pushed tree)."
+  "Dinis: branch protection on dev with the verify check required, a tag ruleset limiting release tags to GitHub Actions, and a github-pages environment that accepts deployments only from dev (security@ asks; the workflow file still comes from the pushed tree).",
+  "Dinis: where the raw-history vault keys go (conductor.b@ holds them sealed, unopened, since 09:52 UTC)."
  ],
  "next": [
+  "From conductor.b@ 09:52 UTC: (1) Faro: history/weather/faro.json marks 20 Nov incomplete, so no first track-record point; find why the station day is not complete. (2) youtube-replays: 0 chapters listed; check the chapter parse. (3) Bluesky keyword search 403 since 18 Nov 15:07 UTC: stays a gap. (4) Agenda LX: keep the first start and record next_date apart (beyond the rolling mark). (5) The maestro feed list goes to rights@ first; note for it that the Met Office warnings feed path is disallowed by robots.txt.",
+  "Push new reads to the raw-history vault zqyku8mc (and 7k4wxa3i for contracts-finder and events-pt) at each wake until data.london and data.portugal take over.",
+  "Dinis to answer: data.cyber as a third owner; once a day for every source or only the new London ones.",
   "Predictions: send this site's prediction files (IPMA city forecasts, Open-Meteo London) to library.b@ in the form it sets, once it sets it; keep and check our own.",
-  "Hourly: collect, commit, push (each wake).",
   "live.b@: TfL JamCams status history per place (/api/v1/cameras/history/<place>.json, changes only), now that every read is committed.",
   "Track record for IPMA forecasts from /api/v1/history/ (the first prediction checked).",
   "London-Portugal flights: written, on hold (on-hold/adsb-london-portugal) until adsb.lol's route lookup returns routes; retry the lookup once a day by hand.",
