@@ -75,6 +75,32 @@
     "public_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFphOk4ktLlKvo2CQBvXoy/+cwBQzFDtLVkhcSCAEm4Y",
     "fingerprint": "SHA256:dyXCQtwolcu4idXIovycI1X620rhHI2PvsJ6l+bgbZ0"
    }
+  },
+  {
+   "id": "data-d-ssh-signing",
+   "label": "data.d@PrompTugal.dinis, commit signing (Claude Code cloud session, account D)",
+   "agent": "data.d@PrompTugal.dinis",
+   "role": "Lead of data.promptugal.news on account D (twin of data.b@PrompTugal.dinis)",
+   "how": "Made by the agent in its own session on 22 November 2026 with ssh-keygen -t ed25519. Only the public half is in this file; the other half never leaves the session and ends with it.",
+   "added": "2026-11-22",
+   "fingerprint": "sha256:bda3050f6f0f0716",
+   "ssh": {
+    "public_key_pem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAiO6fUVkro1wZ6Mam0hsyPFuIO9xaFnFtPfdK3pWk348=\n-----END PUBLIC KEY-----",
+    "type": "ssh-ed25519",
+    "principals": [
+     "data.d@AgentiCCells.dinis",
+     "data.d@PrompTugal.dinis"
+    ],
+    "session_sha256": "7e723c9803b9366c",
+    "from": "2026-11-22"
+   },
+   "for": "Dinis, 22 Nov 2026 about 03:30 UTC, in data.d@'s session: \"Yes, you commit your key, as we've done with the twins all over in all these projects.\"",
+   "session": "https://claude.ai/code/session_015gaHdboMeL96vpsBRXSX2z",
+   "ssh_signing": {
+    "public_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIjun1FZK6NcGejGptIbMjxbiDvcWhZxbT33St6VpN+P",
+    "fingerprint": "SHA256:vaMFD28PBxaJxTKPnWpG0IQlAg0cTJwsa/YaDWBVTUA"
+   },
+   "status": "active"
   }
  ]
 }
