@@ -1,0 +1,106 @@
+<title>data.d Morning Briefing</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=Public+Sans:wght@400;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+/* Layout: a studio desk. Tejo's monitor and the story panel side by side on an iPad in landscape, stacked on a phone;
+   chapters run as a strip under them. One deliberate dark look: a hologram control room, cyan for Tejo, amber for decisions. */
+:root{color-scheme:dark;
+  --bg:#05101a;--desk:#0a1a28;--line:#17324a;--fg:#e6f1fa;--dim:#8fa9c0;
+  --holo:#6fe3ff;--amber:#ffbf47;--ok:#58d99a;--bad:#ff6b6b;
+  --display:'Chakra Petch','Segoe UI',system-ui,sans-serif;--sans:'Public Sans',system-ui,-apple-system,sans-serif;--mono:'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace}
+*{box-sizing:border-box}
+html,body{background:var(--bg);color:var(--fg)}
+body{font:16px/1.5 var(--sans)}
+.wrap{max-width:1180px;margin:0 auto;padding-block:12px 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:14px}
+.wrap>*{min-width:0}
+header{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px}
+header h1{margin:0;font:700 clamp(22px,3.6vw,32px)/1.1 var(--display);letter-spacing:.01em;text-wrap:balance}
+header h1 b{color:var(--holo)}
+header p{margin:0;color:var(--dim);font:500 13px var(--mono)}
+.desk{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:14px}
+@media (max-width:820px){.desk{grid-template-columns:1fr}}
+.mon{display:grid;gap:8px;align-content:start}
+#stage{position:relative;width:100%;max-width:100%;aspect-ratio:4/3;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#071624}
+.nostage{padding:16px;color:var(--dim)}
+#cap{min-height:6.2em;background:var(--desk);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:15px;color:#d6e6f3}
+#cap .w{transition:color .15s}#cap .w.on{color:var(--holo)}
+.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+button{font:600 15px var(--sans);min-height:44px;padding:9px 16px;border-radius:8px;border:1px solid var(--line);background:var(--desk);color:var(--fg);cursor:pointer}
+button:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+button:disabled{opacity:.4;cursor:default}
+#play{background:var(--holo);border-color:var(--holo);color:#03202b;min-width:110px}
+#voice{margin-left:auto;font:500 12px var(--mono);color:var(--dim)}
+.panel{position:relative;background:var(--desk);border:1px solid var(--line);border-radius:10px;padding:18px;min-height:360px;display:grid;align-content:start;gap:14px;overflow:hidden}
+.kick{margin:0;font:700 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--holo)}
+.panel h2{margin:0;font:700 clamp(20px,2.6vw,28px)/1.15 var(--display);text-wrap:balance}
+.src{margin:0;font:500 11px var(--mono);color:var(--dim)}
+.strip{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));gap:6px}
+@media (max-width:620px){.strip{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.chap{min-height:52px;padding:6px 8px;text-align:left;font:600 12px/1.25 var(--sans);display:grid;gap:2px}
+.chap span{font:700 10px var(--mono);color:var(--dim)}
+.chap.on{border-color:var(--holo);box-shadow:inset 0 -3px 0 var(--holo)}
+.chap.seen span{color:var(--ok)}
+/* panel pieces */
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px}
+.tile{margin:0;border-left:3px solid var(--holo);padding:4px 10px}
+.tile b{display:block;font:700 clamp(22px,3vw,30px)/1.1 var(--mono);font-variant-numeric:tabular-nums}
+.tile figcaption{font-size:13px;color:#c5d6e5}
+.bars{display:grid;gap:12px}
+.brow{display:grid;grid-template-columns:110px 1fr;gap:10px;align-items:center;font-size:14px}
+.brow .track{position:relative;height:26px;background:#0d2436;border-radius:4px;overflow:hidden}
+.brow .fill{position:absolute;inset:0 auto 0 0;width:0;background:var(--holo);display:flex;align-items:center;padding-left:8px;font:700 12px var(--mono);color:#03202b;white-space:nowrap;transition:width 1.2s cubic-bezier(.2,.8,.2,1)}
+.brow .fill.alt{background:var(--amber)}
+.go .brow .fill{width:var(--w)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.card{border:1px solid var(--line);border-radius:10px;padding:12px;display:grid;gap:4px;opacity:.35;transform:translateY(6px);transition:opacity .5s,transform .5s}
+.go .card{opacity:1;transform:none}
+.card b{font:700 22px var(--display);color:var(--holo)}
+.card p{margin:0;font-size:13px;color:#c5d6e5}
+.card.rec{border-color:var(--ok);background:rgba(88,217,154,.08)}
+.card.no b{color:var(--bad)}
+.tag{justify-self:start;font:700 10px var(--mono);text-transform:uppercase;letter-spacing:.06em;padding:2px 6px;border-radius:4px;background:var(--ok);color:#052514}
+canvas.net{width:100%;height:200px;display:block;border-radius:8px;background:#071624}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font:500 12px var(--mono);color:var(--dim)}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+svg.diag{width:100%;height:auto;display:block}
+svg.diag text{font-family:var(--mono);font-size:12px}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.box{border:1px solid var(--line);border-radius:10px;padding:12px;display:grid;gap:6px}
+.box h3{margin:0;font:700 16px var(--display)}
+.box ul{margin:0;padding-left:18px;font-size:14px;color:#c5d6e5}
+.box.now{border-color:var(--holo)}.box.next{border-style:dashed}
+.chain{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.cm{border:1px solid var(--line);border-radius:8px;padding:8px 10px;font:500 12px/1.3 var(--mono);display:grid;gap:2px;min-width:0}
+.cm.fail{border-color:var(--bad)}.cm.pass{border-color:var(--ok)}
+.cm em{font-style:normal;font-weight:700}.cm.fail em{color:var(--bad)}.cm.pass em{color:var(--ok)}
+.arrow{color:var(--dim)}
+.badge403{display:inline-block;font:700 28px var(--mono);color:var(--bad);border:2px solid var(--bad);border-radius:8px;padding:2px 10px}
+.asks{display:grid;gap:10px}
+.ask{border:1px solid var(--line);border-radius:10px;padding:12px;display:grid;gap:8px}
+.ask h3{margin:0;font:700 16px/1.3 var(--sans)}
+.ask .opts{display:flex;flex-wrap:wrap;gap:6px}
+.ask .opts button{min-height:40px;padding:6px 12px;font-size:14px}
+.ask .opts button[aria-pressed="true"]{background:var(--amber);border-color:var(--amber);color:#2a1b00}
+.ask .rec{font:500 12px var(--mono);color:var(--ok)}
+.ask .st{font:500 12px var(--mono);color:var(--dim)}
+footer{color:var(--dim);font-size:12px;display:grid;gap:4px}
+@media (prefers-reduced-motion:reduce){.brow .fill,.card{transition:none}}
+</style>
+<div class="wrap">
+  <header><h1><b>data.d</b> morning briefing</h1><p>22 Nov 2026 · PrompTugal.news data, account D · about 4 minutes</p></header>
+  <div class="desk">
+    <div class="mon">
+      <div id="stage" role="img" aria-label="Tejo, a synthetic hologram presenter, reads the briefing"></div>
+      <div class="bar"><button type="button" id="play" aria-pressed="false">Play</button><button type="button" id="prev">Back</button><button type="button" id="next">Next</button><span id="voice"></span></div>
+      <div id="cap" aria-live="polite"></div>
+    </div>
+    <section class="panel" id="panel" aria-live="polite"></section>
+  </div>
+  <nav class="strip" id="strip" aria-label="Chapters"></nav>
+  <footer>
+    <span>Tejo is a synthetic presenter drawn by code on this device with the PrompTugal.news presenters library 0.1.1 (by the bulletins team; three.js 0.160.1, MIT). No real person. The voice is Claude's or your browser's synthetic voice. Nothing here is a rendered video: it plays live in the page.</span>
+    <span>Made by data.d@PrompTugal.dinis. Every number names where it came from. No TMDB content is in this page: counts only.</span>
+  </footer>
+</div>
+<script type="module" src="briefing.js"></script>
