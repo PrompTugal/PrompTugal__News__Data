@@ -8,3 +8,4 @@ Dinis, 22 Nov 2026 (in data.d@'s session): look at the Bulletins team's work, pi
 - Narration: Claude's voice (tts capability) where offered, else the device's speech, else captions.
 - Answers to the four decisions: the artifact's db, collection answers.
 - No TMDB content: counts only.
+- Backup presenter (22 Nov, after Dinis saw "Tejo could not be drawn" on his iPhone): tejo2d.js draws Tejo with the plain 2D canvas when the 3D library fails; each failure (step, message, WebGL support, user agent) is written to the db at diagnostics/last.

@@ -179,21 +179,37 @@ async function answer(id, k) {
 }
 
 // ---------- Start ----------
+// What the device offers for 3D: WebGL 1 and 2, the GPU's name where it tells, and the texture limit.
+function probeGL() {
+  const out = {};
+  for (const k of ['webgl2', 'webgl']) { try { const c = document.createElement('canvas').getContext(k); out[k] = !!c; if (c && !out.renderer) { const x = c.getExtension('WEBGL_debug_renderer_info'); out.renderer = String(x ? c.getParameter(x.UNMASKED_RENDERER_WEBGL) : c.getParameter(c.RENDERER)).slice(0, 120); out.maxTexture = c.getParameter(c.MAX_TEXTURE_SIZE); c.getExtension('WEBGL_lose_context')?.loseContext(); } } catch (e) { out[k] = 'error: ' + String(e?.message || e).slice(0, 120); } }
+  return out;
+}
 async function main() {
   try { state.answers = JSON.parse(localStorage.getItem('dd-answers') || '{}'); } catch {}
   const p = plan(); state.segs = p.segs;
   drawPanel(); $('voice').textContent = 'Voice: ' + voiceName();
+  // The presenter, in three tiers: the 3D library (WebGL), else the 2D canvas Tejo (every browser), else captions only.
+  // Each failure is kept (step, message, what the device supports) and written to the db so data.d@ can read the cause.
+  const fails = [], gl = probeGL();
   try {
     const { mount } = await import('./presenters/presenters.js');
     state.show = await mount($('stage'), { presenters: [WHO], duration: p.duration, cues: p.cues, tracks: { v: { mouthCues: p.mouth } },
       camera: [{ t: 0, focus: WHO, dist: 3.4, h: 0.85, lh: 0.78, fov: 30 }], tags: false, background: '#071624' });
-    state.show.seek(state.segs[state.i].start);
-    new ResizeObserver(() => { state.show.resize(); state.show.renderAt(state.show.t); }).observe($('stage'));
-  } catch (e) { $('stage').innerHTML = '<p class="nostage">Tejo could not be drawn on this device. The briefing works without him: the captions and panels play the same.</p>'; }
+    state.show.kind = '3d';
+  } catch (e) { fails.push({ step: '3d', message: String(e?.message || e).slice(0, 400), stack: String(e?.stack || '').slice(0, 600) }); $('stage').innerHTML = ''; }
+  if (!state.show) {
+    try { const { mount2D } = await import('./tejo2d.js'); state.show = mount2D($('stage'), { duration: p.duration, mouth: p.mouth, cues: p.cues }); }
+    catch (e) { fails.push({ step: '2d', message: String(e?.message || e).slice(0, 400) }); $('stage').innerHTML = '<p class="nostage">Tejo could not be drawn on this device. The briefing works without him: the captions and panels play the same.</p>'; }
+  }
+  if (state.show) { state.show.seek(state.segs[state.i].start); new ResizeObserver(() => { state.show.resize(); state.show.renderAt(state.show.t); }).observe($('stage')); }
+  $('voice').textContent = 'Voice: ' + voiceName() + (state.show ? ' · presenter: ' + state.show.kind.toUpperCase() : '');
+  if (fails.length) state.diag = { at: new Date().toISOString(), fails, gl, ua: navigator.userAgent.slice(0, 300), screen: `${screen.width}x${screen.height}@${devicePixelRatio}`, used: state.show?.kind || 'none' };
   if (window.claude?.use) {
     claude.use('tts').then((t) => { if (t) { state.tts = t; $('voice').textContent = 'Voice: ' + voiceName(); } }).catch(() => {});
     claude.use('user').then(async (u) => { if (u) state.me = await u.id().catch(() => null); }).catch(() => {});
     claude.use('db').then((db) => { if (!db) return; state.db = db;
+      if (state.diag) db.doc('diagnostics/last').set(state.diag).catch(() => {});
       db.collection('answers').onSnapshot((snap) => { for (const d of snap.docs) state.answers[d.id] = d.data(); if (CH[state.i].id === 'asks') drawPanel(); }, () => {}); }).catch(() => {});
   }
 }
