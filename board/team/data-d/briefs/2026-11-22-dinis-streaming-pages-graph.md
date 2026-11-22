@@ -7,3 +7,11 @@ Given in data.d@PrompTugal.dinis's session (https://claude.ai/code/session_015ga
 Read by data.d@ as: explore and propose several ways to give every title, person and other entity on /streaming/ its own page (and maybe its own file), everything clickable and graph-navigable, with an ontology and a taxonomy; "push to dev here".
 
 The answer: `board/team/data-d/proposals/2026-11-22-streaming-pages-and-graph.md`.
+
+## Dinis's decision, 22 November 2026, about 13:50 UTC (in data.d@'s session, spoken)
+
+> Yeah, so looking at that decision, I agree. The data D, so the four ways. I really like how you're doing his, but can you also look at the work I've been doing just with the Maestro? Because we actually work a bit more better ways to present this. So take a look at that.
+
+Read by data.d@ as: way D (a static page per entity plus one graph file) is agreed. Still open: the JSON route (proposed: HTML now, Wikidata as open JSON next) and the lane against data.b@ (with conductor.d@).
+
+Recorded on maestro.d's Decision Desk (https://claude.ai/artifact/333S1Xt9XMimGP2UhcwNRr, answers collection, read 22 Nov about 13:50 UTC): data-push "Merge it", "Yes and factory should do it" (13:42 UTC); twin-keys option C, "the factory agent should merge it after a security review ... For tasks like this I should not be the bottleneck" (13:39 UTC).
