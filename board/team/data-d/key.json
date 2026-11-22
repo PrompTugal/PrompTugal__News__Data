@@ -1,0 +1,22 @@
+{
+ "id": "data-d-ssh-signing",
+ "label": "data.d@PrompTugal.dinis, commit signing (Claude Code cloud session, account D)",
+ "agent": "data.d@PrompTugal.dinis",
+ "role": "Lead of data.promptugal.news on account D (twin of data.b@PrompTugal.dinis)",
+ "how": "Made by the agent in its own session on 22 November 2026 with ssh-keygen -t ed25519. Only the public half is in this file; the private half is kept in the session only (~/.ssh, mode 600), was never printed, and ends with the session.",
+ "added": "2026-11-22",
+ "fingerprint": "sha256:bda3050f6f0f0716",
+ "fingerprint_note": "First 16 hex of the sha256 of the SSH public key blob, the same rule as data.b-ssh-signing in team/keys.json.",
+ "ssh": {
+  "type": "ssh-ed25519",
+  "principals": [
+   "data.d@AgentiCCells.dinis",
+   "data.d@PrompTugal.dinis"
+  ],
+  "session_sha256": "7e723c9803b9366c",
+  "from": "2026-11-22",
+  "public_key_note": "The leak scan allows public key material only in team/keys.json, so the public key itself is not in this file. It goes into team/keys.json when that entry is added; data.d@ gives it to Dinis in the session on request. Check it by this fingerprint."
+ },
+ "session": "https://claude.ai/code/session_015gaHdboMeL96vpsBRXSX2z",
+ "status": "not yet in team/keys.json: a key is added there only by a commit signed with a key already listed, or by a person. Waiting on Dinis to say how."
+}
