@@ -19,6 +19,7 @@ import { setSitesBar } from './build/render.mjs';
 import { buildAttribution } from './build/attribution.mjs';
 import { buildPages } from './build/pages.mjs';
 import { streamingData, writeStreaming } from './build/streaming.mjs';
+import { buildWikipedia } from './build/wikipedia.mjs';   // the Wikipedia feed and the connections (data.d@, 22 Nov 2026)
 import { buildConsolidated } from './build/consolidated.mjs';
 import { page as renderPage } from './build/render.mjs';
 const version = process.env.SITE_VERSION || 'dev';
@@ -59,6 +60,7 @@ const pages = buildPages({ sources, places, readAt, index, storm, events, regist
 // /streaming/ (Dinis, 21 Nov 2026: TMDB, display only): fetched at build time with TMDB_READ_TOKEN, HTML only, nothing kept
 { const sd = await streamingData(); writeStreaming(renderPage, sd); console.log(sd.ok ? `streaming: ${sd.lists.length} lists from TMDB` : `streaming: off (${sd.why})`); }
 
+{ const w = buildWikipedia(renderPage); console.log(`wikipedia: ${w.held} of ${w.tracked} tracked articles held`); }   // data.d@, 22 Nov 2026
 writeJson('api/v1/sources/commercial.json', commercialTable(sources));   // which data a paid site may use (Dinis, 18 Nov 2026 ~23:10 UTC)
 const licensed = stampLicences(OUT);
 // consolidated files, one per group, after every file carries its licence (Dinis, 21 Nov 2026 evening)

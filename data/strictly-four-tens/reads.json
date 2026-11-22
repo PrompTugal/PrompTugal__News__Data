@@ -1,0 +1,111 @@
+{
+ "about": "Every run of sources/strictly-four-tens/collect.mjs, newest first: each request's address, HTTP status, size, the first 16 hex of its sha256, and whether the bytes changed since the run before. The bytes and the full sha256 go to the source's vault (see card.json: latest/reads-full.json), never to git.",
+ "source": "strictly-four-tens",
+ "runs": [
+  {
+   "at": "2026-11-22T15:56:42Z",
+   "finished": "2026-11-22T15:56:47Z",
+   "ok": 3,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "results",
+     "url": "https://raw.githubusercontent.com/four-tens/strictly-come-dancing-results/80e85ae60488ab0299e7b7443acc5ffda9ca6a65/results.csv",
+     "at": "2026-11-22T15:56:42Z",
+     "status": 200,
+     "bytes": 154465,
+     "sha256_prefix": "7fbb47456c2b906a",
+     "changed": false
+    },
+    {
+     "name": "celebrities",
+     "url": "https://raw.githubusercontent.com/four-tens/strictly-come-dancing-results/80e85ae60488ab0299e7b7443acc5ffda9ca6a65/celebrities.csv",
+     "at": "2026-11-22T15:56:44Z",
+     "status": 200,
+     "bytes": 7182,
+     "sha256_prefix": "784567bcc3333a31",
+     "changed": false
+    },
+    {
+     "name": "professionals",
+     "url": "https://raw.githubusercontent.com/four-tens/strictly-come-dancing-results/80e85ae60488ab0299e7b7443acc5ffda9ca6a65/professionals.csv",
+     "at": "2026-11-22T15:56:47Z",
+     "status": 200,
+     "bytes": 888,
+     "sha256_prefix": "3217842f8d304966",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-22T15:51:24Z",
+   "finished": "2026-11-22T15:51:32Z",
+   "ok": 3,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "results",
+     "url": "https://raw.githubusercontent.com/four-tens/strictly-come-dancing-results/80e85ae60488ab0299e7b7443acc5ffda9ca6a65/results.csv",
+     "at": "2026-11-22T15:51:27Z",
+     "status": 200,
+     "bytes": 154465,
+     "sha256_prefix": "7fbb47456c2b906a",
+     "changed": false
+    },
+    {
+     "name": "celebrities",
+     "url": "https://raw.githubusercontent.com/four-tens/strictly-come-dancing-results/80e85ae60488ab0299e7b7443acc5ffda9ca6a65/celebrities.csv",
+     "at": "2026-11-22T15:51:29Z",
+     "status": 200,
+     "bytes": 7182,
+     "sha256_prefix": "784567bcc3333a31",
+     "changed": false
+    },
+    {
+     "name": "professionals",
+     "url": "https://raw.githubusercontent.com/four-tens/strictly-come-dancing-results/80e85ae60488ab0299e7b7443acc5ffda9ca6a65/professionals.csv",
+     "at": "2026-11-22T15:51:32Z",
+     "status": 200,
+     "bytes": 888,
+     "sha256_prefix": "3217842f8d304966",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-22T15:49:49Z",
+   "finished": "2026-11-22T15:49:57Z",
+   "ok": 3,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "results",
+     "url": "https://raw.githubusercontent.com/four-tens/strictly-come-dancing-results/80e85ae60488ab0299e7b7443acc5ffda9ca6a65/results.csv",
+     "at": "2026-11-22T15:49:51Z",
+     "status": 200,
+     "bytes": 154465,
+     "sha256_prefix": "7fbb47456c2b906a",
+     "changed": "first read"
+    },
+    {
+     "name": "celebrities",
+     "url": "https://raw.githubusercontent.com/four-tens/strictly-come-dancing-results/80e85ae60488ab0299e7b7443acc5ffda9ca6a65/celebrities.csv",
+     "at": "2026-11-22T15:49:54Z",
+     "status": 200,
+     "bytes": 7182,
+     "sha256_prefix": "784567bcc3333a31",
+     "changed": "first read"
+    },
+    {
+     "name": "professionals",
+     "url": "https://raw.githubusercontent.com/four-tens/strictly-come-dancing-results/80e85ae60488ab0299e7b7443acc5ffda9ca6a65/professionals.csv",
+     "at": "2026-11-22T15:49:56Z",
+     "status": 200,
+     "bytes": 888,
+     "sha256_prefix": "3217842f8d304966",
+     "changed": "first read"
+    }
+   ]
+  }
+ ]
+}

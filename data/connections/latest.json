@@ -1,0 +1,842 @@
+{
+ "about": "Connections between this site's Strictly, football and Wikipedia data. Each link says what joins it today and what it still needs.",
+ "read_at": "2026-11-22T15:56:47Z",
+ "by": "collect/connections.mjs (code, no model; run by data.d@PrompTugal.dinis)",
+ "links": [
+  {
+   "id": "sport-on-strictly",
+   "what": "Strictly celebrities whose occupation is a sport",
+   "joined_by": "the occupation field in Four Tens (series 1 to 15)",
+   "items": [
+    {
+     "celebrity": "Martin Offiah",
+     "occupation": "Rugby player",
+     "series": 1,
+     "scored": true,
+     "professional": "Erin Boag",
+     "performances": 7,
+     "last_week": 6,
+     "average_percent": 57.5
+    },
+    {
+     "celebrity": "Denise Lewis",
+     "occupation": "Athlete",
+     "series": 2,
+     "scored": true,
+     "professional": "Ian Waite",
+     "performances": 12,
+     "last_week": 8,
+     "average_percent": 81.6
+    },
+    {
+     "celebrity": "Roger Black",
+     "occupation": "Athlete",
+     "series": 2,
+     "scored": true,
+     "professional": "Camilla Dallerup",
+     "performances": 7,
+     "last_week": 6,
+     "average_percent": 58.9
+    },
+    {
+     "celebrity": "Colin Jackson",
+     "occupation": "Athlete",
+     "series": 3,
+     "scored": true,
+     "professional": "Erin Boag",
+     "performances": 14,
+     "last_week": 10,
+     "average_percent": 84.2
+    },
+    {
+     "celebrity": "Darren Gough",
+     "occupation": "Cricketer",
+     "series": 3,
+     "scored": true,
+     "professional": "Lilia Kopylova",
+     "performances": 14,
+     "last_week": 10,
+     "average_percent": 78.1
+    },
+    {
+     "celebrity": "Dennis Taylor",
+     "occupation": "Snooker player",
+     "series": 3,
+     "scored": true,
+     "professional": "Izabela Hannah",
+     "performances": 5,
+     "last_week": 5,
+     "average_percent": 49
+    },
+    {
+     "celebrity": "Mark Ramprakash",
+     "occupation": "Cricketer",
+     "series": 4,
+     "scored": true,
+     "professional": "Karen Hardy",
+     "performances": 17,
+     "last_week": 12,
+     "average_percent": 83.8
+    },
+    {
+     "celebrity": "Matt Dawson",
+     "occupation": "Rugby player",
+     "series": 4,
+     "scored": true,
+     "professional": "Lilia Kopylova",
+     "performances": 17,
+     "last_week": 12,
+     "average_percent": 77
+    },
+    {
+     "celebrity": "Peter Schmeichel",
+     "occupation": "Footballer",
+     "series": 4,
+     "scored": true,
+     "professional": "Erin Boag",
+     "performances": 6,
+     "last_week": 7,
+     "average_percent": 61.7
+    },
+    {
+     "celebrity": "John Barnes",
+     "occupation": "Footballer",
+     "series": 5,
+     "scored": true,
+     "professional": "Nicole Cutler",
+     "performances": 7,
+     "last_week": 8,
+     "average_percent": 67.9
+    },
+    {
+     "celebrity": "Kenny Logan",
+     "occupation": "Rugby player",
+     "series": 5,
+     "scored": true,
+     "professional": "Ola Jordan",
+     "performances": 9,
+     "last_week": 9,
+     "average_percent": 60
+    },
+    {
+     "celebrity": "Willie Thorne",
+     "occupation": "Snooker player",
+     "series": 5,
+     "scored": true,
+     "professional": "Erin Boag",
+     "performances": 2,
+     "last_week": 3,
+     "average_percent": 58.7
+    },
+    {
+     "celebrity": "Austin Healey",
+     "occupation": "Rugby player",
+     "series": 6,
+     "scored": true,
+     "professional": "Erin Boag",
+     "performances": 12,
+     "last_week": 12,
+     "average_percent": 86.2
+    },
+    {
+     "celebrity": "Mark Foster",
+     "occupation": "Swimmer",
+     "series": 6,
+     "scored": true,
+     "professional": "Hayley Holt",
+     "performances": 4,
+     "last_week": 6,
+     "average_percent": 49.4
+    },
+    {
+     "celebrity": "Jade Johnson",
+     "occupation": "Athlete",
+     "series": 7,
+     "scored": true,
+     "professional": "Ian Waite",
+     "performances": 8,
+     "last_week": 8,
+     "average_percent": 77.2
+    },
+    {
+     "celebrity": "Joe Calzaghe",
+     "occupation": "Boxer",
+     "series": 7,
+     "scored": true,
+     "professional": "Kristina Rihanoff",
+     "performances": 5,
+     "last_week": 5,
+     "average_percent": 46
+    },
+    {
+     "celebrity": "Martina Hingis",
+     "occupation": "Tennis player",
+     "series": 7,
+     "scored": true,
+     "professional": "Matthew Cutler",
+     "performances": 2,
+     "last_week": 1,
+     "average_percent": 57.5
+    },
+    {
+     "celebrity": "Phil Tufnell",
+     "occupation": "Cricketer",
+     "series": 7,
+     "scored": true,
+     "professional": "Katya Virshilas",
+     "performances": 9,
+     "last_week": 9,
+     "average_percent": 66.7
+    },
+    {
+     "celebrity": "Richard Dunwoody",
+     "occupation": "Jockey",
+     "series": 7,
+     "scored": true,
+     "professional": "Lilia Kopylova",
+     "performances": 2,
+     "last_week": 2,
+     "average_percent": 47.5
+    },
+    {
+     "celebrity": "Gavin Henson",
+     "occupation": "Rugby player",
+     "series": 8,
+     "scored": true,
+     "professional": "Katya Virshilas",
+     "performances": 12,
+     "last_week": 11,
+     "average_percent": 66.7
+    },
+    {
+     "celebrity": "Peter Shilton",
+     "occupation": "Footballer",
+     "series": 8,
+     "scored": true,
+     "professional": "Erin Boag",
+     "performances": 4,
+     "last_week": 4,
+     "average_percent": 50.6
+    },
+    {
+     "celebrity": "Audley Harrison",
+     "occupation": "Boxer",
+     "series": 9,
+     "scored": true,
+     "professional": "Natalie Lowe",
+     "performances": 7,
+     "last_week": 7,
+     "average_percent": 56.8
+    },
+    {
+     "celebrity": "Dan Lobb",
+     "occupation": "Tennis player",
+     "series": 9,
+     "scored": true,
+     "professional": "Katya Virshilas",
+     "performances": 3,
+     "last_week": 3,
+     "average_percent": 57.5
+    },
+    {
+     "celebrity": "Robbie Savage",
+     "occupation": "Footballer",
+     "series": 9,
+     "scored": true,
+     "professional": "Ola Jordan",
+     "performances": 10,
+     "last_week": 10,
+     "average_percent": 68
+    },
+    {
+     "celebrity": "Louis Smith",
+     "occupation": "Gymnast",
+     "series": 10,
+     "scored": true,
+     "professional": "Flavia Cacace",
+     "performances": 15,
+     "last_week": 12,
+     "average_percent": 83.7
+    },
+    {
+     "celebrity": "Michael Vaughan",
+     "occupation": "Cricketer",
+     "series": 10,
+     "scored": true,
+     "professional": "Natalie Lowe",
+     "performances": 9,
+     "last_week": 9,
+     "average_percent": 63.1
+    },
+    {
+     "celebrity": "Victoria Pendleton",
+     "occupation": "Cyclist",
+     "series": 10,
+     "scored": true,
+     "professional": "Brendan Cole",
+     "performances": 8,
+     "last_week": 8,
+     "average_percent": 60.3
+    },
+    {
+     "celebrity": "Ben Cohen",
+     "occupation": "Rugby player",
+     "series": 11,
+     "scored": true,
+     "professional": "Kristina Rihanoff",
+     "performances": 9,
+     "last_week": 9,
+     "average_percent": 68.6
+    },
+    {
+     "celebrity": "Judy Murray",
+     "occupation": "Tennis coach",
+     "series": 12,
+     "scored": true,
+     "professional": "Anton du Beke",
+     "performances": 8,
+     "last_week": 8,
+     "average_percent": 48.6
+    },
+    {
+     "celebrity": "Thom Evans",
+     "occupation": "Rugby player",
+     "series": 12,
+     "scored": true,
+     "professional": "Iveta Lukosiute",
+     "performances": 5,
+     "last_week": 5,
+     "average_percent": 67.7
+    },
+    {
+     "celebrity": "Anthony Ogogo",
+     "occupation": "Boxer",
+     "series": 13,
+     "scored": true,
+     "professional": "Oti Mabuse",
+     "performances": 3,
+     "last_week": 3,
+     "average_percent": 49.2
+    },
+    {
+     "celebrity": "Iwan Thomas",
+     "occupation": "Athlete",
+     "series": 13,
+     "scored": true,
+     "professional": "Ola Jordan",
+     "performances": 2,
+     "last_week": 2,
+     "average_percent": 37.5
+    },
+    {
+     "celebrity": "Claudia Fragapane",
+     "occupation": "Gymnast",
+     "series": 14,
+     "scored": true,
+     "professional": "AJ Pritchard",
+     "performances": 13,
+     "last_week": 12,
+     "average_percent": 84.8
+    },
+    {
+     "celebrity": "Greg Rutherford",
+     "occupation": "Athlete",
+     "series": 14,
+     "scored": true,
+     "professional": "Natalie Lowe",
+     "performances": 9,
+     "last_week": 9,
+     "average_percent": 71.7
+    },
+    {
+     "celebrity": "Jonnie Peacock",
+     "occupation": "Athlete",
+     "series": 15,
+     "scored": true,
+     "professional": "Oti Mabuse",
+     "performances": 9,
+     "last_week": 9,
+     "average_percent": 64.4
+    },
+    {
+     "celebrity": "Graeme Swann",
+     "occupation": "Cricketer",
+     "series": null,
+     "scored": false,
+     "professional": null,
+     "performances": 0,
+     "last_week": null,
+     "average_percent": null
+    },
+    {
+     "celebrity": "Lauren Steadman",
+     "occupation": "Athlete",
+     "series": null,
+     "scored": false,
+     "professional": null,
+     "performances": 0,
+     "last_week": null,
+     "average_percent": null
+    }
+   ],
+   "footballers": [
+    "Peter Schmeichel",
+    "John Barnes",
+    "Peter Shilton",
+    "Robbie Savage"
+   ],
+   "needs": "Wikidata (through the Wikipedia feed) for each person's clubs: the footballers on Strictly played before 2010, where openfootball starts"
+  },
+  {
+   "id": "club-name-drift",
+   "what": "One club written several ways across openfootball seasons",
+   "joined_by": "a name key (lower case, accents and words such as FC or Clube removed)",
+   "items": [
+    {
+     "league": "Premier League",
+     "names": [
+      "Aston Villa",
+      "Aston Villa FC"
+     ]
+    },
+    {
+     "league": "Premier League",
+     "names": [
+      "Brighton & Hove Albion",
+      "Brighton & Hove Albion FC"
+     ]
+    },
+    {
+     "league": "Premier League",
+     "names": [
+      "Crystal Palace",
+      "Crystal Palace FC"
+     ]
+    },
+    {
+     "league": "Premier League",
+     "names": [
+      "Hull City",
+      "Hull City AFC"
+     ]
+    },
+    {
+     "league": "Premier League",
+     "names": [
+      "Leicester City",
+      "Leicester City FC"
+     ]
+    },
+    {
+     "league": "Premier League",
+     "names": [
+      "Manchester City",
+      "Manchester City FC"
+     ]
+    },
+    {
+     "league": "Premier League",
+     "names": [
+      "Manchester United",
+      "Manchester United FC"
+     ]
+    },
+    {
+     "league": "Premier League",
+     "names": [
+      "Newcastle United",
+      "Newcastle United FC"
+     ]
+    },
+    {
+     "league": "Premier League",
+     "names": [
+      "Norwich City",
+      "Norwich City FC"
+     ]
+    },
+    {
+     "league": "Premier League",
+     "names": [
+      "Sheffield United",
+      "Sheffield United FC"
+     ]
+    },
+    {
+     "league": "Premier League",
+     "names": [
+      "Tottenham Hotspur",
+      "Tottenham Hotspur FC"
+     ]
+    },
+    {
+     "league": "Premier League",
+     "names": [
+      "West Bromwich Albion",
+      "West Bromwich Albion FC"
+     ]
+    },
+    {
+     "league": "Premier League",
+     "names": [
+      "West Ham United",
+      "West Ham United FC"
+     ]
+    },
+    {
+     "league": "Premier League",
+     "names": [
+      "Wolverhampton Wanderers",
+      "Wolverhampton Wanderers FC"
+     ]
+    },
+    {
+     "league": "Primeira Liga",
+     "names": [
+      "Boavista",
+      "Boavista FC"
+     ]
+    },
+    {
+     "league": "Primeira Liga",
+     "names": [
+      "Gil Vicente",
+      "Gil Vicente FC"
+     ]
+    },
+    {
+     "league": "Primeira Liga",
+     "names": [
+      "Sporting Braga",
+      "Sporting Clube de Braga"
+     ]
+    }
+   ],
+   "needs": "the clubs' Wikidata items, from the Wikipedia feed's season articles, to join them by id rather than by name"
+  },
+  {
+   "id": "wikipedia-articles",
+   "what": "The Wikipedia articles tracked for Strictly and football, and whether the feed holds them yet",
+   "joined_by": "register/wikipedia-tracked.json",
+   "items": [
+    {
+     "title": "Strictly Come Dancing",
+     "for": [
+      "strictly-four-tens"
+     ],
+     "held": false,
+     "revision": null,
+     "wikidata": null
+    },
+    {
+     "title": "Strictly Come Dancing series 1",
+     "for": [
+      "strictly-four-tens"
+     ],
+     "held": false,
+     "revision": null,
+     "wikidata": null
+    },
+    {
+     "title": "Strictly Come Dancing series 2",
+     "for": [
+      "strictly-four-tens"
+     ],
+     "held": false,
+     "revision": null,
+     "wikidata": null
+    },
+    {
+     "title": "Strictly Come Dancing series 3",
+     "for": [
+      "strictly-four-tens"
+     ],
+     "held": false,
+     "revision": null,
+     "wikidata": null
+    },
+    {
+     "title": "Strictly Come Dancing series 4",
+     "for": [
+      "strictly-four-tens"
+     ],
+     "held": false,
+     "revision": null,
+     "wikidata": null
+    },
+    {
+     "title": "Strictly Come Dancing series 5",
+     "for": [
+      "strictly-four-tens"
+     ],
+     "held": false,
+     "revision": null,
+     "wikidata": null
+    },
+    {
+     "title": "Strictly Come Dancing series 6",
+     "for": [
+      "strictly-four-tens"
+     ],
+     "held": false,
+     "revision": null,
+     "wikidata": null
+    },
+    {
+     "title": "Strictly Come Dancing series 7",
+     "for": [
+      "strictly-four-tens"
+     ],
+     "held": false,
+     "revision": null,
+     "wikidata": null
+    },
+    {
+     "title": "Strictly Come Dancing series 8",
+     "for": [
+      "strictly-four-tens"
+     ],
+     "held": false,
+     "revision": null,
+     "wikidata": null
+    },
+    {
+     "title": "Strictly Come Dancing series 9",
+     "for": [
+      "strictly-four-tens"
+     ],
+     "held": false,
+     "revision": null,
+     "wikidata": null
+    },
+    {
+     "title": "Strictly Come Dancing series 10",
+     "for": [
+      "strictly-four-tens"
+     ],
+     "held": false,
+     "revision": null,
+     "wikidata": null
+    },
+    {
+     "title": "Strictly Come Dancing series 11",
+     "for": [
+      "strictly-four-tens"
+     ],
+     "held": false,
+     "revision": null,
+     "wikidata": null
+    },
+    {
+     "title": "Strictly Come Dancing series 12",
+     "for": [
+      "strictly-four-tens"
+     ],
+     "held": false,
+     "revision": null,
+     "wikidata": null
+    },
+    {
+     "title": "Strictly Come Dancing series 13",
+     "for": [
+      "strictly-four-tens"
+     ],
+     "held": false,
+     "revision": null,
+     "wikidata": null
+    },
+    {
+     "title": "Strictly Come Dancing series 14",
+     "for": [
+      "strictly-four-tens"
+     ],
+     "held": false,
+     "revision": null,
+     "wikidata": null
+    },
+    {
+     "title": "Strictly Come Dancing series 15",
+     "for": [
+      "strictly-four-tens"
+     ],
+     "held": false,
+     "revision": null,
+     "wikidata": null
+    },
+    {
+     "title": "Strictly Come Dancing series 16",
+     "for": [
+      "strictly-four-tens"
+     ],
+     "held": false,
+     "revision": null,
+     "wikidata": null
+    },
+    {
+     "title": "Strictly Come Dancing series 17",
+     "for": [
+      "strictly-four-tens"
+     ],
+     "held": false,
+     "revision": null,
+     "wikidata": null
+    },
+    {
+     "title": "Strictly Come Dancing series 18",
+     "for": [
+      "strictly-four-tens"
+     ],
+     "held": false,
+     "revision": null,
+     "wikidata": null
+    },
+    {
+     "title": "Strictly Come Dancing series 19",
+     "for": [
+      "strictly-four-tens"
+     ],
+     "held": false,
+     "revision": null,
+     "wikidata": null
+    },
+    {
+     "title": "Strictly Come Dancing series 20",
+     "for": [
+      "strictly-four-tens"
+     ],
+     "held": false,
+     "revision": null,
+     "wikidata": null
+    },
+    {
+     "title": "Strictly Come Dancing series 21",
+     "for": [
+      "strictly-four-tens"
+     ],
+     "held": false,
+     "revision": null,
+     "wikidata": null
+    },
+    {
+     "title": "Strictly Come Dancing series 22",
+     "for": [
+      "strictly-four-tens"
+     ],
+     "held": false,
+     "revision": null,
+     "wikidata": null
+    },
+    {
+     "title": "Strictly Come Dancing series 23",
+     "for": [
+      "strictly-four-tens"
+     ],
+     "held": false,
+     "revision": null,
+     "wikidata": null
+    },
+    {
+     "title": "Strictly Come Dancing series 24",
+     "for": [
+      "strictly-four-tens"
+     ],
+     "held": false,
+     "revision": null,
+     "wikidata": null
+    },
+    {
+     "title": "Premier League",
+     "for": [
+      "football-england"
+     ],
+     "held": false,
+     "revision": null,
+     "wikidata": null
+    },
+    {
+     "title": "Primeira Liga",
+     "for": [
+      "football-portugal"
+     ],
+     "held": false,
+     "revision": null,
+     "wikidata": null
+    },
+    {
+     "title": "2024–25 Premier League",
+     "for": [
+      "football-england"
+     ],
+     "held": false,
+     "revision": null,
+     "wikidata": null
+    },
+    {
+     "title": "2024–25 Primeira Liga",
+     "for": [
+      "football-portugal"
+     ],
+     "held": false,
+     "revision": null,
+     "wikidata": null
+    },
+    {
+     "title": "2025–26 Premier League",
+     "for": [
+      "football-england"
+     ],
+     "held": false,
+     "revision": null,
+     "wikidata": null
+    },
+    {
+     "title": "2025–26 Primeira Liga",
+     "for": [
+      "football-portugal"
+     ],
+     "held": false,
+     "revision": null,
+     "wikidata": null
+    },
+    {
+     "title": "2026–27 Premier League",
+     "for": [
+      "football-england"
+     ],
+     "held": false,
+     "revision": null,
+     "wikidata": null
+    },
+    {
+     "title": "2026–27 Primeira Liga",
+     "for": [
+      "football-portugal"
+     ],
+     "held": false,
+     "revision": null,
+     "wikidata": null
+    }
+   ],
+   "needs": "the feed's first run, which waits on a Wikimedia credential (an OAuth 2 client-credentials app, free; Dinis to register)"
+  },
+  {
+   "id": "shared-cited-hosts",
+   "what": "Publishers cited by both the Strictly and the football articles: the shadow sources the two areas share",
+   "joined_by": "the citations the Wikipedia feed extracts",
+   "items": [],
+   "needs": "the feed's first run"
+  }
+ ],
+ "counts": {
+  "sport_on_strictly": 37,
+  "footballers_on_strictly": 4,
+  "club_name_drift": 17,
+  "wikipedia_tracked": 33,
+  "wikipedia_held": 0,
+  "shared_cited_hosts": 0
+ },
+ "licence": {
+  "name": "CC BY 4.0 (this file); the joined data keep their own: Four Tens CC0, openfootball CC0, Wikipedia CC BY-SA 4.0",
+  "url": "https://creativecommons.org/licenses/by/4.0/"
+ }
+}

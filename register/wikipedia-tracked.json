@@ -1,0 +1,239 @@
+{
+ "about": "The Wikipedia articles the Wikipedia feed tracks (wikipedia/run.mjs), and which of this site's sources asked for each. Agents ask for a new article by adding it here (or asking data.d@), not by reading Wikipedia themselves: one shared copy keeps our traffic to Wikimedia small. Titles are English Wikipedia's.",
+ "wiki": "en.wikipedia.org",
+ "updated": "2026-11-22",
+ "owner": "data.d@PrompTugal.dinis",
+ "articles": [
+  {
+   "title": "Strictly Come Dancing",
+   "for": [
+    "strictly-four-tens"
+   ],
+   "why": "the programme's own article: series list, judges, format"
+  },
+  {
+   "title": "Strictly Come Dancing series 1",
+   "for": [
+    "strictly-four-tens"
+   ],
+   "why": "to check Four Tens' rows (judges, totals) and add weekly results"
+  },
+  {
+   "title": "Strictly Come Dancing series 2",
+   "for": [
+    "strictly-four-tens"
+   ],
+   "why": "to check Four Tens' rows (judges, totals) and add weekly results"
+  },
+  {
+   "title": "Strictly Come Dancing series 3",
+   "for": [
+    "strictly-four-tens"
+   ],
+   "why": "to check Four Tens' rows (judges, totals) and add weekly results"
+  },
+  {
+   "title": "Strictly Come Dancing series 4",
+   "for": [
+    "strictly-four-tens"
+   ],
+   "why": "to check Four Tens' rows (judges, totals) and add weekly results"
+  },
+  {
+   "title": "Strictly Come Dancing series 5",
+   "for": [
+    "strictly-four-tens"
+   ],
+   "why": "to check Four Tens' rows (judges, totals) and add weekly results"
+  },
+  {
+   "title": "Strictly Come Dancing series 6",
+   "for": [
+    "strictly-four-tens"
+   ],
+   "why": "to check Four Tens' rows (judges, totals) and add weekly results"
+  },
+  {
+   "title": "Strictly Come Dancing series 7",
+   "for": [
+    "strictly-four-tens"
+   ],
+   "why": "to check Four Tens' rows (judges, totals) and add weekly results"
+  },
+  {
+   "title": "Strictly Come Dancing series 8",
+   "for": [
+    "strictly-four-tens"
+   ],
+   "why": "to check Four Tens' rows (judges, totals) and add weekly results"
+  },
+  {
+   "title": "Strictly Come Dancing series 9",
+   "for": [
+    "strictly-four-tens"
+   ],
+   "why": "to check Four Tens' rows (judges, totals) and add weekly results"
+  },
+  {
+   "title": "Strictly Come Dancing series 10",
+   "for": [
+    "strictly-four-tens"
+   ],
+   "why": "to check Four Tens' rows (judges, totals) and add weekly results"
+  },
+  {
+   "title": "Strictly Come Dancing series 11",
+   "for": [
+    "strictly-four-tens"
+   ],
+   "why": "to check Four Tens' rows (judges, totals) and add weekly results"
+  },
+  {
+   "title": "Strictly Come Dancing series 12",
+   "for": [
+    "strictly-four-tens"
+   ],
+   "why": "to check Four Tens' rows (judges, totals) and add weekly results"
+  },
+  {
+   "title": "Strictly Come Dancing series 13",
+   "for": [
+    "strictly-four-tens"
+   ],
+   "why": "to check Four Tens' rows (judges, totals) and add weekly results"
+  },
+  {
+   "title": "Strictly Come Dancing series 14",
+   "for": [
+    "strictly-four-tens"
+   ],
+   "why": "to check Four Tens' rows (judges, totals) and add weekly results"
+  },
+  {
+   "title": "Strictly Come Dancing series 15",
+   "for": [
+    "strictly-four-tens"
+   ],
+   "why": "to check Four Tens' rows (judges, totals) and add weekly results"
+  },
+  {
+   "title": "Strictly Come Dancing series 16",
+   "for": [
+    "strictly-four-tens"
+   ],
+   "why": "series 16 onwards is missing from Four Tens: scores, results and eliminations"
+  },
+  {
+   "title": "Strictly Come Dancing series 17",
+   "for": [
+    "strictly-four-tens"
+   ],
+   "why": "series 16 onwards is missing from Four Tens: scores, results and eliminations"
+  },
+  {
+   "title": "Strictly Come Dancing series 18",
+   "for": [
+    "strictly-four-tens"
+   ],
+   "why": "series 16 onwards is missing from Four Tens: scores, results and eliminations"
+  },
+  {
+   "title": "Strictly Come Dancing series 19",
+   "for": [
+    "strictly-four-tens"
+   ],
+   "why": "series 16 onwards is missing from Four Tens: scores, results and eliminations"
+  },
+  {
+   "title": "Strictly Come Dancing series 20",
+   "for": [
+    "strictly-four-tens"
+   ],
+   "why": "series 16 onwards is missing from Four Tens: scores, results and eliminations"
+  },
+  {
+   "title": "Strictly Come Dancing series 21",
+   "for": [
+    "strictly-four-tens"
+   ],
+   "why": "series 16 onwards is missing from Four Tens: scores, results and eliminations"
+  },
+  {
+   "title": "Strictly Come Dancing series 22",
+   "for": [
+    "strictly-four-tens"
+   ],
+   "why": "series 16 onwards is missing from Four Tens: scores, results and eliminations"
+  },
+  {
+   "title": "Strictly Come Dancing series 23",
+   "for": [
+    "strictly-four-tens"
+   ],
+   "why": "series 16 onwards is missing from Four Tens: scores, results and eliminations"
+  },
+  {
+   "title": "Strictly Come Dancing series 24",
+   "for": [
+    "strictly-four-tens"
+   ],
+   "why": "series 16 onwards is missing from Four Tens: scores, results and eliminations"
+  },
+  {
+   "title": "Premier League",
+   "for": [
+    "football-england"
+   ],
+   "why": "the competition's article: clubs and champions"
+  },
+  {
+   "title": "Primeira Liga",
+   "for": [
+    "football-portugal"
+   ],
+   "why": "the competition's article: clubs and champions"
+  },
+  {
+   "title": "2024–25 Premier League",
+   "for": [
+    "football-england"
+   ],
+   "why": "the season's table, results and citations, to check openfootball's"
+  },
+  {
+   "title": "2024–25 Primeira Liga",
+   "for": [
+    "football-portugal"
+   ],
+   "why": "the season's table, results and citations, to check openfootball's"
+  },
+  {
+   "title": "2025–26 Premier League",
+   "for": [
+    "football-england"
+   ],
+   "why": "the season's table, results and citations, to check openfootball's"
+  },
+  {
+   "title": "2025–26 Primeira Liga",
+   "for": [
+    "football-portugal"
+   ],
+   "why": "the season's table, results and citations, to check openfootball's"
+  },
+  {
+   "title": "2026–27 Premier League",
+   "for": [
+    "football-england"
+   ],
+   "why": "the season's table, results and citations, to check openfootball's"
+  },
+  {
+   "title": "2026–27 Primeira Liga",
+   "for": [
+    "football-portugal"
+   ],
+   "why": "the season's table, results and citations, to check openfootball's"
+  }
+ ]
+}

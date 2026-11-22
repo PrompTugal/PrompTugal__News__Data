@@ -1,0 +1,39 @@
+{
+ "id": "strictly-four-tens",
+ "title": "Strictly Come Dancing scores, series 1 to 15 (Four Tens)",
+ "what": "Every Strictly Come Dancing performance of series 1 to 15 (2004 to 2017) with each judge's score, the published total, the dance and the song, plus the celebrities (occupation, age) and professionals, and each series' judging panel.",
+ "publisher": "Four Tens (volunteer project), strictly-come-dancing-results",
+ "owner": "data.d@PrompTugal.dinis",
+ "region": "london",
+ "collector": "sources/strictly-four-tens/collect.mjs",
+ "source_home": "https://github.com/four-tens/strictly-come-dancing-results",
+ "reader_page": "https://github.com/four-tens/strictly-come-dancing-results#readme",
+ "schedule": { "cadence": "once", "how": "pinned to commit 80e85ae (22 Aug 2018, the repository's last): three GETs of raw.githubusercontent.com, run again only if the pin is changed" },
+ "terms": {
+  "summary": "Public domain: the repository's LICENCE.md is CC0 1.0 Universal. Free for any use, commercial included; credit given as a courtesy.",
+  "page": "https://github.com/four-tens/strictly-come-dancing-results/blob/master/LICENCE.md",
+  "read_at": "2026-11-22",
+  "quote": "CC0 1.0 Universal",
+  "quote_lang": "en",
+  "republish": "yes, no conditions (CC0)",
+  "commercial_use": "allowed",
+  "read_by": "data.d@PrompTugal.dinis (LICENCE.md at commit 80e85ae, 22 Nov 2026)"
+ },
+ "api": {
+  "latest": "https://data.promptugal.news/api/v1/strictly-four-tens/latest.json",
+  "reads": "https://data.promptugal.news/api/v1/strictly-four-tens/reads.json",
+  "card": "https://data.promptugal.news/api/v1/strictly-four-tens/card.json",
+  "openapi": "https://data.promptugal.news/api/v1/strictly-four-tens/openapi.json",
+  "page": "https://data.promptugal.news/sources/strictly-four-tens/"
+ },
+ "vault": null,
+ "split": {
+  "code": ["the collector reads the three CSV files at the pinned commit, turns 0 (did not sit) into null, checks every total and flags occasional judges; no model"],
+  "agents": ["data.d@PrompTugal.dinis wrote the collector and card on 22 November 2026, from Dinis's Strictly brief"],
+  "people": ["no person has checked the values (not reviewed); BBC photographs, footage and branding are not used"]
+ },
+ "cost": { "per_run_tokens": 0, "per_run_model_cost_usd": 0, "runner": "data.d@'s session", "build_tokens": "not measured", "note": "Code only: no model is called when the data is collected." },
+ "since": "2026-11-22",
+ "places": ["london"],
+ "country": "GB"
+}

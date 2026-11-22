@@ -1,0 +1,8744 @@
+{
+ "source": "football-portugal",
+ "title": "Portuguese Primeira Liga: results and tables (openfootball)",
+ "read_at": "2026-11-22T15:50:42Z",
+ "country": "PT",
+ "place": "lisboa",
+ "provenance": {
+  "source": "https://github.com/openfootball/football.json",
+  "page": "https://github.com/openfootball/football.json#readme",
+  "read_at": "2026-11-22T15:50:42Z",
+  "by": "sources/football-portugal/collect.mjs (code, no model; run by data.d@PrompTugal.dinis)",
+  "terms": "Public domain: openfootball dedicates the football.json schema, data and scripts to the public domain (CC0 1.0 Universal in LICENSE.md). Free for any use, commercial included; credit given as a courtesy.",
+  "files": "https://raw.githubusercontent.com/openfootball/football.json/master/<season>/pt.1.json"
+ },
+ "about": "Portuguese Primeira Liga: every season openfootball holds from 2010-11, with a table computed from the full-time scores, and the matches of the two newest seasons. openfootball is a volunteer project; a season in progress is only as current as its last update (see last_match_date).",
+ "attribution": "Data: openfootball football.json, public domain (CC0 1.0)",
+ "counts": {
+  "seasons": 9,
+  "seasons_missing": 8,
+  "clubs": 36,
+  "matches": 2754,
+  "matches_played": 2487
+ },
+ "missing_seasons": [
+  "2010-11",
+  "2011-12",
+  "2012-13",
+  "2013-14",
+  "2014-15",
+  "2015-16",
+  "2016-17",
+  "2017-18"
+ ],
+ "clubs": [
+  "AVS",
+  "Académico de Viseu FC",
+  "Belenenses SAD",
+  "Boavista",
+  "Boavista FC",
+  "CD Aves",
+  "CD Feirense",
+  "CD Nacional",
+  "CD Santa Clara",
+  "CD Tondela",
+  "CF Estrela da Amadora",
+  "CS Marítimo",
+  "Casa Pia AC",
+  "FC Alverca",
+  "FC Arouca",
+  "FC Famalicão",
+  "FC Porto",
+  "FC Vizela",
+  "GD Chaves",
+  "GD Estoril",
+  "GD Estoril Praia",
+  "Gil Vicente",
+  "Gil Vicente FC",
+  "Moreirense FC",
+  "Paços de Ferreira",
+  "Portimonense SC",
+  "Rio Ave FC",
+  "SC Farense",
+  "SL Benfica",
+  "Sport Lisboa e Benfica",
+  "Sporting Braga",
+  "Sporting CP",
+  "Sporting Clube de Braga",
+  "Sporting Clube de Portugal",
+  "Vitória Guimarães",
+  "Vitória Setúbal"
+ ],
+ "champions": [
+  {
+   "season": "2018-19",
+   "team": "SL Benfica",
+   "points": 87
+  },
+  {
+   "season": "2019-20",
+   "team": "FC Porto",
+   "points": 82
+  },
+  {
+   "season": "2020-21",
+   "team": "Sporting CP",
+   "points": 85
+  },
+  {
+   "season": "2021-22",
+   "team": "FC Porto",
+   "points": 91
+  },
+  {
+   "season": "2022-23",
+   "team": "SL Benfica",
+   "points": 87
+  },
+  {
+   "season": "2023-24",
+   "team": "Sporting Clube de Portugal",
+   "points": 90
+  },
+  {
+   "season": "2024-25",
+   "team": "Sporting Clube de Portugal",
+   "points": 82
+  }
+ ],
+ "seasons": [
+  {
+   "season": "2018-19",
+   "name": "Portuguese Primeira Liga 2018/19",
+   "matches_listed": 306,
+   "matches_played": 306,
+   "complete": true,
+   "leader": {
+    "team": "SL Benfica",
+    "points": 87,
+    "played": 34
+   },
+   "last_match_date": "2019-05-19",
+   "table": [
+    {
+     "position": 1,
+     "team": "SL Benfica",
+     "played": 34,
+     "won": 28,
+     "drawn": 3,
+     "lost": 3,
+     "for": 103,
+     "against": 31,
+     "points": 87,
+     "goal_difference": 72
+    },
+    {
+     "position": 2,
+     "team": "FC Porto",
+     "played": 34,
+     "won": 27,
+     "drawn": 4,
+     "lost": 3,
+     "for": 74,
+     "against": 20,
+     "points": 85,
+     "goal_difference": 54
+    },
+    {
+     "position": 3,
+     "team": "Sporting CP",
+     "played": 34,
+     "won": 23,
+     "drawn": 5,
+     "lost": 6,
+     "for": 72,
+     "against": 33,
+     "points": 74,
+     "goal_difference": 39
+    },
+    {
+     "position": 4,
+     "team": "Sporting Braga",
+     "played": 34,
+     "won": 21,
+     "drawn": 4,
+     "lost": 9,
+     "for": 56,
+     "against": 37,
+     "points": 67,
+     "goal_difference": 19
+    },
+    {
+     "position": 5,
+     "team": "Vitória Guimarães",
+     "played": 34,
+     "won": 15,
+     "drawn": 7,
+     "lost": 12,
+     "for": 46,
+     "against": 34,
+     "points": 52,
+     "goal_difference": 12
+    },
+    {
+     "position": 6,
+     "team": "Moreirense FC",
+     "played": 34,
+     "won": 16,
+     "drawn": 4,
+     "lost": 14,
+     "for": 39,
+     "against": 44,
+     "points": 52,
+     "goal_difference": -5
+    },
+    {
+     "position": 7,
+     "team": "Rio Ave FC",
+     "played": 34,
+     "won": 12,
+     "drawn": 9,
+     "lost": 13,
+     "for": 50,
+     "against": 52,
+     "points": 45,
+     "goal_difference": -2
+    },
+    {
+     "position": 8,
+     "team": "Boavista",
+     "played": 34,
+     "won": 13,
+     "drawn": 5,
+     "lost": 16,
+     "for": 34,
+     "against": 40,
+     "points": 44,
+     "goal_difference": -6
+    },
+    {
+     "position": 9,
+     "team": "Belenenses SAD",
+     "played": 34,
+     "won": 10,
+     "drawn": 13,
+     "lost": 11,
+     "for": 42,
+     "against": 51,
+     "points": 43,
+     "goal_difference": -9
+    },
+    {
+     "position": 10,
+     "team": "CD Santa Clara",
+     "played": 34,
+     "won": 11,
+     "drawn": 9,
+     "lost": 14,
+     "for": 43,
+     "against": 45,
+     "points": 42,
+     "goal_difference": -2
+    },
+    {
+     "position": 11,
+     "team": "Portimonense SC",
+     "played": 34,
+     "won": 11,
+     "drawn": 6,
+     "lost": 17,
+     "for": 44,
+     "against": 59,
+     "points": 39,
+     "goal_difference": -15
+    },
+    {
+     "position": 12,
+     "team": "CS Marítimo",
+     "played": 34,
+     "won": 12,
+     "drawn": 3,
+     "lost": 19,
+     "for": 26,
+     "against": 44,
+     "points": 39,
+     "goal_difference": -18
+    },
+    {
+     "position": 13,
+     "team": "Vitória Setúbal",
+     "played": 34,
+     "won": 8,
+     "drawn": 12,
+     "lost": 14,
+     "for": 28,
+     "against": 39,
+     "points": 36,
+     "goal_difference": -11
+    },
+    {
+     "position": 14,
+     "team": "CD Aves",
+     "played": 34,
+     "won": 10,
+     "drawn": 6,
+     "lost": 18,
+     "for": 35,
+     "against": 49,
+     "points": 36,
+     "goal_difference": -14
+    },
+    {
+     "position": 15,
+     "team": "CD Tondela",
+     "played": 34,
+     "won": 9,
+     "drawn": 8,
+     "lost": 17,
+     "for": 40,
+     "against": 54,
+     "points": 35,
+     "goal_difference": -14
+    },
+    {
+     "position": 16,
+     "team": "GD Chaves",
+     "played": 34,
+     "won": 8,
+     "drawn": 8,
+     "lost": 18,
+     "for": 34,
+     "against": 57,
+     "points": 32,
+     "goal_difference": -23
+    },
+    {
+     "position": 17,
+     "team": "CD Nacional",
+     "played": 34,
+     "won": 7,
+     "drawn": 7,
+     "lost": 20,
+     "for": 33,
+     "against": 73,
+     "points": 28,
+     "goal_difference": -40
+    },
+    {
+     "position": 18,
+     "team": "CD Feirense",
+     "played": 34,
+     "won": 3,
+     "drawn": 11,
+     "lost": 20,
+     "for": 27,
+     "against": 64,
+     "points": 20,
+     "goal_difference": -37
+    }
+   ],
+   "matches_note": "in the vault copy of this season's file"
+  },
+  {
+   "season": "2019-20",
+   "name": "Portuguese Primeira Liga 2019/20",
+   "matches_listed": 306,
+   "matches_played": 306,
+   "complete": true,
+   "leader": {
+    "team": "FC Porto",
+    "points": 82,
+    "played": 34
+   },
+   "last_match_date": "2020-07-26",
+   "table": [
+    {
+     "position": 1,
+     "team": "FC Porto",
+     "played": 34,
+     "won": 26,
+     "drawn": 4,
+     "lost": 4,
+     "for": 74,
+     "against": 22,
+     "points": 82,
+     "goal_difference": 52
+    },
+    {
+     "position": 2,
+     "team": "SL Benfica",
+     "played": 34,
+     "won": 24,
+     "drawn": 5,
+     "lost": 5,
+     "for": 71,
+     "against": 26,
+     "points": 77,
+     "goal_difference": 45
+    },
+    {
+     "position": 3,
+     "team": "Sporting Braga",
+     "played": 34,
+     "won": 18,
+     "drawn": 6,
+     "lost": 10,
+     "for": 61,
+     "against": 40,
+     "points": 60,
+     "goal_difference": 21
+    },
+    {
+     "position": 4,
+     "team": "Sporting CP",
+     "played": 34,
+     "won": 18,
+     "drawn": 6,
+     "lost": 10,
+     "for": 49,
+     "against": 34,
+     "points": 60,
+     "goal_difference": 15
+    },
+    {
+     "position": 5,
+     "team": "Rio Ave FC",
+     "played": 34,
+     "won": 15,
+     "drawn": 10,
+     "lost": 9,
+     "for": 48,
+     "against": 36,
+     "points": 55,
+     "goal_difference": 12
+    },
+    {
+     "position": 6,
+     "team": "FC Famalicão",
+     "played": 34,
+     "won": 14,
+     "drawn": 12,
+     "lost": 8,
+     "for": 53,
+     "against": 51,
+     "points": 54,
+     "goal_difference": 2
+    },
+    {
+     "position": 7,
+     "team": "Vitória Guimarães",
+     "played": 34,
+     "won": 13,
+     "drawn": 11,
+     "lost": 10,
+     "for": 53,
+     "against": 38,
+     "points": 50,
+     "goal_difference": 15
+    },
+    {
+     "position": 8,
+     "team": "Moreirense FC",
+     "played": 34,
+     "won": 10,
+     "drawn": 13,
+     "lost": 11,
+     "for": 42,
+     "against": 44,
+     "points": 43,
+     "goal_difference": -2
+    },
+    {
+     "position": 9,
+     "team": "Gil Vicente",
+     "played": 34,
+     "won": 11,
+     "drawn": 10,
+     "lost": 13,
+     "for": 40,
+     "against": 44,
+     "points": 43,
+     "goal_difference": -4
+    },
+    {
+     "position": 10,
+     "team": "CD Santa Clara",
+     "played": 34,
+     "won": 11,
+     "drawn": 10,
+     "lost": 13,
+     "for": 36,
+     "against": 41,
+     "points": 43,
+     "goal_difference": -5
+    },
+    {
+     "position": 11,
+     "team": "CS Marítimo",
+     "played": 34,
+     "won": 9,
+     "drawn": 12,
+     "lost": 13,
+     "for": 34,
+     "against": 42,
+     "points": 39,
+     "goal_difference": -8
+    },
+    {
+     "position": 12,
+     "team": "Boavista",
+     "played": 34,
+     "won": 10,
+     "drawn": 9,
+     "lost": 15,
+     "for": 28,
+     "against": 39,
+     "points": 39,
+     "goal_difference": -11
+    },
+    {
+     "position": 13,
+     "team": "Paços de Ferreira",
+     "played": 34,
+     "won": 11,
+     "drawn": 6,
+     "lost": 17,
+     "for": 36,
+     "against": 52,
+     "points": 39,
+     "goal_difference": -16
+    },
+    {
+     "position": 14,
+     "team": "CD Tondela",
+     "played": 34,
+     "won": 9,
+     "drawn": 9,
+     "lost": 16,
+     "for": 30,
+     "against": 44,
+     "points": 36,
+     "goal_difference": -14
+    },
+    {
+     "position": 15,
+     "team": "Belenenses SAD",
+     "played": 34,
+     "won": 9,
+     "drawn": 8,
+     "lost": 17,
+     "for": 27,
+     "against": 54,
+     "points": 35,
+     "goal_difference": -27
+    },
+    {
+     "position": 16,
+     "team": "Vitória Setúbal",
+     "played": 34,
+     "won": 7,
+     "drawn": 13,
+     "lost": 14,
+     "for": 27,
+     "against": 43,
+     "points": 34,
+     "goal_difference": -16
+    },
+    {
+     "position": 17,
+     "team": "Portimonense SC",
+     "played": 34,
+     "won": 7,
+     "drawn": 12,
+     "lost": 15,
+     "for": 30,
+     "against": 45,
+     "points": 33,
+     "goal_difference": -15
+    },
+    {
+     "position": 18,
+     "team": "CD Aves",
+     "played": 34,
+     "won": 5,
+     "drawn": 2,
+     "lost": 27,
+     "for": 24,
+     "against": 68,
+     "points": 17,
+     "goal_difference": -44
+    }
+   ],
+   "matches_note": "in the vault copy of this season's file"
+  },
+  {
+   "season": "2020-21",
+   "name": "Portuguese Primeira Liga 2020/21",
+   "matches_listed": 306,
+   "matches_played": 306,
+   "complete": true,
+   "leader": {
+    "team": "Sporting CP",
+    "points": 85,
+    "played": 34
+   },
+   "last_match_date": "2021-05-19",
+   "table": [
+    {
+     "position": 1,
+     "team": "Sporting CP",
+     "played": 34,
+     "won": 26,
+     "drawn": 7,
+     "lost": 1,
+     "for": 65,
+     "against": 20,
+     "points": 85,
+     "goal_difference": 45
+    },
+    {
+     "position": 2,
+     "team": "FC Porto",
+     "played": 34,
+     "won": 24,
+     "drawn": 8,
+     "lost": 2,
+     "for": 74,
+     "against": 29,
+     "points": 80,
+     "goal_difference": 45
+    },
+    {
+     "position": 3,
+     "team": "SL Benfica",
+     "played": 34,
+     "won": 23,
+     "drawn": 7,
+     "lost": 4,
+     "for": 69,
+     "against": 27,
+     "points": 76,
+     "goal_difference": 42
+    },
+    {
+     "position": 4,
+     "team": "Sporting Braga",
+     "played": 34,
+     "won": 19,
+     "drawn": 7,
+     "lost": 8,
+     "for": 53,
+     "against": 33,
+     "points": 64,
+     "goal_difference": 20
+    },
+    {
+     "position": 5,
+     "team": "Paços de Ferreira",
+     "played": 34,
+     "won": 15,
+     "drawn": 8,
+     "lost": 11,
+     "for": 40,
+     "against": 41,
+     "points": 53,
+     "goal_difference": -1
+    },
+    {
+     "position": 6,
+     "team": "CD Santa Clara",
+     "played": 34,
+     "won": 13,
+     "drawn": 7,
+     "lost": 14,
+     "for": 44,
+     "against": 36,
+     "points": 46,
+     "goal_difference": 8
+    },
+    {
+     "position": 7,
+     "team": "Moreirense FC",
+     "played": 34,
+     "won": 10,
+     "drawn": 13,
+     "lost": 11,
+     "for": 37,
+     "against": 43,
+     "points": 43,
+     "goal_difference": -6
+    },
+    {
+     "position": 8,
+     "team": "Vitória Guimarães",
+     "played": 34,
+     "won": 12,
+     "drawn": 7,
+     "lost": 15,
+     "for": 37,
+     "against": 44,
+     "points": 43,
+     "goal_difference": -7
+    },
+    {
+     "position": 9,
+     "team": "FC Famalicão",
+     "played": 34,
+     "won": 10,
+     "drawn": 10,
+     "lost": 14,
+     "for": 40,
+     "against": 48,
+     "points": 40,
+     "goal_difference": -8
+    },
+    {
+     "position": 10,
+     "team": "Belenenses SAD",
+     "played": 34,
+     "won": 9,
+     "drawn": 13,
+     "lost": 12,
+     "for": 25,
+     "against": 35,
+     "points": 40,
+     "goal_difference": -10
+    },
+    {
+     "position": 11,
+     "team": "Gil Vicente",
+     "played": 34,
+     "won": 11,
+     "drawn": 6,
+     "lost": 17,
+     "for": 33,
+     "against": 42,
+     "points": 39,
+     "goal_difference": -9
+    },
+    {
+     "position": 12,
+     "team": "Boavista",
+     "played": 34,
+     "won": 8,
+     "drawn": 12,
+     "lost": 14,
+     "for": 39,
+     "against": 49,
+     "points": 36,
+     "goal_difference": -10
+    },
+    {
+     "position": 13,
+     "team": "CD Tondela",
+     "played": 34,
+     "won": 10,
+     "drawn": 6,
+     "lost": 18,
+     "for": 36,
+     "against": 57,
+     "points": 36,
+     "goal_difference": -21
+    },
+    {
+     "position": 14,
+     "team": "Portimonense SC",
+     "played": 34,
+     "won": 9,
+     "drawn": 8,
+     "lost": 17,
+     "for": 34,
+     "against": 41,
+     "points": 35,
+     "goal_difference": -7
+    },
+    {
+     "position": 15,
+     "team": "CS Marítimo",
+     "played": 34,
+     "won": 10,
+     "drawn": 5,
+     "lost": 19,
+     "for": 27,
+     "against": 47,
+     "points": 35,
+     "goal_difference": -20
+    },
+    {
+     "position": 16,
+     "team": "Rio Ave FC",
+     "played": 34,
+     "won": 7,
+     "drawn": 13,
+     "lost": 14,
+     "for": 25,
+     "against": 40,
+     "points": 34,
+     "goal_difference": -15
+    },
+    {
+     "position": 17,
+     "team": "SC Farense",
+     "played": 34,
+     "won": 7,
+     "drawn": 10,
+     "lost": 17,
+     "for": 31,
+     "against": 48,
+     "points": 31,
+     "goal_difference": -17
+    },
+    {
+     "position": 18,
+     "team": "CD Nacional",
+     "played": 34,
+     "won": 6,
+     "drawn": 7,
+     "lost": 21,
+     "for": 30,
+     "against": 59,
+     "points": 25,
+     "goal_difference": -29
+    }
+   ],
+   "matches_note": "in the vault copy of this season's file"
+  },
+  {
+   "season": "2021-22",
+   "name": "Portuguese Primeira Liga 2021/22",
+   "matches_listed": 306,
+   "matches_played": 306,
+   "complete": true,
+   "leader": {
+    "team": "FC Porto",
+    "points": 91,
+    "played": 34
+   },
+   "last_match_date": "2022-05-15",
+   "table": [
+    {
+     "position": 1,
+     "team": "FC Porto",
+     "played": 34,
+     "won": 29,
+     "drawn": 4,
+     "lost": 1,
+     "for": 86,
+     "against": 22,
+     "points": 91,
+     "goal_difference": 64
+    },
+    {
+     "position": 2,
+     "team": "Sporting CP",
+     "played": 34,
+     "won": 27,
+     "drawn": 4,
+     "lost": 3,
+     "for": 73,
+     "against": 23,
+     "points": 85,
+     "goal_difference": 50
+    },
+    {
+     "position": 3,
+     "team": "SL Benfica",
+     "played": 34,
+     "won": 23,
+     "drawn": 5,
+     "lost": 6,
+     "for": 78,
+     "against": 30,
+     "points": 74,
+     "goal_difference": 48
+    },
+    {
+     "position": 4,
+     "team": "Sporting Braga",
+     "played": 34,
+     "won": 19,
+     "drawn": 8,
+     "lost": 7,
+     "for": 52,
+     "against": 31,
+     "points": 65,
+     "goal_difference": 21
+    },
+    {
+     "position": 5,
+     "team": "Gil Vicente",
+     "played": 34,
+     "won": 13,
+     "drawn": 12,
+     "lost": 9,
+     "for": 47,
+     "against": 42,
+     "points": 51,
+     "goal_difference": 5
+    },
+    {
+     "position": 6,
+     "team": "Vitória Guimarães",
+     "played": 34,
+     "won": 13,
+     "drawn": 9,
+     "lost": 12,
+     "for": 50,
+     "against": 41,
+     "points": 48,
+     "goal_difference": 9
+    },
+    {
+     "position": 7,
+     "team": "CD Santa Clara",
+     "played": 34,
+     "won": 9,
+     "drawn": 13,
+     "lost": 12,
+     "for": 38,
+     "against": 54,
+     "points": 40,
+     "goal_difference": -16
+    },
+    {
+     "position": 8,
+     "team": "FC Famalicão",
+     "played": 34,
+     "won": 9,
+     "drawn": 12,
+     "lost": 13,
+     "for": 45,
+     "against": 51,
+     "points": 39,
+     "goal_difference": -6
+    },
+    {
+     "position": 9,
+     "team": "GD Estoril",
+     "played": 34,
+     "won": 9,
+     "drawn": 12,
+     "lost": 13,
+     "for": 36,
+     "against": 43,
+     "points": 39,
+     "goal_difference": -7
+    },
+    {
+     "position": 10,
+     "team": "CS Marítimo",
+     "played": 34,
+     "won": 9,
+     "drawn": 11,
+     "lost": 14,
+     "for": 39,
+     "against": 44,
+     "points": 38,
+     "goal_difference": -5
+    },
+    {
+     "position": 11,
+     "team": "Boavista",
+     "played": 34,
+     "won": 7,
+     "drawn": 17,
+     "lost": 10,
+     "for": 39,
+     "against": 52,
+     "points": 38,
+     "goal_difference": -13
+    },
+    {
+     "position": 12,
+     "team": "Portimonense SC",
+     "played": 34,
+     "won": 10,
+     "drawn": 8,
+     "lost": 16,
+     "for": 31,
+     "against": 45,
+     "points": 38,
+     "goal_difference": -14
+    },
+    {
+     "position": 13,
+     "team": "Paços de Ferreira",
+     "played": 34,
+     "won": 9,
+     "drawn": 11,
+     "lost": 14,
+     "for": 29,
+     "against": 44,
+     "points": 38,
+     "goal_difference": -15
+    },
+    {
+     "position": 14,
+     "team": "FC Vizela",
+     "played": 34,
+     "won": 7,
+     "drawn": 12,
+     "lost": 15,
+     "for": 37,
+     "against": 58,
+     "points": 33,
+     "goal_difference": -21
+    },
+    {
+     "position": 15,
+     "team": "FC Arouca",
+     "played": 34,
+     "won": 7,
+     "drawn": 10,
+     "lost": 17,
+     "for": 30,
+     "against": 54,
+     "points": 31,
+     "goal_difference": -24
+    },
+    {
+     "position": 16,
+     "team": "Moreirense FC",
+     "played": 34,
+     "won": 7,
+     "drawn": 8,
+     "lost": 19,
+     "for": 33,
+     "against": 51,
+     "points": 29,
+     "goal_difference": -18
+    },
+    {
+     "position": 17,
+     "team": "CD Tondela",
+     "played": 34,
+     "won": 7,
+     "drawn": 7,
+     "lost": 20,
+     "for": 41,
+     "against": 67,
+     "points": 28,
+     "goal_difference": -26
+    },
+    {
+     "position": 18,
+     "team": "Belenenses SAD",
+     "played": 34,
+     "won": 5,
+     "drawn": 11,
+     "lost": 18,
+     "for": 23,
+     "against": 55,
+     "points": 26,
+     "goal_difference": -32
+    }
+   ],
+   "matches_note": "in the vault copy of this season's file"
+  },
+  {
+   "season": "2022-23",
+   "name": "Portuguese Primeira Liga 2022/23",
+   "matches_listed": 306,
+   "matches_played": 306,
+   "complete": true,
+   "leader": {
+    "team": "SL Benfica",
+    "points": 87,
+    "played": 34
+   },
+   "last_match_date": "2023-05-27",
+   "table": [
+    {
+     "position": 1,
+     "team": "SL Benfica",
+     "played": 34,
+     "won": 28,
+     "drawn": 3,
+     "lost": 3,
+     "for": 82,
+     "against": 20,
+     "points": 87,
+     "goal_difference": 62
+    },
+    {
+     "position": 2,
+     "team": "FC Porto",
+     "played": 34,
+     "won": 27,
+     "drawn": 4,
+     "lost": 3,
+     "for": 73,
+     "against": 22,
+     "points": 85,
+     "goal_difference": 51
+    },
+    {
+     "position": 3,
+     "team": "Sporting Braga",
+     "played": 34,
+     "won": 25,
+     "drawn": 3,
+     "lost": 6,
+     "for": 75,
+     "against": 30,
+     "points": 78,
+     "goal_difference": 45
+    },
+    {
+     "position": 4,
+     "team": "Sporting CP",
+     "played": 34,
+     "won": 23,
+     "drawn": 5,
+     "lost": 6,
+     "for": 71,
+     "against": 32,
+     "points": 74,
+     "goal_difference": 39
+    },
+    {
+     "position": 5,
+     "team": "FC Arouca",
+     "played": 34,
+     "won": 15,
+     "drawn": 9,
+     "lost": 10,
+     "for": 36,
+     "against": 37,
+     "points": 54,
+     "goal_difference": -1
+    },
+    {
+     "position": 6,
+     "team": "Vitória Guimarães",
+     "played": 34,
+     "won": 16,
+     "drawn": 5,
+     "lost": 13,
+     "for": 34,
+     "against": 39,
+     "points": 53,
+     "goal_difference": -5
+    },
+    {
+     "position": 7,
+     "team": "GD Chaves",
+     "played": 34,
+     "won": 12,
+     "drawn": 10,
+     "lost": 12,
+     "for": 35,
+     "against": 40,
+     "points": 46,
+     "goal_difference": -5
+    },
+    {
+     "position": 8,
+     "team": "FC Famalicão",
+     "played": 34,
+     "won": 13,
+     "drawn": 5,
+     "lost": 16,
+     "for": 39,
+     "against": 47,
+     "points": 44,
+     "goal_difference": -8
+    },
+    {
+     "position": 9,
+     "team": "Boavista",
+     "played": 34,
+     "won": 12,
+     "drawn": 8,
+     "lost": 14,
+     "for": 43,
+     "against": 54,
+     "points": 44,
+     "goal_difference": -11
+    },
+    {
+     "position": 10,
+     "team": "Casa Pia AC",
+     "played": 34,
+     "won": 11,
+     "drawn": 8,
+     "lost": 15,
+     "for": 31,
+     "against": 40,
+     "points": 41,
+     "goal_difference": -9
+    },
+    {
+     "position": 11,
+     "team": "FC Vizela",
+     "played": 34,
+     "won": 11,
+     "drawn": 7,
+     "lost": 16,
+     "for": 34,
+     "against": 38,
+     "points": 40,
+     "goal_difference": -4
+    },
+    {
+     "position": 12,
+     "team": "Rio Ave FC",
+     "played": 34,
+     "won": 10,
+     "drawn": 10,
+     "lost": 14,
+     "for": 36,
+     "against": 43,
+     "points": 40,
+     "goal_difference": -7
+    },
+    {
+     "position": 13,
+     "team": "Gil Vicente",
+     "played": 34,
+     "won": 10,
+     "drawn": 7,
+     "lost": 17,
+     "for": 32,
+     "against": 41,
+     "points": 37,
+     "goal_difference": -9
+    },
+    {
+     "position": 14,
+     "team": "GD Estoril",
+     "played": 34,
+     "won": 10,
+     "drawn": 5,
+     "lost": 19,
+     "for": 33,
+     "against": 49,
+     "points": 35,
+     "goal_difference": -16
+    },
+    {
+     "position": 15,
+     "team": "Portimonense SC",
+     "played": 34,
+     "won": 10,
+     "drawn": 4,
+     "lost": 20,
+     "for": 25,
+     "against": 48,
+     "points": 34,
+     "goal_difference": -23
+    },
+    {
+     "position": 16,
+     "team": "CS Marítimo",
+     "played": 34,
+     "won": 7,
+     "drawn": 5,
+     "lost": 22,
+     "for": 32,
+     "against": 63,
+     "points": 26,
+     "goal_difference": -31
+    },
+    {
+     "position": 17,
+     "team": "Paços de Ferreira",
+     "played": 34,
+     "won": 6,
+     "drawn": 5,
+     "lost": 23,
+     "for": 26,
+     "against": 62,
+     "points": 23,
+     "goal_difference": -36
+    },
+    {
+     "position": 18,
+     "team": "CD Santa Clara",
+     "played": 34,
+     "won": 5,
+     "drawn": 7,
+     "lost": 22,
+     "for": 26,
+     "against": 58,
+     "points": 22,
+     "goal_difference": -32
+    }
+   ],
+   "matches_note": "in the vault copy of this season's file"
+  },
+  {
+   "season": "2023-24",
+   "name": "Portuguese Primeira Liga 2023/24",
+   "matches_listed": 306,
+   "matches_played": 306,
+   "complete": true,
+   "leader": {
+    "team": "Sporting Clube de Portugal",
+    "points": 90,
+    "played": 34
+   },
+   "last_match_date": "2024-05-18",
+   "table": [
+    {
+     "position": 1,
+     "team": "Sporting Clube de Portugal",
+     "played": 34,
+     "won": 29,
+     "drawn": 3,
+     "lost": 2,
+     "for": 96,
+     "against": 29,
+     "points": 90,
+     "goal_difference": 67
+    },
+    {
+     "position": 2,
+     "team": "Sport Lisboa e Benfica",
+     "played": 34,
+     "won": 25,
+     "drawn": 5,
+     "lost": 4,
+     "for": 77,
+     "against": 28,
+     "points": 80,
+     "goal_difference": 49
+    },
+    {
+     "position": 3,
+     "team": "FC Porto",
+     "played": 34,
+     "won": 22,
+     "drawn": 6,
+     "lost": 6,
+     "for": 63,
+     "against": 27,
+     "points": 72,
+     "goal_difference": 36
+    },
+    {
+     "position": 4,
+     "team": "Sporting Clube de Braga",
+     "played": 34,
+     "won": 21,
+     "drawn": 5,
+     "lost": 8,
+     "for": 71,
+     "against": 50,
+     "points": 68,
+     "goal_difference": 21
+    },
+    {
+     "position": 5,
+     "team": "Vitória Guimarães",
+     "played": 34,
+     "won": 19,
+     "drawn": 6,
+     "lost": 9,
+     "for": 52,
+     "against": 38,
+     "points": 63,
+     "goal_difference": 14
+    },
+    {
+     "position": 6,
+     "team": "Moreirense FC",
+     "played": 34,
+     "won": 16,
+     "drawn": 7,
+     "lost": 11,
+     "for": 36,
+     "against": 35,
+     "points": 55,
+     "goal_difference": 1
+    },
+    {
+     "position": 7,
+     "team": "FC Arouca",
+     "played": 34,
+     "won": 13,
+     "drawn": 7,
+     "lost": 14,
+     "for": 54,
+     "against": 50,
+     "points": 46,
+     "goal_difference": 4
+    },
+    {
+     "position": 8,
+     "team": "FC Famalicão",
+     "played": 34,
+     "won": 10,
+     "drawn": 12,
+     "lost": 12,
+     "for": 37,
+     "against": 41,
+     "points": 42,
+     "goal_difference": -4
+    },
+    {
+     "position": 9,
+     "team": "Casa Pia AC",
+     "played": 34,
+     "won": 10,
+     "drawn": 8,
+     "lost": 16,
+     "for": 38,
+     "against": 50,
+     "points": 38,
+     "goal_difference": -12
+    },
+    {
+     "position": 10,
+     "team": "SC Farense",
+     "played": 34,
+     "won": 10,
+     "drawn": 7,
+     "lost": 17,
+     "for": 46,
+     "against": 51,
+     "points": 37,
+     "goal_difference": -5
+    },
+    {
+     "position": 11,
+     "team": "Rio Ave FC",
+     "played": 34,
+     "won": 6,
+     "drawn": 19,
+     "lost": 9,
+     "for": 38,
+     "against": 43,
+     "points": 37,
+     "goal_difference": -5
+    },
+    {
+     "position": 12,
+     "team": "Gil Vicente FC",
+     "played": 34,
+     "won": 9,
+     "drawn": 9,
+     "lost": 16,
+     "for": 42,
+     "against": 52,
+     "points": 36,
+     "goal_difference": -10
+    },
+    {
+     "position": 13,
+     "team": "GD Estoril Praia",
+     "played": 34,
+     "won": 9,
+     "drawn": 6,
+     "lost": 19,
+     "for": 49,
+     "against": 58,
+     "points": 33,
+     "goal_difference": -9
+    },
+    {
+     "position": 14,
+     "team": "CF Estrela da Amadora",
+     "played": 34,
+     "won": 7,
+     "drawn": 12,
+     "lost": 15,
+     "for": 33,
+     "against": 53,
+     "points": 33,
+     "goal_difference": -20
+    },
+    {
+     "position": 15,
+     "team": "Boavista FC",
+     "played": 34,
+     "won": 7,
+     "drawn": 11,
+     "lost": 16,
+     "for": 39,
+     "against": 62,
+     "points": 32,
+     "goal_difference": -23
+    },
+    {
+     "position": 16,
+     "team": "Portimonense SC",
+     "played": 34,
+     "won": 8,
+     "drawn": 8,
+     "lost": 18,
+     "for": 39,
+     "against": 72,
+     "points": 32,
+     "goal_difference": -33
+    },
+    {
+     "position": 17,
+     "team": "FC Vizela",
+     "played": 34,
+     "won": 5,
+     "drawn": 11,
+     "lost": 18,
+     "for": 36,
+     "against": 66,
+     "points": 26,
+     "goal_difference": -30
+    },
+    {
+     "position": 18,
+     "team": "GD Chaves",
+     "played": 34,
+     "won": 5,
+     "drawn": 8,
+     "lost": 21,
+     "for": 31,
+     "against": 72,
+     "points": 23,
+     "goal_difference": -41
+    }
+   ],
+   "matches_note": "in the vault copy of this season's file"
+  },
+  {
+   "season": "2024-25",
+   "name": "Portuguese Primeira Liga 2024/25",
+   "matches_listed": 306,
+   "matches_played": 306,
+   "complete": true,
+   "leader": {
+    "team": "Sporting Clube de Portugal",
+    "points": 82,
+    "played": 34
+   },
+   "last_match_date": "2025-05-17",
+   "table": [
+    {
+     "position": 1,
+     "team": "Sporting Clube de Portugal",
+     "played": 34,
+     "won": 25,
+     "drawn": 7,
+     "lost": 2,
+     "for": 88,
+     "against": 27,
+     "points": 82,
+     "goal_difference": 61
+    },
+    {
+     "position": 2,
+     "team": "Sport Lisboa e Benfica",
+     "played": 34,
+     "won": 25,
+     "drawn": 5,
+     "lost": 4,
+     "for": 84,
+     "against": 28,
+     "points": 80,
+     "goal_difference": 56
+    },
+    {
+     "position": 3,
+     "team": "FC Porto",
+     "played": 34,
+     "won": 22,
+     "drawn": 5,
+     "lost": 7,
+     "for": 65,
+     "against": 30,
+     "points": 71,
+     "goal_difference": 35
+    },
+    {
+     "position": 4,
+     "team": "Sporting Clube de Braga",
+     "played": 34,
+     "won": 19,
+     "drawn": 9,
+     "lost": 6,
+     "for": 55,
+     "against": 30,
+     "points": 66,
+     "goal_difference": 25
+    },
+    {
+     "position": 5,
+     "team": "CD Santa Clara",
+     "played": 34,
+     "won": 17,
+     "drawn": 6,
+     "lost": 11,
+     "for": 36,
+     "against": 32,
+     "points": 57,
+     "goal_difference": 4
+    },
+    {
+     "position": 6,
+     "team": "Vitória Guimarães",
+     "played": 34,
+     "won": 14,
+     "drawn": 12,
+     "lost": 8,
+     "for": 47,
+     "against": 37,
+     "points": 54,
+     "goal_difference": 10
+    },
+    {
+     "position": 7,
+     "team": "FC Famalicão",
+     "played": 34,
+     "won": 12,
+     "drawn": 11,
+     "lost": 11,
+     "for": 44,
+     "against": 39,
+     "points": 47,
+     "goal_difference": 5
+    },
+    {
+     "position": 8,
+     "team": "GD Estoril Praia",
+     "played": 34,
+     "won": 12,
+     "drawn": 10,
+     "lost": 12,
+     "for": 48,
+     "against": 53,
+     "points": 46,
+     "goal_difference": -5
+    },
+    {
+     "position": 9,
+     "team": "Casa Pia AC",
+     "played": 34,
+     "won": 12,
+     "drawn": 9,
+     "lost": 13,
+     "for": 39,
+     "against": 44,
+     "points": 45,
+     "goal_difference": -5
+    },
+    {
+     "position": 10,
+     "team": "Moreirense FC",
+     "played": 34,
+     "won": 10,
+     "drawn": 10,
+     "lost": 14,
+     "for": 42,
+     "against": 50,
+     "points": 40,
+     "goal_difference": -8
+    },
+    {
+     "position": 11,
+     "team": "FC Arouca",
+     "played": 34,
+     "won": 9,
+     "drawn": 11,
+     "lost": 14,
+     "for": 35,
+     "against": 49,
+     "points": 38,
+     "goal_difference": -14
+    },
+    {
+     "position": 12,
+     "team": "Rio Ave FC",
+     "played": 34,
+     "won": 9,
+     "drawn": 11,
+     "lost": 14,
+     "for": 39,
+     "against": 55,
+     "points": 38,
+     "goal_difference": -16
+    },
+    {
+     "position": 13,
+     "team": "Gil Vicente FC",
+     "played": 34,
+     "won": 8,
+     "drawn": 10,
+     "lost": 16,
+     "for": 34,
+     "against": 47,
+     "points": 34,
+     "goal_difference": -13
+    },
+    {
+     "position": 14,
+     "team": "CD Nacional",
+     "played": 34,
+     "won": 9,
+     "drawn": 7,
+     "lost": 18,
+     "for": 32,
+     "against": 50,
+     "points": 34,
+     "goal_difference": -18
+    },
+    {
+     "position": 15,
+     "team": "CF Estrela da Amadora",
+     "played": 34,
+     "won": 7,
+     "drawn": 8,
+     "lost": 19,
+     "for": 24,
+     "against": 50,
+     "points": 29,
+     "goal_difference": -26
+    },
+    {
+     "position": 16,
+     "team": "SC Farense",
+     "played": 34,
+     "won": 6,
+     "drawn": 9,
+     "lost": 19,
+     "for": 25,
+     "against": 46,
+     "points": 27,
+     "goal_difference": -21
+    },
+    {
+     "position": 17,
+     "team": "AVS",
+     "played": 34,
+     "won": 5,
+     "drawn": 12,
+     "lost": 17,
+     "for": 25,
+     "against": 60,
+     "points": 27,
+     "goal_difference": -35
+    },
+    {
+     "position": 18,
+     "team": "Boavista FC",
+     "played": 34,
+     "won": 6,
+     "drawn": 6,
+     "lost": 22,
+     "for": 24,
+     "against": 59,
+     "points": 24,
+     "goal_difference": -35
+    }
+   ],
+   "matches_note": "in the vault copy of this season's file"
+  },
+  {
+   "season": "2025-26",
+   "name": "Portuguese Primeira Liga 2025/26",
+   "matches_listed": 306,
+   "matches_played": 287,
+   "complete": false,
+   "leader": {
+    "team": "FC Porto",
+    "points": 87,
+    "played": 33
+   },
+   "last_match_date": "2026-05-16",
+   "table": [
+    {
+     "position": 1,
+     "team": "FC Porto",
+     "played": 33,
+     "won": 28,
+     "drawn": 3,
+     "lost": 2,
+     "for": 66,
+     "against": 18,
+     "points": 87,
+     "goal_difference": 48
+    },
+    {
+     "position": 2,
+     "team": "Sporting Clube de Portugal",
+     "played": 34,
+     "won": 25,
+     "drawn": 7,
+     "lost": 2,
+     "for": 89,
+     "against": 24,
+     "points": 82,
+     "goal_difference": 65
+    },
+    {
+     "position": 3,
+     "team": "Sport Lisboa e Benfica",
+     "played": 32,
+     "won": 23,
+     "drawn": 9,
+     "lost": 0,
+     "for": 74,
+     "against": 25,
+     "points": 78,
+     "goal_difference": 49
+    },
+    {
+     "position": 4,
+     "team": "Sporting Clube de Braga",
+     "played": 34,
+     "won": 16,
+     "drawn": 11,
+     "lost": 7,
+     "for": 64,
+     "against": 36,
+     "points": 59,
+     "goal_difference": 28
+    },
+    {
+     "position": 5,
+     "team": "FC Famalicão",
+     "played": 30,
+     "won": 15,
+     "drawn": 7,
+     "lost": 8,
+     "for": 42,
+     "against": 29,
+     "points": 52,
+     "goal_difference": 13
+    },
+    {
+     "position": 6,
+     "team": "Gil Vicente FC",
+     "played": 31,
+     "won": 13,
+     "drawn": 8,
+     "lost": 10,
+     "for": 47,
+     "against": 38,
+     "points": 47,
+     "goal_difference": 9
+    },
+    {
+     "position": 7,
+     "team": "Moreirense FC",
+     "played": 33,
+     "won": 12,
+     "drawn": 5,
+     "lost": 16,
+     "for": 37,
+     "against": 50,
+     "points": 41,
+     "goal_difference": -13
+    },
+    {
+     "position": 8,
+     "team": "FC Arouca",
+     "played": 33,
+     "won": 12,
+     "drawn": 5,
+     "lost": 16,
+     "for": 47,
+     "against": 64,
+     "points": 41,
+     "goal_difference": -17
+    },
+    {
+     "position": 9,
+     "team": "Vitória Guimarães",
+     "played": 32,
+     "won": 12,
+     "drawn": 4,
+     "lost": 16,
+     "for": 39,
+     "against": 51,
+     "points": 40,
+     "goal_difference": -12
+    },
+    {
+     "position": 10,
+     "team": "GD Estoril Praia",
+     "played": 33,
+     "won": 10,
+     "drawn": 8,
+     "lost": 15,
+     "for": 54,
+     "against": 57,
+     "points": 38,
+     "goal_difference": -3
+    },
+    {
+     "position": 11,
+     "team": "FC Alverca",
+     "played": 33,
+     "won": 10,
+     "drawn": 8,
+     "lost": 15,
+     "for": 35,
+     "against": 52,
+     "points": 38,
+     "goal_difference": -17
+    },
+    {
+     "position": 12,
+     "team": "CD Nacional",
+     "played": 33,
+     "won": 9,
+     "drawn": 6,
+     "lost": 18,
+     "for": 37,
+     "against": 45,
+     "points": 33,
+     "goal_difference": -8
+    },
+    {
+     "position": 13,
+     "team": "CD Santa Clara",
+     "played": 31,
+     "won": 9,
+     "drawn": 6,
+     "lost": 16,
+     "for": 32,
+     "against": 41,
+     "points": 33,
+     "goal_difference": -9
+    },
+    {
+     "position": 14,
+     "team": "Rio Ave FC",
+     "played": 31,
+     "won": 8,
+     "drawn": 8,
+     "lost": 15,
+     "for": 35,
+     "against": 58,
+     "points": 32,
+     "goal_difference": -23
+    },
+    {
+     "position": 15,
+     "team": "Casa Pia AC",
+     "played": 30,
+     "won": 7,
+     "drawn": 7,
+     "lost": 16,
+     "for": 32,
+     "against": 57,
+     "points": 28,
+     "goal_difference": -25
+    },
+    {
+     "position": 16,
+     "team": "CF Estrela da Amadora",
+     "played": 29,
+     "won": 6,
+     "drawn": 7,
+     "lost": 16,
+     "for": 38,
+     "against": 56,
+     "points": 25,
+     "goal_difference": -18
+    },
+    {
+     "position": 17,
+     "team": "CD Tondela",
+     "played": 31,
+     "won": 6,
+     "drawn": 7,
+     "lost": 18,
+     "for": 27,
+     "against": 55,
+     "points": 25,
+     "goal_difference": -28
+    },
+    {
+     "position": 18,
+     "team": "AVS",
+     "played": 31,
+     "won": 4,
+     "drawn": 8,
+     "lost": 19,
+     "for": 28,
+     "against": 67,
+     "points": 20,
+     "goal_difference": -39
+    }
+   ],
+   "matches": [
+    {
+     "round": "Matchday 1",
+     "date": "2025-08-08",
+     "home": "Casa Pia AC",
+     "away": "Sporting Clube de Portugal",
+     "home_goals": 0,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 1",
+     "date": "2025-08-09",
+     "home": "CD Nacional",
+     "away": "Gil Vicente FC",
+     "home_goals": 0,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      2
+     ]
+    },
+    {
+     "round": "Matchday 1",
+     "date": "2025-08-09",
+     "home": "FC Arouca",
+     "away": "AVS",
+     "home_goals": 3,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 1",
+     "date": "2025-08-10",
+     "home": "FC Famalicão",
+     "away": "CD Santa Clara",
+     "home_goals": 3,
+     "away_goals": 0,
+     "half_time": [
+      2,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 1",
+     "date": "2025-08-10",
+     "home": "Sporting Clube de Braga",
+     "away": "CD Tondela",
+     "home_goals": 3,
+     "away_goals": 0,
+     "half_time": [
+      2,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 1",
+     "date": "2025-08-10",
+     "home": "Moreirense FC",
+     "away": "FC Alverca",
+     "home_goals": 2,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 1",
+     "date": "2025-08-11",
+     "home": "GD Estoril Praia",
+     "away": "CF Estrela da Amadora",
+     "home_goals": 1,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 1",
+     "date": "2025-08-11",
+     "home": "FC Porto",
+     "away": "Vitória Guimarães",
+     "home_goals": 3,
+     "away_goals": 0,
+     "half_time": [
+      2,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 2",
+     "date": "2025-08-15",
+     "home": "AVS",
+     "away": "Casa Pia AC",
+     "home_goals": 0,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 2",
+     "date": "2025-08-16",
+     "home": "CD Tondela",
+     "away": "FC Famalicão",
+     "home_goals": 0,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 2",
+     "date": "2025-08-16",
+     "home": "Vitória Guimarães",
+     "away": "GD Estoril Praia",
+     "home_goals": 3,
+     "away_goals": 2,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 2",
+     "date": "2025-08-16",
+     "home": "CF Estrela da Amadora",
+     "away": "Sport Lisboa e Benfica",
+     "home_goals": 0,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 2",
+     "date": "2025-08-17",
+     "home": "Rio Ave FC",
+     "away": "CD Nacional",
+     "home_goals": 1,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 2",
+     "date": "2025-08-17",
+     "home": "FC Alverca",
+     "away": "Sporting Clube de Braga",
+     "home_goals": 0,
+     "away_goals": 3,
+     "half_time": [
+      0,
+      3
+     ]
+    },
+    {
+     "round": "Matchday 2",
+     "date": "2025-08-17",
+     "home": "CD Santa Clara",
+     "away": "Moreirense FC",
+     "home_goals": 0,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 2",
+     "date": "2025-08-17",
+     "home": "Sporting Clube de Portugal",
+     "away": "FC Arouca",
+     "home_goals": 6,
+     "away_goals": 0,
+     "half_time": [
+      3,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 2",
+     "date": "2025-08-18",
+     "home": "Gil Vicente FC",
+     "away": "FC Porto",
+     "home_goals": 0,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 3",
+     "date": "2025-08-23",
+     "home": "Moreirense FC",
+     "away": "Vitória Guimarães",
+     "home_goals": 2,
+     "away_goals": 0,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 3",
+     "date": "2025-08-23",
+     "home": "CD Nacional",
+     "away": "Sporting Clube de Portugal",
+     "home_goals": 1,
+     "away_goals": 4,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 3",
+     "date": "2025-08-23",
+     "home": "FC Arouca",
+     "away": "Rio Ave FC",
+     "home_goals": 3,
+     "away_goals": 3,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 3",
+     "date": "2025-08-23",
+     "home": "Sport Lisboa e Benfica",
+     "away": "CD Tondela",
+     "home_goals": 3,
+     "away_goals": 0,
+     "half_time": [
+      2,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 3",
+     "date": "2025-08-24",
+     "home": "FC Famalicão",
+     "away": "Gil Vicente FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 3",
+     "date": "2025-08-24",
+     "home": "FC Porto",
+     "away": "Casa Pia AC",
+     "home_goals": 4,
+     "away_goals": 0,
+     "half_time": [
+      3,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 3",
+     "date": "2025-08-24",
+     "home": "Sporting Clube de Braga",
+     "away": "AVS",
+     "home_goals": 2,
+     "away_goals": 2,
+     "half_time": [
+      1,
+      2
+     ]
+    },
+    {
+     "round": "Matchday 3",
+     "date": "2025-08-25",
+     "home": "CF Estrela da Amadora",
+     "away": "FC Alverca",
+     "home_goals": 2,
+     "away_goals": 2,
+     "half_time": [
+      1,
+      2
+     ]
+    },
+    {
+     "round": "Matchday 4",
+     "date": "2025-08-29",
+     "home": "Gil Vicente FC",
+     "away": "Moreirense FC",
+     "home_goals": 2,
+     "away_goals": 0,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 4",
+     "date": "2025-08-30",
+     "home": "Casa Pia AC",
+     "away": "CD Nacional",
+     "home_goals": 0,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      2
+     ]
+    },
+    {
+     "round": "Matchday 4",
+     "date": "2025-08-30",
+     "home": "AVS",
+     "away": "FC Famalicão",
+     "home_goals": 0,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 4",
+     "date": "2025-08-30",
+     "home": "Vitória Guimarães",
+     "away": "FC Arouca",
+     "home_goals": 1,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 4",
+     "date": "2025-08-30",
+     "home": "Sporting Clube de Portugal",
+     "away": "FC Porto",
+     "home_goals": 1,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 4",
+     "date": "2025-08-31",
+     "home": "CD Tondela",
+     "away": "GD Estoril Praia",
+     "home_goals": 2,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 4",
+     "date": "2025-08-31",
+     "home": "FC Alverca",
+     "away": "Sport Lisboa e Benfica",
+     "home_goals": 1,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      2
+     ]
+    },
+    {
+     "round": "Matchday 4",
+     "date": "2025-08-31",
+     "home": "CD Santa Clara",
+     "away": "CF Estrela da Amadora",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 4",
+     "date": "2025-08-31",
+     "home": "Rio Ave FC",
+     "away": "Sporting Clube de Braga",
+     "home_goals": 2,
+     "away_goals": 2,
+     "half_time": [
+      2,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 3",
+     "date": "2025-09-06",
+     "home": "GD Estoril Praia",
+     "away": "CD Santa Clara",
+     "home_goals": 0,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 5",
+     "date": "2025-09-12",
+     "home": "FC Alverca",
+     "away": "CD Tondela",
+     "home_goals": 1,
+     "away_goals": 0,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 5",
+     "date": "2025-09-12",
+     "home": "Sport Lisboa e Benfica",
+     "away": "CD Santa Clara",
+     "home_goals": 1,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 5",
+     "date": "2025-09-13",
+     "home": "Moreirense FC",
+     "away": "Rio Ave FC",
+     "home_goals": 3,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 5",
+     "date": "2025-09-13",
+     "home": "GD Estoril Praia",
+     "away": "AVS",
+     "home_goals": 3,
+     "away_goals": 1,
+     "half_time": [
+      2,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 5",
+     "date": "2025-09-13",
+     "home": "FC Porto",
+     "away": "CD Nacional",
+     "home_goals": 1,
+     "away_goals": 0,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 5",
+     "date": "2025-09-13",
+     "home": "FC Famalicão",
+     "away": "Sporting Clube de Portugal",
+     "home_goals": 1,
+     "away_goals": 2,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 5",
+     "date": "2025-09-14",
+     "home": "CF Estrela da Amadora",
+     "away": "Vitória Guimarães",
+     "home_goals": 0,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 5",
+     "date": "2025-09-14",
+     "home": "FC Arouca",
+     "away": "Casa Pia AC",
+     "home_goals": 0,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 5",
+     "date": "2025-09-14",
+     "home": "Sporting Clube de Braga",
+     "away": "Gil Vicente FC",
+     "home_goals": 0,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 6",
+     "date": "2025-09-19",
+     "home": "Rio Ave FC",
+     "away": "FC Porto",
+     "home_goals": 0,
+     "away_goals": 3,
+     "half_time": [
+      0,
+      2
+     ]
+    },
+    {
+     "round": "Matchday 6",
+     "date": "2025-09-20",
+     "home": "CD Santa Clara",
+     "away": "FC Alverca",
+     "home_goals": 2,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 6",
+     "date": "2025-09-20",
+     "home": "CD Nacional",
+     "away": "FC Arouca",
+     "home_goals": 1,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 6",
+     "date": "2025-09-20",
+     "home": "AVS",
+     "away": "Sport Lisboa e Benfica",
+     "home_goals": 0,
+     "away_goals": 3,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 6",
+     "date": "2025-09-20",
+     "home": "Vitória Guimarães",
+     "away": "Sporting Clube de Braga",
+     "home_goals": 1,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 6",
+     "date": "2025-09-21",
+     "home": "CD Tondela",
+     "away": "CF Estrela da Amadora",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 6",
+     "date": "2025-09-21",
+     "home": "Gil Vicente FC",
+     "away": "GD Estoril Praia",
+     "home_goals": 2,
+     "away_goals": 0,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 6",
+     "date": "2025-09-21",
+     "home": "Casa Pia AC",
+     "away": "FC Famalicão",
+     "home_goals": 1,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 6",
+     "date": "2025-09-22",
+     "home": "Sporting Clube de Portugal",
+     "away": "Moreirense FC",
+     "home_goals": 3,
+     "away_goals": 0,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 1",
+     "date": "2025-09-23",
+     "home": "Sport Lisboa e Benfica",
+     "away": "Rio Ave FC",
+     "home_goals": 1,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 7",
+     "date": "2025-09-26",
+     "home": "Sport Lisboa e Benfica",
+     "away": "Gil Vicente FC",
+     "home_goals": 2,
+     "away_goals": 1,
+     "half_time": [
+      2,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 7",
+     "date": "2025-09-27",
+     "home": "Moreirense FC",
+     "away": "Casa Pia AC",
+     "home_goals": 2,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 7",
+     "date": "2025-09-27",
+     "home": "CD Santa Clara",
+     "away": "CD Tondela",
+     "home_goals": 1,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 7",
+     "date": "2025-09-27",
+     "home": "CF Estrela da Amadora",
+     "away": "AVS",
+     "home_goals": 3,
+     "away_goals": 0,
+     "half_time": [
+      3,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 7",
+     "date": "2025-09-27",
+     "home": "GD Estoril Praia",
+     "away": "Sporting Clube de Portugal",
+     "home_goals": 0,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 7",
+     "date": "2025-09-28",
+     "home": "FC Alverca",
+     "away": "Vitória Guimarães",
+     "home_goals": 2,
+     "away_goals": 0,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 7",
+     "date": "2025-09-28",
+     "home": "Sporting Clube de Braga",
+     "away": "CD Nacional",
+     "home_goals": 0,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 7",
+     "date": "2025-09-28",
+     "home": "FC Famalicão",
+     "away": "Rio Ave FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 7",
+     "date": "2025-09-29",
+     "home": "FC Arouca",
+     "away": "FC Porto",
+     "home_goals": 0,
+     "away_goals": 4,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 8",
+     "date": "2025-10-03",
+     "home": "Casa Pia AC",
+     "away": "GD Estoril Praia",
+     "home_goals": 2,
+     "away_goals": 2,
+     "half_time": [
+      2,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 8",
+     "date": "2025-10-04",
+     "home": "Gil Vicente FC",
+     "away": "CF Estrela da Amadora",
+     "home_goals": 2,
+     "away_goals": 0,
+     "half_time": [
+      2,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 8",
+     "date": "2025-10-04",
+     "home": "CD Nacional",
+     "away": "Moreirense FC",
+     "home_goals": 3,
+     "away_goals": 2,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 8",
+     "date": "2025-10-04",
+     "home": "AVS",
+     "away": "FC Alverca",
+     "home_goals": 1,
+     "away_goals": 3,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 8",
+     "date": "2025-10-04",
+     "home": "Vitória Guimarães",
+     "away": "CD Santa Clara",
+     "home_goals": 2,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 8",
+     "date": "2025-10-05",
+     "home": "FC Arouca",
+     "away": "FC Famalicão",
+     "home_goals": 1,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 8",
+     "date": "2025-10-05",
+     "home": "Rio Ave FC",
+     "away": "CD Tondela",
+     "home_goals": 3,
+     "away_goals": 0,
+     "half_time": [
+      2,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 8",
+     "date": "2025-10-05",
+     "home": "Sporting Clube de Portugal",
+     "away": "Sporting Clube de Braga",
+     "home_goals": 1,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 8",
+     "date": "2025-10-05",
+     "home": "FC Porto",
+     "away": "Sport Lisboa e Benfica",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 9",
+     "date": "2025-10-24",
+     "home": "FC Alverca",
+     "away": "Gil Vicente FC",
+     "home_goals": 0,
+     "away_goals": 4,
+     "half_time": [
+      0,
+      2
+     ]
+    },
+    {
+     "round": "Matchday 9",
+     "date": "2025-10-25",
+     "home": "CD Santa Clara",
+     "away": "AVS",
+     "home_goals": 2,
+     "away_goals": 0,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 9",
+     "date": "2025-10-25",
+     "home": "CF Estrela da Amadora",
+     "away": "Rio Ave FC",
+     "home_goals": 1,
+     "away_goals": 2,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 9",
+     "date": "2025-10-25",
+     "home": "Sport Lisboa e Benfica",
+     "away": "FC Arouca",
+     "home_goals": 5,
+     "away_goals": 0,
+     "half_time": [
+      3,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 9",
+     "date": "2025-10-26",
+     "home": "GD Estoril Praia",
+     "away": "CD Nacional",
+     "home_goals": 1,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 9",
+     "date": "2025-10-26",
+     "home": "FC Famalicão",
+     "away": "Vitória Guimarães",
+     "home_goals": 2,
+     "away_goals": 0,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 9",
+     "date": "2025-10-26",
+     "home": "CD Tondela",
+     "away": "Sporting Clube de Portugal",
+     "home_goals": 0,
+     "away_goals": 3,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 9",
+     "date": "2025-10-26",
+     "home": "Sporting Clube de Braga",
+     "away": "Casa Pia AC",
+     "home_goals": 4,
+     "away_goals": 0,
+     "half_time": [
+      2,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 9",
+     "date": "2025-10-27",
+     "home": "Moreirense FC",
+     "away": "FC Porto",
+     "home_goals": 1,
+     "away_goals": 2,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 10",
+     "date": "2025-10-31",
+     "home": "Sporting Clube de Portugal",
+     "away": "FC Alverca",
+     "home_goals": 2,
+     "away_goals": 0,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 10",
+     "date": "2025-11-01",
+     "home": "CD Nacional",
+     "away": "FC Famalicão",
+     "home_goals": 0,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 10",
+     "date": "2025-11-01",
+     "home": "Casa Pia AC",
+     "away": "CF Estrela da Amadora",
+     "home_goals": 3,
+     "away_goals": 5,
+     "half_time": [
+      1,
+      2
+     ]
+    },
+    {
+     "round": "Matchday 10",
+     "date": "2025-11-01",
+     "home": "Rio Ave FC",
+     "away": "GD Estoril Praia",
+     "home_goals": 0,
+     "away_goals": 4,
+     "half_time": [
+      0,
+      2
+     ]
+    },
+    {
+     "round": "Matchday 10",
+     "date": "2025-11-01",
+     "home": "Vitória Guimarães",
+     "away": "Sport Lisboa e Benfica",
+     "home_goals": 0,
+     "away_goals": 3,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 10",
+     "date": "2025-11-02",
+     "home": "AVS",
+     "away": "CD Tondela",
+     "home_goals": 2,
+     "away_goals": 2,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 10",
+     "date": "2025-11-02",
+     "home": "FC Arouca",
+     "away": "Moreirense FC",
+     "home_goals": 0,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      2
+     ]
+    },
+    {
+     "round": "Matchday 10",
+     "date": "2025-11-02",
+     "home": "FC Porto",
+     "away": "Sporting Clube de Braga",
+     "home_goals": 2,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 10",
+     "date": "2025-11-03",
+     "home": "Gil Vicente FC",
+     "away": "CD Santa Clara",
+     "home_goals": 1,
+     "away_goals": 0,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 11",
+     "date": "2025-11-07",
+     "home": "GD Estoril Praia",
+     "away": "FC Arouca",
+     "home_goals": 4,
+     "away_goals": 3,
+     "half_time": [
+      2,
+      2
+     ]
+    },
+    {
+     "round": "Matchday 11",
+     "date": "2025-11-08",
+     "home": "FC Alverca",
+     "away": "Rio Ave FC",
+     "home_goals": 1,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 11",
+     "date": "2025-11-08",
+     "home": "CD Tondela",
+     "away": "Vitória Guimarães",
+     "home_goals": 0,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 11",
+     "date": "2025-11-08",
+     "home": "CD Santa Clara",
+     "away": "Sporting Clube de Portugal",
+     "home_goals": 1,
+     "away_goals": 2,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 11",
+     "date": "2025-11-09",
+     "home": "AVS",
+     "away": "Gil Vicente FC",
+     "home_goals": 1,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 11",
+     "date": "2025-11-09",
+     "home": "CF Estrela da Amadora",
+     "away": "CD Nacional",
+     "home_goals": 1,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 11",
+     "date": "2025-11-09",
+     "home": "FC Famalicão",
+     "away": "FC Porto",
+     "home_goals": 0,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 11",
+     "date": "2025-11-09",
+     "home": "Sporting Clube de Braga",
+     "away": "Moreirense FC",
+     "home_goals": 2,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 11",
+     "date": "2025-11-09",
+     "home": "Sport Lisboa e Benfica",
+     "away": "Casa Pia AC",
+     "home_goals": 2,
+     "away_goals": 2,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 12",
+     "date": "2025-11-28",
+     "home": "Vitória Guimarães",
+     "away": "AVS",
+     "home_goals": 4,
+     "away_goals": 0,
+     "half_time": [
+      3,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 12",
+     "date": "2025-11-29",
+     "home": "Casa Pia AC",
+     "away": "FC Alverca",
+     "home_goals": 0,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 12",
+     "date": "2025-11-29",
+     "home": "Moreirense FC",
+     "away": "FC Famalicão",
+     "home_goals": 2,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 12",
+     "date": "2025-11-29",
+     "home": "CD Nacional",
+     "away": "Sport Lisboa e Benfica",
+     "home_goals": 1,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 12",
+     "date": "2025-11-29",
+     "home": "Gil Vicente FC",
+     "away": "CD Tondela",
+     "home_goals": 0,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 12",
+     "date": "2025-11-30",
+     "home": "Rio Ave FC",
+     "away": "CD Santa Clara",
+     "home_goals": 1,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 12",
+     "date": "2025-11-30",
+     "home": "Sporting Clube de Portugal",
+     "away": "CF Estrela da Amadora",
+     "home_goals": 4,
+     "away_goals": 0,
+     "half_time": [
+      3,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 12",
+     "date": "2025-11-30",
+     "home": "FC Porto",
+     "away": "GD Estoril Praia",
+     "home_goals": 1,
+     "away_goals": 0,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 12",
+     "date": "2025-12-01",
+     "home": "FC Arouca",
+     "away": "Sporting Clube de Braga",
+     "home_goals": 0,
+     "away_goals": 4,
+     "half_time": [
+      0,
+      3
+     ]
+    },
+    {
+     "round": "Matchday 13",
+     "date": "2025-12-05",
+     "home": "Sport Lisboa e Benfica",
+     "away": "Sporting Clube de Portugal",
+     "home_goals": 1,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 13",
+     "date": "2025-12-06",
+     "home": "CD Santa Clara",
+     "away": "Casa Pia AC",
+     "home_goals": 1,
+     "away_goals": 0,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 13",
+     "date": "2025-12-06",
+     "home": "AVS",
+     "away": "Rio Ave FC",
+     "home_goals": 1,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 13",
+     "date": "2025-12-06",
+     "home": "FC Famalicão",
+     "away": "Sporting Clube de Braga",
+     "home_goals": 1,
+     "away_goals": 2,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 13",
+     "date": "2025-12-07",
+     "home": "GD Estoril Praia",
+     "away": "Moreirense FC",
+     "home_goals": 3,
+     "away_goals": 3,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 13",
+     "date": "2025-12-07",
+     "home": "FC Alverca",
+     "away": "CD Nacional",
+     "home_goals": 1,
+     "away_goals": 0,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 13",
+     "date": "2025-12-07",
+     "home": "CF Estrela da Amadora",
+     "away": "FC Arouca",
+     "home_goals": 3,
+     "away_goals": 1,
+     "half_time": [
+      2,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 13",
+     "date": "2025-12-07",
+     "home": "CD Tondela",
+     "away": "FC Porto",
+     "home_goals": 0,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 13",
+     "date": "2025-12-08",
+     "home": "Vitória Guimarães",
+     "away": "Gil Vicente FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 14",
+     "date": "2025-12-13",
+     "home": "Casa Pia AC",
+     "away": "Gil Vicente FC",
+     "home_goals": 1,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 14",
+     "date": "2025-12-13",
+     "home": "Rio Ave FC",
+     "away": "Vitória Guimarães",
+     "home_goals": 0,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 14",
+     "date": "2025-12-13",
+     "home": "Sporting Clube de Portugal",
+     "away": "AVS",
+     "home_goals": 6,
+     "away_goals": 0,
+     "half_time": [
+      3,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 14",
+     "date": "2025-12-14",
+     "home": "FC Famalicão",
+     "away": "GD Estoril Praia",
+     "home_goals": 4,
+     "away_goals": 0,
+     "half_time": [
+      2,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 14",
+     "date": "2025-12-14",
+     "home": "Moreirense FC",
+     "away": "Sport Lisboa e Benfica",
+     "home_goals": 0,
+     "away_goals": 4,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 14",
+     "date": "2025-12-14",
+     "home": "FC Arouca",
+     "away": "FC Alverca",
+     "home_goals": 1,
+     "away_goals": 0,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 14",
+     "date": "2025-12-15",
+     "home": "CD Nacional",
+     "away": "CD Tondela",
+     "home_goals": 3,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 14",
+     "date": "2025-12-15",
+     "home": "Sporting Clube de Braga",
+     "away": "CD Santa Clara",
+     "home_goals": 1,
+     "away_goals": 0,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 14",
+     "date": "2025-12-15",
+     "home": "FC Porto",
+     "away": "CF Estrela da Amadora",
+     "home_goals": 3,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 15",
+     "date": "2025-12-19",
+     "home": "GD Estoril Praia",
+     "away": "Sporting Clube de Braga",
+     "home_goals": 1,
+     "away_goals": 0,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 15",
+     "date": "2025-12-20",
+     "home": "Gil Vicente FC",
+     "away": "Rio Ave FC",
+     "home_goals": 2,
+     "away_goals": 2,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 15",
+     "date": "2025-12-20",
+     "home": "CF Estrela da Amadora",
+     "away": "Moreirense FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 15",
+     "date": "2025-12-21",
+     "home": "AVS",
+     "away": "CD Nacional",
+     "home_goals": 2,
+     "away_goals": 2,
+     "half_time": [
+      2,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 15",
+     "date": "2025-12-21",
+     "home": "CD Tondela",
+     "away": "Casa Pia AC",
+     "home_goals": 1,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 15",
+     "date": "2025-12-21",
+     "home": "CD Santa Clara",
+     "away": "FC Arouca",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 15",
+     "date": "2025-12-22",
+     "home": "FC Alverca",
+     "away": "FC Porto",
+     "home_goals": 0,
+     "away_goals": 3,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 15",
+     "date": "2025-12-22",
+     "home": "Sport Lisboa e Benfica",
+     "away": "FC Famalicão",
+     "home_goals": 1,
+     "away_goals": 0,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 15",
+     "date": "2025-12-23",
+     "home": "Vitória Guimarães",
+     "away": "Sporting Clube de Portugal",
+     "home_goals": 1,
+     "away_goals": 4,
+     "half_time": [
+      0,
+      2
+     ]
+    },
+    {
+     "round": "Matchday 16",
+     "date": "2025-12-27",
+     "home": "FC Famalicão",
+     "away": "CF Estrela da Amadora",
+     "home_goals": 2,
+     "away_goals": 3,
+     "half_time": [
+      2,
+      2
+     ]
+    },
+    {
+     "round": "Matchday 16",
+     "date": "2025-12-27",
+     "home": "GD Estoril Praia",
+     "away": "FC Alverca",
+     "home_goals": 4,
+     "away_goals": 1,
+     "half_time": [
+      2,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 16",
+     "date": "2025-12-28",
+     "home": "Casa Pia AC",
+     "away": "Vitória Guimarães",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 16",
+     "date": "2025-12-28",
+     "home": "FC Arouca",
+     "away": "Gil Vicente FC",
+     "home_goals": 2,
+     "away_goals": 2,
+     "half_time": [
+      2,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 16",
+     "date": "2025-12-28",
+     "home": "Sporting Clube de Braga",
+     "away": "Sport Lisboa e Benfica",
+     "home_goals": 2,
+     "away_goals": 2,
+     "half_time": [
+      2,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 16",
+     "date": "2025-12-28",
+     "home": "Sporting Clube de Portugal",
+     "away": "Rio Ave FC",
+     "home_goals": 4,
+     "away_goals": 0,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 16",
+     "date": "2025-12-29",
+     "home": "FC Porto",
+     "away": "AVS",
+     "home_goals": 2,
+     "away_goals": 0,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 17",
+     "date": "2026-01-02",
+     "home": "Gil Vicente FC",
+     "away": "Sporting Clube de Portugal",
+     "home_goals": 1,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 17",
+     "date": "2026-01-02",
+     "home": "Vitória Guimarães",
+     "away": "CD Nacional",
+     "home_goals": 2,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 17",
+     "date": "2026-01-03",
+     "home": "CD Tondela",
+     "away": "FC Arouca",
+     "home_goals": 3,
+     "away_goals": 1,
+     "half_time": [
+      2,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 17",
+     "date": "2026-01-03",
+     "home": "Sport Lisboa e Benfica",
+     "away": "GD Estoril Praia",
+     "home_goals": 3,
+     "away_goals": 1,
+     "half_time": [
+      2,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 17",
+     "date": "2026-01-03",
+     "home": "CF Estrela da Amadora",
+     "away": "Sporting Clube de Braga",
+     "home_goals": 3,
+     "away_goals": 3,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 17",
+     "date": "2026-01-03",
+     "home": "AVS",
+     "away": "Moreirense FC",
+     "home_goals": 0,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 17",
+     "date": "2026-01-04",
+     "home": "Rio Ave FC",
+     "away": "Casa Pia AC",
+     "home_goals": 3,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 17",
+     "date": "2026-01-04",
+     "home": "CD Santa Clara",
+     "away": "FC Porto",
+     "home_goals": 0,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 17",
+     "date": "2026-01-04",
+     "home": "FC Alverca",
+     "away": "FC Famalicão",
+     "home_goals": 1,
+     "away_goals": 0,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 16",
+     "date": "2026-01-11",
+     "home": "CD Nacional",
+     "away": "CD Santa Clara",
+     "home_goals": 3,
+     "away_goals": 3,
+     "half_time": [
+      2,
+      2
+     ]
+    },
+    {
+     "round": "Matchday 16",
+     "date": "2026-01-11",
+     "home": "Moreirense FC",
+     "away": "CD Tondela",
+     "home_goals": 1,
+     "away_goals": 0,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 18",
+     "date": "2026-01-16",
+     "home": "Sporting Clube de Portugal",
+     "away": "Casa Pia AC",
+     "home_goals": 3,
+     "away_goals": 0,
+     "half_time": [
+      2,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 18",
+     "date": "2026-01-17",
+     "home": "Gil Vicente FC",
+     "away": "CD Nacional",
+     "home_goals": 2,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 18",
+     "date": "2026-01-17",
+     "home": "AVS",
+     "away": "FC Arouca",
+     "home_goals": 0,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 18",
+     "date": "2026-01-17",
+     "home": "FC Alverca",
+     "away": "Moreirense FC",
+     "home_goals": 2,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 18",
+     "date": "2026-01-17",
+     "home": "Rio Ave FC",
+     "away": "Sport Lisboa e Benfica",
+     "home_goals": 0,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      2
+     ]
+    },
+    {
+     "round": "Matchday 18",
+     "date": "2026-01-18",
+     "home": "CD Santa Clara",
+     "away": "FC Famalicão",
+     "home_goals": 0,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 18",
+     "date": "2026-01-18",
+     "home": "CD Tondela",
+     "away": "Sporting Clube de Braga",
+     "home_goals": 0,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 18",
+     "date": "2026-01-18",
+     "home": "Vitória Guimarães",
+     "away": "FC Porto",
+     "home_goals": 0,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 18",
+     "date": "2026-01-19",
+     "home": "CF Estrela da Amadora",
+     "away": "GD Estoril Praia",
+     "home_goals": 0,
+     "away_goals": 5,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 19",
+     "date": "2026-01-23",
+     "home": "Casa Pia AC",
+     "away": "AVS",
+     "home_goals": 3,
+     "away_goals": 3,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 19",
+     "date": "2026-01-24",
+     "home": "Moreirense FC",
+     "away": "CD Santa Clara",
+     "home_goals": 1,
+     "away_goals": 0,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 19",
+     "date": "2026-01-24",
+     "home": "FC Arouca",
+     "away": "Sporting Clube de Portugal",
+     "home_goals": 1,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 19",
+     "date": "2026-01-24",
+     "home": "GD Estoril Praia",
+     "away": "Vitória Guimarães",
+     "home_goals": 4,
+     "away_goals": 2,
+     "half_time": [
+      1,
+      2
+     ]
+    },
+    {
+     "round": "Matchday 19",
+     "date": "2026-01-25",
+     "home": "CD Nacional",
+     "away": "Rio Ave FC",
+     "home_goals": 4,
+     "away_goals": 0,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 19",
+     "date": "2026-01-25",
+     "home": "FC Famalicão",
+     "away": "CD Tondela",
+     "home_goals": 3,
+     "away_goals": 0,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 19",
+     "date": "2026-01-25",
+     "home": "Sport Lisboa e Benfica",
+     "away": "CF Estrela da Amadora",
+     "home_goals": 4,
+     "away_goals": 0,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 19",
+     "date": "2026-01-25",
+     "home": "Sporting Clube de Braga",
+     "away": "FC Alverca",
+     "home_goals": 5,
+     "away_goals": 0,
+     "half_time": [
+      4,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 19",
+     "date": "2026-01-26",
+     "home": "FC Porto",
+     "away": "Gil Vicente FC",
+     "home_goals": 3,
+     "away_goals": 0,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 20",
+     "date": "2026-01-30",
+     "home": "Vitória Guimarães",
+     "away": "Moreirense FC",
+     "home_goals": 1,
+     "away_goals": 0,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 20",
+     "date": "2026-01-31",
+     "home": "CD Santa Clara",
+     "away": "GD Estoril Praia",
+     "home_goals": 2,
+     "away_goals": 4,
+     "half_time": [
+      0,
+      2
+     ]
+    },
+    {
+     "round": "Matchday 20",
+     "date": "2026-01-31",
+     "home": "Rio Ave FC",
+     "away": "FC Arouca",
+     "home_goals": 0,
+     "away_goals": 3,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 20",
+     "date": "2026-01-31",
+     "home": "FC Alverca",
+     "away": "CF Estrela da Amadora",
+     "home_goals": 1,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 20",
+     "date": "2026-02-01",
+     "home": "Gil Vicente FC",
+     "away": "FC Famalicão",
+     "home_goals": 5,
+     "away_goals": 0,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 20",
+     "date": "2026-02-01",
+     "home": "Sporting Clube de Portugal",
+     "away": "CD Nacional",
+     "home_goals": 2,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 20",
+     "date": "2026-02-01",
+     "home": "CD Tondela",
+     "away": "Sport Lisboa e Benfica",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 20",
+     "date": "2026-02-02",
+     "home": "AVS",
+     "away": "Sporting Clube de Braga",
+     "home_goals": 0,
+     "away_goals": 4,
+     "half_time": [
+      0,
+      2
+     ]
+    },
+    {
+     "round": "Matchday 20",
+     "date": "2026-02-02",
+     "home": "Casa Pia AC",
+     "away": "FC Porto",
+     "home_goals": 2,
+     "away_goals": 1,
+     "half_time": [
+      2,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 21",
+     "date": "2026-02-07",
+     "home": "Moreirense FC",
+     "away": "Gil Vicente FC",
+     "home_goals": 1,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 21",
+     "date": "2026-02-07",
+     "home": "CF Estrela da Amadora",
+     "away": "CD Santa Clara",
+     "home_goals": 1,
+     "away_goals": 0,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 21",
+     "date": "2026-02-07",
+     "home": "GD Estoril Praia",
+     "away": "CD Tondela",
+     "home_goals": 2,
+     "away_goals": 2,
+     "half_time": [
+      2,
+      2
+     ]
+    },
+    {
+     "round": "Matchday 21",
+     "date": "2026-02-07",
+     "home": "FC Arouca",
+     "away": "Vitória Guimarães",
+     "home_goals": 3,
+     "away_goals": 2,
+     "half_time": [
+      1,
+      2
+     ]
+    },
+    {
+     "round": "Matchday 21",
+     "date": "2026-02-08",
+     "home": "CD Nacional",
+     "away": "Casa Pia AC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 21",
+     "date": "2026-02-08",
+     "home": "Sporting Clube de Braga",
+     "away": "Rio Ave FC",
+     "home_goals": 3,
+     "away_goals": 0,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 21",
+     "date": "2026-02-08",
+     "home": "Sport Lisboa e Benfica",
+     "away": "FC Alverca",
+     "home_goals": 2,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 21",
+     "date": "2026-02-09",
+     "home": "FC Famalicão",
+     "away": "AVS",
+     "home_goals": 3,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 21",
+     "date": "2026-02-09",
+     "home": "FC Porto",
+     "away": "Sporting Clube de Portugal",
+     "home_goals": 1,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 22",
+     "date": "2026-02-13",
+     "home": "CD Santa Clara",
+     "away": "Sport Lisboa e Benfica",
+     "home_goals": 1,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      2
+     ]
+    },
+    {
+     "round": "Matchday 22",
+     "date": "2026-02-13",
+     "home": "CD Tondela",
+     "away": "FC Alverca",
+     "home_goals": 1,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 22",
+     "date": "2026-02-14",
+     "home": "Casa Pia AC",
+     "away": "FC Arouca",
+     "home_goals": 3,
+     "away_goals": 2,
+     "half_time": [
+      3,
+      2
+     ]
+    },
+    {
+     "round": "Matchday 22",
+     "date": "2026-02-14",
+     "home": "Vitória Guimarães",
+     "away": "CF Estrela da Amadora",
+     "home_goals": 2,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 22",
+     "date": "2026-02-14",
+     "home": "Gil Vicente FC",
+     "away": "Sporting Clube de Braga",
+     "home_goals": 2,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 22",
+     "date": "2026-02-15",
+     "home": "CD Nacional",
+     "away": "FC Porto",
+     "home_goals": 0,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 22",
+     "date": "2026-02-15",
+     "home": "AVS",
+     "away": "GD Estoril Praia",
+     "home_goals": 3,
+     "away_goals": 0,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 22",
+     "date": "2026-02-15",
+     "home": "Sporting Clube de Portugal",
+     "away": "FC Famalicão",
+     "home_goals": 1,
+     "away_goals": 0,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 22",
+     "date": "2026-02-16",
+     "home": "Rio Ave FC",
+     "away": "Moreirense FC",
+     "home_goals": 1,
+     "away_goals": 2,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 23",
+     "date": "2026-02-20",
+     "home": "CF Estrela da Amadora",
+     "away": "CD Tondela",
+     "home_goals": 0,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 23",
+     "date": "2026-02-21",
+     "home": "FC Alverca",
+     "away": "CD Santa Clara",
+     "home_goals": 1,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 23",
+     "date": "2026-02-21",
+     "home": "FC Arouca",
+     "away": "CD Nacional",
+     "home_goals": 3,
+     "away_goals": 0,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 23",
+     "date": "2026-02-21",
+     "home": "Sport Lisboa e Benfica",
+     "away": "AVS",
+     "home_goals": 3,
+     "away_goals": 0,
+     "half_time": [
+      3,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 23",
+     "date": "2026-02-21",
+     "home": "Moreirense FC",
+     "away": "Sporting Clube de Portugal",
+     "home_goals": 0,
+     "away_goals": 3,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 23",
+     "date": "2026-02-21",
+     "home": "Sporting Clube de Braga",
+     "away": "Vitória Guimarães",
+     "home_goals": 3,
+     "away_goals": 2,
+     "half_time": [
+      2,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 23",
+     "date": "2026-02-22",
+     "home": "GD Estoril Praia",
+     "away": "Gil Vicente FC",
+     "home_goals": 3,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 23",
+     "date": "2026-02-22",
+     "home": "FC Porto",
+     "away": "Rio Ave FC",
+     "home_goals": 1,
+     "away_goals": 0,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 23",
+     "date": "2026-02-23",
+     "home": "FC Famalicão",
+     "away": "Casa Pia AC",
+     "home_goals": 2,
+     "away_goals": 0,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 24",
+     "date": "2026-02-27",
+     "home": "FC Porto",
+     "away": "FC Arouca",
+     "home_goals": 3,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 24",
+     "date": "2026-02-27",
+     "home": "Sporting Clube de Portugal",
+     "away": "GD Estoril Praia",
+     "home_goals": 3,
+     "away_goals": 0,
+     "half_time": [
+      2,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 24",
+     "date": "2026-02-28",
+     "home": "AVS",
+     "away": "CF Estrela da Amadora",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 24",
+     "date": "2026-02-28",
+     "home": "CD Nacional",
+     "away": "Sporting Clube de Braga",
+     "home_goals": 1,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 24",
+     "date": "2026-02-28",
+     "home": "Vitória Guimarães",
+     "away": "FC Alverca",
+     "home_goals": 1,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 24",
+     "date": "2026-03-01",
+     "home": "CD Tondela",
+     "away": "CD Santa Clara",
+     "home_goals": 2,
+     "away_goals": 2,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 24",
+     "date": "2026-03-01",
+     "home": "Casa Pia AC",
+     "away": "Moreirense FC",
+     "home_goals": 1,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 24",
+     "date": "2026-03-01",
+     "home": "Rio Ave FC",
+     "away": "FC Famalicão",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 24",
+     "date": "2026-03-02",
+     "home": "Gil Vicente FC",
+     "away": "Sport Lisboa e Benfica",
+     "home_goals": 1,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 25",
+     "date": "2026-03-06",
+     "home": "FC Famalicão",
+     "away": "FC Arouca",
+     "home_goals": 1,
+     "away_goals": 0,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 25",
+     "date": "2026-03-07",
+     "home": "FC Alverca",
+     "away": "AVS",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 25",
+     "date": "2026-03-07",
+     "home": "Moreirense FC",
+     "away": "CD Nacional",
+     "home_goals": 1,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 25",
+     "date": "2026-03-07",
+     "home": "Sporting Clube de Braga",
+     "away": "Sporting Clube de Portugal",
+     "home_goals": 2,
+     "away_goals": 2,
+     "half_time": [
+      1,
+      2
+     ]
+    },
+    {
+     "round": "Matchday 25",
+     "date": "2026-03-07",
+     "home": "GD Estoril Praia",
+     "away": "Casa Pia AC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 25",
+     "date": "2026-03-08",
+     "home": "CF Estrela da Amadora",
+     "away": "Gil Vicente FC",
+     "home_goals": 2,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 25",
+     "date": "2026-03-08",
+     "home": "Sport Lisboa e Benfica",
+     "away": "FC Porto",
+     "home_goals": 2,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      2
+     ]
+    },
+    {
+     "round": "Matchday 25",
+     "date": "2026-03-08",
+     "home": "CD Santa Clara",
+     "away": "Vitória Guimarães",
+     "home_goals": 2,
+     "away_goals": 0,
+     "half_time": [
+      2,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 25",
+     "date": "2026-03-09",
+     "home": "CD Tondela",
+     "away": "Rio Ave FC",
+     "home_goals": 0,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 26",
+     "date": "2026-03-14",
+     "home": "Vitória Guimarães",
+     "away": "FC Famalicão",
+     "home_goals": 1,
+     "away_goals": 2,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 26",
+     "date": "2026-03-14",
+     "home": "Gil Vicente FC",
+     "away": "FC Alverca",
+     "home_goals": 2,
+     "away_goals": 2,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 26",
+     "date": "2026-03-14",
+     "home": "FC Arouca",
+     "away": "Sport Lisboa e Benfica",
+     "home_goals": 1,
+     "away_goals": 2,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 26",
+     "date": "2026-03-15",
+     "home": "CD Nacional",
+     "away": "GD Estoril Praia",
+     "home_goals": 0,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 26",
+     "date": "2026-03-15",
+     "home": "AVS",
+     "away": "CD Santa Clara",
+     "home_goals": 0,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 26",
+     "date": "2026-03-15",
+     "home": "Rio Ave FC",
+     "away": "CF Estrela da Amadora",
+     "home_goals": 2,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 26",
+     "date": "2026-03-15",
+     "home": "FC Porto",
+     "away": "Moreirense FC",
+     "home_goals": 3,
+     "away_goals": 0,
+     "half_time": [
+      2,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 27",
+     "date": "2026-03-20",
+     "home": "CF Estrela da Amadora",
+     "away": "Casa Pia AC",
+     "home_goals": 4,
+     "away_goals": 0,
+     "half_time": [
+      3,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 27",
+     "date": "2026-03-21",
+     "home": "Moreirense FC",
+     "away": "FC Arouca",
+     "home_goals": 0,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 27",
+     "date": "2026-03-21",
+     "home": "FC Famalicão",
+     "away": "CD Nacional",
+     "home_goals": 1,
+     "away_goals": 0,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 27",
+     "date": "2026-03-21",
+     "home": "CD Santa Clara",
+     "away": "Gil Vicente FC",
+     "home_goals": 1,
+     "away_goals": 0,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 27",
+     "date": "2026-03-21",
+     "home": "Sport Lisboa e Benfica",
+     "away": "Vitória Guimarães",
+     "home_goals": 3,
+     "away_goals": 0,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 27",
+     "date": "2026-03-21",
+     "home": "CD Tondela",
+     "away": "AVS",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 27",
+     "date": "2026-03-22",
+     "home": "GD Estoril Praia",
+     "away": "Rio Ave FC",
+     "home_goals": 1,
+     "away_goals": 2,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 27",
+     "date": "2026-03-22",
+     "home": "FC Alverca",
+     "away": "Sporting Clube de Portugal",
+     "home_goals": 1,
+     "away_goals": 4,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 27",
+     "date": "2026-03-22",
+     "home": "Sporting Clube de Braga",
+     "away": "FC Porto",
+     "home_goals": 1,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 28",
+     "date": "2026-04-03",
+     "home": "Gil Vicente FC",
+     "away": "AVS",
+     "home_goals": 3,
+     "away_goals": 0,
+     "half_time": [
+      2,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 28",
+     "date": "2026-04-03",
+     "home": "Vitória Guimarães",
+     "away": "CD Tondela",
+     "home_goals": 5,
+     "away_goals": 0,
+     "half_time": [
+      2,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 28",
+     "date": "2026-04-03",
+     "home": "Sporting Clube de Portugal",
+     "away": "CD Santa Clara",
+     "home_goals": 4,
+     "away_goals": 2,
+     "half_time": [
+      3,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 28",
+     "date": "2026-04-04",
+     "home": "CD Nacional",
+     "away": "CF Estrela da Amadora",
+     "home_goals": 2,
+     "away_goals": 0,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 28",
+     "date": "2026-04-04",
+     "home": "Rio Ave FC",
+     "away": "FC Alverca",
+     "home_goals": 1,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      2
+     ]
+    },
+    {
+     "round": "Matchday 28",
+     "date": "2026-04-04",
+     "home": "Moreirense FC",
+     "away": "Sporting Clube de Braga",
+     "home_goals": 0,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 28",
+     "date": "2026-04-04",
+     "home": "FC Porto",
+     "away": "FC Famalicão",
+     "home_goals": 2,
+     "away_goals": 2,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 28",
+     "date": "2026-04-06",
+     "home": "FC Arouca",
+     "away": "GD Estoril Praia",
+     "home_goals": 3,
+     "away_goals": 2,
+     "half_time": [
+      2,
+      2
+     ]
+    },
+    {
+     "round": "Matchday 28",
+     "date": "2026-04-06",
+     "home": "Casa Pia AC",
+     "away": "Sport Lisboa e Benfica",
+     "home_goals": 1,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 29",
+     "date": "2026-04-10",
+     "home": "FC Famalicão",
+     "away": "Moreirense FC",
+     "home_goals": 1,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 29",
+     "date": "2026-04-11",
+     "home": "AVS",
+     "away": "Vitória Guimarães",
+     "home_goals": 1,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 29",
+     "date": "2026-04-11",
+     "home": "CD Santa Clara",
+     "away": "Rio Ave FC",
+     "home_goals": 0,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 29",
+     "date": "2026-04-11",
+     "home": "CF Estrela da Amadora",
+     "away": "Sporting Clube de Portugal",
+     "home_goals": 0,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 29",
+     "date": "2026-04-12",
+     "home": "FC Alverca",
+     "away": "Casa Pia AC",
+     "home_goals": 3,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 29",
+     "date": "2026-04-12",
+     "home": "Sporting Clube de Braga",
+     "away": "FC Arouca",
+     "home_goals": 1,
+     "away_goals": 0,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 29",
+     "date": "2026-04-12",
+     "home": "Sport Lisboa e Benfica",
+     "away": "CD Nacional",
+     "home_goals": 2,
+     "away_goals": 0,
+     "half_time": [
+      2,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 29",
+     "date": "2026-04-12",
+     "home": "GD Estoril Praia",
+     "away": "FC Porto",
+     "home_goals": 1,
+     "away_goals": 3,
+     "half_time": [
+      0,
+      2
+     ]
+    },
+    {
+     "round": "Matchday 29",
+     "date": "2026-04-13",
+     "home": "CD Tondela",
+     "away": "Gil Vicente FC",
+     "home_goals": 2,
+     "away_goals": 2,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 30",
+     "date": "2026-04-17",
+     "home": "Rio Ave FC",
+     "away": "AVS",
+     "home_goals": 2,
+     "away_goals": 2,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 30",
+     "date": "2026-04-18",
+     "home": "CD Nacional",
+     "away": "FC Alverca",
+     "home_goals": 1,
+     "away_goals": 0,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 30",
+     "date": "2026-04-18",
+     "home": "Casa Pia AC",
+     "away": "CD Santa Clara",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 30",
+     "date": "2026-04-18",
+     "home": "Gil Vicente FC",
+     "away": "Vitória Guimarães",
+     "home_goals": 0,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 30",
+     "date": "2026-04-19",
+     "home": "FC Arouca",
+     "away": "CF Estrela da Amadora",
+     "home_goals": 1,
+     "away_goals": 0,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 30",
+     "date": "2026-04-19",
+     "home": "Sporting Clube de Portugal",
+     "away": "Sport Lisboa e Benfica",
+     "home_goals": 1,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 30",
+     "date": "2026-04-19",
+     "home": "FC Porto",
+     "away": "CD Tondela",
+     "home_goals": 2,
+     "away_goals": 0,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 30",
+     "date": "2026-04-19",
+     "home": "Sporting Clube de Braga",
+     "away": "FC Famalicão",
+     "home_goals": 2,
+     "away_goals": 2,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 30",
+     "date": "2026-04-20",
+     "home": "Moreirense FC",
+     "away": "GD Estoril Praia",
+     "home_goals": 1,
+     "away_goals": 0,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 26",
+     "date": "2026-04-23",
+     "home": "Casa Pia AC",
+     "away": "Sporting Clube de Braga",
+     "home_goals": 0,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 31",
+     "date": "2026-04-24",
+     "home": "FC Alverca",
+     "away": "FC Arouca",
+     "home_goals": 2,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 31",
+     "date": "2026-04-25",
+     "home": "CD Tondela",
+     "away": "CD Nacional",
+     "home_goals": 0,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      2
+     ]
+    },
+    {
+     "round": "Matchday 31",
+     "date": "2026-04-25",
+     "home": "Sport Lisboa e Benfica",
+     "away": "Moreirense FC",
+     "home_goals": 4,
+     "away_goals": 1,
+     "half_time": [
+      2,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 31",
+     "date": "2026-04-25",
+     "home": "Vitória Guimarães",
+     "away": "Rio Ave FC",
+     "home_goals": 2,
+     "away_goals": 0,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 31",
+     "date": "2026-04-26",
+     "home": "GD Estoril Praia",
+     "away": "FC Famalicão",
+     "home_goals": 0,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 31",
+     "date": "2026-04-26",
+     "home": "CD Santa Clara",
+     "away": "Sporting Clube de Braga",
+     "home_goals": 2,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 31",
+     "date": "2026-04-26",
+     "home": "CF Estrela da Amadora",
+     "away": "FC Porto",
+     "home_goals": 1,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      2
+     ]
+    },
+    {
+     "round": "Matchday 31",
+     "date": "2026-04-26",
+     "home": "AVS",
+     "away": "Sporting Clube de Portugal",
+     "home_goals": 1,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 31",
+     "date": "2026-04-27",
+     "home": "Gil Vicente FC",
+     "away": "Casa Pia AC",
+     "home_goals": 2,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 26",
+     "date": "2026-04-29",
+     "home": "Sporting Clube de Portugal",
+     "away": "CD Tondela",
+     "home_goals": 2,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 32",
+     "date": "2026-05-02",
+     "home": "CD Nacional",
+     "away": "AVS",
+     "home_goals": 1,
+     "away_goals": 2,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 32",
+     "date": "2026-05-02",
+     "home": "Moreirense FC",
+     "away": "CF Estrela da Amadora",
+     "home_goals": 3,
+     "away_goals": 2,
+     "half_time": [
+      1,
+      2
+     ]
+    },
+    {
+     "round": "Matchday 32",
+     "date": "2026-05-02",
+     "home": "FC Arouca",
+     "away": "CD Santa Clara",
+     "home_goals": 2,
+     "away_goals": 2,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 32",
+     "date": "2026-05-02",
+     "home": "FC Famalicão",
+     "away": "Sport Lisboa e Benfica",
+     "home_goals": 2,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      2
+     ]
+    },
+    {
+     "round": "Matchday 32",
+     "date": "2026-05-02",
+     "home": "FC Porto",
+     "away": "FC Alverca",
+     "home_goals": 1,
+     "away_goals": 0,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 32",
+     "date": "2026-05-03",
+     "home": "Casa Pia AC",
+     "away": "CD Tondela",
+     "home_goals": 0,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 32",
+     "date": "2026-05-03",
+     "home": "Sporting Clube de Braga",
+     "away": "GD Estoril Praia",
+     "home_goals": 1,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 32",
+     "date": "2026-05-03",
+     "home": "Rio Ave FC",
+     "away": "Gil Vicente FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 32",
+     "date": "2026-05-04",
+     "home": "Sporting Clube de Portugal",
+     "away": "Vitória Guimarães",
+     "home_goals": 5,
+     "away_goals": 1,
+     "half_time": [
+      3,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 33",
+     "date": "2026-05-10",
+     "home": "AVS",
+     "away": "FC Porto",
+     "home_goals": 3,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 33",
+     "date": "2026-05-10",
+     "home": "FC Alverca",
+     "away": "GD Estoril Praia",
+     "home_goals": 1,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 33",
+     "date": "2026-05-11",
+     "home": "Vitória Guimarães",
+     "away": "Casa Pia AC",
+     "home_goals": 0,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 33",
+     "date": "2026-05-11",
+     "home": "Gil Vicente FC",
+     "away": "FC Arouca",
+     "home_goals": 1,
+     "away_goals": 3,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 33",
+     "date": "2026-05-11",
+     "home": "CD Tondela",
+     "away": "Moreirense FC",
+     "home_goals": 2,
+     "away_goals": 0,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 33",
+     "date": "2026-05-11",
+     "home": "CF Estrela da Amadora",
+     "away": "FC Famalicão",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 33",
+     "date": "2026-05-11",
+     "home": "Rio Ave FC",
+     "away": "Sporting Clube de Portugal",
+     "home_goals": 1,
+     "away_goals": 4,
+     "half_time": [
+      1,
+      2
+     ]
+    },
+    {
+     "round": "Matchday 33",
+     "date": "2026-05-11",
+     "home": "CD Santa Clara",
+     "away": "CD Nacional",
+     "home_goals": 2,
+     "away_goals": 0,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 33",
+     "date": "2026-05-11",
+     "home": "Sport Lisboa e Benfica",
+     "away": "Sporting Clube de Braga",
+     "home_goals": 2,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 34",
+     "date": "2026-05-16",
+     "home": "Moreirense FC",
+     "away": "AVS",
+     "home_goals": 0,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 34",
+     "date": "2026-05-16",
+     "home": "FC Porto",
+     "away": "CD Santa Clara",
+     "home_goals": 1,
+     "away_goals": 0,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 34",
+     "date": "2026-05-16",
+     "home": "CD Nacional",
+     "away": "Vitória Guimarães",
+     "home_goals": 2,
+     "away_goals": 0,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 34",
+     "date": "2026-05-16",
+     "home": "Casa Pia AC",
+     "away": "Rio Ave FC",
+     "home_goals": 2,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 34",
+     "date": "2026-05-16",
+     "home": "FC Arouca",
+     "away": "CD Tondela",
+     "home_goals": 3,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 34",
+     "date": "2026-05-16",
+     "home": "Sporting Clube de Braga",
+     "away": "CF Estrela da Amadora",
+     "home_goals": 2,
+     "away_goals": 2,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 34",
+     "date": "2026-05-16",
+     "home": "FC Famalicão",
+     "away": "FC Alverca",
+     "home_goals": 1,
+     "away_goals": 0,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 34",
+     "date": "2026-05-16",
+     "home": "Sporting Clube de Portugal",
+     "away": "Gil Vicente FC",
+     "home_goals": 3,
+     "away_goals": 0,
+     "half_time": [
+      2,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 34",
+     "date": "2026-05-16",
+     "home": "GD Estoril Praia",
+     "away": "Sport Lisboa e Benfica",
+     "home_goals": 1,
+     "away_goals": 3,
+     "half_time": [
+      0,
+      3
+     ]
+    }
+   ]
+  },
+  {
+   "season": "2026-27",
+   "name": "Portuguese Primeira Liga 2026/27",
+   "matches_listed": 306,
+   "matches_played": 58,
+   "complete": false,
+   "leader": {
+    "team": "FC Porto",
+    "points": 21,
+    "played": 7
+   },
+   "last_match_date": "2026-09-20",
+   "table": [
+    {
+     "position": 1,
+     "team": "FC Porto",
+     "played": 7,
+     "won": 7,
+     "drawn": 0,
+     "lost": 0,
+     "for": 18,
+     "against": 3,
+     "points": 21,
+     "goal_difference": 15
+    },
+    {
+     "position": 2,
+     "team": "Sport Lisboa e Benfica",
+     "played": 7,
+     "won": 5,
+     "drawn": 1,
+     "lost": 1,
+     "for": 22,
+     "against": 7,
+     "points": 16,
+     "goal_difference": 15
+    },
+    {
+     "position": 3,
+     "team": "Sporting Clube de Portugal",
+     "played": 7,
+     "won": 4,
+     "drawn": 3,
+     "lost": 0,
+     "for": 17,
+     "against": 8,
+     "points": 15,
+     "goal_difference": 9
+    },
+    {
+     "position": 4,
+     "team": "CD Santa Clara",
+     "played": 6,
+     "won": 4,
+     "drawn": 2,
+     "lost": 0,
+     "for": 11,
+     "against": 4,
+     "points": 14,
+     "goal_difference": 7
+    },
+    {
+     "position": 5,
+     "team": "Académico de Viseu FC",
+     "played": 7,
+     "won": 3,
+     "drawn": 2,
+     "lost": 2,
+     "for": 9,
+     "against": 9,
+     "points": 11,
+     "goal_difference": 0
+    },
+    {
+     "position": 6,
+     "team": "FC Arouca",
+     "played": 6,
+     "won": 3,
+     "drawn": 1,
+     "lost": 2,
+     "for": 10,
+     "against": 7,
+     "points": 10,
+     "goal_difference": 3
+    },
+    {
+     "position": 7,
+     "team": "Sporting Clube de Braga",
+     "played": 5,
+     "won": 3,
+     "drawn": 1,
+     "lost": 1,
+     "for": 7,
+     "against": 5,
+     "points": 10,
+     "goal_difference": 2
+    },
+    {
+     "position": 8,
+     "team": "CF Estrela da Amadora",
+     "played": 7,
+     "won": 2,
+     "drawn": 4,
+     "lost": 1,
+     "for": 14,
+     "against": 14,
+     "points": 10,
+     "goal_difference": 0
+    },
+    {
+     "position": 9,
+     "team": "FC Alverca",
+     "played": 7,
+     "won": 2,
+     "drawn": 2,
+     "lost": 3,
+     "for": 9,
+     "against": 11,
+     "points": 8,
+     "goal_difference": -2
+    },
+    {
+     "position": 10,
+     "team": "CS Marítimo",
+     "played": 7,
+     "won": 2,
+     "drawn": 2,
+     "lost": 3,
+     "for": 8,
+     "against": 12,
+     "points": 8,
+     "goal_difference": -4
+    },
+    {
+     "position": 11,
+     "team": "Moreirense FC",
+     "played": 7,
+     "won": 2,
+     "drawn": 2,
+     "lost": 3,
+     "for": 8,
+     "against": 14,
+     "points": 8,
+     "goal_difference": -6
+    },
+    {
+     "position": 12,
+     "team": "Gil Vicente FC",
+     "played": 5,
+     "won": 2,
+     "drawn": 1,
+     "lost": 2,
+     "for": 5,
+     "against": 5,
+     "points": 7,
+     "goal_difference": 0
+    },
+    {
+     "position": 13,
+     "team": "FC Famalicão",
+     "played": 6,
+     "won": 1,
+     "drawn": 3,
+     "lost": 2,
+     "for": 9,
+     "against": 7,
+     "points": 6,
+     "goal_difference": 2
+    },
+    {
+     "position": 14,
+     "team": "Vitória Guimarães",
+     "played": 6,
+     "won": 1,
+     "drawn": 1,
+     "lost": 4,
+     "for": 5,
+     "against": 8,
+     "points": 4,
+     "goal_difference": -3
+    },
+    {
+     "position": 15,
+     "team": "CD Nacional",
+     "played": 7,
+     "won": 1,
+     "drawn": 1,
+     "lost": 5,
+     "for": 7,
+     "against": 15,
+     "points": 4,
+     "goal_difference": -8
+    },
+    {
+     "position": 16,
+     "team": "Rio Ave FC",
+     "played": 7,
+     "won": 1,
+     "drawn": 1,
+     "lost": 5,
+     "for": 5,
+     "against": 15,
+     "points": 4,
+     "goal_difference": -10
+    },
+    {
+     "position": 17,
+     "team": "Casa Pia AC",
+     "played": 6,
+     "won": 1,
+     "drawn": 0,
+     "lost": 5,
+     "for": 3,
+     "against": 16,
+     "points": 3,
+     "goal_difference": -13
+    },
+    {
+     "position": 18,
+     "team": "GD Estoril Praia",
+     "played": 6,
+     "won": 0,
+     "drawn": 1,
+     "lost": 5,
+     "for": 3,
+     "against": 10,
+     "points": 1,
+     "goal_difference": -7
+    }
+   ],
+   "matches": [
+    {
+     "round": "Matchday 1",
+     "date": "2026-08-07",
+     "home": "GD Estoril Praia",
+     "away": "FC Famalicão",
+     "home_goals": 1,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 1",
+     "date": "2026-08-08",
+     "home": "CS Marítimo",
+     "away": "Casa Pia AC",
+     "home_goals": 1,
+     "away_goals": 0,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 1",
+     "date": "2026-08-08",
+     "home": "Vitória Guimarães",
+     "away": "FC Arouca",
+     "home_goals": 0,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 1",
+     "date": "2026-08-08",
+     "home": "CF Estrela da Amadora",
+     "away": "Sporting Clube de Portugal",
+     "home_goals": 2,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 1",
+     "date": "2026-08-09",
+     "home": "FC Porto",
+     "away": "FC Alverca",
+     "home_goals": 2,
+     "away_goals": 0,
+     "half_time": [
+      2,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 1",
+     "date": "2026-08-09",
+     "home": "Moreirense FC",
+     "away": "Sporting Clube de Braga",
+     "home_goals": 2,
+     "away_goals": 2,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 1",
+     "date": "2026-08-09",
+     "home": "Gil Vicente FC",
+     "away": "Rio Ave FC",
+     "home_goals": 1,
+     "away_goals": 0,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 1",
+     "date": "2026-08-09",
+     "home": "Sport Lisboa e Benfica",
+     "away": "Académico de Viseu FC",
+     "home_goals": 2,
+     "away_goals": 2,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 1",
+     "date": "2026-08-10",
+     "home": "CD Santa Clara",
+     "away": "CD Nacional",
+     "home_goals": 2,
+     "away_goals": 2,
+     "half_time": [
+      2,
+      2
+     ]
+    },
+    {
+     "round": "Matchday 2",
+     "date": "2026-08-14",
+     "home": "Sporting Clube de Portugal",
+     "away": "Vitória Guimarães",
+     "home_goals": 3,
+     "away_goals": 2,
+     "half_time": [
+      3,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 2",
+     "date": "2026-08-15",
+     "home": "FC Alverca",
+     "away": "CF Estrela da Amadora",
+     "home_goals": 2,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 2",
+     "date": "2026-08-15",
+     "home": "Académico de Viseu FC",
+     "away": "CD Santa Clara",
+     "home_goals": 0,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 2",
+     "date": "2026-08-15",
+     "home": "Rio Ave FC",
+     "away": "FC Porto",
+     "home_goals": 0,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 2",
+     "date": "2026-08-16",
+     "home": "Sporting Clube de Braga",
+     "away": "Gil Vicente FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 2",
+     "date": "2026-08-16",
+     "home": "CD Nacional",
+     "away": "GD Estoril Praia",
+     "home_goals": 2,
+     "away_goals": 0,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 2",
+     "date": "2026-08-16",
+     "home": "FC Arouca",
+     "away": "Moreirense FC",
+     "home_goals": 4,
+     "away_goals": 0,
+     "half_time": [
+      3,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 2",
+     "date": "2026-08-16",
+     "home": "FC Famalicão",
+     "away": "CS Marítimo",
+     "home_goals": 1,
+     "away_goals": 2,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 2",
+     "date": "2026-08-17",
+     "home": "Casa Pia AC",
+     "away": "Sport Lisboa e Benfica",
+     "home_goals": 0,
+     "away_goals": 7,
+     "half_time": [
+      0,
+      2
+     ]
+    },
+    {
+     "round": "Matchday 3",
+     "date": "2026-08-22",
+     "home": "CS Marítimo",
+     "away": "Académico de Viseu FC",
+     "home_goals": 2,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      2
+     ]
+    },
+    {
+     "round": "Matchday 3",
+     "date": "2026-08-22",
+     "home": "GD Estoril Praia",
+     "away": "Rio Ave FC",
+     "home_goals": 0,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 3",
+     "date": "2026-08-22",
+     "home": "Sporting Clube de Portugal",
+     "away": "FC Alverca",
+     "home_goals": 3,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 3",
+     "date": "2026-08-23",
+     "home": "Vitória Guimarães",
+     "away": "CD Nacional",
+     "home_goals": 1,
+     "away_goals": 0,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 3",
+     "date": "2026-08-23",
+     "home": "CD Santa Clara",
+     "away": "FC Famalicão",
+     "home_goals": 1,
+     "away_goals": 0,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 3",
+     "date": "2026-08-23",
+     "home": "FC Porto",
+     "away": "FC Arouca",
+     "home_goals": 2,
+     "away_goals": 0,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 3",
+     "date": "2026-08-24",
+     "home": "Gil Vicente FC",
+     "away": "Casa Pia AC",
+     "home_goals": 2,
+     "away_goals": 0,
+     "half_time": [
+      2,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 4",
+     "date": "2026-08-28",
+     "home": "Rio Ave FC",
+     "away": "Sporting Clube de Portugal",
+     "home_goals": 0,
+     "away_goals": 4,
+     "half_time": [
+      0,
+      4
+     ]
+    },
+    {
+     "round": "Matchday 4",
+     "date": "2026-08-29",
+     "home": "FC Alverca",
+     "away": "CD Santa Clara",
+     "home_goals": 1,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 4",
+     "date": "2026-08-29",
+     "home": "FC Arouca",
+     "away": "CS Marítimo",
+     "home_goals": 2,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 4",
+     "date": "2026-08-29",
+     "home": "Académico de Viseu FC",
+     "away": "FC Porto",
+     "home_goals": 0,
+     "away_goals": 3,
+     "half_time": [
+      0,
+      3
+     ]
+    },
+    {
+     "round": "Matchday 4",
+     "date": "2026-08-30",
+     "home": "CD Nacional",
+     "away": "CF Estrela da Amadora",
+     "home_goals": 2,
+     "away_goals": 3,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 4",
+     "date": "2026-08-30",
+     "home": "Casa Pia AC",
+     "away": "Moreirense FC",
+     "home_goals": 0,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 4",
+     "date": "2026-08-30",
+     "home": "FC Famalicão",
+     "away": "Gil Vicente FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 4",
+     "date": "2026-08-31",
+     "home": "Sport Lisboa e Benfica",
+     "away": "GD Estoril Praia",
+     "home_goals": 2,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 4",
+     "date": "2026-08-31",
+     "home": "Sporting Clube de Braga",
+     "away": "Vitória Guimarães",
+     "home_goals": 1,
+     "away_goals": 0,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 5",
+     "date": "2026-09-04",
+     "home": "FC Porto",
+     "away": "Moreirense FC",
+     "home_goals": 2,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 5",
+     "date": "2026-09-05",
+     "home": "CF Estrela da Amadora",
+     "away": "FC Famalicão",
+     "home_goals": 2,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 5",
+     "date": "2026-09-05",
+     "home": "FC Alverca",
+     "away": "Sporting Clube de Braga",
+     "home_goals": 1,
+     "away_goals": 2,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 5",
+     "date": "2026-09-05",
+     "home": "CS Marítimo",
+     "away": "Sport Lisboa e Benfica",
+     "home_goals": 0,
+     "away_goals": 3,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 5",
+     "date": "2026-09-05",
+     "home": "Sporting Clube de Portugal",
+     "away": "CD Nacional",
+     "home_goals": 2,
+     "away_goals": 0,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 5",
+     "date": "2026-09-06",
+     "home": "CD Santa Clara",
+     "away": "Rio Ave FC",
+     "home_goals": 4,
+     "away_goals": 0,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 5",
+     "date": "2026-09-06",
+     "home": "Vitória Guimarães",
+     "away": "Casa Pia AC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 5",
+     "date": "2026-09-06",
+     "home": "Gil Vicente FC",
+     "away": "Académico de Viseu FC",
+     "home_goals": 0,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 5",
+     "date": "2026-09-07",
+     "home": "GD Estoril Praia",
+     "away": "FC Arouca",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 3",
+     "date": "2026-09-09",
+     "home": "Moreirense FC",
+     "away": "Sport Lisboa e Benfica",
+     "home_goals": 0,
+     "away_goals": 4,
+     "half_time": [
+      0,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 3",
+     "date": "2026-09-10",
+     "home": "CF Estrela da Amadora",
+     "away": "Sporting Clube de Braga",
+     "home_goals": 2,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 6",
+     "date": "2026-09-12",
+     "home": "CD Nacional",
+     "away": "FC Alverca",
+     "home_goals": 1,
+     "away_goals": 3,
+     "half_time": [
+      0,
+      3
+     ]
+    },
+    {
+     "round": "Matchday 6",
+     "date": "2026-09-12",
+     "home": "Casa Pia AC",
+     "away": "FC Porto",
+     "home_goals": 1,
+     "away_goals": 4,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 6",
+     "date": "2026-09-12",
+     "home": "Académico de Viseu FC",
+     "away": "Vitória Guimarães",
+     "home_goals": 2,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 6",
+     "date": "2026-09-13",
+     "home": "Sport Lisboa e Benfica",
+     "away": "Gil Vicente FC",
+     "home_goals": 3,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 6",
+     "date": "2026-09-13",
+     "home": "FC Arouca",
+     "away": "CD Santa Clara",
+     "home_goals": 1,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      2
+     ]
+    },
+    {
+     "round": "Matchday 6",
+     "date": "2026-09-13",
+     "home": "FC Famalicão",
+     "away": "Sporting Clube de Portugal",
+     "home_goals": 1,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 6",
+     "date": "2026-09-14",
+     "home": "Rio Ave FC",
+     "away": "CF Estrela da Amadora",
+     "home_goals": 3,
+     "away_goals": 3,
+     "half_time": [
+      1,
+      1
+     ]
+    },
+    {
+     "round": "Matchday 6",
+     "date": "2026-09-14",
+     "home": "Moreirense FC",
+     "away": "CS Marítimo",
+     "home_goals": 3,
+     "away_goals": 1,
+     "half_time": [
+      2,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 6",
+     "date": "2026-09-14",
+     "home": "Sporting Clube de Braga",
+     "away": "GD Estoril Praia",
+     "home_goals": 1,
+     "away_goals": 0,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 7",
+     "date": "2026-09-19",
+     "home": "CD Nacional",
+     "away": "FC Famalicão",
+     "home_goals": 0,
+     "away_goals": 4,
+     "half_time": [
+      0,
+      3
+     ]
+    },
+    {
+     "round": "Matchday 7",
+     "date": "2026-09-19",
+     "home": "Gil Vicente FC",
+     "away": "CS Marítimo",
+     "home_goals": 1,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 7",
+     "date": "2026-09-19",
+     "home": "FC Alverca",
+     "away": "Rio Ave FC",
+     "home_goals": 1,
+     "away_goals": 0,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 7",
+     "date": "2026-09-19",
+     "home": "Sporting Clube de Portugal",
+     "away": "FC Arouca",
+     "home_goals": 2,
+     "away_goals": 2,
+     "half_time": [
+      2,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 7",
+     "date": "2026-09-20",
+     "home": "Vitória Guimarães",
+     "away": "Moreirense FC",
+     "home_goals": 1,
+     "away_goals": 1,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 7",
+     "date": "2026-09-20",
+     "home": "CF Estrela da Amadora",
+     "away": "Académico de Viseu FC",
+     "home_goals": 0,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      2
+     ]
+    },
+    {
+     "round": "Matchday 7",
+     "date": "2026-09-20",
+     "home": "CD Santa Clara",
+     "away": "Sporting Clube de Braga",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 7",
+     "date": "2026-09-20",
+     "home": "GD Estoril Praia",
+     "away": "Casa Pia AC",
+     "home_goals": 1,
+     "away_goals": 2,
+     "half_time": [
+      0,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 7",
+     "date": "2026-09-20",
+     "home": "FC Porto",
+     "away": "Sport Lisboa e Benfica",
+     "home_goals": 3,
+     "away_goals": 1,
+     "half_time": [
+      1,
+      0
+     ]
+    },
+    {
+     "round": "Matchday 8",
+     "date": "2026-10-09",
+     "home": "Moreirense FC",
+     "away": "Gil Vicente FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 8",
+     "date": "2026-10-09",
+     "home": "Sporting Clube de Braga",
+     "away": "Sporting Clube de Portugal",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 8",
+     "date": "2026-10-10",
+     "home": "Casa Pia AC",
+     "away": "CD Santa Clara",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 8",
+     "date": "2026-10-10",
+     "home": "CS Marítimo",
+     "away": "FC Porto",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 8",
+     "date": "2026-10-10",
+     "home": "Académico de Viseu FC",
+     "away": "GD Estoril Praia",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 8",
+     "date": "2026-10-11",
+     "home": "Rio Ave FC",
+     "away": "CD Nacional",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 8",
+     "date": "2026-10-11",
+     "home": "Sport Lisboa e Benfica",
+     "away": "Vitória Guimarães",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 8",
+     "date": "2026-10-11",
+     "home": "FC Arouca",
+     "away": "CF Estrela da Amadora",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 8",
+     "date": "2026-10-12",
+     "home": "FC Famalicão",
+     "away": "FC Alverca",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 9",
+     "date": "2026-10-23",
+     "home": "Vitória Guimarães",
+     "away": "CS Marítimo",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 9",
+     "date": "2026-10-24",
+     "home": "CF Estrela da Amadora",
+     "away": "Casa Pia AC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 9",
+     "date": "2026-10-24",
+     "home": "FC Alverca",
+     "away": "FC Arouca",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 9",
+     "date": "2026-10-24",
+     "home": "Gil Vicente FC",
+     "away": "FC Porto",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 9",
+     "date": "2026-10-25",
+     "home": "GD Estoril Praia",
+     "away": "Moreirense FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 9",
+     "date": "2026-10-25",
+     "home": "Rio Ave FC",
+     "away": "FC Famalicão",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 9",
+     "date": "2026-10-25",
+     "home": "CD Nacional",
+     "away": "Sporting Clube de Braga",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 9",
+     "date": "2026-10-25",
+     "home": "Sporting Clube de Portugal",
+     "away": "Académico de Viseu FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 9",
+     "date": "2026-10-26",
+     "home": "CD Santa Clara",
+     "away": "Sport Lisboa e Benfica",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 10",
+     "date": "2026-10-30",
+     "home": "Casa Pia AC",
+     "away": "Sporting Clube de Portugal",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 10",
+     "date": "2026-10-31",
+     "home": "Moreirense FC",
+     "away": "CF Estrela da Amadora",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 10",
+     "date": "2026-10-31",
+     "home": "FC Porto",
+     "away": "GD Estoril Praia",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 10",
+     "date": "2026-11-01",
+     "home": "FC Arouca",
+     "away": "CD Nacional",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 10",
+     "date": "2026-11-01",
+     "home": "CS Marítimo",
+     "away": "CD Santa Clara",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 10",
+     "date": "2026-11-01",
+     "home": "Académico de Viseu FC",
+     "away": "Rio Ave FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 10",
+     "date": "2026-11-01",
+     "home": "Sporting Clube de Braga",
+     "away": "FC Famalicão",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 10",
+     "date": "2026-11-02",
+     "home": "Sport Lisboa e Benfica",
+     "away": "FC Alverca",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 10",
+     "date": "2026-11-02",
+     "home": "Gil Vicente FC",
+     "away": "Vitória Guimarães",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 11",
+     "date": "2026-11-06",
+     "home": "FC Famalicão",
+     "away": "FC Arouca",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 11",
+     "date": "2026-11-07",
+     "home": "CD Nacional",
+     "away": "Académico de Viseu FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 11",
+     "date": "2026-11-07",
+     "home": "FC Alverca",
+     "away": "Casa Pia AC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 11",
+     "date": "2026-11-07",
+     "home": "Sporting Clube de Portugal",
+     "away": "Moreirense FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 11",
+     "date": "2026-11-08",
+     "home": "GD Estoril Praia",
+     "away": "CS Marítimo",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 11",
+     "date": "2026-11-08",
+     "home": "CD Santa Clara",
+     "away": "Gil Vicente FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 11",
+     "date": "2026-11-08",
+     "home": "Vitória Guimarães",
+     "away": "FC Porto",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 11",
+     "date": "2026-11-08",
+     "home": "Rio Ave FC",
+     "away": "Sporting Clube de Braga",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 11",
+     "date": "2026-11-08",
+     "home": "CF Estrela da Amadora",
+     "away": "Sport Lisboa e Benfica",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 12",
+     "date": "2026-11-27",
+     "home": "CS Marítimo",
+     "away": "CD Nacional",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 12",
+     "date": "2026-11-28",
+     "home": "Moreirense FC",
+     "away": "CD Santa Clara",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 12",
+     "date": "2026-11-28",
+     "home": "FC Arouca",
+     "away": "Rio Ave FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 12",
+     "date": "2026-11-28",
+     "home": "Académico de Viseu FC",
+     "away": "FC Alverca",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 12",
+     "date": "2026-11-28",
+     "home": "Vitória Guimarães",
+     "away": "CF Estrela da Amadora",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 12",
+     "date": "2026-11-29",
+     "home": "Gil Vicente FC",
+     "away": "GD Estoril Praia",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 12",
+     "date": "2026-11-29",
+     "home": "FC Porto",
+     "away": "Sporting Clube de Portugal",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 12",
+     "date": "2026-11-30",
+     "home": "Casa Pia AC",
+     "away": "Sporting Clube de Braga",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 12",
+     "date": "2026-11-30",
+     "home": "Sport Lisboa e Benfica",
+     "away": "FC Famalicão",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 13",
+     "date": "2026-12-06",
+     "home": "Sporting Clube de Portugal",
+     "away": "CS Marítimo",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 13",
+     "date": "2026-12-06",
+     "home": "CF Estrela da Amadora",
+     "away": "Gil Vicente FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 13",
+     "date": "2026-12-06",
+     "home": "FC Alverca",
+     "away": "Moreirense FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 13",
+     "date": "2026-12-06",
+     "home": "CD Santa Clara",
+     "away": "FC Porto",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 13",
+     "date": "2026-12-06",
+     "home": "CD Nacional",
+     "away": "Sport Lisboa e Benfica",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 13",
+     "date": "2026-12-06",
+     "home": "GD Estoril Praia",
+     "away": "Vitória Guimarães",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 13",
+     "date": "2026-12-06",
+     "home": "Rio Ave FC",
+     "away": "Casa Pia AC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 13",
+     "date": "2026-12-06",
+     "home": "Sporting Clube de Braga",
+     "away": "FC Arouca",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 13",
+     "date": "2026-12-06",
+     "home": "FC Famalicão",
+     "away": "Académico de Viseu FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 14",
+     "date": "2026-12-13",
+     "home": "CS Marítimo",
+     "away": "Rio Ave FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 14",
+     "date": "2026-12-13",
+     "home": "Académico de Viseu FC",
+     "away": "FC Arouca",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 14",
+     "date": "2026-12-13",
+     "home": "Gil Vicente FC",
+     "away": "Sporting Clube de Portugal",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 14",
+     "date": "2026-12-13",
+     "home": "Casa Pia AC",
+     "away": "CD Nacional",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 14",
+     "date": "2026-12-13",
+     "home": "Vitória Guimarães",
+     "away": "FC Alverca",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 14",
+     "date": "2026-12-13",
+     "home": "Moreirense FC",
+     "away": "FC Famalicão",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 14",
+     "date": "2026-12-13",
+     "home": "GD Estoril Praia",
+     "away": "CD Santa Clara",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 14",
+     "date": "2026-12-13",
+     "home": "Sport Lisboa e Benfica",
+     "away": "Sporting Clube de Braga",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 14",
+     "date": "2026-12-13",
+     "home": "FC Porto",
+     "away": "CF Estrela da Amadora",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 15",
+     "date": "2026-12-20",
+     "home": "Rio Ave FC",
+     "away": "Sport Lisboa e Benfica",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 15",
+     "date": "2026-12-20",
+     "home": "Sporting Clube de Braga",
+     "away": "Académico de Viseu FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 15",
+     "date": "2026-12-20",
+     "home": "Sporting Clube de Portugal",
+     "away": "GD Estoril Praia",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 15",
+     "date": "2026-12-20",
+     "home": "CF Estrela da Amadora",
+     "away": "CS Marítimo",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 15",
+     "date": "2026-12-20",
+     "home": "FC Famalicão",
+     "away": "FC Porto",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 15",
+     "date": "2026-12-20",
+     "home": "FC Alverca",
+     "away": "Gil Vicente FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 15",
+     "date": "2026-12-20",
+     "home": "CD Santa Clara",
+     "away": "Vitória Guimarães",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 15",
+     "date": "2026-12-20",
+     "home": "CD Nacional",
+     "away": "Moreirense FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 15",
+     "date": "2026-12-20",
+     "home": "FC Arouca",
+     "away": "Casa Pia AC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 16",
+     "date": "2026-12-27",
+     "home": "Vitória Guimarães",
+     "away": "Rio Ave FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 16",
+     "date": "2026-12-27",
+     "home": "Casa Pia AC",
+     "away": "FC Famalicão",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 16",
+     "date": "2026-12-27",
+     "home": "FC Porto",
+     "away": "CD Nacional",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 16",
+     "date": "2026-12-27",
+     "home": "CD Santa Clara",
+     "away": "CF Estrela da Amadora",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 16",
+     "date": "2026-12-27",
+     "home": "Moreirense FC",
+     "away": "Académico de Viseu FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 16",
+     "date": "2026-12-27",
+     "home": "Sport Lisboa e Benfica",
+     "away": "Sporting Clube de Portugal",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 16",
+     "date": "2026-12-27",
+     "home": "Gil Vicente FC",
+     "away": "FC Arouca",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 16",
+     "date": "2026-12-27",
+     "home": "CS Marítimo",
+     "away": "Sporting Clube de Braga",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 16",
+     "date": "2026-12-27",
+     "home": "GD Estoril Praia",
+     "away": "FC Alverca",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 17",
+     "date": "2027-01-10",
+     "home": "Sporting Clube de Braga",
+     "away": "FC Porto",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 17",
+     "date": "2027-01-10",
+     "home": "CF Estrela da Amadora",
+     "away": "GD Estoril Praia",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 17",
+     "date": "2027-01-10",
+     "home": "FC Famalicão",
+     "away": "Vitória Guimarães",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 17",
+     "date": "2027-01-10",
+     "home": "CD Nacional",
+     "away": "Gil Vicente FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 17",
+     "date": "2027-01-10",
+     "home": "Rio Ave FC",
+     "away": "Moreirense FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 17",
+     "date": "2027-01-10",
+     "home": "FC Arouca",
+     "away": "Sport Lisboa e Benfica",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 17",
+     "date": "2027-01-10",
+     "home": "FC Alverca",
+     "away": "CS Marítimo",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 17",
+     "date": "2027-01-10",
+     "home": "Académico de Viseu FC",
+     "away": "Casa Pia AC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 17",
+     "date": "2027-01-10",
+     "home": "Sporting Clube de Portugal",
+     "away": "CD Santa Clara",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 18",
+     "date": "2027-01-17",
+     "home": "FC Famalicão",
+     "away": "GD Estoril Praia",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 18",
+     "date": "2027-01-17",
+     "home": "Sporting Clube de Portugal",
+     "away": "CF Estrela da Amadora",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 18",
+     "date": "2027-01-17",
+     "home": "Sporting Clube de Braga",
+     "away": "Moreirense FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 18",
+     "date": "2027-01-17",
+     "home": "Rio Ave FC",
+     "away": "Gil Vicente FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 18",
+     "date": "2027-01-17",
+     "home": "Casa Pia AC",
+     "away": "CS Marítimo",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 18",
+     "date": "2027-01-17",
+     "home": "CD Nacional",
+     "away": "CD Santa Clara",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 18",
+     "date": "2027-01-17",
+     "home": "FC Alverca",
+     "away": "FC Porto",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 18",
+     "date": "2027-01-17",
+     "home": "Académico de Viseu FC",
+     "away": "Sport Lisboa e Benfica",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 18",
+     "date": "2027-01-17",
+     "home": "FC Arouca",
+     "away": "Vitória Guimarães",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 19",
+     "date": "2027-01-24",
+     "home": "CF Estrela da Amadora",
+     "away": "FC Alverca",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 19",
+     "date": "2027-01-24",
+     "home": "Moreirense FC",
+     "away": "FC Arouca",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 19",
+     "date": "2027-01-24",
+     "home": "GD Estoril Praia",
+     "away": "CD Nacional",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 19",
+     "date": "2027-01-24",
+     "home": "FC Porto",
+     "away": "Rio Ave FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 19",
+     "date": "2027-01-24",
+     "home": "Sport Lisboa e Benfica",
+     "away": "Casa Pia AC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 19",
+     "date": "2027-01-24",
+     "home": "CD Santa Clara",
+     "away": "Académico de Viseu FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 19",
+     "date": "2027-01-24",
+     "home": "CS Marítimo",
+     "away": "FC Famalicão",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 19",
+     "date": "2027-01-24",
+     "home": "Gil Vicente FC",
+     "away": "Sporting Clube de Braga",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 19",
+     "date": "2027-01-24",
+     "home": "Vitória Guimarães",
+     "away": "Sporting Clube de Portugal",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 20",
+     "date": "2027-01-31",
+     "home": "Casa Pia AC",
+     "away": "Gil Vicente FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 20",
+     "date": "2027-01-31",
+     "home": "CD Nacional",
+     "away": "Vitória Guimarães",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 20",
+     "date": "2027-01-31",
+     "home": "Sport Lisboa e Benfica",
+     "away": "Moreirense FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 20",
+     "date": "2027-01-31",
+     "home": "Sporting Clube de Braga",
+     "away": "CF Estrela da Amadora",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 20",
+     "date": "2027-01-31",
+     "home": "FC Arouca",
+     "away": "FC Porto",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 20",
+     "date": "2027-01-31",
+     "home": "FC Famalicão",
+     "away": "CD Santa Clara",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 20",
+     "date": "2027-01-31",
+     "home": "Académico de Viseu FC",
+     "away": "CS Marítimo",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 20",
+     "date": "2027-01-31",
+     "home": "Rio Ave FC",
+     "away": "GD Estoril Praia",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 20",
+     "date": "2027-01-31",
+     "home": "FC Alverca",
+     "away": "Sporting Clube de Portugal",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 21",
+     "date": "2027-02-07",
+     "home": "CS Marítimo",
+     "away": "FC Arouca",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 21",
+     "date": "2027-02-07",
+     "home": "CD Santa Clara",
+     "away": "FC Alverca",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 21",
+     "date": "2027-02-07",
+     "home": "GD Estoril Praia",
+     "away": "Sport Lisboa e Benfica",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 21",
+     "date": "2027-02-07",
+     "home": "Sporting Clube de Portugal",
+     "away": "Rio Ave FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 21",
+     "date": "2027-02-07",
+     "home": "FC Porto",
+     "away": "Académico de Viseu FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 21",
+     "date": "2027-02-07",
+     "home": "CF Estrela da Amadora",
+     "away": "CD Nacional",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 21",
+     "date": "2027-02-07",
+     "home": "Vitória Guimarães",
+     "away": "Sporting Clube de Braga",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 21",
+     "date": "2027-02-07",
+     "home": "Gil Vicente FC",
+     "away": "FC Famalicão",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 21",
+     "date": "2027-02-07",
+     "home": "Moreirense FC",
+     "away": "Casa Pia AC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 22",
+     "date": "2027-02-14",
+     "home": "FC Arouca",
+     "away": "GD Estoril Praia",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 22",
+     "date": "2027-02-14",
+     "home": "CD Nacional",
+     "away": "Sporting Clube de Portugal",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 22",
+     "date": "2027-02-14",
+     "home": "Moreirense FC",
+     "away": "FC Porto",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 22",
+     "date": "2027-02-14",
+     "home": "Sporting Clube de Braga",
+     "away": "FC Alverca",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 22",
+     "date": "2027-02-14",
+     "home": "Académico de Viseu FC",
+     "away": "Gil Vicente FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 22",
+     "date": "2027-02-14",
+     "home": "Sport Lisboa e Benfica",
+     "away": "CS Marítimo",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 22",
+     "date": "2027-02-14",
+     "home": "Casa Pia AC",
+     "away": "Vitória Guimarães",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 22",
+     "date": "2027-02-14",
+     "home": "FC Famalicão",
+     "away": "CF Estrela da Amadora",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 22",
+     "date": "2027-02-14",
+     "home": "Rio Ave FC",
+     "away": "CD Santa Clara",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 23",
+     "date": "2027-02-21",
+     "home": "Vitória Guimarães",
+     "away": "Académico de Viseu FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 23",
+     "date": "2027-02-21",
+     "home": "CS Marítimo",
+     "away": "Moreirense FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 23",
+     "date": "2027-02-21",
+     "home": "GD Estoril Praia",
+     "away": "Sporting Clube de Braga",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 23",
+     "date": "2027-02-21",
+     "home": "Gil Vicente FC",
+     "away": "Sport Lisboa e Benfica",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 23",
+     "date": "2027-02-21",
+     "home": "FC Porto",
+     "away": "Casa Pia AC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 23",
+     "date": "2027-02-21",
+     "home": "Sporting Clube de Portugal",
+     "away": "FC Famalicão",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 23",
+     "date": "2027-02-21",
+     "home": "CD Santa Clara",
+     "away": "FC Arouca",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 23",
+     "date": "2027-02-21",
+     "home": "CF Estrela da Amadora",
+     "away": "Rio Ave FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 23",
+     "date": "2027-02-21",
+     "home": "FC Alverca",
+     "away": "CD Nacional",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 24",
+     "date": "2027-02-28",
+     "home": "Rio Ave FC",
+     "away": "FC Alverca",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 24",
+     "date": "2027-02-28",
+     "home": "CS Marítimo",
+     "away": "Gil Vicente FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 24",
+     "date": "2027-02-28",
+     "home": "Casa Pia AC",
+     "away": "GD Estoril Praia",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 24",
+     "date": "2027-02-28",
+     "home": "Moreirense FC",
+     "away": "Vitória Guimarães",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 24",
+     "date": "2027-02-28",
+     "home": "Sport Lisboa e Benfica",
+     "away": "FC Porto",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 24",
+     "date": "2027-02-28",
+     "home": "FC Famalicão",
+     "away": "CD Nacional",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 24",
+     "date": "2027-02-28",
+     "home": "Sporting Clube de Braga",
+     "away": "CD Santa Clara",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 24",
+     "date": "2027-02-28",
+     "home": "FC Arouca",
+     "away": "Sporting Clube de Portugal",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 24",
+     "date": "2027-02-28",
+     "home": "Académico de Viseu FC",
+     "away": "CF Estrela da Amadora",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 25",
+     "date": "2027-03-07",
+     "home": "Gil Vicente FC",
+     "away": "Moreirense FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 25",
+     "date": "2027-03-07",
+     "home": "FC Porto",
+     "away": "CS Marítimo",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 25",
+     "date": "2027-03-07",
+     "home": "FC Alverca",
+     "away": "FC Famalicão",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 25",
+     "date": "2027-03-07",
+     "home": "CD Santa Clara",
+     "away": "Casa Pia AC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 25",
+     "date": "2027-03-07",
+     "home": "Sporting Clube de Portugal",
+     "away": "Sporting Clube de Braga",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 25",
+     "date": "2027-03-07",
+     "home": "CF Estrela da Amadora",
+     "away": "FC Arouca",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 25",
+     "date": "2027-03-07",
+     "home": "Vitória Guimarães",
+     "away": "Sport Lisboa e Benfica",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 25",
+     "date": "2027-03-07",
+     "home": "CD Nacional",
+     "away": "Rio Ave FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 25",
+     "date": "2027-03-07",
+     "home": "GD Estoril Praia",
+     "away": "Académico de Viseu FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 26",
+     "date": "2027-03-14",
+     "home": "CS Marítimo",
+     "away": "Vitória Guimarães",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 26",
+     "date": "2027-03-14",
+     "home": "Sport Lisboa e Benfica",
+     "away": "CD Santa Clara",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 26",
+     "date": "2027-03-14",
+     "home": "FC Arouca",
+     "away": "FC Alverca",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 26",
+     "date": "2027-03-14",
+     "home": "Académico de Viseu FC",
+     "away": "Sporting Clube de Portugal",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 26",
+     "date": "2027-03-14",
+     "home": "FC Porto",
+     "away": "Gil Vicente FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 26",
+     "date": "2027-03-14",
+     "home": "Casa Pia AC",
+     "away": "CF Estrela da Amadora",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 26",
+     "date": "2027-03-14",
+     "home": "Sporting Clube de Braga",
+     "away": "CD Nacional",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 26",
+     "date": "2027-03-14",
+     "home": "FC Famalicão",
+     "away": "Rio Ave FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 26",
+     "date": "2027-03-14",
+     "home": "Moreirense FC",
+     "away": "GD Estoril Praia",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 27",
+     "date": "2027-03-21",
+     "home": "CD Nacional",
+     "away": "FC Arouca",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 27",
+     "date": "2027-03-21",
+     "home": "Vitória Guimarães",
+     "away": "Gil Vicente FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 27",
+     "date": "2027-03-21",
+     "home": "CF Estrela da Amadora",
+     "away": "Moreirense FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 27",
+     "date": "2027-03-21",
+     "home": "FC Alverca",
+     "away": "Sport Lisboa e Benfica",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 27",
+     "date": "2027-03-21",
+     "home": "GD Estoril Praia",
+     "away": "FC Porto",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 27",
+     "date": "2027-03-21",
+     "home": "CD Santa Clara",
+     "away": "CS Marítimo",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 27",
+     "date": "2027-03-21",
+     "home": "Sporting Clube de Portugal",
+     "away": "Casa Pia AC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 27",
+     "date": "2027-03-21",
+     "home": "Rio Ave FC",
+     "away": "Académico de Viseu FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 27",
+     "date": "2027-03-21",
+     "home": "FC Famalicão",
+     "away": "Sporting Clube de Braga",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 28",
+     "date": "2027-04-04",
+     "home": "FC Arouca",
+     "away": "FC Famalicão",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 28",
+     "date": "2027-04-04",
+     "home": "Gil Vicente FC",
+     "away": "CD Santa Clara",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 28",
+     "date": "2027-04-04",
+     "home": "Casa Pia AC",
+     "away": "FC Alverca",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 28",
+     "date": "2027-04-04",
+     "home": "Moreirense FC",
+     "away": "Sporting Clube de Portugal",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 28",
+     "date": "2027-04-04",
+     "home": "Académico de Viseu FC",
+     "away": "CD Nacional",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 28",
+     "date": "2027-04-04",
+     "home": "Sporting Clube de Braga",
+     "away": "Rio Ave FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 28",
+     "date": "2027-04-04",
+     "home": "CS Marítimo",
+     "away": "GD Estoril Praia",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 28",
+     "date": "2027-04-04",
+     "home": "FC Porto",
+     "away": "Vitória Guimarães",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 28",
+     "date": "2027-04-04",
+     "home": "Sport Lisboa e Benfica",
+     "away": "CF Estrela da Amadora",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 29",
+     "date": "2027-04-11",
+     "home": "Sporting Clube de Portugal",
+     "away": "FC Porto",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 29",
+     "date": "2027-04-11",
+     "home": "FC Famalicão",
+     "away": "Sport Lisboa e Benfica",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 29",
+     "date": "2027-04-11",
+     "home": "CD Nacional",
+     "away": "CS Marítimo",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 29",
+     "date": "2027-04-11",
+     "home": "CD Santa Clara",
+     "away": "Moreirense FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 29",
+     "date": "2027-04-11",
+     "home": "Rio Ave FC",
+     "away": "FC Arouca",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 29",
+     "date": "2027-04-11",
+     "home": "Sporting Clube de Braga",
+     "away": "Casa Pia AC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 29",
+     "date": "2027-04-11",
+     "home": "FC Alverca",
+     "away": "Académico de Viseu FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 29",
+     "date": "2027-04-11",
+     "home": "CF Estrela da Amadora",
+     "away": "Vitória Guimarães",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 29",
+     "date": "2027-04-11",
+     "home": "GD Estoril Praia",
+     "away": "Gil Vicente FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 30",
+     "date": "2027-04-18",
+     "home": "Sport Lisboa e Benfica",
+     "away": "CD Nacional",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 30",
+     "date": "2027-04-18",
+     "home": "FC Porto",
+     "away": "CD Santa Clara",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 30",
+     "date": "2027-04-18",
+     "home": "CS Marítimo",
+     "away": "Sporting Clube de Portugal",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 30",
+     "date": "2027-04-18",
+     "home": "Moreirense FC",
+     "away": "FC Alverca",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 30",
+     "date": "2027-04-18",
+     "home": "Académico de Viseu FC",
+     "away": "FC Famalicão",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 30",
+     "date": "2027-04-18",
+     "home": "Vitória Guimarães",
+     "away": "GD Estoril Praia",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 30",
+     "date": "2027-04-18",
+     "home": "Casa Pia AC",
+     "away": "Rio Ave FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 30",
+     "date": "2027-04-18",
+     "home": "Gil Vicente FC",
+     "away": "CF Estrela da Amadora",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 30",
+     "date": "2027-04-18",
+     "home": "FC Arouca",
+     "away": "Sporting Clube de Braga",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 31",
+     "date": "2027-04-25",
+     "home": "FC Alverca",
+     "away": "Vitória Guimarães",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 31",
+     "date": "2027-04-25",
+     "home": "Rio Ave FC",
+     "away": "CS Marítimo",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 31",
+     "date": "2027-04-25",
+     "home": "CD Nacional",
+     "away": "Casa Pia AC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 31",
+     "date": "2027-04-25",
+     "home": "CF Estrela da Amadora",
+     "away": "FC Porto",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 31",
+     "date": "2027-04-25",
+     "home": "Sporting Clube de Portugal",
+     "away": "Gil Vicente FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 31",
+     "date": "2027-04-25",
+     "home": "Sporting Clube de Braga",
+     "away": "Sport Lisboa e Benfica",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 31",
+     "date": "2027-04-25",
+     "home": "CD Santa Clara",
+     "away": "GD Estoril Praia",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 31",
+     "date": "2027-04-25",
+     "home": "FC Arouca",
+     "away": "Académico de Viseu FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 31",
+     "date": "2027-04-25",
+     "home": "FC Famalicão",
+     "away": "Moreirense FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 32",
+     "date": "2027-05-02",
+     "home": "Gil Vicente FC",
+     "away": "FC Alverca",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 32",
+     "date": "2027-05-02",
+     "home": "Vitória Guimarães",
+     "away": "CD Santa Clara",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 32",
+     "date": "2027-05-02",
+     "home": "GD Estoril Praia",
+     "away": "Sporting Clube de Portugal",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 32",
+     "date": "2027-05-02",
+     "home": "FC Porto",
+     "away": "FC Famalicão",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 32",
+     "date": "2027-05-02",
+     "home": "Moreirense FC",
+     "away": "CD Nacional",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 32",
+     "date": "2027-05-02",
+     "home": "Casa Pia AC",
+     "away": "FC Arouca",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 32",
+     "date": "2027-05-02",
+     "home": "Académico de Viseu FC",
+     "away": "Sporting Clube de Braga",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 32",
+     "date": "2027-05-02",
+     "home": "CS Marítimo",
+     "away": "CF Estrela da Amadora",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 32",
+     "date": "2027-05-02",
+     "home": "Sport Lisboa e Benfica",
+     "away": "Rio Ave FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 33",
+     "date": "2027-05-09",
+     "home": "Sporting Clube de Portugal",
+     "away": "Sport Lisboa e Benfica",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 33",
+     "date": "2027-05-09",
+     "home": "CF Estrela da Amadora",
+     "away": "CD Santa Clara",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 33",
+     "date": "2027-05-09",
+     "home": "Rio Ave FC",
+     "away": "Vitória Guimarães",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 33",
+     "date": "2027-05-09",
+     "home": "Académico de Viseu FC",
+     "away": "Moreirense FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 33",
+     "date": "2027-05-09",
+     "home": "FC Famalicão",
+     "away": "Casa Pia AC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 33",
+     "date": "2027-05-09",
+     "home": "Sporting Clube de Braga",
+     "away": "CS Marítimo",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 33",
+     "date": "2027-05-09",
+     "home": "FC Alverca",
+     "away": "GD Estoril Praia",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 33",
+     "date": "2027-05-09",
+     "home": "FC Arouca",
+     "away": "Gil Vicente FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 33",
+     "date": "2027-05-09",
+     "home": "CD Nacional",
+     "away": "FC Porto",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 34",
+     "date": "2027-05-16",
+     "home": "CS Marítimo",
+     "away": "FC Alverca",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 34",
+     "date": "2027-05-16",
+     "home": "Gil Vicente FC",
+     "away": "CD Nacional",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 34",
+     "date": "2027-05-16",
+     "home": "Sport Lisboa e Benfica",
+     "away": "FC Arouca",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 34",
+     "date": "2027-05-16",
+     "home": "GD Estoril Praia",
+     "away": "CF Estrela da Amadora",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 34",
+     "date": "2027-05-16",
+     "home": "FC Porto",
+     "away": "Sporting Clube de Braga",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 34",
+     "date": "2027-05-16",
+     "home": "Casa Pia AC",
+     "away": "Académico de Viseu FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 34",
+     "date": "2027-05-16",
+     "home": "Vitória Guimarães",
+     "away": "FC Famalicão",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 34",
+     "date": "2027-05-16",
+     "home": "CD Santa Clara",
+     "away": "Sporting Clube de Portugal",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    },
+    {
+     "round": "Matchday 34",
+     "date": "2027-05-16",
+     "home": "Moreirense FC",
+     "away": "Rio Ave FC",
+     "home_goals": null,
+     "away_goals": null,
+     "half_time": null
+    }
+   ]
+  }
+ ]
+}

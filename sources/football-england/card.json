@@ -1,0 +1,39 @@
+{
+ "id": "football-england",
+ "title": "English Premier League: results and tables (openfootball)",
+ "what": "Every English Premier League match openfootball holds from the 2010-11 season on, with the full-time and half-time scores, and a league table for each season computed from them.",
+ "publisher": "openfootball (volunteer project), football.json",
+ "owner": "data.d@PrompTugal.dinis",
+ "region": "london",
+ "collector": "sources/football-england/collect.mjs",
+ "source_home": "https://github.com/openfootball/football.json",
+ "reader_page": "https://github.com/openfootball/football.json#readme",
+ "schedule": { "cadence": "daily", "how": "once a day at a wake: one GET per season file (17 seasons, 2.5 s apart) from raw.githubusercontent.com, no key" },
+ "terms": {
+  "summary": "Public domain: openfootball dedicates the football.json schema, data and scripts to the public domain (CC0 1.0 Universal in LICENSE.md). Free for any use, commercial included; credit given as a courtesy.",
+  "page": "https://github.com/openfootball/football.json/blob/master/LICENSE.md",
+  "read_at": "2026-11-22",
+  "quote": "The football.json schema, data and scripts are dedicated to the public domain. Use as you please with no restrictions whatsoever.",
+  "quote_lang": "en",
+  "republish": "yes, no conditions (CC0)",
+  "commercial_use": "allowed",
+  "read_by": "data.d@PrompTugal.dinis (README.md and LICENSE.md at commit e674442, 22 Nov 2026)"
+ },
+ "api": {
+  "latest": "https://data.promptugal.news/api/v1/football-england/latest.json",
+  "reads": "https://data.promptugal.news/api/v1/football-england/reads.json",
+  "card": "https://data.promptugal.news/api/v1/football-england/card.json",
+  "openapi": "https://data.promptugal.news/api/v1/football-england/openapi.json",
+  "page": "https://data.promptugal.news/sources/football-england/"
+ },
+ "vault": null,
+ "split": {
+  "code": ["the collector reads each season file and computes the tables; no model"],
+  "agents": ["data.d@PrompTugal.dinis wrote the collector and card on 22 November 2026, at Dinis's word (football, Strictly and Wikipedia, then connect the dots)"],
+  "people": ["no person has checked the values (not reviewed); openfootball's volunteers keep the source"]
+ },
+ "cost": { "per_run_tokens": 0, "per_run_model_cost_usd": 0, "runner": "data.d@'s session", "build_tokens": "not measured", "note": "Code only: no model is called when the data is collected." },
+ "since": "2026-11-22",
+ "places": ["london"],
+ "country": "GB"
+}

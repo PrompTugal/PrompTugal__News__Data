@@ -1,0 +1,328 @@
+{
+ "about": "Every run of sources/football-england/collect.mjs, newest first: each request's address, HTTP status, size, the first 16 hex of its sha256, and whether the bytes changed since the run before. The bytes and the full sha256 go to the source's vault (see card.json: latest/reads-full.json), never to git.",
+ "source": "football-england",
+ "runs": [
+  {
+   "at": "2026-11-22T15:50:02Z",
+   "finished": "2026-11-22T15:50:42Z",
+   "ok": 17,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "2010-11-en.1",
+     "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2010-11/en.1.json",
+     "at": "2026-11-22T15:50:02Z",
+     "status": 200,
+     "bytes": 114555,
+     "sha256_prefix": "a94631cc82fd4034",
+     "changed": false
+    },
+    {
+     "name": "2011-12-en.1",
+     "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2011-12/en.1.json",
+     "at": "2026-11-22T15:50:04Z",
+     "status": 200,
+     "bytes": 114481,
+     "sha256_prefix": "94e29260ec3500ba",
+     "changed": false
+    },
+    {
+     "name": "2012-13-en.1",
+     "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2012-13/en.1.json",
+     "at": "2026-11-22T15:50:07Z",
+     "status": 200,
+     "bytes": 113425,
+     "sha256_prefix": "d41f9131f9dda654",
+     "changed": false
+    },
+    {
+     "name": "2013-14-en.1",
+     "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2013-14/en.1.json",
+     "at": "2026-11-22T15:50:09Z",
+     "status": 200,
+     "bytes": 113569,
+     "sha256_prefix": "821ea8a8a0787539",
+     "changed": false
+    },
+    {
+     "name": "2014-15-en.1",
+     "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2014-15/en.1.json",
+     "at": "2026-11-22T15:50:12Z",
+     "status": 200,
+     "bytes": 113725,
+     "sha256_prefix": "2f24151bffd3d377",
+     "changed": false
+    },
+    {
+     "name": "2015-16-en.1",
+     "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2015-16/en.1.json",
+     "at": "2026-11-22T15:50:14Z",
+     "status": 200,
+     "bytes": 113631,
+     "sha256_prefix": "4d8ab70f5d2c2923",
+     "changed": false
+    },
+    {
+     "name": "2016-17-en.1",
+     "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2016-17/en.1.json",
+     "at": "2026-11-22T15:50:17Z",
+     "status": 200,
+     "bytes": 113759,
+     "sha256_prefix": "9c8cdb27355678ab",
+     "changed": false
+    },
+    {
+     "name": "2017-18-en.1",
+     "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2017-18/en.1.json",
+     "at": "2026-11-22T15:50:19Z",
+     "status": 200,
+     "bytes": 114087,
+     "sha256_prefix": "b635f2442a94aa91",
+     "changed": false
+    },
+    {
+     "name": "2018-19-en.1",
+     "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2018-19/en.1.json",
+     "at": "2026-11-22T15:50:22Z",
+     "status": 200,
+     "bytes": 114723,
+     "sha256_prefix": "e2224d86f0605a5a",
+     "changed": false
+    },
+    {
+     "name": "2019-20-en.1",
+     "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2019-20/en.1.json",
+     "at": "2026-11-22T15:50:24Z",
+     "status": 200,
+     "bytes": 114817,
+     "sha256_prefix": "9e1695f85ce5553f",
+     "changed": false
+    },
+    {
+     "name": "2020-21-en.1",
+     "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2020-21/en.1.json",
+     "at": "2026-11-22T15:50:27Z",
+     "status": 200,
+     "bytes": 115947,
+     "sha256_prefix": "21ddf26b48469da5",
+     "changed": false
+    },
+    {
+     "name": "2021-22-en.1",
+     "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2021-22/en.1.json",
+     "at": "2026-11-22T15:50:29Z",
+     "status": 200,
+     "bytes": 115863,
+     "sha256_prefix": "fbdfd426fa18fa2f",
+     "changed": false
+    },
+    {
+     "name": "2022-23-en.1",
+     "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2022-23/en.1.json",
+     "at": "2026-11-22T15:50:32Z",
+     "status": 200,
+     "bytes": 116149,
+     "sha256_prefix": "8d09f0f984698162",
+     "changed": false
+    },
+    {
+     "name": "2023-24-en.1",
+     "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/en.1.json",
+     "at": "2026-11-22T15:50:34Z",
+     "status": 200,
+     "bytes": 116669,
+     "sha256_prefix": "03e13eafbf78dfe0",
+     "changed": false
+    },
+    {
+     "name": "2024-25-en.1",
+     "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2024-25/en.1.json",
+     "at": "2026-11-22T15:50:37Z",
+     "status": 200,
+     "bytes": 110141,
+     "sha256_prefix": "c3d18f552d83382c",
+     "changed": false
+    },
+    {
+     "name": "2025-26-en.1",
+     "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2025-26/en.1.json",
+     "at": "2026-11-22T15:50:39Z",
+     "status": 200,
+     "bytes": 108493,
+     "sha256_prefix": "d6070bdf731546cc",
+     "changed": false
+    },
+    {
+     "name": "2026-27-en.1",
+     "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/en.1.json",
+     "at": "2026-11-22T15:50:42Z",
+     "status": 200,
+     "bytes": 55359,
+     "sha256_prefix": "bb91f0ab3e8359df",
+     "changed": false
+    }
+   ]
+  },
+  {
+   "at": "2026-11-22T15:48:26Z",
+   "finished": "2026-11-22T15:49:07Z",
+   "ok": 17,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "2010-11-en.1",
+     "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2010-11/en.1.json",
+     "at": "2026-11-22T15:48:26Z",
+     "status": 200,
+     "bytes": 114555,
+     "sha256_prefix": "a94631cc82fd4034",
+     "changed": "first read"
+    },
+    {
+     "name": "2011-12-en.1",
+     "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2011-12/en.1.json",
+     "at": "2026-11-22T15:48:29Z",
+     "status": 200,
+     "bytes": 114481,
+     "sha256_prefix": "94e29260ec3500ba",
+     "changed": "first read"
+    },
+    {
+     "name": "2012-13-en.1",
+     "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2012-13/en.1.json",
+     "at": "2026-11-22T15:48:31Z",
+     "status": 200,
+     "bytes": 113425,
+     "sha256_prefix": "d41f9131f9dda654",
+     "changed": "first read"
+    },
+    {
+     "name": "2013-14-en.1",
+     "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2013-14/en.1.json",
+     "at": "2026-11-22T15:48:34Z",
+     "status": 200,
+     "bytes": 113569,
+     "sha256_prefix": "821ea8a8a0787539",
+     "changed": "first read"
+    },
+    {
+     "name": "2014-15-en.1",
+     "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2014-15/en.1.json",
+     "at": "2026-11-22T15:48:36Z",
+     "status": 200,
+     "bytes": 113725,
+     "sha256_prefix": "2f24151bffd3d377",
+     "changed": "first read"
+    },
+    {
+     "name": "2015-16-en.1",
+     "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2015-16/en.1.json",
+     "at": "2026-11-22T15:48:39Z",
+     "status": 200,
+     "bytes": 113631,
+     "sha256_prefix": "4d8ab70f5d2c2923",
+     "changed": "first read"
+    },
+    {
+     "name": "2016-17-en.1",
+     "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2016-17/en.1.json",
+     "at": "2026-11-22T15:48:41Z",
+     "status": 200,
+     "bytes": 113759,
+     "sha256_prefix": "9c8cdb27355678ab",
+     "changed": "first read"
+    },
+    {
+     "name": "2017-18-en.1",
+     "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2017-18/en.1.json",
+     "at": "2026-11-22T15:48:44Z",
+     "status": 200,
+     "bytes": 114087,
+     "sha256_prefix": "b635f2442a94aa91",
+     "changed": "first read"
+    },
+    {
+     "name": "2018-19-en.1",
+     "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2018-19/en.1.json",
+     "at": "2026-11-22T15:48:46Z",
+     "status": 200,
+     "bytes": 114723,
+     "sha256_prefix": "e2224d86f0605a5a",
+     "changed": "first read"
+    },
+    {
+     "name": "2019-20-en.1",
+     "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2019-20/en.1.json",
+     "at": "2026-11-22T15:48:49Z",
+     "status": 200,
+     "bytes": 114817,
+     "sha256_prefix": "9e1695f85ce5553f",
+     "changed": "first read"
+    },
+    {
+     "name": "2020-21-en.1",
+     "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2020-21/en.1.json",
+     "at": "2026-11-22T15:48:51Z",
+     "status": 200,
+     "bytes": 115947,
+     "sha256_prefix": "21ddf26b48469da5",
+     "changed": "first read"
+    },
+    {
+     "name": "2021-22-en.1",
+     "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2021-22/en.1.json",
+     "at": "2026-11-22T15:48:54Z",
+     "status": 200,
+     "bytes": 115863,
+     "sha256_prefix": "fbdfd426fa18fa2f",
+     "changed": "first read"
+    },
+    {
+     "name": "2022-23-en.1",
+     "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2022-23/en.1.json",
+     "at": "2026-11-22T15:48:56Z",
+     "status": 200,
+     "bytes": 116149,
+     "sha256_prefix": "8d09f0f984698162",
+     "changed": "first read"
+    },
+    {
+     "name": "2023-24-en.1",
+     "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2023-24/en.1.json",
+     "at": "2026-11-22T15:48:59Z",
+     "status": 200,
+     "bytes": 116669,
+     "sha256_prefix": "03e13eafbf78dfe0",
+     "changed": "first read"
+    },
+    {
+     "name": "2024-25-en.1",
+     "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2024-25/en.1.json",
+     "at": "2026-11-22T15:49:01Z",
+     "status": 200,
+     "bytes": 110141,
+     "sha256_prefix": "c3d18f552d83382c",
+     "changed": "first read"
+    },
+    {
+     "name": "2025-26-en.1",
+     "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2025-26/en.1.json",
+     "at": "2026-11-22T15:49:04Z",
+     "status": 200,
+     "bytes": 108493,
+     "sha256_prefix": "d6070bdf731546cc",
+     "changed": "first read"
+    },
+    {
+     "name": "2026-27-en.1",
+     "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/en.1.json",
+     "at": "2026-11-22T15:49:06Z",
+     "status": 200,
+     "bytes": 55359,
+     "sha256_prefix": "bb91f0ab3e8359df",
+     "changed": "first read"
+    }
+   ]
+  }
+ ]
+}
