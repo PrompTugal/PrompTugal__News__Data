@@ -21,7 +21,7 @@ import { extract, makeCleaner } from './extract.mjs'
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..')
 const API = 'https://en.wikipedia.org/w/api.php', TOKEN_URL = 'https://meta.wikimedia.org/w/rest.php/oauth2/access_token'
 const UA = 'PrompTugalDataWikipedia/0.1 (https://data.promptugal.news/wikipedia/about/; https://github.com/PrompTugal/PrompTugal__News__Data) node'
-const GAP = 1500, DRY = process.argv.includes('--dry')
+const GAP = 1500, DRY = process.argv.includes('--dry'), REEXTRACT = process.argv.includes('--reextract')
 const DATA = path.join(ROOT, 'data', 'wikipedia'), VAULT = path.join(ROOT, 'vaults', 'wikipedia')
 const now = () => new Date().toISOString().replace(/\.\d+Z$/, 'Z'), sleep = ms => new Promise(r => setTimeout(r, ms))
 const readJson = (f, d) => { try { return JSON.parse(fs.readFileSync(f, 'utf8')) } catch { return d } }
@@ -54,6 +54,15 @@ export async function main() {
     const tracked = readJson(path.join(ROOT, 'register', 'wikipedia-tracked.json'), { articles: [] }).articles
     const index = readJson(path.join(DATA, 'index.json'), { articles: {} })
     const started = now()
+    // --reextract: rebuild every held article from its kept wikitext (vaults/wikipedia/), no network; for extractor fixes
+    if (REEXTRACT) { let n = 0
+        for (const a of Object.values(index.articles).filter(x => x.revid)) {
+            const f = path.join(VAULT, slug(a.title), `${a.revid}.wikitext`); if (!fs.existsSync(f)) continue
+            const old = readJson(path.join(DATA, a.file), null); if (!old) continue
+            const { keep, st } = makeCleaner(), x = extract(fs.readFileSync(f, 'utf8'), { keep })
+            writeJson(path.join(DATA, a.file), { ...old, extracted_at: started, licence: { ...old.licence, changes: 'extracted into fields; markup removed; a cell holding only an em dash written as - (cells_dash); an em dash inside a string written as an en dash (em_dashes_replaced); strings with a listed hype word left out (fields_dropped_wording)' },
+                counts: { sections: x.sections.length, tables: x.tables.length, table_rows: x.tables.reduce((m, t) => m + t.rows_total, 0), citations: x.citations.length, cited_hosts: x.cited_hosts.length, links: x.links.length, fields_dropped_wording: st.dropped, cells_dash: st.dashes, em_dashes_replaced: st.replaced }, ...x }); n++ }
+        console.log(`wikipedia: re-extracted ${n} articles from kept wikitext (no network)`); return }
     if (DRY) { console.log(`would ask ${Math.ceil(tracked.length / 50)} revision request(s) for ${tracked.length} articles, then one parse per changed article`); return }
     token = await getToken()
     // (1) revisions, 50 titles a request
@@ -79,8 +88,8 @@ export async function main() {
         const { keep, st } = makeCleaner(), x = extract(wt, { keep }), file = `articles/${slug(cur.title)}.json`, old = prev ? readJson(path.join(DATA, prev.file || file), null) : null
         const rec = { title: cur.title, url: `https://en.wikipedia.org/wiki/${encodeURIComponent(cur.title.replace(/ /g, '_'))}`, revision: cur.revid, revision_url: `https://en.wikipedia.org/w/index.php?oldid=${cur.revid}`, revision_time: cur.timestamp,
             wikidata: cur.wikidata, wikidata_url: cur.wikidata ? `https://www.wikidata.org/wiki/${cur.wikidata}` : null, read_at: started, wikitext_sha256_prefix: sha.slice(0, 16), for: a.for,
-            licence: { name: 'CC BY-SA 4.0', url: 'https://creativecommons.org/licenses/by-sa/4.0/', attribution: `From the Wikipedia article "${cur.title}", revision ${cur.revid}; authors: https://en.wikipedia.org/w/index.php?title=${encodeURIComponent(cur.title.replace(/ /g, '_'))}&action=history`, changes: 'extracted into fields; markup removed; strings with an em dash or a listed hype word left out (fields_dropped_wording)' },
-            counts: { sections: x.sections.length, tables: x.tables.length, table_rows: x.tables.reduce((n, t) => n + t.rows_total, 0), citations: x.citations.length, cited_hosts: x.cited_hosts.length, links: x.links.length, fields_dropped_wording: st.dropped }, ...x }
+            licence: { name: 'CC BY-SA 4.0', url: 'https://creativecommons.org/licenses/by-sa/4.0/', attribution: `From the Wikipedia article "${cur.title}", revision ${cur.revid}; authors: https://en.wikipedia.org/w/index.php?title=${encodeURIComponent(cur.title.replace(/ /g, '_'))}&action=history`, changes: 'extracted into fields; markup removed; a cell holding only an em dash written as - (cells_dash); an em dash inside a string written as an en dash (em_dashes_replaced); strings with a listed hype word left out (fields_dropped_wording)' },
+            counts: { sections: x.sections.length, tables: x.tables.length, table_rows: x.tables.reduce((n, t) => n + t.rows_total, 0), citations: x.citations.length, cited_hosts: x.cited_hosts.length, links: x.links.length, fields_dropped_wording: st.dropped, cells_dash: st.dashes, em_dashes_replaced: st.replaced }, ...x }
         writeJson(path.join(DATA, file), rec)
         fs.mkdirSync(path.join(VAULT, slug(cur.title)), { recursive: true }); fs.writeFileSync(path.join(VAULT, slug(cur.title), `${cur.revid}.wikitext`), wt)
         // what changed since the revision we held

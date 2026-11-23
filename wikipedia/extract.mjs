@@ -7,18 +7,20 @@
 //   citations  every <ref> with its cite template's fields (url, title, publisher or work or website, date, access date,
 //              archive url), the section it sits in, and how many times a named ref is reused: the "shadow sources"
 //   links      the article's internal links (titles), for the entity graph
-// Wikipedia's text is CC BY-SA 4.0. A string holding an em dash or a hype word (the site's wording check) is dropped and counted,
-// never altered, since changes to CC BY-SA text must be marked; the record says how many were dropped.
+// Wikipedia's text is CC BY-SA 4.0, which allows changes that are marked. The site's wording check refuses em dashes and some
+// hype words: a cell holding only an em dash becomes -, an em dash inside a string becomes an en dash, and a string with a hype
+// word is dropped; each is counted, and the article record's licence names these changes.
 const HYPE = /\b(revolutionary|cutting[- ]edge|seamless(?:ly)?|world[- ]class|game[- ]changing)\b/i
 export function makeCleaner() {
-    const st = { dropped: 0 }
-    const keep = (s, n = 400) => { if (s == null) return null; const t = String(s).replace(/[\u0000-\u001f\u007f-\u009f]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, n); if (!t) return null; if (t.includes('—') || HYPE.test(t)) { st.dropped++; return null } return t }
+    const st = { dropped: 0, dashes: 0, replaced: 0 }
+    const keep = (s, n = 400) => { if (s == null) return null; const t = String(s).replace(/[\u0000-\u001f\u007f-\u009f]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, n); if (!t) return null; if (t === '\u2014') { st.dashes++; return '-' } if (HYPE.test(t)) { st.dropped++; return null } if (t.includes('\u2014')) { st.replaced++; return t.replace(/\u2014/g, '\u2013') } return t }
     return { keep, st }
 }
 // wikitext markup to plain text: links, bold and italic, simple templates, refs, comments, HTML tags
 export function plain(s) {
     let t = String(s ?? '')
     t = t.replace(/<!--[\s\S]*?-->/g, '').replace(/<ref[^>]*\/>/g, '').replace(/<ref[^>]*>[\s\S]*?<\/ref>/g, '')
+    t = t.replace(/\[\[(?:[^|\]]*\|)?([^\]]*)\]\]/g, '$1')
     for (let i = 0; i < 4; i++) t = t.replace(/\{\{\s*(?:nowrap|nobr|small|abbr|sort|sortname|flagicon|flag|nts|n\/a|dts)\s*\|([^{}]*)\}\}/gi, (m, a) => { const p = a.split('|').filter(x => !/^\w+=/.test(x)); return /^sortname/i.test(m.slice(2).trim()) ? p.slice(0, 2).join(' ') : (p[p.length > 1 && /^(abbr|sort)/i.test(m.slice(2).trim()) ? 1 : 0] || '') })
     t = t.replace(/\{\{[^{}]*\}\}/g, '').replace(/\[\[(?:[^|\]]*\|)?([^\]]*)\]\]/g, '$1').replace(/\[https?:\/\/[^\s\]]+\s*([^\]]*)\]/g, '$1')
     t = t.replace(/'{2,}/g, '').replace(/<br\s*\/?>/gi, ' ').replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&')
@@ -64,7 +66,7 @@ export function extract(wikitext, { keep }) {
             const fill = () => { while (carry[col] && carry[col].n > 0) { row[col] = carry[col].v; carry[col].n--; col++ } }
             for (const c of cells) { fill(); const v = keep(plain(c.text), 300); for (let k = 0; k < c.cs; k++) { row[col] = v; if (c.rs > 1) carry[col] = { v, n: c.rs - 1 }; col++ } }
             fill()
-            if (!header && cells.every(c => c.head)) header = row; else grid.push(row)
+            if (cells.every(c => c.head) && !grid.length) header = header ? header.map((h, i) => row[i] && row[i] !== h ? [h, row[i]].filter(Boolean).join(' ') : h) : row; else grid.push(row)
         }
         tables.push({ section: sectionAt(m.index), caption, header, rows: grid.slice(0, 500), rows_total: grid.length })
     }

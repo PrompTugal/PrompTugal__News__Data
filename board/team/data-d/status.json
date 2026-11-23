@@ -7,8 +7,8 @@
  "session": "https://claude.ai/code/session_015gaHdboMeL96vpsBRXSX2z",
  "started_by": "conductor.d@PrompTugal.dinis at Dinis's word, 22 Nov 2026 ~02:23 UTC",
  "lane": "not set yet by Dinis; until then no change to files data.b@ is working on",
- "updated": "2026-11-22T17:08Z",
- "state": "22 Nov 17:08 UTC: push works (account D); all work on branch data-d/pending, not dev, until data.d@'s key is on dev. Built: Strictly series 1 to 15, Premier League and Primeira Liga, the Wikipedia feed (not run: needs a Wikimedia credential), and the connections. A new agent for generic sources may take these over (Dinis's voice memo ~17:05, relayed): no new work started in them.",
+ "updated": "2026-11-23T04:54Z",
+ "state": "2026-11-23T04:54Z: the Wikipedia feed ran keyless (identified User-Agent, no credential): 33 of 33 articles held, 15 publishers cited by both Strictly and football articles; extractor fixed (two-row headers, links in templates, em dashes marked not dropped). All on branch data-d/pending; dev waits on data.d@'s key (factory route). Generic sources pass to data.open.d@ when Dinis gives conductor.d@ the line.",
  "done": [
   "Read CLAUDE.md, REALITY.md, BRIEF.md, README.md, board/team/data/status.json, debrief 2026-11-21-data-b-twice-daily.md, the streaming brief and scripts/build/streaming.mjs",
   "Checked https://data.promptugal.news/streaming/: lists shown, TMDB notice and JustWatch credit present",
@@ -19,8 +19,22 @@
   "Hand-over: board/team/data-d/debriefs/2026-11-22-data-d-first-day.md"
  ],
  "asks": [
-  "Dinis: (https://claude.ai/code/session_015gaHdboMeL96vpsBRXSX2z) register a Wikimedia OAuth 2 client-credentials app (free) and set WIKIMEDIA_CLIENT_ID and WIKIMEDIA_CLIENT_SECRET",
   "Dinis: (https://claude.ai/code/session_015gaHdboMeL96vpsBRXSX2z) data.d@'s key onto dev (factory pipeline or data.b@), so data-d/pending can reach dev",
-  "Dinis: (https://claude.ai/code/session_015gaHdboMeL96vpsBRXSX2z) confirm the new agent for generic sources; the hand-over is ready"
+  "Dinis: (https://claude.ai/code/session_015gaHdboMeL96vpsBRXSX2z) confirm the new agent for generic sources; the hand-over is ready",
+  "Dinis: (https://claude.ai/code/session_015gaHdboMeL96vpsBRXSX2z) optional now: a Wikimedia OAuth 2 client-credentials app only if the keyless route is refused again"
+ ],
+ "exceptions": [
+  {
+   "at": "2026-11-23T04:52Z",
+   "what": "retried Wikipedia keyless (one request, HTTP 200), then ran the feed once: 1 revision request and 33 parses, 1.5 s apart",
+   "rule": "Dinis, 23 Nov ~03:00 and ~03:35 UTC: reversible steps in your own area go on your own call (PrompTugal__News__Website CLAUDE.md, 'No agent blocked')",
+   "why": "conductor.d@ relayed it and suggested the keyless route; the Wikimedia credential stays Dinis's"
+  },
+  {
+   "at": "2026-11-23T04:54Z",
+   "what": "Wikipedia extractor: an em dash inside a string is now written as an en dash (marked in each record's licence) instead of dropping the string; a lone dash cell is written as -",
+   "rule": "the site's wording check refuses em dashes; the house practice was to drop, never alter",
+   "why": "dropping lost 2,565 values (song credits, dates); CC BY-SA 4.0 allows changes that are marked, and each record names them"
+  }
  ]
 }
