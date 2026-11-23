@@ -7,7 +7,7 @@
  "session": "https://claude.ai/code/session_015gaHdboMeL96vpsBRXSX2z",
  "started_by": "conductor.d@PrompTugal.dinis at Dinis's word, 22 Nov 2026 ~02:23 UTC",
  "lane": "not set yet by Dinis; until then no change to files data.b@ is working on",
- "updated": "2026-11-23T04:54Z",
+ "updated": "2026-11-23T16:53Z",
  "state": "2026-11-23T04:54Z: the Wikipedia feed ran keyless (identified User-Agent, no credential): 33 of 33 articles held, 15 publishers cited by both Strictly and football articles; extractor fixed (two-row headers, links in templates, em dashes marked not dropped). All on branch data-d/pending; dev waits on data.d@'s key (factory route). Generic sources pass to data.open.d@ when Dinis gives conductor.d@ the line.",
  "done": [
   "Read CLAUDE.md, REALITY.md, BRIEF.md, README.md, board/team/data/status.json, debrief 2026-11-21-data-b-twice-daily.md, the streaming brief and scripts/build/streaming.mjs",
@@ -19,9 +19,8 @@
   "Hand-over: board/team/data-d/debriefs/2026-11-22-data-d-first-day.md"
  ],
  "asks": [
-  "Dinis: (https://claude.ai/code/session_015gaHdboMeL96vpsBRXSX2z) data.d@'s key onto dev (factory pipeline or data.b@), so data-d/pending can reach dev",
-  "Dinis: (https://claude.ai/code/session_015gaHdboMeL96vpsBRXSX2z) confirm the new agent for generic sources; the hand-over is ready",
-  "Dinis: (https://claude.ai/code/session_015gaHdboMeL96vpsBRXSX2z) optional now: a Wikimedia OAuth 2 client-credentials app only if the keyless route is refused again"
+  "d.decisions (session_015gaHdaiX9VvjVwHaNezGJG), sent 2026-11-23T16:53Z: data.d@'s key onto dev (cd59e1f on data-d/key): (a) data.b@ commits it, or (b) factory.d's pipeline; data.d@ recommends (a) for this key",
+  "Dinis: (https://claude.ai/code/session_015gaHdboMeL96vpsBRXSX2z) optional: a Wikimedia OAuth 2 client-credentials app only if the keyless route is refused again"
  ],
  "exceptions": [
   {
@@ -36,5 +35,7 @@
    "rule": "the site's wording check refuses em dashes; the house practice was to drop, never alter",
    "why": "dropping lost 2,565 values (song credits, dates); CC BY-SA 4.0 allows changes that are marked, and each record names them"
   }
- ]
+ ],
+ "session_title": "d.data (PrompTugal)",
+ "cost_note": "Session cost as the session reports it at 2026-11-23T16:53Z: about 38.91 USD (cache reads included). For knowing, not enforcement (Dinis, 22 Nov)."
 }
