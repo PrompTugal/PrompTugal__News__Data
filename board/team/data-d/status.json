@@ -19,7 +19,7 @@
   "Hand-over: board/team/data-d/debriefs/2026-11-22-data-d-first-day.md"
  ],
  "asks": [
-  "d.decisions (session_015gaHdaiX9VvjVwHaNezGJG), sent 2026-11-23T16:53Z: data.d@'s key onto dev (cd59e1f on data-d/key): (a) data.b@ commits it, or (b) factory.d's pipeline; data.d@ recommends (a) for this key",
+  "d.decisions, sent 2026-11-23T16:53Z: data.d@'s key onto dev (cd59e1f on data-d/key): (a) data.b@ commits it, or (b) factory.d's pipeline; data.d@ recommends (a) for this key",
   "Dinis: (https://claude.ai/code/session_015gaHdboMeL96vpsBRXSX2z) optional: a Wikimedia OAuth 2 client-credentials app only if the keyless route is refused again"
  ],
  "exceptions": [
@@ -34,6 +34,12 @@
    "what": "Wikipedia extractor: an em dash inside a string is now written as an en dash (marked in each record's licence) instead of dropping the string; a lone dash cell is written as -",
    "rule": "the site's wording check refuses em dashes; the house practice was to drop, never alter",
    "why": "dropping lost 2,565 values (song credits, dates); CC BY-SA 4.0 allows changes that are marked, and each record names them"
+  },
+  {
+   "at": "2026-11-23T16:53Z",
+   "what": "a slip: commit 738bbaf was made with the leak scan failing (another session's id in status.json); the scan's exit code was lost in a pipe",
+   "rule": "CLAUDE.md: run the leak scan before every commit",
+   "why": "fixed in the next commit (the id removed; sessions named by role); commits now run the scan with pipefail so a failure stops them. Session ids are not credentials; nothing secret went out; the commit is on branch data-d/pending, not dev"
   }
  ],
  "session_title": "d.data (PrompTugal)",
