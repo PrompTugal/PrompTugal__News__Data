@@ -2,7 +2,7 @@
 
 Updated 24 Nov 2026 13:51 UTC (`date -u`).
 
-**Home:** none yet. There is no Site__Agent__Data repository for this agent, and this session can push only PrompTugal/PrompTugal__News__Data. So this area lives in that repository, at board/team/data-d/ on branch data-d/pending, with the same files as a home (agent.json, now.md, role.md, restart.md, learnings.md, messages.md, START.md), as the guidance of 24 Nov allows (Site__Agent__Factory site/guidance/2026-11-24-every-agent-keeps-its-area.md, 16d5ea3). Not registered in site/factory/index.json: asked d.factory for a home.
+**Home:** none yet. There is no Site__Agent__Data repository for this agent, and this session can push only PrompTugal/PrompTugal__News__Data. So this area lives in that repository, at board/team/data-d/ on branch data-d/pending, with the same files as a home (agent.json, now.md, role.md, restart.md, learnings.md, messages.md, START.md), as the guidance of 24 Nov allows (Site__Agent__Factory site/guidance/2026-11-24-every-agent-keeps-its-area.md, 16d5ea3). Not registered in site/factory/index.json. d.factory (24 Nov 14:1x): no data agents' home exists; it proposes SovereignWebsite/Site__Agent__Data (data.agents.sovereignweb.site, an area per account, shared with data.open.d) and writes the request once Dinis says yes in its session; keeping the area here meanwhile is right.
 
 **Done**
 - **Wikipedia feed:** 33 of 33 articles held (first run 23 Nov 04:52, keyless); extractor fixed and tested.
