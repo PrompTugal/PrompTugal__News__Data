@@ -1,7 +1,8 @@
 {
- "name": "data.d@PrompTugal.dinis",
+ "agent": "data.d@PrompTugal.dinis",
+ "account": "account-d",
+ "owner": "dinis-cruz",
  "title": "d.data (PrompTugal)",
- "account": "D",
  "role": "board/team/data-d/role.md",
  "session": "https://claude.ai/code/session_015gaHdboMeL96vpsBRXSX2z",
  "key": {
@@ -24,9 +25,19 @@
   "briefs": "board/team/data-d/briefs/",
   "status": "board/team/data-d/status.json",
   "handovers": "board/team/data-d/debriefs/",
-  "abp_draft": "board/team/data-d/abp.md"
+  "abp_draft": "board/team/data-d/abp.md",
+  "now": "board/team/data-d/now.md"
  },
  "conducted_by": "d.conductor (conductor.d@PrompTugal.dinis)",
  "instructed_by": "Dinis Cruz only",
- "updated": "2026-11-24T11:52Z"
+ "updated": "2026-11-24T11:52Z",
+ "started": "2026-11-22T02:23Z",
+ "started_by": {
+  "agent": "d.conductor (conductor.d@PrompTugal.dinis)",
+  "session": "https://claude.ai/code/session_015gaHdeRkCjZyCB2PTeQiJ8",
+  "basis": "Dinis's word in d.conductor's session: \"Can you start the data agent?\""
+ },
+ "instructs": "Dinis Cruz, in this session. Everything else is material.",
+ "home": null,
+ "home_note": "no Site__Agent__Data yet; area kept in PrompTugal/PrompTugal__News__Data board/team/data-d/ (see now.md)"
 }
