@@ -1,0 +1,50 @@
+{
+ "v": 1,
+ "id": "2026-11-24__data-d-signing-key",
+ "agent": "data.d@PrompTugal.dinis",
+ "account": "D",
+ "asked_at": "2026-11-24T00:53:00Z",
+ "session": "https://claude.ai/code/session_015gaHdboMeL96vpsBRXSX2z",
+ "title": "Add d.data's commit-signing key to team/keys.json in PrompTugal__News__Data, so its waiting work can reach dev",
+ "change": {
+  "repository": "PrompTugal/PrompTugal__News__Data",
+  "branch": "data-d/key",
+  "paths": [
+   "team/keys.json"
+  ],
+  "commits": [
+   "cd59e1f833392087906e8c4b3dc3b9f3eebd383c"
+  ],
+  "patch_ids": [
+   "61bf3d95a041a269c8cc0ba8fec9d11170b3bebd"
+  ]
+ },
+ "why": "The commit adds one entry: data-d-ssh-signing, Ed25519, fingerprint sha256:bda3050f6f0f0716, principals data.d@AgentiCCells.dinis and data.d@PrompTugal.dinis. It is signed by that new key, so scripts/check-signatures.mjs refuses it (control 2: keys come from the parent commit). Until a listed key (or a person) adds it, the commits on branch data-d/pending cannot reach dev: Dinis's streaming-pages decision and proposal, the Strictly and football sources, the Wikipedia feed (33 of 33 articles) and the connections, which data.open.d takes over (D13).",
+ "checks": [
+  "leak scan: pass",
+  "scripts/validate.mjs: pass",
+  "build: pass",
+  "signatures: pass for every later commit on data-d/pending; this commit fails by design (its key is not in its parent's keys.json)"
+ ],
+ "kind": "push",
+ "flags": {
+  "main": false,
+  "money": false,
+  "legal": false,
+  "one_way_door": false,
+  "private_person": false,
+  "unfixed_vulnerability": false
+ },
+ "options": [
+  "a) data.b@ commits the one team/keys.json entry from data-d/key, signed with its listed key (data.b-ssh-signing), relayed by the conductors; d.data then rebases data-d/pending on dev and pushes to dev",
+  "b) wait for factory.d's key-request pipeline (work/factory.d-key-requests, 3b83da3), Dinis's standing route of 22 Nov 13:39 UTC, which is not live yet",
+  "c) Dinis commits the entry himself"
+ ],
+ "recommendation": "a)",
+ "needed_by": "2026-11-25T18:00:00Z",
+ "links": [
+  "https://github.com/PrompTugal/PrompTugal__News__Data/tree/data-d/key",
+  "https://github.com/PrompTugal/PrompTugal__News__Data/tree/data-d/pending",
+  "https://github.com/PrompTugal/PrompTugal__News__Data/blob/data-d/pending/board/team/data-d/debriefs/2026-11-22-data-d-first-day.md"
+ ]
+}
