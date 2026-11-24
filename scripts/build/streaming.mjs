@@ -115,13 +115,19 @@ function rowsOf(d) {
   return rows;
 }
 
+// stable anchors per title (sites.b@ for Site__Tool__Streaming, 24 Nov 2026): #title-movie-<tmdb id> and #title-tv-<tmdb id> (TMDB
+// numbers films and series apart, so a bare id could mean both). The first row of a title on the page carries the anchor.
+let anchored = new Set();
+const anchor = (type, id) => { if (!Number.isInteger(id)) return ''; const k = `title-${type}-${id}`; if (anchored.has(k)) return ''; anchored.add(k); return ` id="${k}"`; };
+
 export function writeStreaming(page, d) {
+  anchored = new Set();
   const credit = `<div class="tmdb-credit"><a href="https://www.themoviedb.org/"><img src="/assets/streaming/tmdb-logo.svg" alt="TMDB" width="140" height="18"></a>
 <p>This website uses TMDB and the TMDB APIs but is not endorsed, certified, or otherwise approved by TMDB. Where each title streams comes from <a href="https://www.justwatch.com/">JustWatch</a>, through TMDB.</p></div>`;
   const body = !d.ok ? `<p>The list is not available in this build (${esc(d.why)}). It is fetched from TMDB when the site is built, and shown only here.</p>` :
     REGIONS.map(([region, country]) => `<h2 id="${region.toLowerCase()}">${esc(country)}</h2>\n` + d.lists.filter(l => l.region === region).map(l => l.missing
       ? `<p>${esc(l.service)}: TMDB lists no such service in ${esc(country)}.</p>`
-      : `<h3>${esc(l.service)}: ${esc(l.label)}</h3>\n<p class="small">The 20 most popular of ${esc(l.total)} ${esc(l.label.toLowerCase())} TMDB lists as included with ${/^[AEIOU]/i.test(l.service) ? "an" : "a"} ${esc(l.service)} subscription in ${esc(country)}.</p>\n<div class="scroll"><table><thead><tr><th scope="col">#</th><th scope="col">Title</th><th scope="col">Year</th><th scope="col">TMDB rating</th></tr></thead><tbody>${l.titles.map((t, i) => `<tr><td>${i + 1}</td><td><a href="https://www.themoviedb.org/${l.type}/${encodeURIComponent(t.id)}">${t.title ? esc(t.title) : 'title not shown (our wording check)'}</a>${t.original && t.original !== t.title ? ` <span class="small">(${esc(t.original)})</span>` : ''}</td><td>${esc(t.year)}</td><td>${t.votes ? `${esc(Number(t.rating).toFixed(1))} (${esc(t.votes)} votes)` : 'no votes'}</td></tr>${more(t, l)}`).join('')}</tbody></table></div>`).join('\n')).join('\n');
+      : `<h3>${esc(l.service)}: ${esc(l.label)}</h3>\n<p class="small">The 20 most popular of ${esc(l.total)} ${esc(l.label.toLowerCase())} TMDB lists as included with ${/^[AEIOU]/i.test(l.service) ? "an" : "a"} ${esc(l.service)} subscription in ${esc(country)}.</p>\n<div class="scroll"><table><thead><tr><th scope="col">#</th><th scope="col">Title</th><th scope="col">Year</th><th scope="col">TMDB rating</th></tr></thead><tbody>${l.titles.map((t, i) => `<tr${anchor(l.type, t.id)}><td>${i + 1}</td><td><a href="https://www.themoviedb.org/${l.type}/${encodeURIComponent(t.id)}">${t.title ? esc(t.title) : 'title not shown (our wording check)'}</a>${t.original && t.original !== t.title ? ` <span class="small">(${esc(t.original)})</span>` : ''}</td><td>${esc(t.year)}</td><td>${t.votes ? `${esc(Number(t.rating).toFixed(1))} (${esc(t.votes)} votes)` : 'no votes'}</td></tr>${more(t, l)}`).join('')}</tbody></table></div>`).join('\n')).join('\n');
   const url = page({ path: 'streaming/', title: 'Streaming in the UK and Portugal: PrompTugal.news Data', h1: 'What is streaming in the UK and Portugal: Netflix, Disney+, Prime Video and Apple TV+',
     description: 'The most popular films and series included with Netflix, Disney+, Prime Video and Apple TV+ in the United Kingdom and Portugal, from TMDB and JustWatch, shown at the time this site was built.',
     readAt: d.ok ? d.at : null, head: '<meta name="robots" content="noai, noimageai">\n<link rel="stylesheet" href="/assets/streaming/explore.css">\n<script src="/assets/streaming/explore.js" defer></script>\n',
