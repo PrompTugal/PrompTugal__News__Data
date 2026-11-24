@@ -27,3 +27,11 @@ What Dinis does:
 - Add the read access token as the repository secret TMDB_READ_TOKEN.
 
 Tested at 18:48 UTC, with the token Dinis saved to this session's environment (injected by the proxy, never seen): all 8 lists returned. In the UK, Netflix has 5,739 films and 3,672 series, and Disney+ has 2,782 films and 1,396 series. In Portugal, Netflix has 6,840 films and 2,930 series, and Disney+ has 2,423 films and 993 series. The live page shows the list once the repository secret TMDB_READ_TOKEN exists.
+
+## 24 November 2026 (rights@ R16 and R17)
+
+- rights@ recorded the TMDB clauses as relayed and unverified. Its own fetch of the terms page answers 403, and www.themoviedb.org's robots.txt lists AI agents under Disallow. A person reading the terms in a browser settles them.
+- R17, a slip owned by data.b@: on 21 Nov, three pages on www.themoviedb.org were read by machine anyway. They were the terms page (through a sub-agent), the logos page and the logo file (with curl). No agent reads www.themoviedb.org again. The API host api.themoviedb.org and image.tmdb.org are separate and allow machines.
+- No TMDB content goes into an AI model, an embedding or an LLM-answer search index on any site, the library and dev.search@ included. /streaming/ stays out of llms.txt and is marked noai.
+- Point 1 of sites.b@'s plan (advanced filters, an EN/PT page, saved preferences in the visitor's browser) fits R16: TMDB ids plus the visitor's own flags only, no titles, images or descriptions in any vault, and the JustWatch credit wherever availability is shown. It waits for Dinis to confirm the plan in his own words.
+- Per-title anchors (#title-movie-<id>, #title-tv-<id>) are live (ed46425).
