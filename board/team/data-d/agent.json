@@ -1,0 +1,32 @@
+{
+ "name": "data.d@PrompTugal.dinis",
+ "title": "d.data (PrompTugal)",
+ "account": "D",
+ "role": "board/team/data-d/role.md",
+ "session": "https://claude.ai/code/session_015gaHdboMeL96vpsBRXSX2z",
+ "key": {
+  "file": "board/team/data-d/key.json",
+  "fingerprint": "sha256:bda3050f6f0f0716",
+  "kind": "Ed25519 (ssh-keygen), commit signing",
+  "in_team_keys": false,
+  "request": "board/team/data-d/decision-requests/2026-11-24__data-d-signing-key.json"
+ },
+ "active_until": "2026-12-01T11:52Z",
+ "active_until_rule": "at most 7 days ahead, renewed on work (record 2026-11-24__block-03)",
+ "repository": "PrompTugal/PrompTugal__News__Data",
+ "branch": "data-d/pending (dev once the key is on dev)",
+ "area": {
+  "start": "board/team/data-d/START.md",
+  "restart": "board/team/data-d/restart.md",
+  "learnings": "board/team/data-d/learnings.md",
+  "messages": "board/team/data-d/messages.md",
+  "decisions": "board/team/data-d/decision-requests/",
+  "briefs": "board/team/data-d/briefs/",
+  "status": "board/team/data-d/status.json",
+  "handovers": "board/team/data-d/debriefs/",
+  "abp_draft": "board/team/data-d/abp.md"
+ },
+ "conducted_by": "d.conductor (conductor.d@PrompTugal.dinis)",
+ "instructed_by": "Dinis Cruz only",
+ "updated": "2026-11-24T11:52Z"
+}

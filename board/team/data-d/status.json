@@ -19,7 +19,7 @@
   "Hand-over: board/team/data-d/debriefs/2026-11-22-data-d-first-day.md"
  ],
  "asks": [
-  "d.decisions, sent 2026-11-23T16:53Z: data.d@'s key onto dev (cd59e1f on data-d/key): (a) data.b@ commits it, or (b) factory.d's pipeline; data.d@ recommends (a) for this key",
+  "d.decisions: data.d@'s key onto dev: asked by message 23 Nov 16:5x, re-filed as a decision request 24 Nov (board/team/data-d/decision-requests/2026-11-24__data-d-signing-key.json, link sent); data.d@ recommends (a) data.b@ commits it",
   "Dinis: (https://claude.ai/code/session_015gaHdboMeL96vpsBRXSX2z) optional: a Wikimedia OAuth 2 client-credentials app only if the keyless route is refused again"
  ],
  "exceptions": [
