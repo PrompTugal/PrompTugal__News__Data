@@ -45,7 +45,11 @@ const before = beforeArg && !/^0+$/.test(beforeArg) && tryGit('rev-parse', '--ve
 const commits = lines(git('rev-list', before ? `${before}..${after}` : after));
 
 // an Ed25519 SPKI PEM to the OpenSSH line ssh-keygen reads: string "ssh-ed25519", then the 32-byte key, each length-prefixed
-const toSsh = pem => { const x = Buffer.from(createPublicKey(pem).export({ format: 'jwk' }).x, 'base64url'); const t = Buffer.from('ssh-ed25519'); const len = n => { const b = Buffer.alloc(4); b.writeUInt32BE(n); return b }; return 'ssh-ed25519 ' + Buffer.concat([len(t.length), t, len(x.length), x]).toString('base64') };
+const toSsh = pem => { const jwk = createPublicKey(pem).export({ format: 'jwk' }); const len = n => { const b = Buffer.alloc(4); b.writeUInt32BE(n); return b }; const str = b => Buffer.concat([len(b.length), b]);
+    // Ed25519 (the first keys) and ECDSA P-256 (the cl-6 team, 26 Nov 2026: P-256 signing keys, made with openssl); any other curve is refused
+    if (jwk.kty === 'OKP' && jwk.crv === 'Ed25519') return 'ssh-ed25519 ' + Buffer.concat([str(Buffer.from('ssh-ed25519')), str(Buffer.from(jwk.x, 'base64url'))]).toString('base64');
+    if (jwk.kty === 'EC' && jwk.crv === 'P-256') return 'ecdsa-sha2-nistp256 ' + Buffer.concat([str(Buffer.from('ecdsa-sha2-nistp256')), str(Buffer.from('nistp256')), str(Buffer.concat([Buffer.from([4]), Buffer.from(jwk.x, 'base64url'), Buffer.from(jwk.y, 'base64url')]))]).toString('base64');
+    throw new Error('unsupported key type') };
 const sha16 = s => createHash('sha256').update(s).digest('hex').slice(0, 16);
 if (process.env.SIGNING_TRUSTED_BASE && (process.env.CI || process.env.GITHUB_ACTIONS)) { console.error('check-signatures: SIGNING_TRUSTED_BASE is for test repositories and is refused in CI'); process.exit(1); }
 if (tryGit('rev-parse', '--is-shallow-repository') !== 'false') { console.error('check-signatures: a shallow checkout cannot tell an orphan from a cut-off history; fetch the whole history'); process.exit(1); }

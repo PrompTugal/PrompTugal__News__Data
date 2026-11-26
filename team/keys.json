@@ -75,6 +75,29 @@
     "public_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFphOk4ktLlKvo2CQBvXoy/+cwBQzFDtLVkhcSCAEm4Y",
     "fingerprint": "SHA256:dyXCQtwolcu4idXIovycI1X620rhHI2PvsJ6l+bgbZ0"
    }
+  },
+  {
+   "id": "cl-6-data-ssh-signing",
+   "label": "cl-6.data@PrompTugal.dinis, commit signing (Claude Code cloud session)",
+   "agent": "cl-6.data@PrompTugal.dinis",
+   "role": "The data agent of PrompTugal.news (data.promptugal.news)",
+   "how": "Made by the agent in its own session on 26 November 2026 with openssl (P-256), then converted with ssh-keygen. Only the public half is in this file; the other half never leaves the session and ends with it.",
+   "added": "2026-11-26",
+   "fingerprint": "sha256:35e9378080a4eca7",
+   "ssh": {
+    "public_key_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEJiTMXQmFqVFpHf0bcHuLSkHbHpwF\nVGZrdZ/K9gVNL6KmT1GRF8+ph2phBdbLycfKjQK2TKV73FCG7mUdZasrTg==\n-----END PUBLIC KEY-----\n",
+    "type": "ecdsa-sha2-nistp256",
+    "principals": [
+     "cl-6.data@PrompTugal.dinis"
+    ],
+    "from": "2026-11-26"
+   },
+   "for": "cl-6.conductor@PrompTugal.dinis and cl-6.security@PrompTugal.dinis (key-bootstrap, PrompTugal__IaC #25)",
+   "session": "https://claude.ai/code/session_016CrbJJKUtCUXi5dhrb3Ahs",
+   "ssh_signing": {
+    "public_key": "ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCYkzF0JhalRaR39G3B7i0pB2x6cBVRma3WfyvYFTS+ipk9RkRfPqYdqYQXWy8nHyo0Ctkyle9xQhu5lHWWrK04=",
+    "fingerprint": "SHA256:HdXC7yw9SgeWYlNVMn8+sLe+1Zykpnd7TB3nZwoudI0"
+   }
   }
  ]
 }

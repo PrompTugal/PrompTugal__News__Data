@@ -143,6 +143,7 @@ jobs:
           AFTER: ${{ github.sha }}
           GH_TOKEN: ${{ github.token }}
           REPO: ${{ github.repository }}
+          SIG_BOOTSTRAP_ANCHOR: ${{ vars.SIG_BOOTSTRAP_ANCHOR }}
         run: |
           set -euo pipefail
           unset NODE_OPTIONS
@@ -154,10 +155,16 @@ jobs:
           # live.b@'s finding (a4c6fce): a pushed workflow that drops this job could still give a "successful" run, so the
           # anchor is the head of the newest such run in which the job named verify itself passed (its jobs are checked)
           anchor=""
+          if [ -n "${SIG_BOOTSTRAP_ANCHOR:-}" ]; then
+          # key bootstrap (cl-6.security@, 26 Nov 2026): the repository variable names the anchor, after a 40-hex check
+          printf '%s' "$SIG_BOOTSTRAP_ANCHOR" | grep -Eq '^[0-9a-f]{40}$' || { echo "SIG_BOOTSTRAP_ANCHOR is not a 40-hex commit" >&2; exit 1; }
+          anchor="$SIG_BOOTSTRAP_ANCHOR"
+          else
           for row in $(api "actions/workflows/pages.yml/runs?branch=dev&event=push&status=success&per_page=30" \
             | jq -r '.workflow_runs[] | select(.path == ".github/workflows/pages.yml" and .head_branch == "dev" and .event == "push" and .conclusion == "success") | "\(.id):\(.head_sha)"'); do
             if api "actions/runs/${row%%:*}/jobs?per_page=100" | jq -e 'any(.jobs[]; .name == "verify" and .conclusion == "success")' >/dev/null; then anchor="${row#*:}"; break; fi
           done
+          fi
           echo "Anchor (head of the latest push run on dev whose verify job passed): ${anchor:-none}"
           [ -n "$anchor" ] || { echo "no anchor: no successful run of this workflow on dev found" >&2; exit 1; }
           git merge-base --is-ancestor "$anchor" "$AFTER" || { echo "the anchor is not an ancestor of the pushed commit" >&2; exit 1; }
