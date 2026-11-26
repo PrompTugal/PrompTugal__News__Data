@@ -1,24 +1,24 @@
 {
  "source": "cisa-kev",
  "title": "Known exploited vulnerabilities (CISA KEV)",
- "read_at": "2026-11-21T07:04:27Z",
+ "read_at": "2026-11-26T07:04:34Z",
  "provenance": {
   "source": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
   "page": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-  "read_at": "2026-11-21T07:04:27Z",
+  "read_at": "2026-11-26T07:04:34Z",
   "by": "sources/cisa-kev/collect.mjs (code, no model; run by data.b@PrompTugal.dinis)",
   "terms": "CC0 1.0: \"You may use this data in any legal manner\"; third-party links keep their own terms; no use of the CISA logo or DHS seal, no endorsement implied. Not reviewed by a person.",
   "feed": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
-  "catalog_version": "2026.11.20",
-  "date_released": "2026-11-20T17:48:39.1516Z"
+  "catalog_version": "2026.11.25",
+  "date_released": "2026-11-25T19:48:12.4344Z"
  },
  "about": "CISA's catalogue of vulnerabilities known to be exploited, as read: each CVE with its vendor, product, the day CISA added it and whether it is known to be used in ransomware campaigns; and totals per week and per vendor. Vulnerabilities in products, never a victim, host or address. A weak signal, not an audit.",
  "counts": {
-  "vulnerabilities": 1790,
-  "published_count": 1790,
-  "vendors": 298,
+  "vulnerabilities": 1805,
+  "published_count": 1805,
+  "vendors": 303,
   "fields_dropped_em_dash": 0,
-  "added_last_7_days": 9
+  "added_last_7_days": 19
  },
  "weekly": [
   {
@@ -968,6 +968,10 @@
   {
    "week_starting": "2026-11-16",
    "added": 9
+  },
+  {
+   "week_starting": "2026-11-23",
+   "added": 15
   }
  ],
  "top_vendors": [
@@ -1060,19 +1064,215 @@
    "vulnerabilities": 13
   },
   {
+   "vendor": "Mitel",
+   "vulnerabilities": 12
+  },
+  {
    "vendor": "Qualcomm",
    "vulnerabilities": 12
   },
   {
    "vendor": "Trend Micro",
    "vulnerabilities": 12
-  },
-  {
-   "vendor": "QNAP",
-   "vulnerabilities": 11
   }
  ],
  "vulnerabilities": [
+  {
+   "cveID": "CVE-2023-25914",
+   "vendorProject": "Danfoss",
+   "product": "AK-SM 800A Series",
+   "vulnerabilityName": "Danfoss AK-SM 800A Series Path Traversal Vulnerability",
+   "dateAdded": "2026-11-25",
+   "dueDate": "2026-11-28",
+   "knownRansomwareCampaignUse": "Unknown",
+   "cwes": [
+    "CWE-22"
+   ],
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-25914"
+  },
+  {
+   "cveID": "CVE-2023-25915",
+   "vendorProject": "Danfoss",
+   "product": "AK-SM 800A Series",
+   "vulnerabilityName": "Danfoss AK-SM 800A Series Improper Input Validation Vulnerability",
+   "dateAdded": "2026-11-25",
+   "dueDate": "2026-11-28",
+   "knownRansomwareCampaignUse": "Unknown",
+   "cwes": [
+    "CWE-20"
+   ],
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-25915"
+  },
+  {
+   "cveID": "CVE-2025-41450",
+   "vendorProject": "Danfoss",
+   "product": "AK-SM 800A Series",
+   "vulnerabilityName": "Danfoss AK-SM 800A Series Improper Authentication Vulnerability",
+   "dateAdded": "2026-11-25",
+   "dueDate": "2026-12-09",
+   "knownRansomwareCampaignUse": "Unknown",
+   "cwes": [
+    "CWE-305"
+   ],
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-41450"
+  },
+  {
+   "cveID": "CVE-2026-103406",
+   "vendorProject": "Hewlett Packard Enterprise (HPE)",
+   "product": "Juniper Session Smart Conductor and Session Smart Router",
+   "vulnerabilityName": "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router OS Command Injection Vulnerability",
+   "dateAdded": "2026-11-25",
+   "dueDate": "2026-11-28",
+   "knownRansomwareCampaignUse": "Unknown",
+   "cwes": [
+    "CWE-78"
+   ],
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103406"
+  },
+  {
+   "cveID": "CVE-2026-133275",
+   "vendorProject": "Mitel",
+   "product": "MiCollab",
+   "vulnerabilityName": "Mitel MiCollab Unrestricted Upload of File with Dangerous Type Vulnerability",
+   "dateAdded": "2026-11-25",
+   "dueDate": "2026-11-28",
+   "knownRansomwareCampaignUse": "Unknown",
+   "cwes": [
+    "CWE-434"
+   ],
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133275"
+  },
+  {
+   "cveID": "CVE-2026-133303",
+   "vendorProject": "Mitel",
+   "product": "MiCollab",
+   "vulnerabilityName": "Mitel MiCollab XML Injection Vulnerability",
+   "dateAdded": "2026-11-25",
+   "dueDate": "2026-11-28",
+   "knownRansomwareCampaignUse": "Unknown",
+   "cwes": [
+    "CWE-91"
+   ],
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133303"
+  },
+  {
+   "cveID": "CVE-2026-133311",
+   "vendorProject": "Mitel",
+   "product": "MiCollab",
+   "vulnerabilityName": "Mitel MiCollab Weak Authentication Vulnerability",
+   "dateAdded": "2026-11-25",
+   "dueDate": "2026-12-09",
+   "knownRansomwareCampaignUse": "Unknown",
+   "cwes": [
+    "CWE-1390"
+   ],
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133311"
+  },
+  {
+   "cveID": "CVE-2026-133323",
+   "vendorProject": "Mitel",
+   "product": "MiCollab",
+   "vulnerabilityName": "Mitel MiCollab OS Command Injection Vulnerability",
+   "dateAdded": "2026-11-25",
+   "dueDate": "2026-11-28",
+   "knownRansomwareCampaignUse": "Unknown",
+   "cwes": [
+    "CWE-78"
+   ],
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133323"
+  },
+  {
+   "cveID": "CVE-2026-133324",
+   "vendorProject": "Mitel",
+   "product": "MiCollab",
+   "vulnerabilityName": "Mitel MiCollab Not Failing Securely Vulnerability",
+   "dateAdded": "2026-11-25",
+   "dueDate": "2026-11-28",
+   "knownRansomwareCampaignUse": "Unknown",
+   "cwes": [
+    "CWE-636"
+   ],
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133324"
+  },
+  {
+   "cveID": "CVE-2026-133469",
+   "vendorProject": "Vates",
+   "product": "Xen Orchestra",
+   "vulnerabilityName": "Vates Xen Orchestra Improper Validation of Specified Type of Input Vulnerability",
+   "dateAdded": "2026-11-25",
+   "dueDate": "2026-11-28",
+   "knownRansomwareCampaignUse": "Unknown",
+   "cwes": [
+    "CWE-287",
+    "CWE-1287"
+   ],
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133469"
+  },
+  {
+   "cveID": "CVE-2026-131914",
+   "vendorProject": "Idunno",
+   "product": "AntiCsrf",
+   "vulnerabilityName": "Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability",
+   "dateAdded": "2026-11-24",
+   "dueDate": "2026-11-27",
+   "knownRansomwareCampaignUse": "Unknown",
+   "cwes": [
+    "CWE-502"
+   ],
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131914"
+  },
+  {
+   "cveID": "CVE-2026-132165",
+   "vendorProject": "Drupal",
+   "product": "Core",
+   "vulnerabilityName": "Drupal Core Remote Code Execution Vulnerability",
+   "dateAdded": "2026-11-24",
+   "dueDate": "2026-11-27",
+   "knownRansomwareCampaignUse": "Unknown",
+   "cwes": [
+    "CWE-636"
+   ],
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132165"
+  },
+  {
+   "cveID": "CVE-2026-132224",
+   "vendorProject": "Optimizely",
+   "product": "Web Experimentation",
+   "vulnerabilityName": "Optimizely Web Experimentation External Control of Critical State Data Vulnerability",
+   "dateAdded": "2026-11-24",
+   "dueDate": "2026-11-27",
+   "knownRansomwareCampaignUse": "Unknown",
+   "cwes": [
+    "CWE-642"
+   ],
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132224"
+  },
+  {
+   "cveID": "CVE-2026-133968",
+   "vendorProject": "Project MONAI",
+   "product": "MONAI Label",
+   "vulnerabilityName": "Project MONAI MONAI Label Path Traversal Vulnerability",
+   "dateAdded": "2026-11-23",
+   "dueDate": "2026-11-26",
+   "knownRansomwareCampaignUse": "Unknown",
+   "cwes": [
+    "CWE-24"
+   ],
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133968"
+  },
+  {
+   "cveID": "CVE-2026-134624",
+   "vendorProject": "N-able",
+   "product": "MailAssure",
+   "vulnerabilityName": "N-able MailAssure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability",
+   "dateAdded": "2026-11-23",
+   "dueDate": "2026-11-26",
+   "knownRansomwareCampaignUse": "Unknown",
+   "cwes": [
+    "CWE-918"
+   ],
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134624"
+  },
   {
    "cveID": "CVE-2025-42884",
    "vendorProject": "SAP",
@@ -1132,7 +1332,7 @@
    "vulnerabilityName": "Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability",
    "dateAdded": "2026-11-18",
    "dueDate": "2026-11-21",
-   "knownRansomwareCampaignUse": "Unknown",
+   "knownRansomwareCampaignUse": "Known",
    "cwes": [
     "CWE-116"
    ],

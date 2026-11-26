@@ -1,19 +1,85 @@
 {
  "place": "lisboa",
- "read_at": "2026-11-21T09:20:40Z",
- "source_read_at": "2026-11-21T07:12:53Z",
+ "read_at": "2026-11-26T07:13:57Z",
+ "source_read_at": "2026-11-26T07:13:20Z",
  "by": "collect/social-by-place.mjs (code, no model; data.b@PrompTugal.dinis), from data/social/latest.json",
  "about": "Links to recent public posts by the official accounts of organisations that match this place by name in the post (basis \"text\") or, when the post names no place, that the organisation covers (basis \"account\"). Links and metadata only: the post text and media are not stored. A signal to check, not a verified fact. An empty list means no listed account posted about this place, not that nothing is happening.",
- "source_note": "Read 2026-11-21T07:12:53Z from the public APIs of bluesky and mastodon; accounts in register/social-accounts.json; gaps in https://data.promptugal.news/api/v1/social/latest.json. Terms: Organisations only, official interfaces only, by link. Bluesky: robots.txt of the public API allows crawling it and asks for backoff on 429; the Terms of Service (14 Aug 2025) leave each post's content with its author, so we store link and metadata only and credit the organisation. Mastodon: mastodon.social's terms (effective 2026-08-31) say whoever owns the content retains ownership and allow API access; its robots.txt disallows only /media_proxy/, /interact/ and a domain-blocks path. Licence on each post: the platform's terms, holder the organisation. Not reviewed by a person.",
- "count": 4,
+ "source_note": "Read 2026-11-26T07:13:20Z from the public APIs of bluesky and mastodon; accounts in register/social-accounts.json; gaps in https://data.promptugal.news/api/v1/social/latest.json. Terms: Organisations only, official interfaces only, by link. Bluesky: robots.txt of the public API allows crawling it and asks for backoff on 429; the Terms of Service (14 Aug 2025) leave each post's content with its author, so we store link and metadata only and credit the organisation. Mastodon: mastodon.social's terms (effective 2026-08-31) say whoever owns the content retains ownership and allow API access; its robots.txt disallows only /media_proxy/, /interact/ and a domain-blocks path. Licence on each post: the platform's terms, holder the organisation. Not reviewed by a person.",
+ "count": 6,
  "posts": [
   {
    "platform": "bluesky",
-   "url": "https://bsky.app/profile/lusa.pt/post/3n2r6zbfnlq2o",
+   "url": "https://bsky.app/profile/publico.pt/post/3n36fk6aazz2f",
+   "account": "publico.pt",
+   "organisation": "Público",
+   "kind": "news outlet",
+   "posted_at": "2026-11-26T00:17:59.4861353Z",
+   "topics": [],
+   "places": [
+    "lisboa"
+   ],
+   "lang": null,
+   "has_media": true,
+   "source": "author feed",
+   "license": {
+    "name": "the platform's terms",
+    "url": "https://bsky.social/about/support/tos",
+    "holder": "Público"
+   },
+   "read_at": "2026-11-26T07:13:20Z",
+   "place_basis": "text"
+  },
+  {
+   "platform": "bluesky",
+   "url": "https://bsky.app/profile/sapo.pt/post/3n36a77qkk32h",
+   "account": "sapo.pt",
+   "organisation": "SAPO",
+   "kind": "company",
+   "posted_at": "2026-11-25T22:42:22.375260Z",
+   "topics": [],
+   "places": [
+    "lisboa"
+   ],
+   "lang": null,
+   "has_media": true,
+   "source": "author feed",
+   "license": {
+    "name": "the platform's terms",
+    "url": "https://bsky.social/about/support/tos",
+    "holder": "SAPO"
+   },
+   "read_at": "2026-11-26T07:13:20Z",
+   "place_basis": "text"
+  },
+  {
+   "platform": "bluesky",
+   "url": "https://bsky.app/profile/publico.pt/post/3n362cs4xle2y",
+   "account": "publico.pt",
+   "organisation": "Público",
+   "kind": "news outlet",
+   "posted_at": "2026-11-25T20:57:00.7568066Z",
+   "topics": [],
+   "places": [
+    "lisboa"
+   ],
+   "lang": null,
+   "has_media": true,
+   "source": "author feed",
+   "license": {
+    "name": "the platform's terms",
+    "url": "https://bsky.social/about/support/tos",
+    "holder": "Público"
+   },
+   "read_at": "2026-11-26T07:13:20Z",
+   "place_basis": "text"
+  },
+  {
+   "platform": "bluesky",
+   "url": "https://bsky.app/profile/lusa.pt/post/3n35tyvvq3e2k",
    "account": "lusa.pt",
    "organisation": "Agência Lusa",
    "kind": "news outlet",
-   "posted_at": "2026-11-20T18:16:32.8887376+00:00",
+   "posted_at": "2026-11-25T19:04:06.1179563+00:00",
    "topics": [],
    "places": [
     "lisboa"
@@ -26,20 +92,21 @@
     "url": "https://bsky.social/about/support/tos",
     "holder": "Agência Lusa"
    },
-   "read_at": "2026-11-21T07:12:53Z",
+   "read_at": "2026-11-26T07:13:20Z",
    "place_basis": "text"
   },
   {
    "platform": "bluesky",
-   "url": "https://bsky.app/profile/portugalresident.com/post/3n2oijh2xky23",
-   "account": "portugalresident.com",
-   "organisation": "The Portugal Resident",
+   "url": "https://bsky.app/profile/publico.pt/post/3n35q5cpjsp2y",
+   "account": "publico.pt",
+   "organisation": "Público",
    "kind": "news outlet",
-   "posted_at": "2026-11-19T16:28:39.778Z",
-   "topics": [],
+   "posted_at": "2026-11-25T17:54:59.3931392Z",
+   "topics": [
+    "events"
+   ],
    "places": [
-    "lisboa",
-    "algarve"
+    "lisboa"
    ],
    "lang": null,
    "has_media": true,
@@ -47,9 +114,9 @@
    "license": {
     "name": "the platform's terms",
     "url": "https://bsky.social/about/support/tos",
-    "holder": "The Portugal Resident"
+    "holder": "Público"
    },
-   "read_at": "2026-11-21T07:12:53Z",
+   "read_at": "2026-11-26T07:13:20Z",
    "place_basis": "text"
   },
   {
@@ -73,29 +140,7 @@
     "url": "https://bsky.social/about/support/tos",
     "holder": "Turismo de Portugal (Visit Portugal)"
    },
-   "read_at": "2026-11-21T07:12:53Z",
-   "place_basis": "text"
-  },
-  {
-   "platform": "bluesky",
-   "url": "https://bsky.app/profile/sapo.pt/post/3myvg74pov422",
-   "account": "sapo.pt",
-   "organisation": "SAPO",
-   "kind": "company",
-   "posted_at": "2026-10-27T23:45:20.859118Z",
-   "topics": [],
-   "places": [
-    "lisboa"
-   ],
-   "lang": null,
-   "has_media": true,
-   "source": "author feed",
-   "license": {
-    "name": "the platform's terms",
-    "url": "https://bsky.social/about/support/tos",
-    "holder": "SAPO"
-   },
-   "read_at": "2026-11-21T07:12:53Z",
+   "read_at": "2026-11-26T07:13:20Z",
    "place_basis": "text"
   }
  ]

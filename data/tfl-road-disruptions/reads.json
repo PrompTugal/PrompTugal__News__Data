@@ -3,6 +3,23 @@
  "source": "tfl-road-disruptions",
  "runs": [
   {
+   "at": "2026-11-26T07:13:50Z",
+   "finished": "2026-11-26T07:13:52Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "disruptions",
+     "url": "https://api.tfl.gov.uk/Road/all/Disruption",
+     "at": "2026-11-26T07:13:52Z",
+     "status": 200,
+     "bytes": 227624,
+     "sha256_prefix": "1c6435893f46b20e",
+     "changed": true
+    }
+   ]
+  },
+  {
    "at": "2026-11-21T09:20:35Z",
    "finished": "2026-11-21T09:20:37Z",
    "ok": 1,

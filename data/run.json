@@ -1,9 +1,45 @@
 {
- "at": "2026-11-21T09:20:40Z",
+ "at": "2026-11-26T07:13:57Z",
  "sources": [
+  {
+   "id": "adsb-faro",
+   "ok": 0,
+   "failed": 1,
+   "wrote": true
+  },
+  {
+   "id": "base-gov-pt",
+   "ok": 2,
+   "failed": 0,
+   "wrote": true
+  },
+  {
+   "id": "cams",
+   "ok": 2,
+   "failed": 0,
+   "wrote": true
+  },
   {
    "id": "carbon-intensity-london",
    "ok": 2,
+   "failed": 0,
+   "wrote": true
+  },
+  {
+   "id": "cisa-kev",
+   "ok": 1,
+   "failed": 0,
+   "wrote": true
+  },
+  {
+   "id": "contracts-finder",
+   "ok": 6,
+   "failed": 0,
+   "wrote": true
+  },
+  {
+   "id": "ea-flood",
+   "ok": 23,
    "failed": 0,
    "wrote": true
   },
@@ -14,7 +50,109 @@
    "wrote": true
   },
   {
+   "id": "enisa-pubs",
+   "ok": 1,
+   "failed": 0,
+   "wrote": true
+  },
+  {
+   "id": "eurostat-tourism",
+   "ok": 3,
+   "failed": 0,
+   "wrote": true
+  },
+  {
+   "id": "euvd",
+   "ok": 16,
+   "failed": 1,
+   "wrote": true
+  },
+  {
+   "id": "events-pt",
+   "ok": 16,
+   "failed": 1,
+   "wrote": true
+  },
+  {
+   "id": "github-pt",
+   "ok": 1,
+   "failed": 21,
+   "wrote": true
+  },
+  {
+   "id": "ipma-city-forecasts",
+   "ok": 36,
+   "failed": 0,
+   "wrote": true
+  },
+  {
+   "id": "ipma-fire-risk",
+   "ok": 3,
+   "failed": 0,
+   "wrote": true
+  },
+  {
+   "id": "ipma-observations",
+   "ok": 2,
+   "failed": 0,
+   "wrote": true
+  },
+  {
+   "id": "ipma-sea",
+   "ok": 4,
+   "failed": 0,
+   "wrote": true
+  },
+  {
+   "id": "ipma-uv",
+   "ok": 2,
+   "failed": 0,
+   "wrote": true
+  },
+  {
+   "id": "ipma-warnings",
+   "ok": 1,
+   "failed": 0,
+   "wrote": true
+  },
+  {
+   "id": "meteoalarm-pt",
+   "ok": 1,
+   "failed": 0,
+   "wrote": true
+  },
+  {
+   "id": "nvd-cve",
+   "ok": 1,
+   "failed": 0,
+   "wrote": true
+  },
+  {
+   "id": "nvd-kev",
+   "ok": 1,
+   "failed": 0,
+   "wrote": true
+  },
+  {
+   "id": "open-meteo-london",
+   "ok": 0,
+   "failed": 1,
+   "wrote": false
+  },
+  {
+   "id": "social",
+   "ok": 5,
+   "failed": 5,
+   "wrote": true
+  },
+  {
    "id": "tfl-bikepoint",
+   "ok": 1,
+   "failed": 0,
+   "wrote": true
+  },
+  {
+   "id": "tfl-jamcams",
    "ok": 1,
    "failed": 0,
    "wrote": true
@@ -29,6 +167,12 @@
    "id": "tfl-status",
    "ok": 1,
    "failed": 0,
+   "wrote": true
+  },
+  {
+   "id": "youtube-replays",
+   "ok": 0,
+   "failed": 1,
    "wrote": true
   }
  ]

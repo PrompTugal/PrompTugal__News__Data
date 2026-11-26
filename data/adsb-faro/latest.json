@@ -65,5 +65,7 @@
    "lat": 36.67,
    "lon": -7.79
   }
- ]
+ ],
+ "stale": true,
+ "stale_note": "adsb.lol could not be read at 2026-11-26T07:03:59Z; these values are from the last read, at read_at."
 }

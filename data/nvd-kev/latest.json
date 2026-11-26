@@ -1,12 +1,12 @@
 {
  "source": "nvd-kev",
  "title": "NVD's record of every CVE on CISA's KEV list",
- "read_at": "2026-11-21T07:12:44Z",
+ "read_at": "2026-11-26T07:13:11Z",
  "notice": "This product uses the NVD API but is not endorsed or certified by the NVD.",
  "provenance": {
   "source": "https://nvd.nist.gov/",
   "page": "https://nvd.nist.gov/developers/vulnerabilities",
-  "read_at": "2026-11-21T07:12:44Z",
+  "read_at": "2026-11-26T07:13:11Z",
   "by": "sources/nvd-kev/collect.mjs (code, no model; run by data.b@PrompTugal.dinis)",
   "terms": "NVD API Terms of Use: the API is for building a service to \"search, display, analyze, retrieve, view and otherwise get\" NVD data; asked to display \"This product uses the NVD API but is not endorsed or certified by the NVD.\"; the NVD name may identify the source but not imply endorsement; if you modify the content you may not attribute it to the NVD (our totals are ours, our per-CVE values are kept as served); public rate limit 5 requests in a rolling 30 seconds without a key (we use none, seven seconds apart); no more than once every two hours (we read every 6 hours). Not reviewed by a person.",
   "api": "https://services.nvd.nist.gov/rest/json/cves/2.0?hasKev",
@@ -14,10 +14,10 @@
  },
  "about": "NVD's record of every CVE on CISA's Known Exploited Vulnerabilities list, read once a day with the API's hasKev filter, in the same per-CVE shape as /api/v1/nvd-cve/latest.json (cves[]): CNA (domain only), status, CVSS, weakness types, vendors and products, published and lastModified, plus kev.added and kev.action_due as NVD serves them. Descriptions and references are not kept. Values are NVD's, as served.",
  "counts": {
-  "cves": 1790,
-  "nvd_total": 1790,
+  "cves": 1805,
+  "nvd_total": 1805,
   "pages_complete": true,
-  "with_products": 1790
+  "with_products": 1805
  },
  "cves": [
   {
@@ -47457,6 +47457,64 @@
    }
   },
   {
+   "id": "CVE-2023-25914",
+   "published": "2023-08-21T21:15:08.970",
+   "lastModified": "2026-11-26T05:17:48.717",
+   "vulnStatus": "Modified",
+   "cna": "divd.nl",
+   "cvss": {
+    "version": "3.1",
+    "score": 8.8,
+    "severity": "HIGH",
+    "scored_by": "nvd"
+   },
+   "cwes": [
+    "CWE-22"
+   ],
+   "products": [
+    {
+     "vendor": "danfoss",
+     "product": "ak-sm_800a_firmware"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cpe",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-25914",
+   "kev": {
+    "added": "2026-11-25",
+    "action_due": "2026-11-28"
+   }
+  },
+  {
+   "id": "CVE-2023-25915",
+   "published": "2023-08-21T21:15:09.170",
+   "lastModified": "2026-11-26T05:17:53.213",
+   "vulnStatus": "Modified",
+   "cna": "divd.nl",
+   "cvss": {
+    "version": "3.1",
+    "score": 8.8,
+    "severity": "HIGH",
+    "scored_by": "nvd"
+   },
+   "cwes": [
+    "CWE-20"
+   ],
+   "products": [
+    {
+     "vendor": "danfoss",
+     "product": "ak-sm_800a_firmware"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cpe",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-25915",
+   "kev": {
+    "added": "2026-11-25",
+    "action_due": "2026-11-28"
+   }
+  },
+  {
    "id": "CVE-2023-26083",
    "published": "2023-04-06T16:15:07.843",
    "lastModified": "2026-06-17T05:42:38.457",
@@ -65265,6 +65323,35 @@
    }
   },
   {
+   "id": "CVE-2025-41450",
+   "published": "2025-05-08T10:15:18.380",
+   "lastModified": "2026-11-26T05:18:07.057",
+   "vulnStatus": "Modified",
+   "cna": "d7ff35af-cf88-454c-bab9-af60602f10f8",
+   "cvss": {
+    "version": "3.1",
+    "score": 7.5,
+    "severity": "HIGH",
+    "scored_by": "nvd"
+   },
+   "cwes": [
+    "CWE-305"
+   ],
+   "products": [
+    {
+     "vendor": "danfoss",
+     "product": "ak-sm_800a_firmware"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cpe",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-41450",
+   "kev": {
+    "added": "2026-11-25",
+    "action_due": "2026-12-09"
+   }
+  },
+  {
    "id": "CVE-2025-42599",
    "published": "2025-04-18T04:15:30.557",
    "lastModified": "2026-09-24T13:10:00.320",
@@ -68417,6 +68504,35 @@
    }
   },
   {
+   "id": "CVE-2026-103406",
+   "published": "2026-10-28T17:17:25.830",
+   "lastModified": "2026-11-26T05:18:07.963",
+   "vulnStatus": "Analyzed",
+   "cna": "juniper.net",
+   "cvss": {
+    "version": "3.1",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-78"
+   ],
+   "products": [
+    {
+     "vendor": "juniper",
+     "product": "session_smart_conductor"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cpe",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103406",
+   "kev": {
+    "added": "2026-11-25",
+    "action_due": "2026-11-28"
+   }
+  },
+  {
    "id": "CVE-2026-104286",
    "published": "2026-10-01T20:17:24.010",
    "lastModified": "2026-10-28T20:09:29.257",
@@ -68594,7 +68710,7 @@
   {
    "id": "CVE-2026-109618",
    "published": "2026-10-21T14:17:09.357",
-   "lastModified": "2026-11-20T12:18:18.987",
+   "lastModified": "2026-11-24T14:27:42.290",
    "vulnStatus": "Analyzed",
    "cna": "php.net",
    "cvss": {
@@ -68636,6 +68752,10 @@
     },
     {
      "vendor": "siemens",
+     "product": "cp61850_firmware"
+    },
+    {
+     "vendor": "siemens",
      "product": "energy_engage"
     },
     {
@@ -68657,6 +68777,14 @@
     {
      "vendor": "siemens",
      "product": "spectrum_power_tg"
+    },
+    {
+     "vendor": "siemens",
+     "product": "wtv676-hb6035_firmware"
+    },
+    {
+     "vendor": "siemens",
+     "product": "wtv776-hb6035_firmware"
     }
    ],
    "products_more": 0,
@@ -68670,7 +68798,7 @@
   {
    "id": "CVE-2026-109619",
    "published": "2026-10-21T14:17:09.823",
-   "lastModified": "2026-11-20T12:18:19.730",
+   "lastModified": "2026-11-24T14:27:34.097",
    "vulnStatus": "Analyzed",
    "cna": "php.net",
    "cvss": {
@@ -68712,6 +68840,10 @@
     },
     {
      "vendor": "siemens",
+     "product": "cp61850_firmware"
+    },
+    {
+     "vendor": "siemens",
      "product": "energy_engage"
     },
     {
@@ -68733,6 +68865,14 @@
     {
      "vendor": "siemens",
      "product": "spectrum_power_tg"
+    },
+    {
+     "vendor": "siemens",
+     "product": "wtv676-hb6035_firmware"
+    },
+    {
+     "vendor": "siemens",
+     "product": "wtv776-hb6035_firmware"
     }
    ],
    "products_more": 0,
@@ -68833,7 +68973,7 @@
   {
    "id": "CVE-2026-111497",
    "published": "2026-10-22T14:17:37.190",
-   "lastModified": "2026-11-18T19:17:27.513",
+   "lastModified": "2026-11-24T15:17:09.400",
    "vulnStatus": "Analyzed",
    "cna": "google.com",
    "cvss": {
@@ -69058,7 +69198,7 @@
   {
    "id": "CVE-2026-114713",
    "published": "2026-11-08T03:16:33.410",
-   "lastModified": "2026-11-16T12:51:36.280",
+   "lastModified": "2026-11-23T14:10:29.030",
    "vulnStatus": "Analyzed",
    "cna": "mitre.org",
    "cvss": {
@@ -69578,6 +69718,296 @@
    }
   },
   {
+   "id": "CVE-2026-131914",
+   "published": "2026-11-19T02:17:20.360",
+   "lastModified": "2026-11-25T05:18:30.107",
+   "vulnStatus": "Analyzed",
+   "cna": "google.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "scored_by": "nvd"
+   },
+   "cwes": [
+    "CWE-502"
+   ],
+   "products": [
+    {
+     "vendor": "blowdart",
+     "product": "anticsrf"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cpe",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131914",
+   "kev": {
+    "added": "2026-11-24",
+    "action_due": "2026-11-27"
+   }
+  },
+  {
+   "id": "CVE-2026-132165",
+   "published": "2026-11-26T01:17:10.290",
+   "lastModified": "2026-11-26T01:17:10.290",
+   "vulnStatus": "Received",
+   "cna": "drupal.org",
+   "cvss": null,
+   "cwes": [
+    "CWE-306"
+   ],
+   "products": [
+    {
+     "vendor": "Drupal",
+     "product": "Drupal core"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cna",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132165",
+   "kev": {
+    "added": "2026-11-24",
+    "action_due": "2026-11-27"
+   }
+  },
+  {
+   "id": "CVE-2026-132224",
+   "published": "2026-11-18T16:18:15.627",
+   "lastModified": "2026-11-25T05:18:30.523",
+   "vulnStatus": "Analyzed",
+   "cna": "mitre.org",
+   "cvss": {
+    "version": "3.1",
+    "score": 8.7,
+    "severity": "HIGH",
+    "scored_by": "nvd"
+   },
+   "cwes": [
+    "CWE-642"
+   ],
+   "products": [
+    {
+     "vendor": "optimizely",
+     "product": "web_experimentation"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cpe",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132224",
+   "kev": {
+    "added": "2026-11-24",
+    "action_due": "2026-11-27"
+   }
+  },
+  {
+   "id": "CVE-2026-133275",
+   "published": "2026-11-19T16:21:31.033",
+   "lastModified": "2026-11-26T05:18:20.573",
+   "vulnStatus": "Modified",
+   "cna": "mitre.org",
+   "cvss": {
+    "version": "3.1",
+    "score": 5.3,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-434"
+   ],
+   "products": [
+    {
+     "vendor": "mitel",
+     "product": "micollab"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cpe",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133275",
+   "kev": {
+    "added": "2026-11-25",
+    "action_due": "2026-11-28"
+   }
+  },
+  {
+   "id": "CVE-2026-133303",
+   "published": "2026-11-19T17:18:51.670",
+   "lastModified": "2026-11-26T05:18:21.160",
+   "vulnStatus": "Modified",
+   "cna": "mitre.org",
+   "cvss": {
+    "version": "3.1",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "scored_by": "nvd"
+   },
+   "cwes": [
+    "CWE-91"
+   ],
+   "products": [
+    {
+     "vendor": "mitel",
+     "product": "micollab"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cpe",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133303",
+   "kev": {
+    "added": "2026-11-25",
+    "action_due": "2026-11-28"
+   }
+  },
+  {
+   "id": "CVE-2026-133311",
+   "published": "2026-11-19T17:18:52.740",
+   "lastModified": "2026-11-26T05:18:21.543",
+   "vulnStatus": "Modified",
+   "cna": "mitre.org",
+   "cvss": {
+    "version": "3.1",
+    "score": 5.9,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-1390"
+   ],
+   "products": [
+    {
+     "vendor": "mitel",
+     "product": "micollab"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cpe",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133311",
+   "kev": {
+    "added": "2026-11-25",
+    "action_due": "2026-12-09"
+   }
+  },
+  {
+   "id": "CVE-2026-133323",
+   "published": "2026-11-19T17:18:52.880",
+   "lastModified": "2026-11-26T05:18:21.963",
+   "vulnStatus": "Modified",
+   "cna": "mitre.org",
+   "cvss": {
+    "version": "3.1",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "scored_by": "nvd"
+   },
+   "cwes": [
+    "CWE-78"
+   ],
+   "products": [
+    {
+     "vendor": "mitel",
+     "product": "micollab"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cpe",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133323",
+   "kev": {
+    "added": "2026-11-25",
+    "action_due": "2026-11-28"
+   }
+  },
+  {
+   "id": "CVE-2026-133324",
+   "published": "2026-11-19T17:18:53.017",
+   "lastModified": "2026-11-26T05:18:22.280",
+   "vulnStatus": "Modified",
+   "cna": "mitre.org",
+   "cvss": {
+    "version": "3.1",
+    "score": 5.3,
+    "severity": "MEDIUM",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-636"
+   ],
+   "products": [
+    {
+     "vendor": "mitel",
+     "product": "micollab"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cpe",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133324",
+   "kev": {
+    "added": "2026-11-25",
+    "action_due": "2026-11-28"
+   }
+  },
+  {
+   "id": "CVE-2026-133469",
+   "published": "2026-11-23T17:17:31.780",
+   "lastModified": "2026-11-26T05:18:22.960",
+   "vulnStatus": "Modified",
+   "cna": "github.com",
+   "cvss": {
+    "version": "3.1",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-1287",
+    "CWE-287"
+   ],
+   "products": [
+    {
+     "vendor": "xen-orchestra",
+     "product": "xen_orchestra"
+    },
+    {
+     "vendor": "xen-orchestra",
+     "product": "xen_orchestra_server"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cpe",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133469",
+   "kev": {
+    "added": "2026-11-25",
+    "action_due": "2026-11-28"
+   }
+  },
+  {
+   "id": "CVE-2026-133968",
+   "published": "2026-11-20T19:18:51.670",
+   "lastModified": "2026-11-24T15:17:20.847",
+   "vulnStatus": "Analyzed",
+   "cna": "mitre.org",
+   "cvss": {
+    "version": "3.1",
+    "score": 9.8,
+    "severity": "CRITICAL",
+    "scored_by": "cna"
+   },
+   "cwes": [
+    "CWE-24"
+   ],
+   "products": [
+    {
+     "vendor": "monai",
+     "product": "monai_label"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cpe",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133968",
+   "kev": {
+    "added": "2026-11-23",
+    "action_due": "2026-11-26"
+   }
+  },
+  {
    "id": "CVE-2026-1340",
    "published": "2026-01-29T22:15:53.313",
    "lastModified": "2026-06-17T10:15:37.873",
@@ -69604,6 +70034,35 @@
    "kev": {
     "added": "2026-04-08",
     "action_due": "2026-04-11"
+   }
+  },
+  {
+   "id": "CVE-2026-134624",
+   "published": "2026-11-22T19:16:32.163",
+   "lastModified": "2026-11-24T15:17:22.057",
+   "vulnStatus": "Analyzed",
+   "cna": "a5532a13-c4dd-4202-bef1-e0b8f2f8d12b",
+   "cvss": {
+    "version": "3.1",
+    "score": 8.7,
+    "severity": "HIGH",
+    "scored_by": "nvd"
+   },
+   "cwes": [
+    "CWE-918"
+   ],
+   "products": [
+    {
+     "vendor": "n-able",
+     "product": "mail_assure"
+    }
+   ],
+   "products_more": 0,
+   "products_from": "cpe",
+   "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134624",
+   "kev": {
+    "added": "2026-11-23",
+    "action_due": "2026-11-26"
    }
   },
   {

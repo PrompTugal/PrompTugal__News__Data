@@ -3,6 +3,32 @@
  "source": "base-gov-pt",
  "runs": [
   {
+   "at": "2026-11-26T07:03:59Z",
+   "finished": "2026-11-26T07:04:25Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "dataset",
+     "url": "https://dados.gov.pt/api/1/datasets/66d72d488ca4b7cb2de28712/",
+     "at": "2026-11-26T07:04:01Z",
+     "status": 200,
+     "bytes": 46011,
+     "sha256_prefix": "7b825be319493925",
+     "changed": true
+    },
+    {
+     "name": "contratos2026.zip",
+     "url": "https://dados.gov.pt/s/resources/contratos-publicos-portal-base-impic-contratos-de-2012-a-2026/20261122-100620-185121fb/contratos2026.zip",
+     "at": "2026-11-26T07:04:04Z",
+     "status": 200,
+     "bytes": 71136042,
+     "sha256_prefix": "02a0a96dfbb28a1a",
+     "changed": "first read"
+    }
+   ]
+  },
+  {
    "at": "2026-11-21T07:04:19Z",
    "finished": "2026-11-21T07:04:22Z",
    "ok": 1,

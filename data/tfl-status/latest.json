@@ -1,11 +1,11 @@
 {
  "source": "tfl-status",
  "title": "London line status (TfL)",
- "read_at": "2026-11-21T09:20:37Z",
+ "read_at": "2026-11-26T07:13:52Z",
  "provenance": {
   "source": "https://api.tfl.gov.uk/",
   "page": "https://api-portal.tfl.gov.uk/",
-  "read_at": "2026-11-21T09:20:37Z",
+  "read_at": "2026-11-26T07:13:52Z",
   "by": "sources/tfl-status/collect.mjs (code, no model; run by data.b@PrompTugal.dinis)",
   "terms": "TfL's Transport Data Service terms (based on the Open Government Licence v2.0 with TfL amendments): free to copy, publish, distribute, transmit and adapt the information and to exploit it commercially and non-commercially; credit \"Powered by TfL Open Data\"; at most 500 calls a minute per feed; no implied endorsement.",
   "api": "https://api.tfl.gov.uk/Line/Mode/tube,overground,elizabeth-line,dlr,tram/Status"
@@ -20,8 +20,8 @@
  "attribution": "Powered by TfL Open Data",
  "counts": {
   "lines": 20,
-  "good_service": 12,
-  "not_good": 8,
+  "good_service": 13,
+  "not_good": 7,
   "fields_dropped_wording": 0
  },
  "lines": [
@@ -31,11 +31,11 @@
    "mode": "dlr",
    "statuses": [
     {
-     "severity": 5,
-     "status": "Part Closure",
-     "reason": "DOCKLANDS LIGHT RAILWAY: Saturday 21 and Sunday 22 November, no service between Canning Town and Stratford International. Please use JUBILEE LINE and local London Buses services.",
-     "from": "2026-11-21T04:30:00Z",
-     "to": "2026-11-23T01:29:00Z"
+     "severity": 10,
+     "status": "Good Service",
+     "reason": null,
+     "from": null,
+     "to": null
     }
    ]
   },
@@ -45,11 +45,11 @@
    "mode": "elizabeth-line",
    "statuses": [
     {
-     "severity": 10,
-     "status": "Good Service",
-     "reason": null,
-     "from": null,
-     "to": null
+     "severity": 6,
+     "status": "Severe Delays",
+     "reason": "Severe delays between Paddington and Heathrow Terminals / Reading due to a late finish of engineering work. GOOD SERVICE on the rest of the line. Tickets are being accepted on London Underground, London Buses, Great Western Railway and South Western Railway.",
+     "from": "2026-11-26T06:43:50Z",
+     "to": "2026-11-27T01:29:00Z"
     }
    ]
   },
@@ -73,11 +73,25 @@
    "mode": "overground",
    "statuses": [
     {
-     "severity": 4,
-     "status": "Planned Closure",
-     "reason": "LIONESS LINE: Saturday 21 and Sunday 22 November, no service between Euston and Watford Junction. There will also be no BAKERLOO LINE service between Queens Park and Harrow & Wealdstone. Special bus service 720 operates (please note service 718 will NOT operate). LONDON NORTH WESTERN RAILWAY trains continue to serve Euston, Harrow & Wealdstone, Bushey and Watford Junction. SOUTHERN trains serve Wembley Central, Harrow & Wealdstone and Watford Junction until 1900 Saturday only, not on Sunday.",
-     "from": "2026-11-21T04:30:00Z",
-     "to": "2026-11-23T01:29:00Z"
+     "severity": 6,
+     "status": "Severe Delays",
+     "reason": "Lioness Line: No service between Willesden Junction and Queen's Park and SEVERE DELAYS between Queen's Park and Euston due to a track fault at Kensal Green. London Underground are accepting tickets via any reasonable route. MINOR DELAYS on the rest of the line.",
+     "from": "2026-11-26T06:13:14Z",
+     "to": "2026-11-27T01:29:00Z"
+    },
+    {
+     "severity": 9,
+     "status": "Minor Delays",
+     "reason": "Lioness Line: No service between Willesden Junction and Queen's Park and SEVERE DELAYS between Queen's Park and Euston due to a track fault at Kensal Green. London Underground are accepting tickets via any reasonable route. MINOR DELAYS on the rest of the line.",
+     "from": "2026-11-26T06:13:14Z",
+     "to": "2026-11-27T01:29:00Z"
+    },
+    {
+     "severity": 3,
+     "status": "Part Suspended",
+     "reason": "Lioness Line: No service between Willesden Junction and Queen's Park and SEVERE DELAYS between Queen's Park and Euston due to a track fault at Kensal Green. London Underground are accepting tickets via any reasonable route. MINOR DELAYS on the rest of the line.",
+     "from": "2026-11-26T06:13:14Z",
+     "to": "2026-11-26T10:12:39Z"
     }
    ]
   },
@@ -157,11 +171,11 @@
    "mode": "tube",
    "statuses": [
     {
-     "severity": 5,
-     "status": "Part Closure",
-     "reason": "BAKERLOO LINE: Saturday 21 and Sunday 22 November, no service between Queens Park and Harrow & Wealdstone. Please note that special bus service 718 will NOT operate. There will also be no LIONESS LINE service between Euston and Watford Junction. LONDON NORTH WESTERN RAILWAY trains continue to stop at Harrow & Wealdstone. SOUTHERN trains stop at Wembley Central and Harrow & Wealdstone until 1900 Saturday only, not on Sunday.",
-     "from": "2026-11-21T04:30:00Z",
-     "to": "2026-11-23T01:29:00Z"
+     "severity": 3,
+     "status": "Part Suspended",
+     "reason": "Bakerloo Line: No service between Queen's Park and Harrow & Wealdstone due to a track fault at Kensal Green. Tickets are being accepted on London Buses and London Northwestern Railway. GOOD SERVICE on the rest of the line.",
+     "from": "2026-11-26T06:16:53Z",
+     "to": "2026-11-26T10:12:39Z"
     }
    ]
   },
@@ -171,11 +185,11 @@
    "mode": "tube",
    "statuses": [
     {
-     "severity": 10,
-     "status": "Good Service",
-     "reason": null,
-     "from": null,
-     "to": null
+     "severity": 9,
+     "status": "Minor Delays",
+     "reason": "Central Line: Minor delays due to train cancellations.",
+     "from": "2026-11-26T07:04:04Z",
+     "to": "2026-11-27T01:29:00Z"
     }
    ]
   },
@@ -199,25 +213,18 @@
    "mode": "tube",
    "statuses": [
     {
-     "severity": 5,
-     "status": "Part Closure",
-     "reason": "TUBE STRIKE: Piccadilly line service control staff are taking strike action from Friday 20 until Saturday evening, 21 November. Due to shared infrastructure around the Ealing Common District line depot, there will be no DISTRICT LINE service between Turnham Green and Ealing Broadway from midday on Friday until Saturday evening, with a reduced service on the rest of the line. No Piccadilly line service is expected during the strike. Replacement bus services operate during Friday Night Tube and Saturday daytime hours only. Please use MILDMAY LINE services between Gunnersbury, Kew Gardens and Ric",
-     "from": "2026-11-20T12:09:00Z",
-     "to": "2026-11-21T20:30:00Z"
-    },
-    {
      "severity": 6,
      "status": "Severe Delays",
-     "reason": "District Line: No service between Kensington (Olympia) and Earl's Court due to train cancellations. NO SERVICE between Turnham Green and Ealing Broadway due to strike action. Tickets will be accepted on London Buses, Mildmay line, DLR, Elizabeth line, C2C and South Western services. SEVERE DELAYS on the rest of the line.",
-     "from": "2026-11-21T08:21:08Z",
-     "to": "2026-11-22T01:29:00Z"
+     "reason": "District Line: No service between Earl's Court and Wimbledon and SEVERE DELAYS between Earl's Court and Edgware Road while we fix a signal failure at Southfields. Tickets are being accepted on London Buses and South Western Railway. GOOD SERVICE on the rest of the line.",
+     "from": "2026-11-26T06:57:52Z",
+     "to": "2026-11-27T01:29:00Z"
     },
     {
      "severity": 3,
      "status": "Part Suspended",
-     "reason": "District Line: No service between Kensington (Olympia) and Earl's Court due to train cancellations. NO SERVICE between Turnham Green and Ealing Broadway due to strike action. Tickets will be accepted on London Buses, Mildmay line, DLR, Elizabeth line, C2C and South Western services. SEVERE DELAYS on the rest of the line.",
-     "from": "2026-11-21T08:21:08Z",
-     "to": "2026-11-21T12:19:44Z"
+     "reason": "District Line: No service between Earl's Court and Wimbledon and SEVERE DELAYS between Earl's Court and Edgware Road while we fix a signal failure at Southfields. Tickets are being accepted on London Buses and South Western Railway. GOOD SERVICE on the rest of the line.",
+     "from": "2026-11-26T06:57:52Z",
+     "to": "2026-11-26T10:12:39Z"
     }
    ]
   },
@@ -227,11 +234,11 @@
    "mode": "tube",
    "statuses": [
     {
-     "severity": 6,
-     "status": "Severe Delays",
-     "reason": "Hammersmith and City Line: Severe delays due to train cancellations. Tickets will be accepted on C2C, and local bus services.",
-     "from": "2026-11-21T07:09:07Z",
-     "to": "2026-11-22T01:29:00Z"
+     "severity": 10,
+     "status": "Good Service",
+     "reason": null,
+     "from": null,
+     "to": null
     }
    ]
   },
@@ -257,9 +264,9 @@
     {
      "severity": 9,
      "status": "Minor Delays",
-     "reason": "Metropolitan Line: Minor delays between Moor Park and Amersham due to train cancellations. The next southbound train from Amersham will be at 09:48. GOOD SERVICE on the rest of the line.",
-     "from": "2026-11-21T08:42:38Z",
-     "to": "2026-11-22T01:29:00Z"
+     "reason": "Metropolitan Line: Minor delays due to train cancellations.",
+     "from": "2026-11-26T07:07:28Z",
+     "to": "2026-11-27T01:29:00Z"
     }
    ]
   },
@@ -269,11 +276,11 @@
    "mode": "tube",
    "statuses": [
     {
-     "severity": 10,
-     "status": "Good Service",
-     "reason": null,
-     "from": null,
-     "to": null
+     "severity": 9,
+     "status": "Minor Delays",
+     "reason": "Northern Line: Minor delays between Camden Town and High Barnet due to an earlier track inspection at Tufnell Park and MINOR DELAYS between Kennington and Camden Town via Charing Cross due to a points failure at Kennington. GOOD SERVICE on the rest of the line.",
+     "from": "2026-11-26T07:03:38Z",
+     "to": "2026-11-27T01:29:00Z"
     }
    ]
   },
@@ -283,11 +290,11 @@
    "mode": "tube",
    "statuses": [
     {
-     "severity": 4,
-     "status": "Planned Closure",
-     "reason": "TUBE STRIKE: Piccadilly line service control staff are planning to take strike action from Friday 20 until Saturday evening 21 November. There will be no service from midday on Friday until Saturday evening, including Night Tube on Friday night. Normal Night Tube service is expected to operate on Saturday night. Due to shared infrastructure around the Ealing Common District line depot, there will be no DISTRICT LINE service between Turnham Green and Ealing Broadway from midday on Friday until Saturday evening. Replacement buses will operate during Friday Night Tube hours and Saturday daytime o",
-     "from": "2026-11-20T11:59:00Z",
-     "to": "2026-11-21T20:30:00Z"
+     "severity": 10,
+     "status": "Good Service",
+     "reason": null,
+     "from": null,
+     "to": null
     }
    ]
   },
@@ -311,18 +318,11 @@
    "mode": "tube",
    "statuses": [
     {
-     "severity": 4,
-     "status": "Planned Closure",
-     "reason": "Waterloo & City line: service operates 06:00 until 00:30, Monday to Friday only. There is no service on Saturdays, Sundays and on bank/public holidays.",
-     "from": "2026-11-21T04:15:00Z",
-     "to": "2026-11-21T23:59:00Z"
-    },
-    {
-     "severity": 20,
-     "status": "Service Closed",
-     "reason": "Waterloo and City Line: Service will resume at 06:00 on Monday.",
-     "from": "2026-11-21T00:30:11Z",
-     "to": "2026-11-21T12:19:44Z"
+     "severity": 10,
+     "status": "Good Service",
+     "reason": null,
+     "from": null,
+     "to": null
     }
    ]
   }

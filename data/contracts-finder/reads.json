@@ -3,6 +3,68 @@
  "source": "contracts-finder",
  "runs": [
   {
+   "at": "2026-11-26T07:04:35Z",
+   "finished": "2026-11-26T07:04:50Z",
+   "ok": 6,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "window-1",
+     "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-25T07:04:35&publishedTo=2026-11-25T11:04:35&limit=100",
+     "at": "2026-11-26T07:04:37Z",
+     "status": 200,
+     "bytes": 1420,
+     "sha256_prefix": "8df35c1cd6dc3175",
+     "changed": true
+    },
+    {
+     "name": "window-2",
+     "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-25T11:04:35&publishedTo=2026-11-25T15:04:35&limit=100",
+     "at": "2026-11-26T07:04:40Z",
+     "status": 200,
+     "bytes": 1420,
+     "sha256_prefix": "9f77a3a27721c9d1",
+     "changed": true
+    },
+    {
+     "name": "window-3",
+     "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-25T15:04:35&publishedTo=2026-11-25T19:04:35&limit=100",
+     "at": "2026-11-26T07:04:42Z",
+     "status": 200,
+     "bytes": 1420,
+     "sha256_prefix": "b2afaf1075f9543c",
+     "changed": true
+    },
+    {
+     "name": "window-4",
+     "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-25T19:04:35&publishedTo=2026-11-25T23:04:35&limit=100",
+     "at": "2026-11-26T07:04:45Z",
+     "status": 200,
+     "bytes": 1420,
+     "sha256_prefix": "cba85877b2644b31",
+     "changed": true
+    },
+    {
+     "name": "window-5",
+     "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-25T23:04:35&publishedTo=2026-11-26T03:04:35&limit=100",
+     "at": "2026-11-26T07:04:47Z",
+     "status": 200,
+     "bytes": 1420,
+     "sha256_prefix": "e4a9aa81b65e571e",
+     "changed": true
+    },
+    {
+     "name": "window-6",
+     "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-26T03:04:35&publishedTo=2026-11-26T07:04:35&limit=100",
+     "at": "2026-11-26T07:04:50Z",
+     "status": 200,
+     "bytes": 1420,
+     "sha256_prefix": "5a3df04174385c92",
+     "changed": true
+    }
+   ]
+  },
+  {
    "at": "2026-11-21T07:04:29Z",
    "finished": "2026-11-21T07:04:44Z",
    "ok": 6,
