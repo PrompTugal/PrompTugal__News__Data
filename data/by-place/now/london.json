@@ -1,7 +1,7 @@
 {
  "place": "london",
  "country": "GB",
- "read_at": "2026-11-26T07:13:57Z",
+ "read_at": "2026-11-26T18:14:19Z",
  "by": "collect/by-place-now.mjs (code, no model; data@PrompTugal.dinis), from this site's collected sources",
  "coords": {
   "lat": 51.50722,
@@ -60,7 +60,7 @@
  "floods": {
   "warnings": [],
   "stations": 10,
-  "at": "2026-11-26T07:04:50Z",
+  "at": "2026-11-26T18:04:56Z",
   "source": "https://data.promptugal.news/api/v1/ea-flood/latest.json",
   "attribution": "this uses Environment Agency flood and river level data from the real-time data API (Beta)",
   "license": {
@@ -71,7 +71,7 @@
  "reads": {
   "ea-flood": {
    "url": "https://data.promptugal.news/api/v1/ea-flood/latest.json",
-   "at": "2026-11-26T07:04:50Z"
+   "at": "2026-11-26T18:04:56Z"
   },
   "open-meteo-london": {
    "url": "https://data.promptugal.news/api/v1/open-meteo-london/latest.json",

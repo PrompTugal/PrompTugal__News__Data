@@ -1,11 +1,11 @@
 {
  "place": "tavira",
- "read_at": "2026-11-26T07:13:57Z",
- "source_read_at": "2026-11-26T07:09:56Z",
+ "read_at": "2026-11-26T18:14:19Z",
+ "source_read_at": "2026-11-26T18:10:20Z",
  "by": "collect/events-by-place.mjs (code, no model; data.b@PrompTugal.dinis), from data/events-pt/latest.json",
  "about": "Public events on now or starting within 60 days in this place, as schema.org Event records, each with its source URL and the time read. A dated record, not a ticketing service. An empty list means no source covers this place yet, not that nothing is happening.",
- "source_note": "Read 2026-11-26T07:09:56Z from www.agendalx.pt and www.cm-lagos.pt and teatrodasfiguras.pt and cm-tavira.pt; sources with no feed or refused are in gaps (https://data.promptugal.news/api/v1/events-pt/latest.json). Terms: Strictest of the sources: no reuse licence or terms page was found for any of the four hosts (teatrodasfiguras.pt and cm-tavira.pt show only \"Todos os direitos reservados\" in their footers, and cm-tavira.pt has no robots.txt). The robots.txt files that exist allow the paths read; agendalx.pt sets Content-Signal search=yes, ai-train=no, use=reference. So: reference use only, name the source, link to the event, no AI training. Not reviewed by a person: whether this is enough to republish is for Dinis.",
- "count": 36,
+ "source_note": "Read 2026-11-26T18:10:20Z from www.agendalx.pt and www.cm-lagos.pt and teatrodasfiguras.pt and cm-tavira.pt; sources with no feed or refused are in gaps (https://data.promptugal.news/api/v1/events-pt/latest.json). Terms: Strictest of the sources: no reuse licence or terms page was found for any of the four hosts (teatrodasfiguras.pt and cm-tavira.pt show only \"Todos os direitos reservados\" in their footers, and cm-tavira.pt has no robots.txt). The robots.txt files that exist allow the paths read; agendalx.pt sets Content-Signal search=yes, ai-train=no, use=reference. So: reference use only, name the source, link to the event, no AI training. Not reviewed by a person: whether this is enough to republish is for Dinis.",
+ "count": 62,
  "events": [
   {
    "@type": "Event",
@@ -21,7 +21,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/conferencia-o-impacto-dos-sistemas-alimentares-na-acao-climatica-o-papel-do-poder-local/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-26T07:10:37Z",
+   "read_at": "2026-11-26T18:11:01Z",
    "place": "tavira"
   },
   {
@@ -38,7 +38,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/alut-algarviana-ultra-trail-3/2026-11-26/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-26T07:10:37Z",
+   "read_at": "2026-11-26T18:11:01Z",
    "place": "tavira"
   },
   {
@@ -55,7 +55,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/artes-letra-conferencia-filosofica-e-psicanalitica-a-alma-deus-espiritualidade-o-que-e-o-homem-por-fernand-viegas/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-26T07:10:37Z",
+   "read_at": "2026-11-26T18:11:01Z",
    "place": "tavira"
   },
   {
@@ -72,7 +72,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/alut-algarviana-ultra-trail-3/2026-11-27/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-26T07:10:37Z",
+   "read_at": "2026-11-26T18:11:01Z",
    "place": "tavira"
   },
   {
@@ -89,7 +89,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/o-arquiteto-a-ativista-e-a-comunidade-em-prol-do-bairro-evocacao-de-joao-moitinho-luisa-anselmo-e-associacoes-saal/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-26T07:10:37Z",
+   "read_at": "2026-11-26T18:11:01Z",
    "place": "tavira"
   },
   {
@@ -106,7 +106,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/noite-de-fados-5/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-26T07:10:37Z",
+   "read_at": "2026-11-26T18:11:01Z",
    "place": "tavira"
   },
   {
@@ -123,7 +123,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/mostras-de-artesanato-de-natal-4/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-26T07:10:37Z",
+   "read_at": "2026-11-26T18:11:01Z",
    "place": "tavira"
   },
   {
@@ -140,7 +140,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/as-mulheres-vao-sempre-a-frente-e-ainda-hoje-continuamvisita-a-exposicao-tudo-em-prol-do-bairro/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-26T07:10:37Z",
+   "read_at": "2026-11-26T18:11:01Z",
    "place": "tavira"
   },
   {
@@ -157,7 +157,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/alut-algarviana-ultra-trail-3/2026-11-28/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-26T07:10:37Z",
+   "read_at": "2026-11-26T18:11:01Z",
    "place": "tavira"
   },
   {
@@ -174,7 +174,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/tavira-convida-pedalar-75/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-26T07:10:37Z",
+   "read_at": "2026-11-26T18:11:01Z",
    "place": "tavira"
   },
   {
@@ -191,7 +191,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/tavira-convida-pedalar-76/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-26T07:10:37Z",
+   "read_at": "2026-11-26T18:11:01Z",
    "place": "tavira"
   },
   {
@@ -208,7 +208,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/tecnica-e-interpretacao-da-voz-cantada-com-lidia-brandao/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-26T07:10:37Z",
+   "read_at": "2026-11-26T18:11:01Z",
    "place": "tavira"
   },
   {
@@ -225,7 +225,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/visita-orientada-a-exposicao-judeus-em-tavira-fragmentos-de-uma-historia-sob-a-orientacao-de-marco-sousa-santos-historiador-de-arte-museu-municipal-de-tavira/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-26T07:10:37Z",
+   "read_at": "2026-11-26T18:11:01Z",
    "place": "tavira"
   },
   {
@@ -242,7 +242,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/encontro-de-coros-grupo-coral-de-tavira/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-26T07:10:37Z",
+   "read_at": "2026-11-26T18:11:01Z",
    "place": "tavira"
   },
   {
@@ -259,7 +259,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/iniciativa-mostra-la/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-26T07:10:37Z",
+   "read_at": "2026-11-26T18:11:01Z",
    "place": "tavira"
   },
   {
@@ -276,7 +276,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/musica-nas-igrejas-josue-nunes-guitarra-8/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-26T07:10:37Z",
+   "read_at": "2026-11-26T18:11:01Z",
    "place": "tavira"
   },
   {
@@ -293,7 +293,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/4-o-encontro-cidade-de-tavira/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-26T07:10:37Z",
+   "read_at": "2026-11-26T18:11:01Z",
    "place": "tavira"
   },
   {
@@ -310,7 +310,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/mostras-de-artesanato-de-natal-associacao-albacora/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-26T07:10:37Z",
+   "read_at": "2026-11-26T18:11:01Z",
    "place": "tavira"
   },
   {
@@ -327,7 +327,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/todos-a-caminhar-104/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-26T07:10:37Z",
+   "read_at": "2026-11-26T18:11:01Z",
    "place": "tavira"
   },
   {
@@ -344,7 +344,58 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/procissao-em-honra-de-santa-catarina-e-sao-luis-2/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-26T07:10:37Z",
+   "read_at": "2026-11-26T18:11:01Z",
+   "place": "tavira"
+  },
+  {
+   "@type": "Event",
+   "name": "Mostras de artesanato de Natal – Associação Almadrava",
+   "startDate": "2026-12-01T10:00",
+   "endDate": null,
+   "location": {
+    "@type": "Place",
+    "name": "Mercado da Ribeira",
+    "address": null,
+    "geo": null
+   },
+   "organizer": null,
+   "url": "https://cm-tavira.pt/site/evento/mostras-de-artesanato-de-natal-associacao-almadrava/",
+   "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
+   "read_at": "2026-11-26T18:11:01Z",
+   "place": "tavira"
+  },
+  {
+   "@type": "Event",
+   "name": "Passatempo de Natal da Baixa de Tavira – Galeria André Pilarte",
+   "startDate": "2026-12-05",
+   "endDate": "2027-01-06",
+   "location": {
+    "@type": "Place",
+    "name": "Vários sitios da cidade",
+    "address": null,
+    "geo": null
+   },
+   "organizer": null,
+   "url": "https://cm-tavira.pt/site/evento/passatempo-de-natal-da-baixa-de-tavira-galeria-andre-pilarte/",
+   "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
+   "read_at": "2026-11-26T18:11:01Z",
+   "place": "tavira"
+  },
+  {
+   "@type": "Event",
+   "name": "Presépio da União de Freguesias de Tavira – Galeria André Pilarte",
+   "startDate": "2026-12-05",
+   "endDate": "2027-01-06",
+   "location": {
+    "@type": "Place",
+    "name": "Galeria André Pilarte",
+    "address": null,
+    "geo": null
+   },
+   "organizer": null,
+   "url": "https://cm-tavira.pt/site/evento/presepio-da-uniao-de-freguesias-de-tavira-galeria-andre-pilarte/",
+   "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
+   "read_at": "2026-11-26T18:11:01Z",
    "place": "tavira"
   },
   {
@@ -361,7 +412,75 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/mostras-de-artesanato-de-natal-4/2026-12-05/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-26T07:10:37Z",
+   "read_at": "2026-11-26T18:11:01Z",
+   "place": "tavira"
+  },
+  {
+   "@type": "Event",
+   "name": "Chegada do Pai Natal",
+   "startDate": "2026-12-05T11:00",
+   "endDate": null,
+   "location": {
+    "@type": "Place",
+    "name": "Vários sitios da cidade",
+    "address": null,
+    "geo": null
+   },
+   "organizer": null,
+   "url": "https://cm-tavira.pt/site/evento/chegada-do-pai-natal-3/",
+   "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
+   "read_at": "2026-11-26T18:11:01Z",
+   "place": "tavira"
+  },
+  {
+   "@type": "Event",
+   "name": "Demonstrações gastronómicas de Natal – Saúde no Prato: Do Prato ao Planeta",
+   "startDate": "2026-12-05T11:00",
+   "endDate": null,
+   "location": {
+    "@type": "Place",
+    "name": "Mercado Municipal",
+    "address": null,
+    "geo": null
+   },
+   "organizer": null,
+   "url": "https://cm-tavira.pt/site/evento/demonstracoes-gastronomicas-de-natal-saude-no-prato-do-prato-ao-planeta/2026-12-05/",
+   "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
+   "read_at": "2026-11-26T18:11:01Z",
+   "place": "tavira"
+  },
+  {
+   "@type": "Event",
+   "name": "Animação de Natal – Grupo Coral de Tavira",
+   "startDate": "2026-12-05T15:00",
+   "endDate": null,
+   "location": {
+    "@type": "Place",
+    "name": "Mercado da Ribeira",
+    "address": null,
+    "geo": null
+   },
+   "organizer": null,
+   "url": "https://cm-tavira.pt/site/evento/animacao-de-natal-grupo-coral-de-tavira/",
+   "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
+   "read_at": "2026-11-26T18:11:01Z",
+   "place": "tavira"
+  },
+  {
+   "@type": "Event",
+   "name": "Casinha do Pai Natal e comboio",
+   "startDate": "2026-12-06",
+   "endDate": null,
+   "location": {
+    "@type": "Place",
+    "name": "Jardim das Palmeiras",
+    "address": null,
+    "geo": null
+   },
+   "organizer": null,
+   "url": "https://cm-tavira.pt/site/evento/casinha-do-pai-natal-e-comboio-2/2026-12-06/",
+   "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
+   "read_at": "2026-11-26T18:11:01Z",
    "place": "tavira"
   },
   {
@@ -378,7 +497,41 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/mostras-de-artesanato-de-natal-associacao-albacora/2026-12-06/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-26T07:10:37Z",
+   "read_at": "2026-11-26T18:11:01Z",
+   "place": "tavira"
+  },
+  {
+   "@type": "Event",
+   "name": "Animação de Natal – Animação com acordeão",
+   "startDate": "2026-12-06T15:00",
+   "endDate": null,
+   "location": {
+    "@type": "Place",
+    "name": "Mercado da Ribeira, Tavira",
+    "address": null,
+    "geo": null
+   },
+   "organizer": null,
+   "url": "https://cm-tavira.pt/site/evento/animacao-de-natal-animacao-com-acordeao/",
+   "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
+   "read_at": "2026-11-26T18:11:01Z",
+   "place": "tavira"
+  },
+  {
+   "@type": "Event",
+   "name": "Mostras de artesanato de Natal – Associação Almadrava",
+   "startDate": "2026-12-08T10:00",
+   "endDate": null,
+   "location": {
+    "@type": "Place",
+    "name": "Mercado da Ribeira",
+    "address": null,
+    "geo": null
+   },
+   "organizer": null,
+   "url": "https://cm-tavira.pt/site/evento/mostras-de-artesanato-de-natal-associacao-almadrava/2026-12-08/",
+   "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
+   "read_at": "2026-11-26T18:11:01Z",
    "place": "tavira"
   },
   {
@@ -395,7 +548,24 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/desfile-de-natal-solidario-moto-manos/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-26T07:10:37Z",
+   "read_at": "2026-11-26T18:11:01Z",
+   "place": "tavira"
+  },
+  {
+   "@type": "Event",
+   "name": "Pérolas do Gilão – Sociedade Orfeónica de Tavira",
+   "startDate": "2026-12-08T15:00",
+   "endDate": null,
+   "location": {
+    "@type": "Place",
+    "name": "Mercado da Ribeira, Tavira",
+    "address": null,
+    "geo": null
+   },
+   "organizer": null,
+   "url": "https://cm-tavira.pt/site/evento/perolas-do-gilao-sociedade-orfeonica-de-tavira/",
+   "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
+   "read_at": "2026-11-26T18:11:01Z",
    "place": "tavira"
   },
   {
@@ -412,7 +582,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/diogo-zambujo-vir-a-ser/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-26T07:10:37Z",
+   "read_at": "2026-11-26T18:11:01Z",
    "place": "tavira"
   },
   {
@@ -429,7 +599,41 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/mostras-de-artesanato-de-natal-4/2026-12-12/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-26T07:10:37Z",
+   "read_at": "2026-11-26T18:11:01Z",
+   "place": "tavira"
+  },
+  {
+   "@type": "Event",
+   "name": "Pérolas do Gilão – Cantigas tradicionais de Natal e Janeiras 12",
+   "startDate": "2026-12-12T15:00",
+   "endDate": null,
+   "location": {
+    "@type": "Place",
+    "name": "Mercado da Ribeira",
+    "address": null,
+    "geo": null
+   },
+   "organizer": null,
+   "url": "https://cm-tavira.pt/site/evento/perolas-do-gilao-cantigas-tradicionais-de-natal-e-janeiras-12/",
+   "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
+   "read_at": "2026-11-26T18:11:01Z",
+   "place": "tavira"
+  },
+  {
+   "@type": "Event",
+   "name": "Animação de Natal – D’ Dance Cia",
+   "startDate": "2026-12-13T10:00",
+   "endDate": null,
+   "location": {
+    "@type": "Place",
+    "name": "Mercado da Ribeira, Tavira",
+    "address": null,
+    "geo": null
+   },
+   "organizer": null,
+   "url": "https://cm-tavira.pt/site/evento/animacao-de-natal-d-dance-cia/",
+   "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
+   "read_at": "2026-11-26T18:11:01Z",
    "place": "tavira"
   },
   {
@@ -446,7 +650,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/mercadinho-de-natal-2/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-26T07:10:37Z",
+   "read_at": "2026-11-26T18:11:01Z",
    "place": "tavira"
   },
   {
@@ -463,7 +667,24 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/mostras-de-artesanato-de-natal-associacao-albacora/2026-12-13/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-26T07:10:37Z",
+   "read_at": "2026-11-26T18:11:01Z",
+   "place": "tavira"
+  },
+  {
+   "@type": "Event",
+   "name": "Mostras de artesanato de Natal – Associação Almadrava",
+   "startDate": "2026-12-14T10:00",
+   "endDate": null,
+   "location": {
+    "@type": "Place",
+    "name": "Mercado da Ribeira",
+    "address": null,
+    "geo": null
+   },
+   "organizer": null,
+   "url": "https://cm-tavira.pt/site/evento/mostras-de-artesanato-de-natal-associacao-almadrava/2026-12-14/",
+   "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
+   "read_at": "2026-11-26T18:11:01Z",
    "place": "tavira"
   },
   {
@@ -480,7 +701,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/mostras-de-artesanato-de-natal-4/2026-12-15/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-26T07:10:37Z",
+   "read_at": "2026-11-26T18:11:01Z",
    "place": "tavira"
   },
   {
@@ -497,7 +718,24 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/mostras-de-artesanato-de-natal-associacao-albacora/2026-12-16/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-26T07:10:37Z",
+   "read_at": "2026-11-26T18:11:01Z",
+   "place": "tavira"
+  },
+  {
+   "@type": "Event",
+   "name": "Mostras de artesanato de Natal – Associação Almadrava",
+   "startDate": "2026-12-17T10:00",
+   "endDate": null,
+   "location": {
+    "@type": "Place",
+    "name": "Mercado da Ribeira",
+    "address": null,
+    "geo": null
+   },
+   "organizer": null,
+   "url": "https://cm-tavira.pt/site/evento/mostras-de-artesanato-de-natal-associacao-almadrava/2026-12-17/",
+   "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
+   "read_at": "2026-11-26T18:11:01Z",
    "place": "tavira"
   },
   {
@@ -514,7 +752,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/mostras-de-artesanato-de-natal-4/2026-12-18/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-26T07:10:37Z",
+   "read_at": "2026-11-26T18:11:01Z",
    "place": "tavira"
   },
   {
@@ -531,7 +769,109 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/mostras-de-artesanato-de-natal-associacao-albacora/2026-12-19/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-26T07:10:37Z",
+   "read_at": "2026-11-26T18:11:01Z",
+   "place": "tavira"
+  },
+  {
+   "@type": "Event",
+   "name": "Mostras de artesanato de Natal – CAJU",
+   "startDate": "2026-12-19T10:00",
+   "endDate": null,
+   "location": {
+    "@type": "Place",
+    "name": "Mercado da Ribeira",
+    "address": null,
+    "geo": null
+   },
+   "organizer": null,
+   "url": "https://cm-tavira.pt/site/evento/mostras-de-artesanato-de-natal-caju/",
+   "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
+   "read_at": "2026-11-26T18:11:01Z",
+   "place": "tavira"
+  },
+  {
+   "@type": "Event",
+   "name": "Demonstrações gastronómicas de Natal – Saúde no Prato: Do Prato ao Planeta",
+   "startDate": "2026-12-19T11:00",
+   "endDate": null,
+   "location": {
+    "@type": "Place",
+    "name": "Mercado Municipal",
+    "address": null,
+    "geo": null
+   },
+   "organizer": null,
+   "url": "https://cm-tavira.pt/site/evento/demonstracoes-gastronomicas-de-natal-saude-no-prato-do-prato-ao-planeta/2026-12-19/",
+   "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
+   "read_at": "2026-11-26T18:11:01Z",
+   "place": "tavira"
+  },
+  {
+   "@type": "Event",
+   "name": "Animação de Natal – Ruben Luz Lameira canta aos Reis, Menino e Janeiras",
+   "startDate": "2026-12-19T15:00",
+   "endDate": null,
+   "location": {
+    "@type": "Place",
+    "name": "Mercado da Ribeira, Tavira",
+    "address": null,
+    "geo": null
+   },
+   "organizer": null,
+   "url": "https://cm-tavira.pt/site/evento/animacao-de-natal-ruben-luz-lameira-canta-aos-reis-menino-e-janeiras/",
+   "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
+   "read_at": "2026-11-26T18:11:01Z",
+   "place": "tavira"
+  },
+  {
+   "@type": "Event",
+   "name": "Animação de Natal – Duo Cantabile",
+   "startDate": "2026-12-20T08:00",
+   "endDate": null,
+   "location": {
+    "@type": "Place",
+    "name": "Mercado da Ribeira, Tavira",
+    "address": null,
+    "geo": null
+   },
+   "organizer": null,
+   "url": "https://cm-tavira.pt/site/evento/animacao-de-natal-duo-cantabile/",
+   "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
+   "read_at": "2026-11-26T18:11:01Z",
+   "place": "tavira"
+  },
+  {
+   "@type": "Event",
+   "name": "Mostras de artesanato de Natal – Associação Almadrava",
+   "startDate": "2026-12-20T10:00",
+   "endDate": null,
+   "location": {
+    "@type": "Place",
+    "name": "Mercado da Ribeira",
+    "address": null,
+    "geo": null
+   },
+   "organizer": null,
+   "url": "https://cm-tavira.pt/site/evento/mostras-de-artesanato-de-natal-associacao-almadrava/2026-12-20/",
+   "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
+   "read_at": "2026-11-26T18:11:01Z",
+   "place": "tavira"
+  },
+  {
+   "@type": "Event",
+   "name": "Mostras de artesanato de Natal – CAJU",
+   "startDate": "2026-12-20T10:00",
+   "endDate": null,
+   "location": {
+    "@type": "Place",
+    "name": "Mercado da Ribeira",
+    "address": null,
+    "geo": null
+   },
+   "organizer": null,
+   "url": "https://cm-tavira.pt/site/evento/mostras-de-artesanato-de-natal-caju/2026-12-20/",
+   "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
+   "read_at": "2026-11-26T18:11:06Z",
    "place": "tavira"
   },
   {
@@ -548,7 +888,24 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/mostras-de-artesanato-de-natal-4/2026-12-21/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-26T07:10:37Z",
+   "read_at": "2026-11-26T18:11:06Z",
+   "place": "tavira"
+  },
+  {
+   "@type": "Event",
+   "name": "Animação de Natal – Concerto de Natal – Carlos Guilherme e Teresa Tapadas",
+   "startDate": "2026-12-21T14:30",
+   "endDate": null,
+   "location": {
+    "@type": "Place",
+    "name": "Mercado da Ribeira",
+    "address": null,
+    "geo": null
+   },
+   "organizer": null,
+   "url": "https://cm-tavira.pt/site/evento/animacao-de-natal-concerto-de-natal-carlos-guilherme-e-teresa-tapadas/",
+   "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
+   "read_at": "2026-11-26T18:11:06Z",
    "place": "tavira"
   },
   {
@@ -565,7 +922,92 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/mostras-de-artesanato-de-natal-associacao-albacora/2026-12-22/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-26T07:10:37Z",
+   "read_at": "2026-11-26T18:11:06Z",
+   "place": "tavira"
+  },
+  {
+   "@type": "Event",
+   "name": "Animação de Natal – Jagoda Różycka & Quarteto da Orquestra de Jazz do Algarve",
+   "startDate": "2026-12-22T14:30",
+   "endDate": null,
+   "location": {
+    "@type": "Place",
+    "name": "Mercado da Ribeira, Tavira",
+    "address": null,
+    "geo": null
+   },
+   "organizer": null,
+   "url": "https://cm-tavira.pt/site/evento/animacao-de-natal-jagoda-rozycka-quarteto-da-orquestra-de-jazz-do-algarve/",
+   "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
+   "read_at": "2026-11-26T18:11:06Z",
+   "place": "tavira"
+  },
+  {
+   "@type": "Event",
+   "name": "Mostras de artesanato de Natal – Associação Almadrava",
+   "startDate": "2026-12-23T10:00",
+   "endDate": null,
+   "location": {
+    "@type": "Place",
+    "name": "Mercado da Ribeira",
+    "address": null,
+    "geo": null
+   },
+   "organizer": null,
+   "url": "https://cm-tavira.pt/site/evento/mostras-de-artesanato-de-natal-associacao-almadrava/2026-12-23/",
+   "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
+   "read_at": "2026-11-26T18:11:06Z",
+   "place": "tavira"
+  },
+  {
+   "@type": "Event",
+   "name": "Animação de Natal | “Natal Somos Nós” – António Calvário",
+   "startDate": "2026-12-23T14:30",
+   "endDate": null,
+   "location": {
+    "@type": "Place",
+    "name": "Mercado da Ribeira, Tavira",
+    "address": null,
+    "geo": null
+   },
+   "organizer": null,
+   "url": "https://cm-tavira.pt/site/evento/animacao-de-natal-natal-somos-nos-antonio-calvario/",
+   "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
+   "read_at": "2026-11-26T18:11:06Z",
+   "place": "tavira"
+  },
+  {
+   "@type": "Event",
+   "name": "Mostras de artesanato de Natal – Associação Almadrava",
+   "startDate": "2026-12-24T10:00",
+   "endDate": null,
+   "location": {
+    "@type": "Place",
+    "name": "Mercado da Ribeira",
+    "address": null,
+    "geo": null
+   },
+   "organizer": null,
+   "url": "https://cm-tavira.pt/site/evento/mostras-de-artesanato-de-natal-associacao-almadrava/2026-12-24/",
+   "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
+   "read_at": "2026-11-26T18:11:06Z",
+   "place": "tavira"
+  },
+  {
+   "@type": "Event",
+   "name": "Animação de Natal | Circo de Natal – Circo Dallas",
+   "startDate": "2026-12-24T11:00",
+   "endDate": null,
+   "location": {
+    "@type": "Place",
+    "name": "Tavira",
+    "address": null,
+    "geo": null
+   },
+   "organizer": null,
+   "url": "https://cm-tavira.pt/site/evento/animacao-de-natal-circo-de-natal-circo-dallas/",
+   "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
+   "read_at": "2026-11-26T18:11:06Z",
    "place": "tavira"
   },
   {
@@ -582,7 +1024,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/mostras-de-artesanato-de-natal-4/2026-12-26/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-26T07:10:37Z",
+   "read_at": "2026-11-26T18:11:06Z",
    "place": "tavira"
   },
   {
@@ -599,7 +1041,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/mostras-de-artesanato-de-natal-associacao-albacora/2026-12-27/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-26T07:10:37Z",
+   "read_at": "2026-11-26T18:11:06Z",
    "place": "tavira"
   },
   {
@@ -616,7 +1058,7 @@
    "organizer": null,
    "url": "https://cm-tavira.pt/site/evento/mostras-de-artesanato-de-natal-4/2027-01-03/",
    "source": "https://cm-tavira.pt/site/evento/ (Camara Municipal de Tavira, Events Calendar route /site/wp-json/tribe/events/v1/events)",
-   "read_at": "2026-11-26T07:10:37Z",
+   "read_at": "2026-11-26T18:11:06Z",
    "place": "tavira"
   }
  ]

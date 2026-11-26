@@ -1,5 +1,5 @@
 {
- "at": "2026-11-26T07:13:57Z",
+ "at": "2026-11-26T18:14:19Z",
  "sources": [
   {
    "id": "adsb-faro",
@@ -9,18 +9,12 @@
   },
   {
    "id": "base-gov-pt",
-   "ok": 2,
+   "ok": 1,
    "failed": 0,
    "wrote": true
   },
   {
    "id": "cams",
-   "ok": 2,
-   "failed": 0,
-   "wrote": true
-  },
-  {
-   "id": "carbon-intensity-london",
    "ok": 2,
    "failed": 0,
    "wrote": true
@@ -44,12 +38,6 @@
    "wrote": true
   },
   {
-   "id": "ea-thames-tide",
-   "ok": 7,
-   "failed": 0,
-   "wrote": true
-  },
-  {
    "id": "enisa-pubs",
    "ok": 1,
    "failed": 0,
@@ -63,13 +51,13 @@
   },
   {
    "id": "euvd",
-   "ok": 16,
+   "ok": 17,
    "failed": 1,
    "wrote": true
   },
   {
    "id": "events-pt",
-   "ok": 16,
+   "ok": 17,
    "failed": 1,
    "wrote": true
   },
@@ -123,13 +111,7 @@
   },
   {
    "id": "nvd-cve",
-   "ok": 1,
-   "failed": 0,
-   "wrote": true
-  },
-  {
-   "id": "nvd-kev",
-   "ok": 1,
+   "ok": 2,
    "failed": 0,
    "wrote": true
   },
@@ -146,25 +128,7 @@
    "wrote": true
   },
   {
-   "id": "tfl-bikepoint",
-   "ok": 1,
-   "failed": 0,
-   "wrote": true
-  },
-  {
    "id": "tfl-jamcams",
-   "ok": 1,
-   "failed": 0,
-   "wrote": true
-  },
-  {
-   "id": "tfl-road-disruptions",
-   "ok": 1,
-   "failed": 0,
-   "wrote": true
-  },
-  {
-   "id": "tfl-status",
    "ok": 1,
    "failed": 0,
    "wrote": true

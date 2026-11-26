@@ -2,11 +2,11 @@
  "shape": "2",
  "source": "base-gov-pt",
  "title": "Public contracts (Portal BASE)",
- "read_at": "2026-11-26T07:03:59Z",
+ "read_at": "2026-11-26T18:04:10Z",
  "provenance": {
   "source": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
   "page": "https://www.base.gov.pt/",
-  "read_at": "2026-11-26T07:03:59Z",
+  "read_at": "2026-11-26T18:04:10Z",
   "by": "sources/base-gov-pt/collect.mjs (code, no model; run by data@PrompTugal.dinis)",
   "terms": "IMPIC publishes these contracts as open data on dados.gov.pt with the licence \"Outra (Domínio Público)\" (other-pd, public domain); we name IMPIC and the Portal BASE as the source and link each contract's page.",
   "dataset": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
@@ -36,10 +36,11 @@
    "vila-do-bispo": 21,
    "vila-real-de-santo-antonio": 56
   },
-  "records_scanned": 217517,
+  "records_scanned": null,
   "window_days": 90,
   "objects_withheld": 188
  },
+ "note": "The dataset file had not changed since the last read, so it was not downloaded again; each contract keeps the time of the read that found it.",
  "dataset": {
   "name": "Contratos Públicos - Portal Base - IMPIC (open data on dados.gov.pt)",
   "dataset": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
@@ -51,8 +52,7 @@
     "resource": "https://dados.gov.pt/s/resources/contratos-publicos-portal-base-impic-contratos-de-2012-a-2026/20261122-100620-185121fb/contratos2026.zip",
     "resource_modified": "2026-11-22T10:06:20.880000+00:00",
     "bytes": 71136042,
-    "read_at": "2026-11-26T07:04:04Z",
-    "sha256_prefix": "02a0a96dfbb28a1a"
+    "read_at": "2026-11-26T07:04:04Z"
    }
   ]
  },

@@ -1,7 +1,7 @@
 {
  "about": "The places with an events file, how many events each holds, and whether any source covers it.",
- "read_at": "2026-11-26T07:13:57Z",
- "source_read_at": "2026-11-26T07:09:56Z",
+ "read_at": "2026-11-26T18:14:19Z",
+ "source_read_at": "2026-11-26T18:10:20Z",
  "by": "collect/events-by-place.mjs (code, no model; data.b@PrompTugal.dinis), from data/events-pt/latest.json",
  "places": [
   {
@@ -26,7 +26,7 @@
   },
   {
    "place": "tavira",
-   "count": 36,
+   "count": 62,
    "covered": true
   },
   {
@@ -96,7 +96,7 @@
   },
   {
    "place": "algarve",
-   "count": 117,
+   "count": 143,
    "covered": true
   }
  ]

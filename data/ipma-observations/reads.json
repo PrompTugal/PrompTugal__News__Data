@@ -3,6 +3,32 @@
  "source": "ipma-observations",
  "runs": [
   {
+   "at": "2026-11-26T18:13:10Z",
+   "finished": "2026-11-26T18:13:15Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "stations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/stations.json",
+     "at": "2026-11-26T18:13:13Z",
+     "status": 200,
+     "bytes": 49864,
+     "sha256_prefix": "cd795de81f53b2c6",
+     "changed": false
+    },
+    {
+     "name": "observations",
+     "url": "https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json",
+     "at": "2026-11-26T18:13:15Z",
+     "status": 200,
+     "bytes": 1065642,
+     "sha256_prefix": "385dac37967447c3",
+     "changed": true
+    }
+   ]
+  },
+  {
    "at": "2026-11-26T07:12:40Z",
    "finished": "2026-11-26T07:12:46Z",
    "ok": 2,
