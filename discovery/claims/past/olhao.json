@@ -1,0 +1,82 @@
+{
+ "place": "olhao",
+ "about": "Claims whose dates have passed, kept as the history of each event series.",
+ "claims": [
+  {
+   "@type": "Event",
+   "name": "Bienal da Participação Cívica e Cultura",
+   "startDate": "2026-11-19",
+   "endDate": "2026-11-22",
+   "place": "olhao",
+   "municipality": "Olhão",
+   "evidence": [
+    {
+     "url": "https://www.sulinformacao.pt/2026/10/participacao-civica-na-area-cultural-inspira-nova-bienal-em-olhao/",
+     "host": "sulinformacao.pt",
+     "readable": false,
+     "register": "blog-sul-informacao"
+    }
+   ],
+   "status": "details withheld",
+   "details_from": null,
+   "details_note": "Details withheld: the sources cited (sulinformacao.pt) are not ones whose terms let us copy them. Organiser: send them to us."
+  },
+  {
+   "@type": "Event",
+   "name": "Mostra-te: Hip Hop Fusion",
+   "startDate": "2026-11-21",
+   "endDate": null,
+   "place": "olhao",
+   "municipality": "Olhão",
+   "evidence": [
+    {
+     "url": "https://algarvecircle.com/events",
+     "host": "algarvecircle.com",
+     "readable": false,
+     "register": "algarvecircle"
+    }
+   ],
+   "status": "details withheld",
+   "details_from": null,
+   "details_note": "Details withheld: the sources cited (algarvecircle.com) are not ones whose terms let us copy them. Organiser: send them to us."
+  },
+  {
+   "@type": "Event",
+   "name": "Olhão Saturday Riverside Market",
+   "startDate": "2026-11-21",
+   "endDate": null,
+   "place": "olhao",
+   "municipality": "Olhão",
+   "evidence": [
+    {
+     "url": "https://algarvecircle.com/events",
+     "host": "algarvecircle.com",
+     "readable": false,
+     "register": "algarvecircle"
+    }
+   ],
+   "status": "details withheld",
+   "details_from": null,
+   "details_note": "Details withheld: the sources cited (algarvecircle.com) are not ones whose terms let us copy them. Organiser: send them to us."
+  },
+  {
+   "@type": "Event",
+   "name": "Reinis Jaunais: a solo musical journey",
+   "startDate": "2026-11-21",
+   "endDate": null,
+   "place": "olhao",
+   "municipality": "Olhão",
+   "evidence": [
+    {
+     "url": "https://algarvecircle.com/events",
+     "host": "algarvecircle.com",
+     "readable": false,
+     "register": "algarvecircle"
+    }
+   ],
+   "status": "details withheld",
+   "details_from": null,
+   "details_note": "Details withheld: the sources cited (algarvecircle.com) are not ones whose terms let us copy them. Organiser: send them to us."
+  }
+ ]
+}

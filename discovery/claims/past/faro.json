@@ -1,0 +1,50 @@
+{
+ "place": "faro",
+ "about": "Claims whose dates have passed, kept as the history of each event series.",
+ "claims": [
+  {
+   "@type": "Event",
+   "name": "XIX International Organ Festival of the Algarve 2026",
+   "startDate": "2026-11-21",
+   "endDate": "2026-11-21",
+   "place": "faro",
+   "municipality": "Faro",
+   "evidence": [
+    {
+     "url": "https://www.algarveatlas.com/en/municipalities/faro",
+     "host": "algarveatlas.com",
+     "readable": false,
+     "register": "algarveatlas"
+    },
+    {
+     "url": "https://www.theportugalnews.com/news/2026-10-22/autumn-festivals-and-events-in-the-algarve/1104742",
+     "host": "theportugalnews.com",
+     "readable": false,
+     "register": "theportugalnews"
+    }
+   ],
+   "status": "details withheld",
+   "details_from": null,
+   "details_note": "Details withheld: the sources cited (algarveatlas.com, theportugalnews.com) are not ones whose terms let us copy them. Organiser: send them to us."
+  },
+  {
+   "@type": "Event",
+   "name": "The Whole World Awaits",
+   "startDate": "2026-11-21",
+   "endDate": "2026-11-21",
+   "place": "faro",
+   "municipality": "Faro",
+   "evidence": [
+    {
+     "url": "https://www.algarveatlas.com/en/municipalities/faro",
+     "host": "algarveatlas.com",
+     "readable": false,
+     "register": "algarveatlas"
+    }
+   ],
+   "status": "details withheld",
+   "details_from": null,
+   "details_note": "Details withheld: the sources cited (algarveatlas.com) are not ones whose terms let us copy them. Organiser: send them to us."
+  }
+ ]
+}

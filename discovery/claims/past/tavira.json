@@ -1,0 +1,44 @@
+{
+ "place": "tavira",
+ "about": "Claims whose dates have passed, kept as the history of each event series.",
+ "claims": [
+  {
+   "@type": "Event",
+   "name": "Rituais a Sul",
+   "startDate": "2026-11-21",
+   "endDate": "2026-11-22",
+   "place": "tavira",
+   "municipality": "Tavira",
+   "evidence": [
+    {
+     "url": "https://www.taviratimes.com/events",
+     "host": "taviratimes.com",
+     "readable": false,
+     "register": null
+    }
+   ],
+   "status": "details withheld",
+   "details_from": null,
+   "details_note": "Details withheld: the sources cited (taviratimes.com) are not ones whose terms let us copy them. Organiser: send them to us."
+  },
+  {
+   "@type": "Event",
+   "name": "Maiúscula",
+   "startDate": "2026-11-21",
+   "endDate": null,
+   "place": "tavira",
+   "municipality": "Tavira",
+   "evidence": [
+    {
+     "url": "https://algarvecircle.com/events",
+     "host": "algarvecircle.com",
+     "readable": false,
+     "register": "algarvecircle"
+    }
+   ],
+   "status": "details withheld",
+   "details_from": null,
+   "details_note": "Details withheld: the sources cited (algarvecircle.com) are not ones whose terms let us copy them. Organiser: send them to us."
+  }
+ ]
+}
