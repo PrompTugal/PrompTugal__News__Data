@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Feed status: PrompTugal.news Data</title>
+<meta name="description" content="Every data feed on data.promptugal.news with the time it was last read and whether it is fresh, and whether each PrompTugal site answers. Read live in your browser from the public API.">
+<link rel="icon" href="/assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="text/markdown" href="/status/index.md">
+<link rel="stylesheet" href="/assets/brand/brand-tokens.css">
+<link rel="stylesheet" href="/assets/site.css">
+<style>
+:root { --amber: #8a5a00; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --amber: #e0b04a; } }
+:root[data-theme="dark"] { --amber: #e0b04a; }
+.st-take { font: 1.15rem/1.45 var(--font-editorial, Georgia, serif); margin: .4rem 0 .2rem; }
+.st-note { color: var(--muted); font-size: .85rem; margin: .3rem 0 0; }
+.st-strip { display: flex; height: 34px; gap: 2px; margin: .8rem 0 .4rem; border-radius: 4px; overflow: hidden; }
+.st-strip span { display: block; min-width: 3px; }
+.st-legend { display: flex; flex-wrap: wrap; gap: 6px 18px; list-style: none; margin: 0; padding: 0; font-size: .9rem; }
+.st-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; }
+.c-fresh, .c-up { --c: var(--green); } .c-late, .c-archive, .c-nover { --c: var(--amber); } .c-stale, .c-problem, .c-down { --c: var(--red); }
+.st-chip { display: inline-block; padding: 0 8px; border: 1px solid var(--c); color: var(--c); border-radius: 999px; font-size: .8rem; white-space: nowrap; }
+.st-bg { background: var(--c); }
+td.num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+#st-err { color: var(--red); }
+@media (max-width: 40rem) { td.hide-s, th.hide-s { display: none; } }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to the content</a>
+<header class="mast">
+<div class="mast-in">
+<a class="brand" href="/"><picture><source srcset="/assets/brand/promptugal-wordmark-dark.svg" media="(prefers-color-scheme: dark)"><img src="/assets/brand/promptugal-wordmark-light.svg" alt="PrompTugal.news" width="200" height="33"></picture><span class="brand-data">· Data</span></a>
+<nav aria-label="Main"><a href="/sources/">Sources</a><a href="/pipeline/">Pipeline</a><a href="/api/">API</a><a href="/status/" aria-current="page">Status</a></nav>
+</div>
+<div class="mast-meta"><span class="ver">Version __VERSION__</span><span>read live in your browser</span><a class="pay-chip" href="https://promptugal.news/account/">Pay for what you read</a></div>
+</header>
+<main id="main">
+<h1>Feed status</h1>
+<p class="st-take" id="take" aria-live="polite">Reading the catalogue…</p>
+<p class="st-note" id="snap"></p>
+<noscript><p>This page reads the public API in your browser. Without scripts, read <a href="/api/v1/index.json">/api/v1/index.json</a>: every source has <code>read_at</code>, <code>cadence</code> and <code>status</code>.</p></noscript>
+<p id="st-err" role="alert" hidden></p>
+
+<h2>Feeds by state</h2>
+<div class="st-strip" id="strip" role="img" aria-label="Feeds by state"></div>
+<ul class="st-legend" id="legend"></ul>
+
+<h2>All feeds</h2>
+<div class="scroll"><table id="feeds">
+<thead><tr><th>Feed</th><th class="hide-s">Expected</th><th>Hours since read</th><th>State</th><th class="hide-s">Latest</th></tr></thead>
+<tbody></tbody>
+</table></div>
+<p class="st-note">A feed is fresh when its last read is no older than its expected gap plus two hours. The collectors run twice a day (07:03 and 18:03 Lisbon), so an hourly or six-hourly feed is expected every 12 hours; a daily one every 24. "Source problem" means the source refused or failed at the last read: a refusal is respected and recorded as a gap, not retried within the cadence. Why is on each feed's card under <a href="/sources/">Sources</a>.</p>
+
+<h2>The PrompTugal sites</h2>
+<div class="scroll"><table id="sites">
+<thead><tr><th>Site</th><th>State</th><th>Version</th><th class="hide-s">Commit</th><th class="hide-s">Built (UTC)</th></tr></thead>
+<tbody></tbody>
+</table></div>
+<p class="st-note">Each site's own <code>/version.json</code>, read from your browser. "No answer" means the request failed from here (the site is down, does not exist yet, or does not allow browser reads); it does not by itself prove the site is down.</p>
+</main>
+<footer class="foot">
+<p class="foot-obs">Code Apache-2.0. Text CC BY 4.0. Data: each source's own terms (see its card). <a href="https://github.com/PrompTugal/PrompTugal__News__Data">Repository</a> · <a href="/security/">Security</a> · <a href="/status/index.md">Markdown version of this page</a></p>
+<p>Everything on this page is read live from <a href="/api/v1/index.json">/api/v1/index.json</a> and the sites' version files. Not a warning service: follow <a href="https://www.ipma.pt/">IPMA</a> and <a href="https://prociv.gov.pt/">ANEPC</a>.</p>
+</footer>
+<script>
+(function () {
+  'use strict';
+  // The sibling sites named in the website repository (board and site pages), one version.json each.
+  var SITES = ['promptugal.news/api/v1', 'data', 'weather', 'civic', 'startups', 'travel', 'events', 'signals', 'cyber', 'library', 'live', 'videos', 'bulletins', 'storm-charles', 'fringe', 'algarve'];
+  var ORDER = ['stale', 'source problem', 'late', 'no read', 'archive', 'fresh'];
+  var CLS = { fresh: 'c-fresh', late: 'c-late', stale: 'c-stale', 'source problem': 'c-problem', archive: 'c-archive', 'no read': 'c-stale' };
+  var TWICE_A_DAY_H = 12, GRACE_H = 2;
+
+  function hours(cad) {
+    cad = String(cad || '').toLowerCase();
+    var m = cad.match(/every (\d+) hours/);
+    if (m) return +m[1];
+    if (cad.indexOf('daily') >= 0) return 24;
+    if (cad.indexOf('hour') >= 0) return 1;
+    return null;
+  }
+  function stateOf(s, now) {
+    var h = hours(s.cadence);
+    if (h === null) return { state: 'archive', age: s.read_at ? (now - Date.parse(s.read_at)) / 36e5 : null };
+    if (!s.read_at) return { state: 'no read', age: null };
+    var age = (now - Date.parse(s.read_at)) / 36e5, exp = Math.max(h, TWICE_A_DAY_H);
+    if (s.status && s.status !== 'ok') return { state: 'source problem', age: age };
+    return { state: age <= exp + GRACE_H ? 'fresh' : age <= exp * 2 + GRACE_H ? 'late' : 'stale', age: age };
+  }
+  function el(tag, text, cls) { var e = document.createElement(tag); if (text != null) e.textContent = text; if (cls) e.className = cls; return e; }
+  function td(tr, text, cls) { var c = el('td', text, cls); tr.appendChild(c); return c; }
+  function chip(parent, text, cls) { parent.appendChild(el('span', text, 'st-chip ' + cls)); }
+  function fmt(iso) { var d = new Date(iso); return isNaN(d) ? '-' : d.toISOString().slice(0, 16).replace('T', ' '); }
+  function get(url) { return fetch(url, { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }); }
+
+  function drawFeeds(index) {
+    var now = Date.now();
+    var rows = index.sources.map(function (s) { var t = stateOf(s, now); return { s: s, state: t.state, age: t.age }; });
+    var count = {}; rows.forEach(function (r) { count[r.state] = (count[r.state] || 0) + 1; });
+    var n = rows.length, fresh = count.fresh || 0, bad = count['source problem'] || 0;
+    var late = (count.late || 0) + (count.stale || 0) + (count['no read'] || 0);
+    document.getElementById('take').textContent = fresh + ' of ' + n + ' feeds read fresh at the last collection; ' + bad + ' have a source that refused or failed' + (late ? '; ' + late + ' are late or stale.' : '.');
+    var newest = rows.reduce(function (m, r) { return r.s.read_at && r.s.read_at > m ? r.s.read_at : m; }, '');
+    document.getElementById('snap').textContent = 'Site version ' + (index.version || '?') + ', built ' + fmt(index.built_at) + ' UTC. Newest read ' + fmt(newest) + ' UTC. Ages computed in your browser at ' + fmt(new Date().toISOString()) + ' UTC.';
+    var strip = document.getElementById('strip'), legend = document.getElementById('legend'); strip.textContent = ''; legend.textContent = '';
+    var parts = [];
+    ORDER.slice().reverse().forEach(function (k) { if (count[k]) { parts.push(count[k] + ' ' + k);
+      var seg = el('span', null, 'st-bg ' + CLS[k]); seg.style.flex = count[k] + ' 0 0'; strip.appendChild(seg);
+      var li = el('li'); var dot = el('span', null, 'st-dot st-bg ' + CLS[k]); li.appendChild(dot); li.appendChild(document.createTextNode(count[k] + ' ' + k)); legend.appendChild(li); } });
+    strip.setAttribute('aria-label', 'Feeds by state: ' + parts.join(', '));
+    rows.sort(function (a, b) { return ORDER.indexOf(a.state) - ORDER.indexOf(b.state) || String(a.s.title).localeCompare(String(b.s.title)); });
+    var tb = document.querySelector('#feeds tbody'); tb.textContent = '';
+    rows.forEach(function (r) {
+      var tr = el('tr');
+      var t = td(tr, ''); var a = el('a', r.s.title); a.href = '/sources/' + encodeURIComponent(r.s.id) + '/'; t.appendChild(a);
+      td(tr, r.s.cadence || '', 'hide-s');
+      td(tr, r.age == null ? '-' : r.age.toFixed(1), 'num');
+      chip(td(tr, ''), r.state, CLS[r.state]);
+      td(tr, r.s.headline || '', 'hide-s');
+      tb.appendChild(tr);
+    });
+  }
+
+  function siteUrl(h) { return h.indexOf('.') >= 0 ? 'https://' + h.split('/')[0] + '/' + (h.split('/')[1] ? 'api/v1/' : '') + 'version.json' : 'https://' + h + '.promptugal.news/version.json'; }
+  function siteName(h) { return h.indexOf('.') >= 0 ? h.split('/')[0] : h + '.promptugal.news'; }
+  function drawSites() {
+    var tb = document.querySelector('#sites tbody'); tb.textContent = '';
+    SITES.forEach(function (h) {
+      var tr = el('tr'); var name = td(tr, siteName(h)); var st = td(tr, ''); var ver = td(tr, '…'); var cm = td(tr, '…', 'hide-s'); var bt = td(tr, '…', 'hide-s num');
+      chip(st, 'checking', 'c-nover'); tb.appendChild(tr);
+      get(siteUrl(h)).then(function (v) {
+        st.textContent = ''; chip(st, 'answers', 'c-up');
+        ver.textContent = v.version || '-'; cm.textContent = (v.commit || '').slice(0, 7) || '-'; bt.textContent = v.built || v.built_at ? fmt(v.built || v.built_at) : '-';
+      }).catch(function () {
+        st.textContent = ''; chip(st, 'no answer', 'c-down'); ver.textContent = '-'; cm.textContent = '-'; bt.textContent = '-';
+      });
+    });
+  }
+
+  get('/api/v1/index.json').then(drawFeeds).catch(function () {
+    var e = document.getElementById('st-err'); e.hidden = false; e.textContent = 'The catalogue /api/v1/index.json did not load, so the feed list is empty. Try again in a minute.';
+    document.getElementById('take').textContent = 'No feed data.';
+  });
+  drawSites();
+})();
+</script>
+</body>
+</html>
