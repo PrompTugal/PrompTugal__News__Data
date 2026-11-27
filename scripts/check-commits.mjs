@@ -30,6 +30,8 @@ const descendants = new Set([first, ...lines(git('rev-list', '--ancestry-path', 
 
 // A role may be dotted, role.speciality (Dinis, 16 Nov 2026: "we definitely should allow dots because that's our terminology").
 const agentShape = /^[a-z0-9]+(?:[.-][a-z0-9]+)*@agenticcells\.[a-z0-9][a-z0-9.-]*$/i;
+// cl-6 team (cl-6.conductor@PrompTugal.dinis, 26 Nov 2026): cl-<n>.<role>[.<speciality>]@PrompTugal.dinis, the naming of Dinis's account-6 agents
+const agentShapeCl = /^cl-[0-9]+\.[a-z0-9]+(?:[.-][a-z0-9]+)*@promptugal\.dinis$/i;
 // Exemptions (specialist.code@, 2026-11-16). CI checks from the last release tag, so one failing commit
 // would block every later release, and history is never rewritten. A person may exempt that one commit in
 // scripts/commit-exemptions.json: [{ "commit": "<full 40-hex sha>", "reason": "...", "approved_by": "Dinis Cruz",
@@ -58,7 +60,7 @@ for (const c of added) {
   const agents = lines(git('log', '-1', '--format=%(trailers:key=Agent,valueonly)', c)).map((s) => s.trim());
   const subject = git('log', '-1', '--format=%s', c);
   if (!agents.length) errors.push(`${c.slice(0, 7)} ${subject}: no readable Agent: trailer (it must sit in the final trailer block)`);
-  else if (!agents.every((a) => agentShape.test(a))) errors.push(`${c.slice(0, 7)} ${subject}: Agent: trailer is not role@agenticcells.person (${agents.join(', ')})`);
+  else if (!agents.every((a) => agentShape.test(a) || agentShapeCl.test(a))) errors.push(`${c.slice(0, 7)} ${subject}: Agent: trailer is not role@agenticcells.person or cl-<n>.role@PrompTugal.dinis (${agents.join(', ')})`);
 }
 
 if (errors.length) {

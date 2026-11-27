@@ -79,7 +79,14 @@ function entropy(s) {
 // Long high-entropy strings. Pure hex of 40 characters is a git object id and
 // is allowed (pinned actions, commit references); longer hex is flagged.
 const LONG = /[A-Za-z0-9+\/_-]{32,}={0,2}/g;
+// Exact public values that read as high-entropy but are not secrets: each is removed from the line before the test, so a token
+// beside one still fails (cl-6.security@, 26 Nov 2026: no file-wide ALLOW for the vulnerability feeds, which come from outside).
+// A change to this list is a change to a gate file: reviewed by security@.
+export const PUBLIC_VALUES = [
+  'AWSConfigRemediation-EnableSystemsManagerSessionManagerAuditLogsToS3',   // an AWS Systems Manager runbook, a product name in euvd and nvd-cve
+];
 function highEntropy(line) {
+  for (const v of PUBLIC_VALUES) line = line.split(v).join(' ');
   for (const m of line.matchAll(LONG)) {
     const s = m[0].replace(/=+$/, '');
     if (/^[0-9a-f]+$/i.test(s)) { if (s.length >= 48 && entropy(s) >= 3.5) return true; continue; }

@@ -32,6 +32,12 @@ for (const type of ['ssh-ed25519', 'ssh-rsa', 'ecdsa-sha2-nistp256', 'ecdsa-sha2
 expect('an ssh public key in another field of the keys file fails', 'team/keys.json', keys({ other: sshLine }), 'ssh public key outside');
 expect('an ssh public key with a comment in the published field fails', 'team/keys.json', keys({ ssh_signing: { public_key: sshLine + ' me@host' } }), 'does not match its pattern');
 expect('the published field passes', 'team/keys.json', keys({}), null);
+// cl-6.security@, 26 Nov 2026: the one exact public value passes; a token beside it, or a similar name, still fails
+const aws = 'AWSConfigRemediation-EnableSystemsManagerSessionManagerAuditLogsToS3', tok = 'Zk3' + 'pQ9xLm2Vb7Nc4Rt8Yw1Uh6Gj5Df0Sa';
+expect('the exempt AWS runbook name passes', 'data/euvd/latest.json', `{"product": "${aws}"}`, null);
+expect('a token beside the exempt name still fails', 'data/euvd/latest.json', `{"product": "${aws}", "x": "${tok}"}`, 'high-entropy');
+expect('a token joined to the exempt name still fails', 'data/euvd/latest.json', `{"product": "${aws}${tok}"}`, 'high-entropy');
+expect('a changed name with a token tail still fails', 'data/euvd/latest.json', `{"product": "${aws.slice(0, -3)}${tok}"}`, 'high-entropy');
 
 // library.b@'s finding (LIB-2026-067): a file holding a NUL byte is checked, not skipped; a symlink is refused, not followed
 { const k = scanBinary(Buffer.concat([Buffer.from([0x89, 0x50, 0x4e, 0x47, 0, 0, 1]), Buffer.from(`${D}BEGIN OPENSSH PRIVATE KEY${D}`), Buffer.from([0, 2])])).map(f => f.kind);
