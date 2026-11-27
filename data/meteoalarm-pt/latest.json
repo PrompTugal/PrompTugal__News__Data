@@ -1,11 +1,11 @@
 {
  "source": "meteoalarm-pt",
  "title": "MeteoAlarm CAP feed for Portugal",
- "read_at": "2026-11-26T18:13:30Z",
+ "read_at": "2026-11-27T07:14:04Z",
  "provenance": {
   "source": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-portugal",
   "page": "https://www.meteoalarm.org/en/live/region/PT",
-  "read_at": "2026-11-26T18:13:30Z",
+  "read_at": "2026-11-27T07:14:04Z",
   "by": "sources/meteoalarm-pt/collect.mjs (code, no model; run by data@PrompTugal.dinis)",
   "terms": "MeteoAlarm: re-users must name the national service (IPMA), keep the time of issue, link www.meteoalarm.org and publish MeteoAlarm's disclaimer. latest.json carries all four."
  },
@@ -15,193 +15,26 @@
   "meteoalarm": "https://www.meteoalarm.org/",
   "disclaimer": "Time delays between this website and the www.meteoalarm.org website are possible. For the most up-to-date awareness information as published by the participating National Meteorological and Hydrological Services, please refer to www.meteoalarm.org."
  },
- "sha256_prefix": "6f195a51b6b4cb96",
- "bytes": 27246,
+ "sha256_prefix": "c2082db2b9e735be",
+ "bytes": 15084,
  "counts": {
-  "messages": 15,
+  "messages": 8,
   "not_expired": 0
  },
  "changes": {
-  "since": "2026-11-26T07:13:00Z",
+  "since": "2026-11-26T18:13:30Z",
   "appeared": [],
-  "left": []
+  "left": [
+   "2.49.0.0.620.0.PT.261121073741.PO-10-6451",
+   "2.49.0.0.620.0.PT.261121073741.PO-10-6452",
+   "2.49.0.0.620.0.PT.261121073741.PO-10-6453",
+   "2.49.0.0.620.0.PT.261121102339.PO-10-6454",
+   "2.49.0.0.620.0.PT.261121102339.PO-10-6455",
+   "2.49.0.0.620.0.PT.261121154825.PO-10-6456",
+   "2.49.0.0.620.0.PT.261121154825.PO-10-6457"
+  ]
  },
  "messages": [
-  {
-   "id": "2.49.0.0.620.0.PT.261121073741.PO-10-6451",
-   "sent_utc": "2026-11-21T07:37:41Z",
-   "msg_type": "Update",
-   "replaces": [
-    {
-     "id": "2.49.0.0.620.0.PT.261120212406.PO-10-6440",
-     "sent_utc": "2026-11-20T21:24:06Z"
-    }
-   ],
-   "area": "Viseu",
-   "emma": "PT011",
-   "level": "red",
-   "hazard": "Rain",
-   "event": "Red Rain Warning",
-   "event_national": "Aviso Vermelho Precipitação",
-   "onset_utc": "2026-11-21T09:00:00Z",
-   "expires_utc": "2026-11-21T18:00:00Z",
-   "severity": "Extreme",
-   "certainty": "Likely",
-   "urgency": "Expected",
-   "text": "Persistent rain.",
-   "sender": "Instituto Português do Mar e da Atmosfera",
-   "h": "58860bb02085c690"
-  },
-  {
-   "id": "2.49.0.0.620.0.PT.261121073741.PO-10-6452",
-   "sent_utc": "2026-11-21T07:37:41Z",
-   "msg_type": "Update",
-   "replaces": [
-    {
-     "id": "2.49.0.0.620.0.PT.261120212406.PO-10-6441",
-     "sent_utc": "2026-11-20T21:24:06Z"
-    }
-   ],
-   "area": "Guarda",
-   "emma": "PT012",
-   "level": "red",
-   "hazard": "Rain",
-   "event": "Red Rain Warning",
-   "event_national": "Aviso Vermelho Precipitação",
-   "onset_utc": "2026-11-21T09:00:00Z",
-   "expires_utc": "2026-11-21T18:00:00Z",
-   "severity": "Extreme",
-   "certainty": "Likely",
-   "urgency": "Expected",
-   "text": "Persistent rain.",
-   "sender": "Instituto Português do Mar e da Atmosfera",
-   "h": "e9217a3b82b5b0e8"
-  },
-  {
-   "id": "2.49.0.0.620.0.PT.261121073741.PO-10-6453",
-   "sent_utc": "2026-11-21T07:37:41Z",
-   "msg_type": "Update",
-   "replaces": [
-    {
-     "id": "2.49.0.0.620.0.PT.261120212406.PO-10-6442",
-     "sent_utc": "2026-11-20T21:24:06Z"
-    }
-   ],
-   "area": "Coimbra",
-   "emma": "PT013",
-   "level": "red",
-   "hazard": "Rain",
-   "event": "Red Rain Warning",
-   "event_national": "Aviso Vermelho Precipitação",
-   "onset_utc": "2026-11-21T09:00:00Z",
-   "expires_utc": "2026-11-21T18:00:00Z",
-   "severity": "Extreme",
-   "certainty": "Likely",
-   "urgency": "Expected",
-   "text": "Persistent rain.",
-   "sender": "Instituto Português do Mar e da Atmosfera",
-   "h": "c72b72aabfbe9079"
-  },
-  {
-   "id": "2.49.0.0.620.0.PT.261121102339.PO-10-6454",
-   "sent_utc": "2026-11-21T10:23:39Z",
-   "msg_type": "Update",
-   "replaces": [
-    {
-     "id": "2.49.0.0.620.0.PT.261120212406.PO-10-6449",
-     "sent_utc": "2026-11-20T21:24:06Z"
-    }
-   ],
-   "area": "Leiria",
-   "emma": "PT015",
-   "level": "red",
-   "hazard": "Rain",
-   "event": "Red Rain Warning",
-   "event_national": "Aviso Vermelho Precipitação",
-   "onset_utc": "2026-11-21T10:24:00Z",
-   "expires_utc": "2026-11-21T18:00:00Z",
-   "severity": "Extreme",
-   "certainty": "Likely",
-   "urgency": "Expected",
-   "text": "Persistent rain.",
-   "sender": "Instituto Português do Mar e da Atmosfera",
-   "h": "c3dabd4ff74bbc34"
-  },
-  {
-   "id": "2.49.0.0.620.0.PT.261121102339.PO-10-6455",
-   "sent_utc": "2026-11-21T10:23:39Z",
-   "msg_type": "Update",
-   "replaces": [
-    {
-     "id": "2.49.0.0.620.0.PT.261120212406.PO-10-6450",
-     "sent_utc": "2026-11-20T21:24:06Z"
-    }
-   ],
-   "area": "Santarém",
-   "emma": "PT017",
-   "level": "red",
-   "hazard": "Rain",
-   "event": "Red Rain Warning",
-   "event_national": "Aviso Vermelho Precipitação",
-   "onset_utc": "2026-11-21T10:24:00Z",
-   "expires_utc": "2026-11-21T18:00:00Z",
-   "severity": "Extreme",
-   "certainty": "Likely",
-   "urgency": "Expected",
-   "text": "Persistent rain.",
-   "sender": "Instituto Português do Mar e da Atmosfera",
-   "h": "39cf9b8887b65208"
-  },
-  {
-   "id": "2.49.0.0.620.0.PT.261121154825.PO-10-6456",
-   "sent_utc": "2026-11-21T15:48:25Z",
-   "msg_type": "Update",
-   "replaces": [
-    {
-     "id": "2.49.0.0.620.0.PT.261119122413.PO-10-6424",
-     "sent_utc": "2026-11-19T12:24:13Z"
-    }
-   ],
-   "area": "Lisboa",
-   "emma": "PT016",
-   "level": "orange",
-   "hazard": "Rain",
-   "event": "Orange Rain Warning",
-   "event_national": "Aviso Laranja Precipitação",
-   "onset_utc": "2026-11-21T15:49:00Z",
-   "expires_utc": "2026-11-21T18:00:00Z",
-   "severity": "Severe",
-   "certainty": "Likely",
-   "urgency": "Expected",
-   "text": "Persistent rain.",
-   "sender": "Instituto Português do Mar e da Atmosfera",
-   "h": "056f2907ca317b5d"
-  },
-  {
-   "id": "2.49.0.0.620.0.PT.261121154825.PO-10-6457",
-   "sent_utc": "2026-11-21T15:48:25Z",
-   "msg_type": "Update",
-   "replaces": [
-    {
-     "id": "2.49.0.0.620.0.PT.261120212406.PO-10-6443",
-     "sent_utc": "2026-11-20T21:24:06Z"
-    }
-   ],
-   "area": "Setúbal",
-   "emma": "PT020",
-   "level": "orange",
-   "hazard": "Rain",
-   "event": "Orange Rain Warning",
-   "event_national": "Aviso Laranja Precipitação",
-   "onset_utc": "2026-11-21T15:49:00Z",
-   "expires_utc": "2026-11-21T18:00:00Z",
-   "severity": "Severe",
-   "certainty": "Likely",
-   "urgency": "Expected",
-   "text": "Persistent rain.",
-   "sender": "Instituto Português do Mar e da Atmosfera",
-   "h": "36c67ca3702d96a1"
-  },
   {
    "id": "2.49.0.0.620.0.PT.261124072303.PO-07-4645",
    "sent_utc": "2026-11-24T07:23:03Z",

@@ -1,11 +1,11 @@
 {
  "source": "ipma-fire-risk",
  "title": "IPMA fire risk",
- "read_at": "2026-11-26T18:13:03Z",
+ "read_at": "2026-11-27T07:13:37Z",
  "provenance": {
   "source": "https://api.ipma.pt/open-data/forecast/meteorology/rcm/rcm-d0.json",
   "page": "https://www.ipma.pt/en/riscoincendio/rcm.pt/",
-  "read_at": "2026-11-26T18:13:03Z",
+  "read_at": "2026-11-27T07:13:37Z",
   "by": "sources/ipma-fire-risk/collect.mjs (code, no model; run by data@PrompTugal.dinis)",
   "terms": "IPMA: free to copy and use for personal or public use if the use has no profit-making or offensive purpose; always name IPMA as the source.",
   "sources": [
@@ -19,31 +19,30 @@
  "files": [
   {
    "d": 0,
-   "date": "2026-11-26",
-   "run": "2026-11-25",
-   "file_date": "2026-11-26 09:35:02",
+   "date": "2026-11-27",
+   "run": "2026-11-26",
+   "file_date": "2026-11-27 00:05:01",
    "source": "https://api.ipma.pt/open-data/forecast/meteorology/rcm/rcm-d0.json"
   },
   {
    "d": 1,
-   "date": "2026-11-27",
-   "run": "2026-11-25",
-   "file_date": "2026-11-26 09:35:03",
+   "date": "2026-11-28",
+   "run": "2026-11-26",
+   "file_date": "2026-11-27 00:05:02",
    "source": "https://api.ipma.pt/open-data/forecast/meteorology/rcm/rcm-d1.json"
   },
   {
    "d": 2,
-   "date": "2026-11-28",
-   "run": "2026-11-25",
-   "file_date": "2026-11-26 09:35:04",
+   "date": "2026-11-29",
+   "run": "2026-11-26",
+   "file_date": "2026-11-27 00:05:03",
    "source": "https://api.ipma.pt/open-data/forecast/meteorology/rcm/rcm-d2.json"
   }
  ],
  "counts": {
   "municipalities": 278,
   "today_by_level": {
-   "low": 277,
-   "moderate": 1
+   "low": 278
   }
  },
  "municipalities": [
@@ -53,17 +52,17 @@
    "lon": -8.44,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -75,17 +74,17 @@
    "lon": -8.4784,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -97,17 +96,17 @@
    "lon": -8.44,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -119,17 +118,17 @@
    "lon": -8.26,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -141,17 +140,17 @@
    "lon": -8.6535,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -163,17 +162,17 @@
    "lon": -8.2707,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -185,17 +184,17 @@
    "lon": -8.64,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -207,17 +206,17 @@
    "lon": -8.572,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -229,17 +228,17 @@
    "lon": -8.55,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -251,17 +250,17 @@
    "lon": -8.67,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -273,17 +272,17 @@
    "lon": -8.4503,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -295,17 +294,17 @@
    "lon": -8.64,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -317,17 +316,17 @@
    "lon": -8.48,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -339,17 +338,17 @@
    "lon": -8.4941,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -361,17 +360,17 @@
    "lon": -8.6254,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -383,17 +382,17 @@
    "lon": -8.49,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -405,17 +404,17 @@
    "lon": -8.3713,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -427,17 +426,17 @@
    "lon": -8.6833,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -449,17 +448,17 @@
    "lon": -8.39,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -471,17 +470,17 @@
    "lon": -8.17,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -493,17 +492,17 @@
    "lon": -8.056,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -515,17 +514,17 @@
    "lon": -8,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -537,17 +536,17 @@
    "lon": -6.98,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -559,17 +558,17 @@
    "lon": -7.87,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -581,17 +580,17 @@
    "lon": -7.93,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -603,17 +602,17 @@
    "lon": -7.89,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -625,17 +624,17 @@
    "lon": -8.11,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -647,17 +646,17 @@
    "lon": -7.6605,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -669,17 +668,17 @@
    "lon": -7.45,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -691,17 +690,17 @@
    "lon": -8.639,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -713,17 +712,17 @@
    "lon": -8.22,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -735,17 +734,17 @@
    "lon": -7.6,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -757,17 +756,17 @@
    "lon": -7.8,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -779,17 +778,17 @@
    "lon": -8.61,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -801,17 +800,17 @@
    "lon": -8.3489,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -823,17 +822,17 @@
    "lon": -8.4227,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -845,17 +844,17 @@
    "lon": -7.9901,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -867,17 +866,17 @@
    "lon": -8,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -889,17 +888,17 @@
    "lon": -8.7819,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -911,17 +910,17 @@
    "lon": -8.1732,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -933,17 +932,17 @@
    "lon": -8.2938,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -955,17 +954,17 @@
    "lon": -8.2708,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -977,17 +976,17 @@
    "lon": -8.31,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -999,17 +998,17 @@
    "lon": -8.1416,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1021,17 +1020,17 @@
    "lon": -8.5205,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1043,17 +1042,17 @@
    "lon": -8.4348,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1065,17 +1064,17 @@
    "lon": -8.31,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1087,17 +1086,17 @@
    "lon": -6.9625,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1109,17 +1108,17 @@
    "lon": -6.7606,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1131,17 +1130,17 @@
    "lon": -7.3077,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1153,17 +1152,17 @@
    "lon": -6.81,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1175,17 +1174,17 @@
    "lon": -6.9635,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1197,17 +1196,17 @@
    "lon": -6.27,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1219,17 +1218,17 @@
    "lon": -7.1812,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1241,17 +1240,17 @@
    "lon": -6.7115,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1263,17 +1262,17 @@
    "lon": -7.0532,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1285,17 +1284,17 @@
    "lon": -7.1519,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1307,17 +1306,17 @@
    "lon": -6.53,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1329,17 +1328,17 @@
    "lon": -7.0099,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1351,17 +1350,17 @@
    "lon": -7.3486,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1373,17 +1372,17 @@
    "lon": -7.4957,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1395,17 +1394,17 @@
    "lon": -7.4992,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1417,17 +1416,17 @@
    "lon": -7.5011,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1439,17 +1438,17 @@
    "lon": -7.24,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1461,17 +1460,17 @@
    "lon": -7.91,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1483,17 +1482,17 @@
    "lon": -7.17,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1505,17 +1504,17 @@
    "lon": -7.9229,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1527,17 +1526,17 @@
    "lon": -8.0979,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1549,17 +1548,17 @@
    "lon": -8.144,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1571,17 +1570,17 @@
    "lon": -7.6705,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1593,17 +1592,17 @@
    "lon": -8.05,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1615,17 +1614,17 @@
    "lon": -8.5943,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1637,17 +1636,17 @@
    "lon": -8.4194,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1659,17 +1658,17 @@
    "lon": -8.5027,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1681,17 +1680,17 @@
    "lon": -8.8558,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1703,17 +1702,17 @@
    "lon": -8.11,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1725,17 +1724,17 @@
    "lon": -8.2469,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1747,17 +1746,17 @@
    "lon": -8.7369,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1769,17 +1768,17 @@
    "lon": -8.3309,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1791,17 +1790,17 @@
    "lon": -8.6803,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1813,17 +1812,17 @@
    "lon": -7.86,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1835,17 +1834,17 @@
    "lon": -7.93,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1857,17 +1856,17 @@
    "lon": -8.27,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1879,17 +1878,17 @@
    "lon": -8.39,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1901,17 +1900,17 @@
    "lon": -8.61,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1923,17 +1922,17 @@
    "lon": -8.02,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1945,17 +1944,17 @@
    "lon": -8.2586,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1967,17 +1966,17 @@
    "lon": -7.4,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -1989,17 +1988,17 @@
    "lon": -7.99,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2011,17 +2010,17 @@
    "lon": -7.4554,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2033,17 +2032,17 @@
    "lon": -7.5869,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2055,17 +2054,17 @@
    "lon": -7.9104,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2077,17 +2076,17 @@
    "lon": -8.21,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2099,17 +2098,17 @@
    "lon": -8.16,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2121,17 +2120,17 @@
    "lon": -7.34,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2143,17 +2142,17 @@
    "lon": -7.7079,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2165,17 +2164,17 @@
    "lon": -7.55,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2187,17 +2186,17 @@
    "lon": -7.5397,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2209,17 +2208,17 @@
    "lon": -8.46,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2231,17 +2230,17 @@
    "lon": -8.0019,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2253,17 +2252,17 @@
    "lon": -7.4204,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2275,17 +2274,17 @@
    "lon": -8.2472,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2297,17 +2296,17 @@
    "lon": -7.48,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2319,17 +2318,17 @@
    "lon": -8.8028,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2341,17 +2340,17 @@
    "lon": -7.4445,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2363,17 +2362,17 @@
    "lon": -7.9331,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2385,17 +2384,17 @@
    "lon": -8.455,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2407,17 +2406,17 @@
    "lon": -8.6765,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2429,17 +2428,17 @@
    "lon": -8.0202,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2451,17 +2450,17 @@
    "lon": -8.56,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2473,17 +2472,17 @@
    "lon": -7.84,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2495,17 +2494,17 @@
    "lon": -8.52,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2517,17 +2516,17 @@
    "lon": -7.89,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2539,17 +2538,17 @@
    "lon": -8.44,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2561,17 +2560,17 @@
    "lon": -7.65,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 2,
-     "level": "moderate"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2583,17 +2582,17 @@
    "lon": -8.9103,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2605,17 +2604,17 @@
    "lon": -7.42,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2627,17 +2626,17 @@
    "lon": -7.54,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2649,17 +2648,17 @@
    "lon": -6.91,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2671,17 +2670,17 @@
    "lon": -7.39,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2693,17 +2692,17 @@
    "lon": -6.9629,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2715,17 +2714,17 @@
    "lon": -7.5393,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2737,17 +2736,17 @@
    "lon": -7.5937,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2759,17 +2758,17 @@
    "lon": -7.2647,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2781,17 +2780,17 @@
    "lon": -7.54,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2803,17 +2802,17 @@
    "lon": -7.26,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2825,17 +2824,17 @@
    "lon": -7.0678,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2847,17 +2846,17 @@
    "lon": -7.0898,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2869,17 +2868,17 @@
    "lon": -7.71,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2891,17 +2890,17 @@
    "lon": -7.35,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2913,17 +2912,17 @@
    "lon": -7.1433,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2935,17 +2934,17 @@
    "lon": -8.97,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2957,17 +2956,17 @@
    "lon": -8.3814,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -2979,17 +2978,17 @@
    "lon": -8.4378,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3001,17 +3000,17 @@
    "lon": -8.8228,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3023,17 +3022,17 @@
    "lon": -9.16,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3045,17 +3044,17 @@
    "lon": -9.1405,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3067,17 +3066,17 @@
    "lon": -8.21,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3089,17 +3088,17 @@
    "lon": -8.27,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3111,17 +3110,17 @@
    "lon": -8.8069,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3133,17 +3132,17 @@
    "lon": -8.93,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3155,17 +3154,17 @@
    "lon": -9.07,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3177,17 +3176,17 @@
    "lon": -9.16,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3199,17 +3198,17 @@
    "lon": -8.15,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3221,17 +3220,17 @@
    "lon": -9.3893,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3243,17 +3242,17 @@
    "lon": -8.63,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3265,17 +3264,17 @@
    "lon": -8.8169,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3287,17 +3286,17 @@
    "lon": -9.0095,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3309,17 +3308,17 @@
    "lon": -9.0777,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3331,17 +3330,17 @@
    "lon": -8.8695,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3353,17 +3352,17 @@
    "lon": -9.1,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3375,17 +3374,17 @@
    "lon": -9.4296,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3397,17 +3396,17 @@
    "lon": -9.1286,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3419,17 +3418,17 @@
    "lon": -9.17,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3441,17 +3440,17 @@
    "lon": -9.3126,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3463,17 +3462,17 @@
    "lon": -9.33,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3485,17 +3484,17 @@
    "lon": -9.3059,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3507,17 +3506,17 @@
    "lon": -9.3904,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3529,17 +3528,17 @@
    "lon": -9.15,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3551,17 +3550,17 @@
    "lon": -9.261,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3573,17 +3572,17 @@
    "lon": -8.9899,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3595,17 +3594,17 @@
    "lon": -9.2267,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3617,17 +3616,17 @@
    "lon": -9.19,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3639,17 +3638,17 @@
    "lon": -7.66,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3661,17 +3660,17 @@
    "lon": -7.29,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3683,17 +3682,17 @@
    "lon": -7.88,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3705,17 +3704,17 @@
    "lon": -7.07,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3727,17 +3726,17 @@
    "lon": -7.4552,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3749,17 +3748,17 @@
    "lon": -7.64,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3771,17 +3770,17 @@
    "lon": -7.1662,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3793,17 +3792,17 @@
    "lon": -7.65,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3815,17 +3814,17 @@
    "lon": -7.936,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3837,17 +3836,17 @@
    "lon": -7.3768,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3859,17 +3858,17 @@
    "lon": -7.43,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3881,17 +3880,17 @@
    "lon": -7.65,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3903,17 +3902,17 @@
    "lon": -8.01,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3925,17 +3924,17 @@
    "lon": -7.42,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3947,17 +3946,17 @@
    "lon": -7.67,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3969,17 +3968,17 @@
    "lon": -8.0795,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -3991,17 +3990,17 @@
    "lon": -8.0376,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4013,17 +4012,17 @@
    "lon": -8.19,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4035,17 +4034,17 @@
    "lon": -8.5315,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4057,17 +4056,17 @@
    "lon": -8.2833,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4079,17 +4078,17 @@
    "lon": -8.6216,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4101,17 +4100,17 @@
    "lon": -8.15,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4123,17 +4122,17 @@
    "lon": -8.681,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4145,17 +4144,17 @@
    "lon": -8.38,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4167,17 +4166,17 @@
    "lon": -8.33,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4189,17 +4188,17 @@
    "lon": -8.2798,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4211,17 +4210,17 @@
    "lon": -8.6294,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4233,17 +4232,17 @@
    "lon": -8.76,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4255,17 +4254,17 @@
    "lon": -8.4776,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4277,17 +4276,17 @@
    "lon": -8.5,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4299,17 +4298,17 @@
    "lon": -8.74,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4321,17 +4320,17 @@
    "lon": -8.6229,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4343,17 +4342,17 @@
    "lon": -8.5602,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4365,17 +4364,17 @@
    "lon": -8.1995,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4387,17 +4386,17 @@
    "lon": -8.67,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4409,17 +4408,17 @@
    "lon": -8.63,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4431,17 +4430,17 @@
    "lon": -8.59,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4453,17 +4452,17 @@
    "lon": -8.81,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4475,17 +4474,17 @@
    "lon": -8.7923,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4497,17 +4496,17 @@
    "lon": -8.48,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4519,17 +4518,17 @@
    "lon": -8.3379,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4541,17 +4540,17 @@
    "lon": -8.5274,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4563,17 +4562,17 @@
    "lon": -8.47,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4585,17 +4584,17 @@
    "lon": -8.28,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4607,17 +4606,17 @@
    "lon": -8.4847,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4629,17 +4628,17 @@
    "lon": -7.9954,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4651,17 +4650,17 @@
    "lon": -8.9359,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4673,17 +4672,17 @@
    "lon": -8.7896,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4695,17 +4694,17 @@
    "lon": -8.74,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4717,17 +4716,17 @@
    "lon": -8.16,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4739,17 +4738,17 @@
    "lon": -8.4125,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4761,17 +4760,17 @@
    "lon": -8.539,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4783,17 +4782,17 @@
    "lon": -8.43,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4805,17 +4804,17 @@
    "lon": -8.5788,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4827,17 +4826,17 @@
    "lon": -8.5135,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4849,17 +4848,17 @@
    "lon": -8.9604,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4871,17 +4870,17 @@
    "lon": -9.1573,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4893,17 +4892,17 @@
    "lon": -9.061,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4915,17 +4914,17 @@
    "lon": -8.5651,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4937,17 +4936,17 @@
    "lon": -8.9927,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4959,17 +4958,17 @@
    "lon": -8.9755,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -4981,17 +4980,17 @@
    "lon": -8.8903,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5003,17 +5002,17 @@
    "lon": -8.7177,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5025,17 +5024,17 @@
    "lon": -9.1085,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5047,17 +5046,17 @@
    "lon": -9.1062,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5069,17 +5068,17 @@
    "lon": -8.8856,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5091,17 +5090,17 @@
    "lon": -8.8643,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5113,17 +5112,17 @@
    "lon": -8.4177,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5135,17 +5134,17 @@
    "lon": -8.8533,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5157,17 +5156,17 @@
    "lon": -8.2611,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5179,17 +5178,17 @@
    "lon": -8.4923,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5201,17 +5200,17 @@
    "lon": -8.5574,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5223,17 +5222,17 @@
    "lon": -8.415,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5245,17 +5244,17 @@
    "lon": -8.5786,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5267,17 +5266,17 @@
    "lon": -8.6425,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5289,17 +5288,17 @@
    "lon": -8.8365,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5311,17 +5310,17 @@
    "lon": -8.7423,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5333,17 +5332,17 @@
    "lon": -7.4751,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5355,17 +5354,17 @@
    "lon": -7.6682,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5377,17 +5376,17 @@
    "lon": -7.4721,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5399,17 +5398,17 @@
    "lon": -7.8907,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5421,17 +5420,17 @@
    "lon": -7.9526,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5443,17 +5442,17 @@
    "lon": -7.79,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5465,17 +5464,17 @@
    "lon": -7.45,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5487,17 +5486,17 @@
    "lon": -7.7922,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5509,17 +5508,17 @@
    "lon": -7.7936,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5531,17 +5530,17 @@
    "lon": -7.58,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5553,17 +5552,17 @@
    "lon": -7.79,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5575,17 +5574,17 @@
    "lon": -7.31,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5597,17 +5596,17 @@
    "lon": -7.6441,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5619,17 +5618,17 @@
    "lon": -7.744,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5641,17 +5640,17 @@
    "lon": -7.6908,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5663,17 +5662,17 @@
    "lon": -8,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5685,17 +5684,17 @@
    "lon": -7.94,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5707,17 +5706,17 @@
    "lon": -8.0958,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5729,17 +5728,17 @@
    "lon": -7.81,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5751,17 +5750,17 @@
    "lon": -7.76,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5773,17 +5772,17 @@
    "lon": -7.6154,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5795,17 +5794,17 @@
    "lon": -8.23,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5817,17 +5816,17 @@
    "lon": -7.8522,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5839,17 +5838,17 @@
    "lon": -8.1738,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5861,17 +5860,17 @@
    "lon": -7.7,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5883,17 +5882,17 @@
    "lon": -7.4,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5905,17 +5904,17 @@
    "lon": -7.9627,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5927,17 +5926,17 @@
    "lon": -8.13,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5949,17 +5948,17 @@
    "lon": -7.41,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5971,17 +5970,17 @@
    "lon": -8.0642,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -5993,17 +5992,17 @@
    "lon": -7.74,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -6015,17 +6014,17 @@
    "lon": -7.4916,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -6037,17 +6036,17 @@
    "lon": -7.5674,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -6059,17 +6058,17 @@
    "lon": -7.77,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -6081,17 +6080,17 @@
    "lon": -8.08,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -6103,17 +6102,17 @@
    "lon": -7.73,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -6125,17 +6124,17 @@
    "lon": -7.912,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }
@@ -6147,17 +6146,17 @@
    "lon": -8.1135,
    "days": [
     {
-     "date": "2026-11-26",
-     "rcm": 1,
-     "level": "low"
-    },
-    {
      "date": "2026-11-27",
      "rcm": 1,
      "level": "low"
     },
     {
      "date": "2026-11-28",
+     "rcm": 1,
+     "level": "low"
+    },
+    {
+     "date": "2026-11-29",
      "rcm": 1,
      "level": "low"
     }

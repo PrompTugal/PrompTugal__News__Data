@@ -1,12 +1,12 @@
 {
  "source": "nvd-kev",
  "title": "NVD's record of every CVE on CISA's KEV list",
- "read_at": "2026-11-26T07:13:11Z",
+ "read_at": "2026-11-27T07:14:14Z",
  "notice": "This product uses the NVD API but is not endorsed or certified by the NVD.",
  "provenance": {
   "source": "https://nvd.nist.gov/",
   "page": "https://nvd.nist.gov/developers/vulnerabilities",
-  "read_at": "2026-11-26T07:13:11Z",
+  "read_at": "2026-11-27T07:14:14Z",
   "by": "sources/nvd-kev/collect.mjs (code, no model; run by data.b@PrompTugal.dinis)",
   "terms": "NVD API Terms of Use: the API is for building a service to \"search, display, analyze, retrieve, view and otherwise get\" NVD data; asked to display \"This product uses the NVD API but is not endorsed or certified by the NVD.\"; the NVD name may identify the source but not imply endorsement; if you modify the content you may not attribute it to the NVD (our totals are ours, our per-CVE values are kept as served); public rate limit 5 requests in a rolling 30 seconds without a key (we use none, seven seconds apart); no more than once every two hours (we read every 6 hours). Not reviewed by a person.",
   "api": "https://services.nvd.nist.gov/rest/json/cves/2.0?hasKev",

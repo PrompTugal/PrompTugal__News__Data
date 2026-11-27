@@ -3,6 +3,32 @@
  "source": "cams",
  "runs": [
   {
+   "at": "2026-11-27T07:04:01Z",
+   "finished": "2026-11-27T07:04:26Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "page-lisboa-tejo-live-cacilhas",
+     "url": "https://www.portodelisboa.pt/tejo-live",
+     "at": "2026-11-27T07:04:23Z",
+     "status": 200,
+     "bytes": 182685,
+     "sha256_prefix": "f41b0b659b1a00b1",
+     "changed": true
+    },
+    {
+     "name": "page-portimao-praia-da-rocha-ondas",
+     "url": "https://meteorologia.aemtg.pt/video",
+     "at": "2026-11-27T07:04:25Z",
+     "status": 200,
+     "bytes": 2745,
+     "sha256_prefix": "3710253342d218f4",
+     "changed": false
+    }
+   ]
+  },
+  {
    "at": "2026-11-26T18:04:14Z",
    "finished": "2026-11-26T18:04:39Z",
    "ok": 2,

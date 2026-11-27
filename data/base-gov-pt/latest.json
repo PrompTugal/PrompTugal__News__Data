@@ -2,43 +2,43 @@
  "shape": "2",
  "source": "base-gov-pt",
  "title": "Public contracts (Portal BASE)",
- "read_at": "2026-11-26T18:04:10Z",
+ "read_at": "2026-11-27T07:03:58Z",
  "provenance": {
   "source": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
   "page": "https://www.base.gov.pt/",
-  "read_at": "2026-11-26T18:04:10Z",
+  "read_at": "2026-11-27T07:03:58Z",
   "by": "sources/base-gov-pt/collect.mjs (code, no model; run by data@PrompTugal.dinis)",
   "terms": "IMPIC publishes these contracts as open data on dados.gov.pt with the licence \"Outra (Domínio Público)\" (other-pd, public domain); we name IMPIC and the Portal BASE as the source and link each contract's page.",
   "dataset": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
   "terms_page": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
   "how": "IMPIC's yearly file on dados.gov.pt (contratos2026.zip), stream-parsed in memory, the approach of PrompTugal__News__Civic tools/extract-base.mjs"
  },
- "about": "Public contracts published on the Portal BASE in the last 90 days (from 2026-08-28) where the contracting entity is the câmara municipal of Lisboa or of one of the Algarve's 16 municipalities (Quarteira is a parish of Loulé and has no câmara of its own). From IMPIC's open data, which is updated about weekly: a contract appears here some days after it is signed. object is cut to 200 characters. A contractor that is a company keeps its name and NIF; a contractor that looks like a natural person (its NIF, or none) is shown only as \"a natural person\", and the contract's object text is then left out. Our record, not an official one: each contract links its page on base.gov.pt.",
+ "about": "Public contracts published on the Portal BASE in the last 90 days (from 2026-08-29) where the contracting entity is the câmara municipal of Lisboa or of one of the Algarve's 16 municipalities (Quarteira is a parish of Loulé and has no câmara of its own). From IMPIC's open data, which is updated about weekly: a contract appears here some days after it is signed. object is cut to 200 characters. A contractor that is a company keeps its name and NIF; a contractor that looks like a natural person (its NIF, or none) is shown only as \"a natural person\", and the contract's object text is then left out. Our record, not an official one: each contract links its page on base.gov.pt.",
  "counts": {
-  "contracts": 1527,
+  "contracts": 1496,
   "places": 17,
   "by_place": {
-   "lisboa": 307,
-   "albufeira": 89,
-   "alcoutim": 16,
+   "lisboa": 301,
+   "albufeira": 87,
+   "alcoutim": 15,
    "aljezur": 40,
-   "castro-marim": 38,
-   "faro": 125,
-   "lagoa": 90,
+   "castro-marim": 36,
+   "faro": 123,
+   "lagoa": 87,
    "lagos": 121,
-   "loule": 206,
+   "loule": 200,
    "monchique": 21,
-   "olhao": 73,
-   "portimao": 137,
+   "olhao": 71,
+   "portimao": 136,
    "sao-bras-de-alportel": 35,
-   "silves": 81,
-   "tavira": 71,
+   "silves": 78,
+   "tavira": 69,
    "vila-do-bispo": 21,
-   "vila-real-de-santo-antonio": 56
+   "vila-real-de-santo-antonio": 55
   },
   "records_scanned": null,
   "window_days": 90,
-  "objects_withheld": 188
+  "objects_withheld": 183
  },
  "note": "The dataset file had not changed since the last read, so it was not downloaded again; each contract keeps the time of the read that found it.",
  "dataset": {
@@ -7442,229 +7442,6 @@
      "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
     },
     "read_at": "2026-11-26T07:04:04Z"
-   },
-   {
-    "id": "15544592",
-    "place": "loule",
-    "object": "Empreitada de beneficiação, ampliação, reparação e melhoramentos em estabelecimentos de ensino do concelho de Loulé, concretamente nas escolas do Agrupamento Eng.º Duarte Pacheco, incluindo a execuçã…",
-    "object_withheld": null,
-    "buyer_kind": "council",
-    "contracting_entity": {
-     "name": "Município de Loulé",
-     "nif": "502098139"
-    },
-    "contractors": [
-     {
-      "kind": "company",
-      "nif": "510631614",
-      "name": "STRONGPRECISION - S.A.",
-      "country": "PRT"
-     }
-    ],
-    "price_eur": 251365,
-    "base_price_eur": 306000,
-    "published": "2026-08-28",
-    "signed": "2026-08-19",
-    "decision": "2026-08-14",
-    "procedure": "Concurso público",
-    "contract_types": [
-     "Empreitadas de obras públicas"
-    ],
-    "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15544592",
-    "license": {
-     "name": "Outra (Domínio Público)",
-     "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
-     "id": "other-pd",
-     "holder": "IMPIC, Instituto dos Mercados Públicos, do Imobiliário e da Construção",
-     "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
-    },
-    "read_at": "2026-11-26T07:04:04Z"
-   },
-   {
-    "id": "15544893",
-    "place": "loule",
-    "object": "CONTRATAÇÃO DE SERVIÇOS DE LIMPEZA DE RESÍDUOS VERDES NO CONCELHO DE LOULÉ",
-    "object_withheld": null,
-    "buyer_kind": "council",
-    "contracting_entity": {
-     "name": "Município de Loulé",
-     "nif": "502098139"
-    },
-    "contractors": [
-     {
-      "kind": "company",
-      "nif": "510921248",
-      "name": "Suberambiente, Lda",
-      "country": "PRT"
-     }
-    ],
-    "price_eur": 26500,
-    "base_price_eur": 32000,
-    "published": "2026-08-28",
-    "signed": "2026-08-19",
-    "decision": "2026-07-31",
-    "procedure": "Concurso público",
-    "contract_types": [
-     "Aquisição de serviços"
-    ],
-    "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15544893",
-    "license": {
-     "name": "Outra (Domínio Público)",
-     "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
-     "id": "other-pd",
-     "holder": "IMPIC, Instituto dos Mercados Públicos, do Imobiliário e da Construção",
-     "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
-    },
-    "read_at": "2026-11-26T07:04:04Z"
-   },
-   {
-    "id": "15545065",
-    "place": "loule",
-    "object": "CONTRATAÇÃO DA PRESTAÇÃO DE SERVIÇOS NO ÂMBITO DO PROJETO ALDEIAS RESILIENTES – ÁGUAS FRIAS, CORTINHOLA E SARNADAS",
-    "object_withheld": null,
-    "buyer_kind": "council",
-    "contracting_entity": {
-     "name": "Município de Loulé",
-     "nif": "502098139"
-    },
-    "contractors": [
-     {
-      "kind": "company",
-      "nif": "510921248",
-      "name": "Suberambiente, Lda",
-      "country": "PRT"
-     }
-    ],
-    "price_eur": 64404.25,
-    "base_price_eur": 140472.63,
-    "published": "2026-08-28",
-    "signed": "2026-07-07",
-    "decision": "2026-06-18",
-    "procedure": "Concurso público",
-    "contract_types": [
-     "Aquisição de serviços"
-    ],
-    "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15545065",
-    "license": {
-     "name": "Outra (Domínio Público)",
-     "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
-     "id": "other-pd",
-     "holder": "IMPIC, Instituto dos Mercados Públicos, do Imobiliário e da Construção",
-     "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
-    },
-    "read_at": "2026-11-26T07:04:04Z"
-   },
-   {
-    "id": "15545321",
-    "place": "loule",
-    "object": "CONTRATAÇÃO DA PRESTAÇÃO DE SERVIÇOS NO ÂMBITO DO PROJETO ALDEIAS RESILIENTES – ÁGUAS FRIAS, CORTINHOLA E SARNADAS",
-    "object_withheld": null,
-    "buyer_kind": "council",
-    "contracting_entity": {
-     "name": "Município de Loulé",
-     "nif": "502098139"
-    },
-    "contractors": [
-     {
-      "kind": "company",
-      "nif": "510749038",
-      "name": "Algarcolmeias, Lda",
-      "country": "PRT"
-     }
-    ],
-    "price_eur": 42973.5,
-    "base_price_eur": 140472.63,
-    "published": "2026-08-28",
-    "signed": "2026-07-08",
-    "decision": "2026-06-18",
-    "procedure": "Concurso público",
-    "contract_types": [
-     "Aquisição de serviços"
-    ],
-    "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15545321",
-    "license": {
-     "name": "Outra (Domínio Público)",
-     "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
-     "id": "other-pd",
-     "holder": "IMPIC, Instituto dos Mercados Públicos, do Imobiliário e da Construção",
-     "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
-    },
-    "read_at": "2026-11-26T07:04:04Z"
-   },
-   {
-    "id": "15545383",
-    "place": "loule",
-    "object": "CONTRATAÇÃO DA PRESTAÇÃO DE SERVIÇOS NO ÂMBITO DO PROJETO ALDEIAS RESILIENTES – ÁGUAS FRIAS, CORTINHOLA E SARNADAS",
-    "object_withheld": null,
-    "buyer_kind": "council",
-    "contracting_entity": {
-     "name": "Município de Loulé",
-     "nif": "502098139"
-    },
-    "contractors": [
-     {
-      "kind": "company",
-      "nif": "515949256",
-      "name": "maria patricia dos santos rafael unip lda",
-      "country": "PRT"
-     }
-    ],
-    "price_eur": 14679.9,
-    "base_price_eur": 140472.63,
-    "published": "2026-08-28",
-    "signed": "2026-07-08",
-    "decision": "2026-06-18",
-    "procedure": "Concurso público",
-    "contract_types": [
-     "Aquisição de serviços"
-    ],
-    "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15545383",
-    "license": {
-     "name": "Outra (Domínio Público)",
-     "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
-     "id": "other-pd",
-     "holder": "IMPIC, Instituto dos Mercados Públicos, do Imobiliário e da Construção",
-     "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
-    },
-    "read_at": "2026-11-26T07:04:04Z"
-   },
-   {
-    "id": "15546247",
-    "place": "loule",
-    "object": "O procedimento por objeto a aquisição de serviços de mecânica especializados para a reparação e manutenção dos sistemas de trabalho dos veículos de recolha de RSU, matrículas 69-AB-42 e 16-VF-79, con…",
-    "object_withheld": null,
-    "buyer_kind": "municipal company",
-    "contracting_entity": {
-     "name": "Inframoura - Empresa de Infraestruturas de Vilamoura, EM, SA",
-     "nif": "504915266",
-     "council": "loule"
-    },
-    "contractors": [
-     {
-      "kind": "company",
-      "nif": "502455489",
-      "name": "Basrio - Metalomecanica e Equipamentos Rodoviários, S.A.",
-      "country": "PRT"
-     }
-    ],
-    "price_eur": 16414.6,
-    "base_price_eur": 16500,
-    "published": "2026-08-28",
-    "signed": "2026-08-24",
-    "decision": "2026-08-17",
-    "procedure": "Ajuste Direto Regime Geral",
-    "contract_types": [
-     "Aquisição de serviços"
-    ],
-    "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15546247",
-    "license": {
-     "name": "Outra (Domínio Público)",
-     "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
-     "id": "other-pd",
-     "holder": "IMPIC, Instituto dos Mercados Públicos, do Imobiliário e da Construção",
-     "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
-    },
-    "read_at": "2026-11-26T07:04:04Z"
    }
   ],
   "olhao": [
@@ -10269,80 +10046,6 @@
      "Aquisição de bens móveis"
     ],
     "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15565526",
-    "license": {
-     "name": "Outra (Domínio Público)",
-     "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
-     "id": "other-pd",
-     "holder": "IMPIC, Instituto dos Mercados Públicos, do Imobiliário e da Construção",
-     "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
-    },
-    "read_at": "2026-11-26T07:04:04Z"
-   },
-   {
-    "id": "15544240",
-    "place": "olhao",
-    "object": "Aquisição de serviços de Consultoria para Comunicação e Divulgação da Plataforma de Gestão Urbana",
-    "object_withheld": null,
-    "buyer_kind": "council",
-    "contracting_entity": {
-     "name": "Município de Olhão",
-     "nif": "506321894"
-    },
-    "contractors": [
-     {
-      "kind": "company",
-      "nif": "513615881",
-      "name": "Epopeiarecord, Lda",
-      "country": "PRT"
-     }
-    ],
-    "price_eur": 9900,
-    "base_price_eur": 9900,
-    "published": "2026-08-28",
-    "signed": "2026-08-27",
-    "decision": "2026-08-26",
-    "procedure": "Ajuste Direto Regime Geral",
-    "contract_types": [
-     "Aquisição de serviços"
-    ],
-    "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15544240",
-    "license": {
-     "name": "Outra (Domínio Público)",
-     "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
-     "id": "other-pd",
-     "holder": "IMPIC, Instituto dos Mercados Públicos, do Imobiliário e da Construção",
-     "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
-    },
-    "read_at": "2026-11-26T07:04:04Z"
-   },
-   {
-    "id": "15550187",
-    "place": "olhao",
-    "object": "\"Aquisição de Serviços de Consultoria para Comunicação e Divulgação\"",
-    "object_withheld": null,
-    "buyer_kind": "council",
-    "contracting_entity": {
-     "name": "Município de Olhão",
-     "nif": "506321894"
-    },
-    "contractors": [
-     {
-      "kind": "company",
-      "nif": "515855448",
-      "name": "CONCEPT & CONNECT - CONSULTORES, UNIPESSOAL, LDA",
-      "country": "PRT"
-     }
-    ],
-    "price_eur": 28990,
-    "base_price_eur": 29000,
-    "published": "2026-08-28",
-    "signed": "2026-08-28",
-    "decision": "2026-08-27",
-    "procedure": "Ajuste Direto Regime Geral",
-    "contract_types": [
-     "Aquisição de serviços"
-    ],
-    "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15550187",
     "license": {
      "name": "Outra (Domínio Público)",
      "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
@@ -21401,222 +21104,6 @@
      "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
     },
     "read_at": "2026-11-26T07:04:04Z"
-   },
-   {
-    "id": "15544706",
-    "place": "lisboa",
-    "object": "SERVIÇOS DE DIREÇÃO TÉCNICA PARA O AUDITÓRIO DA BIBLIOTECA DE MARVILA E PRESTAÇÃO DE SERVIÇOS EM REGIME DE BOLSA DE TÉCNICOS DE ILUMINAÇÃO E DE SOM PARA EQUIPAMENTOS CULTURAIS",
-    "object_withheld": null,
-    "buyer_kind": "council",
-    "contracting_entity": {
-     "name": "Município de Lisboa",
-     "nif": "500051070"
-    },
-    "contractors": [
-     {
-      "kind": "company",
-      "nif": "518662357",
-      "name": "Hyperbolic Dreams LDA",
-      "country": "PRT"
-     }
-    ],
-    "price_eur": 30300,
-    "base_price_eur": 48000,
-    "published": "2026-08-28",
-    "signed": "2026-08-28",
-    "decision": "2026-08-25",
-    "procedure": "Consulta Prévia",
-    "contract_types": [
-     "Aquisição de serviços"
-    ],
-    "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15544706",
-    "license": {
-     "name": "Outra (Domínio Público)",
-     "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
-     "id": "other-pd",
-     "holder": "IMPIC, Instituto dos Mercados Públicos, do Imobiliário e da Construção",
-     "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
-    },
-    "read_at": "2026-11-26T07:04:04Z"
-   },
-   {
-    "id": "15545006",
-    "place": "lisboa",
-    "object": null,
-    "object_withheld": "a contractor is a natural person",
-    "buyer_kind": "council",
-    "contracting_entity": {
-     "name": "Município de Lisboa",
-     "nif": "500051070"
-    },
-    "contractors": [
-     {
-      "kind": "a natural person"
-     }
-    ],
-    "price_eur": 19800,
-    "base_price_eur": 19800,
-    "published": "2026-08-28",
-    "signed": "2026-08-25",
-    "decision": "2026-08-18",
-    "procedure": "Ajuste Direto Regime Geral",
-    "contract_types": [
-     "Aquisição de serviços"
-    ],
-    "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15545006",
-    "license": {
-     "name": "Outra (Domínio Público)",
-     "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
-     "id": "other-pd",
-     "holder": "IMPIC, Instituto dos Mercados Públicos, do Imobiliário e da Construção",
-     "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
-    },
-    "read_at": "2026-11-26T07:04:04Z"
-   },
-   {
-    "id": "15546851",
-    "place": "lisboa",
-    "object": "AQUISIÇÃO DE SERVIÇOS PARA UTILIZAÇÃO DA PLATAFORMA DE GESTÃO DE BILHÉTICA BOL",
-    "object_withheld": null,
-    "buyer_kind": "council",
-    "contracting_entity": {
-     "name": "Município de Lisboa",
-     "nif": "500051070"
-    },
-    "contractors": [
-     {
-      "kind": "company",
-      "nif": "502669730",
-      "name": "ETNAGA - Consultores de Sistemas de Informação, Lda.",
-      "country": "PRT"
-     }
-    ],
-    "price_eur": 21125,
-    "base_price_eur": 21125,
-    "published": "2026-08-28",
-    "signed": "2026-08-28",
-    "decision": "2026-08-14",
-    "procedure": "Ajuste Direto Regime Geral",
-    "contract_types": [
-     "Aquisição de serviços"
-    ],
-    "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15546851",
-    "license": {
-     "name": "Outra (Domínio Público)",
-     "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
-     "id": "other-pd",
-     "holder": "IMPIC, Instituto dos Mercados Públicos, do Imobiliário e da Construção",
-     "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
-    },
-    "read_at": "2026-11-26T07:04:04Z"
-   },
-   {
-    "id": "15548724",
-    "place": "lisboa",
-    "object": null,
-    "object_withheld": "a contractor is a natural person",
-    "buyer_kind": "council",
-    "contracting_entity": {
-     "name": "Município de Lisboa",
-     "nif": "500051070"
-    },
-    "contractors": [
-     {
-      "kind": "a natural person"
-     }
-    ],
-    "price_eur": 40800,
-    "base_price_eur": 40800,
-    "published": "2026-08-28",
-    "signed": "2026-08-27",
-    "decision": "2026-08-20",
-    "procedure": "Ajuste Direto Regime Geral",
-    "contract_types": [
-     "Aquisição de serviços"
-    ],
-    "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15548724",
-    "license": {
-     "name": "Outra (Domínio Público)",
-     "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
-     "id": "other-pd",
-     "holder": "IMPIC, Instituto dos Mercados Públicos, do Imobiliário e da Construção",
-     "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
-    },
-    "read_at": "2026-11-26T07:04:04Z"
-   },
-   {
-    "id": "15549669",
-    "place": "lisboa",
-    "object": "Aquisição de serviços para produção de Sinalética de Sensibilização Ambiental.",
-    "object_withheld": null,
-    "buyer_kind": "council",
-    "contracting_entity": {
-     "name": "Município de Lisboa",
-     "nif": "500051070"
-    },
-    "contractors": [
-     {
-      "kind": "company",
-      "nif": "513207856",
-      "name": "2800 Print unipessoal, Lda",
-      "country": "PRT"
-     }
-    ],
-    "price_eur": 18787.5,
-    "base_price_eur": 18787.5,
-    "published": "2026-08-28",
-    "signed": "2026-08-24",
-    "decision": "2026-08-10",
-    "procedure": "Ajuste Direto Regime Geral",
-    "contract_types": [
-     "Aquisição de serviços"
-    ],
-    "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15549669",
-    "license": {
-     "name": "Outra (Domínio Público)",
-     "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
-     "id": "other-pd",
-     "holder": "IMPIC, Instituto dos Mercados Públicos, do Imobiliário e da Construção",
-     "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
-    },
-    "read_at": "2026-11-26T07:04:04Z"
-   },
-   {
-    "id": "15550350",
-    "place": "lisboa",
-    "object": "Serviço de catering para o fornecimento de coffee breack.",
-    "object_withheld": null,
-    "buyer_kind": "council",
-    "contracting_entity": {
-     "name": "Município de Lisboa",
-     "nif": "500051070"
-    },
-    "contractors": [
-     {
-      "kind": "company",
-      "nif": "519517733",
-      "name": "Tempestade de Temperos - Catering unipessoal lda",
-      "country": "PRT"
-     }
-    ],
-    "price_eur": 5220,
-    "base_price_eur": 5220,
-    "published": "2026-08-28",
-    "signed": "2026-07-16",
-    "decision": "2026-07-13",
-    "procedure": "Ajuste Direto Regime Geral",
-    "contract_types": [
-     "Aquisição de serviços"
-    ],
-    "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15550350",
-    "license": {
-     "name": "Outra (Domínio Público)",
-     "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
-     "id": "other-pd",
-     "holder": "IMPIC, Instituto dos Mercados Públicos, do Imobiliário e da Construção",
-     "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
-    },
-    "read_at": "2026-11-26T07:04:04Z"
    }
   ],
   "lagos": [
@@ -26626,43 +26113,6 @@
      "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
     },
     "read_at": "2026-11-26T07:04:04Z"
-   },
-   {
-    "id": "15550263",
-    "place": "alcoutim",
-    "object": "Beneficiação de Zonas de Medição e Controlo",
-    "object_withheld": null,
-    "buyer_kind": "council",
-    "contracting_entity": {
-     "name": "Município de Alcoutim",
-     "nif": "506772446"
-    },
-    "contractors": [
-     {
-      "kind": "company",
-      "nif": "515197700",
-      "name": "IWT - INTERNATIONAL WATER TECHNOLOGY SA",
-      "country": "PRT"
-     }
-    ],
-    "price_eur": 6133.88,
-    "base_price_eur": 6150,
-    "published": "2026-08-28",
-    "signed": "2026-08-28",
-    "decision": "2026-08-19",
-    "procedure": "Ajuste Direto Regime Geral",
-    "contract_types": [
-     "Aquisição de bens móveis"
-    ],
-    "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15550263",
-    "license": {
-     "name": "Outra (Domínio Público)",
-     "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
-     "id": "other-pd",
-     "holder": "IMPIC, Instituto dos Mercados Públicos, do Imobiliário e da Construção",
-     "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
-    },
-    "read_at": "2026-11-26T07:04:04Z"
    }
   ],
   "faro": [
@@ -31241,77 +30691,6 @@
      "Aquisição de serviços"
     ],
     "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15561021",
-    "license": {
-     "name": "Outra (Domínio Público)",
-     "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
-     "id": "other-pd",
-     "holder": "IMPIC, Instituto dos Mercados Públicos, do Imobiliário e da Construção",
-     "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
-    },
-    "read_at": "2026-11-26T07:04:04Z"
-   },
-   {
-    "id": "15550304",
-    "place": "faro",
-    "object": "Aquisição de serviços para colocação de mupis em espaços publicitários Festival F 2026",
-    "object_withheld": null,
-    "buyer_kind": "council",
-    "contracting_entity": {
-     "name": "Município de Faro",
-     "nif": "506579425"
-    },
-    "contractors": [
-     {
-      "kind": "company",
-      "nif": "500364460",
-      "name": "JCDecaux - Mobiliário Urbano e Publicidade, Lda.",
-      "country": "PRT"
-     }
-    ],
-    "price_eur": 8392.08,
-    "base_price_eur": 8392.08,
-    "published": "2026-08-28",
-    "signed": "2026-08-28",
-    "decision": "2026-08-24",
-    "procedure": "Ajuste Direto Regime Geral",
-    "contract_types": [
-     "Aquisição de serviços"
-    ],
-    "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15550304",
-    "license": {
-     "name": "Outra (Domínio Público)",
-     "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
-     "id": "other-pd",
-     "holder": "IMPIC, Instituto dos Mercados Públicos, do Imobiliário e da Construção",
-     "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
-    },
-    "read_at": "2026-11-26T07:04:04Z"
-   },
-   {
-    "id": "15550445",
-    "place": "faro",
-    "object": null,
-    "object_withheld": "a contractor is a natural person",
-    "buyer_kind": "council",
-    "contracting_entity": {
-     "name": "Município de Faro",
-     "nif": "506579425"
-    },
-    "contractors": [
-     {
-      "kind": "a natural person"
-     }
-    ],
-    "price_eur": 14480,
-    "base_price_eur": 14480,
-    "published": "2026-08-28",
-    "signed": "2026-08-27",
-    "decision": "2026-08-21",
-    "procedure": "Ajuste Direto Regime Geral",
-    "contract_types": [
-     "Aquisição de bens móveis"
-    ],
-    "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15550445",
     "license": {
      "name": "Outra (Domínio Público)",
      "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
@@ -35988,80 +35367,6 @@
      "Aquisição de serviços"
     ],
     "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15557244",
-    "license": {
-     "name": "Outra (Domínio Público)",
-     "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
-     "id": "other-pd",
-     "holder": "IMPIC, Instituto dos Mercados Públicos, do Imobiliário e da Construção",
-     "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
-    },
-    "read_at": "2026-11-26T07:04:04Z"
-   },
-   {
-    "id": "15545119",
-    "place": "albufeira",
-    "object": "Fornecimento continuo de “materiais em ferro fundido a aplicar na remodelação e conservação da rede de abastecimento de água e saneamento",
-    "object_withheld": null,
-    "buyer_kind": "council",
-    "contracting_entity": {
-     "name": "Município de Albufeira",
-     "nif": "503539473"
-    },
-    "contractors": [
-     {
-      "kind": "company",
-      "nif": "500384436",
-      "name": "Mendes & Irmão, SA",
-      "country": "PRT"
-     }
-    ],
-    "price_eur": 499000,
-    "base_price_eur": 499000,
-    "published": "2026-08-28",
-    "signed": "2026-08-26",
-    "decision": "2026-04-17",
-    "procedure": "Concurso público",
-    "contract_types": [
-     "Aquisição de bens móveis"
-    ],
-    "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15545119",
-    "license": {
-     "name": "Outra (Domínio Público)",
-     "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
-     "id": "other-pd",
-     "holder": "IMPIC, Instituto dos Mercados Públicos, do Imobiliário e da Construção",
-     "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
-    },
-    "read_at": "2026-11-26T07:04:04Z"
-   },
-   {
-    "id": "15546585",
-    "place": "albufeira",
-    "object": "AQUISIÇÃO DE ANIMAÇÃO PARA A SEGUNDA EDIÇÃO FULL MOON 2026",
-    "object_withheld": null,
-    "buyer_kind": "council",
-    "contracting_entity": {
-     "name": "Município de Albufeira",
-     "nif": "503539473"
-    },
-    "contractors": [
-     {
-      "kind": "company",
-      "nif": "518361110",
-      "name": "NUMERO CAUTELOSO Lda",
-      "country": "PRT"
-     }
-    ],
-    "price_eur": 8000,
-    "base_price_eur": 8000,
-    "published": "2026-08-28",
-    "signed": "2026-08-27",
-    "decision": "2026-08-24",
-    "procedure": "Ajuste Direto Regime Geral",
-    "contract_types": [
-     "Aquisição de serviços"
-    ],
-    "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15546585",
     "license": {
      "name": "Outra (Domínio Público)",
      "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
@@ -41878,44 +41183,6 @@
      "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
     },
     "read_at": "2026-11-26T07:04:04Z"
-   },
-   {
-    "id": "15546388",
-    "place": "portimao",
-    "object": "CPI 031/2026 - Fornecimento e Instalação de Ilhas Ecológicas",
-    "object_withheld": null,
-    "buyer_kind": "municipal company",
-    "contracting_entity": {
-     "name": "EMARP - Empresa Municipal de Águas e Resíduos de Portimão, EM, SA",
-     "nif": "505322730",
-     "council": "portimao"
-    },
-    "contractors": [
-     {
-      "kind": "company",
-      "nif": "501165150",
-      "name": "SOTKON PORTUGAL - SISTEMAS DE RESIDUOS, SA",
-      "country": "PRT"
-     }
-    ],
-    "price_eur": 1445400,
-    "base_price_eur": 1504800,
-    "published": "2026-08-28",
-    "signed": "2026-07-27",
-    "decision": "2026-03-25",
-    "procedure": "Concurso público",
-    "contract_types": [
-     "Aquisição de bens móveis"
-    ],
-    "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15546388",
-    "license": {
-     "name": "Outra (Domínio Público)",
-     "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
-     "id": "other-pd",
-     "holder": "IMPIC, Instituto dos Mercados Públicos, do Imobiliário e da Construção",
-     "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
-    },
-    "read_at": "2026-11-26T07:04:04Z"
    }
   ],
   "sao-bras-de-alportel": [
@@ -45990,43 +45257,6 @@
      "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
     },
     "read_at": "2026-11-26T07:04:04Z"
-   },
-   {
-    "id": "15546460",
-    "place": "vila-real-de-santo-antonio",
-    "object": "Atribuição de subsídios e apoios às Instituições Particulares de Solidariedade Social (IPSS's) - Cruz Vermelha Portuguesa",
-    "object_withheld": null,
-    "buyer_kind": "council",
-    "contracting_entity": {
-     "name": "Município de Vila Real de Santo António",
-     "nif": "506833224"
-    },
-    "contractors": [
-     {
-      "kind": "company",
-      "nif": "500745749",
-      "name": "Cruz Vermelha Portuguesa",
-      "country": "PRT"
-     }
-    ],
-    "price_eur": 42000,
-    "base_price_eur": 42000,
-    "published": "2026-08-28",
-    "signed": "2026-06-26",
-    "decision": "2026-06-26",
-    "procedure": "Contratação excluída II",
-    "contract_types": [
-     "Aquisição de serviços"
-    ],
-    "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15546460",
-    "license": {
-     "name": "Outra (Domínio Público)",
-     "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
-     "id": "other-pd",
-     "holder": "IMPIC, Instituto dos Mercados Públicos, do Imobiliário e da Construção",
-     "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
-    },
-    "read_at": "2026-11-26T07:04:04Z"
    }
   ],
   "tavira": [
@@ -48586,80 +47816,6 @@
      "Aquisição de serviços"
     ],
     "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15566037",
-    "license": {
-     "name": "Outra (Domínio Público)",
-     "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
-     "id": "other-pd",
-     "holder": "IMPIC, Instituto dos Mercados Públicos, do Imobiliário e da Construção",
-     "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
-    },
-    "read_at": "2026-11-26T07:04:04Z"
-   },
-   {
-    "id": "15544995",
-    "place": "tavira",
-    "object": "Aquisição de serviços para apresentação de espetáculos, para a XII Feira da Dieta Mediterrânica",
-    "object_withheld": null,
-    "buyer_kind": "council",
-    "contracting_entity": {
-     "name": "Município de Tavira",
-     "nif": "501067191"
-    },
-    "contractors": [
-     {
-      "kind": "company",
-      "nif": "513097511",
-      "name": "ALG Eventos, Lda",
-      "country": "PRT"
-     }
-    ],
-    "price_eur": 22000,
-    "base_price_eur": 22000,
-    "published": "2026-08-28",
-    "signed": "2026-08-20",
-    "decision": "2026-08-20",
-    "procedure": "Ajuste Direto Regime Geral",
-    "contract_types": [
-     "Aquisição de serviços"
-    ],
-    "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15544995",
-    "license": {
-     "name": "Outra (Domínio Público)",
-     "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
-     "id": "other-pd",
-     "holder": "IMPIC, Instituto dos Mercados Públicos, do Imobiliário e da Construção",
-     "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
-    },
-    "read_at": "2026-11-26T07:04:04Z"
-   },
-   {
-    "id": "15546268",
-    "place": "tavira",
-    "object": "Aquisição de serviços para apresentação de bailes tradicionais e dinamização de oficinas de danças tradicionais, no âmbito da programação da XII Feira da Dieta Mediterrânica",
-    "object_withheld": null,
-    "buyer_kind": "council",
-    "contracting_entity": {
-     "name": "Município de Tavira",
-     "nif": "501067191"
-    },
-    "contractors": [
-     {
-      "kind": "company",
-      "nif": "508470510",
-      "name": "Tradballs - Cooperativa de Artes & Cultura Tradicionais, Cultura Tradicionais, CRL",
-      "country": "PRT"
-     }
-    ],
-    "price_eur": 9500,
-    "base_price_eur": 9500,
-    "published": "2026-08-28",
-    "signed": "2026-08-19",
-    "decision": "2026-08-19",
-    "procedure": "Ajuste Direto Regime Geral",
-    "contract_types": [
-     "Aquisição de serviços"
-    ],
-    "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15546268",
     "license": {
      "name": "Outra (Domínio Público)",
      "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
@@ -51523,111 +50679,6 @@
      "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
     },
     "read_at": "2026-11-26T07:04:04Z"
-   },
-   {
-    "id": "15545381",
-    "place": "silves",
-    "object": "Aluguer de bancada para o evento \"Dia da Cidade\" no Castelo de Silves",
-    "object_withheld": null,
-    "buyer_kind": "council",
-    "contracting_entity": {
-     "name": "Município de Silves",
-     "nif": "506818837"
-    },
-    "contractors": [
-     {
-      "kind": "company",
-      "nif": "515819948",
-      "name": "Israel Modesto Unipessoal, Lda",
-      "country": "PRT"
-     }
-    ],
-    "price_eur": 6500,
-    "base_price_eur": 6500,
-    "published": "2026-08-28",
-    "signed": "2026-08-27",
-    "decision": "2026-08-25",
-    "procedure": "Ajuste Direto Regime Geral",
-    "contract_types": [
-     "Aquisição de serviços"
-    ],
-    "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15545381",
-    "license": {
-     "name": "Outra (Domínio Público)",
-     "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
-     "id": "other-pd",
-     "holder": "IMPIC, Instituto dos Mercados Públicos, do Imobiliário e da Construção",
-     "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
-    },
-    "read_at": "2026-11-26T07:04:04Z"
-   },
-   {
-    "id": "15545567",
-    "place": "silves",
-    "object": null,
-    "object_withheld": "a contractor is a natural person",
-    "buyer_kind": "council",
-    "contracting_entity": {
-     "name": "Município de Silves",
-     "nif": "506818837"
-    },
-    "contractors": [
-     {
-      "kind": "a natural person"
-     }
-    ],
-    "price_eur": 5652,
-    "base_price_eur": 5652,
-    "published": "2026-08-28",
-    "signed": "2026-08-28",
-    "decision": "2026-08-27",
-    "procedure": "Ajuste Direto Regime Geral",
-    "contract_types": [
-     "Aquisição de serviços"
-    ],
-    "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15545567",
-    "license": {
-     "name": "Outra (Domínio Público)",
-     "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
-     "id": "other-pd",
-     "holder": "IMPIC, Instituto dos Mercados Públicos, do Imobiliário e da Construção",
-     "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
-    },
-    "read_at": "2026-11-26T07:04:04Z"
-   },
-   {
-    "id": "15546938",
-    "place": "silves",
-    "object": null,
-    "object_withheld": "a contractor is a natural person",
-    "buyer_kind": "council",
-    "contracting_entity": {
-     "name": "Município de Silves",
-     "nif": "506818837"
-    },
-    "contractors": [
-     {
-      "kind": "a natural person"
-     }
-    ],
-    "price_eur": 31166.8,
-    "base_price_eur": 31500,
-    "published": "2026-08-28",
-    "signed": "2026-08-27",
-    "decision": "2026-07-24",
-    "procedure": "Consulta Prévia",
-    "contract_types": [
-     "Aquisição de bens móveis"
-    ],
-    "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15546938",
-    "license": {
-     "name": "Outra (Domínio Público)",
-     "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
-     "id": "other-pd",
-     "holder": "IMPIC, Instituto dos Mercados Públicos, do Imobiliário e da Construção",
-     "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
-    },
-    "read_at": "2026-11-26T07:04:04Z"
    }
   ],
   "castro-marim": [
@@ -52937,80 +51988,6 @@
      "Aquisição de serviços"
     ],
     "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15565380",
-    "license": {
-     "name": "Outra (Domínio Público)",
-     "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
-     "id": "other-pd",
-     "holder": "IMPIC, Instituto dos Mercados Públicos, do Imobiliário e da Construção",
-     "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
-    },
-    "read_at": "2026-11-26T07:04:04Z"
-   },
-   {
-    "id": "15550136",
-    "place": "castro-marim",
-    "object": "Aquisição de serviços de controlo de pragas urbanas",
-    "object_withheld": null,
-    "buyer_kind": "council",
-    "contracting_entity": {
-     "name": "Município de Castro Marim",
-     "nif": "506801969"
-    },
-    "contractors": [
-     {
-      "kind": "company",
-      "nif": "506654621",
-      "name": "Pragalgarve - Desinfestações, Lda.",
-      "country": "PRT"
-     }
-    ],
-    "price_eur": 46470,
-    "base_price_eur": 46995,
-    "published": "2026-08-28",
-    "signed": "2026-08-21",
-    "decision": "2026-08-06",
-    "procedure": "Consulta Prévia",
-    "contract_types": [
-     "Aquisição de serviços"
-    ],
-    "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15550136",
-    "license": {
-     "name": "Outra (Domínio Público)",
-     "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
-     "id": "other-pd",
-     "holder": "IMPIC, Instituto dos Mercados Públicos, do Imobiliário e da Construção",
-     "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
-    },
-    "read_at": "2026-11-26T07:04:04Z"
-   },
-   {
-    "id": "15550400",
-    "place": "castro-marim",
-    "object": "Aquisição de serviços para fornecimento de refeições no Castelo no âmbito do evento Dias Medievais de Castro Marim 2026",
-    "object_withheld": null,
-    "buyer_kind": "council",
-    "contracting_entity": {
-     "name": "Município de Castro Marim",
-     "nif": "506801969"
-    },
-    "contractors": [
-     {
-      "kind": "company",
-      "nif": "519296818",
-      "name": "MARIBRAVA UNIPESSOAL LDA",
-      "country": "PRT"
-     }
-    ],
-    "price_eur": 29640,
-    "base_price_eur": 29640,
-    "published": "2026-08-28",
-    "signed": "2026-08-14",
-    "decision": "2026-08-14",
-    "procedure": "Consulta Prévia",
-    "contract_types": [
-     "Aquisição de serviços"
-    ],
-    "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15550400",
     "license": {
      "name": "Outra (Domínio Público)",
      "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
@@ -56150,117 +55127,6 @@
      "Aquisição de serviços"
     ],
     "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15564548",
-    "license": {
-     "name": "Outra (Domínio Público)",
-     "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
-     "id": "other-pd",
-     "holder": "IMPIC, Instituto dos Mercados Públicos, do Imobiliário e da Construção",
-     "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
-    },
-    "read_at": "2026-11-26T07:04:04Z"
-   },
-   {
-    "id": "15546612",
-    "place": "lagoa",
-    "object": "Serviço Internet Temporário",
-    "object_withheld": null,
-    "buyer_kind": "council",
-    "contracting_entity": {
-     "name": "Município de Lagoa",
-     "nif": "506804240"
-    },
-    "contractors": [
-     {
-      "kind": "company",
-      "nif": "502604751",
-      "name": "NOS - Comunicações S.A.",
-      "country": "PRT"
-     }
-    ],
-    "price_eur": 24751.04,
-    "base_price_eur": 30000,
-    "published": "2026-08-28",
-    "signed": "2026-08-27",
-    "decision": "2026-08-20",
-    "procedure": "Consulta Prévia",
-    "contract_types": [
-     "Aquisição de serviços"
-    ],
-    "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15546612",
-    "license": {
-     "name": "Outra (Domínio Público)",
-     "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
-     "id": "other-pd",
-     "holder": "IMPIC, Instituto dos Mercados Públicos, do Imobiliário e da Construção",
-     "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
-    },
-    "read_at": "2026-11-26T07:04:04Z"
-   },
-   {
-    "id": "15547492",
-    "place": "lagoa",
-    "object": "Aluguer, montagem e desmontagem de Iluminação alisiva à Festa da Nossa Senhora da Encarnação",
-    "object_withheld": null,
-    "buyer_kind": "council",
-    "contracting_entity": {
-     "name": "Município de Lagoa",
-     "nif": "506804240"
-    },
-    "contractors": [
-     {
-      "kind": "company",
-      "nif": "504941399",
-      "name": "Humberto Rodrigues Iluminações Uni pessoal Lda",
-      "country": "PRT"
-     }
-    ],
-    "price_eur": 12200,
-    "base_price_eur": 12500,
-    "published": "2026-08-28",
-    "signed": "2026-08-27",
-    "decision": "2026-08-27",
-    "procedure": "Consulta Prévia",
-    "contract_types": [
-     "Aquisição de serviços"
-    ],
-    "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15547492",
-    "license": {
-     "name": "Outra (Domínio Público)",
-     "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
-     "id": "other-pd",
-     "holder": "IMPIC, Instituto dos Mercados Públicos, do Imobiliário e da Construção",
-     "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
-    },
-    "read_at": "2026-11-26T07:04:04Z"
-   },
-   {
-    "id": "15549142",
-    "place": "lagoa",
-    "object": "Aluguer, montagem e desmontagem de Iluminação alusiva à Festa de Nossa Senhora da Luz",
-    "object_withheld": null,
-    "buyer_kind": "council",
-    "contracting_entity": {
-     "name": "Município de Lagoa",
-     "nif": "506804240"
-    },
-    "contractors": [
-     {
-      "kind": "company",
-      "nif": "504941399",
-      "name": "Humberto Rodrigues Iluminações Uni pessoal Lda",
-      "country": "PRT"
-     }
-    ],
-    "price_eur": 13550,
-    "base_price_eur": 14500,
-    "published": "2026-08-28",
-    "signed": "2026-08-28",
-    "decision": "2026-08-27",
-    "procedure": "Consulta Prévia",
-    "contract_types": [
-     "Aquisição de serviços"
-    ],
-    "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15549142",
     "license": {
      "name": "Outra (Domínio Público)",
      "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",

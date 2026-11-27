@@ -3,6 +3,50 @@
  "source": "ipma-sea",
  "runs": [
   {
+   "at": "2026-11-27T07:13:50Z",
+   "finished": "2026-11-27T07:13:59Z",
+   "ok": 4,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "sea-locations",
+     "url": "https://api.ipma.pt/open-data/sea-locations.json",
+     "at": "2026-11-27T07:13:52Z",
+     "status": 200,
+     "bytes": 2268,
+     "sha256_prefix": "fe0ffd2801bb8620",
+     "changed": false
+    },
+    {
+     "name": "sea-day0",
+     "url": "https://api.ipma.pt/open-data/forecast/oceanography/daily/hp-daily-sea-forecast-day0.json",
+     "at": "2026-11-27T07:13:54Z",
+     "status": 200,
+     "bytes": 3281,
+     "sha256_prefix": "c1c0c87d76f0f42f",
+     "changed": true
+    },
+    {
+     "name": "sea-day1",
+     "url": "https://api.ipma.pt/open-data/forecast/oceanography/daily/hp-daily-sea-forecast-day1.json",
+     "at": "2026-11-27T07:13:57Z",
+     "status": 200,
+     "bytes": 3285,
+     "sha256_prefix": "975020d57dc90a34",
+     "changed": true
+    },
+    {
+     "name": "sea-day2",
+     "url": "https://api.ipma.pt/open-data/forecast/oceanography/daily/hp-daily-sea-forecast-day2.json",
+     "at": "2026-11-27T07:13:59Z",
+     "status": 200,
+     "bytes": 3285,
+     "sha256_prefix": "e546ae9e77e4d82d",
+     "changed": true
+    }
+   ]
+  },
+  {
    "at": "2026-11-26T18:13:15Z",
    "finished": "2026-11-26T18:13:25Z",
    "ok": 4,

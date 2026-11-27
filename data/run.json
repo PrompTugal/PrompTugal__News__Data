@@ -1,10 +1,10 @@
 {
- "at": "2026-11-26T18:14:19Z",
+ "at": "2026-11-27T07:15:01Z",
  "sources": [
   {
    "id": "adsb-faro",
-   "ok": 0,
-   "failed": 1,
+   "ok": 1,
+   "failed": 0,
    "wrote": true
   },
   {
@@ -20,6 +20,12 @@
    "wrote": true
   },
   {
+   "id": "carbon-intensity-london",
+   "ok": 2,
+   "failed": 0,
+   "wrote": true
+  },
+  {
    "id": "cisa-kev",
    "ok": 1,
    "failed": 0,
@@ -27,13 +33,19 @@
   },
   {
    "id": "contracts-finder",
-   "ok": 6,
-   "failed": 0,
+   "ok": 4,
+   "failed": 2,
    "wrote": true
   },
   {
    "id": "ea-flood",
    "ok": 23,
+   "failed": 0,
+   "wrote": true
+  },
+  {
+   "id": "ea-thames-tide",
+   "ok": 7,
    "failed": 0,
    "wrote": true
   },
@@ -51,7 +63,7 @@
   },
   {
    "id": "euvd",
-   "ok": 17,
+   "ok": 14,
    "failed": 1,
    "wrote": true
   },
@@ -111,15 +123,21 @@
   },
   {
    "id": "nvd-cve",
-   "ok": 2,
+   "ok": 1,
+   "failed": 0,
+   "wrote": true
+  },
+  {
+   "id": "nvd-kev",
+   "ok": 1,
    "failed": 0,
    "wrote": true
   },
   {
    "id": "open-meteo-london",
-   "ok": 0,
-   "failed": 1,
-   "wrote": false
+   "ok": 1,
+   "failed": 0,
+   "wrote": true
   },
   {
    "id": "social",
@@ -128,7 +146,25 @@
    "wrote": true
   },
   {
+   "id": "tfl-bikepoint",
+   "ok": 1,
+   "failed": 0,
+   "wrote": true
+  },
+  {
    "id": "tfl-jamcams",
+   "ok": 1,
+   "failed": 0,
+   "wrote": true
+  },
+  {
+   "id": "tfl-road-disruptions",
+   "ok": 1,
+   "failed": 0,
+   "wrote": true
+  },
+  {
+   "id": "tfl-status",
    "ok": 1,
    "failed": 0,
    "wrote": true

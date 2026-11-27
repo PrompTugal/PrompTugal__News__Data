@@ -1,11 +1,11 @@
 {
  "source": "adsb-faro",
  "title": "Flights around Faro airport",
- "read_at": "2026-11-21T07:04:19Z",
+ "read_at": "2026-11-27T07:03:57Z",
  "provenance": {
   "source": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
   "page": "https://globe.adsb.lol/?lat=37.014&lon=-7.966&zoom=9",
-  "read_at": "2026-11-21T07:04:19Z",
+  "read_at": "2026-11-27T07:03:57Z",
   "by": "sources/adsb-faro/collect.mjs (code, no model; run by data@PrompTugal.dinis)",
   "terms": "adsb.lol: its API data is licensed under the Open Database License (ODbL 1.0): share-alike, with attribution; no key needed up to 500 requests a day per address.",
   "licence": "ODbL 1.0 (adsb.lol)"
@@ -18,54 +18,29 @@
   "lon": -7.9659,
   "within_nm": 40
  },
- "feed_time_ms": 1795244659500,
+ "feed_time_ms": 1795763037500,
  "counts": {
-  "airline": 3,
-  "other_aircraft": 1,
+  "airline": 1,
+  "other_aircraft": 0,
   "other_on_ground": 0,
   "by_airline": {
-   "RYR": 3
+   "RYR": 1
   },
   "by_altitude_band": {
-   "below 5,000 ft": 1,
-   "30,000 ft and above": 3
+   "5,000 to 15,000 ft": 1
   }
  },
  "airline": [
   {
-   "callsign": "RYR24GK",
+   "callsign": "RYR65EJ",
    "airline_icao": "RYR",
-   "type": "B738",
-   "alt_ft": 36000,
+   "type": "B38M",
+   "alt_ft": 5525,
    "on_ground": false,
-   "ground_speed_kt": 481,
-   "track_deg": 14.82,
-   "lat": 36.92,
-   "lon": -8.01
-  },
-  {
-   "callsign": "RYR72MQ",
-   "airline_icao": "RYR",
-   "type": "B738",
-   "alt_ft": 36000,
-   "on_ground": false,
-   "ground_speed_kt": 473.1,
-   "track_deg": 5.34,
-   "lat": 37.45,
-   "lon": -7.69
-  },
-  {
-   "callsign": "RYR74FK",
-   "airline_icao": "RYR",
-   "type": "B738",
-   "alt_ft": 36000,
-   "on_ground": false,
-   "ground_speed_kt": 472.1,
-   "track_deg": 5.47,
-   "lat": 36.67,
-   "lon": -7.79
+   "ground_speed_kt": 297.7,
+   "track_deg": 7.72,
+   "lat": 37.08,
+   "lon": -7.82
   }
- ],
- "stale": true,
- "stale_note": "adsb.lol could not be read at 2026-11-26T18:04:10Z; these values are from the last read, at read_at."
+ ]
 }

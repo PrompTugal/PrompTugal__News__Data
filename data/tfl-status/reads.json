@@ -3,6 +3,23 @@
  "source": "tfl-status",
  "runs": [
   {
+   "at": "2026-11-27T07:14:56Z",
+   "finished": "2026-11-27T07:14:58Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "status",
+     "url": "https://api.tfl.gov.uk/Line/Mode/tube,overground,elizabeth-line,dlr,tram/Status",
+     "at": "2026-11-27T07:14:58Z",
+     "status": 200,
+     "bytes": 28888,
+     "sha256_prefix": "24947f8ef0fb1a3b",
+     "changed": true
+    }
+   ]
+  },
+  {
    "at": "2026-11-26T07:13:52Z",
    "finished": "2026-11-26T07:13:55Z",
    "ok": 1,

@@ -1,17 +1,17 @@
 {
  "source": "contracts-finder",
  "title": "London public contracts (Contracts Finder)",
- "read_at": "2026-11-26T18:04:41Z",
+ "read_at": "2026-11-27T07:04:33Z",
  "place": "london",
  "provenance": {
   "source": "https://www.contractsfinder.service.gov.uk/",
   "page": "https://www.contractsfinder.service.gov.uk/Search",
-  "read_at": "2026-11-26T18:04:41Z",
+  "read_at": "2026-11-27T07:04:33Z",
   "by": "sources/contracts-finder/collect.mjs (code, no model; run by data.b@PrompTugal.dinis)",
   "terms": "Open Government Licence v3.0, Crown copyright (Crown Commercial Service); credit every value with: \"Contains public sector information licensed under the Open Government Licence v3.0.\" Every OCDS package carries the licence. robots.txt has no rules (page not found). The published search needs no token. Natural persons are not kept (suppliers can be sole traders). Not reviewed by a person.",
   "api": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search",
-  "window_from": "2026-11-25T18:04:41Z",
-  "window_to": "2026-11-26T18:04:41Z",
+  "window_from": "2026-11-26T07:04:33Z",
+  "window_to": "2026-11-27T07:04:33Z",
   "interface": "Contracts Finder published OCDS search (no key)",
   "robots": "https://www.contractsfinder.service.gov.uk/robots.txt answered page not found (no rules), 19 Nov 2026"
  },
@@ -25,14 +25,14 @@
  },
  "about": "Procurement notices that London public bodies published on Contracts Finder in the 24 hours before the read: each with its notice page, stage, title, buyer (as published: mostly public bodies, sometimes an agent publishing for one), the buyer's postcode district, value, award value and deadline, as published. London means the buyer's locality says London or its postcode area lies wholly inside Greater London (E, EC, N, NW, SE, SW, W, WC); bodies in the outer areas that straddle the boundary are not counted. When the locality says London it counts even if the postcode lies outside London: some national bodies publish a non-geographic postcode (HMRC uses SS99, Southend) with a London address. Suppliers and contacts are not kept. Source: Contracts Finder (Crown Commercial Service); OGL v3.0. A weak signal, not an audit.",
  "counts": {
-  "notices_in_window": 135,
-  "london_notices": 25,
+  "notices_in_window": 108,
+  "london_notices": 18,
   "windows_read": 6,
   "windows_full": 0,
   "complete": true,
-  "buyers": 15,
+  "buyers": 10,
   "fields_dropped_wording": 0,
-  "value_gbp_listed": 84827643
+  "value_gbp_listed": 29953558
  },
  "top_buyers": [
   {
@@ -48,15 +48,7 @@
    "notices": 2
   },
   {
-   "buyer": "DSIT",
-   "notices": 2
-  },
-  {
    "buyer": "H M REVENUE & CUSTOMS",
-   "notices": 2
-  },
-  {
-   "buyer": "Department for Education",
    "notices": 1
   },
   {
@@ -65,18 +57,6 @@
   },
   {
    "buyer": "London Borough of Hackney",
-   "notices": 1
-  },
-  {
-   "buyer": "London Borough of Haringey",
-   "notices": 1
-  },
-  {
-   "buyer": "London Borough of Islington",
-   "notices": 1
-  },
-  {
-   "buyer": "London Borough of Southwark",
    "notices": 1
   },
   {
@@ -503,167 +483,6 @@
     "currency": "GBP"
    },
    "deadline": "2026-10-01T23:59:00+01:00",
-   "procurement_method": "selective"
-  },
-  {
-   "ocid": "ocds-b5fd17-4374b62d-125e-442e-ba64-fe74f14d7da0",
-   "notice": "https://www.contractsfinder.service.gov.uk/Notice/0f6c6ccb-9533-496d-80df-bce5ba54b90b",
-   "published": "2026-11-26T11:00:21Z",
-   "stage": [
-    "award"
-   ],
-   "title": "GB-London: TPPL London Borough of Southwark HCC Lot 7 - Telematics for up to 380 x Vehicles (29294)",
-   "buyer": "London Borough of Southwark",
-   "buyer_locality": "London",
-   "buyer_postcode_district": "SE17",
-   "status": "complete",
-   "value": {
-    "amount": 93415.68,
-    "currency": "GBP"
-   },
-   "award_value": {
-    "amount": 93415.68,
-    "currency": "GBP"
-   },
-   "deadline": "2026-01-28T00:00:00Z",
-   "procurement_method": null
-  },
-  {
-   "ocid": "ocds-b5fd17-e8e26685-1b15-4912-9dfd-8fc06d472cda",
-   "notice": "https://www.contractsfinder.service.gov.uk/Notice/ae22fbc7-210e-476d-ba26-f0950b07edb6",
-   "published": "2026-11-26T11:00:16Z",
-   "stage": [
-    "award"
-   ],
-   "title": "GB-London: TPPL London Borough of Islington HCC Lot 4 - 1 x EV Utility Sweeper (31961)",
-   "buyer": "London Borough of Islington",
-   "buyer_locality": "London",
-   "buyer_postcode_district": "N7",
-   "status": "complete",
-   "value": {
-    "amount": 87028,
-    "currency": "GBP"
-   },
-   "award_value": {
-    "amount": 87028,
-    "currency": "GBP"
-   },
-   "deadline": "2026-05-13T00:00:00+01:00",
-   "procurement_method": null
-  },
-  {
-   "ocid": "ocds-b5fd17-cbe156f8-edfb-4753-b363-00c1c950fb9a",
-   "notice": "https://www.contractsfinder.service.gov.uk/Notice/d10d273a-3d32-4845-ae79-feecc9944b1d",
-   "published": "2026-11-26T10:58:54Z",
-   "stage": [
-    "award"
-   ],
-   "title": "Managing CCG Effectively (MCCGE) Programme - Vision Mapping",
-   "buyer": "H M REVENUE & CUSTOMS",
-   "buyer_locality": "LONDON",
-   "buyer_postcode_district": "SS99",
-   "status": "complete",
-   "value": {
-    "amount": 15000,
-    "currency": "GBP"
-   },
-   "award_value": {
-    "amount": 15000,
-    "currency": "GBP"
-   },
-   "deadline": "2026-11-04T09:00:00Z",
-   "procurement_method": null
-  },
-  {
-   "ocid": "ocds-b5fd17-64dbe733-deb4-4d7c-aed4-ef9072c60b25",
-   "notice": "https://www.contractsfinder.service.gov.uk/Notice/d4a83e83-8e14-47f3-9087-456a8e27fa65",
-   "published": "2026-11-26T10:37:37Z",
-   "stage": [
-    "award"
-   ],
-   "title": "Identity Verification Fraud Checks Service",
-   "buyer": "DSIT",
-   "buyer_locality": "London",
-   "buyer_postcode_district": "SW1A",
-   "status": "complete",
-   "value": {
-    "amount": 5182106.89,
-    "currency": "GBP"
-   },
-   "award_value": {
-    "amount": 5182106.89,
-    "currency": "GBP"
-   },
-   "deadline": "2026-06-24T13:00:00+01:00",
-   "procurement_method": "selective"
-  },
-  {
-   "ocid": "ocds-b5fd17-f173bff4-dab3-4144-9352-340340abc079",
-   "notice": "https://www.contractsfinder.service.gov.uk/Notice/5b731625-adb1-41da-8fc7-bc46afcee053",
-   "published": "2026-11-26T10:23:01Z",
-   "stage": [
-    "award"
-   ],
-   "title": "Genuine Document Checking and Biometric Verification",
-   "buyer": "DSIT",
-   "buyer_locality": "London",
-   "buyer_postcode_district": "SW1A",
-   "status": "complete",
-   "value": {
-    "amount": 45000000,
-    "currency": "GBP"
-   },
-   "award_value": {
-    "amount": 45000000,
-    "currency": "GBP"
-   },
-   "deadline": "2026-05-14T13:00:00+01:00",
-   "procurement_method": "selective"
-  },
-  {
-   "ocid": "ocds-b5fd17-2387a1a9-7828-4656-ad74-61e295e24a01",
-   "notice": "https://www.contractsfinder.service.gov.uk/Notice/6da73827-c093-4e1e-9800-d3b86e7639cf",
-   "published": "2026-11-26T10:13:18Z",
-   "stage": [
-    "award"
-   ],
-   "title": "Provision of Customer Support Software Platform and Support Services",
-   "buyer": "Department for Education",
-   "buyer_locality": "London",
-   "buyer_postcode_district": "SW1",
-   "status": "complete",
-   "value": {
-    "amount": 4434534.52,
-    "currency": "GBP"
-   },
-   "award_value": {
-    "amount": 4434534.52,
-    "currency": "GBP"
-   },
-   "deadline": "2026-10-12T17:00:00+01:00",
-   "procurement_method": "selective"
-  },
-  {
-   "ocid": "ocds-b5fd17-04939c85-ca47-4966-bc26-a628b851aa41",
-   "notice": "https://www.contractsfinder.service.gov.uk/Notice/b369f0ae-d1d6-4b2d-8735-746913a606f3",
-   "published": "2026-11-26T09:54:24Z",
-   "stage": [
-    "award"
-   ],
-   "title": "Ibrahim Batch 9 - Council",
-   "buyer": "London Borough of Haringey",
-   "buyer_locality": "London",
-   "buyer_postcode_district": "N22",
-   "status": "complete",
-   "value": {
-    "amount": 62000,
-    "currency": "GBP"
-   },
-   "award_value": {
-    "amount": 30689.84,
-    "currency": "GBP"
-   },
-   "deadline": "2026-08-14T13:00:00+01:00",
    "procurement_method": "selective"
   }
  ]

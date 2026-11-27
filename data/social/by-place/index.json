@@ -1,7 +1,7 @@
 {
  "about": "The places with a social-signals file and how many posts each holds.",
- "read_at": "2026-11-26T18:14:19Z",
- "source_read_at": "2026-11-26T18:13:49Z",
+ "read_at": "2026-11-27T07:15:01Z",
+ "source_read_at": "2026-11-27T07:14:24Z",
  "by": "collect/social-by-place.mjs (code, no model; data.b@PrompTugal.dinis), from data/social/latest.json",
  "places": [
   {
@@ -34,7 +34,7 @@
   },
   {
    "place": "lagos",
-   "count": 1
+   "count": 0
   },
   {
    "place": "olhao",
@@ -74,11 +74,11 @@
   },
   {
    "place": "lisboa",
-   "count": 2
+   "count": 5
   },
   {
    "place": "algarve",
-   "count": 35
+   "count": 34
   }
  ]
 }

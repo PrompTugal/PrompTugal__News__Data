@@ -3,6 +3,77 @@
  "source": "ea-thames-tide",
  "runs": [
   {
+   "at": "2026-11-27T07:06:16Z",
+   "finished": "2026-11-27T07:06:59Z",
+   "ok": 7,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "gauge-0009",
+     "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/0009/readings?_sorted&_limit=96",
+     "at": "2026-11-27T07:06:16Z",
+     "status": 200,
+     "bytes": 32173,
+     "sha256_prefix": "b64c3316520e452d",
+     "changed": true
+    },
+    {
+     "name": "gauge-0010",
+     "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/0010/readings?_sorted&_limit=96",
+     "at": "2026-11-27T07:06:23Z",
+     "status": 200,
+     "bytes": 858,
+     "sha256_prefix": "6e5f514c83252666",
+     "changed": false
+    },
+    {
+     "name": "gauge-0006",
+     "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/0006/readings?_sorted&_limit=96",
+     "at": "2026-11-27T07:06:30Z",
+     "status": 200,
+     "bytes": 32171,
+     "sha256_prefix": "128ee1fc1a265297",
+     "changed": true
+    },
+    {
+     "name": "gauge-0007",
+     "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/0007/readings?_sorted&_limit=96",
+     "at": "2026-11-27T07:06:34Z",
+     "status": 200,
+     "bytes": 32183,
+     "sha256_prefix": "67da0b1eea38f644",
+     "changed": true
+    },
+    {
+     "name": "gauge-0001",
+     "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/0001/readings?_sorted&_limit=96",
+     "at": "2026-11-27T07:06:38Z",
+     "status": 200,
+     "bytes": 32185,
+     "sha256_prefix": "3a0928f909ca49ed",
+     "changed": true
+    },
+    {
+     "name": "gauge-0003",
+     "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/0003/readings?_sorted&_limit=96",
+     "at": "2026-11-27T07:06:47Z",
+     "status": 200,
+     "bytes": 32186,
+     "sha256_prefix": "4ba5f2720ed00255",
+     "changed": true
+    },
+    {
+     "name": "gauge-0018",
+     "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/0018/readings?_sorted&_limit=96",
+     "at": "2026-11-27T07:06:55Z",
+     "status": 200,
+     "bytes": 858,
+     "sha256_prefix": "349d476aedd5cd00",
+     "changed": false
+    }
+   ]
+  },
+  {
    "at": "2026-11-26T07:06:05Z",
    "finished": "2026-11-26T07:06:52Z",
    "ok": 7,

@@ -3,6 +3,23 @@
  "source": "nvd-kev",
  "runs": [
   {
+   "at": "2026-11-27T07:14:14Z",
+   "finished": "2026-11-27T07:14:23Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "kev-0",
+     "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?hasKev&resultsPerPage=2000&startIndex=0",
+     "at": "2026-11-27T07:14:21Z",
+     "status": 200,
+     "bytes": 19635904,
+     "sha256_prefix": "ac0af07922a4ad31",
+     "changed": true
+    }
+   ]
+  },
+  {
    "at": "2026-11-26T07:13:11Z",
    "finished": "2026-11-26T07:13:19Z",
    "ok": 1,
