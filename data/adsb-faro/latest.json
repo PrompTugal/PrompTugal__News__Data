@@ -1,11 +1,11 @@
 {
  "source": "adsb-faro",
  "title": "Flights around Faro airport",
- "read_at": "2026-11-27T07:03:57Z",
+ "read_at": "2026-11-27T18:04:17Z",
  "provenance": {
   "source": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
   "page": "https://globe.adsb.lol/?lat=37.014&lon=-7.966&zoom=9",
-  "read_at": "2026-11-27T07:03:57Z",
+  "read_at": "2026-11-27T18:04:17Z",
   "by": "sources/adsb-faro/collect.mjs (code, no model; run by data@PrompTugal.dinis)",
   "terms": "adsb.lol: its API data is licensed under the Open Database License (ODbL 1.0): share-alike, with attribution; no key needed up to 500 requests a day per address.",
   "licence": "ODbL 1.0 (adsb.lol)"
@@ -18,29 +18,53 @@
   "lon": -7.9659,
   "within_nm": 40
  },
- "feed_time_ms": 1795763037500,
+ "feed_time_ms": 1795802657013,
  "counts": {
-  "airline": 1,
+  "airline": 3,
   "other_aircraft": 0,
   "other_on_ground": 0,
   "by_airline": {
-   "RYR": 1
+   "EZY": 1,
+   "VLG": 2
   },
   "by_altitude_band": {
-   "5,000 to 15,000 ft": 1
+   "30,000 ft and above": 2,
+   "15,000 to 30,000 ft": 1
   }
  },
  "airline": [
   {
-   "callsign": "RYR65EJ",
-   "airline_icao": "RYR",
-   "type": "B38M",
-   "alt_ft": 5525,
+   "callsign": "EZY31CM",
+   "airline_icao": "EZY",
+   "type": "A20N",
+   "alt_ft": 39000,
    "on_ground": false,
-   "ground_speed_kt": 297.7,
-   "track_deg": 7.72,
-   "lat": 37.08,
-   "lon": -7.82
+   "ground_speed_kt": 417.8,
+   "track_deg": 174.64,
+   "lat": 37.18,
+   "lon": -8.02
+  },
+  {
+   "callsign": "VLG81WX",
+   "airline_icao": "VLG",
+   "type": "A321",
+   "alt_ft": 29250,
+   "on_ground": false,
+   "ground_speed_kt": 432.3,
+   "track_deg": 47.16,
+   "lat": 36.72,
+   "lon": -7.81
+  },
+  {
+   "callsign": "VLG9ZH",
+   "airline_icao": "VLG",
+   "type": "A320",
+   "alt_ft": 36825,
+   "on_ground": false,
+   "ground_speed_kt": 427.6,
+   "track_deg": 239.66,
+   "lat": 36.77,
+   "lon": -8.36
   }
  ]
 }

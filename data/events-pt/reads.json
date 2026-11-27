@@ -3,6 +3,176 @@
  "source": "events-pt",
  "runs": [
   {
+   "at": "2026-11-27T18:08:53Z",
+   "finished": "2026-11-27T18:09:45Z",
+   "ok": 17,
+   "failed": 1,
+   "reads": [
+    {
+     "name": "agendalx-robots",
+     "url": "https://www.agendalx.pt/robots.txt",
+     "at": "2026-11-27T18:08:54Z",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+     "at": "2026-11-27T18:08:56Z",
+     "status": 200,
+     "bytes": 170400,
+     "sha256_prefix": "8d1fcb1f2d713e6b",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p2",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=2",
+     "at": "2026-11-27T18:08:59Z",
+     "status": 200,
+     "bytes": 121390,
+     "sha256_prefix": "c39a64adf71a479a",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p3",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=3",
+     "at": "2026-11-27T18:09:01Z",
+     "status": 200,
+     "bytes": 86486,
+     "sha256_prefix": "92048723d5e3395d",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p4",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=4",
+     "at": "2026-11-27T18:09:04Z",
+     "status": 200,
+     "bytes": 143673,
+     "sha256_prefix": "544526681fd1b9da",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p5",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=5",
+     "at": "2026-11-27T18:09:06Z",
+     "status": 200,
+     "bytes": 71802,
+     "sha256_prefix": "c13f55705aa9ecc0",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p6",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=6",
+     "at": "2026-11-27T18:09:09Z",
+     "status": 200,
+     "bytes": 66491,
+     "sha256_prefix": "bf7a82afa93d9b11",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p7",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=7",
+     "at": "2026-11-27T18:09:11Z",
+     "status": 200,
+     "bytes": 71482,
+     "sha256_prefix": "8b34fa0e4f0dc517",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p8",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=8",
+     "at": "2026-11-27T18:09:14Z",
+     "status": 200,
+     "bytes": 63934,
+     "sha256_prefix": "b6bae0a5370c1b1b",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p9",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=9",
+     "at": "2026-11-27T18:09:16Z",
+     "status": 200,
+     "bytes": 60390,
+     "sha256_prefix": "ce631d0b7e28ec7a",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p10",
+     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=10",
+     "at": "2026-11-27T18:09:19Z",
+     "status": 200,
+     "bytes": 47188,
+     "sha256_prefix": "4d67c6afbafe7854",
+     "changed": false
+    },
+    {
+     "name": "lagos-robots",
+     "url": "https://www.cm-lagos.pt/robots.txt",
+     "at": "2026-11-27T18:09:21Z",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "url": "https://www.cm-lagos.pt/municipio/eventos",
+     "at": "2026-11-27T18:09:24Z",
+     "status": 200,
+     "bytes": 197891,
+     "sha256_prefix": "d19464ffece6bc1a",
+     "changed": true
+    },
+    {
+     "name": "figuras-robots",
+     "url": "https://teatrodasfiguras.pt/robots.txt",
+     "at": "2026-11-27T18:09:26Z",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "url": "https://teatrodasfiguras.pt/agenda",
+     "at": "2026-11-27T18:09:29Z",
+     "status": 200,
+     "bytes": 426582,
+     "sha256_prefix": "df05f8b8939f8d13",
+     "changed": true
+    },
+    {
+     "name": "tavira-robots",
+     "url": "https://cm-tavira.pt/robots.txt",
+     "at": "2026-11-27T18:09:32Z",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-27&end_date=2027-01-26",
+     "at": "2026-11-27T18:09:35Z",
+     "status": 200,
+     "bytes": 181452,
+     "sha256_prefix": "7e76dae383d4beaf",
+     "changed": true
+    },
+    {
+     "name": "tavira-events-p2",
+     "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=2&start_date=2026-11-27&end_date=2027-01-26",
+     "at": "2026-11-27T18:09:40Z",
+     "status": 200,
+     "bytes": 38703,
+     "sha256_prefix": "32c088d1bb50bbd8",
+     "changed": true
+    }
+   ]
+  },
+  {
    "at": "2026-11-27T07:09:44Z",
    "finished": "2026-11-27T07:11:46Z",
    "ok": 17,

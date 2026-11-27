@@ -3,6 +3,68 @@
  "source": "contracts-finder",
  "runs": [
   {
+   "at": "2026-11-27T18:04:27Z",
+   "finished": "2026-11-27T18:04:42Z",
+   "ok": 6,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "window-1",
+     "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-26T18:04:27&publishedTo=2026-11-26T22:04:27&limit=100",
+     "at": "2026-11-27T18:04:29Z",
+     "status": 200,
+     "bytes": 6842,
+     "sha256_prefix": "c8574028bd236853",
+     "changed": true
+    },
+    {
+     "name": "window-2",
+     "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-26T22:04:27&publishedTo=2026-11-27T02:04:27&limit=100",
+     "at": "2026-11-27T18:04:32Z",
+     "status": 200,
+     "bytes": 1420,
+     "sha256_prefix": "856721b1b031289d",
+     "changed": true
+    },
+    {
+     "name": "window-3",
+     "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-27T02:04:27&publishedTo=2026-11-27T06:04:27&limit=100",
+     "at": "2026-11-27T18:04:34Z",
+     "status": 200,
+     "bytes": 1420,
+     "sha256_prefix": "8868fd4378c3c582",
+     "changed": true
+    },
+    {
+     "name": "window-4",
+     "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-27T06:04:27&publishedTo=2026-11-27T10:04:27&limit=100",
+     "at": "2026-11-27T18:04:37Z",
+     "status": 200,
+     "bytes": 272032,
+     "sha256_prefix": "74c0a98efd0b6a93",
+     "changed": true
+    },
+    {
+     "name": "window-5",
+     "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-27T10:04:27&publishedTo=2026-11-27T14:04:27&limit=100",
+     "at": "2026-11-27T18:04:39Z",
+     "status": 200,
+     "bytes": 564217,
+     "sha256_prefix": "29efef3a01682f37",
+     "changed": true
+    },
+    {
+     "name": "window-6",
+     "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-27T14:04:27&publishedTo=2026-11-27T18:04:27&limit=100",
+     "at": "2026-11-27T18:04:42Z",
+     "status": 200,
+     "bytes": 546652,
+     "sha256_prefix": "d9e4bbe20e236fed",
+     "changed": true
+    }
+   ]
+  },
+  {
    "at": "2026-11-27T07:04:33Z",
    "finished": "2026-11-27T07:04:48Z",
    "ok": 4,

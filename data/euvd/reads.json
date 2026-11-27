@@ -3,6 +3,131 @@
  "source": "euvd",
  "runs": [
   {
+   "at": "2026-11-27T18:06:42Z",
+   "finished": "2026-11-27T18:08:53Z",
+   "ok": 12,
+   "failed": 1,
+   "reads": [
+    {
+     "name": "robots-euvd",
+     "url": "https://euvd.enisa.europa.eu/robots.txt",
+     "at": "2026-11-27T18:06:51Z",
+     "status": 200,
+     "bytes": 67,
+     "sha256_prefix": "90d24bc3bf698ac1",
+     "changed": false
+    },
+    {
+     "name": "robots-services",
+     "url": "https://euvdservices.enisa.europa.eu/robots.txt",
+     "at": "2026-11-27T18:07:01Z",
+     "status": 404,
+     "bytes": 196,
+     "sha256_prefix": "80c3fe2ae1062abf",
+     "changed": false
+    },
+    {
+     "name": "latest",
+     "url": "https://euvdservices.enisa.europa.eu/api/lastvulnerabilities",
+     "at": "2026-11-27T18:07:11Z",
+     "status": 200,
+     "bytes": 4491,
+     "sha256_prefix": "6e79f0da56e2f826",
+     "changed": true
+    },
+    {
+     "name": "exploited",
+     "url": "https://euvdservices.enisa.europa.eu/api/exploitedvulnerabilities",
+     "at": "2026-11-27T18:07:21Z",
+     "status": 200,
+     "bytes": 4170,
+     "sha256_prefix": "51bc0deddd4b2259",
+     "changed": false
+    },
+    {
+     "name": "exploited-total",
+     "url": "https://euvdservices.enisa.europa.eu/api/search?exploited=true&size=1&page=0",
+     "at": "2026-11-27T18:07:31Z",
+     "status": 200,
+     "bytes": 1310,
+     "sha256_prefix": "20394e47227d37b3",
+     "changed": true
+    },
+    {
+     "name": "updated-0",
+     "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-26&toUpdatedDate=2026-11-27&size=100&page=0",
+     "at": "2026-11-27T18:07:41Z",
+     "status": 200,
+     "bytes": 174640,
+     "sha256_prefix": "9aeefe575b159798",
+     "changed": true
+    },
+    {
+     "name": "updated-1",
+     "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-26&toUpdatedDate=2026-11-27&size=100&page=1",
+     "at": "2026-11-27T18:07:51Z",
+     "status": 200,
+     "bytes": 129951,
+     "sha256_prefix": "5e9b27e1543bc570",
+     "changed": true
+    },
+    {
+     "name": "updated-2",
+     "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-26&toUpdatedDate=2026-11-27&size=100&page=2",
+     "at": "2026-11-27T18:08:01Z",
+     "status": 200,
+     "bytes": 143388,
+     "sha256_prefix": "388f11a9e7412ac4",
+     "changed": true
+    },
+    {
+     "name": "updated-3",
+     "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-26&toUpdatedDate=2026-11-27&size=100&page=3",
+     "at": "2026-11-27T18:08:11Z",
+     "status": 200,
+     "bytes": 120519,
+     "sha256_prefix": "a2308aa57b2aece4",
+     "changed": true
+    },
+    {
+     "name": "updated-4",
+     "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-26&toUpdatedDate=2026-11-27&size=100&page=4",
+     "at": "2026-11-27T18:08:21Z",
+     "status": 200,
+     "bytes": 176884,
+     "sha256_prefix": "eb22778d239a5ed7",
+     "changed": true
+    },
+    {
+     "name": "updated-5",
+     "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-26&toUpdatedDate=2026-11-27&size=100&page=5",
+     "at": "2026-11-27T18:08:31Z",
+     "status": 200,
+     "bytes": 170754,
+     "sha256_prefix": "f9495970f6f7570c",
+     "changed": true
+    },
+    {
+     "name": "updated-6",
+     "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-26&toUpdatedDate=2026-11-27&size=100&page=6",
+     "at": "2026-11-27T18:08:41Z",
+     "status": 200,
+     "bytes": 436833,
+     "sha256_prefix": "e7b64a77e9d8c9df",
+     "changed": true
+    },
+    {
+     "name": "updated-7",
+     "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-26&toUpdatedDate=2026-11-27&size=100&page=7",
+     "at": "2026-11-27T18:08:51Z",
+     "status": 200,
+     "bytes": 245352,
+     "sha256_prefix": "220710dcb0768ce0",
+     "changed": true
+    }
+   ]
+  },
+  {
    "at": "2026-11-27T07:07:13Z",
    "finished": "2026-11-27T07:09:44Z",
    "ok": 14,

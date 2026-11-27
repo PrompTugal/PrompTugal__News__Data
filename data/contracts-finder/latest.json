@@ -1,17 +1,17 @@
 {
  "source": "contracts-finder",
  "title": "London public contracts (Contracts Finder)",
- "read_at": "2026-11-27T07:04:33Z",
+ "read_at": "2026-11-27T18:04:27Z",
  "place": "london",
  "provenance": {
   "source": "https://www.contractsfinder.service.gov.uk/",
   "page": "https://www.contractsfinder.service.gov.uk/Search",
-  "read_at": "2026-11-27T07:04:33Z",
+  "read_at": "2026-11-27T18:04:27Z",
   "by": "sources/contracts-finder/collect.mjs (code, no model; run by data.b@PrompTugal.dinis)",
   "terms": "Open Government Licence v3.0, Crown copyright (Crown Commercial Service); credit every value with: \"Contains public sector information licensed under the Open Government Licence v3.0.\" Every OCDS package carries the licence. robots.txt has no rules (page not found). The published search needs no token. Natural persons are not kept (suppliers can be sole traders). Not reviewed by a person.",
   "api": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search",
-  "window_from": "2026-11-26T07:04:33Z",
-  "window_to": "2026-11-27T07:04:33Z",
+  "window_from": "2026-11-26T18:04:27Z",
+  "window_to": "2026-11-27T18:04:27Z",
   "interface": "Contracts Finder published OCDS search (no key)",
   "robots": "https://www.contractsfinder.service.gov.uk/robots.txt answered page not found (no rules), 19 Nov 2026"
  },
@@ -25,50 +25,86 @@
  },
  "about": "Procurement notices that London public bodies published on Contracts Finder in the 24 hours before the read: each with its notice page, stage, title, buyer (as published: mostly public bodies, sometimes an agent publishing for one), the buyer's postcode district, value, award value and deadline, as published. London means the buyer's locality says London or its postcode area lies wholly inside Greater London (E, EC, N, NW, SE, SW, W, WC); bodies in the outer areas that straddle the boundary are not counted. When the locality says London it counts even if the postcode lies outside London: some national bodies publish a non-geographic postcode (HMRC uses SS99, Southend) with a London address. Suppliers and contacts are not kept. Source: Contracts Finder (Crown Commercial Service); OGL v3.0. A weak signal, not an audit.",
  "counts": {
-  "notices_in_window": 108,
-  "london_notices": 18,
+  "notices_in_window": 233,
+  "london_notices": 45,
   "windows_read": 6,
-  "windows_full": 0,
-  "complete": true,
-  "buyers": 10,
+  "windows_full": 1,
+  "complete": false,
+  "buyers": 19,
   "fields_dropped_wording": 0,
-  "value_gbp_listed": 29953558
+  "value_gbp_listed": 1688590753
  },
  "top_buyers": [
   {
-   "buyer": "Ministry of Justice",
-   "notices": 6
+   "buyer": "Supply Chain Coordination Limited",
+   "notices": 12
   },
   {
-   "buyer": "Department for Business and Trade",
+   "buyer": "Chemonics International, Inc.",
+   "notices": 4
+  },
+  {
+   "buyer": "Department for Culture, Media and Sport",
+   "notices": 4
+  },
+  {
+   "buyer": "Environment Agency",
    "notices": 3
   },
   {
-   "buyer": "DfTc - Department for Transport",
-   "notices": 2
-  },
-  {
-   "buyer": "H M REVENUE & CUSTOMS",
-   "notices": 1
-  },
-  {
-   "buyer": "HM Land Registry",
-   "notices": 1
+   "buyer": "Financial Conduct Authority",
+   "notices": 3
   },
   {
    "buyer": "London Borough of Hackney",
+   "notices": 3
+  },
+  {
+   "buyer": "ADVISORY, CONCILIATION AND ARBITRATION SERVICE",
+   "notices": 2
+  },
+  {
+   "buyer": "Home Office",
+   "notices": 2
+  },
+  {
+   "buyer": "UK Health Security Agency",
+   "notices": 2
+  },
+  {
+   "buyer": "Cabinet Office",
    "notices": 1
   },
   {
-   "buyer": "N H S Shared Business Services",
+   "buyer": "Department for Work and Pensions (DWP)",
    "notices": 1
   },
   {
-   "buyer": "Ofgem",
+   "buyer": "Department of Health and Social Care",
    "notices": 1
   },
   {
-   "buyer": "SOUTHERN HOUSING",
+   "buyer": "HM TREASURY",
+   "notices": 1
+  },
+  {
+   "buyer": "ICS on behalf of DSIT and DESNZ",
+   "notices": 1
+  },
+  {
+   "buyer": "King's College Hospital NHS Foundation Trust",
+   "notices": 1
+  },
+  {
+   "buyer": "London Borough of Hammersmith & Fulham (LBHF)",
+   "notices": 1
+  },
+  {
+   "buyer": "Ministry of Justice",
+   "notices": 1
+  },
+  {
+   "buyer": "The King's Trust",
    "notices": 1
   },
   {
@@ -78,412 +114,1021 @@
  ],
  "notices": [
   {
-   "ocid": "ocds-b5fd17-73eff865-d68b-4c08-812d-90733ab7e087",
-   "notice": "https://www.contractsfinder.service.gov.uk/Notice/8f87256a-c96b-4590-8383-51dc6f24a9ff",
-   "published": "2026-11-26T17:45:07Z",
+   "ocid": "ocds-b5fd17-93bfc411-a884-40fe-a23e-e3e341acb499",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/180ee4d3-b195-4806-bb0c-5fd897eff721",
+   "published": "2026-11-27T17:12:16Z",
    "stage": [
     "award"
    ],
-   "title": "Smart Meter Programme Strategic Assessment",
-   "buyer": "Ofgem",
-   "buyer_locality": "London",
-   "buyer_postcode_district": "E14",
-   "status": "complete",
-   "value": {
-    "amount": 44000,
-    "currency": "GBP"
-   },
-   "award_value": {
-    "amount": 44000,
-    "currency": "GBP"
-   },
-   "deadline": "2026-01-01T00:00:00Z",
-   "procurement_method": "open"
-  },
-  {
-   "ocid": "ocds-b5fd17-f3195995-2d18-423d-a738-4558e63515a7",
-   "notice": "https://www.contractsfinder.service.gov.uk/Notice/061e779e-a0cf-430a-b8d5-43a8f5e8e7db",
-   "published": "2026-11-26T17:32:11Z",
-   "stage": [
-    "award"
-   ],
-   "title": "Direct Internet Access (DIA) Service for Wandle Office",
-   "buyer": "WANDLE HOUSING ASSOCIATION LIMITED",
-   "buyer_locality": "LONDON",
-   "buyer_postcode_district": "SE1",
-   "status": "complete",
-   "value": {
-    "amount": 212161.68,
-    "currency": "GBP"
-   },
-   "award_value": {
-    "amount": 212161.68,
-    "currency": "GBP"
-   },
-   "deadline": "2026-11-11T17:00:00Z",
-   "procurement_method": "selective"
-  },
-  {
-   "ocid": "ocds-b5fd17-da6ba943-f338-4310-a968-39a7204b1ae2",
-   "notice": "https://www.contractsfinder.service.gov.uk/Notice/c983af09-1630-4948-8797-7f995cc5e521",
-   "published": "2026-11-26T16:52:55Z",
-   "stage": [
-    "award"
-   ],
-   "title": "Cloud Service Provider (Azure Cloud Solution Provider)",
-   "buyer": "N H S Shared Business Services",
-   "buyer_locality": "London",
-   "buyer_postcode_district": "E14",
-   "status": "complete",
-   "value": {
-    "amount": 510000,
-    "currency": "GBP"
-   },
-   "award_value": {
-    "amount": 510000,
-    "currency": "GBP"
-   },
-   "deadline": "2026-09-30T23:59:00+01:00",
-   "procurement_method": "selective"
-  },
-  {
-   "ocid": "ocds-b5fd17-ee7efa9c-c9a8-437f-bddc-6003074bac21",
-   "notice": "https://www.contractsfinder.service.gov.uk/Notice/92c0af21-e82f-4827-9804-b79d3d050299",
-   "published": "2026-11-26T16:48:25Z",
-   "stage": [
-    "awardUpdate"
-   ],
-   "title": "HMLR700909 Royal Mail Postal Services",
-   "buyer": "HM Land Registry",
-   "buyer_locality": "CROYDON",
-   "buyer_postcode_district": "WC2A",
-   "status": "complete",
-   "value": {
-    "amount": 3949461,
-    "currency": "GBP"
-   },
-   "award_value": {
-    "amount": 3027000,
-    "currency": "GBP"
-   },
-   "deadline": "2024-03-11T12:00:00Z",
-   "procurement_method": "selective"
-  },
-  {
-   "ocid": "ocds-b5fd17-cbaaff79-cdc0-4ef8-a5c4-91d92250acaf",
-   "notice": "https://www.contractsfinder.service.gov.uk/Notice/2e622fa5-23c5-4738-9a12-c179387464b9",
-   "published": "2026-11-26T16:48:23Z",
-   "stage": [
-    "award"
-   ],
-   "title": "Provision of HR Expert Advice",
-   "buyer": "DfTc - Department for Transport",
+   "title": "Contract Award - Mobile Application vetting",
+   "buyer": "Home Office",
    "buyer_locality": "London",
    "buyer_postcode_district": "SW1P",
    "status": "complete",
-   "value": null,
-   "award_value": {
-    "amount": 167900,
+   "value": {
+    "amount": 52000,
     "currency": "GBP"
    },
-   "deadline": "2026-09-29T12:00:00+01:00",
+   "award_value": {
+    "amount": 150000,
+    "currency": "GBP"
+   },
+   "deadline": "2026-11-09T17:00:00Z",
    "procurement_method": "selective"
   },
   {
-   "ocid": "ocds-b5fd17-3e7f3204-64df-4540-890a-94a0b3d1353f",
-   "notice": "https://www.contractsfinder.service.gov.uk/Notice/ef7f40dd-d6e4-479a-b3f6-4c7b9f226cda",
-   "published": "2026-11-26T16:07:13Z",
+   "ocid": "ocds-b5fd17-8ffa9419-a684-4349-a741-2f6f69d47cbc",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/44010376-07a7-4c20-9d9d-8ff61099bda2",
+   "published": "2026-11-27T17:02:23Z",
    "stage": [
     "award"
    ],
-   "title": "CW111184",
-   "buyer": "H M REVENUE & CUSTOMS",
+   "title": "Occupational Health Services",
+   "buyer": "HM TREASURY",
    "buyer_locality": "LONDON",
-   "buyer_postcode_district": "SS99",
-   "status": "complete",
-   "value": null,
-   "award_value": {
-    "amount": 0,
-    "currency": "GBP"
-   },
-   "deadline": "2026-11-24T12:00:00Z",
-   "procurement_method": null
-  },
-  {
-   "ocid": "ocds-b5fd17-a5dffbdf-a286-45ba-8074-458b87b0411f",
-   "notice": "https://www.contractsfinder.service.gov.uk/Notice/5e4d0c02-1743-41dd-b720-340f7a8c5c9d",
-   "published": "2026-11-26T15:46:43Z",
-   "stage": [
-    "award"
-   ],
-   "title": "Cloud Based Software",
-   "buyer": "SOUTHERN HOUSING",
-   "buyer_locality": "LONDON",
-   "buyer_postcode_district": "CR0",
-   "status": "complete",
-   "value": {
-    "amount": 497097,
-    "currency": "GBP"
-   },
-   "award_value": {
-    "amount": 497097,
-    "currency": "GBP"
-   },
-   "deadline": "2026-09-01T12:00:00+01:00",
-   "procurement_method": "selective"
-  },
-  {
-   "ocid": "ocds-b5fd17-4cea68ba-1fed-4359-a975-f78e4ed9ed1b",
-   "notice": "https://www.contractsfinder.service.gov.uk/Notice/e5a10be0-4110-4af9-9b37-454c76ad28ef",
-   "published": "2026-11-26T14:24:51Z",
-   "stage": [
-    "award"
-   ],
-   "title": "Portsmouth Combined Court Centre Roof Replacement",
-   "buyer": "Ministry of Justice",
-   "buyer_locality": "London",
-   "buyer_postcode_district": "SW1H",
-   "status": "complete",
-   "value": {
-    "amount": 4934540,
-    "currency": "GBP"
-   },
-   "award_value": {
-    "amount": 4934540.06,
-    "currency": "GBP"
-   },
-   "deadline": "2026-04-28T16:00:00+01:00",
-   "procurement_method": "selective"
-  },
-  {
-   "ocid": "ocds-b5fd17-5ab68828-2a37-4c9c-ac9f-3b439e6a5dbb",
-   "notice": "https://www.contractsfinder.service.gov.uk/Notice/b6e8ead3-3cb9-420a-9d5a-e850f4ce4da5",
-   "published": "2026-11-26T14:20:13Z",
-   "stage": [
-    "award"
-   ],
-   "title": "HMCTS Truro Combined Court (362/24/15464) Roof Repairs",
-   "buyer": "Ministry of Justice",
-   "buyer_locality": "London",
-   "buyer_postcode_district": "SW1H",
-   "status": "complete",
-   "value": {
-    "amount": 5221847.27,
-    "currency": "GBP"
-   },
-   "award_value": {
-    "amount": 5221867.27,
-    "currency": "GBP"
-   },
-   "deadline": "2026-05-01T16:00:00+01:00",
-   "procurement_method": "selective"
-  },
-  {
-   "ocid": "ocds-b5fd17-56a942ce-d1eb-4dc2-86d4-b017e36fb65e",
-   "notice": "https://www.contractsfinder.service.gov.uk/Notice/bed65cb5-f4ff-4ad7-b634-0c11dd6ffc2d",
-   "published": "2026-11-26T14:03:08Z",
-   "stage": [
-    "award"
-   ],
-   "title": "Randomised Control Trials (RCT) for specific Online Choice Architecture (OCA)",
-   "buyer": "Department for Business and Trade",
-   "buyer_locality": "London",
    "buyer_postcode_district": "SW1A",
    "status": "complete",
    "value": {
-    "amount": 191998.8,
+    "amount": 227850,
     "currency": "GBP"
    },
    "award_value": {
-    "amount": 159999,
+    "amount": 151900,
     "currency": "GBP"
    },
-   "deadline": "2026-10-06T11:00:00+01:00",
+   "deadline": "2025-10-31T12:00:00Z",
    "procurement_method": "selective"
   },
   {
-   "ocid": "ocds-b5fd17-710e8f7e-fe96-483b-8817-1b1c2cf04ac9",
-   "notice": "https://www.contractsfinder.service.gov.uk/Notice/dd6f9a61-5b23-479f-886d-91364e53e312",
-   "published": "2026-11-26T13:59:37Z",
+   "ocid": "ocds-b5fd17-e32c7cd3-9266-4594-9228-b319fa5deb62",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/85e7e158-3037-4614-8b77-2ff9eba0aa23",
+   "published": "2026-11-27T16:51:23Z",
    "stage": [
-    "award"
+    "awardUpdate"
    ],
-   "title": "Strategic Advisory Services",
-   "buyer": "Department for Business and Trade",
+   "title": "Food to Go DPS Contract Award Notices March 2025 - May 2025",
+   "buyer": "Supply Chain Coordination Limited",
    "buyer_locality": "London",
-   "buyer_postcode_district": "SW1A",
+   "buyer_postcode_district": "SE1",
    "status": "complete",
    "value": {
-    "amount": 599000,
+    "amount": 78831476,
     "currency": "GBP"
    },
    "award_value": {
-    "amount": 599000,
+    "amount": 78831476,
+    "currency": "GBP"
+   },
+   "deadline": "2029-02-23T15:00:00Z",
+   "procurement_method": "selective"
+  },
+  {
+   "ocid": "ocds-b5fd17-be8e5bab-c89d-42c6-b220-90a6b4e71596",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/cf5acdaf-e46e-4778-ba5f-84ad3796ff9b",
+   "published": "2026-11-27T16:48:19Z",
+   "stage": [
+    "awardUpdate"
+   ],
+   "title": "Food to Go DPS Contract Award Notices June 2025 - August 2025",
+   "buyer": "Supply Chain Coordination Limited",
+   "buyer_locality": "London",
+   "buyer_postcode_district": "SE1",
+   "status": "complete",
+   "value": {
+    "amount": 78831476,
+    "currency": "GBP"
+   },
+   "award_value": {
+    "amount": 78831476,
+    "currency": "GBP"
+   },
+   "deadline": "2029-02-23T15:00:00Z",
+   "procurement_method": "selective"
+  },
+  {
+   "ocid": "ocds-b5fd17-5291d991-4f57-40a4-9762-65305e009c5d",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/4ad97c08-a42b-4edd-8bba-19af0a847651",
+   "published": "2026-11-27T16:46:10Z",
+   "stage": [
+    "awardUpdate"
+   ],
+   "title": "Food to Go DPS Contract Award Notices September 2025 - November 2025",
+   "buyer": "Supply Chain Coordination Limited",
+   "buyer_locality": "London",
+   "buyer_postcode_district": "SE1",
+   "status": "complete",
+   "value": {
+    "amount": 78831476,
+    "currency": "GBP"
+   },
+   "award_value": {
+    "amount": 78831476,
+    "currency": "GBP"
+   },
+   "deadline": "2029-02-23T15:00:00Z",
+   "procurement_method": "selective"
+  },
+  {
+   "ocid": "ocds-b5fd17-19df5873-0108-4e05-b7eb-bc8ea52ab69f",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/f60c59fb-6b7f-4c06-8dd7-d3e6e4670947",
+   "published": "2026-11-27T16:45:07Z",
+   "stage": [
+    "awardUpdate"
+   ],
+   "title": "Food to Go DPS Contract Award Notices December 2025 - February 2026",
+   "buyer": "Supply Chain Coordination Limited",
+   "buyer_locality": "London",
+   "buyer_postcode_district": "SE1",
+   "status": "complete",
+   "value": {
+    "amount": 78831476,
+    "currency": "GBP"
+   },
+   "award_value": {
+    "amount": 78831476,
+    "currency": "GBP"
+   },
+   "deadline": "2029-02-23T15:00:00Z",
+   "procurement_method": "selective"
+  },
+  {
+   "ocid": "ocds-b5fd17-6d1e5023-87b6-4e0a-a6bb-95e10299378d",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/4b0bcf9b-50ff-4d24-beac-f24d3de6ec6d",
+   "published": "2026-11-27T16:33:49Z",
+   "stage": [
+    "award"
+   ],
+   "title": "TE2100 - TEP Topographical Surveys",
+   "buyer": "Environment Agency",
+   "buyer_locality": "London",
+   "buyer_postcode_district": "SW1P",
+   "status": "complete",
+   "value": {
+    "amount": 119977.69,
+    "currency": "GBP"
+   },
+   "award_value": {
+    "amount": 119977.69,
+    "currency": "GBP"
+   },
+   "deadline": "2026-10-14T17:30:00+01:00",
+   "procurement_method": "selective"
+  },
+  {
+   "ocid": "ocds-b5fd17-f8cdfa9c-24cb-4392-8827-1947fe9af7c3",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/8295f16b-41eb-4f5a-8aab-238a91b15ada",
+   "published": "2026-11-27T16:32:43Z",
+   "stage": [
+    "award"
+   ],
+   "title": "Wessex PLP 2026 Package 3",
+   "buyer": "Environment Agency",
+   "buyer_locality": "London",
+   "buyer_postcode_district": "SW1P",
+   "status": "complete",
+   "value": {
+    "amount": 245762.94,
+    "currency": "GBP"
+   },
+   "award_value": {
+    "amount": 245762.94,
+    "currency": "GBP"
+   },
+   "deadline": "2026-08-31T12:00:00+01:00",
+   "procurement_method": "selective"
+  },
+  {
+   "ocid": "ocds-b5fd17-8d39b945-e012-4ce3-b67f-b49a391ca907",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/752e8278-71a3-4c68-8390-3e97199556ca",
+   "published": "2026-11-27T16:24:33Z",
+   "stage": [
+    "awardUpdate"
+   ],
+   "title": "Food to Go DPS Contract Award Notices March 2026 - May 2026",
+   "buyer": "Supply Chain Coordination Limited",
+   "buyer_locality": "London",
+   "buyer_postcode_district": "SE1",
+   "status": "complete",
+   "value": {
+    "amount": 78831476,
+    "currency": "GBP"
+   },
+   "award_value": {
+    "amount": 78831476,
+    "currency": "GBP"
+   },
+   "deadline": "2029-02-23T15:00:00Z",
+   "procurement_method": "selective"
+  },
+  {
+   "ocid": "ocds-b5fd17-9da76f52-fc73-4ca3-a7f7-cea216c9e033",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/79a0e6ca-9ed6-4e78-ae5e-1c0877a6971b",
+   "published": "2026-11-27T16:15:09Z",
+   "stage": [
+    "awardUpdate"
+   ],
+   "title": "Food to Go DPS Contract Award Notices June 2026 - August 2026",
+   "buyer": "Supply Chain Coordination Limited",
+   "buyer_locality": "London",
+   "buyer_postcode_district": "SE1",
+   "status": "complete",
+   "value": {
+    "amount": 78831476,
+    "currency": "GBP"
+   },
+   "award_value": {
+    "amount": 78831476,
+    "currency": "GBP"
+   },
+   "deadline": "2029-02-23T15:00:00Z",
+   "procurement_method": "selective"
+  },
+  {
+   "ocid": "ocds-b5fd17-4720ec18-2711-4b85-b96a-3393c2a8af72",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/d3c72dce-1850-4561-861e-e489382bf315",
+   "published": "2026-11-27T16:12:00Z",
+   "stage": [
+    "awardUpdate"
+   ],
+   "title": "Fresh Food DPS Contract Award Notices March 2025 - May 2025",
+   "buyer": "Supply Chain Coordination Limited",
+   "buyer_locality": "London",
+   "buyer_postcode_district": "SE1",
+   "status": "complete",
+   "value": {
+    "amount": 200000000,
+    "currency": "GBP"
+   },
+   "award_value": {
+    "amount": 200000000,
+    "currency": "GBP"
+   },
+   "deadline": "2029-02-23T15:00:00Z",
+   "procurement_method": "selective"
+  },
+  {
+   "ocid": "ocds-b5fd17-09ddfb9e-ef1d-41b6-8a5f-8dce68c29d9e",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/12ed20f0-32ee-4d31-94f3-d7a35471b61a",
+   "published": "2026-11-27T16:10:19Z",
+   "stage": [
+    "awardUpdate"
+   ],
+   "title": "Fresh Food DPS Contract Award Notices June 2025 - August 2025",
+   "buyer": "Supply Chain Coordination Limited",
+   "buyer_locality": "London",
+   "buyer_postcode_district": "SE1",
+   "status": "complete",
+   "value": {
+    "amount": 200000000,
+    "currency": "GBP"
+   },
+   "award_value": {
+    "amount": 200000000,
+    "currency": "GBP"
+   },
+   "deadline": "2029-02-23T15:00:00Z",
+   "procurement_method": "selective"
+  },
+  {
+   "ocid": "ocds-b5fd17-ce4f91ff-9129-4e9c-bac9-9ccda8610710",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/94e2d1d2-c14c-4566-826d-3deb40186e74",
+   "published": "2026-11-27T16:07:53Z",
+   "stage": [
+    "awardUpdate"
+   ],
+   "title": "Fresh Food DPS Contract Award Notices September 2025 - November 2025",
+   "buyer": "Supply Chain Coordination Limited",
+   "buyer_locality": "London",
+   "buyer_postcode_district": "SE1",
+   "status": "complete",
+   "value": {
+    "amount": 200000000,
+    "currency": "GBP"
+   },
+   "award_value": {
+    "amount": 200000000,
+    "currency": "GBP"
+   },
+   "deadline": "2029-02-23T15:00:00Z",
+   "procurement_method": "selective"
+  },
+  {
+   "ocid": "ocds-b5fd17-ed64117e-7150-42b0-9044-874e0f2f1674",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/3af8d45d-78b2-43a7-95ac-5a644140a421",
+   "published": "2026-11-27T16:01:16Z",
+   "stage": [
+    "awardUpdate"
+   ],
+   "title": "Fresh Food DPS Contract Award Notices December 2025 - February 2026",
+   "buyer": "Supply Chain Coordination Limited",
+   "buyer_locality": "London",
+   "buyer_postcode_district": "SE1",
+   "status": "complete",
+   "value": {
+    "amount": 200000000,
+    "currency": "GBP"
+   },
+   "award_value": {
+    "amount": 200000000,
+    "currency": "GBP"
+   },
+   "deadline": "2029-02-23T15:00:00Z",
+   "procurement_method": "selective"
+  },
+  {
+   "ocid": "ocds-b5fd17-3eb8847c-0ffe-4bfe-a01f-80e116756fe2",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/f2598e8f-191c-4b93-a140-47bfa0637f80",
+   "published": "2026-11-27T15:59:36Z",
+   "stage": [
+    "awardUpdate"
+   ],
+   "title": "Fresh Food DPS Contract Award Notices March 2026 - May 2026",
+   "buyer": "Supply Chain Coordination Limited",
+   "buyer_locality": "London",
+   "buyer_postcode_district": "SE1",
+   "status": "complete",
+   "value": {
+    "amount": 200000000,
+    "currency": "GBP"
+   },
+   "award_value": {
+    "amount": 200000000,
+    "currency": "GBP"
+   },
+   "deadline": "2029-02-23T15:00:00Z",
+   "procurement_method": "selective"
+  },
+  {
+   "ocid": "ocds-b5fd17-3b5d077b-e4b2-4bde-a44b-3646330538ea",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/52f85b3e-ce77-4861-885f-e387bda6c32e",
+   "published": "2026-11-27T15:55:53Z",
+   "stage": [
+    "awardUpdate"
+   ],
+   "title": "Fresh Food DPS Contract Award Notices June 2026 - August 2026",
+   "buyer": "Supply Chain Coordination Limited",
+   "buyer_locality": "London",
+   "buyer_postcode_district": "SE1",
+   "status": "complete",
+   "value": {
+    "amount": 200000000,
+    "currency": "GBP"
+   },
+   "award_value": {
+    "amount": 200000000,
+    "currency": "GBP"
+   },
+   "deadline": "2029-02-23T15:00:00Z",
+   "procurement_method": "selective"
+  },
+  {
+   "ocid": "ocds-b5fd17-aef0ea03-cdc2-4952-a8da-b08d7fe74f5a",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/7eb11c16-531a-46d2-bf99-ae1a6ddac556",
+   "published": "2026-11-27T14:13:20Z",
+   "stage": [
+    "award"
+   ],
+   "title": "Implementation Pilot and Design Support",
+   "buyer": "Environment Agency",
+   "buyer_locality": "London",
+   "buyer_postcode_district": "SW1P",
+   "status": "complete",
+   "value": {
+    "amount": 204031,
+    "currency": "GBP"
+   },
+   "award_value": {
+    "amount": 204031,
+    "currency": "GBP"
+   },
+   "deadline": "2026-10-23T12:00:00+01:00",
+   "procurement_method": "selective"
+  },
+  {
+   "ocid": "ocds-b5fd17-e397b6d0-96a4-4717-abcd-7063f8fc91a5",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/50aceec8-66d3-40f1-b7e5-c5538ee7f455",
+   "published": "2026-11-27T13:03:57Z",
+   "stage": [
+    "award"
+   ],
+   "title": "PNC Mainframe Support and Maintenance Contract Extension April 2026 - March 2027",
+   "buyer": "Home Office",
+   "buyer_locality": "London",
+   "buyer_postcode_district": "SW1P",
+   "status": "complete",
+   "value": {
+    "amount": 9500000,
+    "currency": "GBP"
+   },
+   "award_value": {
+    "amount": 9500000,
+    "currency": "GBP"
+   },
+   "deadline": "2026-03-31T23:59:00+01:00",
+   "procurement_method": "direct"
+  },
+  {
+   "ocid": "ocds-b5fd17-ebb27db6-de21-4e19-92ba-4d2fbda4c8eb",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/aa20e56b-08ab-4809-b93e-87518bb8d254",
+   "published": "2026-11-27T12:37:36Z",
+   "stage": [
+    "award"
+   ],
+   "title": "Provision of Freezers and Associated Goods and Services for AMRHAI & PHMRM-CSU",
+   "buyer": "UK Health Security Agency",
+   "buyer_locality": "London",
+   "buyer_postcode_district": "E14",
+   "status": "complete",
+   "value": {
+    "amount": 44815.67,
+    "currency": "GBP"
+   },
+   "award_value": {
+    "amount": 44815.67,
+    "currency": "GBP"
+   },
+   "deadline": "2026-10-29T12:00:00Z",
+   "procurement_method": "selective"
+  },
+  {
+   "ocid": "ocds-b5fd17-f0a7cdc3-7e44-4ca5-90d2-510e963b933c",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/5e1d3089-7022-44fd-b036-9bfc1b41e792",
+   "published": "2026-11-27T12:22:36Z",
+   "stage": [
+    "award"
+   ],
+   "title": "Employee Engagement Tool",
+   "buyer": "ADVISORY, CONCILIATION AND ARBITRATION SERVICE",
+   "buyer_locality": "LONDON",
+   "buyer_postcode_district": "E20",
+   "status": "complete",
+   "value": {
+    "amount": 46380,
+    "currency": "GBP"
+   },
+   "award_value": {
+    "amount": 46380,
+    "currency": "GBP"
+   },
+   "deadline": "2026-09-11T14:00:00+01:00",
+   "procurement_method": "selective"
+  },
+  {
+   "ocid": "ocds-b5fd17-f21e3fd4-1184-4ae4-ab19-e1d4d24ebbb1",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/c7e9a957-1c7d-4b26-8e3d-3fa6a0b228fc",
+   "published": "2026-11-27T12:13:20Z",
+   "stage": [
+    "award"
+   ],
+   "title": "Better Futures Fund evaluation: feasibility and implementation study",
+   "buyer": "Department for Culture, Media and Sport",
+   "buyer_locality": "LONDON",
+   "buyer_postcode_district": "SW1A",
+   "status": "complete",
+   "value": {
+    "amount": 263627.91,
+    "currency": "GBP"
+   },
+   "award_value": {
+    "amount": 263627.91,
+    "currency": "GBP"
+   },
+   "deadline": "2026-08-17T17:00:00+01:00",
+   "procurement_method": "selective"
+  },
+  {
+   "ocid": "ocds-b5fd17-076a972f-8d75-4293-863b-1b92b62c8fa5",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/dd84e33b-1fdd-4b68-8c2d-8041ce3b183c",
+   "published": "2026-11-27T11:59:17Z",
+   "stage": [
+    "award"
+   ],
+   "title": "Market Intelligence Tool",
+   "buyer": "Department for Culture, Media and Sport",
+   "buyer_locality": "LONDON",
+   "buyer_postcode_district": "SW1A",
+   "status": "complete",
+   "value": {
+    "amount": 68450,
+    "currency": "GBP"
+   },
+   "award_value": {
+    "amount": 34225,
+    "currency": "GBP"
+   },
+   "deadline": "2026-10-23T00:00:00+01:00",
+   "procurement_method": "selective"
+  },
+  {
+   "ocid": "ocds-b5fd17-79cb9038-2f23-4938-a665-ca6acc3b75c9",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/520b05db-32f6-4b88-ae77-0072a4c5cc5c",
+   "published": "2026-11-27T11:58:46Z",
+   "stage": [
+    "award"
+   ],
+   "title": "DHSC Postal Services",
+   "buyer": "Department of Health and Social Care",
+   "buyer_locality": "Westminster",
+   "buyer_postcode_district": "SW1H",
+   "status": "complete",
+   "value": {
+    "amount": 200000,
+    "currency": "GBP"
+   },
+   "award_value": {
+    "amount": 200000,
+    "currency": "GBP"
+   },
+   "deadline": "2026-11-26T12:00:00Z",
+   "procurement_method": "selective"
+  },
+  {
+   "ocid": "ocds-b5fd17-cbaa062b-5742-4315-873e-d17fd3141fc5",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/8d37b044-55ae-41b1-ae8b-a81e12c3564f",
+   "published": "2026-11-27T11:58:30Z",
+   "stage": [
+    "award"
+   ],
+   "title": "Business Applications .NET Support",
+   "buyer": "ADVISORY, CONCILIATION AND ARBITRATION SERVICE",
+   "buyer_locality": "LONDON",
+   "buyer_postcode_district": "E20",
+   "status": "complete",
+   "value": {
+    "amount": 431904,
+    "currency": "GBP"
+   },
+   "award_value": {
+    "amount": 431904,
+    "currency": "GBP"
+   },
+   "deadline": "2026-09-28T14:00:00+01:00",
+   "procurement_method": "selective"
+  },
+  {
+   "ocid": "ocds-b5fd17-99cd3eb8-0408-4b4a-8a19-a920d611d582",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/f1d21bc7-48cf-45bc-970e-fba25511fa18",
+   "published": "2026-11-27T11:57:09Z",
+   "stage": [
+    "tender"
+   ],
+   "title": "CA18750 - Marketing Partner Services",
+   "buyer": "The King's Trust",
+   "buyer_locality": "London",
+   "buyer_postcode_district": "SE1",
+   "status": "active",
+   "value": {
+    "amount": 738883,
+    "currency": "GBP"
+   },
+   "award_value": null,
+   "deadline": "2026-12-22T12:00:00Z",
+   "procurement_method": "open"
+  },
+  {
+   "ocid": "ocds-b5fd17-5b0253c2-9766-4cb0-9073-2125d00a5c31",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/051b694d-f914-4131-83af-5af5101ad087",
+   "published": "2026-11-27T11:49:52Z",
+   "stage": [
+    "award"
+   ],
+   "title": "Refurbishment of the Voluntary and Community Sector properties at 329 Queensbridge Road, 97-99 Hoxton Street & Concorde Centre Youth Hub",
+   "buyer": "London Borough of Hackney",
+   "buyer_locality": "Hackney",
+   "buyer_postcode_district": "E8",
+   "status": "complete",
+   "value": {
+    "amount": 99000,
+    "currency": "GBP"
+   },
+   "award_value": {
+    "amount": 37291,
+    "currency": "GBP"
+   },
+   "deadline": "2026-08-07T12:00:00+01:00",
+   "procurement_method": "selective"
+  },
+  {
+   "ocid": "ocds-b5fd17-3a6ff73e-ddfc-4951-b230-33cf49e3d24a",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/da23125d-0f13-4e47-8727-5836b0850b31",
+   "published": "2026-11-27T11:45:54Z",
+   "stage": [
+    "award"
+   ],
+   "title": "DDaT ODP & KIM Support for MoG",
+   "buyer": "Department for Culture, Media and Sport",
+   "buyer_locality": "LONDON",
+   "buyer_postcode_district": "SW1A",
+   "status": "complete",
+   "value": {
+    "amount": 1200000,
+    "currency": "GBP"
+   },
+   "award_value": {
+    "amount": 1200000,
     "currency": "GBP"
    },
    "deadline": "2026-10-21T00:00:00+01:00",
    "procurement_method": "selective"
   },
   {
-   "ocid": "ocds-b5fd17-e59628dd-7758-4c36-972e-ed38680a6585",
-   "notice": "https://www.contractsfinder.service.gov.uk/Notice/49eee341-bbce-4115-b2ad-a8993401f263",
-   "published": "2026-11-26T13:19:54Z",
-   "stage": [
-    "awardUpdate"
-   ],
-   "title": "P4104088B Legal Advisers for the Euston Programme Lot 2",
-   "buyer": "DfTc - Department for Transport",
-   "buyer_locality": "London",
-   "buyer_postcode_district": "SW1P",
-   "status": "complete",
-   "value": {
-    "amount": 2000000,
-    "currency": "GBP"
-   },
-   "award_value": {
-    "amount": 2000000,
-    "currency": "GBP"
-   },
-   "deadline": "2025-02-28T12:00:00Z",
-   "procurement_method": "selective"
-  },
-  {
-   "ocid": "ocds-b5fd17-3942f6c8-3a67-413e-a4fc-82dd77c61283",
-   "notice": "https://www.contractsfinder.service.gov.uk/Notice/e6e39a02-a5ba-40c3-be66-d029abb99928",
-   "published": "2026-11-26T12:45:56Z",
+   "ocid": "ocds-b5fd17-28a444b4-2c87-49c6-bcb3-e9bf3e7b37d6",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/e1b807ef-17e9-488a-8eb8-11cc69f53056",
+   "published": "2026-11-27T11:35:22Z",
    "stage": [
     "award"
    ],
-   "title": "Social Media Listening and Monitoring Tool",
-   "buyer": "Department for Business and Trade",
-   "buyer_locality": "London",
-   "buyer_postcode_district": "SW1A",
-   "status": "complete",
-   "value": {
-    "amount": 50000,
-    "currency": "GBP"
-   },
-   "award_value": {
-    "amount": 50000,
-    "currency": "GBP"
-   },
-   "deadline": "2026-10-12T12:00:00+01:00",
-   "procurement_method": "selective"
-  },
-  {
-   "ocid": "ocds-b5fd17-fe9aa1a2-9c58-4f14-8975-1b96c026e43e",
-   "notice": "https://www.contractsfinder.service.gov.uk/Notice/b7e965c5-e1b8-4751-80d2-cec2570ccd9d",
-   "published": "2026-11-26T12:11:35Z",
-   "stage": [
-    "award"
-   ],
-   "title": "ExISS - Secure Messaging (2026) SaaS",
-   "buyer": "Ministry of Justice",
-   "buyer_locality": "London",
-   "buyer_postcode_district": "SW1H",
-   "status": "complete",
-   "value": {
-    "amount": 9125007,
-    "currency": "GBP"
-   },
-   "award_value": {
-    "amount": 9125007,
-    "currency": "GBP"
-   },
-   "deadline": "2026-06-12T23:59:00+01:00",
-   "procurement_method": "selective"
-  },
-  {
-   "ocid": "ocds-b5fd17-80384bfb-1c49-4c77-83ca-d79668d6db50",
-   "notice": "https://www.contractsfinder.service.gov.uk/Notice/a463da0f-43c0-4a90-9168-23cb2d45b4d9",
-   "published": "2026-11-26T12:03:46Z",
-   "stage": [
-    "award"
-   ],
-   "title": "Hosting, Support and Development of the Buyer's Acqua Application",
-   "buyer": "Ministry of Justice",
-   "buyer_locality": "London",
-   "buyer_postcode_district": "WC2A",
-   "status": "complete",
-   "value": {
-    "amount": 241000,
-    "currency": "GBP"
-   },
-   "award_value": {
-    "amount": 241000,
-    "currency": "GBP"
-   },
-   "deadline": "2026-10-14T23:59:00+01:00",
-   "procurement_method": "selective"
-  },
-  {
-   "ocid": "ocds-b5fd17-babf232b-f5b7-40da-8337-836205d71b3d",
-   "notice": "https://www.contractsfinder.service.gov.uk/Notice/ee36cc60-5d3d-4800-b838-733b5c8eac10",
-   "published": "2026-11-26T12:00:28Z",
-   "stage": [
-    "award"
-   ],
-   "title": "GB-London: TPPL London Borough of Hackney NEPO HGV Lot 5 - 1 x Vehicle Mounted Platform Tower (Battery Electric) (27808)",
+   "title": "Procurement of Independent Tenants' & Leaseholders' Advisor for the Gascoyne Estate LPS blocks",
    "buyer": "London Borough of Hackney",
-   "buyer_locality": "London",
+   "buyer_locality": "Hackney",
    "buyer_postcode_district": "E8",
    "status": "complete",
    "value": {
-    "amount": 81634,
+    "amount": 90120,
     "currency": "GBP"
    },
    "award_value": {
-    "amount": 81634,
+    "amount": 90120,
     "currency": "GBP"
    },
-   "deadline": "2025-10-07T00:00:00+01:00",
+   "deadline": "2026-08-28T12:00:00+01:00",
    "procurement_method": null
   },
   {
-   "ocid": "ocds-b5fd17-d8435233-e78b-4306-b7cc-5222859110da",
-   "notice": "https://www.contractsfinder.service.gov.uk/Notice/27b7578b-660e-4586-ad98-e955b7a84e5b",
-   "published": "2026-11-26T11:59:20Z",
+   "ocid": "ocds-b5fd17-e5805438-fb22-4059-995b-c77a70139170",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/250f700f-e00d-4329-8938-50b9e0da8a33",
+   "published": "2026-11-27T11:33:42Z",
    "stage": [
     "award"
    ],
-   "title": "Legal Case Management System for the Office of the Public Guardian",
+   "title": "Civil Court User Survey - Targeted Fieldwork",
    "buyer": "Ministry of Justice",
    "buyer_locality": "London",
    "buyer_postcode_district": "E14",
    "status": "complete",
    "value": {
-    "amount": 451711.39,
+    "amount": 70625,
     "currency": "GBP"
    },
    "award_value": {
-    "amount": 451711.39,
+    "amount": 70625,
     "currency": "GBP"
    },
-   "deadline": "2026-10-02T23:59:00+01:00",
-   "procurement_method": "selective"
+   "deadline": "2026-10-27T15:00:00Z",
+   "procurement_method": "direct"
   },
   {
-   "ocid": "ocds-b5fd17-f490ce5d-8117-42f6-97eb-1a7ead307612",
-   "notice": "https://www.contractsfinder.service.gov.uk/Notice/944625e6-c916-42dc-9693-df427508aece",
-   "published": "2026-11-26T11:41:00Z",
+   "ocid": "ocds-b5fd17-af933189-e84c-405e-a533-42fa991160c8",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/8c71872e-d225-466f-bebe-30bc1d660cc4",
+   "published": "2026-11-27T11:29:20Z",
    "stage": [
     "award"
    ],
-   "title": "Gartner Subscription Licencing for MOJ",
-   "buyer": "Ministry of Justice",
+   "title": "Refurbishment of the Voluntary and Community Sector properties at 22 Dalston Lane, 16 Howard Road, 1a/1b Chaucer Court & 85 Sandbrook Road",
+   "buyer": "London Borough of Hackney",
+   "buyer_locality": "Hackney",
+   "buyer_postcode_district": "E8",
+   "status": "complete",
+   "value": {
+    "amount": 99000,
+    "currency": "GBP"
+   },
+   "award_value": {
+    "amount": 42106,
+    "currency": "GBP"
+   },
+   "deadline": "2026-08-07T12:00:00+01:00",
+   "procurement_method": "selective"
+  },
+  {
+   "ocid": "ocds-b5fd17-0013960d-5422-430b-bbaf-d0b2db64b797",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/f4de3d2e-ed2e-49d0-abaa-38c938de057d",
+   "published": "2026-11-27T11:27:20Z",
+   "stage": [
+    "award"
+   ],
+   "title": "YMF Legal Support",
+   "buyer": "Department for Culture, Media and Sport",
+   "buyer_locality": "LONDON",
+   "buyer_postcode_district": "SW1A",
+   "status": "complete",
+   "value": {
+    "amount": 25000,
+    "currency": "GBP"
+   },
+   "award_value": {
+    "amount": 25000,
+    "currency": "GBP"
+   },
+   "deadline": "2026-09-20T00:00:00+01:00",
+   "procurement_method": "selective"
+  },
+  {
+   "ocid": "ocds-b5fd17-dbdde940-3b93-4038-8856-9a393e9970e1",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/b46d7897-3ac5-4aad-b3dc-9cef5042d616",
+   "published": "2026-11-27T10:47:04Z",
+   "stage": [
+    "award"
+   ],
+   "title": "Grammarly Enterprise Licences 2026-27",
+   "buyer": "UK Health Security Agency",
+   "buyer_locality": "London",
+   "buyer_postcode_district": "E14",
+   "status": "complete",
+   "value": {
+    "amount": 18028.5,
+    "currency": "GBP"
+   },
+   "award_value": {
+    "amount": 18028.5,
+    "currency": "GBP"
+   },
+   "deadline": "2026-11-13T12:00:00Z",
+   "procurement_method": "selective"
+  },
+  {
+   "ocid": "ocds-b5fd17-692846d8-09c7-4e8e-8be7-aef2178aa40a",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/c8f8386f-1ff2-489b-b387-2561a1629d0e",
+   "published": "2026-11-27T10:45:22Z",
+   "stage": [
+    "award"
+   ],
+   "title": "Planned Voids Contracts",
+   "buyer": "London Borough of Hammersmith & Fulham (LBHF)",
+   "buyer_locality": "London",
+   "buyer_postcode_district": "W6",
+   "status": "complete",
+   "value": null,
+   "award_value": {
+    "amount": 0,
+    "currency": "GBP"
+   },
+   "deadline": "2026-10-01T12:00:00+01:00",
+   "procurement_method": "selective"
+  },
+  {
+   "ocid": "ocds-b5fd17-84cf4320-4bed-493d-b2ea-60068108e04b",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/e43e5f82-390f-4df9-9e85-93830e6983f6",
+   "published": "2026-11-27T10:36:55Z",
+   "stage": [
+    "award"
+   ],
+   "title": "RtCS - Provision of Video Duodenoscopes Replacement",
+   "buyer": "King's College Hospital NHS Foundation Trust",
+   "buyer_locality": "London",
+   "buyer_postcode_district": "SE5",
+   "status": "complete",
+   "value": {
+    "amount": 88809.04,
+    "currency": "GBP"
+   },
+   "award_value": {
+    "amount": 88809.04,
+    "currency": "GBP"
+   },
+   "deadline": "2026-11-12T12:00:00Z",
+   "procurement_method": "selective"
+  },
+  {
+   "ocid": "ocds-b5fd17-c9ee6c79-f977-4e2f-abae-dbb0d5adc1a4",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/7e327ed7-0e06-49db-b197-a2a46073f209",
+   "published": "2026-11-27T09:42:43Z",
+   "stage": [
+    "tender"
+   ],
+   "title": "Procurement of Individual First Aid Kits and Pre-Hospital Emergency Medical Supplies",
+   "buyer": "Chemonics International, Inc.",
+   "buyer_locality": "Kyiv",
+   "buyer_postcode_district": "EC1M",
+   "status": "active",
+   "value": {
+    "amount": 1,
+    "currency": "GBP"
+   },
+   "award_value": null,
+   "deadline": "2026-12-11T15:00:00Z",
+   "procurement_method": "open"
+  },
+  {
+   "ocid": "ocds-b5fd17-a58020f7-841f-42a6-a87d-4eb6de9c5d72",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/829f7819-e705-474e-bccf-dd4bc29a24de",
+   "published": "2026-11-27T09:26:43Z",
+   "stage": [
+    "award"
+   ],
+   "title": "Lift Replacements & Modernisation",
+   "buyer": "WANDLE HOUSING ASSOCIATION LIMITED",
+   "buyer_locality": "LONDON",
+   "buyer_postcode_district": "SE1",
+   "status": "complete",
+   "value": {
+    "amount": 666568,
+    "currency": "GBP"
+   },
+   "award_value": {
+    "amount": 666566,
+    "currency": "GBP"
+   },
+   "deadline": "2025-09-24T12:00:00+01:00",
+   "procurement_method": "selective"
+  },
+  {
+   "ocid": "ocds-b5fd17-95b279ea-f16e-439b-aad9-92f76f9651d4",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/c1780f91-f998-4496-833a-3ecf802b6963",
+   "published": "2026-11-27T09:22:33Z",
+   "stage": [
+    "award"
+   ],
+   "title": "C4285 - Executive Search",
+   "buyer": "Financial Conduct Authority",
+   "buyer_locality": "London",
+   "buyer_postcode_district": "E20",
+   "status": "complete",
+   "value": {
+    "amount": 33600,
+    "currency": "GBP"
+   },
+   "award_value": {
+    "amount": 33600,
+    "currency": "GBP"
+   },
+   "deadline": "2026-05-04T12:00:00+01:00",
+   "procurement_method": "selective"
+  },
+  {
+   "ocid": "ocds-b5fd17-c2fa59f8-3f8c-42f0-bbf4-efbf74240392",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/32b8ce86-ae77-4f8d-95ff-0ac1ab348d06",
+   "published": "2026-11-27T09:13:52Z",
+   "stage": [
+    "award"
+   ],
+   "title": "Furniture and Associated Services",
+   "buyer": "Financial Conduct Authority",
+   "buyer_locality": "London",
+   "buyer_postcode_district": "E20",
+   "status": "complete",
+   "value": {
+    "amount": 511515.42,
+    "currency": "GBP"
+   },
+   "award_value": {
+    "amount": 511515.42,
+    "currency": "GBP"
+   },
+   "deadline": "2026-01-16T12:00:00Z",
+   "procurement_method": "selective"
+  },
+  {
+   "ocid": "ocds-b5fd17-6e86c872-ae01-43d0-babe-2906da4d9738",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/c87387da-79b1-4bb1-a241-ce697d97ce17",
+   "published": "2026-11-27T09:12:37Z",
+   "stage": [
+    "award"
+   ],
+   "title": "Advisory Support for Tableau Cloud",
+   "buyer": "Financial Conduct Authority",
+   "buyer_locality": "London",
+   "buyer_postcode_district": "E20",
+   "status": "complete",
+   "value": {
+    "amount": 150000,
+    "currency": "GBP"
+   },
+   "award_value": {
+    "amount": 95220,
+    "currency": "GBP"
+   },
+   "deadline": "2026-10-01T17:00:00+01:00",
+   "procurement_method": "selective"
+  },
+  {
+   "ocid": "ocds-b5fd17-14fc7414-746c-4304-ac75-56b410a4151c",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/a45d9777-4ba5-4315-9a6e-99fb32b5b715",
+   "published": "2026-11-27T09:12:14Z",
+   "stage": [
+    "tender"
+   ],
+   "title": "Procurement of Pipes and Fittings for the Installation and Repair of Water Supply and Firefighting Systems",
+   "buyer": "Chemonics International, Inc.",
+   "buyer_locality": "Kyiv",
+   "buyer_postcode_district": "EC1M",
+   "status": "active",
+   "value": {
+    "amount": 1,
+    "currency": "GBP"
+   },
+   "award_value": null,
+   "deadline": "2026-12-15T15:00:00Z",
+   "procurement_method": "open"
+  },
+  {
+   "ocid": "ocds-b5fd17-7a7dea75-9594-496e-b442-2179bb0e4930",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/94a22514-6673-4d3d-b003-5dda9d87674b",
+   "published": "2026-11-27T09:10:50Z",
+   "stage": [
+    "award"
+   ],
+   "title": "Effect of consolidation on innovation in the DC market",
+   "buyer": "Department for Work and Pensions (DWP)",
    "buyer_locality": "London",
    "buyer_postcode_district": "SW1H",
    "status": "complete",
    "value": {
-    "amount": 1844100,
+    "amount": 61569.6,
     "currency": "GBP"
    },
    "award_value": {
-    "amount": 1844100,
+    "amount": 61569.6,
     "currency": "GBP"
    },
-   "deadline": "2026-10-01T23:59:00+01:00",
+   "deadline": "2026-09-25T17:00:00+01:00",
    "procurement_method": "selective"
+  },
+  {
+   "ocid": "ocds-b5fd17-4eee7366-162a-41dc-81cc-fe7a06227bdc",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/9e9ade42-d072-45f5-8b4f-65a0dafb3656",
+   "published": "2026-11-27T09:06:06Z",
+   "stage": [
+    "award"
+   ],
+   "title": "DDaT26261 - Provision of Cyber Incident Response (IR) Retainer",
+   "buyer": "ICS on behalf of DSIT and DESNZ",
+   "buyer_locality": "London",
+   "buyer_postcode_district": "SW1A",
+   "status": "complete",
+   "value": {
+    "amount": 199375,
+    "currency": "GBP"
+   },
+   "award_value": {
+    "amount": 199375,
+    "currency": "GBP"
+   },
+   "deadline": "2026-09-01T11:00:00+01:00",
+   "procurement_method": "selective"
+  },
+  {
+   "ocid": "ocds-b5fd17-5e2ddd11-5623-4da8-a9bf-26cb86d865bf",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/819d93b2-dcdf-408b-9356-e1b3a58180c1",
+   "published": "2026-11-27T08:53:44Z",
+   "stage": [
+    "award"
+   ],
+   "title": "Framework Risk Concentration Mapping",
+   "buyer": "Cabinet Office",
+   "buyer_locality": "LONDON",
+   "buyer_postcode_district": "SW1A",
+   "status": "complete",
+   "value": {
+    "amount": 145000,
+    "currency": "GBP"
+   },
+   "award_value": {
+    "amount": 145000,
+    "currency": "GBP"
+   },
+   "deadline": "2026-10-16T12:00:00+01:00",
+   "procurement_method": "selective"
+  },
+  {
+   "ocid": "ocds-b5fd17-ed43a87f-f511-4b28-8158-871ee2643aaf",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/a4ec527d-2e0d-49ce-ba38-f11880a15447",
+   "published": "2026-11-27T08:38:20Z",
+   "stage": [
+    "tender"
+   ],
+   "title": "Procurement of Monocrystalline Photovoltaic Solar Modules",
+   "buyer": "Chemonics International, Inc.",
+   "buyer_locality": "Kyiv",
+   "buyer_postcode_district": "EC1M",
+   "status": "active",
+   "value": {
+    "amount": 1,
+    "currency": "GBP"
+   },
+   "award_value": null,
+   "deadline": "2026-12-08T15:00:00Z",
+   "procurement_method": "open"
+  },
+  {
+   "ocid": "ocds-b5fd17-5ad48267-bbdd-479f-b2ed-5c9de1b550dd",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/fd684743-9443-4b60-95c9-4b891671a0c0",
+   "published": "2026-11-27T06:51:38Z",
+   "stage": [
+    "tender"
+   ],
+   "title": "Procurement of Specialized Vehicles for Wheelchair Users",
+   "buyer": "Chemonics International, Inc.",
+   "buyer_locality": "Kyiv",
+   "buyer_postcode_district": "EC1M",
+   "status": "active",
+   "value": {
+    "amount": 1,
+    "currency": "GBP"
+   },
+   "award_value": null,
+   "deadline": "2026-12-14T15:00:00Z",
+   "procurement_method": "open"
   }
  ]
 }
