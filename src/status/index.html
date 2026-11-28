@@ -22,6 +22,15 @@
 .c-fresh, .c-up { --c: var(--green); } .c-late, .c-archive, .c-nover { --c: var(--amber); } .c-stale, .c-problem, .c-down { --c: var(--red); }
 .st-chip { display: inline-block; padding: 0 8px; border: 1px solid var(--c); color: var(--c); border-radius: 999px; font-size: .8rem; white-space: nowrap; }
 .st-bg { background: var(--c); }
+th { white-space: nowrap; }
+.st-scale { display: grid; grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); gap: 10px; list-style: none; padding: 0; margin: 0 0 8px; }
+.st-scale li { border: 1px solid var(--rule); border-radius: 6px; padding: 8px 12px; background: var(--panel); font-size: .85rem; color: var(--muted); }
+.st-scale b { display: block; font: 600 1.5rem var(--font-editorial, Georgia, serif); color: var(--ink); }
+.st-toggle button { font: inherit; padding: 2px 12px; border: 1px solid var(--rule); background: var(--paper); color: var(--ink); border-radius: 999px; cursor: pointer; }
+.st-toggle button[aria-pressed="true"] { border-color: var(--red); font-weight: 600; }
+.st-group { margin: 1.2rem 0 0; }
+.st-group h3 { margin: 0 0 4px; }
+.st-group .st-note { margin: 0 0 4px; }
 td.num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
 #st-err { color: var(--red); }
 .st-log { padding-left: 1.2rem; }
@@ -48,12 +57,13 @@ td.num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-n
 <div class="st-strip" id="strip" role="img" aria-label="Feeds by state"></div>
 <ul class="st-legend" id="legend"></ul>
 
+<h2>Scale</h2>
+<ul class="st-scale" id="scale"><li>Reading file counts...</li></ul>
+
 <h2>All feeds</h2>
-<div class="scroll"><table id="feeds">
-<thead><tr><th>Feed</th><th class="hide-s">Expected</th><th>Hours since read</th><th>State</th><th class="hide-s">Latest</th></tr></thead>
-<tbody></tbody>
-</table></div>
-<p class="st-note">A feed is fresh when its last read is no older than its expected gap plus two hours. The collectors run twice a day (07:03 and 18:03 Lisbon), so an hourly or six-hourly feed is expected every 12 hours; a daily one every 24. "Source problem" means the source refused or failed at the last read: a refusal is respected and recorded as a gap, not retried within the cadence. Why is on each feed's card under <a href="/sources/">Sources</a>.</p>
+<p class="st-toggle" role="group" aria-label="Group the feeds">Group by: <button type="button" id="by-topic" aria-pressed="true">area</button> <button type="button" id="by-schedule" aria-pressed="false">when it is fetched</button></p>
+<div id="groups"></div>
+<p class="st-note">A feed is fresh when its last read is no older than its expected gap plus two hours. The collection runs at 07:03 and 18:03 Lisbon: feeds a card calls hourly or every 6 hours are read at both runs, daily feeds at the first only, so "really collected" can differ from what the card says (the cards still describe an older hourly schedule). "Source problem" means the source refused or failed at the last read; a refusal is respected and recorded as a gap, not retried within the cadence. Files and items are counted at the last wake (<span id="files-at">...</span>); items are the first count a feed's file reports about itself, so they are not comparable between feeds. Why a feed has a problem is on its card under <a href="/sources/">Sources</a>.</p>
 
 <h2>The PrompTugal sites</h2>
 <div class="scroll"><table id="sites">
@@ -107,9 +117,48 @@ td.num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-n
   function fmt(iso) { var d = new Date(iso); return isNaN(d) ? '-' : d.toISOString().slice(0, 16).replace('T', ' '); }
   function get(url) { return fetch(url, { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }); }
 
-  function drawFeeds(index) {
+  var FILES = {}, INDEX = null, MODE = 'topic';
+  function human(n) { return n >= 1048576 ? (n / 1048576).toFixed(1) + ' MB' : n >= 1024 ? Math.round(n / 1024) + ' KB' : n + ' B'; }
+  function rowsOf(index) {
     var now = Date.now();
-    var rows = index.sources.map(function (s) { var t = stateOf(s, now); return { s: s, state: t.state, age: t.age }; });
+    return index.sources.map(function (s) { var t = stateOf(s, now), f = FILES[s.id] || {}; return { s: s, f: f, state: t.state, age: t.age }; });
+  }
+  function drawScale(rows) {
+    var ul = document.getElementById('scale'); ul.textContent = '';
+    var files = 0, bytes = 0, added = 0, changed = 0, items = 0;
+    rows.forEach(function (r) { var f = r.f; files += (f.files_data || 0) + (f.files_vault || 0); bytes += (f.bytes_data || 0) + (f.bytes_vault || 0); added += f.last_run_files_added || 0; changed += f.last_run_files_changed || 0; items += f.items || 0; });
+    [[rows.length, 'feeds'], [files, 'files held (data and vault copies)'], [human(bytes), 'on disk in the data repository'], [added + changed, 'files written by the last collection (' + added + ' new)']].forEach(function (x) {
+      var li = el('li'); li.appendChild(el('b', String(x[0]))); li.appendChild(document.createTextNode(x[1])); ul.appendChild(li); });
+  }
+  function groupKey(r) { return MODE === 'topic' ? (r.f.topic || 'Other') : (r.f.actual_schedule || 'unknown'); }
+  function drawGroups(rows) {
+    var box = document.getElementById('groups'); box.textContent = '';
+    var by = {}; rows.forEach(function (r) { (by[groupKey(r)] = by[groupKey(r)] || []).push(r); });
+    Object.keys(by).sort().forEach(function (k) {
+      var g = by[k], fresh = g.filter(function (r) { return r.state === 'fresh'; }).length, files = 0, bytes = 0;
+      g.forEach(function (r) { files += (r.f.files_data || 0) + (r.f.files_vault || 0); bytes += (r.f.bytes_data || 0) + (r.f.bytes_vault || 0); });
+      var sec = el('section', null, 'st-group'); sec.appendChild(el('h3', k));
+      sec.appendChild(el('p', g.length + (g.length === 1 ? ' feed, ' : ' feeds, ') + fresh + ' fresh; ' + files + ' files, ' + human(bytes) + '.', 'st-note'));
+      var wrap = el('div', null, 'scroll'), tbl = el('table'), th = el('thead'), tr0 = el('tr');
+      ['Feed', 'Card says', 'Really collected', 'Hours since read', 'State', 'Files data/vault', 'Items', 'Written last run'].forEach(function (h, i) { tr0.appendChild(el('th', h, i === 1 || i === 2 || i > 4 ? 'hide-s' : '')); });
+      th.appendChild(tr0); tbl.appendChild(th); var tb = el('tbody');
+      g.sort(function (a, b) { return ORDER.indexOf(a.state) - ORDER.indexOf(b.state) || String(a.s.title).localeCompare(String(b.s.title)); });
+      g.forEach(function (r) {
+        var tr = el('tr'); var t = td(tr, ''); var a = el('a', r.s.title); a.href = '/sources/' + encodeURIComponent(r.s.id) + '/'; t.appendChild(a);
+        td(tr, r.f.card_cadence || r.s.cadence || '', 'hide-s');
+        td(tr, r.f.actual_schedule || '', 'hide-s');
+        td(tr, r.age == null ? '-' : r.age.toFixed(1), 'num');
+        chip(td(tr, ''), r.state, CLS[r.state]);
+        td(tr, (r.f.files_data != null ? r.f.files_data + ' / ' + (r.f.files_vault || 0) : '-'), 'num hide-s');
+        td(tr, r.f.items == null ? '-' : r.f.items.toLocaleString('en-GB'), 'num hide-s');
+        td(tr, r.f.last_run_files_added != null ? (r.f.last_run_files_added + r.f.last_run_files_changed) + ' (' + r.f.last_run_files_added + ' new)' : '-', 'num hide-s');
+        tb.appendChild(tr);
+      });
+      tbl.appendChild(tb); wrap.appendChild(tbl); sec.appendChild(wrap); box.appendChild(sec);
+    });
+  }
+  function drawFeeds(index) {
+    INDEX = index; var rows = rowsOf(index);
     var count = {}; rows.forEach(function (r) { count[r.state] = (count[r.state] || 0) + 1; });
     var n = rows.length, fresh = count.fresh || 0, bad = count['source problem'] || 0;
     var late = (count.late || 0) + (count.stale || 0) + (count['no read'] || 0);
@@ -122,18 +171,11 @@ td.num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-n
       var seg = el('span', null, 'st-bg ' + CLS[k]); seg.style.flex = count[k] + ' 0 0'; strip.appendChild(seg);
       var li = el('li'); var dot = el('span', null, 'st-dot st-bg ' + CLS[k]); li.appendChild(dot); li.appendChild(document.createTextNode(count[k] + ' ' + k)); legend.appendChild(li); } });
     strip.setAttribute('aria-label', 'Feeds by state: ' + parts.join(', '));
-    rows.sort(function (a, b) { return ORDER.indexOf(a.state) - ORDER.indexOf(b.state) || String(a.s.title).localeCompare(String(b.s.title)); });
-    var tb = document.querySelector('#feeds tbody'); tb.textContent = '';
-    rows.forEach(function (r) {
-      var tr = el('tr');
-      var t = td(tr, ''); var a = el('a', r.s.title); a.href = '/sources/' + encodeURIComponent(r.s.id) + '/'; t.appendChild(a);
-      td(tr, r.s.cadence || '', 'hide-s');
-      td(tr, r.age == null ? '-' : r.age.toFixed(1), 'num');
-      chip(td(tr, ''), r.state, CLS[r.state]);
-      td(tr, r.s.headline || '', 'hide-s');
-      tb.appendChild(tr);
-    });
+    drawScale(rows); drawGroups(rows);
   }
+  function setMode(m) { MODE = m; document.getElementById('by-topic').setAttribute('aria-pressed', String(m === 'topic')); document.getElementById('by-schedule').setAttribute('aria-pressed', String(m === 'schedule')); if (INDEX) drawGroups(rowsOf(INDEX)); }
+  document.getElementById('by-topic').addEventListener('click', function () { setMode('topic'); });
+  document.getElementById('by-schedule').addEventListener('click', function () { setMode('schedule'); });
 
   function siteUrl(h) { return h.indexOf('.') >= 0 ? 'https://' + h.split('/')[0] + '/' + (h.split('/')[1] ? 'api/v1/' : '') + 'version.json' : 'https://' + h + '.promptugal.news/version.json'; }
   function siteName(h) { return h.indexOf('.') >= 0 ? h.split('/')[0] : h + '.promptugal.news'; }
@@ -151,7 +193,11 @@ td.num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-n
     });
   }
 
-  get('/api/v1/index.json').then(drawFeeds).catch(function () {
+  Promise.all([get('/api/v1/index.json'), get('/status/files.json').catch(function () { return null; })]).then(function (r) {
+    if (r[1]) { r[1].sources.forEach(function (f) { FILES[f.id] = f; }); document.getElementById('files-at').textContent = fmt(r[1].generated_utc) + ' UTC, after the collection at ' + r[1].last_collection_commit; }
+    else { document.getElementById('files-at').textContent = 'file counts not available'; }
+    drawFeeds(r[0]);
+  }).catch(function () {
     var e = document.getElementById('st-err'); e.hidden = false; e.textContent = 'The catalogue /api/v1/index.json did not load, so the feed list is empty. Try again in a minute.';
     document.getElementById('take').textContent = 'No feed data.';
   });
