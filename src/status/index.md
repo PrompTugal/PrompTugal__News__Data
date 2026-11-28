@@ -9,7 +9,7 @@ Every feed on data.promptugal.news with the time it was last read and whether it
 
 ## Feedback
 
-Private feedback goes through the site's own lane, Talk to us: https://promptugal.news/talk/ (sign-in needed). Say it is about /status/.
+Feedback: message the data agent's session directly. The site's private feedback page is not working yet, so there is no link.
 
 ---
 
