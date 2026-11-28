@@ -1,12 +1,12 @@
 {
  "about": "The places with an events file, how many events each holds, and whether any source covers it.",
- "read_at": "2026-11-27T18:12:46Z",
- "source_read_at": "2026-11-27T18:08:53Z",
+ "read_at": "2026-11-28T07:12:32Z",
+ "source_read_at": "2026-11-28T07:08:49Z",
  "by": "collect/events-by-place.mjs (code, no model; data.b@PrompTugal.dinis), from data/events-pt/latest.json",
  "places": [
   {
    "place": "faro",
-   "count": 11,
+   "count": 10,
    "covered": true
   },
   {
@@ -26,7 +26,7 @@
   },
   {
    "place": "tavira",
-   "count": 61,
+   "count": 58,
    "covered": true
   },
   {
@@ -41,7 +41,7 @@
   },
   {
    "place": "lagos",
-   "count": 68,
+   "count": 66,
    "covered": true
   },
   {
@@ -91,12 +91,12 @@
   },
   {
    "place": "lisboa",
-   "count": 475,
+   "count": 493,
    "covered": true
   },
   {
    "place": "algarve",
-   "count": 140,
+   "count": 134,
    "covered": true
   }
  ]

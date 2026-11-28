@@ -1,14 +1,14 @@
 {
  "source": "ea-flood",
  "title": "London flood warnings and Thames levels (Environment Agency)",
- "generated_utc": "2026-11-28T02:41:47Z",
+ "generated_utc": "2026-11-28T07:12:46Z",
  "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
  "schedule": {
   "card_says": "hourly",
   "really": "twice a day (07:03 and 18:03 Lisbon)"
  },
  "last_run": {
-  "at": "2026-11-27T18:04:42Z",
+  "at": "2026-11-28T07:04:23Z",
   "ok": 23,
   "failed": 0,
   "requests": [
@@ -41,7 +41,7 @@
     "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/0003/readings?latest",
     "status": 200,
     "meaning": "read",
-    "bytes": 1119,
+    "bytes": 1120,
     "changed": true
    },
    {
@@ -89,7 +89,7 @@
     "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/3400TH/readings?latest",
     "status": 200,
     "meaning": "read",
-    "bytes": 1434,
+    "bytes": 1435,
     "changed": true
    },
    {
@@ -97,7 +97,7 @@
     "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/3401TH/readings?latest",
     "status": 200,
     "meaning": "read",
-    "bytes": 1445,
+    "bytes": 1446,
     "changed": true
    },
    {
@@ -118,88 +118,282 @@
    },
    {
     "name": "rain-246424TP",
-    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/246424TP/readings?since=2026-11-26T00:00:00Z&_limit=500",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/246424TP/readings?since=2026-11-27T00:00:00Z&_limit=500",
     "status": 200,
     "meaning": "read",
-    "bytes": 61089,
+    "bytes": 45249,
     "changed": true
    },
    {
     "name": "rain-289102TP",
-    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/289102TP/readings?since=2026-11-26T00:00:00Z&_limit=500",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/289102TP/readings?since=2026-11-27T00:00:00Z&_limit=500",
     "status": 200,
     "meaning": "read",
     "bytes": 971,
-    "changed": false
+    "changed": true
    },
    {
     "name": "rain-245176TP",
-    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/245176TP/readings?since=2026-11-26T00:00:00Z&_limit=500",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/245176TP/readings?since=2026-11-27T00:00:00Z&_limit=500",
     "status": 200,
     "meaning": "read",
-    "bytes": 61089,
+    "bytes": 45249,
     "changed": true
    },
    {
     "name": "rain-287283TP",
-    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/287283TP/readings?since=2026-11-26T00:00:00Z&_limit=500",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/287283TP/readings?since=2026-11-27T00:00:00Z&_limit=500",
     "status": 200,
     "meaning": "read",
     "bytes": 971,
-    "changed": false
+    "changed": true
    },
    {
     "name": "rain-288092TP",
-    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/288092TP/readings?since=2026-11-26T00:00:00Z&_limit=500",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/288092TP/readings?since=2026-11-27T00:00:00Z&_limit=500",
     "status": 200,
     "meaning": "read",
-    "bytes": 61094,
+    "bytes": 45257,
     "changed": true
    },
    {
     "name": "rain-287946TP",
-    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/287946TP/readings?since=2026-11-26T00:00:00Z&_limit=500",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/287946TP/readings?since=2026-11-27T00:00:00Z&_limit=500",
     "status": 200,
     "meaning": "read",
-    "bytes": 61093,
+    "bytes": 45256,
     "changed": true
    },
    {
     "name": "rain-246847TP",
-    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/246847TP/readings?since=2026-11-26T00:00:00Z&_limit=500",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/246847TP/readings?since=2026-11-27T00:00:00Z&_limit=500",
     "status": 200,
     "meaning": "read",
     "bytes": 971,
-    "changed": false
+    "changed": true
    },
    {
     "name": "rain-380002TP",
-    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/380002TP/readings?since=2026-11-26T00:00:00Z&_limit=500",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/380002TP/readings?since=2026-11-27T00:00:00Z&_limit=500",
     "status": 200,
     "meaning": "read",
-    "bytes": 61089,
+    "bytes": 45249,
     "changed": true
    },
    {
     "name": "rain-239374TP",
-    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/239374TP/readings?since=2026-11-26T00:00:00Z&_limit=500",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/239374TP/readings?since=2026-11-27T00:00:00Z&_limit=500",
     "status": 200,
     "meaning": "read",
-    "bytes": 60729,
+    "bytes": 44889,
     "changed": true
    },
    {
     "name": "rain-287864TP",
-    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/287864TP/readings?since=2026-11-26T00:00:00Z&_limit=500",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/287864TP/readings?since=2026-11-27T00:00:00Z&_limit=500",
     "status": 200,
     "meaning": "read",
-    "bytes": 61091,
+    "bytes": 45251,
     "changed": true
    }
   ]
  },
  "problems": [],
  "runs": [
+  {
+   "at": "2026-11-28T07:04:23Z",
+   "ok": 23,
+   "failed": 0,
+   "requests": 23,
+   "changed_requests": [
+    "readings-0001",
+    "readings-0003",
+    "readings-0006",
+    "readings-0007",
+    "readings-0009",
+    "readings-3104TH",
+    "readings-3400TH",
+    "readings-3401TH",
+    "readings-3404TH",
+    "rain-246424TP",
+    "rain-289102TP",
+    "rain-245176TP",
+    "rain-287283TP",
+    "rain-288092TP",
+    "rain-287946TP",
+    "rain-246847TP",
+    "rain-380002TP",
+    "rain-239374TP",
+    "rain-287864TP"
+   ],
+   "requests_detail": [
+    {
+     "name": "floods",
+     "status": 200,
+     "bytes": 835,
+     "sha256_prefix": "4b57eeae23d652ec",
+     "changed": false
+    },
+    {
+     "name": "stations",
+     "status": 200,
+     "bytes": 99748,
+     "sha256_prefix": "5fce9b4bcac33fd5",
+     "changed": false
+    },
+    {
+     "name": "readings-0001",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "a2f1849d41c622d3",
+     "changed": true
+    },
+    {
+     "name": "readings-0003",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "e9448e08ffc72f5f",
+     "changed": true
+    },
+    {
+     "name": "readings-0006",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "20deeb6917d94eef",
+     "changed": true
+    },
+    {
+     "name": "readings-0007",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "0de22ab02875282c",
+     "changed": true
+    },
+    {
+     "name": "readings-0009",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "19df51505b6efc26",
+     "changed": true
+    },
+    {
+     "name": "readings-0010",
+     "status": 200,
+     "bytes": 795,
+     "sha256_prefix": "d8f0dfc44f264c31",
+     "changed": false
+    },
+    {
+     "name": "readings-3104TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "ed60907fbb292633",
+     "changed": true
+    },
+    {
+     "name": "readings-3400TH",
+     "status": 200,
+     "bytes": 1435,
+     "sha256_prefix": "beb0fcf9f262a052",
+     "changed": true
+    },
+    {
+     "name": "readings-3401TH",
+     "status": 200,
+     "bytes": 1446,
+     "sha256_prefix": "6e7fb7f3d5a8ccca",
+     "changed": true
+    },
+    {
+     "name": "readings-3404TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "f53c75947070a93f",
+     "changed": true
+    },
+    {
+     "name": "rain-stations",
+     "status": 200,
+     "bytes": 10264,
+     "sha256_prefix": "53899def93f61725",
+     "changed": false
+    },
+    {
+     "name": "rain-246424TP",
+     "status": 200,
+     "bytes": 45249,
+     "sha256_prefix": "6540f45149c76fb5",
+     "changed": true
+    },
+    {
+     "name": "rain-289102TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "368b400afde86785",
+     "changed": true
+    },
+    {
+     "name": "rain-245176TP",
+     "status": 200,
+     "bytes": 45249,
+     "sha256_prefix": "99f9cf019243d9b2",
+     "changed": true
+    },
+    {
+     "name": "rain-287283TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "d5cec7be29300e37",
+     "changed": true
+    },
+    {
+     "name": "rain-288092TP",
+     "status": 200,
+     "bytes": 45257,
+     "sha256_prefix": "610ecfac3455487e",
+     "changed": true
+    },
+    {
+     "name": "rain-287946TP",
+     "status": 200,
+     "bytes": 45256,
+     "sha256_prefix": "dd0ec4014eedcf12",
+     "changed": true
+    },
+    {
+     "name": "rain-246847TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "02b6521bb3da5b48",
+     "changed": true
+    },
+    {
+     "name": "rain-380002TP",
+     "status": 200,
+     "bytes": 45249,
+     "sha256_prefix": "bc7f2b6799935f80",
+     "changed": true
+    },
+    {
+     "name": "rain-239374TP",
+     "status": 200,
+     "bytes": 44889,
+     "sha256_prefix": "bcade11d1c892a64",
+     "changed": true
+    },
+    {
+     "name": "rain-287864TP",
+     "status": 200,
+     "bytes": 45251,
+     "sha256_prefix": "0ead4e380a2e539e",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": null,
+   "commit_url": null,
+   "compare_with_previous_run_url": null
+  },
   {
    "at": "2026-11-27T18:04:42Z",
    "ok": 23,
@@ -3850,205 +4044,14 @@
    "commit": "6ee935e",
    "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/6ee935e17d5733cf18c410ee489d74b2bee55a8c",
    "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/0796eae...6ee935e"
-  },
-  {
-   "at": "2026-11-19T05:03:55Z",
-   "ok": 23,
-   "failed": 0,
-   "requests": 23,
-   "changed_requests": [
-    "readings-0001",
-    "readings-0003",
-    "readings-0006",
-    "readings-0007",
-    "readings-0009",
-    "readings-3104TH",
-    "readings-3400TH",
-    "readings-3401TH",
-    "readings-3404TH",
-    "rain-246424TP",
-    "rain-245176TP",
-    "rain-288092TP",
-    "rain-287946TP",
-    "rain-380002TP",
-    "rain-239374TP",
-    "rain-287864TP"
-   ],
-   "requests_detail": [
-    {
-     "name": "floods",
-     "status": 200,
-     "bytes": 4463,
-     "sha256_prefix": "f3864ba6716af327",
-     "changed": false
-    },
-    {
-     "name": "stations",
-     "status": 200,
-     "bytes": 99748,
-     "sha256_prefix": "5fce9b4bcac33fd5",
-     "changed": false
-    },
-    {
-     "name": "readings-0001",
-     "status": 200,
-     "bytes": 1119,
-     "sha256_prefix": "ce5092104b6c822c",
-     "changed": true
-    },
-    {
-     "name": "readings-0003",
-     "status": 200,
-     "bytes": 1119,
-     "sha256_prefix": "5b1ddf2259dd698b",
-     "changed": true
-    },
-    {
-     "name": "readings-0006",
-     "status": 200,
-     "bytes": 1118,
-     "sha256_prefix": "486a763f3b306de1",
-     "changed": true
-    },
-    {
-     "name": "readings-0007",
-     "status": 200,
-     "bytes": 1119,
-     "sha256_prefix": "b3a6e2dd5c317dbd",
-     "changed": true
-    },
-    {
-     "name": "readings-0009",
-     "status": 200,
-     "bytes": 1119,
-     "sha256_prefix": "2a91572999cd2e59",
-     "changed": true
-    },
-    {
-     "name": "readings-0010",
-     "status": 200,
-     "bytes": 795,
-     "sha256_prefix": "d8f0dfc44f264c31",
-     "changed": false
-    },
-    {
-     "name": "readings-3104TH",
-     "status": 200,
-     "bytes": 1119,
-     "sha256_prefix": "b48c42f9c60093f1",
-     "changed": true
-    },
-    {
-     "name": "readings-3400TH",
-     "status": 200,
-     "bytes": 1436,
-     "sha256_prefix": "5d724f86bae3a3af",
-     "changed": true
-    },
-    {
-     "name": "readings-3401TH",
-     "status": 200,
-     "bytes": 1445,
-     "sha256_prefix": "9bb695a6363fc294",
-     "changed": true
-    },
-    {
-     "name": "readings-3404TH",
-     "status": 200,
-     "bytes": 1119,
-     "sha256_prefix": "30e2642c291a083d",
-     "changed": true
-    },
-    {
-     "name": "rain-stations",
-     "status": 200,
-     "bytes": 10264,
-     "sha256_prefix": "53899def93f61725",
-     "changed": false
-    },
-    {
-     "name": "rain-246424TP",
-     "status": 200,
-     "bytes": 40929,
-     "sha256_prefix": "bed11d88363e4baa",
-     "changed": true
-    },
-    {
-     "name": "rain-289102TP",
-     "status": 200,
-     "bytes": 971,
-     "sha256_prefix": "8d1ba650af1f41e6",
-     "changed": false
-    },
-    {
-     "name": "rain-245176TP",
-     "status": 200,
-     "bytes": 42009,
-     "sha256_prefix": "2f583aca6da638bf",
-     "changed": true
-    },
-    {
-     "name": "rain-287283TP",
-     "status": 200,
-     "bytes": 971,
-     "sha256_prefix": "8a64a79cbccd3d8d",
-     "changed": false
-    },
-    {
-     "name": "rain-288092TP",
-     "status": 200,
-     "bytes": 42030,
-     "sha256_prefix": "6a66542ac8a125c9",
-     "changed": true
-    },
-    {
-     "name": "rain-287946TP",
-     "status": 200,
-     "bytes": 42026,
-     "sha256_prefix": "79707841bd88f6db",
-     "changed": true
-    },
-    {
-     "name": "rain-246847TP",
-     "status": 200,
-     "bytes": 971,
-     "sha256_prefix": "9fd19e86139afa03",
-     "changed": false
-    },
-    {
-     "name": "rain-380002TP",
-     "status": 200,
-     "bytes": 41289,
-     "sha256_prefix": "b16231367ec56445",
-     "changed": true
-    },
-    {
-     "name": "rain-239374TP",
-     "status": 200,
-     "bytes": 40929,
-     "sha256_prefix": "40954015d819e202",
-     "changed": true
-    },
-    {
-     "name": "rain-287864TP",
-     "status": 200,
-     "bytes": 42026,
-     "sha256_prefix": "35427448132f6fab",
-     "changed": true
-    }
-   ],
-   "failed_requests": [],
-   "commit": "0796eae",
-   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/0796eae6be936757132e432333b6c938f74ec9d7",
-   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/51d3aef...0796eae"
   }
  ],
  "copies": {
   "files_in_git_data": 3,
-  "bytes_in_git_data": 362871,
-  "files_in_vault_working_copy": 97,
-  "bytes_in_vault_working_copy": 2397395,
-  "dated_copies_in_vault": 73,
+  "bytes_in_git_data": 366618,
+  "files_in_vault_working_copy": 116,
+  "bytes_in_vault_working_copy": 2616549,
+  "dated_copies_in_vault": 92,
   "where": {
    "api_latest": "https://data.promptugal.news/api/v1/ea-flood/latest.json",
    "api_reads": "https://data.promptugal.news/api/v1/ea-flood/reads.json",
@@ -4069,12 +4072,12 @@
   "note": "Dates are the items' own dates (forecast sources hold future dates). per_day lists up to the 60 newest days. null where the items carry no date."
  },
  "cadence_advice": {
-  "line": "The data changed on 32 of 36 reads over 9 days: nearly every read finds new data, so it changes at least as often as it is read and reading more than twice a day would catch more states. Whether the pages that use it need them is for their owners to say.",
-  "basis": "suggestion derived from 36 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is hourly; runs before 21 Nov were hourly",
-  "runs_with_change": 32,
-  "runs_kept": 36,
-  "days_covered": 8.8,
-  "changes_per_day": 3.6
+  "line": "The data changed on 33 of 37 reads over 9 days: nearly every read finds new data, so it changes at least as often as it is read and reading more than twice a day would catch more states. Whether the pages that use it need them is for their owners to say.",
+  "basis": "suggestion derived from 37 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is hourly; runs before 21 Nov were hourly",
+  "runs_with_change": 33,
+  "runs_kept": 37,
+  "days_covered": 9.4,
+  "changes_per_day": 3.5
  },
  "schedule_times": {
   "tz": "Europe/Lisbon",

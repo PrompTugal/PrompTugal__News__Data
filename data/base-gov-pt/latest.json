@@ -2,23 +2,23 @@
  "shape": "2",
  "source": "base-gov-pt",
  "title": "Public contracts (Portal BASE)",
- "read_at": "2026-11-27T18:04:17Z",
+ "read_at": "2026-11-28T07:03:53Z",
  "provenance": {
   "source": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
   "page": "https://www.base.gov.pt/",
-  "read_at": "2026-11-27T18:04:17Z",
+  "read_at": "2026-11-28T07:03:53Z",
   "by": "sources/base-gov-pt/collect.mjs (code, no model; run by data@PrompTugal.dinis)",
   "terms": "IMPIC publishes these contracts as open data on dados.gov.pt with the licence \"Outra (Domínio Público)\" (other-pd, public domain); we name IMPIC and the Portal BASE as the source and link each contract's page.",
   "dataset": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
   "terms_page": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
   "how": "IMPIC's yearly file on dados.gov.pt (contratos2026.zip), stream-parsed in memory, the approach of PrompTugal__News__Civic tools/extract-base.mjs"
  },
- "about": "Public contracts published on the Portal BASE in the last 90 days (from 2026-08-29) where the contracting entity is the câmara municipal of Lisboa or of one of the Algarve's 16 municipalities (Quarteira is a parish of Loulé and has no câmara of its own). From IMPIC's open data, which is updated about weekly: a contract appears here some days after it is signed. object is cut to 200 characters. A contractor that is a company keeps its name and NIF; a contractor that looks like a natural person (its NIF, or none) is shown only as \"a natural person\", and the contract's object text is then left out. Our record, not an official one: each contract links its page on base.gov.pt.",
+ "about": "Public contracts published on the Portal BASE in the last 90 days (from 2026-08-30) where the contracting entity is the câmara municipal of Lisboa or of one of the Algarve's 16 municipalities (Quarteira is a parish of Loulé and has no câmara of its own). From IMPIC's open data, which is updated about weekly: a contract appears here some days after it is signed. object is cut to 200 characters. A contractor that is a company keeps its name and NIF; a contractor that looks like a natural person (its NIF, or none) is shown only as \"a natural person\", and the contract's object text is then left out. Our record, not an official one: each contract links its page on base.gov.pt.",
  "counts": {
-  "contracts": 1496,
+  "contracts": 1495,
   "places": 17,
   "by_place": {
-   "lisboa": 301,
+   "lisboa": 300,
    "albufeira": 87,
    "alcoutim": 15,
    "aljezur": 40,
@@ -21059,43 +21059,6 @@
      "Aquisição de serviços"
     ],
     "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15565379",
-    "license": {
-     "name": "Outra (Domínio Público)",
-     "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",
-     "id": "other-pd",
-     "holder": "IMPIC, Instituto dos Mercados Públicos, do Imobiliário e da Construção",
-     "note": "As dados.gov.pt publishes the dataset. Our record of it is CC BY 4.0."
-    },
-    "read_at": "2026-11-26T07:04:04Z"
-   },
-   {
-    "id": "15550600",
-    "place": "lisboa",
-    "object": "Aquisição de serviços de assistência técnica integral de 2 (dois) equipamentos RISO FT5230/GD733 afetos à SG",
-    "object_withheld": null,
-    "buyer_kind": "council",
-    "contracting_entity": {
-     "name": "Município de Lisboa",
-     "nif": "500051070"
-    },
-    "contractors": [
-     {
-      "kind": "company",
-      "nif": "980087783",
-      "name": "RISO IBÉRICA, SA",
-      "country": "PRT"
-     }
-    ],
-    "price_eur": 104130,
-    "base_price_eur": 104130,
-    "published": "2026-08-29",
-    "signed": "2026-08-24",
-    "decision": "2026-08-11",
-    "procedure": "Ajuste Direto Regime Geral",
-    "contract_types": [
-     "Aquisição de serviços"
-    ],
-    "url": "https://www.base.gov.pt/Base4/pt/detalhe/?type=contratos&id=15550600",
     "license": {
      "name": "Outra (Domínio Público)",
      "url": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/",

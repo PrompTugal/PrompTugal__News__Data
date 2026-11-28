@@ -1,14 +1,14 @@
 {
  "source": "social",
  "title": "Social signals: organisations' public posts, by link",
- "generated_utc": "2026-11-28T02:41:47Z",
+ "generated_utc": "2026-11-28T07:12:46Z",
  "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
  "schedule": {
   "card_says": "every 6 hours",
   "really": "twice a day (07:03 and 18:03 Lisbon)"
  },
  "last_run": {
-  "at": "2026-11-27T18:12:16Z",
+  "at": "2026-11-28T07:11:55Z",
   "ok": 5,
   "failed": 5,
   "requests": [
@@ -25,7 +25,7 @@
     "url": "https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=publico.pt&filter=posts_no_replies&limit=30",
     "status": 200,
     "meaning": "read",
-    "bytes": 76463,
+    "bytes": 76422,
     "changed": true
    },
    {
@@ -33,7 +33,7 @@
     "url": "https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=lusa.pt&filter=posts_no_replies&limit=30",
     "status": 200,
     "meaning": "read",
-    "bytes": 60630,
+    "bytes": 60408,
     "changed": true
    },
    {
@@ -42,14 +42,14 @@
     "status": 200,
     "meaning": "read",
     "bytes": 78208,
-    "changed": true
+    "changed": false
    },
    {
     "name": "bsky-feed-bsky-sapo",
     "url": "https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=sapo.pt&filter=posts_no_replies&limit=30",
     "status": 200,
     "meaning": "read",
-    "bytes": 69128,
+    "bytes": 67920,
     "changed": true
    },
    {
@@ -102,7 +102,7 @@
     403
    ],
    "plain": "refused (forbidden)",
-   "failed_in": "48 of 48 runs kept"
+   "failed_in": "49 of 49 runs kept"
   },
   {
    "request": "bsky-search-lisboa",
@@ -111,7 +111,7 @@
     403
    ],
    "plain": "refused (forbidden)",
-   "failed_in": "48 of 48 runs kept"
+   "failed_in": "49 of 49 runs kept"
   },
   {
    "request": "bsky-search-algarve",
@@ -120,7 +120,7 @@
     403
    ],
    "plain": "refused (forbidden)",
-   "failed_in": "48 of 48 runs kept"
+   "failed_in": "49 of 49 runs kept"
   },
   {
    "request": "bsky-search-startup-portugal",
@@ -129,7 +129,7 @@
     403
    ],
    "plain": "refused (forbidden)",
-   "failed_in": "48 of 48 runs kept"
+   "failed_in": "49 of 49 runs kept"
   },
   {
    "request": "bsky-search-ia-portugal",
@@ -138,10 +138,104 @@
     403
    ],
    "plain": "refused (forbidden)",
-   "failed_in": "48 of 48 runs kept"
+   "failed_in": "49 of 49 runs kept"
   }
  ],
  "runs": [
+  {
+   "at": "2026-11-28T07:11:55Z",
+   "ok": 5,
+   "failed": 5,
+   "requests": 10,
+   "changed_requests": [
+    "bsky-feed-bsky-visitportugal",
+    "bsky-feed-bsky-publico",
+    "bsky-feed-bsky-lusa",
+    "bsky-feed-bsky-sapo"
+   ],
+   "requests_detail": [
+    {
+     "name": "bsky-feed-bsky-visitportugal",
+     "status": 200,
+     "bytes": 82007,
+     "sha256_prefix": "bc66e89ee6feaa29",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-publico",
+     "status": 200,
+     "bytes": 76422,
+     "sha256_prefix": "9c4cc91c3d50287a",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-lusa",
+     "status": 200,
+     "bytes": 60408,
+     "sha256_prefix": "cb4365f83ec2fd5c",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-portugalresident",
+     "status": 200,
+     "bytes": 78208,
+     "sha256_prefix": "691b0c8057bce300",
+     "changed": false
+    },
+    {
+     "name": "bsky-feed-bsky-sapo",
+     "status": 200,
+     "bytes": 67920,
+     "sha256_prefix": "09ea0a3943550fb7",
+     "changed": true
+    },
+    {
+     "name": "bsky-search-web-summit",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-lisboa",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-algarve",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-startup-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-ia-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    }
+   ],
+   "failed_requests": [
+    "bsky-search-web-summit",
+    "bsky-search-lisboa",
+    "bsky-search-algarve",
+    "bsky-search-startup-portugal",
+    "bsky-search-ia-portugal"
+   ],
+   "commit": null,
+   "commit_url": null,
+   "compare_with_previous_run_url": null
+  },
   {
    "at": "2026-11-27T18:12:16Z",
    "ok": 5,
@@ -1900,103 +1994,11 @@
    "commit": "83b562f",
    "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
    "compare_with_previous_run_url": null
-  },
-  {
-   "at": "2026-11-18T22:24:10Z",
-   "ok": 5,
-   "failed": 5,
-   "requests": 10,
-   "changed_requests": [
-    "bsky-feed-bsky-publico",
-    "bsky-feed-bsky-portugalresident"
-   ],
-   "requests_detail": [
-    {
-     "name": "bsky-feed-bsky-visitportugal",
-     "status": 200,
-     "bytes": 80888,
-     "sha256_prefix": "9eb91a086fac7732",
-     "changed": false
-    },
-    {
-     "name": "bsky-feed-bsky-publico",
-     "status": 200,
-     "bytes": 78069,
-     "sha256_prefix": "a31eb07522e0e65b",
-     "changed": true
-    },
-    {
-     "name": "bsky-feed-bsky-lusa",
-     "status": 200,
-     "bytes": 60954,
-     "sha256_prefix": "c9ddbac592697138",
-     "changed": false
-    },
-    {
-     "name": "bsky-feed-bsky-portugalresident",
-     "status": 200,
-     "bytes": 76040,
-     "sha256_prefix": "a8dd8e5529838c47",
-     "changed": true
-    },
-    {
-     "name": "bsky-feed-bsky-sapo",
-     "status": 200,
-     "bytes": 68811,
-     "sha256_prefix": "085eb56499bd26f8",
-     "changed": false
-    },
-    {
-     "name": "bsky-search-web-summit",
-     "status": 403,
-     "bytes": 2334,
-     "sha256_prefix": "8609fbf6d2510369",
-     "changed": false
-    },
-    {
-     "name": "bsky-search-lisboa",
-     "status": 403,
-     "bytes": 2334,
-     "sha256_prefix": "8609fbf6d2510369",
-     "changed": false
-    },
-    {
-     "name": "bsky-search-algarve",
-     "status": 403,
-     "bytes": 2334,
-     "sha256_prefix": "8609fbf6d2510369",
-     "changed": false
-    },
-    {
-     "name": "bsky-search-startup-portugal",
-     "status": 403,
-     "bytes": 2334,
-     "sha256_prefix": "8609fbf6d2510369",
-     "changed": false
-    },
-    {
-     "name": "bsky-search-ia-portugal",
-     "status": 403,
-     "bytes": 2334,
-     "sha256_prefix": "8609fbf6d2510369",
-     "changed": false
-    }
-   ],
-   "failed_requests": [
-    "bsky-search-web-summit",
-    "bsky-search-lisboa",
-    "bsky-search-algarve",
-    "bsky-search-startup-portugal",
-    "bsky-search-ia-portugal"
-   ],
-   "commit": "83b562f",
-   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
-   "compare_with_previous_run_url": null
   }
  ],
  "copies": {
   "files_in_git_data": 23,
-  "bytes_in_git_data": 344528,
+  "bytes_in_git_data": 350882,
   "files_in_vault_working_copy": 0,
   "bytes_in_vault_working_copy": 0,
   "dated_copies_in_vault": 0,
@@ -2013,7 +2015,7 @@
   "items": 145,
   "noun": "posts",
   "earliest": "2026-10-29",
-  "latest": "2026-11-27",
+  "latest": "2026-11-28",
   "date_field": "posted_at",
   "per_day": [
    {
@@ -2098,23 +2100,27 @@
    },
    {
     "date": "2026-11-26",
-    "count": 22
+    "count": 14
    },
    {
     "date": "2026-11-27",
-    "count": 100
+    "count": 103
+   },
+   {
+    "date": "2026-11-28",
+    "count": 5
    }
   ],
   "from": "data/social/latest.json list \"posts\"",
   "note": "Dates are the items' own dates (forecast sources hold future dates). per_day lists up to the 60 newest days. null where the items carry no date."
  },
  "cadence_advice": {
-  "line": "The data changed on 38 of 48 reads over 9 days, about 4.2 times a day (earlier runs were hourly): reading more than twice a day would catch more states. Whether the pages that use it need them is for their owners to say.",
-  "basis": "suggestion derived from 48 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is every 6 hours; runs before 21 Nov were hourly",
-  "runs_with_change": 38,
-  "runs_kept": 48,
-  "days_covered": 9.1,
-  "changes_per_day": 4.2
+  "line": "The data changed on 39 of 49 reads over 10 days, about 4.0 times a day (earlier runs were hourly): reading more than twice a day would catch more states. Whether the pages that use it need them is for their owners to say.",
+  "basis": "suggestion derived from 49 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is every 6 hours; runs before 21 Nov were hourly",
+  "runs_with_change": 39,
+  "runs_kept": 49,
+  "days_covered": 9.7,
+  "changes_per_day": 4.0
  },
  "schedule_times": {
   "tz": "Europe/Lisbon",

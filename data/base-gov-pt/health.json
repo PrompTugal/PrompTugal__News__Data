@@ -1,14 +1,14 @@
 {
  "source": "base-gov-pt",
  "title": "Public contracts (Portal BASE)",
- "generated_utc": "2026-11-28T02:41:47Z",
+ "generated_utc": "2026-11-28T07:12:45Z",
  "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
  "schedule": {
   "card_says": "every 6 hours",
   "really": "twice a day (07:03 and 18:03 Lisbon)"
  },
  "last_run": {
-  "at": "2026-11-27T18:04:17Z",
+  "at": "2026-11-28T07:03:53Z",
   "ok": 1,
   "failed": 0,
   "requests": [
@@ -17,13 +17,35 @@
     "url": "https://dados.gov.pt/api/1/datasets/66d72d488ca4b7cb2de28712/",
     "status": 200,
     "meaning": "read",
-    "bytes": 45961,
+    "bytes": 46011,
     "changed": true
    }
   ]
  },
  "problems": [],
  "runs": [
+  {
+   "at": "2026-11-28T07:03:53Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "dataset"
+   ],
+   "requests_detail": [
+    {
+     "name": "dataset",
+     "status": 200,
+     "bytes": 46011,
+     "sha256_prefix": "d70b5d1a1779d810",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": null,
+   "commit_url": null,
+   "compare_with_previous_run_url": null
+  },
   {
    "at": "2026-11-27T18:04:17Z",
    "ok": 1,
@@ -440,33 +462,11 @@
    "commit": "83b562f",
    "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
    "compare_with_previous_run_url": null
-  },
-  {
-   "at": "2026-11-18T22:20:34Z",
-   "ok": 1,
-   "failed": 0,
-   "requests": 1,
-   "changed_requests": [
-    "dataset"
-   ],
-   "requests_detail": [
-    {
-     "name": "dataset",
-     "status": 200,
-     "bytes": 45931,
-     "sha256_prefix": "fa844bedd9a82ab0",
-     "changed": true
-    }
-   ],
-   "failed_requests": [],
-   "commit": "83b562f",
-   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
-   "compare_with_previous_run_url": null
   }
  ],
  "copies": {
   "files_in_git_data": 3,
-  "bytes_in_git_data": 1850147,
+  "bytes_in_git_data": 1849673,
   "files_in_vault_working_copy": 0,
   "bytes_in_vault_working_copy": 0,
   "dated_copies_in_vault": 0,
@@ -480,7 +480,7 @@
   "note": "collect/lib.mjs says vaults/ is meant to stay out of git, but 0 files of this source are tracked in git today (earlier commits); the sgit vault holds the full history. Dinis has not yet ruled on the vaults/ question."
  },
  "held": {
-  "items": 1496,
+  "items": 1495,
   "noun": "public contracts",
   "earliest": null,
   "latest": null,
@@ -490,11 +490,11 @@
   "note": "Dates are the items' own dates (forecast sources hold future dates). per_day lists up to the 60 newest days. null where the items carry no date."
  },
  "cadence_advice": {
-  "line": "The data changed on 25 of 40 reads over 9 days, about 2.7 times a day: twice a day fits.",
-  "basis": "suggestion derived from 40 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is every 6 hours; runs before 21 Nov were hourly",
-  "runs_with_change": 25,
-  "runs_kept": 40,
-  "days_covered": 9.1,
+  "line": "The data changed on 26 of 41 reads over 10 days, about 2.7 times a day: twice a day fits.",
+  "basis": "suggestion derived from 41 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is every 6 hours; runs before 21 Nov were hourly",
+  "runs_with_change": 26,
+  "runs_kept": 41,
+  "days_covered": 9.6,
   "changes_per_day": 2.7
  },
  "schedule_times": {

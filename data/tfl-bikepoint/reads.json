@@ -3,6 +3,23 @@
  "source": "tfl-bikepoint",
  "runs": [
   {
+   "at": "2026-11-28T07:12:20Z",
+   "finished": "2026-11-28T07:12:22Z",
+   "ok": 1,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "bikepoint",
+     "url": "https://api.tfl.gov.uk/BikePoint",
+     "at": "2026-11-28T07:12:22Z",
+     "status": 200,
+     "bytes": 2172315,
+     "sha256_prefix": "fe702fc3aad4ef9a",
+     "changed": true
+    }
+   ]
+  },
+  {
    "at": "2026-11-27T07:14:48Z",
    "finished": "2026-11-27T07:14:51Z",
    "ok": 1,

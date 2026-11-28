@@ -3,6 +3,23 @@
  "source": "youtube-replays",
  "runs": [
   {
+   "at": "2026-11-28T07:12:30Z",
+   "finished": "2026-11-28T07:12:32Z",
+   "ok": 0,
+   "failed": 1,
+   "reads": [
+    {
+     "name": "channel",
+     "url": "https://www.googleapis.com/youtube/v3/channels?(channels.list, 1 unit)",
+     "at": "2026-11-28T07:12:32Z",
+     "status": 403,
+     "bytes": 694,
+     "sha256_prefix": "c69c9afb916f71ea",
+     "changed": false
+    }
+   ]
+  },
+  {
    "at": "2026-11-27T18:12:43Z",
    "finished": "2026-11-27T18:12:46Z",
    "ok": 0,

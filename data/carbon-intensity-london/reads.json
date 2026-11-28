@@ -3,6 +3,32 @@
  "source": "carbon-intensity-london",
  "runs": [
   {
+   "at": "2026-11-28T07:04:01Z",
+   "finished": "2026-11-28T07:04:06Z",
+   "ok": 2,
+   "failed": 0,
+   "reads": [
+    {
+     "name": "now",
+     "url": "https://api.carbonintensity.org.uk/regional/regionid/13",
+     "at": "2026-11-28T07:04:02Z",
+     "status": 200,
+     "bytes": 445,
+     "sha256_prefix": "8e0840becbe4e184",
+     "changed": true
+    },
+    {
+     "name": "forecast-48h",
+     "url": "https://api.carbonintensity.org.uk/regional/intensity/2026-11-28T07:00Z/fw48h/regionid/13",
+     "at": "2026-11-28T07:04:05Z",
+     "status": 200,
+     "bytes": 35903,
+     "sha256_prefix": "3c8f2700b69b5618",
+     "changed": true
+    }
+   ]
+  },
+  {
    "at": "2026-11-27T07:04:26Z",
    "finished": "2026-11-27T07:04:32Z",
    "ok": 2,

@@ -1,14 +1,14 @@
 {
  "source": "youtube-replays",
  "title": "Web Summit 2026 replays on YouTube",
- "generated_utc": "2026-11-28T02:41:47Z",
+ "generated_utc": "2026-11-28T07:12:46Z",
  "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
  "schedule": {
   "card_says": "every 6 hours",
   "really": "twice a day (07:03 and 18:03 Lisbon)"
  },
  "last_run": {
-  "at": "2026-11-27T18:12:43Z",
+  "at": "2026-11-28T07:12:30Z",
   "ok": 0,
   "failed": 1,
   "requests": [
@@ -30,10 +30,32 @@
     403
    ],
    "plain": "refused (forbidden)",
-   "failed_in": "8 of 14 runs kept"
+   "failed_in": "9 of 15 runs kept"
   }
  ],
  "runs": [
+  {
+   "at": "2026-11-28T07:12:30Z",
+   "ok": 0,
+   "failed": 1,
+   "requests": 1,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "channel",
+     "status": 403,
+     "bytes": 694,
+     "sha256_prefix": "c69c9afb916f71ea",
+     "changed": false
+    }
+   ],
+   "failed_requests": [
+    "channel"
+   ],
+   "commit": null,
+   "commit_url": null,
+   "compare_with_previous_run_url": null
+  },
   {
    "at": "2026-11-27T18:12:43Z",
    "ok": 0,
@@ -432,7 +454,7 @@
  ],
  "copies": {
   "files_in_git_data": 3,
-  "bytes_in_git_data": 27656,
+  "bytes_in_git_data": 28625,
   "files_in_vault_working_copy": 0,
   "bytes_in_vault_working_copy": 0,
   "dated_copies_in_vault": 0,
@@ -473,11 +495,11 @@
   "note": "Dates are the items' own dates (forecast sources hold future dates). per_day lists up to the 60 newest days. null where the items carry no date."
  },
  "cadence_advice": {
-  "line": "The data changed on 7 of 14 reads over 9 days, about 0.8 times a day: twice a day is more than needed, once a day would lose little.",
-  "basis": "suggestion derived from 14 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is every 6 hours; runs before 21 Nov were hourly",
+  "line": "The data changed on 7 of 15 reads over 9 days, about 0.8 times a day: twice a day is more than needed, once a day would lose little.",
+  "basis": "suggestion derived from 15 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is every 6 hours; runs before 21 Nov were hourly",
   "runs_with_change": 7,
-  "runs_kept": 14,
-  "days_covered": 8.7,
+  "runs_kept": 15,
+  "days_covered": 9.3,
   "changes_per_day": 0.8
  },
  "schedule_times": {

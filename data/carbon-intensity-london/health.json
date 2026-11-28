@@ -1,14 +1,14 @@
 {
  "source": "carbon-intensity-london",
  "title": "London's electricity carbon intensity (NESO)",
- "generated_utc": "2026-11-28T02:41:47Z",
+ "generated_utc": "2026-11-28T07:12:45Z",
  "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
  "schedule": {
   "card_says": "daily",
   "really": "once a day (07:03 Lisbon)"
  },
  "last_run": {
-  "at": "2026-11-27T07:04:26Z",
+  "at": "2026-11-28T07:04:01Z",
   "ok": 2,
   "failed": 0,
   "requests": [
@@ -17,21 +17,51 @@
     "url": "https://api.carbonintensity.org.uk/regional/regionid/13",
     "status": 200,
     "meaning": "read",
-    "bytes": 451,
+    "bytes": 445,
     "changed": true
    },
    {
     "name": "forecast-48h",
-    "url": "https://api.carbonintensity.org.uk/regional/intensity/2026-11-27T07:00Z/fw48h/regionid/13",
+    "url": "https://api.carbonintensity.org.uk/regional/intensity/2026-11-28T07:00Z/fw48h/regionid/13",
     "status": 200,
     "meaning": "read",
-    "bytes": 27019,
+    "bytes": 35903,
     "changed": true
    }
   ]
  },
  "problems": [],
  "runs": [
+  {
+   "at": "2026-11-28T07:04:01Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "now",
+    "forecast-48h"
+   ],
+   "requests_detail": [
+    {
+     "name": "now",
+     "status": 200,
+     "bytes": 445,
+     "sha256_prefix": "8e0840becbe4e184",
+     "changed": true
+    },
+    {
+     "name": "forecast-48h",
+     "status": 200,
+     "bytes": 35903,
+     "sha256_prefix": "3c8f2700b69b5618",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": null,
+   "commit_url": null,
+   "compare_with_previous_run_url": null
+  },
   {
    "at": "2026-11-27T07:04:26Z",
    "ok": 2,
@@ -122,10 +152,10 @@
  ],
  "copies": {
   "files_in_git_data": 3,
-  "bytes_in_git_data": 30876,
-  "files_in_vault_working_copy": 7,
-  "bytes_in_vault_working_copy": 92069,
-  "dated_copies_in_vault": 4,
+  "bytes_in_git_data": 39229,
+  "files_in_vault_working_copy": 9,
+  "bytes_in_vault_working_copy": 137295,
+  "dated_copies_in_vault": 6,
   "where": {
    "api_latest": "https://data.promptugal.news/api/v1/carbon-intensity-london/latest.json",
    "api_reads": "https://data.promptugal.news/api/v1/carbon-intensity-london/reads.json",
@@ -136,19 +166,23 @@
   "note": "collect/lib.mjs says vaults/ is meant to stay out of git, but 0 files of this source are tracked in git today (earlier commits); the sgit vault holds the full history. Dinis has not yet ruled on the vaults/ question."
  },
  "held": {
-  "items": 73,
+  "items": 97,
   "noun": "half-hour forecast points",
-  "earliest": "2026-11-27",
-  "latest": "2026-11-28",
+  "earliest": "2026-11-28",
+  "latest": "2026-11-30",
   "date_field": "from",
   "per_day": [
    {
-    "date": "2026-11-27",
+    "date": "2026-11-28",
     "count": 35
    },
    {
-    "date": "2026-11-28",
-    "count": 38
+    "date": "2026-11-29",
+    "count": 48
+   },
+   {
+    "date": "2026-11-30",
+    "count": 14
    }
   ],
   "from": "data/carbon-intensity-london/latest.json list \"forecast\"",

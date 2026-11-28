@@ -1,14 +1,14 @@
 {
  "source": "ea-thames-tide",
  "title": "The tidal Thames through London (Environment Agency)",
- "generated_utc": "2026-11-28T02:41:47Z",
+ "generated_utc": "2026-11-28T07:12:46Z",
  "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
  "schedule": {
   "card_says": "daily",
   "really": "once a day (07:03 Lisbon)"
  },
  "last_run": {
-  "at": "2026-11-27T07:06:16Z",
+  "at": "2026-11-28T07:05:53Z",
   "ok": 7,
   "failed": 0,
   "requests": [
@@ -17,7 +17,7 @@
     "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/0009/readings?_sorted&_limit=96",
     "status": 200,
     "meaning": "read",
-    "bytes": 32173,
+    "bytes": 32172,
     "changed": true
    },
    {
@@ -33,7 +33,7 @@
     "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/0006/readings?_sorted&_limit=96",
     "status": 200,
     "meaning": "read",
-    "bytes": 32171,
+    "bytes": 32187,
     "changed": true
    },
    {
@@ -41,7 +41,7 @@
     "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/0007/readings?_sorted&_limit=96",
     "status": 200,
     "meaning": "read",
-    "bytes": 32183,
+    "bytes": 32184,
     "changed": true
    },
    {
@@ -49,7 +49,7 @@
     "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/0001/readings?_sorted&_limit=96",
     "status": 200,
     "meaning": "read",
-    "bytes": 32185,
+    "bytes": 32189,
     "changed": true
    },
    {
@@ -57,7 +57,7 @@
     "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/0003/readings?_sorted&_limit=96",
     "status": 200,
     "meaning": "read",
-    "bytes": 32186,
+    "bytes": 32187,
     "changed": true
    },
    {
@@ -72,6 +72,74 @@
  },
  "problems": [],
  "runs": [
+  {
+   "at": "2026-11-28T07:05:53Z",
+   "ok": 7,
+   "failed": 0,
+   "requests": 7,
+   "changed_requests": [
+    "gauge-0009",
+    "gauge-0006",
+    "gauge-0007",
+    "gauge-0001",
+    "gauge-0003"
+   ],
+   "requests_detail": [
+    {
+     "name": "gauge-0009",
+     "status": 200,
+     "bytes": 32172,
+     "sha256_prefix": "4104f7142e07a8ba",
+     "changed": true
+    },
+    {
+     "name": "gauge-0010",
+     "status": 200,
+     "bytes": 858,
+     "sha256_prefix": "6e5f514c83252666",
+     "changed": false
+    },
+    {
+     "name": "gauge-0006",
+     "status": 200,
+     "bytes": 32187,
+     "sha256_prefix": "fbeb5419dfa8680d",
+     "changed": true
+    },
+    {
+     "name": "gauge-0007",
+     "status": 200,
+     "bytes": 32184,
+     "sha256_prefix": "20c10cff7a1cf8c3",
+     "changed": true
+    },
+    {
+     "name": "gauge-0001",
+     "status": 200,
+     "bytes": 32189,
+     "sha256_prefix": "85f165bda04bee99",
+     "changed": true
+    },
+    {
+     "name": "gauge-0003",
+     "status": 200,
+     "bytes": 32187,
+     "sha256_prefix": "c99535a295969dfb",
+     "changed": true
+    },
+    {
+     "name": "gauge-0018",
+     "status": 200,
+     "bytes": 858,
+     "sha256_prefix": "349d476aedd5cd00",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": null,
+   "commit_url": null,
+   "compare_with_previous_run_url": null
+  },
   {
    "at": "2026-11-27T07:06:16Z",
    "ok": 7,
@@ -273,10 +341,10 @@
  ],
  "copies": {
   "files_in_git_data": 3,
-  "bytes_in_git_data": 49774,
-  "files_in_vault_working_copy": 18,
-  "bytes_in_vault_working_copy": 487193,
-  "dated_copies_in_vault": 10,
+  "bytes_in_git_data": 52278,
+  "files_in_vault_working_copy": 23,
+  "bytes_in_vault_working_copy": 648133,
+  "dated_copies_in_vault": 15,
   "where": {
    "api_latest": "https://data.promptugal.news/api/v1/ea-thames-tide/latest.json",
    "api_reads": "https://data.promptugal.news/api/v1/ea-thames-tide/reads.json",

@@ -1,14 +1,14 @@
 {
  "source": "adsb-faro",
  "title": "Flights around Faro airport",
- "generated_utc": "2026-11-28T02:41:47Z",
+ "generated_utc": "2026-11-28T07:12:45Z",
  "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
  "schedule": {
   "card_says": "hourly",
   "really": "twice a day (07:03 and 18:03 Lisbon)"
  },
  "last_run": {
-  "at": "2026-11-27T18:04:17Z",
+  "at": "2026-11-28T07:03:52Z",
   "ok": 1,
   "failed": 0,
   "requests": [
@@ -17,7 +17,7 @@
     "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
     "status": 200,
     "meaning": "read",
-    "bytes": 2127,
+    "bytes": 2237,
     "changed": true
    }
   ]
@@ -30,10 +30,32 @@
     429
    ],
    "plain": "refused (rate limited)",
-   "failed_in": "5 of 92 runs kept"
+   "failed_in": "5 of 93 runs kept"
   }
  ],
  "runs": [
+  {
+   "at": "2026-11-28T07:03:52Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "point-lpfr"
+   ],
+   "requests_detail": [
+    {
+     "name": "point-lpfr",
+     "status": 200,
+     "bytes": 2237,
+     "sha256_prefix": "44df41e365791b82",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": null,
+   "commit_url": null,
+   "compare_with_previous_run_url": null
+  },
   {
    "at": "2026-11-27T18:04:17Z",
    "ok": 1,
@@ -457,33 +479,11 @@
    "commit": "6ee935e",
    "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/6ee935e17d5733cf18c410ee489d74b2bee55a8c",
    "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/0796eae...6ee935e"
-  },
-  {
-   "at": "2026-11-19T05:03:49Z",
-   "ok": 1,
-   "failed": 0,
-   "requests": 1,
-   "changed_requests": [
-    "point-lpfr"
-   ],
-   "requests_detail": [
-    {
-     "name": "point-lpfr",
-     "status": 200,
-     "bytes": 101,
-     "sha256_prefix": "6e4b0b73ba4ee152",
-     "changed": true
-    }
-   ],
-   "failed_requests": [],
-   "commit": "0796eae",
-   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/0796eae6be936757132e432333b6c938f74ec9d7",
-   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/51d3aef...0796eae"
   }
  ],
  "copies": {
   "files_in_git_data": 3,
-  "bytes_in_git_data": 50888,
+  "bytes_in_git_data": 51572,
   "files_in_vault_working_copy": 0,
   "bytes_in_vault_working_copy": 0,
   "dated_copies_in_vault": 0,
@@ -507,12 +507,12 @@
   "note": "Dates are the items' own dates (forecast sources hold future dates). per_day lists up to the 60 newest days. null where the items carry no date."
  },
  "cadence_advice": {
-  "line": "The data changed on 89 of 92 reads over 10 days: nearly every read finds new data, so it changes at least as often as it is read and reading more than twice a day would catch more states. Whether the pages that use it need them is for their owners to say.",
-  "basis": "suggestion derived from 92 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is hourly; runs before 21 Nov were hourly",
-  "runs_with_change": 89,
-  "runs_kept": 92,
-  "days_covered": 9.9,
-  "changes_per_day": 9.0
+  "line": "The data changed on 90 of 93 reads over 10 days: nearly every read finds new data, so it changes at least as often as it is read and reading more than twice a day would catch more states. Whether the pages that use it need them is for their owners to say.",
+  "basis": "suggestion derived from 93 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is hourly; runs before 21 Nov were hourly",
+  "runs_with_change": 90,
+  "runs_kept": 93,
+  "days_covered": 10.5,
+  "changes_per_day": 8.6
  },
  "schedule_times": {
   "tz": "Europe/Lisbon",

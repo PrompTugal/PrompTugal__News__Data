@@ -1,29 +1,51 @@
 {
  "source": "nvd-cve",
  "title": "CVEs published or modified in the last 24 hours (NVD)",
- "generated_utc": "2026-11-28T02:41:47Z",
+ "generated_utc": "2026-11-28T07:12:46Z",
  "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
  "schedule": {
   "card_says": "every 6 hours",
   "really": "twice a day (07:03 and 18:03 Lisbon)"
  },
  "last_run": {
-  "at": "2026-11-27T18:12:07Z",
+  "at": "2026-11-28T07:11:39Z",
   "ok": 1,
   "failed": 0,
   "requests": [
    {
     "name": "modified-0",
-    "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?lastModStartDate=2026-11-26T00:00:00.000&lastModEndDate=2026-11-27T18:12:07.000&resultsPerPage=2000&startIndex=0",
+    "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?lastModStartDate=2026-11-27T00:00:00.000&lastModEndDate=2026-11-28T07:11:39.000&resultsPerPage=2000&startIndex=0",
     "status": 200,
     "meaning": "read",
-    "bytes": 9878716,
+    "bytes": 2802578,
     "changed": true
    }
   ]
  },
  "problems": [],
  "runs": [
+  {
+   "at": "2026-11-28T07:11:39Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "modified-0"
+   ],
+   "requests_detail": [
+    {
+     "name": "modified-0",
+     "status": 200,
+     "bytes": 2802578,
+     "sha256_prefix": "950113211e648cea",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": null,
+   "commit_url": null,
+   "compare_with_previous_run_url": null
+  },
   {
    "at": "2026-11-27T18:12:07Z",
    "ok": 1,
@@ -568,52 +590,14 @@
    "commit": "83b562f",
    "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
    "compare_with_previous_run_url": null
-  },
-  {
-   "at": "2026-11-18T22:10:04Z",
-   "ok": 3,
-   "failed": 0,
-   "requests": 3,
-   "changed_requests": [
-    "modified-0",
-    "modified-1",
-    "published-0"
-   ],
-   "requests_detail": [
-    {
-     "name": "modified-0",
-     "status": 200,
-     "bytes": 6405486,
-     "sha256_prefix": "69e95770ce94d242",
-     "changed": true
-    },
-    {
-     "name": "modified-1",
-     "status": 200,
-     "bytes": 1355988,
-     "sha256_prefix": "ea3d9db1a973682c",
-     "changed": true
-    },
-    {
-     "name": "published-0",
-     "status": 200,
-     "bytes": 4930645,
-     "sha256_prefix": "8363cddccd3bd31f",
-     "changed": true
-    }
-   ],
-   "failed_requests": [],
-   "commit": "83b562f",
-   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
-   "compare_with_previous_run_url": null
   }
  ],
  "copies": {
   "files_in_git_data": 3,
-  "bytes_in_git_data": 531604,
-  "files_in_vault_working_copy": 8,
-  "bytes_in_vault_working_copy": 48916428,
-  "dated_copies_in_vault": 5,
+  "bytes_in_git_data": 440186,
+  "files_in_vault_working_copy": 9,
+  "bytes_in_vault_working_copy": 44642868,
+  "dated_copies_in_vault": 6,
   "where": {
    "api_latest": "https://data.promptugal.news/api/v1/nvd-cve/latest.json",
    "api_reads": "https://data.promptugal.news/api/v1/nvd-cve/reads.json",
@@ -624,59 +608,159 @@
   "note": "collect/lib.mjs says vaults/ is meant to stay out of git, but 0 files of this source are tracked in git today (earlier commits); the sgit vault holds the full history. Dinis has not yet ruled on the vaults/ question."
  },
  "held": {
-  "items": 743,
+  "items": 657,
   "noun": "CVEs",
   "earliest": "2018-08-06",
-  "latest": "2026-11-27",
+  "latest": "2026-11-28",
   "date_field": "published",
   "per_day": [
    {
-    "date": "2025-01-02",
+    "date": "2019-01-23",
+    "count": 4
+   },
+   {
+    "date": "2019-02-27",
     "count": 1
    },
    {
-    "date": "2025-01-14",
-    "count": 1
-   },
-   {
-    "date": "2025-01-28",
+    "date": "2019-04-10",
     "count": 2
    },
    {
-    "date": "2025-02-10",
+    "date": "2019-10-30",
     "count": 1
    },
    {
-    "date": "2025-03-18",
+    "date": "2020-01-14",
     "count": 1
+   },
+   {
+    "date": "2020-07-17",
+    "count": 5
+   },
+   {
+    "date": "2020-09-17",
+    "count": 1
+   },
+   {
+    "date": "2020-11-10",
+    "count": 1
+   },
+   {
+    "date": "2020-12-11",
+    "count": 1
+   },
+   {
+    "date": "2020-12-14",
+    "count": 2
+   },
+   {
+    "date": "2020-12-21",
+    "count": 1
+   },
+   {
+    "date": "2021-02-17",
+    "count": 2
+   },
+   {
+    "date": "2021-05-02",
+    "count": 1
+   },
+   {
+    "date": "2021-08-16",
+    "count": 1
+   },
+   {
+    "date": "2021-09-09",
+    "count": 1
+   },
+   {
+    "date": "2022-01-20",
+    "count": 1
+   },
+   {
+    "date": "2022-02-25",
+    "count": 2
+   },
+   {
+    "date": "2022-08-16",
+    "count": 1
+   },
+   {
+    "date": "2022-09-02",
+    "count": 2
+   },
+   {
+    "date": "2022-09-21",
+    "count": 2
+   },
+   {
+    "date": "2022-10-07",
+    "count": 1
+   },
+   {
+    "date": "2022-11-02",
+    "count": 2
+   },
+   {
+    "date": "2022-11-14",
+    "count": 2
+   },
+   {
+    "date": "2022-11-15",
+    "count": 1
+   },
+   {
+    "date": "2022-11-22",
+    "count": 4
+   },
+   {
+    "date": "2023-08-21",
+    "count": 2
+   },
+   {
+    "date": "2024-02-19",
+    "count": 1
+   },
+   {
+    "date": "2024-07-08",
+    "count": 2
+   },
+   {
+    "date": "2024-08-21",
+    "count": 1
+   },
+   {
+    "date": "2024-09-16",
+    "count": 1
+   },
+   {
+    "date": "2024-10-01",
+    "count": 1
+   },
+   {
+    "date": "2025-03-27",
+    "count": 2
    },
    {
     "date": "2025-05-08",
     "count": 1
    },
    {
-    "date": "2025-06-17",
-    "count": 1
-   },
-   {
-    "date": "2025-07-30",
-    "count": 1
+    "date": "2025-05-13",
+    "count": 4
    },
    {
     "date": "2025-08-05",
     "count": 1
    },
    {
-    "date": "2025-09-16",
+    "date": "2025-09-09",
     "count": 1
    },
    {
-    "date": "2025-10-23",
+    "date": "2025-09-26",
     "count": 1
-   },
-   {
-    "date": "2025-10-30",
-    "count": 3
    },
    {
     "date": "2025-12-03",
@@ -687,40 +771,16 @@
     "count": 5
    },
    {
-    "date": "2025-12-10",
-    "count": 1
-   },
-   {
     "date": "2025-12-30",
     "count": 1
    },
    {
-    "date": "2026-01-21",
+    "date": "2026-01-08",
     "count": 1
-   },
-   {
-    "date": "2026-02-02",
-    "count": 1
-   },
-   {
-    "date": "2026-02-23",
-    "count": 1
-   },
-   {
-    "date": "2026-02-27",
-    "count": 2
    },
    {
     "date": "2026-03-09",
     "count": 1
-   },
-   {
-    "date": "2026-03-17",
-    "count": 1
-   },
-   {
-    "date": "2026-04-01",
-    "count": 2
    },
    {
     "date": "2026-04-13",
@@ -731,80 +791,16 @@
     "count": 1
    },
    {
-    "date": "2026-05-05",
-    "count": 2
-   },
-   {
-    "date": "2026-05-27",
-    "count": 1
-   },
-   {
-    "date": "2026-06-01",
-    "count": 1
-   },
-   {
-    "date": "2026-06-05",
-    "count": 2
-   },
-   {
-    "date": "2026-06-09",
-    "count": 1
-   },
-   {
-    "date": "2026-07-01",
-    "count": 3
-   },
-   {
-    "date": "2026-07-30",
-    "count": 1
-   },
-   {
-    "date": "2026-07-31",
-    "count": 1
-   },
-   {
-    "date": "2026-08-05",
-    "count": 1
-   },
-   {
-    "date": "2026-08-10",
-    "count": 1
-   },
-   {
-    "date": "2026-08-11",
-    "count": 1
-   },
-   {
-    "date": "2026-08-20",
-    "count": 1
-   },
-   {
-    "date": "2026-08-27",
-    "count": 1
-   },
-   {
-    "date": "2026-09-11",
-    "count": 1
-   },
-   {
     "date": "2026-09-18",
-    "count": 3
-   },
-   {
-    "date": "2026-09-28",
     "count": 1
-   },
-   {
-    "date": "2026-10-01",
-    "count": 2
    },
    {
     "date": "2026-10-09",
     "count": 1
    },
    {
-    "date": "2026-10-12",
-    "count": 1
+    "date": "2026-10-15",
+    "count": 2
    },
    {
     "date": "2026-10-20",
@@ -812,51 +808,35 @@
    },
    {
     "date": "2026-10-22",
-    "count": 1
-   },
-   {
-    "date": "2026-11-05",
     "count": 2
    },
    {
-    "date": "2026-11-07",
-    "count": 1
-   },
-   {
-    "date": "2026-11-09",
-    "count": 1
-   },
-   {
     "date": "2026-11-10",
-    "count": 7
+    "count": 17
    },
    {
     "date": "2026-11-12",
-    "count": 4
-   },
-   {
-    "date": "2026-11-18",
     "count": 1
    },
    {
     "date": "2026-11-19",
-    "count": 8
+    "count": 6
    },
    {
     "date": "2026-11-20",
-    "count": 2
+    "count": 3
    },
    {
     "date": "2026-11-22",
-    "count": 2
+    "count": 17
    },
    {
     "date": "2026-11-23",
-    "count": 2
+    "count": 41
    },
    {
     "date": "2026-11-24",
-    "count": 30
+    "count": 63
    },
    {
     "date": "2026-11-25",
@@ -864,23 +844,27 @@
    },
    {
     "date": "2026-11-26",
-    "count": 134
+    "count": 100
    },
    {
     "date": "2026-11-27",
-    "count": 328
+    "count": 267
+   },
+   {
+    "date": "2026-11-28",
+    "count": 27
    }
   ],
   "from": "data/nvd-cve/latest.json list \"cves\"",
   "note": "Dates are the items' own dates (forecast sources hold future dates). per_day lists up to the 60 newest days. null where the items carry no date."
  },
  "cadence_advice": {
-  "line": "The data changed on 20 of 21 reads over 9 days: nearly every read finds new data, so it changes at least as often as it is read and reading more than twice a day would catch more states. Whether the pages that use it need them is for their owners to say.",
-  "basis": "suggestion derived from 21 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is every 6 hours; runs before 21 Nov were hourly",
-  "runs_with_change": 20,
-  "runs_kept": 21,
-  "days_covered": 8.9,
-  "changes_per_day": 2.3
+  "line": "The data changed on 21 of 22 reads over 9 days: nearly every read finds new data, so it changes at least as often as it is read and reading more than twice a day would catch more states. Whether the pages that use it need them is for their owners to say.",
+  "basis": "suggestion derived from 22 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is every 6 hours; runs before 21 Nov were hourly",
+  "runs_with_change": 21,
+  "runs_kept": 22,
+  "days_covered": 9.4,
+  "changes_per_day": 2.2
  },
  "schedule_times": {
   "tz": "Europe/Lisbon",

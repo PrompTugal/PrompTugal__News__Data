@@ -1,11 +1,11 @@
 {
  "source": "tfl-status",
  "title": "London line status (TfL)",
- "read_at": "2026-11-27T07:14:56Z",
+ "read_at": "2026-11-28T07:12:27Z",
  "provenance": {
   "source": "https://api.tfl.gov.uk/",
   "page": "https://api-portal.tfl.gov.uk/",
-  "read_at": "2026-11-27T07:14:56Z",
+  "read_at": "2026-11-28T07:12:27Z",
   "by": "sources/tfl-status/collect.mjs (code, no model; run by data.b@PrompTugal.dinis)",
   "terms": "TfL's Transport Data Service terms (based on the Open Government Licence v2.0 with TfL amendments): free to copy, publish, distribute, transmit and adapt the information and to exploit it commercially and non-commercially; credit \"Powered by TfL Open Data\"; at most 500 calls a minute per feed; no implied endorsement.",
   "api": "https://api.tfl.gov.uk/Line/Mode/tube,overground,elizabeth-line,dlr,tram/Status"
@@ -20,8 +20,8 @@
  "attribution": "Powered by TfL Open Data",
  "counts": {
   "lines": 20,
-  "good_service": 10,
-  "not_good": 10,
+  "good_service": 11,
+  "not_good": 9,
   "fields_dropped_wording": 0
  },
  "lines": [
@@ -45,11 +45,11 @@
    "mode": "elizabeth-line",
    "statuses": [
     {
-     "severity": 10,
-     "status": "Good Service",
-     "reason": null,
-     "from": null,
-     "to": null
+     "severity": 5,
+     "status": "Part Closure",
+     "reason": "ELIZABETH LINE: Saturday 28 and Sunday 29 November, no service between Maidenhead / Heathrow (all terminals) and Abbey Wood / Shenfield. Use PICCADILLY LINE services between Heathrow and Central London. LONDON PADDINGTON STATION will be closed on this day, with no HEATHROW EXPRESS services. GWR services will not run between Maidenhead / Greenford and Paddington, with limited long distance services to/from Euston. There will also be no GREATER ANGLIA services on these days between Shenfield / Southend Victoria / Southminster and Liverpool Street, use CENTRAL LINE connections between Ealing Broa",
+     "from": "2026-11-28T04:30:00Z",
+     "to": "2026-11-30T01:29:00Z"
     }
    ]
   },
@@ -59,11 +59,11 @@
    "mode": "overground",
    "statuses": [
     {
-     "severity": 10,
-     "status": "Good Service",
-     "reason": null,
-     "from": null,
-     "to": null
+     "severity": 4,
+     "status": "Planned Closure",
+     "reason": "LIBERTY LINE: Saturday 28 and Sunday 29 November, no service between Romford and Upminster. Use local London Buses services 165 248 and 370 instead.",
+     "from": "2026-11-28T04:30:00Z",
+     "to": "2026-11-30T01:29:00Z"
     }
    ]
   },
@@ -129,11 +129,18 @@
    "mode": "overground",
    "statuses": [
     {
-     "severity": 10,
-     "status": "Good Service",
-     "reason": null,
-     "from": null,
-     "to": null
+     "severity": 5,
+     "status": "Part Closure",
+     "reason": "WINDRUSH LINE: From 0100 Saturday 28 and all day Sunday 29 November, including Friday and Saturday Night Overground, no service between Highbury & Islington and Battersea Park / Clapham Junction / New Cross / New Cross Gate. Use MILDMAY LINE services between Highbury & Islington, Canonbury and Dalston Kingsland. Replacement bus services operate.",
+     "from": "2026-11-28T01:00:00Z",
+     "to": "2026-11-30T01:29:00Z"
+    },
+    {
+     "severity": 7,
+     "status": "Reduced Service",
+     "reason": "WINDRUSH LINE: Saturday 28 and Sunday 29 November, a reduced service operates between New Cross Gate and Crystal Palace / West Croydon.",
+     "from": "2026-11-28T04:30:00Z",
+     "to": "2026-11-30T01:29:00Z"
     }
    ]
   },
@@ -157,18 +164,11 @@
    "mode": "tube",
    "statuses": [
     {
-     "severity": 6,
-     "status": "Severe Delays",
-     "reason": "Bakerloo Line: No service between Queen's Park and Harrow & Wealdstone due to strike action. SEVERE DELAYS on the rest of the line. Services are operating every 10 minutes.",
-     "from": "2026-11-27T06:43:36Z",
-     "to": "2026-11-28T01:29:00Z"
-    },
-    {
-     "severity": 3,
-     "status": "Part Suspended",
-     "reason": "Bakerloo Line: No service between Queen's Park and Harrow & Wealdstone due to strike action. SEVERE DELAYS on the rest of the line. Services are operating every 10 minutes.",
-     "from": "2026-11-27T06:43:36Z",
-     "to": "2026-11-27T10:14:46Z"
+     "severity": 10,
+     "status": "Good Service",
+     "reason": null,
+     "from": null,
+     "to": null
     }
    ]
   },
@@ -178,25 +178,11 @@
    "mode": "tube",
    "statuses": [
     {
-     "severity": 6,
-     "status": "Severe Delays",
-     "reason": "Central Line: No service between White City and Liverpool Street / Ealing Broadway due to strike action. SEVERE DELAYS on the rest of the line. Services are operating every 20 minutes.",
-     "from": "2026-11-27T06:07:06Z",
-     "to": "2026-11-28T01:29:00Z"
-    },
-    {
-     "severity": 6,
-     "status": "Severe Delays",
-     "reason": "Central Line: No service between White City and Liverpool Street / Ealing Broadway due to strike action. SEVERE DELAYS on the rest of the line. Services are operating every 20 minutes.",
-     "from": "2026-11-27T06:07:06Z",
-     "to": "2026-11-28T01:29:00Z"
-    },
-    {
-     "severity": 3,
-     "status": "Part Suspended",
-     "reason": "Central Line: No service between White City and Liverpool Street / Ealing Broadway due to strike action. SEVERE DELAYS on the rest of the line. Services are operating every 20 minutes.",
-     "from": "2026-11-27T06:07:06Z",
-     "to": "2026-11-27T10:14:46Z"
+     "severity": 10,
+     "status": "Good Service",
+     "reason": null,
+     "from": null,
+     "to": null
     }
    ]
   },
@@ -206,18 +192,11 @@
    "mode": "tube",
    "statuses": [
     {
-     "severity": 6,
-     "status": "Severe Delays",
-     "reason": "Circle Line: No service Aldgate and Edgware Road via Embankment due to strike action. SEVERE DELAYS on the rest of the line. Services are operating every 10 minutes.",
-     "from": "2026-11-27T06:09:38Z",
-     "to": "2026-11-28T01:29:00Z"
-    },
-    {
-     "severity": 3,
-     "status": "Part Suspended",
-     "reason": "Circle Line: No service Aldgate and Edgware Road via Embankment due to strike action. SEVERE DELAYS on the rest of the line. Services are operating every 10 minutes.",
-     "from": "2026-11-27T06:09:38Z",
-     "to": "2026-11-27T10:14:46Z"
+     "severity": 9,
+     "status": "Minor Delays",
+     "reason": "Circle Line: No service between Hammersmith and Tower Hill, and between Edgware Road and High Street Kensington due to planned engineering work. MINOR DELAYS on the rest of the line due to train cancellations.",
+     "from": "2026-11-28T06:55:25Z",
+     "to": "2026-11-29T01:29:00Z"
     }
    ]
   },
@@ -227,11 +206,11 @@
    "mode": "tube",
    "statuses": [
     {
-     "severity": 6,
-     "status": "Severe Delays",
-     "reason": "District Line: Severe delays due to strike action. If you're travelling beyond Earl's Court, please take the first train and change there. Services are operating every 10 minutes.",
-     "from": "2026-11-27T07:13:00Z",
-     "to": "2026-11-28T01:29:00Z"
+     "severity": 5,
+     "status": "Part Closure",
+     "reason": "DISTRICT LINE: Saturday 28 and Sunday 29 November, no service between High Street Kensington and Edgware Road. There will also be no CIRCLE LINE service on this section.",
+     "from": "2026-11-28T04:30:00Z",
+     "to": "2026-11-30T01:29:00Z"
     }
    ]
   },
@@ -241,18 +220,11 @@
    "mode": "tube",
    "statuses": [
     {
-     "severity": 6,
-     "status": "Severe Delays",
-     "reason": "Hammersmith and City Line: No service between Hammersmith and Edgware Road due to strike action. SEVERE DELAYS on the rest of the line. Services are operating every 20 minutes.",
-     "from": "2026-11-27T06:11:10Z",
-     "to": "2026-11-28T01:29:00Z"
-    },
-    {
-     "severity": 3,
-     "status": "Part Suspended",
-     "reason": "Hammersmith and City Line: No service between Hammersmith and Edgware Road due to strike action. SEVERE DELAYS on the rest of the line. Services are operating every 20 minutes.",
-     "from": "2026-11-27T06:11:10Z",
-     "to": "2026-11-27T10:14:46Z"
+     "severity": 4,
+     "status": "Planned Closure",
+     "reason": "HAMMERSMITH & CITY LINE: Saturday 28 and Sunday 29 November, no service on the entire line. There will also be no CIRCLE LINE service between Hammersmith / High Street Kensington and Tower Hill (via Kings Cross St Pancras). Use DISTRICT LINE services between Aldgate East and Barking.",
+     "from": "2026-11-28T04:30:00Z",
+     "to": "2026-11-30T01:29:00Z"
     }
    ]
   },
@@ -276,18 +248,11 @@
    "mode": "tube",
    "statuses": [
     {
-     "severity": 6,
-     "status": "Severe Delays",
-     "reason": "Metropolitan Line: No service between Baker Street and Aldgate due to strike action. SEVERE DELAYS on the rest of the line. Services are operating between Baker Street and Amersham / Chesham every 30 minutes, between Baker Street and Uxbridge / Watford every 15 minutes.",
-     "from": "2026-11-27T06:03:26Z",
-     "to": "2026-11-28T01:29:00Z"
-    },
-    {
-     "severity": 3,
-     "status": "Part Suspended",
-     "reason": "Metropolitan Line: No service between Baker Street and Aldgate due to strike action. SEVERE DELAYS on the rest of the line. Services are operating between Baker Street and Amersham / Chesham every 30 minutes, between Baker Street and Uxbridge / Watford every 15 minutes.",
-     "from": "2026-11-27T06:03:26Z",
-     "to": "2026-11-27T10:14:46Z"
+     "severity": 5,
+     "status": "Part Closure",
+     "reason": "METROPOLITAN LINE: Saturday 28 and Sunday 29 November, no service between Baker Street and Aldgate. There will also be no CIRCLE or HAMMERSMITH & CITY LINE services on this section.",
+     "from": "2026-11-28T04:30:00Z",
+     "to": "2026-11-30T01:29:00Z"
     }
    ]
   },
@@ -297,11 +262,11 @@
    "mode": "tube",
    "statuses": [
     {
-     "severity": 6,
-     "status": "Severe Delays",
-     "reason": "Northern Line: Severe delays due to strike action.",
-     "from": "2026-11-27T07:04:34Z",
-     "to": "2026-11-28T01:29:00Z"
+     "severity": 9,
+     "status": "Minor Delays",
+     "reason": "Northern Line: Minor delays due to a points failure at Kennington.",
+     "from": "2026-11-28T05:35:03Z",
+     "to": "2026-11-29T01:29:00Z"
     }
    ]
   },
@@ -311,11 +276,11 @@
    "mode": "tube",
    "statuses": [
     {
-     "severity": 2,
-     "status": "Suspended",
-     "reason": "Piccadilly Line: Service is not expected to resume until after 12:00hrs due to strike action.",
-     "from": "2026-11-27T04:11:13Z",
-     "to": "2026-11-27T10:14:46Z"
+     "severity": 10,
+     "status": "Good Service",
+     "reason": null,
+     "from": null,
+     "to": null
     }
    ]
   },
@@ -325,11 +290,11 @@
    "mode": "tube",
    "statuses": [
     {
-     "severity": 6,
-     "status": "Severe Delays",
-     "reason": "Victoria Line: Severe delays due to strike action. Services are operating every 15 minutes.",
-     "from": "2026-11-27T05:27:24Z",
-     "to": "2026-11-28T01:29:00Z"
+     "severity": 10,
+     "status": "Good Service",
+     "reason": null,
+     "from": null,
+     "to": null
     }
    ]
   },
@@ -339,11 +304,11 @@
    "mode": "tube",
    "statuses": [
     {
-     "severity": 2,
-     "status": "Suspended",
-     "reason": "Waterloo and City Line: Service is not expected to resume until after 07:00hrs due to strike action.",
-     "from": "2026-11-27T04:11:27Z",
-     "to": "2026-11-27T10:14:46Z"
+     "severity": 4,
+     "status": "Planned Closure",
+     "reason": "Waterloo & City line: service operates 06:00 until 00:30, Monday to Friday only. There is no service on Saturdays, Sundays and on bank/public holidays.",
+     "from": "2026-11-28T04:15:00Z",
+     "to": "2026-11-28T23:59:00Z"
     }
    ]
   }

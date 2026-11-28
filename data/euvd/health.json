@@ -1,16 +1,16 @@
 {
  "source": "euvd",
  "title": "EU Vulnerability Database: latest, exploited and recently updated (ENISA EUVD)",
- "generated_utc": "2026-11-28T02:41:47Z",
+ "generated_utc": "2026-11-28T07:12:46Z",
  "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
  "schedule": {
   "card_says": "every 6 hours",
   "really": "twice a day (07:03 and 18:03 Lisbon)"
  },
  "last_run": {
-  "at": "2026-11-27T18:06:42Z",
+  "at": "2026-11-28T07:06:48Z",
   "ok": 12,
-  "failed": 1,
+  "failed": 0,
   "requests": [
    {
     "name": "robots-euvd",
@@ -34,92 +34,191 @@
     "status": 200,
     "meaning": "read",
     "bytes": 4491,
-    "changed": true
+    "changed": false
    },
    {
     "name": "exploited",
     "url": "https://euvdservices.enisa.europa.eu/api/exploitedvulnerabilities",
     "status": 200,
     "meaning": "read",
-    "bytes": 4170,
-    "changed": false
+    "bytes": 3986,
+    "changed": true
    },
    {
     "name": "exploited-total",
     "url": "https://euvdservices.enisa.europa.eu/api/search?exploited=true&size=1&page=0",
     "status": 200,
     "meaning": "read",
-    "bytes": 1310,
+    "bytes": 1270,
     "changed": true
    },
    {
     "name": "updated-0",
-    "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-26&toUpdatedDate=2026-11-27&size=100&page=0",
+    "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-27&toUpdatedDate=2026-11-28&size=100&page=0",
     "status": 200,
     "meaning": "read",
-    "bytes": 174640,
+    "bytes": 153690,
     "changed": true
    },
    {
     "name": "updated-1",
-    "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-26&toUpdatedDate=2026-11-27&size=100&page=1",
+    "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-27&toUpdatedDate=2026-11-28&size=100&page=1",
     "status": 200,
     "meaning": "read",
-    "bytes": 129951,
+    "bytes": 144468,
     "changed": true
    },
    {
     "name": "updated-2",
-    "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-26&toUpdatedDate=2026-11-27&size=100&page=2",
+    "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-27&toUpdatedDate=2026-11-28&size=100&page=2",
     "status": 200,
     "meaning": "read",
-    "bytes": 143388,
+    "bytes": 175946,
     "changed": true
    },
    {
     "name": "updated-3",
-    "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-26&toUpdatedDate=2026-11-27&size=100&page=3",
+    "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-27&toUpdatedDate=2026-11-28&size=100&page=3",
     "status": 200,
     "meaning": "read",
-    "bytes": 120519,
+    "bytes": 125070,
     "changed": true
    },
    {
     "name": "updated-4",
-    "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-26&toUpdatedDate=2026-11-27&size=100&page=4",
+    "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-27&toUpdatedDate=2026-11-28&size=100&page=4",
     "status": 200,
     "meaning": "read",
-    "bytes": 176884,
+    "bytes": 141861,
     "changed": true
    },
    {
     "name": "updated-5",
-    "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-26&toUpdatedDate=2026-11-27&size=100&page=5",
+    "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-27&toUpdatedDate=2026-11-28&size=100&page=5",
     "status": 200,
     "meaning": "read",
-    "bytes": 170754,
+    "bytes": 127199,
     "changed": true
    },
    {
     "name": "updated-6",
-    "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-26&toUpdatedDate=2026-11-27&size=100&page=6",
+    "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-27&toUpdatedDate=2026-11-28&size=100&page=6",
     "status": 200,
     "meaning": "read",
-    "bytes": 436833,
-    "changed": true
-   },
-   {
-    "name": "updated-7",
-    "url": "https://euvdservices.enisa.europa.eu/api/search?fromUpdatedDate=2026-11-26&toUpdatedDate=2026-11-27&size=100&page=7",
-    "status": 200,
-    "meaning": "read",
-    "bytes": 245352,
+    "bytes": 198543,
     "changed": true
    }
   ]
  },
  "problems": [],
  "runs": [
+  {
+   "at": "2026-11-28T07:06:48Z",
+   "ok": 12,
+   "failed": 0,
+   "requests": 12,
+   "changed_requests": [
+    "exploited",
+    "exploited-total",
+    "updated-0",
+    "updated-1",
+    "updated-2",
+    "updated-3",
+    "updated-4",
+    "updated-5",
+    "updated-6"
+   ],
+   "requests_detail": [
+    {
+     "name": "robots-euvd",
+     "status": 200,
+     "bytes": 67,
+     "sha256_prefix": "90d24bc3bf698ac1",
+     "changed": false
+    },
+    {
+     "name": "robots-services",
+     "status": 404,
+     "bytes": 196,
+     "sha256_prefix": "80c3fe2ae1062abf",
+     "changed": false
+    },
+    {
+     "name": "latest",
+     "status": 200,
+     "bytes": 4491,
+     "sha256_prefix": "6e79f0da56e2f826",
+     "changed": false
+    },
+    {
+     "name": "exploited",
+     "status": 200,
+     "bytes": 3986,
+     "sha256_prefix": "046d7f79d1f704e8",
+     "changed": true
+    },
+    {
+     "name": "exploited-total",
+     "status": 200,
+     "bytes": 1270,
+     "sha256_prefix": "49e3a859bfc74fcd",
+     "changed": true
+    },
+    {
+     "name": "updated-0",
+     "status": 200,
+     "bytes": 153690,
+     "sha256_prefix": "ecf81d7d62c3ace7",
+     "changed": true
+    },
+    {
+     "name": "updated-1",
+     "status": 200,
+     "bytes": 144468,
+     "sha256_prefix": "406af49fbb907899",
+     "changed": true
+    },
+    {
+     "name": "updated-2",
+     "status": 200,
+     "bytes": 175946,
+     "sha256_prefix": "35817564eb13f745",
+     "changed": true
+    },
+    {
+     "name": "updated-3",
+     "status": 200,
+     "bytes": 125070,
+     "sha256_prefix": "423ede80a842e816",
+     "changed": true
+    },
+    {
+     "name": "updated-4",
+     "status": 200,
+     "bytes": 141861,
+     "sha256_prefix": "25a9abf974a10732",
+     "changed": true
+    },
+    {
+     "name": "updated-5",
+     "status": 200,
+     "bytes": 127199,
+     "sha256_prefix": "a190426be2f4fa07",
+     "changed": true
+    },
+    {
+     "name": "updated-6",
+     "status": 200,
+     "bytes": 198543,
+     "sha256_prefix": "a6205b9626f2b8ed",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": null,
+   "commit_url": null,
+   "compare_with_previous_run_url": null
+  },
   {
    "at": "2026-11-27T18:06:42Z",
    "ok": 12,
@@ -2402,10 +2501,10 @@
  ],
  "copies": {
   "files_in_git_data": 3,
-  "bytes_in_git_data": 629844,
-  "files_in_vault_working_copy": 72,
-  "bytes_in_vault_working_copy": 11853691,
-  "dated_copies_in_vault": 54,
+  "bytes_in_git_data": 529482,
+  "files_in_vault_working_copy": 81,
+  "bytes_in_vault_working_copy": 12638925,
+  "dated_copies_in_vault": 63,
   "where": {
    "api_latest": "https://data.promptugal.news/api/v1/euvd/latest.json",
    "api_reads": "https://data.promptugal.news/api/v1/euvd/reads.json",
@@ -2416,42 +2515,162 @@
   "note": "collect/lib.mjs says vaults/ is meant to stay out of git, but 0 files of this source are tracked in git today (earlier commits); the sgit vault holds the full history. Dinis has not yet ruled on the vaults/ question."
  },
  "held": {
-  "items": 750,
+  "items": 632,
   "noun": "vulnerabilities",
   "earliest": "2018-08-06",
-  "latest": "2026-11-27",
+  "latest": "2026-11-28",
   "date_field": "published",
   "per_day": [
    {
-    "date": "2026-04-01",
+    "date": "2019-04-10",
     "count": 2
    },
    {
-    "date": "2026-04-14",
+    "date": "2019-10-30",
     "count": 1
    },
    {
-    "date": "2026-04-22",
+    "date": "2020-01-14",
     "count": 1
    },
    {
-    "date": "2026-04-30",
+    "date": "2020-07-16",
+    "count": 5
+   },
+   {
+    "date": "2020-09-17",
     "count": 1
    },
    {
-    "date": "2026-05-05",
+    "date": "2020-11-10",
+    "count": 1
+   },
+   {
+    "date": "2020-12-11",
+    "count": 1
+   },
+   {
+    "date": "2020-12-14",
     "count": 2
    },
    {
-    "date": "2026-05-27",
+    "date": "2020-12-21",
     "count": 1
    },
    {
-    "date": "2026-05-28",
+    "date": "2021-02-17",
+    "count": 2
+   },
+   {
+    "date": "2021-05-02",
     "count": 1
    },
    {
-    "date": "2026-06-01",
+    "date": "2021-08-16",
+    "count": 1
+   },
+   {
+    "date": "2021-09-09",
+    "count": 1
+   },
+   {
+    "date": "2022-01-20",
+    "count": 1
+   },
+   {
+    "date": "2022-02-25",
+    "count": 2
+   },
+   {
+    "date": "2022-08-16",
+    "count": 1
+   },
+   {
+    "date": "2022-09-02",
+    "count": 2
+   },
+   {
+    "date": "2022-09-21",
+    "count": 2
+   },
+   {
+    "date": "2022-10-07",
+    "count": 1
+   },
+   {
+    "date": "2022-11-02",
+    "count": 2
+   },
+   {
+    "date": "2022-11-14",
+    "count": 2
+   },
+   {
+    "date": "2022-11-15",
+    "count": 1
+   },
+   {
+    "date": "2022-11-22",
+    "count": 4
+   },
+   {
+    "date": "2024-02-19",
+    "count": 1
+   },
+   {
+    "date": "2024-03-22",
+    "count": 1
+   },
+   {
+    "date": "2024-07-08",
+    "count": 2
+   },
+   {
+    "date": "2024-08-21",
+    "count": 1
+   },
+   {
+    "date": "2024-09-16",
+    "count": 1
+   },
+   {
+    "date": "2024-10-01",
+    "count": 1
+   },
+   {
+    "date": "2025-03-27",
+    "count": 2
+   },
+   {
+    "date": "2025-06-20",
+    "count": 1
+   },
+   {
+    "date": "2025-08-05",
+    "count": 1
+   },
+   {
+    "date": "2025-09-26",
+    "count": 1
+   },
+   {
+    "date": "2025-12-03",
+    "count": 1
+   },
+   {
+    "date": "2025-12-09",
+    "count": 5
+   },
+   {
+    "date": "2025-12-30",
+    "count": 1
+   },
+   {
+    "date": "2026-01-08",
+    "count": 1
+   },
+   {
+    "date": "2026-03-09",
     "count": 1
    },
    {
@@ -2459,123 +2678,11 @@
     "count": 1
    },
    {
-    "date": "2026-06-05",
-    "count": 2
-   },
-   {
-    "date": "2026-06-09",
-    "count": 1
-   },
-   {
-    "date": "2026-06-11",
-    "count": 1
-   },
-   {
-    "date": "2026-06-23",
-    "count": 1
-   },
-   {
-    "date": "2026-06-25",
-    "count": 3
-   },
-   {
-    "date": "2026-06-30",
-    "count": 1
-   },
-   {
-    "date": "2026-07-01",
-    "count": 3
-   },
-   {
-    "date": "2026-07-07",
-    "count": 1
-   },
-   {
-    "date": "2026-07-08",
-    "count": 2
-   },
-   {
-    "date": "2026-07-30",
-    "count": 2
-   },
-   {
-    "date": "2026-07-31",
-    "count": 1
-   },
-   {
-    "date": "2026-08-05",
-    "count": 2
-   },
-   {
-    "date": "2026-08-10",
-    "count": 1
-   },
-   {
-    "date": "2026-08-11",
-    "count": 2
-   },
-   {
     "date": "2026-08-13",
     "count": 1
    },
    {
-    "date": "2026-08-19",
-    "count": 1
-   },
-   {
-    "date": "2026-08-20",
-    "count": 1
-   },
-   {
-    "date": "2026-08-24",
-    "count": 1
-   },
-   {
-    "date": "2026-08-27",
-    "count": 1
-   },
-   {
-    "date": "2026-09-01",
-    "count": 1
-   },
-   {
-    "date": "2026-09-03",
-    "count": 2
-   },
-   {
-    "date": "2026-09-11",
-    "count": 1
-   },
-   {
-    "date": "2026-09-15",
-    "count": 1
-   },
-   {
-    "date": "2026-09-17",
-    "count": 1
-   },
-   {
     "date": "2026-09-18",
-    "count": 3
-   },
-   {
-    "date": "2026-09-23",
-    "count": 1
-   },
-   {
-    "date": "2026-09-28",
-    "count": 1
-   },
-   {
-    "date": "2026-10-01",
-    "count": 2
-   },
-   {
-    "date": "2026-10-05",
-    "count": 2
-   },
-   {
-    "date": "2026-10-07",
     "count": 1
    },
    {
@@ -2583,31 +2690,15 @@
     "count": 1
    },
    {
-    "date": "2026-10-12",
-    "count": 1
-   },
-   {
-    "date": "2026-10-20",
+    "date": "2026-10-15",
     "count": 2
-   },
-   {
-    "date": "2026-10-21",
-    "count": 1
    },
    {
     "date": "2026-10-22",
-    "count": 1
-   },
-   {
-    "date": "2026-11-05",
     "count": 2
    },
    {
-    "date": "2026-11-07",
-    "count": 1
-   },
-   {
-    "date": "2026-11-09",
+    "date": "2026-11-02",
     "count": 2
    },
    {
@@ -2616,10 +2707,14 @@
    },
    {
     "date": "2026-11-12",
-    "count": 4
+    "count": 1
    },
    {
     "date": "2026-11-15",
+    "count": 1
+   },
+   {
+    "date": "2026-11-16",
     "count": 1
    },
    {
@@ -2632,47 +2727,51 @@
    },
    {
     "date": "2026-11-19",
-    "count": 8
+    "count": 5
    },
    {
     "date": "2026-11-20",
-    "count": 4
+    "count": 7
    },
    {
     "date": "2026-11-22",
-    "count": 2
+    "count": 18
    },
    {
     "date": "2026-11-23",
-    "count": 1
+    "count": 40
    },
    {
     "date": "2026-11-24",
-    "count": 23
+    "count": 56
    },
    {
     "date": "2026-11-25",
-    "count": 38
+    "count": 37
    },
    {
     "date": "2026-11-26",
-    "count": 167
+    "count": 101
    },
    {
     "date": "2026-11-27",
-    "count": 281
+    "count": 257
+   },
+   {
+    "date": "2026-11-28",
+    "count": 27
    }
   ],
   "from": "data/euvd/latest.json list \"vulnerabilities\"",
   "note": "Dates are the items' own dates (forecast sources hold future dates). per_day lists up to the 60 newest days. null where the items carry no date."
  },
  "cadence_advice": {
-  "line": "The data changed on 8 of 10 reads over 9 days: nearly every read finds new data, so it changes at least as often as it is read and reading more than twice a day would catch more states. Whether the pages that use it need them is for their owners to say.",
-  "basis": "suggestion derived from 10 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is every 6 hours; runs before 21 Nov were hourly",
-  "runs_with_change": 8,
-  "runs_kept": 10,
-  "days_covered": 8.8,
-  "changes_per_day": 0.9
+  "line": "The data changed on 9 of 11 reads over 9 days: nearly every read finds new data, so it changes at least as often as it is read and reading more than twice a day would catch more states. Whether the pages that use it need them is for their owners to say.",
+  "basis": "suggestion derived from 11 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is every 6 hours; runs before 21 Nov were hourly",
+  "runs_with_change": 9,
+  "runs_kept": 11,
+  "days_covered": 9.3,
+  "changes_per_day": 1.0
  },
  "schedule_times": {
   "tz": "Europe/Lisbon",

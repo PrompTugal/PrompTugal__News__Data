@@ -1,14 +1,14 @@
 {
  "source": "ipma-city-forecasts",
  "title": "IPMA daily forecasts by place",
- "generated_utc": "2026-11-28T02:41:47Z",
+ "generated_utc": "2026-11-28T07:12:46Z",
  "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
  "schedule": {
   "card_says": "hourly",
   "really": "twice a day (07:03 and 18:03 Lisbon)"
  },
  "last_run": {
-  "at": "2026-11-27T18:10:06Z",
+  "at": "2026-11-28T07:09:41Z",
   "ok": 36,
   "failed": 0,
   "requests": [
@@ -25,7 +25,7 @@
     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1010500.json",
     "status": 200,
     "meaning": "read",
-    "bytes": 1129,
+    "bytes": 1126,
     "changed": true
    },
    {
@@ -33,7 +33,7 @@
     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1020500.json",
     "status": 200,
     "meaning": "read",
-    "bytes": 1085,
+    "bytes": 1086,
     "changed": true
    },
    {
@@ -41,7 +41,7 @@
     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1030300.json",
     "status": 200,
     "meaning": "read",
-    "bytes": 1130,
+    "bytes": 1108,
     "changed": true
    },
    {
@@ -49,7 +49,7 @@
     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1030800.json",
     "status": 200,
     "meaning": "read",
-    "bytes": 1126,
+    "bytes": 1125,
     "changed": true
    },
    {
@@ -57,7 +57,7 @@
     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1040200.json",
     "status": 200,
     "meaning": "read",
-    "bytes": 1089,
+    "bytes": 1088,
     "changed": true
    },
    {
@@ -65,7 +65,7 @@
     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1050200.json",
     "status": 200,
     "meaning": "read",
-    "bytes": 1087,
+    "bytes": 1084,
     "changed": true
    },
    {
@@ -73,7 +73,7 @@
     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1060300.json",
     "status": 200,
     "meaning": "read",
-    "bytes": 1109,
+    "bytes": 1108,
     "changed": true
    },
    {
@@ -81,7 +81,7 @@
     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1070500.json",
     "status": 200,
     "meaning": "read",
-    "bytes": 1085,
+    "bytes": 1084,
     "changed": true
    },
    {
@@ -89,7 +89,7 @@
     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1080500.json",
     "status": 200,
     "meaning": "read",
-    "bytes": 1083,
+    "bytes": 1085,
     "changed": true
    },
    {
@@ -121,7 +121,7 @@
     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1090700.json",
     "status": 200,
     "meaning": "read",
-    "bytes": 1105,
+    "bytes": 1085,
     "changed": true
    },
    {
@@ -137,7 +137,7 @@
     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1100900.json",
     "status": 200,
     "meaning": "read",
-    "bytes": 1127,
+    "bytes": 1107,
     "changed": true
    },
    {
@@ -145,7 +145,7 @@
     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1110600.json",
     "status": 200,
     "meaning": "read",
-    "bytes": 1128,
+    "bytes": 1105,
     "changed": true
    },
    {
@@ -153,7 +153,7 @@
     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1121400.json",
     "status": 200,
     "meaning": "read",
-    "bytes": 1086,
+    "bytes": 1085,
     "changed": true
    },
    {
@@ -161,7 +161,7 @@
     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1131200.json",
     "status": 200,
     "meaning": "read",
-    "bytes": 1128,
+    "bytes": 1108,
     "changed": true
    },
    {
@@ -169,7 +169,7 @@
     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1141600.json",
     "status": 200,
     "meaning": "read",
-    "bytes": 1109,
+    "bytes": 1086,
     "changed": true
    },
    {
@@ -177,7 +177,7 @@
     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1151200.json",
     "status": 200,
     "meaning": "read",
-    "bytes": 1108,
+    "bytes": 1086,
     "changed": true
    },
    {
@@ -185,7 +185,7 @@
     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1151300.json",
     "status": 200,
     "meaning": "read",
-    "bytes": 1087,
+    "bytes": 1085,
     "changed": true
    },
    {
@@ -193,7 +193,7 @@
     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1160900.json",
     "status": 200,
     "meaning": "read",
-    "bytes": 1149,
+    "bytes": 1107,
     "changed": true
    },
    {
@@ -201,7 +201,7 @@
     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1171400.json",
     "status": 200,
     "meaning": "read",
-    "bytes": 1105,
+    "bytes": 1104,
     "changed": true
    },
    {
@@ -209,7 +209,7 @@
     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1182300.json",
     "status": 200,
     "meaning": "read",
-    "bytes": 1090,
+    "bytes": 1106,
     "changed": true
    },
    {
@@ -217,7 +217,7 @@
     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/2310300.json",
     "status": 200,
     "meaning": "read",
-    "bytes": 1139,
+    "bytes": 1117,
     "changed": true
    },
    {
@@ -225,7 +225,7 @@
     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/2320100.json",
     "status": 200,
     "meaning": "read",
-    "bytes": 1099,
+    "bytes": 1097,
     "changed": true
    },
    {
@@ -233,7 +233,7 @@
     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/3410100.json",
     "status": 200,
     "meaning": "read",
-    "bytes": 1139,
+    "bytes": 1116,
     "changed": true
    },
    {
@@ -241,7 +241,7 @@
     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/3420300.json",
     "status": 200,
     "meaning": "read",
-    "bytes": 1155,
+    "bytes": 1157,
     "changed": true
    },
    {
@@ -249,7 +249,7 @@
     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/3430100.json",
     "status": 200,
     "meaning": "read",
-    "bytes": 1158,
+    "bytes": 1159,
     "changed": true
    },
    {
@@ -257,7 +257,7 @@
     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/3440100.json",
     "status": 200,
     "meaning": "read",
-    "bytes": 1158,
+    "bytes": 1138,
     "changed": true
    },
    {
@@ -265,7 +265,7 @@
     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/3450200.json",
     "status": 200,
     "meaning": "read",
-    "bytes": 1157,
+    "bytes": 1140,
     "changed": true
    },
    {
@@ -281,7 +281,7 @@
     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/3470100.json",
     "status": 200,
     "meaning": "read",
-    "bytes": 1158,
+    "bytes": 1139,
     "changed": true
    },
    {
@@ -289,7 +289,7 @@
     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/3480200.json",
     "status": 200,
     "meaning": "read",
-    "bytes": 1140,
+    "bytes": 1119,
     "changed": true
    },
    {
@@ -297,7 +297,7 @@
     "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/3490100.json",
     "status": 200,
     "meaning": "read",
-    "bytes": 1139,
+    "bytes": 1119,
     "changed": true
    }
   ]
@@ -310,7 +310,7 @@
     "error"
    ],
    "plain": "could not connect or timed out",
-   "failed_in": "1 of 92 runs kept"
+   "failed_in": "1 of 93 runs kept"
   },
   {
    "request": "city-1081505",
@@ -319,7 +319,7 @@
     "error"
    ],
    "plain": "could not connect or timed out",
-   "failed_in": "1 of 92 runs kept"
+   "failed_in": "1 of 93 runs kept"
   },
   {
    "request": "city-1081100",
@@ -328,7 +328,7 @@
     "error"
    ],
    "plain": "could not connect or timed out",
-   "failed_in": "1 of 92 runs kept"
+   "failed_in": "1 of 93 runs kept"
   },
   {
    "request": "city-1080800",
@@ -337,10 +337,311 @@
     "error"
    ],
    "plain": "could not connect or timed out",
-   "failed_in": "1 of 92 runs kept"
+   "failed_in": "1 of 93 runs kept"
   }
  ],
  "runs": [
+  {
+   "at": "2026-11-28T07:09:41Z",
+   "ok": 36,
+   "failed": 0,
+   "requests": 36,
+   "changed_requests": [
+    "city-1010500",
+    "city-1020500",
+    "city-1030300",
+    "city-1030800",
+    "city-1040200",
+    "city-1050200",
+    "city-1060300",
+    "city-1070500",
+    "city-1080500",
+    "city-1081505",
+    "city-1081100",
+    "city-1080800",
+    "city-1090700",
+    "city-1090821",
+    "city-1100900",
+    "city-1110600",
+    "city-1121400",
+    "city-1131200",
+    "city-1141600",
+    "city-1151200",
+    "city-1151300",
+    "city-1160900",
+    "city-1171400",
+    "city-1182300",
+    "city-2310300",
+    "city-2320100",
+    "city-3410100",
+    "city-3420300",
+    "city-3430100",
+    "city-3440100",
+    "city-3450200",
+    "city-3460200",
+    "city-3470100",
+    "city-3480200",
+    "city-3490100"
+   ],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "city-1010500",
+     "status": 200,
+     "bytes": 1126,
+     "sha256_prefix": "fc58cc4e843dca8c",
+     "changed": true
+    },
+    {
+     "name": "city-1020500",
+     "status": 200,
+     "bytes": 1086,
+     "sha256_prefix": "3ccf8a5570c9803f",
+     "changed": true
+    },
+    {
+     "name": "city-1030300",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "0b53913bd11c4cae",
+     "changed": true
+    },
+    {
+     "name": "city-1030800",
+     "status": 200,
+     "bytes": 1125,
+     "sha256_prefix": "e8512bc942f59987",
+     "changed": true
+    },
+    {
+     "name": "city-1040200",
+     "status": 200,
+     "bytes": 1088,
+     "sha256_prefix": "212f4b1917567211",
+     "changed": true
+    },
+    {
+     "name": "city-1050200",
+     "status": 200,
+     "bytes": 1084,
+     "sha256_prefix": "4044947eec6c63cb",
+     "changed": true
+    },
+    {
+     "name": "city-1060300",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "5b32d36fcf0888a1",
+     "changed": true
+    },
+    {
+     "name": "city-1070500",
+     "status": 200,
+     "bytes": 1084,
+     "sha256_prefix": "794f472562d337e2",
+     "changed": true
+    },
+    {
+     "name": "city-1080500",
+     "status": 200,
+     "bytes": 1085,
+     "sha256_prefix": "fbedd9d8a48ca00f",
+     "changed": true
+    },
+    {
+     "name": "city-1081505",
+     "status": 200,
+     "bytes": 1084,
+     "sha256_prefix": "cdb179ca23eaf6c8",
+     "changed": true
+    },
+    {
+     "name": "city-1081100",
+     "status": 200,
+     "bytes": 1083,
+     "sha256_prefix": "500d272aeeb4c72d",
+     "changed": true
+    },
+    {
+     "name": "city-1080800",
+     "status": 200,
+     "bytes": 1088,
+     "sha256_prefix": "b94fd6e16bfd5489",
+     "changed": true
+    },
+    {
+     "name": "city-1090700",
+     "status": 200,
+     "bytes": 1085,
+     "sha256_prefix": "c8ca4e804cdd5b61",
+     "changed": true
+    },
+    {
+     "name": "city-1090821",
+     "status": 200,
+     "bytes": 1085,
+     "sha256_prefix": "068cd4b9781e6ac8",
+     "changed": true
+    },
+    {
+     "name": "city-1100900",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "d096e3788a5a4ee1",
+     "changed": true
+    },
+    {
+     "name": "city-1110600",
+     "status": 200,
+     "bytes": 1105,
+     "sha256_prefix": "7c51d1eba9b907a2",
+     "changed": true
+    },
+    {
+     "name": "city-1121400",
+     "status": 200,
+     "bytes": 1085,
+     "sha256_prefix": "21e97dcd09082a09",
+     "changed": true
+    },
+    {
+     "name": "city-1131200",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "53cd3f1499c95e04",
+     "changed": true
+    },
+    {
+     "name": "city-1141600",
+     "status": 200,
+     "bytes": 1086,
+     "sha256_prefix": "0c3d5269b58717c5",
+     "changed": true
+    },
+    {
+     "name": "city-1151200",
+     "status": 200,
+     "bytes": 1086,
+     "sha256_prefix": "055c6dc802607226",
+     "changed": true
+    },
+    {
+     "name": "city-1151300",
+     "status": 200,
+     "bytes": 1085,
+     "sha256_prefix": "fbf2ce32c431ec2a",
+     "changed": true
+    },
+    {
+     "name": "city-1160900",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "6b34328b2f4eeda5",
+     "changed": true
+    },
+    {
+     "name": "city-1171400",
+     "status": 200,
+     "bytes": 1104,
+     "sha256_prefix": "fa1ee7ba112778ce",
+     "changed": true
+    },
+    {
+     "name": "city-1182300",
+     "status": 200,
+     "bytes": 1106,
+     "sha256_prefix": "fd1182033dc8b13a",
+     "changed": true
+    },
+    {
+     "name": "city-2310300",
+     "status": 200,
+     "bytes": 1117,
+     "sha256_prefix": "25fb0c0a14934cec",
+     "changed": true
+    },
+    {
+     "name": "city-2320100",
+     "status": 200,
+     "bytes": 1097,
+     "sha256_prefix": "f733416e23ed2568",
+     "changed": true
+    },
+    {
+     "name": "city-3410100",
+     "status": 200,
+     "bytes": 1116,
+     "sha256_prefix": "ff8a2b909f737f0b",
+     "changed": true
+    },
+    {
+     "name": "city-3420300",
+     "status": 200,
+     "bytes": 1157,
+     "sha256_prefix": "4e4b80193ef04c51",
+     "changed": true
+    },
+    {
+     "name": "city-3430100",
+     "status": 200,
+     "bytes": 1159,
+     "sha256_prefix": "4e7fd4eb306cf38c",
+     "changed": true
+    },
+    {
+     "name": "city-3440100",
+     "status": 200,
+     "bytes": 1138,
+     "sha256_prefix": "9f11c60fb90bb34e",
+     "changed": true
+    },
+    {
+     "name": "city-3450200",
+     "status": 200,
+     "bytes": 1140,
+     "sha256_prefix": "35826c518945ad93",
+     "changed": true
+    },
+    {
+     "name": "city-3460200",
+     "status": 200,
+     "bytes": 1159,
+     "sha256_prefix": "49994679ef11d37f",
+     "changed": true
+    },
+    {
+     "name": "city-3470100",
+     "status": 200,
+     "bytes": 1139,
+     "sha256_prefix": "a853ee9beed34a4a",
+     "changed": true
+    },
+    {
+     "name": "city-3480200",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "41b2735864471811",
+     "changed": true
+    },
+    {
+     "name": "city-3490100",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "412451ea9720a856",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": null,
+   "commit_url": null,
+   "compare_with_previous_run_url": null
+  },
   {
    "at": "2026-11-27T18:10:06Z",
    "ok": 36,
@@ -6059,315 +6360,14 @@
    "commit": "a84bc21",
    "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/a84bc21013f5eae48c16853f9b5038905f597fcd",
    "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/0796eae...a84bc21"
-  },
-  {
-   "at": "2026-11-19T05:05:44Z",
-   "ok": 36,
-   "failed": 0,
-   "requests": 36,
-   "changed_requests": [
-    "city-1010500",
-    "city-1020500",
-    "city-1030300",
-    "city-1030800",
-    "city-1040200",
-    "city-1050200",
-    "city-1060300",
-    "city-1070500",
-    "city-1080500",
-    "city-1081505",
-    "city-1081100",
-    "city-1080800",
-    "city-1090700",
-    "city-1090821",
-    "city-1100900",
-    "city-1110600",
-    "city-1121400",
-    "city-1131200",
-    "city-1141600",
-    "city-1151200",
-    "city-1151300",
-    "city-1160900",
-    "city-1171400",
-    "city-1182300",
-    "city-2310300",
-    "city-2320100",
-    "city-3410100",
-    "city-3420300",
-    "city-3430100",
-    "city-3440100",
-    "city-3450200",
-    "city-3460200",
-    "city-3470100",
-    "city-3480200",
-    "city-3490100"
-   ],
-   "requests_detail": [
-    {
-     "name": "distrits-islands",
-     "status": 200,
-     "bytes": 10071,
-     "sha256_prefix": "fe67afbdef8527b7",
-     "changed": false
-    },
-    {
-     "name": "city-1010500",
-     "status": 200,
-     "bytes": 1153,
-     "sha256_prefix": "3b8459cb4972f126",
-     "changed": true
-    },
-    {
-     "name": "city-1020500",
-     "status": 200,
-     "bytes": 1108,
-     "sha256_prefix": "8085d31c261dd62f",
-     "changed": true
-    },
-    {
-     "name": "city-1030300",
-     "status": 200,
-     "bytes": 1153,
-     "sha256_prefix": "998cae3324033629",
-     "changed": true
-    },
-    {
-     "name": "city-1030800",
-     "status": 200,
-     "bytes": 1151,
-     "sha256_prefix": "efb6268057dd590c",
-     "changed": true
-    },
-    {
-     "name": "city-1040200",
-     "status": 200,
-     "bytes": 1147,
-     "sha256_prefix": "78deea11a4d62793",
-     "changed": true
-    },
-    {
-     "name": "city-1050200",
-     "status": 200,
-     "bytes": 1128,
-     "sha256_prefix": "7f70d9d135a03a6f",
-     "changed": true
-    },
-    {
-     "name": "city-1060300",
-     "status": 200,
-     "bytes": 1147,
-     "sha256_prefix": "6117e8c3c1a3106f",
-     "changed": true
-    },
-    {
-     "name": "city-1070500",
-     "status": 200,
-     "bytes": 1105,
-     "sha256_prefix": "e8a8ac0d32057aaa",
-     "changed": true
-    },
-    {
-     "name": "city-1080500",
-     "status": 200,
-     "bytes": 1107,
-     "sha256_prefix": "1d8ca45e84c0408d",
-     "changed": true
-    },
-    {
-     "name": "city-1081505",
-     "status": 200,
-     "bytes": 1109,
-     "sha256_prefix": "c84c44da47520640",
-     "changed": true
-    },
-    {
-     "name": "city-1081100",
-     "status": 200,
-     "bytes": 1109,
-     "sha256_prefix": "c0590725688552d5",
-     "changed": true
-    },
-    {
-     "name": "city-1080800",
-     "status": 200,
-     "bytes": 1108,
-     "sha256_prefix": "2233ea96ff00ad59",
-     "changed": true
-    },
-    {
-     "name": "city-1090700",
-     "status": 200,
-     "bytes": 1141,
-     "sha256_prefix": "4c88da2912fff416",
-     "changed": true
-    },
-    {
-     "name": "city-1090821",
-     "status": 200,
-     "bytes": 1145,
-     "sha256_prefix": "042c873266b4fd0a",
-     "changed": true
-    },
-    {
-     "name": "city-1100900",
-     "status": 200,
-     "bytes": 1148,
-     "sha256_prefix": "9cda832a0db046bd",
-     "changed": true
-    },
-    {
-     "name": "city-1110600",
-     "status": 200,
-     "bytes": 1109,
-     "sha256_prefix": "9f65fe0979635c4b",
-     "changed": true
-    },
-    {
-     "name": "city-1121400",
-     "status": 200,
-     "bytes": 1128,
-     "sha256_prefix": "9d139b47e1fd5565",
-     "changed": true
-    },
-    {
-     "name": "city-1131200",
-     "status": 200,
-     "bytes": 1152,
-     "sha256_prefix": "df177a055640b442",
-     "changed": true
-    },
-    {
-     "name": "city-1141600",
-     "status": 200,
-     "bytes": 1108,
-     "sha256_prefix": "7cb7624e0cb1fac2",
-     "changed": true
-    },
-    {
-     "name": "city-1151200",
-     "status": 200,
-     "bytes": 1106,
-     "sha256_prefix": "bed132f20cc550af",
-     "changed": true
-    },
-    {
-     "name": "city-1151300",
-     "status": 200,
-     "bytes": 1108,
-     "sha256_prefix": "7e9c389d6a7af075",
-     "changed": true
-    },
-    {
-     "name": "city-1160900",
-     "status": 200,
-     "bytes": 1152,
-     "sha256_prefix": "c8bba7b15957ed17",
-     "changed": true
-    },
-    {
-     "name": "city-1171400",
-     "status": 200,
-     "bytes": 1152,
-     "sha256_prefix": "954e31f9e685a347",
-     "changed": true
-    },
-    {
-     "name": "city-1182300",
-     "status": 200,
-     "bytes": 1151,
-     "sha256_prefix": "7bbdadb16e091f18",
-     "changed": true
-    },
-    {
-     "name": "city-2310300",
-     "status": 200,
-     "bytes": 1175,
-     "sha256_prefix": "c81bb313398e2f21",
-     "changed": true
-    },
-    {
-     "name": "city-2320100",
-     "status": 200,
-     "bytes": 1096,
-     "sha256_prefix": "c71bec6dd4ceede8",
-     "changed": true
-    },
-    {
-     "name": "city-3410100",
-     "status": 200,
-     "bytes": 1157,
-     "sha256_prefix": "5103ee4688cfefe2",
-     "changed": true
-    },
-    {
-     "name": "city-3420300",
-     "status": 200,
-     "bytes": 1138,
-     "sha256_prefix": "878b7ad9e340dc67",
-     "changed": true
-    },
-    {
-     "name": "city-3430100",
-     "status": 200,
-     "bytes": 1178,
-     "sha256_prefix": "c1627d2b555211c7",
-     "changed": true
-    },
-    {
-     "name": "city-3440100",
-     "status": 200,
-     "bytes": 1158,
-     "sha256_prefix": "322dea96f9b8f575",
-     "changed": true
-    },
-    {
-     "name": "city-3450200",
-     "status": 200,
-     "bytes": 1177,
-     "sha256_prefix": "625276e512cefb93",
-     "changed": true
-    },
-    {
-     "name": "city-3460200",
-     "status": 200,
-     "bytes": 1159,
-     "sha256_prefix": "85cdbc5ad58e5150",
-     "changed": true
-    },
-    {
-     "name": "city-3470100",
-     "status": 200,
-     "bytes": 1157,
-     "sha256_prefix": "0353cd244a22d6dd",
-     "changed": true
-    },
-    {
-     "name": "city-3480200",
-     "status": 200,
-     "bytes": 1140,
-     "sha256_prefix": "c8360192c292f807",
-     "changed": true
-    },
-    {
-     "name": "city-3490100",
-     "status": 200,
-     "bytes": 1161,
-     "sha256_prefix": "6cf41673a722e3a9",
-     "changed": true
-    }
-   ],
-   "failed_requests": [],
-   "commit": "0796eae",
-   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/0796eae6be936757132e432333b6c938f74ec9d7",
-   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/51d3aef...0796eae"
   }
  ],
  "copies": {
   "files_in_git_data": 3,
-  "bytes_in_git_data": 1766078,
-  "files_in_vault_working_copy": 177,
-  "bytes_in_vault_working_copy": 219051,
-  "dated_copies_in_vault": 140,
+  "bytes_in_git_data": 1804379,
+  "files_in_vault_working_copy": 212,
+  "bytes_in_vault_working_copy": 257481,
+  "dated_copies_in_vault": 175,
   "where": {
    "api_latest": "https://data.promptugal.news/api/v1/ipma-city-forecasts/latest.json",
    "api_reads": "https://data.promptugal.news/api/v1/ipma-city-forecasts/reads.json",
@@ -6380,12 +6380,12 @@
  "held": {
   "items": 35,
   "noun": "cities",
-  "earliest": "2026-11-27",
-  "latest": "2026-11-27",
+  "earliest": "2026-11-28",
+  "latest": "2026-11-28",
   "date_field": "updated",
   "per_day": [
    {
-    "date": "2026-11-27",
+    "date": "2026-11-28",
     "count": 35
    }
   ],
@@ -6393,12 +6393,12 @@
   "note": "Dates are the items' own dates (forecast sources hold future dates). per_day lists up to the 60 newest days. null where the items carry no date."
  },
  "cadence_advice": {
-  "line": "The data changed on 40 of 92 reads over 10 days, about 4.0 times a day (earlier runs were hourly): reading more than twice a day would catch more states. Whether the pages that use it need them is for their owners to say.",
-  "basis": "suggestion derived from 92 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is hourly; runs before 21 Nov were hourly",
-  "runs_with_change": 40,
-  "runs_kept": 92,
-  "days_covered": 9.9,
-  "changes_per_day": 4.0
+  "line": "The data changed on 41 of 93 reads over 10 days, about 3.9 times a day: twice a day fits.",
+  "basis": "suggestion derived from 93 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is hourly; runs before 21 Nov were hourly",
+  "runs_with_change": 41,
+  "runs_kept": 93,
+  "days_covered": 10.5,
+  "changes_per_day": 3.9
  },
  "schedule_times": {
   "tz": "Europe/Lisbon",

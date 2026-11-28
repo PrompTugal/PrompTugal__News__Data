@@ -1,17 +1,17 @@
 {
  "source": "contracts-finder",
  "title": "London public contracts (Contracts Finder)",
- "read_at": "2026-11-27T18:04:27Z",
+ "read_at": "2026-11-28T07:04:07Z",
  "place": "london",
  "provenance": {
   "source": "https://www.contractsfinder.service.gov.uk/",
   "page": "https://www.contractsfinder.service.gov.uk/Search",
-  "read_at": "2026-11-27T18:04:27Z",
+  "read_at": "2026-11-28T07:04:07Z",
   "by": "sources/contracts-finder/collect.mjs (code, no model; run by data.b@PrompTugal.dinis)",
   "terms": "Open Government Licence v3.0, Crown copyright (Crown Commercial Service); credit every value with: \"Contains public sector information licensed under the Open Government Licence v3.0.\" Every OCDS package carries the licence. robots.txt has no rules (page not found). The published search needs no token. Natural persons are not kept (suppliers can be sole traders). Not reviewed by a person.",
   "api": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search",
-  "window_from": "2026-11-26T18:04:27Z",
-  "window_to": "2026-11-27T18:04:27Z",
+  "window_from": "2026-11-27T07:04:07Z",
+  "window_to": "2026-11-28T07:04:07Z",
   "interface": "Contracts Finder published OCDS search (no key)",
   "robots": "https://www.contractsfinder.service.gov.uk/robots.txt answered page not found (no rules), 19 Nov 2026"
  },
@@ -25,14 +25,14 @@
  },
  "about": "Procurement notices that London public bodies published on Contracts Finder in the 24 hours before the read: each with its notice page, stage, title, buyer (as published: mostly public bodies, sometimes an agent publishing for one), the buyer's postcode district, value, award value and deadline, as published. London means the buyer's locality says London or its postcode area lies wholly inside Greater London (E, EC, N, NW, SE, SW, W, WC); bodies in the outer areas that straddle the boundary are not counted. When the locality says London it counts even if the postcode lies outside London: some national bodies publish a non-geographic postcode (HMRC uses SS99, Southend) with a London address. Suppliers and contacts are not kept. Source: Contracts Finder (Crown Commercial Service); OGL v3.0. A weak signal, not an audit.",
  "counts": {
-  "notices_in_window": 233,
-  "london_notices": 45,
+  "notices_in_window": 240,
+  "london_notices": 48,
   "windows_read": 6,
   "windows_full": 1,
   "complete": false,
-  "buyers": 19,
+  "buyers": 21,
   "fields_dropped_wording": 0,
-  "value_gbp_listed": 1688590753
+  "value_gbp_listed": 1691053453
  },
  "top_buyers": [
   {
@@ -68,6 +68,10 @@
    "notices": 2
   },
   {
+   "buyer": "London Borough of Hammersmith & Fulham (LBHF)",
+   "notices": 2
+  },
+  {
    "buyer": "UK Health Security Agency",
    "notices": 2
   },
@@ -96,7 +100,11 @@
    "notices": 1
   },
   {
-   "buyer": "London Borough of Hammersmith & Fulham (LBHF)",
+   "buyer": "MINISTRY OF DEFENCE",
+   "notices": 1
+  },
+  {
+   "buyer": "Ministry of Housing, Communities and Local Government",
    "notices": 1
   },
   {
@@ -105,10 +113,6 @@
   },
   {
    "buyer": "The King's Trust",
-   "notices": 1
-  },
-  {
-   "buyer": "WANDLE HOUSING ASSOCIATION LIMITED",
    "notices": 1
   }
  ],
@@ -887,6 +891,72 @@
     "currency": "GBP"
    },
    "deadline": "2026-11-12T12:00:00Z",
+   "procurement_method": "selective"
+  },
+  {
+   "ocid": "ocds-b5fd17-a6cb5f97-6b9d-473b-9a0c-430f617f480e",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/1dd87735-adae-4cdf-9c7c-0f1d7616a6ab",
+   "published": "2026-11-27T10:30:56Z",
+   "stage": [
+    "award"
+   ],
+   "title": "Planned Void Refurbishment Works",
+   "buyer": "London Borough of Hammersmith & Fulham (LBHF)",
+   "buyer_locality": "London",
+   "buyer_postcode_district": "W6",
+   "status": "complete",
+   "value": null,
+   "award_value": {
+    "amount": 0,
+    "currency": "GBP"
+   },
+   "deadline": "2026-10-01T12:00:00+01:00",
+   "procurement_method": "selective"
+  },
+  {
+   "ocid": "ocds-b5fd17-6a288407-951d-4440-baf6-209448f47351",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/dc265ed9-7025-46cc-896c-0157bd311c85",
+   "published": "2026-11-27T10:29:48Z",
+   "stage": [
+    "award"
+   ],
+   "title": "EUS Live Service Tenants SC2",
+   "buyer": "MINISTRY OF DEFENCE",
+   "buyer_locality": "LONDON",
+   "buyer_postcode_district": "SW1A",
+   "status": "complete",
+   "value": {
+    "amount": 462700.2,
+    "currency": "GBP"
+   },
+   "award_value": {
+    "amount": 462700.2,
+    "currency": "GBP"
+   },
+   "deadline": "2026-10-26T17:00:00Z",
+   "procurement_method": "direct"
+  },
+  {
+   "ocid": "ocds-b5fd17-7602a808-997d-4abe-8164-b6126b85c830",
+   "notice": "https://www.contractsfinder.service.gov.uk/Notice/1a0b3dab-22a6-4f38-b524-0ddfb8d8cf60",
+   "published": "2026-11-27T10:16:28Z",
+   "stage": [
+    "award"
+   ],
+   "title": "MHCLG Penetration Testing",
+   "buyer": "Ministry of Housing, Communities and Local Government",
+   "buyer_locality": "London",
+   "buyer_postcode_district": "SW1P",
+   "status": "complete",
+   "value": {
+    "amount": 2000000,
+    "currency": "GBP"
+   },
+   "award_value": {
+    "amount": 2000000,
+    "currency": "GBP"
+   },
+   "deadline": "2026-10-22T12:00:00+01:00",
    "procurement_method": "selective"
   },
   {

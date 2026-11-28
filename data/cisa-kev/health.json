@@ -1,14 +1,14 @@
 {
  "source": "cisa-kev",
  "title": "Known exploited vulnerabilities (CISA KEV)",
- "generated_utc": "2026-11-28T02:41:47Z",
+ "generated_utc": "2026-11-28T07:12:46Z",
  "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
  "schedule": {
   "card_says": "every 6 hours",
   "really": "twice a day (07:03 and 18:03 Lisbon)"
  },
  "last_run": {
-  "at": "2026-11-27T18:04:25Z",
+  "at": "2026-11-28T07:04:06Z",
   "ok": 1,
   "failed": 0,
   "requests": [
@@ -17,13 +17,35 @@
     "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
     "status": 200,
     "meaning": "read",
-    "bytes": 1898186,
-    "changed": false
+    "bytes": 1903958,
+    "changed": true
    }
   ]
  },
  "problems": [],
  "runs": [
+  {
+   "at": "2026-11-28T07:04:06Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "kev"
+   ],
+   "requests_detail": [
+    {
+     "name": "kev",
+     "status": 200,
+     "bytes": 1903958,
+     "sha256_prefix": "05be4bfcfd70004c",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": null,
+   "commit_url": null,
+   "compare_with_previous_run_url": null
+  },
   {
    "at": "2026-11-27T18:04:25Z",
    "ok": 1,
@@ -407,34 +429,14 @@
    "commit": "83b562f",
    "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
    "compare_with_previous_run_url": null
-  },
-  {
-   "at": "2026-11-18T22:20:41Z",
-   "ok": 1,
-   "failed": 0,
-   "requests": 1,
-   "changed_requests": [],
-   "requests_detail": [
-    {
-     "name": "kev",
-     "status": 200,
-     "bytes": 1863915,
-     "sha256_prefix": "ad618e404a43d72a",
-     "changed": false
-    }
-   ],
-   "failed_requests": [],
-   "commit": "83b562f",
-   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
-   "compare_with_previous_run_url": null
   }
  ],
  "copies": {
   "files_in_git_data": 3,
-  "bytes_in_git_data": 736194,
-  "files_in_vault_working_copy": 3,
-  "bytes_in_vault_working_copy": 3796982,
-  "dated_copies_in_vault": 1,
+  "bytes_in_git_data": 741274,
+  "files_in_vault_working_copy": 4,
+  "bytes_in_vault_working_copy": 5706711,
+  "dated_copies_in_vault": 2,
   "where": {
    "api_latest": "https://data.promptugal.news/api/v1/cisa-kev/latest.json",
    "api_reads": "https://data.promptugal.news/api/v1/cisa-kev/reads.json",
@@ -445,16 +447,12 @@
   "note": "collect/lib.mjs says vaults/ is meant to stay out of git, but 0 files of this source are tracked in git today (earlier commits); the sgit vault holds the full history. Dinis has not yet ruled on the vaults/ question."
  },
  "held": {
-  "items": 1805,
+  "items": 1808,
   "noun": "known exploited vulnerabilities",
   "earliest": "2021-11-03",
-  "latest": "2026-11-25",
+  "latest": "2026-11-27",
   "date_field": "dateAdded",
   "per_day": [
-   {
-    "date": "2026-07-27",
-    "count": 2
-   },
    {
     "date": "2026-07-29",
     "count": 1
@@ -690,18 +688,22 @@
    {
     "date": "2026-11-25",
     "count": 10
+   },
+   {
+    "date": "2026-11-27",
+    "count": 3
    }
   ],
   "from": "data/cisa-kev/latest.json list \"vulnerabilities\"",
   "note": "Dates are the items' own dates (forecast sources hold future dates). per_day lists up to the 60 newest days. null where the items carry no date."
  },
  "cadence_advice": {
-  "line": "The data changed on 2 of 24 reads over 9 days, about 0.2 times a day: twice a day is more than needed, once a day would lose little.",
-  "basis": "suggestion derived from 24 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is every 6 hours; runs before 21 Nov were hourly",
-  "runs_with_change": 2,
-  "runs_kept": 24,
-  "days_covered": 8.9,
-  "changes_per_day": 0.2
+  "line": "The data changed on 3 of 25 reads over 9 days, about 0.3 times a day: twice a day is more than needed, once a day would lose little.",
+  "basis": "suggestion derived from 25 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is every 6 hours; runs before 21 Nov were hourly",
+  "runs_with_change": 3,
+  "runs_kept": 25,
+  "days_covered": 9.4,
+  "changes_per_day": 0.3
  },
  "schedule_times": {
   "tz": "Europe/Lisbon",

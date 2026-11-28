@@ -1,14 +1,14 @@
 {
  "source": "cams",
  "title": "Public live cameras: where they are and whether they are up",
- "generated_utc": "2026-11-28T02:41:47Z",
+ "generated_utc": "2026-11-28T07:12:45Z",
  "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
  "schedule": {
   "card_says": "hourly",
   "really": "twice a day (07:03 and 18:03 Lisbon)"
  },
  "last_run": {
-  "at": "2026-11-27T18:04:20Z",
+  "at": "2026-11-28T07:03:56Z",
   "ok": 2,
   "failed": 0,
   "requests": [
@@ -17,7 +17,7 @@
     "url": "https://www.portodelisboa.pt/tejo-live",
     "status": 200,
     "meaning": "read",
-    "bytes": 181617,
+    "bytes": 181620,
     "changed": true
    },
    {
@@ -32,6 +32,35 @@
  },
  "problems": [],
  "runs": [
+  {
+   "at": "2026-11-28T07:03:56Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "page-lisboa-tejo-live-cacilhas"
+   ],
+   "requests_detail": [
+    {
+     "name": "page-lisboa-tejo-live-cacilhas",
+     "status": 200,
+     "bytes": 181620,
+     "sha256_prefix": "91afe293900a3d5b",
+     "changed": true
+    },
+    {
+     "name": "page-portimao-praia-da-rocha-ondas",
+     "status": 200,
+     "bytes": 2745,
+     "sha256_prefix": "3710253342d218f4",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": null,
+   "commit_url": null,
+   "compare_with_previous_run_url": null
+  },
   {
    "at": "2026-11-27T18:04:20Z",
    "ok": 2,
@@ -582,40 +611,11 @@
    "commit": "d3644c1",
    "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d3644c1db2231a9dcffc4b8c42f17831ce0d9b8c",
    "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/ab758f8...d3644c1"
-  },
-  {
-   "at": "2026-11-19T07:04:00Z",
-   "ok": 2,
-   "failed": 0,
-   "requests": 2,
-   "changed_requests": [
-    "page-lisboa-tejo-live-cacilhas"
-   ],
-   "requests_detail": [
-    {
-     "name": "page-lisboa-tejo-live-cacilhas",
-     "status": 200,
-     "bytes": 181620,
-     "sha256_prefix": "ed9fa30782c26c4d",
-     "changed": true
-    },
-    {
-     "name": "page-portimao-praia-da-rocha-ondas",
-     "status": 200,
-     "bytes": 2745,
-     "sha256_prefix": "3710253342d218f4",
-     "changed": false
-    }
-   ],
-   "failed_requests": [],
-   "commit": "ab758f8",
-   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/ab758f84f3411cfda4eaef6a3b98834533309ceb",
-   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/6ee935e...ab758f8"
   }
  ],
  "copies": {
   "files_in_git_data": 3,
-  "bytes_in_git_data": 110855,
+  "bytes_in_git_data": 111906,
   "files_in_vault_working_copy": 0,
   "bytes_in_vault_working_copy": 0,
   "dated_copies_in_vault": 0,
@@ -631,12 +631,12 @@
  "held": {
   "items": 24,
   "noun": "cameras",
-  "earliest": "2026-11-27",
-  "latest": "2026-11-27",
+  "earliest": "2026-11-28",
+  "latest": "2026-11-28",
   "date_field": "checked_at",
   "per_day": [
    {
-    "date": "2026-11-27",
+    "date": "2026-11-28",
     "count": 24
    }
   ],
@@ -644,12 +644,12 @@
   "note": "Dates are the items' own dates (forecast sources hold future dates). per_day lists up to the 60 newest days. null where the items carry no date."
  },
  "cadence_advice": {
-  "line": "The data changed on 50 of 52 reads over 9 days: nearly every read finds new data, so it changes at least as often as it is read and reading more than twice a day would catch more states. Whether the pages that use it need them is for their owners to say.",
-  "basis": "suggestion derived from 52 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is hourly; runs before 21 Nov were hourly",
-  "runs_with_change": 50,
-  "runs_kept": 52,
-  "days_covered": 9.0,
-  "changes_per_day": 5.6
+  "line": "The data changed on 51 of 53 reads over 10 days: nearly every read finds new data, so it changes at least as often as it is read and reading more than twice a day would catch more states. Whether the pages that use it need them is for their owners to say.",
+  "basis": "suggestion derived from 53 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is hourly; runs before 21 Nov were hourly",
+  "runs_with_change": 51,
+  "runs_kept": 53,
+  "days_covered": 9.5,
+  "changes_per_day": 5.4
  },
  "schedule_times": {
   "tz": "Europe/Lisbon",

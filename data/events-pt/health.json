@@ -1,16 +1,16 @@
 {
  "source": "events-pt",
  "title": "Events in Portugal, by place",
- "generated_utc": "2026-11-28T02:41:47Z",
+ "generated_utc": "2026-11-28T07:12:46Z",
  "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
  "schedule": {
   "card_says": "every 6 hours",
   "really": "twice a day (07:03 and 18:03 Lisbon)"
  },
  "last_run": {
-  "at": "2026-11-27T18:08:53Z",
-  "ok": 17,
-  "failed": 1,
+  "at": "2026-11-28T07:08:49Z",
+  "ok": 18,
+  "failed": 0,
   "requests": [
    {
     "name": "agendalx-robots",
@@ -25,80 +25,80 @@
     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
     "status": 200,
     "meaning": "read",
-    "bytes": 170400,
-    "changed": false
+    "bytes": 194180,
+    "changed": true
    },
    {
     "name": "agendalx-events-p2",
     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=2",
     "status": 200,
     "meaning": "read",
-    "bytes": 121390,
-    "changed": false
+    "bytes": 94518,
+    "changed": true
    },
    {
     "name": "agendalx-events-p3",
     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=3",
     "status": 200,
     "meaning": "read",
-    "bytes": 86486,
-    "changed": false
+    "bytes": 80772,
+    "changed": true
    },
    {
     "name": "agendalx-events-p4",
     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=4",
     "status": 200,
     "meaning": "read",
-    "bytes": 143673,
-    "changed": false
+    "bytes": 111483,
+    "changed": true
    },
    {
     "name": "agendalx-events-p5",
     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=5",
     "status": 200,
     "meaning": "read",
-    "bytes": 71802,
-    "changed": false
+    "bytes": 101216,
+    "changed": true
    },
    {
     "name": "agendalx-events-p6",
     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=6",
     "status": 200,
     "meaning": "read",
-    "bytes": 66491,
-    "changed": false
+    "bytes": 81980,
+    "changed": true
    },
    {
     "name": "agendalx-events-p7",
     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=7",
     "status": 200,
     "meaning": "read",
-    "bytes": 71482,
-    "changed": false
+    "bytes": 73540,
+    "changed": true
    },
    {
     "name": "agendalx-events-p8",
     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=8",
     "status": 200,
     "meaning": "read",
-    "bytes": 63934,
-    "changed": false
+    "bytes": 63784,
+    "changed": true
    },
    {
     "name": "agendalx-events-p9",
     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=9",
     "status": 200,
     "meaning": "read",
-    "bytes": 60390,
-    "changed": false
+    "bytes": 60969,
+    "changed": true
    },
    {
     "name": "agendalx-events-p10",
     "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=10",
     "status": 200,
     "meaning": "read",
-    "bytes": 47188,
-    "changed": false
+    "bytes": 59805,
+    "changed": true
    },
    {
     "name": "lagos-robots",
@@ -113,7 +113,7 @@
     "url": "https://www.cm-lagos.pt/municipio/eventos",
     "status": 200,
     "meaning": "read",
-    "bytes": 197891,
+    "bytes": 194645,
     "changed": true
    },
    {
@@ -129,7 +129,7 @@
     "url": "https://teatrodasfiguras.pt/agenda",
     "status": 200,
     "meaning": "read",
-    "bytes": 426582,
+    "bytes": 423360,
     "changed": true
    },
    {
@@ -142,18 +142,18 @@
    },
    {
     "name": "tavira-events-p1",
-    "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-27&end_date=2027-01-26",
+    "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-28&end_date=2027-01-27",
     "status": 200,
     "meaning": "read",
-    "bytes": 181452,
+    "bytes": 180163,
     "changed": true
    },
    {
     "name": "tavira-events-p2",
-    "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=2&start_date=2026-11-27&end_date=2027-01-26",
+    "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=2&start_date=2026-11-28&end_date=2027-01-27",
     "status": 200,
     "meaning": "read",
-    "bytes": 38703,
+    "bytes": 28360,
     "changed": true
    }
   ]
@@ -166,10 +166,164 @@
     403
    ],
    "plain": "refused (forbidden)",
-   "failed_in": "48 of 58 runs kept"
+   "failed_in": "48 of 59 runs kept"
   }
  ],
  "runs": [
+  {
+   "at": "2026-11-28T07:08:49Z",
+   "ok": 18,
+   "failed": 0,
+   "requests": 18,
+   "changed_requests": [
+    "agendalx-events-p1",
+    "agendalx-events-p2",
+    "agendalx-events-p3",
+    "agendalx-events-p4",
+    "agendalx-events-p5",
+    "agendalx-events-p6",
+    "agendalx-events-p7",
+    "agendalx-events-p8",
+    "agendalx-events-p9",
+    "agendalx-events-p10",
+    "lagos-eventos",
+    "figuras-agenda",
+    "tavira-events-p1",
+    "tavira-events-p2"
+   ],
+   "requests_detail": [
+    {
+     "name": "agendalx-robots",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "status": 200,
+     "bytes": 194180,
+     "sha256_prefix": "6a0459e752772a7e",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p2",
+     "status": 200,
+     "bytes": 94518,
+     "sha256_prefix": "cdad691938e0dcc0",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p3",
+     "status": 200,
+     "bytes": 80772,
+     "sha256_prefix": "e02ed8a8347c73d0",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p4",
+     "status": 200,
+     "bytes": 111483,
+     "sha256_prefix": "5b8e3147ca3ca3e6",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p5",
+     "status": 200,
+     "bytes": 101216,
+     "sha256_prefix": "98e3827cba3c4b52",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p6",
+     "status": 200,
+     "bytes": 81980,
+     "sha256_prefix": "c44f800edf5b864e",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p7",
+     "status": 200,
+     "bytes": 73540,
+     "sha256_prefix": "388cac4a0c69655f",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p8",
+     "status": 200,
+     "bytes": 63784,
+     "sha256_prefix": "82e29cf5e00e5e3d",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p9",
+     "status": 200,
+     "bytes": 60969,
+     "sha256_prefix": "a19bae2b2d8149bc",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p10",
+     "status": 200,
+     "bytes": 59805,
+     "sha256_prefix": "8312c1e28957c3a8",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "status": 200,
+     "bytes": 194645,
+     "sha256_prefix": "ab095fbff962d0ba",
+     "changed": true
+    },
+    {
+     "name": "figuras-robots",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "status": 200,
+     "bytes": 423360,
+     "sha256_prefix": "3f11db1e24922835",
+     "changed": true
+    },
+    {
+     "name": "tavira-robots",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "status": 200,
+     "bytes": 180163,
+     "sha256_prefix": "f5e64fd71e844003",
+     "changed": true
+    },
+    {
+     "name": "tavira-events-p2",
+     "status": 200,
+     "bytes": 28360,
+     "sha256_prefix": "347c2d6564d647b5",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": null,
+   "commit_url": null,
+   "compare_with_previous_run_url": null
+  },
   {
    "at": "2026-11-27T18:08:53Z",
    "ok": 17,
@@ -2231,88 +2385,14 @@
    "commit": "83b562f",
    "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
    "compare_with_previous_run_url": null
-  },
-  {
-   "at": "2026-11-18T22:20:44Z",
-   "ok": 6,
-   "failed": 2,
-   "requests": 8,
-   "changed_requests": [
-    "agendalx-events-p1",
-    "lagos-eventos"
-   ],
-   "requests_detail": [
-    {
-     "name": "agendalx-robots",
-     "status": 200,
-     "bytes": 2676,
-     "sha256_prefix": "3073d1e371afb327",
-     "changed": false
-    },
-    {
-     "name": "agendalx-events-p1",
-     "status": 403,
-     "bytes": 5666,
-     "sha256_prefix": "0ef69d4224efc4a6",
-     "changed": true
-    },
-    {
-     "name": "lagos-robots",
-     "status": 200,
-     "bytes": 285,
-     "sha256_prefix": "848b423d72457bb6",
-     "changed": false
-    },
-    {
-     "name": "lagos-eventos",
-     "status": 200,
-     "bytes": 232932,
-     "sha256_prefix": "3feab7af179dc934",
-     "changed": true
-    },
-    {
-     "name": "figuras-robots",
-     "status": 200,
-     "bytes": 93,
-     "sha256_prefix": "7b51845953bb488e",
-     "changed": false
-    },
-    {
-     "name": "figuras-agenda",
-     "status": 200,
-     "bytes": 412216,
-     "sha256_prefix": "a383c4c302e8f0e4",
-     "changed": false
-    },
-    {
-     "name": "tavira-robots",
-     "status": 404,
-     "bytes": 236,
-     "sha256_prefix": "9448f8a1159c9b14",
-     "changed": false
-    },
-    {
-     "name": "tavira-events-p1",
-     "status": 200,
-     "bytes": 147059,
-     "sha256_prefix": "d8ed8fda37bb56d9",
-     "changed": false
-    }
-   ],
-   "failed_requests": [
-    "agendalx-events-p1"
-   ],
-   "commit": "83b562f",
-   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
-   "compare_with_previous_run_url": null
   }
  ],
  "copies": {
   "files_in_git_data": 3,
-  "bytes_in_git_data": 1015842,
-  "files_in_vault_working_copy": 53,
-  "bytes_in_vault_working_copy": 6815710,
-  "dated_copies_in_vault": 35,
+  "bytes_in_git_data": 1072337,
+  "files_in_vault_working_copy": 67,
+  "bytes_in_vault_working_copy": 8565386,
+  "dated_copies_in_vault": 49,
   "where": {
    "api_latest": "https://data.promptugal.news/api/v1/events-pt/latest.json",
    "api_reads": "https://data.promptugal.news/api/v1/events-pt/reads.json",
@@ -2323,7 +2403,7 @@
   "note": "collect/lib.mjs says vaults/ is meant to stay out of git, but 0 files of this source are tracked in git today (earlier commits); the sgit vault holds the full history. Dinis has not yet ruled on the vaults/ question."
  },
  "held": {
-  "items": 615,
+  "items": 627,
   "noun": "events",
   "earliest": null,
   "latest": null,
@@ -2333,12 +2413,12 @@
   "note": "Dates are the items' own dates (forecast sources hold future dates). per_day lists up to the 60 newest days. null where the items carry no date."
  },
  "cadence_advice": {
-  "line": "The data changed on 57 of 58 reads over 9 days: nearly every read finds new data, so it changes at least as often as it is read and reading more than twice a day would catch more states. Whether the pages that use it need them is for their owners to say.",
-  "basis": "suggestion derived from 58 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is every 6 hours; runs before 21 Nov were hourly",
-  "runs_with_change": 57,
-  "runs_kept": 58,
-  "days_covered": 9.2,
-  "changes_per_day": 6.2
+  "line": "The data changed on 58 of 59 reads over 10 days: nearly every read finds new data, so it changes at least as often as it is read and reading more than twice a day would catch more states. Whether the pages that use it need them is for their owners to say.",
+  "basis": "suggestion derived from 59 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is every 6 hours; runs before 21 Nov were hourly",
+  "runs_with_change": 58,
+  "runs_kept": 59,
+  "days_covered": 9.7,
+  "changes_per_day": 6.0
  },
  "schedule_times": {
   "tz": "Europe/Lisbon",

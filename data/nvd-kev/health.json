@@ -1,14 +1,14 @@
 {
  "source": "nvd-kev",
  "title": "NVD's record of every CVE on CISA's KEV list",
- "generated_utc": "2026-11-28T02:41:47Z",
+ "generated_utc": "2026-11-28T07:12:46Z",
  "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
  "schedule": {
   "card_says": "daily",
   "really": "once a day (07:03 Lisbon)"
  },
  "last_run": {
-  "at": "2026-11-27T07:14:14Z",
+  "at": "2026-11-28T07:11:46Z",
   "ok": 1,
   "failed": 0,
   "requests": [
@@ -17,13 +17,35 @@
     "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?hasKev&resultsPerPage=2000&startIndex=0",
     "status": 200,
     "meaning": "read",
-    "bytes": 19635904,
+    "bytes": 19642246,
     "changed": true
    }
   ]
  },
  "problems": [],
  "runs": [
+  {
+   "at": "2026-11-28T07:11:46Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "kev-0"
+   ],
+   "requests_detail": [
+    {
+     "name": "kev-0",
+     "status": 200,
+     "bytes": 19642246,
+     "sha256_prefix": "9e331a8dfe083b2b",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": null,
+   "commit_url": null,
+   "compare_with_previous_run_url": null
+  },
   {
    "at": "2026-11-27T07:14:14Z",
    "ok": 1,
@@ -135,10 +157,10 @@
  ],
  "copies": {
   "files_in_git_data": 3,
-  "bytes_in_git_data": 1558216,
-  "files_in_vault_working_copy": 4,
-  "bytes_in_vault_working_copy": 58908328,
-  "dated_copies_in_vault": 2,
+  "bytes_in_git_data": 1562787,
+  "files_in_vault_working_copy": 5,
+  "bytes_in_vault_working_copy": 78556916,
+  "dated_copies_in_vault": 3,
   "where": {
    "api_latest": "https://data.promptugal.news/api/v1/nvd-kev/latest.json",
    "api_reads": "https://data.promptugal.news/api/v1/nvd-kev/reads.json",
@@ -149,7 +171,7 @@
   "note": "collect/lib.mjs says vaults/ is meant to stay out of git, but 0 files of this source are tracked in git today (earlier commits); the sgit vault holds the full history. Dinis has not yet ruled on the vaults/ question."
  },
  "held": {
-  "items": 1805,
+  "items": 1806,
   "noun": "CVEs",
   "earliest": "2002-06-25",
   "latest": "2026-11-26",
@@ -393,7 +415,7 @@
    },
    {
     "date": "2026-11-26",
-    "count": 1
+    "count": 2
    }
   ],
   "from": "data/nvd-kev/latest.json list \"cves\"",

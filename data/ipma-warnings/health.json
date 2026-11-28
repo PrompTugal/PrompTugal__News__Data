@@ -1,14 +1,14 @@
 {
  "source": "ipma-warnings",
  "title": "IPMA weather warnings",
- "generated_utc": "2026-11-28T02:41:47Z",
+ "generated_utc": "2026-11-28T07:12:46Z",
  "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
  "schedule": {
   "card_says": "hourly",
   "really": "twice a day (07:03 and 18:03 Lisbon)"
  },
  "last_run": {
-  "at": "2026-11-27T18:12:01Z",
+  "at": "2026-11-28T07:11:33Z",
   "ok": 1,
   "failed": 0,
   "requests": [
@@ -30,10 +30,32 @@
     "error"
    ],
    "plain": "could not connect or timed out",
-   "failed_in": "1 of 92 runs kept"
+   "failed_in": "1 of 93 runs kept"
   }
  ],
  "runs": [
+  {
+   "at": "2026-11-28T07:11:33Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "warnings"
+   ],
+   "requests_detail": [
+    {
+     "name": "warnings",
+     "status": 200,
+     "bytes": 34525,
+     "sha256_prefix": "3e67440ae3bf0bbe",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": null,
+   "commit_url": null,
+   "compare_with_previous_run_url": null
+  },
   {
    "at": "2026-11-27T18:12:01Z",
    "ok": 1,
@@ -435,34 +457,14 @@
    "commit": "a84bc21",
    "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/a84bc21013f5eae48c16853f9b5038905f597fcd",
    "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/0796eae...a84bc21"
-  },
-  {
-   "at": "2026-11-19T05:07:38Z",
-   "ok": 1,
-   "failed": 0,
-   "requests": 1,
-   "changed_requests": [],
-   "requests_detail": [
-    {
-     "name": "warnings",
-     "status": 200,
-     "bytes": 39210,
-     "sha256_prefix": "c8817b9e749793c0",
-     "changed": false
-    }
-   ],
-   "failed_requests": [],
-   "commit": "0796eae",
-   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/0796eae6be936757132e432333b6c938f74ec9d7",
-   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/51d3aef...0796eae"
   }
  ],
  "copies": {
   "files_in_git_data": 3,
-  "bytes_in_git_data": 51072,
-  "files_in_vault_working_copy": 6,
-  "bytes_in_vault_working_copy": 173224,
-  "dated_copies_in_vault": 4,
+  "bytes_in_git_data": 51805,
+  "files_in_vault_working_copy": 7,
+  "bytes_in_vault_working_copy": 207749,
+  "dated_copies_in_vault": 5,
   "where": {
    "api_latest": "https://data.promptugal.news/api/v1/ipma-warnings/latest.json",
    "api_reads": "https://data.promptugal.news/api/v1/ipma-warnings/reads.json",
@@ -483,11 +485,11 @@
   "note": "Dates are the items' own dates (forecast sources hold future dates). per_day lists up to the 60 newest days. null where the items carry no date."
  },
  "cadence_advice": {
-  "line": "The data changed on 19 of 92 reads over 10 days, about 1.9 times a day: twice a day fits.",
-  "basis": "suggestion derived from 92 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is hourly; runs before 21 Nov were hourly",
-  "runs_with_change": 19,
-  "runs_kept": 92,
-  "days_covered": 9.9,
+  "line": "The data changed on 20 of 93 reads over 10 days, about 1.9 times a day: twice a day fits.",
+  "basis": "suggestion derived from 93 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is hourly; runs before 21 Nov were hourly",
+  "runs_with_change": 20,
+  "runs_kept": 93,
+  "days_covered": 10.5,
   "changes_per_day": 1.9
  },
  "schedule_times": {

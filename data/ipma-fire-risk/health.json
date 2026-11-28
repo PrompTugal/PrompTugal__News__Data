@@ -1,14 +1,14 @@
 {
  "source": "ipma-fire-risk",
  "title": "IPMA fire risk",
- "generated_utc": "2026-11-28T02:41:47Z",
+ "generated_utc": "2026-11-28T07:12:46Z",
  "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
  "schedule": {
   "card_says": "hourly",
   "really": "twice a day (07:03 and 18:03 Lisbon)"
  },
  "last_run": {
-  "at": "2026-11-27T18:11:36Z",
+  "at": "2026-11-28T07:11:08Z",
   "ok": 3,
   "failed": 0,
   "requests": [
@@ -46,7 +46,7 @@
     "error"
    ],
    "plain": "could not connect or timed out",
-   "failed_in": "1 of 92 runs kept"
+   "failed_in": "1 of 93 runs kept"
   },
   {
    "request": "rcm-d1",
@@ -55,7 +55,7 @@
     "error"
    ],
    "plain": "could not connect or timed out",
-   "failed_in": "1 of 92 runs kept"
+   "failed_in": "1 of 93 runs kept"
   },
   {
    "request": "rcm-d2",
@@ -64,10 +64,48 @@
     "error"
    ],
    "plain": "could not connect or timed out",
-   "failed_in": "1 of 92 runs kept"
+   "failed_in": "1 of 93 runs kept"
   }
  ],
  "runs": [
+  {
+   "at": "2026-11-28T07:11:08Z",
+   "ok": 3,
+   "failed": 0,
+   "requests": 3,
+   "changed_requests": [
+    "rcm-d0",
+    "rcm-d1",
+    "rcm-d2"
+   ],
+   "requests_detail": [
+    {
+     "name": "rcm-d0",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "8b360b58d29bb1db",
+     "changed": true
+    },
+    {
+     "name": "rcm-d1",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "594b57fa5c4e70ad",
+     "changed": true
+    },
+    {
+     "name": "rcm-d2",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "ecba66495e7a425d",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": null,
+   "commit_url": null,
+   "compare_with_previous_run_url": null
+  },
   {
    "at": "2026-11-27T18:11:36Z",
    "ok": 3,
@@ -745,48 +783,14 @@
    "commit": "a84bc21",
    "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/a84bc21013f5eae48c16853f9b5038905f597fcd",
    "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/0796eae...a84bc21"
-  },
-  {
-   "at": "2026-11-19T05:07:13Z",
-   "ok": 3,
-   "failed": 0,
-   "requests": 3,
-   "changed_requests": [],
-   "requests_detail": [
-    {
-     "name": "rcm-d0",
-     "status": 200,
-     "bytes": 24302,
-     "sha256_prefix": "4807504b76b97547",
-     "changed": false
-    },
-    {
-     "name": "rcm-d1",
-     "status": 200,
-     "bytes": 24302,
-     "sha256_prefix": "6f6ec1c7c920acc2",
-     "changed": false
-    },
-    {
-     "name": "rcm-d2",
-     "status": 200,
-     "bytes": 24302,
-     "sha256_prefix": "57c6eaf330de55b5",
-     "changed": false
-    }
-   ],
-   "failed_requests": [],
-   "commit": "0796eae",
-   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/0796eae6be936757132e432333b6c938f74ec9d7",
-   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/51d3aef...0796eae"
   }
  ],
  "copies": {
   "files_in_git_data": 3,
-  "bytes_in_git_data": 191105,
-  "files_in_vault_working_copy": 16,
-  "bytes_in_vault_working_copy": 365789,
-  "dated_copies_in_vault": 12,
+  "bytes_in_git_data": 192365,
+  "files_in_vault_working_copy": 19,
+  "bytes_in_vault_working_copy": 438695,
+  "dated_copies_in_vault": 15,
   "where": {
    "api_latest": "https://data.promptugal.news/api/v1/ipma-fire-risk/latest.json",
    "api_reads": "https://data.promptugal.news/api/v1/ipma-fire-risk/reads.json",
@@ -807,11 +811,11 @@
   "note": "Dates are the items' own dates (forecast sources hold future dates). per_day lists up to the 60 newest days. null where the items carry no date."
  },
  "cadence_advice": {
-  "line": "The data changed on 11 of 92 reads over 10 days, about 1.1 times a day: twice a day is more than needed, once a day would lose little.",
-  "basis": "suggestion derived from 92 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is hourly; runs before 21 Nov were hourly",
-  "runs_with_change": 11,
-  "runs_kept": 92,
-  "days_covered": 9.9,
+  "line": "The data changed on 12 of 93 reads over 10 days, about 1.1 times a day: twice a day is more than needed, once a day would lose little.",
+  "basis": "suggestion derived from 93 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is hourly; runs before 21 Nov were hourly",
+  "runs_with_change": 12,
+  "runs_kept": 93,
+  "days_covered": 10.5,
   "changes_per_day": 1.1
  },
  "schedule_times": {

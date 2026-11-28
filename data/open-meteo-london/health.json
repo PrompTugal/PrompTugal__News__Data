@@ -1,23 +1,23 @@
 {
  "source": "open-meteo-london",
  "title": "London forecast (Open-Meteo)",
- "generated_utc": "2026-11-28T02:41:47Z",
+ "generated_utc": "2026-11-28T07:12:46Z",
  "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
  "schedule": {
   "card_says": "every 6 hours",
   "really": "twice a day (07:03 and 18:03 Lisbon)"
  },
  "last_run": {
-  "at": "2026-11-27T18:12:14Z",
-  "ok": 0,
-  "failed": 1,
+  "at": "2026-11-28T07:11:54Z",
+  "ok": 1,
+  "failed": 0,
   "requests": [
    {
     "name": "forecast",
     "url": "https://api.open-meteo.com/v1/forecast?latitude=51.5074&longitude=-0.1278&hourly=temperature_2m,precipitation_probability,precipitation,wind_speed_10m,wind_gusts_10m,wind_direction_10m,weather_code&daily=temperature_2m_min,temperature_2m_max,precipitation_sum,weather_code&forecast_days=3&timezone=UTC&wind_speed_unit=kmh",
-    "status": 429,
-    "meaning": "refused (rate limited)",
-    "bytes": 86,
+    "status": 200,
+    "meaning": "read",
+    "bytes": 4221,
     "changed": true
    }
   ]
@@ -30,10 +30,32 @@
     429
    ],
    "plain": "refused (rate limited)",
-   "failed_in": "6 of 19 runs kept"
+   "failed_in": "6 of 20 runs kept"
   }
  ],
  "runs": [
+  {
+   "at": "2026-11-28T07:11:54Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "forecast"
+   ],
+   "requests_detail": [
+    {
+     "name": "forecast",
+     "status": 200,
+     "bytes": 4221,
+     "sha256_prefix": "e0cb03963fd4dc66",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": null,
+   "commit_url": null,
+   "compare_with_previous_run_url": null
+  },
   {
    "at": "2026-11-27T18:12:14Z",
    "ok": 0,
@@ -463,10 +485,10 @@
  ],
  "copies": {
   "files_in_git_data": 3,
-  "bytes_in_git_data": 52544,
-  "files_in_vault_working_copy": 3,
-  "bytes_in_vault_working_copy": 9266,
-  "dated_copies_in_vault": 1,
+  "bytes_in_git_data": 54290,
+  "files_in_vault_working_copy": 4,
+  "bytes_in_vault_working_copy": 13504,
+  "dated_copies_in_vault": 2,
   "where": {
    "api_latest": "https://data.promptugal.news/api/v1/open-meteo-london/latest.json",
    "api_reads": "https://data.promptugal.news/api/v1/open-meteo-london/reads.json",
@@ -479,14 +501,10 @@
  "held": {
   "items": 72,
   "noun": "hourly forecast points",
-  "earliest": "2026-11-27",
-  "latest": "2026-11-29",
+  "earliest": "2026-11-28",
+  "latest": "2026-11-30",
   "date_field": "time",
   "per_day": [
-   {
-    "date": "2026-11-27",
-    "count": 24
-   },
    {
     "date": "2026-11-28",
     "count": 24
@@ -494,17 +512,21 @@
    {
     "date": "2026-11-29",
     "count": 24
+   },
+   {
+    "date": "2026-11-30",
+    "count": 24
    }
   ],
   "from": "data/open-meteo-london/latest.json list \"hourly\"",
   "note": "Dates are the items' own dates (forecast sources hold future dates). per_day lists up to the 60 newest days. null where the items carry no date."
  },
  "cadence_advice": {
-  "line": "The data changed on 17 of 19 reads over 9 days: nearly every read finds new data, so it changes at least as often as it is read and reading more than twice a day would catch more states. Whether the pages that use it need them is for their owners to say.",
-  "basis": "suggestion derived from 19 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is every 6 hours; runs before 21 Nov were hourly",
-  "runs_with_change": 17,
-  "runs_kept": 19,
-  "days_covered": 8.8,
+  "line": "The data changed on 18 of 20 reads over 9 days: nearly every read finds new data, so it changes at least as often as it is read and reading more than twice a day would catch more states. Whether the pages that use it need them is for their owners to say.",
+  "basis": "suggestion derived from 20 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is every 6 hours; runs before 21 Nov were hourly",
+  "runs_with_change": 18,
+  "runs_kept": 20,
+  "days_covered": 9.4,
   "changes_per_day": 1.9
  },
  "schedule_times": {

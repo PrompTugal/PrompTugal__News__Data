@@ -1,7 +1,7 @@
 {
  "place": "london",
  "country": "GB",
- "read_at": "2026-11-27T18:12:46Z",
+ "read_at": "2026-11-28T07:12:32Z",
  "by": "collect/by-place-now.mjs (code, no model; data@PrompTugal.dinis), from this site's collected sources",
  "coords": {
   "lat": 51.50722,
@@ -22,28 +22,28 @@
  "forecast": {
   "days": [
    {
-    "date": "2026-11-27",
-    "t_min_c": 2,
-    "t_max_c": 4.6,
-    "rain_mm": 0.6,
-    "weather_code": 51
-   },
-   {
     "date": "2026-11-28",
-    "t_min_c": 4.6,
-    "t_max_c": 10.1,
-    "rain_mm": 8.2,
-    "weather_code": 63
+    "t_min_c": 5.1,
+    "t_max_c": 10.6,
+    "rain_mm": 5.5,
+    "weather_code": 61
    },
    {
     "date": "2026-11-29",
-    "t_min_c": 5.7,
-    "t_max_c": 9.9,
-    "rain_mm": 0.4,
+    "t_min_c": 6.4,
+    "t_max_c": 10.3,
+    "rain_mm": 0,
+    "weather_code": 45
+   },
+   {
+    "date": "2026-11-30",
+    "t_min_c": 6.8,
+    "t_max_c": 12.4,
+    "rain_mm": 1.8,
     "weather_code": 51
    }
   ],
-  "at": "2026-11-27T07:14:23Z",
+  "at": "2026-11-28T07:11:54Z",
   "expected_cadence": {
    "name": "twice a day",
    "seconds": 43200,
@@ -60,7 +60,7 @@
  "floods": {
   "warnings": [],
   "stations": 10,
-  "at": "2026-11-27T18:04:42Z",
+  "at": "2026-11-28T07:04:23Z",
   "source": "https://data.promptugal.news/api/v1/ea-flood/latest.json",
   "attribution": "this uses Environment Agency flood and river level data from the real-time data API (Beta)",
   "license": {
@@ -71,11 +71,11 @@
  "reads": {
   "ea-flood": {
    "url": "https://data.promptugal.news/api/v1/ea-flood/latest.json",
-   "at": "2026-11-27T18:04:42Z"
+   "at": "2026-11-28T07:04:23Z"
   },
   "open-meteo-london": {
    "url": "https://data.promptugal.news/api/v1/open-meteo-london/latest.json",
-   "at": "2026-11-27T07:14:23Z"
+   "at": "2026-11-28T07:11:54Z"
   }
  }
 }

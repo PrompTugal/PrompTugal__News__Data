@@ -1,14 +1,14 @@
 {
  "source": "tfl-road-disruptions",
  "title": "London road disruptions (TfL)",
- "generated_utc": "2026-11-28T02:41:47Z",
+ "generated_utc": "2026-11-28T07:12:46Z",
  "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
  "schedule": {
   "card_says": "daily",
   "really": "once a day (07:03 Lisbon)"
  },
  "last_run": {
-  "at": "2026-11-27T07:14:53Z",
+  "at": "2026-11-28T07:12:25Z",
   "ok": 1,
   "failed": 0,
   "requests": [
@@ -17,13 +17,35 @@
     "url": "https://api.tfl.gov.uk/Road/all/Disruption",
     "status": 200,
     "meaning": "read",
-    "bytes": 222261,
+    "bytes": 259969,
     "changed": true
    }
   ]
  },
  "problems": [],
  "runs": [
+  {
+   "at": "2026-11-28T07:12:25Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "disruptions"
+   ],
+   "requests_detail": [
+    {
+     "name": "disruptions",
+     "status": 200,
+     "bytes": 259969,
+     "sha256_prefix": "22ae2b81580dde6d",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": null,
+   "commit_url": null,
+   "compare_with_previous_run_url": null
+  },
   {
    "at": "2026-11-27T07:14:53Z",
    "ok": 1,
@@ -91,10 +113,10 @@
  ],
  "copies": {
   "files_in_git_data": 3,
-  "bytes_in_git_data": 68829,
-  "files_in_vault_working_copy": 4,
-  "bytes_in_vault_working_copy": 672733,
-  "dated_copies_in_vault": 2,
+  "bytes_in_git_data": 71132,
+  "files_in_vault_working_copy": 5,
+  "bytes_in_vault_working_copy": 970410,
+  "dated_copies_in_vault": 3,
   "where": {
    "api_latest": "https://data.promptugal.news/api/v1/tfl-road-disruptions/latest.json",
    "api_reads": "https://data.promptugal.news/api/v1/tfl-road-disruptions/reads.json",
@@ -105,19 +127,23 @@
   "note": "collect/lib.mjs says vaults/ is meant to stay out of git, but 0 files of this source are tracked in git today (earlier commits); the sgit vault holds the full history. Dinis has not yet ruled on the vaults/ question."
  },
  "held": {
-  "items": 93,
+  "items": 95,
   "noun": "road disruptions",
   "earliest": "2026-11-26",
-  "latest": "2026-11-27",
+  "latest": "2026-11-28",
   "date_field": "updated",
   "per_day": [
    {
     "date": "2026-11-26",
-    "count": 32
+    "count": 30
    },
    {
     "date": "2026-11-27",
-    "count": 61
+    "count": 33
+   },
+   {
+    "date": "2026-11-28",
+    "count": 32
    }
   ],
   "from": "data/tfl-road-disruptions/latest.json list \"disruptions\"",

@@ -1,63 +1,63 @@
 {
  "source": "contracts-finder",
  "title": "London public contracts (Contracts Finder)",
- "generated_utc": "2026-11-28T02:41:47Z",
+ "generated_utc": "2026-11-28T07:12:46Z",
  "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
  "schedule": {
   "card_says": "every 6 hours",
   "really": "twice a day (07:03 and 18:03 Lisbon)"
  },
  "last_run": {
-  "at": "2026-11-27T18:04:27Z",
+  "at": "2026-11-28T07:04:07Z",
   "ok": 6,
   "failed": 0,
   "requests": [
    {
     "name": "window-1",
-    "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-26T18:04:27&publishedTo=2026-11-26T22:04:27&limit=100",
+    "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-27T07:04:07&publishedTo=2026-11-27T11:04:07&limit=100",
     "status": 200,
     "meaning": "read",
-    "bytes": 6842,
+    "bytes": 447164,
     "changed": true
    },
    {
     "name": "window-2",
-    "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-26T22:04:27&publishedTo=2026-11-27T02:04:27&limit=100",
+    "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-27T11:04:07&publishedTo=2026-11-27T15:04:07&limit=100",
     "status": 200,
     "meaning": "read",
-    "bytes": 1420,
+    "bytes": 565767,
     "changed": true
    },
    {
     "name": "window-3",
-    "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-27T02:04:27&publishedTo=2026-11-27T06:04:27&limit=100",
+    "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-27T15:04:07&publishedTo=2026-11-27T19:04:07&limit=100",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 408090,
+    "changed": true
+   },
+   {
+    "name": "window-4",
+    "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-27T19:04:07&publishedTo=2026-11-27T23:04:07&limit=100",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 6621,
+    "changed": true
+   },
+   {
+    "name": "window-5",
+    "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-27T23:04:07&publishedTo=2026-11-28T03:04:07&limit=100",
     "status": 200,
     "meaning": "read",
     "bytes": 1420,
     "changed": true
    },
    {
-    "name": "window-4",
-    "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-27T06:04:27&publishedTo=2026-11-27T10:04:27&limit=100",
-    "status": 200,
-    "meaning": "read",
-    "bytes": 272032,
-    "changed": true
-   },
-   {
-    "name": "window-5",
-    "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-27T10:04:27&publishedTo=2026-11-27T14:04:27&limit=100",
-    "status": 200,
-    "meaning": "read",
-    "bytes": 564217,
-    "changed": true
-   },
-   {
     "name": "window-6",
-    "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-27T14:04:27&publishedTo=2026-11-27T18:04:27&limit=100",
+    "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-28T03:04:07&publishedTo=2026-11-28T07:04:07&limit=100",
     "status": 200,
     "meaning": "read",
-    "bytes": 546652,
+    "bytes": 1420,
     "changed": true
    }
   ]
@@ -70,7 +70,7 @@
     429
    ],
    "plain": "refused (rate limited)",
-   "failed_in": "1 of 9 runs kept"
+   "failed_in": "1 of 10 runs kept"
   },
   {
    "request": "window-6",
@@ -79,10 +79,72 @@
     429
    ],
    "plain": "refused (rate limited)",
-   "failed_in": "1 of 9 runs kept"
+   "failed_in": "1 of 10 runs kept"
   }
  ],
  "runs": [
+  {
+   "at": "2026-11-28T07:04:07Z",
+   "ok": 6,
+   "failed": 0,
+   "requests": 6,
+   "changed_requests": [
+    "window-1",
+    "window-2",
+    "window-3",
+    "window-4",
+    "window-5",
+    "window-6"
+   ],
+   "requests_detail": [
+    {
+     "name": "window-1",
+     "status": 200,
+     "bytes": 447164,
+     "sha256_prefix": "b11af08d4db4ecbe",
+     "changed": true
+    },
+    {
+     "name": "window-2",
+     "status": 200,
+     "bytes": 565767,
+     "sha256_prefix": "faae008cb53f7575",
+     "changed": true
+    },
+    {
+     "name": "window-3",
+     "status": 200,
+     "bytes": 408090,
+     "sha256_prefix": "a9332ef273bd423e",
+     "changed": true
+    },
+    {
+     "name": "window-4",
+     "status": 200,
+     "bytes": 6621,
+     "sha256_prefix": "b14dae48a172714f",
+     "changed": true
+    },
+    {
+     "name": "window-5",
+     "status": 200,
+     "bytes": 1420,
+     "sha256_prefix": "45221412d20f761c",
+     "changed": true
+    },
+    {
+     "name": "window-6",
+     "status": 200,
+     "bytes": 1420,
+     "sha256_prefix": "aeb0ab57e5b626b7",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": null,
+   "commit_url": null,
+   "compare_with_previous_run_url": null
+  },
   {
    "at": "2026-11-27T18:04:27Z",
    "ok": 6,
@@ -640,10 +702,10 @@
  ],
  "copies": {
   "files_in_git_data": 8,
-  "bytes_in_git_data": 156931,
-  "files_in_vault_working_copy": 29,
-  "bytes_in_vault_working_copy": 4290180,
-  "dated_copies_in_vault": 22,
+  "bytes_in_git_data": 163843,
+  "files_in_vault_working_copy": 35,
+  "bytes_in_vault_working_copy": 5758561,
+  "dated_copies_in_vault": 28,
   "where": {
    "api_latest": "https://data.promptugal.news/api/v1/contracts-finder/latest.json",
    "api_reads": "https://data.promptugal.news/api/v1/contracts-finder/reads.json",
@@ -654,7 +716,7 @@
   "note": "collect/lib.mjs says vaults/ is meant to stay out of git, but 0 files of this source are tracked in git today (earlier commits); the sgit vault holds the full history. Dinis has not yet ruled on the vaults/ question."
  },
  "held": {
-  "items": 45,
+  "items": 48,
   "noun": "procurement notices",
   "earliest": "2026-11-27",
   "latest": "2026-11-27",
@@ -662,19 +724,19 @@
   "per_day": [
    {
     "date": "2026-11-27",
-    "count": 45
+    "count": 48
    }
   ],
   "from": "data/contracts-finder/latest.json list \"notices\"",
   "note": "Dates are the items' own dates (forecast sources hold future dates). per_day lists up to the 60 newest days. null where the items carry no date."
  },
  "cadence_advice": {
-  "line": "The data changed on 8 of 9 reads over 8 days: nearly every read finds new data, so it changes at least as often as it is read and reading more than twice a day would catch more states. Whether the pages that use it need them is for their owners to say.",
-  "basis": "suggestion derived from 9 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is every 6 hours; runs before 21 Nov were hourly",
-  "runs_with_change": 8,
-  "runs_kept": 9,
-  "days_covered": 7.9,
-  "changes_per_day": 1.0
+  "line": "The data changed on 9 of 10 reads over 8 days: nearly every read finds new data, so it changes at least as often as it is read and reading more than twice a day would catch more states. Whether the pages that use it need them is for their owners to say.",
+  "basis": "suggestion derived from 10 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is every 6 hours; runs before 21 Nov were hourly",
+  "runs_with_change": 9,
+  "runs_kept": 10,
+  "days_covered": 8.5,
+  "changes_per_day": 1.1
  },
  "schedule_times": {
   "tz": "Europe/Lisbon",
