@@ -1,7 +1,7 @@
 {
  "source": "social",
  "title": "Social signals: organisations' public posts, by link",
- "generated_utc": "2026-11-28T07:12:46Z",
+ "generated_utc": "2026-11-28T07:25:53Z",
  "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
  "schedule": {
   "card_says": "every 6 hours",
@@ -141,6 +141,7 @@
    "failed_in": "49 of 49 runs kept"
   }
  ],
+ "earlier_failures": [],
  "runs": [
   {
    "at": "2026-11-28T07:11:55Z",
@@ -232,9 +233,9 @@
     "bsky-search-startup-portugal",
     "bsky-search-ia-portugal"
    ],
-   "commit": null,
-   "commit_url": null,
-   "compare_with_previous_run_url": null
+   "commit": "23d7b70",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/23d7b7002db329d50b7b93a5eb5da73c0172eff0",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/526dd0b...23d7b70"
   },
   {
    "at": "2026-11-27T18:12:16Z",

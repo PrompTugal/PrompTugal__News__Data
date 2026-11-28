@@ -1,7 +1,7 @@
 {
  "source": "nvd-kev",
  "title": "NVD's record of every CVE on CISA's KEV list",
- "generated_utc": "2026-11-28T07:12:46Z",
+ "generated_utc": "2026-11-28T07:25:53Z",
  "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
  "schedule": {
   "card_says": "daily",
@@ -23,6 +23,7 @@
   ]
  },
  "problems": [],
+ "earlier_failures": [],
  "runs": [
   {
    "at": "2026-11-28T07:11:46Z",
@@ -42,9 +43,9 @@
     }
    ],
    "failed_requests": [],
-   "commit": null,
-   "commit_url": null,
-   "compare_with_previous_run_url": null
+   "commit": "23d7b70",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/23d7b7002db329d50b7b93a5eb5da73c0172eff0",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/d409b57...23d7b70"
   },
   {
    "at": "2026-11-27T07:14:14Z",
@@ -157,7 +158,7 @@
  ],
  "copies": {
   "files_in_git_data": 3,
-  "bytes_in_git_data": 1562787,
+  "bytes_in_git_data": 1563198,
   "files_in_vault_working_copy": 5,
   "bytes_in_vault_working_copy": 78556916,
   "dated_copies_in_vault": 3,

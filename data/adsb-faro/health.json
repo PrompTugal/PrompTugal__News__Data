@@ -1,7 +1,7 @@
 {
  "source": "adsb-faro",
  "title": "Flights around Faro airport",
- "generated_utc": "2026-11-28T07:12:45Z",
+ "generated_utc": "2026-11-28T07:25:52Z",
  "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
  "schedule": {
   "card_says": "hourly",
@@ -22,7 +22,8 @@
    }
   ]
  },
- "problems": [
+ "problems": [],
+ "earlier_failures": [
   {
    "request": "point-lpfr",
    "url": "https://api.adsb.lol/v2/point/37.0144/-7.9659/40",
@@ -52,9 +53,9 @@
     }
    ],
    "failed_requests": [],
-   "commit": null,
-   "commit_url": null,
-   "compare_with_previous_run_url": null
+   "commit": "23d7b70",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/23d7b7002db329d50b7b93a5eb5da73c0172eff0",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/526dd0b...23d7b70"
   },
   {
    "at": "2026-11-27T18:04:17Z",
@@ -483,7 +484,7 @@
  ],
  "copies": {
   "files_in_git_data": 3,
-  "bytes_in_git_data": 51572,
+  "bytes_in_git_data": 51395,
   "files_in_vault_working_copy": 0,
   "bytes_in_vault_working_copy": 0,
   "dated_copies_in_vault": 0,
