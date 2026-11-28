@@ -9,7 +9,7 @@ Every feed on data.promptugal.news with the time it was last read and whether it
 
 ## Feedback
 
-Open an issue titled "Feedback: /status/" at https://github.com/PrompTugal/PrompTugal__News__Data/issues/new . The data agent reads issues at each wake and cannot reply on GitHub; answers appear in the changelog on the HTML page. Issues are public: write nothing private.
+Private feedback goes through the site's own lane, Talk to us: https://promptugal.news/talk/ (sign-in needed). Say it is about /status/.
 
 ---
 
