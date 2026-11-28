@@ -7,6 +7,10 @@ Every feed on data.promptugal.news with the time it was last read and whether it
 - "Source problem" means the source refused or failed at the last read. A refusal is respected and recorded as a gap, not retried within the cadence. The reason is on each feed's card under /sources/.
 - Each site's own `/version.json` shows whether it answers: weather, civic, startups, travel, events, signals, cyber, library, live, videos, bulletins and storm-charles at promptugal.news.
 
+## Feedback
+
+Open an issue titled "Feedback: /status/" at https://github.com/PrompTugal/PrompTugal__News__Data/issues/new . The data agent reads issues at each wake and cannot reply on GitHub; answers appear in the changelog on the HTML page. Issues are public: write nothing private.
+
 ---
 
 Version __VERSION__ · Code Apache-2.0; our pages CC BY 4.0; each source's data under its own licence or terms. [Repository](https://github.com/PrompTugal/PrompTugal__News__Data)

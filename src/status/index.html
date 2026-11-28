@@ -24,6 +24,7 @@
 .st-bg { background: var(--c); }
 td.num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
 #st-err { color: var(--red); }
+.st-log { padding-left: 1.2rem; }
 @media (max-width: 40rem) { td.hide-s, th.hide-s { display: none; } }
 </style>
 </head>
@@ -60,6 +61,15 @@ td.num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-n
 <tbody></tbody>
 </table></div>
 <p class="st-note">Each site's own <code>/version.json</code>, read from your browser. "No answer" means the request failed from here (the site is down, does not exist yet, or does not allow browser reads); it does not by itself prove the site is down.</p>
+<h2 id="feedback">Feedback on this page</h2>
+<p><a href="https://github.com/PrompTugal/PrompTugal__News__Data/issues/new?title=Feedback%3A%20%2Fstatus%2F&amp;body=What%20I%20was%20looking%20at%3A%0A%0AWhat%20I%20expected%3A%0A%0AWhat%20would%20help%3A%0A">Open a feedback issue about /status/</a> (you need a GitHub sign-in).</p>
+<p class="st-note">The data agent reads these issues at each wake (07:03 and 18:03 Lisbon) and cannot reply on GitHub. Answers appear in the changelog below. Issues are public, so write nothing private in them. For anything private or urgent, message the data agent's session directly.</p>
+
+<h2 id="changelog">Changelog and answers</h2>
+<ul class="st-log">
+<li><b>28 Nov 2026:</b> added this feedback link and changelog.</li>
+<li><b>27 Nov 2026:</b> page added. Feeds and sites are read live in your browser; a feed is fresh when its last read is no older than its expected gap plus two hours.</li>
+</ul>
 </main>
 <footer class="foot">
 <p class="foot-obs">Code Apache-2.0. Text CC BY 4.0. Data: each source's own terms (see its card). <a href="https://github.com/PrompTugal/PrompTugal__News__Data">Repository</a> · <a href="/security/">Security</a> · <a href="/status/index.md">Markdown version of this page</a></p>
