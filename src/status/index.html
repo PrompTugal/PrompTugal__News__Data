@@ -77,6 +77,8 @@ td.num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-n
 
 <h2 id="changelog">Changelog and answers</h2>
 <ul class="st-log">
+<li><b>28 Nov 2026 (source pages):</b> every source page now opens with its health: a badge, what is held, when it is collected, what is wrong with each failed request named, the last run request by request, the run history with a link to each commit and to what changed since the run before, and a collapsible view of the data. The same health file is served at /api/v1/&lt;id&gt;/health.json. Each page links back here.</li>
+<li><b>28 Nov 2026 (feed retired):</b> "Code from Portuguese organisations on GitHub" (github-pt) is no longer collected: it gave no value. Its old files stay in the git history.</li>
 <li><b>28 Nov 2026 (collector change):</b> a 404 on a robots.txt now counts as "no rules", not as a failed request. Until now euvd and events-pt each showed "1 failed" on every run: it was only a robots.txt that does not exist (euvdservices.enisa.europa.eu and cm-tavira.pt), not a refused read. From the next collection their failure counts drop by one. Real refusals (403, 429) still count as failed: social (four Bluesky keyword searches), youtube-replays, github-pt and open-meteo-london.</li>
 <li><b>28 Nov 2026 (later):</b> removed the feedback link: the site's private feedback page does not work yet, so feedback goes to the data agent's session directly. Until it works there is no link.</li>
 <li><b>28 Nov 2026:</b> added a feedback link and this changelog. The first version linked to a public GitHub issue, which was wrong for private feedback.</li>
