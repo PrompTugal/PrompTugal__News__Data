@@ -1,0 +1,653 @@
+{
+ "source": "cams",
+ "title": "Public live cameras: where they are and whether they are up",
+ "generated_utc": "2026-11-28T02:40:14Z",
+ "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
+ "schedule": {
+  "card_says": "hourly",
+  "really": "twice a day (07:03 and 18:03 Lisbon)"
+ },
+ "last_run": {
+  "at": "2026-11-27T18:04:20Z",
+  "ok": 2,
+  "failed": 0,
+  "requests": [
+   {
+    "name": "page-lisboa-tejo-live-cacilhas",
+    "url": "https://www.portodelisboa.pt/tejo-live",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 181617,
+    "changed": true
+   },
+   {
+    "name": "page-portimao-praia-da-rocha-ondas",
+    "url": "https://meteorologia.aemtg.pt/video",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 2745,
+    "changed": false
+   }
+  ]
+ },
+ "problems": [],
+ "runs": [
+  {
+   "at": "2026-11-27T18:04:20Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "page-lisboa-tejo-live-cacilhas"
+   ],
+   "requests_detail": [
+    {
+     "name": "page-lisboa-tejo-live-cacilhas",
+     "status": 200,
+     "bytes": 181617,
+     "sha256_prefix": "84477d6e810bbd43",
+     "changed": true
+    },
+    {
+     "name": "page-portimao-praia-da-rocha-ondas",
+     "status": 200,
+     "bytes": 2745,
+     "sha256_prefix": "3710253342d218f4",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "526dd0b",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/526dd0b8fd852d1fffb5fd1c54adb4760ccfe3e8",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/d409b57...526dd0b"
+  },
+  {
+   "at": "2026-11-27T07:04:01Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "page-lisboa-tejo-live-cacilhas"
+   ],
+   "requests_detail": [
+    {
+     "name": "page-lisboa-tejo-live-cacilhas",
+     "status": 200,
+     "bytes": 182685,
+     "sha256_prefix": "f41b0b659b1a00b1",
+     "changed": true
+    },
+    {
+     "name": "page-portimao-praia-da-rocha-ondas",
+     "status": 200,
+     "bytes": 2745,
+     "sha256_prefix": "3710253342d218f4",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d409b57",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d409b5734208af88d47485b2878734dbf9e6aa7c",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/d466166...d409b57"
+  },
+  {
+   "at": "2026-11-26T18:04:14Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "page-lisboa-tejo-live-cacilhas"
+   ],
+   "requests_detail": [
+    {
+     "name": "page-lisboa-tejo-live-cacilhas",
+     "status": 200,
+     "bytes": 181620,
+     "sha256_prefix": "940592ce548d45ef",
+     "changed": true
+    },
+    {
+     "name": "page-portimao-praia-da-rocha-ondas",
+     "status": 200,
+     "bytes": 2745,
+     "sha256_prefix": "3710253342d218f4",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d466166",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d466166b925f53f8d36d4a6047daf9a0634bf489",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-26T07:04:25Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "page-lisboa-tejo-live-cacilhas"
+   ],
+   "requests_detail": [
+    {
+     "name": "page-lisboa-tejo-live-cacilhas",
+     "status": 200,
+     "bytes": 181662,
+     "sha256_prefix": "53ebfd99ad2ec077",
+     "changed": true
+    },
+    {
+     "name": "page-portimao-praia-da-rocha-ondas",
+     "status": 200,
+     "bytes": 2745,
+     "sha256_prefix": "3710253342d218f4",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d466166",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d466166b925f53f8d36d4a6047daf9a0634bf489",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/bd410a7...d466166"
+  },
+  {
+   "at": "2026-11-21T07:04:22Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "page-lisboa-tejo-live-cacilhas"
+   ],
+   "requests_detail": [
+    {
+     "name": "page-lisboa-tejo-live-cacilhas",
+     "status": 200,
+     "bytes": 182685,
+     "sha256_prefix": "06c9f968a9f25ea5",
+     "changed": true
+    },
+    {
+     "name": "page-portimao-praia-da-rocha-ondas",
+     "status": 200,
+     "bytes": 2745,
+     "sha256_prefix": "3710253342d218f4",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "bd410a7",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/bd410a73762d6b0a755da0a946556d6e47d54c8e",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/65c6667...bd410a7"
+  },
+  {
+   "at": "2026-11-20T18:04:32Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "page-lisboa-tejo-live-cacilhas"
+   ],
+   "requests_detail": [
+    {
+     "name": "page-lisboa-tejo-live-cacilhas",
+     "status": 200,
+     "bytes": 181617,
+     "sha256_prefix": "7be4fa541f22274c",
+     "changed": true
+    },
+    {
+     "name": "page-portimao-praia-da-rocha-ondas",
+     "status": 200,
+     "bytes": 2745,
+     "sha256_prefix": "3710253342d218f4",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "65c6667",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/65c66677f4957a21ffbcf6d58b3f8794f505d39f",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/cb88d7b...65c6667"
+  },
+  {
+   "at": "2026-11-20T07:04:10Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "page-lisboa-tejo-live-cacilhas"
+   ],
+   "requests_detail": [
+    {
+     "name": "page-lisboa-tejo-live-cacilhas",
+     "status": 200,
+     "bytes": 181617,
+     "sha256_prefix": "adff644f0811ef56",
+     "changed": true
+    },
+    {
+     "name": "page-portimao-praia-da-rocha-ondas",
+     "status": 200,
+     "bytes": 2745,
+     "sha256_prefix": "3710253342d218f4",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "cb88d7b",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/cb88d7b793bc938078a150fb7bd84b6477977aea",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/64fbf7d...cb88d7b"
+  },
+  {
+   "at": "2026-11-19T18:04:01Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "page-lisboa-tejo-live-cacilhas"
+   ],
+   "requests_detail": [
+    {
+     "name": "page-lisboa-tejo-live-cacilhas",
+     "status": 200,
+     "bytes": 181620,
+     "sha256_prefix": "d32cc3cd8383fbcd",
+     "changed": true
+    },
+    {
+     "name": "page-portimao-praia-da-rocha-ondas",
+     "status": 200,
+     "bytes": 2745,
+     "sha256_prefix": "3710253342d218f4",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "64fbf7d",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/64fbf7dda8967b6095e265f2e10aba0dfb3d65e8",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/9061eff...64fbf7d"
+  },
+  {
+   "at": "2026-11-19T17:49:13Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "page-lisboa-tejo-live-cacilhas"
+   ],
+   "requests_detail": [
+    {
+     "name": "page-lisboa-tejo-live-cacilhas",
+     "status": 200,
+     "bytes": 181620,
+     "sha256_prefix": "b25a6cf9b18b1dfa",
+     "changed": true
+    },
+    {
+     "name": "page-portimao-praia-da-rocha-ondas",
+     "status": 200,
+     "bytes": 2745,
+     "sha256_prefix": "3710253342d218f4",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "9061eff",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/9061eff93ba7382a554df559566d7b10ed515511",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-19T17:49:02Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "page-lisboa-tejo-live-cacilhas"
+   ],
+   "requests_detail": [
+    {
+     "name": "page-lisboa-tejo-live-cacilhas",
+     "status": 200,
+     "bytes": 182678,
+     "sha256_prefix": "840634e17651ac24",
+     "changed": true
+    },
+    {
+     "name": "page-portimao-praia-da-rocha-ondas",
+     "status": 200,
+     "bytes": 2745,
+     "sha256_prefix": "3710253342d218f4",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "9061eff",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/9061eff93ba7382a554df559566d7b10ed515511",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/11e0962...9061eff"
+  },
+  {
+   "at": "2026-11-19T16:03:57Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "page-lisboa-tejo-live-cacilhas"
+   ],
+   "requests_detail": [
+    {
+     "name": "page-lisboa-tejo-live-cacilhas",
+     "status": 200,
+     "bytes": 182678,
+     "sha256_prefix": "1d0c13dbc3b41fd9",
+     "changed": true
+    },
+    {
+     "name": "page-portimao-praia-da-rocha-ondas",
+     "status": 200,
+     "bytes": 2745,
+     "sha256_prefix": "3710253342d218f4",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "11e0962",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/11e096221d96c4c87d5c943ef91b534dd547f19c",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/e25333f...11e0962"
+  },
+  {
+   "at": "2026-11-19T15:03:39Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "page-lisboa-tejo-live-cacilhas"
+   ],
+   "requests_detail": [
+    {
+     "name": "page-lisboa-tejo-live-cacilhas",
+     "status": 200,
+     "bytes": 183165,
+     "sha256_prefix": "a60222bead9e0801",
+     "changed": true
+    },
+    {
+     "name": "page-portimao-praia-da-rocha-ondas",
+     "status": 200,
+     "bytes": 2745,
+     "sha256_prefix": "3710253342d218f4",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "e25333f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/e25333f846d431ddcfef34bf037922034bcf906d",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/48b39e4...e25333f"
+  },
+  {
+   "at": "2026-11-19T14:04:09Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "page-lisboa-tejo-live-cacilhas"
+   ],
+   "requests_detail": [
+    {
+     "name": "page-lisboa-tejo-live-cacilhas",
+     "status": 200,
+     "bytes": 182678,
+     "sha256_prefix": "4a204cfd0f859b70",
+     "changed": true
+    },
+    {
+     "name": "page-portimao-praia-da-rocha-ondas",
+     "status": 200,
+     "bytes": 2745,
+     "sha256_prefix": "3710253342d218f4",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "48b39e4",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/48b39e465b9430649d5f464bda4decabd928642f",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/4a4d130...48b39e4"
+  },
+  {
+   "at": "2026-11-19T13:04:12Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "page-lisboa-tejo-live-cacilhas"
+   ],
+   "requests_detail": [
+    {
+     "name": "page-lisboa-tejo-live-cacilhas",
+     "status": 200,
+     "bytes": 181620,
+     "sha256_prefix": "ba12544fda347e0f",
+     "changed": true
+    },
+    {
+     "name": "page-portimao-praia-da-rocha-ondas",
+     "status": 200,
+     "bytes": 2745,
+     "sha256_prefix": "3710253342d218f4",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "4a4d130",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/4a4d13005725f1c24d6cd12ebee2d66ee2f2df91",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/379aae6...4a4d130"
+  },
+  {
+   "at": "2026-11-19T12:04:27Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "page-lisboa-tejo-live-cacilhas"
+   ],
+   "requests_detail": [
+    {
+     "name": "page-lisboa-tejo-live-cacilhas",
+     "status": 200,
+     "bytes": 181620,
+     "sha256_prefix": "4410ce8e5f79afea",
+     "changed": true
+    },
+    {
+     "name": "page-portimao-praia-da-rocha-ondas",
+     "status": 200,
+     "bytes": 2745,
+     "sha256_prefix": "3710253342d218f4",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "379aae6",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/379aae67e159f2afe46678e771171e631f923e70",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/6179c7e...379aae6"
+  },
+  {
+   "at": "2026-11-19T11:04:47Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "page-lisboa-tejo-live-cacilhas"
+   ],
+   "requests_detail": [
+    {
+     "name": "page-lisboa-tejo-live-cacilhas",
+     "status": 200,
+     "bytes": 181620,
+     "sha256_prefix": "41b8a9cc6b4a4e6c",
+     "changed": true
+    },
+    {
+     "name": "page-portimao-praia-da-rocha-ondas",
+     "status": 200,
+     "bytes": 2745,
+     "sha256_prefix": "3710253342d218f4",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "6179c7e",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/6179c7e3c43fc3591e1601011d223221e5597d92",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/1460f87...6179c7e"
+  },
+  {
+   "at": "2026-11-19T10:04:19Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "page-lisboa-tejo-live-cacilhas"
+   ],
+   "requests_detail": [
+    {
+     "name": "page-lisboa-tejo-live-cacilhas",
+     "status": 200,
+     "bytes": 182678,
+     "sha256_prefix": "b37e7e55ffb09ed0",
+     "changed": true
+    },
+    {
+     "name": "page-portimao-praia-da-rocha-ondas",
+     "status": 200,
+     "bytes": 2745,
+     "sha256_prefix": "3710253342d218f4",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "1460f87",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/1460f87e59532acd781b90ca10f34d7f5f1f6e79",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/2f43933...1460f87"
+  },
+  {
+   "at": "2026-11-19T09:04:33Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "page-lisboa-tejo-live-cacilhas"
+   ],
+   "requests_detail": [
+    {
+     "name": "page-lisboa-tejo-live-cacilhas",
+     "status": 200,
+     "bytes": 181620,
+     "sha256_prefix": "d442c30d89059bd0",
+     "changed": true
+    },
+    {
+     "name": "page-portimao-praia-da-rocha-ondas",
+     "status": 200,
+     "bytes": 2745,
+     "sha256_prefix": "3710253342d218f4",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "2f43933",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/2f43933ff73bbd1a4c67e0c938172e9914634f41",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/d3644c1...2f43933"
+  },
+  {
+   "at": "2026-11-19T08:04:09Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "page-lisboa-tejo-live-cacilhas"
+   ],
+   "requests_detail": [
+    {
+     "name": "page-lisboa-tejo-live-cacilhas",
+     "status": 200,
+     "bytes": 182678,
+     "sha256_prefix": "27ba58180a81477e",
+     "changed": true
+    },
+    {
+     "name": "page-portimao-praia-da-rocha-ondas",
+     "status": 200,
+     "bytes": 2745,
+     "sha256_prefix": "3710253342d218f4",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d3644c1",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d3644c1db2231a9dcffc4b8c42f17831ce0d9b8c",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/ab758f8...d3644c1"
+  },
+  {
+   "at": "2026-11-19T07:04:00Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "page-lisboa-tejo-live-cacilhas"
+   ],
+   "requests_detail": [
+    {
+     "name": "page-lisboa-tejo-live-cacilhas",
+     "status": 200,
+     "bytes": 181620,
+     "sha256_prefix": "ed9fa30782c26c4d",
+     "changed": true
+    },
+    {
+     "name": "page-portimao-praia-da-rocha-ondas",
+     "status": 200,
+     "bytes": 2745,
+     "sha256_prefix": "3710253342d218f4",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "ab758f8",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/ab758f84f3411cfda4eaef6a3b98834533309ceb",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/6ee935e...ab758f8"
+  }
+ ],
+ "copies": {
+  "files_in_git_data": 3,
+  "bytes_in_git_data": 110821,
+  "files_in_vault_working_copy": 0,
+  "bytes_in_vault_working_copy": 0,
+  "dated_copies_in_vault": 0,
+  "where": {
+   "api_latest": "https://data.promptugal.news/api/v1/cams/latest.json",
+   "api_reads": "https://data.promptugal.news/api/v1/cams/reads.json",
+   "source_page": "https://data.promptugal.news/sources/cams/",
+   "git": "https://github.com/PrompTugal/PrompTugal__News__Data/tree/dev/data/cams"
+  },
+  "tracked_in_git_vaults": 0,
+  "note": "collect/lib.mjs says vaults/ is meant to stay out of git, but 0 files of this source are tracked in git today (earlier commits); the sgit vault holds the full history. Dinis has not yet ruled on the vaults/ question."
+ },
+ "cadence_advice": {
+  "line": "The data changed on 50 of 52 reads over 9 days: nearly every read finds new data, so it changes at least as often as it is read and reading more than twice a day would catch more states. Whether the pages that use it need them is for their owners to say.",
+  "basis": "suggestion derived from 52 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is hourly; runs before 21 Nov were hourly",
+  "runs_with_change": 50,
+  "runs_kept": 52,
+  "days_covered": 9.0,
+  "changes_per_day": 5.6
+ },
+ "schedule_times": {
+  "tz": "Europe/Lisbon",
+  "times_local": [
+   "07:03",
+   "18:03"
+  ],
+  "note": "Lisbon is UTC+0 from late October to late March, so these are also 07:03 and 18:03 UTC then; one hour earlier in UTC in summer.",
+  "runs_per_day": 2
+ },
+ "api_spec": null,
+ "api_docs": null,
+ "own_page_copy": null,
+ "own_page_copy_note": "not taken: a copy or screenshot of the publisher's page needs a rights ruling from cl-6.rights; source_home links to the page itself",
+ "source_home": "https://github.com/PrompTugal/PrompTugal__News__Data/blob/dev/register/cams.json"
+}

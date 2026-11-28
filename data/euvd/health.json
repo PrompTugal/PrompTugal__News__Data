@@ -1,7 +1,7 @@
 {
  "source": "euvd",
  "title": "EU Vulnerability Database: latest, exploited and recently updated (ENISA EUVD)",
- "generated_utc": "2026-11-28T02:34:58Z",
+ "generated_utc": "2026-11-28T02:40:14Z",
  "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
  "schedule": {
   "card_says": "every 6 hours",
@@ -137,6 +137,99 @@
     "updated-6",
     "updated-7"
    ],
+   "requests_detail": [
+    {
+     "name": "robots-euvd",
+     "status": 200,
+     "bytes": 67,
+     "sha256_prefix": "90d24bc3bf698ac1",
+     "changed": false
+    },
+    {
+     "name": "robots-services",
+     "status": 404,
+     "bytes": 196,
+     "sha256_prefix": "80c3fe2ae1062abf",
+     "changed": false
+    },
+    {
+     "name": "latest",
+     "status": 200,
+     "bytes": 4491,
+     "sha256_prefix": "6e79f0da56e2f826",
+     "changed": true
+    },
+    {
+     "name": "exploited",
+     "status": 200,
+     "bytes": 4170,
+     "sha256_prefix": "51bc0deddd4b2259",
+     "changed": false
+    },
+    {
+     "name": "exploited-total",
+     "status": 200,
+     "bytes": 1310,
+     "sha256_prefix": "20394e47227d37b3",
+     "changed": true
+    },
+    {
+     "name": "updated-0",
+     "status": 200,
+     "bytes": 174640,
+     "sha256_prefix": "9aeefe575b159798",
+     "changed": true
+    },
+    {
+     "name": "updated-1",
+     "status": 200,
+     "bytes": 129951,
+     "sha256_prefix": "5e9b27e1543bc570",
+     "changed": true
+    },
+    {
+     "name": "updated-2",
+     "status": 200,
+     "bytes": 143388,
+     "sha256_prefix": "388f11a9e7412ac4",
+     "changed": true
+    },
+    {
+     "name": "updated-3",
+     "status": 200,
+     "bytes": 120519,
+     "sha256_prefix": "a2308aa57b2aece4",
+     "changed": true
+    },
+    {
+     "name": "updated-4",
+     "status": 200,
+     "bytes": 176884,
+     "sha256_prefix": "eb22778d239a5ed7",
+     "changed": true
+    },
+    {
+     "name": "updated-5",
+     "status": 200,
+     "bytes": 170754,
+     "sha256_prefix": "f9495970f6f7570c",
+     "changed": true
+    },
+    {
+     "name": "updated-6",
+     "status": 200,
+     "bytes": 436833,
+     "sha256_prefix": "e7b64a77e9d8c9df",
+     "changed": true
+    },
+    {
+     "name": "updated-7",
+     "status": 200,
+     "bytes": 245352,
+     "sha256_prefix": "220710dcb0768ce0",
+     "changed": true
+    }
+   ],
    "failed_requests": [],
    "commit": "526dd0b",
    "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/526dd0b8fd852d1fffb5fd1c54adb4760ccfe3e8",
@@ -161,6 +254,113 @@
     "updated-7",
     "updated-8",
     "updated-9"
+   ],
+   "requests_detail": [
+    {
+     "name": "robots-euvd",
+     "status": 200,
+     "bytes": 67,
+     "sha256_prefix": "90d24bc3bf698ac1",
+     "changed": false
+    },
+    {
+     "name": "robots-services",
+     "status": 404,
+     "bytes": 196,
+     "sha256_prefix": "80c3fe2ae1062abf",
+     "changed": false
+    },
+    {
+     "name": "latest",
+     "status": 200,
+     "bytes": 5586,
+     "sha256_prefix": "b607577efd8b99b2",
+     "changed": true
+    },
+    {
+     "name": "exploited",
+     "status": 200,
+     "bytes": 4170,
+     "sha256_prefix": "51bc0deddd4b2259",
+     "changed": true
+    },
+    {
+     "name": "exploited-total",
+     "status": 200,
+     "bytes": 1207,
+     "sha256_prefix": "f888bb31b2491241",
+     "changed": true
+    },
+    {
+     "name": "updated-0",
+     "status": 200,
+     "bytes": 176467,
+     "sha256_prefix": "fc5814c1be2ba239",
+     "changed": true
+    },
+    {
+     "name": "updated-1",
+     "status": 200,
+     "bytes": 245827,
+     "sha256_prefix": "9327d35089a25f33",
+     "changed": true
+    },
+    {
+     "name": "updated-2",
+     "status": 200,
+     "bytes": 367933,
+     "sha256_prefix": "dcfa030bffc082df",
+     "changed": true
+    },
+    {
+     "name": "updated-3",
+     "status": 200,
+     "bytes": 240933,
+     "sha256_prefix": "7a53a66b1a422f27",
+     "changed": true
+    },
+    {
+     "name": "updated-4",
+     "status": 200,
+     "bytes": 166620,
+     "sha256_prefix": "6611e733c21b1a9d",
+     "changed": true
+    },
+    {
+     "name": "updated-5",
+     "status": 200,
+     "bytes": 353372,
+     "sha256_prefix": "762e358f8fe83e0f",
+     "changed": true
+    },
+    {
+     "name": "updated-6",
+     "status": 200,
+     "bytes": 658568,
+     "sha256_prefix": "74bce1604cf22b9e",
+     "changed": true
+    },
+    {
+     "name": "updated-7",
+     "status": 200,
+     "bytes": 160922,
+     "sha256_prefix": "7c1a0bae89be06fa",
+     "changed": true
+    },
+    {
+     "name": "updated-8",
+     "status": 200,
+     "bytes": 194064,
+     "sha256_prefix": "8c0a88d8c81339b5",
+     "changed": true
+    },
+    {
+     "name": "updated-9",
+     "status": 200,
+     "bytes": 185632,
+     "sha256_prefix": "bfdf98786da8ba30",
+     "changed": true
+    }
    ],
    "failed_requests": [],
    "commit": "d409b57",
@@ -188,6 +388,127 @@
     "updated-9",
     "updated-10",
     "updated-11"
+   ],
+   "requests_detail": [
+    {
+     "name": "robots-euvd",
+     "status": 200,
+     "bytes": 67,
+     "sha256_prefix": "90d24bc3bf698ac1",
+     "changed": false
+    },
+    {
+     "name": "robots-services",
+     "status": 404,
+     "bytes": 196,
+     "sha256_prefix": "80c3fe2ae1062abf",
+     "changed": false
+    },
+    {
+     "name": "latest",
+     "status": 200,
+     "bytes": 5781,
+     "sha256_prefix": "a4de3ad2b532f355",
+     "changed": true
+    },
+    {
+     "name": "exploited",
+     "status": 200,
+     "bytes": 5126,
+     "sha256_prefix": "cdcc64986f8eb3d4",
+     "changed": true
+    },
+    {
+     "name": "exploited-total",
+     "status": 200,
+     "bytes": 1278,
+     "sha256_prefix": "f33fe093dd370ce1",
+     "changed": true
+    },
+    {
+     "name": "updated-0",
+     "status": 200,
+     "bytes": 162508,
+     "sha256_prefix": "a034ab9ac7eb9da1",
+     "changed": true
+    },
+    {
+     "name": "updated-1",
+     "status": 200,
+     "bytes": 143977,
+     "sha256_prefix": "b899671e9e64ba14",
+     "changed": true
+    },
+    {
+     "name": "updated-2",
+     "status": 200,
+     "bytes": 153488,
+     "sha256_prefix": "1133c2a3ee1ac043",
+     "changed": true
+    },
+    {
+     "name": "updated-3",
+     "status": 200,
+     "bytes": 149551,
+     "sha256_prefix": "9212429c81572d86",
+     "changed": true
+    },
+    {
+     "name": "updated-4",
+     "status": 200,
+     "bytes": 163217,
+     "sha256_prefix": "1c39765ded03a7c8",
+     "changed": true
+    },
+    {
+     "name": "updated-5",
+     "status": 200,
+     "bytes": 155624,
+     "sha256_prefix": "5e2eb88e8bed0983",
+     "changed": true
+    },
+    {
+     "name": "updated-6",
+     "status": 200,
+     "bytes": 154422,
+     "sha256_prefix": "97ea58c39e63d07b",
+     "changed": true
+    },
+    {
+     "name": "updated-7",
+     "status": 200,
+     "bytes": 156125,
+     "sha256_prefix": "1aa205cfda1a9b85",
+     "changed": true
+    },
+    {
+     "name": "updated-8",
+     "status": 200,
+     "bytes": 141552,
+     "sha256_prefix": "43957478b235cd59",
+     "changed": true
+    },
+    {
+     "name": "updated-9",
+     "status": 200,
+     "bytes": 146372,
+     "sha256_prefix": "235532023bce7939",
+     "changed": true
+    },
+    {
+     "name": "updated-10",
+     "status": 200,
+     "bytes": 146315,
+     "sha256_prefix": "6794d09f9cdc55d5",
+     "changed": true
+    },
+    {
+     "name": "updated-11",
+     "status": 200,
+     "bytes": 244306,
+     "sha256_prefix": "aee4ad9deab8652d",
+     "changed": true
+    }
    ],
    "failed_requests": [],
    "commit": "bd410a7",
@@ -233,6 +554,253 @@
     "updated-28",
     "updated-29"
    ],
+   "requests_detail": [
+    {
+     "name": "robots-euvd",
+     "status": 200,
+     "bytes": 67,
+     "sha256_prefix": "90d24bc3bf698ac1",
+     "changed": false
+    },
+    {
+     "name": "robots-services",
+     "status": 404,
+     "bytes": 196,
+     "sha256_prefix": "80c3fe2ae1062abf",
+     "changed": false
+    },
+    {
+     "name": "latest",
+     "status": 200,
+     "bytes": 7244,
+     "sha256_prefix": "1038e7575fd095f8",
+     "changed": true
+    },
+    {
+     "name": "exploited",
+     "status": 200,
+     "bytes": 4838,
+     "sha256_prefix": "0e18054b002e7cda",
+     "changed": false
+    },
+    {
+     "name": "exploited-total",
+     "status": 200,
+     "bytes": 1627,
+     "sha256_prefix": "0d72a0a17de8814c",
+     "changed": true
+    },
+    {
+     "name": "updated-0",
+     "status": 200,
+     "bytes": 163949,
+     "sha256_prefix": "117a24e6050873d6",
+     "changed": true
+    },
+    {
+     "name": "updated-1",
+     "status": 200,
+     "bytes": 137750,
+     "sha256_prefix": "309efc2e51f35de5",
+     "changed": true
+    },
+    {
+     "name": "updated-2",
+     "status": 200,
+     "bytes": 150588,
+     "sha256_prefix": "5fca9ee7742455ef",
+     "changed": true
+    },
+    {
+     "name": "updated-3",
+     "status": 200,
+     "bytes": 145338,
+     "sha256_prefix": "64cfe65ca763ad75",
+     "changed": true
+    },
+    {
+     "name": "updated-4",
+     "status": 200,
+     "bytes": 144988,
+     "sha256_prefix": "b587ece21f5c8b9d",
+     "changed": true
+    },
+    {
+     "name": "updated-5",
+     "status": 200,
+     "bytes": 196569,
+     "sha256_prefix": "f4234c65768755d1",
+     "changed": true
+    },
+    {
+     "name": "updated-6",
+     "status": 200,
+     "bytes": 222351,
+     "sha256_prefix": "b0ee0685e36f099e",
+     "changed": true
+    },
+    {
+     "name": "updated-7",
+     "status": 200,
+     "bytes": 269012,
+     "sha256_prefix": "59a83e4353e7f75d",
+     "changed": true
+    },
+    {
+     "name": "updated-8",
+     "status": 200,
+     "bytes": 310887,
+     "sha256_prefix": "abdb7e875ef44d29",
+     "changed": true
+    },
+    {
+     "name": "updated-9",
+     "status": 200,
+     "bytes": 351060,
+     "sha256_prefix": "99e230234bf0a2af",
+     "changed": true
+    },
+    {
+     "name": "updated-10",
+     "status": 200,
+     "bytes": 300885,
+     "sha256_prefix": "96c398fafe0bc865",
+     "changed": true
+    },
+    {
+     "name": "updated-11",
+     "status": 200,
+     "bytes": 145643,
+     "sha256_prefix": "8d5bcd3447fbc567",
+     "changed": true
+    },
+    {
+     "name": "updated-12",
+     "status": 200,
+     "bytes": 265704,
+     "sha256_prefix": "064754cd409ed315",
+     "changed": true
+    },
+    {
+     "name": "updated-13",
+     "status": 200,
+     "bytes": 288746,
+     "sha256_prefix": "a0b776d2884e95e3",
+     "changed": true
+    },
+    {
+     "name": "updated-14",
+     "status": 200,
+     "bytes": 227744,
+     "sha256_prefix": "2f6c77159c293261",
+     "changed": true
+    },
+    {
+     "name": "updated-15",
+     "status": 200,
+     "bytes": 276384,
+     "sha256_prefix": "b272390fcb288bf5",
+     "changed": true
+    },
+    {
+     "name": "updated-16",
+     "status": 200,
+     "bytes": 210945,
+     "sha256_prefix": "d6eed780e8e34fd2",
+     "changed": true
+    },
+    {
+     "name": "updated-17",
+     "status": 200,
+     "bytes": 280287,
+     "sha256_prefix": "73650bc6a0f7fef4",
+     "changed": true
+    },
+    {
+     "name": "updated-18",
+     "status": 200,
+     "bytes": 333184,
+     "sha256_prefix": "767f583f9b08f1c9",
+     "changed": true
+    },
+    {
+     "name": "updated-19",
+     "status": 200,
+     "bytes": 304684,
+     "sha256_prefix": "df5f0725971713be",
+     "changed": true
+    },
+    {
+     "name": "updated-20",
+     "status": 200,
+     "bytes": 245459,
+     "sha256_prefix": "7565082eb1a47c0c",
+     "changed": true
+    },
+    {
+     "name": "updated-21",
+     "status": 200,
+     "bytes": 272842,
+     "sha256_prefix": "eab8b278a5020c61",
+     "changed": true
+    },
+    {
+     "name": "updated-22",
+     "status": 200,
+     "bytes": 260997,
+     "sha256_prefix": "7a2f007dc4be7da8",
+     "changed": true
+    },
+    {
+     "name": "updated-23",
+     "status": 200,
+     "bytes": 253718,
+     "sha256_prefix": "b20932e37cf30696",
+     "changed": true
+    },
+    {
+     "name": "updated-24",
+     "status": 200,
+     "bytes": 257753,
+     "sha256_prefix": "b236fa1e2f8e105a",
+     "changed": true
+    },
+    {
+     "name": "updated-25",
+     "status": 200,
+     "bytes": 300161,
+     "sha256_prefix": "a65efa3c4d888f62",
+     "changed": true
+    },
+    {
+     "name": "updated-26",
+     "status": 200,
+     "bytes": 240285,
+     "sha256_prefix": "ac3a4f8931f85e01",
+     "changed": true
+    },
+    {
+     "name": "updated-27",
+     "status": 200,
+     "bytes": 241076,
+     "sha256_prefix": "252a2b487c2e695c",
+     "changed": true
+    },
+    {
+     "name": "updated-28",
+     "status": 200,
+     "bytes": 272308,
+     "sha256_prefix": "a61e5165d931ce17",
+     "changed": true
+    },
+    {
+     "name": "updated-29",
+     "status": 200,
+     "bytes": 335634,
+     "sha256_prefix": "185041303401d329",
+     "changed": true
+    }
+   ],
    "failed_requests": [],
    "commit": "65c6667",
    "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/65c66677f4957a21ffbcf6d58b3f8794f505d39f",
@@ -276,6 +844,253 @@
     "updated-26",
     "updated-27",
     "updated-28"
+   ],
+   "requests_detail": [
+    {
+     "name": "robots-euvd",
+     "status": 200,
+     "bytes": 67,
+     "sha256_prefix": "90d24bc3bf698ac1",
+     "changed": false
+    },
+    {
+     "name": "robots-services",
+     "status": 404,
+     "bytes": 196,
+     "sha256_prefix": "80c3fe2ae1062abf",
+     "changed": false
+    },
+    {
+     "name": "latest",
+     "status": 200,
+     "bytes": 6438,
+     "sha256_prefix": "f484071aa52353e7",
+     "changed": true
+    },
+    {
+     "name": "exploited",
+     "status": 200,
+     "bytes": 4838,
+     "sha256_prefix": "0e18054b002e7cda",
+     "changed": true
+    },
+    {
+     "name": "exploited-total",
+     "status": 200,
+     "bytes": 4412,
+     "sha256_prefix": "d1a4ac685c3a431d",
+     "changed": true
+    },
+    {
+     "name": "updated-0",
+     "status": 200,
+     "bytes": 309057,
+     "sha256_prefix": "c12c2a5add7e3a38",
+     "changed": true
+    },
+    {
+     "name": "updated-1",
+     "status": 200,
+     "bytes": 348383,
+     "sha256_prefix": "5bb801ef69c81440",
+     "changed": true
+    },
+    {
+     "name": "updated-2",
+     "status": 200,
+     "bytes": 303749,
+     "sha256_prefix": "e6cf3b88ae2e1ff2",
+     "changed": true
+    },
+    {
+     "name": "updated-3",
+     "status": 200,
+     "bytes": 135055,
+     "sha256_prefix": "b87ced9871f5dbb4",
+     "changed": true
+    },
+    {
+     "name": "updated-4",
+     "status": 200,
+     "bytes": 204696,
+     "sha256_prefix": "fe25a5203dee0c2b",
+     "changed": true
+    },
+    {
+     "name": "updated-5",
+     "status": 200,
+     "bytes": 311369,
+     "sha256_prefix": "817745cd482187a4",
+     "changed": true
+    },
+    {
+     "name": "updated-6",
+     "status": 200,
+     "bytes": 226796,
+     "sha256_prefix": "726f36667f20f154",
+     "changed": true
+    },
+    {
+     "name": "updated-7",
+     "status": 200,
+     "bytes": 279047,
+     "sha256_prefix": "f9fec9d9406a01c7",
+     "changed": true
+    },
+    {
+     "name": "updated-8",
+     "status": 200,
+     "bytes": 246625,
+     "sha256_prefix": "7873622967dc672d",
+     "changed": true
+    },
+    {
+     "name": "updated-9",
+     "status": 200,
+     "bytes": 234022,
+     "sha256_prefix": "84bdde0a1d144b52",
+     "changed": true
+    },
+    {
+     "name": "updated-10",
+     "status": 200,
+     "bytes": 303974,
+     "sha256_prefix": "994f8389718606e0",
+     "changed": true
+    },
+    {
+     "name": "updated-11",
+     "status": 200,
+     "bytes": 328736,
+     "sha256_prefix": "141375fd14e241f4",
+     "changed": true
+    },
+    {
+     "name": "updated-12",
+     "status": 200,
+     "bytes": 271457,
+     "sha256_prefix": "c1a64e8caf986cf0",
+     "changed": true
+    },
+    {
+     "name": "updated-13",
+     "status": 200,
+     "bytes": 258308,
+     "sha256_prefix": "eedff10a50cb6fc0",
+     "changed": true
+    },
+    {
+     "name": "updated-14",
+     "status": 200,
+     "bytes": 262459,
+     "sha256_prefix": "393c2de70f146b21",
+     "changed": true
+    },
+    {
+     "name": "updated-15",
+     "status": 200,
+     "bytes": 264488,
+     "sha256_prefix": "f7f3c5f0be832466",
+     "changed": true
+    },
+    {
+     "name": "updated-16",
+     "status": 200,
+     "bytes": 233151,
+     "sha256_prefix": "49dcb7e759faf37c",
+     "changed": true
+    },
+    {
+     "name": "updated-17",
+     "status": 200,
+     "bytes": 306000,
+     "sha256_prefix": "7c17ce033739e303",
+     "changed": true
+    },
+    {
+     "name": "updated-18",
+     "status": 200,
+     "bytes": 262372,
+     "sha256_prefix": "7707a0e15f2851a3",
+     "changed": true
+    },
+    {
+     "name": "updated-19",
+     "status": 200,
+     "bytes": 231679,
+     "sha256_prefix": "b9c6c46e915086b4",
+     "changed": true
+    },
+    {
+     "name": "updated-20",
+     "status": 200,
+     "bytes": 275465,
+     "sha256_prefix": "cee7753bb09c9a4d",
+     "changed": true
+    },
+    {
+     "name": "updated-21",
+     "status": 200,
+     "bytes": 284354,
+     "sha256_prefix": "0d340a06f3263d3e",
+     "changed": true
+    },
+    {
+     "name": "updated-22",
+     "status": 200,
+     "bytes": 320487,
+     "sha256_prefix": "b98b2fee5a0c4de3",
+     "changed": true
+    },
+    {
+     "name": "updated-23",
+     "status": 200,
+     "bytes": 314922,
+     "sha256_prefix": "7cc1fd2b8cc523d3",
+     "changed": true
+    },
+    {
+     "name": "updated-24",
+     "status": 200,
+     "bytes": 311606,
+     "sha256_prefix": "859412310fe3967a",
+     "changed": true
+    },
+    {
+     "name": "updated-25",
+     "status": 200,
+     "bytes": 327549,
+     "sha256_prefix": "5c18154a5167195e",
+     "changed": true
+    },
+    {
+     "name": "updated-26",
+     "status": 200,
+     "bytes": 351038,
+     "sha256_prefix": "c72552991b4e161d",
+     "changed": true
+    },
+    {
+     "name": "updated-27",
+     "status": 200,
+     "bytes": 341529,
+     "sha256_prefix": "e493dfe3db3cd12f",
+     "changed": true
+    },
+    {
+     "name": "updated-28",
+     "status": 200,
+     "bytes": 294203,
+     "sha256_prefix": "5eb089324f1465cf",
+     "changed": true
+    },
+    {
+     "name": "updated-29",
+     "status": 200,
+     "bytes": 323126,
+     "sha256_prefix": "fc315792d0685266",
+     "changed": "first read"
+    }
    ],
    "failed_requests": [],
    "commit": "cb88d7b",
@@ -321,6 +1136,246 @@
     "updated-27",
     "updated-28"
    ],
+   "requests_detail": [
+    {
+     "name": "robots-euvd",
+     "status": 200,
+     "bytes": 67,
+     "sha256_prefix": "90d24bc3bf698ac1",
+     "changed": false
+    },
+    {
+     "name": "robots-services",
+     "status": 404,
+     "bytes": 196,
+     "sha256_prefix": "80c3fe2ae1062abf",
+     "changed": false
+    },
+    {
+     "name": "latest",
+     "status": 200,
+     "bytes": 4445,
+     "sha256_prefix": "132ba800ab13639e",
+     "changed": true
+    },
+    {
+     "name": "exploited",
+     "status": 200,
+     "bytes": 4837,
+     "sha256_prefix": "5e19a9da65cbd786",
+     "changed": true
+    },
+    {
+     "name": "exploited-total",
+     "status": 200,
+     "bytes": 1982,
+     "sha256_prefix": "0e72bac5af6c42df",
+     "changed": true
+    },
+    {
+     "name": "updated-0",
+     "status": 200,
+     "bytes": 131760,
+     "sha256_prefix": "c8f5b05393b03b81",
+     "changed": true
+    },
+    {
+     "name": "updated-1",
+     "status": 200,
+     "bytes": 120704,
+     "sha256_prefix": "39dcdbc7b240bfc8",
+     "changed": true
+    },
+    {
+     "name": "updated-2",
+     "status": 200,
+     "bytes": 180152,
+     "sha256_prefix": "cfd30ca39b9a66eb",
+     "changed": true
+    },
+    {
+     "name": "updated-3",
+     "status": 200,
+     "bytes": 235881,
+     "sha256_prefix": "710835d9b516da85",
+     "changed": true
+    },
+    {
+     "name": "updated-4",
+     "status": 200,
+     "bytes": 303491,
+     "sha256_prefix": "68781e12fe9d1eff",
+     "changed": true
+    },
+    {
+     "name": "updated-5",
+     "status": 200,
+     "bytes": 205949,
+     "sha256_prefix": "0a355267b9711822",
+     "changed": true
+    },
+    {
+     "name": "updated-6",
+     "status": 200,
+     "bytes": 167366,
+     "sha256_prefix": "fca6a49eacd8d196",
+     "changed": true
+    },
+    {
+     "name": "updated-7",
+     "status": 200,
+     "bytes": 237631,
+     "sha256_prefix": "1fd861a8595cabfd",
+     "changed": true
+    },
+    {
+     "name": "updated-8",
+     "status": 200,
+     "bytes": 299029,
+     "sha256_prefix": "80866e4007c37590",
+     "changed": true
+    },
+    {
+     "name": "updated-9",
+     "status": 200,
+     "bytes": 267027,
+     "sha256_prefix": "af468c68a0c48b0a",
+     "changed": true
+    },
+    {
+     "name": "updated-10",
+     "status": 200,
+     "bytes": 297037,
+     "sha256_prefix": "989fdebd51ff4c76",
+     "changed": true
+    },
+    {
+     "name": "updated-11",
+     "status": 200,
+     "bytes": 294443,
+     "sha256_prefix": "e1ddc0cc04955234",
+     "changed": true
+    },
+    {
+     "name": "updated-12",
+     "status": 200,
+     "bytes": 326482,
+     "sha256_prefix": "87e84de3b8c053e0",
+     "changed": true
+    },
+    {
+     "name": "updated-13",
+     "status": 200,
+     "bytes": 214193,
+     "sha256_prefix": "d4d3849bb87ef03e",
+     "changed": true
+    },
+    {
+     "name": "updated-14",
+     "status": 200,
+     "bytes": 151564,
+     "sha256_prefix": "84a186cbb6e6ff0b",
+     "changed": true
+    },
+    {
+     "name": "updated-15",
+     "status": 200,
+     "bytes": 349219,
+     "sha256_prefix": "7d0abfedd327ca76",
+     "changed": true
+    },
+    {
+     "name": "updated-16",
+     "status": 200,
+     "bytes": 346952,
+     "sha256_prefix": "760343e8a54d763c",
+     "changed": true
+    },
+    {
+     "name": "updated-17",
+     "status": 200,
+     "bytes": 252877,
+     "sha256_prefix": "afee9ed39d5d45fb",
+     "changed": true
+    },
+    {
+     "name": "updated-18",
+     "status": 200,
+     "bytes": 204275,
+     "sha256_prefix": "59b158799654042f",
+     "changed": true
+    },
+    {
+     "name": "updated-19",
+     "status": 200,
+     "bytes": 209839,
+     "sha256_prefix": "630a03e5875b9c57",
+     "changed": true
+    },
+    {
+     "name": "updated-20",
+     "status": 200,
+     "bytes": 231436,
+     "sha256_prefix": "8ff65c2e725f85a7",
+     "changed": true
+    },
+    {
+     "name": "updated-21",
+     "status": 200,
+     "bytes": 239833,
+     "sha256_prefix": "140e6592f295b5b7",
+     "changed": true
+    },
+    {
+     "name": "updated-22",
+     "status": 200,
+     "bytes": 179532,
+     "sha256_prefix": "5a6cb2b648bca82b",
+     "changed": true
+    },
+    {
+     "name": "updated-23",
+     "status": 200,
+     "bytes": 161313,
+     "sha256_prefix": "01f7ea0fdb5e1c47",
+     "changed": true
+    },
+    {
+     "name": "updated-24",
+     "status": 200,
+     "bytes": 154699,
+     "sha256_prefix": "5f1cdd431ccb4941",
+     "changed": true
+    },
+    {
+     "name": "updated-25",
+     "status": 200,
+     "bytes": 136855,
+     "sha256_prefix": "d2fe57159cd66c91",
+     "changed": true
+    },
+    {
+     "name": "updated-26",
+     "status": 200,
+     "bytes": 126314,
+     "sha256_prefix": "5a54d5953846e97d",
+     "changed": true
+    },
+    {
+     "name": "updated-27",
+     "status": 200,
+     "bytes": 130654,
+     "sha256_prefix": "36dabf4b2a91d646",
+     "changed": true
+    },
+    {
+     "name": "updated-28",
+     "status": 200,
+     "bytes": 134581,
+     "sha256_prefix": "3c8802abc7730b5c",
+     "changed": true
+    }
+   ],
    "failed_requests": [],
    "commit": "64fbf7d",
    "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/64fbf7dda8967b6095e265f2e10aba0dfb3d65e8",
@@ -332,6 +1387,246 @@
    "failed": 1,
    "requests": 34,
    "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "robots-euvd",
+     "status": 200,
+     "bytes": 67,
+     "sha256_prefix": "90d24bc3bf698ac1",
+     "changed": false
+    },
+    {
+     "name": "robots-services",
+     "status": 404,
+     "bytes": 196,
+     "sha256_prefix": "80c3fe2ae1062abf",
+     "changed": false
+    },
+    {
+     "name": "latest",
+     "status": 200,
+     "bytes": 4549,
+     "sha256_prefix": "b1469e34b606f675",
+     "changed": false
+    },
+    {
+     "name": "exploited",
+     "status": 200,
+     "bytes": 4837,
+     "sha256_prefix": "4ca4aadeb94fb281",
+     "changed": false
+    },
+    {
+     "name": "exploited-total",
+     "status": 200,
+     "bytes": 1982,
+     "sha256_prefix": "1ff4a06906cde0f0",
+     "changed": false
+    },
+    {
+     "name": "updated-0",
+     "status": 200,
+     "bytes": 91768,
+     "sha256_prefix": "11ab32693259efa7",
+     "changed": false
+    },
+    {
+     "name": "updated-1",
+     "status": 200,
+     "bytes": 217485,
+     "sha256_prefix": "55560179921519fe",
+     "changed": false
+    },
+    {
+     "name": "updated-2",
+     "status": 200,
+     "bytes": 234206,
+     "sha256_prefix": "42935dc60aef7b2d",
+     "changed": false
+    },
+    {
+     "name": "updated-3",
+     "status": 200,
+     "bytes": 233691,
+     "sha256_prefix": "a9baeaf66fe64f05",
+     "changed": false
+    },
+    {
+     "name": "updated-4",
+     "status": 200,
+     "bytes": 173358,
+     "sha256_prefix": "3e6b525a455c0046",
+     "changed": false
+    },
+    {
+     "name": "updated-5",
+     "status": 200,
+     "bytes": 171593,
+     "sha256_prefix": "8f2b45ab03aead62",
+     "changed": false
+    },
+    {
+     "name": "updated-6",
+     "status": 200,
+     "bytes": 142091,
+     "sha256_prefix": "8ecaae6e6774fb7a",
+     "changed": false
+    },
+    {
+     "name": "updated-7",
+     "status": 200,
+     "bytes": 160187,
+     "sha256_prefix": "1e7a98a9daee9d83",
+     "changed": false
+    },
+    {
+     "name": "updated-8",
+     "status": 200,
+     "bytes": 131936,
+     "sha256_prefix": "5f41bdf75ed5f8e0",
+     "changed": false
+    },
+    {
+     "name": "updated-9",
+     "status": 200,
+     "bytes": 195806,
+     "sha256_prefix": "e41dcbcccf2975a3",
+     "changed": false
+    },
+    {
+     "name": "updated-10",
+     "status": 200,
+     "bytes": 276465,
+     "sha256_prefix": "a5ba4a1efa818c28",
+     "changed": false
+    },
+    {
+     "name": "updated-11",
+     "status": 200,
+     "bytes": 307981,
+     "sha256_prefix": "fea747acc4fab0fe",
+     "changed": false
+    },
+    {
+     "name": "updated-12",
+     "status": 200,
+     "bytes": 153875,
+     "sha256_prefix": "d089e0119b43b867",
+     "changed": false
+    },
+    {
+     "name": "updated-13",
+     "status": 200,
+     "bytes": 162221,
+     "sha256_prefix": "b4bbb2c1bb5eccf3",
+     "changed": false
+    },
+    {
+     "name": "updated-14",
+     "status": 200,
+     "bytes": 311014,
+     "sha256_prefix": "38031695f0d0c05b",
+     "changed": false
+    },
+    {
+     "name": "updated-15",
+     "status": 200,
+     "bytes": 284017,
+     "sha256_prefix": "c68448ded19e1540",
+     "changed": false
+    },
+    {
+     "name": "updated-16",
+     "status": 200,
+     "bytes": 301133,
+     "sha256_prefix": "17b415fcaa1f2ff1",
+     "changed": false
+    },
+    {
+     "name": "updated-17",
+     "status": 200,
+     "bytes": 308728,
+     "sha256_prefix": "5873bb53f974b67e",
+     "changed": false
+    },
+    {
+     "name": "updated-18",
+     "status": 200,
+     "bytes": 300695,
+     "sha256_prefix": "e8caec41c8990e6c",
+     "changed": false
+    },
+    {
+     "name": "updated-19",
+     "status": 200,
+     "bytes": 268977,
+     "sha256_prefix": "728fccf6dc163a39",
+     "changed": false
+    },
+    {
+     "name": "updated-20",
+     "status": 200,
+     "bytes": 138002,
+     "sha256_prefix": "75ec14009e51823a",
+     "changed": false
+    },
+    {
+     "name": "updated-21",
+     "status": 200,
+     "bytes": 132541,
+     "sha256_prefix": "7faeb526e386c96a",
+     "changed": false
+    },
+    {
+     "name": "updated-22",
+     "status": 200,
+     "bytes": 129591,
+     "sha256_prefix": "19ecc940b1986cca",
+     "changed": false
+    },
+    {
+     "name": "updated-23",
+     "status": 200,
+     "bytes": 181553,
+     "sha256_prefix": "892007d03d05572a",
+     "changed": false
+    },
+    {
+     "name": "updated-24",
+     "status": 200,
+     "bytes": 349959,
+     "sha256_prefix": "4fe339bfed8b1def",
+     "changed": false
+    },
+    {
+     "name": "updated-25",
+     "status": 200,
+     "bytes": 138444,
+     "sha256_prefix": "4940920c71cc6f01",
+     "changed": false
+    },
+    {
+     "name": "updated-26",
+     "status": 200,
+     "bytes": 157771,
+     "sha256_prefix": "3d6d729928c6a574",
+     "changed": false
+    },
+    {
+     "name": "updated-27",
+     "status": 200,
+     "bytes": 163556,
+     "sha256_prefix": "67480954b4f4b3ba",
+     "changed": false
+    },
+    {
+     "name": "updated-28",
+     "status": 200,
+     "bytes": 157688,
+     "sha256_prefix": "b4c21dde0c56c20a",
+     "changed": false
+    }
+   ],
    "failed_requests": [],
    "commit": "379aae6",
    "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/379aae67e159f2afe46678e771171e631f923e70",
@@ -369,6 +1664,246 @@
     "updated-22",
     "updated-23",
     "updated-24"
+   ],
+   "requests_detail": [
+    {
+     "name": "robots-euvd",
+     "status": 200,
+     "bytes": 67,
+     "sha256_prefix": "90d24bc3bf698ac1",
+     "changed": false
+    },
+    {
+     "name": "robots-services",
+     "status": 404,
+     "bytes": 196,
+     "sha256_prefix": "80c3fe2ae1062abf",
+     "changed": false
+    },
+    {
+     "name": "latest",
+     "status": 200,
+     "bytes": 4549,
+     "sha256_prefix": "b1469e34b606f675",
+     "changed": true
+    },
+    {
+     "name": "exploited",
+     "status": 200,
+     "bytes": 4837,
+     "sha256_prefix": "4ca4aadeb94fb281",
+     "changed": false
+    },
+    {
+     "name": "exploited-total",
+     "status": 200,
+     "bytes": 1982,
+     "sha256_prefix": "1ff4a06906cde0f0",
+     "changed": false
+    },
+    {
+     "name": "updated-0",
+     "status": 200,
+     "bytes": 91768,
+     "sha256_prefix": "11ab32693259efa7",
+     "changed": true
+    },
+    {
+     "name": "updated-1",
+     "status": 200,
+     "bytes": 217485,
+     "sha256_prefix": "55560179921519fe",
+     "changed": true
+    },
+    {
+     "name": "updated-2",
+     "status": 200,
+     "bytes": 234206,
+     "sha256_prefix": "42935dc60aef7b2d",
+     "changed": true
+    },
+    {
+     "name": "updated-3",
+     "status": 200,
+     "bytes": 233691,
+     "sha256_prefix": "a9baeaf66fe64f05",
+     "changed": true
+    },
+    {
+     "name": "updated-4",
+     "status": 200,
+     "bytes": 173358,
+     "sha256_prefix": "3e6b525a455c0046",
+     "changed": true
+    },
+    {
+     "name": "updated-5",
+     "status": 200,
+     "bytes": 171593,
+     "sha256_prefix": "8f2b45ab03aead62",
+     "changed": true
+    },
+    {
+     "name": "updated-6",
+     "status": 200,
+     "bytes": 142091,
+     "sha256_prefix": "8ecaae6e6774fb7a",
+     "changed": true
+    },
+    {
+     "name": "updated-7",
+     "status": 200,
+     "bytes": 160187,
+     "sha256_prefix": "1e7a98a9daee9d83",
+     "changed": true
+    },
+    {
+     "name": "updated-8",
+     "status": 200,
+     "bytes": 131936,
+     "sha256_prefix": "5f41bdf75ed5f8e0",
+     "changed": true
+    },
+    {
+     "name": "updated-9",
+     "status": 200,
+     "bytes": 195806,
+     "sha256_prefix": "e41dcbcccf2975a3",
+     "changed": true
+    },
+    {
+     "name": "updated-10",
+     "status": 200,
+     "bytes": 276465,
+     "sha256_prefix": "a5ba4a1efa818c28",
+     "changed": true
+    },
+    {
+     "name": "updated-11",
+     "status": 200,
+     "bytes": 307981,
+     "sha256_prefix": "fea747acc4fab0fe",
+     "changed": true
+    },
+    {
+     "name": "updated-12",
+     "status": 200,
+     "bytes": 153875,
+     "sha256_prefix": "d089e0119b43b867",
+     "changed": true
+    },
+    {
+     "name": "updated-13",
+     "status": 200,
+     "bytes": 162221,
+     "sha256_prefix": "b4bbb2c1bb5eccf3",
+     "changed": true
+    },
+    {
+     "name": "updated-14",
+     "status": 200,
+     "bytes": 311014,
+     "sha256_prefix": "38031695f0d0c05b",
+     "changed": true
+    },
+    {
+     "name": "updated-15",
+     "status": 200,
+     "bytes": 284017,
+     "sha256_prefix": "c68448ded19e1540",
+     "changed": true
+    },
+    {
+     "name": "updated-16",
+     "status": 200,
+     "bytes": 301133,
+     "sha256_prefix": "17b415fcaa1f2ff1",
+     "changed": true
+    },
+    {
+     "name": "updated-17",
+     "status": 200,
+     "bytes": 308728,
+     "sha256_prefix": "5873bb53f974b67e",
+     "changed": true
+    },
+    {
+     "name": "updated-18",
+     "status": 200,
+     "bytes": 300695,
+     "sha256_prefix": "e8caec41c8990e6c",
+     "changed": true
+    },
+    {
+     "name": "updated-19",
+     "status": 200,
+     "bytes": 268977,
+     "sha256_prefix": "728fccf6dc163a39",
+     "changed": true
+    },
+    {
+     "name": "updated-20",
+     "status": 200,
+     "bytes": 138002,
+     "sha256_prefix": "75ec14009e51823a",
+     "changed": true
+    },
+    {
+     "name": "updated-21",
+     "status": 200,
+     "bytes": 132541,
+     "sha256_prefix": "7faeb526e386c96a",
+     "changed": true
+    },
+    {
+     "name": "updated-22",
+     "status": 200,
+     "bytes": 129591,
+     "sha256_prefix": "19ecc940b1986cca",
+     "changed": true
+    },
+    {
+     "name": "updated-23",
+     "status": 200,
+     "bytes": 181553,
+     "sha256_prefix": "892007d03d05572a",
+     "changed": true
+    },
+    {
+     "name": "updated-24",
+     "status": 200,
+     "bytes": 349959,
+     "sha256_prefix": "4fe339bfed8b1def",
+     "changed": true
+    },
+    {
+     "name": "updated-25",
+     "status": 200,
+     "bytes": 138444,
+     "sha256_prefix": "4940920c71cc6f01",
+     "changed": "first read"
+    },
+    {
+     "name": "updated-26",
+     "status": 200,
+     "bytes": 157771,
+     "sha256_prefix": "3d6d729928c6a574",
+     "changed": "first read"
+    },
+    {
+     "name": "updated-27",
+     "status": 200,
+     "bytes": 163556,
+     "sha256_prefix": "67480954b4f4b3ba",
+     "changed": "first read"
+    },
+    {
+     "name": "updated-28",
+     "status": 200,
+     "bytes": 157688,
+     "sha256_prefix": "b4c21dde0c56c20a",
+     "changed": "first read"
+    }
    ],
    "failed_requests": [],
    "commit": "379aae6",
@@ -410,6 +1945,218 @@
     "updated-23",
     "updated-24"
    ],
+   "requests_detail": [
+    {
+     "name": "robots-euvd",
+     "status": 200,
+     "bytes": 67,
+     "sha256_prefix": "90d24bc3bf698ac1",
+     "changed": false
+    },
+    {
+     "name": "robots-services",
+     "status": 404,
+     "bytes": 196,
+     "sha256_prefix": "80c3fe2ae1062abf",
+     "changed": false
+    },
+    {
+     "name": "latest",
+     "status": 200,
+     "bytes": 8087,
+     "sha256_prefix": "9832687d0339c353",
+     "changed": true
+    },
+    {
+     "name": "exploited",
+     "status": 200,
+     "bytes": 4837,
+     "sha256_prefix": "4ca4aadeb94fb281",
+     "changed": true
+    },
+    {
+     "name": "exploited-total",
+     "status": 200,
+     "bytes": 1982,
+     "sha256_prefix": "1ff4a06906cde0f0",
+     "changed": true
+    },
+    {
+     "name": "updated-0",
+     "status": 200,
+     "bytes": 164228,
+     "sha256_prefix": "4c863d4c04614291",
+     "changed": true
+    },
+    {
+     "name": "updated-1",
+     "status": 200,
+     "bytes": 158486,
+     "sha256_prefix": "1506dbcd65af6af9",
+     "changed": true
+    },
+    {
+     "name": "updated-2",
+     "status": 200,
+     "bytes": 147115,
+     "sha256_prefix": "cfab974ba8d6ea61",
+     "changed": true
+    },
+    {
+     "name": "updated-3",
+     "status": 200,
+     "bytes": 165044,
+     "sha256_prefix": "7eed54ea141e5d0a",
+     "changed": true
+    },
+    {
+     "name": "updated-4",
+     "status": 200,
+     "bytes": 133799,
+     "sha256_prefix": "a7e966e7395595f3",
+     "changed": true
+    },
+    {
+     "name": "updated-5",
+     "status": 200,
+     "bytes": 217079,
+     "sha256_prefix": "373f90a42f3c2bd8",
+     "changed": true
+    },
+    {
+     "name": "updated-6",
+     "status": 200,
+     "bytes": 280495,
+     "sha256_prefix": "a26b63e195c076fe",
+     "changed": true
+    },
+    {
+     "name": "updated-7",
+     "status": 200,
+     "bytes": 286239,
+     "sha256_prefix": "ee6fe131c2ff2ca2",
+     "changed": true
+    },
+    {
+     "name": "updated-8",
+     "status": 200,
+     "bytes": 153895,
+     "sha256_prefix": "7f9cb404c0346759",
+     "changed": true
+    },
+    {
+     "name": "updated-9",
+     "status": 200,
+     "bytes": 190336,
+     "sha256_prefix": "0ef1952a05f6e094",
+     "changed": true
+    },
+    {
+     "name": "updated-10",
+     "status": 200,
+     "bytes": 315321,
+     "sha256_prefix": "6a4634d134cbd5e4",
+     "changed": true
+    },
+    {
+     "name": "updated-11",
+     "status": 200,
+     "bytes": 276754,
+     "sha256_prefix": "fcf15e0104cc0ab1",
+     "changed": true
+    },
+    {
+     "name": "updated-12",
+     "status": 200,
+     "bytes": 302597,
+     "sha256_prefix": "bf7a8bcf8711dbdb",
+     "changed": true
+    },
+    {
+     "name": "updated-13",
+     "status": 200,
+     "bytes": 294110,
+     "sha256_prefix": "33d34d8acc054fd4",
+     "changed": true
+    },
+    {
+     "name": "updated-14",
+     "status": 200,
+     "bytes": 322324,
+     "sha256_prefix": "caa886cb85676313",
+     "changed": true
+    },
+    {
+     "name": "updated-15",
+     "status": 200,
+     "bytes": 239732,
+     "sha256_prefix": "b46bf29b94d43e87",
+     "changed": true
+    },
+    {
+     "name": "updated-16",
+     "status": 200,
+     "bytes": 127179,
+     "sha256_prefix": "4c81d544318b2f03",
+     "changed": true
+    },
+    {
+     "name": "updated-17",
+     "status": 200,
+     "bytes": 129060,
+     "sha256_prefix": "131ed8f869f1c7a5",
+     "changed": true
+    },
+    {
+     "name": "updated-18",
+     "status": 200,
+     "bytes": 143198,
+     "sha256_prefix": "95a410c53b328b50",
+     "changed": true
+    },
+    {
+     "name": "updated-19",
+     "status": 200,
+     "bytes": 170420,
+     "sha256_prefix": "18aa76bd1ebe9ca2",
+     "changed": true
+    },
+    {
+     "name": "updated-20",
+     "status": 200,
+     "bytes": 351701,
+     "sha256_prefix": "832d62eaf3db4625",
+     "changed": true
+    },
+    {
+     "name": "updated-21",
+     "status": 200,
+     "bytes": 139928,
+     "sha256_prefix": "26d9a0965449283e",
+     "changed": true
+    },
+    {
+     "name": "updated-22",
+     "status": 200,
+     "bytes": 159755,
+     "sha256_prefix": "ea6047117b999b7e",
+     "changed": true
+    },
+    {
+     "name": "updated-23",
+     "status": 200,
+     "bytes": 164647,
+     "sha256_prefix": "a0f732fa83568b03",
+     "changed": true
+    },
+    {
+     "name": "updated-24",
+     "status": 200,
+     "bytes": 143947,
+     "sha256_prefix": "c06e42dc381be208",
+     "changed": true
+    }
+   ],
    "failed_requests": [],
    "commit": "6ee935e",
    "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/6ee935e17d5733cf18c410ee489d74b2bee55a8c",
@@ -421,6 +2168,232 @@
    "failed": 1,
    "requests": 32,
    "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "robots-euvd",
+     "status": 200,
+     "bytes": 67,
+     "sha256_prefix": "90d24bc3bf698ac1",
+     "changed": "first read"
+    },
+    {
+     "name": "robots-services",
+     "status": 404,
+     "bytes": 196,
+     "sha256_prefix": "80c3fe2ae1062abf",
+     "changed": "first read"
+    },
+    {
+     "name": "latest",
+     "status": 200,
+     "bytes": 7887,
+     "sha256_prefix": "e8ec81fb7f8add4d",
+     "changed": "first read"
+    },
+    {
+     "name": "exploited",
+     "status": 200,
+     "bytes": 4837,
+     "sha256_prefix": "a70cea8f9dddfe97",
+     "changed": "first read"
+    },
+    {
+     "name": "exploited-total",
+     "status": 200,
+     "bytes": 1426,
+     "sha256_prefix": "4e02d078d7aec949",
+     "changed": "first read"
+    },
+    {
+     "name": "updated-0",
+     "status": 200,
+     "bytes": 150513,
+     "sha256_prefix": "4d06ec1126a9a3e0",
+     "changed": "first read"
+    },
+    {
+     "name": "updated-1",
+     "status": 200,
+     "bytes": 165714,
+     "sha256_prefix": "2cdba3361bdacdd1",
+     "changed": "first read"
+    },
+    {
+     "name": "updated-2",
+     "status": 200,
+     "bytes": 132924,
+     "sha256_prefix": "9224f7d7980453f6",
+     "changed": "first read"
+    },
+    {
+     "name": "updated-3",
+     "status": 200,
+     "bytes": 196325,
+     "sha256_prefix": "f86b6c7e2040dbbd",
+     "changed": "first read"
+    },
+    {
+     "name": "updated-4",
+     "status": 200,
+     "bytes": 275882,
+     "sha256_prefix": "5ac55ba88f0d43a3",
+     "changed": "first read"
+    },
+    {
+     "name": "updated-5",
+     "status": 200,
+     "bytes": 307981,
+     "sha256_prefix": "03c84bde53146890",
+     "changed": "first read"
+    },
+    {
+     "name": "updated-6",
+     "status": 200,
+     "bytes": 153874,
+     "sha256_prefix": "506dacb3dc94415d",
+     "changed": "first read"
+    },
+    {
+     "name": "updated-7",
+     "status": 200,
+     "bytes": 162221,
+     "sha256_prefix": "70d6df16184010dc",
+     "changed": "first read"
+    },
+    {
+     "name": "updated-8",
+     "status": 200,
+     "bytes": 311015,
+     "sha256_prefix": "d7549c25dd0ce99b",
+     "changed": "first read"
+    },
+    {
+     "name": "updated-9",
+     "status": 200,
+     "bytes": 284016,
+     "sha256_prefix": "d1a8d1906905e18b",
+     "changed": "first read"
+    },
+    {
+     "name": "updated-10",
+     "status": 200,
+     "bytes": 301133,
+     "sha256_prefix": "507b373b3a609bec",
+     "changed": "first read"
+    },
+    {
+     "name": "updated-11",
+     "status": 200,
+     "bytes": 308728,
+     "sha256_prefix": "20b3b18af80dd67d",
+     "changed": "first read"
+    },
+    {
+     "name": "updated-12",
+     "status": 200,
+     "bytes": 300694,
+     "sha256_prefix": "33e3f9ca7e21d4dd",
+     "changed": "first read"
+    },
+    {
+     "name": "updated-13",
+     "status": 200,
+     "bytes": 268975,
+     "sha256_prefix": "2c03f6ed3de4ff1a",
+     "changed": "first read"
+    },
+    {
+     "name": "updated-14",
+     "status": 200,
+     "bytes": 136402,
+     "sha256_prefix": "8360c48ae7a50a1b",
+     "changed": "first read"
+    },
+    {
+     "name": "updated-15",
+     "status": 200,
+     "bytes": 137901,
+     "sha256_prefix": "a04b45d4a50b50c2",
+     "changed": "first read"
+    },
+    {
+     "name": "updated-16",
+     "status": 200,
+     "bytes": 130542,
+     "sha256_prefix": "168a21218f027f1f",
+     "changed": "first read"
+    },
+    {
+     "name": "updated-17",
+     "status": 200,
+     "bytes": 181060,
+     "sha256_prefix": "a4927133e5bea632",
+     "changed": "first read"
+    },
+    {
+     "name": "updated-18",
+     "status": 200,
+     "bytes": 285809,
+     "sha256_prefix": "f8eeac50851404b3",
+     "changed": "first read"
+    },
+    {
+     "name": "updated-19",
+     "status": 200,
+     "bytes": 206142,
+     "sha256_prefix": "274b48c89f6935a9",
+     "changed": "first read"
+    },
+    {
+     "name": "updated-20",
+     "status": 200,
+     "bytes": 158719,
+     "sha256_prefix": "24e3278ec20f3e4d",
+     "changed": "first read"
+    },
+    {
+     "name": "updated-21",
+     "status": 200,
+     "bytes": 157259,
+     "sha256_prefix": "8e9413000fd0f43c",
+     "changed": "first read"
+    },
+    {
+     "name": "updated-22",
+     "status": 200,
+     "bytes": 149632,
+     "sha256_prefix": "8aacbfd909a5f653",
+     "changed": "first read"
+    },
+    {
+     "name": "updated-23",
+     "status": 200,
+     "bytes": 132800,
+     "sha256_prefix": "d695869b1ec914d8",
+     "changed": "first read"
+    },
+    {
+     "name": "updated-24",
+     "status": 200,
+     "bytes": 148531,
+     "sha256_prefix": "24fe6686512564b7",
+     "changed": "first read"
+    },
+    {
+     "name": "updated-25",
+     "status": 200,
+     "bytes": 132902,
+     "sha256_prefix": "eb6721b06dec311a",
+     "changed": "first read"
+    },
+    {
+     "name": "updated-26",
+     "status": 200,
+     "bytes": 127908,
+     "sha256_prefix": "ce3c06683de9f22b",
+     "changed": "first read"
+    }
+   ],
    "failed_requests": [],
    "commit": "83b562f",
    "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
@@ -428,8 +2401,8 @@
   }
  ],
  "copies": {
-  "files_in_git_data": 2,
-  "bytes_in_git_data": 576214,
+  "files_in_git_data": 3,
+  "bytes_in_git_data": 629723,
   "files_in_vault_working_copy": 72,
   "bytes_in_vault_working_copy": 11853691,
   "dated_copies_in_vault": 54,
@@ -439,7 +2412,29 @@
    "source_page": "https://data.promptugal.news/sources/euvd/",
    "git": "https://github.com/PrompTugal/PrompTugal__News__Data/tree/dev/data/euvd"
   },
-  "note": "vaults/ is described in collect/lib.mjs as never in git; some of its files are tracked today and the sgit vault holds the full history."
+  "tracked_in_git_vaults": 0,
+  "note": "collect/lib.mjs says vaults/ is meant to stay out of git, but 0 files of this source are tracked in git today (earlier commits); the sgit vault holds the full history. Dinis has not yet ruled on the vaults/ question."
  },
+ "cadence_advice": {
+  "line": "The data changed on 8 of 10 reads over 9 days: nearly every read finds new data, so it changes at least as often as it is read and reading more than twice a day would catch more states. Whether the pages that use it need them is for their owners to say.",
+  "basis": "suggestion derived from 10 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is every 6 hours; runs before 21 Nov were hourly",
+  "runs_with_change": 8,
+  "runs_kept": 10,
+  "days_covered": 8.8,
+  "changes_per_day": 0.9
+ },
+ "schedule_times": {
+  "tz": "Europe/Lisbon",
+  "times_local": [
+   "07:03",
+   "18:03"
+  ],
+  "note": "Lisbon is UTC+0 from late October to late March, so these are also 07:03 and 18:03 UTC then; one hour earlier in UTC in summer.",
+  "runs_per_day": 2
+ },
+ "api_spec": null,
+ "api_docs": "https://euvd.enisa.europa.eu/apidoc",
+ "own_page_copy": null,
+ "own_page_copy_note": "not taken: a copy or screenshot of the publisher's page needs a rights ruling from cl-6.rights; source_home links to the page itself",
  "source_home": "https://euvd.enisa.europa.eu/"
 }

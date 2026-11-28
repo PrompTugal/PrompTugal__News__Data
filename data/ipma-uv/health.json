@@ -1,0 +1,648 @@
+{
+ "source": "ipma-uv",
+ "title": "IPMA UV index",
+ "generated_utc": "2026-11-28T02:40:14Z",
+ "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
+ "schedule": {
+  "card_says": "hourly",
+  "really": "twice a day (07:03 and 18:03 Lisbon)"
+ },
+ "last_run": {
+  "at": "2026-11-27T18:11:59Z",
+  "ok": 2,
+  "failed": 0,
+  "requests": [
+   {
+    "name": "distrits-islands",
+    "url": "https://api.ipma.pt/open-data/distrits-islands.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 10071,
+    "changed": false
+   },
+   {
+    "name": "uv",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/uv/uv.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 20100,
+    "changed": true
+   }
+  ]
+ },
+ "problems": [
+  {
+   "request": "distrits-islands",
+   "url": "https://api.ipma.pt/open-data/distrits-islands.json",
+   "status": [
+    "error"
+   ],
+   "plain": "could not connect or timed out",
+   "failed_in": "1 of 92 runs kept"
+  },
+  {
+   "request": "uv",
+   "url": "https://api.ipma.pt/open-data/forecast/meteorology/uv/uv.json",
+   "status": [
+    "error"
+   ],
+   "plain": "could not connect or timed out",
+   "failed_in": "1 of 92 runs kept"
+  }
+ ],
+ "runs": [
+  {
+   "at": "2026-11-27T18:11:59Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "uv"
+   ],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "uv",
+     "status": 200,
+     "bytes": 20100,
+     "sha256_prefix": "dd66d4410f64d88e",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "526dd0b",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/526dd0b8fd852d1fffb5fd1c54adb4760ccfe3e8",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/d409b57...526dd0b"
+  },
+  {
+   "at": "2026-11-27T07:13:59Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "uv"
+   ],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "uv",
+     "status": 200,
+     "bytes": 16080,
+     "sha256_prefix": "b5ed80fa4dd1ff47",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d409b57",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d409b5734208af88d47485b2878734dbf9e6aa7c",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/d466166...d409b57"
+  },
+  {
+   "at": "2026-11-26T18:13:25Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "uv"
+   ],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "uv",
+     "status": 200,
+     "bytes": 20100,
+     "sha256_prefix": "b50f298a18aaa6b0",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d466166",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d466166b925f53f8d36d4a6047daf9a0634bf489",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-26T07:12:55Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "uv"
+   ],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "uv",
+     "status": 200,
+     "bytes": 16080,
+     "sha256_prefix": "61be957ffaefc6d7",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d466166",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d466166b925f53f8d36d4a6047daf9a0634bf489",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/bd410a7...d466166"
+  },
+  {
+   "at": "2026-11-21T07:12:29Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "uv"
+   ],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "uv",
+     "status": 200,
+     "bytes": 16080,
+     "sha256_prefix": "282b09c798e47442",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "bd410a7",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/bd410a73762d6b0a755da0a946556d6e47d54c8e",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/65c6667...bd410a7"
+  },
+  {
+   "at": "2026-11-20T18:15:44Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "uv"
+   ],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "uv",
+     "status": 200,
+     "bytes": 20100,
+     "sha256_prefix": "e9e8c7d04715117d",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "65c6667",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/65c66677f4957a21ffbcf6d58b3f8794f505d39f",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/cb88d7b...65c6667"
+  },
+  {
+   "at": "2026-11-20T07:16:58Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "uv"
+   ],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "uv",
+     "status": 200,
+     "bytes": 16080,
+     "sha256_prefix": "78b541edb777ed22",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "cb88d7b",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/cb88d7b793bc938078a150fb7bd84b6477977aea",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/64fbf7d...cb88d7b"
+  },
+  {
+   "at": "2026-11-19T18:14:24Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "uv",
+     "status": 200,
+     "bytes": 20100,
+     "sha256_prefix": "80eb0414e03fd9e3",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "64fbf7d",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/64fbf7dda8967b6095e265f2e10aba0dfb3d65e8",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/11e0962...64fbf7d"
+  },
+  {
+   "at": "2026-11-19T16:07:28Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "uv",
+     "status": 200,
+     "bytes": 20100,
+     "sha256_prefix": "80eb0414e03fd9e3",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "11e0962",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/11e096221d96c4c87d5c943ef91b534dd547f19c",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/e25333f...11e0962"
+  },
+  {
+   "at": "2026-11-19T15:07:11Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "uv",
+     "status": 200,
+     "bytes": 20100,
+     "sha256_prefix": "80eb0414e03fd9e3",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "e25333f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/e25333f846d431ddcfef34bf037922034bcf906d",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/48b39e4...e25333f"
+  },
+  {
+   "at": "2026-11-19T14:08:12Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "uv",
+     "status": 200,
+     "bytes": 20100,
+     "sha256_prefix": "80eb0414e03fd9e3",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "48b39e4",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/48b39e465b9430649d5f464bda4decabd928642f",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/4a4d130...48b39e4"
+  },
+  {
+   "at": "2026-11-19T13:08:33Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "uv"
+   ],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "uv",
+     "status": 200,
+     "bytes": 20100,
+     "sha256_prefix": "80eb0414e03fd9e3",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "4a4d130",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/4a4d13005725f1c24d6cd12ebee2d66ee2f2df91",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/379aae6...4a4d130"
+  },
+  {
+   "at": "2026-11-19T12:15:40Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "uv",
+     "status": 200,
+     "bytes": 16080,
+     "sha256_prefix": "294068aa9c31ff21",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "379aae6",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/379aae67e159f2afe46678e771171e631f923e70",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/6179c7e...379aae6"
+  },
+  {
+   "at": "2026-11-19T11:10:33Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "uv",
+     "status": 200,
+     "bytes": 16080,
+     "sha256_prefix": "294068aa9c31ff21",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "6179c7e",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/6179c7e3c43fc3591e1601011d223221e5597d92",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/1460f87...6179c7e"
+  },
+  {
+   "at": "2026-11-19T10:09:25Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "uv",
+     "status": 200,
+     "bytes": 16080,
+     "sha256_prefix": "294068aa9c31ff21",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "1460f87",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/1460f87e59532acd781b90ca10f34d7f5f1f6e79",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/2f43933...1460f87"
+  },
+  {
+   "at": "2026-11-19T09:11:26Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "uv",
+     "status": 200,
+     "bytes": 16080,
+     "sha256_prefix": "294068aa9c31ff21",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "2f43933",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/2f43933ff73bbd1a4c67e0c938172e9914634f41",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/d3644c1...2f43933"
+  },
+  {
+   "at": "2026-11-19T08:07:51Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "uv",
+     "status": 200,
+     "bytes": 16080,
+     "sha256_prefix": "294068aa9c31ff21",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d3644c1",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d3644c1db2231a9dcffc4b8c42f17831ce0d9b8c",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/ab758f8...d3644c1"
+  },
+  {
+   "at": "2026-11-19T07:07:39Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "uv",
+     "status": 200,
+     "bytes": 16080,
+     "sha256_prefix": "294068aa9c31ff21",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "ab758f8",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/ab758f84f3411cfda4eaef6a3b98834533309ceb",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/a84bc21...ab758f8"
+  },
+  {
+   "at": "2026-11-19T06:15:34Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "uv",
+     "status": 200,
+     "bytes": 16080,
+     "sha256_prefix": "294068aa9c31ff21",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "a84bc21",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/a84bc21013f5eae48c16853f9b5038905f597fcd",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/0796eae...a84bc21"
+  },
+  {
+   "at": "2026-11-19T05:07:35Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "uv",
+     "status": 200,
+     "bytes": 16080,
+     "sha256_prefix": "294068aa9c31ff21",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "0796eae",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/0796eae6be936757132e432333b6c938f74ec9d7",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/51d3aef...0796eae"
+  }
+ ],
+ "copies": {
+  "files_in_git_data": 3,
+  "bytes_in_git_data": 97897,
+  "files_in_vault_working_copy": 7,
+  "bytes_in_vault_working_copy": 103440,
+  "dated_copies_in_vault": 4,
+  "where": {
+   "api_latest": "https://data.promptugal.news/api/v1/ipma-uv/latest.json",
+   "api_reads": "https://data.promptugal.news/api/v1/ipma-uv/reads.json",
+   "source_page": "https://data.promptugal.news/sources/ipma-uv/",
+   "git": "https://github.com/PrompTugal/PrompTugal__News__Data/tree/dev/data/ipma-uv"
+  },
+  "tracked_in_git_vaults": 2,
+  "note": "collect/lib.mjs says vaults/ is meant to stay out of git, but 2 files of this source are tracked in git today (earlier commits); the sgit vault holds the full history. Dinis has not yet ruled on the vaults/ question."
+ },
+ "cadence_advice": {
+  "line": "The data changed on 11 of 92 reads over 10 days, about 1.1 times a day: twice a day is more than needed, once a day would lose little.",
+  "basis": "suggestion derived from 92 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is hourly; runs before 21 Nov were hourly",
+  "runs_with_change": 11,
+  "runs_kept": 92,
+  "days_covered": 9.9,
+  "changes_per_day": 1.1
+ },
+ "schedule_times": {
+  "tz": "Europe/Lisbon",
+  "times_local": [
+   "07:03",
+   "18:03"
+  ],
+  "note": "Lisbon is UTC+0 from late October to late March, so these are also 07:03 and 18:03 UTC then; one hour earlier in UTC in summer.",
+  "runs_per_day": 2
+ },
+ "api_spec": null,
+ "api_docs": null,
+ "own_page_copy": null,
+ "own_page_copy_note": "not taken: a copy or screenshot of the publisher's page needs a rights ruling from cl-6.rights; source_home links to the page itself",
+ "source_home": "https://api.ipma.pt/open-data/forecast/meteorology/uv/uv.json"
+}

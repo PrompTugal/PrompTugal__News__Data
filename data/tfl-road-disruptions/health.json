@@ -1,0 +1,125 @@
+{
+ "source": "tfl-road-disruptions",
+ "title": "London road disruptions (TfL)",
+ "generated_utc": "2026-11-28T02:40:14Z",
+ "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
+ "schedule": {
+  "card_says": "daily",
+  "really": "once a day (07:03 Lisbon)"
+ },
+ "last_run": {
+  "at": "2026-11-27T07:14:53Z",
+  "ok": 1,
+  "failed": 0,
+  "requests": [
+   {
+    "name": "disruptions",
+    "url": "https://api.tfl.gov.uk/Road/all/Disruption",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 222261,
+    "changed": true
+   }
+  ]
+ },
+ "problems": [],
+ "runs": [
+  {
+   "at": "2026-11-27T07:14:53Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "disruptions"
+   ],
+   "requests_detail": [
+    {
+     "name": "disruptions",
+     "status": 200,
+     "bytes": 222261,
+     "sha256_prefix": "16e984a76721b57e",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d409b57",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d409b5734208af88d47485b2878734dbf9e6aa7c",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/d466166...d409b57"
+  },
+  {
+   "at": "2026-11-26T07:13:50Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "disruptions"
+   ],
+   "requests_detail": [
+    {
+     "name": "disruptions",
+     "status": 200,
+     "bytes": 227624,
+     "sha256_prefix": "1c6435893f46b20e",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d466166",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d466166b925f53f8d36d4a6047daf9a0634bf489",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/f300703...d466166"
+  },
+  {
+   "at": "2026-11-21T09:20:35Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "disruptions",
+     "status": 200,
+     "bytes": 254809,
+     "sha256_prefix": "0237c437e3fc36ae",
+     "changed": "first read"
+    }
+   ],
+   "failed_requests": [],
+   "commit": "f300703",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/f30070323ceacb1e432d8b63d9f8820c8a84fee1",
+   "compare_with_previous_run_url": null
+  }
+ ],
+ "copies": {
+  "files_in_git_data": 3,
+  "bytes_in_git_data": 68829,
+  "files_in_vault_working_copy": 4,
+  "bytes_in_vault_working_copy": 672733,
+  "dated_copies_in_vault": 2,
+  "where": {
+   "api_latest": "https://data.promptugal.news/api/v1/tfl-road-disruptions/latest.json",
+   "api_reads": "https://data.promptugal.news/api/v1/tfl-road-disruptions/reads.json",
+   "source_page": "https://data.promptugal.news/sources/tfl-road-disruptions/",
+   "git": "https://github.com/PrompTugal/PrompTugal__News__Data/tree/dev/data/tfl-road-disruptions"
+  },
+  "tracked_in_git_vaults": 0,
+  "note": "collect/lib.mjs says vaults/ is meant to stay out of git, but 0 files of this source are tracked in git today (earlier commits); the sgit vault holds the full history. Dinis has not yet ruled on the vaults/ question."
+ },
+ "cadence_advice": {
+  "line": "Once a day is enough: the source itself refreshes daily.",
+  "basis": "the card says the source refreshes daily"
+ },
+ "schedule_times": {
+  "tz": "Europe/Lisbon",
+  "times_local": [
+   "07:03",
+   "18:03"
+  ],
+  "note": "Lisbon is UTC+0 from late October to late March, so these are also 07:03 and 18:03 UTC then; one hour earlier in UTC in summer.",
+  "runs_per_day": 2
+ },
+ "api_spec": "https://api.tfl.gov.uk/swagger/docs/v1",
+ "api_docs": null,
+ "own_page_copy": null,
+ "own_page_copy_note": "not taken: a copy or screenshot of the publisher's page needs a rights ruling from cl-6.rights; source_home links to the page itself",
+ "source_home": "https://api.tfl.gov.uk/"
+}

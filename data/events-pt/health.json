@@ -1,0 +1,2347 @@
+{
+ "source": "events-pt",
+ "title": "Events in Portugal, by place",
+ "generated_utc": "2026-11-28T02:40:14Z",
+ "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
+ "schedule": {
+  "card_says": "every 6 hours",
+  "really": "twice a day (07:03 and 18:03 Lisbon)"
+ },
+ "last_run": {
+  "at": "2026-11-27T18:08:53Z",
+  "ok": 17,
+  "failed": 1,
+  "requests": [
+   {
+    "name": "agendalx-robots",
+    "url": "https://www.agendalx.pt/robots.txt",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 2676,
+    "changed": false
+   },
+   {
+    "name": "agendalx-events-p1",
+    "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 170400,
+    "changed": false
+   },
+   {
+    "name": "agendalx-events-p2",
+    "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=2",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 121390,
+    "changed": false
+   },
+   {
+    "name": "agendalx-events-p3",
+    "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=3",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 86486,
+    "changed": false
+   },
+   {
+    "name": "agendalx-events-p4",
+    "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=4",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 143673,
+    "changed": false
+   },
+   {
+    "name": "agendalx-events-p5",
+    "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=5",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 71802,
+    "changed": false
+   },
+   {
+    "name": "agendalx-events-p6",
+    "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=6",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 66491,
+    "changed": false
+   },
+   {
+    "name": "agendalx-events-p7",
+    "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=7",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 71482,
+    "changed": false
+   },
+   {
+    "name": "agendalx-events-p8",
+    "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=8",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 63934,
+    "changed": false
+   },
+   {
+    "name": "agendalx-events-p9",
+    "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=9",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 60390,
+    "changed": false
+   },
+   {
+    "name": "agendalx-events-p10",
+    "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=10",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 47188,
+    "changed": false
+   },
+   {
+    "name": "lagos-robots",
+    "url": "https://www.cm-lagos.pt/robots.txt",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 285,
+    "changed": false
+   },
+   {
+    "name": "lagos-eventos",
+    "url": "https://www.cm-lagos.pt/municipio/eventos",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 197891,
+    "changed": true
+   },
+   {
+    "name": "figuras-robots",
+    "url": "https://teatrodasfiguras.pt/robots.txt",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 93,
+    "changed": false
+   },
+   {
+    "name": "figuras-agenda",
+    "url": "https://teatrodasfiguras.pt/agenda",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 426582,
+    "changed": true
+   },
+   {
+    "name": "tavira-robots",
+    "url": "https://cm-tavira.pt/robots.txt",
+    "status": 404,
+    "meaning": "no robots.txt: the site publishes no rules (not a failure)",
+    "bytes": 236,
+    "changed": false
+   },
+   {
+    "name": "tavira-events-p1",
+    "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=1&start_date=2026-11-27&end_date=2027-01-26",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 181452,
+    "changed": true
+   },
+   {
+    "name": "tavira-events-p2",
+    "url": "https://cm-tavira.pt/site/wp-json/tribe/events/v1/events?per_page=50&page=2&start_date=2026-11-27&end_date=2027-01-26",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 38703,
+    "changed": true
+   }
+  ]
+ },
+ "problems": [
+  {
+   "request": "agendalx-events-p1",
+   "url": "https://www.agendalx.pt/wp-json/agendalx/v1/events?per_page=50&page=1",
+   "status": [
+    403
+   ],
+   "plain": "refused (forbidden)",
+   "failed_in": "48 of 58 runs kept"
+  }
+ ],
+ "runs": [
+  {
+   "at": "2026-11-27T18:08:53Z",
+   "ok": 17,
+   "failed": 1,
+   "requests": 18,
+   "changed_requests": [
+    "lagos-eventos",
+    "figuras-agenda",
+    "tavira-events-p1",
+    "tavira-events-p2"
+   ],
+   "requests_detail": [
+    {
+     "name": "agendalx-robots",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "status": 200,
+     "bytes": 170400,
+     "sha256_prefix": "8d1fcb1f2d713e6b",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p2",
+     "status": 200,
+     "bytes": 121390,
+     "sha256_prefix": "c39a64adf71a479a",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p3",
+     "status": 200,
+     "bytes": 86486,
+     "sha256_prefix": "92048723d5e3395d",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p4",
+     "status": 200,
+     "bytes": 143673,
+     "sha256_prefix": "544526681fd1b9da",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p5",
+     "status": 200,
+     "bytes": 71802,
+     "sha256_prefix": "c13f55705aa9ecc0",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p6",
+     "status": 200,
+     "bytes": 66491,
+     "sha256_prefix": "bf7a82afa93d9b11",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p7",
+     "status": 200,
+     "bytes": 71482,
+     "sha256_prefix": "8b34fa0e4f0dc517",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p8",
+     "status": 200,
+     "bytes": 63934,
+     "sha256_prefix": "b6bae0a5370c1b1b",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p9",
+     "status": 200,
+     "bytes": 60390,
+     "sha256_prefix": "ce631d0b7e28ec7a",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p10",
+     "status": 200,
+     "bytes": 47188,
+     "sha256_prefix": "4d67c6afbafe7854",
+     "changed": false
+    },
+    {
+     "name": "lagos-robots",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "status": 200,
+     "bytes": 197891,
+     "sha256_prefix": "d19464ffece6bc1a",
+     "changed": true
+    },
+    {
+     "name": "figuras-robots",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "status": 200,
+     "bytes": 426582,
+     "sha256_prefix": "df05f8b8939f8d13",
+     "changed": true
+    },
+    {
+     "name": "tavira-robots",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "status": 200,
+     "bytes": 181452,
+     "sha256_prefix": "7e76dae383d4beaf",
+     "changed": true
+    },
+    {
+     "name": "tavira-events-p2",
+     "status": 200,
+     "bytes": 38703,
+     "sha256_prefix": "32c088d1bb50bbd8",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "526dd0b",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/526dd0b8fd852d1fffb5fd1c54adb4760ccfe3e8",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/d409b57...526dd0b"
+  },
+  {
+   "at": "2026-11-27T07:09:44Z",
+   "ok": 17,
+   "failed": 1,
+   "requests": 18,
+   "changed_requests": [
+    "agendalx-events-p1",
+    "agendalx-events-p2",
+    "agendalx-events-p3",
+    "agendalx-events-p4",
+    "agendalx-events-p5",
+    "agendalx-events-p6",
+    "agendalx-events-p7",
+    "agendalx-events-p8",
+    "agendalx-events-p9",
+    "agendalx-events-p10",
+    "lagos-eventos",
+    "figuras-agenda",
+    "tavira-events-p1",
+    "tavira-events-p2"
+   ],
+   "requests_detail": [
+    {
+     "name": "agendalx-robots",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "status": 200,
+     "bytes": 170400,
+     "sha256_prefix": "8d1fcb1f2d713e6b",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p2",
+     "status": 200,
+     "bytes": 121390,
+     "sha256_prefix": "c39a64adf71a479a",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p3",
+     "status": 200,
+     "bytes": 86486,
+     "sha256_prefix": "92048723d5e3395d",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p4",
+     "status": 200,
+     "bytes": 143673,
+     "sha256_prefix": "544526681fd1b9da",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p5",
+     "status": 200,
+     "bytes": 71802,
+     "sha256_prefix": "c13f55705aa9ecc0",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p6",
+     "status": 200,
+     "bytes": 66491,
+     "sha256_prefix": "bf7a82afa93d9b11",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p7",
+     "status": 200,
+     "bytes": 71482,
+     "sha256_prefix": "8b34fa0e4f0dc517",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p8",
+     "status": 200,
+     "bytes": 63934,
+     "sha256_prefix": "b6bae0a5370c1b1b",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p9",
+     "status": 200,
+     "bytes": 60390,
+     "sha256_prefix": "ce631d0b7e28ec7a",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p10",
+     "status": 200,
+     "bytes": 47188,
+     "sha256_prefix": "4d67c6afbafe7854",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "status": 200,
+     "bytes": 196214,
+     "sha256_prefix": "c5d52b2af91e5e10",
+     "changed": true
+    },
+    {
+     "name": "figuras-robots",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "status": 200,
+     "bytes": 425474,
+     "sha256_prefix": "65da4c88f7b03895",
+     "changed": true
+    },
+    {
+     "name": "tavira-robots",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "status": 200,
+     "bytes": 180549,
+     "sha256_prefix": "0024a3714cdcd289",
+     "changed": true
+    },
+    {
+     "name": "tavira-events-p2",
+     "status": 200,
+     "bytes": 31654,
+     "sha256_prefix": "a7257ac4163cbdcb",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d409b57",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d409b5734208af88d47485b2878734dbf9e6aa7c",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/d466166...d409b57"
+  },
+  {
+   "at": "2026-11-26T18:10:20Z",
+   "ok": 17,
+   "failed": 1,
+   "requests": 18,
+   "changed_requests": [
+    "lagos-eventos",
+    "figuras-agenda",
+    "tavira-events-p1"
+   ],
+   "requests_detail": [
+    {
+     "name": "agendalx-robots",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "status": 200,
+     "bytes": 172086,
+     "sha256_prefix": "6e8c3e10a1f16a89",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p2",
+     "status": 200,
+     "bytes": 121249,
+     "sha256_prefix": "2acc055f008cc599",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p3",
+     "status": 200,
+     "bytes": 101082,
+     "sha256_prefix": "bcf327b40ca55113",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p4",
+     "status": 200,
+     "bytes": 131453,
+     "sha256_prefix": "596a21775171ced4",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p5",
+     "status": 200,
+     "bytes": 68540,
+     "sha256_prefix": "b6ef5cb2a1d0c5c6",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p6",
+     "status": 200,
+     "bytes": 65662,
+     "sha256_prefix": "7a23f0e0d895f904",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p7",
+     "status": 200,
+     "bytes": 68949,
+     "sha256_prefix": "e2ac58fec881ec7b",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p8",
+     "status": 200,
+     "bytes": 64174,
+     "sha256_prefix": "d0ec1cef956e6b9b",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p9",
+     "status": 200,
+     "bytes": 61028,
+     "sha256_prefix": "2fea8203fe34ce65",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p10",
+     "status": 200,
+     "bytes": 20520,
+     "sha256_prefix": "62f457709ba2517b",
+     "changed": false
+    },
+    {
+     "name": "lagos-robots",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "status": 200,
+     "bytes": 197615,
+     "sha256_prefix": "e650546bf55f4a3d",
+     "changed": true
+    },
+    {
+     "name": "figuras-robots",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "status": 200,
+     "bytes": 428067,
+     "sha256_prefix": "35232d81d772def7",
+     "changed": true
+    },
+    {
+     "name": "tavira-robots",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "status": 200,
+     "bytes": 181842,
+     "sha256_prefix": "db25ba75796454c2",
+     "changed": true
+    },
+    {
+     "name": "tavira-events-p2",
+     "status": 200,
+     "bytes": 41887,
+     "sha256_prefix": "31233bc2d3045067",
+     "changed": "first read"
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d466166",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d466166b925f53f8d36d4a6047daf9a0634bf489",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-26T07:09:56Z",
+   "ok": 16,
+   "failed": 1,
+   "requests": 17,
+   "changed_requests": [
+    "agendalx-events-p1",
+    "agendalx-events-p2",
+    "agendalx-events-p3",
+    "agendalx-events-p4",
+    "agendalx-events-p5",
+    "agendalx-events-p6",
+    "agendalx-events-p7",
+    "agendalx-events-p8",
+    "agendalx-events-p9",
+    "agendalx-events-p10",
+    "lagos-eventos",
+    "figuras-agenda",
+    "tavira-events-p1"
+   ],
+   "requests_detail": [
+    {
+     "name": "agendalx-robots",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "status": 200,
+     "bytes": 172086,
+     "sha256_prefix": "6e8c3e10a1f16a89",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p2",
+     "status": 200,
+     "bytes": 121249,
+     "sha256_prefix": "2acc055f008cc599",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p3",
+     "status": 200,
+     "bytes": 101082,
+     "sha256_prefix": "bcf327b40ca55113",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p4",
+     "status": 200,
+     "bytes": 131453,
+     "sha256_prefix": "596a21775171ced4",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p5",
+     "status": 200,
+     "bytes": 68540,
+     "sha256_prefix": "b6ef5cb2a1d0c5c6",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p6",
+     "status": 200,
+     "bytes": 65662,
+     "sha256_prefix": "7a23f0e0d895f904",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p7",
+     "status": 200,
+     "bytes": 68949,
+     "sha256_prefix": "e2ac58fec881ec7b",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p8",
+     "status": 200,
+     "bytes": 64174,
+     "sha256_prefix": "d0ec1cef956e6b9b",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p9",
+     "status": 200,
+     "bytes": 61028,
+     "sha256_prefix": "2fea8203fe34ce65",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p10",
+     "status": 200,
+     "bytes": 20520,
+     "sha256_prefix": "62f457709ba2517b",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "status": 200,
+     "bytes": 197615,
+     "sha256_prefix": "e40bf71d82a83234",
+     "changed": true
+    },
+    {
+     "name": "figuras-robots",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "status": 200,
+     "bytes": 428037,
+     "sha256_prefix": "9485ad16e7706e76",
+     "changed": true
+    },
+    {
+     "name": "tavira-robots",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "status": 200,
+     "bytes": 126879,
+     "sha256_prefix": "3b7498e66c8f6068",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d466166",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d466166b925f53f8d36d4a6047daf9a0634bf489",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/bd410a7...d466166"
+  },
+  {
+   "at": "2026-11-21T07:09:28Z",
+   "ok": 16,
+   "failed": 1,
+   "requests": 17,
+   "changed_requests": [
+    "agendalx-events-p1",
+    "agendalx-events-p2",
+    "agendalx-events-p3",
+    "agendalx-events-p4",
+    "agendalx-events-p5",
+    "agendalx-events-p6",
+    "agendalx-events-p7",
+    "agendalx-events-p8",
+    "agendalx-events-p9",
+    "agendalx-events-p10",
+    "lagos-eventos",
+    "figuras-agenda",
+    "tavira-events-p1"
+   ],
+   "requests_detail": [
+    {
+     "name": "agendalx-robots",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "status": 200,
+     "bytes": 170934,
+     "sha256_prefix": "065ba297b20bdfbb",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p2",
+     "status": 200,
+     "bytes": 118775,
+     "sha256_prefix": "777b10d2bcdf1c6c",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p3",
+     "status": 200,
+     "bytes": 96758,
+     "sha256_prefix": "1c429c0fc58bf9df",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p4",
+     "status": 200,
+     "bytes": 118938,
+     "sha256_prefix": "4b2d41cc64fe9fad",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p5",
+     "status": 200,
+     "bytes": 82564,
+     "sha256_prefix": "eb657ac2a9c006e0",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p6",
+     "status": 200,
+     "bytes": 76276,
+     "sha256_prefix": "27520c6059c8b0ef",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p7",
+     "status": 200,
+     "bytes": 61239,
+     "sha256_prefix": "1727b9d375e5befa",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p8",
+     "status": 200,
+     "bytes": 66006,
+     "sha256_prefix": "c232e57135027b7d",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p9",
+     "status": 200,
+     "bytes": 62793,
+     "sha256_prefix": "27fb0572dfa6b5bf",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p10",
+     "status": 200,
+     "bytes": 32720,
+     "sha256_prefix": "da6a9594c79a4e8a",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "status": 200,
+     "bytes": 222150,
+     "sha256_prefix": "4229410605645a45",
+     "changed": true
+    },
+    {
+     "name": "figuras-robots",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "status": 200,
+     "bytes": 424835,
+     "sha256_prefix": "5a3b6d9b11b33a5d",
+     "changed": true
+    },
+    {
+     "name": "tavira-robots",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "status": 200,
+     "bytes": 126970,
+     "sha256_prefix": "9138d7f608e2d232",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "bd410a7",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/bd410a73762d6b0a755da0a946556d6e47d54c8e",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/65c6667...bd410a7"
+  },
+  {
+   "at": "2026-11-20T18:12:44Z",
+   "ok": 16,
+   "failed": 1,
+   "requests": 17,
+   "changed_requests": [
+    "lagos-eventos",
+    "figuras-agenda"
+   ],
+   "requests_detail": [
+    {
+     "name": "agendalx-robots",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "status": 200,
+     "bytes": 171810,
+     "sha256_prefix": "25875bde482d6bbb",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p2",
+     "status": 200,
+     "bytes": 118070,
+     "sha256_prefix": "bb311ff9f0cf90d3",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p3",
+     "status": 200,
+     "bytes": 106437,
+     "sha256_prefix": "91cd14798f3d1e22",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p4",
+     "status": 200,
+     "bytes": 128272,
+     "sha256_prefix": "416f0aa78cfeab71",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p5",
+     "status": 200,
+     "bytes": 69532,
+     "sha256_prefix": "13e4a9d3a2d61c77",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p6",
+     "status": 200,
+     "bytes": 67656,
+     "sha256_prefix": "0b30ad5352edfe5f",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p7",
+     "status": 200,
+     "bytes": 61317,
+     "sha256_prefix": "bd1144117e911813",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p8",
+     "status": 200,
+     "bytes": 66460,
+     "sha256_prefix": "c4dd7a069e24d2c5",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p9",
+     "status": 200,
+     "bytes": 63349,
+     "sha256_prefix": "e99ab064ba3c9a18",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p10",
+     "status": 200,
+     "bytes": 13257,
+     "sha256_prefix": "d7e55580d2dbd04e",
+     "changed": false
+    },
+    {
+     "name": "lagos-robots",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "status": 200,
+     "bytes": 230323,
+     "sha256_prefix": "171684ed95a2cc33",
+     "changed": true
+    },
+    {
+     "name": "figuras-robots",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "status": 200,
+     "bytes": 424792,
+     "sha256_prefix": "efb43d56b4eefeb2",
+     "changed": true
+    },
+    {
+     "name": "tavira-robots",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "status": 200,
+     "bytes": 142792,
+     "sha256_prefix": "aa1ce961b49833bf",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "65c6667",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/65c66677f4957a21ffbcf6d58b3f8794f505d39f",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/cb88d7b...65c6667"
+  },
+  {
+   "at": "2026-11-20T07:13:56Z",
+   "ok": 16,
+   "failed": 1,
+   "requests": 17,
+   "changed_requests": [
+    "agendalx-events-p1",
+    "agendalx-events-p2",
+    "agendalx-events-p3",
+    "agendalx-events-p4",
+    "agendalx-events-p5",
+    "agendalx-events-p6",
+    "agendalx-events-p7",
+    "agendalx-events-p8",
+    "agendalx-events-p9",
+    "lagos-eventos",
+    "figuras-agenda",
+    "tavira-events-p1"
+   ],
+   "requests_detail": [
+    {
+     "name": "agendalx-robots",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "status": 200,
+     "bytes": 171810,
+     "sha256_prefix": "25875bde482d6bbb",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p2",
+     "status": 200,
+     "bytes": 118070,
+     "sha256_prefix": "bb311ff9f0cf90d3",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p3",
+     "status": 200,
+     "bytes": 106437,
+     "sha256_prefix": "91cd14798f3d1e22",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p4",
+     "status": 200,
+     "bytes": 128272,
+     "sha256_prefix": "416f0aa78cfeab71",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p5",
+     "status": 200,
+     "bytes": 69532,
+     "sha256_prefix": "13e4a9d3a2d61c77",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p6",
+     "status": 200,
+     "bytes": 67656,
+     "sha256_prefix": "0b30ad5352edfe5f",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p7",
+     "status": 200,
+     "bytes": 61317,
+     "sha256_prefix": "bd1144117e911813",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p8",
+     "status": 200,
+     "bytes": 66460,
+     "sha256_prefix": "c4dd7a069e24d2c5",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p9",
+     "status": 200,
+     "bytes": 63349,
+     "sha256_prefix": "e99ab064ba3c9a18",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p10",
+     "status": 200,
+     "bytes": 13257,
+     "sha256_prefix": "d7e55580d2dbd04e",
+     "changed": "first read"
+    },
+    {
+     "name": "lagos-robots",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "status": 200,
+     "bytes": 229191,
+     "sha256_prefix": "bd8311b39305daaf",
+     "changed": true
+    },
+    {
+     "name": "figuras-robots",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "a383c4c302e8f0e4",
+     "changed": true
+    },
+    {
+     "name": "tavira-robots",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "status": 200,
+     "bytes": 142792,
+     "sha256_prefix": "aa1ce961b49833bf",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "cb88d7b",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/cb88d7b793bc938078a150fb7bd84b6477977aea",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/64fbf7d...cb88d7b"
+  },
+  {
+   "at": "2026-11-19T18:11:23Z",
+   "ok": 15,
+   "failed": 1,
+   "requests": 16,
+   "changed_requests": [
+    "lagos-eventos"
+   ],
+   "requests_detail": [
+    {
+     "name": "agendalx-robots",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "status": 200,
+     "bytes": 171449,
+     "sha256_prefix": "e8fc454b3bf78f26",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p2",
+     "status": 200,
+     "bytes": 121697,
+     "sha256_prefix": "a72f7b3a25d07a39",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p3",
+     "status": 200,
+     "bytes": 123629,
+     "sha256_prefix": "5bc31ee3fc77cdb5",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p4",
+     "status": 200,
+     "bytes": 106182,
+     "sha256_prefix": "69270ff0ce3151cf",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p5",
+     "status": 200,
+     "bytes": 73592,
+     "sha256_prefix": "62d391d5de4c8082",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p6",
+     "status": 200,
+     "bytes": 64251,
+     "sha256_prefix": "a1bc25c8f82e9768",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p7",
+     "status": 200,
+     "bytes": 61769,
+     "sha256_prefix": "68c4073c40d4e56c",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p8",
+     "status": 200,
+     "bytes": 67005,
+     "sha256_prefix": "d8b6432352d8bc76",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p9",
+     "status": 200,
+     "bytes": 52893,
+     "sha256_prefix": "ee72ae4e1f7ef158",
+     "changed": false
+    },
+    {
+     "name": "lagos-robots",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "status": 200,
+     "bytes": 228728,
+     "sha256_prefix": "a8bac0ac8e74dceb",
+     "changed": true
+    },
+    {
+     "name": "figuras-robots",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "23dee616f470e61d",
+     "changed": false
+    },
+    {
+     "name": "tavira-robots",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "status": 200,
+     "bytes": 142792,
+     "sha256_prefix": "b651228e47efc71f",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "64fbf7d",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/64fbf7dda8967b6095e265f2e10aba0dfb3d65e8",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/379aae6...64fbf7d"
+  },
+  {
+   "at": "2026-11-19T12:12:43Z",
+   "ok": 15,
+   "failed": 1,
+   "requests": 16,
+   "changed_requests": [
+    "lagos-eventos",
+    "figuras-agenda"
+   ],
+   "requests_detail": [
+    {
+     "name": "agendalx-robots",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "status": 200,
+     "bytes": 171449,
+     "sha256_prefix": "e8fc454b3bf78f26",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p2",
+     "status": 200,
+     "bytes": 121697,
+     "sha256_prefix": "a72f7b3a25d07a39",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p3",
+     "status": 200,
+     "bytes": 123629,
+     "sha256_prefix": "5bc31ee3fc77cdb5",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p4",
+     "status": 200,
+     "bytes": 106182,
+     "sha256_prefix": "69270ff0ce3151cf",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p5",
+     "status": 200,
+     "bytes": 73592,
+     "sha256_prefix": "62d391d5de4c8082",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p6",
+     "status": 200,
+     "bytes": 64251,
+     "sha256_prefix": "a1bc25c8f82e9768",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p7",
+     "status": 200,
+     "bytes": 61769,
+     "sha256_prefix": "68c4073c40d4e56c",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p8",
+     "status": 200,
+     "bytes": 67005,
+     "sha256_prefix": "d8b6432352d8bc76",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p9",
+     "status": 200,
+     "bytes": 52893,
+     "sha256_prefix": "ee72ae4e1f7ef158",
+     "changed": false
+    },
+    {
+     "name": "lagos-robots",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "status": 200,
+     "bytes": 228640,
+     "sha256_prefix": "6c4c1fb09850a8dd",
+     "changed": true
+    },
+    {
+     "name": "figuras-robots",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "23dee616f470e61d",
+     "changed": true
+    },
+    {
+     "name": "tavira-robots",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "status": 200,
+     "bytes": 142792,
+     "sha256_prefix": "b651228e47efc71f",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "379aae6",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/379aae67e159f2afe46678e771171e631f923e70",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/6ee935e...379aae6"
+  },
+  {
+   "at": "2026-11-19T06:11:37Z",
+   "ok": 15,
+   "failed": 1,
+   "requests": 16,
+   "changed_requests": [
+    "agendalx-events-p1",
+    "lagos-eventos",
+    "figuras-agenda",
+    "tavira-events-p1"
+   ],
+   "requests_detail": [
+    {
+     "name": "agendalx-robots",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "status": 200,
+     "bytes": 171449,
+     "sha256_prefix": "e8fc454b3bf78f26",
+     "changed": true
+    },
+    {
+     "name": "agendalx-events-p2",
+     "status": 200,
+     "bytes": 121697,
+     "sha256_prefix": "a72f7b3a25d07a39",
+     "changed": "first read"
+    },
+    {
+     "name": "agendalx-events-p3",
+     "status": 200,
+     "bytes": 123629,
+     "sha256_prefix": "5bc31ee3fc77cdb5",
+     "changed": "first read"
+    },
+    {
+     "name": "agendalx-events-p4",
+     "status": 200,
+     "bytes": 106182,
+     "sha256_prefix": "69270ff0ce3151cf",
+     "changed": "first read"
+    },
+    {
+     "name": "agendalx-events-p5",
+     "status": 200,
+     "bytes": 73592,
+     "sha256_prefix": "62d391d5de4c8082",
+     "changed": "first read"
+    },
+    {
+     "name": "agendalx-events-p6",
+     "status": 200,
+     "bytes": 64251,
+     "sha256_prefix": "a1bc25c8f82e9768",
+     "changed": "first read"
+    },
+    {
+     "name": "agendalx-events-p7",
+     "status": 200,
+     "bytes": 61769,
+     "sha256_prefix": "68c4073c40d4e56c",
+     "changed": "first read"
+    },
+    {
+     "name": "agendalx-events-p8",
+     "status": 200,
+     "bytes": 67005,
+     "sha256_prefix": "d8b6432352d8bc76",
+     "changed": "first read"
+    },
+    {
+     "name": "agendalx-events-p9",
+     "status": 200,
+     "bytes": 52893,
+     "sha256_prefix": "ee72ae4e1f7ef158",
+     "changed": "first read"
+    },
+    {
+     "name": "lagos-robots",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "status": 200,
+     "bytes": 228640,
+     "sha256_prefix": "8d8e22c60f761f86",
+     "changed": true
+    },
+    {
+     "name": "figuras-robots",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "55c2ec1083e35e95",
+     "changed": true
+    },
+    {
+     "name": "tavira-robots",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "status": 200,
+     "bytes": 142792,
+     "sha256_prefix": "b651228e47efc71f",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "6ee935e",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/6ee935e17d5733cf18c410ee489d74b2bee55a8c",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/83b562f...6ee935e"
+  },
+  {
+   "at": "2026-11-18T23:43:33Z",
+   "ok": 6,
+   "failed": 2,
+   "requests": 8,
+   "changed_requests": [
+    "agendalx-events-p1"
+   ],
+   "requests_detail": [
+    {
+     "name": "agendalx-robots",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "61a390b19b6a9138",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "status": 200,
+     "bytes": 231255,
+     "sha256_prefix": "956e7486e2fa422a",
+     "changed": false
+    },
+    {
+     "name": "figuras-robots",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "a383c4c302e8f0e4",
+     "changed": false
+    },
+    {
+     "name": "tavira-robots",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "status": 200,
+     "bytes": 147059,
+     "sha256_prefix": "d8ed8fda37bb56d9",
+     "changed": false
+    }
+   ],
+   "failed_requests": [
+    "agendalx-events-p1"
+   ],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T23:35:32Z",
+   "ok": 6,
+   "failed": 2,
+   "requests": 8,
+   "changed_requests": [
+    "agendalx-events-p1",
+    "figuras-agenda"
+   ],
+   "requests_detail": [
+    {
+     "name": "agendalx-robots",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "f8e2026e76b54c18",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "status": 200,
+     "bytes": 231255,
+     "sha256_prefix": "956e7486e2fa422a",
+     "changed": false
+    },
+    {
+     "name": "figuras-robots",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "a383c4c302e8f0e4",
+     "changed": true
+    },
+    {
+     "name": "tavira-robots",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "status": 200,
+     "bytes": 147059,
+     "sha256_prefix": "d8ed8fda37bb56d9",
+     "changed": false
+    }
+   ],
+   "failed_requests": [
+    "agendalx-events-p1"
+   ],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T23:28:33Z",
+   "ok": 6,
+   "failed": 2,
+   "requests": 8,
+   "changed_requests": [
+    "agendalx-events-p1",
+    "figuras-agenda"
+   ],
+   "requests_detail": [
+    {
+     "name": "agendalx-robots",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "status": 403,
+     "bytes": 5645,
+     "sha256_prefix": "75dffb5f31494585",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "status": 200,
+     "bytes": 231255,
+     "sha256_prefix": "956e7486e2fa422a",
+     "changed": false
+    },
+    {
+     "name": "figuras-robots",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "5d5d0f0dc48d97bd",
+     "changed": true
+    },
+    {
+     "name": "tavira-robots",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "status": 200,
+     "bytes": 147059,
+     "sha256_prefix": "d8ed8fda37bb56d9",
+     "changed": false
+    }
+   ],
+   "failed_requests": [
+    "agendalx-events-p1"
+   ],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T23:22:36Z",
+   "ok": 6,
+   "failed": 2,
+   "requests": 8,
+   "changed_requests": [
+    "agendalx-events-p1",
+    "lagos-eventos",
+    "figuras-agenda"
+   ],
+   "requests_detail": [
+    {
+     "name": "agendalx-robots",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "4ffb3e026ddf08c6",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "status": 200,
+     "bytes": 231255,
+     "sha256_prefix": "956e7486e2fa422a",
+     "changed": true
+    },
+    {
+     "name": "figuras-robots",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "a383c4c302e8f0e4",
+     "changed": true
+    },
+    {
+     "name": "tavira-robots",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "status": 200,
+     "bytes": 147059,
+     "sha256_prefix": "d8ed8fda37bb56d9",
+     "changed": false
+    }
+   ],
+   "failed_requests": [
+    "agendalx-events-p1"
+   ],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T22:53:03Z",
+   "ok": 6,
+   "failed": 2,
+   "requests": 8,
+   "changed_requests": [
+    "agendalx-events-p1",
+    "figuras-agenda"
+   ],
+   "requests_detail": [
+    {
+     "name": "agendalx-robots",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "status": 403,
+     "bytes": 5645,
+     "sha256_prefix": "9a24d3b7233d10dc",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "status": 200,
+     "bytes": 232932,
+     "sha256_prefix": "3feab7af179dc934",
+     "changed": false
+    },
+    {
+     "name": "figuras-robots",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "6ebb905f9c0d7526",
+     "changed": true
+    },
+    {
+     "name": "tavira-robots",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "status": 200,
+     "bytes": 147059,
+     "sha256_prefix": "d8ed8fda37bb56d9",
+     "changed": false
+    }
+   ],
+   "failed_requests": [
+    "agendalx-events-p1"
+   ],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T22:43:15Z",
+   "ok": 6,
+   "failed": 2,
+   "requests": 8,
+   "changed_requests": [
+    "agendalx-events-p1",
+    "figuras-agenda"
+   ],
+   "requests_detail": [
+    {
+     "name": "agendalx-robots",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "62cff52b754283e7",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "status": 200,
+     "bytes": 232932,
+     "sha256_prefix": "3feab7af179dc934",
+     "changed": false
+    },
+    {
+     "name": "figuras-robots",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "a383c4c302e8f0e4",
+     "changed": true
+    },
+    {
+     "name": "tavira-robots",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "status": 200,
+     "bytes": 147059,
+     "sha256_prefix": "d8ed8fda37bb56d9",
+     "changed": false
+    }
+   ],
+   "failed_requests": [
+    "agendalx-events-p1"
+   ],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T22:37:35Z",
+   "ok": 6,
+   "failed": 2,
+   "requests": 8,
+   "changed_requests": [
+    "agendalx-events-p1",
+    "figuras-agenda"
+   ],
+   "requests_detail": [
+    {
+     "name": "agendalx-robots",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "575aa3d3309bb130",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "status": 200,
+     "bytes": 232932,
+     "sha256_prefix": "3feab7af179dc934",
+     "changed": false
+    },
+    {
+     "name": "figuras-robots",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "23dee616f470e61d",
+     "changed": true
+    },
+    {
+     "name": "tavira-robots",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "status": 200,
+     "bytes": 147059,
+     "sha256_prefix": "d8ed8fda37bb56d9",
+     "changed": false
+    }
+   ],
+   "failed_requests": [
+    "agendalx-events-p1"
+   ],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T22:31:48Z",
+   "ok": 6,
+   "failed": 2,
+   "requests": 8,
+   "changed_requests": [
+    "agendalx-events-p1"
+   ],
+   "requests_detail": [
+    {
+     "name": "agendalx-robots",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "1b3ea577ae1f6b04",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "status": 200,
+     "bytes": 232932,
+     "sha256_prefix": "3feab7af179dc934",
+     "changed": false
+    },
+    {
+     "name": "figuras-robots",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "a383c4c302e8f0e4",
+     "changed": false
+    },
+    {
+     "name": "tavira-robots",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "status": 200,
+     "bytes": 147059,
+     "sha256_prefix": "d8ed8fda37bb56d9",
+     "changed": false
+    }
+   ],
+   "failed_requests": [
+    "agendalx-events-p1"
+   ],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T22:26:48Z",
+   "ok": 6,
+   "failed": 2,
+   "requests": 8,
+   "changed_requests": [
+    "agendalx-events-p1"
+   ],
+   "requests_detail": [
+    {
+     "name": "agendalx-robots",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "e3e69d106f86ee53",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "status": 200,
+     "bytes": 232932,
+     "sha256_prefix": "3feab7af179dc934",
+     "changed": false
+    },
+    {
+     "name": "figuras-robots",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "a383c4c302e8f0e4",
+     "changed": false
+    },
+    {
+     "name": "tavira-robots",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "status": 200,
+     "bytes": 147059,
+     "sha256_prefix": "d8ed8fda37bb56d9",
+     "changed": false
+    }
+   ],
+   "failed_requests": [
+    "agendalx-events-p1"
+   ],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T22:20:44Z",
+   "ok": 6,
+   "failed": 2,
+   "requests": 8,
+   "changed_requests": [
+    "agendalx-events-p1",
+    "lagos-eventos"
+   ],
+   "requests_detail": [
+    {
+     "name": "agendalx-robots",
+     "status": 200,
+     "bytes": 2676,
+     "sha256_prefix": "3073d1e371afb327",
+     "changed": false
+    },
+    {
+     "name": "agendalx-events-p1",
+     "status": 403,
+     "bytes": 5666,
+     "sha256_prefix": "0ef69d4224efc4a6",
+     "changed": true
+    },
+    {
+     "name": "lagos-robots",
+     "status": 200,
+     "bytes": 285,
+     "sha256_prefix": "848b423d72457bb6",
+     "changed": false
+    },
+    {
+     "name": "lagos-eventos",
+     "status": 200,
+     "bytes": 232932,
+     "sha256_prefix": "3feab7af179dc934",
+     "changed": true
+    },
+    {
+     "name": "figuras-robots",
+     "status": 200,
+     "bytes": 93,
+     "sha256_prefix": "7b51845953bb488e",
+     "changed": false
+    },
+    {
+     "name": "figuras-agenda",
+     "status": 200,
+     "bytes": 412216,
+     "sha256_prefix": "a383c4c302e8f0e4",
+     "changed": false
+    },
+    {
+     "name": "tavira-robots",
+     "status": 404,
+     "bytes": 236,
+     "sha256_prefix": "9448f8a1159c9b14",
+     "changed": false
+    },
+    {
+     "name": "tavira-events-p1",
+     "status": 200,
+     "bytes": 147059,
+     "sha256_prefix": "d8ed8fda37bb56d9",
+     "changed": false
+    }
+   ],
+   "failed_requests": [
+    "agendalx-events-p1"
+   ],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  }
+ ],
+ "copies": {
+  "files_in_git_data": 3,
+  "bytes_in_git_data": 1015808,
+  "files_in_vault_working_copy": 53,
+  "bytes_in_vault_working_copy": 6815710,
+  "dated_copies_in_vault": 35,
+  "where": {
+   "api_latest": "https://data.promptugal.news/api/v1/events-pt/latest.json",
+   "api_reads": "https://data.promptugal.news/api/v1/events-pt/reads.json",
+   "source_page": "https://data.promptugal.news/sources/events-pt/",
+   "git": "https://github.com/PrompTugal/PrompTugal__News__Data/tree/dev/data/events-pt"
+  },
+  "tracked_in_git_vaults": 0,
+  "note": "collect/lib.mjs says vaults/ is meant to stay out of git, but 0 files of this source are tracked in git today (earlier commits); the sgit vault holds the full history. Dinis has not yet ruled on the vaults/ question."
+ },
+ "cadence_advice": {
+  "line": "The data changed on 57 of 58 reads over 9 days: nearly every read finds new data, so it changes at least as often as it is read and reading more than twice a day would catch more states. Whether the pages that use it need them is for their owners to say.",
+  "basis": "suggestion derived from 58 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is every 6 hours; runs before 21 Nov were hourly",
+  "runs_with_change": 57,
+  "runs_kept": 58,
+  "days_covered": 9.2,
+  "changes_per_day": 6.2
+ },
+ "schedule_times": {
+  "tz": "Europe/Lisbon",
+  "times_local": [
+   "07:03",
+   "18:03"
+  ],
+  "note": "Lisbon is UTC+0 from late October to late March, so these are also 07:03 and 18:03 UTC then; one hour earlier in UTC in summer.",
+  "runs_per_day": 2
+ },
+ "api_spec": null,
+ "api_docs": null,
+ "own_page_copy": null,
+ "own_page_copy_note": "not taken: a copy or screenshot of the publisher's page needs a rights ruling from cl-6.rights; source_home links to the page itself",
+ "source_home": "https://www.agendalx.pt/wp-json/agendalx/v1/events"
+}

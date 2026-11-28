@@ -1,7 +1,7 @@
 {
  "source": "social",
  "title": "Social signals: organisations' public posts, by link",
- "generated_utc": "2026-11-28T02:34:58Z",
+ "generated_utc": "2026-11-28T02:40:14Z",
  "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
  "schedule": {
   "card_says": "every 6 hours",
@@ -154,6 +154,78 @@
     "bsky-feed-bsky-portugalresident",
     "bsky-feed-bsky-sapo"
    ],
+   "requests_detail": [
+    {
+     "name": "bsky-feed-bsky-visitportugal",
+     "status": 200,
+     "bytes": 82007,
+     "sha256_prefix": "9cc0a43a4e6cee34",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-publico",
+     "status": 200,
+     "bytes": 76463,
+     "sha256_prefix": "df5c2f69ff563f43",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-lusa",
+     "status": 200,
+     "bytes": 60630,
+     "sha256_prefix": "95198699902ed94d",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-portugalresident",
+     "status": 200,
+     "bytes": 78208,
+     "sha256_prefix": "691b0c8057bce300",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-sapo",
+     "status": 200,
+     "bytes": 69128,
+     "sha256_prefix": "23d55c9051848867",
+     "changed": true
+    },
+    {
+     "name": "bsky-search-web-summit",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-lisboa",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-algarve",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-startup-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-ia-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    }
+   ],
    "failed_requests": [
     "bsky-search-web-summit",
     "bsky-search-lisboa",
@@ -174,6 +246,78 @@
     "bsky-feed-bsky-publico",
     "bsky-feed-bsky-lusa",
     "bsky-feed-bsky-sapo"
+   ],
+   "requests_detail": [
+    {
+     "name": "bsky-feed-bsky-visitportugal",
+     "status": 200,
+     "bytes": 82229,
+     "sha256_prefix": "55c9e0d0f6437e98",
+     "changed": false
+    },
+    {
+     "name": "bsky-feed-bsky-publico",
+     "status": 200,
+     "bytes": 77959,
+     "sha256_prefix": "9c57f94b5a2d519c",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-lusa",
+     "status": 200,
+     "bytes": 60456,
+     "sha256_prefix": "c13fbe3321a357dc",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-portugalresident",
+     "status": 200,
+     "bytes": 78438,
+     "sha256_prefix": "c9c38b30ff8f36c1",
+     "changed": false
+    },
+    {
+     "name": "bsky-feed-bsky-sapo",
+     "status": 200,
+     "bytes": 68169,
+     "sha256_prefix": "d0c66be6171002a7",
+     "changed": true
+    },
+    {
+     "name": "bsky-search-web-summit",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-lisboa",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-algarve",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-startup-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-ia-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    }
    ],
    "failed_requests": [
     "bsky-search-web-summit",
@@ -198,6 +342,78 @@
     "bsky-feed-bsky-portugalresident",
     "bsky-feed-bsky-sapo"
    ],
+   "requests_detail": [
+    {
+     "name": "bsky-feed-bsky-visitportugal",
+     "status": 200,
+     "bytes": 82229,
+     "sha256_prefix": "55c9e0d0f6437e98",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-publico",
+     "status": 200,
+     "bytes": 77360,
+     "sha256_prefix": "2705238feb7f9d79",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-lusa",
+     "status": 200,
+     "bytes": 61194,
+     "sha256_prefix": "bb2c19b31bd9015b",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-portugalresident",
+     "status": 200,
+     "bytes": 78438,
+     "sha256_prefix": "c9c38b30ff8f36c1",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-sapo",
+     "status": 200,
+     "bytes": 68174,
+     "sha256_prefix": "2b3bd6137a72ba77",
+     "changed": true
+    },
+    {
+     "name": "bsky-search-web-summit",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-lisboa",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-algarve",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-startup-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-ia-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    }
+   ],
    "failed_requests": [
     "bsky-search-web-summit",
     "bsky-search-lisboa",
@@ -221,6 +437,78 @@
     "bsky-feed-bsky-portugalresident",
     "bsky-feed-bsky-sapo"
    ],
+   "requests_detail": [
+    {
+     "name": "bsky-feed-bsky-visitportugal",
+     "status": 200,
+     "bytes": 82111,
+     "sha256_prefix": "be51c730ecdf8505",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-publico",
+     "status": 200,
+     "bytes": 77631,
+     "sha256_prefix": "0b4a853a2050c1cd",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-lusa",
+     "status": 200,
+     "bytes": 60388,
+     "sha256_prefix": "411d44b7cff75c1e",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-portugalresident",
+     "status": 200,
+     "bytes": 78869,
+     "sha256_prefix": "1956902a6641d52b",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-sapo",
+     "status": 200,
+     "bytes": 68304,
+     "sha256_prefix": "98c220b6e56aad5d",
+     "changed": true
+    },
+    {
+     "name": "bsky-search-web-summit",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-lisboa",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-algarve",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-startup-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-ia-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    }
+   ],
    "failed_requests": [
     "bsky-search-web-summit",
     "bsky-search-lisboa",
@@ -241,6 +529,78 @@
     "bsky-feed-bsky-visitportugal",
     "bsky-feed-bsky-publico",
     "bsky-feed-bsky-lusa"
+   ],
+   "requests_detail": [
+    {
+     "name": "bsky-feed-bsky-visitportugal",
+     "status": 200,
+     "bytes": 81399,
+     "sha256_prefix": "719e6c77ba6c9770",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-publico",
+     "status": 200,
+     "bytes": 76911,
+     "sha256_prefix": "7624cf7e3185d444",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-lusa",
+     "status": 200,
+     "bytes": 60454,
+     "sha256_prefix": "8f0b88a3b9d2049f",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-portugalresident",
+     "status": 200,
+     "bytes": 73083,
+     "sha256_prefix": "0f8d9d16cd6858fc",
+     "changed": false
+    },
+    {
+     "name": "bsky-feed-bsky-sapo",
+     "status": 200,
+     "bytes": 68811,
+     "sha256_prefix": "085eb56499bd26f8",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-web-summit",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-lisboa",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-algarve",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-startup-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-ia-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    }
    ],
    "failed_requests": [
     "bsky-search-web-summit",
@@ -264,6 +624,78 @@
     "bsky-feed-bsky-lusa",
     "bsky-feed-bsky-portugalresident"
    ],
+   "requests_detail": [
+    {
+     "name": "bsky-feed-bsky-visitportugal",
+     "status": 200,
+     "bytes": 81399,
+     "sha256_prefix": "28c4605ae637d5b5",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-publico",
+     "status": 200,
+     "bytes": 77861,
+     "sha256_prefix": "3e7f782d8cc1668f",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-lusa",
+     "status": 200,
+     "bytes": 60020,
+     "sha256_prefix": "299d3a1c28c6fda4",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-portugalresident",
+     "status": 200,
+     "bytes": 73083,
+     "sha256_prefix": "0f8d9d16cd6858fc",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-sapo",
+     "status": 200,
+     "bytes": 68811,
+     "sha256_prefix": "085eb56499bd26f8",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-web-summit",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-lisboa",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-algarve",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-startup-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-ia-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    }
+   ],
    "failed_requests": [
     "bsky-search-web-summit",
     "bsky-search-lisboa",
@@ -285,6 +717,78 @@
     "bsky-feed-bsky-publico",
     "bsky-feed-bsky-lusa",
     "bsky-feed-bsky-portugalresident"
+   ],
+   "requests_detail": [
+    {
+     "name": "bsky-feed-bsky-visitportugal",
+     "status": 200,
+     "bytes": 81571,
+     "sha256_prefix": "df080ba487156cbe",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-publico",
+     "status": 200,
+     "bytes": 77242,
+     "sha256_prefix": "736b5413fbd1171f",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-lusa",
+     "status": 200,
+     "bytes": 61166,
+     "sha256_prefix": "2ac7aba3e09ad19e",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-portugalresident",
+     "status": 200,
+     "bytes": 70690,
+     "sha256_prefix": "9d34ceaf575c681c",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-sapo",
+     "status": 200,
+     "bytes": 68811,
+     "sha256_prefix": "085eb56499bd26f8",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-web-summit",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-lisboa",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-algarve",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-startup-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-ia-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    }
    ],
    "failed_requests": [
     "bsky-search-web-summit",
@@ -308,6 +812,78 @@
     "bsky-feed-bsky-lusa",
     "bsky-feed-bsky-portugalresident"
    ],
+   "requests_detail": [
+    {
+     "name": "bsky-feed-bsky-visitportugal",
+     "status": 200,
+     "bytes": 81571,
+     "sha256_prefix": "5349332d153dfe7b",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-publico",
+     "status": 200,
+     "bytes": 78327,
+     "sha256_prefix": "fe59ea89652ef051",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-lusa",
+     "status": 200,
+     "bytes": 60839,
+     "sha256_prefix": "883def641d2b64b8",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-portugalresident",
+     "status": 200,
+     "bytes": 70690,
+     "sha256_prefix": "6e6a10e7e14e3ac5",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-sapo",
+     "status": 200,
+     "bytes": 68811,
+     "sha256_prefix": "085eb56499bd26f8",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-web-summit",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-lisboa",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-algarve",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-startup-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-ia-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    }
+   ],
    "failed_requests": [
     "bsky-search-web-summit",
     "bsky-search-lisboa",
@@ -330,6 +906,78 @@
     "bsky-feed-bsky-lusa",
     "bsky-feed-bsky-portugalresident"
    ],
+   "requests_detail": [
+    {
+     "name": "bsky-feed-bsky-visitportugal",
+     "status": 200,
+     "bytes": 81479,
+     "sha256_prefix": "80b6ffc04a5fb515",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-publico",
+     "status": 200,
+     "bytes": 76166,
+     "sha256_prefix": "ad4f4f8ab5a7aa93",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-lusa",
+     "status": 200,
+     "bytes": 59828,
+     "sha256_prefix": "971d4c23b8da668d",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-portugalresident",
+     "status": 200,
+     "bytes": 73493,
+     "sha256_prefix": "ff7a282aeced6b48",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-sapo",
+     "status": 200,
+     "bytes": 68811,
+     "sha256_prefix": "085eb56499bd26f8",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-web-summit",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-lisboa",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-algarve",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-startup-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-ia-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    }
+   ],
    "failed_requests": [
     "bsky-search-web-summit",
     "bsky-search-lisboa",
@@ -350,6 +998,78 @@
     "bsky-feed-bsky-publico",
     "bsky-feed-bsky-lusa"
    ],
+   "requests_detail": [
+    {
+     "name": "bsky-feed-bsky-visitportugal",
+     "status": 200,
+     "bytes": 80888,
+     "sha256_prefix": "9eb91a086fac7732",
+     "changed": false
+    },
+    {
+     "name": "bsky-feed-bsky-publico",
+     "status": 200,
+     "bytes": 76870,
+     "sha256_prefix": "f22c3268fa94edd2",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-lusa",
+     "status": 200,
+     "bytes": 60854,
+     "sha256_prefix": "5513ef36b63aa174",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-portugalresident",
+     "status": 200,
+     "bytes": 76040,
+     "sha256_prefix": "341c033b1be280bb",
+     "changed": false
+    },
+    {
+     "name": "bsky-feed-bsky-sapo",
+     "status": 200,
+     "bytes": 68811,
+     "sha256_prefix": "085eb56499bd26f8",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-web-summit",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-lisboa",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-algarve",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-startup-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-ia-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    }
+   ],
    "failed_requests": [
     "bsky-search-web-summit",
     "bsky-search-lisboa",
@@ -368,6 +1088,78 @@
    "requests": 10,
    "changed_requests": [
     "bsky-feed-bsky-publico"
+   ],
+   "requests_detail": [
+    {
+     "name": "bsky-feed-bsky-visitportugal",
+     "status": 200,
+     "bytes": 80888,
+     "sha256_prefix": "9eb91a086fac7732",
+     "changed": false
+    },
+    {
+     "name": "bsky-feed-bsky-publico",
+     "status": 200,
+     "bytes": 77611,
+     "sha256_prefix": "2d95089897636334",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-lusa",
+     "status": 200,
+     "bytes": 60837,
+     "sha256_prefix": "ea99283d6dd6f801",
+     "changed": false
+    },
+    {
+     "name": "bsky-feed-bsky-portugalresident",
+     "status": 200,
+     "bytes": 76040,
+     "sha256_prefix": "341c033b1be280bb",
+     "changed": false
+    },
+    {
+     "name": "bsky-feed-bsky-sapo",
+     "status": 200,
+     "bytes": 68811,
+     "sha256_prefix": "085eb56499bd26f8",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-web-summit",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-lisboa",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-algarve",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-startup-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-ia-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    }
    ],
    "failed_requests": [
     "bsky-search-web-summit",
@@ -388,6 +1180,78 @@
    "changed_requests": [
     "bsky-feed-bsky-publico"
    ],
+   "requests_detail": [
+    {
+     "name": "bsky-feed-bsky-visitportugal",
+     "status": 200,
+     "bytes": 80888,
+     "sha256_prefix": "9eb91a086fac7732",
+     "changed": false
+    },
+    {
+     "name": "bsky-feed-bsky-publico",
+     "status": 200,
+     "bytes": 77611,
+     "sha256_prefix": "97afd8773bf94237",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-lusa",
+     "status": 200,
+     "bytes": 60837,
+     "sha256_prefix": "ea99283d6dd6f801",
+     "changed": false
+    },
+    {
+     "name": "bsky-feed-bsky-portugalresident",
+     "status": 200,
+     "bytes": 76040,
+     "sha256_prefix": "341c033b1be280bb",
+     "changed": false
+    },
+    {
+     "name": "bsky-feed-bsky-sapo",
+     "status": 200,
+     "bytes": 68811,
+     "sha256_prefix": "085eb56499bd26f8",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-web-summit",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-lisboa",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-algarve",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-startup-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-ia-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    }
+   ],
    "failed_requests": [
     "bsky-search-web-summit",
     "bsky-search-lisboa",
@@ -405,6 +1269,78 @@
    "failed": 5,
    "requests": 10,
    "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "bsky-feed-bsky-visitportugal",
+     "status": 200,
+     "bytes": 80888,
+     "sha256_prefix": "9eb91a086fac7732",
+     "changed": false
+    },
+    {
+     "name": "bsky-feed-bsky-publico",
+     "status": 200,
+     "bytes": 77619,
+     "sha256_prefix": "d6b586afa64c742f",
+     "changed": false
+    },
+    {
+     "name": "bsky-feed-bsky-lusa",
+     "status": 200,
+     "bytes": 60837,
+     "sha256_prefix": "ea99283d6dd6f801",
+     "changed": false
+    },
+    {
+     "name": "bsky-feed-bsky-portugalresident",
+     "status": 200,
+     "bytes": 76040,
+     "sha256_prefix": "341c033b1be280bb",
+     "changed": false
+    },
+    {
+     "name": "bsky-feed-bsky-sapo",
+     "status": 200,
+     "bytes": 68811,
+     "sha256_prefix": "085eb56499bd26f8",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-web-summit",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-lisboa",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-algarve",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-startup-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-ia-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    }
+   ],
    "failed_requests": [
     "bsky-search-web-summit",
     "bsky-search-lisboa",
@@ -425,6 +1361,78 @@
     "bsky-feed-bsky-publico",
     "bsky-feed-bsky-lusa"
    ],
+   "requests_detail": [
+    {
+     "name": "bsky-feed-bsky-visitportugal",
+     "status": 200,
+     "bytes": 80888,
+     "sha256_prefix": "9eb91a086fac7732",
+     "changed": false
+    },
+    {
+     "name": "bsky-feed-bsky-publico",
+     "status": 200,
+     "bytes": 77619,
+     "sha256_prefix": "d6b586afa64c742f",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-lusa",
+     "status": 200,
+     "bytes": 60837,
+     "sha256_prefix": "ea99283d6dd6f801",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-portugalresident",
+     "status": 200,
+     "bytes": 76040,
+     "sha256_prefix": "341c033b1be280bb",
+     "changed": false
+    },
+    {
+     "name": "bsky-feed-bsky-sapo",
+     "status": 200,
+     "bytes": 68811,
+     "sha256_prefix": "085eb56499bd26f8",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-web-summit",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-lisboa",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-algarve",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-startup-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-ia-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    }
+   ],
    "failed_requests": [
     "bsky-search-web-summit",
     "bsky-search-lisboa",
@@ -444,6 +1452,78 @@
    "changed_requests": [
     "bsky-feed-bsky-publico"
    ],
+   "requests_detail": [
+    {
+     "name": "bsky-feed-bsky-visitportugal",
+     "status": 200,
+     "bytes": 80888,
+     "sha256_prefix": "9eb91a086fac7732",
+     "changed": false
+    },
+    {
+     "name": "bsky-feed-bsky-publico",
+     "status": 200,
+     "bytes": 77750,
+     "sha256_prefix": "2a22d4222ad97483",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-lusa",
+     "status": 200,
+     "bytes": 60859,
+     "sha256_prefix": "1062d15da268826e",
+     "changed": false
+    },
+    {
+     "name": "bsky-feed-bsky-portugalresident",
+     "status": 200,
+     "bytes": 76040,
+     "sha256_prefix": "341c033b1be280bb",
+     "changed": false
+    },
+    {
+     "name": "bsky-feed-bsky-sapo",
+     "status": 200,
+     "bytes": 68811,
+     "sha256_prefix": "085eb56499bd26f8",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-web-summit",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-lisboa",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-algarve",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-startup-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-ia-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    }
+   ],
    "failed_requests": [
     "bsky-search-web-summit",
     "bsky-search-lisboa",
@@ -462,6 +1542,78 @@
    "requests": 10,
    "changed_requests": [
     "bsky-feed-bsky-publico"
+   ],
+   "requests_detail": [
+    {
+     "name": "bsky-feed-bsky-visitportugal",
+     "status": 200,
+     "bytes": 80888,
+     "sha256_prefix": "9eb91a086fac7732",
+     "changed": false
+    },
+    {
+     "name": "bsky-feed-bsky-publico",
+     "status": 200,
+     "bytes": 77750,
+     "sha256_prefix": "2b84cb341f42cf03",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-lusa",
+     "status": 200,
+     "bytes": 60859,
+     "sha256_prefix": "1062d15da268826e",
+     "changed": false
+    },
+    {
+     "name": "bsky-feed-bsky-portugalresident",
+     "status": 200,
+     "bytes": 76040,
+     "sha256_prefix": "341c033b1be280bb",
+     "changed": false
+    },
+    {
+     "name": "bsky-feed-bsky-sapo",
+     "status": 200,
+     "bytes": 68811,
+     "sha256_prefix": "085eb56499bd26f8",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-web-summit",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-lisboa",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-algarve",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-startup-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-ia-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    }
    ],
    "failed_requests": [
     "bsky-search-web-summit",
@@ -483,6 +1635,78 @@
     "bsky-feed-bsky-publico",
     "bsky-feed-bsky-portugalresident"
    ],
+   "requests_detail": [
+    {
+     "name": "bsky-feed-bsky-visitportugal",
+     "status": 200,
+     "bytes": 80888,
+     "sha256_prefix": "9eb91a086fac7732",
+     "changed": false
+    },
+    {
+     "name": "bsky-feed-bsky-publico",
+     "status": 200,
+     "bytes": 77750,
+     "sha256_prefix": "6069da743542ea8b",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-lusa",
+     "status": 200,
+     "bytes": 60859,
+     "sha256_prefix": "1062d15da268826e",
+     "changed": false
+    },
+    {
+     "name": "bsky-feed-bsky-portugalresident",
+     "status": 200,
+     "bytes": 76040,
+     "sha256_prefix": "341c033b1be280bb",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-sapo",
+     "status": 200,
+     "bytes": 68811,
+     "sha256_prefix": "085eb56499bd26f8",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-web-summit",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-lisboa",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-algarve",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-startup-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-ia-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    }
+   ],
    "failed_requests": [
     "bsky-search-web-summit",
     "bsky-search-lisboa",
@@ -501,6 +1725,78 @@
    "requests": 10,
    "changed_requests": [
     "bsky-feed-bsky-lusa"
+   ],
+   "requests_detail": [
+    {
+     "name": "bsky-feed-bsky-visitportugal",
+     "status": 200,
+     "bytes": 80888,
+     "sha256_prefix": "9eb91a086fac7732",
+     "changed": false
+    },
+    {
+     "name": "bsky-feed-bsky-publico",
+     "status": 200,
+     "bytes": 78069,
+     "sha256_prefix": "bb5cfff3e0d3478b",
+     "changed": false
+    },
+    {
+     "name": "bsky-feed-bsky-lusa",
+     "status": 200,
+     "bytes": 60859,
+     "sha256_prefix": "1062d15da268826e",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-portugalresident",
+     "status": 200,
+     "bytes": 76040,
+     "sha256_prefix": "a8dd8e5529838c47",
+     "changed": false
+    },
+    {
+     "name": "bsky-feed-bsky-sapo",
+     "status": 200,
+     "bytes": 68811,
+     "sha256_prefix": "085eb56499bd26f8",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-web-summit",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-lisboa",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-algarve",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-startup-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-ia-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    }
    ],
    "failed_requests": [
     "bsky-search-web-summit",
@@ -522,6 +1818,78 @@
     "bsky-feed-bsky-publico",
     "bsky-feed-bsky-lusa"
    ],
+   "requests_detail": [
+    {
+     "name": "bsky-feed-bsky-visitportugal",
+     "status": 200,
+     "bytes": 80888,
+     "sha256_prefix": "9eb91a086fac7732",
+     "changed": false
+    },
+    {
+     "name": "bsky-feed-bsky-publico",
+     "status": 200,
+     "bytes": 78069,
+     "sha256_prefix": "bb5cfff3e0d3478b",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-lusa",
+     "status": 200,
+     "bytes": 60981,
+     "sha256_prefix": "4c5a744886513a6d",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-portugalresident",
+     "status": 200,
+     "bytes": 76040,
+     "sha256_prefix": "a8dd8e5529838c47",
+     "changed": false
+    },
+    {
+     "name": "bsky-feed-bsky-sapo",
+     "status": 200,
+     "bytes": 68811,
+     "sha256_prefix": "085eb56499bd26f8",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-web-summit",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-lisboa",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-algarve",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-startup-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-ia-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    }
+   ],
    "failed_requests": [
     "bsky-search-web-summit",
     "bsky-search-lisboa",
@@ -542,6 +1910,78 @@
     "bsky-feed-bsky-publico",
     "bsky-feed-bsky-portugalresident"
    ],
+   "requests_detail": [
+    {
+     "name": "bsky-feed-bsky-visitportugal",
+     "status": 200,
+     "bytes": 80888,
+     "sha256_prefix": "9eb91a086fac7732",
+     "changed": false
+    },
+    {
+     "name": "bsky-feed-bsky-publico",
+     "status": 200,
+     "bytes": 78069,
+     "sha256_prefix": "a31eb07522e0e65b",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-lusa",
+     "status": 200,
+     "bytes": 60954,
+     "sha256_prefix": "c9ddbac592697138",
+     "changed": false
+    },
+    {
+     "name": "bsky-feed-bsky-portugalresident",
+     "status": 200,
+     "bytes": 76040,
+     "sha256_prefix": "a8dd8e5529838c47",
+     "changed": true
+    },
+    {
+     "name": "bsky-feed-bsky-sapo",
+     "status": 200,
+     "bytes": 68811,
+     "sha256_prefix": "085eb56499bd26f8",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-web-summit",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-lisboa",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-algarve",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-startup-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    },
+    {
+     "name": "bsky-search-ia-portugal",
+     "status": 403,
+     "bytes": 2334,
+     "sha256_prefix": "8609fbf6d2510369",
+     "changed": false
+    }
+   ],
    "failed_requests": [
     "bsky-search-web-summit",
     "bsky-search-lisboa",
@@ -555,8 +1995,8 @@
   }
  ],
  "copies": {
-  "files_in_git_data": 22,
-  "bytes_in_git_data": 294214,
+  "files_in_git_data": 23,
+  "bytes_in_git_data": 344528,
   "files_in_vault_working_copy": 0,
   "bytes_in_vault_working_copy": 0,
   "dated_copies_in_vault": 0,
@@ -566,7 +2006,29 @@
    "source_page": "https://data.promptugal.news/sources/social/",
    "git": "https://github.com/PrompTugal/PrompTugal__News__Data/tree/dev/data/social"
   },
-  "note": "vaults/ is described in collect/lib.mjs as never in git; some of its files are tracked today and the sgit vault holds the full history."
+  "tracked_in_git_vaults": 0,
+  "note": "collect/lib.mjs says vaults/ is meant to stay out of git, but 0 files of this source are tracked in git today (earlier commits); the sgit vault holds the full history. Dinis has not yet ruled on the vaults/ question."
  },
+ "cadence_advice": {
+  "line": "The data changed on 38 of 48 reads over 9 days, about 4.2 times a day (earlier runs were hourly): reading more than twice a day would catch more states. Whether the pages that use it need them is for their owners to say.",
+  "basis": "suggestion derived from 48 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is every 6 hours; runs before 21 Nov were hourly",
+  "runs_with_change": 38,
+  "runs_kept": 48,
+  "days_covered": 9.1,
+  "changes_per_day": 4.2
+ },
+ "schedule_times": {
+  "tz": "Europe/Lisbon",
+  "times_local": [
+   "07:03",
+   "18:03"
+  ],
+  "note": "Lisbon is UTC+0 from late October to late March, so these are also 07:03 and 18:03 UTC then; one hour earlier in UTC in summer.",
+  "runs_per_day": 2
+ },
+ "api_spec": null,
+ "api_docs": "https://docs.bsky.app/docs/category/http-reference",
+ "own_page_copy": null,
+ "own_page_copy_note": "not taken: a copy or screenshot of the publisher's page needs a rights ruling from cl-6.rights; source_home links to the page itself",
  "source_home": "https://public.api.bsky.app/xrpc/"
 }

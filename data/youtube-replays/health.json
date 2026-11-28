@@ -1,0 +1,470 @@
+{
+ "source": "youtube-replays",
+ "title": "Web Summit 2026 replays on YouTube",
+ "generated_utc": "2026-11-28T02:40:14Z",
+ "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
+ "schedule": {
+  "card_says": "every 6 hours",
+  "really": "twice a day (07:03 and 18:03 Lisbon)"
+ },
+ "last_run": {
+  "at": "2026-11-27T18:12:43Z",
+  "ok": 0,
+  "failed": 1,
+  "requests": [
+   {
+    "name": "channel",
+    "url": "https://www.googleapis.com/youtube/v3/channels?(channels.list, 1 unit)",
+    "status": 403,
+    "meaning": "refused (forbidden)",
+    "bytes": 694,
+    "changed": false
+   }
+  ]
+ },
+ "problems": [
+  {
+   "request": "channel",
+   "url": "https://www.googleapis.com/youtube/v3/channels?(channels.list, 1 unit)",
+   "status": [
+    403
+   ],
+   "plain": "refused (forbidden)",
+   "failed_in": "8 of 14 runs kept"
+  }
+ ],
+ "runs": [
+  {
+   "at": "2026-11-27T18:12:43Z",
+   "ok": 0,
+   "failed": 1,
+   "requests": 1,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "channel",
+     "status": 403,
+     "bytes": 694,
+     "sha256_prefix": "c69c9afb916f71ea",
+     "changed": false
+    }
+   ],
+   "failed_requests": [
+    "channel"
+   ],
+   "commit": "526dd0b",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/526dd0b8fd852d1fffb5fd1c54adb4760ccfe3e8",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/d409b57...526dd0b"
+  },
+  {
+   "at": "2026-11-27T07:14:58Z",
+   "ok": 0,
+   "failed": 1,
+   "requests": 1,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "channel",
+     "status": 403,
+     "bytes": 694,
+     "sha256_prefix": "c69c9afb916f71ea",
+     "changed": false
+    }
+   ],
+   "failed_requests": [
+    "channel"
+   ],
+   "commit": "d409b57",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d409b5734208af88d47485b2878734dbf9e6aa7c",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/d466166...d409b57"
+  },
+  {
+   "at": "2026-11-26T18:14:17Z",
+   "ok": 0,
+   "failed": 1,
+   "requests": 1,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "channel",
+     "status": 403,
+     "bytes": 694,
+     "sha256_prefix": "c69c9afb916f71ea",
+     "changed": false
+    }
+   ],
+   "failed_requests": [
+    "channel"
+   ],
+   "commit": "d466166",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d466166b925f53f8d36d4a6047daf9a0634bf489",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-26T07:13:55Z",
+   "ok": 0,
+   "failed": 1,
+   "requests": 1,
+   "changed_requests": [
+    "channel"
+   ],
+   "requests_detail": [
+    {
+     "name": "channel",
+     "status": 403,
+     "bytes": 694,
+     "sha256_prefix": "c69c9afb916f71ea",
+     "changed": true
+    }
+   ],
+   "failed_requests": [
+    "channel"
+   ],
+   "commit": "d466166",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d466166b925f53f8d36d4a6047daf9a0634bf489",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/bd410a7...d466166"
+  },
+  {
+   "at": "2026-11-21T07:13:21Z",
+   "ok": 3,
+   "failed": 0,
+   "requests": 3,
+   "changed_requests": [
+    "videos"
+   ],
+   "requests_detail": [
+    {
+     "name": "channel",
+     "status": 200,
+     "bytes": 288,
+     "sha256_prefix": "acb718bbb1b98be3",
+     "changed": false
+    },
+    {
+     "name": "uploads",
+     "status": 200,
+     "bytes": 6689,
+     "sha256_prefix": "0f04f2c7a24f12ca",
+     "changed": false
+    },
+    {
+     "name": "videos",
+     "status": 200,
+     "bytes": 2730,
+     "sha256_prefix": "12556397d28eaae8",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "bd410a7",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/bd410a73762d6b0a755da0a946556d6e47d54c8e",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/65c6667...bd410a7"
+  },
+  {
+   "at": "2026-11-20T18:16:36Z",
+   "ok": 3,
+   "failed": 0,
+   "requests": 3,
+   "changed_requests": [
+    "uploads",
+    "videos"
+   ],
+   "requests_detail": [
+    {
+     "name": "channel",
+     "status": 200,
+     "bytes": 288,
+     "sha256_prefix": "acb718bbb1b98be3",
+     "changed": false
+    },
+    {
+     "name": "uploads",
+     "status": 200,
+     "bytes": 6689,
+     "sha256_prefix": "0f04f2c7a24f12ca",
+     "changed": true
+    },
+    {
+     "name": "videos",
+     "status": 200,
+     "bytes": 2729,
+     "sha256_prefix": "9082a187d55f581c",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "65c6667",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/65c66677f4957a21ffbcf6d58b3f8794f505d39f",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/cb88d7b...65c6667"
+  },
+  {
+   "at": "2026-11-20T07:17:56Z",
+   "ok": 3,
+   "failed": 0,
+   "requests": 3,
+   "changed_requests": [
+    "videos"
+   ],
+   "requests_detail": [
+    {
+     "name": "channel",
+     "status": 200,
+     "bytes": 288,
+     "sha256_prefix": "acb718bbb1b98be3",
+     "changed": false
+    },
+    {
+     "name": "uploads",
+     "status": 200,
+     "bytes": 6689,
+     "sha256_prefix": "715198b344f8a4db",
+     "changed": false
+    },
+    {
+     "name": "videos",
+     "status": 200,
+     "bytes": 2309,
+     "sha256_prefix": "dedfe2d6d198e956",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "cb88d7b",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/cb88d7b793bc938078a150fb7bd84b6477977aea",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/4a4d130...cb88d7b"
+  },
+  {
+   "at": "2026-11-19T13:08:46Z",
+   "ok": 3,
+   "failed": 0,
+   "requests": 3,
+   "changed_requests": [
+    "videos"
+   ],
+   "requests_detail": [
+    {
+     "name": "channel",
+     "status": 200,
+     "bytes": 288,
+     "sha256_prefix": "acb718bbb1b98be3",
+     "changed": false
+    },
+    {
+     "name": "uploads",
+     "status": 200,
+     "bytes": 6689,
+     "sha256_prefix": "715198b344f8a4db",
+     "changed": false
+    },
+    {
+     "name": "videos",
+     "status": 200,
+     "bytes": 2309,
+     "sha256_prefix": "09d7a8ed718ea88a",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "4a4d130",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/4a4d13005725f1c24d6cd12ebee2d66ee2f2df91",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/ab758f8...4a4d130"
+  },
+  {
+   "at": "2026-11-19T07:07:50Z",
+   "ok": 3,
+   "failed": 0,
+   "requests": 3,
+   "changed_requests": [
+    "videos"
+   ],
+   "requests_detail": [
+    {
+     "name": "channel",
+     "status": 200,
+     "bytes": 288,
+     "sha256_prefix": "acb718bbb1b98be3",
+     "changed": false
+    },
+    {
+     "name": "uploads",
+     "status": 200,
+     "bytes": 6689,
+     "sha256_prefix": "715198b344f8a4db",
+     "changed": false
+    },
+    {
+     "name": "videos",
+     "status": 200,
+     "bytes": 2309,
+     "sha256_prefix": "95ebb91940e1a359",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "ab758f8",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/ab758f84f3411cfda4eaef6a3b98834533309ceb",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/83b562f...ab758f8"
+  },
+  {
+   "at": "2026-11-19T01:28:37Z",
+   "ok": 3,
+   "failed": 0,
+   "requests": 3,
+   "changed_requests": [
+    "channel"
+   ],
+   "requests_detail": [
+    {
+     "name": "channel",
+     "status": 200,
+     "bytes": 288,
+     "sha256_prefix": "acb718bbb1b98be3",
+     "changed": true
+    },
+    {
+     "name": "uploads",
+     "status": 200,
+     "bytes": 6689,
+     "sha256_prefix": "715198b344f8a4db",
+     "changed": "first read"
+    },
+    {
+     "name": "videos",
+     "status": 200,
+     "bytes": 2309,
+     "sha256_prefix": "871bba219b8bb1fa",
+     "changed": "first read"
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-19T01:20:53Z",
+   "ok": 0,
+   "failed": 1,
+   "requests": 1,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "channel",
+     "status": 403,
+     "bytes": 694,
+     "sha256_prefix": "c69c9afb916f71ea",
+     "changed": false
+    }
+   ],
+   "failed_requests": [
+    "channel"
+   ],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-19T01:16:05Z",
+   "ok": 0,
+   "failed": 1,
+   "requests": 1,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "channel",
+     "status": 403,
+     "bytes": 694,
+     "sha256_prefix": "c69c9afb916f71ea",
+     "changed": false
+    }
+   ],
+   "failed_requests": [
+    "channel"
+   ],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-19T00:59:17Z",
+   "ok": 0,
+   "failed": 1,
+   "requests": 1,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "channel",
+     "status": 403,
+     "bytes": 694,
+     "sha256_prefix": "c69c9afb916f71ea",
+     "changed": false
+    }
+   ],
+   "failed_requests": [
+    "channel"
+   ],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-19T00:29:47Z",
+   "ok": 0,
+   "failed": 1,
+   "requests": 1,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "channel",
+     "status": 403,
+     "bytes": 694,
+     "sha256_prefix": "c69c9afb916f71ea",
+     "changed": "first read"
+    }
+   ],
+   "failed_requests": [
+    "channel"
+   ],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  }
+ ],
+ "copies": {
+  "files_in_git_data": 3,
+  "bytes_in_git_data": 27656,
+  "files_in_vault_working_copy": 0,
+  "bytes_in_vault_working_copy": 0,
+  "dated_copies_in_vault": 0,
+  "where": {
+   "api_latest": "https://data.promptugal.news/api/v1/youtube-replays/latest.json",
+   "api_reads": "https://data.promptugal.news/api/v1/youtube-replays/reads.json",
+   "source_page": "https://data.promptugal.news/sources/youtube-replays/",
+   "git": "https://github.com/PrompTugal/PrompTugal__News__Data/tree/dev/data/youtube-replays"
+  },
+  "tracked_in_git_vaults": 0,
+  "note": "collect/lib.mjs says vaults/ is meant to stay out of git, but 0 files of this source are tracked in git today (earlier commits); the sgit vault holds the full history. Dinis has not yet ruled on the vaults/ question."
+ },
+ "cadence_advice": {
+  "line": "The data changed on 7 of 14 reads over 9 days, about 0.8 times a day: twice a day is more than needed, once a day would lose little.",
+  "basis": "suggestion derived from 14 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is every 6 hours; runs before 21 Nov were hourly",
+  "runs_with_change": 7,
+  "runs_kept": 14,
+  "days_covered": 8.7,
+  "changes_per_day": 0.8
+ },
+ "schedule_times": {
+  "tz": "Europe/Lisbon",
+  "times_local": [
+   "07:03",
+   "18:03"
+  ],
+  "note": "Lisbon is UTC+0 from late October to late March, so these are also 07:03 and 18:03 UTC then; one hour earlier in UTC in summer.",
+  "runs_per_day": 2
+ },
+ "api_spec": "https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest",
+ "api_docs": "https://developers.google.com/youtube/v3/docs",
+ "own_page_copy": null,
+ "own_page_copy_note": "not taken: a copy or screenshot of the publisher's page needs a rights ruling from cl-6.rights; source_home links to the page itself",
+ "source_home": "https://www.youtube.com/@WebSummit"
+}

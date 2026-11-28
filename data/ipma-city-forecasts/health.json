@@ -1,0 +1,6402 @@
+{
+ "source": "ipma-city-forecasts",
+ "title": "IPMA daily forecasts by place",
+ "generated_utc": "2026-11-28T02:40:14Z",
+ "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
+ "schedule": {
+  "card_says": "hourly",
+  "really": "twice a day (07:03 and 18:03 Lisbon)"
+ },
+ "last_run": {
+  "at": "2026-11-27T18:10:06Z",
+  "ok": 36,
+  "failed": 0,
+  "requests": [
+   {
+    "name": "distrits-islands",
+    "url": "https://api.ipma.pt/open-data/distrits-islands.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 10071,
+    "changed": false
+   },
+   {
+    "name": "city-1010500",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1010500.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1129,
+    "changed": true
+   },
+   {
+    "name": "city-1020500",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1020500.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1085,
+    "changed": true
+   },
+   {
+    "name": "city-1030300",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1030300.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1130,
+    "changed": true
+   },
+   {
+    "name": "city-1030800",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1030800.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1126,
+    "changed": true
+   },
+   {
+    "name": "city-1040200",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1040200.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1089,
+    "changed": true
+   },
+   {
+    "name": "city-1050200",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1050200.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1087,
+    "changed": true
+   },
+   {
+    "name": "city-1060300",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1060300.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1109,
+    "changed": true
+   },
+   {
+    "name": "city-1070500",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1070500.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1085,
+    "changed": true
+   },
+   {
+    "name": "city-1080500",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1080500.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1083,
+    "changed": true
+   },
+   {
+    "name": "city-1081505",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1081505.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1084,
+    "changed": true
+   },
+   {
+    "name": "city-1081100",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1081100.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1083,
+    "changed": true
+   },
+   {
+    "name": "city-1080800",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1080800.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1088,
+    "changed": true
+   },
+   {
+    "name": "city-1090700",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1090700.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1105,
+    "changed": true
+   },
+   {
+    "name": "city-1090821",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1090821.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1085,
+    "changed": true
+   },
+   {
+    "name": "city-1100900",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1100900.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1127,
+    "changed": true
+   },
+   {
+    "name": "city-1110600",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1110600.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1128,
+    "changed": true
+   },
+   {
+    "name": "city-1121400",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1121400.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1086,
+    "changed": true
+   },
+   {
+    "name": "city-1131200",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1131200.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1128,
+    "changed": true
+   },
+   {
+    "name": "city-1141600",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1141600.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1109,
+    "changed": true
+   },
+   {
+    "name": "city-1151200",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1151200.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1108,
+    "changed": true
+   },
+   {
+    "name": "city-1151300",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1151300.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1087,
+    "changed": true
+   },
+   {
+    "name": "city-1160900",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1160900.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1149,
+    "changed": true
+   },
+   {
+    "name": "city-1171400",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1171400.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1105,
+    "changed": true
+   },
+   {
+    "name": "city-1182300",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1182300.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1090,
+    "changed": true
+   },
+   {
+    "name": "city-2310300",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/2310300.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1139,
+    "changed": true
+   },
+   {
+    "name": "city-2320100",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/2320100.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1099,
+    "changed": true
+   },
+   {
+    "name": "city-3410100",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/3410100.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1139,
+    "changed": true
+   },
+   {
+    "name": "city-3420300",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/3420300.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1155,
+    "changed": true
+   },
+   {
+    "name": "city-3430100",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/3430100.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1158,
+    "changed": true
+   },
+   {
+    "name": "city-3440100",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/3440100.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1158,
+    "changed": true
+   },
+   {
+    "name": "city-3450200",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/3450200.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1157,
+    "changed": true
+   },
+   {
+    "name": "city-3460200",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/3460200.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1159,
+    "changed": true
+   },
+   {
+    "name": "city-3470100",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/3470100.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1158,
+    "changed": true
+   },
+   {
+    "name": "city-3480200",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/3480200.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1140,
+    "changed": true
+   },
+   {
+    "name": "city-3490100",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/3490100.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1139,
+    "changed": true
+   }
+  ]
+ },
+ "problems": [
+  {
+   "request": "distrits-islands",
+   "url": "https://api.ipma.pt/open-data/distrits-islands.json",
+   "status": [
+    "error"
+   ],
+   "plain": "could not connect or timed out",
+   "failed_in": "1 of 92 runs kept"
+  },
+  {
+   "request": "city-1081505",
+   "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1081505.json",
+   "status": [
+    "error"
+   ],
+   "plain": "could not connect or timed out",
+   "failed_in": "1 of 92 runs kept"
+  },
+  {
+   "request": "city-1081100",
+   "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1081100.json",
+   "status": [
+    "error"
+   ],
+   "plain": "could not connect or timed out",
+   "failed_in": "1 of 92 runs kept"
+  },
+  {
+   "request": "city-1080800",
+   "url": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1080800.json",
+   "status": [
+    "error"
+   ],
+   "plain": "could not connect or timed out",
+   "failed_in": "1 of 92 runs kept"
+  }
+ ],
+ "runs": [
+  {
+   "at": "2026-11-27T18:10:06Z",
+   "ok": 36,
+   "failed": 0,
+   "requests": 36,
+   "changed_requests": [
+    "city-1010500",
+    "city-1020500",
+    "city-1030300",
+    "city-1030800",
+    "city-1040200",
+    "city-1050200",
+    "city-1060300",
+    "city-1070500",
+    "city-1080500",
+    "city-1081505",
+    "city-1081100",
+    "city-1080800",
+    "city-1090700",
+    "city-1090821",
+    "city-1100900",
+    "city-1110600",
+    "city-1121400",
+    "city-1131200",
+    "city-1141600",
+    "city-1151200",
+    "city-1151300",
+    "city-1160900",
+    "city-1171400",
+    "city-1182300",
+    "city-2310300",
+    "city-2320100",
+    "city-3410100",
+    "city-3420300",
+    "city-3430100",
+    "city-3440100",
+    "city-3450200",
+    "city-3460200",
+    "city-3470100",
+    "city-3480200",
+    "city-3490100"
+   ],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "city-1010500",
+     "status": 200,
+     "bytes": 1129,
+     "sha256_prefix": "33a27b11aca8336d",
+     "changed": true
+    },
+    {
+     "name": "city-1020500",
+     "status": 200,
+     "bytes": 1085,
+     "sha256_prefix": "c65c67fdad836dfa",
+     "changed": true
+    },
+    {
+     "name": "city-1030300",
+     "status": 200,
+     "bytes": 1130,
+     "sha256_prefix": "478f9049500dc171",
+     "changed": true
+    },
+    {
+     "name": "city-1030800",
+     "status": 200,
+     "bytes": 1126,
+     "sha256_prefix": "9c32916b3c700924",
+     "changed": true
+    },
+    {
+     "name": "city-1040200",
+     "status": 200,
+     "bytes": 1089,
+     "sha256_prefix": "7380b0fec1bf5141",
+     "changed": true
+    },
+    {
+     "name": "city-1050200",
+     "status": 200,
+     "bytes": 1087,
+     "sha256_prefix": "0106630a911e3d30",
+     "changed": true
+    },
+    {
+     "name": "city-1060300",
+     "status": 200,
+     "bytes": 1109,
+     "sha256_prefix": "dc1cc77de57b532f",
+     "changed": true
+    },
+    {
+     "name": "city-1070500",
+     "status": 200,
+     "bytes": 1085,
+     "sha256_prefix": "a5ba684433083a75",
+     "changed": true
+    },
+    {
+     "name": "city-1080500",
+     "status": 200,
+     "bytes": 1083,
+     "sha256_prefix": "99cb1656acd23f92",
+     "changed": true
+    },
+    {
+     "name": "city-1081505",
+     "status": 200,
+     "bytes": 1084,
+     "sha256_prefix": "bffa12846af60916",
+     "changed": true
+    },
+    {
+     "name": "city-1081100",
+     "status": 200,
+     "bytes": 1083,
+     "sha256_prefix": "91278e73871bbeb5",
+     "changed": true
+    },
+    {
+     "name": "city-1080800",
+     "status": 200,
+     "bytes": 1088,
+     "sha256_prefix": "2d3c91d594433b4e",
+     "changed": true
+    },
+    {
+     "name": "city-1090700",
+     "status": 200,
+     "bytes": 1105,
+     "sha256_prefix": "d47bec4bce8d65f5",
+     "changed": true
+    },
+    {
+     "name": "city-1090821",
+     "status": 200,
+     "bytes": 1085,
+     "sha256_prefix": "a0b60a817d56dd8a",
+     "changed": true
+    },
+    {
+     "name": "city-1100900",
+     "status": 200,
+     "bytes": 1127,
+     "sha256_prefix": "e2207972c9fe05dd",
+     "changed": true
+    },
+    {
+     "name": "city-1110600",
+     "status": 200,
+     "bytes": 1128,
+     "sha256_prefix": "63bfa4fb8ffb08f4",
+     "changed": true
+    },
+    {
+     "name": "city-1121400",
+     "status": 200,
+     "bytes": 1086,
+     "sha256_prefix": "7517ef99c1eb22a3",
+     "changed": true
+    },
+    {
+     "name": "city-1131200",
+     "status": 200,
+     "bytes": 1128,
+     "sha256_prefix": "83488934a8e1cc56",
+     "changed": true
+    },
+    {
+     "name": "city-1141600",
+     "status": 200,
+     "bytes": 1109,
+     "sha256_prefix": "4611777c92453c30",
+     "changed": true
+    },
+    {
+     "name": "city-1151200",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "348e34355a2fa28a",
+     "changed": true
+    },
+    {
+     "name": "city-1151300",
+     "status": 200,
+     "bytes": 1087,
+     "sha256_prefix": "c9514bde4d258ed2",
+     "changed": true
+    },
+    {
+     "name": "city-1160900",
+     "status": 200,
+     "bytes": 1149,
+     "sha256_prefix": "5dcdbd623ab7f755",
+     "changed": true
+    },
+    {
+     "name": "city-1171400",
+     "status": 200,
+     "bytes": 1105,
+     "sha256_prefix": "f0cccf0a27882329",
+     "changed": true
+    },
+    {
+     "name": "city-1182300",
+     "status": 200,
+     "bytes": 1090,
+     "sha256_prefix": "dc4c7eb41ec691ec",
+     "changed": true
+    },
+    {
+     "name": "city-2310300",
+     "status": 200,
+     "bytes": 1139,
+     "sha256_prefix": "b123330d84f66d47",
+     "changed": true
+    },
+    {
+     "name": "city-2320100",
+     "status": 200,
+     "bytes": 1099,
+     "sha256_prefix": "aeae92509e4fe61d",
+     "changed": true
+    },
+    {
+     "name": "city-3410100",
+     "status": 200,
+     "bytes": 1139,
+     "sha256_prefix": "74ff0fbdba0bd886",
+     "changed": true
+    },
+    {
+     "name": "city-3420300",
+     "status": 200,
+     "bytes": 1155,
+     "sha256_prefix": "ccbbe7d7defaeb36",
+     "changed": true
+    },
+    {
+     "name": "city-3430100",
+     "status": 200,
+     "bytes": 1158,
+     "sha256_prefix": "1a837d03310b8c8a",
+     "changed": true
+    },
+    {
+     "name": "city-3440100",
+     "status": 200,
+     "bytes": 1158,
+     "sha256_prefix": "54b9c3ce2d6e91ca",
+     "changed": true
+    },
+    {
+     "name": "city-3450200",
+     "status": 200,
+     "bytes": 1157,
+     "sha256_prefix": "f420226129e0822e",
+     "changed": true
+    },
+    {
+     "name": "city-3460200",
+     "status": 200,
+     "bytes": 1159,
+     "sha256_prefix": "7959d5c2ba7cfa41",
+     "changed": true
+    },
+    {
+     "name": "city-3470100",
+     "status": 200,
+     "bytes": 1158,
+     "sha256_prefix": "3824b91db6c2bbf8",
+     "changed": true
+    },
+    {
+     "name": "city-3480200",
+     "status": 200,
+     "bytes": 1140,
+     "sha256_prefix": "4b11643fa301823b",
+     "changed": true
+    },
+    {
+     "name": "city-3490100",
+     "status": 200,
+     "bytes": 1139,
+     "sha256_prefix": "61c866c515aa504e",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "526dd0b",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/526dd0b8fd852d1fffb5fd1c54adb4760ccfe3e8",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/d409b57...526dd0b"
+  },
+  {
+   "at": "2026-11-27T07:12:07Z",
+   "ok": 36,
+   "failed": 0,
+   "requests": 36,
+   "changed_requests": [
+    "city-1010500",
+    "city-1020500",
+    "city-1030300",
+    "city-1030800",
+    "city-1040200",
+    "city-1050200",
+    "city-1060300",
+    "city-1070500",
+    "city-1080500",
+    "city-1081505",
+    "city-1081100",
+    "city-1080800",
+    "city-1090700",
+    "city-1090821",
+    "city-1100900",
+    "city-1110600",
+    "city-1121400",
+    "city-1131200",
+    "city-1141600",
+    "city-1151200",
+    "city-1151300",
+    "city-1160900",
+    "city-1171400",
+    "city-1182300",
+    "city-2310300",
+    "city-2320100",
+    "city-3410100",
+    "city-3420300",
+    "city-3430100",
+    "city-3440100",
+    "city-3450200",
+    "city-3460200",
+    "city-3470100",
+    "city-3480200",
+    "city-3490100"
+   ],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "city-1010500",
+     "status": 200,
+     "bytes": 1129,
+     "sha256_prefix": "fa7861c6baf4d7bf",
+     "changed": true
+    },
+    {
+     "name": "city-1020500",
+     "status": 200,
+     "bytes": 1085,
+     "sha256_prefix": "9150103016c022d2",
+     "changed": true
+    },
+    {
+     "name": "city-1030300",
+     "status": 200,
+     "bytes": 1151,
+     "sha256_prefix": "70c43c646fe9c915",
+     "changed": true
+    },
+    {
+     "name": "city-1030800",
+     "status": 200,
+     "bytes": 1128,
+     "sha256_prefix": "5def23655d93b553",
+     "changed": true
+    },
+    {
+     "name": "city-1040200",
+     "status": 200,
+     "bytes": 1105,
+     "sha256_prefix": "6f1a3d01756fe80c",
+     "changed": true
+    },
+    {
+     "name": "city-1050200",
+     "status": 200,
+     "bytes": 1088,
+     "sha256_prefix": "97f2e977bcd31653",
+     "changed": true
+    },
+    {
+     "name": "city-1060300",
+     "status": 200,
+     "bytes": 1126,
+     "sha256_prefix": "b666561044dcbb28",
+     "changed": true
+    },
+    {
+     "name": "city-1070500",
+     "status": 200,
+     "bytes": 1085,
+     "sha256_prefix": "538daee770e67c07",
+     "changed": true
+    },
+    {
+     "name": "city-1080500",
+     "status": 200,
+     "bytes": 1084,
+     "sha256_prefix": "4c7602be0995a754",
+     "changed": true
+    },
+    {
+     "name": "city-1081505",
+     "status": 200,
+     "bytes": 1085,
+     "sha256_prefix": "9d415be01bb3dd52",
+     "changed": true
+    },
+    {
+     "name": "city-1081100",
+     "status": 200,
+     "bytes": 1084,
+     "sha256_prefix": "3289718ff868f457",
+     "changed": true
+    },
+    {
+     "name": "city-1080800",
+     "status": 200,
+     "bytes": 1088,
+     "sha256_prefix": "2b82e3a24fa7391a",
+     "changed": true
+    },
+    {
+     "name": "city-1090700",
+     "status": 200,
+     "bytes": 1124,
+     "sha256_prefix": "48a0561c27436a9d",
+     "changed": true
+    },
+    {
+     "name": "city-1090821",
+     "status": 200,
+     "bytes": 1122,
+     "sha256_prefix": "20a3c13e28039df0",
+     "changed": true
+    },
+    {
+     "name": "city-1100900",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "a957ad9e4dd5c2d7",
+     "changed": true
+    },
+    {
+     "name": "city-1110600",
+     "status": 200,
+     "bytes": 1131,
+     "sha256_prefix": "8d441dcd634fef54",
+     "changed": true
+    },
+    {
+     "name": "city-1121400",
+     "status": 200,
+     "bytes": 1111,
+     "sha256_prefix": "13956416f81d88bf",
+     "changed": true
+    },
+    {
+     "name": "city-1131200",
+     "status": 200,
+     "bytes": 1126,
+     "sha256_prefix": "30cf74a54d021156",
+     "changed": true
+    },
+    {
+     "name": "city-1141600",
+     "status": 200,
+     "bytes": 1111,
+     "sha256_prefix": "a29405195fa4bf58",
+     "changed": true
+    },
+    {
+     "name": "city-1151200",
+     "status": 200,
+     "bytes": 1127,
+     "sha256_prefix": "94eaf438553a0cd8",
+     "changed": true
+    },
+    {
+     "name": "city-1151300",
+     "status": 200,
+     "bytes": 1087,
+     "sha256_prefix": "42ee1cf212645f53",
+     "changed": true
+    },
+    {
+     "name": "city-1160900",
+     "status": 200,
+     "bytes": 1150,
+     "sha256_prefix": "efe60f0286f0372e",
+     "changed": true
+    },
+    {
+     "name": "city-1171400",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "930d9487f6396ff4",
+     "changed": true
+    },
+    {
+     "name": "city-1182300",
+     "status": 200,
+     "bytes": 1127,
+     "sha256_prefix": "8b8d628f63acd0b6",
+     "changed": true
+    },
+    {
+     "name": "city-2310300",
+     "status": 200,
+     "bytes": 1156,
+     "sha256_prefix": "813f4e8e2c30a818",
+     "changed": true
+    },
+    {
+     "name": "city-2320100",
+     "status": 200,
+     "bytes": 1099,
+     "sha256_prefix": "ce87494e7533d410",
+     "changed": true
+    },
+    {
+     "name": "city-3410100",
+     "status": 200,
+     "bytes": 1158,
+     "sha256_prefix": "a2b39b3896c25779",
+     "changed": true
+    },
+    {
+     "name": "city-3420300",
+     "status": 200,
+     "bytes": 1157,
+     "sha256_prefix": "36effe17afcc3394",
+     "changed": true
+    },
+    {
+     "name": "city-3430100",
+     "status": 200,
+     "bytes": 1159,
+     "sha256_prefix": "ad6745494c2856df",
+     "changed": true
+    },
+    {
+     "name": "city-3440100",
+     "status": 200,
+     "bytes": 1158,
+     "sha256_prefix": "59881b6dd09b66da",
+     "changed": true
+    },
+    {
+     "name": "city-3450200",
+     "status": 200,
+     "bytes": 1159,
+     "sha256_prefix": "16e56584ec853f49",
+     "changed": true
+    },
+    {
+     "name": "city-3460200",
+     "status": 200,
+     "bytes": 1179,
+     "sha256_prefix": "1cba95b5da4b232c",
+     "changed": true
+    },
+    {
+     "name": "city-3470100",
+     "status": 200,
+     "bytes": 1157,
+     "sha256_prefix": "99a0677b55427fc1",
+     "changed": true
+    },
+    {
+     "name": "city-3480200",
+     "status": 200,
+     "bytes": 1139,
+     "sha256_prefix": "2e1de37cf4faf614",
+     "changed": true
+    },
+    {
+     "name": "city-3490100",
+     "status": 200,
+     "bytes": 1140,
+     "sha256_prefix": "31d7e721c6108438",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d409b57",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d409b5734208af88d47485b2878734dbf9e6aa7c",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/d466166...d409b57"
+  },
+  {
+   "at": "2026-11-26T18:11:33Z",
+   "ok": 36,
+   "failed": 0,
+   "requests": 36,
+   "changed_requests": [
+    "city-1010500",
+    "city-1020500",
+    "city-1030300",
+    "city-1030800",
+    "city-1040200",
+    "city-1050200",
+    "city-1060300",
+    "city-1070500",
+    "city-1080500",
+    "city-1081505",
+    "city-1081100",
+    "city-1080800",
+    "city-1090700",
+    "city-1090821",
+    "city-1100900",
+    "city-1110600",
+    "city-1121400",
+    "city-1131200",
+    "city-1141600",
+    "city-1151200",
+    "city-1151300",
+    "city-1160900",
+    "city-1171400",
+    "city-1182300",
+    "city-2310300",
+    "city-2320100",
+    "city-3410100",
+    "city-3420300",
+    "city-3430100",
+    "city-3440100",
+    "city-3450200",
+    "city-3460200",
+    "city-3470100",
+    "city-3480200",
+    "city-3490100"
+   ],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "city-1010500",
+     "status": 200,
+     "bytes": 1150,
+     "sha256_prefix": "05b9fa8aac636ee0",
+     "changed": true
+    },
+    {
+     "name": "city-1020500",
+     "status": 200,
+     "bytes": 1087,
+     "sha256_prefix": "2b88248c2a989771",
+     "changed": true
+    },
+    {
+     "name": "city-1030300",
+     "status": 200,
+     "bytes": 1149,
+     "sha256_prefix": "7b6ae8822211ba9d",
+     "changed": true
+    },
+    {
+     "name": "city-1030800",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "15da96f3f489ad36",
+     "changed": true
+    },
+    {
+     "name": "city-1040200",
+     "status": 200,
+     "bytes": 1109,
+     "sha256_prefix": "1aa186541a5791c9",
+     "changed": true
+    },
+    {
+     "name": "city-1050200",
+     "status": 200,
+     "bytes": 1088,
+     "sha256_prefix": "e0e6d16974b9e2c9",
+     "changed": true
+    },
+    {
+     "name": "city-1060300",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "ed6d5e14330e7379",
+     "changed": true
+    },
+    {
+     "name": "city-1070500",
+     "status": 200,
+     "bytes": 1085,
+     "sha256_prefix": "5bb5445e55e3783e",
+     "changed": true
+    },
+    {
+     "name": "city-1080500",
+     "status": 200,
+     "bytes": 1087,
+     "sha256_prefix": "903992236deaed7b",
+     "changed": true
+    },
+    {
+     "name": "city-1081505",
+     "status": 200,
+     "bytes": 1084,
+     "sha256_prefix": "485923496323b185",
+     "changed": true
+    },
+    {
+     "name": "city-1081100",
+     "status": 200,
+     "bytes": 1086,
+     "sha256_prefix": "d786e4692e08c197",
+     "changed": true
+    },
+    {
+     "name": "city-1080800",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "331f6166f6592cee",
+     "changed": true
+    },
+    {
+     "name": "city-1090700",
+     "status": 200,
+     "bytes": 1126,
+     "sha256_prefix": "3c9614181a3c5db5",
+     "changed": true
+    },
+    {
+     "name": "city-1090821",
+     "status": 200,
+     "bytes": 1084,
+     "sha256_prefix": "4c16eef8a00789df",
+     "changed": true
+    },
+    {
+     "name": "city-1100900",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "154d83e4348dfbcf",
+     "changed": true
+    },
+    {
+     "name": "city-1110600",
+     "status": 200,
+     "bytes": 1128,
+     "sha256_prefix": "9840eacb45570df7",
+     "changed": true
+    },
+    {
+     "name": "city-1121400",
+     "status": 200,
+     "bytes": 1090,
+     "sha256_prefix": "2b131a866789d1ed",
+     "changed": true
+    },
+    {
+     "name": "city-1131200",
+     "status": 200,
+     "bytes": 1148,
+     "sha256_prefix": "0663106644b08772",
+     "changed": true
+    },
+    {
+     "name": "city-1141600",
+     "status": 200,
+     "bytes": 1089,
+     "sha256_prefix": "363fbb30da4bf77b",
+     "changed": true
+    },
+    {
+     "name": "city-1151200",
+     "status": 200,
+     "bytes": 1127,
+     "sha256_prefix": "10d240337b70afe7",
+     "changed": true
+    },
+    {
+     "name": "city-1151300",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "129bf96af9770f6b",
+     "changed": true
+    },
+    {
+     "name": "city-1160900",
+     "status": 200,
+     "bytes": 1130,
+     "sha256_prefix": "ebfeb8f053218174",
+     "changed": true
+    },
+    {
+     "name": "city-1171400",
+     "status": 200,
+     "bytes": 1145,
+     "sha256_prefix": "8173fa454cad764b",
+     "changed": true
+    },
+    {
+     "name": "city-1182300",
+     "status": 200,
+     "bytes": 1148,
+     "sha256_prefix": "5f5e55afb87b49f5",
+     "changed": true
+    },
+    {
+     "name": "city-2310300",
+     "status": 200,
+     "bytes": 1158,
+     "sha256_prefix": "00788614dde89edf",
+     "changed": true
+    },
+    {
+     "name": "city-2320100",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "ed8f31016cfa76f8",
+     "changed": true
+    },
+    {
+     "name": "city-3410100",
+     "status": 200,
+     "bytes": 1137,
+     "sha256_prefix": "325326c939ca6db4",
+     "changed": true
+    },
+    {
+     "name": "city-3420300",
+     "status": 200,
+     "bytes": 1138,
+     "sha256_prefix": "0741e3b3a6d3e554",
+     "changed": true
+    },
+    {
+     "name": "city-3430100",
+     "status": 200,
+     "bytes": 1159,
+     "sha256_prefix": "7986c2447f98c726",
+     "changed": true
+    },
+    {
+     "name": "city-3440100",
+     "status": 200,
+     "bytes": 1157,
+     "sha256_prefix": "58cab5d931d61b61",
+     "changed": true
+    },
+    {
+     "name": "city-3450200",
+     "status": 200,
+     "bytes": 1158,
+     "sha256_prefix": "f43dbf4d7c428262",
+     "changed": true
+    },
+    {
+     "name": "city-3460200",
+     "status": 200,
+     "bytes": 1179,
+     "sha256_prefix": "ccf45e74cca9184f",
+     "changed": true
+    },
+    {
+     "name": "city-3470100",
+     "status": 200,
+     "bytes": 1158,
+     "sha256_prefix": "28b01d2185b5ebc6",
+     "changed": true
+    },
+    {
+     "name": "city-3480200",
+     "status": 200,
+     "bytes": 1141,
+     "sha256_prefix": "fb6f3b7c8039a9ef",
+     "changed": true
+    },
+    {
+     "name": "city-3490100",
+     "status": 200,
+     "bytes": 1141,
+     "sha256_prefix": "d9181fd579892594",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d466166",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d466166b925f53f8d36d4a6047daf9a0634bf489",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-26T07:11:03Z",
+   "ok": 36,
+   "failed": 0,
+   "requests": 36,
+   "changed_requests": [
+    "city-1010500",
+    "city-1020500",
+    "city-1030300",
+    "city-1030800",
+    "city-1040200",
+    "city-1050200",
+    "city-1060300",
+    "city-1070500",
+    "city-1080500",
+    "city-1081505",
+    "city-1081100",
+    "city-1080800",
+    "city-1090700",
+    "city-1090821",
+    "city-1100900",
+    "city-1110600",
+    "city-1121400",
+    "city-1131200",
+    "city-1141600",
+    "city-1151200",
+    "city-1151300",
+    "city-1160900",
+    "city-1171400",
+    "city-1182300",
+    "city-2310300",
+    "city-2320100",
+    "city-3410100",
+    "city-3420300",
+    "city-3430100",
+    "city-3440100",
+    "city-3450200",
+    "city-3460200",
+    "city-3470100",
+    "city-3480200",
+    "city-3490100"
+   ],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "city-1010500",
+     "status": 200,
+     "bytes": 1150,
+     "sha256_prefix": "cbd1bb8830d121f0",
+     "changed": true
+    },
+    {
+     "name": "city-1020500",
+     "status": 200,
+     "bytes": 1088,
+     "sha256_prefix": "7c08a86c5ad1e47b",
+     "changed": true
+    },
+    {
+     "name": "city-1030300",
+     "status": 200,
+     "bytes": 1128,
+     "sha256_prefix": "1ce63045f10a440f",
+     "changed": true
+    },
+    {
+     "name": "city-1030800",
+     "status": 200,
+     "bytes": 1146,
+     "sha256_prefix": "5696a2aa600ac15b",
+     "changed": true
+    },
+    {
+     "name": "city-1040200",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "bd786e0de8d7ab5a",
+     "changed": true
+    },
+    {
+     "name": "city-1050200",
+     "status": 200,
+     "bytes": 1091,
+     "sha256_prefix": "8793a90d500b24e4",
+     "changed": true
+    },
+    {
+     "name": "city-1060300",
+     "status": 200,
+     "bytes": 1128,
+     "sha256_prefix": "bbc7c2e946e3bfad",
+     "changed": true
+    },
+    {
+     "name": "city-1070500",
+     "status": 200,
+     "bytes": 1087,
+     "sha256_prefix": "ee1972fc09771824",
+     "changed": true
+    },
+    {
+     "name": "city-1080500",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "d2cc7895dd01d5d6",
+     "changed": true
+    },
+    {
+     "name": "city-1081505",
+     "status": 200,
+     "bytes": 1105,
+     "sha256_prefix": "d30d8c7f86352204",
+     "changed": true
+    },
+    {
+     "name": "city-1081100",
+     "status": 200,
+     "bytes": 1104,
+     "sha256_prefix": "7eb29cfb9040f80f",
+     "changed": true
+    },
+    {
+     "name": "city-1080800",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "6189c26a59cda201",
+     "changed": true
+    },
+    {
+     "name": "city-1090700",
+     "status": 200,
+     "bytes": 1106,
+     "sha256_prefix": "f8cbb7501a4b4d71",
+     "changed": true
+    },
+    {
+     "name": "city-1090821",
+     "status": 200,
+     "bytes": 1105,
+     "sha256_prefix": "f5c1f25bf0ba3b0f",
+     "changed": true
+    },
+    {
+     "name": "city-1100900",
+     "status": 200,
+     "bytes": 1130,
+     "sha256_prefix": "cc088bcf59a4a9ae",
+     "changed": true
+    },
+    {
+     "name": "city-1110600",
+     "status": 200,
+     "bytes": 1111,
+     "sha256_prefix": "02aa8ddd7cd95a35",
+     "changed": true
+    },
+    {
+     "name": "city-1121400",
+     "status": 200,
+     "bytes": 1089,
+     "sha256_prefix": "2ca9c619d2b82f66",
+     "changed": true
+    },
+    {
+     "name": "city-1131200",
+     "status": 200,
+     "bytes": 1145,
+     "sha256_prefix": "b51681df91c75876",
+     "changed": true
+    },
+    {
+     "name": "city-1141600",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "0516ef065777eedf",
+     "changed": true
+    },
+    {
+     "name": "city-1151200",
+     "status": 200,
+     "bytes": 1110,
+     "sha256_prefix": "ba7e05fc589e9925",
+     "changed": true
+    },
+    {
+     "name": "city-1151300",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "a162d043f45637da",
+     "changed": true
+    },
+    {
+     "name": "city-1160900",
+     "status": 200,
+     "bytes": 1128,
+     "sha256_prefix": "944cc4490a0a480f",
+     "changed": true
+    },
+    {
+     "name": "city-1171400",
+     "status": 200,
+     "bytes": 1127,
+     "sha256_prefix": "78d11f043d419179",
+     "changed": true
+    },
+    {
+     "name": "city-1182300",
+     "status": 200,
+     "bytes": 1106,
+     "sha256_prefix": "3c349671c9b066af",
+     "changed": true
+    },
+    {
+     "name": "city-2310300",
+     "status": 200,
+     "bytes": 1174,
+     "sha256_prefix": "3a88d7f11afc187f",
+     "changed": true
+    },
+    {
+     "name": "city-2320100",
+     "status": 200,
+     "bytes": 1117,
+     "sha256_prefix": "102f5c0870647703",
+     "changed": true
+    },
+    {
+     "name": "city-3410100",
+     "status": 200,
+     "bytes": 1118,
+     "sha256_prefix": "f149c9e6c42b0d84",
+     "changed": true
+    },
+    {
+     "name": "city-3420300",
+     "status": 200,
+     "bytes": 1135,
+     "sha256_prefix": "7ca5ca84e5281d2c",
+     "changed": true
+    },
+    {
+     "name": "city-3430100",
+     "status": 200,
+     "bytes": 1158,
+     "sha256_prefix": "3038bb118ad2ae04",
+     "changed": true
+    },
+    {
+     "name": "city-3440100",
+     "status": 200,
+     "bytes": 1158,
+     "sha256_prefix": "d0bb9ec3d12baa83",
+     "changed": true
+    },
+    {
+     "name": "city-3450200",
+     "status": 200,
+     "bytes": 1157,
+     "sha256_prefix": "53449fc7723b79fe",
+     "changed": true
+    },
+    {
+     "name": "city-3460200",
+     "status": 200,
+     "bytes": 1141,
+     "sha256_prefix": "024e14ed1c08313a",
+     "changed": true
+    },
+    {
+     "name": "city-3470100",
+     "status": 200,
+     "bytes": 1159,
+     "sha256_prefix": "fdf5cea7a8b5a08e",
+     "changed": true
+    },
+    {
+     "name": "city-3480200",
+     "status": 200,
+     "bytes": 1139,
+     "sha256_prefix": "76d9ab07d260945a",
+     "changed": true
+    },
+    {
+     "name": "city-3490100",
+     "status": 200,
+     "bytes": 1141,
+     "sha256_prefix": "919052df6d6d55d1",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d466166",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d466166b925f53f8d36d4a6047daf9a0634bf489",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/bd410a7...d466166"
+  },
+  {
+   "at": "2026-11-21T07:10:36Z",
+   "ok": 36,
+   "failed": 0,
+   "requests": 36,
+   "changed_requests": [
+    "city-1010500",
+    "city-1020500",
+    "city-1030300",
+    "city-1030800",
+    "city-1040200",
+    "city-1050200",
+    "city-1060300",
+    "city-1070500",
+    "city-1080500",
+    "city-1081505",
+    "city-1081100",
+    "city-1080800",
+    "city-1090700",
+    "city-1090821",
+    "city-1100900",
+    "city-1110600",
+    "city-1121400",
+    "city-1131200",
+    "city-1141600",
+    "city-1151200",
+    "city-1151300",
+    "city-1160900",
+    "city-1171400",
+    "city-1182300",
+    "city-2310300",
+    "city-2320100",
+    "city-3410100",
+    "city-3420300",
+    "city-3430100",
+    "city-3440100",
+    "city-3450200",
+    "city-3460200",
+    "city-3470100",
+    "city-3480200",
+    "city-3490100"
+   ],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "city-1010500",
+     "status": 200,
+     "bytes": 1152,
+     "sha256_prefix": "3211488e1b689faf",
+     "changed": true
+    },
+    {
+     "name": "city-1020500",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "8ce6935a6db2d645",
+     "changed": true
+    },
+    {
+     "name": "city-1030300",
+     "status": 200,
+     "bytes": 1167,
+     "sha256_prefix": "c90459a7ea709523",
+     "changed": true
+    },
+    {
+     "name": "city-1030800",
+     "status": 200,
+     "bytes": 1166,
+     "sha256_prefix": "1b508b2756397ecf",
+     "changed": true
+    },
+    {
+     "name": "city-1040200",
+     "status": 200,
+     "bytes": 1145,
+     "sha256_prefix": "6a6387069bcfd9fd",
+     "changed": true
+    },
+    {
+     "name": "city-1050200",
+     "status": 200,
+     "bytes": 1126,
+     "sha256_prefix": "8bddbac5a4c75623",
+     "changed": true
+    },
+    {
+     "name": "city-1060300",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "eeeeb93173e7ce7a",
+     "changed": true
+    },
+    {
+     "name": "city-1070500",
+     "status": 200,
+     "bytes": 1146,
+     "sha256_prefix": "092873f70f1bb96e",
+     "changed": true
+    },
+    {
+     "name": "city-1080500",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "04c066f05857f7b4",
+     "changed": true
+    },
+    {
+     "name": "city-1081505",
+     "status": 200,
+     "bytes": 1131,
+     "sha256_prefix": "21d096d7c042dc29",
+     "changed": true
+    },
+    {
+     "name": "city-1081100",
+     "status": 200,
+     "bytes": 1128,
+     "sha256_prefix": "821bdcdede68a70f",
+     "changed": true
+    },
+    {
+     "name": "city-1080800",
+     "status": 200,
+     "bytes": 1110,
+     "sha256_prefix": "817a59be2f7a3697",
+     "changed": true
+    },
+    {
+     "name": "city-1090700",
+     "status": 200,
+     "bytes": 1142,
+     "sha256_prefix": "560a3fb915794f6a",
+     "changed": true
+    },
+    {
+     "name": "city-1090821",
+     "status": 200,
+     "bytes": 1143,
+     "sha256_prefix": "8c355b0a6c956b90",
+     "changed": true
+    },
+    {
+     "name": "city-1100900",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "acec80a29ca8c901",
+     "changed": true
+    },
+    {
+     "name": "city-1110600",
+     "status": 200,
+     "bytes": 1150,
+     "sha256_prefix": "25e7e968098d2f86",
+     "changed": true
+    },
+    {
+     "name": "city-1121400",
+     "status": 200,
+     "bytes": 1146,
+     "sha256_prefix": "769817f44ba42e26",
+     "changed": true
+    },
+    {
+     "name": "city-1131200",
+     "status": 200,
+     "bytes": 1149,
+     "sha256_prefix": "6c755233c13e1441",
+     "changed": true
+    },
+    {
+     "name": "city-1141600",
+     "status": 200,
+     "bytes": 1128,
+     "sha256_prefix": "7f590d9c84fdf0eb",
+     "changed": true
+    },
+    {
+     "name": "city-1151200",
+     "status": 200,
+     "bytes": 1148,
+     "sha256_prefix": "99163dd652ee12ef",
+     "changed": true
+    },
+    {
+     "name": "city-1151300",
+     "status": 200,
+     "bytes": 1151,
+     "sha256_prefix": "768fac9835f66c7a",
+     "changed": true
+    },
+    {
+     "name": "city-1160900",
+     "status": 200,
+     "bytes": 1149,
+     "sha256_prefix": "5e817c773b1345a3",
+     "changed": true
+    },
+    {
+     "name": "city-1171400",
+     "status": 200,
+     "bytes": 1166,
+     "sha256_prefix": "563c592ff9058e35",
+     "changed": true
+    },
+    {
+     "name": "city-1182300",
+     "status": 200,
+     "bytes": 1167,
+     "sha256_prefix": "29b559285c2857cf",
+     "changed": true
+    },
+    {
+     "name": "city-2310300",
+     "status": 200,
+     "bytes": 1157,
+     "sha256_prefix": "a99d84099619498b",
+     "changed": true
+    },
+    {
+     "name": "city-2320100",
+     "status": 200,
+     "bytes": 1117,
+     "sha256_prefix": "1ecb4cb0a864a13a",
+     "changed": true
+    },
+    {
+     "name": "city-3410100",
+     "status": 200,
+     "bytes": 1116,
+     "sha256_prefix": "f06bce826bc30917",
+     "changed": true
+    },
+    {
+     "name": "city-3420300",
+     "status": 200,
+     "bytes": 1116,
+     "sha256_prefix": "db6bad45b1b15b0d",
+     "changed": true
+    },
+    {
+     "name": "city-3430100",
+     "status": 200,
+     "bytes": 1160,
+     "sha256_prefix": "77c0ae4fff57ad2c",
+     "changed": true
+    },
+    {
+     "name": "city-3440100",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "81ae1c7caa8b2893",
+     "changed": true
+    },
+    {
+     "name": "city-3450200",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "208342c9a257a651",
+     "changed": true
+    },
+    {
+     "name": "city-3460200",
+     "status": 200,
+     "bytes": 1140,
+     "sha256_prefix": "a49d86603124ba14",
+     "changed": true
+    },
+    {
+     "name": "city-3470100",
+     "status": 200,
+     "bytes": 1117,
+     "sha256_prefix": "9c4b790dbe808e3c",
+     "changed": true
+    },
+    {
+     "name": "city-3480200",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "0779c9d0fa1099ff",
+     "changed": true
+    },
+    {
+     "name": "city-3490100",
+     "status": 200,
+     "bytes": 1117,
+     "sha256_prefix": "bd368ba0bd9e1396",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "bd410a7",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/bd410a73762d6b0a755da0a946556d6e47d54c8e",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/65c6667...bd410a7"
+  },
+  {
+   "at": "2026-11-20T18:13:52Z",
+   "ok": 36,
+   "failed": 0,
+   "requests": 36,
+   "changed_requests": [
+    "city-1010500",
+    "city-1020500",
+    "city-1030300",
+    "city-1030800",
+    "city-1040200",
+    "city-1050200",
+    "city-1060300",
+    "city-1070500",
+    "city-1080500",
+    "city-1081505",
+    "city-1081100",
+    "city-1080800",
+    "city-1090700",
+    "city-1090821",
+    "city-1100900",
+    "city-1110600",
+    "city-1121400",
+    "city-1131200",
+    "city-1141600",
+    "city-1151200",
+    "city-1151300",
+    "city-1160900",
+    "city-1171400",
+    "city-1182300",
+    "city-2310300",
+    "city-2320100",
+    "city-3410100",
+    "city-3420300",
+    "city-3430100",
+    "city-3440100",
+    "city-3450200",
+    "city-3460200",
+    "city-3470100",
+    "city-3480200",
+    "city-3490100"
+   ],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "city-1010500",
+     "status": 200,
+     "bytes": 1151,
+     "sha256_prefix": "90671f0d64c7671e",
+     "changed": true
+    },
+    {
+     "name": "city-1020500",
+     "status": 200,
+     "bytes": 1109,
+     "sha256_prefix": "635968d0cf4b13dc",
+     "changed": true
+    },
+    {
+     "name": "city-1030300",
+     "status": 200,
+     "bytes": 1168,
+     "sha256_prefix": "1fad5a80c072a678",
+     "changed": true
+    },
+    {
+     "name": "city-1030800",
+     "status": 200,
+     "bytes": 1166,
+     "sha256_prefix": "fcd57a3676402479",
+     "changed": true
+    },
+    {
+     "name": "city-1040200",
+     "status": 200,
+     "bytes": 1149,
+     "sha256_prefix": "23d1c287fc255421",
+     "changed": true
+    },
+    {
+     "name": "city-1050200",
+     "status": 200,
+     "bytes": 1151,
+     "sha256_prefix": "ae3182b60432073e",
+     "changed": true
+    },
+    {
+     "name": "city-1060300",
+     "status": 200,
+     "bytes": 1151,
+     "sha256_prefix": "f68065aeef4b261f",
+     "changed": true
+    },
+    {
+     "name": "city-1070500",
+     "status": 200,
+     "bytes": 1126,
+     "sha256_prefix": "5dfceb1f3363a1d1",
+     "changed": true
+    },
+    {
+     "name": "city-1080500",
+     "status": 200,
+     "bytes": 1110,
+     "sha256_prefix": "cdf37962831528a5",
+     "changed": true
+    },
+    {
+     "name": "city-1081505",
+     "status": 200,
+     "bytes": 1126,
+     "sha256_prefix": "b59f58c2ceecc7a7",
+     "changed": true
+    },
+    {
+     "name": "city-1081100",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "ae9c467ab1f297d3",
+     "changed": true
+    },
+    {
+     "name": "city-1080800",
+     "status": 200,
+     "bytes": 1111,
+     "sha256_prefix": "ebc76f10e03a9cd4",
+     "changed": true
+    },
+    {
+     "name": "city-1090700",
+     "status": 200,
+     "bytes": 1144,
+     "sha256_prefix": "8347cb4cd514d07f",
+     "changed": true
+    },
+    {
+     "name": "city-1090821",
+     "status": 200,
+     "bytes": 1144,
+     "sha256_prefix": "9132afdf0b338eba",
+     "changed": true
+    },
+    {
+     "name": "city-1100900",
+     "status": 200,
+     "bytes": 1149,
+     "sha256_prefix": "d5c76f482e9689b4",
+     "changed": true
+    },
+    {
+     "name": "city-1110600",
+     "status": 200,
+     "bytes": 1132,
+     "sha256_prefix": "11ffcc0252532c29",
+     "changed": true
+    },
+    {
+     "name": "city-1121400",
+     "status": 200,
+     "bytes": 1130,
+     "sha256_prefix": "f2a777e1d5424902",
+     "changed": true
+    },
+    {
+     "name": "city-1131200",
+     "status": 200,
+     "bytes": 1149,
+     "sha256_prefix": "5a228a24a4691a32",
+     "changed": true
+    },
+    {
+     "name": "city-1141600",
+     "status": 200,
+     "bytes": 1130,
+     "sha256_prefix": "75611cfb1cdef557",
+     "changed": true
+    },
+    {
+     "name": "city-1151200",
+     "status": 200,
+     "bytes": 1127,
+     "sha256_prefix": "2081160785bc953d",
+     "changed": true
+    },
+    {
+     "name": "city-1151300",
+     "status": 200,
+     "bytes": 1130,
+     "sha256_prefix": "2ff3638cb288e7d4",
+     "changed": true
+    },
+    {
+     "name": "city-1160900",
+     "status": 200,
+     "bytes": 1149,
+     "sha256_prefix": "d833cbb9601dcddb",
+     "changed": true
+    },
+    {
+     "name": "city-1171400",
+     "status": 200,
+     "bytes": 1167,
+     "sha256_prefix": "7f0f1ca45b245a85",
+     "changed": true
+    },
+    {
+     "name": "city-1182300",
+     "status": 200,
+     "bytes": 1168,
+     "sha256_prefix": "5dfc0a2299e87122",
+     "changed": true
+    },
+    {
+     "name": "city-2310300",
+     "status": 200,
+     "bytes": 1175,
+     "sha256_prefix": "273d72cb60bb4224",
+     "changed": true
+    },
+    {
+     "name": "city-2320100",
+     "status": 200,
+     "bytes": 1098,
+     "sha256_prefix": "dd7aa85bdcf31830",
+     "changed": true
+    },
+    {
+     "name": "city-3410100",
+     "status": 200,
+     "bytes": 1118,
+     "sha256_prefix": "ff41937c66d6d8af",
+     "changed": true
+    },
+    {
+     "name": "city-3420300",
+     "status": 200,
+     "bytes": 1117,
+     "sha256_prefix": "78e7bad673395a50",
+     "changed": true
+    },
+    {
+     "name": "city-3430100",
+     "status": 200,
+     "bytes": 1158,
+     "sha256_prefix": "6913785570e7b819",
+     "changed": true
+    },
+    {
+     "name": "city-3440100",
+     "status": 200,
+     "bytes": 1139,
+     "sha256_prefix": "7423a94046f0fd2f",
+     "changed": true
+    },
+    {
+     "name": "city-3450200",
+     "status": 200,
+     "bytes": 1158,
+     "sha256_prefix": "191d9066df5ba65e",
+     "changed": true
+    },
+    {
+     "name": "city-3460200",
+     "status": 200,
+     "bytes": 1179,
+     "sha256_prefix": "41a6d2d3ad9db717",
+     "changed": true
+    },
+    {
+     "name": "city-3470100",
+     "status": 200,
+     "bytes": 1137,
+     "sha256_prefix": "bfbf79bca710eaa5",
+     "changed": true
+    },
+    {
+     "name": "city-3480200",
+     "status": 200,
+     "bytes": 1141,
+     "sha256_prefix": "bde0cf58029b4fd9",
+     "changed": true
+    },
+    {
+     "name": "city-3490100",
+     "status": 200,
+     "bytes": 1139,
+     "sha256_prefix": "7e0fa7cc5e7eaddd",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "65c6667",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/65c66677f4957a21ffbcf6d58b3f8794f505d39f",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/cb88d7b...65c6667"
+  },
+  {
+   "at": "2026-11-20T07:15:05Z",
+   "ok": 36,
+   "failed": 0,
+   "requests": 36,
+   "changed_requests": [
+    "city-1010500",
+    "city-1020500",
+    "city-1030300",
+    "city-1030800",
+    "city-1040200",
+    "city-1050200",
+    "city-1060300",
+    "city-1070500",
+    "city-1080500",
+    "city-1081505",
+    "city-1081100",
+    "city-1080800",
+    "city-1090700",
+    "city-1090821",
+    "city-1100900",
+    "city-1110600",
+    "city-1121400",
+    "city-1131200",
+    "city-1141600",
+    "city-1151200",
+    "city-1151300",
+    "city-1160900",
+    "city-1171400",
+    "city-1182300",
+    "city-2310300",
+    "city-2320100",
+    "city-3410100",
+    "city-3420300",
+    "city-3430100",
+    "city-3440100",
+    "city-3450200",
+    "city-3460200",
+    "city-3470100",
+    "city-3480200",
+    "city-3490100"
+   ],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "city-1010500",
+     "status": 200,
+     "bytes": 1154,
+     "sha256_prefix": "c76f35d23133c7ab",
+     "changed": true
+    },
+    {
+     "name": "city-1020500",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "2bfca752180a73f0",
+     "changed": true
+    },
+    {
+     "name": "city-1030300",
+     "status": 200,
+     "bytes": 1151,
+     "sha256_prefix": "c5ede1389407f06c",
+     "changed": true
+    },
+    {
+     "name": "city-1030800",
+     "status": 200,
+     "bytes": 1149,
+     "sha256_prefix": "7304f513c1eab5b8",
+     "changed": true
+    },
+    {
+     "name": "city-1040200",
+     "status": 200,
+     "bytes": 1148,
+     "sha256_prefix": "85007902ff6e2e09",
+     "changed": true
+    },
+    {
+     "name": "city-1050200",
+     "status": 200,
+     "bytes": 1149,
+     "sha256_prefix": "9736d79abbdcd2f0",
+     "changed": true
+    },
+    {
+     "name": "city-1060300",
+     "status": 200,
+     "bytes": 1148,
+     "sha256_prefix": "89f05708c6cb1dfa",
+     "changed": true
+    },
+    {
+     "name": "city-1070500",
+     "status": 200,
+     "bytes": 1105,
+     "sha256_prefix": "91827cc6b2ca53d9",
+     "changed": true
+    },
+    {
+     "name": "city-1080500",
+     "status": 200,
+     "bytes": 1110,
+     "sha256_prefix": "087f566166745a35",
+     "changed": true
+    },
+    {
+     "name": "city-1081505",
+     "status": 200,
+     "bytes": 1128,
+     "sha256_prefix": "c2a729a16386d66d",
+     "changed": true
+    },
+    {
+     "name": "city-1081100",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "736cd60da11c2dc6",
+     "changed": true
+    },
+    {
+     "name": "city-1080800",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "d5f83f4d9d68d006",
+     "changed": true
+    },
+    {
+     "name": "city-1090700",
+     "status": 200,
+     "bytes": 1145,
+     "sha256_prefix": "96f40ceead3c5074",
+     "changed": true
+    },
+    {
+     "name": "city-1090821",
+     "status": 200,
+     "bytes": 1164,
+     "sha256_prefix": "043f3116cbc897ab",
+     "changed": true
+    },
+    {
+     "name": "city-1100900",
+     "status": 200,
+     "bytes": 1149,
+     "sha256_prefix": "16133ed74af01faf",
+     "changed": true
+    },
+    {
+     "name": "city-1110600",
+     "status": 200,
+     "bytes": 1130,
+     "sha256_prefix": "6a3ccbc3b988b477",
+     "changed": true
+    },
+    {
+     "name": "city-1121400",
+     "status": 200,
+     "bytes": 1128,
+     "sha256_prefix": "b179e133d5cdece4",
+     "changed": true
+    },
+    {
+     "name": "city-1131200",
+     "status": 200,
+     "bytes": 1150,
+     "sha256_prefix": "b1b71aecf7ea6feb",
+     "changed": true
+    },
+    {
+     "name": "city-1141600",
+     "status": 200,
+     "bytes": 1149,
+     "sha256_prefix": "b4e6de7a7e7f002e",
+     "changed": true
+    },
+    {
+     "name": "city-1151200",
+     "status": 200,
+     "bytes": 1128,
+     "sha256_prefix": "9629cff93a8d2ecf",
+     "changed": true
+    },
+    {
+     "name": "city-1151300",
+     "status": 200,
+     "bytes": 1127,
+     "sha256_prefix": "ab6cc3daed8d2ee1",
+     "changed": true
+    },
+    {
+     "name": "city-1160900",
+     "status": 200,
+     "bytes": 1151,
+     "sha256_prefix": "e237a00298709693",
+     "changed": true
+    },
+    {
+     "name": "city-1171400",
+     "status": 200,
+     "bytes": 1150,
+     "sha256_prefix": "32dc0b9e805806a1",
+     "changed": true
+    },
+    {
+     "name": "city-1182300",
+     "status": 200,
+     "bytes": 1149,
+     "sha256_prefix": "66847c0165c4b8f5",
+     "changed": true
+    },
+    {
+     "name": "city-2310300",
+     "status": 200,
+     "bytes": 1176,
+     "sha256_prefix": "7cac9f4a862ccca5",
+     "changed": true
+    },
+    {
+     "name": "city-2320100",
+     "status": 200,
+     "bytes": 1098,
+     "sha256_prefix": "9e47fe0b51ce9e61",
+     "changed": true
+    },
+    {
+     "name": "city-3410100",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "3b793601eeabb234",
+     "changed": true
+    },
+    {
+     "name": "city-3420300",
+     "status": 200,
+     "bytes": 1138,
+     "sha256_prefix": "f560c5ba6f1e5ebd",
+     "changed": true
+    },
+    {
+     "name": "city-3430100",
+     "status": 200,
+     "bytes": 1176,
+     "sha256_prefix": "ad7c9eabe77617a6",
+     "changed": true
+    },
+    {
+     "name": "city-3440100",
+     "status": 200,
+     "bytes": 1139,
+     "sha256_prefix": "45da4bd5448d26e5",
+     "changed": true
+    },
+    {
+     "name": "city-3450200",
+     "status": 200,
+     "bytes": 1157,
+     "sha256_prefix": "9fb14dc164ab49cd",
+     "changed": true
+    },
+    {
+     "name": "city-3460200",
+     "status": 200,
+     "bytes": 1179,
+     "sha256_prefix": "5fc9a13a7c0e9da0",
+     "changed": true
+    },
+    {
+     "name": "city-3470100",
+     "status": 200,
+     "bytes": 1139,
+     "sha256_prefix": "6aeaa4b11948aeaa",
+     "changed": true
+    },
+    {
+     "name": "city-3480200",
+     "status": 200,
+     "bytes": 1139,
+     "sha256_prefix": "6e6cbb4591f0ddbe",
+     "changed": true
+    },
+    {
+     "name": "city-3490100",
+     "status": 200,
+     "bytes": 1140,
+     "sha256_prefix": "43b4ff71010e1fb4",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "cb88d7b",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/cb88d7b793bc938078a150fb7bd84b6477977aea",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/64fbf7d...cb88d7b"
+  },
+  {
+   "at": "2026-11-19T18:12:32Z",
+   "ok": 36,
+   "failed": 0,
+   "requests": 36,
+   "changed_requests": [
+    "city-1010500",
+    "city-1020500",
+    "city-1030300",
+    "city-1030800",
+    "city-1040200",
+    "city-1050200",
+    "city-1060300",
+    "city-1070500",
+    "city-1080500",
+    "city-1081505",
+    "city-1081100",
+    "city-1080800",
+    "city-1090700",
+    "city-1090821",
+    "city-1100900",
+    "city-1110600",
+    "city-1121400",
+    "city-1131200",
+    "city-1141600",
+    "city-1151200",
+    "city-1151300",
+    "city-1160900",
+    "city-1171400",
+    "city-1182300",
+    "city-2310300",
+    "city-2320100",
+    "city-3410100",
+    "city-3420300",
+    "city-3430100",
+    "city-3440100",
+    "city-3450200",
+    "city-3460200",
+    "city-3470100",
+    "city-3480200",
+    "city-3490100"
+   ],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "city-1010500",
+     "status": 200,
+     "bytes": 1152,
+     "sha256_prefix": "79e4a205cecc16e3",
+     "changed": true
+    },
+    {
+     "name": "city-1020500",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "46ad909675f59a9e",
+     "changed": true
+    },
+    {
+     "name": "city-1030300",
+     "status": 200,
+     "bytes": 1151,
+     "sha256_prefix": "9ebe1132ee647b49",
+     "changed": true
+    },
+    {
+     "name": "city-1030800",
+     "status": 200,
+     "bytes": 1149,
+     "sha256_prefix": "78c008776f151f07",
+     "changed": true
+    },
+    {
+     "name": "city-1040200",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "7a111d6060d09f93",
+     "changed": true
+    },
+    {
+     "name": "city-1050200",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "0057a68be37b3fab",
+     "changed": true
+    },
+    {
+     "name": "city-1060300",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "b07dd20229b412b3",
+     "changed": true
+    },
+    {
+     "name": "city-1070500",
+     "status": 200,
+     "bytes": 1105,
+     "sha256_prefix": "750506d4825a498f",
+     "changed": true
+    },
+    {
+     "name": "city-1080500",
+     "status": 200,
+     "bytes": 1109,
+     "sha256_prefix": "2ec2b05519baf0f1",
+     "changed": true
+    },
+    {
+     "name": "city-1081505",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "6853d8989daa00e9",
+     "changed": true
+    },
+    {
+     "name": "city-1081100",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "9f22e97518861320",
+     "changed": true
+    },
+    {
+     "name": "city-1080800",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "caf6dad0de550cde",
+     "changed": true
+    },
+    {
+     "name": "city-1090700",
+     "status": 200,
+     "bytes": 1124,
+     "sha256_prefix": "70eae80bf9ac3f4f",
+     "changed": true
+    },
+    {
+     "name": "city-1090821",
+     "status": 200,
+     "bytes": 1146,
+     "sha256_prefix": "a37ed1d2c6cfef10",
+     "changed": true
+    },
+    {
+     "name": "city-1100900",
+     "status": 200,
+     "bytes": 1130,
+     "sha256_prefix": "3bac64868c873438",
+     "changed": true
+    },
+    {
+     "name": "city-1110600",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "4f8109b58b077857",
+     "changed": true
+    },
+    {
+     "name": "city-1121400",
+     "status": 200,
+     "bytes": 1127,
+     "sha256_prefix": "254b3f5313d18324",
+     "changed": true
+    },
+    {
+     "name": "city-1131200",
+     "status": 200,
+     "bytes": 1149,
+     "sha256_prefix": "424e121dd2a56348",
+     "changed": true
+    },
+    {
+     "name": "city-1141600",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "d5ffe558ed86e407",
+     "changed": true
+    },
+    {
+     "name": "city-1151200",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "a6dd0ff9977d2f72",
+     "changed": true
+    },
+    {
+     "name": "city-1151300",
+     "status": 200,
+     "bytes": 1110,
+     "sha256_prefix": "6ecafa6e1b9de916",
+     "changed": true
+    },
+    {
+     "name": "city-1160900",
+     "status": 200,
+     "bytes": 1152,
+     "sha256_prefix": "d45faa9230c8f610",
+     "changed": true
+    },
+    {
+     "name": "city-1171400",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "b81e53122fcc85b5",
+     "changed": true
+    },
+    {
+     "name": "city-1182300",
+     "status": 200,
+     "bytes": 1148,
+     "sha256_prefix": "f6ca14348306231b",
+     "changed": true
+    },
+    {
+     "name": "city-2310300",
+     "status": 200,
+     "bytes": 1155,
+     "sha256_prefix": "8a7ed3c24d1a0532",
+     "changed": true
+    },
+    {
+     "name": "city-2320100",
+     "status": 200,
+     "bytes": 1115,
+     "sha256_prefix": "8cef2824ee599600",
+     "changed": true
+    },
+    {
+     "name": "city-3410100",
+     "status": 200,
+     "bytes": 1138,
+     "sha256_prefix": "cc0ba3987402c581",
+     "changed": true
+    },
+    {
+     "name": "city-3420300",
+     "status": 200,
+     "bytes": 1177,
+     "sha256_prefix": "2bc0b8e2efdd110a",
+     "changed": true
+    },
+    {
+     "name": "city-3430100",
+     "status": 200,
+     "bytes": 1180,
+     "sha256_prefix": "833f3b0a3a0a71a3",
+     "changed": true
+    },
+    {
+     "name": "city-3440100",
+     "status": 200,
+     "bytes": 1159,
+     "sha256_prefix": "851237119bcc1bfd",
+     "changed": true
+    },
+    {
+     "name": "city-3450200",
+     "status": 200,
+     "bytes": 1179,
+     "sha256_prefix": "56298ed4e15cc45b",
+     "changed": true
+    },
+    {
+     "name": "city-3460200",
+     "status": 200,
+     "bytes": 1180,
+     "sha256_prefix": "2d5a61b809d75da4",
+     "changed": true
+    },
+    {
+     "name": "city-3470100",
+     "status": 200,
+     "bytes": 1159,
+     "sha256_prefix": "46886f2a299871ac",
+     "changed": true
+    },
+    {
+     "name": "city-3480200",
+     "status": 200,
+     "bytes": 1140,
+     "sha256_prefix": "abf34b5e5c662f7a",
+     "changed": true
+    },
+    {
+     "name": "city-3490100",
+     "status": 200,
+     "bytes": 1140,
+     "sha256_prefix": "e9f60d8876eaa579",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "64fbf7d",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/64fbf7dda8967b6095e265f2e10aba0dfb3d65e8",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/11e0962...64fbf7d"
+  },
+  {
+   "at": "2026-11-19T16:05:38Z",
+   "ok": 36,
+   "failed": 0,
+   "requests": 36,
+   "changed_requests": [
+    "city-1010500",
+    "city-1020500",
+    "city-1030300",
+    "city-1030800",
+    "city-1040200",
+    "city-1050200",
+    "city-1060300",
+    "city-1070500",
+    "city-1080500",
+    "city-1081505",
+    "city-1081100",
+    "city-1080800",
+    "city-1090700",
+    "city-1090821",
+    "city-1100900",
+    "city-1110600",
+    "city-1121400",
+    "city-1131200",
+    "city-1141600",
+    "city-1151200",
+    "city-1151300",
+    "city-1160900",
+    "city-1171400",
+    "city-1182300",
+    "city-2310300",
+    "city-2320100",
+    "city-3410100",
+    "city-3420300",
+    "city-3430100",
+    "city-3440100",
+    "city-3450200",
+    "city-3460200",
+    "city-3470100",
+    "city-3480200",
+    "city-3490100"
+   ],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "city-1010500",
+     "status": 200,
+     "bytes": 1152,
+     "sha256_prefix": "3bc3096962e9a1e7",
+     "changed": true
+    },
+    {
+     "name": "city-1020500",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "d749b6acf8cb377c",
+     "changed": true
+    },
+    {
+     "name": "city-1030300",
+     "status": 200,
+     "bytes": 1151,
+     "sha256_prefix": "c62ed0656afdd522",
+     "changed": true
+    },
+    {
+     "name": "city-1030800",
+     "status": 200,
+     "bytes": 1149,
+     "sha256_prefix": "b68bc01af7eb97bc",
+     "changed": true
+    },
+    {
+     "name": "city-1040200",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "0e94ed8e335bb9a6",
+     "changed": true
+    },
+    {
+     "name": "city-1050200",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "98134928485d75e6",
+     "changed": true
+    },
+    {
+     "name": "city-1060300",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "ac7218609f3817e8",
+     "changed": true
+    },
+    {
+     "name": "city-1070500",
+     "status": 200,
+     "bytes": 1105,
+     "sha256_prefix": "f3e03827994926ee",
+     "changed": true
+    },
+    {
+     "name": "city-1080500",
+     "status": 200,
+     "bytes": 1109,
+     "sha256_prefix": "ae1815a819a1e82c",
+     "changed": true
+    },
+    {
+     "name": "city-1081505",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "844b7a455a12519d",
+     "changed": true
+    },
+    {
+     "name": "city-1081100",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "67f2650f810d2318",
+     "changed": true
+    },
+    {
+     "name": "city-1080800",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "95f79a2e3f211ae5",
+     "changed": true
+    },
+    {
+     "name": "city-1090700",
+     "status": 200,
+     "bytes": 1124,
+     "sha256_prefix": "1b6e4a2d8221aa79",
+     "changed": true
+    },
+    {
+     "name": "city-1090821",
+     "status": 200,
+     "bytes": 1146,
+     "sha256_prefix": "84e9cbd28a188dce",
+     "changed": true
+    },
+    {
+     "name": "city-1100900",
+     "status": 200,
+     "bytes": 1130,
+     "sha256_prefix": "3dec02884ed763a7",
+     "changed": true
+    },
+    {
+     "name": "city-1110600",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "3f66f34222c08785",
+     "changed": true
+    },
+    {
+     "name": "city-1121400",
+     "status": 200,
+     "bytes": 1127,
+     "sha256_prefix": "abb0005466e1be1c",
+     "changed": true
+    },
+    {
+     "name": "city-1131200",
+     "status": 200,
+     "bytes": 1149,
+     "sha256_prefix": "2aefca143f80a29a",
+     "changed": true
+    },
+    {
+     "name": "city-1141600",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "c7e15de6f2548bd7",
+     "changed": true
+    },
+    {
+     "name": "city-1151200",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "6dd863c2d0da38a6",
+     "changed": true
+    },
+    {
+     "name": "city-1151300",
+     "status": 200,
+     "bytes": 1110,
+     "sha256_prefix": "d1b4c5beb2ecf02f",
+     "changed": true
+    },
+    {
+     "name": "city-1160900",
+     "status": 200,
+     "bytes": 1152,
+     "sha256_prefix": "4c5b50831263d87b",
+     "changed": true
+    },
+    {
+     "name": "city-1171400",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "9cb8b31400631032",
+     "changed": true
+    },
+    {
+     "name": "city-1182300",
+     "status": 200,
+     "bytes": 1148,
+     "sha256_prefix": "4655e88bd1d2c5b2",
+     "changed": true
+    },
+    {
+     "name": "city-2310300",
+     "status": 200,
+     "bytes": 1155,
+     "sha256_prefix": "cedcf11b6566bc15",
+     "changed": true
+    },
+    {
+     "name": "city-2320100",
+     "status": 200,
+     "bytes": 1115,
+     "sha256_prefix": "81fb6bbcc5eaa114",
+     "changed": true
+    },
+    {
+     "name": "city-3410100",
+     "status": 200,
+     "bytes": 1138,
+     "sha256_prefix": "6aa56798294433f7",
+     "changed": true
+    },
+    {
+     "name": "city-3420300",
+     "status": 200,
+     "bytes": 1177,
+     "sha256_prefix": "6ce30e10fb2b1892",
+     "changed": true
+    },
+    {
+     "name": "city-3430100",
+     "status": 200,
+     "bytes": 1180,
+     "sha256_prefix": "dd1dd53b26e9429b",
+     "changed": true
+    },
+    {
+     "name": "city-3440100",
+     "status": 200,
+     "bytes": 1159,
+     "sha256_prefix": "087ed8ca2ac560b8",
+     "changed": true
+    },
+    {
+     "name": "city-3450200",
+     "status": 200,
+     "bytes": 1179,
+     "sha256_prefix": "fe4c44b93af3bd99",
+     "changed": true
+    },
+    {
+     "name": "city-3460200",
+     "status": 200,
+     "bytes": 1180,
+     "sha256_prefix": "2d15a0aa657e0729",
+     "changed": true
+    },
+    {
+     "name": "city-3470100",
+     "status": 200,
+     "bytes": 1159,
+     "sha256_prefix": "8a32b93b103ab141",
+     "changed": true
+    },
+    {
+     "name": "city-3480200",
+     "status": 200,
+     "bytes": 1140,
+     "sha256_prefix": "11e7160c24e0b677",
+     "changed": true
+    },
+    {
+     "name": "city-3490100",
+     "status": 200,
+     "bytes": 1140,
+     "sha256_prefix": "ffa7556ded0bd07b",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "11e0962",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/11e096221d96c4c87d5c943ef91b534dd547f19c",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/e25333f...11e0962"
+  },
+  {
+   "at": "2026-11-19T15:05:21Z",
+   "ok": 36,
+   "failed": 0,
+   "requests": 36,
+   "changed_requests": [
+    "city-1010500",
+    "city-1020500",
+    "city-1030300",
+    "city-1030800",
+    "city-1040200",
+    "city-1050200",
+    "city-1060300",
+    "city-1070500",
+    "city-1080500",
+    "city-1081505",
+    "city-1081100",
+    "city-1080800",
+    "city-1090700",
+    "city-1090821",
+    "city-1100900",
+    "city-1110600",
+    "city-1121400",
+    "city-1131200",
+    "city-1141600",
+    "city-1151200",
+    "city-1151300",
+    "city-1160900",
+    "city-1171400",
+    "city-1182300",
+    "city-2310300",
+    "city-2320100",
+    "city-3410100",
+    "city-3420300",
+    "city-3430100",
+    "city-3440100",
+    "city-3450200",
+    "city-3460200",
+    "city-3470100",
+    "city-3480200",
+    "city-3490100"
+   ],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "city-1010500",
+     "status": 200,
+     "bytes": 1152,
+     "sha256_prefix": "8dcdd68b2968287e",
+     "changed": true
+    },
+    {
+     "name": "city-1020500",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "94fcc92500ee43ec",
+     "changed": true
+    },
+    {
+     "name": "city-1030300",
+     "status": 200,
+     "bytes": 1151,
+     "sha256_prefix": "0a30ed09ec29b60f",
+     "changed": true
+    },
+    {
+     "name": "city-1030800",
+     "status": 200,
+     "bytes": 1149,
+     "sha256_prefix": "6ce72f113a4d9de6",
+     "changed": true
+    },
+    {
+     "name": "city-1040200",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "315c91952f819773",
+     "changed": true
+    },
+    {
+     "name": "city-1050200",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "99d9cab089c05773",
+     "changed": true
+    },
+    {
+     "name": "city-1060300",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "6553dc84e13bcb34",
+     "changed": true
+    },
+    {
+     "name": "city-1070500",
+     "status": 200,
+     "bytes": 1105,
+     "sha256_prefix": "5d5e38ae91b306b0",
+     "changed": true
+    },
+    {
+     "name": "city-1080500",
+     "status": 200,
+     "bytes": 1109,
+     "sha256_prefix": "3d40997ba0832bdf",
+     "changed": true
+    },
+    {
+     "name": "city-1081505",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "fd990817736c72a8",
+     "changed": true
+    },
+    {
+     "name": "city-1081100",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "f650a173f9b74d4f",
+     "changed": true
+    },
+    {
+     "name": "city-1080800",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "9287a40f8a0232ea",
+     "changed": true
+    },
+    {
+     "name": "city-1090700",
+     "status": 200,
+     "bytes": 1124,
+     "sha256_prefix": "732e9d210453f395",
+     "changed": true
+    },
+    {
+     "name": "city-1090821",
+     "status": 200,
+     "bytes": 1146,
+     "sha256_prefix": "72490263eed7bf8c",
+     "changed": true
+    },
+    {
+     "name": "city-1100900",
+     "status": 200,
+     "bytes": 1130,
+     "sha256_prefix": "1576fe8904999120",
+     "changed": true
+    },
+    {
+     "name": "city-1110600",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "028eb23e0a5c0f35",
+     "changed": true
+    },
+    {
+     "name": "city-1121400",
+     "status": 200,
+     "bytes": 1127,
+     "sha256_prefix": "93d9651a453b56ee",
+     "changed": true
+    },
+    {
+     "name": "city-1131200",
+     "status": 200,
+     "bytes": 1149,
+     "sha256_prefix": "a986420934cdc5ef",
+     "changed": true
+    },
+    {
+     "name": "city-1141600",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "66727f449ae69581",
+     "changed": true
+    },
+    {
+     "name": "city-1151200",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "38ac6110876624b9",
+     "changed": true
+    },
+    {
+     "name": "city-1151300",
+     "status": 200,
+     "bytes": 1110,
+     "sha256_prefix": "a9c0addb9aaecfd3",
+     "changed": true
+    },
+    {
+     "name": "city-1160900",
+     "status": 200,
+     "bytes": 1152,
+     "sha256_prefix": "6b599e246f3e69c9",
+     "changed": true
+    },
+    {
+     "name": "city-1171400",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "48fdba2fd661c0ee",
+     "changed": true
+    },
+    {
+     "name": "city-1182300",
+     "status": 200,
+     "bytes": 1148,
+     "sha256_prefix": "14025c7544bbba25",
+     "changed": true
+    },
+    {
+     "name": "city-2310300",
+     "status": 200,
+     "bytes": 1155,
+     "sha256_prefix": "9acfff7d3148dd0a",
+     "changed": true
+    },
+    {
+     "name": "city-2320100",
+     "status": 200,
+     "bytes": 1115,
+     "sha256_prefix": "e1e82309a2988450",
+     "changed": true
+    },
+    {
+     "name": "city-3410100",
+     "status": 200,
+     "bytes": 1138,
+     "sha256_prefix": "a839abf1554d2c5c",
+     "changed": true
+    },
+    {
+     "name": "city-3420300",
+     "status": 200,
+     "bytes": 1177,
+     "sha256_prefix": "656727116e0e56b0",
+     "changed": true
+    },
+    {
+     "name": "city-3430100",
+     "status": 200,
+     "bytes": 1180,
+     "sha256_prefix": "127101a238a62e0d",
+     "changed": true
+    },
+    {
+     "name": "city-3440100",
+     "status": 200,
+     "bytes": 1159,
+     "sha256_prefix": "8ffd448162523c19",
+     "changed": true
+    },
+    {
+     "name": "city-3450200",
+     "status": 200,
+     "bytes": 1179,
+     "sha256_prefix": "f01dfd789a51fb07",
+     "changed": true
+    },
+    {
+     "name": "city-3460200",
+     "status": 200,
+     "bytes": 1180,
+     "sha256_prefix": "a0101706780cb652",
+     "changed": true
+    },
+    {
+     "name": "city-3470100",
+     "status": 200,
+     "bytes": 1159,
+     "sha256_prefix": "870d9ddc08f79fcb",
+     "changed": true
+    },
+    {
+     "name": "city-3480200",
+     "status": 200,
+     "bytes": 1140,
+     "sha256_prefix": "da889f2eecadfa43",
+     "changed": true
+    },
+    {
+     "name": "city-3490100",
+     "status": 200,
+     "bytes": 1140,
+     "sha256_prefix": "6db8a5823e4af7a5",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "e25333f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/e25333f846d431ddcfef34bf037922034bcf906d",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/48b39e4...e25333f"
+  },
+  {
+   "at": "2026-11-19T14:06:22Z",
+   "ok": 36,
+   "failed": 0,
+   "requests": 36,
+   "changed_requests": [
+    "city-1010500",
+    "city-1020500",
+    "city-1030300",
+    "city-1030800",
+    "city-1040200",
+    "city-1050200",
+    "city-1060300",
+    "city-1070500",
+    "city-1080500",
+    "city-1081505",
+    "city-1081100",
+    "city-1080800",
+    "city-1090700",
+    "city-1090821",
+    "city-1100900",
+    "city-1110600",
+    "city-1121400",
+    "city-1131200",
+    "city-1141600",
+    "city-1151200",
+    "city-1151300",
+    "city-1160900",
+    "city-1171400",
+    "city-1182300",
+    "city-2310300",
+    "city-2320100",
+    "city-3410100",
+    "city-3420300",
+    "city-3430100",
+    "city-3440100",
+    "city-3450200",
+    "city-3460200",
+    "city-3470100",
+    "city-3480200",
+    "city-3490100"
+   ],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "city-1010500",
+     "status": 200,
+     "bytes": 1152,
+     "sha256_prefix": "aeaa4566e25209ca",
+     "changed": true
+    },
+    {
+     "name": "city-1020500",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "f6a3a20505df5634",
+     "changed": true
+    },
+    {
+     "name": "city-1030300",
+     "status": 200,
+     "bytes": 1151,
+     "sha256_prefix": "994766a57cde9f64",
+     "changed": true
+    },
+    {
+     "name": "city-1030800",
+     "status": 200,
+     "bytes": 1149,
+     "sha256_prefix": "7271ba871ef41e6a",
+     "changed": true
+    },
+    {
+     "name": "city-1040200",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "5ff459cc79c117c2",
+     "changed": true
+    },
+    {
+     "name": "city-1050200",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "5c546375ca0244d2",
+     "changed": true
+    },
+    {
+     "name": "city-1060300",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "38a9e42bc2010737",
+     "changed": true
+    },
+    {
+     "name": "city-1070500",
+     "status": 200,
+     "bytes": 1105,
+     "sha256_prefix": "60c1ba8ea8a7c6f4",
+     "changed": true
+    },
+    {
+     "name": "city-1080500",
+     "status": 200,
+     "bytes": 1109,
+     "sha256_prefix": "f7d69fa6e88d4ec9",
+     "changed": true
+    },
+    {
+     "name": "city-1081505",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "5059e3e2b0fae1f0",
+     "changed": true
+    },
+    {
+     "name": "city-1081100",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "8b70be07f9a6589a",
+     "changed": true
+    },
+    {
+     "name": "city-1080800",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "033297e21069b0b6",
+     "changed": true
+    },
+    {
+     "name": "city-1090700",
+     "status": 200,
+     "bytes": 1124,
+     "sha256_prefix": "230df7cb7184fbe2",
+     "changed": true
+    },
+    {
+     "name": "city-1090821",
+     "status": 200,
+     "bytes": 1146,
+     "sha256_prefix": "3a289e2643ff0417",
+     "changed": true
+    },
+    {
+     "name": "city-1100900",
+     "status": 200,
+     "bytes": 1130,
+     "sha256_prefix": "cc19b4de9ab405b1",
+     "changed": true
+    },
+    {
+     "name": "city-1110600",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "ccd0991128864817",
+     "changed": true
+    },
+    {
+     "name": "city-1121400",
+     "status": 200,
+     "bytes": 1127,
+     "sha256_prefix": "ba33d9e82035cb1e",
+     "changed": true
+    },
+    {
+     "name": "city-1131200",
+     "status": 200,
+     "bytes": 1149,
+     "sha256_prefix": "b9370158c4bab04d",
+     "changed": true
+    },
+    {
+     "name": "city-1141600",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "e1a92b803bfebd3b",
+     "changed": true
+    },
+    {
+     "name": "city-1151200",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "d1ded8a7ca41c9a5",
+     "changed": true
+    },
+    {
+     "name": "city-1151300",
+     "status": 200,
+     "bytes": 1110,
+     "sha256_prefix": "557c6cb3796c5e5e",
+     "changed": true
+    },
+    {
+     "name": "city-1160900",
+     "status": 200,
+     "bytes": 1152,
+     "sha256_prefix": "f08f707b76ce6f49",
+     "changed": true
+    },
+    {
+     "name": "city-1171400",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "248020224286f17f",
+     "changed": true
+    },
+    {
+     "name": "city-1182300",
+     "status": 200,
+     "bytes": 1148,
+     "sha256_prefix": "0fcb50b18750a86a",
+     "changed": true
+    },
+    {
+     "name": "city-2310300",
+     "status": 200,
+     "bytes": 1155,
+     "sha256_prefix": "82ceaf72bc251e36",
+     "changed": true
+    },
+    {
+     "name": "city-2320100",
+     "status": 200,
+     "bytes": 1115,
+     "sha256_prefix": "a6ec3da520dce8ed",
+     "changed": true
+    },
+    {
+     "name": "city-3410100",
+     "status": 200,
+     "bytes": 1138,
+     "sha256_prefix": "be364a917eed4fb9",
+     "changed": true
+    },
+    {
+     "name": "city-3420300",
+     "status": 200,
+     "bytes": 1177,
+     "sha256_prefix": "9748f6579f925542",
+     "changed": true
+    },
+    {
+     "name": "city-3430100",
+     "status": 200,
+     "bytes": 1180,
+     "sha256_prefix": "3958afd17cb90fcb",
+     "changed": true
+    },
+    {
+     "name": "city-3440100",
+     "status": 200,
+     "bytes": 1159,
+     "sha256_prefix": "0486aad59848212f",
+     "changed": true
+    },
+    {
+     "name": "city-3450200",
+     "status": 200,
+     "bytes": 1179,
+     "sha256_prefix": "d000696259a1b575",
+     "changed": true
+    },
+    {
+     "name": "city-3460200",
+     "status": 200,
+     "bytes": 1180,
+     "sha256_prefix": "53f736bf3b3a958a",
+     "changed": true
+    },
+    {
+     "name": "city-3470100",
+     "status": 200,
+     "bytes": 1159,
+     "sha256_prefix": "9057d9da5e2ae0b3",
+     "changed": true
+    },
+    {
+     "name": "city-3480200",
+     "status": 200,
+     "bytes": 1140,
+     "sha256_prefix": "67c61e389114c9f1",
+     "changed": true
+    },
+    {
+     "name": "city-3490100",
+     "status": 200,
+     "bytes": 1140,
+     "sha256_prefix": "049f0f6b25d152f3",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "48b39e4",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/48b39e465b9430649d5f464bda4decabd928642f",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/4a4d130...48b39e4"
+  },
+  {
+   "at": "2026-11-19T13:06:40Z",
+   "ok": 36,
+   "failed": 0,
+   "requests": 36,
+   "changed_requests": [
+    "city-1010500",
+    "city-1020500",
+    "city-1030300",
+    "city-1030800",
+    "city-1040200",
+    "city-1050200",
+    "city-1060300",
+    "city-1070500",
+    "city-1080500",
+    "city-1081505",
+    "city-1081100",
+    "city-1080800",
+    "city-1090700",
+    "city-1090821",
+    "city-1100900",
+    "city-1110600",
+    "city-1121400",
+    "city-1131200",
+    "city-1141600",
+    "city-1151200",
+    "city-1151300",
+    "city-1160900",
+    "city-1171400",
+    "city-1182300",
+    "city-2310300",
+    "city-2320100",
+    "city-3410100",
+    "city-3420300",
+    "city-3430100",
+    "city-3440100",
+    "city-3450200",
+    "city-3460200",
+    "city-3470100",
+    "city-3480200",
+    "city-3490100"
+   ],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "city-1010500",
+     "status": 200,
+     "bytes": 1152,
+     "sha256_prefix": "34dc99b339fd58b2",
+     "changed": true
+    },
+    {
+     "name": "city-1020500",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "d09fedcff12158eb",
+     "changed": true
+    },
+    {
+     "name": "city-1030300",
+     "status": 200,
+     "bytes": 1151,
+     "sha256_prefix": "221dd2c20ef2ad35",
+     "changed": true
+    },
+    {
+     "name": "city-1030800",
+     "status": 200,
+     "bytes": 1149,
+     "sha256_prefix": "818ae5a2695884ee",
+     "changed": true
+    },
+    {
+     "name": "city-1040200",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "4352912a6a4e2c60",
+     "changed": true
+    },
+    {
+     "name": "city-1050200",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "da991d02ef7f19b5",
+     "changed": true
+    },
+    {
+     "name": "city-1060300",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "0ab16998e9f56d13",
+     "changed": true
+    },
+    {
+     "name": "city-1070500",
+     "status": 200,
+     "bytes": 1105,
+     "sha256_prefix": "363aaec52ed7b8e0",
+     "changed": true
+    },
+    {
+     "name": "city-1080500",
+     "status": 200,
+     "bytes": 1109,
+     "sha256_prefix": "30d408d70f2b29dc",
+     "changed": true
+    },
+    {
+     "name": "city-1081505",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "5bddb79b7342426b",
+     "changed": true
+    },
+    {
+     "name": "city-1081100",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "44623934190d069f",
+     "changed": true
+    },
+    {
+     "name": "city-1080800",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "29de718fb1d789d5",
+     "changed": true
+    },
+    {
+     "name": "city-1090700",
+     "status": 200,
+     "bytes": 1124,
+     "sha256_prefix": "98e58592c911275a",
+     "changed": true
+    },
+    {
+     "name": "city-1090821",
+     "status": 200,
+     "bytes": 1146,
+     "sha256_prefix": "2439ef13960e8adc",
+     "changed": true
+    },
+    {
+     "name": "city-1100900",
+     "status": 200,
+     "bytes": 1130,
+     "sha256_prefix": "bcf4b5e1703a531e",
+     "changed": true
+    },
+    {
+     "name": "city-1110600",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "b58f967f37fddb29",
+     "changed": true
+    },
+    {
+     "name": "city-1121400",
+     "status": 200,
+     "bytes": 1127,
+     "sha256_prefix": "41689a4c9fdc6ef3",
+     "changed": true
+    },
+    {
+     "name": "city-1131200",
+     "status": 200,
+     "bytes": 1149,
+     "sha256_prefix": "32271de1f7db52f4",
+     "changed": true
+    },
+    {
+     "name": "city-1141600",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "4cbebe52372d94e2",
+     "changed": true
+    },
+    {
+     "name": "city-1151200",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "f8a3ca069cef2373",
+     "changed": true
+    },
+    {
+     "name": "city-1151300",
+     "status": 200,
+     "bytes": 1110,
+     "sha256_prefix": "ae68690d70a10d57",
+     "changed": true
+    },
+    {
+     "name": "city-1160900",
+     "status": 200,
+     "bytes": 1152,
+     "sha256_prefix": "44a540b12be93a8f",
+     "changed": true
+    },
+    {
+     "name": "city-1171400",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "7a794285d099c36b",
+     "changed": true
+    },
+    {
+     "name": "city-1182300",
+     "status": 200,
+     "bytes": 1148,
+     "sha256_prefix": "1ff2ecbf52a613aa",
+     "changed": true
+    },
+    {
+     "name": "city-2310300",
+     "status": 200,
+     "bytes": 1155,
+     "sha256_prefix": "2f2a5ade31f40b67",
+     "changed": true
+    },
+    {
+     "name": "city-2320100",
+     "status": 200,
+     "bytes": 1115,
+     "sha256_prefix": "4829d78ec4dbfe91",
+     "changed": true
+    },
+    {
+     "name": "city-3410100",
+     "status": 200,
+     "bytes": 1138,
+     "sha256_prefix": "0dae30ad9cc87006",
+     "changed": true
+    },
+    {
+     "name": "city-3420300",
+     "status": 200,
+     "bytes": 1177,
+     "sha256_prefix": "89f5f39046ed4f26",
+     "changed": true
+    },
+    {
+     "name": "city-3430100",
+     "status": 200,
+     "bytes": 1180,
+     "sha256_prefix": "8267fde9778b61e7",
+     "changed": true
+    },
+    {
+     "name": "city-3440100",
+     "status": 200,
+     "bytes": 1159,
+     "sha256_prefix": "a58a95eac2ad0acd",
+     "changed": true
+    },
+    {
+     "name": "city-3450200",
+     "status": 200,
+     "bytes": 1179,
+     "sha256_prefix": "26607abd424da781",
+     "changed": true
+    },
+    {
+     "name": "city-3460200",
+     "status": 200,
+     "bytes": 1180,
+     "sha256_prefix": "1ad2e5137a2cc239",
+     "changed": true
+    },
+    {
+     "name": "city-3470100",
+     "status": 200,
+     "bytes": 1159,
+     "sha256_prefix": "e681c6482bed7ca0",
+     "changed": true
+    },
+    {
+     "name": "city-3480200",
+     "status": 200,
+     "bytes": 1140,
+     "sha256_prefix": "3c782face80df258",
+     "changed": true
+    },
+    {
+     "name": "city-3490100",
+     "status": 200,
+     "bytes": 1140,
+     "sha256_prefix": "6ac668ba05c046bd",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "4a4d130",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/4a4d13005725f1c24d6cd12ebee2d66ee2f2df91",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/379aae6...4a4d130"
+  },
+  {
+   "at": "2026-11-19T12:13:48Z",
+   "ok": 36,
+   "failed": 0,
+   "requests": 36,
+   "changed_requests": [
+    "city-1010500",
+    "city-1020500",
+    "city-1030300",
+    "city-1030800",
+    "city-1040200",
+    "city-1050200",
+    "city-1060300",
+    "city-1070500",
+    "city-1080500",
+    "city-1081505",
+    "city-1081100",
+    "city-1080800",
+    "city-1090700",
+    "city-1090821",
+    "city-1100900",
+    "city-1110600",
+    "city-1121400",
+    "city-1131200",
+    "city-1141600",
+    "city-1151200",
+    "city-1151300",
+    "city-1160900",
+    "city-1171400",
+    "city-1182300",
+    "city-2310300",
+    "city-2320100",
+    "city-3410100",
+    "city-3420300",
+    "city-3430100",
+    "city-3440100",
+    "city-3450200",
+    "city-3460200",
+    "city-3470100",
+    "city-3480200",
+    "city-3490100"
+   ],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "city-1010500",
+     "status": 200,
+     "bytes": 1152,
+     "sha256_prefix": "ea051d45dde9a61d",
+     "changed": true
+    },
+    {
+     "name": "city-1020500",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "a0709b6ff0c7220b",
+     "changed": true
+    },
+    {
+     "name": "city-1030300",
+     "status": 200,
+     "bytes": 1151,
+     "sha256_prefix": "115ca8785fe35cac",
+     "changed": true
+    },
+    {
+     "name": "city-1030800",
+     "status": 200,
+     "bytes": 1149,
+     "sha256_prefix": "d79c5623d0fc9c7a",
+     "changed": true
+    },
+    {
+     "name": "city-1040200",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "07ffc1082c9c430d",
+     "changed": true
+    },
+    {
+     "name": "city-1050200",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "8ef369099da7dde6",
+     "changed": true
+    },
+    {
+     "name": "city-1060300",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "68caba5dc14907aa",
+     "changed": true
+    },
+    {
+     "name": "city-1070500",
+     "status": 200,
+     "bytes": 1105,
+     "sha256_prefix": "95d49a90c777fd17",
+     "changed": true
+    },
+    {
+     "name": "city-1080500",
+     "status": 200,
+     "bytes": 1109,
+     "sha256_prefix": "7acee20c54581d87",
+     "changed": true
+    },
+    {
+     "name": "city-1081505",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "bb0c02601b22b147",
+     "changed": true
+    },
+    {
+     "name": "city-1081100",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "567aa31dfb2ce5f3",
+     "changed": true
+    },
+    {
+     "name": "city-1080800",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "57e3b5f3bdc96e47",
+     "changed": true
+    },
+    {
+     "name": "city-1090700",
+     "status": 200,
+     "bytes": 1124,
+     "sha256_prefix": "9f3d70b3e81dc7ab",
+     "changed": true
+    },
+    {
+     "name": "city-1090821",
+     "status": 200,
+     "bytes": 1146,
+     "sha256_prefix": "a533dc5d849bfd40",
+     "changed": true
+    },
+    {
+     "name": "city-1100900",
+     "status": 200,
+     "bytes": 1130,
+     "sha256_prefix": "fd9e40cbe758e252",
+     "changed": true
+    },
+    {
+     "name": "city-1110600",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "5a3cd8ec10fb52a7",
+     "changed": true
+    },
+    {
+     "name": "city-1121400",
+     "status": 200,
+     "bytes": 1127,
+     "sha256_prefix": "d78e3dab5d352600",
+     "changed": true
+    },
+    {
+     "name": "city-1131200",
+     "status": 200,
+     "bytes": 1149,
+     "sha256_prefix": "2b611f516c87a939",
+     "changed": true
+    },
+    {
+     "name": "city-1141600",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "3248471d19ecd5fa",
+     "changed": true
+    },
+    {
+     "name": "city-1151200",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "2fa3f504b1b65d6e",
+     "changed": true
+    },
+    {
+     "name": "city-1151300",
+     "status": 200,
+     "bytes": 1110,
+     "sha256_prefix": "8026b89e72cddbdd",
+     "changed": true
+    },
+    {
+     "name": "city-1160900",
+     "status": 200,
+     "bytes": 1152,
+     "sha256_prefix": "a98ae97322175664",
+     "changed": true
+    },
+    {
+     "name": "city-1171400",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "6b9858d5b90c67be",
+     "changed": true
+    },
+    {
+     "name": "city-1182300",
+     "status": 200,
+     "bytes": 1148,
+     "sha256_prefix": "b87d0df1668eb846",
+     "changed": true
+    },
+    {
+     "name": "city-2310300",
+     "status": 200,
+     "bytes": 1155,
+     "sha256_prefix": "cae6d4921d1c38bc",
+     "changed": true
+    },
+    {
+     "name": "city-2320100",
+     "status": 200,
+     "bytes": 1115,
+     "sha256_prefix": "d131e19d90db797c",
+     "changed": true
+    },
+    {
+     "name": "city-3410100",
+     "status": 200,
+     "bytes": 1138,
+     "sha256_prefix": "500eb7430027ae1e",
+     "changed": true
+    },
+    {
+     "name": "city-3420300",
+     "status": 200,
+     "bytes": 1177,
+     "sha256_prefix": "8672869ef2fac8aa",
+     "changed": true
+    },
+    {
+     "name": "city-3430100",
+     "status": 200,
+     "bytes": 1180,
+     "sha256_prefix": "c3d1e73413f132ff",
+     "changed": true
+    },
+    {
+     "name": "city-3440100",
+     "status": 200,
+     "bytes": 1159,
+     "sha256_prefix": "a9b996456daaebe0",
+     "changed": true
+    },
+    {
+     "name": "city-3450200",
+     "status": 200,
+     "bytes": 1179,
+     "sha256_prefix": "f9cdb598fb44f997",
+     "changed": true
+    },
+    {
+     "name": "city-3460200",
+     "status": 200,
+     "bytes": 1180,
+     "sha256_prefix": "c084844df7687d6d",
+     "changed": true
+    },
+    {
+     "name": "city-3470100",
+     "status": 200,
+     "bytes": 1159,
+     "sha256_prefix": "e681ba748bde6e16",
+     "changed": true
+    },
+    {
+     "name": "city-3480200",
+     "status": 200,
+     "bytes": 1140,
+     "sha256_prefix": "c69d33b6da7ad65c",
+     "changed": true
+    },
+    {
+     "name": "city-3490100",
+     "status": 200,
+     "bytes": 1140,
+     "sha256_prefix": "732fd8053adc63b9",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "379aae6",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/379aae67e159f2afe46678e771171e631f923e70",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/6179c7e...379aae6"
+  },
+  {
+   "at": "2026-11-19T11:08:43Z",
+   "ok": 36,
+   "failed": 0,
+   "requests": 36,
+   "changed_requests": [
+    "city-1010500",
+    "city-1020500",
+    "city-1030300",
+    "city-1030800",
+    "city-1040200",
+    "city-1050200",
+    "city-1060300",
+    "city-1070500",
+    "city-1080500",
+    "city-1081505",
+    "city-1081100",
+    "city-1080800",
+    "city-1090700",
+    "city-1090821",
+    "city-1100900",
+    "city-1110600",
+    "city-1121400",
+    "city-1131200",
+    "city-1141600",
+    "city-1151200",
+    "city-1151300",
+    "city-1160900",
+    "city-1171400",
+    "city-1182300",
+    "city-2310300",
+    "city-2320100",
+    "city-3410100",
+    "city-3420300",
+    "city-3430100",
+    "city-3440100",
+    "city-3450200",
+    "city-3460200",
+    "city-3470100",
+    "city-3480200",
+    "city-3490100"
+   ],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "city-1010500",
+     "status": 200,
+     "bytes": 1152,
+     "sha256_prefix": "c0907fbc8d26cb6d",
+     "changed": true
+    },
+    {
+     "name": "city-1020500",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "7ad2fe94a1cd54fe",
+     "changed": true
+    },
+    {
+     "name": "city-1030300",
+     "status": 200,
+     "bytes": 1151,
+     "sha256_prefix": "d1d32706aa0da533",
+     "changed": true
+    },
+    {
+     "name": "city-1030800",
+     "status": 200,
+     "bytes": 1149,
+     "sha256_prefix": "602378dece590989",
+     "changed": true
+    },
+    {
+     "name": "city-1040200",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "fd0bdcf1caeb00a4",
+     "changed": true
+    },
+    {
+     "name": "city-1050200",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "a93ebdc18a9e75c7",
+     "changed": true
+    },
+    {
+     "name": "city-1060300",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "864471f7af010307",
+     "changed": true
+    },
+    {
+     "name": "city-1070500",
+     "status": 200,
+     "bytes": 1105,
+     "sha256_prefix": "2c784afaa52c8253",
+     "changed": true
+    },
+    {
+     "name": "city-1080500",
+     "status": 200,
+     "bytes": 1109,
+     "sha256_prefix": "4f65b5e86da692f3",
+     "changed": true
+    },
+    {
+     "name": "city-1081505",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "33ddbed6e6741ed3",
+     "changed": true
+    },
+    {
+     "name": "city-1081100",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "f6becb7897fd6189",
+     "changed": true
+    },
+    {
+     "name": "city-1080800",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "ce354d455e52af7d",
+     "changed": true
+    },
+    {
+     "name": "city-1090700",
+     "status": 200,
+     "bytes": 1124,
+     "sha256_prefix": "afcb83948b31051c",
+     "changed": true
+    },
+    {
+     "name": "city-1090821",
+     "status": 200,
+     "bytes": 1146,
+     "sha256_prefix": "e42070a4be7043ed",
+     "changed": true
+    },
+    {
+     "name": "city-1100900",
+     "status": 200,
+     "bytes": 1130,
+     "sha256_prefix": "210a6553f29c7410",
+     "changed": true
+    },
+    {
+     "name": "city-1110600",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "2c5b29bf7edf5ece",
+     "changed": true
+    },
+    {
+     "name": "city-1121400",
+     "status": 200,
+     "bytes": 1127,
+     "sha256_prefix": "e4f94b88e6d80c3b",
+     "changed": true
+    },
+    {
+     "name": "city-1131200",
+     "status": 200,
+     "bytes": 1149,
+     "sha256_prefix": "bd4a5292ded483bf",
+     "changed": true
+    },
+    {
+     "name": "city-1141600",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "f1971c2c4ef3e787",
+     "changed": true
+    },
+    {
+     "name": "city-1151200",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "6ddbefcee1d2786b",
+     "changed": true
+    },
+    {
+     "name": "city-1151300",
+     "status": 200,
+     "bytes": 1110,
+     "sha256_prefix": "702f31026173bd4b",
+     "changed": true
+    },
+    {
+     "name": "city-1160900",
+     "status": 200,
+     "bytes": 1152,
+     "sha256_prefix": "1dd6d66231a6bca3",
+     "changed": true
+    },
+    {
+     "name": "city-1171400",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "20e13c1452bc51bc",
+     "changed": true
+    },
+    {
+     "name": "city-1182300",
+     "status": 200,
+     "bytes": 1148,
+     "sha256_prefix": "18d62fee3a789f8d",
+     "changed": true
+    },
+    {
+     "name": "city-2310300",
+     "status": 200,
+     "bytes": 1155,
+     "sha256_prefix": "e1bd37f4ffb2aea5",
+     "changed": true
+    },
+    {
+     "name": "city-2320100",
+     "status": 200,
+     "bytes": 1115,
+     "sha256_prefix": "fb03308aca1509dd",
+     "changed": true
+    },
+    {
+     "name": "city-3410100",
+     "status": 200,
+     "bytes": 1138,
+     "sha256_prefix": "eb4426e52af6cced",
+     "changed": true
+    },
+    {
+     "name": "city-3420300",
+     "status": 200,
+     "bytes": 1177,
+     "sha256_prefix": "20a57c29fc8e0432",
+     "changed": true
+    },
+    {
+     "name": "city-3430100",
+     "status": 200,
+     "bytes": 1180,
+     "sha256_prefix": "412e8c19d94eb070",
+     "changed": true
+    },
+    {
+     "name": "city-3440100",
+     "status": 200,
+     "bytes": 1159,
+     "sha256_prefix": "ae275e7f62734567",
+     "changed": true
+    },
+    {
+     "name": "city-3450200",
+     "status": 200,
+     "bytes": 1179,
+     "sha256_prefix": "9b3db79fec334548",
+     "changed": true
+    },
+    {
+     "name": "city-3460200",
+     "status": 200,
+     "bytes": 1180,
+     "sha256_prefix": "6580875d7ff78d67",
+     "changed": true
+    },
+    {
+     "name": "city-3470100",
+     "status": 200,
+     "bytes": 1159,
+     "sha256_prefix": "f24d74e5056f0ed0",
+     "changed": true
+    },
+    {
+     "name": "city-3480200",
+     "status": 200,
+     "bytes": 1140,
+     "sha256_prefix": "063c8ec953c26a39",
+     "changed": true
+    },
+    {
+     "name": "city-3490100",
+     "status": 200,
+     "bytes": 1140,
+     "sha256_prefix": "14c6bf22da709d53",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "6179c7e",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/6179c7e3c43fc3591e1601011d223221e5597d92",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/1460f87...6179c7e"
+  },
+  {
+   "at": "2026-11-19T10:07:33Z",
+   "ok": 36,
+   "failed": 0,
+   "requests": 36,
+   "changed_requests": [
+    "city-1010500",
+    "city-1020500",
+    "city-1030300",
+    "city-1030800",
+    "city-1040200",
+    "city-1050200",
+    "city-1060300",
+    "city-1070500",
+    "city-1080500",
+    "city-1081505",
+    "city-1081100",
+    "city-1080800",
+    "city-1090700",
+    "city-1090821",
+    "city-1100900",
+    "city-1110600",
+    "city-1121400",
+    "city-1131200",
+    "city-1141600",
+    "city-1151200",
+    "city-1151300",
+    "city-1160900",
+    "city-1171400",
+    "city-1182300",
+    "city-2310300",
+    "city-2320100",
+    "city-3410100",
+    "city-3420300",
+    "city-3430100",
+    "city-3440100",
+    "city-3450200",
+    "city-3460200",
+    "city-3470100",
+    "city-3480200",
+    "city-3490100"
+   ],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "city-1010500",
+     "status": 200,
+     "bytes": 1152,
+     "sha256_prefix": "46cc3e691128e439",
+     "changed": true
+    },
+    {
+     "name": "city-1020500",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "0f0ab97e885d391d",
+     "changed": true
+    },
+    {
+     "name": "city-1030300",
+     "status": 200,
+     "bytes": 1151,
+     "sha256_prefix": "a8b92d0c367885a9",
+     "changed": true
+    },
+    {
+     "name": "city-1030800",
+     "status": 200,
+     "bytes": 1149,
+     "sha256_prefix": "63c773305f234ba6",
+     "changed": true
+    },
+    {
+     "name": "city-1040200",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "b960faf682793515",
+     "changed": true
+    },
+    {
+     "name": "city-1050200",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "31dbfafd85822d33",
+     "changed": true
+    },
+    {
+     "name": "city-1060300",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "c04b07ff704cf642",
+     "changed": true
+    },
+    {
+     "name": "city-1070500",
+     "status": 200,
+     "bytes": 1105,
+     "sha256_prefix": "e30c94810795e3e6",
+     "changed": true
+    },
+    {
+     "name": "city-1080500",
+     "status": 200,
+     "bytes": 1109,
+     "sha256_prefix": "93bd3fa667e84621",
+     "changed": true
+    },
+    {
+     "name": "city-1081505",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "ed7904bf8406fef6",
+     "changed": true
+    },
+    {
+     "name": "city-1081100",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "21ccc816ccd8de1c",
+     "changed": true
+    },
+    {
+     "name": "city-1080800",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "d2841f735a33f2b8",
+     "changed": true
+    },
+    {
+     "name": "city-1090700",
+     "status": 200,
+     "bytes": 1124,
+     "sha256_prefix": "4894eb941a58abe2",
+     "changed": true
+    },
+    {
+     "name": "city-1090821",
+     "status": 200,
+     "bytes": 1146,
+     "sha256_prefix": "b76e1860959c6045",
+     "changed": true
+    },
+    {
+     "name": "city-1100900",
+     "status": 200,
+     "bytes": 1130,
+     "sha256_prefix": "1047c995b46eb823",
+     "changed": true
+    },
+    {
+     "name": "city-1110600",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "1c1c9d1e4c9016b0",
+     "changed": true
+    },
+    {
+     "name": "city-1121400",
+     "status": 200,
+     "bytes": 1127,
+     "sha256_prefix": "b641fdf1de333cd7",
+     "changed": true
+    },
+    {
+     "name": "city-1131200",
+     "status": 200,
+     "bytes": 1149,
+     "sha256_prefix": "ad1124d16fd3c468",
+     "changed": true
+    },
+    {
+     "name": "city-1141600",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "f0ff3ef81655faa6",
+     "changed": true
+    },
+    {
+     "name": "city-1151200",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "75132a33e99cef2b",
+     "changed": true
+    },
+    {
+     "name": "city-1151300",
+     "status": 200,
+     "bytes": 1110,
+     "sha256_prefix": "f0081b33684e694c",
+     "changed": true
+    },
+    {
+     "name": "city-1160900",
+     "status": 200,
+     "bytes": 1152,
+     "sha256_prefix": "39173dde33fefa24",
+     "changed": true
+    },
+    {
+     "name": "city-1171400",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "16ab85512c34984c",
+     "changed": true
+    },
+    {
+     "name": "city-1182300",
+     "status": 200,
+     "bytes": 1148,
+     "sha256_prefix": "de09c73b4f9f1915",
+     "changed": true
+    },
+    {
+     "name": "city-2310300",
+     "status": 200,
+     "bytes": 1155,
+     "sha256_prefix": "9baecc04009ce569",
+     "changed": true
+    },
+    {
+     "name": "city-2320100",
+     "status": 200,
+     "bytes": 1115,
+     "sha256_prefix": "3413188df1f90615",
+     "changed": true
+    },
+    {
+     "name": "city-3410100",
+     "status": 200,
+     "bytes": 1138,
+     "sha256_prefix": "bf7f436d551ffe41",
+     "changed": true
+    },
+    {
+     "name": "city-3420300",
+     "status": 200,
+     "bytes": 1177,
+     "sha256_prefix": "db4e50db2e8dac26",
+     "changed": true
+    },
+    {
+     "name": "city-3430100",
+     "status": 200,
+     "bytes": 1180,
+     "sha256_prefix": "7f499072b4057367",
+     "changed": true
+    },
+    {
+     "name": "city-3440100",
+     "status": 200,
+     "bytes": 1159,
+     "sha256_prefix": "7c58916c1ef40bd9",
+     "changed": true
+    },
+    {
+     "name": "city-3450200",
+     "status": 200,
+     "bytes": 1179,
+     "sha256_prefix": "53708106e59d33f4",
+     "changed": true
+    },
+    {
+     "name": "city-3460200",
+     "status": 200,
+     "bytes": 1180,
+     "sha256_prefix": "dde22a435166a7f1",
+     "changed": true
+    },
+    {
+     "name": "city-3470100",
+     "status": 200,
+     "bytes": 1159,
+     "sha256_prefix": "fb8ffcf99fa534e7",
+     "changed": true
+    },
+    {
+     "name": "city-3480200",
+     "status": 200,
+     "bytes": 1140,
+     "sha256_prefix": "c527b03c852c20b3",
+     "changed": true
+    },
+    {
+     "name": "city-3490100",
+     "status": 200,
+     "bytes": 1140,
+     "sha256_prefix": "fc3c91b00eb127d7",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "1460f87",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/1460f87e59532acd781b90ca10f34d7f5f1f6e79",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/2f43933...1460f87"
+  },
+  {
+   "at": "2026-11-19T09:09:35Z",
+   "ok": 36,
+   "failed": 0,
+   "requests": 36,
+   "changed_requests": [
+    "city-1010500",
+    "city-1020500",
+    "city-1030300",
+    "city-1030800",
+    "city-1040200",
+    "city-1050200",
+    "city-1060300",
+    "city-1070500",
+    "city-1080500",
+    "city-1081505",
+    "city-1081100",
+    "city-1080800",
+    "city-1090700",
+    "city-1090821",
+    "city-1100900",
+    "city-1110600",
+    "city-1121400",
+    "city-1131200",
+    "city-1141600",
+    "city-1151200",
+    "city-1151300",
+    "city-1160900",
+    "city-1171400",
+    "city-1182300",
+    "city-2310300",
+    "city-2320100",
+    "city-3410100",
+    "city-3420300",
+    "city-3430100",
+    "city-3440100",
+    "city-3450200",
+    "city-3460200",
+    "city-3470100",
+    "city-3480200",
+    "city-3490100"
+   ],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "city-1010500",
+     "status": 200,
+     "bytes": 1153,
+     "sha256_prefix": "e27e5829aa7466cb",
+     "changed": true
+    },
+    {
+     "name": "city-1020500",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "5babdcf573ea0ae9",
+     "changed": true
+    },
+    {
+     "name": "city-1030300",
+     "status": 200,
+     "bytes": 1153,
+     "sha256_prefix": "464b67b26287059a",
+     "changed": true
+    },
+    {
+     "name": "city-1030800",
+     "status": 200,
+     "bytes": 1151,
+     "sha256_prefix": "d8d746102ceb315a",
+     "changed": true
+    },
+    {
+     "name": "city-1040200",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "f395c7ad4380fc92",
+     "changed": true
+    },
+    {
+     "name": "city-1050200",
+     "status": 200,
+     "bytes": 1128,
+     "sha256_prefix": "444c07e551d86ead",
+     "changed": true
+    },
+    {
+     "name": "city-1060300",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "c1169ca73dc80df3",
+     "changed": true
+    },
+    {
+     "name": "city-1070500",
+     "status": 200,
+     "bytes": 1105,
+     "sha256_prefix": "935b4725a7992374",
+     "changed": true
+    },
+    {
+     "name": "city-1080500",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "10b2188d09d67b7b",
+     "changed": true
+    },
+    {
+     "name": "city-1081505",
+     "status": 200,
+     "bytes": 1109,
+     "sha256_prefix": "38a29a60a260b962",
+     "changed": true
+    },
+    {
+     "name": "city-1081100",
+     "status": 200,
+     "bytes": 1109,
+     "sha256_prefix": "75983acee2fc7714",
+     "changed": true
+    },
+    {
+     "name": "city-1080800",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "298d4c1d6ff02374",
+     "changed": true
+    },
+    {
+     "name": "city-1090700",
+     "status": 200,
+     "bytes": 1141,
+     "sha256_prefix": "817d4353b74bb38d",
+     "changed": true
+    },
+    {
+     "name": "city-1090821",
+     "status": 200,
+     "bytes": 1145,
+     "sha256_prefix": "93ad1f461bba54f8",
+     "changed": true
+    },
+    {
+     "name": "city-1100900",
+     "status": 200,
+     "bytes": 1148,
+     "sha256_prefix": "6f566a8b9837d20d",
+     "changed": true
+    },
+    {
+     "name": "city-1110600",
+     "status": 200,
+     "bytes": 1109,
+     "sha256_prefix": "1b33569496506b52",
+     "changed": true
+    },
+    {
+     "name": "city-1121400",
+     "status": 200,
+     "bytes": 1128,
+     "sha256_prefix": "70a4770b4b3939a0",
+     "changed": true
+    },
+    {
+     "name": "city-1131200",
+     "status": 200,
+     "bytes": 1152,
+     "sha256_prefix": "3c7fe5b6c37a4fee",
+     "changed": true
+    },
+    {
+     "name": "city-1141600",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "ebd57a90afa87374",
+     "changed": true
+    },
+    {
+     "name": "city-1151200",
+     "status": 200,
+     "bytes": 1106,
+     "sha256_prefix": "b12043732072decb",
+     "changed": true
+    },
+    {
+     "name": "city-1151300",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "29a2befddd72f070",
+     "changed": true
+    },
+    {
+     "name": "city-1160900",
+     "status": 200,
+     "bytes": 1152,
+     "sha256_prefix": "7e2ff3645c3d875d",
+     "changed": true
+    },
+    {
+     "name": "city-1171400",
+     "status": 200,
+     "bytes": 1152,
+     "sha256_prefix": "a30399bc50cc18ef",
+     "changed": true
+    },
+    {
+     "name": "city-1182300",
+     "status": 200,
+     "bytes": 1151,
+     "sha256_prefix": "4504bee2371ebfab",
+     "changed": true
+    },
+    {
+     "name": "city-2310300",
+     "status": 200,
+     "bytes": 1155,
+     "sha256_prefix": "e40aef2650568a50",
+     "changed": true
+    },
+    {
+     "name": "city-2320100",
+     "status": 200,
+     "bytes": 1115,
+     "sha256_prefix": "5a0dd4ab7adcfa8b",
+     "changed": true
+    },
+    {
+     "name": "city-3410100",
+     "status": 200,
+     "bytes": 1138,
+     "sha256_prefix": "d8fb79214d159907",
+     "changed": true
+    },
+    {
+     "name": "city-3420300",
+     "status": 200,
+     "bytes": 1177,
+     "sha256_prefix": "c63ccf26695fc8dc",
+     "changed": true
+    },
+    {
+     "name": "city-3430100",
+     "status": 200,
+     "bytes": 1180,
+     "sha256_prefix": "b9896fc0de0b9e0c",
+     "changed": true
+    },
+    {
+     "name": "city-3440100",
+     "status": 200,
+     "bytes": 1159,
+     "sha256_prefix": "aac4787ac19bd882",
+     "changed": true
+    },
+    {
+     "name": "city-3450200",
+     "status": 200,
+     "bytes": 1179,
+     "sha256_prefix": "2cc56ed701057879",
+     "changed": true
+    },
+    {
+     "name": "city-3460200",
+     "status": 200,
+     "bytes": 1180,
+     "sha256_prefix": "cd6e3e5be53531b8",
+     "changed": true
+    },
+    {
+     "name": "city-3470100",
+     "status": 200,
+     "bytes": 1159,
+     "sha256_prefix": "0946a3fc3a9409e8",
+     "changed": true
+    },
+    {
+     "name": "city-3480200",
+     "status": 200,
+     "bytes": 1140,
+     "sha256_prefix": "bf84b647f179679e",
+     "changed": true
+    },
+    {
+     "name": "city-3490100",
+     "status": 200,
+     "bytes": 1140,
+     "sha256_prefix": "2095808da0cfc23e",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "2f43933",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/2f43933ff73bbd1a4c67e0c938172e9914634f41",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/d3644c1...2f43933"
+  },
+  {
+   "at": "2026-11-19T08:06:00Z",
+   "ok": 36,
+   "failed": 0,
+   "requests": 36,
+   "changed_requests": [
+    "city-1010500",
+    "city-1020500",
+    "city-1030300",
+    "city-1030800",
+    "city-1040200",
+    "city-1050200",
+    "city-1060300",
+    "city-1070500",
+    "city-1080500",
+    "city-1081505",
+    "city-1081100",
+    "city-1080800",
+    "city-1090700",
+    "city-1090821",
+    "city-1100900",
+    "city-1110600",
+    "city-1121400",
+    "city-1131200",
+    "city-1141600",
+    "city-1151200",
+    "city-1151300",
+    "city-1160900",
+    "city-1171400",
+    "city-1182300",
+    "city-2310300",
+    "city-2320100",
+    "city-3410100",
+    "city-3420300",
+    "city-3430100",
+    "city-3440100",
+    "city-3450200",
+    "city-3460200",
+    "city-3470100",
+    "city-3480200",
+    "city-3490100"
+   ],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "city-1010500",
+     "status": 200,
+     "bytes": 1153,
+     "sha256_prefix": "1c84e3637336a46c",
+     "changed": true
+    },
+    {
+     "name": "city-1020500",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "c4207a087017fa57",
+     "changed": true
+    },
+    {
+     "name": "city-1030300",
+     "status": 200,
+     "bytes": 1153,
+     "sha256_prefix": "24740af3f822ce1b",
+     "changed": true
+    },
+    {
+     "name": "city-1030800",
+     "status": 200,
+     "bytes": 1151,
+     "sha256_prefix": "e27e59323657e455",
+     "changed": true
+    },
+    {
+     "name": "city-1040200",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "799f69f47b55c9ca",
+     "changed": true
+    },
+    {
+     "name": "city-1050200",
+     "status": 200,
+     "bytes": 1128,
+     "sha256_prefix": "bd0c61eb726c2783",
+     "changed": true
+    },
+    {
+     "name": "city-1060300",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "b6c6568eb26b3320",
+     "changed": true
+    },
+    {
+     "name": "city-1070500",
+     "status": 200,
+     "bytes": 1105,
+     "sha256_prefix": "e9b9415ba85c398c",
+     "changed": true
+    },
+    {
+     "name": "city-1080500",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "8e67fe4843fad20c",
+     "changed": true
+    },
+    {
+     "name": "city-1081505",
+     "status": 200,
+     "bytes": 1109,
+     "sha256_prefix": "f1eade2ffd849201",
+     "changed": true
+    },
+    {
+     "name": "city-1081100",
+     "status": 200,
+     "bytes": 1109,
+     "sha256_prefix": "83f8a8a3502493c5",
+     "changed": true
+    },
+    {
+     "name": "city-1080800",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "34a6f20bdc6cb3b5",
+     "changed": true
+    },
+    {
+     "name": "city-1090700",
+     "status": 200,
+     "bytes": 1141,
+     "sha256_prefix": "37d28ed9f254b5c9",
+     "changed": true
+    },
+    {
+     "name": "city-1090821",
+     "status": 200,
+     "bytes": 1145,
+     "sha256_prefix": "f130e5b426811f15",
+     "changed": true
+    },
+    {
+     "name": "city-1100900",
+     "status": 200,
+     "bytes": 1148,
+     "sha256_prefix": "fe44615f91b7e9cc",
+     "changed": true
+    },
+    {
+     "name": "city-1110600",
+     "status": 200,
+     "bytes": 1109,
+     "sha256_prefix": "655d3ac3db192da7",
+     "changed": true
+    },
+    {
+     "name": "city-1121400",
+     "status": 200,
+     "bytes": 1128,
+     "sha256_prefix": "92569c112d36afd9",
+     "changed": true
+    },
+    {
+     "name": "city-1131200",
+     "status": 200,
+     "bytes": 1152,
+     "sha256_prefix": "e4f6686586610374",
+     "changed": true
+    },
+    {
+     "name": "city-1141600",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "6090a5efc097c527",
+     "changed": true
+    },
+    {
+     "name": "city-1151200",
+     "status": 200,
+     "bytes": 1106,
+     "sha256_prefix": "71978034e586b6bd",
+     "changed": true
+    },
+    {
+     "name": "city-1151300",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "39f4d92d99a3fdf5",
+     "changed": true
+    },
+    {
+     "name": "city-1160900",
+     "status": 200,
+     "bytes": 1152,
+     "sha256_prefix": "f9470bd6b4e00b53",
+     "changed": true
+    },
+    {
+     "name": "city-1171400",
+     "status": 200,
+     "bytes": 1152,
+     "sha256_prefix": "b570f487deac6794",
+     "changed": true
+    },
+    {
+     "name": "city-1182300",
+     "status": 200,
+     "bytes": 1151,
+     "sha256_prefix": "675037264181804a",
+     "changed": true
+    },
+    {
+     "name": "city-2310300",
+     "status": 200,
+     "bytes": 1175,
+     "sha256_prefix": "c2105a33914dd134",
+     "changed": true
+    },
+    {
+     "name": "city-2320100",
+     "status": 200,
+     "bytes": 1096,
+     "sha256_prefix": "3afe268e6b21df6f",
+     "changed": true
+    },
+    {
+     "name": "city-3410100",
+     "status": 200,
+     "bytes": 1157,
+     "sha256_prefix": "d378723f74848bae",
+     "changed": true
+    },
+    {
+     "name": "city-3420300",
+     "status": 200,
+     "bytes": 1138,
+     "sha256_prefix": "fc91cfbbd783cf8c",
+     "changed": true
+    },
+    {
+     "name": "city-3430100",
+     "status": 200,
+     "bytes": 1178,
+     "sha256_prefix": "cc4bf2ceea82e167",
+     "changed": true
+    },
+    {
+     "name": "city-3440100",
+     "status": 200,
+     "bytes": 1158,
+     "sha256_prefix": "398dee232020f48a",
+     "changed": true
+    },
+    {
+     "name": "city-3450200",
+     "status": 200,
+     "bytes": 1177,
+     "sha256_prefix": "35a67d9ba63242e7",
+     "changed": true
+    },
+    {
+     "name": "city-3460200",
+     "status": 200,
+     "bytes": 1159,
+     "sha256_prefix": "52cee631bf353126",
+     "changed": true
+    },
+    {
+     "name": "city-3470100",
+     "status": 200,
+     "bytes": 1157,
+     "sha256_prefix": "04a35fdfab7a0283",
+     "changed": true
+    },
+    {
+     "name": "city-3480200",
+     "status": 200,
+     "bytes": 1140,
+     "sha256_prefix": "2cf2f2778130642b",
+     "changed": true
+    },
+    {
+     "name": "city-3490100",
+     "status": 200,
+     "bytes": 1161,
+     "sha256_prefix": "e66144f3bdf30ca9",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d3644c1",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d3644c1db2231a9dcffc4b8c42f17831ce0d9b8c",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/ab758f8...d3644c1"
+  },
+  {
+   "at": "2026-11-19T07:05:47Z",
+   "ok": 36,
+   "failed": 0,
+   "requests": 36,
+   "changed_requests": [
+    "city-1010500",
+    "city-1020500",
+    "city-1030300",
+    "city-1030800",
+    "city-1040200",
+    "city-1050200",
+    "city-1060300",
+    "city-1070500",
+    "city-1080500",
+    "city-1081505",
+    "city-1081100",
+    "city-1080800",
+    "city-1090700",
+    "city-1090821",
+    "city-1100900",
+    "city-1110600",
+    "city-1121400",
+    "city-1131200",
+    "city-1141600",
+    "city-1151200",
+    "city-1151300",
+    "city-1160900",
+    "city-1171400",
+    "city-1182300",
+    "city-2310300",
+    "city-2320100",
+    "city-3410100",
+    "city-3420300",
+    "city-3430100",
+    "city-3440100",
+    "city-3450200",
+    "city-3460200",
+    "city-3470100",
+    "city-3480200",
+    "city-3490100"
+   ],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "city-1010500",
+     "status": 200,
+     "bytes": 1153,
+     "sha256_prefix": "76cce9a4733336aa",
+     "changed": true
+    },
+    {
+     "name": "city-1020500",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "00396870b079fe22",
+     "changed": true
+    },
+    {
+     "name": "city-1030300",
+     "status": 200,
+     "bytes": 1153,
+     "sha256_prefix": "ba59a73d296dd9ea",
+     "changed": true
+    },
+    {
+     "name": "city-1030800",
+     "status": 200,
+     "bytes": 1151,
+     "sha256_prefix": "92aff81e398b30d3",
+     "changed": true
+    },
+    {
+     "name": "city-1040200",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "38941d5a0de3d2be",
+     "changed": true
+    },
+    {
+     "name": "city-1050200",
+     "status": 200,
+     "bytes": 1128,
+     "sha256_prefix": "f15e05907adf4b25",
+     "changed": true
+    },
+    {
+     "name": "city-1060300",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "273ca1774afdaaff",
+     "changed": true
+    },
+    {
+     "name": "city-1070500",
+     "status": 200,
+     "bytes": 1105,
+     "sha256_prefix": "9732298cc1645cbe",
+     "changed": true
+    },
+    {
+     "name": "city-1080500",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "1f06db3bd44cff64",
+     "changed": true
+    },
+    {
+     "name": "city-1081505",
+     "status": 200,
+     "bytes": 1109,
+     "sha256_prefix": "420161326f8ad46d",
+     "changed": true
+    },
+    {
+     "name": "city-1081100",
+     "status": 200,
+     "bytes": 1109,
+     "sha256_prefix": "a05c4e905e74f70d",
+     "changed": true
+    },
+    {
+     "name": "city-1080800",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "55ea5da98b713671",
+     "changed": true
+    },
+    {
+     "name": "city-1090700",
+     "status": 200,
+     "bytes": 1141,
+     "sha256_prefix": "e2dbdb94fc9f1d77",
+     "changed": true
+    },
+    {
+     "name": "city-1090821",
+     "status": 200,
+     "bytes": 1145,
+     "sha256_prefix": "2c92d1817ec464d9",
+     "changed": true
+    },
+    {
+     "name": "city-1100900",
+     "status": 200,
+     "bytes": 1148,
+     "sha256_prefix": "ad8261673385b59d",
+     "changed": true
+    },
+    {
+     "name": "city-1110600",
+     "status": 200,
+     "bytes": 1109,
+     "sha256_prefix": "ffa4423393118711",
+     "changed": true
+    },
+    {
+     "name": "city-1121400",
+     "status": 200,
+     "bytes": 1128,
+     "sha256_prefix": "15a669c7ae095790",
+     "changed": true
+    },
+    {
+     "name": "city-1131200",
+     "status": 200,
+     "bytes": 1152,
+     "sha256_prefix": "6ac6d1d0b1dbea11",
+     "changed": true
+    },
+    {
+     "name": "city-1141600",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "1693f4a80b8892e4",
+     "changed": true
+    },
+    {
+     "name": "city-1151200",
+     "status": 200,
+     "bytes": 1106,
+     "sha256_prefix": "7e4760eef3331d14",
+     "changed": true
+    },
+    {
+     "name": "city-1151300",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "53e14030792ddc87",
+     "changed": true
+    },
+    {
+     "name": "city-1160900",
+     "status": 200,
+     "bytes": 1152,
+     "sha256_prefix": "67d52a60dc1cfae9",
+     "changed": true
+    },
+    {
+     "name": "city-1171400",
+     "status": 200,
+     "bytes": 1152,
+     "sha256_prefix": "0642fe1975387c9a",
+     "changed": true
+    },
+    {
+     "name": "city-1182300",
+     "status": 200,
+     "bytes": 1151,
+     "sha256_prefix": "c950f9843ead3884",
+     "changed": true
+    },
+    {
+     "name": "city-2310300",
+     "status": 200,
+     "bytes": 1175,
+     "sha256_prefix": "0728180f44964c8f",
+     "changed": true
+    },
+    {
+     "name": "city-2320100",
+     "status": 200,
+     "bytes": 1096,
+     "sha256_prefix": "e3fd337d87425b38",
+     "changed": true
+    },
+    {
+     "name": "city-3410100",
+     "status": 200,
+     "bytes": 1157,
+     "sha256_prefix": "e21265e815df50f1",
+     "changed": true
+    },
+    {
+     "name": "city-3420300",
+     "status": 200,
+     "bytes": 1138,
+     "sha256_prefix": "c6ed04e51c929804",
+     "changed": true
+    },
+    {
+     "name": "city-3430100",
+     "status": 200,
+     "bytes": 1178,
+     "sha256_prefix": "752657814a75581e",
+     "changed": true
+    },
+    {
+     "name": "city-3440100",
+     "status": 200,
+     "bytes": 1158,
+     "sha256_prefix": "3854944e78e1119c",
+     "changed": true
+    },
+    {
+     "name": "city-3450200",
+     "status": 200,
+     "bytes": 1177,
+     "sha256_prefix": "b8555740452a6bea",
+     "changed": true
+    },
+    {
+     "name": "city-3460200",
+     "status": 200,
+     "bytes": 1159,
+     "sha256_prefix": "964c1abb03065e3a",
+     "changed": true
+    },
+    {
+     "name": "city-3470100",
+     "status": 200,
+     "bytes": 1157,
+     "sha256_prefix": "64d588fbafd0b3fb",
+     "changed": true
+    },
+    {
+     "name": "city-3480200",
+     "status": 200,
+     "bytes": 1140,
+     "sha256_prefix": "409bc372615a0a70",
+     "changed": true
+    },
+    {
+     "name": "city-3490100",
+     "status": 200,
+     "bytes": 1161,
+     "sha256_prefix": "a4eca98eda24f89d",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "ab758f8",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/ab758f84f3411cfda4eaef6a3b98834533309ceb",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/a84bc21...ab758f8"
+  },
+  {
+   "at": "2026-11-19T06:13:44Z",
+   "ok": 36,
+   "failed": 0,
+   "requests": 36,
+   "changed_requests": [
+    "city-1010500",
+    "city-1020500",
+    "city-1030300",
+    "city-1030800",
+    "city-1040200",
+    "city-1050200",
+    "city-1060300",
+    "city-1070500",
+    "city-1080500",
+    "city-1081505",
+    "city-1081100",
+    "city-1080800",
+    "city-1090700",
+    "city-1090821",
+    "city-1100900",
+    "city-1110600",
+    "city-1121400",
+    "city-1131200",
+    "city-1141600",
+    "city-1151200",
+    "city-1151300",
+    "city-1160900",
+    "city-1171400",
+    "city-1182300",
+    "city-2310300",
+    "city-2320100",
+    "city-3410100",
+    "city-3420300",
+    "city-3430100",
+    "city-3440100",
+    "city-3450200",
+    "city-3460200",
+    "city-3470100",
+    "city-3480200",
+    "city-3490100"
+   ],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "city-1010500",
+     "status": 200,
+     "bytes": 1153,
+     "sha256_prefix": "f774598d6ed9da89",
+     "changed": true
+    },
+    {
+     "name": "city-1020500",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "f56a9c8870024c7e",
+     "changed": true
+    },
+    {
+     "name": "city-1030300",
+     "status": 200,
+     "bytes": 1153,
+     "sha256_prefix": "7339f86dec903ea1",
+     "changed": true
+    },
+    {
+     "name": "city-1030800",
+     "status": 200,
+     "bytes": 1151,
+     "sha256_prefix": "ef950ed51b0abe50",
+     "changed": true
+    },
+    {
+     "name": "city-1040200",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "936dd8e93a55bf10",
+     "changed": true
+    },
+    {
+     "name": "city-1050200",
+     "status": 200,
+     "bytes": 1128,
+     "sha256_prefix": "ccb44021ae99fcd7",
+     "changed": true
+    },
+    {
+     "name": "city-1060300",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "b1c13dcb09364b6f",
+     "changed": true
+    },
+    {
+     "name": "city-1070500",
+     "status": 200,
+     "bytes": 1105,
+     "sha256_prefix": "e95b89131f5e86aa",
+     "changed": true
+    },
+    {
+     "name": "city-1080500",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "637af436ec7ec8ce",
+     "changed": true
+    },
+    {
+     "name": "city-1081505",
+     "status": 200,
+     "bytes": 1109,
+     "sha256_prefix": "ecd09cdaddcb626f",
+     "changed": true
+    },
+    {
+     "name": "city-1081100",
+     "status": 200,
+     "bytes": 1109,
+     "sha256_prefix": "59f3d12159214309",
+     "changed": true
+    },
+    {
+     "name": "city-1080800",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "90dd5117223f9d52",
+     "changed": true
+    },
+    {
+     "name": "city-1090700",
+     "status": 200,
+     "bytes": 1141,
+     "sha256_prefix": "a6469512d78ad626",
+     "changed": true
+    },
+    {
+     "name": "city-1090821",
+     "status": 200,
+     "bytes": 1145,
+     "sha256_prefix": "cba788350c5a411c",
+     "changed": true
+    },
+    {
+     "name": "city-1100900",
+     "status": 200,
+     "bytes": 1148,
+     "sha256_prefix": "11fd36b722da354f",
+     "changed": true
+    },
+    {
+     "name": "city-1110600",
+     "status": 200,
+     "bytes": 1109,
+     "sha256_prefix": "83fbc4ca5719d1e8",
+     "changed": true
+    },
+    {
+     "name": "city-1121400",
+     "status": 200,
+     "bytes": 1128,
+     "sha256_prefix": "b650d81cd243a8f9",
+     "changed": true
+    },
+    {
+     "name": "city-1131200",
+     "status": 200,
+     "bytes": 1152,
+     "sha256_prefix": "7093aabf6cbb40dc",
+     "changed": true
+    },
+    {
+     "name": "city-1141600",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "9c2b110fba83abc7",
+     "changed": true
+    },
+    {
+     "name": "city-1151200",
+     "status": 200,
+     "bytes": 1106,
+     "sha256_prefix": "8f9cff45e25ee899",
+     "changed": true
+    },
+    {
+     "name": "city-1151300",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "7db4d20443c77b57",
+     "changed": true
+    },
+    {
+     "name": "city-1160900",
+     "status": 200,
+     "bytes": 1152,
+     "sha256_prefix": "4b648e9f45143403",
+     "changed": true
+    },
+    {
+     "name": "city-1171400",
+     "status": 200,
+     "bytes": 1152,
+     "sha256_prefix": "0c19bb3aea37cb6e",
+     "changed": true
+    },
+    {
+     "name": "city-1182300",
+     "status": 200,
+     "bytes": 1151,
+     "sha256_prefix": "26cf54ac1db73d65",
+     "changed": true
+    },
+    {
+     "name": "city-2310300",
+     "status": 200,
+     "bytes": 1175,
+     "sha256_prefix": "f030c086eb636077",
+     "changed": true
+    },
+    {
+     "name": "city-2320100",
+     "status": 200,
+     "bytes": 1096,
+     "sha256_prefix": "fd0a452e739e54c7",
+     "changed": true
+    },
+    {
+     "name": "city-3410100",
+     "status": 200,
+     "bytes": 1157,
+     "sha256_prefix": "32e1af07fa7b6f31",
+     "changed": true
+    },
+    {
+     "name": "city-3420300",
+     "status": 200,
+     "bytes": 1138,
+     "sha256_prefix": "d73419258687afcb",
+     "changed": true
+    },
+    {
+     "name": "city-3430100",
+     "status": 200,
+     "bytes": 1178,
+     "sha256_prefix": "9a7560dadfc05522",
+     "changed": true
+    },
+    {
+     "name": "city-3440100",
+     "status": 200,
+     "bytes": 1158,
+     "sha256_prefix": "20818be6cac0c4c0",
+     "changed": true
+    },
+    {
+     "name": "city-3450200",
+     "status": 200,
+     "bytes": 1177,
+     "sha256_prefix": "5bc6e458d593c6e9",
+     "changed": true
+    },
+    {
+     "name": "city-3460200",
+     "status": 200,
+     "bytes": 1159,
+     "sha256_prefix": "63652835fce6fac4",
+     "changed": true
+    },
+    {
+     "name": "city-3470100",
+     "status": 200,
+     "bytes": 1157,
+     "sha256_prefix": "07ddfe8668d600c0",
+     "changed": true
+    },
+    {
+     "name": "city-3480200",
+     "status": 200,
+     "bytes": 1140,
+     "sha256_prefix": "be56c06ad52ca232",
+     "changed": true
+    },
+    {
+     "name": "city-3490100",
+     "status": 200,
+     "bytes": 1161,
+     "sha256_prefix": "766a9568d7e04440",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "a84bc21",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/a84bc21013f5eae48c16853f9b5038905f597fcd",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/0796eae...a84bc21"
+  },
+  {
+   "at": "2026-11-19T05:05:44Z",
+   "ok": 36,
+   "failed": 0,
+   "requests": 36,
+   "changed_requests": [
+    "city-1010500",
+    "city-1020500",
+    "city-1030300",
+    "city-1030800",
+    "city-1040200",
+    "city-1050200",
+    "city-1060300",
+    "city-1070500",
+    "city-1080500",
+    "city-1081505",
+    "city-1081100",
+    "city-1080800",
+    "city-1090700",
+    "city-1090821",
+    "city-1100900",
+    "city-1110600",
+    "city-1121400",
+    "city-1131200",
+    "city-1141600",
+    "city-1151200",
+    "city-1151300",
+    "city-1160900",
+    "city-1171400",
+    "city-1182300",
+    "city-2310300",
+    "city-2320100",
+    "city-3410100",
+    "city-3420300",
+    "city-3430100",
+    "city-3440100",
+    "city-3450200",
+    "city-3460200",
+    "city-3470100",
+    "city-3480200",
+    "city-3490100"
+   ],
+   "requests_detail": [
+    {
+     "name": "distrits-islands",
+     "status": 200,
+     "bytes": 10071,
+     "sha256_prefix": "fe67afbdef8527b7",
+     "changed": false
+    },
+    {
+     "name": "city-1010500",
+     "status": 200,
+     "bytes": 1153,
+     "sha256_prefix": "3b8459cb4972f126",
+     "changed": true
+    },
+    {
+     "name": "city-1020500",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "8085d31c261dd62f",
+     "changed": true
+    },
+    {
+     "name": "city-1030300",
+     "status": 200,
+     "bytes": 1153,
+     "sha256_prefix": "998cae3324033629",
+     "changed": true
+    },
+    {
+     "name": "city-1030800",
+     "status": 200,
+     "bytes": 1151,
+     "sha256_prefix": "efb6268057dd590c",
+     "changed": true
+    },
+    {
+     "name": "city-1040200",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "78deea11a4d62793",
+     "changed": true
+    },
+    {
+     "name": "city-1050200",
+     "status": 200,
+     "bytes": 1128,
+     "sha256_prefix": "7f70d9d135a03a6f",
+     "changed": true
+    },
+    {
+     "name": "city-1060300",
+     "status": 200,
+     "bytes": 1147,
+     "sha256_prefix": "6117e8c3c1a3106f",
+     "changed": true
+    },
+    {
+     "name": "city-1070500",
+     "status": 200,
+     "bytes": 1105,
+     "sha256_prefix": "e8a8ac0d32057aaa",
+     "changed": true
+    },
+    {
+     "name": "city-1080500",
+     "status": 200,
+     "bytes": 1107,
+     "sha256_prefix": "1d8ca45e84c0408d",
+     "changed": true
+    },
+    {
+     "name": "city-1081505",
+     "status": 200,
+     "bytes": 1109,
+     "sha256_prefix": "c84c44da47520640",
+     "changed": true
+    },
+    {
+     "name": "city-1081100",
+     "status": 200,
+     "bytes": 1109,
+     "sha256_prefix": "c0590725688552d5",
+     "changed": true
+    },
+    {
+     "name": "city-1080800",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "2233ea96ff00ad59",
+     "changed": true
+    },
+    {
+     "name": "city-1090700",
+     "status": 200,
+     "bytes": 1141,
+     "sha256_prefix": "4c88da2912fff416",
+     "changed": true
+    },
+    {
+     "name": "city-1090821",
+     "status": 200,
+     "bytes": 1145,
+     "sha256_prefix": "042c873266b4fd0a",
+     "changed": true
+    },
+    {
+     "name": "city-1100900",
+     "status": 200,
+     "bytes": 1148,
+     "sha256_prefix": "9cda832a0db046bd",
+     "changed": true
+    },
+    {
+     "name": "city-1110600",
+     "status": 200,
+     "bytes": 1109,
+     "sha256_prefix": "9f65fe0979635c4b",
+     "changed": true
+    },
+    {
+     "name": "city-1121400",
+     "status": 200,
+     "bytes": 1128,
+     "sha256_prefix": "9d139b47e1fd5565",
+     "changed": true
+    },
+    {
+     "name": "city-1131200",
+     "status": 200,
+     "bytes": 1152,
+     "sha256_prefix": "df177a055640b442",
+     "changed": true
+    },
+    {
+     "name": "city-1141600",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "7cb7624e0cb1fac2",
+     "changed": true
+    },
+    {
+     "name": "city-1151200",
+     "status": 200,
+     "bytes": 1106,
+     "sha256_prefix": "bed132f20cc550af",
+     "changed": true
+    },
+    {
+     "name": "city-1151300",
+     "status": 200,
+     "bytes": 1108,
+     "sha256_prefix": "7e9c389d6a7af075",
+     "changed": true
+    },
+    {
+     "name": "city-1160900",
+     "status": 200,
+     "bytes": 1152,
+     "sha256_prefix": "c8bba7b15957ed17",
+     "changed": true
+    },
+    {
+     "name": "city-1171400",
+     "status": 200,
+     "bytes": 1152,
+     "sha256_prefix": "954e31f9e685a347",
+     "changed": true
+    },
+    {
+     "name": "city-1182300",
+     "status": 200,
+     "bytes": 1151,
+     "sha256_prefix": "7bbdadb16e091f18",
+     "changed": true
+    },
+    {
+     "name": "city-2310300",
+     "status": 200,
+     "bytes": 1175,
+     "sha256_prefix": "c81bb313398e2f21",
+     "changed": true
+    },
+    {
+     "name": "city-2320100",
+     "status": 200,
+     "bytes": 1096,
+     "sha256_prefix": "c71bec6dd4ceede8",
+     "changed": true
+    },
+    {
+     "name": "city-3410100",
+     "status": 200,
+     "bytes": 1157,
+     "sha256_prefix": "5103ee4688cfefe2",
+     "changed": true
+    },
+    {
+     "name": "city-3420300",
+     "status": 200,
+     "bytes": 1138,
+     "sha256_prefix": "878b7ad9e340dc67",
+     "changed": true
+    },
+    {
+     "name": "city-3430100",
+     "status": 200,
+     "bytes": 1178,
+     "sha256_prefix": "c1627d2b555211c7",
+     "changed": true
+    },
+    {
+     "name": "city-3440100",
+     "status": 200,
+     "bytes": 1158,
+     "sha256_prefix": "322dea96f9b8f575",
+     "changed": true
+    },
+    {
+     "name": "city-3450200",
+     "status": 200,
+     "bytes": 1177,
+     "sha256_prefix": "625276e512cefb93",
+     "changed": true
+    },
+    {
+     "name": "city-3460200",
+     "status": 200,
+     "bytes": 1159,
+     "sha256_prefix": "85cdbc5ad58e5150",
+     "changed": true
+    },
+    {
+     "name": "city-3470100",
+     "status": 200,
+     "bytes": 1157,
+     "sha256_prefix": "0353cd244a22d6dd",
+     "changed": true
+    },
+    {
+     "name": "city-3480200",
+     "status": 200,
+     "bytes": 1140,
+     "sha256_prefix": "c8360192c292f807",
+     "changed": true
+    },
+    {
+     "name": "city-3490100",
+     "status": 200,
+     "bytes": 1161,
+     "sha256_prefix": "6cf41673a722e3a9",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "0796eae",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/0796eae6be936757132e432333b6c938f74ec9d7",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/51d3aef...0796eae"
+  }
+ ],
+ "copies": {
+  "files_in_git_data": 3,
+  "bytes_in_git_data": 1766078,
+  "files_in_vault_working_copy": 177,
+  "bytes_in_vault_working_copy": 219051,
+  "dated_copies_in_vault": 140,
+  "where": {
+   "api_latest": "https://data.promptugal.news/api/v1/ipma-city-forecasts/latest.json",
+   "api_reads": "https://data.promptugal.news/api/v1/ipma-city-forecasts/reads.json",
+   "source_page": "https://data.promptugal.news/sources/ipma-city-forecasts/",
+   "git": "https://github.com/PrompTugal/PrompTugal__News__Data/tree/dev/data/ipma-city-forecasts"
+  },
+  "tracked_in_git_vaults": 36,
+  "note": "collect/lib.mjs says vaults/ is meant to stay out of git, but 36 files of this source are tracked in git today (earlier commits); the sgit vault holds the full history. Dinis has not yet ruled on the vaults/ question."
+ },
+ "cadence_advice": {
+  "line": "The data changed on 40 of 92 reads over 10 days, about 4.0 times a day (earlier runs were hourly): reading more than twice a day would catch more states. Whether the pages that use it need them is for their owners to say.",
+  "basis": "suggestion derived from 92 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is hourly; runs before 21 Nov were hourly",
+  "runs_with_change": 40,
+  "runs_kept": 92,
+  "days_covered": 9.9,
+  "changes_per_day": 4.0
+ },
+ "schedule_times": {
+  "tz": "Europe/Lisbon",
+  "times_local": [
+   "07:03",
+   "18:03"
+  ],
+  "note": "Lisbon is UTC+0 from late October to late March, so these are also 07:03 and 18:03 UTC then; one hour earlier in UTC in summer.",
+  "runs_per_day": 2
+ },
+ "api_spec": null,
+ "api_docs": null,
+ "own_page_copy": null,
+ "own_page_copy_note": "not taken: a copy or screenshot of the publisher's page needs a rights ruling from cl-6.rights; source_home links to the page itself",
+ "source_home": "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/"
+}

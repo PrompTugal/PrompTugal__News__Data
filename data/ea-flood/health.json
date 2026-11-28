@@ -1,0 +1,4083 @@
+{
+ "source": "ea-flood",
+ "title": "London flood warnings and Thames levels (Environment Agency)",
+ "generated_utc": "2026-11-28T02:40:14Z",
+ "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
+ "schedule": {
+  "card_says": "hourly",
+  "really": "twice a day (07:03 and 18:03 Lisbon)"
+ },
+ "last_run": {
+  "at": "2026-11-27T18:04:42Z",
+  "ok": 23,
+  "failed": 0,
+  "requests": [
+   {
+    "name": "floods",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/floods?lat=51.5074&long=-0.1278&dist=30",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 835,
+    "changed": false
+   },
+   {
+    "name": "stations",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations?lat=51.5074&long=-0.1278&dist=15&parameter=level",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 99748,
+    "changed": false
+   },
+   {
+    "name": "readings-0001",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/0001/readings?latest",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1119,
+    "changed": true
+   },
+   {
+    "name": "readings-0003",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/0003/readings?latest",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1119,
+    "changed": true
+   },
+   {
+    "name": "readings-0006",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/0006/readings?latest",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1119,
+    "changed": true
+   },
+   {
+    "name": "readings-0007",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/0007/readings?latest",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1119,
+    "changed": true
+   },
+   {
+    "name": "readings-0009",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/0009/readings?latest",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1119,
+    "changed": true
+   },
+   {
+    "name": "readings-0010",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/0010/readings?latest",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 795,
+    "changed": false
+   },
+   {
+    "name": "readings-3104TH",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/3104TH/readings?latest",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1119,
+    "changed": true
+   },
+   {
+    "name": "readings-3400TH",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/3400TH/readings?latest",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1434,
+    "changed": true
+   },
+   {
+    "name": "readings-3401TH",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/3401TH/readings?latest",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1445,
+    "changed": true
+   },
+   {
+    "name": "readings-3404TH",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/3404TH/readings?latest",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1119,
+    "changed": true
+   },
+   {
+    "name": "rain-stations",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations?lat=51.5074&long=-0.1278&dist=15&parameter=rainfall",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 10264,
+    "changed": false
+   },
+   {
+    "name": "rain-246424TP",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/246424TP/readings?since=2026-11-26T00:00:00Z&_limit=500",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 61089,
+    "changed": true
+   },
+   {
+    "name": "rain-289102TP",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/289102TP/readings?since=2026-11-26T00:00:00Z&_limit=500",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 971,
+    "changed": false
+   },
+   {
+    "name": "rain-245176TP",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/245176TP/readings?since=2026-11-26T00:00:00Z&_limit=500",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 61089,
+    "changed": true
+   },
+   {
+    "name": "rain-287283TP",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/287283TP/readings?since=2026-11-26T00:00:00Z&_limit=500",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 971,
+    "changed": false
+   },
+   {
+    "name": "rain-288092TP",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/288092TP/readings?since=2026-11-26T00:00:00Z&_limit=500",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 61094,
+    "changed": true
+   },
+   {
+    "name": "rain-287946TP",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/287946TP/readings?since=2026-11-26T00:00:00Z&_limit=500",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 61093,
+    "changed": true
+   },
+   {
+    "name": "rain-246847TP",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/246847TP/readings?since=2026-11-26T00:00:00Z&_limit=500",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 971,
+    "changed": false
+   },
+   {
+    "name": "rain-380002TP",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/380002TP/readings?since=2026-11-26T00:00:00Z&_limit=500",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 61089,
+    "changed": true
+   },
+   {
+    "name": "rain-239374TP",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/239374TP/readings?since=2026-11-26T00:00:00Z&_limit=500",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 60729,
+    "changed": true
+   },
+   {
+    "name": "rain-287864TP",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/287864TP/readings?since=2026-11-26T00:00:00Z&_limit=500",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 61091,
+    "changed": true
+   }
+  ]
+ },
+ "problems": [],
+ "runs": [
+  {
+   "at": "2026-11-27T18:04:42Z",
+   "ok": 23,
+   "failed": 0,
+   "requests": 23,
+   "changed_requests": [
+    "readings-0001",
+    "readings-0003",
+    "readings-0006",
+    "readings-0007",
+    "readings-0009",
+    "readings-3104TH",
+    "readings-3400TH",
+    "readings-3401TH",
+    "readings-3404TH",
+    "rain-246424TP",
+    "rain-245176TP",
+    "rain-288092TP",
+    "rain-287946TP",
+    "rain-380002TP",
+    "rain-239374TP",
+    "rain-287864TP"
+   ],
+   "requests_detail": [
+    {
+     "name": "floods",
+     "status": 200,
+     "bytes": 835,
+     "sha256_prefix": "4b57eeae23d652ec",
+     "changed": false
+    },
+    {
+     "name": "stations",
+     "status": 200,
+     "bytes": 99748,
+     "sha256_prefix": "5fce9b4bcac33fd5",
+     "changed": false
+    },
+    {
+     "name": "readings-0001",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "b3086a2f9f9e418b",
+     "changed": true
+    },
+    {
+     "name": "readings-0003",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "479f2994abbba7e2",
+     "changed": true
+    },
+    {
+     "name": "readings-0006",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "fabd984b44ddcfd6",
+     "changed": true
+    },
+    {
+     "name": "readings-0007",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "b204657a50f5a638",
+     "changed": true
+    },
+    {
+     "name": "readings-0009",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "355f91190d64d963",
+     "changed": true
+    },
+    {
+     "name": "readings-0010",
+     "status": 200,
+     "bytes": 795,
+     "sha256_prefix": "d8f0dfc44f264c31",
+     "changed": false
+    },
+    {
+     "name": "readings-3104TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "df1e3ca41f0151b7",
+     "changed": true
+    },
+    {
+     "name": "readings-3400TH",
+     "status": 200,
+     "bytes": 1434,
+     "sha256_prefix": "fd9def602dec2d3f",
+     "changed": true
+    },
+    {
+     "name": "readings-3401TH",
+     "status": 200,
+     "bytes": 1445,
+     "sha256_prefix": "42e31663da574729",
+     "changed": true
+    },
+    {
+     "name": "readings-3404TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "cd9e134f47d99eb1",
+     "changed": true
+    },
+    {
+     "name": "rain-stations",
+     "status": 200,
+     "bytes": 10264,
+     "sha256_prefix": "53899def93f61725",
+     "changed": false
+    },
+    {
+     "name": "rain-246424TP",
+     "status": 200,
+     "bytes": 61089,
+     "sha256_prefix": "b5275f1ad888049a",
+     "changed": true
+    },
+    {
+     "name": "rain-289102TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "e50cd817489fa32f",
+     "changed": false
+    },
+    {
+     "name": "rain-245176TP",
+     "status": 200,
+     "bytes": 61089,
+     "sha256_prefix": "945e3c1ccce5a8c2",
+     "changed": true
+    },
+    {
+     "name": "rain-287283TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "305db72b970cc390",
+     "changed": false
+    },
+    {
+     "name": "rain-288092TP",
+     "status": 200,
+     "bytes": 61094,
+     "sha256_prefix": "8ced06cb64cb8608",
+     "changed": true
+    },
+    {
+     "name": "rain-287946TP",
+     "status": 200,
+     "bytes": 61093,
+     "sha256_prefix": "db962ca851a59c35",
+     "changed": true
+    },
+    {
+     "name": "rain-246847TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "ef8e8a31d24c8b9e",
+     "changed": false
+    },
+    {
+     "name": "rain-380002TP",
+     "status": 200,
+     "bytes": 61089,
+     "sha256_prefix": "5f8d53626a201cbe",
+     "changed": true
+    },
+    {
+     "name": "rain-239374TP",
+     "status": 200,
+     "bytes": 60729,
+     "sha256_prefix": "f463c184f1316cbc",
+     "changed": true
+    },
+    {
+     "name": "rain-287864TP",
+     "status": 200,
+     "bytes": 61091,
+     "sha256_prefix": "96787dc9225ed87d",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "526dd0b",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/526dd0b8fd852d1fffb5fd1c54adb4760ccfe3e8",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/d409b57...526dd0b"
+  },
+  {
+   "at": "2026-11-27T07:04:48Z",
+   "ok": 23,
+   "failed": 0,
+   "requests": 23,
+   "changed_requests": [
+    "stations",
+    "readings-0001",
+    "readings-0003",
+    "readings-0006",
+    "readings-0007",
+    "readings-0009",
+    "readings-3104TH",
+    "readings-3400TH",
+    "readings-3401TH",
+    "readings-3404TH",
+    "rain-246424TP",
+    "rain-289102TP",
+    "rain-245176TP",
+    "rain-287283TP",
+    "rain-288092TP",
+    "rain-287946TP",
+    "rain-246847TP",
+    "rain-380002TP",
+    "rain-239374TP",
+    "rain-287864TP"
+   ],
+   "requests_detail": [
+    {
+     "name": "floods",
+     "status": 200,
+     "bytes": 835,
+     "sha256_prefix": "4b57eeae23d652ec",
+     "changed": false
+    },
+    {
+     "name": "stations",
+     "status": 200,
+     "bytes": 99748,
+     "sha256_prefix": "5fce9b4bcac33fd5",
+     "changed": true
+    },
+    {
+     "name": "readings-0001",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "ac7c3f07545a86be",
+     "changed": true
+    },
+    {
+     "name": "readings-0003",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "1ab73a948db95b09",
+     "changed": true
+    },
+    {
+     "name": "readings-0006",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "77fe199c2c7f87fe",
+     "changed": true
+    },
+    {
+     "name": "readings-0007",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "3ffd364e0fb48774",
+     "changed": true
+    },
+    {
+     "name": "readings-0009",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "3e94349c5fbfeb48",
+     "changed": true
+    },
+    {
+     "name": "readings-0010",
+     "status": 200,
+     "bytes": 795,
+     "sha256_prefix": "d8f0dfc44f264c31",
+     "changed": false
+    },
+    {
+     "name": "readings-3104TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "d8906c7bd8462551",
+     "changed": true
+    },
+    {
+     "name": "readings-3400TH",
+     "status": 200,
+     "bytes": 1435,
+     "sha256_prefix": "00fb88304f1559fe",
+     "changed": true
+    },
+    {
+     "name": "readings-3401TH",
+     "status": 200,
+     "bytes": 1446,
+     "sha256_prefix": "1d9f36f254f18486",
+     "changed": true
+    },
+    {
+     "name": "readings-3404TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "9c853585edbbdec3",
+     "changed": true
+    },
+    {
+     "name": "rain-stations",
+     "status": 200,
+     "bytes": 10264,
+     "sha256_prefix": "53899def93f61725",
+     "changed": false
+    },
+    {
+     "name": "rain-246424TP",
+     "status": 200,
+     "bytes": 45249,
+     "sha256_prefix": "152e07b9a481fcbd",
+     "changed": true
+    },
+    {
+     "name": "rain-289102TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "e50cd817489fa32f",
+     "changed": true
+    },
+    {
+     "name": "rain-245176TP",
+     "status": 200,
+     "bytes": 45249,
+     "sha256_prefix": "e561916bff570d4f",
+     "changed": true
+    },
+    {
+     "name": "rain-287283TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "305db72b970cc390",
+     "changed": true
+    },
+    {
+     "name": "rain-288092TP",
+     "status": 200,
+     "bytes": 45249,
+     "sha256_prefix": "cab814c5b7b13fdf",
+     "changed": true
+    },
+    {
+     "name": "rain-287946TP",
+     "status": 200,
+     "bytes": 45249,
+     "sha256_prefix": "c8fc997b8f69919d",
+     "changed": true
+    },
+    {
+     "name": "rain-246847TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "ef8e8a31d24c8b9e",
+     "changed": true
+    },
+    {
+     "name": "rain-380002TP",
+     "status": 200,
+     "bytes": 45249,
+     "sha256_prefix": "a43d307d4078a4c5",
+     "changed": true
+    },
+    {
+     "name": "rain-239374TP",
+     "status": 200,
+     "bytes": 44889,
+     "sha256_prefix": "9cd5e295f29ff871",
+     "changed": true
+    },
+    {
+     "name": "rain-287864TP",
+     "status": 200,
+     "bytes": 45249,
+     "sha256_prefix": "b1cd75cc21230f77",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d409b57",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d409b5734208af88d47485b2878734dbf9e6aa7c",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/d466166...d409b57"
+  },
+  {
+   "at": "2026-11-26T18:04:56Z",
+   "ok": 23,
+   "failed": 0,
+   "requests": 23,
+   "changed_requests": [
+    "stations",
+    "readings-0001",
+    "readings-0003",
+    "readings-0006",
+    "readings-0007",
+    "readings-0009",
+    "readings-3104TH",
+    "readings-3400TH",
+    "readings-3401TH",
+    "readings-3404TH",
+    "rain-246424TP",
+    "rain-245176TP",
+    "rain-288092TP",
+    "rain-287946TP",
+    "rain-380002TP",
+    "rain-239374TP",
+    "rain-287864TP"
+   ],
+   "requests_detail": [
+    {
+     "name": "floods",
+     "status": 200,
+     "bytes": 835,
+     "sha256_prefix": "4b57eeae23d652ec",
+     "changed": false
+    },
+    {
+     "name": "stations",
+     "status": 200,
+     "bytes": 100599,
+     "sha256_prefix": "0503aa0646dee199",
+     "changed": true
+    },
+    {
+     "name": "readings-0001",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "9337681aa9a7333b",
+     "changed": true
+    },
+    {
+     "name": "readings-0003",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "e6abfb7f99e96948",
+     "changed": true
+    },
+    {
+     "name": "readings-0006",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "68c32db5345f5a3f",
+     "changed": true
+    },
+    {
+     "name": "readings-0007",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "795d104717ba0879",
+     "changed": true
+    },
+    {
+     "name": "readings-0009",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "881fc8bbbf18c646",
+     "changed": true
+    },
+    {
+     "name": "readings-0010",
+     "status": 200,
+     "bytes": 795,
+     "sha256_prefix": "d8f0dfc44f264c31",
+     "changed": false
+    },
+    {
+     "name": "readings-3104TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "ef8fdc6699c1ff4e",
+     "changed": true
+    },
+    {
+     "name": "readings-3400TH",
+     "status": 200,
+     "bytes": 1434,
+     "sha256_prefix": "77e41f9498f9e661",
+     "changed": true
+    },
+    {
+     "name": "readings-3401TH",
+     "status": 200,
+     "bytes": 1444,
+     "sha256_prefix": "17d3b1df50285d2f",
+     "changed": true
+    },
+    {
+     "name": "readings-3404TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "da6fe0ad816cb920",
+     "changed": true
+    },
+    {
+     "name": "rain-stations",
+     "status": 200,
+     "bytes": 10264,
+     "sha256_prefix": "53899def93f61725",
+     "changed": false
+    },
+    {
+     "name": "rain-246424TP",
+     "status": 200,
+     "bytes": 61089,
+     "sha256_prefix": "c2ad10bd128c26bf",
+     "changed": true
+    },
+    {
+     "name": "rain-289102TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "d8d9444d5a457fd4",
+     "changed": false
+    },
+    {
+     "name": "rain-245176TP",
+     "status": 200,
+     "bytes": 61089,
+     "sha256_prefix": "6fab039b555df232",
+     "changed": true
+    },
+    {
+     "name": "rain-287283TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "5f2aa35ad19f75a1",
+     "changed": false
+    },
+    {
+     "name": "rain-288092TP",
+     "status": 200,
+     "bytes": 61089,
+     "sha256_prefix": "e1809049ad3c258f",
+     "changed": true
+    },
+    {
+     "name": "rain-287946TP",
+     "status": 200,
+     "bytes": 61089,
+     "sha256_prefix": "8d7a8982f53728a9",
+     "changed": true
+    },
+    {
+     "name": "rain-246847TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "c658331280dd7150",
+     "changed": false
+    },
+    {
+     "name": "rain-380002TP",
+     "status": 200,
+     "bytes": 61089,
+     "sha256_prefix": "63432e642f9d7662",
+     "changed": true
+    },
+    {
+     "name": "rain-239374TP",
+     "status": 200,
+     "bytes": 60729,
+     "sha256_prefix": "46fe8ebca4f458a6",
+     "changed": true
+    },
+    {
+     "name": "rain-287864TP",
+     "status": 200,
+     "bytes": 61089,
+     "sha256_prefix": "6680218c2d401929",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d466166",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d466166b925f53f8d36d4a6047daf9a0634bf489",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-26T07:04:50Z",
+   "ok": 23,
+   "failed": 0,
+   "requests": 23,
+   "changed_requests": [
+    "stations",
+    "readings-0001",
+    "readings-0003",
+    "readings-0006",
+    "readings-0007",
+    "readings-0009",
+    "readings-3104TH",
+    "readings-3400TH",
+    "readings-3401TH",
+    "readings-3404TH",
+    "rain-246424TP",
+    "rain-289102TP",
+    "rain-245176TP",
+    "rain-287283TP",
+    "rain-288092TP",
+    "rain-287946TP",
+    "rain-246847TP",
+    "rain-380002TP",
+    "rain-239374TP",
+    "rain-287864TP"
+   ],
+   "requests_detail": [
+    {
+     "name": "floods",
+     "status": 200,
+     "bytes": 835,
+     "sha256_prefix": "4b57eeae23d652ec",
+     "changed": false
+    },
+    {
+     "name": "stations",
+     "status": 200,
+     "bytes": 99748,
+     "sha256_prefix": "5fce9b4bcac33fd5",
+     "changed": true
+    },
+    {
+     "name": "readings-0001",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "99ee1e2c0cdea922",
+     "changed": true
+    },
+    {
+     "name": "readings-0003",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "3e8e029f51bb4f1f",
+     "changed": true
+    },
+    {
+     "name": "readings-0006",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "0d26bcde2be7a351",
+     "changed": true
+    },
+    {
+     "name": "readings-0007",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "10c60c8d0947ef50",
+     "changed": true
+    },
+    {
+     "name": "readings-0009",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "370052309a000f33",
+     "changed": true
+    },
+    {
+     "name": "readings-0010",
+     "status": 200,
+     "bytes": 795,
+     "sha256_prefix": "d8f0dfc44f264c31",
+     "changed": false
+    },
+    {
+     "name": "readings-3104TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "28becd98d950444b",
+     "changed": true
+    },
+    {
+     "name": "readings-3400TH",
+     "status": 200,
+     "bytes": 1435,
+     "sha256_prefix": "4b2f538d5be20807",
+     "changed": true
+    },
+    {
+     "name": "readings-3401TH",
+     "status": 200,
+     "bytes": 1446,
+     "sha256_prefix": "fedd39112794cabe",
+     "changed": true
+    },
+    {
+     "name": "readings-3404TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "2a27304ebfb698bc",
+     "changed": true
+    },
+    {
+     "name": "rain-stations",
+     "status": 200,
+     "bytes": 10264,
+     "sha256_prefix": "53899def93f61725",
+     "changed": false
+    },
+    {
+     "name": "rain-246424TP",
+     "status": 200,
+     "bytes": 45249,
+     "sha256_prefix": "d33a506cd535c39a",
+     "changed": true
+    },
+    {
+     "name": "rain-289102TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "d8d9444d5a457fd4",
+     "changed": true
+    },
+    {
+     "name": "rain-245176TP",
+     "status": 200,
+     "bytes": 45249,
+     "sha256_prefix": "67d88f208814d0ec",
+     "changed": true
+    },
+    {
+     "name": "rain-287283TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "5f2aa35ad19f75a1",
+     "changed": true
+    },
+    {
+     "name": "rain-288092TP",
+     "status": 200,
+     "bytes": 45249,
+     "sha256_prefix": "1be3a241040e5fca",
+     "changed": true
+    },
+    {
+     "name": "rain-287946TP",
+     "status": 200,
+     "bytes": 45249,
+     "sha256_prefix": "bb1122ca1aa420a2",
+     "changed": true
+    },
+    {
+     "name": "rain-246847TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "c658331280dd7150",
+     "changed": true
+    },
+    {
+     "name": "rain-380002TP",
+     "status": 200,
+     "bytes": 45249,
+     "sha256_prefix": "3856edd5f9d31b63",
+     "changed": true
+    },
+    {
+     "name": "rain-239374TP",
+     "status": 200,
+     "bytes": 44889,
+     "sha256_prefix": "1e5d13d0f378dde2",
+     "changed": true
+    },
+    {
+     "name": "rain-287864TP",
+     "status": 200,
+     "bytes": 45249,
+     "sha256_prefix": "7ebc0bcd60768fec",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d466166",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d466166b925f53f8d36d4a6047daf9a0634bf489",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/bd410a7...d466166"
+  },
+  {
+   "at": "2026-11-21T07:04:44Z",
+   "ok": 23,
+   "failed": 0,
+   "requests": 23,
+   "changed_requests": [
+    "stations",
+    "readings-0001",
+    "readings-0003",
+    "readings-0006",
+    "readings-0007",
+    "readings-0009",
+    "readings-3104TH",
+    "readings-3400TH",
+    "readings-3401TH",
+    "readings-3404TH",
+    "rain-246424TP",
+    "rain-289102TP",
+    "rain-245176TP",
+    "rain-287283TP",
+    "rain-288092TP",
+    "rain-287946TP",
+    "rain-246847TP",
+    "rain-380002TP",
+    "rain-239374TP",
+    "rain-287864TP"
+   ],
+   "requests_detail": [
+    {
+     "name": "floods",
+     "status": 200,
+     "bytes": 835,
+     "sha256_prefix": "4b57eeae23d652ec",
+     "changed": false
+    },
+    {
+     "name": "stations",
+     "status": 200,
+     "bytes": 99473,
+     "sha256_prefix": "ba307996b6eb224f",
+     "changed": true
+    },
+    {
+     "name": "readings-0001",
+     "status": 200,
+     "bytes": 1118,
+     "sha256_prefix": "bd87a8c6446706cb",
+     "changed": true
+    },
+    {
+     "name": "readings-0003",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "edb75df5bce432a8",
+     "changed": true
+    },
+    {
+     "name": "readings-0006",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "4c8633b460299b6b",
+     "changed": true
+    },
+    {
+     "name": "readings-0007",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "34483ea9082eae40",
+     "changed": true
+    },
+    {
+     "name": "readings-0009",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "f94f03e0cbdfa6b6",
+     "changed": true
+    },
+    {
+     "name": "readings-0010",
+     "status": 200,
+     "bytes": 795,
+     "sha256_prefix": "d8f0dfc44f264c31",
+     "changed": false
+    },
+    {
+     "name": "readings-3104TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "cff15d7bfdb81d25",
+     "changed": true
+    },
+    {
+     "name": "readings-3400TH",
+     "status": 200,
+     "bytes": 1436,
+     "sha256_prefix": "8419e3acdca183de",
+     "changed": true
+    },
+    {
+     "name": "readings-3401TH",
+     "status": 200,
+     "bytes": 1445,
+     "sha256_prefix": "ff307a3287199a23",
+     "changed": true
+    },
+    {
+     "name": "readings-3404TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "7008bf07a0c81104",
+     "changed": true
+    },
+    {
+     "name": "rain-stations",
+     "status": 200,
+     "bytes": 10264,
+     "sha256_prefix": "53899def93f61725",
+     "changed": false
+    },
+    {
+     "name": "rain-246424TP",
+     "status": 200,
+     "bytes": 44529,
+     "sha256_prefix": "d311f09f99bc8feb",
+     "changed": true
+    },
+    {
+     "name": "rain-289102TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "68726c609efa6a06",
+     "changed": true
+    },
+    {
+     "name": "rain-245176TP",
+     "status": 200,
+     "bytes": 45249,
+     "sha256_prefix": "abe341a4ef19bbee",
+     "changed": true
+    },
+    {
+     "name": "rain-287283TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "ec1aa34c75893c30",
+     "changed": true
+    },
+    {
+     "name": "rain-288092TP",
+     "status": 200,
+     "bytes": 45250,
+     "sha256_prefix": "9eb66c46407ffe15",
+     "changed": true
+    },
+    {
+     "name": "rain-287946TP",
+     "status": 200,
+     "bytes": 45250,
+     "sha256_prefix": "a3710fd11c3c1cfd",
+     "changed": true
+    },
+    {
+     "name": "rain-246847TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "ee75de01d9eb7c6b",
+     "changed": true
+    },
+    {
+     "name": "rain-380002TP",
+     "status": 200,
+     "bytes": 44889,
+     "sha256_prefix": "674b1e2646684613",
+     "changed": true
+    },
+    {
+     "name": "rain-239374TP",
+     "status": 200,
+     "bytes": 44529,
+     "sha256_prefix": "e023cb0e66a89844",
+     "changed": true
+    },
+    {
+     "name": "rain-287864TP",
+     "status": 200,
+     "bytes": 45250,
+     "sha256_prefix": "5fcdc269703181f7",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "bd410a7",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/bd410a73762d6b0a755da0a946556d6e47d54c8e",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/65c6667...bd410a7"
+  },
+  {
+   "at": "2026-11-20T18:04:54Z",
+   "ok": 23,
+   "failed": 0,
+   "requests": 23,
+   "changed_requests": [
+    "floods",
+    "readings-0001",
+    "readings-0003",
+    "readings-0006",
+    "readings-0007",
+    "readings-0009",
+    "readings-3104TH",
+    "readings-3400TH",
+    "readings-3401TH",
+    "readings-3404TH",
+    "rain-246424TP",
+    "rain-245176TP",
+    "rain-288092TP",
+    "rain-287946TP",
+    "rain-380002TP",
+    "rain-239374TP",
+    "rain-287864TP"
+   ],
+   "requests_detail": [
+    {
+     "name": "floods",
+     "status": 200,
+     "bytes": 835,
+     "sha256_prefix": "4b57eeae23d652ec",
+     "changed": true
+    },
+    {
+     "name": "stations",
+     "status": 200,
+     "bytes": 99748,
+     "sha256_prefix": "5fce9b4bcac33fd5",
+     "changed": false
+    },
+    {
+     "name": "readings-0001",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "ed83cb265a077681",
+     "changed": true
+    },
+    {
+     "name": "readings-0003",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "e908f984ba4a3df5",
+     "changed": true
+    },
+    {
+     "name": "readings-0006",
+     "status": 200,
+     "bytes": 1118,
+     "sha256_prefix": "1519a1e8e6def687",
+     "changed": true
+    },
+    {
+     "name": "readings-0007",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "3396852332c700d0",
+     "changed": true
+    },
+    {
+     "name": "readings-0009",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "f18808f4979fd43b",
+     "changed": true
+    },
+    {
+     "name": "readings-0010",
+     "status": 200,
+     "bytes": 795,
+     "sha256_prefix": "d8f0dfc44f264c31",
+     "changed": false
+    },
+    {
+     "name": "readings-3104TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "ab1d5ca799755d2b",
+     "changed": true
+    },
+    {
+     "name": "readings-3400TH",
+     "status": 200,
+     "bytes": 1435,
+     "sha256_prefix": "6f7e3f175c2d6f84",
+     "changed": true
+    },
+    {
+     "name": "readings-3401TH",
+     "status": 200,
+     "bytes": 1444,
+     "sha256_prefix": "550a9b4423e5b19c",
+     "changed": true
+    },
+    {
+     "name": "readings-3404TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "2a33abb1560022c1",
+     "changed": true
+    },
+    {
+     "name": "rain-stations",
+     "status": 200,
+     "bytes": 10264,
+     "sha256_prefix": "53899def93f61725",
+     "changed": false
+    },
+    {
+     "name": "rain-246424TP",
+     "status": 200,
+     "bytes": 59649,
+     "sha256_prefix": "a5c5d3a9cef42b59",
+     "changed": true
+    },
+    {
+     "name": "rain-289102TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "8aef372d854da3ce",
+     "changed": false
+    },
+    {
+     "name": "rain-245176TP",
+     "status": 200,
+     "bytes": 60729,
+     "sha256_prefix": "3126883f4055c58a",
+     "changed": true
+    },
+    {
+     "name": "rain-287283TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "5d4c281c2da578b9",
+     "changed": false
+    },
+    {
+     "name": "rain-288092TP",
+     "status": 200,
+     "bytes": 60757,
+     "sha256_prefix": "5a1470061183ffdf",
+     "changed": true
+    },
+    {
+     "name": "rain-287946TP",
+     "status": 200,
+     "bytes": 60748,
+     "sha256_prefix": "b2792b3b7e9acc41",
+     "changed": true
+    },
+    {
+     "name": "rain-246847TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "0b6a6bded824ed97",
+     "changed": false
+    },
+    {
+     "name": "rain-380002TP",
+     "status": 200,
+     "bytes": 60009,
+     "sha256_prefix": "e8a7e4d8dea48d88",
+     "changed": true
+    },
+    {
+     "name": "rain-239374TP",
+     "status": 200,
+     "bytes": 59649,
+     "sha256_prefix": "adc7683a3d282d70",
+     "changed": true
+    },
+    {
+     "name": "rain-287864TP",
+     "status": 200,
+     "bytes": 60749,
+     "sha256_prefix": "40ad1fe96e7961e3",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "65c6667",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/65c66677f4957a21ffbcf6d58b3f8794f505d39f",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/cb88d7b...65c6667"
+  },
+  {
+   "at": "2026-11-20T07:04:32Z",
+   "ok": 23,
+   "failed": 0,
+   "requests": 23,
+   "changed_requests": [
+    "readings-0001",
+    "readings-0003",
+    "readings-0006",
+    "readings-0007",
+    "readings-0009",
+    "readings-3104TH",
+    "readings-3400TH",
+    "readings-3401TH",
+    "readings-3404TH",
+    "rain-246424TP",
+    "rain-289102TP",
+    "rain-245176TP",
+    "rain-287283TP",
+    "rain-288092TP",
+    "rain-287946TP",
+    "rain-246847TP",
+    "rain-380002TP",
+    "rain-239374TP",
+    "rain-287864TP"
+   ],
+   "requests_detail": [
+    {
+     "name": "floods",
+     "status": 200,
+     "bytes": 4039,
+     "sha256_prefix": "d7ad0d958891ad3b",
+     "changed": false
+    },
+    {
+     "name": "stations",
+     "status": 200,
+     "bytes": 99748,
+     "sha256_prefix": "5fce9b4bcac33fd5",
+     "changed": false
+    },
+    {
+     "name": "readings-0001",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "21ebdb1975c8e055",
+     "changed": true
+    },
+    {
+     "name": "readings-0003",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "6f9794e5040439fa",
+     "changed": true
+    },
+    {
+     "name": "readings-0006",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "90e3a2df379e4d2a",
+     "changed": true
+    },
+    {
+     "name": "readings-0007",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "47ad2d70a83632ed",
+     "changed": true
+    },
+    {
+     "name": "readings-0009",
+     "status": 200,
+     "bytes": 1117,
+     "sha256_prefix": "4cbbd29bcfd552f0",
+     "changed": true
+    },
+    {
+     "name": "readings-0010",
+     "status": 200,
+     "bytes": 795,
+     "sha256_prefix": "d8f0dfc44f264c31",
+     "changed": false
+    },
+    {
+     "name": "readings-3104TH",
+     "status": 200,
+     "bytes": 1118,
+     "sha256_prefix": "6214963d17948c14",
+     "changed": true
+    },
+    {
+     "name": "readings-3400TH",
+     "status": 200,
+     "bytes": 1436,
+     "sha256_prefix": "2abb890cc2ecd0c7",
+     "changed": true
+    },
+    {
+     "name": "readings-3401TH",
+     "status": 200,
+     "bytes": 1445,
+     "sha256_prefix": "8d23fc58c3b50feb",
+     "changed": true
+    },
+    {
+     "name": "readings-3404TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "bd8001145ea0acf5",
+     "changed": true
+    },
+    {
+     "name": "rain-stations",
+     "status": 200,
+     "bytes": 10264,
+     "sha256_prefix": "53899def93f61725",
+     "changed": false
+    },
+    {
+     "name": "rain-246424TP",
+     "status": 200,
+     "bytes": 43809,
+     "sha256_prefix": "6e6f225a9a6698e6",
+     "changed": true
+    },
+    {
+     "name": "rain-289102TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "8aef372d854da3ce",
+     "changed": true
+    },
+    {
+     "name": "rain-245176TP",
+     "status": 200,
+     "bytes": 44889,
+     "sha256_prefix": "3294b1b35dbd7f04",
+     "changed": true
+    },
+    {
+     "name": "rain-287283TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "5d4c281c2da578b9",
+     "changed": true
+    },
+    {
+     "name": "rain-288092TP",
+     "status": 200,
+     "bytes": 44917,
+     "sha256_prefix": "98873b389ce864e3",
+     "changed": true
+    },
+    {
+     "name": "rain-287946TP",
+     "status": 200,
+     "bytes": 44908,
+     "sha256_prefix": "25bd5cd2b94fe605",
+     "changed": true
+    },
+    {
+     "name": "rain-246847TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "0b6a6bded824ed97",
+     "changed": true
+    },
+    {
+     "name": "rain-380002TP",
+     "status": 200,
+     "bytes": 44169,
+     "sha256_prefix": "ab7aaa23e966e49e",
+     "changed": true
+    },
+    {
+     "name": "rain-239374TP",
+     "status": 200,
+     "bytes": 43809,
+     "sha256_prefix": "44a84f976a727989",
+     "changed": true
+    },
+    {
+     "name": "rain-287864TP",
+     "status": 200,
+     "bytes": 44909,
+     "sha256_prefix": "658fa8c435bef95c",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "cb88d7b",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/cb88d7b793bc938078a150fb7bd84b6477977aea",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/64fbf7d...cb88d7b"
+  },
+  {
+   "at": "2026-11-19T18:04:08Z",
+   "ok": 23,
+   "failed": 0,
+   "requests": 23,
+   "changed_requests": [
+    "readings-0001",
+    "readings-0003",
+    "readings-0006",
+    "readings-0007",
+    "readings-0009",
+    "readings-3104TH",
+    "readings-3400TH",
+    "readings-3401TH",
+    "readings-3404TH",
+    "rain-246424TP",
+    "rain-245176TP",
+    "rain-288092TP",
+    "rain-287946TP",
+    "rain-380002TP",
+    "rain-239374TP",
+    "rain-287864TP"
+   ],
+   "requests_detail": [
+    {
+     "name": "floods",
+     "status": 200,
+     "bytes": 4039,
+     "sha256_prefix": "d7ad0d958891ad3b",
+     "changed": false
+    },
+    {
+     "name": "stations",
+     "status": 200,
+     "bytes": 99748,
+     "sha256_prefix": "5fce9b4bcac33fd5",
+     "changed": false
+    },
+    {
+     "name": "readings-0001",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "271b35be1563b744",
+     "changed": true
+    },
+    {
+     "name": "readings-0003",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "15eb71123e321a7e",
+     "changed": true
+    },
+    {
+     "name": "readings-0006",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "145d689d99e66942",
+     "changed": true
+    },
+    {
+     "name": "readings-0007",
+     "status": 200,
+     "bytes": 1118,
+     "sha256_prefix": "1ab30b05130f889c",
+     "changed": true
+    },
+    {
+     "name": "readings-0009",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "a8ec854d9059b31d",
+     "changed": true
+    },
+    {
+     "name": "readings-0010",
+     "status": 200,
+     "bytes": 795,
+     "sha256_prefix": "d8f0dfc44f264c31",
+     "changed": false
+    },
+    {
+     "name": "readings-3104TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "9e2761adb2470203",
+     "changed": true
+    },
+    {
+     "name": "readings-3400TH",
+     "status": 200,
+     "bytes": 1436,
+     "sha256_prefix": "3c8221bf9d85cdeb",
+     "changed": true
+    },
+    {
+     "name": "readings-3401TH",
+     "status": 200,
+     "bytes": 1445,
+     "sha256_prefix": "5159e38b6cbc60e9",
+     "changed": true
+    },
+    {
+     "name": "readings-3404TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "16201580e0a710de",
+     "changed": true
+    },
+    {
+     "name": "rain-stations",
+     "status": 200,
+     "bytes": 10264,
+     "sha256_prefix": "53899def93f61725",
+     "changed": false
+    },
+    {
+     "name": "rain-246424TP",
+     "status": 200,
+     "bytes": 59649,
+     "sha256_prefix": "982080534b0666f3",
+     "changed": true
+    },
+    {
+     "name": "rain-289102TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "8d1ba650af1f41e6",
+     "changed": false
+    },
+    {
+     "name": "rain-245176TP",
+     "status": 200,
+     "bytes": 60729,
+     "sha256_prefix": "50ff30ed75cdfa1e",
+     "changed": true
+    },
+    {
+     "name": "rain-287283TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "8a64a79cbccd3d8d",
+     "changed": false
+    },
+    {
+     "name": "rain-288092TP",
+     "status": 200,
+     "bytes": 60756,
+     "sha256_prefix": "b3e950e03691c0f8",
+     "changed": true
+    },
+    {
+     "name": "rain-287946TP",
+     "status": 200,
+     "bytes": 60748,
+     "sha256_prefix": "f1a7597043285b58",
+     "changed": true
+    },
+    {
+     "name": "rain-246847TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "9fd19e86139afa03",
+     "changed": false
+    },
+    {
+     "name": "rain-380002TP",
+     "status": 200,
+     "bytes": 60009,
+     "sha256_prefix": "adfe20434c605fdf",
+     "changed": true
+    },
+    {
+     "name": "rain-239374TP",
+     "status": 200,
+     "bytes": 59649,
+     "sha256_prefix": "ff3aca3cb2cf6445",
+     "changed": true
+    },
+    {
+     "name": "rain-287864TP",
+     "status": 200,
+     "bytes": 60749,
+     "sha256_prefix": "ff6939d8fdb79af2",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "64fbf7d",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/64fbf7dda8967b6095e265f2e10aba0dfb3d65e8",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/11e0962...64fbf7d"
+  },
+  {
+   "at": "2026-11-19T16:04:01Z",
+   "ok": 23,
+   "failed": 0,
+   "requests": 23,
+   "changed_requests": [
+    "readings-0001",
+    "readings-0003",
+    "readings-0006",
+    "readings-0007",
+    "readings-0009",
+    "readings-3104TH",
+    "readings-3400TH",
+    "readings-3401TH",
+    "readings-3404TH",
+    "rain-246424TP",
+    "rain-245176TP",
+    "rain-288092TP",
+    "rain-287946TP",
+    "rain-380002TP",
+    "rain-239374TP",
+    "rain-287864TP"
+   ],
+   "requests_detail": [
+    {
+     "name": "floods",
+     "status": 200,
+     "bytes": 4039,
+     "sha256_prefix": "d7ad0d958891ad3b",
+     "changed": false
+    },
+    {
+     "name": "stations",
+     "status": 200,
+     "bytes": 99748,
+     "sha256_prefix": "5fce9b4bcac33fd5",
+     "changed": false
+    },
+    {
+     "name": "readings-0001",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "c87f31ee8fc57ce7",
+     "changed": true
+    },
+    {
+     "name": "readings-0003",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "04f039afe09856d4",
+     "changed": true
+    },
+    {
+     "name": "readings-0006",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "fbbbb5e6f76a24c0",
+     "changed": true
+    },
+    {
+     "name": "readings-0007",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "dc30db3f6049ae21",
+     "changed": true
+    },
+    {
+     "name": "readings-0009",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "fb6eadaf10d6cb6e",
+     "changed": true
+    },
+    {
+     "name": "readings-0010",
+     "status": 200,
+     "bytes": 795,
+     "sha256_prefix": "d8f0dfc44f264c31",
+     "changed": false
+    },
+    {
+     "name": "readings-3104TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "fc3aa5e3b775d158",
+     "changed": true
+    },
+    {
+     "name": "readings-3400TH",
+     "status": 200,
+     "bytes": 1436,
+     "sha256_prefix": "04fa168d10f078ab",
+     "changed": true
+    },
+    {
+     "name": "readings-3401TH",
+     "status": 200,
+     "bytes": 1445,
+     "sha256_prefix": "cff825c2406a6a24",
+     "changed": true
+    },
+    {
+     "name": "readings-3404TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "686ddd19798f8673",
+     "changed": true
+    },
+    {
+     "name": "rain-stations",
+     "status": 200,
+     "bytes": 10264,
+     "sha256_prefix": "53899def93f61725",
+     "changed": false
+    },
+    {
+     "name": "rain-246424TP",
+     "status": 200,
+     "bytes": 56769,
+     "sha256_prefix": "180e4c3c1010d5f4",
+     "changed": true
+    },
+    {
+     "name": "rain-289102TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "8d1ba650af1f41e6",
+     "changed": false
+    },
+    {
+     "name": "rain-245176TP",
+     "status": 200,
+     "bytes": 57849,
+     "sha256_prefix": "1d5bb409036ba77e",
+     "changed": true
+    },
+    {
+     "name": "rain-287283TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "8a64a79cbccd3d8d",
+     "changed": false
+    },
+    {
+     "name": "rain-288092TP",
+     "status": 200,
+     "bytes": 57876,
+     "sha256_prefix": "79493a159aa072ef",
+     "changed": true
+    },
+    {
+     "name": "rain-287946TP",
+     "status": 200,
+     "bytes": 57868,
+     "sha256_prefix": "3dbe8acd02bcda32",
+     "changed": true
+    },
+    {
+     "name": "rain-246847TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "9fd19e86139afa03",
+     "changed": false
+    },
+    {
+     "name": "rain-380002TP",
+     "status": 200,
+     "bytes": 57129,
+     "sha256_prefix": "3a4e0ee53e9ad694",
+     "changed": true
+    },
+    {
+     "name": "rain-239374TP",
+     "status": 200,
+     "bytes": 56049,
+     "sha256_prefix": "74e49bbef5fd69c0",
+     "changed": true
+    },
+    {
+     "name": "rain-287864TP",
+     "status": 200,
+     "bytes": 57869,
+     "sha256_prefix": "9e34f9ef9f5b4a0f",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "11e0962",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/11e096221d96c4c87d5c943ef91b534dd547f19c",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/e25333f...11e0962"
+  },
+  {
+   "at": "2026-11-19T15:03:44Z",
+   "ok": 23,
+   "failed": 0,
+   "requests": 23,
+   "changed_requests": [
+    "readings-0001",
+    "readings-0003",
+    "readings-0006",
+    "readings-0007",
+    "readings-0009",
+    "readings-3104TH",
+    "readings-3400TH",
+    "readings-3401TH",
+    "readings-3404TH",
+    "rain-246424TP",
+    "rain-245176TP",
+    "rain-288092TP",
+    "rain-287946TP",
+    "rain-380002TP",
+    "rain-239374TP",
+    "rain-287864TP"
+   ],
+   "requests_detail": [
+    {
+     "name": "floods",
+     "status": 200,
+     "bytes": 4039,
+     "sha256_prefix": "d7ad0d958891ad3b",
+     "changed": false
+    },
+    {
+     "name": "stations",
+     "status": 200,
+     "bytes": 99748,
+     "sha256_prefix": "5fce9b4bcac33fd5",
+     "changed": false
+    },
+    {
+     "name": "readings-0001",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "1c87de8386dbae5f",
+     "changed": true
+    },
+    {
+     "name": "readings-0003",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "d57c2c118c25c68c",
+     "changed": true
+    },
+    {
+     "name": "readings-0006",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "0e0d3ec793b12e60",
+     "changed": true
+    },
+    {
+     "name": "readings-0007",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "1427168a7e2f50d0",
+     "changed": true
+    },
+    {
+     "name": "readings-0009",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "7937b69544986769",
+     "changed": true
+    },
+    {
+     "name": "readings-0010",
+     "status": 200,
+     "bytes": 795,
+     "sha256_prefix": "d8f0dfc44f264c31",
+     "changed": false
+    },
+    {
+     "name": "readings-3104TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "0f3fd2aa86ecd334",
+     "changed": true
+    },
+    {
+     "name": "readings-3400TH",
+     "status": 200,
+     "bytes": 1436,
+     "sha256_prefix": "76c23ea0cdac58bc",
+     "changed": true
+    },
+    {
+     "name": "readings-3401TH",
+     "status": 200,
+     "bytes": 1444,
+     "sha256_prefix": "6e463e9265a2dd67",
+     "changed": true
+    },
+    {
+     "name": "readings-3404TH",
+     "status": 200,
+     "bytes": 1118,
+     "sha256_prefix": "eb5914daafa71e65",
+     "changed": true
+    },
+    {
+     "name": "rain-stations",
+     "status": 200,
+     "bytes": 10264,
+     "sha256_prefix": "53899def93f61725",
+     "changed": false
+    },
+    {
+     "name": "rain-246424TP",
+     "status": 200,
+     "bytes": 55329,
+     "sha256_prefix": "ae9008e13473c0a2",
+     "changed": true
+    },
+    {
+     "name": "rain-289102TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "8d1ba650af1f41e6",
+     "changed": false
+    },
+    {
+     "name": "rain-245176TP",
+     "status": 200,
+     "bytes": 56049,
+     "sha256_prefix": "39731b5f2e97ede9",
+     "changed": true
+    },
+    {
+     "name": "rain-287283TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "8a64a79cbccd3d8d",
+     "changed": false
+    },
+    {
+     "name": "rain-288092TP",
+     "status": 200,
+     "bytes": 56436,
+     "sha256_prefix": "d948041e14d7dfc8",
+     "changed": true
+    },
+    {
+     "name": "rain-287946TP",
+     "status": 200,
+     "bytes": 56428,
+     "sha256_prefix": "9be50001e0d7b5b0",
+     "changed": true
+    },
+    {
+     "name": "rain-246847TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "9fd19e86139afa03",
+     "changed": false
+    },
+    {
+     "name": "rain-380002TP",
+     "status": 200,
+     "bytes": 55689,
+     "sha256_prefix": "4d442dbeffedd951",
+     "changed": true
+    },
+    {
+     "name": "rain-239374TP",
+     "status": 200,
+     "bytes": 55329,
+     "sha256_prefix": "9e2d63a24ba390a9",
+     "changed": true
+    },
+    {
+     "name": "rain-287864TP",
+     "status": 200,
+     "bytes": 56429,
+     "sha256_prefix": "c0dcea134779f14f",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "e25333f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/e25333f846d431ddcfef34bf037922034bcf906d",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/48b39e4...e25333f"
+  },
+  {
+   "at": "2026-11-19T14:04:12Z",
+   "ok": 23,
+   "failed": 0,
+   "requests": 23,
+   "changed_requests": [
+    "readings-0001",
+    "readings-0003",
+    "readings-0006",
+    "readings-0007",
+    "readings-0009",
+    "readings-3104TH",
+    "readings-3400TH",
+    "readings-3401TH",
+    "readings-3404TH",
+    "rain-246424TP",
+    "rain-245176TP",
+    "rain-288092TP",
+    "rain-287946TP",
+    "rain-380002TP",
+    "rain-239374TP",
+    "rain-287864TP"
+   ],
+   "requests_detail": [
+    {
+     "name": "floods",
+     "status": 200,
+     "bytes": 4039,
+     "sha256_prefix": "d7ad0d958891ad3b",
+     "changed": false
+    },
+    {
+     "name": "stations",
+     "status": 200,
+     "bytes": 99748,
+     "sha256_prefix": "5fce9b4bcac33fd5",
+     "changed": false
+    },
+    {
+     "name": "readings-0001",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "3ffc20c0c67e91ea",
+     "changed": true
+    },
+    {
+     "name": "readings-0003",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "feff02488157f554",
+     "changed": true
+    },
+    {
+     "name": "readings-0006",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "18d8913f6c59a365",
+     "changed": true
+    },
+    {
+     "name": "readings-0007",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "7279ed3cc80d96ae",
+     "changed": true
+    },
+    {
+     "name": "readings-0009",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "10523b6c84632446",
+     "changed": true
+    },
+    {
+     "name": "readings-0010",
+     "status": 200,
+     "bytes": 795,
+     "sha256_prefix": "d8f0dfc44f264c31",
+     "changed": false
+    },
+    {
+     "name": "readings-3104TH",
+     "status": 200,
+     "bytes": 1118,
+     "sha256_prefix": "ea65fc475c349585",
+     "changed": true
+    },
+    {
+     "name": "readings-3400TH",
+     "status": 200,
+     "bytes": 1435,
+     "sha256_prefix": "79e6a38036b03e4d",
+     "changed": true
+    },
+    {
+     "name": "readings-3401TH",
+     "status": 200,
+     "bytes": 1445,
+     "sha256_prefix": "bcad1c9878ceac53",
+     "changed": true
+    },
+    {
+     "name": "readings-3404TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "fc041b875617f8b8",
+     "changed": true
+    },
+    {
+     "name": "rain-stations",
+     "status": 200,
+     "bytes": 10264,
+     "sha256_prefix": "53899def93f61725",
+     "changed": false
+    },
+    {
+     "name": "rain-246424TP",
+     "status": 200,
+     "bytes": 53889,
+     "sha256_prefix": "5108844f08c16a11",
+     "changed": true
+    },
+    {
+     "name": "rain-289102TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "8d1ba650af1f41e6",
+     "changed": false
+    },
+    {
+     "name": "rain-245176TP",
+     "status": 200,
+     "bytes": 54969,
+     "sha256_prefix": "b425902ee606c14b",
+     "changed": true
+    },
+    {
+     "name": "rain-287283TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "8a64a79cbccd3d8d",
+     "changed": false
+    },
+    {
+     "name": "rain-288092TP",
+     "status": 200,
+     "bytes": 54996,
+     "sha256_prefix": "f35fc8ca144924de",
+     "changed": true
+    },
+    {
+     "name": "rain-287946TP",
+     "status": 200,
+     "bytes": 54988,
+     "sha256_prefix": "ab9fda3c7dfe3875",
+     "changed": true
+    },
+    {
+     "name": "rain-246847TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "9fd19e86139afa03",
+     "changed": false
+    },
+    {
+     "name": "rain-380002TP",
+     "status": 200,
+     "bytes": 54249,
+     "sha256_prefix": "1e004772f9b5df21",
+     "changed": true
+    },
+    {
+     "name": "rain-239374TP",
+     "status": 200,
+     "bytes": 53889,
+     "sha256_prefix": "fb76654ee3f26144",
+     "changed": true
+    },
+    {
+     "name": "rain-287864TP",
+     "status": 200,
+     "bytes": 54989,
+     "sha256_prefix": "6e5f8ba802b672a7",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "48b39e4",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/48b39e465b9430649d5f464bda4decabd928642f",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/4a4d130...48b39e4"
+  },
+  {
+   "at": "2026-11-19T13:04:17Z",
+   "ok": 23,
+   "failed": 0,
+   "requests": 23,
+   "changed_requests": [
+    "readings-0001",
+    "readings-0003",
+    "readings-0006",
+    "readings-0007",
+    "readings-0009",
+    "readings-3104TH",
+    "readings-3400TH",
+    "readings-3401TH",
+    "readings-3404TH",
+    "rain-246424TP",
+    "rain-245176TP",
+    "rain-288092TP",
+    "rain-287946TP",
+    "rain-380002TP",
+    "rain-239374TP",
+    "rain-287864TP"
+   ],
+   "requests_detail": [
+    {
+     "name": "floods",
+     "status": 200,
+     "bytes": 4039,
+     "sha256_prefix": "d7ad0d958891ad3b",
+     "changed": false
+    },
+    {
+     "name": "stations",
+     "status": 200,
+     "bytes": 99748,
+     "sha256_prefix": "5fce9b4bcac33fd5",
+     "changed": false
+    },
+    {
+     "name": "readings-0001",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "11dee7612b582723",
+     "changed": true
+    },
+    {
+     "name": "readings-0003",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "931c826b18b79189",
+     "changed": true
+    },
+    {
+     "name": "readings-0006",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "eb265a19ccec9556",
+     "changed": true
+    },
+    {
+     "name": "readings-0007",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "e862f58ba0c86736",
+     "changed": true
+    },
+    {
+     "name": "readings-0009",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "4d2c292652c46b51",
+     "changed": true
+    },
+    {
+     "name": "readings-0010",
+     "status": 200,
+     "bytes": 795,
+     "sha256_prefix": "d8f0dfc44f264c31",
+     "changed": false
+    },
+    {
+     "name": "readings-3104TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "31ddd20860d8c775",
+     "changed": true
+    },
+    {
+     "name": "readings-3400TH",
+     "status": 200,
+     "bytes": 1436,
+     "sha256_prefix": "5077c8ad2b2c9852",
+     "changed": true
+    },
+    {
+     "name": "readings-3401TH",
+     "status": 200,
+     "bytes": 1445,
+     "sha256_prefix": "df0ae4f4ee90f6ec",
+     "changed": true
+    },
+    {
+     "name": "readings-3404TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "7f090a5185c3b9b5",
+     "changed": true
+    },
+    {
+     "name": "rain-stations",
+     "status": 200,
+     "bytes": 10264,
+     "sha256_prefix": "53899def93f61725",
+     "changed": false
+    },
+    {
+     "name": "rain-246424TP",
+     "status": 200,
+     "bytes": 52449,
+     "sha256_prefix": "2b140cfc6ea633bf",
+     "changed": true
+    },
+    {
+     "name": "rain-289102TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "8d1ba650af1f41e6",
+     "changed": false
+    },
+    {
+     "name": "rain-245176TP",
+     "status": 200,
+     "bytes": 53529,
+     "sha256_prefix": "78271a70820115e8",
+     "changed": true
+    },
+    {
+     "name": "rain-287283TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "8a64a79cbccd3d8d",
+     "changed": false
+    },
+    {
+     "name": "rain-288092TP",
+     "status": 200,
+     "bytes": 53556,
+     "sha256_prefix": "7e59ad69b589a1d7",
+     "changed": true
+    },
+    {
+     "name": "rain-287946TP",
+     "status": 200,
+     "bytes": 53548,
+     "sha256_prefix": "e0be20d7d04b75f7",
+     "changed": true
+    },
+    {
+     "name": "rain-246847TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "9fd19e86139afa03",
+     "changed": false
+    },
+    {
+     "name": "rain-380002TP",
+     "status": 200,
+     "bytes": 52809,
+     "sha256_prefix": "cdc7fc59ac2b5878",
+     "changed": true
+    },
+    {
+     "name": "rain-239374TP",
+     "status": 200,
+     "bytes": 52449,
+     "sha256_prefix": "4b88b619aa6d93cb",
+     "changed": true
+    },
+    {
+     "name": "rain-287864TP",
+     "status": 200,
+     "bytes": 53549,
+     "sha256_prefix": "8b083cf72766a88a",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "4a4d130",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/4a4d13005725f1c24d6cd12ebee2d66ee2f2df91",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/379aae6...4a4d130"
+  },
+  {
+   "at": "2026-11-19T12:04:34Z",
+   "ok": 23,
+   "failed": 0,
+   "requests": 23,
+   "changed_requests": [
+    "stations",
+    "readings-0001",
+    "readings-0003",
+    "readings-0006",
+    "readings-0007",
+    "readings-0009",
+    "readings-3104TH",
+    "readings-3400TH",
+    "readings-3401TH",
+    "readings-3404TH",
+    "rain-246424TP",
+    "rain-245176TP",
+    "rain-288092TP",
+    "rain-287946TP",
+    "rain-380002TP",
+    "rain-239374TP",
+    "rain-287864TP"
+   ],
+   "requests_detail": [
+    {
+     "name": "floods",
+     "status": 200,
+     "bytes": 4039,
+     "sha256_prefix": "d7ad0d958891ad3b",
+     "changed": false
+    },
+    {
+     "name": "stations",
+     "status": 200,
+     "bytes": 99748,
+     "sha256_prefix": "5fce9b4bcac33fd5",
+     "changed": true
+    },
+    {
+     "name": "readings-0001",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "e29cf5466872058e",
+     "changed": true
+    },
+    {
+     "name": "readings-0003",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "3024300c69842732",
+     "changed": true
+    },
+    {
+     "name": "readings-0006",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "9ccb03b3b338b324",
+     "changed": true
+    },
+    {
+     "name": "readings-0007",
+     "status": 200,
+     "bytes": 1120,
+     "sha256_prefix": "6e88b9a57144e8ce",
+     "changed": true
+    },
+    {
+     "name": "readings-0009",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "c5d9e9f100201654",
+     "changed": true
+    },
+    {
+     "name": "readings-0010",
+     "status": 200,
+     "bytes": 795,
+     "sha256_prefix": "d8f0dfc44f264c31",
+     "changed": false
+    },
+    {
+     "name": "readings-3104TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "edcb783a9dfac249",
+     "changed": true
+    },
+    {
+     "name": "readings-3400TH",
+     "status": 200,
+     "bytes": 1436,
+     "sha256_prefix": "4444642549ad89b6",
+     "changed": true
+    },
+    {
+     "name": "readings-3401TH",
+     "status": 200,
+     "bytes": 1445,
+     "sha256_prefix": "3356467f4afd80be",
+     "changed": true
+    },
+    {
+     "name": "readings-3404TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "58f5103dacf9a3a6",
+     "changed": true
+    },
+    {
+     "name": "rain-stations",
+     "status": 200,
+     "bytes": 10264,
+     "sha256_prefix": "53899def93f61725",
+     "changed": false
+    },
+    {
+     "name": "rain-246424TP",
+     "status": 200,
+     "bytes": 51009,
+     "sha256_prefix": "01413cf75f2f8efc",
+     "changed": true
+    },
+    {
+     "name": "rain-289102TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "8d1ba650af1f41e6",
+     "changed": false
+    },
+    {
+     "name": "rain-245176TP",
+     "status": 200,
+     "bytes": 51729,
+     "sha256_prefix": "f49092904c7d8eb7",
+     "changed": true
+    },
+    {
+     "name": "rain-287283TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "8a64a79cbccd3d8d",
+     "changed": false
+    },
+    {
+     "name": "rain-288092TP",
+     "status": 200,
+     "bytes": 52116,
+     "sha256_prefix": "893b1ed52eebb081",
+     "changed": true
+    },
+    {
+     "name": "rain-287946TP",
+     "status": 200,
+     "bytes": 52108,
+     "sha256_prefix": "0c69f9da9ee5efd3",
+     "changed": true
+    },
+    {
+     "name": "rain-246847TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "9fd19e86139afa03",
+     "changed": false
+    },
+    {
+     "name": "rain-380002TP",
+     "status": 200,
+     "bytes": 51369,
+     "sha256_prefix": "163132421523588c",
+     "changed": true
+    },
+    {
+     "name": "rain-239374TP",
+     "status": 200,
+     "bytes": 50289,
+     "sha256_prefix": "0156d7fb2e4d427a",
+     "changed": true
+    },
+    {
+     "name": "rain-287864TP",
+     "status": 200,
+     "bytes": 52109,
+     "sha256_prefix": "e4befd9619705773",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "379aae6",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/379aae67e159f2afe46678e771171e631f923e70",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/6179c7e...379aae6"
+  },
+  {
+   "at": "2026-11-19T11:04:52Z",
+   "ok": 23,
+   "failed": 0,
+   "requests": 23,
+   "changed_requests": [
+    "readings-0001",
+    "readings-0003",
+    "readings-0006",
+    "readings-0007",
+    "readings-0009",
+    "readings-3104TH",
+    "readings-3400TH",
+    "readings-3401TH",
+    "readings-3404TH",
+    "rain-246424TP",
+    "rain-245176TP",
+    "rain-288092TP",
+    "rain-287946TP",
+    "rain-380002TP",
+    "rain-239374TP",
+    "rain-287864TP"
+   ],
+   "requests_detail": [
+    {
+     "name": "floods",
+     "status": 200,
+     "bytes": 4039,
+     "sha256_prefix": "d7ad0d958891ad3b",
+     "changed": false
+    },
+    {
+     "name": "stations",
+     "status": 200,
+     "bytes": 99473,
+     "sha256_prefix": "ba307996b6eb224f",
+     "changed": false
+    },
+    {
+     "name": "readings-0001",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "ec2e0e5ce1c3a424",
+     "changed": true
+    },
+    {
+     "name": "readings-0003",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "c14b353f00d660d0",
+     "changed": true
+    },
+    {
+     "name": "readings-0006",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "d3ade10ef0578212",
+     "changed": true
+    },
+    {
+     "name": "readings-0007",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "27e13c76efa3779c",
+     "changed": true
+    },
+    {
+     "name": "readings-0009",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "afaf744e4fd7d36e",
+     "changed": true
+    },
+    {
+     "name": "readings-0010",
+     "status": 200,
+     "bytes": 795,
+     "sha256_prefix": "d8f0dfc44f264c31",
+     "changed": false
+    },
+    {
+     "name": "readings-3104TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "06f812623bb008ae",
+     "changed": true
+    },
+    {
+     "name": "readings-3400TH",
+     "status": 200,
+     "bytes": 1436,
+     "sha256_prefix": "ab2b91855f8d3bf8",
+     "changed": true
+    },
+    {
+     "name": "readings-3401TH",
+     "status": 200,
+     "bytes": 1445,
+     "sha256_prefix": "69440cd7c5ade6f7",
+     "changed": true
+    },
+    {
+     "name": "readings-3404TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "a6cbd5bb99ab1400",
+     "changed": true
+    },
+    {
+     "name": "rain-stations",
+     "status": 200,
+     "bytes": 10264,
+     "sha256_prefix": "53899def93f61725",
+     "changed": false
+    },
+    {
+     "name": "rain-246424TP",
+     "status": 200,
+     "bytes": 49569,
+     "sha256_prefix": "a9043f090f85ecdb",
+     "changed": true
+    },
+    {
+     "name": "rain-289102TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "8d1ba650af1f41e6",
+     "changed": false
+    },
+    {
+     "name": "rain-245176TP",
+     "status": 200,
+     "bytes": 50289,
+     "sha256_prefix": "cde9a77b986fcd79",
+     "changed": true
+    },
+    {
+     "name": "rain-287283TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "8a64a79cbccd3d8d",
+     "changed": false
+    },
+    {
+     "name": "rain-288092TP",
+     "status": 200,
+     "bytes": 50676,
+     "sha256_prefix": "8b41de61f8c892da",
+     "changed": true
+    },
+    {
+     "name": "rain-287946TP",
+     "status": 200,
+     "bytes": 50668,
+     "sha256_prefix": "34b3698e44cf395a",
+     "changed": true
+    },
+    {
+     "name": "rain-246847TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "9fd19e86139afa03",
+     "changed": false
+    },
+    {
+     "name": "rain-380002TP",
+     "status": 200,
+     "bytes": 49929,
+     "sha256_prefix": "9b5493fbb76eee4c",
+     "changed": true
+    },
+    {
+     "name": "rain-239374TP",
+     "status": 200,
+     "bytes": 49569,
+     "sha256_prefix": "fcc3e71de3bdb1e0",
+     "changed": true
+    },
+    {
+     "name": "rain-287864TP",
+     "status": 200,
+     "bytes": 50669,
+     "sha256_prefix": "0bb1cfa3c0beb303",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "6179c7e",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/6179c7e3c43fc3591e1601011d223221e5597d92",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/1460f87...6179c7e"
+  },
+  {
+   "at": "2026-11-19T10:04:25Z",
+   "ok": 23,
+   "failed": 0,
+   "requests": 23,
+   "changed_requests": [
+    "readings-0001",
+    "readings-0003",
+    "readings-0006",
+    "readings-0007",
+    "readings-0009",
+    "readings-3104TH",
+    "readings-3400TH",
+    "readings-3401TH",
+    "readings-3404TH",
+    "rain-246424TP",
+    "rain-245176TP",
+    "rain-288092TP",
+    "rain-287946TP",
+    "rain-380002TP",
+    "rain-239374TP",
+    "rain-287864TP"
+   ],
+   "requests_detail": [
+    {
+     "name": "floods",
+     "status": 200,
+     "bytes": 4039,
+     "sha256_prefix": "d7ad0d958891ad3b",
+     "changed": false
+    },
+    {
+     "name": "stations",
+     "status": 200,
+     "bytes": 99473,
+     "sha256_prefix": "ba307996b6eb224f",
+     "changed": false
+    },
+    {
+     "name": "readings-0001",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "5ae2f943f64c53dc",
+     "changed": true
+    },
+    {
+     "name": "readings-0003",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "cc643b490e5f5367",
+     "changed": true
+    },
+    {
+     "name": "readings-0006",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "ff38f61a5878b859",
+     "changed": true
+    },
+    {
+     "name": "readings-0007",
+     "status": 200,
+     "bytes": 1118,
+     "sha256_prefix": "4934efcb00bc058c",
+     "changed": true
+    },
+    {
+     "name": "readings-0009",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "dc8a8749b441e473",
+     "changed": true
+    },
+    {
+     "name": "readings-0010",
+     "status": 200,
+     "bytes": 795,
+     "sha256_prefix": "d8f0dfc44f264c31",
+     "changed": false
+    },
+    {
+     "name": "readings-3104TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "4a793a3e006cced7",
+     "changed": true
+    },
+    {
+     "name": "readings-3400TH",
+     "status": 200,
+     "bytes": 1436,
+     "sha256_prefix": "72dec1e147c82c7f",
+     "changed": true
+    },
+    {
+     "name": "readings-3401TH",
+     "status": 200,
+     "bytes": 1445,
+     "sha256_prefix": "fc49827f793c1abf",
+     "changed": true
+    },
+    {
+     "name": "readings-3404TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "aeb51f556eddcaa3",
+     "changed": true
+    },
+    {
+     "name": "rain-stations",
+     "status": 200,
+     "bytes": 10264,
+     "sha256_prefix": "53899def93f61725",
+     "changed": false
+    },
+    {
+     "name": "rain-246424TP",
+     "status": 200,
+     "bytes": 48129,
+     "sha256_prefix": "9e397cd46ada10d8",
+     "changed": true
+    },
+    {
+     "name": "rain-289102TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "8d1ba650af1f41e6",
+     "changed": false
+    },
+    {
+     "name": "rain-245176TP",
+     "status": 200,
+     "bytes": 49209,
+     "sha256_prefix": "dc91ced02f081f18",
+     "changed": true
+    },
+    {
+     "name": "rain-287283TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "8a64a79cbccd3d8d",
+     "changed": false
+    },
+    {
+     "name": "rain-288092TP",
+     "status": 200,
+     "bytes": 49236,
+     "sha256_prefix": "31f4909a33057ba2",
+     "changed": true
+    },
+    {
+     "name": "rain-287946TP",
+     "status": 200,
+     "bytes": 49228,
+     "sha256_prefix": "44c767024bceaf78",
+     "changed": true
+    },
+    {
+     "name": "rain-246847TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "9fd19e86139afa03",
+     "changed": false
+    },
+    {
+     "name": "rain-380002TP",
+     "status": 200,
+     "bytes": 48489,
+     "sha256_prefix": "d52b0837dea2a608",
+     "changed": true
+    },
+    {
+     "name": "rain-239374TP",
+     "status": 200,
+     "bytes": 48129,
+     "sha256_prefix": "6b236b359f23291d",
+     "changed": true
+    },
+    {
+     "name": "rain-287864TP",
+     "status": 200,
+     "bytes": 49229,
+     "sha256_prefix": "67c2b99b5bb4e851",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "1460f87",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/1460f87e59532acd781b90ca10f34d7f5f1f6e79",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/2f43933...1460f87"
+  },
+  {
+   "at": "2026-11-19T09:04:39Z",
+   "ok": 23,
+   "failed": 0,
+   "requests": 23,
+   "changed_requests": [
+    "floods",
+    "readings-0001",
+    "readings-0003",
+    "readings-0006",
+    "readings-0007",
+    "readings-0009",
+    "readings-3104TH",
+    "readings-3400TH",
+    "readings-3401TH",
+    "readings-3404TH",
+    "rain-246424TP",
+    "rain-245176TP",
+    "rain-288092TP",
+    "rain-287946TP",
+    "rain-380002TP",
+    "rain-239374TP",
+    "rain-287864TP"
+   ],
+   "requests_detail": [
+    {
+     "name": "floods",
+     "status": 200,
+     "bytes": 4039,
+     "sha256_prefix": "d7ad0d958891ad3b",
+     "changed": true
+    },
+    {
+     "name": "stations",
+     "status": 200,
+     "bytes": 99473,
+     "sha256_prefix": "ba307996b6eb224f",
+     "changed": false
+    },
+    {
+     "name": "readings-0001",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "da7b29681f0f8bd0",
+     "changed": true
+    },
+    {
+     "name": "readings-0003",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "e90eb9aa32205161",
+     "changed": true
+    },
+    {
+     "name": "readings-0006",
+     "status": 200,
+     "bytes": 1118,
+     "sha256_prefix": "780c5304251a0f4f",
+     "changed": true
+    },
+    {
+     "name": "readings-0007",
+     "status": 200,
+     "bytes": 1118,
+     "sha256_prefix": "ae140b3e3f331fa2",
+     "changed": true
+    },
+    {
+     "name": "readings-0009",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "2b7c0cf1c865a2b6",
+     "changed": true
+    },
+    {
+     "name": "readings-0010",
+     "status": 200,
+     "bytes": 795,
+     "sha256_prefix": "d8f0dfc44f264c31",
+     "changed": false
+    },
+    {
+     "name": "readings-3104TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "97a641d0467fc0ee",
+     "changed": true
+    },
+    {
+     "name": "readings-3400TH",
+     "status": 200,
+     "bytes": 1436,
+     "sha256_prefix": "2ed1389f52c3d348",
+     "changed": true
+    },
+    {
+     "name": "readings-3401TH",
+     "status": 200,
+     "bytes": 1445,
+     "sha256_prefix": "54647f1be0e68aad",
+     "changed": true
+    },
+    {
+     "name": "readings-3404TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "9661c44c69ee0258",
+     "changed": true
+    },
+    {
+     "name": "rain-stations",
+     "status": 200,
+     "bytes": 10264,
+     "sha256_prefix": "53899def93f61725",
+     "changed": false
+    },
+    {
+     "name": "rain-246424TP",
+     "status": 200,
+     "bytes": 46689,
+     "sha256_prefix": "4d8f21c2f5238b2e",
+     "changed": true
+    },
+    {
+     "name": "rain-289102TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "8d1ba650af1f41e6",
+     "changed": false
+    },
+    {
+     "name": "rain-245176TP",
+     "status": 200,
+     "bytes": 47769,
+     "sha256_prefix": "2e54232fc9505d4e",
+     "changed": true
+    },
+    {
+     "name": "rain-287283TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "8a64a79cbccd3d8d",
+     "changed": false
+    },
+    {
+     "name": "rain-288092TP",
+     "status": 200,
+     "bytes": 47796,
+     "sha256_prefix": "d2271b74b5d1c99e",
+     "changed": true
+    },
+    {
+     "name": "rain-287946TP",
+     "status": 200,
+     "bytes": 47788,
+     "sha256_prefix": "daa4ed971f733c6a",
+     "changed": true
+    },
+    {
+     "name": "rain-246847TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "9fd19e86139afa03",
+     "changed": false
+    },
+    {
+     "name": "rain-380002TP",
+     "status": 200,
+     "bytes": 47049,
+     "sha256_prefix": "4b2688b793c4351a",
+     "changed": true
+    },
+    {
+     "name": "rain-239374TP",
+     "status": 200,
+     "bytes": 46689,
+     "sha256_prefix": "611abf3ecb196742",
+     "changed": true
+    },
+    {
+     "name": "rain-287864TP",
+     "status": 200,
+     "bytes": 47789,
+     "sha256_prefix": "3b67bfbd9e252e99",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "2f43933",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/2f43933ff73bbd1a4c67e0c938172e9914634f41",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/d3644c1...2f43933"
+  },
+  {
+   "at": "2026-11-19T08:04:14Z",
+   "ok": 23,
+   "failed": 0,
+   "requests": 23,
+   "changed_requests": [
+    "stations",
+    "readings-0001",
+    "readings-0003",
+    "readings-0006",
+    "readings-0007",
+    "readings-0009",
+    "readings-3104TH",
+    "readings-3400TH",
+    "readings-3401TH",
+    "readings-3404TH",
+    "rain-246424TP",
+    "rain-245176TP",
+    "rain-288092TP",
+    "rain-287946TP",
+    "rain-380002TP",
+    "rain-239374TP",
+    "rain-287864TP"
+   ],
+   "requests_detail": [
+    {
+     "name": "floods",
+     "status": 200,
+     "bytes": 4463,
+     "sha256_prefix": "f3864ba6716af327",
+     "changed": false
+    },
+    {
+     "name": "stations",
+     "status": 200,
+     "bytes": 99473,
+     "sha256_prefix": "ba307996b6eb224f",
+     "changed": true
+    },
+    {
+     "name": "readings-0001",
+     "status": 200,
+     "bytes": 1118,
+     "sha256_prefix": "7cc973c98fa32d08",
+     "changed": true
+    },
+    {
+     "name": "readings-0003",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "ad8eb7f672124279",
+     "changed": true
+    },
+    {
+     "name": "readings-0006",
+     "status": 200,
+     "bytes": 1118,
+     "sha256_prefix": "2958372fd74b1437",
+     "changed": true
+    },
+    {
+     "name": "readings-0007",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "85cffb95e7146799",
+     "changed": true
+    },
+    {
+     "name": "readings-0009",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "627bda12712efbcf",
+     "changed": true
+    },
+    {
+     "name": "readings-0010",
+     "status": 200,
+     "bytes": 795,
+     "sha256_prefix": "d8f0dfc44f264c31",
+     "changed": false
+    },
+    {
+     "name": "readings-3104TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "5718b27c2ad7719a",
+     "changed": true
+    },
+    {
+     "name": "readings-3400TH",
+     "status": 200,
+     "bytes": 1436,
+     "sha256_prefix": "c946df2059a27139",
+     "changed": true
+    },
+    {
+     "name": "readings-3401TH",
+     "status": 200,
+     "bytes": 1443,
+     "sha256_prefix": "a7f6c244c5738c3c",
+     "changed": true
+    },
+    {
+     "name": "readings-3404TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "7907de6d18fcc1b1",
+     "changed": true
+    },
+    {
+     "name": "rain-stations",
+     "status": 200,
+     "bytes": 10264,
+     "sha256_prefix": "53899def93f61725",
+     "changed": false
+    },
+    {
+     "name": "rain-246424TP",
+     "status": 200,
+     "bytes": 45249,
+     "sha256_prefix": "f154b0127c8ea295",
+     "changed": true
+    },
+    {
+     "name": "rain-289102TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "8d1ba650af1f41e6",
+     "changed": false
+    },
+    {
+     "name": "rain-245176TP",
+     "status": 200,
+     "bytes": 46329,
+     "sha256_prefix": "4e7da40b4beb609b",
+     "changed": true
+    },
+    {
+     "name": "rain-287283TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "8a64a79cbccd3d8d",
+     "changed": false
+    },
+    {
+     "name": "rain-288092TP",
+     "status": 200,
+     "bytes": 46354,
+     "sha256_prefix": "f6e047907be9401d",
+     "changed": true
+    },
+    {
+     "name": "rain-287946TP",
+     "status": 200,
+     "bytes": 46347,
+     "sha256_prefix": "118061edcb807a4f",
+     "changed": true
+    },
+    {
+     "name": "rain-246847TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "9fd19e86139afa03",
+     "changed": false
+    },
+    {
+     "name": "rain-380002TP",
+     "status": 200,
+     "bytes": 45609,
+     "sha256_prefix": "a7debcfdfafa81d9",
+     "changed": true
+    },
+    {
+     "name": "rain-239374TP",
+     "status": 200,
+     "bytes": 45249,
+     "sha256_prefix": "caf9bf9d45ead312",
+     "changed": true
+    },
+    {
+     "name": "rain-287864TP",
+     "status": 200,
+     "bytes": 46348,
+     "sha256_prefix": "1dfc9fb854cc4a7b",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d3644c1",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d3644c1db2231a9dcffc4b8c42f17831ce0d9b8c",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/ab758f8...d3644c1"
+  },
+  {
+   "at": "2026-11-19T07:04:06Z",
+   "ok": 23,
+   "failed": 0,
+   "requests": 23,
+   "changed_requests": [
+    "stations",
+    "readings-0001",
+    "readings-0003",
+    "readings-0006",
+    "readings-0007",
+    "readings-0009",
+    "readings-3104TH",
+    "readings-3400TH",
+    "readings-3401TH",
+    "readings-3404TH",
+    "rain-246424TP",
+    "rain-245176TP",
+    "rain-288092TP",
+    "rain-287946TP",
+    "rain-380002TP",
+    "rain-239374TP",
+    "rain-287864TP"
+   ],
+   "requests_detail": [
+    {
+     "name": "floods",
+     "status": 200,
+     "bytes": 4463,
+     "sha256_prefix": "f3864ba6716af327",
+     "changed": false
+    },
+    {
+     "name": "stations",
+     "status": 200,
+     "bytes": 99748,
+     "sha256_prefix": "5fce9b4bcac33fd5",
+     "changed": true
+    },
+    {
+     "name": "readings-0001",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "76b730b9c7eaef37",
+     "changed": true
+    },
+    {
+     "name": "readings-0003",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "eafd62a7c69956b4",
+     "changed": true
+    },
+    {
+     "name": "readings-0006",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "c667fad1b8c4c1d1",
+     "changed": true
+    },
+    {
+     "name": "readings-0007",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "7dc8b15e2658142c",
+     "changed": true
+    },
+    {
+     "name": "readings-0009",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "5947fdddfb0e351b",
+     "changed": true
+    },
+    {
+     "name": "readings-0010",
+     "status": 200,
+     "bytes": 795,
+     "sha256_prefix": "d8f0dfc44f264c31",
+     "changed": false
+    },
+    {
+     "name": "readings-3104TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "14b5a837904851e5",
+     "changed": true
+    },
+    {
+     "name": "readings-3400TH",
+     "status": 200,
+     "bytes": 1436,
+     "sha256_prefix": "d6d232690ac4d877",
+     "changed": true
+    },
+    {
+     "name": "readings-3401TH",
+     "status": 200,
+     "bytes": 1445,
+     "sha256_prefix": "b5fb450d159531b5",
+     "changed": true
+    },
+    {
+     "name": "readings-3404TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "b76c0134ffec2b6d",
+     "changed": true
+    },
+    {
+     "name": "rain-stations",
+     "status": 200,
+     "bytes": 10264,
+     "sha256_prefix": "53899def93f61725",
+     "changed": false
+    },
+    {
+     "name": "rain-246424TP",
+     "status": 200,
+     "bytes": 43809,
+     "sha256_prefix": "8920e8fe404c0f5b",
+     "changed": true
+    },
+    {
+     "name": "rain-289102TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "8d1ba650af1f41e6",
+     "changed": false
+    },
+    {
+     "name": "rain-245176TP",
+     "status": 200,
+     "bytes": 44889,
+     "sha256_prefix": "723da0651e9608f2",
+     "changed": true
+    },
+    {
+     "name": "rain-287283TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "8a64a79cbccd3d8d",
+     "changed": false
+    },
+    {
+     "name": "rain-288092TP",
+     "status": 200,
+     "bytes": 44913,
+     "sha256_prefix": "70bfa4fbda5dfd7e",
+     "changed": true
+    },
+    {
+     "name": "rain-287946TP",
+     "status": 200,
+     "bytes": 44907,
+     "sha256_prefix": "9417cf4ec14ba0e1",
+     "changed": true
+    },
+    {
+     "name": "rain-246847TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "9fd19e86139afa03",
+     "changed": false
+    },
+    {
+     "name": "rain-380002TP",
+     "status": 200,
+     "bytes": 44169,
+     "sha256_prefix": "4d3d43d3b8491b36",
+     "changed": true
+    },
+    {
+     "name": "rain-239374TP",
+     "status": 200,
+     "bytes": 43809,
+     "sha256_prefix": "c9ce07de9d93bb32",
+     "changed": true
+    },
+    {
+     "name": "rain-287864TP",
+     "status": 200,
+     "bytes": 44908,
+     "sha256_prefix": "513c078c5887c813",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "ab758f8",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/ab758f84f3411cfda4eaef6a3b98834533309ceb",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/6ee935e...ab758f8"
+  },
+  {
+   "at": "2026-11-19T06:03:51Z",
+   "ok": 23,
+   "failed": 0,
+   "requests": 23,
+   "changed_requests": [
+    "stations",
+    "readings-0001",
+    "readings-0003",
+    "readings-0006",
+    "readings-0007",
+    "readings-0009",
+    "readings-3104TH",
+    "readings-3400TH",
+    "readings-3401TH",
+    "readings-3404TH",
+    "rain-246424TP",
+    "rain-245176TP",
+    "rain-288092TP",
+    "rain-287946TP",
+    "rain-380002TP",
+    "rain-239374TP",
+    "rain-287864TP"
+   ],
+   "requests_detail": [
+    {
+     "name": "floods",
+     "status": 200,
+     "bytes": 4463,
+     "sha256_prefix": "f3864ba6716af327",
+     "changed": false
+    },
+    {
+     "name": "stations",
+     "status": 200,
+     "bytes": 99473,
+     "sha256_prefix": "ba307996b6eb224f",
+     "changed": true
+    },
+    {
+     "name": "readings-0001",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "da0af5863b9cfbd7",
+     "changed": true
+    },
+    {
+     "name": "readings-0003",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "85d0f654dce1ec60",
+     "changed": true
+    },
+    {
+     "name": "readings-0006",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "7352826e5b9d5987",
+     "changed": true
+    },
+    {
+     "name": "readings-0007",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "d759d84d872feb0a",
+     "changed": true
+    },
+    {
+     "name": "readings-0009",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "2b4e105515c609f9",
+     "changed": true
+    },
+    {
+     "name": "readings-0010",
+     "status": 200,
+     "bytes": 795,
+     "sha256_prefix": "d8f0dfc44f264c31",
+     "changed": false
+    },
+    {
+     "name": "readings-3104TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "e102cdc660a5dd7c",
+     "changed": true
+    },
+    {
+     "name": "readings-3400TH",
+     "status": 200,
+     "bytes": 1435,
+     "sha256_prefix": "1c8f03b8e69e3776",
+     "changed": true
+    },
+    {
+     "name": "readings-3401TH",
+     "status": 200,
+     "bytes": 1445,
+     "sha256_prefix": "7ddc87559676d36b",
+     "changed": true
+    },
+    {
+     "name": "readings-3404TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "f7952e5288fce95c",
+     "changed": true
+    },
+    {
+     "name": "rain-stations",
+     "status": 200,
+     "bytes": 10264,
+     "sha256_prefix": "53899def93f61725",
+     "changed": false
+    },
+    {
+     "name": "rain-246424TP",
+     "status": 200,
+     "bytes": 42369,
+     "sha256_prefix": "02efa5434d3718a1",
+     "changed": true
+    },
+    {
+     "name": "rain-289102TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "8d1ba650af1f41e6",
+     "changed": false
+    },
+    {
+     "name": "rain-245176TP",
+     "status": 200,
+     "bytes": 43449,
+     "sha256_prefix": "dac3bf76542759eb",
+     "changed": true
+    },
+    {
+     "name": "rain-287283TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "8a64a79cbccd3d8d",
+     "changed": false
+    },
+    {
+     "name": "rain-288092TP",
+     "status": 200,
+     "bytes": 43472,
+     "sha256_prefix": "bf37d036b81c0445",
+     "changed": true
+    },
+    {
+     "name": "rain-287946TP",
+     "status": 200,
+     "bytes": 43467,
+     "sha256_prefix": "0c536dc7e078aafc",
+     "changed": true
+    },
+    {
+     "name": "rain-246847TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "9fd19e86139afa03",
+     "changed": false
+    },
+    {
+     "name": "rain-380002TP",
+     "status": 200,
+     "bytes": 42729,
+     "sha256_prefix": "b2252a495e47e522",
+     "changed": true
+    },
+    {
+     "name": "rain-239374TP",
+     "status": 200,
+     "bytes": 42369,
+     "sha256_prefix": "cd8f02bbf84507c3",
+     "changed": true
+    },
+    {
+     "name": "rain-287864TP",
+     "status": 200,
+     "bytes": 43467,
+     "sha256_prefix": "e8779ec6a245aa53",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "6ee935e",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/6ee935e17d5733cf18c410ee489d74b2bee55a8c",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/0796eae...6ee935e"
+  },
+  {
+   "at": "2026-11-19T05:03:55Z",
+   "ok": 23,
+   "failed": 0,
+   "requests": 23,
+   "changed_requests": [
+    "readings-0001",
+    "readings-0003",
+    "readings-0006",
+    "readings-0007",
+    "readings-0009",
+    "readings-3104TH",
+    "readings-3400TH",
+    "readings-3401TH",
+    "readings-3404TH",
+    "rain-246424TP",
+    "rain-245176TP",
+    "rain-288092TP",
+    "rain-287946TP",
+    "rain-380002TP",
+    "rain-239374TP",
+    "rain-287864TP"
+   ],
+   "requests_detail": [
+    {
+     "name": "floods",
+     "status": 200,
+     "bytes": 4463,
+     "sha256_prefix": "f3864ba6716af327",
+     "changed": false
+    },
+    {
+     "name": "stations",
+     "status": 200,
+     "bytes": 99748,
+     "sha256_prefix": "5fce9b4bcac33fd5",
+     "changed": false
+    },
+    {
+     "name": "readings-0001",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "ce5092104b6c822c",
+     "changed": true
+    },
+    {
+     "name": "readings-0003",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "5b1ddf2259dd698b",
+     "changed": true
+    },
+    {
+     "name": "readings-0006",
+     "status": 200,
+     "bytes": 1118,
+     "sha256_prefix": "486a763f3b306de1",
+     "changed": true
+    },
+    {
+     "name": "readings-0007",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "b3a6e2dd5c317dbd",
+     "changed": true
+    },
+    {
+     "name": "readings-0009",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "2a91572999cd2e59",
+     "changed": true
+    },
+    {
+     "name": "readings-0010",
+     "status": 200,
+     "bytes": 795,
+     "sha256_prefix": "d8f0dfc44f264c31",
+     "changed": false
+    },
+    {
+     "name": "readings-3104TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "b48c42f9c60093f1",
+     "changed": true
+    },
+    {
+     "name": "readings-3400TH",
+     "status": 200,
+     "bytes": 1436,
+     "sha256_prefix": "5d724f86bae3a3af",
+     "changed": true
+    },
+    {
+     "name": "readings-3401TH",
+     "status": 200,
+     "bytes": 1445,
+     "sha256_prefix": "9bb695a6363fc294",
+     "changed": true
+    },
+    {
+     "name": "readings-3404TH",
+     "status": 200,
+     "bytes": 1119,
+     "sha256_prefix": "30e2642c291a083d",
+     "changed": true
+    },
+    {
+     "name": "rain-stations",
+     "status": 200,
+     "bytes": 10264,
+     "sha256_prefix": "53899def93f61725",
+     "changed": false
+    },
+    {
+     "name": "rain-246424TP",
+     "status": 200,
+     "bytes": 40929,
+     "sha256_prefix": "bed11d88363e4baa",
+     "changed": true
+    },
+    {
+     "name": "rain-289102TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "8d1ba650af1f41e6",
+     "changed": false
+    },
+    {
+     "name": "rain-245176TP",
+     "status": 200,
+     "bytes": 42009,
+     "sha256_prefix": "2f583aca6da638bf",
+     "changed": true
+    },
+    {
+     "name": "rain-287283TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "8a64a79cbccd3d8d",
+     "changed": false
+    },
+    {
+     "name": "rain-288092TP",
+     "status": 200,
+     "bytes": 42030,
+     "sha256_prefix": "6a66542ac8a125c9",
+     "changed": true
+    },
+    {
+     "name": "rain-287946TP",
+     "status": 200,
+     "bytes": 42026,
+     "sha256_prefix": "79707841bd88f6db",
+     "changed": true
+    },
+    {
+     "name": "rain-246847TP",
+     "status": 200,
+     "bytes": 971,
+     "sha256_prefix": "9fd19e86139afa03",
+     "changed": false
+    },
+    {
+     "name": "rain-380002TP",
+     "status": 200,
+     "bytes": 41289,
+     "sha256_prefix": "b16231367ec56445",
+     "changed": true
+    },
+    {
+     "name": "rain-239374TP",
+     "status": 200,
+     "bytes": 40929,
+     "sha256_prefix": "40954015d819e202",
+     "changed": true
+    },
+    {
+     "name": "rain-287864TP",
+     "status": 200,
+     "bytes": 42026,
+     "sha256_prefix": "35427448132f6fab",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "0796eae",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/0796eae6be936757132e432333b6c938f74ec9d7",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/51d3aef...0796eae"
+  }
+ ],
+ "copies": {
+  "files_in_git_data": 3,
+  "bytes_in_git_data": 362705,
+  "files_in_vault_working_copy": 97,
+  "bytes_in_vault_working_copy": 2397395,
+  "dated_copies_in_vault": 73,
+  "where": {
+   "api_latest": "https://data.promptugal.news/api/v1/ea-flood/latest.json",
+   "api_reads": "https://data.promptugal.news/api/v1/ea-flood/reads.json",
+   "source_page": "https://data.promptugal.news/sources/ea-flood/",
+   "git": "https://github.com/PrompTugal/PrompTugal__News__Data/tree/dev/data/ea-flood"
+  },
+  "tracked_in_git_vaults": 0,
+  "note": "collect/lib.mjs says vaults/ is meant to stay out of git, but 0 files of this source are tracked in git today (earlier commits); the sgit vault holds the full history. Dinis has not yet ruled on the vaults/ question."
+ },
+ "cadence_advice": {
+  "line": "The data changed on 32 of 36 reads over 9 days: nearly every read finds new data, so it changes at least as often as it is read and reading more than twice a day would catch more states. Whether the pages that use it need them is for their owners to say.",
+  "basis": "suggestion derived from 36 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is hourly; runs before 21 Nov were hourly",
+  "runs_with_change": 32,
+  "runs_kept": 36,
+  "days_covered": 8.8,
+  "changes_per_day": 3.6
+ },
+ "schedule_times": {
+  "tz": "Europe/Lisbon",
+  "times_local": [
+   "07:03",
+   "18:03"
+  ],
+  "note": "Lisbon is UTC+0 from late October to late March, so these are also 07:03 and 18:03 UTC then; one hour earlier in UTC in summer.",
+  "runs_per_day": 2
+ },
+ "api_spec": null,
+ "api_docs": "https://environment.data.gov.uk/flood-monitoring/doc/reference",
+ "own_page_copy": null,
+ "own_page_copy_note": "not taken: a copy or screenshot of the publisher's page needs a rights ruling from cl-6.rights; source_home links to the page itself",
+ "source_home": "https://environment.data.gov.uk/flood-monitoring/doc/reference"
+}

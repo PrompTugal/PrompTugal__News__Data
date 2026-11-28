@@ -1,0 +1,501 @@
+{
+ "source": "open-meteo-london",
+ "title": "London forecast (Open-Meteo)",
+ "generated_utc": "2026-11-28T02:40:14Z",
+ "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
+ "schedule": {
+  "card_says": "every 6 hours",
+  "really": "twice a day (07:03 and 18:03 Lisbon)"
+ },
+ "last_run": {
+  "at": "2026-11-27T18:12:14Z",
+  "ok": 0,
+  "failed": 1,
+  "requests": [
+   {
+    "name": "forecast",
+    "url": "https://api.open-meteo.com/v1/forecast?latitude=51.5074&longitude=-0.1278&hourly=temperature_2m,precipitation_probability,precipitation,wind_speed_10m,wind_gusts_10m,wind_direction_10m,weather_code&daily=temperature_2m_min,temperature_2m_max,precipitation_sum,weather_code&forecast_days=3&timezone=UTC&wind_speed_unit=kmh",
+    "status": 429,
+    "meaning": "refused (rate limited)",
+    "bytes": 86,
+    "changed": true
+   }
+  ]
+ },
+ "problems": [
+  {
+   "request": "forecast",
+   "url": "https://api.open-meteo.com/v1/forecast?latitude=51.5074&longitude=-0.1278&hourly=temperature_2m,precipitation_probability,precipitation,wind_speed_10m,wind_gusts_10m,wind_direction_10m,weather_code&daily=temperature_2m_min,temperature_2m_max,precipitation_sum,weather_code&forecast_days=3&timezone=UTC&wind_speed_unit=kmh",
+   "status": [
+    429
+   ],
+   "plain": "refused (rate limited)",
+   "failed_in": "6 of 19 runs kept"
+  }
+ ],
+ "runs": [
+  {
+   "at": "2026-11-27T18:12:14Z",
+   "ok": 0,
+   "failed": 1,
+   "requests": 1,
+   "changed_requests": [
+    "forecast"
+   ],
+   "requests_detail": [
+    {
+     "name": "forecast",
+     "status": 429,
+     "bytes": 86,
+     "sha256_prefix": "acb92391e285420a",
+     "changed": true
+    }
+   ],
+   "failed_requests": [
+    "forecast"
+   ],
+   "commit": "526dd0b",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/526dd0b8fd852d1fffb5fd1c54adb4760ccfe3e8",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/d409b57...526dd0b"
+  },
+  {
+   "at": "2026-11-27T07:14:23Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "forecast"
+   ],
+   "requests_detail": [
+    {
+     "name": "forecast",
+     "status": 200,
+     "bytes": 4204,
+     "sha256_prefix": "99b629b835d14879",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d409b57",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d409b5734208af88d47485b2878734dbf9e6aa7c",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/d466166...d409b57"
+  },
+  {
+   "at": "2026-11-26T18:13:47Z",
+   "ok": 0,
+   "failed": 1,
+   "requests": 1,
+   "changed_requests": [
+    "forecast"
+   ],
+   "requests_detail": [
+    {
+     "name": "forecast",
+     "status": 429,
+     "bytes": 86,
+     "sha256_prefix": "6e865e9281880042",
+     "changed": true
+    }
+   ],
+   "failed_requests": [
+    "forecast"
+   ],
+   "commit": "d466166",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d466166b925f53f8d36d4a6047daf9a0634bf489",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-26T07:13:19Z",
+   "ok": 0,
+   "failed": 1,
+   "requests": 1,
+   "changed_requests": [
+    "forecast"
+   ],
+   "requests_detail": [
+    {
+     "name": "forecast",
+     "status": 429,
+     "bytes": 86,
+     "sha256_prefix": "acb92391e285420a",
+     "changed": true
+    }
+   ],
+   "failed_requests": [
+    "forecast"
+   ],
+   "commit": "d466166",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d466166b925f53f8d36d4a6047daf9a0634bf489",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/bd410a7...d466166"
+  },
+  {
+   "at": "2026-11-21T07:12:52Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "forecast"
+   ],
+   "requests_detail": [
+    {
+     "name": "forecast",
+     "status": 200,
+     "bytes": 4079,
+     "sha256_prefix": "3f2ddf449486f3e7",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "bd410a7",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/bd410a73762d6b0a755da0a946556d6e47d54c8e",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/65c6667...bd410a7"
+  },
+  {
+   "at": "2026-11-20T18:16:06Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "forecast"
+   ],
+   "requests_detail": [
+    {
+     "name": "forecast",
+     "status": 200,
+     "bytes": 4082,
+     "sha256_prefix": "810710dae8e7b7e4",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "65c6667",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/65c66677f4957a21ffbcf6d58b3f8794f505d39f",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/cb88d7b...65c6667"
+  },
+  {
+   "at": "2026-11-20T07:17:28Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "forecast"
+   ],
+   "requests_detail": [
+    {
+     "name": "forecast",
+     "status": 200,
+     "bytes": 4087,
+     "sha256_prefix": "f8231963ddfde2b8",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "cb88d7b",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/cb88d7b793bc938078a150fb7bd84b6477977aea",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/64fbf7d...cb88d7b"
+  },
+  {
+   "at": "2026-11-19T18:14:47Z",
+   "ok": 0,
+   "failed": 1,
+   "requests": 1,
+   "changed_requests": [
+    "forecast"
+   ],
+   "requests_detail": [
+    {
+     "name": "forecast",
+     "status": 429,
+     "bytes": 86,
+     "sha256_prefix": "6e865e9281880042",
+     "changed": true
+    }
+   ],
+   "failed_requests": [
+    "forecast"
+   ],
+   "commit": "64fbf7d",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/64fbf7dda8967b6095e265f2e10aba0dfb3d65e8",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/4a4d130...64fbf7d"
+  },
+  {
+   "at": "2026-11-19T13:08:42Z",
+   "ok": 0,
+   "failed": 1,
+   "requests": 1,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "forecast",
+     "status": 429,
+     "bytes": 86,
+     "sha256_prefix": "acb92391e285420a",
+     "changed": false
+    }
+   ],
+   "failed_requests": [
+    "forecast"
+   ],
+   "commit": "4a4d130",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/4a4d13005725f1c24d6cd12ebee2d66ee2f2df91",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/379aae6...4a4d130"
+  },
+  {
+   "at": "2026-11-19T12:16:03Z",
+   "ok": 0,
+   "failed": 1,
+   "requests": 1,
+   "changed_requests": [
+    "forecast"
+   ],
+   "requests_detail": [
+    {
+     "name": "forecast",
+     "status": 429,
+     "bytes": 86,
+     "sha256_prefix": "acb92391e285420a",
+     "changed": true
+    }
+   ],
+   "failed_requests": [
+    "forecast"
+   ],
+   "commit": "379aae6",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/379aae67e159f2afe46678e771171e631f923e70",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/a84bc21...379aae6"
+  },
+  {
+   "at": "2026-11-19T06:15:51Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "forecast"
+   ],
+   "requests_detail": [
+    {
+     "name": "forecast",
+     "status": 200,
+     "bytes": 4104,
+     "sha256_prefix": "482ddeeae85e2559",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "a84bc21",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/a84bc21013f5eae48c16853f9b5038905f597fcd",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/83b562f...a84bc21"
+  },
+  {
+   "at": "2026-11-19T01:30:46Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "forecast"
+   ],
+   "requests_detail": [
+    {
+     "name": "forecast",
+     "status": 200,
+     "bytes": 4105,
+     "sha256_prefix": "8d71141a91b86f17",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T23:49:04Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "forecast"
+   ],
+   "requests_detail": [
+    {
+     "name": "forecast",
+     "status": 200,
+     "bytes": 4207,
+     "sha256_prefix": "2d044a21e3d0b71d",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T23:41:04Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "forecast"
+   ],
+   "requests_detail": [
+    {
+     "name": "forecast",
+     "status": 200,
+     "bytes": 4208,
+     "sha256_prefix": "130a131b14e744b1",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T23:32:20Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "forecast"
+   ],
+   "requests_detail": [
+    {
+     "name": "forecast",
+     "status": 200,
+     "bytes": 4205,
+     "sha256_prefix": "32252bbdb2d0eec7",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T23:26:07Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "forecast"
+   ],
+   "requests_detail": [
+    {
+     "name": "forecast",
+     "status": 200,
+     "bytes": 4212,
+     "sha256_prefix": "d717754dfcdf04be",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T22:57:24Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "forecast"
+   ],
+   "requests_detail": [
+    {
+     "name": "forecast",
+     "status": 200,
+     "bytes": 4212,
+     "sha256_prefix": "0045eca086aa4537",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T22:46:44Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "forecast"
+   ],
+   "requests_detail": [
+    {
+     "name": "forecast",
+     "status": 200,
+     "bytes": 4223,
+     "sha256_prefix": "45fe88e43d15b501",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T22:40:16Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "forecast",
+     "status": 200,
+     "bytes": 4222,
+     "sha256_prefix": "78be39b8641f7430",
+     "changed": "first read"
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  }
+ ],
+ "copies": {
+  "files_in_git_data": 3,
+  "bytes_in_git_data": 52378,
+  "files_in_vault_working_copy": 3,
+  "bytes_in_vault_working_copy": 9266,
+  "dated_copies_in_vault": 1,
+  "where": {
+   "api_latest": "https://data.promptugal.news/api/v1/open-meteo-london/latest.json",
+   "api_reads": "https://data.promptugal.news/api/v1/open-meteo-london/reads.json",
+   "source_page": "https://data.promptugal.news/sources/open-meteo-london/",
+   "git": "https://github.com/PrompTugal/PrompTugal__News__Data/tree/dev/data/open-meteo-london"
+  },
+  "tracked_in_git_vaults": 1,
+  "note": "collect/lib.mjs says vaults/ is meant to stay out of git, but 1 files of this source are tracked in git today (earlier commits); the sgit vault holds the full history. Dinis has not yet ruled on the vaults/ question."
+ },
+ "cadence_advice": {
+  "line": "The data changed on 17 of 19 reads over 9 days: nearly every read finds new data, so it changes at least as often as it is read and reading more than twice a day would catch more states. Whether the pages that use it need them is for their owners to say.",
+  "basis": "suggestion derived from 19 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is every 6 hours; runs before 21 Nov were hourly",
+  "runs_with_change": 17,
+  "runs_kept": 19,
+  "days_covered": 8.8,
+  "changes_per_day": 1.9
+ },
+ "schedule_times": {
+  "tz": "Europe/Lisbon",
+  "times_local": [
+   "07:03",
+   "18:03"
+  ],
+  "note": "Lisbon is UTC+0 from late October to late March, so these are also 07:03 and 18:03 UTC then; one hour earlier in UTC in summer.",
+  "runs_per_day": 2
+ },
+ "api_spec": null,
+ "api_docs": "https://open-meteo.com/en/docs",
+ "own_page_copy": null,
+ "own_page_copy_note": "not taken: a copy or screenshot of the publisher's page needs a rights ruling from cl-6.rights; source_home links to the page itself",
+ "source_home": "https://open-meteo.com/"
+}

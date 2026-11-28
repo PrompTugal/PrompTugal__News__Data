@@ -1,0 +1,169 @@
+{
+ "source": "nvd-kev",
+ "title": "NVD's record of every CVE on CISA's KEV list",
+ "generated_utc": "2026-11-28T02:40:14Z",
+ "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
+ "schedule": {
+  "card_says": "daily",
+  "really": "once a day (07:03 Lisbon)"
+ },
+ "last_run": {
+  "at": "2026-11-27T07:14:14Z",
+  "ok": 1,
+  "failed": 0,
+  "requests": [
+   {
+    "name": "kev-0",
+    "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?hasKev&resultsPerPage=2000&startIndex=0",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 19635904,
+    "changed": true
+   }
+  ]
+ },
+ "problems": [],
+ "runs": [
+  {
+   "at": "2026-11-27T07:14:14Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "kev-0"
+   ],
+   "requests_detail": [
+    {
+     "name": "kev-0",
+     "status": 200,
+     "bytes": 19635904,
+     "sha256_prefix": "ac0af07922a4ad31",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d409b57",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d409b5734208af88d47485b2878734dbf9e6aa7c",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/d466166...d409b57"
+  },
+  {
+   "at": "2026-11-26T07:13:11Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "kev-0"
+   ],
+   "requests_detail": [
+    {
+     "name": "kev-0",
+     "status": 200,
+     "bytes": 19635904,
+     "sha256_prefix": "faa2cd81ed82cbf6",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d466166",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d466166b925f53f8d36d4a6047daf9a0634bf489",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/bd410a7...d466166"
+  },
+  {
+   "at": "2026-11-21T07:12:44Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "kev-0"
+   ],
+   "requests_detail": [
+    {
+     "name": "kev-0",
+     "status": 200,
+     "bytes": 19574207,
+     "sha256_prefix": "114e36dbb03f8b45",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "bd410a7",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/bd410a73762d6b0a755da0a946556d6e47d54c8e",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/cb88d7b...bd410a7"
+  },
+  {
+   "at": "2026-11-20T07:17:20Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "kev-0"
+   ],
+   "requests_detail": [
+    {
+     "name": "kev-0",
+     "status": 200,
+     "bytes": 19511372,
+     "sha256_prefix": "14e0d92cd41fea21",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "cb88d7b",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/cb88d7b793bc938078a150fb7bd84b6477977aea",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/a902800...cb88d7b"
+  },
+  {
+   "at": "2026-11-19T02:17:02Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "kev-0",
+     "status": 200,
+     "bytes": 19509072,
+     "sha256_prefix": "e907292651acdd16",
+     "changed": "first read"
+    }
+   ],
+   "failed_requests": [],
+   "commit": "a902800",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/a902800ae4d68654edccd40fc392ebffa2e08742",
+   "compare_with_previous_run_url": null
+  }
+ ],
+ "copies": {
+  "files_in_git_data": 3,
+  "bytes_in_git_data": 1558216,
+  "files_in_vault_working_copy": 4,
+  "bytes_in_vault_working_copy": 58908328,
+  "dated_copies_in_vault": 2,
+  "where": {
+   "api_latest": "https://data.promptugal.news/api/v1/nvd-kev/latest.json",
+   "api_reads": "https://data.promptugal.news/api/v1/nvd-kev/reads.json",
+   "source_page": "https://data.promptugal.news/sources/nvd-kev/",
+   "git": "https://github.com/PrompTugal/PrompTugal__News__Data/tree/dev/data/nvd-kev"
+  },
+  "tracked_in_git_vaults": 0,
+  "note": "collect/lib.mjs says vaults/ is meant to stay out of git, but 0 files of this source are tracked in git today (earlier commits); the sgit vault holds the full history. Dinis has not yet ruled on the vaults/ question."
+ },
+ "cadence_advice": {
+  "line": "Once a day is enough: the source itself refreshes daily.",
+  "basis": "the card says the source refreshes daily"
+ },
+ "schedule_times": {
+  "tz": "Europe/Lisbon",
+  "times_local": [
+   "07:03",
+   "18:03"
+  ],
+  "note": "Lisbon is UTC+0 from late October to late March, so these are also 07:03 and 18:03 UTC then; one hour earlier in UTC in summer.",
+  "runs_per_day": 2
+ },
+ "api_spec": null,
+ "api_docs": null,
+ "own_page_copy": null,
+ "own_page_copy_note": "not taken: a copy or screenshot of the publisher's page needs a rights ruling from cl-6.rights; source_home links to the page itself",
+ "source_home": "https://nvd.nist.gov/"
+}

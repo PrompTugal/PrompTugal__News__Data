@@ -1,0 +1,821 @@
+{
+ "source": "ipma-fire-risk",
+ "title": "IPMA fire risk",
+ "generated_utc": "2026-11-28T02:40:14Z",
+ "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
+ "schedule": {
+  "card_says": "hourly",
+  "really": "twice a day (07:03 and 18:03 Lisbon)"
+ },
+ "last_run": {
+  "at": "2026-11-27T18:11:36Z",
+  "ok": 3,
+  "failed": 0,
+  "requests": [
+   {
+    "name": "rcm-d0",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/rcm/rcm-d0.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 24302,
+    "changed": true
+   },
+   {
+    "name": "rcm-d1",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/rcm/rcm-d1.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 24302,
+    "changed": true
+   },
+   {
+    "name": "rcm-d2",
+    "url": "https://api.ipma.pt/open-data/forecast/meteorology/rcm/rcm-d2.json",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 24302,
+    "changed": true
+   }
+  ]
+ },
+ "problems": [
+  {
+   "request": "rcm-d0",
+   "url": "https://api.ipma.pt/open-data/forecast/meteorology/rcm/rcm-d0.json",
+   "status": [
+    "error"
+   ],
+   "plain": "could not connect or timed out",
+   "failed_in": "1 of 92 runs kept"
+  },
+  {
+   "request": "rcm-d1",
+   "url": "https://api.ipma.pt/open-data/forecast/meteorology/rcm/rcm-d1.json",
+   "status": [
+    "error"
+   ],
+   "plain": "could not connect or timed out",
+   "failed_in": "1 of 92 runs kept"
+  },
+  {
+   "request": "rcm-d2",
+   "url": "https://api.ipma.pt/open-data/forecast/meteorology/rcm/rcm-d2.json",
+   "status": [
+    "error"
+   ],
+   "plain": "could not connect or timed out",
+   "failed_in": "1 of 92 runs kept"
+  }
+ ],
+ "runs": [
+  {
+   "at": "2026-11-27T18:11:36Z",
+   "ok": 3,
+   "failed": 0,
+   "requests": 3,
+   "changed_requests": [
+    "rcm-d0",
+    "rcm-d1",
+    "rcm-d2"
+   ],
+   "requests_detail": [
+    {
+     "name": "rcm-d0",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "87d04cbcd42be52f",
+     "changed": true
+    },
+    {
+     "name": "rcm-d1",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "483426ad98dd4db4",
+     "changed": true
+    },
+    {
+     "name": "rcm-d2",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "02d0b8aab07e89c0",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "526dd0b",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/526dd0b8fd852d1fffb5fd1c54adb4760ccfe3e8",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/d409b57...526dd0b"
+  },
+  {
+   "at": "2026-11-27T07:13:37Z",
+   "ok": 3,
+   "failed": 0,
+   "requests": 3,
+   "changed_requests": [
+    "rcm-d0",
+    "rcm-d1",
+    "rcm-d2"
+   ],
+   "requests_detail": [
+    {
+     "name": "rcm-d0",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "a359720716d50bfa",
+     "changed": true
+    },
+    {
+     "name": "rcm-d1",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "cbb3d0bf3c56ea4b",
+     "changed": true
+    },
+    {
+     "name": "rcm-d2",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "ce1f73d6e383bb88",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d409b57",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d409b5734208af88d47485b2878734dbf9e6aa7c",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/d466166...d409b57"
+  },
+  {
+   "at": "2026-11-26T18:13:03Z",
+   "ok": 3,
+   "failed": 0,
+   "requests": 3,
+   "changed_requests": [
+    "rcm-d0",
+    "rcm-d1",
+    "rcm-d2"
+   ],
+   "requests_detail": [
+    {
+     "name": "rcm-d0",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "a2bc5121643758f7",
+     "changed": true
+    },
+    {
+     "name": "rcm-d1",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "95aa18580ee4a668",
+     "changed": true
+    },
+    {
+     "name": "rcm-d2",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "a3e0f96f928aca0b",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d466166",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d466166b925f53f8d36d4a6047daf9a0634bf489",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-26T07:12:33Z",
+   "ok": 3,
+   "failed": 0,
+   "requests": 3,
+   "changed_requests": [
+    "rcm-d0",
+    "rcm-d1",
+    "rcm-d2"
+   ],
+   "requests_detail": [
+    {
+     "name": "rcm-d0",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "e16d6366067158c8",
+     "changed": true
+    },
+    {
+     "name": "rcm-d1",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "5994767b45ebb7f2",
+     "changed": true
+    },
+    {
+     "name": "rcm-d2",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "d51a2f3d09f87008",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d466166",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d466166b925f53f8d36d4a6047daf9a0634bf489",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/bd410a7...d466166"
+  },
+  {
+   "at": "2026-11-21T07:12:06Z",
+   "ok": 3,
+   "failed": 0,
+   "requests": 3,
+   "changed_requests": [
+    "rcm-d0",
+    "rcm-d1",
+    "rcm-d2"
+   ],
+   "requests_detail": [
+    {
+     "name": "rcm-d0",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "076fc6e3677e649d",
+     "changed": true
+    },
+    {
+     "name": "rcm-d1",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "a2f19e75f4742cad",
+     "changed": true
+    },
+    {
+     "name": "rcm-d2",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "a5c47fc5e939ff98",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "bd410a7",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/bd410a73762d6b0a755da0a946556d6e47d54c8e",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/65c6667...bd410a7"
+  },
+  {
+   "at": "2026-11-20T18:15:22Z",
+   "ok": 3,
+   "failed": 0,
+   "requests": 3,
+   "changed_requests": [
+    "rcm-d0",
+    "rcm-d1",
+    "rcm-d2"
+   ],
+   "requests_detail": [
+    {
+     "name": "rcm-d0",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "14a761db8630eacf",
+     "changed": true
+    },
+    {
+     "name": "rcm-d1",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "adb83d8f35e6c5b5",
+     "changed": true
+    },
+    {
+     "name": "rcm-d2",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "c726699d3cf06e94",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "65c6667",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/65c66677f4957a21ffbcf6d58b3f8794f505d39f",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/cb88d7b...65c6667"
+  },
+  {
+   "at": "2026-11-20T07:16:35Z",
+   "ok": 3,
+   "failed": 0,
+   "requests": 3,
+   "changed_requests": [
+    "rcm-d0",
+    "rcm-d1",
+    "rcm-d2"
+   ],
+   "requests_detail": [
+    {
+     "name": "rcm-d0",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "a0ff384dde523e49",
+     "changed": true
+    },
+    {
+     "name": "rcm-d1",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "ed11728d464ff1f9",
+     "changed": true
+    },
+    {
+     "name": "rcm-d2",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "f678428c13d08dd7",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "cb88d7b",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/cb88d7b793bc938078a150fb7bd84b6477977aea",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/64fbf7d...cb88d7b"
+  },
+  {
+   "at": "2026-11-19T18:14:02Z",
+   "ok": 3,
+   "failed": 0,
+   "requests": 3,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "rcm-d0",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "566b9483ac310259",
+     "changed": false
+    },
+    {
+     "name": "rcm-d1",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "bebf9983ca23bab5",
+     "changed": false
+    },
+    {
+     "name": "rcm-d2",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "aa5c93993b547c6c",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "64fbf7d",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/64fbf7dda8967b6095e265f2e10aba0dfb3d65e8",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/11e0962...64fbf7d"
+  },
+  {
+   "at": "2026-11-19T16:07:05Z",
+   "ok": 3,
+   "failed": 0,
+   "requests": 3,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "rcm-d0",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "566b9483ac310259",
+     "changed": false
+    },
+    {
+     "name": "rcm-d1",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "bebf9983ca23bab5",
+     "changed": false
+    },
+    {
+     "name": "rcm-d2",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "aa5c93993b547c6c",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "11e0962",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/11e096221d96c4c87d5c943ef91b534dd547f19c",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/e25333f...11e0962"
+  },
+  {
+   "at": "2026-11-19T15:06:48Z",
+   "ok": 3,
+   "failed": 0,
+   "requests": 3,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "rcm-d0",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "566b9483ac310259",
+     "changed": false
+    },
+    {
+     "name": "rcm-d1",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "bebf9983ca23bab5",
+     "changed": false
+    },
+    {
+     "name": "rcm-d2",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "aa5c93993b547c6c",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "e25333f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/e25333f846d431ddcfef34bf037922034bcf906d",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/48b39e4...e25333f"
+  },
+  {
+   "at": "2026-11-19T14:07:50Z",
+   "ok": 3,
+   "failed": 0,
+   "requests": 3,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "rcm-d0",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "566b9483ac310259",
+     "changed": false
+    },
+    {
+     "name": "rcm-d1",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "bebf9983ca23bab5",
+     "changed": false
+    },
+    {
+     "name": "rcm-d2",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "aa5c93993b547c6c",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "48b39e4",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/48b39e465b9430649d5f464bda4decabd928642f",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/4a4d130...48b39e4"
+  },
+  {
+   "at": "2026-11-19T13:08:10Z",
+   "ok": 3,
+   "failed": 0,
+   "requests": 3,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "rcm-d0",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "566b9483ac310259",
+     "changed": false
+    },
+    {
+     "name": "rcm-d1",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "bebf9983ca23bab5",
+     "changed": false
+    },
+    {
+     "name": "rcm-d2",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "aa5c93993b547c6c",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "4a4d130",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/4a4d13005725f1c24d6cd12ebee2d66ee2f2df91",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/379aae6...4a4d130"
+  },
+  {
+   "at": "2026-11-19T12:15:18Z",
+   "ok": 3,
+   "failed": 0,
+   "requests": 3,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "rcm-d0",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "566b9483ac310259",
+     "changed": false
+    },
+    {
+     "name": "rcm-d1",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "bebf9983ca23bab5",
+     "changed": false
+    },
+    {
+     "name": "rcm-d2",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "aa5c93993b547c6c",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "379aae6",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/379aae67e159f2afe46678e771171e631f923e70",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/6179c7e...379aae6"
+  },
+  {
+   "at": "2026-11-19T11:10:10Z",
+   "ok": 3,
+   "failed": 0,
+   "requests": 3,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "rcm-d0",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "566b9483ac310259",
+     "changed": false
+    },
+    {
+     "name": "rcm-d1",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "bebf9983ca23bab5",
+     "changed": false
+    },
+    {
+     "name": "rcm-d2",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "aa5c93993b547c6c",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "6179c7e",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/6179c7e3c43fc3591e1601011d223221e5597d92",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/1460f87...6179c7e"
+  },
+  {
+   "at": "2026-11-19T10:09:03Z",
+   "ok": 3,
+   "failed": 0,
+   "requests": 3,
+   "changed_requests": [
+    "rcm-d0",
+    "rcm-d1",
+    "rcm-d2"
+   ],
+   "requests_detail": [
+    {
+     "name": "rcm-d0",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "566b9483ac310259",
+     "changed": true
+    },
+    {
+     "name": "rcm-d1",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "bebf9983ca23bab5",
+     "changed": true
+    },
+    {
+     "name": "rcm-d2",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "aa5c93993b547c6c",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "1460f87",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/1460f87e59532acd781b90ca10f34d7f5f1f6e79",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/2f43933...1460f87"
+  },
+  {
+   "at": "2026-11-19T09:11:03Z",
+   "ok": 3,
+   "failed": 0,
+   "requests": 3,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "rcm-d0",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "4807504b76b97547",
+     "changed": false
+    },
+    {
+     "name": "rcm-d1",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "6f6ec1c7c920acc2",
+     "changed": false
+    },
+    {
+     "name": "rcm-d2",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "57c6eaf330de55b5",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "2f43933",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/2f43933ff73bbd1a4c67e0c938172e9914634f41",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/d3644c1...2f43933"
+  },
+  {
+   "at": "2026-11-19T08:07:28Z",
+   "ok": 3,
+   "failed": 0,
+   "requests": 3,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "rcm-d0",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "4807504b76b97547",
+     "changed": false
+    },
+    {
+     "name": "rcm-d1",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "6f6ec1c7c920acc2",
+     "changed": false
+    },
+    {
+     "name": "rcm-d2",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "57c6eaf330de55b5",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d3644c1",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d3644c1db2231a9dcffc4b8c42f17831ce0d9b8c",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/ab758f8...d3644c1"
+  },
+  {
+   "at": "2026-11-19T07:07:17Z",
+   "ok": 3,
+   "failed": 0,
+   "requests": 3,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "rcm-d0",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "4807504b76b97547",
+     "changed": false
+    },
+    {
+     "name": "rcm-d1",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "6f6ec1c7c920acc2",
+     "changed": false
+    },
+    {
+     "name": "rcm-d2",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "57c6eaf330de55b5",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "ab758f8",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/ab758f84f3411cfda4eaef6a3b98834533309ceb",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/a84bc21...ab758f8"
+  },
+  {
+   "at": "2026-11-19T06:15:12Z",
+   "ok": 3,
+   "failed": 0,
+   "requests": 3,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "rcm-d0",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "4807504b76b97547",
+     "changed": false
+    },
+    {
+     "name": "rcm-d1",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "6f6ec1c7c920acc2",
+     "changed": false
+    },
+    {
+     "name": "rcm-d2",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "57c6eaf330de55b5",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "a84bc21",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/a84bc21013f5eae48c16853f9b5038905f597fcd",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/0796eae...a84bc21"
+  },
+  {
+   "at": "2026-11-19T05:07:13Z",
+   "ok": 3,
+   "failed": 0,
+   "requests": 3,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "rcm-d0",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "4807504b76b97547",
+     "changed": false
+    },
+    {
+     "name": "rcm-d1",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "6f6ec1c7c920acc2",
+     "changed": false
+    },
+    {
+     "name": "rcm-d2",
+     "status": 200,
+     "bytes": 24302,
+     "sha256_prefix": "57c6eaf330de55b5",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "0796eae",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/0796eae6be936757132e432333b6c938f74ec9d7",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/51d3aef...0796eae"
+  }
+ ],
+ "copies": {
+  "files_in_git_data": 3,
+  "bytes_in_git_data": 191105,
+  "files_in_vault_working_copy": 16,
+  "bytes_in_vault_working_copy": 365789,
+  "dated_copies_in_vault": 12,
+  "where": {
+   "api_latest": "https://data.promptugal.news/api/v1/ipma-fire-risk/latest.json",
+   "api_reads": "https://data.promptugal.news/api/v1/ipma-fire-risk/reads.json",
+   "source_page": "https://data.promptugal.news/sources/ipma-fire-risk/",
+   "git": "https://github.com/PrompTugal/PrompTugal__News__Data/tree/dev/data/ipma-fire-risk"
+  },
+  "tracked_in_git_vaults": 3,
+  "note": "collect/lib.mjs says vaults/ is meant to stay out of git, but 3 files of this source are tracked in git today (earlier commits); the sgit vault holds the full history. Dinis has not yet ruled on the vaults/ question."
+ },
+ "cadence_advice": {
+  "line": "The data changed on 11 of 92 reads over 10 days, about 1.1 times a day: twice a day is more than needed, once a day would lose little.",
+  "basis": "suggestion derived from 92 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is hourly; runs before 21 Nov were hourly",
+  "runs_with_change": 11,
+  "runs_kept": 92,
+  "days_covered": 9.9,
+  "changes_per_day": 1.1
+ },
+ "schedule_times": {
+  "tz": "Europe/Lisbon",
+  "times_local": [
+   "07:03",
+   "18:03"
+  ],
+  "note": "Lisbon is UTC+0 from late October to late March, so these are also 07:03 and 18:03 UTC then; one hour earlier in UTC in summer.",
+  "runs_per_day": 2
+ },
+ "api_spec": null,
+ "api_docs": null,
+ "own_page_copy": null,
+ "own_page_copy_note": "not taken: a copy or screenshot of the publisher's page needs a rights ruling from cl-6.rights; source_home links to the page itself",
+ "source_home": "https://api.ipma.pt/open-data/forecast/meteorology/rcm/"
+}

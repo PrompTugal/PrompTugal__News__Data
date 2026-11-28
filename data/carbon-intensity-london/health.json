@@ -1,0 +1,156 @@
+{
+ "source": "carbon-intensity-london",
+ "title": "London's electricity carbon intensity (NESO)",
+ "generated_utc": "2026-11-28T02:40:14Z",
+ "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
+ "schedule": {
+  "card_says": "daily",
+  "really": "once a day (07:03 Lisbon)"
+ },
+ "last_run": {
+  "at": "2026-11-27T07:04:26Z",
+  "ok": 2,
+  "failed": 0,
+  "requests": [
+   {
+    "name": "now",
+    "url": "https://api.carbonintensity.org.uk/regional/regionid/13",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 451,
+    "changed": true
+   },
+   {
+    "name": "forecast-48h",
+    "url": "https://api.carbonintensity.org.uk/regional/intensity/2026-11-27T07:00Z/fw48h/regionid/13",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 27019,
+    "changed": true
+   }
+  ]
+ },
+ "problems": [],
+ "runs": [
+  {
+   "at": "2026-11-27T07:04:26Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "now",
+    "forecast-48h"
+   ],
+   "requests_detail": [
+    {
+     "name": "now",
+     "status": 200,
+     "bytes": 451,
+     "sha256_prefix": "bf27f9ac353c2dcc",
+     "changed": true
+    },
+    {
+     "name": "forecast-48h",
+     "status": 200,
+     "bytes": 27019,
+     "sha256_prefix": "4d348948b3ae573a",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d409b57",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d409b5734208af88d47485b2878734dbf9e6aa7c",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/d466166...d409b57"
+  },
+  {
+   "at": "2026-11-26T07:04:28Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "now",
+    "forecast-48h"
+   ],
+   "requests_detail": [
+    {
+     "name": "now",
+     "status": 200,
+     "bytes": 454,
+     "sha256_prefix": "c41f9e950f0fbe1a",
+     "changed": true
+    },
+    {
+     "name": "forecast-48h",
+     "status": 200,
+     "bytes": 35724,
+     "sha256_prefix": "a2f450c058707d90",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d466166",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d466166b925f53f8d36d4a6047daf9a0634bf489",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/f300703...d466166"
+  },
+  {
+   "at": "2026-11-21T09:19:18Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "now",
+     "status": 200,
+     "bytes": 448,
+     "sha256_prefix": "823d548bbc41a258",
+     "changed": "first read"
+    },
+    {
+     "name": "forecast-48h",
+     "status": 200,
+     "bytes": 35752,
+     "sha256_prefix": "62ef784c38e98cf7",
+     "changed": "first read"
+    }
+   ],
+   "failed_requests": [],
+   "commit": "f300703",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/f30070323ceacb1e432d8b63d9f8820c8a84fee1",
+   "compare_with_previous_run_url": null
+  }
+ ],
+ "copies": {
+  "files_in_git_data": 3,
+  "bytes_in_git_data": 30876,
+  "files_in_vault_working_copy": 7,
+  "bytes_in_vault_working_copy": 92069,
+  "dated_copies_in_vault": 4,
+  "where": {
+   "api_latest": "https://data.promptugal.news/api/v1/carbon-intensity-london/latest.json",
+   "api_reads": "https://data.promptugal.news/api/v1/carbon-intensity-london/reads.json",
+   "source_page": "https://data.promptugal.news/sources/carbon-intensity-london/",
+   "git": "https://github.com/PrompTugal/PrompTugal__News__Data/tree/dev/data/carbon-intensity-london"
+  },
+  "tracked_in_git_vaults": 0,
+  "note": "collect/lib.mjs says vaults/ is meant to stay out of git, but 0 files of this source are tracked in git today (earlier commits); the sgit vault holds the full history. Dinis has not yet ruled on the vaults/ question."
+ },
+ "cadence_advice": {
+  "line": "Once a day is enough: the source itself refreshes daily.",
+  "basis": "the card says the source refreshes daily"
+ },
+ "schedule_times": {
+  "tz": "Europe/Lisbon",
+  "times_local": [
+   "07:03",
+   "18:03"
+  ],
+  "note": "Lisbon is UTC+0 from late October to late March, so these are also 07:03 and 18:03 UTC then; one hour earlier in UTC in summer.",
+  "runs_per_day": 2
+ },
+ "api_spec": null,
+ "api_docs": "https://carbon-intensity.github.io/api-definitions/",
+ "own_page_copy": null,
+ "own_page_copy_note": "not taken: a copy or screenshot of the publisher's page needs a rights ruling from cl-6.rights; source_home links to the page itself",
+ "source_home": "https://carbonintensity.org.uk/"
+}

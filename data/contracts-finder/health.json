@@ -1,0 +1,678 @@
+{
+ "source": "contracts-finder",
+ "title": "London public contracts (Contracts Finder)",
+ "generated_utc": "2026-11-28T02:40:14Z",
+ "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
+ "schedule": {
+  "card_says": "every 6 hours",
+  "really": "twice a day (07:03 and 18:03 Lisbon)"
+ },
+ "last_run": {
+  "at": "2026-11-27T18:04:27Z",
+  "ok": 6,
+  "failed": 0,
+  "requests": [
+   {
+    "name": "window-1",
+    "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-26T18:04:27&publishedTo=2026-11-26T22:04:27&limit=100",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 6842,
+    "changed": true
+   },
+   {
+    "name": "window-2",
+    "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-26T22:04:27&publishedTo=2026-11-27T02:04:27&limit=100",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1420,
+    "changed": true
+   },
+   {
+    "name": "window-3",
+    "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-27T02:04:27&publishedTo=2026-11-27T06:04:27&limit=100",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1420,
+    "changed": true
+   },
+   {
+    "name": "window-4",
+    "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-27T06:04:27&publishedTo=2026-11-27T10:04:27&limit=100",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 272032,
+    "changed": true
+   },
+   {
+    "name": "window-5",
+    "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-27T10:04:27&publishedTo=2026-11-27T14:04:27&limit=100",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 564217,
+    "changed": true
+   },
+   {
+    "name": "window-6",
+    "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-27T14:04:27&publishedTo=2026-11-27T18:04:27&limit=100",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 546652,
+    "changed": true
+   }
+  ]
+ },
+ "problems": [
+  {
+   "request": "window-1",
+   "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-18T19:30:13&publishedTo=2026-11-18T23:30:13&limit=100",
+   "status": [
+    429
+   ],
+   "plain": "refused (rate limited)",
+   "failed_in": "1 of 9 runs kept"
+  },
+  {
+   "request": "window-6",
+   "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-11-19T15:30:13&publishedTo=2026-11-19T19:30:13&limit=100",
+   "status": [
+    429
+   ],
+   "plain": "refused (rate limited)",
+   "failed_in": "1 of 9 runs kept"
+  }
+ ],
+ "runs": [
+  {
+   "at": "2026-11-27T18:04:27Z",
+   "ok": 6,
+   "failed": 0,
+   "requests": 6,
+   "changed_requests": [
+    "window-1",
+    "window-2",
+    "window-3",
+    "window-4",
+    "window-5",
+    "window-6"
+   ],
+   "requests_detail": [
+    {
+     "name": "window-1",
+     "status": 200,
+     "bytes": 6842,
+     "sha256_prefix": "c8574028bd236853",
+     "changed": true
+    },
+    {
+     "name": "window-2",
+     "status": 200,
+     "bytes": 1420,
+     "sha256_prefix": "856721b1b031289d",
+     "changed": true
+    },
+    {
+     "name": "window-3",
+     "status": 200,
+     "bytes": 1420,
+     "sha256_prefix": "8868fd4378c3c582",
+     "changed": true
+    },
+    {
+     "name": "window-4",
+     "status": 200,
+     "bytes": 272032,
+     "sha256_prefix": "74c0a98efd0b6a93",
+     "changed": true
+    },
+    {
+     "name": "window-5",
+     "status": 200,
+     "bytes": 564217,
+     "sha256_prefix": "29efef3a01682f37",
+     "changed": true
+    },
+    {
+     "name": "window-6",
+     "status": 200,
+     "bytes": 546652,
+     "sha256_prefix": "d9e4bbe20e236fed",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "526dd0b",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/526dd0b8fd852d1fffb5fd1c54adb4760ccfe3e8",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/d409b57...526dd0b"
+  },
+  {
+   "at": "2026-11-27T07:04:33Z",
+   "ok": 4,
+   "failed": 2,
+   "requests": 6,
+   "changed_requests": [
+    "window-1",
+    "window-2",
+    "window-3",
+    "window-4",
+    "window-5",
+    "window-6"
+   ],
+   "requests_detail": [
+    {
+     "name": "window-1",
+     "status": 429,
+     "bytes": 64,
+     "sha256_prefix": "0b4dd89de6412f72",
+     "changed": true
+    },
+    {
+     "name": "window-2",
+     "status": 200,
+     "bytes": 392997,
+     "sha256_prefix": "4084679de8d9dff4",
+     "changed": true
+    },
+    {
+     "name": "window-3",
+     "status": 200,
+     "bytes": 264754,
+     "sha256_prefix": "442d40265fd8a026",
+     "changed": true
+    },
+    {
+     "name": "window-4",
+     "status": 200,
+     "bytes": 1420,
+     "sha256_prefix": "8d63074fc0b01a8d",
+     "changed": true
+    },
+    {
+     "name": "window-5",
+     "status": 200,
+     "bytes": 1420,
+     "sha256_prefix": "f9c16b62f348837f",
+     "changed": true
+    },
+    {
+     "name": "window-6",
+     "status": 429,
+     "bytes": 64,
+     "sha256_prefix": "0b4dd89de6412f72",
+     "changed": true
+    }
+   ],
+   "failed_requests": [
+    "window-1",
+    "window-6"
+   ],
+   "commit": "d409b57",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d409b5734208af88d47485b2878734dbf9e6aa7c",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/d466166...d409b57"
+  },
+  {
+   "at": "2026-11-26T18:04:41Z",
+   "ok": 6,
+   "failed": 0,
+   "requests": 6,
+   "changed_requests": [
+    "window-1",
+    "window-2",
+    "window-3",
+    "window-4",
+    "window-5",
+    "window-6"
+   ],
+   "requests_detail": [
+    {
+     "name": "window-1",
+     "status": 200,
+     "bytes": 1420,
+     "sha256_prefix": "a3e490931525da2c",
+     "changed": true
+    },
+    {
+     "name": "window-2",
+     "status": 200,
+     "bytes": 1420,
+     "sha256_prefix": "74d8f5c9cb723f4a",
+     "changed": true
+    },
+    {
+     "name": "window-3",
+     "status": 200,
+     "bytes": 1420,
+     "sha256_prefix": "0dd2f3ab875aea1a",
+     "changed": true
+    },
+    {
+     "name": "window-4",
+     "status": 200,
+     "bytes": 58376,
+     "sha256_prefix": "5e1e2ffe3a62edae",
+     "changed": true
+    },
+    {
+     "name": "window-5",
+     "status": 200,
+     "bytes": 411652,
+     "sha256_prefix": "e83e1868d9eee9e4",
+     "changed": true
+    },
+    {
+     "name": "window-6",
+     "status": 200,
+     "bytes": 358860,
+     "sha256_prefix": "c2930a31bbe10fe7",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d466166",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d466166b925f53f8d36d4a6047daf9a0634bf489",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-26T07:04:35Z",
+   "ok": 6,
+   "failed": 0,
+   "requests": 6,
+   "changed_requests": [
+    "window-1",
+    "window-2",
+    "window-3",
+    "window-4",
+    "window-5",
+    "window-6"
+   ],
+   "requests_detail": [
+    {
+     "name": "window-1",
+     "status": 200,
+     "bytes": 1420,
+     "sha256_prefix": "8df35c1cd6dc3175",
+     "changed": true
+    },
+    {
+     "name": "window-2",
+     "status": 200,
+     "bytes": 1420,
+     "sha256_prefix": "9f77a3a27721c9d1",
+     "changed": true
+    },
+    {
+     "name": "window-3",
+     "status": 200,
+     "bytes": 1420,
+     "sha256_prefix": "b2afaf1075f9543c",
+     "changed": true
+    },
+    {
+     "name": "window-4",
+     "status": 200,
+     "bytes": 1420,
+     "sha256_prefix": "cba85877b2644b31",
+     "changed": true
+    },
+    {
+     "name": "window-5",
+     "status": 200,
+     "bytes": 1420,
+     "sha256_prefix": "e4a9aa81b65e571e",
+     "changed": true
+    },
+    {
+     "name": "window-6",
+     "status": 200,
+     "bytes": 1420,
+     "sha256_prefix": "5a3df04174385c92",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d466166",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d466166b925f53f8d36d4a6047daf9a0634bf489",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/bd410a7...d466166"
+  },
+  {
+   "at": "2026-11-21T07:04:29Z",
+   "ok": 6,
+   "failed": 0,
+   "requests": 6,
+   "changed_requests": [
+    "window-1",
+    "window-2",
+    "window-3",
+    "window-4",
+    "window-5",
+    "window-6"
+   ],
+   "requests_detail": [
+    {
+     "name": "window-1",
+     "status": 200,
+     "bytes": 54081,
+     "sha256_prefix": "eaef4f1ad100ecaa",
+     "changed": true
+    },
+    {
+     "name": "window-2",
+     "status": 200,
+     "bytes": 440624,
+     "sha256_prefix": "c677d4c8428fc777",
+     "changed": true
+    },
+    {
+     "name": "window-3",
+     "status": 200,
+     "bytes": 164056,
+     "sha256_prefix": "741e142d676a5689",
+     "changed": true
+    },
+    {
+     "name": "window-4",
+     "status": 200,
+     "bytes": 6512,
+     "sha256_prefix": "6179e2f9ccce3ec9",
+     "changed": true
+    },
+    {
+     "name": "window-5",
+     "status": 200,
+     "bytes": 1420,
+     "sha256_prefix": "ad64629e973feccd",
+     "changed": true
+    },
+    {
+     "name": "window-6",
+     "status": 200,
+     "bytes": 1420,
+     "sha256_prefix": "3e4eaf373b09a20d",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "bd410a7",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/bd410a73762d6b0a755da0a946556d6e47d54c8e",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/65c6667...bd410a7"
+  },
+  {
+   "at": "2026-11-20T18:04:39Z",
+   "ok": 6,
+   "failed": 0,
+   "requests": 6,
+   "changed_requests": [
+    "window-1",
+    "window-2",
+    "window-3",
+    "window-4",
+    "window-5",
+    "window-6"
+   ],
+   "requests_detail": [
+    {
+     "name": "window-1",
+     "status": 200,
+     "bytes": 34114,
+     "sha256_prefix": "623a20315a6f6335",
+     "changed": true
+    },
+    {
+     "name": "window-2",
+     "status": 200,
+     "bytes": 1420,
+     "sha256_prefix": "a2500155ea9b88be",
+     "changed": true
+    },
+    {
+     "name": "window-3",
+     "status": 200,
+     "bytes": 1420,
+     "sha256_prefix": "c775ee5614635f9c",
+     "changed": true
+    },
+    {
+     "name": "window-4",
+     "status": 200,
+     "bytes": 40862,
+     "sha256_prefix": "cf7f818ad4e464a6",
+     "changed": true
+    },
+    {
+     "name": "window-5",
+     "status": 200,
+     "bytes": 319532,
+     "sha256_prefix": "968e7df75152608e",
+     "changed": true
+    },
+    {
+     "name": "window-6",
+     "status": 200,
+     "bytes": 303297,
+     "sha256_prefix": "aa25988236c91eaa",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "65c6667",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/65c66677f4957a21ffbcf6d58b3f8794f505d39f",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/9fc42ec...65c6667"
+  },
+  {
+   "at": "2026-11-20T09:51:12Z",
+   "ok": 6,
+   "failed": 0,
+   "requests": 6,
+   "changed_requests": [
+    "window-1",
+    "window-2",
+    "window-3",
+    "window-4",
+    "window-5",
+    "window-6"
+   ],
+   "requests_detail": [
+    {
+     "name": "window-1",
+     "status": 200,
+     "bytes": 340639,
+     "sha256_prefix": "abe67f7a51adfc53",
+     "changed": true
+    },
+    {
+     "name": "window-2",
+     "status": 200,
+     "bytes": 216786,
+     "sha256_prefix": "93d6dc65c873354c",
+     "changed": true
+    },
+    {
+     "name": "window-3",
+     "status": 200,
+     "bytes": 34114,
+     "sha256_prefix": "2788daba096533f1",
+     "changed": true
+    },
+    {
+     "name": "window-4",
+     "status": 200,
+     "bytes": 1420,
+     "sha256_prefix": "cff27f55f5c4954a",
+     "changed": true
+    },
+    {
+     "name": "window-5",
+     "status": 200,
+     "bytes": 1420,
+     "sha256_prefix": "173d72d5cb63d2aa",
+     "changed": true
+    },
+    {
+     "name": "window-6",
+     "status": 200,
+     "bytes": 34878,
+     "sha256_prefix": "351f67e0ff07abbf",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "9fc42ec",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/9fc42ec1f66dda206924d763cd7a89721ad626a8",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/cb88d7b...9fc42ec"
+  },
+  {
+   "at": "2026-11-20T07:04:17Z",
+   "ok": 6,
+   "failed": 0,
+   "requests": 6,
+   "changed_requests": [
+    "window-1",
+    "window-2",
+    "window-3",
+    "window-4",
+    "window-5",
+    "window-6"
+   ],
+   "requests_detail": [
+    {
+     "name": "window-1",
+     "status": 200,
+     "bytes": 1387,
+     "sha256_prefix": "390a1d77e022efe6",
+     "changed": true
+    },
+    {
+     "name": "window-2",
+     "status": 200,
+     "bytes": 1387,
+     "sha256_prefix": "eb60c915d40ab748",
+     "changed": true
+    },
+    {
+     "name": "window-3",
+     "status": 200,
+     "bytes": 1387,
+     "sha256_prefix": "e9915c2e61c6f3f9",
+     "changed": true
+    },
+    {
+     "name": "window-4",
+     "status": 200,
+     "bytes": 1387,
+     "sha256_prefix": "e27e62a455cedb93",
+     "changed": true
+    },
+    {
+     "name": "window-5",
+     "status": 200,
+     "bytes": 1387,
+     "sha256_prefix": "ea0d029558b06345",
+     "changed": true
+    },
+    {
+     "name": "window-6",
+     "status": 200,
+     "bytes": 1387,
+     "sha256_prefix": "542130446ae3cb13",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "cb88d7b",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/cb88d7b793bc938078a150fb7bd84b6477977aea",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/a6271b3...cb88d7b"
+  },
+  {
+   "at": "2026-11-19T19:30:13Z",
+   "ok": 6,
+   "failed": 0,
+   "requests": 6,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "window-1",
+     "status": 200,
+     "bytes": 7754,
+     "sha256_prefix": "f14c2fac9d352a4f",
+     "changed": "first read"
+    },
+    {
+     "name": "window-2",
+     "status": 200,
+     "bytes": 1420,
+     "sha256_prefix": "207dcc531d0ee55f",
+     "changed": "first read"
+    },
+    {
+     "name": "window-3",
+     "status": 200,
+     "bytes": 14135,
+     "sha256_prefix": "26b6e4f14d213763",
+     "changed": "first read"
+    },
+    {
+     "name": "window-4",
+     "status": 200,
+     "bytes": 286650,
+     "sha256_prefix": "ff92fb7cbb2af847",
+     "changed": "first read"
+    },
+    {
+     "name": "window-5",
+     "status": 200,
+     "bytes": 283140,
+     "sha256_prefix": "07185b412d643520",
+     "changed": "first read"
+    },
+    {
+     "name": "window-6",
+     "status": 200,
+     "bytes": 132437,
+     "sha256_prefix": "776f220833a9132c",
+     "changed": "first read"
+    }
+   ],
+   "failed_requests": [],
+   "commit": "a6271b3",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/a6271b3e2e34cbef33afadc8f74ca7e5c1cf4c64",
+   "compare_with_previous_run_url": null
+  }
+ ],
+ "copies": {
+  "files_in_git_data": 8,
+  "bytes_in_git_data": 156810,
+  "files_in_vault_working_copy": 29,
+  "bytes_in_vault_working_copy": 4290180,
+  "dated_copies_in_vault": 22,
+  "where": {
+   "api_latest": "https://data.promptugal.news/api/v1/contracts-finder/latest.json",
+   "api_reads": "https://data.promptugal.news/api/v1/contracts-finder/reads.json",
+   "source_page": "https://data.promptugal.news/sources/contracts-finder/",
+   "git": "https://github.com/PrompTugal/PrompTugal__News__Data/tree/dev/data/contracts-finder"
+  },
+  "tracked_in_git_vaults": 0,
+  "note": "collect/lib.mjs says vaults/ is meant to stay out of git, but 0 files of this source are tracked in git today (earlier commits); the sgit vault holds the full history. Dinis has not yet ruled on the vaults/ question."
+ },
+ "cadence_advice": {
+  "line": "The data changed on 8 of 9 reads over 8 days: nearly every read finds new data, so it changes at least as often as it is read and reading more than twice a day would catch more states. Whether the pages that use it need them is for their owners to say.",
+  "basis": "suggestion derived from 9 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is every 6 hours; runs before 21 Nov were hourly",
+  "runs_with_change": 8,
+  "runs_kept": 9,
+  "days_covered": 7.9,
+  "changes_per_day": 1.0
+ },
+ "schedule_times": {
+  "tz": "Europe/Lisbon",
+  "times_local": [
+   "07:03",
+   "18:03"
+  ],
+  "note": "Lisbon is UTC+0 from late October to late March, so these are also 07:03 and 18:03 UTC then; one hour earlier in UTC in summer.",
+  "runs_per_day": 2
+ },
+ "api_spec": null,
+ "api_docs": "https://www.contractsfinder.service.gov.uk/apidocumentation",
+ "own_page_copy": null,
+ "own_page_copy_note": "not taken: a copy or screenshot of the publisher's page needs a rights ruling from cl-6.rights; source_home links to the page itself",
+ "source_home": "https://www.contractsfinder.service.gov.uk/"
+}

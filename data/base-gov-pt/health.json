@@ -1,0 +1,504 @@
+{
+ "source": "base-gov-pt",
+ "title": "Public contracts (Portal BASE)",
+ "generated_utc": "2026-11-28T02:40:14Z",
+ "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
+ "schedule": {
+  "card_says": "every 6 hours",
+  "really": "twice a day (07:03 and 18:03 Lisbon)"
+ },
+ "last_run": {
+  "at": "2026-11-27T18:04:17Z",
+  "ok": 1,
+  "failed": 0,
+  "requests": [
+   {
+    "name": "dataset",
+    "url": "https://dados.gov.pt/api/1/datasets/66d72d488ca4b7cb2de28712/",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 45961,
+    "changed": true
+   }
+  ]
+ },
+ "problems": [],
+ "runs": [
+  {
+   "at": "2026-11-27T18:04:17Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "dataset"
+   ],
+   "requests_detail": [
+    {
+     "name": "dataset",
+     "status": 200,
+     "bytes": 45961,
+     "sha256_prefix": "0980bd5a6a6e9f0d",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "526dd0b",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/526dd0b8fd852d1fffb5fd1c54adb4760ccfe3e8",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/d409b57...526dd0b"
+  },
+  {
+   "at": "2026-11-27T07:03:58Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "dataset"
+   ],
+   "requests_detail": [
+    {
+     "name": "dataset",
+     "status": 200,
+     "bytes": 45961,
+     "sha256_prefix": "51941c0be742c51c",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d409b57",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d409b5734208af88d47485b2878734dbf9e6aa7c",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/d466166...d409b57"
+  },
+  {
+   "at": "2026-11-26T18:04:10Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "dataset"
+   ],
+   "requests_detail": [
+    {
+     "name": "dataset",
+     "status": 200,
+     "bytes": 45805,
+     "sha256_prefix": "44e5a7187f25e9f4",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d466166",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d466166b925f53f8d36d4a6047daf9a0634bf489",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-26T07:03:59Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "dataset"
+   ],
+   "requests_detail": [
+    {
+     "name": "dataset",
+     "status": 200,
+     "bytes": 46011,
+     "sha256_prefix": "7b825be319493925",
+     "changed": true
+    },
+    {
+     "name": "contratos2026.zip",
+     "status": 200,
+     "bytes": 71136042,
+     "sha256_prefix": "02a0a96dfbb28a1a",
+     "changed": "first read"
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d466166",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d466166b925f53f8d36d4a6047daf9a0634bf489",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/bd410a7...d466166"
+  },
+  {
+   "at": "2026-11-21T07:04:19Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "dataset"
+   ],
+   "requests_detail": [
+    {
+     "name": "dataset",
+     "status": 200,
+     "bytes": 45882,
+     "sha256_prefix": "fa7bed34313a07ad",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "bd410a7",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/bd410a73762d6b0a755da0a946556d6e47d54c8e",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/65c6667...bd410a7"
+  },
+  {
+   "at": "2026-11-20T18:04:31Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "dataset"
+   ],
+   "requests_detail": [
+    {
+     "name": "dataset",
+     "status": 200,
+     "bytes": 45726,
+     "sha256_prefix": "cfbd42aac88bac48",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "65c6667",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/65c66677f4957a21ffbcf6d58b3f8794f505d39f",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/cb88d7b...65c6667"
+  },
+  {
+   "at": "2026-11-20T07:04:07Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "dataset"
+   ],
+   "requests_detail": [
+    {
+     "name": "dataset",
+     "status": 200,
+     "bytes": 46132,
+     "sha256_prefix": "6d60cce91b54bdc9",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "cb88d7b",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/cb88d7b793bc938078a150fb7bd84b6477977aea",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/64fbf7d...cb88d7b"
+  },
+  {
+   "at": "2026-11-19T18:03:57Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "dataset"
+   ],
+   "requests_detail": [
+    {
+     "name": "dataset",
+     "status": 200,
+     "bytes": 45726,
+     "sha256_prefix": "6b923bff51cc3437",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "64fbf7d",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/64fbf7dda8967b6095e265f2e10aba0dfb3d65e8",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/379aae6...64fbf7d"
+  },
+  {
+   "at": "2026-11-19T12:04:24Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "dataset"
+   ],
+   "requests_detail": [
+    {
+     "name": "dataset",
+     "status": 200,
+     "bytes": 45725,
+     "sha256_prefix": "98f62eebd14179e5",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "379aae6",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/379aae67e159f2afe46678e771171e631f923e70",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/6ee935e...379aae6"
+  },
+  {
+   "at": "2026-11-19T06:03:41Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "dataset"
+   ],
+   "requests_detail": [
+    {
+     "name": "dataset",
+     "status": 200,
+     "bytes": 45931,
+     "sha256_prefix": "0d0c72c477e75be6",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "6ee935e",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/6ee935e17d5733cf18c410ee489d74b2bee55a8c",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/83b562f...6ee935e"
+  },
+  {
+   "at": "2026-11-18T23:42:18Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "dataset",
+     "status": 200,
+     "bytes": 45931,
+     "sha256_prefix": "25b95e7d1ccbb120",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T23:33:39Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "dataset"
+   ],
+   "requests_detail": [
+    {
+     "name": "dataset",
+     "status": 200,
+     "bytes": 45931,
+     "sha256_prefix": "25b95e7d1ccbb120",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T23:27:18Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "dataset",
+     "status": 200,
+     "bytes": 45931,
+     "sha256_prefix": "fa4799b3c18a8e50",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T23:21:02Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "dataset"
+   ],
+   "requests_detail": [
+    {
+     "name": "dataset",
+     "status": 200,
+     "bytes": 45931,
+     "sha256_prefix": "fa4799b3c18a8e50",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T22:51:48Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "dataset"
+   ],
+   "requests_detail": [
+    {
+     "name": "dataset",
+     "status": 200,
+     "bytes": 45931,
+     "sha256_prefix": "e50dd86ca961e46c",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T22:42:28Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "dataset",
+     "status": 200,
+     "bytes": 45931,
+     "sha256_prefix": "6a6d81050d48e0bf",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T22:36:56Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "dataset"
+   ],
+   "requests_detail": [
+    {
+     "name": "dataset",
+     "status": 200,
+     "bytes": 45931,
+     "sha256_prefix": "6a6d81050d48e0bf",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T22:31:39Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "dataset"
+   ],
+   "requests_detail": [
+    {
+     "name": "dataset",
+     "status": 200,
+     "bytes": 45931,
+     "sha256_prefix": "0654258e8819b57f",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T22:26:38Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "dataset",
+     "status": 200,
+     "bytes": 45931,
+     "sha256_prefix": "fa844bedd9a82ab0",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T22:20:34Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "dataset"
+   ],
+   "requests_detail": [
+    {
+     "name": "dataset",
+     "status": 200,
+     "bytes": 45931,
+     "sha256_prefix": "fa844bedd9a82ab0",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  }
+ ],
+ "copies": {
+  "files_in_git_data": 3,
+  "bytes_in_git_data": 1850147,
+  "files_in_vault_working_copy": 0,
+  "bytes_in_vault_working_copy": 0,
+  "dated_copies_in_vault": 0,
+  "where": {
+   "api_latest": "https://data.promptugal.news/api/v1/base-gov-pt/latest.json",
+   "api_reads": "https://data.promptugal.news/api/v1/base-gov-pt/reads.json",
+   "source_page": "https://data.promptugal.news/sources/base-gov-pt/",
+   "git": "https://github.com/PrompTugal/PrompTugal__News__Data/tree/dev/data/base-gov-pt"
+  },
+  "tracked_in_git_vaults": 0,
+  "note": "collect/lib.mjs says vaults/ is meant to stay out of git, but 0 files of this source are tracked in git today (earlier commits); the sgit vault holds the full history. Dinis has not yet ruled on the vaults/ question."
+ },
+ "cadence_advice": {
+  "line": "The data changed on 25 of 40 reads over 9 days, about 2.7 times a day: twice a day fits.",
+  "basis": "suggestion derived from 40 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is every 6 hours; runs before 21 Nov were hourly",
+  "runs_with_change": 25,
+  "runs_kept": 40,
+  "days_covered": 9.1,
+  "changes_per_day": 2.7
+ },
+ "schedule_times": {
+  "tz": "Europe/Lisbon",
+  "times_local": [
+   "07:03",
+   "18:03"
+  ],
+  "note": "Lisbon is UTC+0 from late October to late March, so these are also 07:03 and 18:03 UTC then; one hour earlier in UTC in summer.",
+  "runs_per_day": 2
+ },
+ "api_spec": null,
+ "api_docs": null,
+ "own_page_copy": null,
+ "own_page_copy_note": "not taken: a copy or screenshot of the publisher's page needs a rights ruling from cl-6.rights; source_home links to the page itself",
+ "source_home": "https://dados.gov.pt/pt/datasets/66d72d488ca4b7cb2de28712/"
+}

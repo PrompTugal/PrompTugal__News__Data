@@ -1,0 +1,307 @@
+{
+ "source": "ea-thames-tide",
+ "title": "The tidal Thames through London (Environment Agency)",
+ "generated_utc": "2026-11-28T02:40:14Z",
+ "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
+ "schedule": {
+  "card_says": "daily",
+  "really": "once a day (07:03 Lisbon)"
+ },
+ "last_run": {
+  "at": "2026-11-27T07:06:16Z",
+  "ok": 7,
+  "failed": 0,
+  "requests": [
+   {
+    "name": "gauge-0009",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/0009/readings?_sorted&_limit=96",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 32173,
+    "changed": true
+   },
+   {
+    "name": "gauge-0010",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/0010/readings?_sorted&_limit=96",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 858,
+    "changed": false
+   },
+   {
+    "name": "gauge-0006",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/0006/readings?_sorted&_limit=96",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 32171,
+    "changed": true
+   },
+   {
+    "name": "gauge-0007",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/0007/readings?_sorted&_limit=96",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 32183,
+    "changed": true
+   },
+   {
+    "name": "gauge-0001",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/0001/readings?_sorted&_limit=96",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 32185,
+    "changed": true
+   },
+   {
+    "name": "gauge-0003",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/0003/readings?_sorted&_limit=96",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 32186,
+    "changed": true
+   },
+   {
+    "name": "gauge-0018",
+    "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/0018/readings?_sorted&_limit=96",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 858,
+    "changed": false
+   }
+  ]
+ },
+ "problems": [],
+ "runs": [
+  {
+   "at": "2026-11-27T07:06:16Z",
+   "ok": 7,
+   "failed": 0,
+   "requests": 7,
+   "changed_requests": [
+    "gauge-0009",
+    "gauge-0006",
+    "gauge-0007",
+    "gauge-0001",
+    "gauge-0003"
+   ],
+   "requests_detail": [
+    {
+     "name": "gauge-0009",
+     "status": 200,
+     "bytes": 32173,
+     "sha256_prefix": "b64c3316520e452d",
+     "changed": true
+    },
+    {
+     "name": "gauge-0010",
+     "status": 200,
+     "bytes": 858,
+     "sha256_prefix": "6e5f514c83252666",
+     "changed": false
+    },
+    {
+     "name": "gauge-0006",
+     "status": 200,
+     "bytes": 32171,
+     "sha256_prefix": "128ee1fc1a265297",
+     "changed": true
+    },
+    {
+     "name": "gauge-0007",
+     "status": 200,
+     "bytes": 32183,
+     "sha256_prefix": "67da0b1eea38f644",
+     "changed": true
+    },
+    {
+     "name": "gauge-0001",
+     "status": 200,
+     "bytes": 32185,
+     "sha256_prefix": "3a0928f909ca49ed",
+     "changed": true
+    },
+    {
+     "name": "gauge-0003",
+     "status": 200,
+     "bytes": 32186,
+     "sha256_prefix": "4ba5f2720ed00255",
+     "changed": true
+    },
+    {
+     "name": "gauge-0018",
+     "status": 200,
+     "bytes": 858,
+     "sha256_prefix": "349d476aedd5cd00",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d409b57",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d409b5734208af88d47485b2878734dbf9e6aa7c",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/d466166...d409b57"
+  },
+  {
+   "at": "2026-11-26T07:06:05Z",
+   "ok": 7,
+   "failed": 0,
+   "requests": 7,
+   "changed_requests": [
+    "gauge-0009",
+    "gauge-0006",
+    "gauge-0007",
+    "gauge-0001",
+    "gauge-0003"
+   ],
+   "requests_detail": [
+    {
+     "name": "gauge-0009",
+     "status": 200,
+     "bytes": 32173,
+     "sha256_prefix": "04b8c06f280c09be",
+     "changed": true
+    },
+    {
+     "name": "gauge-0010",
+     "status": 200,
+     "bytes": 858,
+     "sha256_prefix": "6e5f514c83252666",
+     "changed": false
+    },
+    {
+     "name": "gauge-0006",
+     "status": 200,
+     "bytes": 32184,
+     "sha256_prefix": "a10ccc1580d43274",
+     "changed": true
+    },
+    {
+     "name": "gauge-0007",
+     "status": 200,
+     "bytes": 32168,
+     "sha256_prefix": "2353a584378e68d8",
+     "changed": true
+    },
+    {
+     "name": "gauge-0001",
+     "status": 200,
+     "bytes": 32189,
+     "sha256_prefix": "854cb88f32ffd526",
+     "changed": true
+    },
+    {
+     "name": "gauge-0003",
+     "status": 200,
+     "bytes": 32180,
+     "sha256_prefix": "dd5d80d91d51e65b",
+     "changed": true
+    },
+    {
+     "name": "gauge-0018",
+     "status": 200,
+     "bytes": 858,
+     "sha256_prefix": "349d476aedd5cd00",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d466166",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d466166b925f53f8d36d4a6047daf9a0634bf489",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/f300703...d466166"
+  },
+  {
+   "at": "2026-11-21T09:19:23Z",
+   "ok": 7,
+   "failed": 0,
+   "requests": 7,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "gauge-0009",
+     "status": 200,
+     "bytes": 32153,
+     "sha256_prefix": "3f2e4dbb7616f6c2",
+     "changed": "first read"
+    },
+    {
+     "name": "gauge-0010",
+     "status": 200,
+     "bytes": 858,
+     "sha256_prefix": "6e5f514c83252666",
+     "changed": "first read"
+    },
+    {
+     "name": "gauge-0006",
+     "status": 200,
+     "bytes": 32183,
+     "sha256_prefix": "ee276c6e6bf92341",
+     "changed": "first read"
+    },
+    {
+     "name": "gauge-0007",
+     "status": 200,
+     "bytes": 32187,
+     "sha256_prefix": "2a97adb21cee3819",
+     "changed": "first read"
+    },
+    {
+     "name": "gauge-0001",
+     "status": 200,
+     "bytes": 32179,
+     "sha256_prefix": "172bef49cfc92f10",
+     "changed": "first read"
+    },
+    {
+     "name": "gauge-0003",
+     "status": 200,
+     "bytes": 32181,
+     "sha256_prefix": "69b99a9df113666b",
+     "changed": "first read"
+    },
+    {
+     "name": "gauge-0018",
+     "status": 200,
+     "bytes": 858,
+     "sha256_prefix": "349d476aedd5cd00",
+     "changed": "first read"
+    }
+   ],
+   "failed_requests": [],
+   "commit": "f300703",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/f30070323ceacb1e432d8b63d9f8820c8a84fee1",
+   "compare_with_previous_run_url": null
+  }
+ ],
+ "copies": {
+  "files_in_git_data": 3,
+  "bytes_in_git_data": 49774,
+  "files_in_vault_working_copy": 18,
+  "bytes_in_vault_working_copy": 487193,
+  "dated_copies_in_vault": 10,
+  "where": {
+   "api_latest": "https://data.promptugal.news/api/v1/ea-thames-tide/latest.json",
+   "api_reads": "https://data.promptugal.news/api/v1/ea-thames-tide/reads.json",
+   "source_page": "https://data.promptugal.news/sources/ea-thames-tide/",
+   "git": "https://github.com/PrompTugal/PrompTugal__News__Data/tree/dev/data/ea-thames-tide"
+  },
+  "tracked_in_git_vaults": 0,
+  "note": "collect/lib.mjs says vaults/ is meant to stay out of git, but 0 files of this source are tracked in git today (earlier commits); the sgit vault holds the full history. Dinis has not yet ruled on the vaults/ question."
+ },
+ "cadence_advice": {
+  "line": "Once a day is enough: the source itself refreshes daily.",
+  "basis": "the card says the source refreshes daily"
+ },
+ "schedule_times": {
+  "tz": "Europe/Lisbon",
+  "times_local": [
+   "07:03",
+   "18:03"
+  ],
+  "note": "Lisbon is UTC+0 from late October to late March, so these are also 07:03 and 18:03 UTC then; one hour earlier in UTC in summer.",
+  "runs_per_day": 2
+ },
+ "api_spec": null,
+ "api_docs": "https://environment.data.gov.uk/flood-monitoring/doc/reference",
+ "own_page_copy": null,
+ "own_page_copy_note": "not taken: a copy or screenshot of the publisher's page needs a rights ruling from cl-6.rights; source_home links to the page itself",
+ "source_home": "https://environment.data.gov.uk/flood-monitoring/doc/reference"
+}

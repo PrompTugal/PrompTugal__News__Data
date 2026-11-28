@@ -1,0 +1,303 @@
+{
+ "source": "enisa-pubs",
+ "title": "ENISA publications",
+ "generated_utc": "2026-11-28T02:40:14Z",
+ "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
+ "schedule": {
+  "card_says": "every 6 hours",
+  "really": "twice a day (07:03 and 18:03 Lisbon)"
+ },
+ "last_run": {
+  "at": "2026-11-27T18:06:27Z",
+  "ok": 1,
+  "failed": 0,
+  "requests": [
+   {
+    "name": "publications",
+    "url": "https://www.enisa.europa.eu/publications",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 79564,
+    "changed": true
+   }
+  ]
+ },
+ "problems": [],
+ "runs": [
+  {
+   "at": "2026-11-27T18:06:27Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "publications"
+   ],
+   "requests_detail": [
+    {
+     "name": "publications",
+     "status": 200,
+     "bytes": 79564,
+     "sha256_prefix": "5b0c86f6553d08a6",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "526dd0b",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/526dd0b8fd852d1fffb5fd1c54adb4760ccfe3e8",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/d409b57...526dd0b"
+  },
+  {
+   "at": "2026-11-27T07:06:59Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "publications"
+   ],
+   "requests_detail": [
+    {
+     "name": "publications",
+     "status": 200,
+     "bytes": 79564,
+     "sha256_prefix": "ee2fbca761b23334",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d409b57",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d409b5734208af88d47485b2878734dbf9e6aa7c",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/d466166...d409b57"
+  },
+  {
+   "at": "2026-11-26T18:07:04Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "publications"
+   ],
+   "requests_detail": [
+    {
+     "name": "publications",
+     "status": 200,
+     "bytes": 79564,
+     "sha256_prefix": "775f3f9a23b02937",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d466166",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d466166b925f53f8d36d4a6047daf9a0634bf489",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-26T07:06:52Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "publications"
+   ],
+   "requests_detail": [
+    {
+     "name": "publications",
+     "status": 200,
+     "bytes": 79564,
+     "sha256_prefix": "3955d6b74481ead4",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d466166",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d466166b925f53f8d36d4a6047daf9a0634bf489",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/bd410a7...d466166"
+  },
+  {
+   "at": "2026-11-21T07:06:19Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "publications",
+     "status": 200,
+     "bytes": 79005,
+     "sha256_prefix": "15431e631401adc7",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "bd410a7",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/bd410a73762d6b0a755da0a946556d6e47d54c8e",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/65c6667...bd410a7"
+  },
+  {
+   "at": "2026-11-20T18:06:42Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "publications"
+   ],
+   "requests_detail": [
+    {
+     "name": "publications",
+     "status": 200,
+     "bytes": 79005,
+     "sha256_prefix": "15431e631401adc7",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "65c6667",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/65c66677f4957a21ffbcf6d58b3f8794f505d39f",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/cb88d7b...65c6667"
+  },
+  {
+   "at": "2026-11-20T07:07:48Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "publications"
+   ],
+   "requests_detail": [
+    {
+     "name": "publications",
+     "status": 200,
+     "bytes": 79005,
+     "sha256_prefix": "1f210a5f439b1659",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "cb88d7b",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/cb88d7b793bc938078a150fb7bd84b6477977aea",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/64fbf7d...cb88d7b"
+  },
+  {
+   "at": "2026-11-19T18:05:32Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "publications"
+   ],
+   "requests_detail": [
+    {
+     "name": "publications",
+     "status": 200,
+     "bytes": 79005,
+     "sha256_prefix": "8b79301bd12ea811",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "64fbf7d",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/64fbf7dda8967b6095e265f2e10aba0dfb3d65e8",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/379aae6...64fbf7d"
+  },
+  {
+   "at": "2026-11-19T12:06:54Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "publications"
+   ],
+   "requests_detail": [
+    {
+     "name": "publications",
+     "status": 200,
+     "bytes": 79005,
+     "sha256_prefix": "106fc5ad153825f0",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "379aae6",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/379aae67e159f2afe46678e771171e631f923e70",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/6ee935e...379aae6"
+  },
+  {
+   "at": "2026-11-19T06:06:27Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "publications"
+   ],
+   "requests_detail": [
+    {
+     "name": "publications",
+     "status": 200,
+     "bytes": 79005,
+     "sha256_prefix": "33b39594fa616bc0",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "6ee935e",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/6ee935e17d5733cf18c410ee489d74b2bee55a8c",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/83b562f...6ee935e"
+  },
+  {
+   "at": "2026-11-18T23:59:24Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [],
+   "requests_detail": [
+    {
+     "name": "publications",
+     "status": 200,
+     "bytes": 79005,
+     "sha256_prefix": "f18d2ca6bb1a4f21",
+     "changed": "first read"
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  }
+ ],
+ "copies": {
+  "files_in_git_data": 3,
+  "bytes_in_git_data": 17274,
+  "files_in_vault_working_copy": 6,
+  "bytes_in_vault_working_copy": 398395,
+  "dated_copies_in_vault": 4,
+  "where": {
+   "api_latest": "https://data.promptugal.news/api/v1/enisa-pubs/latest.json",
+   "api_reads": "https://data.promptugal.news/api/v1/enisa-pubs/reads.json",
+   "source_page": "https://data.promptugal.news/sources/enisa-pubs/",
+   "git": "https://github.com/PrompTugal/PrompTugal__News__Data/tree/dev/data/enisa-pubs"
+  },
+  "tracked_in_git_vaults": 0,
+  "note": "collect/lib.mjs says vaults/ is meant to stay out of git, but 0 files of this source are tracked in git today (earlier commits); the sgit vault holds the full history. Dinis has not yet ruled on the vaults/ question."
+ },
+ "cadence_advice": {
+  "line": "The data changed on 9 of 11 reads over 9 days: nearly every read finds new data, so it changes at least as often as it is read and reading more than twice a day would catch more states. Whether the pages that use it need them is for their owners to say.",
+  "basis": "suggestion derived from 11 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is every 6 hours; runs before 21 Nov were hourly",
+  "runs_with_change": 9,
+  "runs_kept": 11,
+  "days_covered": 8.8,
+  "changes_per_day": 1.0
+ },
+ "schedule_times": {
+  "tz": "Europe/Lisbon",
+  "times_local": [
+   "07:03",
+   "18:03"
+  ],
+  "note": "Lisbon is UTC+0 from late October to late March, so these are also 07:03 and 18:03 UTC then; one hour earlier in UTC in summer.",
+  "runs_per_day": 2
+ },
+ "api_spec": null,
+ "api_docs": null,
+ "own_page_copy": null,
+ "own_page_copy_note": "not taken: a copy or screenshot of the publisher's page needs a rights ruling from cl-6.rights; source_home links to the page itself",
+ "source_home": "https://www.enisa.europa.eu/"
+}

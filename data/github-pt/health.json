@@ -1,0 +1,7345 @@
+{
+ "source": "github-pt",
+ "title": "Code from Portuguese organisations on GitHub",
+ "generated_utc": "2026-11-28T02:40:14Z",
+ "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
+ "schedule": {
+  "card_says": "every 6 hours",
+  "really": "twice a day (07:03 and 18:03 Lisbon)"
+ },
+ "last_run": {
+  "at": "2026-11-27T18:09:45Z",
+  "ok": 1,
+  "failed": 21,
+  "requests": [
+   {
+    "name": "rate-limit",
+    "url": "https://api.github.com/rate_limit",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 1237,
+    "changed": true
+   },
+   {
+    "name": "repos-codacy",
+    "url": "https://api.github.com/orgs/codacy/repos?type=public&sort=pushed&direction=desc&per_page=100",
+    "status": 403,
+    "meaning": "refused (forbidden)",
+    "bytes": 249,
+    "changed": false
+   },
+   {
+    "name": "repos-subvisual",
+    "url": "https://api.github.com/orgs/subvisual/repos?type=public&sort=pushed&direction=desc&per_page=100",
+    "status": 403,
+    "meaning": "refused (forbidden)",
+    "bytes": 249,
+    "changed": false
+   },
+   {
+    "name": "repos-ubiwhere",
+    "url": "https://api.github.com/orgs/ubiwhere/repos?type=public&sort=pushed&direction=desc&per_page=100",
+    "status": 403,
+    "meaning": "refused (forbidden)",
+    "bytes": 249,
+    "changed": false
+   },
+   {
+    "name": "repos-mindera",
+    "url": "https://api.github.com/orgs/mindera/repos?type=public&sort=pushed&direction=desc&per_page=100",
+    "status": 403,
+    "meaning": "refused (forbidden)",
+    "bytes": 249,
+    "changed": false
+   },
+   {
+    "name": "repos-farfetch",
+    "url": "https://api.github.com/orgs/farfetch/repos?type=public&sort=pushed&direction=desc&per_page=100",
+    "status": 403,
+    "meaning": "refused (forbidden)",
+    "bytes": 249,
+    "changed": false
+   },
+   {
+    "name": "repos-glintt",
+    "url": "https://api.github.com/orgs/glintt/repos?type=public&sort=pushed&direction=desc&per_page=100",
+    "status": 403,
+    "meaning": "refused (forbidden)",
+    "bytes": 249,
+    "changed": false
+   },
+   {
+    "name": "repos-criticalsoftware",
+    "url": "https://api.github.com/orgs/criticalsoftware/repos?type=public&sort=pushed&direction=desc&per_page=100",
+    "status": 403,
+    "meaning": "refused (forbidden)",
+    "bytes": 249,
+    "changed": false
+   },
+   {
+    "name": "repos-sapo",
+    "url": "https://api.github.com/orgs/sapo/repos?type=public&sort=pushed&direction=desc&per_page=100",
+    "status": 403,
+    "meaning": "refused (forbidden)",
+    "bytes": 249,
+    "changed": false
+   },
+   {
+    "name": "repos-amagovpt",
+    "url": "https://api.github.com/orgs/amagovpt/repos?type=public&sort=pushed&direction=desc&per_page=100",
+    "status": 403,
+    "meaning": "refused (forbidden)",
+    "bytes": 249,
+    "changed": false
+   },
+   {
+    "name": "repos-fccn",
+    "url": "https://api.github.com/orgs/fccn/repos?type=public&sort=pushed&direction=desc&per_page=100",
+    "status": 403,
+    "meaning": "refused (forbidden)",
+    "bytes": 249,
+    "changed": false
+   },
+   {
+    "name": "repos-rcaap",
+    "url": "https://api.github.com/orgs/rcaap/repos?type=public&sort=pushed&direction=desc&per_page=100",
+    "status": 403,
+    "meaning": "refused (forbidden)",
+    "bytes": 249,
+    "changed": false
+   },
+   {
+    "name": "repos-inesctec",
+    "url": "https://api.github.com/orgs/inesctec/repos?type=public&sort=pushed&direction=desc&per_page=100",
+    "status": 403,
+    "meaning": "refused (forbidden)",
+    "bytes": 249,
+    "changed": false
+   },
+   {
+    "name": "repos-inesc-id",
+    "url": "https://api.github.com/orgs/inesc-id/repos?type=public&sort=pushed&direction=desc&per_page=100",
+    "status": 403,
+    "meaning": "refused (forbidden)",
+    "bytes": 249,
+    "changed": false
+   },
+   {
+    "name": "repos-ieeta-pt",
+    "url": "https://api.github.com/orgs/ieeta-pt/repos?type=public&sort=pushed&direction=desc&per_page=100",
+    "status": 403,
+    "meaning": "refused (forbidden)",
+    "bytes": 249,
+    "changed": false
+   },
+   {
+    "name": "repos-haslab",
+    "url": "https://api.github.com/orgs/haslab/repos?type=public&sort=pushed&direction=desc&per_page=100",
+    "status": 403,
+    "meaning": "refused (forbidden)",
+    "bytes": 249,
+    "changed": false
+   },
+   {
+    "name": "repos-LasigeBioTM",
+    "url": "https://api.github.com/orgs/LasigeBioTM/repos?type=public&sort=pushed&direction=desc&per_page=100",
+    "status": 403,
+    "meaning": "refused (forbidden)",
+    "bytes": 249,
+    "changed": false
+   },
+   {
+    "name": "repos-lip-computing",
+    "url": "https://api.github.com/orgs/lip-computing/repos?type=public&sort=pushed&direction=desc&per_page=100",
+    "status": 403,
+    "meaning": "refused (forbidden)",
+    "bytes": 249,
+    "changed": false
+   },
+   {
+    "name": "repos-ipleiria",
+    "url": "https://api.github.com/orgs/ipleiria/repos?type=public&sort=pushed&direction=desc&per_page=100",
+    "status": 403,
+    "meaning": "refused (forbidden)",
+    "bytes": 249,
+    "changed": false
+   },
+   {
+    "name": "repos-fenixedu",
+    "url": "https://api.github.com/orgs/fenixedu/repos?type=public&sort=pushed&direction=desc&per_page=100",
+    "status": 403,
+    "meaning": "refused (forbidden)",
+    "bytes": 249,
+    "changed": false
+   },
+   {
+    "name": "repos-centraldedados",
+    "url": "https://api.github.com/orgs/centraldedados/repos?type=public&sort=pushed&direction=desc&per_page=100",
+    "status": 403,
+    "meaning": "refused (forbidden)",
+    "bytes": 249,
+    "changed": false
+   },
+   {
+    "name": "repos-transparenciahackday",
+    "url": "https://api.github.com/orgs/transparenciahackday/repos?type=public&sort=pushed&direction=desc&per_page=100",
+    "status": 403,
+    "meaning": "refused (forbidden)",
+    "bytes": 249,
+    "changed": false
+   }
+  ]
+ },
+ "problems": [
+  {
+   "request": "repos-codacy",
+   "url": "https://api.github.com/orgs/codacy/repos?type=public&sort=pushed&direction=desc&per_page=100",
+   "status": [
+    403
+   ],
+   "plain": "refused (forbidden)",
+   "failed_in": "10 of 23 runs kept"
+  },
+  {
+   "request": "repos-subvisual",
+   "url": "https://api.github.com/orgs/subvisual/repos?type=public&sort=pushed&direction=desc&per_page=100",
+   "status": [
+    403
+   ],
+   "plain": "refused (forbidden)",
+   "failed_in": "10 of 23 runs kept"
+  },
+  {
+   "request": "repos-ubiwhere",
+   "url": "https://api.github.com/orgs/ubiwhere/repos?type=public&sort=pushed&direction=desc&per_page=100",
+   "status": [
+    403
+   ],
+   "plain": "refused (forbidden)",
+   "failed_in": "10 of 23 runs kept"
+  },
+  {
+   "request": "repos-mindera",
+   "url": "https://api.github.com/orgs/mindera/repos?type=public&sort=pushed&direction=desc&per_page=100",
+   "status": [
+    403
+   ],
+   "plain": "refused (forbidden)",
+   "failed_in": "10 of 23 runs kept"
+  },
+  {
+   "request": "repos-farfetch",
+   "url": "https://api.github.com/orgs/farfetch/repos?type=public&sort=pushed&direction=desc&per_page=100",
+   "status": [
+    403
+   ],
+   "plain": "refused (forbidden)",
+   "failed_in": "10 of 23 runs kept"
+  },
+  {
+   "request": "repos-glintt",
+   "url": "https://api.github.com/orgs/glintt/repos?type=public&sort=pushed&direction=desc&per_page=100",
+   "status": [
+    403
+   ],
+   "plain": "refused (forbidden)",
+   "failed_in": "10 of 23 runs kept"
+  },
+  {
+   "request": "repos-criticalsoftware",
+   "url": "https://api.github.com/orgs/criticalsoftware/repos?type=public&sort=pushed&direction=desc&per_page=100",
+   "status": [
+    403
+   ],
+   "plain": "refused (forbidden)",
+   "failed_in": "10 of 23 runs kept"
+  },
+  {
+   "request": "repos-sapo",
+   "url": "https://api.github.com/orgs/sapo/repos?type=public&sort=pushed&direction=desc&per_page=100",
+   "status": [
+    403
+   ],
+   "plain": "refused (forbidden)",
+   "failed_in": "10 of 23 runs kept"
+  },
+  {
+   "request": "repos-amagovpt",
+   "url": "https://api.github.com/orgs/amagovpt/repos?type=public&sort=pushed&direction=desc&per_page=100",
+   "status": [
+    403
+   ],
+   "plain": "refused (forbidden)",
+   "failed_in": "10 of 23 runs kept"
+  },
+  {
+   "request": "repos-fccn",
+   "url": "https://api.github.com/orgs/fccn/repos?type=public&sort=pushed&direction=desc&per_page=100",
+   "status": [
+    403
+   ],
+   "plain": "refused (forbidden)",
+   "failed_in": "10 of 23 runs kept"
+  },
+  {
+   "request": "repos-rcaap",
+   "url": "https://api.github.com/orgs/rcaap/repos?type=public&sort=pushed&direction=desc&per_page=100",
+   "status": [
+    403
+   ],
+   "plain": "refused (forbidden)",
+   "failed_in": "10 of 23 runs kept"
+  },
+  {
+   "request": "repos-inesctec",
+   "url": "https://api.github.com/orgs/inesctec/repos?type=public&sort=pushed&direction=desc&per_page=100",
+   "status": [
+    403
+   ],
+   "plain": "refused (forbidden)",
+   "failed_in": "10 of 23 runs kept"
+  },
+  {
+   "request": "repos-inesc-id",
+   "url": "https://api.github.com/orgs/inesc-id/repos?type=public&sort=pushed&direction=desc&per_page=100",
+   "status": [
+    403
+   ],
+   "plain": "refused (forbidden)",
+   "failed_in": "10 of 23 runs kept"
+  },
+  {
+   "request": "repos-ieeta-pt",
+   "url": "https://api.github.com/orgs/ieeta-pt/repos?type=public&sort=pushed&direction=desc&per_page=100",
+   "status": [
+    403
+   ],
+   "plain": "refused (forbidden)",
+   "failed_in": "10 of 23 runs kept"
+  },
+  {
+   "request": "repos-haslab",
+   "url": "https://api.github.com/orgs/haslab/repos?type=public&sort=pushed&direction=desc&per_page=100",
+   "status": [
+    403
+   ],
+   "plain": "refused (forbidden)",
+   "failed_in": "10 of 23 runs kept"
+  },
+  {
+   "request": "repos-LasigeBioTM",
+   "url": "https://api.github.com/orgs/LasigeBioTM/repos?type=public&sort=pushed&direction=desc&per_page=100",
+   "status": [
+    403
+   ],
+   "plain": "refused (forbidden)",
+   "failed_in": "10 of 23 runs kept"
+  },
+  {
+   "request": "repos-lip-computing",
+   "url": "https://api.github.com/orgs/lip-computing/repos?type=public&sort=pushed&direction=desc&per_page=100",
+   "status": [
+    403
+   ],
+   "plain": "refused (forbidden)",
+   "failed_in": "10 of 23 runs kept"
+  },
+  {
+   "request": "repos-ipleiria",
+   "url": "https://api.github.com/orgs/ipleiria/repos?type=public&sort=pushed&direction=desc&per_page=100",
+   "status": [
+    403
+   ],
+   "plain": "refused (forbidden)",
+   "failed_in": "10 of 23 runs kept"
+  },
+  {
+   "request": "repos-fenixedu",
+   "url": "https://api.github.com/orgs/fenixedu/repos?type=public&sort=pushed&direction=desc&per_page=100",
+   "status": [
+    403
+   ],
+   "plain": "refused (forbidden)",
+   "failed_in": "10 of 23 runs kept"
+  },
+  {
+   "request": "repos-centraldedados",
+   "url": "https://api.github.com/orgs/centraldedados/repos?type=public&sort=pushed&direction=desc&per_page=100",
+   "status": [
+    403
+   ],
+   "plain": "refused (forbidden)",
+   "failed_in": "10 of 23 runs kept"
+  },
+  {
+   "request": "repos-transparenciahackday",
+   "url": "https://api.github.com/orgs/transparenciahackday/repos?type=public&sort=pushed&direction=desc&per_page=100",
+   "status": [
+    403
+   ],
+   "plain": "refused (forbidden)",
+   "failed_in": "10 of 23 runs kept"
+  }
+ ],
+ "runs": [
+  {
+   "at": "2026-11-27T18:09:45Z",
+   "ok": 1,
+   "failed": 21,
+   "requests": 22,
+   "changed_requests": [
+    "rate-limit"
+   ],
+   "requests_detail": [
+    {
+     "name": "rate-limit",
+     "status": 200,
+     "bytes": 1237,
+     "sha256_prefix": "3b524c269ef8b0a6",
+     "changed": true
+    },
+    {
+     "name": "repos-codacy",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-subvisual",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-ubiwhere",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-mindera",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-farfetch",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-glintt",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-criticalsoftware",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-sapo",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-amagovpt",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-fccn",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-rcaap",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-inesctec",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-inesc-id",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-ieeta-pt",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-haslab",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-LasigeBioTM",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-lip-computing",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-ipleiria",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-fenixedu",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-centraldedados",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-transparenciahackday",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    }
+   ],
+   "failed_requests": [
+    "repos-codacy",
+    "repos-subvisual",
+    "repos-ubiwhere",
+    "repos-mindera",
+    "repos-farfetch",
+    "repos-glintt",
+    "repos-criticalsoftware",
+    "repos-sapo",
+    "repos-amagovpt",
+    "repos-fccn",
+    "repos-rcaap",
+    "repos-inesctec",
+    "repos-inesc-id",
+    "repos-ieeta-pt",
+    "repos-haslab",
+    "repos-LasigeBioTM",
+    "repos-lip-computing",
+    "repos-ipleiria",
+    "repos-fenixedu",
+    "repos-centraldedados",
+    "repos-transparenciahackday"
+   ],
+   "commit": "526dd0b",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/526dd0b8fd852d1fffb5fd1c54adb4760ccfe3e8",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/d409b57...526dd0b"
+  },
+  {
+   "at": "2026-11-27T07:11:46Z",
+   "ok": 1,
+   "failed": 21,
+   "requests": 22,
+   "changed_requests": [
+    "rate-limit"
+   ],
+   "requests_detail": [
+    {
+     "name": "rate-limit",
+     "status": 200,
+     "bytes": 1238,
+     "sha256_prefix": "30a770608afb33a1",
+     "changed": true
+    },
+    {
+     "name": "repos-codacy",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-subvisual",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-ubiwhere",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-mindera",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-farfetch",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-glintt",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-criticalsoftware",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-sapo",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-amagovpt",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-fccn",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-rcaap",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-inesctec",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-inesc-id",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-ieeta-pt",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-haslab",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-LasigeBioTM",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-lip-computing",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-ipleiria",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-fenixedu",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-centraldedados",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-transparenciahackday",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    }
+   ],
+   "failed_requests": [
+    "repos-codacy",
+    "repos-subvisual",
+    "repos-ubiwhere",
+    "repos-mindera",
+    "repos-farfetch",
+    "repos-glintt",
+    "repos-criticalsoftware",
+    "repos-sapo",
+    "repos-amagovpt",
+    "repos-fccn",
+    "repos-rcaap",
+    "repos-inesctec",
+    "repos-inesc-id",
+    "repos-ieeta-pt",
+    "repos-haslab",
+    "repos-LasigeBioTM",
+    "repos-lip-computing",
+    "repos-ipleiria",
+    "repos-fenixedu",
+    "repos-centraldedados",
+    "repos-transparenciahackday"
+   ],
+   "commit": "d409b57",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d409b5734208af88d47485b2878734dbf9e6aa7c",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/d466166...d409b57"
+  },
+  {
+   "at": "2026-11-26T18:11:11Z",
+   "ok": 1,
+   "failed": 21,
+   "requests": 22,
+   "changed_requests": [
+    "rate-limit"
+   ],
+   "requests_detail": [
+    {
+     "name": "rate-limit",
+     "status": 200,
+     "bytes": 1240,
+     "sha256_prefix": "33ba3a3325d80840",
+     "changed": true
+    },
+    {
+     "name": "repos-codacy",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-subvisual",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-ubiwhere",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-mindera",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-farfetch",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-glintt",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-criticalsoftware",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-sapo",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-amagovpt",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-fccn",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-rcaap",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-inesctec",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-inesc-id",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-ieeta-pt",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-haslab",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-LasigeBioTM",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-lip-computing",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-ipleiria",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-fenixedu",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-centraldedados",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-transparenciahackday",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    }
+   ],
+   "failed_requests": [
+    "repos-codacy",
+    "repos-subvisual",
+    "repos-ubiwhere",
+    "repos-mindera",
+    "repos-farfetch",
+    "repos-glintt",
+    "repos-criticalsoftware",
+    "repos-sapo",
+    "repos-amagovpt",
+    "repos-fccn",
+    "repos-rcaap",
+    "repos-inesctec",
+    "repos-inesc-id",
+    "repos-ieeta-pt",
+    "repos-haslab",
+    "repos-LasigeBioTM",
+    "repos-lip-computing",
+    "repos-ipleiria",
+    "repos-fenixedu",
+    "repos-centraldedados",
+    "repos-transparenciahackday"
+   ],
+   "commit": "d466166",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d466166b925f53f8d36d4a6047daf9a0634bf489",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-26T07:10:42Z",
+   "ok": 1,
+   "failed": 21,
+   "requests": 22,
+   "changed_requests": [
+    "rate-limit"
+   ],
+   "requests_detail": [
+    {
+     "name": "rate-limit",
+     "status": 200,
+     "bytes": 1238,
+     "sha256_prefix": "02bfcd3a70b8a884",
+     "changed": true
+    },
+    {
+     "name": "repos-codacy",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-subvisual",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-ubiwhere",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-mindera",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-farfetch",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-glintt",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-criticalsoftware",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-sapo",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-amagovpt",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-fccn",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-rcaap",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-inesctec",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-inesc-id",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-ieeta-pt",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-haslab",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-LasigeBioTM",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-lip-computing",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-ipleiria",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-fenixedu",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-centraldedados",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-transparenciahackday",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    }
+   ],
+   "failed_requests": [
+    "repos-codacy",
+    "repos-subvisual",
+    "repos-ubiwhere",
+    "repos-mindera",
+    "repos-farfetch",
+    "repos-glintt",
+    "repos-criticalsoftware",
+    "repos-sapo",
+    "repos-amagovpt",
+    "repos-fccn",
+    "repos-rcaap",
+    "repos-inesctec",
+    "repos-inesc-id",
+    "repos-ieeta-pt",
+    "repos-haslab",
+    "repos-LasigeBioTM",
+    "repos-lip-computing",
+    "repos-ipleiria",
+    "repos-fenixedu",
+    "repos-centraldedados",
+    "repos-transparenciahackday"
+   ],
+   "commit": "d466166",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d466166b925f53f8d36d4a6047daf9a0634bf489",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/bd410a7...d466166"
+  },
+  {
+   "at": "2026-11-21T07:10:15Z",
+   "ok": 1,
+   "failed": 21,
+   "requests": 22,
+   "changed_requests": [
+    "rate-limit"
+   ],
+   "requests_detail": [
+    {
+     "name": "rate-limit",
+     "status": 200,
+     "bytes": 1238,
+     "sha256_prefix": "80fbfc3cf6eb3d4a",
+     "changed": true
+    },
+    {
+     "name": "repos-codacy",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-subvisual",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-ubiwhere",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-mindera",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-farfetch",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-glintt",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-criticalsoftware",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-sapo",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-amagovpt",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-fccn",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-rcaap",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-inesctec",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-inesc-id",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-ieeta-pt",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-haslab",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-LasigeBioTM",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-lip-computing",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-ipleiria",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-fenixedu",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-centraldedados",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-transparenciahackday",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    }
+   ],
+   "failed_requests": [
+    "repos-codacy",
+    "repos-subvisual",
+    "repos-ubiwhere",
+    "repos-mindera",
+    "repos-farfetch",
+    "repos-glintt",
+    "repos-criticalsoftware",
+    "repos-sapo",
+    "repos-amagovpt",
+    "repos-fccn",
+    "repos-rcaap",
+    "repos-inesctec",
+    "repos-inesc-id",
+    "repos-ieeta-pt",
+    "repos-haslab",
+    "repos-LasigeBioTM",
+    "repos-lip-computing",
+    "repos-ipleiria",
+    "repos-fenixedu",
+    "repos-centraldedados",
+    "repos-transparenciahackday"
+   ],
+   "commit": "bd410a7",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/bd410a73762d6b0a755da0a946556d6e47d54c8e",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/65c6667...bd410a7"
+  },
+  {
+   "at": "2026-11-20T18:13:30Z",
+   "ok": 1,
+   "failed": 21,
+   "requests": 22,
+   "changed_requests": [
+    "rate-limit"
+   ],
+   "requests_detail": [
+    {
+     "name": "rate-limit",
+     "status": 200,
+     "bytes": 1238,
+     "sha256_prefix": "5db0b9d551c6463a",
+     "changed": true
+    },
+    {
+     "name": "repos-codacy",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-subvisual",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-ubiwhere",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-mindera",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-farfetch",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-glintt",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-criticalsoftware",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-sapo",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-amagovpt",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-fccn",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-rcaap",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-inesctec",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-inesc-id",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-ieeta-pt",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-haslab",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-LasigeBioTM",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-lip-computing",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-ipleiria",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-fenixedu",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-centraldedados",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-transparenciahackday",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    }
+   ],
+   "failed_requests": [
+    "repos-codacy",
+    "repos-subvisual",
+    "repos-ubiwhere",
+    "repos-mindera",
+    "repos-farfetch",
+    "repos-glintt",
+    "repos-criticalsoftware",
+    "repos-sapo",
+    "repos-amagovpt",
+    "repos-fccn",
+    "repos-rcaap",
+    "repos-inesctec",
+    "repos-inesc-id",
+    "repos-ieeta-pt",
+    "repos-haslab",
+    "repos-LasigeBioTM",
+    "repos-lip-computing",
+    "repos-ipleiria",
+    "repos-fenixedu",
+    "repos-centraldedados",
+    "repos-transparenciahackday"
+   ],
+   "commit": "65c6667",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/65c66677f4957a21ffbcf6d58b3f8794f505d39f",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/cb88d7b...65c6667"
+  },
+  {
+   "at": "2026-11-20T07:14:44Z",
+   "ok": 1,
+   "failed": 21,
+   "requests": 22,
+   "changed_requests": [
+    "rate-limit"
+   ],
+   "requests_detail": [
+    {
+     "name": "rate-limit",
+     "status": 200,
+     "bytes": 1238,
+     "sha256_prefix": "487be2b456b71387",
+     "changed": true
+    },
+    {
+     "name": "repos-codacy",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-subvisual",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-ubiwhere",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-mindera",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-farfetch",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-glintt",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-criticalsoftware",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-sapo",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-amagovpt",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-fccn",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-rcaap",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-inesctec",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-inesc-id",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-ieeta-pt",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-haslab",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-LasigeBioTM",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-lip-computing",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-ipleiria",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-fenixedu",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-centraldedados",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-transparenciahackday",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    }
+   ],
+   "failed_requests": [
+    "repos-codacy",
+    "repos-subvisual",
+    "repos-ubiwhere",
+    "repos-mindera",
+    "repos-farfetch",
+    "repos-glintt",
+    "repos-criticalsoftware",
+    "repos-sapo",
+    "repos-amagovpt",
+    "repos-fccn",
+    "repos-rcaap",
+    "repos-inesctec",
+    "repos-inesc-id",
+    "repos-ieeta-pt",
+    "repos-haslab",
+    "repos-LasigeBioTM",
+    "repos-lip-computing",
+    "repos-ipleiria",
+    "repos-fenixedu",
+    "repos-centraldedados",
+    "repos-transparenciahackday"
+   ],
+   "commit": "cb88d7b",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/cb88d7b793bc938078a150fb7bd84b6477977aea",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/64fbf7d...cb88d7b"
+  },
+  {
+   "at": "2026-11-19T18:12:11Z",
+   "ok": 1,
+   "failed": 21,
+   "requests": 22,
+   "changed_requests": [
+    "rate-limit"
+   ],
+   "requests_detail": [
+    {
+     "name": "rate-limit",
+     "status": 200,
+     "bytes": 1237,
+     "sha256_prefix": "bfd1630433957ec7",
+     "changed": true
+    },
+    {
+     "name": "repos-codacy",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-subvisual",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-ubiwhere",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-mindera",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-farfetch",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-glintt",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-criticalsoftware",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-sapo",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-amagovpt",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-fccn",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-rcaap",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-inesctec",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-inesc-id",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-ieeta-pt",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-haslab",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-LasigeBioTM",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-lip-computing",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-ipleiria",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-fenixedu",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-centraldedados",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-transparenciahackday",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    }
+   ],
+   "failed_requests": [
+    "repos-codacy",
+    "repos-subvisual",
+    "repos-ubiwhere",
+    "repos-mindera",
+    "repos-farfetch",
+    "repos-glintt",
+    "repos-criticalsoftware",
+    "repos-sapo",
+    "repos-amagovpt",
+    "repos-fccn",
+    "repos-rcaap",
+    "repos-inesctec",
+    "repos-inesc-id",
+    "repos-ieeta-pt",
+    "repos-haslab",
+    "repos-LasigeBioTM",
+    "repos-lip-computing",
+    "repos-ipleiria",
+    "repos-fenixedu",
+    "repos-centraldedados",
+    "repos-transparenciahackday"
+   ],
+   "commit": "64fbf7d",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/64fbf7dda8967b6095e265f2e10aba0dfb3d65e8",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/379aae6...64fbf7d"
+  },
+  {
+   "at": "2026-11-19T12:13:27Z",
+   "ok": 1,
+   "failed": 21,
+   "requests": 22,
+   "changed_requests": [
+    "rate-limit"
+   ],
+   "requests_detail": [
+    {
+     "name": "rate-limit",
+     "status": 200,
+     "bytes": 1239,
+     "sha256_prefix": "556de6eef61594e0",
+     "changed": true
+    },
+    {
+     "name": "repos-codacy",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-subvisual",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-ubiwhere",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-mindera",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-farfetch",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-glintt",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-criticalsoftware",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-sapo",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-amagovpt",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-fccn",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-rcaap",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-inesctec",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-inesc-id",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-ieeta-pt",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-haslab",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-LasigeBioTM",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-lip-computing",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-ipleiria",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-fenixedu",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-centraldedados",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    },
+    {
+     "name": "repos-transparenciahackday",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": false
+    }
+   ],
+   "failed_requests": [
+    "repos-codacy",
+    "repos-subvisual",
+    "repos-ubiwhere",
+    "repos-mindera",
+    "repos-farfetch",
+    "repos-glintt",
+    "repos-criticalsoftware",
+    "repos-sapo",
+    "repos-amagovpt",
+    "repos-fccn",
+    "repos-rcaap",
+    "repos-inesctec",
+    "repos-inesc-id",
+    "repos-ieeta-pt",
+    "repos-haslab",
+    "repos-LasigeBioTM",
+    "repos-lip-computing",
+    "repos-ipleiria",
+    "repos-fenixedu",
+    "repos-centraldedados",
+    "repos-transparenciahackday"
+   ],
+   "commit": "379aae6",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/379aae67e159f2afe46678e771171e631f923e70",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/6ee935e...379aae6"
+  },
+  {
+   "at": "2026-11-19T06:12:21Z",
+   "ok": 1,
+   "failed": 21,
+   "requests": 22,
+   "changed_requests": [
+    "rate-limit",
+    "repos-codacy",
+    "repos-subvisual",
+    "repos-ubiwhere",
+    "repos-mindera",
+    "repos-farfetch",
+    "repos-glintt",
+    "repos-criticalsoftware",
+    "repos-sapo",
+    "repos-amagovpt",
+    "repos-fccn",
+    "repos-rcaap",
+    "repos-inesctec",
+    "repos-inesc-id",
+    "repos-ieeta-pt",
+    "repos-haslab",
+    "repos-LasigeBioTM",
+    "repos-lip-computing",
+    "repos-ipleiria",
+    "repos-fenixedu",
+    "repos-centraldedados",
+    "repos-transparenciahackday"
+   ],
+   "requests_detail": [
+    {
+     "name": "rate-limit",
+     "status": 200,
+     "bytes": 1238,
+     "sha256_prefix": "0548efc6dde52db5",
+     "changed": true
+    },
+    {
+     "name": "repos-codacy",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-subvisual",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-ubiwhere",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-mindera",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-farfetch",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-glintt",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-criticalsoftware",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-sapo",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-amagovpt",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-fccn",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-rcaap",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-inesctec",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-inesc-id",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-ieeta-pt",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-haslab",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-LasigeBioTM",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-lip-computing",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-ipleiria",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-fenixedu",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-centraldedados",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    },
+    {
+     "name": "repos-transparenciahackday",
+     "status": 403,
+     "bytes": 249,
+     "sha256_prefix": "7616419b9bf270d6",
+     "changed": true
+    }
+   ],
+   "failed_requests": [
+    "repos-codacy",
+    "repos-subvisual",
+    "repos-ubiwhere",
+    "repos-mindera",
+    "repos-farfetch",
+    "repos-glintt",
+    "repos-criticalsoftware",
+    "repos-sapo",
+    "repos-amagovpt",
+    "repos-fccn",
+    "repos-rcaap",
+    "repos-inesctec",
+    "repos-inesc-id",
+    "repos-ieeta-pt",
+    "repos-haslab",
+    "repos-LasigeBioTM",
+    "repos-lip-computing",
+    "repos-ipleiria",
+    "repos-fenixedu",
+    "repos-centraldedados",
+    "repos-transparenciahackday"
+   ],
+   "commit": "6ee935e",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/6ee935e17d5733cf18c410ee489d74b2bee55a8c",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/83b562f...6ee935e"
+  },
+  {
+   "at": "2026-11-18T23:43:57Z",
+   "ok": 172,
+   "failed": 0,
+   "requests": 172,
+   "changed_requests": [
+    "rate-limit",
+    "releases-codacy-codacy-cli-v2",
+    "releases-codacy-codacy-coverage-reporter",
+    "releases-codacy-git-version"
+   ],
+   "requests_detail": [
+    {
+     "name": "rate-limit",
+     "status": 200,
+     "bytes": 1234,
+     "sha256_prefix": "3a2f458c7bb2a497",
+     "changed": true
+    },
+    {
+     "name": "repos-codacy",
+     "status": 200,
+     "bytes": 548260,
+     "sha256_prefix": "eb311816f6c203d9",
+     "changed": false
+    },
+    {
+     "name": "repos-subvisual",
+     "status": 200,
+     "bytes": 546039,
+     "sha256_prefix": "b1aa96dfef312a94",
+     "changed": false
+    },
+    {
+     "name": "repos-ubiwhere",
+     "status": 200,
+     "bytes": 305485,
+     "sha256_prefix": "295bef7e058289a9",
+     "changed": false
+    },
+    {
+     "name": "repos-mindera",
+     "status": 200,
+     "bytes": 553887,
+     "sha256_prefix": "6fb971de860fa382",
+     "changed": false
+    },
+    {
+     "name": "repos-farfetch",
+     "status": 200,
+     "bytes": 95728,
+     "sha256_prefix": "60ae166d5954e536",
+     "changed": false
+    },
+    {
+     "name": "repos-glintt",
+     "status": 200,
+     "bytes": 16038,
+     "sha256_prefix": "abc5b8d300f5f70e",
+     "changed": false
+    },
+    {
+     "name": "repos-criticalsoftware",
+     "status": 200,
+     "bytes": 5633,
+     "sha256_prefix": "0efae607805f9b87",
+     "changed": false
+    },
+    {
+     "name": "repos-sapo",
+     "status": 200,
+     "bytes": 45217,
+     "sha256_prefix": "391c15ed57ab5279",
+     "changed": false
+    },
+    {
+     "name": "repos-amagovpt",
+     "status": 200,
+     "bytes": 508412,
+     "sha256_prefix": "4f04903cd8885139",
+     "changed": false
+    },
+    {
+     "name": "repos-fccn",
+     "status": 200,
+     "bytes": 550090,
+     "sha256_prefix": "75622f8ec75d685c",
+     "changed": false
+    },
+    {
+     "name": "repos-rcaap",
+     "status": 200,
+     "bytes": 10444,
+     "sha256_prefix": "c5de8be57525dc8b",
+     "changed": false
+    },
+    {
+     "name": "repos-inesctec",
+     "status": 200,
+     "bytes": 577612,
+     "sha256_prefix": "1ef1f3f895b7dba3",
+     "changed": false
+    },
+    {
+     "name": "repos-inesc-id",
+     "status": 200,
+     "bytes": 205997,
+     "sha256_prefix": "e8061beb760bf7c0",
+     "changed": false
+    },
+    {
+     "name": "repos-ieeta-pt",
+     "status": 200,
+     "bytes": 314071,
+     "sha256_prefix": "0cfd6f7688d297ba",
+     "changed": false
+    },
+    {
+     "name": "repos-haslab",
+     "status": 200,
+     "bytes": 211658,
+     "sha256_prefix": "4a6740b0450c79a9",
+     "changed": false
+    },
+    {
+     "name": "repos-LasigeBioTM",
+     "status": 200,
+     "bytes": 368787,
+     "sha256_prefix": "0b4230e80bb45f5c",
+     "changed": false
+    },
+    {
+     "name": "repos-lip-computing",
+     "status": 200,
+     "bytes": 451753,
+     "sha256_prefix": "5b7d9291e11bd6d6",
+     "changed": false
+    },
+    {
+     "name": "repos-ipleiria",
+     "status": 200,
+     "bytes": 32272,
+     "sha256_prefix": "bc337a5af5bcdceb",
+     "changed": false
+    },
+    {
+     "name": "repos-fenixedu",
+     "status": 200,
+     "bytes": 284470,
+     "sha256_prefix": "43c26c59b54667cf",
+     "changed": false
+    },
+    {
+     "name": "repos-centraldedados",
+     "status": 200,
+     "bytes": 285783,
+     "sha256_prefix": "4b93f8b7d15c4e9c",
+     "changed": false
+    },
+    {
+     "name": "repos-transparenciahackday",
+     "status": 200,
+     "bytes": 189481,
+     "sha256_prefix": "c20f1bebdc27c849",
+     "changed": false
+    },
+    {
+     "name": "releases-fccn-nau_playbooks",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-relay-d",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-dadosgov-fe",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-fccn-docker-nginx",
+     "status": 200,
+     "bytes": 3478,
+     "sha256_prefix": "92cf3fafe9dc7f39",
+     "changed": false
+    },
+    {
+     "name": "releases-ieeta-pt-biochef-agent",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-www-selo",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-ieeta-pt-SIEM-in-a-box",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-shairr",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-ricoslam",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-vscode-extension",
+     "status": 200,
+     "bytes": 11500,
+     "sha256_prefix": "2519693a128970af",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-mcp-server",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-fccn-ansible-keepalived",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-mindera-Alfie-iOS",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-ieeta-pt-stackform",
+     "status": 200,
+     "bytes": 4443,
+     "sha256_prefix": "15ac515e9f06111d",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-GOV.PT",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-FSP",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-SCAP-Consumidores",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-SAFE",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-CMD-assinatura",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-AUTENTICACAO",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-SCAP-Fornecedores",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-phystwin",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-mindera-Alfie-Android",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-INESCTEC.github.io",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-mindera-Alfie-Flutter",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-Template-Projects",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-ieeta-pt-biochef-app",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-ieeta-pt-biochef-recipes",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-booka11y",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-fenixedu-bennu",
+     "status": 200,
+     "bytes": 6099,
+     "sha256_prefix": "d78704aa29c788de",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-tribe-rp-drivers",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-fccn-openedx-corporate",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-verity",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-autenticacao.gov",
+     "status": 200,
+     "bytes": 28797,
+     "sha256_prefix": "799fb45f632488dd",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-admin-monitor-suite",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-orbs",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-trivy",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-ieeta-pt-biochef-infra",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-ieeta-pt-BiochefPage",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-docs",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-udata-pt",
+     "status": 200,
+     "bytes": 25210,
+     "sha256_prefix": "5cb389837401985c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-rubocop",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-dadosgov-metrics",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-mindera-diffcompass",
+     "status": 200,
+     "bytes": 53133,
+     "sha256_prefix": "2ae556f26158867e",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-accessmonitor-ce",
+     "status": 200,
+     "bytes": 12694,
+     "sha256_prefix": "7d42c96fc15260ab",
+     "changed": false
+    },
+    {
+     "name": "releases-fccn-openedx-platform",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-opengrep",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-qasp",
+     "status": 200,
+     "bytes": 11552,
+     "sha256_prefix": "f66a808d67f84212",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-www-acessibilidade",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-cli-v2",
+     "status": 200,
+     "bytes": 42834,
+     "sha256_prefix": "a80c0aceed63e8b8",
+     "changed": true
+    },
+    {
+     "name": "releases-ieeta-pt-biochef-hub",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-cloud-cli",
+     "status": 200,
+     "bytes": 9942,
+     "sha256_prefix": "8922fa388b71ce2a",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-arte-dataops-playbook",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-dadosgov-explorer",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-CATALOGO_MODELOS_DADOS_TI",
+     "status": 200,
+     "bytes": 4006,
+     "sha256_prefix": "b5cd5ad0f7eadcf3",
+     "changed": false
+    },
+    {
+     "name": "releases-fccn-nau-openedx-extensions",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-base",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-prospector",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-analysis-cli",
+     "status": 200,
+     "bytes": 10424,
+     "sha256_prefix": "f47b75be38c1d728",
+     "changed": false
+    },
+    {
+     "name": "releases-haslab-Alloy-LLM-Testing",
+     "status": 200,
+     "bytes": 2085,
+     "sha256_prefix": "6364daa21e7be948",
+     "changed": false
+    },
+    {
+     "name": "releases-mindera-Enterprise-Spec-Driven-Development",
+     "status": 200,
+     "bytes": 10088,
+     "sha256_prefix": "8f1d2b7681ad007e",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-monitor-server",
+     "status": 200,
+     "bytes": 8959,
+     "sha256_prefix": "2368b41b2c54683c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-eslint",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-fccn-nau-financial-manager",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-haslab-ABZ27-Case-Study",
+     "status": 200,
+     "bytes": 10153,
+     "sha256_prefix": "52f322630bbb4528",
+     "changed": false
+    },
+    {
+     "name": "releases-mindera-Lodge",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-ieeta-pt-ETL4SecCompliance",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-metrics-scala-seed",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-OSTEC",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-a11yNPM",
+     "status": 200,
+     "bytes": 7150,
+     "sha256_prefix": "cf9e2d9afd175259",
+     "changed": false
+    },
+    {
+     "name": "releases-ieeta-pt-biochef-coordinator",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-hydra-pt",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-dataspace-metadata-broker",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-dataspace-paris",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-dataspace-audit-logger",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-plugins-api",
+     "status": 200,
+     "bytes": 1821,
+     "sha256_prefix": "49b5e550cf403892",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-analysis-cli-action",
+     "status": 200,
+     "bytes": 3399,
+     "sha256_prefix": "44b199db50b15c16",
+     "changed": false
+    },
+    {
+     "name": "releases-ubiwhere-uw-api-keys",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-LasigeBioTM-XMR4EL",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-homebrew-codacy-cli-v2",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-chart",
+     "status": 200,
+     "bytes": 5578,
+     "sha256_prefix": "2498cb828be899e5",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-BlanketGenv2",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-mindera-Halloween-Minder",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-haslab-jasmin.hybrid.combiners",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-codesniffer",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-stylelint",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-sapo-auto",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-fccn-nau-analytics-airflow-dags",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-citilink-dataset",
+     "status": 200,
+     "bytes": 5974,
+     "sha256_prefix": "1729b43c778d2637",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-api-tabular-pt",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-mindera-AI-Podcast-Short-Editor",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-ewh-flex",
+     "status": 200,
+     "bytes": 2980,
+     "sha256_prefix": "03b70bdebf92ea89",
+     "changed": false
+    },
+    {
+     "name": "releases-subvisual-coimbrajs.dev",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-lizard",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-fccn-nau-analytics-management-data-product",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-bandit",
+     "status": 200,
+     "bytes": 1760,
+     "sha256_prefix": "897487e183470e4f",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-tsg-client",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-fccn-ecommerce-nau-extensions",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-haslab-why3do-v2",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-analysis-cli-action",
+     "status": 200,
+     "bytes": 5818,
+     "sha256_prefix": "3dcda3ede3b16b99",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-php-cs-fixer",
+     "status": 200,
+     "bytes": 1894,
+     "sha256_prefix": "c22221e57917d9c9",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-coverage-reporter",
+     "status": 200,
+     "bytes": 44439,
+     "sha256_prefix": "23bbd4c008d46c3e",
+     "changed": true
+    },
+    {
+     "name": "releases-fccn-richie-openedx-sync",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-SAM",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-fatec",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-SITEC",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-fccn-nau-richie-site-factory",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-ieeta-pt-DL-MTSAD",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-collection-a11y",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-subvisual-curator",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-fccn-nau-themes",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-sonar-csharp",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-haslab-HyperSMV",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-haslab-HyperLasso",
+     "status": 200,
+     "bytes": 1775,
+     "sha256_prefix": "2ee53a32df363764",
+     "changed": false
+    },
+    {
+     "name": "releases-fccn-nau-analytics-external-data-product",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-ieeta-pt-HPC-guides",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-consumer-data-synthetization",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-fenixedu-bennu-renderers",
+     "status": 200,
+     "bytes": 6270,
+     "sha256_prefix": "699e6dcb30414363",
+     "changed": false
+    },
+    {
+     "name": "releases-mindera-Alfie-Mocks",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-eslint-legacy",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-haslab-Specification-Narrowing",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-fccn-nau-course-certificate",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-intellij-extension",
+     "status": 200,
+     "bytes": 11397,
+     "sha256_prefix": "7e2b13d48f94f8e0",
+     "changed": false
+    },
+    {
+     "name": "releases-LasigeBioTM-data-text-processing-notebooks",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-fccn-frontend-app-corporate",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-git-version",
+     "status": 200,
+     "bytes": 10100,
+     "sha256_prefix": "c39a9016910e3222",
+     "changed": true
+    },
+    {
+     "name": "releases-amagovpt-dadosgov-validator",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-helm-ssm",
+     "status": 200,
+     "bytes": 21857,
+     "sha256_prefix": "95e3e6c5b1d47930",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-code-quality-radar",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-github-graphql",
+     "status": 200,
+     "bytes": 1826,
+     "sha256_prefix": "b3a9f02e8de1ad5b",
+     "changed": false
+    },
+    {
+     "name": "releases-haslab-JasminCode",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-monitor-evaluations",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-gridarena",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-hypertex-ml",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-hypertex-ui",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-duplication-scala-seed",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-engine-scala-seed",
+     "status": 200,
+     "bytes": 3846,
+     "sha256_prefix": "9e894a7b82a185fa",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-api-scala",
+     "status": 200,
+     "bytes": 1750,
+     "sha256_prefix": "de5e3e21bc2066aa",
+     "changed": false
+    },
+    {
+     "name": "releases-fccn-educast-recorder-releases",
+     "status": 200,
+     "bytes": 31161,
+     "sha256_prefix": "2752a792d9b394e4",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-pmd7",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-spotbugs",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-pylint-python3",
+     "status": 200,
+     "bytes": 1797,
+     "sha256_prefix": "1801caa43cd01305",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-roslyn",
+     "status": 200,
+     "bytes": 10207,
+     "sha256_prefix": "f837a5b4cc333fc4",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-sqlfluff",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-ruff",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-duplication-flay",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-checkov",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-gosec",
+     "status": 200,
+     "bytes": 10161,
+     "sha256_prefix": "74171e83c9cbccdd",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-dartanalyzer",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-gorevive",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T23:35:57Z",
+   "ok": 172,
+   "failed": 0,
+   "requests": 172,
+   "changed_requests": [
+    "rate-limit"
+   ],
+   "requests_detail": [
+    {
+     "name": "rate-limit",
+     "status": 200,
+     "bytes": 1235,
+     "sha256_prefix": "786cdd1ea5677366",
+     "changed": true
+    },
+    {
+     "name": "repos-codacy",
+     "status": 200,
+     "bytes": 548260,
+     "sha256_prefix": "eb311816f6c203d9",
+     "changed": false
+    },
+    {
+     "name": "repos-subvisual",
+     "status": 200,
+     "bytes": 546039,
+     "sha256_prefix": "b1aa96dfef312a94",
+     "changed": false
+    },
+    {
+     "name": "repos-ubiwhere",
+     "status": 200,
+     "bytes": 305485,
+     "sha256_prefix": "295bef7e058289a9",
+     "changed": false
+    },
+    {
+     "name": "repos-mindera",
+     "status": 200,
+     "bytes": 553887,
+     "sha256_prefix": "6fb971de860fa382",
+     "changed": false
+    },
+    {
+     "name": "repos-farfetch",
+     "status": 200,
+     "bytes": 95728,
+     "sha256_prefix": "60ae166d5954e536",
+     "changed": false
+    },
+    {
+     "name": "repos-glintt",
+     "status": 200,
+     "bytes": 16038,
+     "sha256_prefix": "abc5b8d300f5f70e",
+     "changed": false
+    },
+    {
+     "name": "repos-criticalsoftware",
+     "status": 200,
+     "bytes": 5633,
+     "sha256_prefix": "0efae607805f9b87",
+     "changed": false
+    },
+    {
+     "name": "repos-sapo",
+     "status": 200,
+     "bytes": 45217,
+     "sha256_prefix": "391c15ed57ab5279",
+     "changed": false
+    },
+    {
+     "name": "repos-amagovpt",
+     "status": 200,
+     "bytes": 508412,
+     "sha256_prefix": "4f04903cd8885139",
+     "changed": false
+    },
+    {
+     "name": "repos-fccn",
+     "status": 200,
+     "bytes": 550090,
+     "sha256_prefix": "75622f8ec75d685c",
+     "changed": false
+    },
+    {
+     "name": "repos-rcaap",
+     "status": 200,
+     "bytes": 10444,
+     "sha256_prefix": "c5de8be57525dc8b",
+     "changed": false
+    },
+    {
+     "name": "repos-inesctec",
+     "status": 200,
+     "bytes": 577612,
+     "sha256_prefix": "1ef1f3f895b7dba3",
+     "changed": false
+    },
+    {
+     "name": "repos-inesc-id",
+     "status": 200,
+     "bytes": 205997,
+     "sha256_prefix": "e8061beb760bf7c0",
+     "changed": false
+    },
+    {
+     "name": "repos-ieeta-pt",
+     "status": 200,
+     "bytes": 314071,
+     "sha256_prefix": "0cfd6f7688d297ba",
+     "changed": false
+    },
+    {
+     "name": "repos-haslab",
+     "status": 200,
+     "bytes": 211658,
+     "sha256_prefix": "4a6740b0450c79a9",
+     "changed": false
+    },
+    {
+     "name": "repos-LasigeBioTM",
+     "status": 200,
+     "bytes": 368787,
+     "sha256_prefix": "0b4230e80bb45f5c",
+     "changed": false
+    },
+    {
+     "name": "repos-lip-computing",
+     "status": 200,
+     "bytes": 451753,
+     "sha256_prefix": "5b7d9291e11bd6d6",
+     "changed": false
+    },
+    {
+     "name": "repos-ipleiria",
+     "status": 200,
+     "bytes": 32272,
+     "sha256_prefix": "bc337a5af5bcdceb",
+     "changed": false
+    },
+    {
+     "name": "repos-fenixedu",
+     "status": 200,
+     "bytes": 284470,
+     "sha256_prefix": "43c26c59b54667cf",
+     "changed": false
+    },
+    {
+     "name": "repos-centraldedados",
+     "status": 200,
+     "bytes": 285783,
+     "sha256_prefix": "4b93f8b7d15c4e9c",
+     "changed": false
+    },
+    {
+     "name": "repos-transparenciahackday",
+     "status": 200,
+     "bytes": 189481,
+     "sha256_prefix": "c20f1bebdc27c849",
+     "changed": false
+    },
+    {
+     "name": "releases-fccn-nau_playbooks",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-relay-d",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-dadosgov-fe",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-fccn-docker-nginx",
+     "status": 200,
+     "bytes": 3478,
+     "sha256_prefix": "92cf3fafe9dc7f39",
+     "changed": false
+    },
+    {
+     "name": "releases-ieeta-pt-biochef-agent",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-www-selo",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-ieeta-pt-SIEM-in-a-box",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-shairr",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-ricoslam",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-vscode-extension",
+     "status": 200,
+     "bytes": 11500,
+     "sha256_prefix": "2519693a128970af",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-mcp-server",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-fccn-ansible-keepalived",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-mindera-Alfie-iOS",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-ieeta-pt-stackform",
+     "status": 200,
+     "bytes": 4443,
+     "sha256_prefix": "15ac515e9f06111d",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-GOV.PT",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-FSP",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-SCAP-Consumidores",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-SAFE",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-CMD-assinatura",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-AUTENTICACAO",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-SCAP-Fornecedores",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-phystwin",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-mindera-Alfie-Android",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-INESCTEC.github.io",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-mindera-Alfie-Flutter",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-Template-Projects",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-ieeta-pt-biochef-app",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-ieeta-pt-biochef-recipes",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-booka11y",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-fenixedu-bennu",
+     "status": 200,
+     "bytes": 6099,
+     "sha256_prefix": "d78704aa29c788de",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-inesctec-tribe-rp-drivers",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-fccn-openedx-corporate",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-verity",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-autenticacao.gov",
+     "status": 200,
+     "bytes": 28797,
+     "sha256_prefix": "799fb45f632488dd",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-admin-monitor-suite",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-orbs",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-trivy",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-ieeta-pt-biochef-infra",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-ieeta-pt-BiochefPage",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-docs",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-udata-pt",
+     "status": 200,
+     "bytes": 25210,
+     "sha256_prefix": "5cb389837401985c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-rubocop",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-dadosgov-metrics",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-mindera-diffcompass",
+     "status": 200,
+     "bytes": 53133,
+     "sha256_prefix": "2ae556f26158867e",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-accessmonitor-ce",
+     "status": 200,
+     "bytes": 12694,
+     "sha256_prefix": "7d42c96fc15260ab",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-fccn-openedx-platform",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-opengrep",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-inesctec-qasp",
+     "status": 200,
+     "bytes": 11552,
+     "sha256_prefix": "f66a808d67f84212",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-www-acessibilidade",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-cli-v2",
+     "status": 200,
+     "bytes": 42834,
+     "sha256_prefix": "67051a240ba144f6",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-ieeta-pt-biochef-hub",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-cloud-cli",
+     "status": 200,
+     "bytes": 9942,
+     "sha256_prefix": "8922fa388b71ce2a",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-arte-dataops-playbook",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-dadosgov-explorer",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-CATALOGO_MODELOS_DADOS_TI",
+     "status": 200,
+     "bytes": 4006,
+     "sha256_prefix": "b5cd5ad0f7eadcf3",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-fccn-nau-openedx-extensions",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-base",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-prospector",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-analysis-cli",
+     "status": 200,
+     "bytes": 10424,
+     "sha256_prefix": "f47b75be38c1d728",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-haslab-Alloy-LLM-Testing",
+     "status": 200,
+     "bytes": 2085,
+     "sha256_prefix": "6364daa21e7be948",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-mindera-Enterprise-Spec-Driven-Development",
+     "status": 200,
+     "bytes": 10088,
+     "sha256_prefix": "8f1d2b7681ad007e",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-monitor-server",
+     "status": 200,
+     "bytes": 8959,
+     "sha256_prefix": "2368b41b2c54683c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-eslint",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-fccn-nau-financial-manager",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-haslab-ABZ27-Case-Study",
+     "status": 200,
+     "bytes": 10153,
+     "sha256_prefix": "52f322630bbb4528",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-mindera-Lodge",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-ieeta-pt-ETL4SecCompliance",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-metrics-scala-seed",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-inesctec-OSTEC",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-a11yNPM",
+     "status": 200,
+     "bytes": 7150,
+     "sha256_prefix": "cf9e2d9afd175259",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-ieeta-pt-biochef-coordinator",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-hydra-pt",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-inesctec-dataspace-metadata-broker",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-inesctec-dataspace-paris",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-inesctec-dataspace-audit-logger",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-plugins-api",
+     "status": 200,
+     "bytes": 1821,
+     "sha256_prefix": "49b5e550cf403892",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-analysis-cli-action",
+     "status": 200,
+     "bytes": 3399,
+     "sha256_prefix": "44b199db50b15c16",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-ubiwhere-uw-api-keys",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-LasigeBioTM-XMR4EL",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-homebrew-codacy-cli-v2",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-chart",
+     "status": 200,
+     "bytes": 5578,
+     "sha256_prefix": "2498cb828be899e5",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-inesctec-BlanketGenv2",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-mindera-Halloween-Minder",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-haslab-jasmin.hybrid.combiners",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-codesniffer",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-stylelint",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-sapo-auto",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-fccn-nau-analytics-airflow-dags",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-inesctec-citilink-dataset",
+     "status": 200,
+     "bytes": 5974,
+     "sha256_prefix": "1729b43c778d2637",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-api-tabular-pt",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-mindera-AI-Podcast-Short-Editor",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-inesctec-ewh-flex",
+     "status": 200,
+     "bytes": 2980,
+     "sha256_prefix": "03b70bdebf92ea89",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-subvisual-coimbrajs.dev",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-lizard",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-fccn-nau-analytics-management-data-product",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-bandit",
+     "status": 200,
+     "bytes": 1760,
+     "sha256_prefix": "897487e183470e4f",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-inesctec-tsg-client",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-fccn-ecommerce-nau-extensions",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-haslab-why3do-v2",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-analysis-cli-action",
+     "status": 200,
+     "bytes": 5818,
+     "sha256_prefix": "3dcda3ede3b16b99",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-php-cs-fixer",
+     "status": 200,
+     "bytes": 1894,
+     "sha256_prefix": "c22221e57917d9c9",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-coverage-reporter",
+     "status": 200,
+     "bytes": 44439,
+     "sha256_prefix": "5c82edc16b3ef5d9",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-fccn-richie-openedx-sync",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-doc-SAM",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-inesctec-fatec",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-inesctec-SITEC",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-fccn-nau-richie-site-factory",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-ieeta-pt-DL-MTSAD",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-collection-a11y",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-subvisual-curator",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-fccn-nau-themes",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-sonar-csharp",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-haslab-HyperSMV",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-haslab-HyperLasso",
+     "status": 200,
+     "bytes": 1775,
+     "sha256_prefix": "2ee53a32df363764",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-fccn-nau-analytics-external-data-product",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-ieeta-pt-HPC-guides",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-inesctec-consumer-data-synthetization",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-fenixedu-bennu-renderers",
+     "status": 200,
+     "bytes": 6270,
+     "sha256_prefix": "699e6dcb30414363",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-mindera-Alfie-Mocks",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-eslint-legacy",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-haslab-Specification-Narrowing",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-fccn-nau-course-certificate",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-intellij-extension",
+     "status": 200,
+     "bytes": 11397,
+     "sha256_prefix": "7e2b13d48f94f8e0",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-LasigeBioTM-data-text-processing-notebooks",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-fccn-frontend-app-corporate",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-git-version",
+     "status": 200,
+     "bytes": 10100,
+     "sha256_prefix": "304ff136ff841494",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-dadosgov-validator",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-helm-ssm",
+     "status": 200,
+     "bytes": 21857,
+     "sha256_prefix": "95e3e6c5b1d47930",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-code-quality-radar",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-github-graphql",
+     "status": 200,
+     "bytes": 1826,
+     "sha256_prefix": "b3a9f02e8de1ad5b",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-haslab-JasminCode",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-monitor-evaluations",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-inesctec-gridarena",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-inesctec-hypertex-ml",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-inesctec-hypertex-ui",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-duplication-scala-seed",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-engine-scala-seed",
+     "status": 200,
+     "bytes": 3846,
+     "sha256_prefix": "9e894a7b82a185fa",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-api-scala",
+     "status": 200,
+     "bytes": 1750,
+     "sha256_prefix": "de5e3e21bc2066aa",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-fccn-educast-recorder-releases",
+     "status": 200,
+     "bytes": 31161,
+     "sha256_prefix": "2752a792d9b394e4",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-pmd7",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-spotbugs",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-pylint-python3",
+     "status": 200,
+     "bytes": 1797,
+     "sha256_prefix": "1801caa43cd01305",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-roslyn",
+     "status": 200,
+     "bytes": 10207,
+     "sha256_prefix": "f837a5b4cc333fc4",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-sqlfluff",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-ruff",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-duplication-flay",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-checkov",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-gosec",
+     "status": 200,
+     "bytes": 10161,
+     "sha256_prefix": "74171e83c9cbccdd",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-dartanalyzer",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-gorevive",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T23:28:59Z",
+   "ok": 51,
+   "failed": 0,
+   "requests": 51,
+   "changed_requests": [
+    "rate-limit"
+   ],
+   "requests_detail": [
+    {
+     "name": "rate-limit",
+     "status": 200,
+     "bytes": 424,
+     "sha256_prefix": "e30fff669edf9174",
+     "changed": true
+    },
+    {
+     "name": "repos-codacy",
+     "status": 200,
+     "bytes": 548260,
+     "sha256_prefix": "eb311816f6c203d9",
+     "changed": false
+    },
+    {
+     "name": "repos-subvisual",
+     "status": 200,
+     "bytes": 546039,
+     "sha256_prefix": "b1aa96dfef312a94",
+     "changed": false
+    },
+    {
+     "name": "repos-ubiwhere",
+     "status": 200,
+     "bytes": 305485,
+     "sha256_prefix": "295bef7e058289a9",
+     "changed": false
+    },
+    {
+     "name": "repos-mindera",
+     "status": 200,
+     "bytes": 553887,
+     "sha256_prefix": "6fb971de860fa382",
+     "changed": false
+    },
+    {
+     "name": "repos-farfetch",
+     "status": 200,
+     "bytes": 95728,
+     "sha256_prefix": "60ae166d5954e536",
+     "changed": false
+    },
+    {
+     "name": "repos-glintt",
+     "status": 200,
+     "bytes": 16038,
+     "sha256_prefix": "abc5b8d300f5f70e",
+     "changed": false
+    },
+    {
+     "name": "repos-criticalsoftware",
+     "status": 200,
+     "bytes": 5633,
+     "sha256_prefix": "0efae607805f9b87",
+     "changed": false
+    },
+    {
+     "name": "repos-sapo",
+     "status": 200,
+     "bytes": 45217,
+     "sha256_prefix": "391c15ed57ab5279",
+     "changed": false
+    },
+    {
+     "name": "repos-amagovpt",
+     "status": 200,
+     "bytes": 508412,
+     "sha256_prefix": "4f04903cd8885139",
+     "changed": false
+    },
+    {
+     "name": "repos-fccn",
+     "status": 200,
+     "bytes": 550090,
+     "sha256_prefix": "75622f8ec75d685c",
+     "changed": false
+    },
+    {
+     "name": "repos-rcaap",
+     "status": 200,
+     "bytes": 10444,
+     "sha256_prefix": "c5de8be57525dc8b",
+     "changed": false
+    },
+    {
+     "name": "repos-inesctec",
+     "status": 200,
+     "bytes": 577612,
+     "sha256_prefix": "1ef1f3f895b7dba3",
+     "changed": false
+    },
+    {
+     "name": "repos-inesc-id",
+     "status": 200,
+     "bytes": 205997,
+     "sha256_prefix": "e8061beb760bf7c0",
+     "changed": false
+    },
+    {
+     "name": "repos-ieeta-pt",
+     "status": 200,
+     "bytes": 314071,
+     "sha256_prefix": "0cfd6f7688d297ba",
+     "changed": false
+    },
+    {
+     "name": "repos-haslab",
+     "status": 200,
+     "bytes": 211658,
+     "sha256_prefix": "4a6740b0450c79a9",
+     "changed": false
+    },
+    {
+     "name": "repos-LasigeBioTM",
+     "status": 200,
+     "bytes": 368787,
+     "sha256_prefix": "0b4230e80bb45f5c",
+     "changed": false
+    },
+    {
+     "name": "repos-lip-computing",
+     "status": 200,
+     "bytes": 451753,
+     "sha256_prefix": "5b7d9291e11bd6d6",
+     "changed": false
+    },
+    {
+     "name": "repos-ipleiria",
+     "status": 200,
+     "bytes": 32272,
+     "sha256_prefix": "bc337a5af5bcdceb",
+     "changed": false
+    },
+    {
+     "name": "repos-fenixedu",
+     "status": 200,
+     "bytes": 284470,
+     "sha256_prefix": "43c26c59b54667cf",
+     "changed": false
+    },
+    {
+     "name": "repos-centraldedados",
+     "status": 200,
+     "bytes": 285783,
+     "sha256_prefix": "4b93f8b7d15c4e9c",
+     "changed": false
+    },
+    {
+     "name": "repos-transparenciahackday",
+     "status": 200,
+     "bytes": 189481,
+     "sha256_prefix": "c20f1bebdc27c849",
+     "changed": false
+    },
+    {
+     "name": "releases-fccn-nau_playbooks",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-relay-d",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-dadosgov-fe",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-fccn-docker-nginx",
+     "status": 200,
+     "bytes": 3478,
+     "sha256_prefix": "92cf3fafe9dc7f39",
+     "changed": false
+    },
+    {
+     "name": "releases-ieeta-pt-biochef-agent",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-www-selo",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-ieeta-pt-SIEM-in-a-box",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-shairr",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-ricoslam",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-vscode-extension",
+     "status": 200,
+     "bytes": 11500,
+     "sha256_prefix": "2519693a128970af",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-mcp-server",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-fccn-ansible-keepalived",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-mindera-Alfie-iOS",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-ieeta-pt-stackform",
+     "status": 200,
+     "bytes": 4443,
+     "sha256_prefix": "15ac515e9f06111d",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-GOV.PT",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-FSP",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-SCAP-Consumidores",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-SAFE",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-CMD-assinatura",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-AUTENTICACAO",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-SCAP-Fornecedores",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-phystwin",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-mindera-Alfie-Android",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-INESCTEC.github.io",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-mindera-Alfie-Flutter",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-Template-Projects",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-ieeta-pt-biochef-app",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-ieeta-pt-biochef-recipes",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-booka11y",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T23:23:00Z",
+   "ok": 51,
+   "failed": 0,
+   "requests": 51,
+   "changed_requests": [
+    "rate-limit",
+    "repos-ieeta-pt"
+   ],
+   "requests_detail": [
+    {
+     "name": "rate-limit",
+     "status": 200,
+     "bytes": 424,
+     "sha256_prefix": "03a8f388f6b9263c",
+     "changed": true
+    },
+    {
+     "name": "repos-codacy",
+     "status": 200,
+     "bytes": 548260,
+     "sha256_prefix": "eb311816f6c203d9",
+     "changed": false
+    },
+    {
+     "name": "repos-subvisual",
+     "status": 200,
+     "bytes": 546039,
+     "sha256_prefix": "b1aa96dfef312a94",
+     "changed": false
+    },
+    {
+     "name": "repos-ubiwhere",
+     "status": 200,
+     "bytes": 305485,
+     "sha256_prefix": "295bef7e058289a9",
+     "changed": false
+    },
+    {
+     "name": "repos-mindera",
+     "status": 200,
+     "bytes": 553887,
+     "sha256_prefix": "6fb971de860fa382",
+     "changed": false
+    },
+    {
+     "name": "repos-farfetch",
+     "status": 200,
+     "bytes": 95728,
+     "sha256_prefix": "60ae166d5954e536",
+     "changed": false
+    },
+    {
+     "name": "repos-glintt",
+     "status": 200,
+     "bytes": 16038,
+     "sha256_prefix": "abc5b8d300f5f70e",
+     "changed": false
+    },
+    {
+     "name": "repos-criticalsoftware",
+     "status": 200,
+     "bytes": 5633,
+     "sha256_prefix": "0efae607805f9b87",
+     "changed": false
+    },
+    {
+     "name": "repos-sapo",
+     "status": 200,
+     "bytes": 45217,
+     "sha256_prefix": "391c15ed57ab5279",
+     "changed": false
+    },
+    {
+     "name": "repos-amagovpt",
+     "status": 200,
+     "bytes": 508412,
+     "sha256_prefix": "4f04903cd8885139",
+     "changed": false
+    },
+    {
+     "name": "repos-fccn",
+     "status": 200,
+     "bytes": 550090,
+     "sha256_prefix": "75622f8ec75d685c",
+     "changed": false
+    },
+    {
+     "name": "repos-rcaap",
+     "status": 200,
+     "bytes": 10444,
+     "sha256_prefix": "c5de8be57525dc8b",
+     "changed": false
+    },
+    {
+     "name": "repos-inesctec",
+     "status": 200,
+     "bytes": 577612,
+     "sha256_prefix": "1ef1f3f895b7dba3",
+     "changed": false
+    },
+    {
+     "name": "repos-inesc-id",
+     "status": 200,
+     "bytes": 205997,
+     "sha256_prefix": "e8061beb760bf7c0",
+     "changed": false
+    },
+    {
+     "name": "repos-ieeta-pt",
+     "status": 200,
+     "bytes": 314071,
+     "sha256_prefix": "0cfd6f7688d297ba",
+     "changed": true
+    },
+    {
+     "name": "repos-haslab",
+     "status": 200,
+     "bytes": 211658,
+     "sha256_prefix": "4a6740b0450c79a9",
+     "changed": false
+    },
+    {
+     "name": "repos-LasigeBioTM",
+     "status": 200,
+     "bytes": 368787,
+     "sha256_prefix": "0b4230e80bb45f5c",
+     "changed": false
+    },
+    {
+     "name": "repos-lip-computing",
+     "status": 200,
+     "bytes": 451753,
+     "sha256_prefix": "5b7d9291e11bd6d6",
+     "changed": false
+    },
+    {
+     "name": "repos-ipleiria",
+     "status": 200,
+     "bytes": 32272,
+     "sha256_prefix": "bc337a5af5bcdceb",
+     "changed": false
+    },
+    {
+     "name": "repos-fenixedu",
+     "status": 200,
+     "bytes": 284470,
+     "sha256_prefix": "43c26c59b54667cf",
+     "changed": false
+    },
+    {
+     "name": "repos-centraldedados",
+     "status": 200,
+     "bytes": 285783,
+     "sha256_prefix": "4b93f8b7d15c4e9c",
+     "changed": false
+    },
+    {
+     "name": "repos-transparenciahackday",
+     "status": 200,
+     "bytes": 189481,
+     "sha256_prefix": "c20f1bebdc27c849",
+     "changed": false
+    },
+    {
+     "name": "releases-fccn-nau_playbooks",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-relay-d",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-dadosgov-fe",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-fccn-docker-nginx",
+     "status": 200,
+     "bytes": 3478,
+     "sha256_prefix": "92cf3fafe9dc7f39",
+     "changed": false
+    },
+    {
+     "name": "releases-ieeta-pt-biochef-agent",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-www-selo",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-ieeta-pt-SIEM-in-a-box",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-shairr",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-ricoslam",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-vscode-extension",
+     "status": 200,
+     "bytes": 11500,
+     "sha256_prefix": "2519693a128970af",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-mcp-server",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-fccn-ansible-keepalived",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-mindera-Alfie-iOS",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-ieeta-pt-stackform",
+     "status": 200,
+     "bytes": 4443,
+     "sha256_prefix": "15ac515e9f06111d",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-GOV.PT",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-FSP",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-SCAP-Consumidores",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-SAFE",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-CMD-assinatura",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-AUTENTICACAO",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-SCAP-Fornecedores",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-phystwin",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-mindera-Alfie-Android",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-INESCTEC.github.io",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-mindera-Alfie-Flutter",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-Template-Projects",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-ieeta-pt-biochef-app",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-ieeta-pt-biochef-recipes",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-booka11y",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T22:53:28Z",
+   "ok": 98,
+   "failed": 0,
+   "requests": 98,
+   "changed_requests": [
+    "rate-limit"
+   ],
+   "requests_detail": [
+    {
+     "name": "rate-limit",
+     "status": 200,
+     "bytes": 424,
+     "sha256_prefix": "d34437135c4c1fec",
+     "changed": true
+    },
+    {
+     "name": "repos-codacy",
+     "status": 200,
+     "bytes": 548260,
+     "sha256_prefix": "eb311816f6c203d9",
+     "changed": false
+    },
+    {
+     "name": "repos-subvisual",
+     "status": 200,
+     "bytes": 546039,
+     "sha256_prefix": "b1aa96dfef312a94",
+     "changed": false
+    },
+    {
+     "name": "repos-ubiwhere",
+     "status": 200,
+     "bytes": 305485,
+     "sha256_prefix": "295bef7e058289a9",
+     "changed": false
+    },
+    {
+     "name": "repos-mindera",
+     "status": 200,
+     "bytes": 553887,
+     "sha256_prefix": "6fb971de860fa382",
+     "changed": false
+    },
+    {
+     "name": "repos-farfetch",
+     "status": 200,
+     "bytes": 95728,
+     "sha256_prefix": "60ae166d5954e536",
+     "changed": false
+    },
+    {
+     "name": "repos-glintt",
+     "status": 200,
+     "bytes": 16038,
+     "sha256_prefix": "abc5b8d300f5f70e",
+     "changed": false
+    },
+    {
+     "name": "repos-criticalsoftware",
+     "status": 200,
+     "bytes": 5633,
+     "sha256_prefix": "0efae607805f9b87",
+     "changed": false
+    },
+    {
+     "name": "repos-sapo",
+     "status": 200,
+     "bytes": 45217,
+     "sha256_prefix": "391c15ed57ab5279",
+     "changed": false
+    },
+    {
+     "name": "repos-amagovpt",
+     "status": 200,
+     "bytes": 508412,
+     "sha256_prefix": "4f04903cd8885139",
+     "changed": false
+    },
+    {
+     "name": "repos-fccn",
+     "status": 200,
+     "bytes": 550090,
+     "sha256_prefix": "75622f8ec75d685c",
+     "changed": false
+    },
+    {
+     "name": "repos-rcaap",
+     "status": 200,
+     "bytes": 10444,
+     "sha256_prefix": "c5de8be57525dc8b",
+     "changed": false
+    },
+    {
+     "name": "repos-inesctec",
+     "status": 200,
+     "bytes": 577612,
+     "sha256_prefix": "1ef1f3f895b7dba3",
+     "changed": false
+    },
+    {
+     "name": "repos-inesc-id",
+     "status": 200,
+     "bytes": 205997,
+     "sha256_prefix": "e8061beb760bf7c0",
+     "changed": false
+    },
+    {
+     "name": "repos-ieeta-pt",
+     "status": 200,
+     "bytes": 314071,
+     "sha256_prefix": "cb7b2cb6d5e254d7",
+     "changed": false
+    },
+    {
+     "name": "repos-haslab",
+     "status": 200,
+     "bytes": 211658,
+     "sha256_prefix": "4a6740b0450c79a9",
+     "changed": false
+    },
+    {
+     "name": "repos-LasigeBioTM",
+     "status": 200,
+     "bytes": 368787,
+     "sha256_prefix": "0b4230e80bb45f5c",
+     "changed": false
+    },
+    {
+     "name": "repos-lip-computing",
+     "status": 200,
+     "bytes": 451753,
+     "sha256_prefix": "5b7d9291e11bd6d6",
+     "changed": false
+    },
+    {
+     "name": "repos-ipleiria",
+     "status": 200,
+     "bytes": 32272,
+     "sha256_prefix": "bc337a5af5bcdceb",
+     "changed": false
+    },
+    {
+     "name": "repos-fenixedu",
+     "status": 200,
+     "bytes": 284470,
+     "sha256_prefix": "43c26c59b54667cf",
+     "changed": false
+    },
+    {
+     "name": "repos-centraldedados",
+     "status": 200,
+     "bytes": 285783,
+     "sha256_prefix": "4b93f8b7d15c4e9c",
+     "changed": false
+    },
+    {
+     "name": "repos-transparenciahackday",
+     "status": 200,
+     "bytes": 189481,
+     "sha256_prefix": "c20f1bebdc27c849",
+     "changed": false
+    },
+    {
+     "name": "releases-fccn-nau_playbooks",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-relay-d",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-dadosgov-fe",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-fccn-docker-nginx",
+     "status": 200,
+     "bytes": 3478,
+     "sha256_prefix": "92cf3fafe9dc7f39",
+     "changed": false
+    },
+    {
+     "name": "releases-ieeta-pt-biochef-agent",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-www-selo",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-ieeta-pt-SIEM-in-a-box",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-shairr",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-ricoslam",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-vscode-extension",
+     "status": 200,
+     "bytes": 11500,
+     "sha256_prefix": "2519693a128970af",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-mcp-server",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-fccn-ansible-keepalived",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-mindera-Alfie-iOS",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-ieeta-pt-stackform",
+     "status": 200,
+     "bytes": 4443,
+     "sha256_prefix": "15ac515e9f06111d",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-GOV.PT",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-FSP",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-SCAP-Consumidores",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-SAFE",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-CMD-assinatura",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-AUTENTICACAO",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-SCAP-Fornecedores",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-phystwin",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-mindera-Alfie-Android",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-INESCTEC.github.io",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-mindera-Alfie-Flutter",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-Template-Projects",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-ieeta-pt-biochef-app",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-ieeta-pt-biochef-recipes",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-booka11y",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-fenixedu-bennu",
+     "status": 200,
+     "bytes": 6099,
+     "sha256_prefix": "d78704aa29c788de",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-inesctec-tribe-rp-drivers",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-fccn-openedx-corporate",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-verity",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-autenticacao.gov",
+     "status": 200,
+     "bytes": 28797,
+     "sha256_prefix": "799fb45f632488dd",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-admin-monitor-suite",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-orbs",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-trivy",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-ieeta-pt-biochef-infra",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-ieeta-pt-BiochefPage",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-docs",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-udata-pt",
+     "status": 200,
+     "bytes": 25210,
+     "sha256_prefix": "5cb389837401985c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-rubocop",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-dadosgov-metrics",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-mindera-diffcompass",
+     "status": 200,
+     "bytes": 53133,
+     "sha256_prefix": "2ae556f26158867e",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-accessmonitor-ce",
+     "status": 200,
+     "bytes": 12694,
+     "sha256_prefix": "7d42c96fc15260ab",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-fccn-openedx-platform",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-opengrep",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-inesctec-qasp",
+     "status": 200,
+     "bytes": 11552,
+     "sha256_prefix": "f66a808d67f84212",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-www-acessibilidade",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-cli-v2",
+     "status": 200,
+     "bytes": 42834,
+     "sha256_prefix": "4e53ff442987cbf9",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-ieeta-pt-biochef-hub",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-cloud-cli",
+     "status": 200,
+     "bytes": 9942,
+     "sha256_prefix": "8922fa388b71ce2a",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-arte-dataops-playbook",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-dadosgov-explorer",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-CATALOGO_MODELOS_DADOS_TI",
+     "status": 200,
+     "bytes": 4006,
+     "sha256_prefix": "b5cd5ad0f7eadcf3",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-fccn-nau-openedx-extensions",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-base",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-prospector",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-analysis-cli",
+     "status": 200,
+     "bytes": 10424,
+     "sha256_prefix": "f47b75be38c1d728",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-haslab-Alloy-LLM-Testing",
+     "status": 200,
+     "bytes": 2085,
+     "sha256_prefix": "6364daa21e7be948",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-mindera-Enterprise-Spec-Driven-Development",
+     "status": 200,
+     "bytes": 10088,
+     "sha256_prefix": "8f1d2b7681ad007e",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-monitor-server",
+     "status": 200,
+     "bytes": 8959,
+     "sha256_prefix": "2368b41b2c54683c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-eslint",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-fccn-nau-financial-manager",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-haslab-ABZ27-Case-Study",
+     "status": 200,
+     "bytes": 10153,
+     "sha256_prefix": "52f322630bbb4528",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-mindera-Lodge",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-ieeta-pt-ETL4SecCompliance",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-metrics-scala-seed",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-inesctec-OSTEC",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-a11yNPM",
+     "status": 200,
+     "bytes": 7150,
+     "sha256_prefix": "cf9e2d9afd175259",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-ieeta-pt-biochef-coordinator",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-hydra-pt",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-inesctec-dataspace-metadata-broker",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-inesctec-dataspace-paris",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-inesctec-dataspace-audit-logger",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-plugins-api",
+     "status": 200,
+     "bytes": 1821,
+     "sha256_prefix": "49b5e550cf403892",
+     "changed": "first read"
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T22:43:39Z",
+   "ok": 49,
+   "failed": 0,
+   "requests": 49,
+   "changed_requests": [
+    "rate-limit"
+   ],
+   "requests_detail": [
+    {
+     "name": "rate-limit",
+     "status": 200,
+     "bytes": 424,
+     "sha256_prefix": "704a693e51c070b4",
+     "changed": true
+    },
+    {
+     "name": "repos-codacy",
+     "status": 200,
+     "bytes": 548260,
+     "sha256_prefix": "eb311816f6c203d9",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-subvisual",
+     "status": 200,
+     "bytes": 546039,
+     "sha256_prefix": "b1aa96dfef312a94",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-ubiwhere",
+     "status": 200,
+     "bytes": 305485,
+     "sha256_prefix": "295bef7e058289a9",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-mindera",
+     "status": 200,
+     "bytes": 553887,
+     "sha256_prefix": "6fb971de860fa382",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-farfetch",
+     "status": 200,
+     "bytes": 95728,
+     "sha256_prefix": "60ae166d5954e536",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-glintt",
+     "status": 200,
+     "bytes": 16038,
+     "sha256_prefix": "abc5b8d300f5f70e",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-criticalsoftware",
+     "status": 200,
+     "bytes": 5633,
+     "sha256_prefix": "0efae607805f9b87",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-sapo",
+     "status": 200,
+     "bytes": 45217,
+     "sha256_prefix": "391c15ed57ab5279",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-amagovpt",
+     "status": 200,
+     "bytes": 508412,
+     "sha256_prefix": "4f04903cd8885139",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-fccn",
+     "status": 200,
+     "bytes": 550090,
+     "sha256_prefix": "75622f8ec75d685c",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-rcaap",
+     "status": 200,
+     "bytes": 10444,
+     "sha256_prefix": "c5de8be57525dc8b",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-inesctec",
+     "status": 200,
+     "bytes": 577612,
+     "sha256_prefix": "1ef1f3f895b7dba3",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-inesc-id",
+     "status": 200,
+     "bytes": 205997,
+     "sha256_prefix": "e8061beb760bf7c0",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-ieeta-pt",
+     "status": 200,
+     "bytes": 314071,
+     "sha256_prefix": "cb7b2cb6d5e254d7",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-haslab",
+     "status": 200,
+     "bytes": 211658,
+     "sha256_prefix": "4a6740b0450c79a9",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-LasigeBioTM",
+     "status": 200,
+     "bytes": 368787,
+     "sha256_prefix": "0b4230e80bb45f5c",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-lip-computing",
+     "status": 200,
+     "bytes": 451753,
+     "sha256_prefix": "5b7d9291e11bd6d6",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-ipleiria",
+     "status": 200,
+     "bytes": 32272,
+     "sha256_prefix": "bc337a5af5bcdceb",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-fenixedu",
+     "status": 200,
+     "bytes": 284470,
+     "sha256_prefix": "43c26c59b54667cf",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-centraldedados",
+     "status": 200,
+     "bytes": 285783,
+     "sha256_prefix": "4b93f8b7d15c4e9c",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-transparenciahackday",
+     "status": 200,
+     "bytes": 189481,
+     "sha256_prefix": "c20f1bebdc27c849",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-fccn-nau_playbooks",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-inesctec-relay-d",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-dadosgov-fe",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-fccn-docker-nginx",
+     "status": 200,
+     "bytes": 3478,
+     "sha256_prefix": "92cf3fafe9dc7f39",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-ieeta-pt-biochef-agent",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-www-selo",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-ieeta-pt-SIEM-in-a-box",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-inesctec-shairr",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-inesctec-ricoslam",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-vscode-extension",
+     "status": 200,
+     "bytes": 11500,
+     "sha256_prefix": "2519693a128970af",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-mcp-server",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-fccn-ansible-keepalived",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-mindera-Alfie-iOS",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-ieeta-pt-stackform",
+     "status": 200,
+     "bytes": 4443,
+     "sha256_prefix": "15ac515e9f06111d",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-doc-GOV.PT",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-doc-FSP",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-doc-SCAP-Consumidores",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-doc-SAFE",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-doc-CMD-assinatura",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-doc-AUTENTICACAO",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-doc-SCAP-Fornecedores",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-inesctec-phystwin",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-mindera-Alfie-Android",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-inesctec-INESCTEC.github.io",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-mindera-Alfie-Flutter",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-inesctec-Template-Projects",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-ieeta-pt-biochef-app",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T22:38:00Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "rate-limit"
+   ],
+   "requests_detail": [
+    {
+     "name": "rate-limit",
+     "status": 200,
+     "bytes": 424,
+     "sha256_prefix": "1ba9fd89182fdfb1",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T22:32:15Z",
+   "ok": 51,
+   "failed": 0,
+   "requests": 51,
+   "changed_requests": [
+    "rate-limit"
+   ],
+   "requests_detail": [
+    {
+     "name": "rate-limit",
+     "status": 200,
+     "bytes": 424,
+     "sha256_prefix": "e13610938b8c2aaf",
+     "changed": true
+    },
+    {
+     "name": "repos-codacy",
+     "status": 200,
+     "bytes": 548260,
+     "sha256_prefix": "07e64ad6b3e24dfb",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-subvisual",
+     "status": 200,
+     "bytes": 546039,
+     "sha256_prefix": "b1aa96dfef312a94",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-ubiwhere",
+     "status": 200,
+     "bytes": 305485,
+     "sha256_prefix": "295bef7e058289a9",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-mindera",
+     "status": 200,
+     "bytes": 553887,
+     "sha256_prefix": "6fb971de860fa382",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-farfetch",
+     "status": 200,
+     "bytes": 95728,
+     "sha256_prefix": "60ae166d5954e536",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-glintt",
+     "status": 200,
+     "bytes": 16038,
+     "sha256_prefix": "abc5b8d300f5f70e",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-criticalsoftware",
+     "status": 200,
+     "bytes": 5633,
+     "sha256_prefix": "0efae607805f9b87",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-sapo",
+     "status": 200,
+     "bytes": 45217,
+     "sha256_prefix": "391c15ed57ab5279",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-amagovpt",
+     "status": 200,
+     "bytes": 508412,
+     "sha256_prefix": "4f04903cd8885139",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-fccn",
+     "status": 200,
+     "bytes": 550090,
+     "sha256_prefix": "75622f8ec75d685c",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-rcaap",
+     "status": 200,
+     "bytes": 10444,
+     "sha256_prefix": "c5de8be57525dc8b",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-inesctec",
+     "status": 200,
+     "bytes": 577612,
+     "sha256_prefix": "1ef1f3f895b7dba3",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-inesc-id",
+     "status": 200,
+     "bytes": 205997,
+     "sha256_prefix": "e8061beb760bf7c0",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-ieeta-pt",
+     "status": 200,
+     "bytes": 314071,
+     "sha256_prefix": "cb7b2cb6d5e254d7",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-haslab",
+     "status": 200,
+     "bytes": 211658,
+     "sha256_prefix": "4a6740b0450c79a9",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-LasigeBioTM",
+     "status": 200,
+     "bytes": 368787,
+     "sha256_prefix": "0b4230e80bb45f5c",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-lip-computing",
+     "status": 200,
+     "bytes": 451753,
+     "sha256_prefix": "5b7d9291e11bd6d6",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-ipleiria",
+     "status": 200,
+     "bytes": 32272,
+     "sha256_prefix": "bc337a5af5bcdceb",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-fenixedu",
+     "status": 200,
+     "bytes": 284470,
+     "sha256_prefix": "43c26c59b54667cf",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-centraldedados",
+     "status": 200,
+     "bytes": 285783,
+     "sha256_prefix": "4b93f8b7d15c4e9c",
+     "changed": "first read"
+    },
+    {
+     "name": "repos-transparenciahackday",
+     "status": 200,
+     "bytes": 189481,
+     "sha256_prefix": "c20f1bebdc27c849",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-fccn-nau_playbooks",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-inesctec-relay-d",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-dadosgov-fe",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-fccn-docker-nginx",
+     "status": 200,
+     "bytes": 3478,
+     "sha256_prefix": "92cf3fafe9dc7f39",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-ieeta-pt-biochef-agent",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-www-selo",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-ieeta-pt-SIEM-in-a-box",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-inesctec-shairr",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-inesctec-ricoslam",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-vscode-extension",
+     "status": 200,
+     "bytes": 11500,
+     "sha256_prefix": "2519693a128970af",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-codacy-codacy-mcp-server",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-fccn-ansible-keepalived",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-mindera-Alfie-iOS",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-ieeta-pt-stackform",
+     "status": 200,
+     "bytes": 4443,
+     "sha256_prefix": "15ac515e9f06111d",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-doc-GOV.PT",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-doc-FSP",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-doc-SCAP-Consumidores",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-doc-SAFE",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-doc-CMD-assinatura",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-doc-AUTENTICACAO",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-doc-SCAP-Fornecedores",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-inesctec-phystwin",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-mindera-Alfie-Android",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-inesctec-INESCTEC.github.io",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-mindera-Alfie-Flutter",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-inesctec-Template-Projects",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-ieeta-pt-biochef-app",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-ieeta-pt-biochef-recipes",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    },
+    {
+     "name": "releases-amagovpt-booka11y",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": "first read"
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T22:27:13Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "rate-limit"
+   ],
+   "requests_detail": [
+    {
+     "name": "rate-limit",
+     "status": 200,
+     "bytes": 424,
+     "sha256_prefix": "1903b63b234bdc55",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T22:21:09Z",
+   "ok": 45,
+   "failed": 0,
+   "requests": 45,
+   "changed_requests": [
+    "rate-limit"
+   ],
+   "requests_detail": [
+    {
+     "name": "rate-limit",
+     "status": 200,
+     "bytes": 424,
+     "sha256_prefix": "b997395e49deff0c",
+     "changed": true
+    },
+    {
+     "name": "repos-codacy",
+     "status": 200,
+     "bytes": 548260,
+     "sha256_prefix": "07e64ad6b3e24dfb",
+     "changed": false
+    },
+    {
+     "name": "repos-subvisual",
+     "status": 200,
+     "bytes": 546039,
+     "sha256_prefix": "b1aa96dfef312a94",
+     "changed": false
+    },
+    {
+     "name": "repos-ubiwhere",
+     "status": 200,
+     "bytes": 305485,
+     "sha256_prefix": "295bef7e058289a9",
+     "changed": false
+    },
+    {
+     "name": "repos-mindera",
+     "status": 200,
+     "bytes": 553887,
+     "sha256_prefix": "6fb971de860fa382",
+     "changed": false
+    },
+    {
+     "name": "repos-farfetch",
+     "status": 200,
+     "bytes": 95728,
+     "sha256_prefix": "60ae166d5954e536",
+     "changed": false
+    },
+    {
+     "name": "repos-glintt",
+     "status": 200,
+     "bytes": 16038,
+     "sha256_prefix": "abc5b8d300f5f70e",
+     "changed": false
+    },
+    {
+     "name": "repos-criticalsoftware",
+     "status": 200,
+     "bytes": 5633,
+     "sha256_prefix": "0efae607805f9b87",
+     "changed": false
+    },
+    {
+     "name": "repos-sapo",
+     "status": 200,
+     "bytes": 45217,
+     "sha256_prefix": "391c15ed57ab5279",
+     "changed": false
+    },
+    {
+     "name": "repos-amagovpt",
+     "status": 200,
+     "bytes": 508412,
+     "sha256_prefix": "4f04903cd8885139",
+     "changed": false
+    },
+    {
+     "name": "repos-fccn",
+     "status": 200,
+     "bytes": 550090,
+     "sha256_prefix": "75622f8ec75d685c",
+     "changed": false
+    },
+    {
+     "name": "repos-rcaap",
+     "status": 200,
+     "bytes": 10444,
+     "sha256_prefix": "c5de8be57525dc8b",
+     "changed": false
+    },
+    {
+     "name": "repos-inesctec",
+     "status": 200,
+     "bytes": 577612,
+     "sha256_prefix": "1ef1f3f895b7dba3",
+     "changed": false
+    },
+    {
+     "name": "repos-inesc-id",
+     "status": 200,
+     "bytes": 205997,
+     "sha256_prefix": "e8061beb760bf7c0",
+     "changed": false
+    },
+    {
+     "name": "repos-ieeta-pt",
+     "status": 200,
+     "bytes": 314071,
+     "sha256_prefix": "cb7b2cb6d5e254d7",
+     "changed": false
+    },
+    {
+     "name": "repos-haslab",
+     "status": 200,
+     "bytes": 211658,
+     "sha256_prefix": "4a6740b0450c79a9",
+     "changed": false
+    },
+    {
+     "name": "repos-LasigeBioTM",
+     "status": 200,
+     "bytes": 368787,
+     "sha256_prefix": "0b4230e80bb45f5c",
+     "changed": false
+    },
+    {
+     "name": "repos-lip-computing",
+     "status": 200,
+     "bytes": 451753,
+     "sha256_prefix": "5b7d9291e11bd6d6",
+     "changed": false
+    },
+    {
+     "name": "repos-ipleiria",
+     "status": 200,
+     "bytes": 32272,
+     "sha256_prefix": "bc337a5af5bcdceb",
+     "changed": false
+    },
+    {
+     "name": "repos-fenixedu",
+     "status": 200,
+     "bytes": 284470,
+     "sha256_prefix": "43c26c59b54667cf",
+     "changed": false
+    },
+    {
+     "name": "repos-centraldedados",
+     "status": 200,
+     "bytes": 285783,
+     "sha256_prefix": "4b93f8b7d15c4e9c",
+     "changed": false
+    },
+    {
+     "name": "repos-transparenciahackday",
+     "status": 200,
+     "bytes": 189481,
+     "sha256_prefix": "c20f1bebdc27c849",
+     "changed": false
+    },
+    {
+     "name": "releases-fccn-nau_playbooks",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-relay-d",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-dadosgov-fe",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-fccn-docker-nginx",
+     "status": 200,
+     "bytes": 3478,
+     "sha256_prefix": "92cf3fafe9dc7f39",
+     "changed": false
+    },
+    {
+     "name": "releases-ieeta-pt-biochef-agent",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-www-selo",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-ieeta-pt-SIEM-in-a-box",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-shairr",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-ricoslam",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-vscode-extension",
+     "status": 200,
+     "bytes": 11500,
+     "sha256_prefix": "2519693a128970af",
+     "changed": false
+    },
+    {
+     "name": "releases-codacy-codacy-mcp-server",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-fccn-ansible-keepalived",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-mindera-Alfie-iOS",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-ieeta-pt-stackform",
+     "status": 200,
+     "bytes": 4443,
+     "sha256_prefix": "15ac515e9f06111d",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-GOV.PT",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-FSP",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-SCAP-Consumidores",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-SAFE",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-CMD-assinatura",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-AUTENTICACAO",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-amagovpt-doc-SCAP-Fornecedores",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-inesctec-phystwin",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    },
+    {
+     "name": "releases-mindera-Alfie-Android",
+     "status": 200,
+     "bytes": 2,
+     "sha256_prefix": "4f53cda18c2baa0c",
+     "changed": false
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  }
+ ],
+ "copies": {
+  "files_in_git_data": 3,
+  "bytes_in_git_data": 1047403,
+  "files_in_vault_working_copy": 0,
+  "bytes_in_vault_working_copy": 0,
+  "dated_copies_in_vault": 0,
+  "where": {
+   "api_latest": "https://data.promptugal.news/api/v1/github-pt/latest.json",
+   "api_reads": "https://data.promptugal.news/api/v1/github-pt/reads.json",
+   "source_page": "https://data.promptugal.news/sources/github-pt/",
+   "git": "https://github.com/PrompTugal/PrompTugal__News__Data/tree/dev/data/github-pt"
+  },
+  "tracked_in_git_vaults": 0,
+  "note": "collect/lib.mjs says vaults/ is meant to stay out of git, but 0 files of this source are tracked in git today (earlier commits); the sgit vault holds the full history. Dinis has not yet ruled on the vaults/ question."
+ },
+ "cadence_advice": {
+  "line": "The data changed on 24 of 25 reads over 9 days: nearly every read finds new data, so it changes at least as often as it is read and reading more than twice a day would catch more states. Whether the pages that use it need them is for their owners to say.",
+  "basis": "suggestion derived from 25 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is every 6 hours; runs before 21 Nov were hourly",
+  "runs_with_change": 24,
+  "runs_kept": 25,
+  "days_covered": 9.0,
+  "changes_per_day": 2.7
+ },
+ "schedule_times": {
+  "tz": "Europe/Lisbon",
+  "times_local": [
+   "07:03",
+   "18:03"
+  ],
+  "note": "Lisbon is UTC+0 from late October to late March, so these are also 07:03 and 18:03 UTC then; one hour earlier in UTC in summer.",
+  "runs_per_day": 2
+ },
+ "api_spec": "https://raw.githubusercontent.com/github/rest-api-description/main/descriptions/api.github.com/api.github.com.json",
+ "api_docs": null,
+ "own_page_copy": null,
+ "own_page_copy_note": "not taken: a copy or screenshot of the publisher's page needs a rights ruling from cl-6.rights; source_home links to the page itself",
+ "source_home": "https://api.github.com/"
+}

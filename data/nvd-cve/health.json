@@ -1,0 +1,648 @@
+{
+ "source": "nvd-cve",
+ "title": "CVEs published or modified in the last 24 hours (NVD)",
+ "generated_utc": "2026-11-28T02:40:14Z",
+ "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
+ "schedule": {
+  "card_says": "every 6 hours",
+  "really": "twice a day (07:03 and 18:03 Lisbon)"
+ },
+ "last_run": {
+  "at": "2026-11-27T18:12:07Z",
+  "ok": 1,
+  "failed": 0,
+  "requests": [
+   {
+    "name": "modified-0",
+    "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?lastModStartDate=2026-11-26T00:00:00.000&lastModEndDate=2026-11-27T18:12:07.000&resultsPerPage=2000&startIndex=0",
+    "status": 200,
+    "meaning": "read",
+    "bytes": 9878716,
+    "changed": true
+   }
+  ]
+ },
+ "problems": [],
+ "runs": [
+  {
+   "at": "2026-11-27T18:12:07Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "modified-0"
+   ],
+   "requests_detail": [
+    {
+     "name": "modified-0",
+     "status": 200,
+     "bytes": 9878716,
+     "sha256_prefix": "1dff247a36a9046f",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "526dd0b",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/526dd0b8fd852d1fffb5fd1c54adb4760ccfe3e8",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/d409b57...526dd0b"
+  },
+  {
+   "at": "2026-11-27T07:14:08Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "modified-0"
+   ],
+   "requests_detail": [
+    {
+     "name": "modified-0",
+     "status": 200,
+     "bytes": 8742015,
+     "sha256_prefix": "db1e208ecb7ac01c",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "d409b57",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/d409b5734208af88d47485b2878734dbf9e6aa7c",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/bd410a7...d409b57"
+  },
+  {
+   "at": "2026-11-21T07:12:37Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "modified-0"
+   ],
+   "requests_detail": [
+    {
+     "name": "modified-0",
+     "status": 200,
+     "bytes": 6916346,
+     "sha256_prefix": "217684b37b9a7207",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "bd410a7",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/bd410a73762d6b0a755da0a946556d6e47d54c8e",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/65c6667...bd410a7"
+  },
+  {
+   "at": "2026-11-20T18:15:53Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "modified-0",
+    "modified-1"
+   ],
+   "requests_detail": [
+    {
+     "name": "modified-0",
+     "status": 200,
+     "bytes": 8200248,
+     "sha256_prefix": "54b71038f5a02c38",
+     "changed": true
+    },
+    {
+     "name": "modified-1",
+     "status": 200,
+     "bytes": 3305410,
+     "sha256_prefix": "ffea43380e4cbeab",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "65c6667",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/65c66677f4957a21ffbcf6d58b3f8794f505d39f",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/cb88d7b...65c6667"
+  },
+  {
+   "at": "2026-11-20T07:17:07Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "modified-0",
+    "modified-1"
+   ],
+   "requests_detail": [
+    {
+     "name": "modified-0",
+     "status": 200,
+     "bytes": 7481905,
+     "sha256_prefix": "6d4c2c6f49254c69",
+     "changed": true
+    },
+    {
+     "name": "modified-1",
+     "status": 200,
+     "bytes": 1526559,
+     "sha256_prefix": "13c91433bdb80b85",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "cb88d7b",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/cb88d7b793bc938078a150fb7bd84b6477977aea",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/64fbf7d...cb88d7b"
+  },
+  {
+   "at": "2026-11-19T18:14:33Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "modified-0",
+    "modified-1"
+   ],
+   "requests_detail": [
+    {
+     "name": "modified-0",
+     "status": 200,
+     "bytes": 7688758,
+     "sha256_prefix": "399ac2a48fc145e0",
+     "changed": true
+    },
+    {
+     "name": "modified-1",
+     "status": 200,
+     "bytes": 2642522,
+     "sha256_prefix": "0691c623e9834cf3",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "64fbf7d",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/64fbf7dda8967b6095e265f2e10aba0dfb3d65e8",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/379aae6...64fbf7d"
+  },
+  {
+   "at": "2026-11-19T12:15:49Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "modified-0"
+   ],
+   "requests_detail": [
+    {
+     "name": "modified-0",
+     "status": 200,
+     "bytes": 7152140,
+     "sha256_prefix": "31e9d3dbb6724f2f",
+     "changed": true
+    },
+    {
+     "name": "modified-1",
+     "status": 200,
+     "bytes": 537443,
+     "sha256_prefix": "653f00cc8385e5c4",
+     "changed": "first read"
+    }
+   ],
+   "failed_requests": [],
+   "commit": "379aae6",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/379aae67e159f2afe46678e771171e631f923e70",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/a84bc21...379aae6"
+  },
+  {
+   "at": "2026-11-19T06:15:43Z",
+   "ok": 1,
+   "failed": 0,
+   "requests": 1,
+   "changed_requests": [
+    "modified-0"
+   ],
+   "requests_detail": [
+    {
+     "name": "modified-0",
+     "status": 200,
+     "bytes": 6686143,
+     "sha256_prefix": "d2ace889798e2a40",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "a84bc21",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/a84bc21013f5eae48c16853f9b5038905f597fcd",
+   "compare_with_previous_run_url": "https://github.com/PrompTugal/PrompTugal__News__Data/compare/83b562f...a84bc21"
+  },
+  {
+   "at": "2026-11-18T23:48:50Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "modified-0",
+    "published-0"
+   ],
+   "requests_detail": [
+    {
+     "name": "modified-0",
+     "status": 200,
+     "bytes": 6121973,
+     "sha256_prefix": "3fb02efb3b4a9db3",
+     "changed": true
+    },
+    {
+     "name": "published-0",
+     "status": 200,
+     "bytes": 5065165,
+     "sha256_prefix": "53131a3c69fee573",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T23:40:50Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "modified-0",
+    "published-0"
+   ],
+   "requests_detail": [
+    {
+     "name": "modified-0",
+     "status": 200,
+     "bytes": 6121973,
+     "sha256_prefix": "ec2c6e7bce6b4639",
+     "changed": true
+    },
+    {
+     "name": "published-0",
+     "status": 200,
+     "bytes": 5065165,
+     "sha256_prefix": "2263b8c18a928729",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T23:31:54Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "modified-0",
+    "published-0"
+   ],
+   "requests_detail": [
+    {
+     "name": "modified-0",
+     "status": 200,
+     "bytes": 6121973,
+     "sha256_prefix": "ab9f64d92d42dd67",
+     "changed": true
+    },
+    {
+     "name": "published-0",
+     "status": 200,
+     "bytes": 5065165,
+     "sha256_prefix": "6508c9a7a74a9e57",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T23:25:53Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "modified-0",
+    "published-0"
+   ],
+   "requests_detail": [
+    {
+     "name": "modified-0",
+     "status": 200,
+     "bytes": 6121973,
+     "sha256_prefix": "47fc585cc2c71f7a",
+     "changed": true
+    },
+    {
+     "name": "published-0",
+     "status": 200,
+     "bytes": 5065165,
+     "sha256_prefix": "13f69cfb0f461197",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T22:57:10Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "modified-0",
+    "published-0"
+   ],
+   "requests_detail": [
+    {
+     "name": "modified-0",
+     "status": 200,
+     "bytes": 6330435,
+     "sha256_prefix": "a64b845fcf481f8a",
+     "changed": true
+    },
+    {
+     "name": "published-0",
+     "status": 200,
+     "bytes": 5012476,
+     "sha256_prefix": "30c5b34bc8f04c4a",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T22:46:31Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "modified-0",
+    "published-0"
+   ],
+   "requests_detail": [
+    {
+     "name": "modified-0",
+     "status": 200,
+     "bytes": 6373952,
+     "sha256_prefix": "37b097e999815ab9",
+     "changed": true
+    },
+    {
+     "name": "published-0",
+     "status": 200,
+     "bytes": 5012476,
+     "sha256_prefix": "ca1c803a2ed91dce",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T22:40:02Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "modified-0",
+    "published-0"
+   ],
+   "requests_detail": [
+    {
+     "name": "modified-0",
+     "status": 200,
+     "bytes": 6463742,
+     "sha256_prefix": "23674c00540fd60a",
+     "changed": true
+    },
+    {
+     "name": "published-0",
+     "status": 200,
+     "bytes": 5012476,
+     "sha256_prefix": "fb18245540be32fe",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T22:35:11Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "modified-0",
+    "published-0"
+   ],
+   "requests_detail": [
+    {
+     "name": "modified-0",
+     "status": 200,
+     "bytes": 6483172,
+     "sha256_prefix": "97f136ccd85ee803",
+     "changed": true
+    },
+    {
+     "name": "published-0",
+     "status": 200,
+     "bytes": 5012476,
+     "sha256_prefix": "857a89dfd94bd8e6",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T22:29:15Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "modified-0",
+    "published-0"
+   ],
+   "requests_detail": [
+    {
+     "name": "modified-0",
+     "status": 200,
+     "bytes": 6510045,
+     "sha256_prefix": "2ec2a84b40a2c5d7",
+     "changed": true
+    },
+    {
+     "name": "published-0",
+     "status": 200,
+     "bytes": 5012476,
+     "sha256_prefix": "2962ca366024236d",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T22:23:56Z",
+   "ok": 2,
+   "failed": 0,
+   "requests": 2,
+   "changed_requests": [
+    "modified-0",
+    "published-0"
+   ],
+   "requests_detail": [
+    {
+     "name": "modified-0",
+     "status": 200,
+     "bytes": 6513829,
+     "sha256_prefix": "5e1321ef27c9f75f",
+     "changed": true
+    },
+    {
+     "name": "published-0",
+     "status": 200,
+     "bytes": 5012476,
+     "sha256_prefix": "eb3871c1e94e94c7",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T22:14:51Z",
+   "ok": 3,
+   "failed": 0,
+   "requests": 3,
+   "changed_requests": [
+    "modified-0",
+    "modified-1",
+    "published-0"
+   ],
+   "requests_detail": [
+    {
+     "name": "modified-0",
+     "status": 200,
+     "bytes": 6405486,
+     "sha256_prefix": "3b51b0ab11ce7ab3",
+     "changed": true
+    },
+    {
+     "name": "modified-1",
+     "status": 200,
+     "bytes": 1355988,
+     "sha256_prefix": "fcb706b98ed624a0",
+     "changed": true
+    },
+    {
+     "name": "published-0",
+     "status": 200,
+     "bytes": 4930645,
+     "sha256_prefix": "1fc97303b86984c2",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  },
+  {
+   "at": "2026-11-18T22:10:04Z",
+   "ok": 3,
+   "failed": 0,
+   "requests": 3,
+   "changed_requests": [
+    "modified-0",
+    "modified-1",
+    "published-0"
+   ],
+   "requests_detail": [
+    {
+     "name": "modified-0",
+     "status": 200,
+     "bytes": 6405486,
+     "sha256_prefix": "69e95770ce94d242",
+     "changed": true
+    },
+    {
+     "name": "modified-1",
+     "status": 200,
+     "bytes": 1355988,
+     "sha256_prefix": "ea3d9db1a973682c",
+     "changed": true
+    },
+    {
+     "name": "published-0",
+     "status": 200,
+     "bytes": 4930645,
+     "sha256_prefix": "8363cddccd3bd31f",
+     "changed": true
+    }
+   ],
+   "failed_requests": [],
+   "commit": "83b562f",
+   "commit_url": "https://github.com/PrompTugal/PrompTugal__News__Data/commit/83b562f8fd36b81db29c05af07987a8440366de6",
+   "compare_with_previous_run_url": null
+  }
+ ],
+ "copies": {
+  "files_in_git_data": 3,
+  "bytes_in_git_data": 531438,
+  "files_in_vault_working_copy": 8,
+  "bytes_in_vault_working_copy": 48916428,
+  "dated_copies_in_vault": 5,
+  "where": {
+   "api_latest": "https://data.promptugal.news/api/v1/nvd-cve/latest.json",
+   "api_reads": "https://data.promptugal.news/api/v1/nvd-cve/reads.json",
+   "source_page": "https://data.promptugal.news/sources/nvd-cve/",
+   "git": "https://github.com/PrompTugal/PrompTugal__News__Data/tree/dev/data/nvd-cve"
+  },
+  "tracked_in_git_vaults": 0,
+  "note": "collect/lib.mjs says vaults/ is meant to stay out of git, but 0 files of this source are tracked in git today (earlier commits); the sgit vault holds the full history. Dinis has not yet ruled on the vaults/ question."
+ },
+ "cadence_advice": {
+  "line": "The data changed on 20 of 21 reads over 9 days: nearly every read finds new data, so it changes at least as often as it is read and reading more than twice a day would catch more states. Whether the pages that use it need them is for their owners to say.",
+  "basis": "suggestion derived from 21 runs in data/<id>/reads.json (a run counts as changed when any request returned different bytes than the run before); the source's own cadence on the card is every 6 hours; runs before 21 Nov were hourly",
+  "runs_with_change": 20,
+  "runs_kept": 21,
+  "days_covered": 8.9,
+  "changes_per_day": 2.3
+ },
+ "schedule_times": {
+  "tz": "Europe/Lisbon",
+  "times_local": [
+   "07:03",
+   "18:03"
+  ],
+  "note": "Lisbon is UTC+0 from late October to late March, so these are also 07:03 and 18:03 UTC then; one hour earlier in UTC in summer.",
+  "runs_per_day": 2
+ },
+ "api_spec": null,
+ "api_docs": null,
+ "own_page_copy": null,
+ "own_page_copy_note": "not taken: a copy or screenshot of the publisher's page needs a rights ruling from cl-6.rights; source_home links to the page itself",
+ "source_home": "https://nvd.nist.gov/"
+}
