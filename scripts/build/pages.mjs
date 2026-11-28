@@ -196,6 +196,7 @@ export function buildPages({ sources, places, readAt, index, storm, events = [],
       blocks.push(h('1. The source'));
     }
     blocks.push(
+      ...(HL ? [raw('<details class="hl-fold"><summary>The source: publisher, licence and reuse terms</summary>', '')] : []),
       h('At a glance'),
       table(['Field', 'Value'], [
         ['Publisher', c.publisher],
@@ -217,6 +218,7 @@ export function buildPages({ sources, places, readAt, index, storm, events = [],
     else blocks.push(p(`Terms page: [${t.page}](${t.page}), read on ${t.read_at}.`));
     if (t.privacy) blocks.push(p(`Privacy: ${t.privacy}`));
     if (t.open_question) blocks.push(p(`**Open question:** ${t.open_question}`));
+    if (HL) blocks.push(raw('</details>', ''));
     if (L) {
       blocks.push(h('2. The raw data'));
       if (L.raw && s.raw.length) blocks.push(p(`As ${c.publisher.split(',')[0]} served it at the latest read (${fmtTime(s.read_at)}), unprocessed. The files: ${s.raw.map(r => `[${r.name}](/api/v1/${s.id}/raw/${r.name})`).join(', ')}.`), fig(L.raw[0], L.raw[1].map(u => abs(s.id, u)), L.raw[2], s.read_at));
@@ -227,12 +229,14 @@ export function buildPages({ sources, places, readAt, index, storm, events = [],
       blocks.push(h('More about this source'));
     }
     blocks.push(
+      ...(HL ? [raw('<details class="hl-fold"><summary>Who runs it and what it costs</summary>', '')] : []),
       h('What runs by code, by agents and by people'),
       h('Code', 3), ul(c.split.code),
       h('Agents', 3), ul(c.split.agents),
       h('People', 3), ul(c.split.people),
       h('Cost'),
       table(['Field', 'Value'], Object.entries(c.cost).map(([k, v]) => [k.replace(/_/g, ' '), String(v)]), 'kv'),
+      ...(HL ? [raw('</details>', '')] : []),
       h('API addresses'),
       p('These addresses stay for the life of v1 ([the contract](/api/v1/README.md)).'),
       table(['File', 'Address'], [
@@ -243,6 +247,7 @@ export function buildPages({ sources, places, readAt, index, storm, events = [],
         ...(s.manifest ? [['Manifest', `[${SITE}/api/v1/${s.id}/manifest.json](${SITE}/api/v1/${s.id}/manifest.json)`]] : []),
       ]),
       pre(`curl -s ${a.latest}\ncurl -s ${a.reads} | head -c 600`),
+      ...(HL ? [raw('<details class="hl-fold"><summary>The vault and the older table of runs</summary>', '')] : []),
       h('Vault'),
     );
     if (c.vault) blocks.push(
@@ -251,9 +256,12 @@ export function buildPages({ sources, places, readAt, index, storm, events = [],
     blocks.push(h('Last runs'));
     if (s.runs.length) blocks.push(table(['Time (UTC)', 'Requests ok', 'Requests failed', 'Reads with changed bytes'], s.runs.slice(0, 24).map(r => [fmtTime(r.at), r.ok, r.failed, `${(r.reads || []).filter(x => x.changed).length} of ${(r.reads || []).length}`])), p(`Showing ${Math.min(24, s.runs.length)} of ${s.runs.length} runs kept. Full detail with sha256: [reads.json](${a.reads}).`));
     else blocks.push(p(s.latest ? 'This source is archived, not read on a schedule: see the manifest.' : 'Not read yet.'));
+    if (HL) blocks.push(raw('</details>', ''));
     blocks.push(h('Preview of the values'));
+    if (HL) blocks.push(raw('<details class="hl-fold"><summary>The first five values</summary>', ''));
     if (prev) blocks.push(p(`The first ${Math.min(5, prev.total)} of ${prev.total} entries in \`${prev.key}\`, as read ${fmtTime(s.read_at)}. Source: [${prev.src}](${prev.src}). Long values are shortened here; the file has them whole.`), prev.table);
     else blocks.push(p('Not read yet: no values to show.'));
+    if (HL) blocks.push(raw('</details>', ''));
     add({ path: `sources/${s.id}/`, title: `${c.title}: PrompTugal.news Data`, h1: c.title, description: short(c.what, 200), blocks, ...(HL ? { head: '<link rel="stylesheet" href="/assets/health.css">\n' } : {}) });
   }
 

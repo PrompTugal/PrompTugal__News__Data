@@ -53,8 +53,9 @@ function wrong(H) {
 }
 
 function lastRun(H) {
+  const li = r => `<li${r.status >= 400 || r.status === 'error' ? ' class="hl-bad"' : ''}><div><code>${esc(r.name)}</code> <span class="hl-m">${esc(r.status)} &middot; ${bytes(r.bytes)} &middot; ${r.changed === true ? 'changed' : r.changed === false ? 'same as before' : 'no comparison'}</span></div><div class="hl-note">${esc(r.meaning)}</div></li>`;
   return [h('The last run, request by request'),
-    table(['Request', 'Status', 'What it means', 'Size', 'Bytes'], H.last_run.requests.map(r => [r.name, String(r.status), r.meaning, bytes(r.bytes), r.changed === true ? 'changed' : r.changed === false ? 'same as before' : '-']))];
+    raw(`<ul class="hl-reqs hl-last">${H.last_run.requests.map(li).join('')}</ul>`, H.last_run.requests.map(r => `- ${r.name}: ${r.status}, ${bytes(r.bytes)}, ${r.meaning}`).join('\n'))];
 }
 
 function runDetail(r) {
@@ -83,7 +84,7 @@ function matrix(H) {
   const rs = [...H.runs].reverse(); if (!rs.length || !rs.some(r => r.requests_detail)) return [];
   const names = (H.runs[0].requests_detail || []).map(q => q.name);
   const body = names.map(n => `<tr><th scope="row">${esc(n)}</th>${rs.map(r => { const q = (r.requests_detail || []).find(x => x.name === n); const c = !q ? '&middot;' : !ok2(q) ? '&#10005;' : q.changed === true ? '&#9670;' : '&#9675;'; return `<td${!q || ok2(q) ? '' : ' class="hl-x"'}>${c}</td>`; }).join('')}</tr>`).join('');
-  return [h('Across runs'), raw(`<div class="scroll"><table class="hl-mx"><tbody>${body}</tbody></table></div><p class="hl-note">The last ${rs.length} runs, oldest to newest. &#9670; new bytes &middot; &#9675; same as the run before &middot; &#10005; refused or failed &middot; &middot; not requested.</p>`, `Requests across the last ${rs.length} runs: new bytes, same, refused, or not requested.`)];
+  return [h('Across runs'), raw(`<details class="hl-fold"><summary>Show the ${names.length} requests across the last ${rs.length} runs</summary><div class="scroll"><table class="hl-mx"><tbody>${body}</tbody></table></div></details><p class="hl-note">The last ${rs.length} runs, oldest to newest. &#9670; new bytes &middot; &#9675; same as the run before &middot; &#10005; refused or failed &middot; &middot; not requested.</p>`, `Requests across the last ${rs.length} runs: new bytes, same, refused, or not requested.`)];
 }
 
 function kept(H) {
@@ -111,7 +112,7 @@ function jsonTree(L, id) {
     if (depth >= 4) return `<li>${key} ${label}, in the file</li>`;
     const kids = keys.map(i => node(arr ? `[${i}]` : i, v[i], depth + 1)).join('');
     const more = all > keys.length ? `<li class="hl-m">... ${all - keys.length} more, in the file</li>` : '';
-    return `<li><details${depth === 0 ? ' open' : ''}><summary>${key} ${label}</summary><ul>${kids}${more}</ul></details></li>`;
+    return `<li><details><summary>${key} ${label}</summary><ul>${kids}${more}</ul></details></li>`;
   };
   return `<ul class="hl-tree">${node('latest.json', L, 0)}</ul>`;
 }
@@ -121,7 +122,7 @@ function loadLatest(id) {
 }
 function asJson(H) {
   const L = loadLatest(H.source); if (!L) return [];
-  return [h('The data, as JSON'), raw(`${jsonTree(L, H.source)}<p class="hl-note">A shortened tree of <a href="${href(H.copies.where.api_latest)}">latest.json</a>: the first five items of each list, values cut at 120 characters. The file has everything.</p>`, `A shortened tree of [latest.json](${H.copies.where.api_latest}).`)];
+  return [h('The data, as JSON'), raw(`<details class="hl-fold"><summary>Open the data as a tree</summary>${jsonTree(L, H.source)}</details><p class="hl-note">A shortened tree of <a href="${href(H.copies.where.api_latest)}">latest.json</a>: the first five items of each list, values cut at 120 characters. The file has everything.</p>`, `A shortened tree of [latest.json](${H.copies.where.api_latest}).`)];
 }
 
 /** The sections, in the designer's order, after the page's first paragraph. */
