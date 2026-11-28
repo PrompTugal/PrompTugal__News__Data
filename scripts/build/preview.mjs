@@ -8,14 +8,13 @@ const n = v => Number.isFinite(v) ? v.toLocaleString('en-GB') : 'not read';
 
 export function buildPreview({ sources, builtAt }) {
   const L = id => (sources.find(s => s.id === id) || {}).latest || null;
-  const cams = L('cams'), nvd = L('nvd-cve'), kev = L('cisa-kev'), base = L('base-gov-pt'), gh = L('github-pt');
+  const cams = L('cams'), nvd = L('nvd-cve'), kev = L('cisa-kev'), base = L('base-gov-pt');
   const read = sources.filter(s => s.latest && s.latest.read_at).length;
   const figures = [
     { label: 'sources read', value: read, of: `of ${sources.length}`, from: '/api/v1/index.json' },
     { label: 'public contracts, 90 days', value: base && base.counts ? base.counts.contracts : NaN, of: base && base.counts ? `${base.counts.places} places` : '', from: '/api/v1/base-gov-pt/latest.json' },
     { label: 'public cameras', value: cams && cams.counts ? cams.counts.cameras : NaN, of: cams && cams.counts ? `${cams.counts.up} of ${cams.counts.cameras - (cams.counts.not_checked || 0)} checked are up` : '', from: '/api/v1/cams/latest.json' },
     { label: 'new CVEs, 24 hours', value: nvd && nvd.counts ? nvd.counts.new_last_24h : NaN, of: kev && kev.counts ? `${n(kev.counts.vulnerabilities)} exploited (CISA)` : '', from: '/api/v1/nvd-cve/latest.json' },
-    { label: 'Portuguese code repositories', value: gh && gh.counts ? gh.counts.repos : NaN, of: gh && gh.counts ? `${gh.counts.orgs} organisations` : '', from: '/api/v1/github-pt/latest.json' },
   ];
   const W = 1200, H = 630, at = builtAt.slice(0, 16).replace('T', ' ') + ' UTC';
   const cell = (f, i) => { const col = i % 3, row = Math.floor(i / 3), x = 60 + col * 370, y = 200 + row * 190;

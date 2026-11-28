@@ -8,13 +8,13 @@ import { join } from 'node:path';
 import { gzipSync } from 'node:zlib';
 import { writeJson, OUT, SITE } from './lib.mjs';
 
-const CYBER = new Set(['cisa-kev', 'nvd-cve', 'nvd-kev', 'euvd', 'enisa-pubs', 'github-pt']);
+const CYBER = new Set(['cisa-kev', 'nvd-cve', 'nvd-kev', 'euvd', 'enisa-pubs']);
 const SEPARATE = new Set(['base-gov-pt', 'storm-charles-archive']);   // large or fixed: read from their own files
 const SKIP_KEY = k => /history/i.test(k) || k === 'hourly_cache';
 const GROUPS = {
   london: { title: 'London', about: 'Every London source: TfL line status, cycle hire, road disruptions and traffic cameras; the Environment Agency\'s flood warnings and the tidal Thames; the London forecast; the carbon intensity of London\'s electricity; and London public bodies\' contracts.', pick: c => c.region === 'london' },
   portugal: { title: 'Portugal', about: 'Portugal\'s weather, sea, fire risk and warnings (IPMA, MeteoAlarm), events, cameras, tourism, social signals and flights around Faro. Public contracts (base-gov-pt) and the Storm archive are in their own files.', pick: c => c.region === 'portugal' && !CYBER.has(c.id) && !SEPARATE.has(c.id) },
-  cyber: { title: 'Cyber', about: 'Vulnerabilities and advisories: CISA KEV, NVD (the last 24 hours and every KEV entry), ENISA\'s EUVD and publications, and Portuguese organisations\' code on GitHub.', pick: c => CYBER.has(c.id) },
+  cyber: { title: 'Cyber', about: 'Vulnerabilities and advisories: CISA KEV, NVD (the last 24 hours and every KEV entry), ENISA\'s EUVD and publications.', pick: c => CYBER.has(c.id) },
 };
 
 export function buildConsolidated(sources, builtAt) {
