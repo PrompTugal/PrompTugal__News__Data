@@ -66,7 +66,10 @@ export class Run {
         for (const x of this.reads) { x.sha256_prefix = x.sha256 ? x.sha256.slice(0, 16) : null; x.changed = x.sha256 ? (prevSha.has(x.name) ? prevSha.get(x.name) !== x.sha256_prefix : 'first read') : null }
         const full = this.reads.map(x => ({ ...x }))
         for (const x of this.reads) delete x.sha256
-        const ok = this.reads.filter(x => x.status === 200).length
+        // a 404 on a robots.txt means the site publishes no rules: that is an answer, not a failed read (28 Nov 2026, agreed with cl-6.maestro).
+        // It is marked no_rules and counted with the good reads; every other non-200 still counts as failed.
+        for (const x of this.reads) if (x.status === 404 && /robots/i.test(x.name)) x.no_rules = true
+        const ok = this.reads.filter(x => x.status === 200 || x.no_rules).length
         const run = { at: this.started, finished: now(), ok, failed: this.reads.length - ok, reads: this.reads }
         const reads = { about: `Every run of sources/${this.id}/collect.mjs, newest first: each request's address, HTTP status, size, the first 16 hex of its sha256, and whether the bytes changed since the run before. The bytes and the full sha256 go to the source's vault (see card.json: latest/reads-full.json), never to git.`, source: this.id, runs: [run, ...(prevReads?.runs || [])].slice(0, 336) }
         if (latest) writeJson(path.join(dataDir, 'latest.json'), latest)
