@@ -3,6 +3,7 @@ import { SITE, REPO, ACCOUNT, write, writeJson, readJson, fmtTime } from './lib.
 import { page, h, p, ul, table, pre, quote, raw } from './render.mjs';
 import { licenceOf, OURS } from './licence.mjs';
 import { londonBlocks } from './london.mjs';
+import { loadHealth, healthTop, healthSections } from './health.mjs';
 const lic = l => `[${l.name}](${l.url})`;
 
 // ---- the visualizations (data.b@PrompTugal.dinis, 18 Nov 2026; drawn by src/assets/viz/viz.js, data.b.design@) ----
@@ -188,7 +189,8 @@ export function buildPages({ sources, places, readAt, index, storm, events = [],
     const c = s.card, a = c.api, t = c.terms;
     const prev = previewRows(s);
     const L = LAYERS[s.id];
-    const blocks = [p(c.what)];
+    const HL = loadHealth(s.id);   // data/<id>/health.json, written at each wake: back link, badge and the health sections
+    const blocks = [...(HL ? [healthTop(HL)] : []), p(c.what), ...(HL ? healthSections(HL) : [])];
     if (L) {
       blocks.push(p('Three layers: **the source** (who publishes it, the terms, when it was read), **the raw data** as the publisher served it, and **the processed data**, what this site makes of it. The processing is where the value is: named fields, places joined, gaps marked, every value kept with its source and time.'));
       blocks.push(h('1. The source'));
@@ -252,7 +254,7 @@ export function buildPages({ sources, places, readAt, index, storm, events = [],
     blocks.push(h('Preview of the values'));
     if (prev) blocks.push(p(`The first ${Math.min(5, prev.total)} of ${prev.total} entries in \`${prev.key}\`, as read ${fmtTime(s.read_at)}. Source: [${prev.src}](${prev.src}). Long values are shortened here; the file has them whole.`), prev.table);
     else blocks.push(p('Not read yet: no values to show.'));
-    add({ path: `sources/${s.id}/`, title: `${c.title}: PrompTugal.news Data`, h1: c.title, description: short(c.what, 200), blocks });
+    add({ path: `sources/${s.id}/`, title: `${c.title}: PrompTugal.news Data`, h1: c.title, description: short(c.what, 200), blocks, ...(HL ? { head: '<link rel="stylesheet" href="/assets/health.css">\n' } : {}) });
   }
 
   // ---- API ----

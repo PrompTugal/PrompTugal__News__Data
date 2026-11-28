@@ -1,5 +1,6 @@
 // The API under _site/api/v1/ and the OpenAPI 3.1 documents.
 import { SITE, REPO, write, writeJson, infer, cut } from './lib.mjs';
+import { loadHealth } from './health.mjs';
 
 const V = `${SITE}/api/v1`;
 const LICENCE_NOTE = 'Code: Apache-2.0. Text: CC BY 4.0. The data keeps the terms of its own source (see each source card); nothing here relaxes them.';
@@ -34,9 +35,12 @@ export function buildApi({ sources, places, version, builtAt, readAt, storm, eve
     if (s.latest) writeJson(`${base}/latest.json`, s.latest);
     if (s.reads) writeJson(`${base}/reads.json`, s.reads);
     if (s.manifest) writeJson(`${base}/manifest.json`, s.manifest);
+    const health = loadHealth(s.id);   // data/<id>/health.json: what each request of the last run was, what keeps failing, the runs with commit links, copies, what is held
+    if (health) writeJson(`${base}/health.json`, health);
     const paths = {
       ...(s.latest ? { [`/api/v1/${s.id}/latest.json`]: jsonOp({ id: opId(`${s.id}_latest`), summary: `${s.card.title}: the latest read`, description: s.latest && s.latest.about || s.card.what, tag: s.id, data: s.latest }) } : {}),
       ...(s.reads ? { [`/api/v1/${s.id}/reads.json`]: jsonOp({ id: opId(`${s.id}_reads`), summary: `${s.card.title}: every read, newest first`, description: s.reads && s.reads.about || 'Every run of the collector: address, status, size and sha256 of each request.', tag: s.id, data: s.reads }) } : {}),
+      ...(health ? { [`/api/v1/${s.id}/health.json`]: jsonOp({ id: opId(`${s.id}_health`), summary: `${s.card.title}: its health`, description: health.about || 'Each request of the last run, the requests that keep failing, the recent runs with commit links, and what is held.', tag: s.id, data: health }) } : {}),
       [`/api/v1/${s.id}/card.json`]: jsonOp({ id: opId(`${s.id}_card`), summary: `${s.card.title}: the card`, description: 'Who publishes the source, its reuse terms, the schedule, who owns it, what runs by code, by agents and by people, and the vault.', tag: s.id, data: s.card }),
       [`/api/v1/${s.id}/openapi.json`]: textOp(opId(`${s.id}_openapi`), `${s.card.title}: this document`, 'application/json', s.id),
     };
@@ -148,6 +152,7 @@ For the sites and agents that read data.promptugal.news as a source (the other P
 
 - **Addresses stay.** \`api/v1/index.json\`, \`api/v1/openapi.json\` and every \`api/v1/<source>/{latest,reads,card,openapi}.json\` listed in the catalogue keep their address for the life of v1. \`api/v1/storm-charles-archive/manifest.json\` and \`api/v1/by-place/now/<place>.json\` likewise. A file may be added; a listed file is not removed or renamed in v1.
 - **Fields stay.** In \`index.json\`: \`about\`, \`api\`, \`contract\`, \`version\`, \`built_at\`, \`site\`, \`sources[]\` (\`id\`, \`title\`, \`publisher\`, \`cadence\`, \`read_at\`, \`latest\`, \`reads\`, \`card\`, \`openapi\`, \`page\`, \`vault_id\`, \`terms_summary\`) and \`by_place\`. Fields may be added; none is removed, renamed or changes type in v1. The same holds for the top-level fields of each data file once it is listed.
+- **\`api/v1/<source>/health.json\`** is new (28 Nov 2026): each request of the last run, the requests that keep failing, the recent runs with commit links, and what is held. Its shape may still change; it is not yet part of the promise above.
 - **Every value** carries its source and the UTC time it was read (\`provenance\` in each latest.json). Times are as the source gives them; where a field says UTC it is UTC.
 - **\`version\`** is the site's release (one per push); it changes many times a day and is not the API's version. The API's version is \`api\` ("v1") and the path.
 - **A source's own terms** travel with its data (\`terms_summary\` here, \`terms\` in the card). They are not ours to relax: read them before you reuse a value.
