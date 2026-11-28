@@ -1,7 +1,7 @@
 {
  "source": "social",
  "title": "Social signals: organisations' public posts, by link",
- "generated_utc": "2026-11-28T02:40:14Z",
+ "generated_utc": "2026-11-28T02:41:47Z",
  "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
  "schedule": {
   "card_says": "every 6 hours",
@@ -2008,6 +2008,105 @@
   },
   "tracked_in_git_vaults": 0,
   "note": "collect/lib.mjs says vaults/ is meant to stay out of git, but 0 files of this source are tracked in git today (earlier commits); the sgit vault holds the full history. Dinis has not yet ruled on the vaults/ question."
+ },
+ "held": {
+  "items": 145,
+  "noun": "posts",
+  "earliest": "2026-10-29",
+  "latest": "2026-11-27",
+  "date_field": "posted_at",
+  "per_day": [
+   {
+    "date": "2026-10-29",
+    "count": 1
+   },
+   {
+    "date": "2026-10-30",
+    "count": 1
+   },
+   {
+    "date": "2026-11-02",
+    "count": 1
+   },
+   {
+    "date": "2026-11-03",
+    "count": 1
+   },
+   {
+    "date": "2026-11-04",
+    "count": 2
+   },
+   {
+    "date": "2026-11-05",
+    "count": 1
+   },
+   {
+    "date": "2026-11-06",
+    "count": 1
+   },
+   {
+    "date": "2026-11-09",
+    "count": 2
+   },
+   {
+    "date": "2026-11-10",
+    "count": 1
+   },
+   {
+    "date": "2026-11-11",
+    "count": 1
+   },
+   {
+    "date": "2026-11-12",
+    "count": 1
+   },
+   {
+    "date": "2026-11-13",
+    "count": 1
+   },
+   {
+    "date": "2026-11-16",
+    "count": 1
+   },
+   {
+    "date": "2026-11-17",
+    "count": 2
+   },
+   {
+    "date": "2026-11-18",
+    "count": 1
+   },
+   {
+    "date": "2026-11-19",
+    "count": 1
+   },
+   {
+    "date": "2026-11-20",
+    "count": 1
+   },
+   {
+    "date": "2026-11-23",
+    "count": 1
+   },
+   {
+    "date": "2026-11-24",
+    "count": 1
+   },
+   {
+    "date": "2026-11-25",
+    "count": 1
+   },
+   {
+    "date": "2026-11-26",
+    "count": 22
+   },
+   {
+    "date": "2026-11-27",
+    "count": 100
+   }
+  ],
+  "from": "data/social/latest.json list \"posts\"",
+  "note": "Dates are the items' own dates (forecast sources hold future dates). per_day lists up to the 60 newest days. null where the items carry no date."
  },
  "cadence_advice": {
   "line": "The data changed on 38 of 48 reads over 9 days, about 4.2 times a day (earlier runs were hourly): reading more than twice a day would catch more states. Whether the pages that use it need them is for their owners to say.",

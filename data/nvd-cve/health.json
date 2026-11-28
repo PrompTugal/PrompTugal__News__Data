@@ -1,7 +1,7 @@
 {
  "source": "nvd-cve",
  "title": "CVEs published or modified in the last 24 hours (NVD)",
- "generated_utc": "2026-11-28T02:40:14Z",
+ "generated_utc": "2026-11-28T02:41:47Z",
  "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
  "schedule": {
   "card_says": "every 6 hours",
@@ -610,7 +610,7 @@
  ],
  "copies": {
   "files_in_git_data": 3,
-  "bytes_in_git_data": 531438,
+  "bytes_in_git_data": 531604,
   "files_in_vault_working_copy": 8,
   "bytes_in_vault_working_copy": 48916428,
   "dated_copies_in_vault": 5,
@@ -622,6 +622,257 @@
   },
   "tracked_in_git_vaults": 0,
   "note": "collect/lib.mjs says vaults/ is meant to stay out of git, but 0 files of this source are tracked in git today (earlier commits); the sgit vault holds the full history. Dinis has not yet ruled on the vaults/ question."
+ },
+ "held": {
+  "items": 743,
+  "noun": "CVEs",
+  "earliest": "2018-08-06",
+  "latest": "2026-11-27",
+  "date_field": "published",
+  "per_day": [
+   {
+    "date": "2025-01-02",
+    "count": 1
+   },
+   {
+    "date": "2025-01-14",
+    "count": 1
+   },
+   {
+    "date": "2025-01-28",
+    "count": 2
+   },
+   {
+    "date": "2025-02-10",
+    "count": 1
+   },
+   {
+    "date": "2025-03-18",
+    "count": 1
+   },
+   {
+    "date": "2025-05-08",
+    "count": 1
+   },
+   {
+    "date": "2025-06-17",
+    "count": 1
+   },
+   {
+    "date": "2025-07-30",
+    "count": 1
+   },
+   {
+    "date": "2025-08-05",
+    "count": 1
+   },
+   {
+    "date": "2025-09-16",
+    "count": 1
+   },
+   {
+    "date": "2025-10-23",
+    "count": 1
+   },
+   {
+    "date": "2025-10-30",
+    "count": 3
+   },
+   {
+    "date": "2025-12-03",
+    "count": 1
+   },
+   {
+    "date": "2025-12-09",
+    "count": 5
+   },
+   {
+    "date": "2025-12-10",
+    "count": 1
+   },
+   {
+    "date": "2025-12-30",
+    "count": 1
+   },
+   {
+    "date": "2026-01-21",
+    "count": 1
+   },
+   {
+    "date": "2026-02-02",
+    "count": 1
+   },
+   {
+    "date": "2026-02-23",
+    "count": 1
+   },
+   {
+    "date": "2026-02-27",
+    "count": 2
+   },
+   {
+    "date": "2026-03-09",
+    "count": 1
+   },
+   {
+    "date": "2026-03-17",
+    "count": 1
+   },
+   {
+    "date": "2026-04-01",
+    "count": 2
+   },
+   {
+    "date": "2026-04-13",
+    "count": 1
+   },
+   {
+    "date": "2026-04-14",
+    "count": 1
+   },
+   {
+    "date": "2026-05-05",
+    "count": 2
+   },
+   {
+    "date": "2026-05-27",
+    "count": 1
+   },
+   {
+    "date": "2026-06-01",
+    "count": 1
+   },
+   {
+    "date": "2026-06-05",
+    "count": 2
+   },
+   {
+    "date": "2026-06-09",
+    "count": 1
+   },
+   {
+    "date": "2026-07-01",
+    "count": 3
+   },
+   {
+    "date": "2026-07-30",
+    "count": 1
+   },
+   {
+    "date": "2026-07-31",
+    "count": 1
+   },
+   {
+    "date": "2026-08-05",
+    "count": 1
+   },
+   {
+    "date": "2026-08-10",
+    "count": 1
+   },
+   {
+    "date": "2026-08-11",
+    "count": 1
+   },
+   {
+    "date": "2026-08-20",
+    "count": 1
+   },
+   {
+    "date": "2026-08-27",
+    "count": 1
+   },
+   {
+    "date": "2026-09-11",
+    "count": 1
+   },
+   {
+    "date": "2026-09-18",
+    "count": 3
+   },
+   {
+    "date": "2026-09-28",
+    "count": 1
+   },
+   {
+    "date": "2026-10-01",
+    "count": 2
+   },
+   {
+    "date": "2026-10-09",
+    "count": 1
+   },
+   {
+    "date": "2026-10-12",
+    "count": 1
+   },
+   {
+    "date": "2026-10-20",
+    "count": 1
+   },
+   {
+    "date": "2026-10-22",
+    "count": 1
+   },
+   {
+    "date": "2026-11-05",
+    "count": 2
+   },
+   {
+    "date": "2026-11-07",
+    "count": 1
+   },
+   {
+    "date": "2026-11-09",
+    "count": 1
+   },
+   {
+    "date": "2026-11-10",
+    "count": 7
+   },
+   {
+    "date": "2026-11-12",
+    "count": 4
+   },
+   {
+    "date": "2026-11-18",
+    "count": 1
+   },
+   {
+    "date": "2026-11-19",
+    "count": 8
+   },
+   {
+    "date": "2026-11-20",
+    "count": 2
+   },
+   {
+    "date": "2026-11-22",
+    "count": 2
+   },
+   {
+    "date": "2026-11-23",
+    "count": 2
+   },
+   {
+    "date": "2026-11-24",
+    "count": 30
+   },
+   {
+    "date": "2026-11-25",
+    "count": 35
+   },
+   {
+    "date": "2026-11-26",
+    "count": 134
+   },
+   {
+    "date": "2026-11-27",
+    "count": 328
+   }
+  ],
+  "from": "data/nvd-cve/latest.json list \"cves\"",
+  "note": "Dates are the items' own dates (forecast sources hold future dates). per_day lists up to the 60 newest days. null where the items carry no date."
  },
  "cadence_advice": {
   "line": "The data changed on 20 of 21 reads over 9 days: nearly every read finds new data, so it changes at least as often as it is read and reading more than twice a day would catch more states. Whether the pages that use it need them is for their owners to say.",

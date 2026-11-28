@@ -1,7 +1,7 @@
 {
  "source": "ea-flood",
  "title": "London flood warnings and Thames levels (Environment Agency)",
- "generated_utc": "2026-11-28T02:40:14Z",
+ "generated_utc": "2026-11-28T02:41:47Z",
  "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
  "schedule": {
   "card_says": "hourly",
@@ -4045,7 +4045,7 @@
  ],
  "copies": {
   "files_in_git_data": 3,
-  "bytes_in_git_data": 362705,
+  "bytes_in_git_data": 362871,
   "files_in_vault_working_copy": 97,
   "bytes_in_vault_working_copy": 2397395,
   "dated_copies_in_vault": 73,
@@ -4057,6 +4057,16 @@
   },
   "tracked_in_git_vaults": 0,
   "note": "collect/lib.mjs says vaults/ is meant to stay out of git, but 0 files of this source are tracked in git today (earlier commits); the sgit vault holds the full history. Dinis has not yet ruled on the vaults/ question."
+ },
+ "held": {
+  "items": 10,
+  "noun": "flood stations",
+  "earliest": null,
+  "latest": null,
+  "date_field": null,
+  "per_day": [],
+  "from": "data/ea-flood/latest.json list \"stations\"",
+  "note": "Dates are the items' own dates (forecast sources hold future dates). per_day lists up to the 60 newest days. null where the items carry no date."
  },
  "cadence_advice": {
   "line": "The data changed on 32 of 36 reads over 9 days: nearly every read finds new data, so it changes at least as often as it is read and reading more than twice a day would catch more states. Whether the pages that use it need them is for their owners to say.",

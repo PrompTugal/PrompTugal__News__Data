@@ -1,7 +1,7 @@
 {
  "source": "open-meteo-london",
  "title": "London forecast (Open-Meteo)",
- "generated_utc": "2026-11-28T02:40:14Z",
+ "generated_utc": "2026-11-28T02:41:47Z",
  "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
  "schedule": {
   "card_says": "every 6 hours",
@@ -463,7 +463,7 @@
  ],
  "copies": {
   "files_in_git_data": 3,
-  "bytes_in_git_data": 52378,
+  "bytes_in_git_data": 52544,
   "files_in_vault_working_copy": 3,
   "bytes_in_vault_working_copy": 9266,
   "dated_copies_in_vault": 1,
@@ -475,6 +475,29 @@
   },
   "tracked_in_git_vaults": 1,
   "note": "collect/lib.mjs says vaults/ is meant to stay out of git, but 1 files of this source are tracked in git today (earlier commits); the sgit vault holds the full history. Dinis has not yet ruled on the vaults/ question."
+ },
+ "held": {
+  "items": 72,
+  "noun": "hourly forecast points",
+  "earliest": "2026-11-27",
+  "latest": "2026-11-29",
+  "date_field": "time",
+  "per_day": [
+   {
+    "date": "2026-11-27",
+    "count": 24
+   },
+   {
+    "date": "2026-11-28",
+    "count": 24
+   },
+   {
+    "date": "2026-11-29",
+    "count": 24
+   }
+  ],
+  "from": "data/open-meteo-london/latest.json list \"hourly\"",
+  "note": "Dates are the items' own dates (forecast sources hold future dates). per_day lists up to the 60 newest days. null where the items carry no date."
  },
  "cadence_advice": {
   "line": "The data changed on 17 of 19 reads over 9 days: nearly every read finds new data, so it changes at least as often as it is read and reading more than twice a day would catch more states. Whether the pages that use it need them is for their owners to say.",

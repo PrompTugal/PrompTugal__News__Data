@@ -1,7 +1,7 @@
 {
  "source": "carbon-intensity-london",
  "title": "London's electricity carbon intensity (NESO)",
- "generated_utc": "2026-11-28T02:40:14Z",
+ "generated_utc": "2026-11-28T02:41:47Z",
  "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
  "schedule": {
   "card_says": "daily",
@@ -134,6 +134,25 @@
   },
   "tracked_in_git_vaults": 0,
   "note": "collect/lib.mjs says vaults/ is meant to stay out of git, but 0 files of this source are tracked in git today (earlier commits); the sgit vault holds the full history. Dinis has not yet ruled on the vaults/ question."
+ },
+ "held": {
+  "items": 73,
+  "noun": "half-hour forecast points",
+  "earliest": "2026-11-27",
+  "latest": "2026-11-28",
+  "date_field": "from",
+  "per_day": [
+   {
+    "date": "2026-11-27",
+    "count": 35
+   },
+   {
+    "date": "2026-11-28",
+    "count": 38
+   }
+  ],
+  "from": "data/carbon-intensity-london/latest.json list \"forecast\"",
+  "note": "Dates are the items' own dates (forecast sources hold future dates). per_day lists up to the 60 newest days. null where the items carry no date."
  },
  "cadence_advice": {
   "line": "Once a day is enough: the source itself refreshes daily.",

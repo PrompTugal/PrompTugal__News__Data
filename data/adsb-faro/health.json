@@ -1,7 +1,7 @@
 {
  "source": "adsb-faro",
  "title": "Flights around Faro airport",
- "generated_utc": "2026-11-28T02:40:14Z",
+ "generated_utc": "2026-11-28T02:41:47Z",
  "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
  "schedule": {
   "card_says": "hourly",
@@ -483,7 +483,7 @@
  ],
  "copies": {
   "files_in_git_data": 3,
-  "bytes_in_git_data": 50854,
+  "bytes_in_git_data": 50888,
   "files_in_vault_working_copy": 0,
   "bytes_in_vault_working_copy": 0,
   "dated_copies_in_vault": 0,
@@ -495,6 +495,16 @@
   },
   "tracked_in_git_vaults": 0,
   "note": "collect/lib.mjs says vaults/ is meant to stay out of git, but 0 files of this source are tracked in git today (earlier commits); the sgit vault holds the full history. Dinis has not yet ruled on the vaults/ question."
+ },
+ "held": {
+  "items": 3,
+  "noun": "airline flights",
+  "earliest": null,
+  "latest": null,
+  "date_field": null,
+  "per_day": [],
+  "from": "data/adsb-faro/latest.json list \"airline\"",
+  "note": "Dates are the items' own dates (forecast sources hold future dates). per_day lists up to the 60 newest days. null where the items carry no date."
  },
  "cadence_advice": {
   "line": "The data changed on 89 of 92 reads over 10 days: nearly every read finds new data, so it changes at least as often as it is read and reading more than twice a day would catch more states. Whether the pages that use it need them is for their owners to say.",

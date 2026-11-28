@@ -1,7 +1,7 @@
 {
  "source": "tfl-jamcams",
  "title": "London traffic cameras (TfL JamCams)",
- "generated_utc": "2026-11-28T02:40:14Z",
+ "generated_utc": "2026-11-28T02:41:47Z",
  "about": "Why this source does or does not have a problem, from its own request log (data/<id>/reads.json) and git. Regenerated at each wake.",
  "schedule": {
   "card_says": "hourly",
@@ -449,6 +449,49 @@
   },
   "tracked_in_git_vaults": 0,
   "note": "collect/lib.mjs says vaults/ is meant to stay out of git, but 0 files of this source are tracked in git today (earlier commits); the sgit vault holds the full history. Dinis has not yet ruled on the vaults/ question."
+ },
+ "held": {
+  "items": 889,
+  "noun": "traffic cameras",
+  "earliest": "2026-11-20",
+  "latest": "2026-11-27",
+  "date_field": "modified",
+  "per_day": [
+   {
+    "date": "2026-11-20",
+    "count": 359
+   },
+   {
+    "date": "2026-11-21",
+    "count": 39
+   },
+   {
+    "date": "2026-11-22",
+    "count": 17
+   },
+   {
+    "date": "2026-11-23",
+    "count": 43
+   },
+   {
+    "date": "2026-11-24",
+    "count": 63
+   },
+   {
+    "date": "2026-11-25",
+    "count": 76
+   },
+   {
+    "date": "2026-11-26",
+    "count": 119
+   },
+   {
+    "date": "2026-11-27",
+    "count": 173
+   }
+  ],
+  "from": "data/tfl-jamcams/latest.json list \"cameras\"",
+  "note": "Dates are the items' own dates (forecast sources hold future dates). per_day lists up to the 60 newest days. null where the items carry no date."
  },
  "cadence_advice": {
   "line": "The data changed on 5 of 38 reads over 9 days, about 0.6 times a day: twice a day is more than needed, once a day would lose little.",
