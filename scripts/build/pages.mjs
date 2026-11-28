@@ -236,7 +236,7 @@ export function buildPages({ sources, places, readAt, index, storm, events = [],
       h('People', 3), ul(c.split.people),
       h('Cost'),
       table(['Field', 'Value'], Object.entries(c.cost).map(([k, v]) => [k.replace(/_/g, ' '), String(v)]), 'kv'),
-      ...(HL ? [raw('</details>', '')] : []),
+      ...(HL ? [raw('</details>', ''), raw('<details class="hl-fold"><summary>API addresses: latest, every read, card and OpenAPI</summary>', '')] : []),
       h('API addresses'),
       p('These addresses stay for the life of v1 ([the contract](/api/v1/README.md)).'),
       table(['File', 'Address'], [
@@ -247,7 +247,7 @@ export function buildPages({ sources, places, readAt, index, storm, events = [],
         ...(s.manifest ? [['Manifest', `[${SITE}/api/v1/${s.id}/manifest.json](${SITE}/api/v1/${s.id}/manifest.json)`]] : []),
       ]),
       pre(`curl -s ${a.latest}\ncurl -s ${a.reads} | head -c 600`),
-      ...(HL ? [raw('<details class="hl-fold"><summary>The vault and the older table of runs</summary>', '')] : []),
+      ...(HL ? [raw('</details>', ''), raw('<details class="hl-fold"><summary>The vault and the older table of runs</summary>', '')] : []),
       h('Vault'),
     );
     if (c.vault) blocks.push(
